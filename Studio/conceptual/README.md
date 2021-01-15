@@ -1,12 +1,8 @@
-# Hackolade product docs
+# Studio conceptual docs
 
 Product documentation: tutorials, how-to guides, reference, conceptual
 
-
-
 Following methodology described [here]([Introduction &mdash; Documentation system documentation](https://documentation.divio.com/introduction/)).  And this example of GatsbyJS [documentation](https://www.gatsbyjs.com/docs/) and corresponding [repo]([gatsby/docs at master · gatsbyjs/gatsby · GitHub](https://github.com/gatsbyjs/gatsby/tree/master/docs)).
-
-
 
 ## Read docs at https://hackolade.com/help
 
