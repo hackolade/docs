@@ -1,4 +1,4 @@
-# Hackolade product docs
+# Hackolade public documentation
 
 Product documentation: tutorials, how-to guides, reference, conceptual
 
