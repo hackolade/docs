@@ -1,0 +1,11 @@
+# Ottoman Schema
+
+For those in a technology stack using JavaScript with Couchbase, and are using the [Ottoman ODM](<https://github.com/couchbaselabs/node-ottoman> "target=\"\_blank\""), Hackolade also provides the option to export a JavaScript Mongoose schema file for the collection definition via the menu option Tools \> Forward-Engineering \> Ottoman Schema:
+
+&nbsp;
+
+![Image](<lib/Tools%20-%20Forward-Engineer%20-%20Ottoman%20Schema.png>)
+
+
+***
+_Created with the Personal Edition of HelpNDoc: [Create cross-platform Qt Help files](<https://www.helpndoc.com/feature-tour/create-help-files-for-the-qt-help-framework>)_

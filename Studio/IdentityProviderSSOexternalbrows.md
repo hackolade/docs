@@ -1,0 +1,22 @@
+# Identity Provider SSO (external browser)
+
+To set up Azure AD for Single Sign-On with Snowflake, you should follow [these instructions](<https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/snowflake-tutorial> "target=\"\_blank\"") as well as [these](<https://support.snowflake.net/s/article/configuring-azure-active-directory-as-an-identity-provider> "target=\"\_blank\"").&nbsp; For Single Sign-On with Okta, you should follow [these instructions](<https://saml-doc.okta.com/SAML\_Docs/How-to-Configure-SAML-2.0-for-Snowflake.html> "target=\"\_blank\"").
+
+&nbsp;
+
+You must provide your network or Azure AD username, or Okta email address,&nbsp; depending on the provider:
+
+&nbsp;
+
+![Image](<lib/Snowflake%20Auth%20-%20IdP%20SSO%20External%20browser.png>)
+
+&nbsp;
+
+which will be passed on to the Identity Provider, so you may proceed with the login process, possibly with Multi-Factor Authentication if applicable.
+
+&nbsp;
+
+![Image](<lib/Snowflake%20Okta%20external%20browser%20SSO.png>)
+
+***
+_Created with the Personal Edition of HelpNDoc: [Full-featured multi-format Help generator](<https://www.helpndoc.com/help-authoring-tool>)_

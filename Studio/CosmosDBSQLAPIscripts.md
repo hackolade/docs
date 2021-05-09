@@ -1,0 +1,29 @@
+# Cosmos DB SQL API scripts
+
+As you develop the model for your Cosmos DB SQL API database, with containers and document types, Hackolade dynamically generates the corresponding forward-engineering script.
+
+&nbsp;
+
+The information can be viewed in the Cosmos DB script tab:
+
+![Image](<lib/Cosmos%20DB%20SQL%20APi%20script.png>)
+
+&nbsp;
+
+A button lets the user apply to a selected Azure instance the script to create containers, documents, indexes, UDFs, stored procedures, and triggers.
+
+&nbsp;
+
+Or you may export these scripts to a Gremlin file with the menu option Tools \> Forward-Engineering \> Cosmos DB script:
+
+![Image](<lib/Cosmos%20DB%20SQL%20API%20forward-engineering%20menu.png>)
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+
+***
+_Created with the Personal Edition of HelpNDoc: [Free Web Help generator](<https://www.helpndoc.com>)_
