@@ -24,31 +24,31 @@ The data model in the picture below results from the data modeling of the [sampl
 
 &nbsp;
 
-## Clusters and databases ##
+## Clusters and databases
 
 An Amazon Redshift cluster consists of nodes. Each cluster has a leader node and one or more compute nodes, the configuration of which should be done through the Redshift console.&nbsp; Within a cluster, the console prompts for the creation of a database. The console implies that only a single database can be created per cluster.&nbsp; While it is possible to create multiple databases in a single cluster, a Hackolade model corresponds to a single Redshift cluster/database.&nbsp; If you have more additional databases inside a cluster, you should create a Hackolade model per database.
 
 &nbsp;
 
-## Schemas ##
+## Schemas
 
 A database contains one or more named schemas. Each schema in a database contains tables and other kinds of named objects. By default, a database has a single schema, which is named PUBLIC. You can use schemas to group database objects under a common name. Schemas cannot be nested.
 
 &nbsp;
 
-## Tables ##
+## Tables
 
 As you plan your database, certain key table design decisions heavily influence overall query performance. These design choices also have a significant effect on storage requirements, which in turn affects query performance by reducing the number of I/O operations and minimizing the memory required to process queries.In [these pages](<https://docs.aws.amazon.com/redshift/latest/dg/c\_designing-tables-best-practices.html> "target=\"\_blank\""), you can find a summary of the most important design decisions and presents best practices for optimizing query performance.
 
 &nbsp;
 
-## Unique, Primary, and Foreign Keys, and Not Null ##
+## Unique, Primary, and Foreign Keys, and Not Null
 
 As mentioned, Redshift doesn't support indexes. Redshift also doesn't enforce primary key, foreign key, or uniqueness constraints, though primary keys and foreign keys should be declared to be used as planning hints, and for better comprehension of the data model.&nbsp; The NOT NULL parameter is enforced.
 
 &nbsp;
 
-## Distribution style and keys ##
+## Distribution style and keys
 
 The goal in selecting a table distribution style is to minimize the impact of the redistribution step by locating the data where it needs to be before the query is run. Some suggestions are made [here](<https://docs.aws.amazon.com/redshift/latest/dg/c\_best-practices-best-dist-key.html> "target=\"\_blank\""):
 
@@ -64,7 +64,7 @@ or specify AUTO for the distribution style to have Amazon Redshift choose the 
 
 &nbsp;
 
-## Data types ##
+## Data types
 
 Each value that Amazon Redshift stores or retrieves has a data type with a fixed set of associated properties. Data types are declared when tables are created. A data type constrains the set of values that a column or argument can contain.&nbsp; The following table lists the data types that you can use in Amazon Redshift tables.
 
@@ -82,7 +82,7 @@ Composite data types (multiple) are not supported by Redshift, except inside JSO
 
 &nbsp;
 
-## (Materialized) Views ##
+## (Materialized) Views
 
 A *materialized view* contains a precomputed result set, based on an SQL query over one or more base tables. This is to avoid processing complex queries on large tables that can be expensive in terms of system resources and the time it takes to compute the results, as they perform multiple-table joins and aggregations on tables that contain billions of rows. 
 
@@ -96,7 +96,7 @@ Hackolade supports Redshift (materialized) views, via a SELECT of columns of the
 
 &nbsp;
 
-## Functions and Procedures ##
+## Functions and Procedures
 
 You can create a custom scalar user-defined function (UDF) using either a SQL SELECT clause or a Python program. The new function is stored in the database and is available for any user with sufficient privileges to run. 
 
@@ -110,7 +110,7 @@ Both User-Defined Functions and Stored Procedures can be defined within Hackolad
 
 &nbsp;
 
-## Forward-Engineering ##
+## Forward-Engineering
 
 Hackolade dynamically generates the DDL script to create schemas, tables, columns and their data types, for the structure created with the application.
 
@@ -128,7 +128,7 @@ If you store JSON within SUPER columns, Hackolade allows for the schema design o
 
 &nbsp;
 
-## Reverse-Engineering ##
+## Reverse-Engineering
 
 The connection is established using a connection using AWS IAM credentials:
 
@@ -146,6 +146,3 @@ The Hackolade process for reverse-engineering of Amazon Redshift databases inclu
 
 For more information on Snowflake in general, please consult the [website](<https://aws.amazon.com/redshift/> "target=\"\_blank\"").
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easy EBook and documentation generator](<https://www.helpndoc.com>)_

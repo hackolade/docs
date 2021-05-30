@@ -30,6 +30,3 @@ In the Azure portal, navigate to your Azure Cosmos DB account, and click on **Co
 
 Then go to the Authentication tab, and copy the the username and password. &nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free EPub producer](<https://www.helpndoc.com/create-epub-ebooks>)_

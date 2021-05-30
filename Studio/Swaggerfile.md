@@ -10,6 +10,3 @@ As you develop the model for Swagger API with metadata, requests, responses, def
 
 An internal Swagger syntax validator ensures that the generated file is valid, and the right-hand pane allows interactions with the API and testing.&nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [News and information about help authoring tools and software](<https://www.helpauthoringsoftware.com>)_

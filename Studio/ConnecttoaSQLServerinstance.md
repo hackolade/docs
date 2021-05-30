@@ -18,6 +18,3 @@ You may choose to provide a connection string which includes: host, port, userna
 
 ![Image](<lib/SQL%20Server%20Connection%20String.png>)
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Full-featured EPub generator](<https://www.helpndoc.com/create-epub-ebooks>)_

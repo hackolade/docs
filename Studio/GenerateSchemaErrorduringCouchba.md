@@ -1,6 +1,6 @@
 # Generate Schema Error during Couchbase reverse-engineering
 
-# Generate Schema Error during Couchbase reverse-engineering #
+# Generate Schema Error during Couchbase reverse-engineering
 
 If you get this message:
 
@@ -13,6 +13,3 @@ There's a workaround for this Couchbase issue.  In Hackolade go to Tools \> Opt
 ![Image](<lib/Couchbase%20RE%20pagination%20parameters.png>)
 
 The pagination parameter is a fine balance... If too high, and you get that same error.  If too low, and the reverse-engineering process will be slower.
-
-***
-_Created with the Personal Edition of HelpNDoc: [Full-featured Help generator](<https://www.helpndoc.com/feature-tour>)_

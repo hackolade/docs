@@ -1,0 +1,49 @@
+# JSON Schema Editor
+
+Wikipedia definition: **JSON** (**JavaScript Object Notation**, pronounced [/ˈdʒeɪsən/](<https://en.wikipedia.org/wiki/Help:IPA/English>); also [/ˈdʒeɪˌsɒn/](<https://en.wikipedia.org/wiki/Help:IPA/English>)) is an [open standard](<https://en.wikipedia.org/wiki/Open\_standard>) [file format](<https://en.wikipedia.org/wiki/File\_format>) and [data interchange](<https://en.wikipedia.org/wiki/Electronic\_data\_interchange>) format that uses [human-readable](<https://en.wikipedia.org/wiki/Human-readable\_medium>) text to store and transmit data objects consisting of [attribute–value pairs](<https://en.wikipedia.org/wiki/Attribute–value\_pair>) and [arrays](<https://en.wikipedia.org/wiki/Array\_data\_type>) (or other [serializable](<https://en.wikipedia.org/wiki/Serialization>) values). It is a very common [data](<https://en.wikipedia.org/wiki/Data>) format, with a diverse range of applications, one example being [web applications](<https://en.wikipedia.org/wiki/Web\_applications>) that communicate with a [server](<https://en.wikipedia.org/wiki/Server\_(computing)>).&nbsp; JSON is a [language-independent](<https://en.wikipedia.org/wiki/Language-independent\_specification>) data format. It was derived from [JavaScript](<https://en.wikipedia.org/wiki/JavaScript>), but many modern [programming languages](<https://en.wikipedia.org/wiki/Programming\_language>) include code to generate and [parse](<https://en.wikipedia.org/wiki/Parsing>) JSON-format data. JSON filenames use the extension .json.
+
+[Douglas Crockford](<https://en.wikipedia.org/wiki/Douglas\_Crockford>) originally specified the JSON format in the early 2000s. &nbsp; Here is a 2019 video of Doug Crockford retracing the [History of JSON](<https://youtu.be/TjVcVWB0oFk> "target=\"\_blank\"").&nbsp;
+
+When using JSON documents, whether for document databases or data exchanges, it is useful to ensure the integrity and validity of the JSON document being exchanged or stored.&nbsp; In a similar way to how XSD provides a schema definition for XML, the [JSON Schema](<http://json-schema.org/> "target=\"\_blank\"") standard provides a clear human- and machine-readable documentation of of JSON documents that allow their annotation and validation.
+
+Hackolade provides graphical JSON Schema editing of the latest versions including [draft-04](<https://json-schema.org/specification-links.html#draft-4> "target=\"\_blank\""), [draft-06](<https://json-schema.org/specification-links.html#draft-6> "target=\"\_blank\""), [draft-07](<https://json-schema.org/specification-links.html#draft-7> "target=\"\_blank\""), [2019-09](<https://json-schema.org/specification-links.html#2019-09-formerly-known-as-draft-8> "target=\"\_blank\"").&nbsp; It lets you generate JSON Schema without needing to know JSON Schema syntax, and makes it easy to understand and edit your schema.
+
+&nbsp;
+
+Hackolade provides the unique ability to integrate the structure for multiple documents into an Entity-Relationship Diagram, optionally allowing the creation of implicit Foreign Key Relationships for documentation purposes, while rendering each document as a single atomic unit, even when deeply nested sub-objects and arrays are present.
+
+&nbsp;
+
+![Image](<lib/JSON%20Schema%20workspace.png>)
+
+&nbsp;
+
+Hackolade works great to convert structures from [XSD](<ImportamodelfromXSD.md>) (XML Schema), from [DDL](<SQLDDL.md>) (Data Definition Language) for SQL relational databases (RDBMS) as well as all the targets Hackolade supports, whether for data-at-rest or data-in-motion.&nbsp; Hackolade shines at inferring the JSON Schema for any JSON document, and can also generate a sample JSON document for any JSON Schema.&nbsp; Hackolade on-boards a JSON Schema validator, and also allows for user-defined custom properties as well as extensions to allow the specific data types of the different database and protocol targets supported by the tool.&nbsp; A [command-line interface](<CommandLineInterface.md>) makes it easy to automate these functions and integrate them into a CI/CD pipeline.
+
+&nbsp;
+
+![Image](<lib/JSON%20Schema%20preview.png>)
+
+&nbsp;
+
+Hackolade handles the polymorphic nature of JSON documents with the support of multiple data types and allOf, anyOf, oneOf choices for [schema combination](<https://json-schema.org/understanding-json-schema/reference/combining.html#combining-schemas> "target=\"\_blank\"").
+
+![Image](<lib/JSON%20Schema%20choices.png>)
+
+&nbsp;
+
+Hackolade also supports [conditional application of subschemas](<https://json-schema.org/understanding-json-schema/reference/conditionals.html> "target=\"\_blank\"") whereby the if, then and else keywords allow the application of a subschema based on the outcome of another schema:
+
+![Image](<lib/JSON%20Schema%20conditional.png>)
+
+&nbsp;
+
+Hackolade supports the [reuse](<https://json-schema.org/understanding-json-schema/structuring.html#reuse> "target=\"\_blank\"") of objects structures through references to internal and external [definitions](<Reusableobjectsdefinitions.md>).&nbsp; It is easy to add [user-defined custom properties](<Userdefinedcustomproperties.md>) to the application.
+
+&nbsp;
+
+Hackolade provides a powerful and unique [side-by-side comparison of models](<Compareandmergemodels.md>) handling the synchronized scrolling of hierarchical structures for easy merging of additions, deletions, modifications and moves.
+
+&nbsp;
+
+You may also [generate documentation](<Generatedocumentation.md>) in HTML, Markdown or PDF. 

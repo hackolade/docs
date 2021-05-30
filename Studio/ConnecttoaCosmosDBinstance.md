@@ -6,6 +6,3 @@ Access to Azure Cosmos DB requires credentials.&nbsp; These credentials must hav
 
 The connection parameters differ depending on the API: [SQL API](<SQLAPI.md>), (previously known as DocumentDB API), [MongoDB API](<MongoDBAPI.md>) or [Gremlin API](<GremlinAPI.md>).
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Write EPub books for the iPad](<https://www.helpndoc.com/create-epub-ebooks>)_

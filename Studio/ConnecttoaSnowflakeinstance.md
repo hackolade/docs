@@ -51,6 +51,3 @@ Different options are possible for authentication:
 \- [Native SSO (Okta only)](<NativeSSOOktaonly.md>)
 
 \- [Single Sign-On via external browser](<IdentityProviderSSOexternalbrows.md>)
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free help authoring environment](<https://www.helpndoc.com/help-authoring-tool>)_

@@ -32,6 +32,3 @@ For RDBMS targets, an additional option appears, that allows automatic normaliza
 
 ![Image](<lib/JSON%20Schema%20RE%20dialog%20-%20normalization.png>)
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Create cross-platform Qt Help files](<https://www.helpndoc.com/feature-tour/create-help-files-for-the-qt-help-framework>)_

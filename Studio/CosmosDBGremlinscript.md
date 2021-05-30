@@ -26,6 +26,3 @@ Or you may export these scripts to a Gremlin file with the menu option Tools \> 
 
 See more details [here](<https://neo4j.com/developer/kb/export-sub-graph-to-cypher-and-import/> "target=\"\_blank\"") on how to apply the exported Cypher script.
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Produce Kindle eBooks easily](<https://www.helpndoc.com/feature-tour/create-ebooks-for-amazon-kindle>)_

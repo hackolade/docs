@@ -23,7 +23,7 @@ Hackolade was specially adapted to support the data modeling of data stored as a
 
 ![Image](<lib/Firebase%20workspace.png>)
 
-## Databases ##
+## Databases
 
 Each Firebase Realtime database data is stored as JSON objects. &nbsp;
 
@@ -31,7 +31,7 @@ Each Firebase Realtime database data is stored as JSON objects. &nbsp;
 
 &nbsp;
 
-## Nodes ##
+## Nodes
 
 &nbsp;
 
@@ -39,27 +39,27 @@ Each Firebase Realtime database data is stored as JSON objects. &nbsp;
 
 &nbsp;
 
-## IDs ##
+## IDs
 
 &nbsp;
 
 &nbsp;
 
-## Attributes data types ##
+## Attributes data types
 
 &nbsp;
 
 &nbsp;
 
-## Indexes ##
+## Indexes
 
-## &nbsp; ##
+## &nbsp;
 
-## Forward-Engineering ##
+## Forward-Engineering
 
 Not applicable, as Firebase does not provide any way to enforce any kind of schema.
 
-## Reverse-Engineering ##
+## Reverse-Engineering
 
 **Note:** the reverse-engineering of documents is not currently available.&nbsp; It is being developed and will be released at a later time.
 
@@ -69,6 +69,3 @@ Not applicable, as Firebase does not provide any way to enforce any kind of sche
 
 For more information on Cosmos DB in general, please consult the [website](<https://docs.microsoft.com/en-us/azure/cosmos-db/introduction> "target=\"\_blank\"").
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free PDF documentation generator](<https://www.helpndoc.com>)_

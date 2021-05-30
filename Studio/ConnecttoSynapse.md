@@ -24,7 +24,7 @@ Alternatively, you may choose to provide a connection string which includes: hos
 
 &nbsp;
 
-## &#50;) Control Plane ##
+## &#50;) Control Plane
 
 The REST API connection should be enabled and all the proper parameters provided if you wish for Hackolade to retrieve additional Azure metadata such as: tags, location and region replication, automatic failover, virtual network filter and rules, and IP-range filter.&nbsp;
 
@@ -66,6 +66,3 @@ If you don't know how to generate some of the above values, you may want to cons
 
 &nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Create iPhone web-based documentation](<https://www.helpndoc.com/feature-tour/iphone-website-generation>)_

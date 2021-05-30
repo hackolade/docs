@@ -15,6 +15,3 @@ Traditional ER tools have a hard time dealing graphically with subschemas, where
 ![Image](<lib/Polymorphism.png>)
 
 A simpler form of JSON's flexibility is for a field to have multiple simple types, i.e. a string in some documents and a numeric in others, or boolean, or null.  Hackolade easily deals with that as well.
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easily create Web Help sites](<https://www.helpndoc.com/feature-tour>)_

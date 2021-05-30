@@ -22,6 +22,3 @@ You must manually enter your username and password in the Authentication tab, as
 
 ![Image](<lib/Cassandra%20Apollo%20Authentication.png>)
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easily create iPhone documentation](<https://www.helpndoc.com/feature-tour/iphone-website-generation>)_

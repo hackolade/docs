@@ -9,6 +9,3 @@ The users are kindly reminded of the End-User Licensing Agreement terms:&nbsp;
 &nbsp;
 
 More details can be found [here](<Licenseagreement.md>).
-
-***
-_Created with the Personal Edition of HelpNDoc: [Create help files for the Qt Help Framework](<https://www.helpndoc.com/feature-tour/create-help-files-for-the-qt-help-framework>)_

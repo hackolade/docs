@@ -16,7 +16,7 @@ Customization for native targets (JSON, Couchbase, DynamoDB, and MongoDB) do not
 
 &nbsp;
 
-## &#49;) Access the target customization directory ##
+## &#49;) Access the target customization directory
 
 To create and maintain custom properties for a given target, you access the folder structure from Help \> Plugin Manager
 
@@ -50,7 +50,7 @@ ii) for field-level definitions, since data types have different property lists,
 
 &nbsp;
 
-## &#50;) Levels ##
+## &#50;) Levels
 
 As a reminder, terminology differs between NoSQL databases:
 
@@ -66,7 +66,7 @@ You need to edit the corresponding \<object\>LevelConfig.json file to add custom
 
 &nbsp;
 
-## &#51;) Lower tabs ##
+## &#51;) Lower tabs
 
 For each level, the Hackolade properties pane may have one or more lower tab:
 
@@ -92,7 +92,7 @@ If the level allows multiple tabs, you need to choose to which lower tab you wan
 
 &nbsp;
 
-## &#52;) Property types ##
+## &#52;) Property types
 
 The following controls are possible for user-defined properties:
 
@@ -116,7 +116,7 @@ More information [here](<https://github.com/hackolade/plugins#26-property-contro
 
 &nbsp;
 
-## &#53;) Property definition ##
+## &#53;) Property definition
 
 Examples are provided in the comments section of each config file.&nbsp; Here's an overview of the schema:
 
@@ -146,7 +146,7 @@ Here's another view, consolidated:
 
 &nbsp;
 
-## &#54;) Share customization with team members ##
+## &#54;) Share customization with team members
 
 it is recommended that you share customization using Git.&nbsp; Store your changes in a Git remote repository, and have your team members clone it locally in C:\\Users\\%username%\\.hackolade\\options (on Mac in Users/$USER/.Hackolade/options)&nbsp; That way, all that teams members need to do is to pull regularly, and they will get your latest changes.
 
@@ -156,6 +156,3 @@ For the changes to take effect on each computer, it is required to exit Hackolad
 
 &nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [iPhone web sites made easy](<https://www.helpndoc.com/feature-tour/iphone-website-generation>)_

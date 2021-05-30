@@ -22,6 +22,3 @@ Then select LDAP in the authentication dropdown box, before specifying the usern
 
 ![Image](<lib/MongoDB%20connection%20LDAP%202.png>)
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free PDF documentation generator](<https://www.helpndoc.com>)_

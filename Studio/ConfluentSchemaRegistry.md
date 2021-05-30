@@ -22,9 +22,13 @@ For the details on how to define Avro schema definitions in Hackolade, you shoul
 
 &nbsp;
 
-## Forward-Engineering ##
+## Forward-Engineering
 
 Schemas for Avro or JSON defined in Hackolade can be added to subjects in the Schema Registry through an Apply button appearing at the bottom of the Avro Schema tab.
+
+&nbsp;
+
+![Image](<lib/Confluent%20Schema%20Registry%20forward-engineering.png>)
 
 &nbsp;
 
@@ -32,11 +36,9 @@ By pressing the button "Apply to instance" the system will automatically create 
 
 &nbsp;
 
-## Reverse-Engineering ##
+## Reverse-Engineering
 
 The reverse-engineering function lets you connect to the Confluent Schema Registry, either on-prem or in the Cloud. &nbsp;
-
-&nbsp;
 
 &nbsp;
 
@@ -44,6 +46,3 @@ For more information, make sure to consult the Confluent Schema Registry [overvi
 
 &nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Single source CHM, PDF, DOC and HTML Help creation](<https://www.helpndoc.com/help-authoring-tool>)_

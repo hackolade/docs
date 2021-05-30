@@ -32,7 +32,7 @@ The diagram below results from the reverse-engineering of AWS event aws.glue@Glu
 
 &nbsp;
 
-## Structure ##
+## Structure
 
 The EBSR for any AWS account in a region is made of:
 
@@ -47,7 +47,7 @@ Each EBSR schema corresponds to a single Hackolade model file.&nbsp; While the s
 
 &nbsp;
 
-## Data Types ##
+## Data Types
 
 The OpenAPI specification used by EBSR describes primitives (or scalar) data types which can have an optional property modifier, *format*, plus a file primitive type.&nbsp; Complex types such as arrays and sub-objects, plus combinations thereof, are also allowed.
 
@@ -57,7 +57,7 @@ The OpenAPI specification used by EBSR describes primitives (or scalar) data typ
 
 &nbsp;
 
-## Event metadata ##
+## Event metadata
 
 A number of properties describing the registry and each schema can be reverse-engineered and maintained in the model:
 
@@ -65,7 +65,7 @@ A number of properties describing the registry and each schema can be reverse-en
 
 &nbsp;
 
-## Components ##
+## Components
 
 [Component objects](<https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#components-object> "target=\"\_blank\"") hold a set of reusable objects that can be used across multiple endpoints in the same API: schema, parameter, request body, response, example, header, security scheme, link, or callback. All objects defined within the components object will have no effect on the API unless they are explicitly referenced from properties outside the components object by using a $ref reference in any path item.
 
@@ -87,7 +87,7 @@ Consult [this page](<Reusableobjectsdefinitions.md>) or more information on how 
 
 &nbsp;
 
-## Forward-Engineering ##
+## Forward-Engineering
 
 The files describing the RESTful API in accordance with the [OpenAPI specification](<https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md> "target=\"\_blank\"") OAS are represented as JSON objects and conform to the JSON standards.&nbsp; Hackolade generates OpenAPI documentation in JSON format or YAML format.&nbsp; The schema exposes two types of fields. Fixed fields, which have a declared name, and patterned fields, which declare a regex pattern for the field name. Patterned fields can have multiple occurrences as long as each has a unique name.&nbsp; The OpenAPI representation of the API is made of a single file. However, parts of the definitions can be split into separate files, at the discretion of the user. This is applicable for $ref fields in the specification as follows from the [JSON Schema ](<http://json-schema.org/> "target=\"\_blank\"")definitions.
 
@@ -99,7 +99,7 @@ The files describing the RESTful API in accordance with the [OpenAPI specificati
 
 By pressing the button "Apply to instance" the system will automatically create a new version of the schema, if different from the latest one.
 
-## Reverse-Engineering ##
+## Reverse-Engineering
 
 The connection is established using a connection using AWS IAM credentials:
 
@@ -115,6 +115,3 @@ The reverse-engineering function lets you take a schema from either the AWS even
 
 &nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free Web Help generator](<https://www.helpndoc.com>)_

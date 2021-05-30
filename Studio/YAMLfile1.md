@@ -23,6 +23,3 @@ Subschema for generation is choosing by priority:
 1. Any other fields with not “null” YAML Data sample
 1. “Null" fields
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free EBook and documentation generator](<https://www.helpndoc.com>)_

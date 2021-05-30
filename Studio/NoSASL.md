@@ -1,6 +1,6 @@
 # NoSASL
 
-## NoSASL Authentication ##
+## NoSASL Authentication
 
 &nbsp;
 
@@ -18,6 +18,3 @@
 
 ![Image](<lib/Hive%20Connection%20settings%20-%20NoSASL.png>)
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Create iPhone web-based documentation](<https://www.helpndoc.com/feature-tour/iphone-website-generation>)_

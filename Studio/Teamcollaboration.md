@@ -61,6 +61,3 @@ Resolving conflicting changes can be a tedious process involving manual interven
 
 Sometimes, it may be a good idea, if working on the model for a new release, to Save As the current model to a new version by giving the model file a new name, for example by appending a version number at the end of the file name.
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easily create iPhone documentation](<https://www.helpndoc.com/feature-tour/iphone-website-generation>)_

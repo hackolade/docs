@@ -46,6 +46,3 @@ Several important options are available:
 
 \- internal: references to external and model definitions are converted into internal definitions
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easily create PDF Help documents](<https://www.helpndoc.com/feature-tour>)_

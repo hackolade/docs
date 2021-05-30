@@ -20,7 +20,7 @@ With the controls just below the picture, the user may zoom in, zoom out, or fit
 
 &nbsp;
 
-## Known issue on Linux Debian when generating the images in PDF format ##
+## Known issue on Linux Debian when generating the images in PDF format
 
 If you get a "write EPIPE" error:
 
@@ -42,6 +42,3 @@ which will allow the generation of images in PDF format.
 
 &nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free help authoring environment](<https://www.helpndoc.com/help-authoring-tool>)_

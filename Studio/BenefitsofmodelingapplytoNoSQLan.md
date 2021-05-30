@@ -1,6 +1,6 @@
 # Benefits of data modeling apply to NoSQL and Agile
 
-# The benefits of data modeling also apply to NoSQL and Agile development #
+# The benefits of data modeling also apply to NoSQL and Agile development
 
 &nbsp;
 
@@ -34,7 +34,7 @@ And more:
 
 &nbsp;
 
-## Insights into modeling NoSQL - a Dataversity report ##
+## Insights into modeling NoSQL - a Dataversity report
 
 "Programmers and developers who are creating applications that pull data from a specific data store – whether its Key-Value, Wide Column, Document, Graph, Relational, or some hybrid  thereof – still have to understand what is going on with the data inside that system. There needs to be some type of “model” or “map” so that the data stream from ingestion through analysis is understood at every step. Without such an understanding, all that exists is Big Data chaos \[...\] \
 \
@@ -51,6 +51,3 @@ One of the most prominent criticisms against implementing any kind of NoSQL solu
 \
 Source: [https://content.dataversity.net/DV2015NoSQLRP\_DownloadWP.html](<https://content.dataversity.net/DV2015NoSQLRP\_DownloadWP.html> "target=\"\_blank\"")
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free EPub producer](<https://www.helpndoc.com/create-epub-ebooks>)_

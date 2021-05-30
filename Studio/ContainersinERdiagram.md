@@ -18,6 +18,3 @@ If necessary for your application, you can define multiple groups in the same mo
 
 ![Image](<lib/Couchbase%20multi-bucket%20model.png>)
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Create iPhone web-based documentation](<https://www.helpndoc.com/feature-tour/iphone-website-generation>)_

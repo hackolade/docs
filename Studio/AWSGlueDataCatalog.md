@@ -22,7 +22,7 @@ The data model in the picture below results from the modeling of an application 
 
 &nbsp;
 
-## Tables ##
+## Tables
 
 Tables in in the Glue Data Catalog contain references to data that is used as sources and targets of&nbsp; extract, transform, and load (ETL) jobs in AWS Glue. The table properties are based on Hive 2.x metadata structure.
 
@@ -36,13 +36,13 @@ Tables in in the Glue Data Catalog contain references to data that is used as so
 
 &nbsp;
 
-## Partition keys, buckets ##
+## Partition keys, buckets
 
 The Glue Data Catalog organizes tables into partitions for grouping same type of data together based on a column or partition key. Each table can have one or more partition keys to identify a particular partition. Using partition we can also make it faster to do queries on slices of the data.&nbsp; Tables or partitions are subdivided into buckets based on the hash function of a column in the table to give extra structure to the data that may be used for more efficient queries.
 
 &nbsp;
 
-## Data types ##
+## Data types
 
 The Glue Data Catalog supports different data types to be used in table columns. The data types supported can be broadly classified in Primitive and Complex data types.
 
@@ -56,7 +56,7 @@ Hackolade was specially adapted to support the data types and attributes behavio
 
 &nbsp;
 
-## Forward-Engineering ##
+## Forward-Engineering
 
 Hackolade dynamically generates both the AWS CLI command and the HQL script to create tables, columns and their data types, and indexes for the structure created with the application.&nbsp; The AWS CLI command can be applied directly to the instance, provided that the user profile is granted sufficient rights.
 
@@ -68,7 +68,7 @@ Hackolade dynamically generates both the AWS CLI command and the HQL script to c
 
 As many people store JSON within text columns, Hackolade allows for the schema design of those documents.  That JSON structure is not forward-engineered, but is useful for developers, analysts and designers.
 
-## Reverse-Engineering ##
+## Reverse-Engineering
 
 The connection is established using a connection using AWS IAM credentials:
 
@@ -86,6 +86,3 @@ The Hackolade process for reverse-engineering of Glue Data Catalog databases inc
 
 For more information on the AWS Glue Data Catalog in general, please consult the AWS [website](<https://docs.aws.amazon.com/glue/latest/dg/populate-data-catalog.html> "target=\"\_blank\"").
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free EPub and documentation generator](<https://www.helpndoc.com>)_

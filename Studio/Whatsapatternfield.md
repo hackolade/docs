@@ -1,6 +1,6 @@
 # What's a "pattern field"?
 
-# What's a "pattern property" or "pattern property"? #
+# What's a "pattern property" or "pattern property"?
 
 Hackolade, being built on JSON Schema, leverages this little-known but extremely powerful feature of JSON.
 
@@ -25,6 +25,3 @@ In Hackolade, the above example is modeled this way:
 To add a pattern field to a document structure, right-click and choose add/insert/append \> Pattern Field then the field data type:
 
 ![Image](<lib/Pattern%20property%20contextual%20menu.png>)
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easy EPub and documentation editor](<https://www.helpndoc.com>)_

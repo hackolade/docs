@@ -24,6 +24,3 @@ Or you may export these scripts to a Gremlin file with the menu option Tools \> 
 
 &nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free Web Help generator](<https://www.helpndoc.com>)_

@@ -1,6 +1,6 @@
 # Linux
 
-## Standard installation ##
+## Standard installation
 
 The application is shipped as a .zip file.&nbsp; To install, you simply unzip the file in the folder of your choice, then start the executable.&nbsp; You must be aware that the installation of the software is a tacit acceptance of our [Terms and Conditions and End-User License Agreement](<https://hackolade.com/eulas.html> "target=\"\_blank\"").&nbsp;
 
@@ -32,7 +32,7 @@ Then, mark the desktop file executable by issuing chmod +x myapp.desktop. Doubl
 
 For CentOS 7 if [GUI was not selected](<https://www.techrepublic.com/article/how-to-install-a-gui-on-top-of-centos-7/> "target=\"\_blank\"") during installation, a complex procedure is documented below:
 
-### Pre-requisites ###
+### Pre-requisites
 
 *sudo yum update*
 
@@ -70,7 +70,7 @@ Starting GNOME:
 
 [https://www.techrepublic.com/article/how-to-install-a-gui-on-top-of-centos-7/](<https://www.techrepublic.com/article/how-to-install-a-gui-on-top-of-centos-7/> "target=\"\_blank\"")
 
-### Installation ###
+### Installation
 
 *wget “[https://s3-eu-west-1.amazonaws.com/hackolade/current/Hackolade-linux-x64.zip*](<https://s3-eu-west-1.amazonaws.com/hackolade/current/Hackolade-linux-x64.zip> "target=\"\_blank\"")*” -O hackolade.zip*
 
@@ -96,7 +96,7 @@ File “chrome-sandbox” must be owned by root user and have permissions 4755.
 
 The application must be executed by a non-root user.
 
-### Start application ###
+### Start application
 
 Execute in the terminal:
 
@@ -104,13 +104,13 @@ Execute in the terminal:
 
 &nbsp;
 
-### Remote connection ###
+### Remote connection
 
 In case of remote connection, you need VNC server:
 
 [https://wiki.centos.org/HowTos/VNC-Server](<https://wiki.centos.org/HowTos/VNC-Server> "target=\"\_blank\"")
 
-### Compiling GCC ###
+### Compiling GCC
 
 If copying */lib64/libstdc++.so.6* didn’t help and you faced troubles with GLIBCXX you have to compile a newer version of GCC (it takes a while):
 
@@ -152,6 +152,3 @@ After compiling create a symlink to the file libstdc++.so.6.0.24:
 
 &nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Full-featured EPub generator](<https://www.helpndoc.com/create-epub-ebooks>)_

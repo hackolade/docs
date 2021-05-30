@@ -72,6 +72,3 @@ With the following syntax to perform the join:
 
 With the support of RDBMS databases, Hackolade also allows the creation of composite foreign keys, i.e. foreign keys consisting of two or more attributes that reference a set of two or more attributes representing an occurrence in a parent table.&nbsp; A compound key is a composite key for which each attribute that makes up the key is a simple (foreign) key in its own right.
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free EPub producer](<https://www.helpndoc.com/create-epub-ebooks>)_

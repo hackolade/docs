@@ -6,15 +6,15 @@ Hackolade is an intuitive yet powerful application to perform the visually data 
 
 | **Data storage formats and IDLs** | **Document** | **Graph** | **Column-Oriented** | **Multi-model** | **Big Data Analytics** | **APIs** | **RDMBS ** **w/ JSON** |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [JSON Schema v4](<JSONSchema2.md>) | [MongoDB](<MongoDB.md>) | [Neo4j](<Neo4j.md>) | [Cassandra ](<Cassandra.md>) | CosmosDB - [SQL API](<CosmosDB.md>) - [MongoDB API](<CosmosDB.md>) - [Gremlin API](<CosmosDBGremlin.md>) - Cassandra API\* | [HBase](<HBase.md>) | [Swagger API](<SwaggerAPI.md>) | [SQL Server](<SQLServer.md>) |
-| JSON Schema v7\* | [Couchbase](<Couchbase.md>) | [TinkerPop](<TinkerPop.md>) | [Datastax](<Cassandra.md>) |  | [Hive](<ApacheHive.md>) | [OpenAPI](<OpenAPI.md>) | [MariaDB](<MariaDB.md>) |
-| [Avro schema](<Avroschema.md>) | [DynamoDB](<DynamoDB.md>) | JanusGraph\* | [HBase](<HBase.md>) |  | [AWS Glue ](<AWSGlueDataCatalog.md>) [Data Catalog](<AWSGlueDataCatalog.md>) | [EventBridge](<EventBridge.md>) | MySQL\* |
-| [Joi schema](<https://github.com/Qwin/Joi> "target=\"\_blank\"") | [Elasticsearch](<Elasticsearch.md>) | Amazon Neptune\* | [ScyllaDB](<ScyllaDB.md>) | [MarkLogic](<MarkLogic.md>) |  | RAML\* | PostgreSQL\* |
-| [Parquet](<Parquetschema.md>) | [Firebase](<Firebase.md>) | &nbsp; | &nbsp; | ArangoDB\* | [Redshift](<Redshift.md>) | GraphQL\* | Oracle\* |
-| [YAML](<YAMLfile.md>) | [Firestore](<Firestore.md>) | [](<MarkLogic.md>) | [](<TinkerPop.md>) | [](<MarkLogic.md>) | [Snowflake](<Snowflake.md>) | &nbsp; | DB2\* |
+| [JSON Schema](<JSONSchema2.md>) | [MongoDB](<MongoDB.md>) | [Neo4j](<Neo4j.md>) | [Cassandra ](<Cassandra.md>) | CosmosDB - [SQL API](<CosmosDB.md>) - [MongoDB API](<CosmosDB.md>) - [Gremlin API](<CosmosDBGremlin.md>) - Cassandra API\* | [Delta Lake](<DeltaLakeonDatabricks.md>) | [Swagger API](<SwaggerAPI.md>) | [SQL Server](<SQLServer.md>) |
+| [Avro schema](<Avroschema.md>) | [Couchbase](<Couchbase.md>) | [TinkerPop](<TinkerPop.md>) | [Datastax](<Cassandra.md>) |  | [Hive](<ApacheHive.md>) | [OpenAPI](<OpenAPI.md>) | [MariaDB](<MariaDB.md>) |
+| [Joi schema](<https://github.com/Qwin/Joi> "target=\"\_blank\"") | [DynamoDB](<DynamoDB.md>) | JanusGraph\* | [HBase](<HBase.md>) |  | [AWS Glue ](<AWSGlueDataCatalog.md>) [Data Catalog](<AWSGlueDataCatalog.md>) | [EventBridge](<EventBridge.md>) | MySQL\* |
+| [Parquet](<Parquetschema.md>) | [Elasticsearch](<Elasticsearch.md>) | Amazon Neptune\* | [ScyllaDB](<ScyllaDB.md>) | [MarkLogic](<MarkLogic.md>) |  | AsyncAPI\* | PostgreSQL\* |
+| [YAML](<YAMLfile.md>) | [Firebase](<Firebase.md>) | &nbsp; | Bigtable\* | ArangoDB\* | [Redshift](<Redshift.md>) | GraphQL\* | Oracle\* |
+| gRPC/Protobuf\* | [Firestore](<Firestore.md>) | [](<MarkLogic.md>) | [](<TinkerPop.md>) | [](<MarkLogic.md>) | [Snowflake](<Snowflake.md>) | RAML\* | DB2\* |
 | ORC\* | [](<Firestore.md>) | &nbsp; | &nbsp; | &nbsp; | [Synapse](<Synapse.md>) | &nbsp; | &nbsp; |
-| &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | Delta Lake\* | &nbsp; | &nbsp; |
-| &nbsp; | [](<DynamoDB.md>) | &nbsp; | &nbsp; | &nbsp; | BigQuery\* | &nbsp; | &nbsp; |
+| &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | BigQuery\* | &nbsp; | &nbsp; |
+| &nbsp; | [](<DynamoDB.md>) | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
 
 
 \*: To Be Added
@@ -35,6 +35,3 @@ Instead of having to find data structures tacitly described in the application c
 
 You will hopefully find Hackolade user-friendly.&nbsp; In case it is is not sufficiently intuitive, this help documentation is designed so you can quickly learn Hackolade as a new user, or enhance your knowledge as a regular user.
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free EBook and documentation generator](<https://www.helpndoc.com>)_

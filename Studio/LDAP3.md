@@ -1,6 +1,6 @@
 # LDAP
 
-## Authentication ##
+## Authentication
 
 &nbsp;
 
@@ -8,7 +8,7 @@ If you require LDAP authentication, it is necessary, in order to connect to node
 
 &nbsp;
 
-## &#49;) Accessing the keystore directly ##
+## &#49;) Accessing the keystore directly
 
 Specify the path and filename to keystore, the access password, and the alias name for the ScyllaDB instance.
 
@@ -93,6 +93,3 @@ myapp-dev - alias used by keystore and determined in step 3 above
 
 ![Image](<lib/Cassandra%20Connection%20Settings%20-%20LDAP%20Certific.png>)
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easily create EPub books](<https://www.helpndoc.com/feature-tour>)_

@@ -84,6 +84,3 @@ Collection bottom tabs:
 
 Each bottom tab provides a different view of the entity information. &nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Full-featured Help generator](<https://www.helpndoc.com/feature-tour>)_

@@ -34,7 +34,7 @@ By default Hackolade displays all the various ways an API can be defined in Open
 
 &nbsp;
 
-## Data Types ##
+## Data Types
 
 The OpenAPI specification describes primitives (or scalar) data types which can have an optional property modifier, *format*, plus a file primitive type.&nbsp; Complex types such as arrays and sub-objects, plus combinations thereof, are also allowed.
 
@@ -44,7 +44,7 @@ The OpenAPI specification describes primitives (or scalar) data types which can 
 
 &nbsp;
 
-## API metadata ##
+## API metadata
 
 The info object, as well as the host, basePath, schemes, consumes, produces, the securityDefinitions object, the security object, the tags object, and externalDocs object are fixed fields treated as metadata and maintained at model-level in Hackolade.
 
@@ -54,7 +54,7 @@ The info object, as well as the host, basePath, schemes, consumes, produces, the
 
 &nbsp;
 
-## Components ##
+## Components
 
 [Component objects](<https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#components-object> "target=\"\_blank\"") hold a set of reusable objects that can be used across multiple endpoints in the same API: schema, parameter, request body, response, example, header, security scheme, link, or callback. All objects defined within the components object will have no effect on the API unless they are explicitly referenced from properties outside the components object by using a $ref reference in any path item.
 
@@ -74,7 +74,7 @@ Data types can be objects, but also primitives and arrays. This object is based 
 
 Consult [this page](<Reusableobjectsdefinitions.md>) or more information on how to use definitions.&nbsp; For OpenAPI, you should limit yourself to Hackolade model definitions.
 
-## Resource ##
+## Resource
 
 The resource path object is a container representing the relative path to an individual endpoint.&nbsp; The field name must start with a slash ("/").&nbsp; The path is appended to the basePath in order to construct the full URL.&nbsp; Path templating (usage of curly braces ("{}") to mark a section of a URL path as replaceable using path parameters) is allowed.
 
@@ -104,7 +104,7 @@ or the toolbar:
 
 &nbsp;
 
-## Requests ##
+## Requests
 
 A request is an object with a type, associated data, relationships to other resources, and a set of methods that operate on it.&nbsp; Only a few standard methods are defined for the resource (corresponding to the standard HTTP GET, POST, PUT and DELETE methods.)
 
@@ -140,7 +140,7 @@ It is easy to maintain the metadata for a request in the properties pane:
 
 &nbsp;
 
-## Responses ##
+## Responses
 
 [Response objects](<https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#responses-object> "target=\"\_blank\"") describe responses from API operations.&nbsp; For each request, you may create one or more responses.
 
@@ -176,7 +176,7 @@ It is easy to maintain the metadata for a response in the properties pane:
 
 &nbsp;
 
-## Forward-Engineering ##
+## Forward-Engineering
 
 The files describing the RESTful API in accordance with the [OpenAPI specification](<https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md> "target=\"\_blank\"") OAS are represented as JSON objects and conform to the JSON standards.&nbsp; Hackolade generates OpenAPI documentation in JSON format or YAML format.&nbsp; The schema exposes two types of fields. Fixed fields, which have a declared name, and patterned fields, which declare a regex pattern for the field name. Patterned fields can have multiple occurrences as long as each has a unique name.&nbsp; The OpenAPI representation of the API is made of a single file. However, parts of the definitions can be split into separate files, at the discretion of the user. This is applicable for $ref fields in the specification as follows from the [JSON Schema ](<http://json-schema.org/> "target=\"\_blank\"")definitions.
 
@@ -190,7 +190,7 @@ An internal OpenAPI syntax validator ensures that the generated file is valid, a
 
 &nbsp;
 
-## Reverse-Engineering ##
+## Reverse-Engineering
 
 This function lets you take a OpenAPI file in JSON or YAML format and generate a Hackolade model.&nbsp; Then, you may enrich the model with comments, generate standard Hackolade documentation, and make the API evolve to generate a new OpenAPI file through forward-engineering.
 
@@ -198,7 +198,7 @@ This function lets you take a OpenAPI file in JSON or YAML format and generate a
 
 &nbsp;
 
-## External references ##
+## External references
 
 It is possible to reference a variety of definitions created elsewhere:
 
@@ -216,6 +216,3 @@ It is possible to reference a variety of definitions created elsewhere:
 
 \- a SwaggerHub domain url
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [News and information about help authoring tools and software](<https://www.helpauthoringsoftware.com>)_

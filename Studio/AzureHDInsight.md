@@ -8,7 +8,7 @@ The Microsoft Azure cloud-based service provides support for Hive in the HDInsig
 
 &nbsp;
 
-## &#49;) Using Plain SASL authentication type ##
+## &#49;) Using Plain SASL authentication type
 
 &nbsp;
 
@@ -34,7 +34,7 @@ Finally, set SSL type to HTTPs:
 
 ![Image](<lib/Hive%20-%20HDInsight%20SSL.png>)
 
-## &#50;) Using LDAP ##
+## &#50;) Using LDAP
 
 &nbsp;
 
@@ -52,6 +52,3 @@ Then select the transport mode corresponding to your HDInsight setup: "binary" o
 
 &nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Create cross-platform Qt Help files](<https://www.helpndoc.com/feature-tour/create-help-files-for-the-qt-help-framework>)_

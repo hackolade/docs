@@ -1,6 +1,6 @@
 # Authentication Failed Error Message
 
-## Suggestions for troubleshooting the "authentication failed" error message ##
+## Suggestions for troubleshooting the "authentication failed" error message
 
 &nbsp;
 
@@ -26,6 +26,3 @@ For further troubleshooting:
 
 &nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easily create PDF Help documents](<https://www.helpndoc.com/feature-tour>)_

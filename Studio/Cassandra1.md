@@ -6,6 +6,3 @@ As you develop the model for your Cassandra keyspaces, tables, columns with thei
 
 ![Image](<lib/Cassandra%20forward-engineering.png>)
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Write eBooks for the Kindle](<https://www.helpndoc.com/feature-tour/create-ebooks-for-amazon-kindle>)_

@@ -1,6 +1,6 @@
 # Versioning
 
-In the advanced feature "Compare and Merge Models", the application offers a side-by-side comparison of 2 models, with the ability to resolve and merge differences. This feature can be used in several use cases described below.
+In the advanced [Compare and Merge Models](<Compareandmergemodels.md>) feature, the application offers a side-by-side comparison of 2 models, with the ability to resolve and merge differences. This feature can be used in several use cases described below.
 
 &nbsp;
 
@@ -8,7 +8,7 @@ Some users may have thought that Hackolade did not include a built-in versioning
 
 &nbsp;
 
-## &#49;) Model lifecycle ##
+## &#49;) Model lifecycle
 
 It is often the case, in particular in an Agile environment, that models diverge in multiple parallel paths before they have to converge.&nbsp; The old approach of check-out/check-in of a data model, to lock it from being modified by others while we're making changes, is not flexible enough for today's non-linear application schema evolution or for the fast pace of agile sprints.
 
@@ -42,11 +42,11 @@ With our feature Compare and Merge Models, we want to facilitate merging 2 data 
 
 &nbsp;
 
-Learn how how to handle resolution in the page [Compare and Merge Models](<Advancedcompareandmergemodels.md>).
+Learn how how to handle resolution in the page [Compare and Merge Models](<Compareandmergemodels.md>).
 
 &nbsp;
 
-## &#50;) Validating schemas in production ##
+## &#50;) Validating schemas in production
 
 Another typical use case in enterprises is to make sure that the Data Governance department has an accurate view of the schemas used in production databases.&nbsp; This is particularly relevant in the context of schemaless NoSQL when there is no DDL in source code control.&nbsp; The process of auditing a production database may become a nightly process (automated with our [Command-Line Interface](<CommandLineInterface.md>)) to reveal structures being used without prior validation.
 
@@ -74,13 +74,13 @@ Followed by the the merging of the resulting v1.2 with 2.0 beta into v2.0 releas
 
 &nbsp;
 
-Learn how how to handle the successive merge operations and the resolution of merge conflicts in the page [Compare and Merge Models](<Advancedcompareandmergemodels.md>).
+Learn how how to handle the successive merge operations and the resolution of merge conflicts in the page [Compare and Merge Models](<Compareandmergemodels.md>).
 
 &nbsp;
 
 &nbsp;
 
-## &#51;) Model-driven API generation ##
+## &#51;) Model-driven API generation
 
 When you use the Hackolade feature to [generate Swagger/OpenAPI documentation](<APIModel.md>) based on an underlying data model, you may have to adjust many details of the API model, including metadata or requests/responses that were not initially foreseen in the template used to generate the API model. &nbsp; So, when entities and attributes in the underlying data model evolve and you want to generate a new version of the API model, you want to be able to easily merge the changes in both tracks.
 
@@ -100,10 +100,7 @@ The original API model 1.0 was generated automatically from the combination of t
 
 &nbsp;
 
-Learn how how to handle the merge operation and the resolution of merge conflicts in the page [Compare and Merge Models](<Advancedcompareandmergemodels.md>).
+Learn how how to handle the merge operation and the resolution of merge conflicts in the page [Compare and Merge Models](<Compareandmergemodels.md>).
 
 &nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [News and information about help authoring tools and software](<https://www.helpauthoringsoftware.com>)_

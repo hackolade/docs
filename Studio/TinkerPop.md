@@ -36,7 +36,7 @@ The data model in the picture below results from the reverse-engineering of the 
 
 &nbsp;
 
-## Vertex labels ##
+## Vertex labels
 
 Vertex labels are a semantic representation of vertices (nodes) in the graph.&nbsp; Vertex labels are used to represent the role of the vertex in the domain, making it possible to query the graph, to define constraints, and add indexes for properties.&nbsp; Labels can also be used to mark temporary states of a vertex.&nbsp;
 
@@ -46,7 +46,7 @@ Vertex labels are a semantic representation of vertices (nodes) in the graph.&nb
 
 &nbsp;
 
-## Property keys ##
+## Property keys
 
 A vertex label usually has attributes, called "property keys" where the name (or key) is a string.
 
@@ -54,7 +54,7 @@ A vertex label usually has attributes, called "property keys" where the name (or
 
 &nbsp;
 
-## Property types ##
+## Property types
 
 Gremlin is data types-agnostic.&nbsp; It supports several formats for ingestion of data, in particular, GraphML, GraphSON, and GRYO.&nbsp;
 
@@ -78,7 +78,7 @@ Properties on properties (**meta-properties**): a vertex property can have prope
 
 &nbsp;
 
-## Edge labels ##
+## Edge labels
 
 Edge labels are a semantic representation of edges in the graph. Every edge must have one and only label, and 2 vertices can be linked by several edge labels.&nbsp; Edge labels are used during complex traversals across the graph, when only certain kinds of paths from vertex to vertex are necessary for a specific query.
 
@@ -98,7 +98,7 @@ As TinkerPop is a type of graph database known as 'property graph', edge labels 
 
 &nbsp;
 
-## Indexes ##
+## Indexes
 
 TinkerPop is also agnostic when it comes to inex management.&nbsp; It is however possible to create an [index](<http://tinkerpop.apache.org/docs/current/reference/#index-step> "target=\"\_blank\"") on a single property key for any given label.&nbsp; A so-called composite index can also be created on more than one property key for a given label.
 
@@ -106,7 +106,7 @@ TinkerPop is also agnostic when it comes to inex management.&nbsp; It is however
 
 &nbsp;
 
-## Forward-Engineering ##
+## Forward-Engineering
 
 TinkerPop does not provide an abstraction for schemas. Gremlin is a functional, data-flow language that enables users to succinctly express complex traversals on (or queries of) their application's property graph.&nbsp; In order to provide added-value in forward-engineering, Hackolade provides a graph example in Gremlin syntax for the data model. &nbsp;
 
@@ -116,7 +116,7 @@ TinkerPop does not provide an abstraction for schemas. Gremlin is a functional, 
 
 &nbsp;
 
-## Reverse-Engineering ##
+## Reverse-Engineering
 
 The process to reverse-engineer uses Gremlin functions to query the database, infer the [schema](<https://neo4j.com/docs/developer-manual/current/cypher/schema/> "target=\"\_blank\"") and represent the vertex labels and edge labels with their respective properties and indexes.
 
@@ -124,6 +124,3 @@ The process to reverse-engineer uses Gremlin functions to query the database, in
 
 For more details, you may consult the TinkerPop [website](<http://tinkerpop.apache.org/docs/current/reference/#\_tinkerpop\_documentation> "target=\"\_blank\"") and the [Gremlin console](<http://tinkerpop.apache.org/docs/current/tutorials/the-gremlin-console> "target=\"\_blank\"").
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easily create iPhone documentation](<https://www.helpndoc.com/feature-tour/iphone-website-generation>)_

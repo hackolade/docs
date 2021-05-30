@@ -20,7 +20,7 @@ Hackolade was specially adapted to support the [schema design of Parquet](<https
 
 &nbsp;
 
-## Parquet Schema ##
+## Parquet Schema
 
 The root of the schema is a group of fields called a message. &nbsp; Each field has three attributes: a repetition, a type and a name. The type of a field is either a group or a primitive type (e.g., int, float, boolean, string) and the repetition can be one of the three following cases:
 
@@ -30,7 +30,7 @@ The root of the schema is a group of fields called a message. &nbsp; Each field 
 
 &nbsp;
 
-## Data Types ##
+## Data Types
 
 The types supported by the file format are intended to be as minimal as possible, with a focus on how the types affect disk storage.&nbsp; This reduces the complexity of implementing readers and writers for the format.&nbsp; These types are intended to be used in combination with the encodings to control the on-disk storage format.
 
@@ -74,7 +74,7 @@ Logical types are used to extend the types that parquet can be used to store, by
 
 &nbsp;
 
-## Forward-Engineering ##
+## Forward-Engineering
 
 Hackolade dynamically generates Parquet schema for the structure created with the application.
 
@@ -86,10 +86,7 @@ Hackolade dynamically generates Parquet schema for the structure created with th
 
 &nbsp;
 
-## Reverse-Engineering ##
+## Reverse-Engineering
 
 Hackolade easily imports the schema from .parquet files to represent the corresponding Entity Relationship Diagram and schema structure.&nbsp; You may also import and convert from JSON Schema and documents.
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free EPub producer](<https://www.helpndoc.com/create-epub-ebooks>)_

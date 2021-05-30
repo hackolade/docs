@@ -24,6 +24,3 @@ and copy the Username and Password to the Authentication tab:
 
 ![Image](<lib/Neo4j%20-%20Connections%20setting%20authentication.png>)
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easily create PDF Help documents](<https://www.helpndoc.com/feature-tour>)_

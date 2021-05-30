@@ -30,13 +30,13 @@ The data model in the picture below results from the data modeling of the [Adven
 
 &nbsp;
 
-## Schemas ##
+## Schemas
 
 Schemas are a good way to group tables, used in a similar fashion, together. If you're migrating multiple databases from an on-prem solution to SQL pool, it works best to migrate all of the fact, dimension, and integration tables to one schema in SQL pool.&nbsp;
 
 &nbsp;
 
-## Tables ##
+## Tables
 
 All data in Synapse is stored in database tables, logically structured as collections of columns and rows, optionally with single-column or multi-column constraints.&nbsp; As users may name tables without the qualifier "fact" or "dim" in the table name, they may manually define a role for the table: Fact, Dimension, Outrigger (used to normalize data in dimension tables for snowflake schemas), or Staging.&nbsp; This table role does not get forward-engineered to the DDL Script. &nbsp;
 
@@ -52,13 +52,13 @@ A fundamental feature of SQL pool is the way it can store and operate on tables 
 
 &nbsp;
 
-## Constraints ##
+## Constraints
 
 PRIMARY KEY is only supported when NONCLUSTERED and NOT ENFORCED are both used. UNIQUE constraint is only supported with NOT ENFORCED is used. Check [SQL pool Table Constraints](<https://docs.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-table-constraints>).&nbsp; FOREIGN KEY constraint is not supported in Synapse SQL pool.
 
 &nbsp;
 
-## Unsupported table features ##
+## Unsupported table features
 
 SQL pool supports many, but not all, of the table features offered by other databases. The following list shows some of the table features that aren't supported in SQL pool: [Computed Columns, ](<https://docs.microsoft.com/en-us/sql/t-sql/statements/alter-table-computed-column-definition-transact-sql?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json\&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json\&view=azure-sqldw-latest> "target=\"\_blank\"")[Indexed Views, ](<https://docs.microsoft.com/en-us/sql/relational-databases/views/create-indexed-views?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json\&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json\&view=azure-sqldw-latest> "target=\"\_blank\"")[Sequence, ](<https://docs.microsoft.com/en-us/sql/t-sql/statements/create-sequence-transact-sql?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json\&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json\&view=azure-sqldw-latest> "target=\"\_blank\"")[Sparse Columns, ](<https://docs.microsoft.com/en-us/sql/relational-databases/tables/use-sparse-columns?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json\&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json\&view=azure-sqldw-latest> "target=\"\_blank\"")Surrogate Keys - Implement with [Identity, ](<https://docs.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-identity> "target=\"\_blank\"")[Synonyms, ](<https://docs.microsoft.com/en-us/sql/t-sql/statements/create-synonym-transact-sql?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json\&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json\&view=azure-sqldw-latest> "target=\"\_blank\"")[Triggers, ](<https://docs.microsoft.com/en-us/sql/t-sql/statements/create-trigger-transact-sql?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json\&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json\&view=azure-sqldw-latest> "target=\"\_blank\"")[Unique Indexes, ](<https://docs.microsoft.com/en-us/sql/t-sql/statements/create-index-transact-sql?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json\&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json\&view=azure-sqldw-latest> "target=\"\_blank\"")[User-Defined Types.](<https://docs.microsoft.com/en-us/sql/relational-databases/native-client/features/using-user-defined-types?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json\&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json\&view=azure-sqldw-latest> "target=\"\_blank\"")&nbsp; More info is available [here](<https://docs.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-overview#unsupported-table-features> "target=\"\_blank\"").
 
@@ -72,7 +72,7 @@ There are six main constraints that are commonly used in SQL Server: NOT NULL, U
 
 &nbsp;
 
-## Data types ##
+## Data types
 
 In Synapse, each column, local variable, expression, and parameter has a related [data type](<https://docs.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-data-types> "target=\"\_blank\""). A data type is an attribute that specifies the type of data that the object can hold: integer data, character data, monetary data, date and time data, binary strings, and so on.
 
@@ -84,7 +84,7 @@ Additionally, in (N)VARCHAR(MAX) and (N)VARCHAR(4000) columns, Hackolade support
 
 Unsupported data types are 'geography','geometry','hierarchyid','image','text','ntext','sql\_variant','xml' and useful alternatives are suggested [here](<https://docs.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-data-types#unsupported-data-types> "target=\"\_blank\"").
 
-## Views ##
+## Views
 
 Synapse supports standard and materialized views. Both are virtual tables created with SELECT expressions and presented to queries as logical tables. Views encapsulate the complexity of common data computation and add an abstraction layer to computation changes so there's no need to rewrite queries.
 
@@ -98,7 +98,7 @@ A materialized view pre-computes, stores, and maintains its data in SQL pool jus
 
 &nbsp;
 
-## Forward-Engineering ##
+## Forward-Engineering
 
 Hackolade dynamically generates the DDL script to create schemas, tables, columns and their data types, indexes and constraints for the structure created with the application.
 
@@ -112,7 +112,7 @@ If you store JSON within (N)VARCHAR(MAX) or (N)VARCHAR(4000) columns, Hackolade 
 
 &nbsp;
 
-## Reverse-Engineering ##
+## Reverse-Engineering
 
 Details on how to connect Hackolade to a Synapse instance can be found on [this page](<ConnecttoSynapse.md>).
 
@@ -130,6 +130,3 @@ During reverse-engineering, a "best guess" attempt is made to determine the tabl
 
 &nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Full-featured EPub generator](<https://www.helpndoc.com/create-epub-ebooks>)_

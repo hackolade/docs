@@ -20,6 +20,3 @@ You may export these scripts to a Cypher file with the menu option Tools \> Forw
 
 See more details [here](<https://neo4j.com/developer/kb/export-sub-graph-to-cypher-and-import/> "target=\"\_blank\"") on how to apply the exported Cypher script.
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free Web Help generator](<https://www.helpndoc.com>)_

@@ -1,6 +1,6 @@
 # API Model
 
-# Model-driven API generation #
+# Model-driven API generation
 
 Previously, Hackolade allowed the import of different formats (JSON documents, JSON Schema, DDLs, XSDs) into an OpenAPI or Swagger model as schema components (or Swagger definitions.) &nbsp; While already useful, this feature highlighted the possibility to further automate and facilitate the creation of APIs based on existing data models: using an ERD (entity-relationship diagram) to automatically generate the API for CRUD operations of the entities of that data model.&nbsp; For any target for which Hackolade support data modeling: JSON Schema, MongoDB, Cassandra, Avro, Parquet, Hive, Neo4j, Cosmos DB, Couchbase, DynamoDB, Elasticsearch, Snowflake, SQL Server, Azure SQL, Synapse, etc...
 
@@ -18,7 +18,7 @@ For this feature to work, it is required to have the OpenAPI (or Swagger if appl
 
 &nbsp;
 
-## &#49;. Process ##
+## &#49;. Process
 
 The process is as follows:
 
@@ -36,13 +36,13 @@ The process is as follows:
 
 &nbsp;
 
-## &#50;. Data model ##
+## &#50;. Data model
 
 Any Hackolade data model can serve as a basis for this process.&nbsp; Each entity (collection, table, node label, view, relationship type, etc...) of the model will serve as a basis for the creation of a schema component/definition in the API model, so CRUD operations could be generated for each entity.
 
 &nbsp;
 
-## &#51;. Template&nbsp; ##
+## &#51;. Template&nbsp;
 
 An API template is typically a Hackolade model itself, but it can also be an OpenAPI or Swagger documentation file in either JSON or YAML&nbsp; The template is user-defined and used by the process to control the creation of the API for the source model.
 
@@ -74,7 +74,7 @@ Feel free to adjust the template to the behavior that best suits your operation,
 
 &nbsp;
 
-## &#52;. API generation ##
+## &#52;. API generation
 
 The application will perform the following operations while creating the destination API model:
 
@@ -86,7 +86,7 @@ The application will perform the following operations while creating the destina
 
 &nbsp;
 
-## &#53;. Options ##
+## &#53;. Options
 
 The function is accessible through Tools \> Forward-Engineering \> API Model...
 
@@ -126,6 +126,3 @@ At the end of the process, you will be asked if you wish to open the resulting A
 
 ![Image](<lib/API%20model%20generation%20success%20dialog.png>)
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easy EBook and documentation generator](<https://www.helpndoc.com>)_

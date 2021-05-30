@@ -1,6 +1,6 @@
 # Download additional target plugins
 
-## Download and enable plugin ##
+## Download and enable plugin
 
 To enable the custom properties capability, you first need to download a plugin for each database target for which you wish to add properties.&nbsp; To do so, go to Help \>&nbsp; Plugin Manager
 
@@ -28,7 +28,7 @@ This will result in the plugin appearing in the Installed tab of the plugin mana
 
 &nbsp;
 
-## Are you experiencing issues with plugin download? ##
+## Are you experiencing issues with plugin download?
 
 Do you have your network proxy set correctly?&nbsp; See more details [here](<Networkproxy.md>).
 
@@ -46,7 +46,7 @@ Then to install, go to Help \> Plugin Manager and click the button Install from 
 
 &nbsp;
 
-## Plugin Manager options for an installed plugin ##
+## Plugin Manager options for an installed plugin
 
 In the Installed tab of the Plugin Manager, you may see multiple buttons:
 
@@ -62,6 +62,3 @@ In the Installed tab of the Plugin Manager, you may see multiple buttons:
 
 &nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Produce online help for Qt applications](<https://www.helpndoc.com/feature-tour/create-help-files-for-the-qt-help-framework>)_

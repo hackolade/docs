@@ -34,6 +34,3 @@ For RDBMS targets, an additional option appears, that allows automatic normaliza
 &nbsp;
 
 ![Image](<lib/JSON%20Schema%20RE%20dialog%20-%20normalization.png>)
-
-***
-_Created with the Personal Edition of HelpNDoc: [Create HTML Help, DOC, PDF and print manuals from 1 single source](<https://www.helpndoc.com/help-authoring-tool>)_

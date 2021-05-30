@@ -16,7 +16,7 @@ A collection defined in JSON Schema for the purpose of document modeling may con
 
 All the details of how to introduce an attribute in the hierarchical schema view can be found in the page about the manipulation of [Attribute boxes in Tree diagram](<Attributeboxesinhierarchicalsche.md>).
 
-### &#49;. Root ###
+### &#49;. Root
 
 There is only one root possible per document.&nbsp; For the purpose of a NoSQL document schema, the root attribute can only be of type: document. &nbsp;
 
@@ -26,7 +26,7 @@ One or more attributes (child field, pattern field, or choice) can be created, a
 
 &nbsp;
 
-### &#50;. Field ###
+### &#50;. Field
 
 This is the most common attribute in a schema.&nbsp; It defines the name-value pair that will be found in the JSON document.&nbsp; The properties define the details and constraints of both the name and the value in the pair.&nbsp; As defined by the JSON Schema specification, the available types for a field value are: string, numeric, boolean, object (document), array, and null.&nbsp; For the purpose of MongoDB, additional BSON types are available: objectID, binary, date, timestamp, regex, JavaScript, JavaScript with scope, symbol, minKey, and maxKey. &nbsp;
 
@@ -40,7 +40,7 @@ The nature of attributes is different for document, array, or others.&nbsp; Docu
 
 &nbsp;
 
-### &#51;. Pattern field ###
+### &#51;. Pattern field
 
 Pattern fields (or [pattern properties](<http://json-schema.org/latest/json-schema-validation.html#rfc.section.6.5.5> "target=\"\_blank\"")) function in exactly the same way as standard fields, with only one exception: the name (in the name-value pair) is not a fixed string, but a regex pattern.&nbsp; This can be particularly useful in MongoDB in combination with ‘dot notation’.&nbsp; It is also the basis for storage in Firebase and Firestore.
 
@@ -64,7 +64,7 @@ In Hackolade, the above example is modeled this way:
 
 &nbsp;
 
-### &#52;. Choice ###
+### &#52;. Choice
 
 In JSON Schema, there are 4 possible choices: “allOf”, “anyOf”, “oneOf”, and “noneOf”.&nbsp; Each of these attributes contains an array, with each attribute of the array representing content that will be matched against.&nbsp; The choice of “allOf”, “anyOf”, “oneOf”, or “not” determines how the validation processor will treat the results of the matches:&nbsp;
 
@@ -77,28 +77,56 @@ Schema definitions can use “allOf”, “anyOf”, “oneOf”, and “noneOf�
 
 &nbsp;
 
-### &#53;.&nbsp; Array item ###
+![Image](<lib/JSON%20Schema%20choices.png>)
+
+&nbsp;
+
+## &#53;. if-then-else conditional subschemas
+
+With version 5 of Hackolade, support was introduced for the [conditional application of subschemas](<https://json-schema.org/understanding-json-schema/reference/conditionals.html> "target=\"\_blank\"").&nbsp; The if, then and else keywords allow the application of a subschema based on the outcome of another schema.
+
+&nbsp;
+
+A misapplication of this feature introduced with JSON Schema [draft-07](<https://json-schema.org/specification-links.html#draft-7> "target=\"\_blank\""), is for multiple data types.&nbsp; Multiple data types have been supported by earlier drafts of JSON Schema, whether for scalar/primitive data types, or when combining with complex data types through the use of choices.&nbsp; It is also desirable to do so for backward-compatibility.
+
+&nbsp;
+
+A better application of this feature is when having to allow the application of a subschema depending on the outcome of another schema:
+
+* &nbsp;If ***if*** is valid, then ***then*** must also be valid (and ***else*** is ignored)&nbsp;
+* &nbsp;If ***if*** is invalid, then ***else*** must also be valid (and ***then*** is ignored)
+* &nbsp;If ***then*** or ***else*** is not defined, if behaves as if they have a value of true
+* &nbsp;If ***then*** and/or ***else*** appear in a schema without ***if***, then ***then*** and ***else*** are ignored
+
+&nbsp;
+
+&nbsp;
+
+![Image](<lib/JSON%20Schema%20conditional.png>)
+
+&nbsp;
+
+&nbsp;
+
+### &#54;.&nbsp; Array item
 
 This is the only possible attribute type of an Array field.&nbsp; Different types of array items are possible for a same parent attribute.&nbsp; Each can have from 0 to n occurences, but can be limited by the minItems and maxItems properties of the Array.
 
 &nbsp;
 
-### &#54;. Subschema ###
+### &#55;. Subschema
 
 This is the only possible attribute type of a Choice field.&nbsp; The subschema is a document with all the schema possibilities of a JSON object. &nbsp;
 
 &nbsp;
 
-### &#55;. Reference ###
+### &#56;. Reference
 
 Definitions, maintained at 3 distinct levels (collection, model, and external) can be re-used as an attribute.&nbsp; More details [here](<Reusableobjectsdefinitions.md>).
 
 &nbsp;
 
-### &#56;. Pick from list ###
+### &#57;. Pick from list
 
 Any field previously created in the same collection can be repeated without having to be typed again.&nbsp; Note that they are not linked to each other, so a change in one will not be synched.
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Benefits of a Help Authoring Tool](<https://www.helpauthoringsoftware.com>)_

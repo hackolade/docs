@@ -21,6 +21,3 @@ As a reminder, Hackolade installation does not require admin rights as it does n
 
 Don't hesitate to contact [support@hackolade.com](<mailto:support@hackolade.com>) if you have other questions.
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [News and information about help authoring tools and software](<https://www.helpauthoringsoftware.com>)_

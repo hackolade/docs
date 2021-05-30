@@ -23,7 +23,7 @@ While a real-life model creation process will not be as linear as the flow below
 
 &nbsp;
 
-### &#49;. Create a new model ###
+### &#49;. Create a new model
 
 There are 4 ways to create a new model:
 
@@ -39,7 +39,7 @@ There are 4 ways to create a new model:
 
 &nbsp;
 
-### &#50;. Fill in model properties ###
+### &#50;. Fill in model properties
 
 You start by filling the name for your new model, and the rest of the relevant information in the details tab of properties pane.
 
@@ -59,7 +59,7 @@ To add a new user, press the ![Image](<lib/Properties%20pane%20controls%20-%20ad
 
 &nbsp;
 
-### &#51;. Create a collection ###
+### &#51;. Create a collection
 
 There are 4 ways to create a new collection:
 
@@ -77,7 +77,7 @@ For more details, you may consult the [Collection boxes in ER diagram](<Entitybo
 
 &nbsp;
 
-### &#52;. Fill in collection properties ###
+### &#52;. Fill in collection properties
 
 You start by filling the name for your new collection, and the rest of the relevant information in the details tab of properties pane:
 
@@ -87,7 +87,7 @@ The fields Capped (and related Size and Max) plus the Validation level and actio
 
 &nbsp;
 
-### &#53;. Create a collection attribute ###
+### &#53;. Create a collection attribute
 
 Before you add an attribute, you need to decide where it needs to be added.&nbsp; For the first one, it's simple: it needs to be an attribute of the tree root.
 
@@ -97,7 +97,7 @@ Make sure to review the page [Attribute boxes in hierarchical schema view](<Attr
 
 ![Image](<lib/Create%20collection%20attributes.png>)
 
-### &#54;. Fill in attribute properties ###
+### &#54;. Fill in attribute properties
 
 For example:
 
@@ -105,15 +105,15 @@ For example:
 
 ![Image](<lib/Properties%20pane%20-%20field%20details1.png>)
 
-### &#55;. Iterate steps 5 and 6 to create all attributes in collection ###
+### &#55;. Iterate steps 5 and 6 to create all attributes in collection
 
 &nbsp;
 
-### &#56;. Iterate steps 3 through 6 to create all collections in the database ###
+### &#56;. Iterate steps 3 through 6 to create all collections in the database
 
 &nbsp;
 
-### &#57;. Create relationships between collection fields ###
+### &#57;. Create relationships between collection fields
 
 &nbsp;
 
@@ -121,8 +121,5 @@ For example:
 
 For more details, you may consult the [Relationship links in ER diagram](<RelationshiplinksinERdiagram.md>) page.
 
-### &#49;0. Save the model ###
+### &#49;0. Save the model
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free Web Help generator](<https://www.helpndoc.com>)_

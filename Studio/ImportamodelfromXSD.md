@@ -48,13 +48,13 @@ XSDs can be imported:
 
 &nbsp;
 
-## XML Schema Definition conversion in Hackolade ##
+## XML Schema Definition conversion in Hackolade
 
 &nbsp;
 
 An XSD defines the structure of an XML document. It specifies the elements and attributes that can appear in an XML document and the type of data these elements and attributes can contain.
 
-### XSD Elements ###
+### XSD Elements
 
 Element structures can be of *simpleType* or *complexType*, depending on whether the element is a leaf element or a parent element.
 
@@ -76,7 +76,7 @@ Elements can be *local* or *global*. An element declared as the direct child of 
 
 &nbsp;
 
-### XSD Attributes ###
+### XSD Attributes
 
 XSD attributes are always of type *simpleType*.
 
@@ -92,7 +92,7 @@ An attribute group defines an association between a name and a set of attribute 
 
 &nbsp;
 
-### XSD Type Definitions ###
+### XSD Type Definitions
 
 XSD Type definitions are used to create new *simpleType* data type or *complexType* data type. A type definition that is used as a base for creating new definitions is known as the base type definition. A *simpleType* or *complexType* type can be either named or anonymous. A named simpleType or complexType is always defined globally. You can define a named simpleType or complexType and refer it in schema document as type of an element. An anonymous simpleType or complexType type does not have a name. So, an anonymous simpleType or complexType type cannot be referenced.
 
@@ -168,6 +168,3 @@ Below is the data type conversion from XSD to JSON Schema.&nbsp; Some additional
 
 &nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easily create iPhone documentation](<https://www.helpndoc.com/feature-tour/iphone-website-generation>)_

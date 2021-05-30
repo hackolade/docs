@@ -10,6 +10,3 @@ The Connection Settings dialog lets define the parameters in different tabs, as 
 
 &nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free Web Help generator](<https://www.helpndoc.com>)_

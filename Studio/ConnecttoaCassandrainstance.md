@@ -24,7 +24,7 @@ In the Advanced tab you may change the default request timeout and specify it in
 
 &nbsp;
 
-## Troubleshooting ##
+## Troubleshooting
 
 &nbsp;
 
@@ -76,6 +76,3 @@ To publish port they should use parameter **-p**
 
 &nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Create help files for the Qt Help Framework](<https://www.helpndoc.com/feature-tour/create-help-files-for-the-qt-help-framework>)_

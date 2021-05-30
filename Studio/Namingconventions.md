@@ -16,7 +16,7 @@ Starting with version 4.1.2, we have replaced global parameters with separate ta
 
 &nbsp;
 
-## &#49;. Conversion file ##
+## &#49;. Conversion file
 
 A conversion file is not mandatory to use the Naming Conventions feature. &nbsp; A conversion file is a .csv file listing words that may appear in object names (business name), with a corresponding technical name to use instead in database definition scripts.
 
@@ -38,7 +38,7 @@ feedback,fdbak,
 
 &nbsp;
 
-## &#50;. Conversion parameters ##
+## &#50;. Conversion parameters
 
 To modify the behavior of the name sync feature, user options can be set in Tools \> Options \> Naming Conventions:
 
@@ -103,7 +103,7 @@ Upon exit of the dialog (via OK or Apply) after making a change in parameters, t
 
 &nbsp;
 
-## &#51;. Properties Pane ##
+## &#51;. Properties Pane
 
 In the properties pane, the relationship between business name and technical name can have 3 states: OFF (default), convert Business name to Technical name, or convert technical name to business name.&nbsp; This state can be set separately for each individual object.&nbsp; To set Naming Conventions to control the business names and technical names of all objects, select Tools \> Options \> Naming Conventions, then choose either Business-to-Technical or Technical-to-Business from the dropdown "Enable name coupling".
 
@@ -139,7 +139,7 @@ If the Business name = sign icon is pressed this time, the Technical name is con
 
 &nbsp;
 
-## &#52;. Behavior during Reverse-Engineering ##
+## &#52;. Behavior during Reverse-Engineering
 
 During Reverse-Engineering, if coupling parameters is set to 'No', then all object names from the source (whether from a DB instance, XSD, DDL, Excel, JSON, etc...) are stored in the Business Name property.
 
@@ -161,7 +161,7 @@ The only safe method we can ensure is one by which the Technical Name come from 
 
 &nbsp;
 
-## &#53;. Clearing all Technical Names ##
+## &#53;. Clearing all Technical Names
 
 You may wish to disable any coupling between Business and Technical Names and maintain both manually.&nbsp; You may also decide that you want to empty all Technical Name properties.&nbsp; You may do so by setting coupling to No.&nbsp; When you get the following dialog:
 
@@ -171,9 +171,9 @@ you may choose to check the box "Clear all Technical Names".&nbsp; Be careful of
 
 &nbsp;
 
-## &#54;. Advanced considerations ##
+## &#54;. Advanced considerations
 
-### &#54;.1 Conversion file ###
+### &#54;.1 Conversion file
 
 Entries in the conversion file can be in any order, and are case insensitive.&nbsp; You may declare individual words as well as expressions where words in an expression may have a different abbreviation than their individual abbreviation, or than in another expression.&nbsp; Example:
 
@@ -187,7 +187,7 @@ Entries in the conversion file can be in any order, and are case insensitive.&nb
 
 &nbsp;
 
-### &#54;.2 Conversion rules hierarchy ###
+### &#54;.2 Conversion rules hierarchy
 
 There's a hierarchy in our transformations:
 
@@ -229,7 +229,7 @@ However, it may sometimes be preferable to take the blank (" ") out of the list 
 
 &nbsp;
 
-### &#54;.3 Choices when applying configuration changes&nbsp; ###
+### &#54;.3 Choices when applying configuration changes&nbsp;
 
 To better understand the impacts of choices in this dialog:
 
@@ -261,6 +261,3 @@ Finally, you may also use this button to turn OFF coupling and clear all technic
 
 &nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Create help files for the Qt Help Framework](<https://www.helpndoc.com/feature-tour/create-help-files-for-the-qt-help-framework>)_

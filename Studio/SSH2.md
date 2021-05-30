@@ -78,6 +78,3 @@ Or, if the SSH Auth Method is password:
 
 &nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free help authoring tool](<https://www.helpndoc.com/help-authoring-tool>)_

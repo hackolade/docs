@@ -4,7 +4,7 @@ For each object in Hackolade, we've defined a set of standard properties that ap
 
 &nbsp;
 
-## &#49;) Download and enable plugin ##
+## &#49;) Download and enable plugin
 
 To enable the custom properties capability, you first need to download a plugin for each database target for which you wish to add properties.&nbsp; To do so, go to Help \> Plugin Manager
 
@@ -24,7 +24,7 @@ This will result in the plugin appearing in the Installed tab of the plugin mana
 
 &nbsp;
 
-## &#50;) Access plugin configuration files ##
+## &#50;) Access plugin configuration files
 
 You are now ready to add custom properties via editing of configuration files.&nbsp; The plugin configurations files can be found by going to Help \> Show plugin directory:
 
@@ -48,7 +48,7 @@ iii) it is always necessary to restart the application after having saved change
 
 iv) for field-level definitions, since field types have different property lists, it may be necessary to define custom properties for multiple field types.
 
-## &#51;) Levels ##
+## &#51;) Levels
 
 As a reminder, terminology differs between NoSQL database:
 
@@ -64,7 +64,7 @@ You need to edit the corresponding \<object\>LevelConfig.json file to add custom
 
 &nbsp;
 
-## &#52;) Lower tabs ##
+## &#52;) Lower tabs
 
 For each level, the Hackolade properties pane may have one or more lower tab:
 
@@ -90,7 +90,7 @@ If the level allows multiple tabs, you need to choose to which lower tab you wan
 
 &nbsp;
 
-## &#53;) Property types ##
+## &#53;) Property types
 
 The following controls are possible for user-defined properties:
 
@@ -111,7 +111,7 @@ More information [here](<https://github.com/hackolade/plugins#26-property-contro
 
 &nbsp;
 
-## &#54;) Property definition ##
+## &#54;) Property definition
 
 Examples are provided in the comments section of each config file.&nbsp; Here's an overview of the schema:
 
@@ -139,7 +139,7 @@ Here's another view, consolidated:
 
 &nbsp;
 
-## &#55;) Share customization with team members ##
+## &#55;) Share customization with team members
 
 After making, saving, and testing your changes, you should share them with everyone on your team to insure consistency. This is a 3-step process:
 
@@ -155,6 +155,3 @@ After making, saving, and testing your changes, you should share them with every
 
 For the changes to take effect on each computer, it is required to exit Hackolade and restart it.
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easy CHM and documentation editor](<https://www.helpndoc.com>)_

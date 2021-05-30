@@ -1,6 +1,6 @@
-# Compare versions of a model
+# Show model diff
 
-**Note:** for users with the Professional edition of Hackolade, a much more powerful comparison is available via the [Command Line Interface](<CommandLineInterface.md>).
+**Note:** for users with the Professional edition of Hackolade, a much more powerful comparison is available with the [Compare and merge models](<Compareandmergemodels.md>) feature, or via the [Command Line Interface](<CommandLineInterface.md>).
 
 &nbsp;
 
@@ -28,14 +28,5 @@ If you prefer an in-line view of the differences, you can toggle using the butto
 
 &nbsp;
 
-Hackolade does not currently allow you to merge the changes.&nbsp; They would have to be manually created with the application standard functionalities.
-
 &nbsp;
 
-&nbsp;
-
-&nbsp;
-
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easy to use tool to create HTML Help files and Help web sites](<https://www.helpndoc.com/help-authoring-tool>)_

@@ -14,10 +14,7 @@ If required, enter your username and password
 
 &nbsp;
 
-![Image](<lib/NewItem.png>)
+![Image](<lib/MariaDB%20connection%20settings%20auth.png>)
 
 &nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free help authoring environment](<https://www.helpndoc.com/help-authoring-tool>)_

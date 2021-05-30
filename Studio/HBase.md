@@ -20,13 +20,13 @@ The data model in the picture below results from the modeling of an example from
 
 ![Image](<lib/HBase%20workspace.png>)
 
-## Namespace ##
+## Namespace
 
 A namespace is a logical grouping of tables analogous to a database in relation database systems. This abstraction lays the groundwork for upcoming multi-tenancy related features.&nbsp; A namespace can be created, removed or altered.&nbsp; Namespace membership is determined during table creation.
 
 &nbsp;
 
-## Table ##
+## Table
 
 Tables in HBase can serve as the input and output for [MapReduce](<https://en.wikipedia.org/wiki/Mapreduce> "target=\"\_blank\"") jobs run in Hadoop.&nbsp; Tables can also be used to store JSON.&nbsp; Tables are declared up front at schema definition time.
 
@@ -36,13 +36,13 @@ Tables in HBase can serve as the input and output for [MapReduce](<https://en.w
 
 &nbsp;
 
-## Row Keys ##
+## Row Keys
 
 Row keys are uninterpreted bytes. Rows are lexicographically sorted with the lowest order appearing first in a table. The empty byte array is used to denote both the start and end of a tables' namespace.
 
 &nbsp;
 
-## Attributes data types ##
+## Attributes data types
 
 HBase supports a "bytes-in/bytes-out" interface, so anything that can be converted to an array of bytes can be stored as a value. Input could be strings, numbers, complex objects, or even images as long as they can rendered as bytes.
 
@@ -52,9 +52,9 @@ Hackolade was specially adapted to support the data types and attributes behavio
 
 ![Image](<lib/HBase%20-%20treeview.png>)
 
-## &nbsp; ##
+## &nbsp;
 
-## Forward-Engineering ##
+## Forward-Engineering
 
 Hackolade generates the create statement for the namespace, table, and column family.
 
@@ -64,7 +64,7 @@ Hackolade generates the create statement for the namespace, table, and column fa
 
 &nbsp;
 
-## Reverse-Engineering ##
+## Reverse-Engineering
 
 You may define the connection parameters to your instance.&nbsp; Take a look at [this page](<ConnecttoanHBaseinstance.md>) for more information.
 
@@ -76,6 +76,3 @@ The Hackolade reverse-engineering process of an HBase table includes a query for
 
 For more information on Apache HBase in general, please consult the [website](<http://hbase.apache.org/> "target=\"\_blank\"") and [book](<http://hbase.apache.org/book.html> "target=\"\_blank\"").
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easy EPub and documentation editor](<https://www.helpndoc.com>)_

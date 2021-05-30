@@ -32,6 +32,3 @@ Each edition is available natively on the following platforms:
 
 * **Smartphone Virtual Reality viewer:**&nbsp; this is an experimental application, available for free from Google Play or the Apple App store.&nbsp; It works either with CardboardVR-compatible glasses or with the Samsung Gear VR glasses.&nbsp; You need to provide your own compatible smartphone.&nbsp; Hackolade VR viewer does not allow creation or maintenance of database models.&nbsp; It only provides a VR viewing experience of models previously created with a Hackolade desktop edition.&nbsp; The model to be viewed needs has to be stored on a web server accessible by the smartphone.
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easily create EPub books](<https://www.helpndoc.com/feature-tour>)_

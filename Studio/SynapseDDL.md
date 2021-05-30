@@ -9,6 +9,3 @@ As you develop the model for your Synapse instance schemas, tables, columns with
 &nbsp;
 
 If you store JSON within (N)VARCHAR(MAX) or (N)VARCHAR(4000) columns, Hackolade allows for the schema design of those documents.&nbsp; However, the corresponding JSON structure is **not** forward-engineered in the DDL script, but is useful for developers, analysts and designers.
-
-***
-_Created with the Personal Edition of HelpNDoc: [Full-featured Help generator](<https://www.helpndoc.com/feature-tour>)_

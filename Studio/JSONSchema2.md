@@ -1,6 +1,14 @@
 # JSON Schema
 
-Hackolade is a visual editor for JSON Schema for non-programmers.&nbsp; It is ideal to perform the upfront schema design of any type of JSON document&nbsp;
+Hackolade is a visual editor for JSON Schema for non-programmers.&nbsp; It is ideal to perform the upfront schema design of any type of JSON document &nbsp; Since v5 of Hackolade, the latest JSON Schema specifications are supported:
+
+\- [draft-04](<https://json-schema.org/specification-links.html#draft-4> "target=\"\_blank\"")
+
+\- [draft-06](<https://json-schema.org/specification-links.html#draft-6> "target=\"\_blank\"")
+
+\- [draft-07](<https://json-schema.org/specification-links.html#draft-7> "target=\"\_blank\"")
+
+\- [2019-09](<https://json-schema.org/specification-links.html#2019-09-formerly-known-as-draft-8> "target=\"\_blank\"")
 
 &nbsp;
 
@@ -25,10 +33,15 @@ Hackolade was specially adapted to support the data modeling of JSON files.
 
 &nbsp;
 
+With version 5 of Hackolade, support was introduced for the [conditional application of subschemas](<https://json-schema.org/understanding-json-schema/reference/conditionals.html> "target=\"\_blank\"").&nbsp; The if, then and else keywords allow the application of a subschema based on the outcome of another schema:
+
 &nbsp;
 
-For more information on JSON Schema draft v4, please consult the [website](<http://json-schema.org/> "target=\"\_blank\""). &nbsp;
+![Image](<lib/JSON%20Schema%20conditional.png>)
 
+&nbsp;
 
-***
-_Created with the Personal Edition of HelpNDoc: [Easily create EBooks](<https://www.helpndoc.com/feature-tour>)_
+&nbsp;
+
+You will find more information about JSON Schema on the [website](<http://json-schema.org/> "target=\"\_blank\""). &nbsp;
+

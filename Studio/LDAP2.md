@@ -1,6 +1,6 @@
 # LDAP
 
-## Authentication ##
+## Authentication
 
 &nbsp;
 
@@ -33,7 +33,7 @@ Our module for decrypting JKS uses the following logic to find java home:
 
 &nbsp;
 
-## &#49;) Accessing the keystore&nbsp; ##
+## &#49;) Accessing the keystore&nbsp;
 
 Specify the path and filename to keystore, the access password, and the alias name for the Cassandra instance.
 
@@ -55,7 +55,7 @@ The alias can be found in the section “Alias name”.&nbsp; If no alias was se
 
 &nbsp;
 
-## &#50;) Accessing the truststore ##
+## &#50;) Accessing the truststore
 
 If necessary, you may also declare truststore parameters:
 
@@ -69,7 +69,7 @@ You may consult [this page](<https://docs.datastax.com/en/security/6.7/security/
 
 &nbsp;
 
-## &#51;) Accessing both the keystore and the truststore ##
+## &#51;) Accessing both the keystore and the truststore
 
 Enter the parameters according to both 1) and 2) above.
 
@@ -152,6 +152,3 @@ myapp-dev - alias used by keystore and determined in step 3 above
 
 ![Image](<lib/Cassandra%20Connection%20Settings%20-%20LDAP%20Certific.png>)
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free Kindle producer](<https://www.helpndoc.com/feature-tour/create-ebooks-for-amazon-kindle>)_

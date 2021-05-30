@@ -36,7 +36,7 @@ From the blog referenced above, here are some “rules of thumb” to guide you 
 
 &nbsp;
 
-## &#49;. Reverse-engineer a Data Definition Language file (DDL) ##
+## &#49;. Reverse-engineer a Data Definition Language file (DDL)
 
 Data Definition Language (DDL) is a vocabulary used to define data structures in SQL databases. These statements are used to create, alter, or drop data structures in an SQL database instance.
 
@@ -78,7 +78,7 @@ When you click OK, Hackolade will read the DDL file and generate the schema mode
 
 &nbsp;
 
-## &#50;. Suggest denormalization ##
+## &#50;. Suggest denormalization
 
 You should save the resulting model as a base, for example v0.&nbsp; Then it is suggested you save it again as v1 and work with the denormalization function to make v1 evolve towards a denormalized model.
 
@@ -118,6 +118,3 @@ As a susequent step, the modeler may want to denormalize products information in
 
 But denormalization, depending on how you want to access data to optimize performance, may also include 2-way referencing, or 2-way embedding.
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Single source CHM, PDF, DOC and HTML Help creation](<https://www.helpndoc.com/help-authoring-tool>)_

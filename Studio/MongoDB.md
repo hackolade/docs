@@ -14,7 +14,7 @@ The data model in the picture below results from the reverse-engineering of the 
 
 &nbsp;
 
-## ObjectID ##
+## ObjectID
 
 In MongoDB, each document stored in a collection requires a unique \_id field that acts as a primary key. If an inserted document omits the \_id field, the MongoDB driver automatically generates an ObjectId for the \_id field.&nbsp; ObjectIds are small, likely unique, fast to generate, and ordered. ObjectId values consists of 12-bytes, where the first four bytes are a timestamp that reflect the ObjectId’s creation, specifically:
 
@@ -25,7 +25,7 @@ In MongoDB, each document stored in a collection requires a unique \_id field th
 
 &nbsp;
 
-## Data types ##
+## Data types
 
 MongoDB represents JSON documents in binary-encoded format called BSON behind the scenes. BSON extends the JSON model to provide [additional data types](<https://docs.mongodb.com/manual/reference/bson-types/> "target=\"\_blank\""), ordered fields, and to be efficient for encoding and decoding within different languages.&nbsp; The MongoDB BSON implementation is lightweight, fast and highly traversable. Like JSON, MongoDB's BSON implementation supports embedding objects and arrays within other objects and arrays – MongoDB can even 'reach inside' BSON objects to build indexes and match objects against query expressions on both top-level and nested BSON keys.
 
@@ -39,7 +39,7 @@ Hackolade was specially built to support the data types and attributes behavior 
 
 ![Image](<lib/MongoDB%20DTD.png>)
 
-## Indexes ##
+## Indexes
 
 MongoDB provides a number of different index types to support specific types of data and queries.
 
@@ -62,7 +62,7 @@ MongoDB can have the following properties:
 
 &nbsp;
 
-## Views ##
+## Views
 
 Read-only views in MongoDB were introduced with version 3.4.&nbsp; DBAs can define non-materialized views that expose only a subset of data from an underlying collection, i.e. a view that filters out entire documents or specific fields, such as Personally Identifiable Information (PII) from sales data or health records. As a result, risks of data exposure are dramatically reduced. DBAs can define a view of a collection that's generated from an aggregation over another collection(s) or view.
 
@@ -72,7 +72,7 @@ MongoDB views are handled through a pipeline projection of the fields of a colle
 
 &nbsp;
 
-## Sharding ##
+## Sharding
 
 Sharding is a method for distributing data across multiple machines.&nbsp; MongoDB uses sharding to support deployments with very large data sets and high throughput operations.&nbsp; Database systems with large data sets or high throughput applications can challenge the capacity of a single server.&nbsp; There are two methods for addressing system growth: vertical scaling (bigger, more powerful server) and horizontal scaling (more servers with divided datasets).&nbsp; MongoDB supports horizontal scaling through sharding.
 
@@ -92,7 +92,7 @@ MongoDB supports 3 sharding strategies for distributing data across sharded clus
 * [ranged sharding](<https://docs.mongodb.com/v3.4/core/ranged-sharding/> "target=\"\_blank\""): it involves dividing data into ranges based on the shard key values.&nbsp; Each chunk is then assigned a range based on the shard key values.
 * [zone sharding](<https://docs.mongodb.com/manual/tutorial/manage-shard-zone/> "target=\"\_blank\"") (previously known as tag-aware): in sharded clusters, you can create zones that represent a group of shards and associate one or more ranges of shard key values to that zone.&nbsp; MongoDB routes reads and writes that fall into a zone range only to those shards inside of the zone.&nbsp;
 
-## Forward-Engineering ##
+## Forward-Engineering
 
 For those developing Node.js applications on top of a MongoDB database, you may want to leverage the object document mapper (ODM) [Mongoose](<http://mongoosejs.com/> "target=\"\_blank\"") that allows you build what your object model would look like, then auto-generate all the boilerplate logic that goes with it.&nbsp; Hackolade dynamically generates the Mongoose script based on model attributes and constraints.
 
@@ -114,7 +114,7 @@ A button lets the user apply to a selected instance the script to create databas
 
 &nbsp;
 
-## Reverse-Engineering ##
+## Reverse-Engineering
 
 The connection is established using a connection string including (IP) address and port (typically 27017), and authentication using username/password if applicable. X.409 SSL encryption can be specified, and SSH tunneling to a Cloud instance is supported as well. Hackolade also supports MongoDB Enterprise security features, with LDAP and Kerberos authentication.
 
@@ -130,6 +130,3 @@ User may define the sampling with a specific aggregation pipeline query and sort
 
 For more information on MongoDB in general, please consult the [website](<http://www.mongodb.com/> "target=\"\_blank\"").
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easily create Qt Help files](<https://www.helpndoc.com/feature-tour>)_

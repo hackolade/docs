@@ -26,7 +26,7 @@ select \* from \<table\> limit 1
 
 &nbsp;
 
-## &#49;) Host name and port number ##
+## &#49;) Host name and port number
 
 In the connection tab, first give a friendly name to the connection settings.&nbsp; This name is only used in Hackolade to help manage multiple connections.
 
@@ -82,7 +82,7 @@ If in http transport mode, the port number must correspond to the port number in
 
 &nbsp;
 
-## &#50;) Authentication type ##
+## &#50;) Authentication type
 
 You may choose between the following protocols:
 
@@ -98,7 +98,7 @@ You may choose between the following protocols:
 
 &nbsp;
 
-## &#51;) Transport mode ##
+## &#51;) Transport mode
 
 In the options tab, choose the [transport mode](<https://cwiki.apache.org/confluence/display/Hive/Configuration%20Properties#ConfigurationProperties-hive.server2.transport.mode> "target=\"\_blank\""), either binary (default) or http. &nbsp;
 
@@ -134,7 +134,7 @@ Http transport mode is available for all transport types (Plain SASL, NoSASL, LD
 
 ![Image](<lib/Hive%20connection%20options%20http.png>)
 
-## &#52;) SSL ##
+## &#52;) SSL
 
 Hackolade is able to connect to Hive via SSL connection with all of the authentication types: “None (PlainSASL)”, "NoSASL", “LDAP” and “Kerberos”. Hive uses the following configuration in the *hive-site.xml* file:
 
@@ -164,7 +164,7 @@ Hackolade is able to connect to Hive via SSL connection with all of the authenti
 
 &nbsp;
 
-## &#52;a) Using HTTPs ##
+## &#52;a) Using HTTPs
 
 If the certificate is not installed locally, you must get a copy of the certificate(s) and reference them in the Certificate Authority field:&nbsp;
 
@@ -192,7 +192,7 @@ Alternatively, you may concatenate the certificates into a single file, and the 
 
 &nbsp;
 
-### *&#52;b)* Accessing the keystore directly ###
+### *&#52;b)* Accessing the keystore directly
 
 Specify the path and filename to keystore, the access password, and the alias name for the Hive instance.
 
@@ -200,7 +200,7 @@ Specify the path and filename to keystore, the access password, and the alias na
 
 &nbsp;
 
-### &#52;c) Convert the keystore into [PEM keys](<mailto:https://en.wikipedia.org/wiki/Privacy-Enhanced\_Mail>).&nbsp; ###
+### &#52;c) Convert the keystore into [PEM keys](<mailto:https://en.wikipedia.org/wiki/Privacy-Enhanced\_Mail>).&nbsp;
 
 &nbsp;
 
@@ -265,6 +265,3 @@ myapp-dev - alias used by keystore and determined in step 3 above
 
 More information can be found [here](<https://cwiki.apache.org/confluence/display/Hive/Setting%20Up%20HiveServer2#SettingUpHiveServer2-SSLEncryption> "target=\"\_blank\"").
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [iPhone web sites made easy](<https://www.helpndoc.com/feature-tour/iphone-website-generation>)_

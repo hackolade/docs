@@ -9,6 +9,3 @@ Click [here](<Localinstance1.md>) for details on how to connect to a local insta
 &nbsp;
 
 Click [here](<Azureinstance2.md>) for details on how to connect to an Azure instance.
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free EPub producer](<https://www.helpndoc.com/create-epub-ebooks>)_

@@ -12,7 +12,7 @@ The data model in the picture below results from the reverse-engineering of the 
 
 ![Image](<lib/Couchbase%20workspace.png>)
 
-## Buckets ##
+## Buckets
 
 There is a fundamental difference with many other NoSQL document databases: Couchbase strongly suggests to store documents of different kinds into the same "bucket".&nbsp; A bucket is equivalent to a database. Objects of different characteristics or attributes are stored in the same bucket. It may seem counter-intuitive when moving from a RDBMS or MongoDB, but records from multiple tables should be stored in a single bucket, with a “type” attribute to differentiate the various objects stored in the bucket. &nbsp;
 
@@ -40,7 +40,7 @@ There are 2 types of buckets, each with its properties: [Couchbase buckets and M
 
 &nbsp;
 
-## Document kind ##
+## Document kind
 
 When mixing different kinds of objects into the same bucket, it becomes necessary to specify a "type" attribute to differentiate the various objects stored in the bucket.&nbsp; In Hackolade, each Document Kind is modeled as a separate entity or box, so its attributes can be defined separately.&nbsp; A specific attribute name must be identified to differentiate the different document kinds.&nbsp; The unique key and the document kind field are common to all document kinds in the bucket, and displayed at the top of each box in the ERD document:
 
@@ -48,7 +48,7 @@ When mixing different kinds of objects into the same bucket, it becomes necessar
 
 &nbsp;
 
-## Keys ##
+## Keys
 
 Another modeling characteristic distinguishes Couchbase from some other NoSQL document databases: the unique key of each document is stored 'outside' the JSON document itself.&nbsp; Couchbase was originally a key-value store.&nbsp; With version 2.0, Couchbase bridged the gap to being a multi-model database supporting JSON documents.&nbsp; In essence, the key part remains, and the value part can also be a JSON document.&nbsp; The fundamental difference is that a pure key-value database doesn't understand what's stored in the value, while a document database understands the format in which documents are stored and can therefore provide richer functionality for developers, such as access to documents through queries.
 
@@ -63,7 +63,7 @@ Users are free to choose any ID for their document, so long as they conform to t
 
 &nbsp;
 
-## Attributes data types ##
+## Attributes data types
 
 Couchbase attributes support standard JSON [data types,](<https://docs.couchbase.com/server/current/n1ql/n1ql-language-reference/datatypes.html> "target=\"\_blank\"") including lists and sets (arrays), and maps (objects).&nbsp; The Hackolade menu items, contextual menus, toolbar icon tooltips, and documentation are adapted to Couchbase's terminology and feature set.&nbsp; The following words are [reserved](<https://docs.couchbase.com/server/current/analytics/appendix\_1\_keywords.html> "target=\"\_blank\""). &nbsp;
 
@@ -77,7 +77,7 @@ Hackolade was specially adapted to support the data types and attributes behavio
 
 &nbsp;
 
-## Indexes ##
+## Indexes
 
 An index is a data-structure that provides quick and efficient means to query and access data, that would otherwise require scanning a lot more documents.&nbsp; Couchbase Server provides different types of indexes, as documented [here](<https://docs.couchbase.com/server/current/learn/services-and-indexes/indexes/indexes.html> "target=\"\_blank\""). .
 
@@ -90,7 +90,7 @@ Hackolade supports the creation, documentation, forward- and reverse-engineering
 
 &nbsp;
 
-## Views (TBA) ##
+## Views (TBA)
 
 Views and indexes support querying data in Couchbase Server.&nbsp; Querying of Couchbase data is accomplished via the following:
 
@@ -104,7 +104,7 @@ There are a number of differences between views and GSIs. At a high level, GSIs 
 
 More information on views can be found [here](<https://docs.couchbase.com/server/current/learn/views/views-intro.html> "target=\"\_blank\"").
 
-## Reverse-Engineering ##
+## Reverse-Engineering
 
 The connection is established using a connection string including (IP) address and port (typically 8091), and authentication using username/password if applicable.
 
@@ -118,7 +118,7 @@ For more information on Couchbase in general, please consult the [website](<http
 
 &nbsp;
 
-## Forward-Engineering ##
+## Forward-Engineering
 
 For those developing Node.js applications on top of a Couchbase database, you may want to leverage the object document mapper (ODM) [Ottoman](<https://github.com/couchbaselabs/node-ottoman> "target=\"\_blank\"") that allows you build what your object model would look like, then auto-generate all the boilerplate logic that goes with it.&nbsp; Hackolade dynamically generates the Ottoman script based on model attributes and constraints.&nbsp; More information on Ottoman [here](<https://blog.couchbase.com/easily-develop-node-js-and-couchbase-apps-with-ottoman/> "target=\"\_blank\"") and [here](<https://blog.couchbase.com/firstapp-couchbase-nodejs-ottoman/> "target=\"\_blank\"").
 
@@ -778,6 +778,3 @@ function get\_top\_level\_schema() {
 
 }
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free help authoring tool](<https://www.helpndoc.com/help-authoring-tool>)_

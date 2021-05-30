@@ -1,0 +1,66 @@
+# v5.x
+
+New features in v5.0.3 \[04-Jun-2021\]
+
+\- Avro: added ability to forward- and reverse-engineer with Azure Schema Registry for EventHub
+
+\- Properties Pane: added automatic scroll to focus on relationship selected in Object Browser
+
+&nbsp;
+
+New features in v5.0.2 \[28-May-2021\]
+
+\- Compare and merge models: adjusted sizing of dialog with high-resolution screens
+
+\- Added option "Start a New Application Instance" from the File menu
+
+\- Reverse-engineering of DDLs and XSDs: no longer overwriting the model name after first file
+
+\- Couchbase: adjust reverse-engineering of indexes with special characters in passwords
+
+\- Couchbase: fine-tuned sampling query for Enterprise Edition instances with large buckets
+
+\- Delta Lake: adjusted document sampling
+
+\- Delta Lake: added forward-engineering of CREATE BLOOMFILTER INDEX statement to instance&nbsp;
+
+\- Glue Data Catalog: added possibility to reverse-engineer from .hql files
+
+\- MariaDB: added reverse-engineering of unique and primary options from DDL file
+
+&nbsp;
+
+New features in v5.0.1 \[21-May-2021\]
+
+\- Delta Lake on Databricks: added support with a new plugin (compatible with Azure Databricks, Databricks on AWS, and on Google Cloud), with full support for forward-engineering of HiveQL scripts, and reverse-engineering including inference of JSON in longtext
+
+\- ERD and schema hierarchical view: added toolbar button to toggle between technical and business names; added documentation control and CLI genDoc command argument&nbsp;
+
+\- ERD zoom in: function now takes center of display instead of top left of canvas as reference for zoom operation, whether from toolbar button or ctrl+mouse wheel
+
+\- Forward-Engineering of sample document, schema or script: added Toots \> Options \> FE parameter to skip folder when container level is undefined
+
+\- Reverse-Engineering object picker dialog: added horizontal scrollbar for long file structures and names in cloud storage
+
+\- Reverse-Engineering object picker dialog: added support for periods in file names
+
+\- DDL reverse-engineering: added support for comment constraints on foreign key relationships (PostgreSQL and Redshift only, as not supported in other dialects)
+
+\- Model Compare and Merge: added auto-selecting/deselecting child objects when their parent has added/deleted difference type
+
+\- Cosmos DB (SQL API, and Gremlin API): added support for serverless instances
+
+\- Redshift: added optional sessionToken connection
+
+&nbsp;
+
+New features in v5.0.0 \[15-May-2021\]
+
+\- Full support for features of JSON Schema specifications draft-06, draft-07 and 2019-09, in addition of draft-04 upon which Hackolade was originally built
+
+\- JSON: added reverse-engineering from cloud storage: Amazon S3, Azure Blob Storage, Google Cloud Storage
+
+\- JSON: added support for forward- and reverse-engineering with Confluent Schema Schema Registry
+
+\- Compare and Merge Models: added 2 distinct views: the compare view with 2 side-by-side panes, and the merge view which displays 3 panes including a merged model pane in between the left- and right-hand models
+

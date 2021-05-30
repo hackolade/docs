@@ -12,6 +12,3 @@ then choose the file on you file system.&nbsp; Hackolade reads interchangeably J
 
 &nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easily create PDF Help documents](<https://www.helpndoc.com/feature-tour>)_

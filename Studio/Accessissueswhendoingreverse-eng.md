@@ -1,6 +1,6 @@
 # Access issues when doing reverse-engineering of Couchbase
 
-# Access issues when doing reverse-engineering of Couchbase #
+# Access issues when doing reverse-engineering of Couchbase
 
 With Couchbase 3.x and 4.x fairly basic security, the Administrator can set a password at the bucket level, but anyone with that password gets full rights on the bucket. With Couchbase 5.x a new role-based access control is introduced.  Hackolade supports security of all these versions, but special attention is required for proper configuration:
 
@@ -15,6 +15,3 @@ With Couchbase 3.x and 4.x fairly basic security, the Administrator can set a pa
 
 &nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Create help files for the Qt Help Framework](<https://www.helpndoc.com/feature-tour/create-help-files-for-the-qt-help-framework>)_

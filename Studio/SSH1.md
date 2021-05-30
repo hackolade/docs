@@ -78,6 +78,3 @@ Or, if the SSH Auth Method is password:
 
 ![Image](<lib/RE%20-%20MongoDB%20-%20SSH%20w%20Password.png>)
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [What is a Help Authoring tool?](<https://www.helpauthoringsoftware.com>)_

@@ -16,6 +16,3 @@ A handy tooltip pops-up to remind you of the function of the button, if the icon
 
 It is possible to toggle the appearance of the toolbar from the workspace by choosing the menu View \> Toolbar..
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free HTML Help documentation generator](<https://www.helpndoc.com>)_

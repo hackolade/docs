@@ -10,6 +10,3 @@ As you develop the model for OpenAPI with metadata, requests, responses, compone
 
 An internal OpenAPI syntax validator ensures that the generated file is valid, and the right-hand pane allows interactions with the API and testing.&nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free Web Help generator](<https://www.helpndoc.com>)_

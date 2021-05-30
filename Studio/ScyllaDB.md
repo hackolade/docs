@@ -22,13 +22,13 @@ The data model in the picture below results from the reverse-engineering of a sa
 
 ![Image](<lib/ScyllaDB%20workspace.png>)
 
-## Keyspace ##
+## Keyspace
 
 A keyspace is a ScyllaDB namespace that defines data replication on nodes.&nbsp; A cluster contains one keyspace per node.&nbsp; A keyspace is logical grouping of tables analogous to a database in relation database systems.&nbsp;
 
 &nbsp;
 
-## Table ##
+## Table
 
 Tables in ScyllaDB contain rows of columns, and a primary key identifies the location and order of stored data.&nbsp; Tables can also be used to store JSON.&nbsp; Tables are declared up front at schema definition time.
 
@@ -40,13 +40,13 @@ Tables in ScyllaDB contain rows of columns, and a primary key identifies the loc
 
 &nbsp;
 
-## Primary, Partition, and Clustering Keys ##
+## Primary, Partition, and Clustering Keys
 
 In ScyllaDB, primary keys can be simple or compound, with one or more partition keys, and optionally one or more clustering keys.&nbsp; The partition key determines which node stores the data.&nbsp; It is responsible for data distribution across the nodes.&nbsp; The additional columns determine per-partition clustering.&nbsp; Clustering is a storage engine process that sorts data within the partition.
 
 &nbsp;
 
-## Attributes data types ##
+## Attributes data types
 
 ScyllaDB supports a variety of scalar and complex data types, including lists, maps, and sets.
 
@@ -66,7 +66,7 @@ Hackolade also supports ScyllaDB User-Defined Types (UDTs) via its [re-usable ob
 
 &nbsp;
 
-## Materialized Views ##
+## Materialized Views
 
 ScyllaDB supports materialized views to handle automated server-side denormalization.&nbsp; In theory, this removes the need for client-side handling and would ensure consistency between base and view data.&nbsp; Materialized views work particularly well with immutable insert-only data, but should not be used in case of low-cardinality data.&nbsp; Materialized views are designed to alleviate the pain for developers, but are essentially a trade-off of performance for connectedness.&nbsp; See more info in this [article](<http://www.doanduyhai.com/blog/?p=1930> "target=\"\_blank\"").
 
@@ -76,7 +76,7 @@ Hackolade supports ScyllaDB materialized views, via a SELECT of columns of the u
 
 &nbsp;
 
-## Forward-Engineering ##
+## Forward-Engineering
 
 Hackolade dynamically generates the CQL script to create keyspaces, tables, columns and their data types, and indexes for the structure created with the application.
 
@@ -88,7 +88,7 @@ As many people store JSON within text or blob columns, Hackolade allows for the 
 
 &nbsp;
 
-## Reverse-Engineering ##
+## Reverse-Engineering
 
 The connection is established using a connection string including (IP) address and port (typically 9042), and authentication using username/password if applicable.&nbsp;
 
@@ -100,6 +100,3 @@ The Hackolade process for reverse-engineering of ScyllaDB databases includes the
 
 For more information on ScyllaDB in general, please consult the [website](<https://www.scylladb.com/> "target=\"\_blank\"").
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easy EPub and documentation editor](<https://www.helpndoc.com>)_

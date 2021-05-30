@@ -10,6 +10,3 @@ Click [here](<Localinstance2.md>) for details on how to connect to a local insta
 
 Click [here](<Azureinstance1.md>) for details on how to connect to an Azure instance.
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easily create CHM Help documents](<https://www.helpndoc.com/feature-tour>)_

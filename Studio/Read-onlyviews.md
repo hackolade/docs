@@ -20,7 +20,7 @@ They are visually distinguished by the dotted-line box plus the icon in the top 
 
 &nbsp;
 
-## Define a simple view ##
+## Define a simple view
 
 To build your new view, you add fields by picking existing ones from the collection.&nbsp; Right click on the the root box in the hierarchical schema view to get the contextual menu, then select 'Pick from field list':
 
@@ -98,7 +98,7 @@ db.createView( "rov\_bussiness",
 
 &nbsp;
 
-## Create joins across multiple collections ##
+## Create joins across multiple collections
 
 In MongoDB, it is possible to link related data from multiple collections into one single view, by using the pipeline aggregation $lookup function.&nbsp; You can find more information [here](<https://docs.mongodb.com/manual/reference/operator/aggregation/lookup/#pipe.\_S\_lookup> "target=\"\_blank\"").&nbsp; This is possible therefore in Hackolade as well.&nbsp; To do so, the contextual menu let's you add an attribute to the root via right-click:
 
@@ -220,6 +220,3 @@ When you click 'Apply', the application will fetch all the fields of the foreign
 
 &nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free EBook and documentation generator](<https://www.helpndoc.com>)_

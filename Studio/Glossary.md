@@ -16,10 +16,7 @@
 | Properties | Detailed information about an entity: Database, Collections, Fields and Objects, and Relationships. &nbsp; |
 | Relationship | This information is not explicitly declared in a NoSQL document database or application API.&nbsp; The capability is however provided here to enrich the documentation and general comprehension of the model.&nbsp; It describes the logical links between Fields of different Collections and their cardinality |
 | Sample | Data example that are used to illustrate how a Field can be used. |
-| Schema | The structure of Collections, as defined in JSON Schema draft v4 and extensions.&nbsp; It is an output of the application, to be used along with a validator to insure compliance of documents being submitted to storage in MongoDB Collections. |
+| Schema | The structure of Collections, as defined in JSON Schema and extensions.&nbsp; It is an output of the application, to be used along with a validator to insure compliance of documents being submitted to storage in MongoDB Collections. |
 | Scripts | Another output of the application.&nbsp; Starting with the upcoming version 3.2 of MongoDB, it is allowed to create validation rules associated with each Collection. |
 
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free help authoring environment](<https://www.helpndoc.com/help-authoring-tool>)_

@@ -14,7 +14,7 @@ Parquet files can also be reverse-engineered from AWS S3, Azure Blob Storage, an
 
 &nbsp;
 
-## &#49;) AWS S3 ##
+## &#49;) AWS S3
 
 Give a meaningful name to the connection to identify it for later, and provide proper URI to your S3 bucket, and optional folder path.
 
@@ -38,7 +38,7 @@ If you wish to handle AWS authentication through the [credentials file](<https:/
 
 &nbsp;
 
-## &#50;) Azure Blob Storage ##
+## &#50;) Azure Blob Storage
 
 Give a meaningful name to the connection to identify it for later, and provide proper Container name and Storage account name.
 
@@ -62,7 +62,7 @@ If you wish to filter files, you may enter a file name prefix:
 
 &nbsp;
 
-## &#51;) Google Cloud Storage ##
+## &#51;) Google Cloud Storage
 
 Give a meaningful name to the connection to identify it for later, and provide proper URI to your GCS bucket, and optional folder path.
 
@@ -78,6 +78,3 @@ If the&nbsp; bucket is private, you must also access to the Private key:
 
 &nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Create cross-platform Qt Help files](<https://www.helpndoc.com/feature-tour/create-help-files-for-the-qt-help-framework>)_

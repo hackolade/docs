@@ -6,6 +6,3 @@ At this time, Hackolade does not export DynamoDB scripts to file, as it would no
 
 ![Image](<lib/Forward-Engineering%20-%20DynamoDB%20scripts.png>)
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Produce electronic books easily](<https://www.helpndoc.com/create-epub-ebooks>)_

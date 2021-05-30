@@ -1,6 +1,6 @@
 # None (Plain SASL)
 
-## Plain SASL Authentication ##
+## Plain SASL Authentication
 
 If the property “hive.server2.authentication” in the Hive configuration is set as “none”, it means that Hive uses Plain SASL authentication method.
 
@@ -18,6 +18,3 @@ If the property “hive.server2.authentication” in the Hive configuration is s
 
 ![Image](<lib/Hive%20-%20Connection%20settings%20-%20Plain%20SASL.png>)
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Full-featured Kindle eBooks generator](<https://www.helpndoc.com/feature-tour/create-ebooks-for-amazon-kindle>)_

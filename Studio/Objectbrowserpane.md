@@ -78,6 +78,3 @@ In the Replace tab:
 
 Find in files lets you search Hackolade models on the file system.&nbsp; The searched model files must be of the same target as the one of the open model.&nbsp; With a right-click, the contextual menu allows to open the searched model in a separate instance of the application.
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easy EBook and documentation generator](<https://www.helpndoc.com>)_

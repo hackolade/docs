@@ -70,6 +70,3 @@ Isn't it ironic that a technology that bears the label of 'schemaless' is also k
 
 The following pages analyze the characteristics of each NoSQL database vendor, from the perspective of a data modeler.&nbsp; These pages do not cover the technical architecture as it pertains to infrastructure and performance, which would go well beyond the scope of the Hackolade application.
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Full-featured Kindle eBooks generator](<https://www.helpndoc.com/feature-tour/create-ebooks-for-amazon-kindle>)_

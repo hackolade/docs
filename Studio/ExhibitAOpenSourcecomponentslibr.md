@@ -138,6 +138,3 @@ All Product Versions
 | [Icons8](<https://icons8.com> "target=\"\_blank\"") | (c) 2016 VisualPharm LLC | [CC](<https://icons8.com/license/> "target=\"\_blank\"") |
 
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free EPub and documentation generator](<https://www.helpndoc.com>)_

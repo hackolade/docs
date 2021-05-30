@@ -22,6 +22,3 @@ As you export Mongoose schema, you have several choices:
 
 More information can be found [here](<https://github.com/Automattic/mongoose#schema-gotcha> "target=\"\_blank\"").
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easy CHM and documentation editor](<https://www.helpndoc.com>)_

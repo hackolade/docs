@@ -22,7 +22,7 @@ The data model in the picture below results from the modeling of an application 
 
 &nbsp;
 
-## Tables ##
+## Tables
 
 The table in Hive is logically made up of the data being stored. And the associated metadata describes the layout of the data in the table. In Hadoop data typically resides in HDFS, although it may reside in any Hadoop filesystem, including the local filesystem or S3. But Hive stores the metadata in a relational database and not in HDFS.
 
@@ -34,13 +34,13 @@ The table in Hive is logically made up of the data being stored. And the associa
 
 &nbsp;
 
-## Partition keys, buckets ##
+## Partition keys, buckets
 
 Hive organizes tables into partitions for grouping same type of data together based on a column or partition key. Each table in the Hive can have one or more partition keys to identify a particular partition. Using partition we can also make it faster to do queries on slices of the data.&nbsp; Tables or partitions are subdivided into buckets based on the hash function of a column in the table to give extra structure to the data that may be used for more efficient queries.
 
 &nbsp;
 
-## Data types ##
+## Data types
 
 Hive supports different data types to be used in table columns. The data types supported by Hive can be broadly classified in Primitive and Complex data types.
 
@@ -54,7 +54,7 @@ Hackolade was specially adapted to support the data types and attributes behavio
 
 &nbsp;
 
-## Views and Materialized Views ##
+## Views and Materialized Views
 
 A Hive view is a searchable object in a database, which can be defined by a query.&nbsp; Data cannot be stored in a view, as it is a sort of virtual table.&nbsp; By using joins, it is possible to combine data from one or more tables. It may also hold a subset of information.&nbsp; More info can be found [here](<https://cwiki.apache.org/confluence/display/Hive/LanguageManual%20DDL#LanguageManualDDL-Create/Drop/AlterView> "target=\"\_blank\"").
 
@@ -68,7 +68,7 @@ Hackolade supports Hive materialized views, via a SELECT of columns of the under
 
 &nbsp;
 
-## Forward-Engineering ##
+## Forward-Engineering
 
 Hackolade dynamically generates the HQL script to create tables, columns and their data types, and indexes for the structure created with the application.
 
@@ -84,7 +84,7 @@ Hackolade dynamically generates the HQL script to create tables, columns and the
 
 As many people store JSON within text columns, Hackolade allows for the schema design of those documents.  That JSON structure is not forward-engineered, but is useful for developers, analysts and designers.
 
-## Reverse-Engineering ##
+## Reverse-Engineering
 
 The connection is established using a connection string including (IP) address and port (typically 10000), and authentication using username/password if applicable.
 
@@ -96,6 +96,3 @@ The Hackolade process for reverse-engineering of Hive databases includes the exe
 
 For more information on Apache HIve in general, please consult the Apache Hive [website](<https://hive.apache.org/> "target=\"\_blank\"").
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free Kindle producer](<https://www.helpndoc.com/feature-tour/create-ebooks-for-amazon-kindle>)_

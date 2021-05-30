@@ -28,7 +28,7 @@ Documentation can be configured using 2 sets of controls:
 
 &nbsp;
 
-### &#49;) Parameters in Tools \> Options \> Documentation ###
+### &#49;) Parameters in Tools \> Options \> Documentation
 
 Users may control the different sections to include in the documentation:
 
@@ -74,7 +74,7 @@ b. properties
 
 &nbsp;
 
-### &#50;) Object selection in File \> Generate Documentation ###
+### &#50;) Object selection in File \> Generate Documentation
 
 Before generation of the documentation, you're given the opportunity to filter objects and select only the desired ones:
 
@@ -84,7 +84,7 @@ Before generation of the documentation, you're given the opportunity to filter o
 
 &nbsp;
 
-## Known issue on Linux Debian when generating the documentation as PDF ##
+## Known issue on Linux Debian when generating the documentation as PDF
 
 If you get a "write EPIPE" error:
 
@@ -104,6 +104,3 @@ As a workaround, you should execute the following command:
 
 which will allow the generation of documentation as PDF.
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easy CHM and documentation editor](<https://www.helpndoc.com>)_

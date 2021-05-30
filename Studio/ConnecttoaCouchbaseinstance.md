@@ -57,7 +57,7 @@ These parameters are assembled by Hackolade to create the full connection string
 
 &nbsp;
 
-## Reverse-Engineering index information from .n1ql file ##
+## Reverse-Engineering index information from .n1ql file
 
 Couchbase documentation has no unified standard of how to export indexes from couchbase instance to n1ql.&nbsp; You may extract the information following instruction sin this [Couchbase forum exchange](<https://forums.couchbase.com/t/exporting-gsi-indexes/5854/12> "target=\"\_blank\"").
 
@@ -87,6 +87,3 @@ The highlighted information is to be saved in a text file with extension .n1ql b
 
 &nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easily create CHM Help documents](<https://www.helpndoc.com/feature-tour>)_

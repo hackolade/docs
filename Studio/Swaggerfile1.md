@@ -10,6 +10,3 @@ To create a Hackolade model from an existing Swagger specification file is extre
 
 then choose the file on you file system.&nbsp; Hackolade reads interchangeably JSON or YAML files, as long as they respect the [Swagger specification](<https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md> "target=\"\_blank\"").
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free help authoring tool](<https://www.helpndoc.com/help-authoring-tool>)_

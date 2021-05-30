@@ -46,7 +46,7 @@ Several important options are available:
 
 \- [draft-07](<https://json-schema.org/specification-links.html#draft-7> "target=\"\_blank\"")
 
-\- [2019-09](<https://json-schema.org/specification-links.html#2019-09-formerly-known-as-draft-8> "target=\"\_blank\""):&nbsp;
+\- [2019-09](<https://json-schema.org/specification-links.html#2019-09-formerly-known-as-draft-8> "target=\"\_blank\"")
 
 &nbsp;
 
@@ -58,6 +58,3 @@ Several important options are available:
 
 \- internal: references to external and model definitions are converted into internal definitions
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easily create Web Help sites](<https://www.helpndoc.com/feature-tour>)_

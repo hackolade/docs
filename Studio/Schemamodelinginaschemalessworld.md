@@ -40,7 +40,7 @@ The graphical interface lets the user **visualize and maintain a diagram of the 
   * Parquet: Parquet schema;
   * DW and RDBMS: DDL scripts;
   * etc...
-* sample JSON documents and JSON-Schema v4-compliant JSON models.&nbsp;
+* sample JSON documents and JSON Schema compliant JSON models.&nbsp;
 
 &nbsp;
 
@@ -58,6 +58,3 @@ The business benefits are as follows:
 * leverage the **power of visual modeling**: data structures and relationships don't have to be buried in application code.&nbsp; They can also be available to the various teams for a 360° view of the system landscape, for better collaboration and smooth operations.
 * facilitate data governance by **generating scripts** to easily configure MongoDB 3.2’s validator&nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Produce online help for Qt applications](<https://www.helpndoc.com/feature-tour/create-help-files-for-the-qt-help-framework>)_

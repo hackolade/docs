@@ -13,6 +13,3 @@ A button lets the user apply to a selected instance the script to create schemas
 &nbsp;
 
 If you store JSON within SUPER columns, Hackolade allows for the schema design of those documents.&nbsp; However, the corresponding JSON structure is **not** forward-engineered in the DDL script, but is useful for developers, analysts and designers.
-
-***
-_Created with the Personal Edition of HelpNDoc: [Full-featured Kindle eBooks generator](<https://www.helpndoc.com/feature-tour/create-ebooks-for-amazon-kindle>)_

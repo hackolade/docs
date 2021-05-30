@@ -20,19 +20,19 @@ The data model in the picture below results from the data modeling of the [sampl
 
 &nbsp;
 
-## Schemas ##
+## Schemas
 
 A schema is a logical grouping of database objects (tables, views, etc.). Each schema belongs to a single database.&nbsp; Together, a database and schema comprise a namespace in Snowflake. When performing any operations on database objects in Snowflake, the namespace is inferred from the current database and schema in use for the session.
 
 &nbsp;
 
-## Tables ##
+## Tables
 
 All data in Snowflake is stored in database tables, logically structured as collections of columns and rows, optionally with single-column or multi-column constraints.&nbsp; Snowflake does not use indexes, which is one of the things that makes it scale for arbitrary queries. Instead, Snowflake calculates statistics about columns and records in files that you load, and uses those statistics to figure out what parts of what tables/records to actually load to execute a query.
 
 &nbsp;
 
-## Unique, Primary, and Foreign Keys, and Not Null ##
+## Unique, Primary, and Foreign Keys, and Not Null
 
 Snowflake supports the following constraint types from the ANSI SQL standard: UNIQUE, PRIMARY, FOREIGN, and NOT NULL. &nbsp;
 
@@ -42,13 +42,13 @@ Snowflake supports the following constraint types from the ANSI SQL standard: UN
 
 &nbsp;
 
-## Clustering Keys ##
+## Clustering Keys
 
 In general, Snowflake produces well-clustered data in tables; however, over time, the data in some table rows may no longer cluster optimally on desired dimensions.&nbsp; To improve the clustering of the underlying table micro-partitions, you can always manually sort rows on key table columns and re-insert them into the table; however, performing these tasks could be cumbersome and expensive.&nbsp; Instead, Snowflake supports automating these tasks by designating one or more table columns/expressions as a *clustering key* for the table. A table with a clustering key defined is considered to be *clustered*.
 
 &nbsp;
 
-## Data types ##
+## Data types
 
 Snowflake supports the most basic [SQL data types](<https://docs.snowflake.com/en/sql-reference/intro-summary-data-types.html> "target=\"\_blank\"") (with some restrictions) for use in columns. Data types are automatically coerced whenever necessary and possible. Snowflake VARCHAR holds unicode characters.
 
@@ -66,7 +66,7 @@ Hackolade also supports Snowflake User-Defined Types via its [re-usable object d
 
 &nbsp;
 
-## (Materialized) Views ##
+## (Materialized) Views
 
 A view allows the result of a query to be accessed as if it were a table. The query is specified in the CREATE VIEW statement.&nbsp; Views serve a variety of purposes, including combining, segregating, and protecting data.
 
@@ -76,7 +76,7 @@ Hackolade supports Snowflake (materialized) views, via a SELECT of columns of th
 
 &nbsp;
 
-## Forward-Engineering ##
+## Forward-Engineering
 
 Hackolade dynamically generates the DDL script to create schemas, tables, columns and their data types, for the structure created with the application.
 
@@ -90,7 +90,7 @@ If you store JSON within VARIANT columns, Hackolade allows for the schema design
 
 &nbsp;
 
-## Reverse-Engineering ##
+## Reverse-Engineering
 
 A Snowflake account can be hosted on any of the following cloud platforms: Amazon Web Services, Google Cloud Platform, or Microsoft Azure.&nbsp; Each platform provides one or more [regions](<https://docs.snowflake.com/en/user-guide/intro-regions.html>) where the account is provisioned.&nbsp; Details on how to connect Hackolade to Snowflake can be found on [this page](<ConnecttoaSnowflakeinstance.md>).
 
@@ -102,6 +102,3 @@ The Hackolade process for reverse-engineering of Snowflake databases includes th
 
 For more information on Snowflake in general, please consult the [website](<https://www.snowflake.com/> "target=\"\_blank\"").&nbsp; See also this excellent [hands-on lab guide](<https://s3.amazonaws.com/snowflake-workshop-lab/Snowflake\_free\_trial\_LabGuide.pdf> "target=\"\_blank\"").
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Qt Help documentation made easy](<https://www.helpndoc.com/feature-tour/create-help-files-for-the-qt-help-framework>)_

@@ -9,6 +9,3 @@ The different options currently available are:
 * Open an online [ticket](<https://hackolade.zendesk.com/hc/en-us/requests/new> "target=\"\_blank\"")&nbsp;
 * Leave us a message at +1 (310) 421-2423 (US phone number)
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Benefits of a Help Authoring Tool](<https://www.helpauthoringsoftware.com>)_

@@ -41,6 +41,3 @@ Hackolade also loosely applies Information Engineering notation to relationship 
 
 [This page](<EntityboxesinERdiagram.md>) helps understand how to manipulate entities in ER diagrams.
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Produce electronic books easily](<https://www.helpndoc.com/create-epub-ebooks>)_

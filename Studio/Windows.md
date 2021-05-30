@@ -1,6 +1,6 @@
 # Windows
 
-## Standard installation ##
+## Standard installation
 
 The application is shipped as a signed .exe file with an installation wizard automatically placing the app in the proper folder and displaying the License Agreement and Release Notes.&nbsp; Windows installation does not require admin rights *(unless the installation is made to a directory requiring admin rights)* and does not write to the Windows Registry.&nbsp; However, in a corporate environment, you should contact your IT department.&nbsp; They can remotely access your computer and install the software for you.&nbsp; You should comply with the IT policy on non-approved software.
 
@@ -71,9 +71,27 @@ Hackolade-win64-setup-signed.exe /VERYSILENT /SUPPRESSMSGBOXES /DIR="C:/Users/%u
 
 &nbsp;
 
-## Remote Desktop Installations ##
+## Licenses on Virtual Machines (or physical computer accessed via Remote Desktop Installations \[RDP\] or equivalent)
 
 **Important note:** installing Hackolade on a central computer (whether on a PC or a server, whether the machine is virtual or physical, and whether on premises or in the Cloud) does **not** change the terms of our [License Agreement](<Licenseagreement.md>).&nbsp; Specifically, that license metric is per "per seat", and that a license must be obtained for each device on or from which the Product is used or accessed. When the Product is accessed remotely across using Terminal Server, Remote Desktop, Citrix XenDesktop or an equivalent method, a separate Product license is required to be assigned to each device from which the application is accessed, i.e. not the virtual machine on which the Product is installed.
+
+&nbsp;
+
+**Important:** before you delete a user login on a VM, or delete an entire VM, make sure to release the Hackolade key(s) via Help \> Software Key Validation \> Release.  This is the only way for you to free up the seats of that user, and make it available for another one.
+
+&nbsp;
+
+**Reminder:** when installing Hackolade on a VM to share among multiple users, it is important to realize that licensing is not attached to just the machine, but to the combination of the machine, where Hackolade is installed, a client workstation identification for the PC accessing the application, and the user login.&nbsp; As per the [EULA](<Licenseagreement.md>): "A license must be obtained for each device on or from which the Product is used or accessed." &nbsp;
+
+&nbsp;
+
+Example: having 4 Hackolade users on a single VM is the equivalent of having 4 individual PCs running Hackolade from a licensing point of view: you need 4 license seats to be validated.
+
+&nbsp;
+
+**VM configuration**
+
+Hackolade licensing is enforced through registration on our license server of a combination of unique identifiers, including the UUID of the computer where Hackolade is installed, a client workstation identification for the PC accessing the application, and the user login.  Each unknown combination reserves one seat on our license server, until you reach the total number of seats purchased for the submitted license key.
 
 &nbsp;
 
@@ -85,7 +103,13 @@ Once the software is installed centrally, each user login should be able to acce
 
 &nbsp;
 
-Given the way license seats are counted, it is important that identifiers remain stable.&nbsp; In particular with Citrix, you may want to have IT/Security take a look at this parameter:
+Given the way license seats are counted, it is important that identifiers remain stable.&nbsp; If your IT department configured VM infrastructure differently, it may be required for your IT department to adjust parameters in order to achieve stability.
+
+&nbsp;
+
+Citrix
+
+\====
 
 \
 ENABLE\_DYNAMIC\_CLIENT\_NAME should be left to YES\
@@ -97,10 +121,23 @@ Allows client name to be the same as the computer name. When you change the comp
 
 &nbsp;
 
-https://docs.citrix.com/en-us/receiver/windows/4-9/install/cfg-command-line.html#identify-a-user-device
+Additional resources:
 
-https://docs.citrix.com/en-us/receiver/windows/4-9/install/cfg-command-line.html#dynamic-client-name
+[https://docs.citrix.com/en-us/receiver/windows/4-9/install/cfg-command-line.html#identify-a-user-device](<https://docs.citrix.com/en-us/receiver/windows/4-9/install/cfg-command-line.html#identify-a-user-device> "target=\"\_blank\"")
 
+[https://docs.citrix.com/en-us/receiver/windows/4-9/install/cfg-command-line.html#dynamic-client-name](<https://docs.citrix.com/en-us/receiver/windows/4-9/install/cfg-command-line.html#dynamic-client-name> "target=\"\_blank\"")
 
-***
-_Created with the Personal Edition of HelpNDoc: [Produce Kindle eBooks easily](<https://www.helpndoc.com/feature-tour/create-ebooks-for-amazon-kindle>)_
+&nbsp;
+
+&nbsp;
+
+VMWare
+
+\=======
+
+As per this VMWare [article, setup should generally be OK](<https://pubs.vmware.com/workstation-9/index.jsp?topic=/com.vmware.ws.using.doc/GUID-533B2C4F-7BD5-41EB-8392-2B9FE687AE50.html> "target=\"\_blank\""):  "Each virtual machine has a universal unique identifier (UUID). The UUID is generated when you initially power on the virtual machine...  Suspending and resuming a virtual machine does not trigger the process that generates a UUID...  If you do not move or copy the virtual machine to another location, the UUID remains constant." &nbsp;
+
+&nbsp;
+
+If it is not the case, maybe instructions in [this article](<https://docs.vmware.com/en/VMware-Horizon/2012/virtual-desktops/GUID-E12713D5-3530-422F-B265-B0F3FDD2041E.html> "target=\"\_blank\"") will help your IT department configure appropriately
+

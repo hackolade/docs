@@ -90,7 +90,7 @@ Both dk and dm attributes allow access to the Where-Used function in the context
 
 &nbsp;
 
-## ER Diagram Views ##
+## ER Diagram Views
 
 With v4.3.2, Hackolade has introduced the possibility to add separate ER Diagram Views (ERDV): a subset of entities selected from the main ER diagram, to help manage large models by focusing on a smaller set of entities, by domain or subject.&nbsp; Entities may appear in multiple Diagram Views.&nbsp; Modifications made inside Diagram Views are immediately reflected in the main diagram and other views where present.&nbsp;
 
@@ -130,6 +130,3 @@ In this dialog, you may edit the name of the Diagram View and modify the selecti
 
 ![Image](<lib/ERDV%20editor.png>)
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easily create Help documents](<https://www.helpndoc.com/feature-tour>)_

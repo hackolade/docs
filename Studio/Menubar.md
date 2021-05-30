@@ -16,6 +16,3 @@ The corresponding menu appears with menu items:
 
 The menu items are contextually activated, and other options are dimmed if unavailable.&nbsp; Menu items are accessed via mouse click or by pressing Alt+ the underlined letter of the menu item.&nbsp; Menu items are also accessible via the [shortcut keys](<Shortcutkeys.md>) that are displayed as a reminder.
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easy to use tool to create HTML Help files and Help web sites](<https://www.helpndoc.com/help-authoring-tool>)_

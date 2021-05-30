@@ -1,6 +1,6 @@
 # Migration to enhanced custom properties
 
-## Migration to enhanced custom properties, starting with v3.6.2 ##
+## Migration to enhanced custom properties, starting with v3.6.2
 
 &nbsp;
 
@@ -35,7 +35,7 @@ The migration of your custom properties can be performed either automatically ne
 
 &nbsp;
 
-### &#49;. Migrate your custom properties for plugin targets ###
+### &#49;. Migrate your custom properties for plugin targets
 
 With v3.6.2, we have removed the link "Show Plugin Directory" from the Help menu.&nbsp; A link for each plugin will become available after migration of that plugin.
 
@@ -75,7 +75,7 @@ Because this is a plugin target (i.e. not JSON, Couchbase, DynamoDB, or MongoDB)
 
 &nbsp;
 
-### &#50;. Migration for native targets ###
+### &#50;. Migration for native targets
 
 **Important note:** you may need to coordinate the migration of your customizations for native target with the evolution of outside systems, if they read Hackolade models.
 
@@ -109,7 +109,7 @@ Because this is a native target, you should go through step 3 below: adapt your 
 
 &nbsp;
 
-### &#51;. Adapt your models&nbsp; ###
+### &#51;. Adapt your models&nbsp;
 
 This step is only necessary for native targets (JSON, Couchbase, DynamoDB, and MongoDB) and if your models are read by other systems than Hackolade.&nbsp; If no other systems are reading custom properties in your Hackolade models, you don't have to do anything special.
 
@@ -123,6 +123,3 @@ When a Hackolade model for a migrated native target is opened with the applicati
 
 You may now create and maintain custom properties for the migrated plugin.&nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [iPhone web sites made easy](<https://www.helpndoc.com/feature-tour/iphone-website-generation>)_

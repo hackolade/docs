@@ -6,6 +6,3 @@ Model-Driven API generation is performed via the Tools \> Forward-Engineering \>
 
 You can find all details here.
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free help authoring environment](<https://www.helpndoc.com/help-authoring-tool>)_

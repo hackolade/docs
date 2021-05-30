@@ -1,6 +1,6 @@
 # Kerberos
 
-## Kerberos Authentication ##
+## Kerberos Authentication
 
 &nbsp;
 
@@ -114,6 +114,3 @@ The krb5 library uses [MIT Kerberos](<https://web.mit.edu/kerberos/dist/> "targe
 
 Currently, krb5 library with keytab is used only in HTTP mode to retrieve SPNEGO token.
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easily create EBooks](<https://www.helpndoc.com/feature-tour>)_

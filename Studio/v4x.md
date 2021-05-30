@@ -1,14 +1,50 @@
 # v4.x
 
+New features in v4.3.22 \[21-May-2021\]
+
+\- Reverse-Engineering object picker dialog: added horizontal scrollbar for long file structures and names in cloud storage
+
+\- Reverse-Engineering object picker dialog: added support for periods in file names
+
+\- DDL reverse-engineering: added support for comment constraints on foreign key relationships (PostgreSQL and Redshift only, as not supported in other dialects)
+
+\- Confluent Schema Registry reverse-engineering: added conflict resolution dialog
+
+\- Cloud storage reverse-engineering of JSON documents: added possibility to combine schemas
+
+\- JSON Schema reverse-engineering: added tolerance for illegal trailing commas
+
+&nbsp;
+
+New features in v4.3.21 \[14-May-2021\]
+
+\- References: added possibility to reference internal definitions of external models and JSON Schema
+
+\- Cassandra/ScyllaDB: added handling of table option identifier values and comments in reverse-engineering of .cql files
+
+\- Amazon Web Services: added optional sessionToken connection for AWS data sources (DynamoDB, Glue Data Catalog, EventBridge Schema Registry, S3 for Avro and Parquet)
+
+&nbsp;
+
 New features in v4.3.20 \[07-May-2021\]
 
+\- Confluent Schema Registry: added support for Subject Name Strategy choices, and schema type -key/-value
+
 \- Confluent Schema Registry: extended possibility to fetch more than 100 subjects
+
+\- MariaDB: sample rows during reverse-engineering only if table is suspected to contain JSON in LONGTEXT column(s)
 
 \- OpenAPI: added ability to export components.schemas to JSON Schema&nbsp;
 
 \- Swagger: added ability to export definitions to JSON Schema&nbsp;
 
+\- Snowflake: sample rows during reverse-engineering only if table is suspected to contain JSON in VARIANT column(s)
+
+\- SQL Server/Azure SQL: sample rows during reverse-engineering only if table is suspected to contain JSON in (N)VARCHAR(4000) column(s)
+
 \- Synapse: awareness of serverless SQL pool and its restrictions
+
+\- Synapse: sample rows during reverse-engineering only if table is suspected to contain JSON in (N)VARCHAR(4000) column(s)
 
 &nbsp;
 
@@ -992,6 +1028,3 @@ New features with v4.0.0 \[08-Apr-2020\]
 
 &nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free help authoring environment](<https://www.helpndoc.com/help-authoring-tool>)_

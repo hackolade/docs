@@ -1,6 +1,6 @@
 # Regular expression
 
-## Regular expression ##
+## Regular expression
 
 &nbsp;
 
@@ -28,6 +28,3 @@ The following regular expression tokens are supported:
 
 Ref: [http://json-schema.org/latest/json-schema-validation.html#anchor6](<http://json-schema.org/latest/json-schema-validation.html#anchor6> "target=\"\_blank\"") and [https://regex101.com/#javascript](<https://regex101.com/#javascript> "target=\"\_blank\"")
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easily create EPub books](<https://www.helpndoc.com/feature-tour>)_

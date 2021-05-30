@@ -1,6 +1,6 @@
 # Server timeout during read query at consistency LOCAL_ONE
 
-## Suggestions for troubleshooting the "Server timeout during read query" error message ##
+## Suggestions for troubleshooting the "Server timeout during read query" error message
 
 &nbsp;
 
@@ -13,6 +13,3 @@ There are several possible issues.\
 
 &nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free PDF documentation generator](<https://www.helpndoc.com>)_

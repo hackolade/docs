@@ -17,6 +17,3 @@ which will be passed on to the Identity Provider, so you may proceed with the lo
 &nbsp;
 
 ![Image](<lib/Snowflake%20Okta%20external%20browser%20SSO.png>)
-
-***
-_Created with the Personal Edition of HelpNDoc: [Full-featured multi-format Help generator](<https://www.helpndoc.com/help-authoring-tool>)_

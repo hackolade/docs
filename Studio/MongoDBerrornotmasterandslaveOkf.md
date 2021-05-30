@@ -1,6 +1,6 @@
 # MongoDB error "not master and slaveOk=false"
 
-# MongoDB error "not master and slaveOk=false" #
+# MongoDB error "not master and slaveOk=false"
 
 If you get an error "not master and slaveOk=false" when connecting to a MongoDB instance, on a secondary member (for example, a replica set connection using a [read preference](<http://docs.mongodb.org/manual/core/read-preference/> "target=\"\_blank\"") of [secondary](<http://docs.mongodb.org/manual/reference/read-preference/#secondary> "target=\"\_blank\"") or [secondaryPreferred](<http://docs.mongodb.org/manual/reference/read-preference/#secondaryPreferred> "target=\"\_blank\"")), you first need to run [*rs.slaveOk()*](<http://docs.mongodb.org/manual/reference/method/rs.slaveOk/> "target=\"\_blank\"") to be able to freely run Hackolade's reverse-engineering. This is because, by default, MongoDB does not permit read operations from non-master (i.e., [slave](<http://docs.mongodb.org/manual/reference/glossary/#term-slave> "target=\"\_blank\"") or [secondary](<http://docs.mongodb.org/manual/reference/glossary/#term-secondary> "target=\"\_blank\"")) instances.
 
@@ -8,6 +8,3 @@ In MongoDB, reads to a primary have [strict consistency](<http://docs.mongodb.o
 
 By calling [*rs.slaveOk()*](<http://docs.mongodb.org/manual/reference/method/rs.slaveOk/> "target=\"\_blank\"") you are indicating to the system that you acknowledge that reads will be eventually consistent and wish to be able to run reverse-engineering from the secondary anyway.
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [News and information about help authoring tools and software](<https://www.helpauthoringsoftware.com>)_

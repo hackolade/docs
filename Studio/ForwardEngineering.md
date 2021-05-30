@@ -36,6 +36,3 @@ The isActivated property exists for all objects (containers, entities, and attri
 
 &nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Produce electronic books easily](<https://www.helpndoc.com/create-epub-ebooks>)_

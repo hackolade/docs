@@ -24,6 +24,3 @@ Each choice attribute contains an array, with each attribute of the array repres
 
 Schema definitions can use “allOf”, “anyOf”, “oneOf”, and “noneOf” individually or in combination, providing significant flexibility for defining attributes that have complex definitions or contextual relationships.  These choices apply both to fields and to field properties.  In both cases, the only possible attribute of Choice is a Subschema.
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free Qt Help documentation generator](<https://www.helpndoc.com>)_

@@ -12,7 +12,7 @@ Avro files and schemas can also be reverse-engineered from AWS S3, Azure Blob St
 
 &nbsp;
 
-## &#49;) AWS S3 ##
+## &#49;) AWS S3
 
 Give a meaningful name to the connection to identify it for later, and provide proper URI to your S3 bucket, and optional folder path.
 
@@ -36,7 +36,7 @@ If you wish to handle AWS authentication through the [credentials file](<https:/
 
 &nbsp;
 
-## &#50;) Azure Blob Storage ##
+## &#50;) Azure Blob Storage
 
 Give a meaningful name to the connection to identify it for later, and provide proper Container name and Storage account name.
 
@@ -60,7 +60,7 @@ If you wish to filter files, you may enter a file name prefix:
 
 &nbsp;
 
-## &#51;) Google Cloud Storage ##
+## &#51;) Google Cloud Storage
 
 Give a meaningful name to the connection to identify it for later, and provide proper URI to your GCS bucket, and optional folder path.
 
@@ -76,7 +76,7 @@ If the&nbsp; bucket is private, you must also access to the Private key:
 
 &nbsp;
 
-## &#52;) Confluent Schema Registry on Confluence Cloud ##
+## &#52;) Confluent Schema Registry on Confluence Cloud
 
 Give a meaningful name to the connection to identify it for later, choose Cloud as a source, and provide the URL to your Schema Registry:
 
@@ -92,7 +92,7 @@ Then provide the API key and API secret:
 
 &nbsp;
 
-## &#53;) Confluence Schema Registry on-premises ##
+## &#53;) Confluence Schema Registry on-premises
 
 Give a meaningful name to the connection to identify it for later, choose on-premise as a source, and provide the URL to your Schema Registry:
 
@@ -108,6 +108,3 @@ Then provide your username and password:
 
 &nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free EBook and documentation generator](<https://www.helpndoc.com>)_

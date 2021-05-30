@@ -46,6 +46,3 @@ the resulting denormalization would be:
 
 where you notice that all fields of 'order details' have been added in an array of sub-documents in 'orders'.&nbsp; And it makes sense to delete the collection 'order details'.
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free PDF documentation generator](<https://www.helpndoc.com>)_

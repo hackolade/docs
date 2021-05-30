@@ -546,6 +546,3 @@ New features with v2.0.0:
 
 \- support for Neo4j graph database
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easily create Help documents](<https://www.helpndoc.com/feature-tour>)_

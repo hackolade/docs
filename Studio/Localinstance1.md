@@ -28,6 +28,3 @@ with these parameters:
 
 and make sure to check the box **Disable SSL Authentication for local instance**
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Benefits of a Help Authoring Tool](<https://www.helpauthoringsoftware.com>)_

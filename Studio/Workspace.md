@@ -34,6 +34,3 @@ The right-hand pane displays the properties for any entity you select in the Obj
 
 The relative width of the 3 panes can be adjusted by sliding sideways the vertical ellipse sign ![Image](<lib/Central%20pane%20-%20ellipse.png>) that can be found on each side of the central pane.&nbsp; When the you hover your mouse over the ellipse, the cursor changes to a two-sided arrow: ![Image](<lib/Central%20pane%20-%20ellipse%20hovered.png>).&nbsp; Click on the ellipse and hold your left mouse button, then drag right or left until the panes have the width you desire, then release your left mouse button.
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Produce Kindle eBooks easily](<https://www.helpndoc.com/feature-tour/create-ebooks-for-amazon-kindle>)_

@@ -11,6 +11,7 @@ Keyboard shortcuts:
 | Ctrl+Alt+F4 | Cmd+W | Close |
 | Ctrl+S | Cmd+S | Save |
 | Ctrl+P | Cmd+P | Print |
+| Ctrl+Shift+I | Cmd+Shift+M | Start new application instance |
 | Alt+F4 | Cmd+Q | Exit |
 | Ctrl+Z | Cmd+Z | Undo |
 | Ctrl+Y | Cmd+Y | Redo |
@@ -51,6 +52,3 @@ Keyboard shortcuts:
 | Ctrl+\<mouse wheel up/down\> | &nbsp; | Zoom in or out in ERD and hierarchical schema view |
 
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free Web Help generator](<https://www.helpndoc.com>)_

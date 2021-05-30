@@ -6,6 +6,3 @@ For those in a technology stack using JavaScript with Couchbase, and are using t
 
 ![Image](<lib/Tools%20-%20Forward-Engineer%20-%20Ottoman%20Schema.png>)
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Create cross-platform Qt Help files](<https://www.helpndoc.com/feature-tour/create-help-files-for-the-qt-help-framework>)_

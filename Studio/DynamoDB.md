@@ -12,7 +12,7 @@ The data model in the picture below results from the reverse-engineering of the 
 
 ![Image](<lib/DynamoDB%20workspace.png>)
 
-## Keys ##
+## Keys
 
 As is often the case with NoSQL databases, DynamoDB has a unique storage model:&nbsp; When a table is created, in addition to the table name, a primary key for the table has to be specified.&nbsp; The primary key uniquely identifies each item in the table, so that no two items can have the same key.&nbsp; DynamoDB supports two different kinds of primary keys:
 
@@ -33,7 +33,7 @@ Each primary key attribute must be a scalar (meaning that it can only hold a sin
 
 &nbsp;
 
-## Other table properties ##
+## Other table properties
 
 Given the fully managed nature of DynamoDB, when you create a table, you need to specify how much provisioned throughput capacity you want to reserve for reads and writes. DynamoDB will reserve the necessary resources to meet the specified throughput needs while ensuring consistent, low-latency performance. The provisioned throughput settings can be changed at any time, increasing or decreasing capacity as needed.&nbsp; The throughput settings can be documented in Hackolade.
 
@@ -43,7 +43,7 @@ Many applications can benefit from the ability to capture changes to items store
 
 &nbsp;
 
-## Data types ##
+## Data types
 
 DynamoDB supports many different data types for attributes within a table.&nbsp; They can be categorized as follows:
 
@@ -65,7 +65,7 @@ Hackolade was specially adapted to support the data types and attributes behavio
 
 &nbsp;
 
-## Indexes ##
+## Indexes
 
 Whenever a write occurs on a table, all of the table's indexes must be updated. In a write-heavy environment with large tables, this can consume large amounts of system resources. In a read-only or read-mostly environment, this is not as much of a concern—however, one should ensure that the indexes are actually being used by the application, and not simply taking up space.
 
@@ -88,15 +88,15 @@ DynamoDB ensures that the data in a secondary index is eventually consistent wit
 
 More information can be found [here](<http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SecondaryIndexes.html> "target=\"\_blank\"").
 
-## Views (TBA) ##
+## Views (TBA)
 
 See GSIs
 
-## Forward-Engineering ##
+## Forward-Engineering
 
 Hackolade dynamically generates [CreateTable](<http://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API\_CreateTable.html> "target=\"\_blank\"") and [ConditionExpression](<http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.SpecifyingConditions.html> "target=\"\_blank\"") scripts based on model attributes and constraints. &nbsp;
 
-## Reverse-Engineering ##
+## Reverse-Engineering
 
 A DynamoDB can be installed either locally or as a managed database at AWS.&nbsp; The connection is established using a connection string including (IP) address and port (typically 8000), and if managed at AWS, authentication using the IAM awsAccessKeyId/awsSecretAccessKey for the region where the DynamoDB instance is located.
 
@@ -110,6 +110,3 @@ The Hackolade reverse-engineering process of a DynamoDB table includes a query f
 
 For more information on DynamoDB in general, please consult the [website](<http://aws.amazon.com/dynamodb/> "target=\"\_blank\"").
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Benefits of a Help Authoring Tool](<https://www.helpauthoringsoftware.com>)_

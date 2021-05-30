@@ -23,11 +23,11 @@ Hackolade was specially adapted to support the data modeling of data stored in c
 
 ![Image](<lib/Firestore%20workspace.png>)
 
-## Databases ##
+## Databases
 
 &nbsp;
 
-## Collections ##
+## Collections
 
 &nbsp;
 
@@ -39,7 +39,7 @@ Subcollections are an implementation of [multi-table inheritance](<https://danch
 
 &nbsp;
 
-## IDs ##
+## IDs
 
 &nbsp;
 
@@ -49,21 +49,21 @@ The unique key is based on a timestamp, so list items will automatically be orde
 
 &nbsp;
 
-## Attributes data types ##
+## Attributes data types
 
 &nbsp;
 
-## Indexes ##
+## Indexes
 
-## &nbsp; ##
+## &nbsp;
 
-## Forward-Engineering ##
+## Forward-Engineering
 
 Not applicable, as Firestore does not provide any way to enforce any kind of schema.
 
 &nbsp;
 
-## Reverse-Engineering ##
+## Reverse-Engineering
 
 **Note:** the reverse-engineering of documents is not currently available.&nbsp; It is being developed and will be released at a later time.
 
@@ -71,6 +71,3 @@ Not applicable, as Firestore does not provide any way to enforce any kind of sch
 
 For more information on Google cloud Firestore in general, please consult the [website](<https://firebase.google.com/docs/firestore> "target=\"\_blank\"").
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Full-featured multi-format Help generator](<https://www.helpndoc.com/help-authoring-tool>)_

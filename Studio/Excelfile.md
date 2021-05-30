@@ -64,6 +64,3 @@ If you click Yes, you should be aware that values are no longer validated agains
 
 Instructions for the reverse-engineering of an Excel file can be found [here](<Exceltemplate.md>).
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easy to use tool to create HTML Help files and Help web sites](<https://www.helpndoc.com/help-authoring-tool>)_

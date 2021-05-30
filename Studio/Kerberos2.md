@@ -1,6 +1,6 @@
 # Kerberos
 
-## Authentication ##
+## Authentication
 
 &nbsp;
 
@@ -40,7 +40,7 @@ The minimum requirements to be able to connect with the Kerberos protocol are:
 
 * Name of a host must always be the same as a computer host (hostname -f)
 * Add to the "hbase-site.xml" the following parameters:\
-  \<property\>
+\<property\>
 
    &nbsp; &nbsp; &nbsp; \<name\>hadoop.proxyuser.HTTP.groups\</name\>
 
@@ -60,7 +60,7 @@ The minimum requirements to be able to connect with the Kerberos protocol are:
 * Yarn must be set up with SSL certificates
 * Kerberos or Kerberos packages *“krb5-admin-server”* and *“krb5-kdc”* must be installed and run
 * HBase REST service must be running&nbsp; REST should have administrative access. One can provide it by running HBASE command: *grant 'rest\_server', 'RWCA' *\
-  [https://hbase.apache.org/book.html#\_client\_side\_configuration\_for\_secure\_operation\_rest\_gateway](<https://hbase.apache.org/book.html#\_client\_side\_configuration\_for\_secure\_operation\_rest\_gateway> "target=\"\_blank\"")
+[https://hbase.apache.org/book.html#\_client\_side\_configuration\_for\_secure\_operation\_rest\_gateway](<https://hbase.apache.org/book.html#\_client\_side\_configuration\_for\_secure\_operation\_rest\_gateway> "target=\"\_blank\"")
 
 &nbsp;
 
@@ -85,6 +85,3 @@ Instructions:
 
 For more information with Hortonworks installations, click [here](<https://community.hortonworks.com/articles/91425/howto-start-and-test-hbase-rest-server-in-a-kerber.html> "target=\"\_blank\"").
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Create help files for the Qt Help Framework](<https://www.helpndoc.com/feature-tour/create-help-files-for-the-qt-help-framework>)_

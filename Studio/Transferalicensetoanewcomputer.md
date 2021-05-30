@@ -13,6 +13,3 @@ You should now be authorized to use Hackolade with the new computer.  If the va
 If you still encounter problems, please retrieve the licensing log file HackoladeLicense.log from the directory C:\\Users\\%userprofile%\\AppData\\Roaming\\HackoladeLogs directory of both the old and the new computer, and send them to [support@hackolade.com](<mailto:support@hackolade.com>)
 
  
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free PDF documentation generator](<https://www.helpndoc.com>)_

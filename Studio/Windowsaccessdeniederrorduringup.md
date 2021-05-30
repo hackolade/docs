@@ -22,6 +22,3 @@ If the installation still fails, choose the option Cancel installation, then fol
 &#54;) close the Task Manager\
 &#55;) start the installation process again
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easy EBook and documentation generator](<https://www.helpndoc.com>)_

@@ -87,6 +87,3 @@ In RDBMS plugins, it is possible to represent composite (or compound) foreign ke
 
 ![Image](<lib/Relationships%20-%20composite%20foreign%20keys.png>)
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easy to use tool to create HTML Help files and Help web sites](<https://www.helpndoc.com/help-authoring-tool>)_

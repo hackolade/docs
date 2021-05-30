@@ -23,6 +23,3 @@ By default, the following items are available:
 * Recent models: lists your most recent models. Click a model to open it
 * Recent places: Lists your most recent model directories. Click a directory to open it and find your models
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easy CHM and documentation editor](<https://www.helpndoc.com>)_

@@ -736,6 +736,3 @@ New features with v3.0.0:
 
 \- Cassandra: added LDAP authentication support
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Full-featured Kindle eBooks generator](<https://www.helpndoc.com/feature-tour/create-ebooks-for-amazon-kindle>)_

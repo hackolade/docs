@@ -39,6 +39,3 @@ You may export these scripts to a JavaScript file with the menu option Tools \> 
 
 The generation of the script can also be triggered with [Command-Line Interface](<CommandLineInterface.md>).
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easily create Help documents](<https://www.helpndoc.com/feature-tour>)_

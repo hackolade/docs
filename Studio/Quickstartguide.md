@@ -13,12 +13,9 @@ The main use cases for the creation of a new model in Hackolade:
 Quickly get started by learning how to:
 
 * [Create a new model](<Createanewmodelfromscratch.md>)
-* [Maintain an existing model](<Compareversionsofamodel.md>)
-* [Compare versions of a model](<Compareversionsofamodel.md>)
+* [Maintain an existing model](<Showmodeldiff.md>)
+* [Compare versions of a model](<Showmodeldiff.md>)
 * [Suggest denormalization of a SQL schema](<SuggestdenormalizationofaSQLsche.md>)
 * [Generate documentation](<Generatedocumentation.md>)
 * [Print a model](<Printadiagram.md>)
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Write EPub books for the iPad](<https://www.helpndoc.com/create-epub-ebooks>)_

@@ -20,6 +20,3 @@ You may take this opportunity to declare your default paths in Tools \> Options,
 
 Sample models can be found on this [page](<http://hackolade.com/samplemodels.html> "target=\"\_blank\"").
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free EPub producer](<https://www.helpndoc.com/create-epub-ebooks>)_

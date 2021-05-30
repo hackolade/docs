@@ -24,6 +24,3 @@ If you wish to handle AWS authentication through the [credentials file](<https:/
 
 &nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Create cross-platform Qt Help files](<https://www.helpndoc.com/feature-tour/create-help-files-for-the-qt-help-framework>)_

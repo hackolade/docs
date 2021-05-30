@@ -1,6 +1,6 @@
 # LDAP
 
-## LDAP Authentication ##
+## LDAP Authentication
 
 &nbsp;
 
@@ -56,6 +56,3 @@ In Hackolade set “User Name” and “Password”:
 
 ![Image](<lib/Hive%20-%20LDAP%20Connection%20Settings.png>)
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Write eBooks for the Kindle](<https://www.helpndoc.com/feature-tour/create-ebooks-for-amazon-kindle>)_

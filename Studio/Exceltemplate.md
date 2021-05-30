@@ -59,11 +59,11 @@ But if things don't validate properly, you may get a message such as this one:
 
 &nbsp;
 
-## For advanced users ##
+## For advanced users
 
 Most users will use this Excel export/import feature for a productive manner to edit bulk data for a model, but without changing the structure of the model itself.&nbsp; The feature allows much more:
 
-### &#49;) Add an scalar attribute to an existing entity ###
+### &#49;) Add an scalar attribute to an existing entity
 
 This is the simplest use case.&nbsp; In the "entity attributes" tab (which could be named "Collection fields", or "Table columns, etc... depending on the target), simply insert a blank line where you want the attribute to appear in the model.&nbsp; You should note the following:
 
@@ -75,7 +75,7 @@ This is the simplest use case.&nbsp; In the "entity attributes" tab (which could
 
 \- make sure to choose the data Type from the dropdown box
 
-### &#50;) Add a complex attribute (object) to an existing entity ###
+### &#50;) Add a complex attribute (object) to an existing entity
 
 To add a nested object, itself made of attributes, you can extent the dot notation in the Name cells.&nbsp; For example to add an address object to a user entity, you would create/insert:
 
@@ -91,7 +91,7 @@ while following the guidelines in 1) above.&nbsp; Nesting can go several levels 
 
 &nbsp;
 
-### &#51;) Add a complex attribute (array) to an existing entity ###
+### &#51;) Add a complex attribute (array) to an existing entity
 
 For arrays, the same dot notation is supported.&nbsp; For example to add an array of friends to a user entity, you would create/insert:
 
@@ -105,7 +105,7 @@ For arrays, the same dot notation is supported.&nbsp; For example to add an arra
 
 Note that you can combine objects and arrays, for example *users.addresses.\[0\].address.street*
 
-### &#52;) Add an attribute with multiple data types ###
+### &#52;) Add an attribute with multiple data types
 
 If this form of polymorphism is allowed by the target, you may do so from the Excel template.&nbsp; The easiest way to understand how to do it might be to first create a multiple type attribute in Hackolade, then export to Excel.&nbsp; Then you can mimic the syntax.&nbsp; The separator between types is a pipe ("\|").&nbsp; The GUID is repeated:
 
@@ -159,7 +159,7 @@ If this form of polymorphism is allowed by the target, you may do so from the Ex
 
 &nbsp;
 
-### &#53;) Add a new entity ###
+### &#53;) Add a new entity
 
 In the Entities tab (which could be names "Collections", "Tables", etc... depending on the target), simply insert a blank line for the entity.&nbsp; You should note the following:
 
@@ -169,7 +169,7 @@ In the Entities tab (which could be names "Collections", "Tables", etc... depend
 
 &nbsp;
 
-### &#54;) Add a definition ###
+### &#54;) Add a definition
 
 Only internal and model definitions can be edited in an Excel having been exported.&nbsp; If you need to make modifications to an external definition, it is required to export that model separately.
 
@@ -179,7 +179,7 @@ Internal and model definitions are exported in a separate tab, generally called 
 
 &nbsp;
 
-### &#55;) Add a reference to a definition ###
+### &#55;) Add a reference to a definition
 
 To create a reference to a definition requires an entry in the $ref cell:
 
@@ -189,7 +189,7 @@ To create a reference to a definition requires an entry in the $ref cell:
 
 \- external reference: \<drive\>:\<path\>/\<modelFileName\>.json#/\<attributeName\>
 
-### &#56;) Add a relationship ###
+### &#56;) Add a relationship
 
 Relationships go into their own tab.&nbsp; They have their own GUID as well.&nbsp; If adding a new one, leave the GUID cell blank.&nbsp; Each relationship needs the GUID of:
 
@@ -205,6 +205,3 @@ Relationships go into their own tab.&nbsp; They have their own GUID as well.&nbs
 
 They also have a relationship type: foreign key, or foreign master.
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free Qt Help documentation generator](<https://www.helpndoc.com>)_

@@ -28,19 +28,19 @@ The data model in the picture below results from the data modeling of the [Adven
 
 &nbsp;
 
-## Schemas ##
+## Schemas
 
 SQL Server tables are contained within database object containers that are called schemas.&nbsp; The schema also works as a security boundary, where you can limit database user permissions to be on a specific schema level only. &nbsp;
 
 &nbsp;
 
-## Tables ##
+## Tables
 
 All data in SQL Server is stored in database tables, logically structured as collections of columns and rows, optionally with single-column or multi-column constraints. &nbsp;
 
 &nbsp;
 
-## Unique, Primary, and Foreign Keys, plus Not Null, Check and Default constraints ##
+## Unique, Primary, and Foreign Keys, plus Not Null, Check and Default constraints
 
 Constraints in SQL Server are predefined rules and restrictions that are enforced in a single column or multiple columns, regarding the values allowed in the columns, to maintain the integrity, accuracy, and reliability of that column’s data. Constraints in SQL Server can be defined at the column level, where it is specified as part of the column definition and will be applied to that column only, or declared independently at the table level. 
 
@@ -48,7 +48,7 @@ Constraints in SQL Server are predefined rules and restrictions that are enforce
 
 There are six main constraints that are commonly used in SQL Server: NOT NULL, UNIQUE, PRIMARY, FOREIGN, CHECK, and DEFAULT. &nbsp;
 
-## Indexes ##
+## Indexes
 
 The goal of an index on a database table then is to reduce I/O.&nbsp; Properly indexing a SQL Server table is key to providing consistent, optimal performance. There are many things to consider when designing an index structure, but this goes beyond the scope of this document. &nbsp;
 
@@ -58,7 +58,7 @@ Hackolade supports the most common types of SQL Server indexes, but not all of t
 
 &nbsp;
 
-## Data types ##
+## Data types
 
 In SQL Server, each column, local variable, expression, and parameter has a related [data type](<https://docs.microsoft.com/en-us/sql/t-sql/data-types/data-types-transact-sql?view=sql-server-ver15> "target=\"\_blank\""). A data type is an attribute that specifies the type of data that the object can hold: integer data, character data, monetary data, date and time data, binary strings, and so on.
 
@@ -72,13 +72,13 @@ User-defined data types are based on the data types in SQL Server. User-defined 
 
 &nbsp;
 
-## Views ##
+## Views
 
 A view is a virtual table whose contents are defined by a query. Like a table, a view consists of a set of named columns and rows of data. Unless indexed, a view does not exist as a stored set of data values in a database. The rows and columns of data come from tables referenced in the query defining the view and are produced dynamically when the view is referenced.&nbsp; A view acts as a filter on the underlying tables referenced in the view. The query that defines the view can be from one or more tables or from other views in the current or other databases.
 
 &nbsp;
 
-## Forward-Engineering ##
+## Forward-Engineering
 
 Hackolade dynamically generates the DDL script to create schemas, tables, columns and their data types, indexes and constraints for the structure created with the application.
 
@@ -92,7 +92,7 @@ If you store JSON within (N)VARCHAR(MAX) or (N)VARCHAR(4000) columns, Hackolade 
 
 &nbsp;
 
-## Reverse-Engineering ##
+## Reverse-Engineering
 
 The SQL Server engine can hosted on-premises, on virtualized machines in a private or public cloud, or as a managed instance with the Azure SQL Database service.&nbsp; Details on how to connect Hackolade to SQL Server can be found on [this page](<ConnecttoaSQLServerinstance.md>).
 
@@ -104,6 +104,3 @@ The Hackolade process for reverse-engineering of SQL Server databases includes t
 
 For more information on SQL Server in general, please consult the [website](<https://www.microsoft.com/en-us/sql-server/sql-server-2019> "target=\"\_blank\"") and [documentation](<https://docs.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver15> "target=\"\_blank\""). &nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free EBook and documentation generator](<https://www.helpndoc.com>)_

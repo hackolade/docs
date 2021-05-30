@@ -36,7 +36,7 @@ The data model in the picture below results from the reverse-engineering of the 
 
 &nbsp;
 
-## Node labels ##
+## Node labels
 
 Node labels are a semantic representation of nodes in the graph.&nbsp; Node labels are used to represent the role of the node in the domain, making it possible to query the graph, to define constraints, and add indexes for properties.&nbsp; Labels can also be used to mark temporary states of a node.&nbsp;
 
@@ -46,7 +46,7 @@ Node labels are a semantic representation of nodes in the graph.&nbsp; Node labe
 
 &nbsp;
 
-## Property keys ##
+## Property keys
 
 A node label usually has attributes, called "property keys" where the name (or key) is a string.
 
@@ -54,7 +54,7 @@ A node label usually has attributes, called "property keys" where the name (or k
 
 &nbsp;
 
-## Property data types ##
+## Property data types
 
 The supported property types are:
 
@@ -75,13 +75,13 @@ The supported property types are:
 
 &nbsp;
 
-## Node key constraints ##
+## Node key constraints
 
 A node key constraint ensures that all nodes with a particular label have a set of defined properties whose combined value is unique, and where all properties in the set are present.
 
 ![Image](<lib/Neo4j%20node%20key%20contraint.png>)
 
-## Relationship types ##
+## Relationship types
 
 Relationship types are a semantic representation of relationships in the graph. Every relationship must have one and only type, and 2 nodes can be linked by several relationship types.&nbsp; Relationship types are used during complex traversals across the graph, when only certain kinds of paths from node to node are necessary for a specific query.
 
@@ -101,7 +101,7 @@ As Neo4j is a type of graph database known as 'property graph', relationship typ
 
 &nbsp;
 
-## Indexes ##
+## Indexes
 
 In Neo4j, it is possible to create an [index](<https://neo4j.com/docs/developer-manual/current/cypher/schema/index/> "target=\"\_blank\"") on a single property for any given label.&nbsp; A so-called composite index can also be created on more than one property for a given label.
 
@@ -109,7 +109,7 @@ In Neo4j, it is possible to create an [index](<https://neo4j.com/docs/developer-
 
 &nbsp;
 
-## Forward-Engineering ##
+## Forward-Engineering
 
 Cypher is a declarative graph query language that allows for expressive and efficient querying and updating of a property graph.&nbsp; Hackolade dynamically generates [Cypher](<https://neo4j.com/developer/cypher/> "target=\"\_blank\"") code as the model is created via the application.
 
@@ -117,7 +117,7 @@ Cypher is a declarative graph query language that allows for expressive and effi
 
 &nbsp;
 
-## Reverse-Engineering ##
+## Reverse-Engineering
 
 The process to reverse-engineer uses the APOC procedure [apoc.meta.subgraph()](<http://neo4j-contrib.github.io/neo4j-apoc-procedures/3.5/schema/meta-graph/> "target=\"\_blank\"") to query the database, infer the [schema](<https://neo4j.com/docs/developer-manual/current/cypher/schema/> "target=\"\_blank\"") and represent the node labels and relationship types with their property keys, constraints, and indexes.&nbsp; If APOC is not available, the process falls back on the Cypher function db.schema(), but db.schema() is not preferred as it is known to have [some bugs](<https://github.com/neo4j/neo4j/issues/9726> "target=\"\_blank\"") (also [here](<https://github.com/opencypher/morpheus/issues/666> "target=\"\_blank\"").)
 
@@ -125,6 +125,3 @@ The process to reverse-engineer uses the APOC procedure [apoc.meta.subgraph()](<
 
 For more details, you may consult the Neo4j [website](<https://neo4j.com/> "target=\"\_blank\"") and [graph database concepts page](<https://neo4j.com/docs/developer-manual/current/introduction/graphdb-concepts/> "target=\"\_blank\"").
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Benefits of a Help Authoring Tool](<https://www.helpauthoringsoftware.com>)_

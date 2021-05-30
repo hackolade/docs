@@ -20,6 +20,3 @@ If you local instance is installed on your computer and using port 8000, you sho
 
 ![Image](<lib/Rev-Engineering%20-%20DynamoDB%20connection%20local.png>)
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Create cross-platform Qt Help files](<https://www.helpndoc.com/feature-tour/create-help-files-for-the-qt-help-framework>)_

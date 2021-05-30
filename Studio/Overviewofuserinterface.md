@@ -21,6 +21,3 @@ and some advanced features
 * [Command Line Interface](<CommandLineInterface.md>)
 * [Naming conventions](<Namingconventions.md>)
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Full-featured EPub generator](<https://www.helpndoc.com/create-epub-ebooks>)_

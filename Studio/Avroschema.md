@@ -16,13 +16,13 @@ Hackolade was specially adapted to support the [schema design of Avro](<https://
 
 &nbsp;
 
-## Avro Schema ##
+## Avro Schema
 
 | An  Avro schema is created in JSON format and contains 4 attributes: **name**, **namespace**, **type**, and **fields.&nbsp; ** |
 | --- |
 
 
-## Data Types ##
+## Data Types
 
 There are 8 primitive types (**null**, **boolean**, **int**, **long**, **float**, **double**, **bytes**, and **string**) and 6 complex types (**record**, **enum**, **array**, **map**, **union**, and **fixed**).
 
@@ -63,7 +63,7 @@ which results in multiple blocks of properties appearing below in the Properties
 
 &nbsp;
 
-### b) complex types ###
+### b) complex types
 
 If at least one data type is complex (**record**, **enum**, **array**, **map**, **union**, or **fixed**), then you must use a oneOf choice, for example:
 
@@ -71,7 +71,7 @@ If at least one data type is complex (**record**, **enum**, **array**, **map**,
 
 &nbsp;
 
-## Forward-Engineering ##
+## Forward-Engineering
 
 Hackolade dynamically generates Avro schema for the structure created with the application.
 
@@ -83,10 +83,7 @@ Hackolade dynamically generates Avro schema for the structure created with the a
 
 This structure can be forward-engineered to a file with .avsc extention or copied/pasted to code.&nbsp; It can also be forward-engineered to a [Confluent Schema Registry](<ConfluentSchemaRegistry.md>) instance.
 
-## Reverse-Engineering ##
+## Reverse-Engineering
 
 Hackolade easily imports the schema from .avsc or .avro files to represent the corresponding Entity Relationship Diagram and schema structure.&nbsp; You may also import and convert from JSON Schema and documents.
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easily create HTML Help documents](<https://www.helpndoc.com/feature-tour>)_

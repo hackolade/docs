@@ -16,7 +16,7 @@ For authentication methods other than User/Password authentication (like Kerbero
 
 &nbsp;
 
-### Example ###
+### Example
 
 Assuming a procedure as described [here](<https://docs.mongodb.com/manual/tutorial/enable-authentication/> "target=\"\_blank\"") but with 'readWrite' rights:
 
@@ -60,6 +60,3 @@ and Authentication tab:
 
 &nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Benefits of a Help Authoring Tool](<https://www.helpauthoringsoftware.com>)_

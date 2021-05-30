@@ -76,7 +76,7 @@ A good example of a useful re-usable object is an address.&nbsp; You may want to
 
 &nbsp;
 
-## &#49;) Reference to another Hackolade model or a JSON Schema file ##
+## &#49;) Reference to another Hackolade model or a JSON Schema file
 
 If you have defined a separate model with the structure of an address, you may reference it in any other Hackolade model:
 
@@ -110,7 +110,7 @@ External references are produced using the $ref implementation described [here](
 
 &nbsp;
 
-## &#50;) Initially create a definition ##
+## &#50;) Initially create a definition
 
 A definition can be created from scratch, just like any collection, either by selecting the Model Definitions lower tab at the model ERD level:
 
@@ -154,7 +154,7 @@ At any point, it is possible, if desired, to replace a reference by the object d
 
 &nbsp;
 
-## &#51;) Convert an existing attribute into a definition ##
+## &#51;) Convert an existing attribute into a definition
 
 If you want to make an attribute available for use elsewhere in the same collection, or in another collection, you can convert it with just a few clicks:
 
@@ -164,7 +164,7 @@ This will create the internal or model definition, and replace the attribute (an
 
 &nbsp;
 
-## &#52;) Where-Used ##
+## &#52;) Where-Used
 
 For internal and model definitions, it may be useful to find all occurrences of definition references within a model.&nbsp; This where-used function (aka impact analysis, aka lineage) is available from the contextual menu (or the Ctrl+F11 shortcut key):
 
@@ -182,6 +182,3 @@ Choosing this option displays a dialog displaying all instances of references to
 
 You may select an instance and go to the hierarchical schema view of that reference. &nbsp; Lineage is enabled from the Object Browser and definition tab (model and internal.)&nbsp;
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Easily create PDF Help documents](<https://www.helpndoc.com/feature-tour>)_

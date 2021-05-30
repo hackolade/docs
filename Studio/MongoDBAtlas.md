@@ -57,6 +57,3 @@ In the SSL tab, make sure thatthe option System CA / Atlas Deployment was select
 
 You may test if you wish, then save and connect.
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Create help files for the Qt Help Framework](<https://www.helpndoc.com/feature-tour/create-help-files-for-the-qt-help-framework>)_

@@ -1,6 +1,6 @@
 # Mac
 
-## Standard installation ##
+## Standard installation
 
 The application is shipped as a signed (with Hackolade's parent company IntegrIT NV Developer ID) .pkg file with an installation wizard automatically placing the app in the proper folder and displaying the License Agreement and Release Notes.&nbsp; After downloading the application from our [download page](<https://hackolade.com/download.html> "target=\"\_blank\""), double-click on the downloaded .pkg file and the wizard will start.&nbsp; You will be prompted for your Mac username and password.
 
@@ -18,7 +18,7 @@ you must click OK.&nbsp; You may still manage this grant if needed in Security \
 
 &nbsp;
 
-## To install the application without admin rights ##
+## To install the application without admin rights
 
 In a corporate environment if you don't have the admin password to perform installation, you should contact your IT department.&nbsp; They can remotely access your computer and install the software for you.&nbsp; You should comply with the IT policy on non-approved software.
 
@@ -94,6 +94,3 @@ Manual installation steps:
 
 Double-click on the Hackolade.app icon to start the application.
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Free PDF documentation generator](<https://www.helpndoc.com>)_

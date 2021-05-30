@@ -48,7 +48,7 @@ With v4.2, Hackolade has introduced the capability to control the activation of 
 
 &nbsp;
 
-## &#49;. Collapse/Expand ##
+## &#49;. Collapse/Expand
 
 The properties pane may contains multiple elements, in which case, you can expand the list or collapse it using the&nbsp;
 
@@ -58,7 +58,7 @@ signs.
 
 &nbsp;
 
-## &#50;. Text box ##
+## &#50;. Text box
 
 A typical property is a text box to record a name or a description.&nbsp; It accepts alpha-numeric characters.
 
@@ -66,7 +66,7 @@ A typical property is a text box to record a name or a description.&nbsp; It acc
 
 &nbsp;
 
-## &#51;. Ellipse to dialog box ##
+## &#51;. Ellipse to dialog box
 
 When a longer text is typically needed for a property, an ellipse at the end of the text box&nbsp;
 
@@ -84,7 +84,7 @@ The ellipse is also used to pop-up a relationship field picker:
 
 &nbsp;
 
-## &#52;. Checkbox ##
+## &#52;. Checkbox
 
 When a property is boolean, it is represented with a checkbox:
 
@@ -92,7 +92,7 @@ When a property is boolean, it is represented with a checkbox:
 
 &nbsp;
 
-## &#53;. Dropdown list ##
+## &#53;. Dropdown list
 
 When a limited list of possible entries is provided, it is in the form of a dropdown list:
 
@@ -102,7 +102,7 @@ When a limited list of possible entries is provided, it is in the form of a drop
 
 &nbsp;
 
-## &#54;. Add/Remove ##
+## &#54;. Add/Remove
 
 When it is provided, you can add an entry by pressing the plus sign:
 
@@ -118,7 +118,7 @@ To delete the entry, click on the X to the right of the text box:
 
 &nbsp;
 
-# FAQ about some "obscure" properties #
+# FAQ about some "obscure" properties
 
 What's the purpose of these properties?
 
@@ -130,6 +130,3 @@ What's the purpose of these properties?
 
 \- technical name: see [Naming Conventions](<Namingconventions.md>)
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [What is a Help Authoring tool?](<https://www.helpauthoringsoftware.com>)_

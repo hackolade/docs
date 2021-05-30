@@ -14,6 +14,3 @@ Hackolade's recommended systems configuration is any of the following platforms:
 
 Note: Hackolade does not have any kind of telemetry, and no information on application usage is collected.&nbsp; For all details, please consult our Privacy Policy.
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [News and information about help authoring tools and software](<https://www.helpauthoringsoftware.com>)_

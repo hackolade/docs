@@ -29,9 +29,11 @@ To take full advantage of the capability, you may run the CLI from scheduled bat
 
 Below is the current list of Hackolade CLI commands.&nbsp; Additional commands may be added at a later date.
 
+&nbsp;
+
 | **Command** | **Purpose** |
 | --- | --- |
-| genDoc | Generate documentation for a Hackolade model, either in HTML or PDF format |
+| genDoc | Generate documentation for a Hackolade model, in HTML, Markdown, or PDF format |
 | revEng | Reverse-engineer a database instance or script file to infer the schema of the selected collections/tables |
 | revEngJSON | Reverse-engineer JSON Schema or documents |
 | revEngYAML | Reverse-engineer YAML or YAML Schema files |
@@ -54,7 +56,7 @@ Usage: &nbsp; &nbsp; *hackolade command \[--arguments\]*
 
 &nbsp;
 
-## &#49;) genDoc ##
+## &#49;) genDoc
 
 The *genDoc* command lets you invoke the generation of a documentation file, either in HTML or PDF format, for a specified existing Hackolade model.
 
@@ -70,7 +72,9 @@ Usage:&nbsp; &nbsp; *hackolade genDoc \[--arguments\]*
 | \--model=\<*file*\>\* | Y | Full path and file name for source Hackolade model for which documentation is being generated.&nbsp; Extension .json is optional |
 | \--doc=\<*file*\>\* | Y | Full path and file name for documentation.&nbsp; Extension .html , .md, or .pdf is optional |
 | \--logo=\<*file*\>\* | N | Full path and file name for custom logo file.&nbsp; If omitted, Hackolade logo is used |
-| \--modelDiagram=\<**true** \| false\> | N | Include model diagram \[default: true\] |
+| \--displayName=\<**business** \| technical\> | N | Define whether to display business or technical names \[values: "business", "technical"\] \[default: business\]&nbsp; |
+| \--diagram=\<**true** \| false\> | N | Include model diagram \[default: true\] |
+| \--diagramViews=\["\<*ERDV1\>"*,"\<*ERDV2\>"*,…\]" | N | Specify an array of diagram views to be included.&nbsp; The value is a string surrounded by double quotes (").&nbsp; ER Diagram View names are represented as an array surrounded by square brackets (\[\]), and are separated by a comma (,).&nbsp; \[default: all\] |
 | \--sepContDiag=\<**true** \| false\> | N | Include separate container diagrams (database, region, buckets, keyspaces...)&nbsp; \[default: true\] |
 | \--entityDiagrams=\<**true** \| false\> | N | Include entity hierarchical schema diagrams \[default: true\] |
 | \--attribTree=\<**all** \| complex \| none\> | N | Include individual hierarchical schema view for all attributes \[all\], for complex attributes only \[complex\], or for no attributes \[none\]. \[default: all\] |
@@ -109,7 +113,7 @@ More complex example:&nbsp;
 
 is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed above.
 
-## &#50;) revEng ##
+## &#50;) revEng
 
 The *revEng* command allows to trigger a reverse-engineering process of a database instance, as described in [this page](<Reverseengineeranexistinginstanc.md>), or script file.
 
@@ -186,7 +190,7 @@ Cosmos DB example:
 
 is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed above.
 
-## &#51;) revEngJSON ##
+## &#51;) revEngJSON
 
 The *revEngJSON* command allows to trigger a reverse-engineering process of a JSON document or JSON Schema file, as described in [this page](<JSONdocument1.md>).
 
@@ -214,7 +218,7 @@ Usage:&nbsp; &nbsp; *hackolade revEngJSON \[--arguments\]*
 
 &nbsp;
 
-## &#52;) revEngYAML ##
+## &#52;) revEngYAML
 
 The *revEngYAML* command allows to trigger a reverse-engineering process of a YAML document file, as described in [this page](<JSONdocument1.md>).
 
@@ -242,7 +246,7 @@ Usage:&nbsp; &nbsp; *hackolade revEngJSON \[--arguments\]*
 
 &nbsp;
 
-## &#53;) revEngDDL ##
+## &#53;) revEngDDL
 
 The *revEngDDL* command allows to trigger a reverse-engineering process of a Data Definition Language file from a database instance, as described in [this page](<SQLDDL.md>).
 
@@ -270,7 +274,7 @@ Usage:&nbsp; &nbsp; *hackolade revEngDDL \[--arguments\]*
 
 &nbsp;
 
-## &#54;) revEngXSD ##
+## &#54;) revEngXSD
 
 The *revEngXSD* command allows to trigger a reverse-engineering process of an XMS schema (XSD).
 
@@ -296,7 +300,7 @@ Usage:&nbsp; &nbsp; *hackolade revEngXSD \[--arguments\]*
 
 &nbsp;
 
-## &#55;) compMod ##
+## &#55;) compMod
 
 The *compMod* command lets you compare two (2) Hackolade models and derive a delta model file with additions, deletions, and modifications of fields and structures.
 
@@ -357,7 +361,7 @@ A delta model file may contain any combination of multiple additions, deletions,
 
 &nbsp;
 
-## &#56;) forwEng ##
+## &#56;) forwEng
 
 Forward engineer structure created with the application to dynamically generate the schema of the selected entities.
 
@@ -407,7 +411,7 @@ is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed 
 
 &nbsp;
 
-## &#57;) forwEngAPI ##
+## &#57;) forwEngAPI
 
 The forwEngAPI command lets you generate a Swagger or OpenAPI model from the merging of a source data model and a user-defined template
 
@@ -446,7 +450,7 @@ is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed 
 
 &nbsp;
 
-## &#49;0) obfusc&nbsp; ##
+## &#49;0) obfusc&nbsp;
 
 &nbsp;
 
@@ -483,7 +487,7 @@ is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed 
 
 &nbsp;
 
-## &#49;1) help ##
+## &#49;1) help
 
 The --*help* argument displays the version number of Hackolade being invoked.
 
@@ -493,7 +497,7 @@ Usage:&nbsp; &nbsp; *start /wait hackolade --help*
 
 &nbsp;
 
-## &#49;2) performance ##
+## &#49;2) performance
 
 The *--performance* argument records timestamps of application startup steps for performance troubleshooting.&nbsp; Log can be found in file HackoladePerformance.log in directory C:\\Users\\%username%\\AppData\\Roaming\\HackoladeLogs (Windows) or folder Users/$USER/Documents/HackoladeLogs (Mac/Linux)
 
@@ -503,7 +507,7 @@ Usage:&nbsp; &nbsp; *start /wait hackolade --performance*
 
 &nbsp;
 
-## &#49;3) version ##
+## &#49;3) version
 
 The --*version* argument displays the version number of Hackolade being invoked.
 
@@ -511,6 +515,3 @@ The --*version* argument displays the version number of Hackolade being invoked.
 
 Usage:&nbsp; &nbsp; *start /wait hackolade --version*
 
-
-***
-_Created with the Personal Edition of HelpNDoc: [Produce online help for Qt applications](<https://www.helpndoc.com/feature-tour/create-help-files-for-the-qt-help-framework>)_
