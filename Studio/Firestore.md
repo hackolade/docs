@@ -55,7 +55,7 @@ The unique key is based on a timestamp, so list items will automatically be orde
 
 ## Indexes
 
-## &nbsp;
+&nbsp;
 
 ## Forward-Engineering
 

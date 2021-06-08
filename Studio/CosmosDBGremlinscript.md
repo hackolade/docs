@@ -16,13 +16,11 @@ A button lets the user apply to a selected Azure instance the script to create g
 
 &nbsp;
 
-Or you may export these scripts to a Gremlin file with the menu option Tools \> Forward-Engineering \> Gremlin script:
+Or you may apply these scripts to a Gremlin directly to the selected instance with the menu option Tools \> Forward-Engineering \> Gremlin script:
 
 ![Image](<lib/Cosmos%20DB%20Gremlin%20forward-engineering%20menu.png>)
 
 &nbsp;
 
 &nbsp;
-
-See more details [here](<https://neo4j.com/developer/kb/export-sub-graph-to-cypher-and-import/> "target=\"\_blank\"") on how to apply the exported Cypher script.
 

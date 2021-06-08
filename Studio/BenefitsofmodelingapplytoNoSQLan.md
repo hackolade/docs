@@ -1,9 +1,5 @@
 # Benefits of data modeling apply to NoSQL and Agile
 
-# The benefits of data modeling also apply to NoSQL and Agile development
-
-&nbsp;
-
 "In many ways, up-front data design with NoSQL databases can actually be *more* important than it is with traditional relational databases... Beyond the performance topic, NoSQL databases with flexible schema capabilities similarly require *more* discipline in aligning to a common information model...  The flexible schema is a great innovation for quick evolution of your data model, and yet it requires discipline to harvest the benefits without experiencing major data quality issues and frustrations as a result.“&nbsp; Ryan Smith, Information Architect at Nike&nbsp;
 
 &nbsp;

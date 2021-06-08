@@ -52,7 +52,7 @@ Hackolade was specially adapted to support the data types and attributes behavio
 
 ![Image](<lib/HBase%20-%20treeview.png>)
 
-## &nbsp;
+&nbsp;
 
 ## Forward-Engineering
 

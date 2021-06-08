@@ -1,10 +1,20 @@
 # v5.x
 
-New features in v5.0.3 \[04-Jun-2021\]
+New features in v5.0.3 \[07-Jun-2021\]
 
 \- Avro: added ability to forward- and reverse-engineer with Azure Schema Registry for EventHub
 
-\- Properties Pane: added automatic scroll to focus on relationship selected in Object Browser
+\- JanusGraph: added support with new plugin, including forward-engineering of schema and sample graph via Gremlin script, plus traditional reverse-engineering
+
+\- Lineage: added tracking of Foreign Key relationships during denormalization
+
+\- Cassandra: added filtering of invalid clustering keys during forward-engineering
+
+\- Delta Lake: added retrieval of table BLOOMFILTER INDEX options and NOT NULL columns during reverse-engineering
+
+\- JSON Schema draft conversion of Sample property in draft-04 to Examples in older drafts, and vice-versa
+
+\- MongoDB pipeline views: use technical names when present
 
 &nbsp;
 
@@ -13,6 +23,8 @@ New features in v5.0.2 \[28-May-2021\]
 \- Compare and merge models: adjusted sizing of dialog with high-resolution screens
 
 \- Added option "Start a New Application Instance" from the File menu
+
+\- Properties Pane: added automatic scroll to focus on relationship selected in Object Browser
 
 \- Reverse-engineering of DDLs and XSDs: no longer overwriting the model name after first file
 

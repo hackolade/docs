@@ -22,13 +22,13 @@ You can initiate the process of getting an activation key either from the websit
 
 &nbsp;
 
-## &#49;. Get a software license key
+## Get a software license key
 
-### &#49;.1 from the website
+### from the website
 
 Go to the [pricing page](<http://hackolade.com/pricing.html> "target=\"\_blank\"") and choose the version you prefer (see [here](<Editions.md>) for more info).&nbsp; You will be directed to the Hackolade Store where you'll be guided through the checkout process.&nbsp; A license key will be generated and provided on screen and via email. &nbsp; You will need this key to access the application.&nbsp; Go to step 2 below for instructions.
 
-### &#49;.2 from the application
+### from the application
 
 When you start Hackolade, if there is no valid license key present, you are presented with this dialog box:
 
@@ -54,7 +54,7 @@ Choose one of the following options:
 
 then click the Send button.&nbsp; You will be directed to the Hackolade Store where you'll be guided through the checkout process.&nbsp; A license key will be generated and provided on screen and via email. &nbsp; You will need this license key to access the application.&nbsp; Go to step 2 below for instructions.
 
-## &#50;. Validate your license key
+## Validate your license key
 
 If you have not downloaded Hackolade yet, please do so from the [download page](<http://hackolade.com/download.html> "target=\"\_blank\"").
 
@@ -96,7 +96,7 @@ and the license details will be filled window will be filled.
 
 &nbsp;
 
-## &#51;. Release the license key from one computer to move to another
+## Release the license key from one computer to move to another
 
 If you need to move your license key to another computer, you first need to release it on the PC where your key is currently validated.
 
@@ -124,7 +124,7 @@ Go to the other computer where you want to use Hackolade and validate your licen
 
 &nbsp;
 
-## &#52;. Offline validation
+## Offline validation
 
 **Important note:** offline validation will NOT work for subscriptions or perpetual concurrent licenses.&nbsp; This section is only for Community, Trial and perpetual workstation licenses.
 
@@ -160,7 +160,7 @@ And the application should get activated.&nbsp; Do not modify anything in the do
 
 &nbsp;
 
-## &#53;. Concurrent licenses
+## Concurrent licenses
 
 Concurrent licenses (a.k.a. *floating* licenses) work differently than workstation licenses.&nbsp; With concurrent licenses, Hackolade's cloud-based licensing server tracks the number of simultaneous users for a given concurrent license key.&nbsp; If the number of simultaneous users reaches the maximum number of seats for the license key, anyone who subsequently tries to start the software is denied access. &nbsp;
 
@@ -186,7 +186,7 @@ Offline use of the application is possible but requires to start the application
 
 &nbsp;
 
-## &#54;. Licenses on Virtual Machines (or physical computer accessed via RDP or equivalent)
+## Licenses on Virtual Machines (or physical computer accessed via RDP or equivalent)
 
 **Important note:** installing Hackolade on a central computer (whether on a PC or a server, whether the machine is virtual or physical, and whether on premises or in the Cloud) does **not** change the terms of our [License Agreement](<Licenseagreement.md>).&nbsp; Specifically, that license metric is per "per seat", and that a license must be obtained for each device on or from which the Product is used or accessed. When the Product is accessed remotely across using Terminal Server, Remote Desktop, Citrix XenDesktop or an equivalent method, a separate Product license is required to be assigned to each device from which the application is accessed, i.e. not the virtual machine on which the Product is installed.
 
@@ -204,7 +204,7 @@ Example: having 4 Hackolade users on a single VM is the equivalent of having 4 i
 
 &nbsp;
 
-**VM configuration**
+### VM configuration
 
 Hackolade licensing is enforced through registration on our license server of a combination of unique identifiers, including the UUID of the computer where Hackolade is installed, a client workstation identification for the PC accessing the application, and the user login.  Each unknown combination reserves one seat on our license server, until you reach the total number of seats purchased for the submitted license key.
 
@@ -222,11 +222,8 @@ Given the way license seats are counted, it is important that identifiers remain
 
 &nbsp;
 
-Citrix
+#### Citrix
 
-\====
-
-\
 ENABLE\_DYNAMIC\_CLIENT\_NAME should be left to YES\
 Allows client name to be the same as the computer name. When you change the computer name, the client name changes too. 
 
@@ -246,9 +243,7 @@ Additional resources:
 
 &nbsp;
 
-VMWare
-
-\=======
+#### VMWare
 
 As per this VMWare [article, setup should generally be OK](<https://pubs.vmware.com/workstation-9/index.jsp?topic=/com.vmware.ws.using.doc/GUID-533B2C4F-7BD5-41EB-8392-2B9FE687AE50.html> "target=\"\_blank\""):  "Each virtual machine has a universal unique identifier (UUID). The UUID is generated when you initially power on the virtual machine...  Suspending and resuming a virtual machine does not trigger the process that generates a UUID...  If you do not move or copy the virtual machine to another location, the UUID remains constant." &nbsp;
 

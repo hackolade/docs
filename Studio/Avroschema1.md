@@ -6,5 +6,5 @@ Hackolade dynamically generates Avro schema for the structure created with the a
 
 &nbsp;
 
-The schema can also be applied to the Confluent Schema Registry.
+The schema can also be applied to the Confluent Schema Registry, or to Azure Schema Registry for Event Hubs.
 

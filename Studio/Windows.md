@@ -89,7 +89,7 @@ Example: having 4 Hackolade users on a single VM is the equivalent of having 4 i
 
 &nbsp;
 
-**VM configuration**
+### VM configuration
 
 Hackolade licensing is enforced through registration on our license server of a combination of unique identifiers, including the UUID of the computer where Hackolade is installed, a client workstation identification for the PC accessing the application, and the user login.  Each unknown combination reserves one seat on our license server, until you reach the total number of seats purchased for the submitted license key.
 
@@ -107,11 +107,8 @@ Given the way license seats are counted, it is important that identifiers remain
 
 &nbsp;
 
-Citrix
+#### Citrix
 
-\====
-
-\
 ENABLE\_DYNAMIC\_CLIENT\_NAME should be left to YES\
 Allows client name to be the same as the computer name. When you change the computer name, the client name changes too. 
 
@@ -131,9 +128,7 @@ Additional resources:
 
 &nbsp;
 
-VMWare
-
-\=======
+#### VMWare
 
 As per this VMWare [article, setup should generally be OK](<https://pubs.vmware.com/workstation-9/index.jsp?topic=/com.vmware.ws.using.doc/GUID-533B2C4F-7BD5-41EB-8392-2B9FE687AE50.html> "target=\"\_blank\""):  "Each virtual machine has a universal unique identifier (UUID). The UUID is generated when you initially power on the virtual machine...  Suspending and resuming a virtual machine does not trigger the process that generates a UUID...  If you do not move or copy the virtual machine to another location, the UUID remains constant." &nbsp;
 

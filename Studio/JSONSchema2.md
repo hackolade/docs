@@ -45,3 +45,29 @@ With version 5 of Hackolade, support was introduced for the [conditional applica
 
 You will find more information about JSON Schema on the [website](<http://json-schema.org/> "target=\"\_blank\""). &nbsp;
 
+&nbsp;
+
+## Forward-engineering
+
+Hackolade dynamically generates JSON Schema for the structure created with the application, and can be pre-viewed with a variety of options, as further described [here](<JSONSchema.md>). The JSON Schema can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
+![Image](<lib/Forward-Engineering%20-%20JSON%20Preview.png>)
+
+&nbsp;
+
+&nbsp;
+
+The JSON Schema can also be exported to a Confluetn Schema Registry instance:
+
+![Image](<lib/JSON%20Schema%20-%20forward-engineering%20to%20Confluen.png>)
+
+&nbsp;
+
+&nbsp;
+
+## Reverse-Engineering
+
+Hackolade can reverse-engineer of course JSON Schema from different drafts, but also infer the schema from JSON, YAML or NDJSON documents.&nbsp; It can lso convert DDLs and XSDs to JSON Schema.
+

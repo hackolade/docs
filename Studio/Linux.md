@@ -102,8 +102,6 @@ Execute in the terminal:
 
 *./Hackolade*
 
-&nbsp;
-
 ### Remote connection
 
 In case of remote connection, you need VNC server:

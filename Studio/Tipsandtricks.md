@@ -2,7 +2,7 @@
 
 The following tips and tricks may be useful to quickly become a Hackolade power user\!
 
-## &#49;. Release the license key from one computer to move to another
+## Release the license key from one computer to move to another
 
 If you need to move your license key to another computer, you first need to release it on the PC where your key is currently validated.
 
@@ -28,7 +28,9 @@ As of this moment, you can no longer use Hackolade on the original computer, unl
 
 Go to the other computer where you want to use Hackolade and validate your license key using the instructions above '2. Validate your license key'
 
-### *TIP:* if your company has many licenses, your administrator may require that you enter your name in the Identifier (optional) field.
+&nbsp;
+
+***TIP:*** if your company has many licenses, your administrator may require that you enter your name in the Identifier (optional) field.
 
 &nbsp;
 
@@ -56,7 +58,7 @@ The identifier entered in the this screen will appear in the web page:
 
 &nbsp;
 
-### *&#50;. Workspace*
+### *Workspace*
 
 ***TIP:*** you may create extra space on your desktop by sliding the Object Browser or Properties panes with this control ![Image](<lib/Central%20pane%20-%20ellipse.png>) appearing between the panes. You may also toggle the appearance of these panes in the View menu, or by double-clicking on the separation control.
 
@@ -92,7 +94,9 @@ Running multiple instances on the same PC does not require additional license se
 
 &nbsp;
 
-***&#51;. Object Browser***
+&nbsp;
+
+***Object Browser***
 
 &nbsp;
 
@@ -110,7 +114,7 @@ Running multiple instances on the same PC does not require additional license se
 
 &nbsp;
 
-### *&#52;. ERD*
+### *ERD*
 
 ***TIP:*** you may automatically resize an entity shape in the Entity Relationship Diagram view by clicking the double-sided arrow icon ![Image](<lib/ERD%20shape%20auto-resize%20icon.png>) at the top right corner of the shape
 
@@ -150,7 +154,7 @@ You may also do a right-click and access the same functions through the contextu
 
 &nbsp;
 
-### &#53;. Hierarchical hierarchical schema view of entities (collections/tables)
+### Hierarchical hierarchical schema view of entities (collections/tables/nodes \& edges)
 
 ***TIP:*** you may change the order of the fields/attributes with these control icons: ![Image](<lib/DTD%20field%20order%20arrows.png>)
 
@@ -168,7 +172,7 @@ You may also do a right-click and access the same functions through the contextu
 
 &nbsp;
 
-### &#54;. JSON Preview
+### JSON Preview
 
 &nbsp;
 
@@ -184,7 +188,7 @@ You may also do a right-click and access the same functions through the contextu
 
 &nbsp;
 
-### &#55;. Reverse-Engineering
+### Reverse-Engineering
 
 &nbsp;
 
@@ -204,7 +208,7 @@ In MongoDB, reads to a primary have [strict consistency](<http://docs.mongodb.o
 
 By calling [rs.slaveOk()](<http://docs.mongodb.org/manual/reference/method/rs.slaveOk/> "target=\"\_blank\"") you are indicating to the system that you acknowledge that reads will be eventually consistent and wish to be able to run reverse-engineering from the secondary anyway.
 
-### &#56;. General
+### General
 
 &nbsp;
 

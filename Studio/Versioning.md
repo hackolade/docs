@@ -8,7 +8,7 @@ Some users may have thought that Hackolade did not include a built-in versioning
 
 &nbsp;
 
-## &#49;) Model lifecycle
+## Model lifecycle
 
 It is often the case, in particular in an Agile environment, that models diverge in multiple parallel paths before they have to converge.&nbsp; The old approach of check-out/check-in of a data model, to lock it from being modified by others while we're making changes, is not flexible enough for today's non-linear application schema evolution or for the fast pace of agile sprints.
 
@@ -46,7 +46,7 @@ Learn how how to handle resolution in the page [Compare and Merge Models](<Compa
 
 &nbsp;
 
-## &#50;) Validating schemas in production
+## Validating schemas in production
 
 Another typical use case in enterprises is to make sure that the Data Governance department has an accurate view of the schemas used in production databases.&nbsp; This is particularly relevant in the context of schemaless NoSQL when there is no DDL in source code control.&nbsp; The process of auditing a production database may become a nightly process (automated with our [Command-Line Interface](<CommandLineInterface.md>)) to reveal structures being used without prior validation.
 
@@ -80,7 +80,7 @@ Learn how how to handle the successive merge operations and the resolution of me
 
 &nbsp;
 
-## &#51;) Model-driven API generation
+## Model-driven API generation
 
 When you use the Hackolade feature to [generate Swagger/OpenAPI documentation](<APIModel.md>) based on an underlying data model, you may have to adjust many details of the API model, including metadata or requests/responses that were not initially foreseen in the template used to generate the API model. &nbsp; So, when entities and attributes in the underlying data model evolve and you want to generate a new version of the API model, you want to be able to easily merge the changes in both tracks.
 

@@ -53,7 +53,7 @@ Each Firebase Realtime database data is stored as JSON objects. &nbsp;
 
 ## Indexes
 
-## &nbsp;
+&nbsp;
 
 ## Forward-Engineering
 

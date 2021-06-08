@@ -16,19 +16,15 @@ The&nbsp; above editions are packaged in the same software.&nbsp; The activation
 
 &nbsp;
 
-&nbsp;**(\*):** License metric is per Operating System Instance (“OSI”) (i.e. PCs under Windows, Mac or Linux OS), meaning that each implementation of the software can be installed onto a physical system or a partition, such as a Virtual Machines system, virtual environments, virtual private servers, containers, guests and zones within the physical system.&nbsp; A physical system can contain multiple Operating System Instances. \
+&nbsp;**(\*):** License metric is per "per seat", meaning that the number of Authorized Users specified on the Invoice may use the software. A license must be obtained for each device on or from which the Product is used or accessed. When the Product is accessed remotely across using Terminal Server, Remote Desktop, Citrix XenDesktop or an equivalent method, a separate Product license is required to be assigned to each device from which the application is accessed, i.e. not the virtual machine on which the Product is installed. \
 **(\*\*):** concurrent (aka floating) licenses does NOT require a license server on premises.
 
 &nbsp;
 
-Each edition is available natively on the following platforms:
+Each edition is available natively for the following platforms:
 
 * &nbsp;
   * Windows: 64-bit
   * Mac OSX
   * Linux: 64-bit
-
-&nbsp;
-
-* **Smartphone Virtual Reality viewer:**&nbsp; this is an experimental application, available for free from Google Play or the Apple App store.&nbsp; It works either with CardboardVR-compatible glasses or with the Samsung Gear VR glasses.&nbsp; You need to provide your own compatible smartphone.&nbsp; Hackolade VR viewer does not allow creation or maintenance of database models.&nbsp; It only provides a VR viewing experience of models previously created with a Hackolade desktop edition.&nbsp; The model to be viewed needs has to be stored on a web server accessible by the smartphone.
 

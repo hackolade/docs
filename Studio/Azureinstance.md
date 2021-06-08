@@ -30,7 +30,7 @@ Go to the [Azure portal](<https://portal.azure.com/> "target=\"\_blank\"") to re
 
 ## &#50;) Control Plane
 
-The REST API connection should be enabled and all the proper parameters provided if you wish for Hackolade to retrieve additional Azure metadata such as: tags, location and region replication, automatic failover, virtual network filter and rules, and IP-range filter.&nbsp;
+The REST API connection must be enabled and all the proper parameters provided if you wish for Hackolade to retrieve additional Azure metadata such as: tags, location and region replication, automatic failover, virtual network filter and rules, and IP-range filter.&nbsp;
 
 &nbsp;
 
@@ -40,7 +40,7 @@ The REST API connection should be enabled and all the proper parameters provided
 
 &nbsp;
 
-First, you must provide the **Resource Group Name** and **Subscription ID** of Cosmos DB instance, as found in the Overview screen of the Comos DB instance. More information [here](<https://docs.microsoft.com/en-us/azure/cosmos-db/how-to-manage-database-account#create-an-account> "target=\"\_blank\"").
+First, you must provide the **Resource Group Name** and **Subscription ID** of Cosmos DB instance, as found in the Overview screen of the Cosmos DB instance. More information [here](<https://docs.microsoft.com/en-us/azure/cosmos-db/how-to-manage-database-account#create-an-account> "target=\"\_blank\"").
 
 ![Image](<lib/CosmosDB%20-%20Azure%20instance%20overview%20screen.png>)
 
