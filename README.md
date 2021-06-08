@@ -2,14 +2,10 @@
 
 Product documentation: tutorials, how-to guides, reference, conceptual
 
-Following methodology described [here](https://documentation.divio.com/introduction/).   Take a look also at this [article](https://openviewpartners.com/blog/developer-documentation#.YETe22hKhIA).
-
-
-
-This is a great example: GatsbyJS [documentation](https://www.gatsbyjs.com/docs/) and corresponding  [repo](https://github.com/gatsbyjs/gatsby/tree/master/docs).
+Following methodology described [here](https://documentation.divio.com/introduction/), also edscirbed in this [article](https://openviewpartners.com/blog/developer-documentation#.YETe22hKhIA).
 
 ## Read docs at https://hackolade.com/help
 
 We intend the docs to be read on [hackolade.com](https://hackolade.com/help) — You can read them here of course :-) Just be warned that links won't always work and other things will be missing or less than optimal.
 
-Go forth and build cool stuff.
+Copyright (c) 2016-2021 IntegrIT SA/NV dba Hackolade. All Rights Reserved.
