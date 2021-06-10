@@ -1,7 +1,5 @@
 # Managing multiple license keys and seats
 
-# Managing multiple license keys and seats
-
 If you're a license administrator, you may want to track who's using your licenses of Hackolade. You may do so by accessing the URL [https://quicklicensemanager.com/hackolade/QlmCustomerSite/qlmlicenseinfo.aspx](<https://quicklicensemanager.com/hackolade/QlmCustomerSite/qlmlicenseinfo.aspx> "target=\"\_blank\"")
 
  ![Image](<lib/QLM%20-%20License%20Manager%20no%20identification.png>)

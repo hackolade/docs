@@ -1,7 +1,5 @@
 # Access issues when doing reverse-engineering of Couchbase
 
-# Access issues when doing reverse-engineering of Couchbase
-
 With Couchbase 3.x and 4.x fairly basic security, the Administrator can set a password at the bucket level, but anyone with that password gets full rights on the bucket. With Couchbase 5.x a new role-based access control is introduced.  Hackolade supports security of all these versions, but special attention is required for proper configuration:
 
 * if N1QL service is running, we use Couchbase nodejs SDK and a combination of INFER when available (Enterprise 4.5 and above) and N1QL queries, plus:

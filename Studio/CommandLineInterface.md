@@ -11,7 +11,7 @@ It is often helpful, in order to understand how to set the different CLI argumen
 It is easier to run the CLI from the directory where the Hackolade executable is installed, from a terminal program:
 
 * Windows:&nbsp;
-  * cmd command line: all commands below should be preceded by *start /wait *
+  * cmd command line: all commands below should be preceded by *start /wait*
   * PowerShell: all commands below should be preceded by *Start-Process -wait *
 * Mac and Linux: terminal emulator or common shell programs:&nbsp;
   * all commands below should be preceded by open and contain --args and possibly use the -W flag, e.g.:
@@ -56,7 +56,7 @@ Usage: &nbsp; &nbsp; *hackolade command \[--arguments\]*
 
 &nbsp;
 
-## &#49;) genDoc
+## genDoc
 
 The *genDoc* command lets you invoke the generation of a documentation file, either in HTML or PDF format, for a specified existing Hackolade model.
 
@@ -94,16 +94,16 @@ Usage:&nbsp; &nbsp; *hackolade genDoc \[--arguments\]*
 
 Simple example: using all default options: &nbsp;
 
-*start /wait hackolade genDoc --format=HTML --model=C:\\Users\\Public\\Bitbucket\\hackolade\\schemas\\MongoDB\\noaa.json *\
-*\--doc=C:\\Users\\Public\\Documents\\Hackolade\\Documentation\\noaa.html*
+> start /wait hackolade genDoc --format=HTML --model=C:\\Users\\Public\\Bitbucket\\hackolade\\schemas\\MongoDB\\noaa.json \
+\--doc=C:\\Users\\Public\\Documents\\Hackolade\\Documentation\\noaa.html
 
 &nbsp;
 
 More complex example:&nbsp;
 
-*start /wait C:\\PROGRA~1\\Hackolade\\hackolade genDoc --format=HTML --model=C:\\Users\\Public\\Bitbucket\\hackolade\\schemas\\Couchbase\\travel-sample.json *\
-*\--doc=C\\Users\\Public\\Documents\\Hackolade\\Documentation\\travel-sample.html --logo="C\\Users\\Public\\Documents\\Hackolade\\Documentation\\couchbase logo.png" *\
-*\--attribTree=complex --JSONSchema=false --JSONData=false --properties=notNull --entities="travel-sample: airport, airline, route"*
+> start /wait C:\\PROGRA~1\\Hackolade\\hackolade genDoc --format=HTML --model=C:\\Users\\Public\\Bitbucket\\hackolade\\schemas\\Couchbase\\travel-sample.json \
+\--doc=C\\Users\\Public\\Documents\\Hackolade\\Documentation\\travel-sample.html --logo="C\\Users\\Public\\Documents\\Hackolade\\Documentation\\couchbase logo.png" \
+\--attribTree=complex --JSONSchema=false --JSONData=false --properties=notNull --entities="travel-sample: airport, airline, route"
 
 &nbsp;
 
@@ -113,7 +113,7 @@ More complex example:&nbsp;
 
 is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed above.
 
-## &#50;) revEng
+## revEng
 
 The *revEng* command allows to trigger a reverse-engineering process of a database instance, as described in [this page](<Reverseengineeranexistinginstanc.md>), or script file.
 
@@ -158,29 +158,29 @@ Usage:&nbsp; &nbsp; *hackolade revEng \[--arguments\]*
 
 MongoDB example:&nbsp; &nbsp;
 
-*hackolade revEng --connectName=local --target=MONGODB --samplingMethod=abs --samplingValue=1000 *\
-*\--model=C:\\Users\\Public\\Bitbucket\\hackolade\\schemas\\MongoDB\\yelp.json --includeEmpty=true --selectedObjects="yelp" --fieldOrder=keep *
+> hackolade revEng --connectName=local --target=MONGODB --samplingMethod=abs --samplingValue=1000 \
+\--model=C:\\Users\\Public\\Bitbucket\\hackolade\\schemas\\MongoDB\\yelp.json --includeEmpty=true --selectedObjects="yelp" --fieldOrder=keep&nbsp;
 
 &nbsp;
 
 DynamoDB example:&nbsp; &nbsp;
 
-*"C:\\Program Files\\Hackolade\\hackolade" revEng --connectName=local --target=DYNAMODB --samplingMethod=abs --samplingValue=1000 *\
-*\--model=C:\\Users\\Public\\Bitbucket\\hackolade\\schemas\\DynamoDB\\entertainment.json --includeEmpty=false --selectedObjects="\[Movies, Music\]" --fieldOrder=alpha *
+> "C:\\Program Files\\Hackolade\\hackolade" revEng --connectName=local --target=DYNAMODB --samplingMethod=abs --samplingValue=1000 \
+\--model=C:\\Users\\Public\\Bitbucket\\hackolade\\schemas\\DynamoDB\\entertainment.json --includeEmpty=false --selectedObjects="\[Movies, Music\]" --fieldOrder=alpha&nbsp;
 
 &nbsp;
 
 Couchbase example:&nbsp; &nbsp;
 
-*"C:\\Program Files\\Hackolade\\hackolade" revEng --connectName=local --target=COUCHBASE --samplingMethod=abs --samplingValue=2500 *\
-*\--model=C:\\Users\\Public\\Bitbucket\\hackolade\\schemas\\Couchbase\\travel-sample.json --includeEmpty=false --selectedObjects="travel-sample: \[airline, airport\]"&nbsp; *\
-*\--documentKinds="travel-sample: type" --fieldOrder=keep*
+> "C:\\Program Files\\Hackolade\\hackolade" revEng --connectName=local --target=COUCHBASE --samplingMethod=abs --samplingValue=2500 \
+\--model=C:\\Users\\Public\\Bitbucket\\hackolade\\schemas\\Couchbase\\travel-sample.json --includeEmpty=false --selectedObjects="travel-sample: \[airline, airport\]"&nbsp; \
+\--documentKinds="travel-sample: type" --fieldOrder=keep
 
 &nbsp;
 
 Cosmos DB example:
 
-*start /wait hackolade reveng --target=COSMOSDB-DOC --connectName=azure --model=travel.json --selectedObjects="travel" --documentKinds="travel:type"*
+> start /wait hackolade reveng --target=COSMOSDB-DOC --connectName=azure --model=travel.json --selectedObjects="travel" --documentKinds="travel:type"
 
 &nbsp;
 
@@ -190,7 +190,7 @@ Cosmos DB example:
 
 is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed above.
 
-## &#51;) revEngJSON
+## revEngJSON
 
 The *revEngJSON* command allows to trigger a reverse-engineering process of a JSON document or JSON Schema file, as described in [this page](<JSONdocument1.md>).
 
@@ -218,7 +218,7 @@ Usage:&nbsp; &nbsp; *hackolade revEngJSON \[--arguments\]*
 
 &nbsp;
 
-## &#52;) revEngYAML
+## revEngYAML
 
 The *revEngYAML* command allows to trigger a reverse-engineering process of a YAML document file, as described in [this page](<JSONdocument1.md>).
 
@@ -246,7 +246,7 @@ Usage:&nbsp; &nbsp; *hackolade revEngJSON \[--arguments\]*
 
 &nbsp;
 
-## &#53;) revEngDDL
+## revEngDDL
 
 The *revEngDDL* command allows to trigger a reverse-engineering process of a Data Definition Language file from a database instance, as described in [this page](<SQLDDL.md>).
 
@@ -274,7 +274,7 @@ Usage:&nbsp; &nbsp; *hackolade revEngDDL \[--arguments\]*
 
 &nbsp;
 
-## &#54;) revEngXSD
+## revEngXSD
 
 The *revEngXSD* command allows to trigger a reverse-engineering process of an XMS schema (XSD).
 
@@ -300,7 +300,7 @@ Usage:&nbsp; &nbsp; *hackolade revEngXSD \[--arguments\]*
 
 &nbsp;
 
-## &#55;) compMod
+## compMod
 
 The *compMod* command lets you compare two (2) Hackolade models and derive a delta model file with additions, deletions, and modifications of fields and structures.
 
@@ -361,7 +361,7 @@ A delta model file may contain any combination of multiple additions, deletions,
 
 &nbsp;
 
-## &#56;) forwEng
+## forwEng
 
 Forward engineer structure created with the application to dynamically generate the schema of the selected entities.
 
@@ -397,7 +397,7 @@ Usage:&nbsp; &nbsp; *hackolade forwEng \[--arguments\]*
 
 Example:
 
-*C:\\PROGRA~1\\Hackolade\\hackolade forwEng --model=masterdata.json --path=masterdata.cql&nbsp; *
+> C:\\PROGRA~1\\Hackolade\\hackolade forwEng --model=masterdata.json --path=masterdata.cql &nbsp;
 
 &nbsp;
 
@@ -411,7 +411,7 @@ is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed 
 
 &nbsp;
 
-## &#57;) forwEngAPI
+## forwEngAPI
 
 The forwEngAPI command lets you generate a Swagger or OpenAPI model from the merging of a source data model and a user-defined template
 
@@ -438,7 +438,7 @@ Usage:&nbsp; &nbsp; *hackolade obfusc \[--arguments\]*
 
 Example:
 
-*C:\\PROGRA~1\\Hackolade\\hackolade forwEngAPI --sourcemodel=masterdata --APItemplate=OAS\_generation --targetmodel=masterdataAPI&nbsp; --APIdocFile=masterdata\_OpenAPI *
+> C:\\PROGRA~1\\Hackolade\\hackolade forwEngAPI --sourcemodel=masterdata --APItemplate=OAS\_generation --targetmodel=masterdataAPI&nbsp; --APIdocFile=masterdata\_OpenAPI&nbsp;
 
 &nbsp;
 
@@ -450,7 +450,7 @@ is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed 
 
 &nbsp;
 
-## &#49;0) obfusc&nbsp;
+## obfusc&nbsp;
 
 &nbsp;
 
@@ -487,7 +487,7 @@ is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed 
 
 &nbsp;
 
-## &#49;1) help
+## help
 
 The --*help* argument displays the version number of Hackolade being invoked.
 
@@ -497,7 +497,7 @@ Usage:&nbsp; &nbsp; *start /wait hackolade --help*
 
 &nbsp;
 
-## &#49;2) performance
+## performance
 
 The *--performance* argument records timestamps of application startup steps for performance troubleshooting.&nbsp; Log can be found in file HackoladePerformance.log in directory C:\\Users\\%username%\\AppData\\Roaming\\HackoladeLogs (Windows) or folder Users/$USER/Documents/HackoladeLogs (Mac/Linux)
 
@@ -507,7 +507,7 @@ Usage:&nbsp; &nbsp; *start /wait hackolade --performance*
 
 &nbsp;
 
-## &#49;3) version
+## version
 
 The --*version* argument displays the version number of Hackolade being invoked.
 

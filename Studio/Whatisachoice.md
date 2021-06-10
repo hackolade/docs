@@ -1,9 +1,5 @@
 # What is a "choice"?
 
-**What is a "choice"?**
-
-&nbsp;
-
 Each choice attribute contains an array, with each attribute of the array representing content that will be matched against. The choice of “allOf”, “anyOf”, “oneOf”, or “noneOf” determines how the validation processor will treat the results of the matches:
 
 * allOf requires that all attributes in the array are matched successfully

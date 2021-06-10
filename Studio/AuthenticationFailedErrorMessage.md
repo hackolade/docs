@@ -1,9 +1,5 @@
 # Authentication Failed Error Message
 
-## Suggestions for troubleshooting the "authentication failed" error message
-
-&nbsp;
-
 The "authentication failed" error message is often the result of one of five conditions.
 
 * Password is missing after copying connection string from the Atlas web page.  This is a security precaution, so you should enter the password manually in the Hackolade connection window.

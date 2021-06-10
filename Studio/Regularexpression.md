@@ -1,9 +1,5 @@
 # Regular expression
 
-## Regular expression
-
-&nbsp;
-
 Regex is used in 2 places:
 
 \- for the pattern validation of strings

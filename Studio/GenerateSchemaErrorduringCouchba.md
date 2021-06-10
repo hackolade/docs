@@ -1,7 +1,5 @@
 # Generate Schema Error during Couchbase reverse-engineering
 
-# Generate Schema Error during Couchbase reverse-engineering
-
 If you get this message:
 
 ![Image](<lib/Couchbase%20RE%20error.png>)

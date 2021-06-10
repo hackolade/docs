@@ -1,7 +1,5 @@
 # Perpetual license or subscription: which one should I choose?
 
-# Perpetual license or subscription: which one should I choose?
-
 At Hackolade, we try to make it easy and convenient to do business with us and respond to customer needs.  This includes a flexible pricing plan.  But so many options may make decisions more difficult.  Here a a few things to consider when making your choice:
 
 ## &#49;) Accounting
