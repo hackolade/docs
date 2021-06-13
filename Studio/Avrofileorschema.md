@@ -118,7 +118,7 @@ Give a meaningful name to the connection to identify it for later, choose Azure 
 
 Then you need to provide the authentication parameters:
 
-![Image](<lib/NewItem2.png>)
+![Image](<lib/Azure%20Schema%20Registry%20connection%20auth%20params.png>)
 
 &nbsp;
 
@@ -145,10 +145,6 @@ Finally, the **Application secret** is obtained from the Certificates \& secrets
 &nbsp;
 
 If you don't know how to generate some of the above values, you may want to consult this [document](<https://github.com/Azure/azure-libraries-for-net/blob/master/AUTH.md> "target=\"\_blank\"").
-
-&nbsp;
-
-&nbsp;
 
 &nbsp;
 

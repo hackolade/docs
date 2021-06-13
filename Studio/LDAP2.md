@@ -1,9 +1,5 @@
 # LDAP
 
-## Authentication
-
-&nbsp;
-
 If you require LDAP authentication, it is necessary, in order to connect to the DSE nodes via a secure connection, to select the SSL type.&nbsp; A keystore contains client certificate and client key.&nbsp; Whereas a truststore contains certificate authority (CA).
 
 &nbsp;
@@ -33,7 +29,7 @@ Our module for decrypting JKS uses the following logic to find java home:
 
 &nbsp;
 
-## &#49;) Accessing the keystore&nbsp;
+## Accessing the keystore&nbsp;
 
 Specify the path and filename to keystore, the access password, and the alias name for the Cassandra instance.
 
@@ -55,7 +51,7 @@ The alias can be found in the section “Alias name”.&nbsp; If no alias was se
 
 &nbsp;
 
-## &#50;) Accessing the truststore
+## Accessing the truststore
 
 If necessary, you may also declare truststore parameters:
 
@@ -69,7 +65,7 @@ You may consult [this page](<https://docs.datastax.com/en/security/6.7/security/
 
 &nbsp;
 
-## &#51;) Accessing both the keystore and the truststore
+## Accessing both the keystore and the truststore
 
 Enter the parameters according to both 1) and 2) above.
 
@@ -77,7 +73,7 @@ Enter the parameters according to both 1) and 2) above.
 
 &nbsp;
 
-## &#52;) Convert the keystore and truststore into [PEM keys](<https://en.wikipedia.org/wiki/Privacy-Enhanced\_Mail> "target=\"\_blank\"")
+## Convert the keystore and truststore into [PEM keys](<https://en.wikipedia.org/wiki/Privacy-Enhanced\_Mail> "target=\"\_blank\"")
 
 &nbsp;
 

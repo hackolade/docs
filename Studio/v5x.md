@@ -1,5 +1,27 @@
 # v5.x
 
+New features in v5.0.4 \[11-Jun-2021\]
+
+\- Neptune with Gremlin API: added support with new plugin, including forward-engineering of schema and sample graph via Gremlin script, plus traditional reverse-engineering
+
+\- ERD: added handle to drag-and-drop attributes (can be hidden with Display Options toolbar icon of View menu).&nbsp; Use ctrl+mouse click to move or copy multiple attributes
+
+\- Tools \> Options \> Naming Conventions: added ability to refresh CSV abbreviation file without necessity to restart the application
+
+\- Toolbar: grouped various display options under a new icon
+
+\- View menu: grouped display options
+
+\- MongoDB: removed filter for inclusion in JSON Schema full/extended of properties from properties tabs: users, indexes, sharding
+
+\- Cassandra/ScyllaDB: removed filter for inclusion in JSON Schema full/extended of properties from properties tab secondary indexes
+
+\- Cassandra on Astra: added possibility for token-based authorization
+
+\- Snowflake: added possibility to forward-engineer all schemas so as to allow foreign keys across multiple schemas
+
+&nbsp;
+
 New features in v5.0.3 \[07-Jun-2021\]
 
 \- Avro: added ability to forward- and reverse-engineer with Azure Schema Registry for EventHub

@@ -74,7 +74,7 @@ JanusGraph will enforce that all values associated with the key have the configu
 
 JanusGraph natively supports the following data types:
 
-![Image](<lib/NewItem.png>)
+![Image](<lib/JanusGraph%20property%20key%20data%20types.png>)
 
 &nbsp;
 

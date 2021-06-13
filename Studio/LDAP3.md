@@ -1,14 +1,10 @@
 # LDAP
 
-## Authentication
-
-&nbsp;
-
 If you require LDAP authentication, it is necessary, in order to connect to nodes via a secure connection, to select the SSL type.&nbsp; There are 2 ways to leverage the Java Keystore (JKS): accessing the JKS directly, or using certificates issued from the keystore.
 
 &nbsp;
 
-## &#49;) Accessing the keystore directly
+## Accessing the keystore directly
 
 Specify the path and filename to keystore, the access password, and the alias name for the ScyllaDB instance.
 
@@ -18,7 +14,7 @@ Specify the path and filename to keystore, the access password, and the alias na
 
 &nbsp;
 
-## &#50;) Convert the keystore and truststore into [PEM keys](<https://en.wikipedia.org/wiki/Privacy-Enhanced\_Mail> "target=\"\_blank\"")
+## Convert the keystore and truststore into [PEM keys](<https://en.wikipedia.org/wiki/Privacy-Enhanced\_Mail> "target=\"\_blank\"")
 
 &nbsp;
 

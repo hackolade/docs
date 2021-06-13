@@ -1,12 +1,6 @@
 # Username/password
 
-## Authentication
+If required, enter your username and password:&nbsp;
 
-&nbsp;
-
-If required, enter your username and password
-
-&nbsp;
-
-![Image](<lib/Cassandra%20authentication.png>)
+![Image](<lib/ScyllaDB%20authentication.png>)
 

@@ -68,7 +68,7 @@ Usage:&nbsp; &nbsp; *hackolade genDoc \[--arguments\]*
 
 | **Argument** | **Required** | **Purpose** |
 | --- | --- | --- |
-| \--format=\<HTML \| PDF\> | Y | Specify format, currently either HTML, MARKDOWN, or PDF |
+| \--format=\<HTML \| Markdown&nbsp; \|&nbsp; PDF\> | Y | Specify format, currently either HTML, MARKDOWN, or PDF |
 | \--model=\<*file*\>\* | Y | Full path and file name for source Hackolade model for which documentation is being generated.&nbsp; Extension .json is optional |
 | \--doc=\<*file*\>\* | Y | Full path and file name for documentation.&nbsp; Extension .html , .md, or .pdf is optional |
 | \--logo=\<*file*\>\* | N | Full path and file name for custom logo file.&nbsp; If omitted, Hackolade logo is used |
@@ -112,6 +112,8 @@ More complex example:&nbsp;
 ![Image](<lib/Windows%20Program%20Files.png>)
 
 is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed above.
+
+&nbsp;
 
 ## revEng
 
@@ -189,6 +191,8 @@ Cosmos DB example:
 ![Image](<lib/Windows%20Program%20Files.png>)
 
 is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed above.
+
+&nbsp;
 
 ## revEngJSON
 

@@ -59,7 +59,7 @@ Hackolade dynamically generates JSON Schema for the structure created with the a
 
 &nbsp;
 
-The JSON Schema can also be exported to a Confluetn Schema Registry instance:
+The JSON Schema can also be exported to a Confluent Schema Registry instance:
 
 ![Image](<lib/JSON%20Schema%20-%20forward-engineering%20to%20Confluen.png>)
 
