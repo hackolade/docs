@@ -1,5 +1,25 @@
 # v5.x
 
+New features in v5.0.5 \[18-Jun-2021\]
+
+\- ERD drag-and-drop: added possibility to drop into an empty entity or an empty complex attribute (object or array)
+
+\- Lineage capture: added container level information to event tracing
+
+\- Azure Schema Registry: added possibility to reverse-engineer schemas created via Azure portal console
+
+\- Avro: added validator in model level script tab prior to applying to schema registries
+
+\- Cosmos DB Gremlin: improved error message when specified endpoint is incorrect during forward-engineering to instance
+
+\- MariaDB: implemented possibility to apply DDL script to instance
+
+\- SQL targets: re-ordered DDL scripts to ensure that Foreign Key creations relate to previously created tables
+
+\- Snowflake: added possibility to select combined vs individual schemas from Tools \> Forward-Engineering and Command-Line Interface
+
+&nbsp;
+
 New features in v5.0.4 \[11-Jun-2021\]
 
 \- Neptune with Gremlin API: added support with new plugin, including forward-engineering of schema and sample graph via Gremlin script, plus traditional reverse-engineering

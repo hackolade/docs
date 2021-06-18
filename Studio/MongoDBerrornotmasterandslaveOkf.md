@@ -1,4 +1,4 @@
-# MongoDB error "not master and slaveOk=false"
+# MongoDB error not master and slaveOk=false
 
 If you get an error "not master and slaveOk=false" when connecting to a MongoDB instance, on a secondary member (for example, a replica set connection using a [read preference](<http://docs.mongodb.org/manual/core/read-preference/> "target=\"\_blank\"") of [secondary](<http://docs.mongodb.org/manual/reference/read-preference/#secondary> "target=\"\_blank\"") or [secondaryPreferred](<http://docs.mongodb.org/manual/reference/read-preference/#secondaryPreferred> "target=\"\_blank\"")), you first need to run [*rs.slaveOk()*](<http://docs.mongodb.org/manual/reference/method/rs.slaveOk/> "target=\"\_blank\"") to be able to freely run Hackolade's reverse-engineering. This is because, by default, MongoDB does not permit read operations from non-master (i.e., [slave](<http://docs.mongodb.org/manual/reference/glossary/#term-slave> "target=\"\_blank\"") or [secondary](<http://docs.mongodb.org/manual/reference/glossary/#term-secondary> "target=\"\_blank\"")) instances.
 

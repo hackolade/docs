@@ -52,17 +52,27 @@ The collection window position and size are saved with the model, so they can be
 
 &nbsp;
 
-To get more information about a field, simply hover your mouse cursor over the desired field, and a box pops up with more information:
+To open a new tab with the hierarchical schema view of a collection, you double-click on the collection name bar, or right-click then choose Open in new tab, or by clicking on the icon
 
-![Image](<lib/ER%20Diagram%20-%20collection%20with%20field%20info.png>)
-
-&nbsp;
-
-To open a new tab with the hierarchical schema view of a collection, you double-click on the collection name bar, or right-click then choose Open in new tab.
+![Image](<lib/ERD%20-%20open%20in%20a%20new%20tab.png>)
 
 &nbsp;
 
-Most of the controls available in the [hierarchical schema view](<Attributeboxesinhierarchicalsche.md>) are also available from the ERD view and the Object Browser.
+&nbsp;
+
+A couple of drag-and-drop operations are possible in the ERD:
+
+\- using the handle on the left of each attribute:
+
+![Image](<lib/ERD%20-%20attribute%20drag-and-drop.png>)
+
+you may move an attribute up or down within an entity, or to another entity, provided that there are no conflicts.&nbsp; It is not possible to move attributes across different views.&nbsp; By pressing the ctrl key, it is possible to perform a copy operation.
+
+\- using the attribute name, to create a relationship.
+
+&nbsp;
+
+Several of the controls available in the [hierarchical schema view](<Attributeboxesinhierarchicalsche.md>) are also available from the ERD view and the Object Browser.
 
 &nbsp;
 

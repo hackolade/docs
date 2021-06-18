@@ -66,6 +66,16 @@ Hackolade also supports Cassandra User-Defined Types via its [re-usable object d
 
 &nbsp;
 
+## Indexes
+
+An index provides a means to access data in DataStax Enterprise using attributes other than the partition key. The benefit of an index is fast, efficient lookup of data that matches a given condition.&nbsp; Built-in indexes are best on a table having many rows that contain the indexed value. The more unique values that exist in a particular column, the more overhead on average is required to query and maintain the index.&nbsp; It is useful to consult this section on [when not to use an index](<https://docs.datastax.com/en/dse/6.7/cql/cql/cql\_using/useWhenIndex.html#Whennottouseanindex> "target=\"\_blank\"").
+
+&nbsp;
+
+Hackolade supports [Global Secondary Indexes](<https://docs.datastax.com/en/dse/6.7/cql/cql/cql\_using/useSecondaryIndex.html> "target=\"\_blank\""), as well as [custom indexes](<https://docs.datastax.com/en/dse/6.8/cql/cql/cql\_reference/cql\_commands/cqlCreateCustomIndex.html> "target=\"\_blank\"") and [search indexes](<https://docs.datastax.com/en/dse/6.8/cql/cql/cql\_reference/cql\_commands/cqlCreateSearchIndex.html> "target=\"\_blank\"").
+
+&nbsp;
+
 ## Materialized Views
 
 With version 3.0, Cassandra introduced materialized views to handle automated server-side denormalization.&nbsp; In theory, this removes the need for client-side handling and would ensure consistency between base and view data.&nbsp; Materialized views work particularly well with immutable insert-only data, but should not be used in case of low-cardinality data.&nbsp; Materialized views are designed to alleviate the pain for developers, but are essentially a trade-off of performance for connectedness.&nbsp; See more info in this [article](<http://www.doanduyhai.com/blog/?p=1930> "target=\"\_blank\"").

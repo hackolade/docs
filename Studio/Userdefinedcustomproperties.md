@@ -1,6 +1,6 @@
 # User-defined custom properties
 
-For each object in Hackolade, we've defined a set of standard properties that appear in the properties pane.&nbsp; But it is possible that your organization wants to define and track additional properties for models, containers, entities, and attributes.&nbsp; This could be for data governance reasons, and/or to leverage properties in code generation, etc...
+For each object in Hackolade, we've defined a set of standard properties that appear in the properties pane.&nbsp; But it is possible that your organization wants to define and track its own metadata properties for models, containers, entities, and attributes.&nbsp; This could be for data governance reasons, and/or to leverage properties in code generation, etc...
 
 &nbsp;
 

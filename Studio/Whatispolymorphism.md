@@ -1,8 +1,4 @@
-# What is "polymorphism"?
-
-**What do you mean with "polymorphism"?**
-
-&nbsp;
+# What is polymorphism?
 
 One of the great features of JSON as applicable to NoSQL and Big Data, is the ability to deal with evolving and flexible schemas, both at the level of the general document structure, and at the level of the type of a single field.
 

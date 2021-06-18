@@ -1,6 +1,4 @@
-# What's a "pattern field"?
-
-# What's a "pattern property" or "pattern property"?
+# What's a pattern field?
 
 Hackolade, being built on JSON Schema, leverages this little-known but extremely powerful feature of JSON.
 

@@ -74,6 +74,10 @@ Followed by the the merging of the resulting v1.2 with 2.0 beta into v2.0 releas
 
 &nbsp;
 
+**Note:** the model compare feature assumes 2 model files saved on the file system.  Hence the process requires a prior step to reverse-engineer and save the result.  Then compare with a baseline.  Note also that when comparing, because models are of different sources which by definition will have different object IDs, it is required to compare based on object names.  This may require some preperation of the models so objects are comparable, e.g. identical container names and entity names.
+
+&nbsp;
+
 Learn how how to handle the successive merge operations and the resolution of merge conflicts in the page [Compare and Merge Models](<Compareandmergemodels.md>).
 
 &nbsp;

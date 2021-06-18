@@ -40,17 +40,19 @@ feedback,fdbak,
 
 ## &#50;. Conversion parameters
 
-To modify the behavior of the name sync feature, user options can be set in Tools \> Options \> Naming Conventions:
+Conversion parameters are specific to each target.&nbsp; To modify the behavior of the name sync feature for a target, user options can be set in Tools \> Options \> Naming Conventions:
 
 &nbsp;
 
 ![Image](<lib/Naming%20Conventions%20-%20parameters.png>)
 
+**Application target:** select the target for which these parameters apply
+
 **Enable auto-complete:** when this option is enabled, auto-completion is active to use the conversion file to type-ahead names as they are created.
 
 **Default name coupling:** 3 options are available from the dropdown box: No, Business-to-Technical, or Technical-to-Business. &nbsp;
 
-**Specify** path and file name of the conversion file, or choose to Convert without a file and using the only the rules specified below
+**Specify** path and file name of the conversion file, or choose to Convert without a file and using the only the rules specified below.&nbsp; If you update the file while Hackolade is open, you may press the refresh button to reload the file.
 
 **Display:** choose to see the Business name or the Technical name in the Object Browser, ER Diagram and hierarchical schema view
 
