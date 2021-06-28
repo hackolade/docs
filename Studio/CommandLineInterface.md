@@ -456,8 +456,6 @@ is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed 
 
 ## obfusc&nbsp;
 
-&nbsp;
-
 The obfusc command lets you garble sensitive properties: business name, technical name, description, comments, enumeration.  Use if you need to send a model for troubleshooting but don't want to disclose sensitive aspects of the model.
 
 &nbsp;

@@ -1,5 +1,21 @@
 # v5.x
 
+New features in v5.0.6 \[25-Jun-2021\]
+
+\- Avro: added namespace property "Schema group name" for Azure Schema Registry
+
+\- Azure Schema Registry for Avro: added ability to fetch Schema Groups&nbsp;
+
+\- Cassandra DataStax: removed WITH OPTIONS when creating SAI indexes if options are empty
+
+\- Cassandra DataStax on Astra: disabled possibility to define search indexes which are not currently supported by Astra
+
+\- Cassandra DataStax: added possibility to reverse-engineer custom and search indexes from .cql files
+
+\- MongoDB: maintain field order in index creation script for deactivated fields
+
+&nbsp;
+
 New features in v5.0.5 \[18-Jun-2021\]
 
 \- ERD drag-and-drop: added possibility to drop into an empty entity or an empty complex attribute (object or array)
