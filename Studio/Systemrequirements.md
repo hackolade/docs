@@ -4,7 +4,7 @@ Hackolade's recommended systems configuration is any of the following platforms:
 
 * **Windows:** Windows 10 Core 2 Duo or better with 4GB+ RAM, 64-bit only (Windows 7 or Server 2008 R2 may work but is not longer guaranteed)
 * **Mac:** OS X 10.10 (Yosemite) or higher, 64-bit only.
-* **Linux:** 64-bit only Ubuntu 12.04 or higher.&nbsp; Fedora 21 and Debian 8 might work as well, but have not been verified.&nbsp; CentOS without GUI will NOT work.
+* **Linux:** 64-bit only Ubuntu 12.04 or higher, and Red Hat RHEL 8 or above.&nbsp; Fedora 21 and Debian 8 might work as well, but have not been verified.&nbsp; CentOS without GUI will NOT work.
 
 &nbsp;
 

@@ -54,7 +54,7 @@ BYTE\_ARRAY corresponds to binary in Parquet.&nbsp; Strings are encoded as varia
 
 &nbsp;
 
-Logical types are used to extend the types that parquet can be used to store, by specifying how the primitive types should be interpreted. This keeps the set of primitive types to a minimum and reuses parquet’s efficient encodings. For example, strings are stored as byte arrays (binary) with a UTF8 annotation.&nbsp; These annotations define how to further decode and interpret the data.&nbsp; Annotations are stored as a ConvertedType in the file metadata and are documented in[ LogicalTypes.md](<https://github.com/apache/parquet-format/blob/master/LogicalTypes.md> "target=\"\_blank\"").
+Logical types are used to extend the types that parquet can be used to store, by specifying how the primitive types should be interpreted. This keeps the set of primitive types to a minimum and reuses parquet’s efficient encodings. For example, strings are stored as byte arrays (binary) with a UTF8 annotation.&nbsp; These annotations define how to further decode and interpret the data.&nbsp; Annotations are stored as a ConvertedType in the file metadata and are documented in [LogicalTypes.md](<https://github.com/apache/parquet-format/blob/2e23a1168f50e83cacbbf970259a947e430ebe3a/LogicalTypes.md> "target=\"\_blank\"").
 
 &nbsp;
 
