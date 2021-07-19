@@ -4,13 +4,25 @@ Amazon Web Services' DynamoDB is a fully managed NoSQL database service that pro
 
 &nbsp;
 
-Hackolade was specially adapted to support the data modeling of DynamoDB tables including partition (hash) and sort (range) keys, supporting multiple regions as well.&nbsp; The application closely follows the terminology of the database.
+Hackolade was specially adapted to support the data modeling of DynamoDB tables including partition (hash) and sort (range) keys, supporting multiple regions as well.&nbsp; The application closely follows the terminology of the database.&nbsp; Support was enhanced with v5.0.8 for single-table storage, through the use of views (a more visual equivalent to the concept of facets in the [NoSQL Workbench](<https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.html> "target=\"\_blank\"").)
 
 &nbsp;
 
 The data model in the picture below results from the reverse-engineering of the sample application described [here](<http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SampleData.CreateTables.html> "target=\"\_blank\"").
 
 ![Image](<lib/DynamoDB%20workspace.png>)
+
+&nbsp;
+
+## Table groups
+
+In DynamoDB, you can assign multiple tables to a single group to manage your resources. Simply provide a group name and a key-value pair for tagging your table to the group to be created.
+
+&nbsp;
+
+## Tables, items and attributes
+
+A table is collection of data.&nbsp; Each table contains zero or more items. An *item* is a group of attributes that is uniquely identifiable among all of the other items. There is no limit to the number of items you can store in a table.&nbsp; Each item is composed of one or more attributes.
 
 ## Keys
 
@@ -88,13 +100,21 @@ DynamoDB ensures that the data in a secondary index is eventually consistent wit
 
 More information can be found [here](<http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SecondaryIndexes.html> "target=\"\_blank\"").
 
-## Views (TBA)
+## Views
 
-See GSIs
+In Hackolade, we have enabled the views feature.&nbsp; While these views do not get forward-engineered to the database instance, they are useful in the context of single-table storage, in order to visualize and document access patterns for a table.&nbsp; Views are a more visual equivalent to the concept of facets in the [NoSQL Workbench](<https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.html> "target=\"\_blank\"")).
+
+&nbsp;
+
+![Image](<lib/DynamoDB%20views.png>)&nbsp;
+
+&nbsp;
 
 ## Forward-Engineering
 
-Hackolade dynamically generates [CreateTable](<http://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API\_CreateTable.html> "target=\"\_blank\"") and [ConditionExpression](<http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.SpecifyingConditions.html> "target=\"\_blank\"") scripts based on model attributes and constraints. &nbsp;
+Hackolade dynamically generates [CreateTable](<http://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API\_CreateTable.html> "target=\"\_blank\"") and [ConditionExpression](<http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.SpecifyingConditions.html> "target=\"\_blank\"") scripts based on model attributes and constraints.&nbsp; These can be applied directly to the DynamoDB instance:
+
+![Image](<lib/DynamoDB%20apply%20to%20instance.png>)
 
 ## Reverse-Engineering
 
@@ -103,8 +123,6 @@ A DynamoDB can be installed either locally or as a managed database at AWS.&nbsp
 &nbsp;
 
 The Hackolade reverse-engineering process of a DynamoDB table includes a query for a representative random sample of items, followed by a schema inference based on the sample.
-
-&nbsp;
 
 &nbsp;
 

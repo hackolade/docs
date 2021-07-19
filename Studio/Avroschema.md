@@ -83,7 +83,7 @@ Hackolade dynamically generates Avro schema for the structure created with the a
 
 &nbsp;
 
-This structure can be forward-engineered to a file with .avsc extention or copied/pasted to code.&nbsp; It can also be forward-engineered to a [Confluent Schema Registry](<ConfluentSchemaRegistry.md>) instance.
+This structure can be forward-engineered to a file with .avsc extention or copied/pasted to code.&nbsp; It can also be forward-engineered to a Azure, [Confluent or Pulsar Schema Registry](<ConfluentSchemaRegistry.md>) instance.
 
 ## Reverse-Engineering
 

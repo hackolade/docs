@@ -1,8 +1,8 @@
 # DynamoDB scripts
 
-At this time, Hackolade does not export DynamoDB scripts to file, as it would not provide much value.&nbsp; With the Professional and Free Trial editions, you may copy the Create Table and Condition Expression scripts from the DynamoDB scripts tab of each table:
+Hackolade dynamically generates [CreateTable](<http://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API\_CreateTable.html> "target=\"\_blank\"") and [ConditionExpression](<http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.SpecifyingConditions.html> "target=\"\_blank\"") scripts based on model attributes and constraints.&nbsp; These can be applied directly to the DynamoDB instance:
+
+![Image](<lib/DynamoDB%20apply%20to%20instance.png>)
 
 &nbsp;
-
-![Image](<lib/Forward-Engineering%20-%20DynamoDB%20scripts.png>)
 

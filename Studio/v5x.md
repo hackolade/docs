@@ -1,5 +1,51 @@
 # v5.x
 
+New features in v5.1.0 \[17-Jul-2021\]
+
+\- Collibra Data Dictionary integration.&nbsp; Requires specific license option.&nbsp; See more info at https://hackolade.com/help/CollibraDataDictionaryintegratio.html
+
+\- Docker containers: for the purpose of running the Command-Line Interface in CI/CD pipelines. &nbsp; Requires concurrent license key.&nbsp; See full instructions at https://github.com/hackolade/docker/tree/main/Studio
+
+\- Pulsar Schema Registry: added ability to forward- and reverse-engineer Avro and JSON Schema
+
+\- Lineage capture: added container information to attribute lineage for reverse-engineering, Excel import, etc.
+
+\- Custom properties: added defaultValue in configuration controls
+
+\- DynamoDB: added logic to update table if it already exists when applying to instance
+
+&nbsp;
+
+New features in v5.0.8 \[09-Jul-2021\]
+
+\- ERD drag-and-drop: enhanced tolerance for dropping into an empty entity for both move (drag-and-drop) and copy (Ctrl+drag-and-drop)
+
+\- DynamoDB: added ability to apply forward-engineering scripts to instance
+
+\- DynamoDB: added support for single-table storage, using views (a.k.a. facets in NoSQL Workbench.)&nbsp; These views cannot be forward-engineered to DynamoDB, or derived through reverse-engineering, as the concept does not exist.&nbsp; It however makes it easy to visualize and document access patterns
+
+\- MongoDB: added read-only view pipeline edition after reverse-engineering from DDL
+
+&nbsp;
+
+New features in v5.0.7 \[02-Jul-2021\]
+
+\- DynamoDB: added support for table groups
+
+\- Postgres DDL reverse-engineering: added handling for ONLY keyword in ALTER TABLE statements
+
+\- Cosmos DB-Gremlin: reverse-engineering of nested objects in JSON and JSON Schema now results in their normalization, given that the database does not support complex data types
+
+\- Delta Lake on Databricks: modified message when cluster is unavailable
+
+\- Neptune-Gremlin: reverse-engineering of nested objects in JSON and JSON Schema now results in their normalization, given that the database does not support complex data types
+
+\- OpenAPI/Swagger/EventBridge: added tolerance for lines commented with # during-reverse-engineering
+
+\- OpenAPI/EventBridge: removed empty requestBody for GET and DELETE requests during forward-engineering
+
+&nbsp;
+
 New features in v5.0.6 \[25-Jun-2021\]
 
 \- Avro: added namespace property "Schema group name" for Azure Schema Registry

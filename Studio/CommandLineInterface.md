@@ -11,13 +11,12 @@ It is often helpful, in order to understand how to set the different CLI argumen
 It is easier to run the CLI from the directory where the Hackolade executable is installed, from a terminal program:
 
 * Windows:&nbsp;
-  * cmd command line: all commands below should be preceded by *start /wait*
-  * PowerShell: all commands below should be preceded by *Start-Process -wait *
-* Mac and Linux: terminal emulator or common shell programs:&nbsp;
-  * all commands below should be preceded by open and contain --args and possibly use the -W flag, e.g.:
-    * open /Applications/Hackolade.app -W --args obfusc --sourcemodel=/fullpathtofile/model.json --targetmodel=/fullpathtofile/model\_obf.json
+  * cmd command line: all commands below should be preceded by *start /wait hackolade *
+  * PowerShell: all commands below should be preceded by *Start-Process -wait hackolade&nbsp; *
+* Mac: start Terminal and execute: all commands below should be preceded by */Applications/Hackolade.app/Contents/MacOS/Hackolade *
+* Linux: terminal emulator or common shell programs: all commands below should be preceded by *./Hackolade*&nbsp; or *path-to-where-hackolade-was-unzipped/Hackolade *
 
-&nbsp;
+> &nbsp;
 
 To take full advantage of the capability, you may run the CLI from scheduled batch files. &nbsp;
 

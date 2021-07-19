@@ -2,6 +2,12 @@
 
 The following tips and tricks may be useful to quickly become a Hackolade power user\!
 
+## Where does the name Hackolade come from?
+
+;-) Hackolade is derived from a pun in French.&nbsp; We're quite focused on JSON, to say the least, and in French a {curly bracket} is called an "accolade".&nbsp; So we thought it was creative to play with the words and have a unique trademark brand for which the .com domain was available.&nbsp; Only once did we hear from a prospect that they would never purchase from a company whose name started with "hack"...
+
+&nbsp;
+
 ## Release the license key from one computer to move to another
 
 If you need to move your license key to another computer, you first need to release it on the PC where your key is currently validated.

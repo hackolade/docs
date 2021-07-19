@@ -36,9 +36,9 @@ If you have 1 machine with multiple users (using for example Terminal Server, Re
 
 Example: having 4 Hackolade users on a single VM is the equivalent of having 4 individual PCs running Hackolade from a licensing point of view: you need 4 license seats to be validated.
 
-&nbsp;
+## Notes
 
-**Note:** individual licenses, concurrent licenses, and subscriptions are all controlled by our license server in the cloud.
+**&#49;)** individual licenses, concurrent licenses, and subscriptions are all controlled by our license server in the cloud.
 
-**Note 2:** the above also applies to installations using only the Command-Line Interface in automated mode.  A CLI process requires a licensed installation, just as any desktop user.  If a CLI process is run from a user's workstation, it uses the same license as the GUI application.
+**&#50;)** the above also applies to installations using only the Command-Line Interface in automated mode.  A CLI process requires a licensed installation, just as any desktop user.  If a CLI process is run from a user's workstation, it uses the same license as the GUI application.
 

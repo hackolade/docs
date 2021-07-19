@@ -148,3 +148,10 @@ If you don't know how to generate some of the above values, you may want to cons
 
 &nbsp;
 
+&nbsp;
+
+## Pulsar Schema Registry
+
+Give a meaningful name to the connection to identify it for later, choose the Pulsar connection type, provide the URL to your Schema Registry
+
+![Image](<lib/Pulsar%20connection%20settings.png>)
