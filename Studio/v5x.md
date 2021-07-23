@@ -1,5 +1,21 @@
 # v5.x
 
+New features in v5.1.1 \[23-Jul-2021\]
+
+\- Model compare and Merge: added indeterminate state for partial uncheck of checkbox (now tri-state)
+
+\- Model compare and Merge: adjusted trim of long path models, plus added tooltip
+
+\- Improved rendering of large ERD models
+
+\- Collibra: added forward-engineering of foreign keys in subschemas
+
+\- Pulsar: added Command-Line Interface reverse-engineering
+
+\- SQL Server/Azure SQL: added support for forward-engineering of combined schemas,&nbsp; and of all schemas into a single file
+
+&nbsp;
+
 New features in v5.1.0 \[17-Jul-2021\]
 
 \- Collibra Data Dictionary integration.&nbsp; Requires specific license option.&nbsp; See more info at https://hackolade.com/help/CollibraDataDictionaryintegratio.html

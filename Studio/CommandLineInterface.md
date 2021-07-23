@@ -126,7 +126,7 @@ Usage:&nbsp; &nbsp; *hackolade revEng \[--arguments\]*
 
 | **Argument** | **Required** | **Purpose** |
 | --- | --- | --- |
-| \--target=\<*target*\> | Y | Native target for model: JSON, MONGODB, DYNAMODB, COUCHBASE, or plugin target: ArangoDB, Avro, CASSANDRA, COSMOSDB-SQL, COSMOSDB-MONGO, ELASTICSEARCH, EventBridge, Glue, HBase, HIVE, JOI, MSSQLServer; NEO4J, OPENAPI, PARQUET, ScyllaDB, Snowflake, SWAGGER, Synapse, TinkerPop |
+| \--target=\<*target*\> | Y | Native target for model: JSON, MONGODB, DYNAMODB, COUCHBASE, or plugin target: Avro, CASSANDRA, COSMOSDB-SQL, COSMOSDB-MONGO, ELASTICSEARCH, EventBridge, Glue, HBase, HIVE, JOI, MSSQLServer; NEO4J, OPENAPI, PARQUET, ScyllaDB, Snowflake, SWAGGER, Synapse, TinkerPop, etc.. |
 | \--connectName=\<connection\> | Y if from instance | Name of connection settings saved in the Hackolade instance where CLI is invoked. Or use --connectFile instead. |
 | \--connectFile=\<*file*\>\* | N | Full file path of connection config file (you don't need to use it when connect name is specified).&nbsp; The simplest way to create a connection file is to create a connection in the GUI application, then export the connection settings to file, encrypted or not. |
 | \--files="\<file1\>;\<file2\>..." | Y if from file | List of full file path of target scripts (MongoDB validator, Cassandra CQL, Hive HQL, Avro schema, Neo4j Cypher, Swagger documentation, etc...)&nbsp; from which reverse-engineering process has to be performed. Accepts paths divided by semicolon (schema1.avcs;schema2.avcs) when reverse-engineering from Avro/Parquet with combining schemas into one.&nbsp; |

@@ -106,8 +106,6 @@ When differences are conflicting, the merge proposal uses the right-hand model v
 
 ![Image](<lib/Compare%20and%20merge%20-%20merge%20view.png>)
 
-&nbsp;
-
 ## Saving the merged model
 
 By clicking the Save button, the user has the possibility to save the merged model with only the selected merge proposals.&nbsp; This merged model can be save as a new Hackolade data model file name (recommended), or be used to write over an existing model on the file system (for example in a Git-enabled environment.)&nbsp; If using the latter method, beware of impacts of writing over an existing file.
