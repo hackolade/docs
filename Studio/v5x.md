@@ -4,7 +4,7 @@ New features in v5.1.1 \[23-Jul-2021\]
 
 \- Model compare and Merge: added indeterminate state for partial uncheck of checkbox (now tri-state)
 
-\- Model compare and Merge: adjusted trim of long path models, plus added tooltip
+\- Model compare and Merge: adjusted trim of long path model names, plus added tooltip
 
 \- Improved rendering of large ERD models
 

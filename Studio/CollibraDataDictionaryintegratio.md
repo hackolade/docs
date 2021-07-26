@@ -1,8 +1,12 @@
 # Collibra Data Dictionary integration
 
+**Note:** You may wish to view the [how-to video](<https://hackolade.com/videos.html#collibra> "target=\"\_blank\"") on this subject.
+
+&nbsp;
+
 [Collibra](<https://www.collibra.com/> "target=\"\_blank\"") is one of the leaders in the space of data governance and metadata management solutions.&nbsp; Metadata management is a core aspect of an organization’s ability to manage its data and information assets. The term “metadata” describes the various facets of an information asset that can improve its usability throughout its life cycle. Metadata is used as a reference for business-oriented and technical projects, and lays the foundations for describing, inventorying and understanding data for multiple use cases.
 
-Hackolade has partnered with Collibra to provide an officially supported integration with Collibra's Data Dictionary, using its [Core and Import APIs](<https://developer.collibra.com/rest/#apis> "target=\"\_blank\"").&nbsp; With this integration, users can easily load into Collibra domains their Hackolade data models for any of the many targets supported by Hackolade.&nbsp; The process automatically:
+Hackolade has partnered with Collibra to provide an officially supported integration with Collibra's Data Dictionary, using its [Core and Import APIs](<https://developer.collibra.com/rest/#apis> "target=\"\_blank\"").&nbsp; With this integration, users can easily publish into Collibra domains their Hackolade data models for any of the many targets supported by Hackolade.&nbsp; The process automatically:
 
 * checks the configuration in Collibra
 * creates the necessary custom scopes, attributeTypes and assignments to support the granularity of Hackolade features
@@ -48,9 +52,9 @@ To ensure successful processing of the Hackolade model information, the system u
 
 The system will:
 
-&#49;) confirm that the appropriate [out-of-the-box assetTypes](<https://productresources.collibra.com/docs/user/5.7/#Assets/AssetTypes/ref\_ootb-asset-types.htm> "target=\"\_blank\"") exist: schema, table, database view, column, foreign key, mapping specification
+&#49;) confirm that the [out-of-the-box assetTypes](<https://productresources.collibra.com/docs/user/5.7/#Assets/AssetTypes/ref\_ootb-asset-types.htm> "target=\"\_blank\"") exist: schema, table, database view, column, foreign key, mapping specification
 
-&#50;) confirm that the appropriate [out-of-the-box relationTypes](<https://productresources.collibra.com/docs/user/5.7/#Assets/Characteristics/Attributes/AttributeTypes/ref\_attribute-types.htm> "target=\"\_blank\"") exist: schema contains table, and table contains column
+&#50;) confirm that the [out-of-the-box relationTypes](<https://productresources.collibra.com/docs/user/5.7/#Assets/Characteristics/Attributes/AttributeTypes/ref\_attribute-types.htm> "target=\"\_blank\"") exist: schema contains table, and table contains column
 
 &#51;) confirm that the Hackolade setup exists:
 
@@ -61,6 +65,8 @@ The system will:
 \- custom assignments of attributeTypes to out-of-the-box assetTypes: schema, tables, database views, columns
 
 \- custom characteristics for schema, table, columns, and database views
+
+\- custom relationType "Column contains Column" to allow hierarchical view of nested objects, arrays, and polymorphism
 
 &nbsp;
 
