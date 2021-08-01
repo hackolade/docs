@@ -1,5 +1,29 @@
 # v5.x
 
+New features in v5.1.2 \[30-Jul-2021\]
+
+\- Colors: added possibility to change color of attributes in ER Diagram and Object Browser
+
+\- Added option in Tools \> Options \> Forward-engineering to disable structured path for JSON documents and JSON Schema
+
+\- Added a warning dialog to enable lineage capture if reverse-engineering of DDL is for migration from RDBMS
+
+\- Schema inference during reverse-engineering of JSON documents and databases: supplemented detection of pattern fields when using ID-like keys
+
+\- Model API: greyed out deactivated entities in object selection dialog
+
+\- Command-Line Interface: added forwEng arguments to allow publication of Avro and JSON Schema to schema registries (Confluent, Pulsar, Azure for Event Hubs)
+
+\- Collibra: added publishing via Command-Line Interface to Data Dictionary
+
+\- Collibra: added warning when not all entities are selected for synchronization
+
+\- Collibra: enabled publishing of schema definitions of EventBridge, OpenAPI, and Swagger
+
+\- Pulsar: added ability to forward-engineer schemas via Command-Line Interface
+
+&nbsp;
+
 New features in v5.1.1 \[23-Jul-2021\]
 
 \- Model compare and Merge: added indeterminate state for partial uncheck of checkbox (now tri-state)

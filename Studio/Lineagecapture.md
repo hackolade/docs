@@ -29,7 +29,7 @@ Lineage capture can be enabled simply by checking the lineage checkbox property 
 
 &nbsp;
 
-## &#49;) Sources are declared at model level
+## Sources are declared at model level
 
 Once lineage capture is enabled for a model, lineage sources are generally created automatically through operations such as reverse-engineering, denormalization, etc..&nbsp; Lineage sources received a unique identifier for internal tracking and linking purposes.&nbsp; Lineage sources are viewed in the Lineage tab of the Properties Pane.&nbsp; The default source name can be edited with a more friendly and descriptive name, if desired.
 
@@ -85,7 +85,7 @@ The different model types are:
 
 While lineage sources are typically created automatically by certain operations, it is also possible to create sources manually.
 
-## &#50;) Lineage sources are referenced at individual attribute level
+## Lineage sources are referenced at individual attribute level
 
 A lineage entry is created at the attribute level when it is impacted, referencing the model-level lineage source.&nbsp; It displays the busines name and technical name for the source entity and the source attribute.&nbsp; It is possible to document further with a description and possibly with a transformation.
 
@@ -97,7 +97,7 @@ A lineage entry is created at the attribute level when it is impacted, referenci
 
 &nbsp;
 
-## &#51;) Lineage at the entity level is just a view of attribute level entries
+## Lineage at the entity level is just a view of attribute level entries
 
 Aside from the description is possible transformation entries, which can be defined, the rest of the information is just a view of attribute-level lineage entries that cannot be edit here.&nbsp; If editing is required, it should be done at the attribute level.
 

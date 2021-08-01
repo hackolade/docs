@@ -1,4 +1,4 @@
-# Reverse-engineer
+# Reverse-engineering
 
 Reverse engineering is a useful feature to facilitate the modeling and documentation of existing instances.&nbsp; After the reverse engineering has been performed, the user can enrich the model created, by filling descriptions, recording constraints that were not obvious from the stored data, documenting relationships, etc…
 
@@ -38,15 +38,15 @@ Hackolade supports the reverse engineer of different types of data sources:
 
 This feature is also available via the [Command-Line Interface](<CommandLineInterface.md>).
 
-### Reverse-engineering process
+## Reverse-engineering process
 
 This process includes a series of steps outlined below.&nbsp; After going through the steps, the user is free to enrich the model for documentation purposes, and to generate forward-engineering scripts.
 
-#### &#49;. Choose the model target
+### Choose the model target
 
 Create a new model and select the target of your choice.&nbsp; The reverse-engineering process is fairly similar for all targets, with local nuances when needed.&nbsp; But the terminology and connection protocols can be very different.
 
-#### &#50;. Choose the reverse-engineering function
+### Choose the reverse-engineering function
 
 This screen will vary depending on the selected target.
 
@@ -54,7 +54,7 @@ This screen will vary depending on the selected target.
 
 &nbsp;
 
-#### &#51;. Establishing a connection
+### Establishing a connection
 
 The options here will vary depending on the selected target.&nbsp; Refer to the pages below to find the specific details.&nbsp; The images below refer to MongoDB.
 
@@ -74,13 +74,13 @@ For more information on the various authentication and encryption protocols, ple
 
 &nbsp;
 
-#### &#52;. Selecting one or more collections/entities
+### Selecting one or more collections/entities
 
 ![Image](<lib/Reverse-Engineer%20MongoDB%20Collection%20selection.png>)
 
 &nbsp;
 
-#### &#53;. Sampling of one or more collections/entities
+### Sampling of one or more collections/entities
 
 Sampling is currently limited for performance reasons to at most 10.000 documents, adjustable via a user parameter in Tools \> Options \> Reverse-Engineering, or up to 100k documents with the [Command-Line Interface](<CommandLineInterface.md>).&nbsp;
 
@@ -104,7 +104,7 @@ Note that this sampling mechanism is originally provided in Open Source by [Mong
 
 &nbsp;
 
-#### &#54;. Probabilistic inference of schema
+### Probabilistic inference of schema
 
 From the sample set gathered above, measurable metrics can be applied to the schema, including schema depth and width, and class interactions, as described here:
 
@@ -120,6 +120,8 @@ In this step, when the instance being reverse-engineered is v3.2 and above, stor
 
 &nbsp;
 
+#### Pattern field detection
+
 As of v2.5.0 of Hackolade, we've also introduced the ability to detect **pattern fields** during the reverse-engineering process.&nbsp; For any sub-object at a given level, we can infer the presence of a pattern field if we detect the recurrence of similar regex patterns in field names.
 
 ![Image](<lib/Reverse-Engineering%20pattern%20field%20detection.png>)&nbsp;
@@ -132,21 +134,27 @@ a) attribute must be a complex data type (object or array)
 
 b) in a list of successive complex attributes in a branch of the schema hierarchy, the structure of each of these complex attributes must be exactly identical&nbsp;
 
-c) the names of these successive complex attributes with identical structure must be similar as per [Levenshtein distance](<https://en.wikipedia.org/wiki/Levenshtein\_distance> "target=\"\_blank\""). The distance parameter may be modified in Tools \> Options \> Reverse-Engineering (default = 1)&nbsp; An online Levenshtein distance calculator can be found [here](<https://planetcalc.com/1721/> "target=\"\_blank\"").
+c) the names of these successive complex attributes with identical structure must be similar as per either:
+
+\- an ID-like structure of the same length of at least 12 characters that can only include hexadecimal numbers and dashes;
+
+\- or by by using [Levenshtein distance](<https://en.wikipedia.org/wiki/Levenshtein\_distance> "target=\"\_blank\""). The distance parameter may be modified in Tools \> Options \> Reverse-Engineering (default = 1)&nbsp; An online Levenshtein distance calculator can be found [here](<https://planetcalc.com/1721/> "target=\"\_blank\"").
 
 &nbsp;
+
+#### Inference of Foreign Key relationships
 
 With v4.2.13, the option was introduced to attempt foreign key relationship inference.&nbsp; This features is only available for the MongoDB target, and is for documentation purposes only, as Foreign Key relationships are not enforced by the database.&nbsp; For each field in a collection with the data type ObjectID, the application finds if the sampled value can be linked to a document in the same collection (for a recursive FK) or another collection in the database.&nbsp; The cardinality is set by default to "0...n" on the child side, but can be adjusted manually by the user.
 
 &nbsp;
 
-#### &#55;. Transformation into a Hackolade collection schema
+### Transformation into a Hackolade collection schema
 
 In this final step, the derived schema needs to be converted and persisted into the Hackolade notation, so it can be visualized, adapted and enriched in the application.
 
 &nbsp;
 
-## &#56;. Conflict resolution during merge into an existing model
+### Conflict resolution during merge into an existing model
 
 When reverse-engineering into an existing model, it is possible that source objects already match existing objects in the model.&nbsp; This could be container names and/or entity names.&nbsp; When the process detects such case, the user is asked to decide on the logic to be used during processing:
 

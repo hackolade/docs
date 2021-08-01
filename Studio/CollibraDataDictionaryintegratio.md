@@ -6,7 +6,9 @@
 
 [Collibra](<https://www.collibra.com/> "target=\"\_blank\"") is one of the leaders in the space of data governance and metadata management solutions.&nbsp; Metadata management is a core aspect of an organization’s ability to manage its data and information assets. The term “metadata” describes the various facets of an information asset that can improve its usability throughout its life cycle. Metadata is used as a reference for business-oriented and technical projects, and lays the foundations for describing, inventorying and understanding data for multiple use cases.
 
-Hackolade has partnered with Collibra to provide an officially supported integration with Collibra's Data Dictionary, using its [Core and Import APIs](<https://developer.collibra.com/rest/#apis> "target=\"\_blank\"").&nbsp; With this integration, users can easily publish into Collibra domains their Hackolade data models for any of the many targets supported by Hackolade.&nbsp; The process automatically:
+Hackolade has partnered with Collibra to provide an officially supported integration with Collibra's Data Dictionary, using its [Core and Import APIs](<https://developer.collibra.com/rest/#apis> "target=\"\_blank\"").&nbsp; With this integration, users can easily publish into Collibra domains their Hackolade data models for any of the many targets supported by Hackolade.&nbsp; Even the schema definitions of REST APIs documented in Swagger or OpenAPI.
+
+The process automatically:
 
 * checks the configuration in Collibra
 * creates the necessary custom scopes, attributeTypes and assignments to support the granularity of Hackolade features
@@ -94,15 +96,19 @@ The user then selects the entities to be loaded to the selected Collibra domains
 
 &nbsp;
 
-### Load data model information into Collibra
+### Publish data model information to Collibra
 
 The application uses the [Import API](<https://developer.collibra.com/rest/rest-import-api/> "target=\"\_blank\"") to bulk load the selected objects metadata and Entity-Relationship picture into the selected Collibra domain.&nbsp; The system leverages the [Synchronization API](<https://collibra-developer-portal.s3-eu-west-1.amazonaws.com/docs/import/Default.htm#API/ImportAPIv2/co\_synchronization-api.htm> "target=\"\_blank\"") to keep data in Collibra up-to-date with model evolutions when invoking the integration repeatedly.&nbsp; The synchronization is based on the internal model UUID.
+
+**Important note:** the master for the data catalog information is the Hackolade data model.&nbsp; According the Collibra [documentation](<https://collibra-developer-portal.s3-eu-west-1.amazonaws.com/docs/import/Default.htm#API/ImportAPIv2/to\_import-commands.htm#Resource> "target=\"\_blank\""), depending on the resource type, the Import API performs one of two operations: SET/REPLACE or MERGE.&nbsp; For attributes, the operation is SET/REPLACE.&nbsp; As a result, "if the resource exists with properties other than the ones defined in the input (i.e.; the Hackolade data model), the resource is replaced with the one provided in the input."&nbsp; Meaning that edits made in Collibra risk disappearing with subsequent publications. &nbsp;
 
 ## View data model in Collibra console
 
 The data model information can immediately be viewed inside Collibra:
 
-![Image](<lib/Collibra%20view%20data%20model.png>)
+&nbsp;
+
+![Image](<lib/Collibra%20view%20data%20models.png>)
 
 &nbsp;
 
@@ -112,7 +118,7 @@ In order to view nested objects in the above screen, it is suggested to enable m
 
 &nbsp;
 
-You may also display the Full Name field to view the nesting path in dot.notation:
+You may also display the Full Name field to view the nesting path in dot.notation, as well as the hackolade Data Type:
 
 ![Image](<lib/Collibra%20fields%20config.png>)
 

@@ -41,6 +41,7 @@ Below is the current list of Hackolade CLI commands.&nbsp; Additional commands m
 | compMod | Compare two Hackolade models to detect differences, and optionally merge them |
 | forwEng | Forward-engineer structure created with the application to dynamically generate the schema of the selected entities.&nbsp; Or forward-engineer JSON Schema or a sample JSON data document |
 | forwEngAPI | Forward-engineer Swagger or OpenAPI model from merge of a source data model and a user-defined template |
+| forwEngDataDictionary | Publish Hackolade data model to Data Dictionary instance |
 | obfusc | Copy a model, and garble sensitive properties: business name, technical name, description, comments, enumeration.  Use if you need to send a model for troubleshooting but don't want to disclose sensitive aspects of the model. |
 | help | Display commands and their arguments |
 | performance | Records timestamps of application startup steps for performance troubleshooting |
@@ -378,11 +379,12 @@ Usage:&nbsp; &nbsp; *hackolade forwEng \[--arguments\]*
 | --- | --- | --- |
 | \--model=\<*file*\>\* | Y | Full path and file name for target Hackolade model. Extension .json is optional&nbsp; |
 | \--path=\<*file*\>\* | Y | Specify the directory path where the forward-engineered files will be created. |
-| \--outputType=\< **jsonschema** \| jsondata yamldata \| script \> | Y | Specify the type of output (JSON Schema, sample JSON data, sample YAML data, or script) \[default: jsonschema\] This also allows output of the script corresponding to the target of the specified model, e.g.: CQL for Cassandra, HQL for Hive, etc... |
+| \--outputType=\< **jsonschema** \| jsondata yamldata \| script \| schemaregistry \> | Y | Specify the type of output (JSON Schema, sample JSON data, sample YAML data, script, or schemaregistry) \[default: jsonschema\] This allows output of the script corresponding to the target of the specified model, e.g.: CQL for Cassandra, HQL for Hive, etc... It also allows the publication of Avro and JSON schemas to schema registry instances |
 | –jsonSchemaCompliance=\< **standard** \| full \| extended \> | N | Specify JSON Schema compliance: standard for only JSON Schema keywords and data types, full for additional custom properties, or extended for target-specific data types and internal properties.  \[default: standard\] |
 | \--jsonschemaversion=\< **draft-04** \| draft 06 \| draft-07 \| 2019-09 \> | N | Specify JSON Schema specification version \[default: draft-04\] &nbsp; \[values: draft-04, draft-06, draft-07, 2019-09\] \[default: "draft-04"\] |
 | \--format=\< *format* \> | N | Output target-specific schema format: MongoDB: \["shell", "mongoose","js", $jsonchema"\] Couchbase: \["ottoman", "n1ql"\] Avro: \["avroSchema", "schemaRegistry"\] Glue: \["awsCLI", "HiveQL"\] OpenAPI: &nbsp; \["json", "yaml"\] Swagger: &nbsp; \["json", "yaml"\] |
-| \--jsonschemacompliance= \< **standard** \| full \| extended \> | N | Specify JSON Schema compliance: standard for only JSON Schema keywords and data types, full for additional custom properties, or extended for target-specific data types and internal properties. &nbsp; \[default: standard\] |
+| \--connectName=\<connection\> | Y if to instance | Name of connection settings saved in the Hackolade instance where CLI is invoked. Or use --connectFile instead. |
+| \--connectFile=\<*file*\>\* | N | Full file path of connection config file (you don't need to use it when connect name is specified).&nbsp; The simplest way to create a connection file is to create a connection in the GUI application, then export the connection settings to file, encrypted or not. |
 | \--selectedObjects= "\<containerName\>: \[\<*entity1\>*,\<*entity2\>*,…\]" | N | Specify array of entities to include to result from model \[default: all\] |
 | (deprecated) --resolvDefs=\<**true** \| false\> | N | If outputType=jsonschema, specify whether to output resolved definitions (true) or referenced definitions (false) \[default=true\] |
 | \--defsStrategy== \< **resolved** \| referenced \| internal \> | N | If outputType=jsonschema, specify whether to output resolved, referenced or internal definitions&nbsp; \[values: "resolved", "referenced", "internal"\] \[default: "resolved"\] |
@@ -420,7 +422,7 @@ The forwEngAPI command lets you generate a Swagger or OpenAPI model from the mer
 
 &nbsp;
 
-Usage:&nbsp; &nbsp; *hackolade obfusc \[--arguments\]*
+Usage:&nbsp; &nbsp; *hackolade forwEngAPI \[--arguments\]*
 
 &nbsp;
 
@@ -442,6 +444,45 @@ Usage:&nbsp; &nbsp; *hackolade obfusc \[--arguments\]*
 Example:
 
 > C:\\PROGRA~1\\Hackolade\\hackolade forwEngAPI --sourcemodel=masterdata --APItemplate=OAS\_generation --targetmodel=masterdataAPI&nbsp; --APIdocFile=masterdata\_OpenAPI&nbsp;
+
+&nbsp;
+
+**Note:** If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: *"C:\\Program Files\\Hackolade\\hackolade"* .&nbsp; The workaround, assuming:
+
+![Image](<lib/Windows%20Program%20Files.png>)
+
+is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed above.
+
+&nbsp;
+
+## forwEngDataDictionary
+
+The forwEngDataDictionary command lets you publish Hackolade data models to a Data Dictionary instance (currently Collibra only.)
+
+&nbsp;
+
+Usage:&nbsp; &nbsp; *hackolade forwEngDataDictionary \[--arguments\]*
+
+&nbsp;
+
+| **Argument** | **Required** | **Purpose** |
+| --- | --- | --- |
+| \--model=\<file\>\* | Y | Full path and file name for the&nbsp; Hackolade model to be published to the Data Dictionary instance. Extension .json is optional. |
+| \--connectName=\<connection\> | Y if to instance | Name of connection settings saved in the Hackolade instance where CLI is invoked. Or use --connectFile instead. |
+| \--connectFile=\<*file*\>\* | N | Full file path of connection config file (you don't need to use it when connect name is specified).&nbsp; The simplest way to create a connection file is to create a connection in the GUI application, then export the connection settings to file, encrypted or not. |
+| \--selectedObjects= "\<containerName\>: \[\<*entity1\>*,\<*entity2\>*,…\]" | N | Specify array of entities to include to result from model \[default: all\] |
+| \--targetResource=\<resource\> | Y | Name of a target resource (domain) in Data Dictionary instance. |
+| \--forceconfig=\<true \| **false**\> | N | Specify whether to create necessary config in Data Dictionary instance |
+| \--logLevel=\< 1 \| 2 \| 3 \| **4** \> | N | &#49; = no spinner, no info, no error messages 2 = no spinner, no info 3 = no spinner 4 = full output \[default: 4\] |
+
+
+\*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“)&nbsp; Path can be ignored if file is in local directory.
+
+&nbsp;
+
+Example:
+
+> C:\\PROGRA~1\\Hackolade\\hackolade forwEngDataDictionary --model=yel --connectioName=Collibra\_instance --targetResource=Yelp &nbsp;
 
 &nbsp;
 

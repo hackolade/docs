@@ -36,7 +36,7 @@ From the blog referenced above, here are some “rules of thumb” to guide you 
 
 &nbsp;
 
-## &#49;. Reverse-engineer a Data Definition Language file (DDL)
+## Reverse-engineer a Data Definition Language file (DDL)
 
 Data Definition Language (DDL) is a vocabulary used to define data structures in SQL databases. These statements are used to create, alter, or drop data structures in an SQL database instance.
 
@@ -68,7 +68,7 @@ If you wish to force the destination of the reverse-engineering operation, you m
 
 &nbsp;
 
-Hackolade currently supports the following SQL dialects: Oracle, MySQL, SQL Server, DB2, PostgreSQL, Informix, Snowflake, and Teradata.
+Hackolade currently supports the following SQL dialects: Oracle, MariaDB, MySQL, SQL Server, DB2, PostgreSQL, Informix, Refshift, Snowflake, and Teradata.
 
 &nbsp;
 
@@ -78,7 +78,7 @@ When you click OK, Hackolade will read the DDL file and generate the schema mode
 
 &nbsp;
 
-## &#50;. Suggest denormalization
+## Suggest denormalization
 
 You should save the resulting model as a base, for example v0.&nbsp; Then it is suggested you save it again as v1 and work with the denormalization function to make v1 evolve towards a denormalized model.
 
