@@ -46,6 +46,38 @@ as well as authentication credentials:
 
 &nbsp;
 
+### User rights
+
+To successfully import a Hackolade model into Collibra, a user should have the author's license type. The role that is assigned to the user should have been provided with the following permissions:
+
+&nbsp;
+
+* For global role and permissions:
+  * **System administration** - *(This is necessary to apply the custom Hackolade configuration: attributeTypes, relationTypes, scope...)*
+* For resource role and permissions:
+  * **Asset:**
+    * Add
+    * Remove
+    * Update
+    * **Attribute:**
+      * Add
+      * Remove
+      * Update
+  * **Attachment:**
+    * Add
+  * **Domain:** *(This is necessary for the future enhancement of views and work with Hackolade Mapping Domain)*
+    * Add
+    * Remove
+    * Update
+
+&nbsp;
+
+We also recommend assigning a user with the above permissions to the parent community of the target domain. It will be needed to create/update/delete Hackolade Mapping Domain.
+
+&nbsp;
+
+&nbsp;
+
 ### Check for the proper configuration
 
 To ensure successful processing of the Hackolade model information, the system uses the [Core API](<https://developer.collibra.com/rest/rest-core-api/> "target=\"\_blank\"") to check that the Collibra setup is OK, and if not, asks the user for permission to create the necessary setup.

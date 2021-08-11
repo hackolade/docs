@@ -1,5 +1,21 @@
 # v5.x
 
+New features in v5.1.3 \[10-Aug-2021\]
+
+\- Colors: added color picker on properties pane options tab for containers, entities, and views
+
+\- Font style: added controls for italic and bold font for container, entity, attributes and views
+
+\- Excel: added export/import of color hex codes and font styles for bulk edit or conditional formatting
+
+\- Excel: improved error information to help troubleshooting when parent structure is missing in import of complex objects
+
+\- Save As Obfuscated: added custom properties to process
+
+\- Indexes: where applicable, added possibility to deactivate index so it does not appear in scripts or gets commented out, if possible: ArangoDB, Cassandra, Cosmos DB (Core SQL, Gremlin, and Mongo APIs), Couchbase, DynamoDB, Hive, JanusGraph, MariaDB, MarkLogic, MongoDB, Neo4j, ScyllaDB, SQL Server, Synapse, TinkerPop
+
+&nbsp;
+
 New features in v5.1.2 \[30-Jul-2021\]
 
 \- Colors: added possibility to change color of attributes in ER Diagram and Object Browser

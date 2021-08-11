@@ -151,6 +151,7 @@ Usage:&nbsp; &nbsp; *hackolade revEng \[--arguments\]*
 | \--detectPattern=\< true \| **false** \> | N | Specify whether to automatically convert pattern fields \[default: false\] |
 | \--combineSchemas=\< true \| **false** \> | N | For Avro and Parquet only.&nbsp; Specify whether to combine the schemas of multiple files, or keep one schema per file reverse-engineered \[default: false\] |
 | \--namingConventions=\< business \| technical \> | N | If application parameters are set to enable Naming Conventions, specify whether to reverse-engineer source attributes as business names or as technical names.&nbsp; Conversions will be applied according to your Naming Conventions parameters. &nbsp; \[default: **business**, if Naming Conventions are disabled; or **technical**, if Naming Conventions are enabled in application Tools \> Options\] |
+| \--distribution=\< **true** \| false \> | N | Specify whether to perform orthogonal distribution of model entities on ERD. \[default: true\] |
 | \--logLevel=\< 1 \| 2 \| 3 \| **4** \> | N | &#49; = no spinner, no info, no error messages 2 = no spinner, no info 3 = no spinner 4 = full output \[default: 4\] |
 
 
@@ -386,13 +387,19 @@ Usage:&nbsp; &nbsp; *hackolade forwEng \[--arguments\]*
 | \--connectName=\<connection\> | Y if to instance | Name of connection settings saved in the Hackolade instance where CLI is invoked. Or use --connectFile instead. |
 | \--connectFile=\<*file*\>\* | N | Full file path of connection config file (you don't need to use it when connect name is specified).&nbsp; The simplest way to create a connection file is to create a connection in the GUI application, then export the connection settings to file, encrypted or not. |
 | \--selectedObjects= "\<containerName\>: \[\<*entity1\>*,\<*entity2\>*,…\]" | N | Specify array of entities to include to result from model \[default: all\] |
+| \--scriptType=\<**create** \| update \> | N | For Cassandra, if outputType=script, specify type of forward engineering script \[default:create\] |
 | (deprecated) --resolvDefs=\<**true** \| false\> | N | If outputType=jsonschema, specify whether to output resolved definitions (true) or referenced definitions (false) \[default=true\] |
-| \--defsStrategy== \< **resolved** \| referenced \| internal \> | N | If outputType=jsonschema, specify whether to output resolved, referenced or internal definitions&nbsp; \[values: "resolved", "referenced", "internal"\] \[default: "resolved"\] |
-| \--updateExtDefs=\<true \| **false**\> | N | &nbsp;When reference to external definition, update current model to ensure latest changes are included. \[default: false\] |
+| \--defsStrategy== \<**resolved** \| referenced \| internal\> | N | If outputType=jsonschema, specify whether to output resolved, referenced or internal definitions&nbsp; \[values: "resolved", "referenced", "internal"\] \[default: "resolved"\] |
+| \--updateExtDefs=\<true \| **false**\> | N | When reference to external definition, update current model to ensure latest changes are included. \[default: false\] |
+| \--insertSampleData=\<true \| **false**\> | N | Include sample data to the output if it supports. \[default: false\] |
 | \--minify=\<true \| **false**\> | N | For JSON document/schema and Avro Schema, minify output instead of default beautifying format \[default=false\] |
 | \--batchScriptSeparator=\< ; \| GO \> | N | For SQL Server, Azure SQL, and Synapse, specify if you wish a different separator than the default semi-column ";" or the "GO" separator \[choices: ";", "GO"\] \[default: ";"\] |
 | \--validateSchema=\<true \| **false**\> | N | If output script supports validation (JSON Schema, Avro Schema, Swagger, OpenAPI,...), run respective validator, and generate error message if validation failed. \[default: false\] |
-| \--scriptType=\<**create** \| update\> | N | For Cassandra, if outputType=script, specify type of forward engineering script \[default:create\] |
+| \--ignoredoc=\<true \| **false**\> | N | Ignore description and comment properties which may be too wordy for this purpose \[default: false\] |
+| \--definitions=\<true \| **false**\> | N | JSON Schema only, specify whether to generate json schema of model definitions \[default: false\] |
+| \--level=\<entity \| container \| model\> | N | Specify the forward-engineering level \[values: "entity", "container", "model"\] |
+| \--skipUndefinedLevel=\<true \| **false**\> | N | For JSON document/schema, skip extraneous folder level when container is undefined \[default: false\] |
+| \--structuredpath=\<**true** \| false\> | N | Use a structured path for naming a model folder \[default: true\] |
 | \--logLevel=\< 1 \| 2 \| 3 \| **4** \> | N | &#49; = no spinner, no info, no error messages 2 = no spinner, no info 3 = no spinner 4 = full output \[default: 4\] |
 
 
