@@ -1,5 +1,21 @@
 # v5.x
 
+New features in v5.1.4 \[16-Aug-2021\]
+
+\- Tech refresh of Electron (v13.1.9), NodeJS (v14.17.0), Chromium (v91), React (v17), and Electron-related modules
+
+\- XSD reverse-engineering: added support for import of \<xs:keyref\> into relationships, plus additional fine-tuning
+
+\- Fixed unexpected closing of DDL worker on Mac
+
+\- MarkLogic: added use of global query timeout, plus enhanced getting collection list if specified
+
+\- Azure SQL: added login with email-like username
+
+\- Synapse: added login with email-like username, plus added Azure Active Directory authentication method
+
+&nbsp;
+
 New features in v5.1.3 \[10-Aug-2021\]
 
 \- Colors: added color picker on properties pane options tab for containers, entities, and views
@@ -28,7 +44,7 @@ New features in v5.1.2 \[30-Jul-2021\]
 
 \- Model API: greyed out deactivated entities in object selection dialog
 
-\- Command-Line Interface: added forwEng arguments to allow publication of Avro and JSON Schema to schema registries (Confluent, Pulsar, Azure for Event Hubs)
+\- Command-Line Interface: added forwEng arguments to allow publication of Avro and JSON Schemeleca to schema registries (Confluent, Pulsar, Azure for Event Hubs)
 
 \- Collibra: added publishing via Command-Line Interface to Data Dictionary
 
