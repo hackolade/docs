@@ -147,7 +147,7 @@ Usage:&nbsp; &nbsp; *hackolade revEng \[--arguments\]*
 | \--includeSystem=\< true \| **false** \> | N | In MongoDB only, specify whether to include system collections \[default: false\]&nbsp; |
 | \--includeViews=\< **true** \| false \> | N | In MongoDB only, specify whether to include views \[default: true\] |
 | \--selectedDB=\<database name\> | N | In Cosmos DB, you must specify the name of the database which should be reverse-engineered. \[default: the first database in the list\] |
-| \--pagination=\< **0** \| 1 \| ...\> | N | In couchbase, you must specify the number of documents per page for pagination. If value = 0, pagination is disabled&nbsp; \[default: 0\] |
+| \--pagination=\< **0** \| 1 \| ...\> | N | In Couchbase, you must specify the number of documents per page for pagination. If value = 0, pagination is disabled&nbsp; \[default: 0\] |
 | \--detectPattern=\< true \| **false** \> | N | Specify whether to automatically convert pattern fields \[default: false\] |
 | \--combineSchemas=\< true \| **false** \> | N | For Avro and Parquet only.&nbsp; Specify whether to combine the schemas of multiple files, or keep one schema per file reverse-engineered \[default: false\] |
 | \--namingConventions=\< business \| technical \> | N | If application parameters are set to enable Naming Conventions, specify whether to reverse-engineer source attributes as business names or as technical names.&nbsp; Conversions will be applied according to your Naming Conventions parameters. &nbsp; \[default: **business**, if Naming Conventions are disabled; or **technical**, if Naming Conventions are enabled in application Tools \> Options\] |

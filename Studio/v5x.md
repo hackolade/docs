@@ -1,5 +1,19 @@
 # v5.x
 
+New features in v5.1.5 \[20-Aug-2021\]
+
+\- Excel: added import of views
+
+\- XSD reverse-engineering: added conversion of keys with "XAK" prefix into unique keys for migration of models from erwin
+
+\- Documentation: added handling of block controls inside group controls
+
+\- MarkLogic: added collection name matcher option in reverse-engineering connection parameters
+
+\- Synapse: added MFA support to the Active Directory authentication method
+
+&nbsp;
+
 New features in v5.1.4 \[16-Aug-2021\]
 
 \- Tech refresh of Electron (v13.1.9), NodeJS (v14.17.0), Chromium (v91), React (v17), and Electron-related modules

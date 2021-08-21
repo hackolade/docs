@@ -96,9 +96,9 @@ If the level allows multiple tabs, you need to choose to which lower tab you wan
 
 The following controls are possible for user-defined properties:
 
-![Image](<lib/Plugin%20-%20possible%20property%20types.png>)
+&nbsp;
 
-![Image](<lib/Plugin%20-%20possible%20property%20types-drpdwn%20multi.png>)
+![Image](<lib/Plugin%20-%20possible%20property%20types.png>)
 
 * simple text: one line of text
 * text area: popup for multi-line text entry
