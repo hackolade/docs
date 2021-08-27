@@ -2,7 +2,7 @@
 
 &nbsp;
 
-&#49;) Data Plane
+## Data Plane
 
 In the Hackolade connection settings dialog for Synapse, give a meaningful name to the connection, choose the source (on-prem/cloud or Azure SQL Database), then set the database name, the host and port:
 
@@ -18,13 +18,47 @@ then enter your username/password:
 
 &nbsp;
 
+&nbsp;
+
+https://docs.microsoft.com/en-us/azure/synapse-analytics/sql/sql-authentication?tabs=serverless
+
+&nbsp;
+
+&nbsp;
+
 Alternatively, you may choose to provide a connection string which includes: host, port, username and password:
 
 ![Image](<lib/Synapse%20Connection%20String.png>)
 
 &nbsp;
 
-## &#50;) Control Plane
+&nbsp;
+
+&nbsp;
+
+If you choose Azure Active Directory, you must also specify the "Directory (tenant) ID"
+
+&nbsp;
+
+![Image](<lib/Synapse%20Azure%20AD%20Directory%20tenant%20ID.png>)
+
+please also consult:
+
+https://docs.microsoft.com/en-us/azure/synapse-analytics/sql/active-directory-authentication
+
+&nbsp;
+
+with MFA:
+
+https://docs.microsoft.com/en-us/azure/synapse-analytics/sql/mfa-authentication
+
+https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-mfa-howitworks
+
+&nbsp;
+
+&nbsp;
+
+## Control Plane
 
 The REST API connection should be enabled and all the proper parameters provided if you wish for Hackolade to retrieve additional Azure metadata such as: tags, location and region replication, automatic failover, virtual network filter and rules, and IP-range filter.&nbsp;
 

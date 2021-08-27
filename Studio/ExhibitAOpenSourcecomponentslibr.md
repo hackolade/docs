@@ -45,16 +45,15 @@ All Product Versions
 | [ExcelJS](<https://github.com/exceljs/exceljs> "target=\"\_blank\"") | (c) 2014-2019 Guyon Roche | [MIT](<https://github.com/exceljs/exceljs/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Fast-crc32c](<https://github.com/ashi009/node-fast-crc32c> "target=\"\_blank\"") | (c) 2014 Xiaoyi Shi | [MIT](<https://github.com/ashi009/node-fast-crc32c/blob/master/LICENSE> "target=\"\_blank\"") |
 | [File-loader](<https://github.com/webpack/file-loader> "target=\"\_blank\"") | (c) 2016 Tobias Koppers | [MIT](<https://opensource.org/licenses/MIT> "target=\"\_blank\"") |
-| [Flat](<https://github.com/hughsk/flat> "target=\"\_blank\"") | (c) 2014 Hugh Kenned | [BSD-3-Clause](<https://github.com/hughsk/flat/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Flora SQL Server](<https://github.com/haansn08/flora-sql-parser> "target=\"\_blank\"") | (c) 2015 BorseGo AG | [MIT](<https://github.com/haansn08/flora-sql-parser/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Font-awesome](<https://fortawesome.github.io/Font-Awesome/> "target=\"\_blank\"") | (c) 2016 Dave Gandy | [MIT](<https://fortawesome.github.io/Font-Awesome/license/> "target=\"\_blank\"") |
 | [Form-Data](<https://github.com/form-data/form-data> "target=\"\_blank\"") | (c) 2012 Felix Geisendörfer | [MIT](<https://github.com/form-data/form-data/blob/master/License> "target=\"\_blank\"") |
 | [Fs-extra](<https://github.com/jprichardson/node-fs-extra> "target=\"\_blank\"") | (c) 2011-2016 JP Richardson | [MIT](<https://github.com/jprichardson/node-fs-extra/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Generate-schema](<https://github.com/mjackson/history> "target=\"\_blank\"") | (c) 2015 Nijiko Yonskai | [MIT](<https://github.com/nijikokun/generate-schema/blob/master/LICENSE> "target=\"\_blank\"") |
-| [Google cloud storage](<https://github.com/googleapis/nodejs-storage> "target=\"\_blank\"") | (c) 2016 Google Inc. | [Apache](<https://github.com/googleapis/nodejs-storage/blob/master/LICENSE> "target=\"\_blank\"") |
+| [Google Cloud BigQuery](<https://github.com/googleapis/nodejs-bigquery> "target=\"\_blank\"") | (c) 2018 Google, Inc. | [Apache](<https://github.com/googleapis/nodejs-bigquery/blob/main/LICENSE> "target=\"\_blank\"") |
+| [Google Cloud Storage](<https://github.com/googleapis/nodejs-storage> "target=\"\_blank\"") | (c) 2016 Google, Inc. | [Apache](<https://github.com/googleapis/nodejs-storage/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Gremlin-javascript](<https://github.com/apache/tinkerpop/tree/master/gremlin-javascript/src/main/javascript/gremlin-javascript> "target=\"\_blank\"") | (c) 2017 Apache TinkerPop team | [Apache](<https://github.com/apache/tinkerpop/blob/master/gremlin-javascript/src/main/javascript/gremlin-javascript/LICENSE> "target=\"\_blank\"") |
 | [History](<https://github.com/mjackson/history> "target=\"\_blank\"") | (c) 2015-2016 Michael Jackson | [MIT](<https://github.com/browserstate/history.js/blob/master/LICENSE.md> "target=\"\_blank\"") |
-| [Html2canvas](<https://github.com/niklasvh/html2canvas> "target=\"\_blank\"") | (c) 2012 Niklas von Hertzen | [MIT](<https://github.com/niklasvh/html2canvas/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Html-pdf](<https://github.com/marcbachmann/node-html-pdf> "target=\"\_blank\"") | (c) 2016 Marc Bachmann | [MIT](<https://opensource.org/licenses/MIT> "target=\"\_blank\"") |
 | [Https-proxy-agent](<https://github.com/TooTallNate/node-https-proxy-agent> "target=\"\_blank\"") | (c) 2013 nathan Rajlich | [MIT](<https://github.com/TooTallNate/node-https-proxy-agent#license> "target=\"\_blank\"") |
 | [Java-SSL](<https://github.com/tresata/java-ssl> "target=\"\_blank\"") | (c) 2015 Jayesh Mori | [MIT](<https://github.com/tresata/java-ssl/blob/master/package.json> "target=\"\_blank\"") |
@@ -79,7 +78,6 @@ All Product Versions
 | MongoDB-uri-node | (c) 2013 ObjectLabs Corporation | [MIT](<https://github.com/mongolab/mongodb-uri-node/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Neo4j-javascript-driver](<https://github.com/neo4j/neo4j-javascript-driver> "target=\"\_blank\"") | (c) 2018 Neo4j | [Apache](<https://github.com/neo4j/neo4j-javascript-driver/blob/1.7/LICENSE> "target=\"\_blank\"") |
 | [Node-fetch](<https://github.com/bitinn/node-fetch> "target=\"\_blank\"") | (c) 2016 David Frank | [MIT](<https://github.com/bitinn/node-fetch/blob/master/LICENSE.md> "target=\"\_blank\"") |
-| [Node-find-java-home](<https://github.com/jsdevel/node-find-java-home> "target=\"\_blank\"") | (c) 2014 Joseph Spencer | [Apache](<https://github.com/jsdevel/node-find-java-home/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Node-folder-hash](<https://github.com/marc136/node-folder-hash> "target=\"\_blank\"") | (c) 2015 Marc Walter | [MIT](<https://github.com/marc136/node-folder-hash/blob/main/LICENSE.txt> "target=\"\_blank\"") |
 | [Node-ipc](<https://github.com/RIAEvangelist/node-ipc> "target=\"\_blank\"") | (c) 2009 Philip Sturgeon | [DBAD](<https://github.com/RIAEvangelist/node-phidget-API/blob/master/license.md> "target=\"\_blank\"") |
 | [Node-mssql](<https://github.com/tediousjs/node-mssql> "target=\"\_blank\"") | (c) 2013-2018 Patrick Simek and contributors | [MIT](<https://github.com/tediousjs/node-mssql/blob/master/LICENSE.md> "target=\"\_blank\"") |
@@ -121,7 +119,6 @@ All Product Versions
 | [Twitter Bootstrap](<https://getbootstrap.com/> "target=\"\_blank\"") | (c) 2011-2016 Twitter, Inc. | [MIT](<https://github.com/twbs/bootstrap/blob/master/LICENSE> "target=\"\_blank\"") |
 | [W3c-blob](<https://github.com/chrisdickinson/w3c-blob> "target=\"\_blank\"") | (c) 2016 Chris Dickinson | [MIT](<https://github.com/chrisdickinson/w3c-blob#license> "target=\"\_blank\"") |
 | [Winreg](<https://github.com/fresc81/node-winreg> "target=\"\_blank\"") | (c) 2016 Paul Bottin | [BSD-2-Clause](<https://github.com/fresc81/node-winreg#license> "target=\"\_blank\"") |
-| [XLSX](<https://github.com/SheetJS/js-xlsx> "target=\"\_blank\"") | (c) 2012-2015 SheetJS | [Apache](<https://github.com/SheetJS/js-xlsx/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Xml2JS](<https://github.com/Leonidas-from-XIV/node-xml2js> "target=\"\_blank\"") | (c) 2010-2013 Marek Kubica | [MIT](<https://github.com/Leonidas-from-XIV/node-xml2js/blob/master/LICENSE> "target=\"\_blank\"") |
 | [XMLDOM](<https://github.com/jindw/xmldom> "target=\"\_blank\"") | (c) 2012-2016 jindw | [MIT](<https://github.com/jindw/xmldom/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Xml-Crypto](<https://github.com/yaronn/xml-crypto> "target=\"\_blank\"") | (c) 2012-2016 Yaron Naveh | [MIT](<https://github.com/yaronn/xml-crypto/blob/master/LICENSE> "target=\"\_blank\"") |

@@ -1,5 +1,21 @@
 # v5.x
 
+New features in v5.1.6 \[27-Aug-2021\]
+
+\- Compare and Merge: added viewing of index differences, and other properties pane tabs
+
+\- Added validation of file path and name input in model compare and API model template selection dialogs
+
+\- XSD import for RDDBMS targets: use maxLength as char column length
+
+\- Hive: added reverse-engineering of view columns with CAST function
+
+\- Hive: added support for view columns with aliases
+
+\- Synapse: implemented Azure Active Directory authentication with MFA
+
+&nbsp;
+
 New features in v5.1.5 \[20-Aug-2021\]
 
 \- Excel: added import of views
