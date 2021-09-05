@@ -148,7 +148,7 @@ Additional controls are available in the toolbar (and also in the View menu):
 
 ## Force-directed layout
 
-A force-directed layout tends to arrange nodes in such a way that highly connected nodes are placed more to the center of the visualization, whereas less connected ones are placed in the periphery.&nbsp; It consists of 3 different forces: edges act as springs, while nodes repel each other, and drag forces ensure that nodes settle.&nbsp; The forces are interactively applied, resulting in a fluid animation that dynamically positions the nodes. See example [here](<https://hackolade.com/assets/img/Force-directed\_animated\_compressed.gif> "target=\"\_blank\"").
+A force-directed layout tends to arrange nodes in such a way that highly connected nodes are placed more to the center of the visualization, whereas less connected ones are placed in the periphery.&nbsp; It consists of 3 different forces: edges act as springs, while nodes repel each other, and drag forces ensure that nodes settle.&nbsp; The forces are interactively applied, resulting in a fluid animation that dynamically positions the nodes. See example [here](<https://hackolade.com/img/Force-directed\_animated\_compressed.gif> "target=\"\_blank\"").
 
 &nbsp;
 

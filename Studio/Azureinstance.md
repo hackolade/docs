@@ -8,7 +8,7 @@ When performing reverse-engineering of Cosmos DB, most of the information can be
 
 &nbsp;
 
-## &#49;) Data plane
+## Data plane
 
 Give a meaningful name to the connection to identify it for later, and provide proper connection string parameters:
 
@@ -28,7 +28,7 @@ Go to the [Azure portal](<https://portal.azure.com/> "target=\"\_blank\"") to re
 
 &nbsp;
 
-## &#50;) Control Plane
+## Control Plane
 
 The REST API connection must be enabled and all the proper parameters provided if you wish for Hackolade to retrieve additional Azure metadata such as: tags, location and region replication, automatic failover, virtual network filter and rules, and IP-range filter.&nbsp;
 

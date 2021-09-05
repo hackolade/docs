@@ -18,3 +18,18 @@ JSON Schema holds a central place in the strategy to model NoSQL document schema
 
 ![Image](<lib/Couchbase%20DTD.png>)
 
+&nbsp;
+
+&nbsp;
+
+There are many ways to access this screen:
+
+\- double click on the entity title\
+\- click once on the middle-right icon in the entity title\
+\- right-click on the entity title and choose Open in new tab\
+\- right-click on the entity name in the Object Browser on the left, and choose Open in new tab
+
+&nbsp;
+
+![Image](<lib/JSON%20Tree%20in%20new%20tab.png>)
+

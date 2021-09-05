@@ -36,7 +36,7 @@ Alternatively, you may choose to provide a connection string which includes: hos
 
 &nbsp;
 
-If you choose Azure Active Directory, you must also specify the "Directory (tenant) ID"
+If you choose Azure Active Directory, you must also specify your "Tenant ID" ([how-to find your tenant ID?](<https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-how-to-find-tenant> "target=\"\_blank\""))&nbsp;
 
 &nbsp;
 

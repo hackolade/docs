@@ -12,7 +12,7 @@ To perform data modeling for Redshift with Hackolade, you must first download th
 
 &nbsp;
 
-Hackolade was specially adapted to support the data modeling of Redshift, including schemas, tables and views, plus the generation of DDL Create Table syntax. In particular, Hackolade has the unique ability to model complex semi-structured objects stored in columns of the [SUPER data type](<https://docs.aws.amazon.com/redshift/latest/dg/ingest-super.html> "target=\"\_blank\"").&nbsp; The reverse-engineering function, if it detects JSON documents in a column with the SUPER data type, will sample records and infer the schema to supplement the DDL table definitions.&nbsp; The application closely follows the Snowflake terminology and storage structure.
+Hackolade was specially adapted to support the data modeling of Redshift, including schemas, tables and views, plus the generation of DDL Create Table syntax. In particular, Hackolade has the unique ability to model complex semi-structured objects stored in columns of the [SUPER data type](<https://docs.aws.amazon.com/redshift/latest/dg/ingest-super.html> "target=\"\_blank\"").&nbsp; The reverse-engineering function, if it detects JSON documents in a column with the SUPER data type, will sample records and infer the schema to supplement the DDL table definitions.&nbsp; The application closely follows the Redshift terminology and storage structure.
 
 &nbsp;
 

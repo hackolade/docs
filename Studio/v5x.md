@@ -1,5 +1,23 @@
 # v5.x
 
+New features in v5.1.7 \[04-Sept-2021\]
+
+\- BigQuery: added support with a new plugin with full support for forward-engineering of DDL scripts, and reverse-engineering
+
+\- Command-Line Interface compMod command: added argument --mergeDeletesasDeactivated to deactivate merged object instead of deleting it
+
+\- Custom properties fieldList control: added tooltip display
+
+\- Model Compare \& Merge: added options for flexible selection in case of multiple data types
+
+\- JSON Schema preview and forward-engineering: added use of technical names and dot.notation in nested objects&nbsp;
+
+\- Hive: added read-on "view on" property to display multiple referenced tables
+
+\- Mongoose reverse-engineering: added support for Map data type
+
+&nbsp;
+
 New features in v5.1.6 \[27-Aug-2021\]
 
 \- Compare and Merge: added viewing of index differences, and other properties pane tabs

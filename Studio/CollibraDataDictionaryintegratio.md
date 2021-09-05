@@ -132,7 +132,17 @@ The user then selects the entities to be loaded to the selected Collibra domains
 
 The application uses the [Import API](<https://developer.collibra.com/rest/rest-import-api/> "target=\"\_blank\"") to bulk load the selected objects metadata and Entity-Relationship picture into the selected Collibra domain.&nbsp; The system leverages the [Synchronization API](<https://collibra-developer-portal.s3-eu-west-1.amazonaws.com/docs/import/Default.htm#API/ImportAPIv2/co\_synchronization-api.htm> "target=\"\_blank\"") to keep data in Collibra up-to-date with model evolutions when invoking the integration repeatedly.&nbsp; The synchronization is based on the internal model UUID.
 
-**Important note:** the master for the data catalog information is the Hackolade data model.&nbsp; According the Collibra [documentation](<https://collibra-developer-portal.s3-eu-west-1.amazonaws.com/docs/import/Default.htm#API/ImportAPIv2/to\_import-commands.htm#Resource> "target=\"\_blank\""), depending on the resource type, the Import API performs one of two operations: SET/REPLACE or MERGE.&nbsp; For attributes, the operation is SET/REPLACE.&nbsp; As a result, "if the resource exists with properties other than the ones defined in the input (i.e.; the Hackolade data model), the resource is replaced with the one provided in the input."&nbsp; Meaning that edits made in Collibra risk disappearing with subsequent publications. &nbsp;
+**Important note:** the master for the data catalog information is the Hackolade data model.&nbsp; According the Collibra [documentation](<https://collibra-developer-portal.s3-eu-west-1.amazonaws.com/docs/import/Default.htm#API/ImportAPIv2/to\_import-commands.htm#Resource> "target=\"\_blank\""), depending on the resource type, the Import API performs one of two operations: SET/REPLACE or MERGE.&nbsp; For attributes, the operation is SET/REPLACE.&nbsp; As a result, "if the resource exists with properties other than the ones defined in the input (i.e.; the Hackolade data model), the resource is replaced with the one provided in the input."&nbsp; Meaning that edits made in Collibra risk disappearing with subsequent publications from Hackolade.&nbsp; In the future, when we release the ability to reverse-engineer from Collibra into Hackolade, 2 approaches will be possible:
+
+&#49;) reverse-engineer from Collibra into the master Hackolade data model, and let the conflict resolution kick-in, letting the user decide whether to merge the information from Collibra.
+
+![Image](<lib/Conflict%20resolution.png>)
+
+Once the information is merged into the hackolade model, the whole model can be published to Collibra again.
+
+&#50;) a user might want to have more control over the granularity of what gets merged and what does not.  There is the possibility to reverse-engineer into an empty model, save it, then do a [Model Compare \& Merge](<Compareandmergemodels.md>) with the master Hackolade model, followed by the publishing back to Collibra of the merged model.
+
+&nbsp;
 
 ## View data model in Collibra console
 
