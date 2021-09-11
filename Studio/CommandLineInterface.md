@@ -333,6 +333,7 @@ Usage:&nbsp; &nbsp; *hackolade compMod \[--arguments\]*
 | \--ignoreOrder=\<**true** \| false\> | N | Specify whether to detect changes in order of fields \[default: true\] |
 | \--targetModel=\<file\>\* | N | Full path and file name for the Hackolade model resulting from the merge of model1 and model2.&nbsp; If specified, a new Hackolade model is created with a merge of the 2 original models.&nbsp; Extension .json is optional |
 | \--mergedeletesasdeactivated= \<true \| **false**\> | N | Specify whether to deactivate deleted objects \[default: false\] |
+| \--gui=\<true \| **false**\> | N | Specify whether to open Model Compare \& Merge in GUI&nbsp; \[default: false\] |
 | \--logLevel=\< 1 \| 2 \| 3 \| **4** \> | N | &#49; = no spinner, no info, no error messages 2 = no spinner, no info 3 = no spinner 4 = full output \[default: 4\] |
 
 

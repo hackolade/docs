@@ -1,5 +1,23 @@
 # v5.x
 
+New features in v5.1.8 \[10-Sept-2021\]
+
+\- Object Browser: added possibility to alpha sort entities and views via contextual menu
+
+\- Command-Line Interface: added possibility to open Model Compare \& Merge in GUI from command line with --gui=true argument
+
+\- Custom properties multi-select dropdown: added tooltip display
+
+\- Custom properties dependency structure: added possibility to use an array of values in place of more convoluted "or" syntax
+
+\- Custom properties: added "requiredProperty" for display of a red star next to label
+
+\- DDL reverse-engineering: added support for views based on tables with aliases, select statements with wildcard, and unsupported references&nbsp;
+
+\- Delta Lake: refactored reverse-engineering for higher performance by batching Scala commands
+
+&nbsp;
+
 New features in v5.1.7 \[04-Sept-2021\]
 
 \- BigQuery: added support with a new plugin with full support for forward-engineering of DDL scripts, and reverse-engineering
@@ -11,6 +29,8 @@ New features in v5.1.7 \[04-Sept-2021\]
 \- Model Compare \& Merge: added options for flexible selection in case of multiple data types
 
 \- JSON Schema preview and forward-engineering: added use of technical names and dot.notation in nested objects&nbsp;
+
+&nbsp;
 
 \- Hive: added read-on "view on" property to display multiple referenced tables
 
