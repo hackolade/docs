@@ -144,5 +144,5 @@ The Hackolade process for reverse-engineering of Amazon Redshift databases inclu
 
 &nbsp;
 
-For more information on Snowflake in general, please consult the [website](<https://aws.amazon.com/redshift/> "target=\"\_blank\"").
+For more information on Amazon Redshift in general, please consult the [website](<https://aws.amazon.com/redshift/> "target=\"\_blank\"").
 
