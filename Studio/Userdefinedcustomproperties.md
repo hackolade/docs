@@ -1,10 +1,10 @@
 # User-defined custom properties
 
-For each object in Hackolade, we've defined a set of standard properties that appear in the properties pane.&nbsp; But it is possible that your organization wants to define and track its own metadata properties for models, containers, entities, and attributes.&nbsp; This could be for data governance reasons, and/or to leverage properties in code generation, etc...
+For each object in Hackolade, we've defined a set of standard properties that appear in the properties pane.&nbsp; But it is possible that your organization wants to define and track its own metadata properties for models, containers, entities, and attributes.&nbsp; This could be for data governance reasons, and/or to leverage properties in code generation, etc...&nbsp;
 
 &nbsp;
 
-Hackolade lets create and maintain custom properties by editing JSON configuration files found in folders in C:\\Users\\%username%\\.hackolade\\options (on Mac in Users/$USER/.Hackolade/options) which can be Git-enabled to be shared across an organization if desired.
+Hackolade provides a no-code approach so you can create and maintain custom properties simply by editing JSON configuration files.&nbsp; These files are found in folders in C:\\Users\\%username%\\.hackolade\\options (on Mac in Users/$USER/.Hackolade/options) which can be Git-enabled to be shared across an organization if desired.
 
 &nbsp;
 

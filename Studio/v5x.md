@@ -1,5 +1,27 @@
 # v5.x
 
+New features in v5.2.0 \[17-Sept-2021\]
+
+\- Polyglot data modeling: added the possibility to convert any physical target model into a technology-agnostic data model, and derive a physical target model - for any target - from a polyglot data model.&nbsp; More info at https://hackolade.com/polyglot-data-modeling.html
+
+\- Model Compare and Merge: added the possibility in the merge process to generate a delta model (similar to the CLI compMod deltamodel output)
+
+\- Collibra: added batch synchronization for large models
+
+\- Collibra: added possibility to fetch domains for an individual community, resulting in higher performance in large organization
+
+\- JSON Schema: adjusted conversion of samples into examples when switching from one draft version to another
+
+\- JSON Schema: adjusted conversion of exclusiveMin/Max when switching from one draft version to another
+
+\- Cassandra and ScyllaDB: adjusted mapping of mapping of complex when reverse-engineering CQL files
+
+\- OpenAPI: adjusted display of Swagger UI interaction
+
+\- all RDMBS targets: added support for Alternate Keys (MariaDB, Redshift, Snowflake, SQL Server, Synapse)
+
+&nbsp;
+
 New features in v5.1.8 \[10-Sept-2021\]
 
 \- Object Browser: added possibility to alpha sort entities and views via contextual menu

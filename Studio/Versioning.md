@@ -48,7 +48,7 @@ Learn how how to handle resolution in the page [Compare and Merge Models](<Compa
 
 ## Validating schemas in production
 
-Another typical use case in enterprises is to make sure that the Data Governance department has an accurate view of the schemas used in production databases.&nbsp; This is particularly relevant in the context of schemaless NoSQL when there is no DDL in source code control.&nbsp; The process of auditing a production database may become a nightly process (automated with our [Command-Line Interface](<CommandLineInterface.md>)) to reveal structures being used without prior validation.
+Another typical use case in enterprises is to make sure that the Data Governance department has an accurate view of the schemas used in production databases.&nbsp; There maybe a need for curation of production schemas for metadata management purposes.&nbsp; This is particularly relevant in the context of schemaless NoSQL when there is no DDL in source code control.&nbsp; The process of auditing a production database may become a nightly process (automated with our [Command-Line Interface](<CommandLineInterface.md>)) to reveal structures being used without prior validation.
 
 &nbsp;
 
