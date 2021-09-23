@@ -10,6 +10,8 @@ With version 1.4.0, Hackolade has introduced support for multiple model containe
 
 \- multiple groups in JSON
 
+\- etc...
+
 &nbsp;
 
 If necessary for your application, you can define multiple groups in the same model, possibly with inter-group relationships

@@ -15,7 +15,8 @@ By default, the following items are available:
 * Common tasks
   * New model: creates a blank workspace to let you create a new model (see link Create a Model)
   * Open model: opens a standard Open dialog to let you browse for a model to open
-  * Reverse engineer:&nbsp;
+  * [Reverse-engineer](<Reverseengineeranexistinginstanc.md>) a database instance or file
+  * [Compare and merge data models](<Compareandmergemodels.md>)
 * Resources:
   * Help: opens the Hackolade online help
   * FAQ: opens the Hackolade online Frequently Asked Questions

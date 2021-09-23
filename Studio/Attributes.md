@@ -81,7 +81,7 @@ Schema definitions can use “allOf”, “anyOf”, “oneOf”, and “noneOf�
 
 &nbsp;
 
-## if-then-else conditional subschemas
+### if-then-else conditional subschemas
 
 With version 5 of Hackolade, support was introduced for the [conditional application of subschemas](<https://json-schema.org/understanding-json-schema/reference/conditionals.html> "target=\"\_blank\"").&nbsp; The if, then and else keywords allow the application of a subschema based on the outcome of another schema.
 

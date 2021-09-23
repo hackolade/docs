@@ -28,6 +28,23 @@ Hierarchical schema view of an entity schema:
 
 &nbsp;
 
+From the ERD, you may open the hierarchical schema view in a number of ways:
+
+\- double click on the entity title\
+\- click once on the middle-right icon in the entity title\
+\- right-click on the entity title and choose Open in new tab\
+\- right-click on the entity name in the Object Browser on the left, and choose Open in new tab
+
+&nbsp;
+
+![Image](<lib/JSON%20Tree%20in%20new%20tab.png>)
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
 JSON Preview of an entity:
 
 ![Image](<lib/Central%20pane%20-%20JSON%20Preview.png>)

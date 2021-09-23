@@ -28,7 +28,7 @@ Documentation can be configured using 2 sets of controls:
 
 &nbsp;
 
-### &#49;) Parameters in Tools \> Options \> Documentation
+### Parameters in Tools \> Options \> Documentation
 
 Users may control the different sections to include in the documentation:
 
@@ -74,7 +74,7 @@ b. properties
 
 &nbsp;
 
-### &#50;) Object selection in File \> Generate Documentation
+### Object selection in File \> Generate Documentation
 
 Before generation of the documentation, you're given the opportunity to filter objects and select only the desired ones:
 
