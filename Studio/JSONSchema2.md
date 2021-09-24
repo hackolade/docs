@@ -10,6 +10,8 @@ Hackolade is a visual editor for JSON Schema for non-programmers.&nbsp; It is id
 
 \- [2019-09](<https://json-schema.org/specification-links.html#2019-09-formerly-known-as-draft-8> "target=\"\_blank\"")
 
+\- [2020-12](<https://json-schema.org/specification-links.html#2020-12> "target=\"\_blank\"")
+
 &nbsp;
 
 Hackolade was specially adapted to support the data modeling of JSON files.

@@ -1,5 +1,29 @@
 # v5.x
 
+New features in v5.2.1 \[24-Sept-2021\]
+
+\- JSON Schema: added support for latest draft 2020-12
+
+\- Collibra: added possibility to reverse-engineer and merge into Hackolade data model.&nbsp; Also helps truly sync content that may have been entered in Collibra
+
+\- Introduced a Tools \> Options \> Display tab gathering all the display settings: moved some from the General tab, plus added more
+
+\- Tools \> Options \> Forward-Engineering: added a JSON Schema section with preferred settings for compliance and definitions handling, used on JSON Preview and in forward-engineering of JSON Schema
+
+\- JSON Preview and forward-engineering of JSON schema now use preferences set in Tools \> Options \> Forward-Engineering
+
+\- JSON Schema reverse-engineering: adjusted handling of external references when schema only has definitions
+
+\- Alternate keys: added ERD display of multiple constraints on same column
+
+\- Avro reverse-engineering of JSON Schema: added handling of not-required arrays with oneOf choice
+
+\- Delta Lake:added mirroring for table properties, refactored JSON formation, unbatched getting DDL command, refactored table properties parsing
+
+\- Snowflake: added reverse-engineering of auto-increment property, fixed skipped columns during reverse-engineering
+
+&nbsp;
+
 New features in v5.2.0 \[17-Sept-2021\]
 
 \- Polyglot data modeling: added the possibility to convert any physical target model into a technology-agnostic data model, and derive a physical target model - for any target - from a polyglot data model.&nbsp; More info at https://hackolade.com/polyglot-data-modeling.html
@@ -51,8 +75,6 @@ New features in v5.1.7 \[04-Sept-2021\]
 \- Model Compare \& Merge: added options for flexible selection in case of multiple data types
 
 \- JSON Schema preview and forward-engineering: added use of technical names and dot.notation in nested objects&nbsp;
-
-&nbsp;
 
 \- Hive: added read-on "view on" property to display multiple referenced tables
 

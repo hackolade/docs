@@ -20,9 +20,9 @@ The integration specifically handles complex data types, hierarchical structures
 
 **Important note:** the Collibra integration is an add-on feature which requires a specific license key which can be purchased from us [here](<mailto:support@hackolade.com?subject=Collibra%20integration%20license>).
 
-## Integration process flow
+## Publishing process flow
 
-To forward a Hackolade data model to you Collibra Data Dictionary, you choose Tools \> Forward-Engineering \> Collibra Dictionary. &nbsp;
+To publish a Hackolade data model to your Collibra Data Dictionary, you choose Tools \> Forward-Engineering \> Collibra Dictionary. &nbsp;
 
 The diagram below describes the integration flow:
 
@@ -128,11 +128,11 @@ The user then selects the entities to be loaded to the selected Collibra domains
 
 &nbsp;
 
-### Publish data model information to Collibra
+### Publish data model to Collibra
 
 The application uses the [Import API](<https://developer.collibra.com/rest/rest-import-api/> "target=\"\_blank\"") to bulk load the selected objects metadata and Entity-Relationship picture into the selected Collibra domain.&nbsp; The system leverages the [Synchronization API](<https://collibra-developer-portal.s3-eu-west-1.amazonaws.com/docs/import/Default.htm#API/ImportAPIv2/co\_synchronization-api.htm> "target=\"\_blank\"") to keep data in Collibra up-to-date with model evolutions when invoking the integration repeatedly.&nbsp; The synchronization is based on the internal model UUID.
 
-**Important note:** the master for the data catalog information is the Hackolade data model.&nbsp; According the Collibra [documentation](<https://collibra-developer-portal.s3-eu-west-1.amazonaws.com/docs/import/Default.htm#API/ImportAPIv2/to\_import-commands.htm#Resource> "target=\"\_blank\""), depending on the resource type, the Import API performs one of two operations: SET/REPLACE or MERGE.&nbsp; For attributes, the operation is SET/REPLACE.&nbsp; As a result, "if the resource exists with properties other than the ones defined in the input (i.e.; the Hackolade data model), the resource is replaced with the one provided in the input."&nbsp; Meaning that edits made in Collibra risk disappearing with subsequent publications from Hackolade.&nbsp; In the future, when we release the ability to reverse-engineer from Collibra into Hackolade, 2 approaches will be possible:
+**Important note:** According the Collibra [documentation](<https://collibra-developer-portal.s3-eu-west-1.amazonaws.com/docs/import/Default.htm#API/ImportAPIv2/to\_import-commands.htm#Resource> "target=\"\_blank\""), depending on the resource type, the Import API performs one of two operations: SET/REPLACE or MERGE.&nbsp; For attributes, the operation is SET/REPLACE.&nbsp; As a result, "if the resource exists with properties other than the ones defined in the input (i.e.; the Hackolade data model), the resource is replaced with the one provided in the input."&nbsp; Meaning that edits made in Collibra risk disappearing with subsequent publications from Hackolade.&nbsp; With the ability to reverse-engineer from Collibra into Hackolade, 2 approaches are possible:
 
 &#49;) reverse-engineer from Collibra into the master Hackolade data model, and let the conflict resolution kick-in, letting the user decide whether to merge the information from Collibra.
 
@@ -147,8 +147,6 @@ Once the information is merged into the hackolade model, the whole model can be 
 ## View data model in Collibra console
 
 The data model information can immediately be viewed inside Collibra:
-
-&nbsp;
 
 ![Image](<lib/Collibra%20view%20data%20models.png>)
 
@@ -178,5 +176,10 @@ The Entity-Relationship Diagram image can also be viewed as a PNG file:
 
 &nbsp;
 
-&nbsp;
+## Reverse-engineer a Collibra Data Dictionary
 
+With v5.2.1, we introduced the possibility to reverse-engineer a Collibra physical data dictionary into a Hackolade data model for the target of your choice.&nbsp; This operation can be done:
+
+\- either into an empty model you wish to create,
+
+\- or into an existing model, possibly the one used to originally publish to Collibra.&nbsp; This is particularly handy if maintenance occurs in Collibra for models created in Hackolade.&nbsp; Refer to the important note above in the section "Publish data model to Collibra".
