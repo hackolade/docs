@@ -58,7 +58,31 @@ or through a data pipeline:
 
 &nbsp;
 
-For example, you want to make sure to keep in sync the structures of an operational database in MongoDB, a landing zone with Avro files on S3 object storage, a data lake on Databricks with bronze-silver-gold states, streaming with Kafka and a Confluent Schema Registry, and a data warehouse in Snowflake.&nbsp; It is hard enough to build this data pipeline, imagine what it takes to support to dynamic evolution of these schemas as new attributes are constantly added during the application lifecycle.&nbsp; That's the ambition of our polyglot data model capability.
+For example, you want to make sure to keep in sync the structures of an operational database in MongoDB, a landing zone with Avro files on S3 object storage, a data lake on Databricks with bronze-silver-gold states, streaming with Kafka and a Confluent Schema Registry, and a data warehouse in Snowflake.&nbsp; It is hard enough to build this data pipeline, imagine what it takes to support to dynamic evolution of these schemas as new attributes are constantly added during the application lifecycle. &nbsp;
+
+&nbsp;
+
+If you add/delete/modify entities or attributes in the polyglot model from which several target models are derived, all these changes can trickle down in the target models.
+
+&nbsp;
+
+## Flexibilty
+
+In a basic use case, you could have just one polyglot model, and several target models derived entirely from the common polyglot models.&nbsp; Each target model would just reflect the physical implementation for its respective technology.&nbsp; Entities can be deleted from the target model, others can be added, and the model can be enriched with entity options, indexes, etc. to generate the proper artifacts (script, DDL, ...)&nbsp; But this use case is a bit theoretical, and reality will quickly dictate more flexible approaches.
+
+&nbsp;
+
+In a slightly more realistic use case, you could have target models that are each a different subset of a same polyglot model.&nbsp; Each target model may be supplemented by its own additional entities.
+
+&nbsp;
+
+Elaborating further, you could derive a target model from multiple polyglot models, or subsets thereof:
+
+![Image](<lib/Polyglot%20multiple%20subsets.png>)
+
+&nbsp;
+
+&nbsp;
 
 &nbsp;
 

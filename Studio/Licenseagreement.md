@@ -1,6 +1,6 @@
 # License agreement
 
-# Hackolade End User License Agreement
+## Hackolade End User License Agreement
 
 Version 1.4.2, November 2020
 

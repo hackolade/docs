@@ -1,5 +1,23 @@
 # v5.x
 
+New features in v5.2.2 \[01-Oct-2021\]
+
+\- External definitions: added possibility to reference model of any target.&nbsp; Was previously restricted to JSON Schema or model of the same target.
+
+\- External definitions: added resolution of custom properties in JSON Schema preview and forward-engineering
+
+\- Model Compare \& Merge: added on-click button to open each model in a separate instance
+
+\- Plugin Manager: added update button in Available tab if a new version of an installed plugin exists
+
+\- Tools \> Options \> Forwarded-Engineering: added preferred settings for JSON Schema specification, used on JSON Preview and in forward-engineering of JSON Schema
+
+\- XSD reverse-engineering: added support for sql:datatype tag for erwin physical models
+
+\- Cassandra: added different index abbreviations in ERD to distinguish Secondary (2Ix.y) from Search (SIx.y) indexes
+
+&nbsp;
+
 New features in v5.2.1 \[24-Sept-2021\]
 
 \- JSON Schema: added support for latest draft 2020-12
