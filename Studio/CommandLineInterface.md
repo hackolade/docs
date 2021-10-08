@@ -152,6 +152,7 @@ Usage:&nbsp; &nbsp; *hackolade revEng \[--arguments\]*
 | \--combineSchemas=\< true \| **false** \> | N | For Avro and Parquet only.&nbsp; Specify whether to combine the schemas of multiple files, or keep one schema per file reverse-engineered \[default: false\] |
 | \--namingConventions=\< business \| technical \> | N | If application parameters are set to enable Naming Conventions, specify whether to reverse-engineer source attributes as business names or as technical names.&nbsp; Conversions will be applied according to your Naming Conventions parameters. &nbsp; \[default: **business**, if Naming Conventions are disabled; or **technical**, if Naming Conventions are enabled in application Tools \> Options\] |
 | \--distribution=\< **true** \| false \> | N | Specify whether to perform orthogonal distribution of model entities on ERD. \[default: true\] |
+| \--maxErdEntityBoxes=\< true \| **false** \> | N | Specify whether to fully expand all collections before distribution.&nbsp; \[default: false\] |
 | \--logLevel=\< 1 \| 2 \| 3 \| **4** \> | N | &#49; = no spinner, no info, no error messages 2 = no spinner, no info 3 = no spinner 4 = full output \[default: 4\] |
 
 
@@ -216,6 +217,7 @@ Usage:&nbsp; &nbsp; *hackolade revEngJSON \[--arguments\]*
 | \--conflictResolution=\< **keepBoth** \| replace \| merge \| cancel \> | N | Specify conflict strategy for containers and entities \[default: keepBoth\] |
 | \--ndjson=\< true \| **false** \> | N | Specify whether the file is contains NDJSON to leverage sampling options \[default: false\] |
 | \--namingConventions=\< business \| technical \> | N | If application parameters are set to enable Naming Conventions, specify whether to reverse-engineer source attributes as business names or as technical names.&nbsp; Conversions will be applied according to your Naming Conventions parameters. &nbsp; \[default: **business**, if Naming Conventions are disabled; or **technical**, if Naming Conventions are enabled in application Tools \> Options\] |
+| \--maxErdEntityBoxes=\< true \| **false** \> | N | Specify whether to fully expand all collections before distribution.&nbsp; \[default: false\] |
 | \--logLevel=\< 1 \| 2 \| 3 \| **4** \> | N | &#49; = no spinner, no info, no error messages 2 = no spinner, no info 3 = no spinner 4 = full output \[default: 4\] |
 
 
@@ -244,6 +246,7 @@ Usage:&nbsp; &nbsp; *hackolade revEngJSON \[--arguments\]*
 | \--conflictResolution=\< **keepBoth** \| replace \| merge \| cancel \> | N | Specify conflict strategy for containers and entities \[default: keepBoth\] |
 | \--ndjson=\< true \| **false** \> | N | Specify whether the file is contains NDJSON to leverage sampling options \[default: false\] |
 | \--namingConventions=\< business \| technical \> | N | If application parameters are set to enable Naming Conventions, specify whether to reverse-engineer source attributes as business names or as technical names.&nbsp; Conversions will be applied according to your Naming Conventions parameters. &nbsp; \[default: **business**, if Naming Conventions are disabled; or **technical**, if Naming Conventions are enabled in application Tools \> Options\] |
+| \--maxErdEntityBoxes=\< true \| **false** \> | N | Specify whether to fully expand all collections before distribution.&nbsp; \[default: false\] |
 | \--logLevel=\< 1 \| 2 \| 3 \| **4** \> | N | &#49; = no spinner, no info, no error messages 2 = no spinner, no info 3 = no spinner 4 = full output \[default: 4\] |
 
 
@@ -272,6 +275,7 @@ Usage:&nbsp; &nbsp; *hackolade revEngDDL \[--arguments\]*
 | \--update=\< true \| **false** \> | N | Specify whether to update existing model.  If false, existing model will be overwritten \[default: false\] |
 | \--conflictResolution=\< **keepBoth** \| replace \| merge \| cancel \> | N | Specify conflict strategy for containers and entities \[default: keepBoth\] |
 | \--namingConventions=\< business \| technical \> | N | If application parameters are set to enable Naming Conventions, specify whether to reverse-engineer source attributes as business names or as technical names.&nbsp; Conversions will be applied according to your Naming Conventions parameters. &nbsp; \[default: **business**, if Naming Conventions are disabled; or **technical**, if Naming Conventions are enabled in application Tools \> Options\] |
+| \--maxErdEntityBoxes=\< true \| **false** \> | N | Specify whether to fully expand all collections before distribution.&nbsp; \[default: false\] |
 | \--logLevel=\< 1 \| 2 \| 3 \| **4** \> | N | &#49; = no spinner, no info, no error messages 2 = no spinner, no info 3 = no spinner 4 = full output \[default: 4\] |
 
 
@@ -298,6 +302,7 @@ Usage:&nbsp; &nbsp; *hackolade revEngXSD \[--arguments\]*
 | \--container=\<containerName\> | N | Specify a container name into which reverse-engineered entities will be inserted \[default=""\] |
 | \--conflictResolution=\< **keepBoth** \| replace \| merge \| cancel \> | N | Specify conflict strategy for containers and entities \[default: keepBoth\] |
 | \--namingConventions=\< business \| technical \> | N | If application parameters are set to enable Naming Conventions, specify whether to reverse-engineer source attributes as business names or as technical names.&nbsp; Conversions will be applied according to your Naming Conventions parameters. &nbsp; \[default: **business**, if Naming Conventions are disabled; or **technical**, if Naming Conventions are enabled in application Tools \> Options\] |
+| \--maxErdEntityBoxes=\< true \| **false** \> | N | Specify whether to fully expand all collections before distribution.&nbsp; \[default: false\] |
 | \--logLevel=\< 1 \| 2 \| 3 \| **4** \> | N | &#49; = no spinner, no info, no error messages 2 = no spinner, no info 3 = no spinner 4 = full output \[default: 4\] |
 
 

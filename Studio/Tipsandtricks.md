@@ -225,3 +225,12 @@ By calling [rs.slaveOk()](<http://docs.mongodb.org/manual/reference/method/rs.s
 \- Mac/Linux: in the Users/$USER/Documents/HackoladeLogs folder.
 
 They may be useful to troubleshoot issues, and requested when opening a support ticket.
+
+***TIP:*** you may wish to perform a bulk update of properties, for example changing the color of attributes, or making a bunch of attributes required, or change enter&nbsp; descriptions, etc.&nbsp; The best way to leverage this is by leveraging the Excel export/import capability:
+
+&#49;) [export](<Excelfile.md>) your model to Excel
+
+&#50;) perform your changes in the Excel file and save it
+
+&#51;) [import](<Exceltemplate.md>) the Excel file back into your Hackolade model.
+

@@ -1,5 +1,31 @@
 # v5.x
 
+New features in v5.2.4 \[11-Oct-2021\]
+
+\- Command Line Interface: added --maxErdEntityBoxes argument to revEng, revEngJSON, revEngYAML, revEndDDL, and revEngXSD
+
+\- JSON Schema: added handling of reference description in forward- and reverse-engineering for drafts 2019-09 and 2020-12
+
+\- Polyglot data model: added sign in entity selection dialog next to objects not present in target models
+
+\- Collibra reverse-engineering: added a target compatibility check and warning message
+
+\- Avro: added resolution of UDT in choices, plus handling of arrays without items in union
+
+\- Cassandra Datastax: added support for SASI custom indexes
+
+\- Cassandra \& ScyllaDB: added property to add IF NOT EXISTS in forward-engineering statements if desired
+
+\- Cassandra: removed CREATE KEYSPACE from forward-engineering when applying to Atlas instance (as keyspace cannot be created via script)
+
+&nbsp;
+
+New features in v5.2.3 \[04-Oct-2021\]
+
+\- RDBMS targets: adjusted normalization when reverse-engineering JSON Schema
+
+&nbsp;
+
 New features in v5.2.2 \[01-Oct-2021\]
 
 \- External definitions: added possibility to reference model of any target.&nbsp; Was previously restricted to JSON Schema or model of the same target.
