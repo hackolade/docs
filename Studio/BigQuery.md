@@ -18,7 +18,7 @@ Hackolade was specially adapted to support the data modeling of BigQuery, includ
 
 The data model in the picture below results from the data modeling of the [CMS Synthetic Patient Data OMOP](<https://redivis.com/Demo/datasets/1709> "target=\"\_blank\""):
 
-![Image](<lib/BigQuery%20workspace.png>)
+![BigQuery workspace](<lib/BigQuery%20workspace.png>)
 
 &nbsp;
 
@@ -76,7 +76,7 @@ BigQuery standard SQL lets you specify the following data types in your schema. 
 
 &nbsp;
 
-![Image](<lib/BigQuery%20data%20types%20table.png>)
+![BigQuery data types table](<lib/BigQuery%20data%20types%20table.png>)
 
 &nbsp;
 
@@ -88,7 +88,7 @@ Hackolade dynamically generates the DDL script to create datasets, tables, colum
 
 &nbsp;
 
-![Image](<lib/BigQuery%20DDL%20forward-engineering.png>)
+![BigQuery DDL forward-engineering](<lib/BigQuery%20DDL%20forward-engineering.png>)
 
 &nbsp;
 
@@ -104,7 +104,7 @@ The connection is established using a connection using Google Cloud IAM credenti
 
 &nbsp;
 
-![Image](<lib/BigQuery%20connection%20settings.png>)
+![BigQuery connection settings](<lib/BigQuery%20connection%20settings.png>)
 
 &nbsp;
 

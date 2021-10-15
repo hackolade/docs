@@ -20,7 +20,7 @@ The data model in the picture below results from the modeling of an application 
 
 &nbsp;
 
-![Image](<lib/Delta%20Lake%20on%20Databricks%20workspace.png>)
+![Delta Lake on Databricks workspace](<lib/Delta%20Lake%20on%20Databricks%20workspace.png>)
 
 &nbsp;
 
@@ -52,7 +52,7 @@ Delta Lake does not support multi-table transactions, primary or foreign keys. T
 
 &nbsp;
 
-![Image](<lib/Hive%20table%20properties.png>)
+![Databricks table properties](<lib/Hive%20table%20properties.png>)
 
 &nbsp;
 
@@ -68,7 +68,7 @@ Hackolade was specially adapted to support the data types and attributes behavio
 
 &nbsp;
 
-![Image](<lib/Hive%20data%20types.png>)
+![Databricks data types](<lib/Hive%20data%20types.png>)
 
 &nbsp;
 
@@ -88,7 +88,7 @@ Hackolade dynamically generates the HiveQL script to create databases, tables, c
 
 &nbsp;
 
-![Image](<lib/Delta%20Lake%20forward-engineering.png>)
+![Databricks forward-engineering](<lib/Delta%20Lake%20forward-engineering.png>)
 
 &nbsp;
 

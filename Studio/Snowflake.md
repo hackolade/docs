@@ -14,7 +14,7 @@ Hackolade was specially adapted to support the data modeling of Snowflake, inclu
 
 The data model in the picture below results from the data modeling of the [sample weather data](<https://docs.snowflake.com/en/user-guide/sample-data-openweathermap.html> "target=\"\_blank\"") available in some regions of the trial sandbox:
 
-![Image](<lib/Snowflake%20workspace.png>)
+![Snowflake workspace](<lib/Snowflake%20workspace.png>)
 
 &nbsp;
 
@@ -82,7 +82,7 @@ Hackolade dynamically generates the DDL script to create schemas, tables, column
 
 &nbsp;
 
-![Image](<lib/Snowflake%20DDL%20forward-engineering.png>)
+![Snowflake DDL forward-engineering](<lib/Snowflake%20DDL%20forward-engineering.png>)
 
 &nbsp;
 

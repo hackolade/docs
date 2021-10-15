@@ -20,13 +20,13 @@ Hackolade was specially adapted to support the API design of OAS, including all 
 
 The diagram below results from the reverse-engineering of the [Pet Store](<https://mermade.org.uk/examples/openapi.json> "target=\"\_blank\"") sample API.
 
-![Image](<lib/OpenAPI%20Workspace.png>)
+![OpenAPI Workspace](<lib/OpenAPI%20Workspace.png>)
 
 &nbsp;
 
 Note the toolbar button to toogle the level of details displayed in the ER Diagram view. &nbsp;
 
-![Image](<lib/OpenAPI%20-%20Toggle%20field%20details.png>)
+![OpenAPI - Toggle field details](<lib/OpenAPI%20-%20Toggle%20field%20details.png>)
 
 &nbsp;
 
@@ -40,7 +40,7 @@ The OpenAPI specification describes primitives (or scalar) data types which can 
 
 &nbsp;
 
-![Image](<lib/Swagger%20data%20types.png>)&nbsp; ![Image](<lib/Swagger%20data%20types%20-%20string.png>)&nbsp; ![Image](<lib/Swagger%20data%20types%20-%20number.png>)&nbsp; ![Image](<lib/Swagger%20data%20types%20-%20integer.png>) &nbsp;
+![OpenAPI data types](<lib/Swagger%20data%20types.png>)&nbsp; ![OpenAPI data types - string](<lib/Swagger%20data%20types%20-%20string.png>)&nbsp; ![OpenAPI data types - number](<lib/Swagger%20data%20types%20-%20number.png>)&nbsp; ![OpenAPI data types - integer](<lib/Swagger%20data%20types%20-%20integer.png>) &nbsp;
 
 &nbsp;
 
@@ -50,7 +50,7 @@ The info object, as well as the host, basePath, schemes, consumes, produces, the
 
 &nbsp;
 
-![Image](<lib/OpenAPI%20-%20Info%20object%201.png>)&nbsp; ![Image](<lib/OpenAPI%20-%20Info%20object%202.png>)&nbsp; ![Image](<lib/OpenAPI%20-%20Info%20object%203.png>)
+![OpenAPI - Info object 1](<lib/OpenAPI%20-%20Info%20object%201.png>)&nbsp; ![OpenAPI - Info object 2](<lib/OpenAPI%20-%20Info%20object%202.png>)&nbsp; ![OpenAPI - Info object 3](<lib/OpenAPI%20-%20Info%20object%203.png>)
 
 &nbsp;
 
@@ -68,7 +68,7 @@ Data types can be objects, but also primitives and arrays. This object is based 
 
 &nbsp;
 
-![Image](<lib/OpenAPI%20-%20Components.png>)
+![OpenAPI - Components](<lib/OpenAPI%20-%20Components.png>)
 
 &nbsp;
 
@@ -82,25 +82,25 @@ The resource path object is a container representing the relative path to an ind
 
 Each resource contains one or more "[path item objects](<https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#pathItemObject> "target=\"\_blank\"")" made of a request and one or more responses:
 
-![Image](<lib/OpenAPI%20-%20Resource%20container.png>)
+![OpenAPI - Resource container](<lib/OpenAPI%20-%20Resource%20container.png>)
 
 &nbsp;
 
 You may create a new resource via right-click anywhere in the ERD view and choosing the contextual menu option:
 
-![Image](<lib/Swagger%20-%20Add%20resource%20contextual%20menu.png>)
+![OpenAPI - Add resource contextual menu](<lib/Swagger%20-%20Add%20resource%20contextual%20menu.png>)
 
 &nbsp;
 
 or via the menu:
 
-![Image](<lib/Swagger%20-%20Add%20resource%20action%20menu.png>)
+![OpenAPI - Add resource action menu](<lib/Swagger%20-%20Add%20resource%20action%20menu.png>)
 
 &nbsp;
 
 or the toolbar:
 
-![Image](<lib/Swagger%20-%20Add%20resource%20toolbar%20button.png>)
+![OpenAPI - Add resource toolbar button](<lib/Swagger%20-%20Add%20resource%20toolbar%20button.png>)
 
 &nbsp;
 
@@ -112,9 +112,9 @@ A request is an object with a type, associated data, relationships to other reso
 
 The [Parameter Object](<https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#parameterObject> "target=\"\_blank\"") describes a single operation parameter defined by a combination of a name and location.&nbsp; Hackolade provides a handy template of parameter types allowing the description of the payload either by adding adding individual fields or by referencing an existing component:
 
-![Image](<lib/OpenAPI%20-%20Request%20Parameter%201.png>)
+![OpenAPI - Request Parameter 1](<lib/OpenAPI%20-%20Request%20Parameter%201.png>)
 
-![Image](<lib/OpenAPI%20-%20Request%20Parameter%202.png>)
+![OpenAPI - Request Parameter 2](<lib/OpenAPI%20-%20Request%20Parameter%202.png>)
 
 &nbsp;
 
@@ -122,21 +122,21 @@ To create a request within a resource container, you may:
 
 \- right-click inside the container area of the ERD pane, and choose the contextual menu option:
 
-![Image](<lib/Swagger%20-%20Add%20request%20contextual%20menu.png>)
+![OpenAPI - Add request contextual menu](<lib/Swagger%20-%20Add%20request%20contextual%20menu.png>)
 
 \- choose the Action menu:
 
-![Image](<lib/Swagger%20-%20Add%20request%20action%20menu.png>)
+![OpenAPI - Add request action menu](<lib/Swagger%20-%20Add%20request%20action%20menu.png>)
 
 \- choose the toolbar button:
 
-![Image](<lib/Swagger%20-%20Add%20request%20toolbar%20button.png>)
+![OpenAPI - Add request toolbar button](<lib/Swagger%20-%20Add%20request%20toolbar%20button.png>)
 
 &nbsp;
 
 It is easy to maintain the metadata for a request in the properties pane:
 
-![Image](<lib/OpenAPI%20-%20Request%20Properties.png>)
+![OpenAPI - Request Properties](<lib/OpenAPI%20-%20Request%20Properties.png>)
 
 &nbsp;
 
@@ -144,13 +144,13 @@ It is easy to maintain the metadata for a request in the properties pane:
 
 [Response objects](<https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#responses-object> "target=\"\_blank\"") describe responses from API operations.&nbsp; For each request, you may create one or more responses.
 
-![Image](<lib/OpenAPI%20-%20Responses.png>)
+![OpenAPI - Responses](<lib/OpenAPI%20-%20Responses.png>)
 
 &nbsp;
 
 A response may have a schema that is defined as individual fields or references a component:
 
-![Image](<lib/OpenAPI%20-%20Response%20schema.png>)
+![OpenAPI - Response schema](<lib/OpenAPI%20-%20Response%20schema.png>)
 
 &nbsp;
 
@@ -158,21 +158,21 @@ To create a response for a given request, you may:
 
 \- right-click on the request in the ERD and choose the contextual menu option:
 
-![Image](<lib/Swagger%20-%20Add%20response%20contextual%20menu.png>)
+![OpenAPI - Add response contextual menu](<lib/Swagger%20-%20Add%20response%20contextual%20menu.png>)
 
 \- or choose the Action menu:
 
-![Image](<lib/Swagger%20-%20Add%20response%20action%20menu.png>)
+![OpenAPI - Add response action menu](<lib/Swagger%20-%20Add%20response%20action%20menu.png>)
 
 \- or choose the toolbar button:
 
-![Image](<lib/Swagger%20-%20Add%20response%20toolbar%20button.png>)
+![OpenAPI - Add response toolbar button](<lib/Swagger%20-%20Add%20response%20toolbar%20button.png>)
 
 &nbsp;
 
 It is easy to maintain the metadata for a response in the properties pane:
 
-![Image](<lib/OpenAPI%20-%20Response%20properties.png>)
+![OpenAPI - Response properties](<lib/OpenAPI%20-%20Response%20properties.png>)
 
 &nbsp;
 
@@ -182,7 +182,7 @@ The files describing the RESTful API in accordance with the [OpenAPI specificati
 
 &nbsp;
 
-![Image](<lib/OpenAPI%20-%20Forward-Engineering.png>)
+![OpenAPI - Forward-Engineering](<lib/OpenAPI%20-%20Forward-Engineering.png>)
 
 &nbsp;
 

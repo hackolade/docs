@@ -21,7 +21,7 @@ To perform data modeling for Firebase with Hackolade, you must first download th
 
 Hackolade was specially adapted to support the data modeling of data stored as a large [JSON tree](<https://firebase.google.com/docs/database/web/structure-data> "target=\"\_blank\""), with data nodes and their associated keys.
 
-![Image](<lib/Firebase%20workspace.png>)
+![Firebase workspace](<lib/Firebase%20workspace.png>)
 
 ## Databases
 

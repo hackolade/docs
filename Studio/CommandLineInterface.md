@@ -4,7 +4,17 @@ With its Command Line Interface (CLI), Hackolade truly supports an agile develop
 
 &nbsp;
 
-It is often helpful, in order to understand how to set the different CLI arguments, to first run the equivalent function in the GUI application.
+The Hackolade command line can of course be used on a stand alone machine.&nbsp; It can also be easily combined with a [git repository](<Teamcollaboration.md>) for the storage of versioned models and schema artifacts, as well as with [Docker containers](<https://github.com/hackolade/docker/tree/main/Studio> "target=\"\_blank\"").&nbsp; Customers have been using this combination either in a push mode, triggered by saving or committing model changes, or in a pull mode, when invoked by a Jenkins DevOps CI/CD or a scheduled job.
+
+&nbsp;
+
+![Image](<lib/CLI%20with%20git.png>)
+
+&nbsp;
+
+&nbsp;
+
+To understand how to set the different CLI arguments, it is often helpful to first run the equivalent function in the GUI application, then to assemble the CLI command piece by piece.
 
 &nbsp;
 

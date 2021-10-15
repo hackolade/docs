@@ -20,7 +20,7 @@ The data model in the picture below results from the reverse-engineering of a sa
 
 &nbsp;
 
-![Image](<lib/ScyllaDB%20workspace.png>)
+![ScyllaDB workspace](<lib/ScyllaDB%20workspace.png>)
 
 ## Keyspace
 
@@ -36,7 +36,7 @@ Tables in ScyllaDB contain rows of columns, and a primary key identifies the loc
 
 &nbsp;
 
-![Image](<lib/Cassandra%20table.png>)
+![ScyllaDB table schema tree view](<lib/Cassandra%20table%20schema%20tree%20view.png>)
 
 &nbsp;
 
@@ -54,7 +54,7 @@ ScyllaDB supports a variety of scalar and complex data types, including lists, m
 
 Hackolade was specially adapted to support the data types and attributes behavior of ScyllaDB.
 
-![Image](<lib/Cassandra%20data%20types.png>) ![Image](<lib/Cassandra%20string%20modes.png>) ![Image](<lib/Cassandra%20numeric%20modes.png>)
+![ScyllaDB data types](<lib/Cassandra%20data%20types.png>) ![ScyllaDB string modes](<lib/Cassandra%20string%20modes.png>) ![ScyllaDB numeric modes](<lib/Cassandra%20numeric%20modes.png>)
 
 Some scalar types can be configured for different modes.&nbsp;
 
@@ -80,7 +80,7 @@ Hackolade supports ScyllaDB materialized views, via a SELECT of columns of the u
 
 Hackolade dynamically generates the CQL script to create keyspaces, tables, columns and their data types, and indexes for the structure created with the application.
 
-![Image](<lib/Cassandra%20forward-engineering.png>)
+![ScyllaDB forward-engineering](<lib/Cassandra%20forward-engineering.png>)
 
 &nbsp;
 

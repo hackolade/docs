@@ -26,13 +26,13 @@ The data model in the picture below results from the reverse-engineering of a [s
 
 &#49;) a graph view, with familiar circular vertex labels:
 
-![Image](<lib/Neptune-Gremlin%20workspace.png>)
+![Neptune-Gremlin workspace](<lib/Neptune-Gremlin%20workspace.png>)
 
 &nbsp;
 
 &#50;) an Entity-Relationship Diagram (ERD) view, with the advantage of displaying properties for both vertex labels and edge labels:
 
-![Image](<lib/Neptune-Gremlin%20ERD.png>)
+![Neptune-Gremlin ERD](<lib/Neptune-Gremlin%20ERD.png>)
 
 &nbsp;
 
@@ -50,7 +50,7 @@ Vertex labels are a semantic representation of vertices in the graph.&nbsp; Vert
 
 A vertex label usually has attributes, called "property keys" where the name (or key) is a string.
 
-![Image](<lib/CosmosDB%20Gremlin%20vertex%20label%20properties.png>)
+![Neptune Gremlin vertex label properties](<lib/CosmosDB%20Gremlin%20vertex%20label%20properties.png>)
 
 &nbsp;
 
@@ -79,13 +79,13 @@ In Neptune, edge labels are unidirectional, going from one node label to another
 
 &nbsp;
 
-![Image](<lib/Neo4j%20relationship%20type.png>)
+![Neptune Gremlin edge label](<lib/Neo4j%20relationship%20type.png>)
 
 &nbsp;
 
 As Neptune-Gremlin is a type of graph database known as 'property graph', edge labels may have attributes, called property keys, just like vertex labels:
 
-![Image](<lib/Neo4j%20relationship%20type%20property%20keys.png>)
+![Neptune Gremlin edge label property keys](<lib/Neo4j%20relationship%20type%20property%20keys.png>)
 
 &nbsp;
 
@@ -103,7 +103,7 @@ Neptune-Gremlin does not provide an abstraction for schemas. Gremlin is a functi
 
 &nbsp;
 
-![Image](<lib/Neptune-Gremlin%20script%20forward-engineering.png>)
+![Neptune-Gremlin script forward-engineering](<lib/Neptune-Gremlin%20script%20forward-engineering.png>)
 
 &nbsp;
 

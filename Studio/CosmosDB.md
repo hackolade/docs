@@ -18,7 +18,7 @@ Hackolade was specially adapted to support the data modeling of multiple object 
 
 The data model in the picture below results from the reverse-engineering of a sample travel application imported in Cosmos DB.
 
-![Image](<lib/Cosmos%20DB%20workspace.png>)
+![Cosmos DB workspace](<lib/Cosmos%20DB%20workspace.png>)
 
 ## Collections
 
@@ -38,7 +38,7 @@ But having multiple collections is something that can be quite useful for differ
 
 When mixing different kinds of documents into the same collection, it becomes necessary to specify a "type" attribute to differentiate the various documents stored in the collection.&nbsp; In Hackolade, each Document Type is modeled as a separate entity or box, so its attributes can be defined separately.&nbsp; A specific attribute name must be identified to differentiate the different document types.&nbsp; The unique key and the document type field are common to all document types in the collection, and displayed at the top of each box in the ERD document:
 
-![Image](<lib/Cosmos%20DB%20ERD%20shapes.png>)
+![Cosmos DB ERD shapes](<lib/Cosmos%20DB%20ERD%20shapes.png>)
 
 &nbsp;
 
@@ -66,7 +66,7 @@ Hackolade was specially adapted to support the data types and attributes behavio
 
 &nbsp;
 
-![Image](<lib/Couchbase%20DTD.png>)
+![Cosmos DB schema tree view](<lib/Couchbase%20schema%20tree%20view.png>)
 
 &nbsp;
 
@@ -82,7 +82,7 @@ Azure Cosmos DB's language integrated transactional execution of JavaScript lets
 
 We provide a sort of "forward-engineering by example", with an automatic JSON data sample generation.&nbsp; The script also includes the creation of indexes, stored Procedures, triggers, and UDFs, and it can be applied to the Azure instance.
 
-![Image](<lib/Cosmos%20DB%20SQL%20API%20forward-engineering%20script.png>)
+![Cosmos DB SQL API forward-engineering script](<lib/Cosmos%20DB%20SQL%20API%20forward-engineering%20script.png>)
 
 &nbsp;
 

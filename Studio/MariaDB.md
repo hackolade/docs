@@ -24,7 +24,7 @@ The data model in the picture below results from the data modeling of the [Sakil
 
 &nbsp;
 
-![Image](<lib/MariaDB%20workspace.png>)
+![MariaDB workspace](<lib/MariaDB%20workspace.png>)
 
 &nbsp;
 
@@ -96,7 +96,7 @@ Hackolade dynamically generates the DDL script to create databases, tables, colu
 
 &nbsp;
 
-![Image](<lib/MariaDB%20DDL%20Forward-Engineering.png>)
+![MariaDB DDL Forward-Engineering](<lib/MariaDB%20DDL%20Forward-Engineering.png>)
 
 &nbsp;
 

@@ -18,7 +18,7 @@ Hackolade was specially adapted to support the data modeling of Redshift, includ
 
 The data model in the picture below results from the data modeling of the [sample TICKIT data](<https://docs.aws.amazon.com/redshift/latest/gsg/rs-gsg-create-sample-db.html> "target=\"\_blank\""):
 
-![Image](<lib/Redshift%20workspace.png>)
+![Redshift workspace](<lib/Redshift%20workspace.png>)
 
 &nbsp;
 
@@ -70,7 +70,7 @@ Each value that Amazon Redshift stores or retrieves has a data type with a fixed
 
 &nbsp;
 
-![Image](<lib/Redshift%20data%20types%20table.png>)
+![Redshift data types table](<lib/Redshift%20data%20types%20table.png>)
 
 &nbsp;
 
@@ -116,7 +116,7 @@ Hackolade dynamically generates the DDL script to create schemas, tables, column
 
 &nbsp;
 
-![Image](<lib/Redshift%20DDL%20forward-engineering.png>)
+![Redshift DDL forward-engineering](<lib/Redshift%20DDL%20forward-engineering.png>)
 
 &nbsp;
 
@@ -132,7 +132,7 @@ If you store JSON within SUPER columns, Hackolade allows for the schema design o
 
 The connection is established using a connection using AWS IAM credentials:
 
-![Image](<lib/Glue%20connection%20settings.png>)
+![Glue connection settings](<lib/Glue%20connection%20settings.png>)
 
 &nbsp;
 

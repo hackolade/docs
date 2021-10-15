@@ -26,7 +26,7 @@ The data model in the picture below results from the data modeling of the [Adven
 
 &nbsp;
 
-![Image](<lib/Synapse%20workspace.png>)
+![Synapse workspace](<lib/Synapse%20workspace.png>)
 
 &nbsp;
 
@@ -104,7 +104,7 @@ Hackolade dynamically generates the DDL script to create schemas, tables, column
 
 &nbsp;
 
-![Image](<lib/Synapse%20DDL%20forward-engineering.png>)
+![Synapse DDL forward-engineering](<lib/Synapse%20DDL%20forward-engineering.png>)
 
 &nbsp;
 

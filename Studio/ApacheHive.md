@@ -16,7 +16,7 @@ The data model in the picture below results from the modeling of an application 
 
 &nbsp;
 
-![Image](<lib/Hive%20workspace.png>)
+![Hive workspace](<lib/Hive%20workspace.png>)
 
 &nbsp;
 
@@ -28,7 +28,7 @@ The table in Hive is logically made up of the data being stored. And the associa
 
 &nbsp;
 
-![Image](<lib/Hive%20table%20properties.png>)
+![Hive table properties](<lib/Hive%20table%20properties.png>)
 
 &nbsp;
 
@@ -50,7 +50,7 @@ Hackolade was specially adapted to support the data types and attributes behavio
 
 &nbsp;
 
-![Image](<lib/Hive%20data%20types.png>)
+![Hive data types](<lib/Hive%20data%20types.png>)
 
 &nbsp;
 
@@ -74,7 +74,7 @@ Hackolade dynamically generates the HQL script to create tables, columns and the
 
 &nbsp;
 
-![Image](<lib/Hive%20forward-engineering.png>)
+![Hive forward-engineering](<lib/Hive%20forward-engineering.png>)
 
 &nbsp;
 

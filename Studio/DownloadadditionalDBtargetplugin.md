@@ -6,7 +6,7 @@ To enable the custom properties capability, you first need to download a plugin 
 
 &nbsp;
 
-![Image](<lib/Plugin%20Manager%20menu%20new.png>)
+![Plugin Manager menu new](<lib/Plugin%20Manager%20menu%20new.png>)
 
 &nbsp;
 
@@ -14,13 +14,13 @@ To enable the custom properties capability, you first need to download a plugin 
 
 You may choose which plugin to install on your computer.
 
-![Image](<lib/Plugin%20-%20manager%20available%20custom%20props.png>)
+![Plugin - manager available custom props](<lib/Plugin%20-%20manager%20available%20custom%20props.png>)
 
 &nbsp;
 
 This will result in the plugin appearing in the Installed tab of the plugin manager.
 
-![Image](<lib/Plugin%20-%20Manager%20installed%20custom%20props.png>)
+![Plugin - Manager installed custom props](<lib/Plugin%20-%20Manager%20installed%20custom%20props.png>)
 
 &nbsp;
 
@@ -36,7 +36,7 @@ Do you have your network proxy set correctly?&nbsp; See more details [here](<Net
 
 There is an alternative: you may download the plugin from [our GitHub repo](<https://github.com/hackolade> "target=\"\_blank\""), then go to the plugin of your choice, and click on Clone or download then Download ZIP.
 
-![Image](<lib/GitHub%20Plugin%20Download.png>)​
+![GitHub Plugin Download](<lib/GitHub%20Plugin%20Download.png>)​
 
 &nbsp;
 
@@ -50,7 +50,7 @@ Then to install, go to Help \> Plugin Manager and click the button Install from 
 
 In the Installed tab of the Plugin Manager, you may see multiple buttons:
 
-![Image](<lib/Plugin%20Manager%20Installed%20tab%20-%20buttons.png>)
+![Plugin Manager Installed tab - buttons](<lib/Plugin%20Manager%20Installed%20tab%20-%20buttons.png>)
 
 &nbsp;
 

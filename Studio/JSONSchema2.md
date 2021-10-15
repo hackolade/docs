@@ -16,7 +16,7 @@ Hackolade is a visual editor for JSON Schema for non-programmers.&nbsp; It is id
 
 Hackolade was specially adapted to support the data modeling of JSON files.
 
-![Image](<lib/JSON%20workspace.png>)
+![JSON workspace](<lib/JSON%20workspace.png>)
 
 &nbsp;
 
@@ -31,7 +31,7 @@ Hackolade was specially adapted to support the data modeling of JSON files.
 
 &nbsp;
 
-![Image](<lib/JSON%20DTD.png>)
+![Image](<lib/JSON%20schema%20tree%20view.png>)
 
 &nbsp;
 
@@ -39,7 +39,7 @@ With version 5 of Hackolade, support was introduced for the [conditional applica
 
 &nbsp;
 
-![Image](<lib/JSON%20Schema%20conditional.png>)
+![JSON Schema conditional](<lib/JSON%20Schema%20conditional.png>)
 
 &nbsp;
 
@@ -55,7 +55,7 @@ Hackolade dynamically generates JSON Schema for the structure created with the a
 
 &nbsp;
 
-![Image](<lib/Forward-Engineering%20-%20JSON%20Preview.png>)
+![Forward-Engineering - JSON Preview](<lib/Forward-Engineering%20-%20JSON%20Preview.png>)
 
 &nbsp;
 
@@ -63,7 +63,7 @@ Hackolade dynamically generates JSON Schema for the structure created with the a
 
 The JSON Schema can also be exported to a Confluent or Pulsar Schema Registry instance:
 
-![Image](<lib/JSON%20Schema%20-%20forward-engineering%20to%20Confluen.png>)
+![JSON Schema - forward-engineering to Confluent](<lib/JSON%20Schema%20-%20forward-engineering%20to%20Confluen.png>)
 
 &nbsp;
 

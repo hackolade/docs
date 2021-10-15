@@ -26,13 +26,13 @@ The data model in the picture below results from the reverse-engineering of a [s
 
 &#49;) a graph view, with familiar circular vertex labels:
 
-![Image](<lib/JanusGraph%20workspace.png>)
+![JanusGraph workspace](<lib/JanusGraph%20workspace.png>)
 
 &nbsp;
 
 &#50;) an Entity-Relationship Diagram (ERD) view, with the advantage of displaying properties for both vertex labels and edge labels:
 
-![Image](<lib/JanusGraph%20ERD.png>)
+![JanusGraph ERD](<lib/JanusGraph%20ERD.png>)
 
 &nbsp;
 
@@ -60,7 +60,7 @@ Vertex TTL is defined on a per-vertex label basis, meaning that all vertices of 
 
 A vertex label usually has attributes, called "property keys" where the name (or key) is a string.
 
-![Image](<lib/CosmosDB%20Gremlin%20vertex%20label%20properties.png>)
+![JanusGraph vertex label properties](<lib/CosmosDB%20Gremlin%20vertex%20label%20properties.png>)
 
 &nbsp;
 
@@ -74,7 +74,7 @@ JanusGraph will enforce that all values associated with the key have the configu
 
 JanusGraph natively supports the following data types:
 
-![Image](<lib/JanusGraph%20property%20key%20data%20types.png>)
+![JanusGraph property key data types](<lib/JanusGraph%20property%20key%20data%20types.png>)
 
 &nbsp;
 
@@ -108,13 +108,13 @@ In JanusGraph, edges are bi-directional by default.&nbsp; If you set edge labels
 
 &nbsp;
 
-![Image](<lib/Neo4j%20relationship%20type.png>)
+![JanusGraph edge label](<lib/Neo4j%20relationship%20type.png>)
 
 &nbsp;
 
 As JanusGraph is a type of graph database known as 'property graph', edge labels may have attributes, called property keys, just like vertex labels:
 
-![Image](<lib/Neo4j%20relationship%20type%20property%20keys.png>)
+![JanusGraph edge label property keys](<lib/Neo4j%20relationship%20type%20property%20keys.png>)
 
 &nbsp;
 
@@ -176,7 +176,7 @@ An explicitly defined schema is an important component of a robust graph applica
 
 &nbsp;
 
-![Image](<lib/JanusGraph%20forward-engineering.png>)
+![JanusGraph gremlin forward-engineering](<lib/JanusGraph%20forward-engineering.png>)
 
 &nbsp;
 

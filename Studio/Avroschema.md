@@ -12,7 +12,7 @@ Hackolade was specially adapted to support the [schema design of Avro](<https://
 
 &nbsp;
 
-![Image](<lib/Avro%20workspace.png>)
+![Avro workspace](<lib/Avro%20workspace.png>)
 
 &nbsp;
 
@@ -26,7 +26,7 @@ There are 8 primitive types (**null**, **boolean**, **int**, **long**, **floa
 
 &nbsp;
 
-![Image](<lib/Avro%20data%20types.png>)
+![Avro data types](<lib/Avro%20data%20types.png>)
 
 &nbsp;
 
@@ -40,7 +40,7 @@ Hackolade also supports [Avro logical types](<https://avro.apache.org/docs/1.8.1
 
 As fields are always technically required in Avro, it is necessary to facilitate forward- and backward-compatibility by allowing fields to have a null type in addition to their natural data type.&nbsp; In Hackolade, when you create a new field, it is created with the required property selected.&nbsp; If you want to make a field logically optional, it must still be present physically, but with a default which must be null.&nbsp; To do this in Hackolade, you would set the data type to null, then de-select the required property, and make the default property = null (without quotes):
 
-![Image](<lib/Avro%20union%20types.png>)
+![Avro union types](<lib/Avro%20union%20types.png>)
 
 &nbsp;
 
@@ -55,11 +55,11 @@ But how you treat this in the application differs depending on whether the data 
 
 Combining a null type with a scalar data type (**boolean**, **int**, **long**, **float**, **double**, **bytes**, and **string**) is very simple, you must click on the + sign to the right of the type property to become:
 
-![Image](<lib/Multi-type%20creation.png>)
+![Multi-type creation](<lib/Multi-type%20creation.png>)
 
 which results in multiple blocks of properties appearing below in the Properties Pane:
 
-![Image](<lib/Multiple-type%20block.png>)
+![Multiple-type block](<lib/Multiple-type%20block.png>)
 
 &nbsp;
 
@@ -67,7 +67,7 @@ which results in multiple blocks of properties appearing below in the Properties
 
 If at least one data type is complex (**record**, **enum**, **array**, **map**, **union**, or **fixed**), then you must use a oneOf choice, for example:
 
-![Image](<lib/Avro%20oneOf%20choice.png>)
+![Avro oneOf choice](<lib/Avro%20oneOf%20choice.png>)
 
 &nbsp;
 
@@ -77,7 +77,7 @@ Hackolade dynamically generates Avro schema for the structure created with the a
 
 &nbsp;
 
-![Image](<lib/Confluent%20Schema%20Registry%20forward-engineering.png>)
+![Confluent Schema Registry forward-engineering](<lib/Confluent%20Schema%20Registry%20forward-engineering.png>)
 
 &nbsp;
 

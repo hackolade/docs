@@ -16,7 +16,7 @@ The data model in the picture below results from the reverse-engineering of a sa
 
 &nbsp;
 
-![Image](<lib/Elasticsearch%20workspace.png>)
+![Elasticsearch workspace](<lib/Elasticsearch%20workspace.png>)
 
 ## Indices
 
@@ -34,7 +34,7 @@ When mixing different types of documents into the same index (in ES versions pri
 
 &nbsp;
 
-![Image](<lib/Elasticsearch%20meta-fields.png>)
+![Elasticsearch meta-fields](<lib/Elasticsearch%20meta-fields.png>)
 
 &nbsp;
 
@@ -56,11 +56,11 @@ Elasticsearch supports a number of different datatypes for the fields in a docum
 
 &nbsp;
 
-![Image](<lib/Elasticsearch%20data%20types.png>) ![Image](<lib/geo-point%20sub-types.png>)![Image](<lib/geo-shape%20subtypes.png>)
+![Elasticsearch data types](<lib/Elasticsearch%20data%20types.png>) ![Elasticsearch geo-point sub-types](<lib/Elasticsearch%20geo-point%20sub-types.png>)![Elasticsearch geo-shape subtypes](<lib/Elasticsearch%20geo-shape%20subtypes.png>)
 
 &nbsp;
 
-![Image](<lib/Elasticsearch%20linestring%20structure.png>)
+![Elasticsearch linestring structure](<lib/Elasticsearch%20linestring%20structure.png>)
 
 &nbsp;
 
@@ -70,7 +70,7 @@ Elasticsearch supports a number of different datatypes for the fields in a docum
 
 Hackolade dynamically generates the mapping for the document structure created with the application.
 
-![Image](<lib/Elasticsearch%20forward-engineering%20mappings.png>)
+![Elasticsearch forward-engineering mappings](<lib/Elasticsearch%20forward-engineering%20mappings.png>)
 
 ## Reverse-Engineering
 

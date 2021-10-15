@@ -10,7 +10,7 @@ Hackolade was specially adapted to support the data modeling of multiple object 
 
 The data model in the picture below results from the reverse-engineering of the sample travel application described [here](<https://docs.couchbase.com/java-sdk/current/ref/travel-app-data-model.html> "target=\"\_blank\"").
 
-![Image](<lib/Couchbase%20workspace.png>)
+![Couchbase workspace](<lib/Couchbase%20workspace.png>)
 
 ## Buckets
 
@@ -44,7 +44,7 @@ There are 2 types of buckets, each with its properties: [Couchbase buckets and M
 
 When mixing different kinds of objects into the same bucket, it becomes necessary to specify a "type" attribute to differentiate the various objects stored in the bucket.&nbsp; In Hackolade, each Document Kind is modeled as a separate entity or box, so its attributes can be defined separately.&nbsp; A specific attribute name must be identified to differentiate the different document kinds.&nbsp; The unique key and the document kind field are common to all document kinds in the bucket, and displayed at the top of each box in the ERD document:
 
-![Image](<lib/Couchbase%20ERD%20shapes.png>)
+![Couchbase ERD shapes](<lib/Couchbase%20ERD%20shapes.png>)
 
 &nbsp;
 
@@ -73,7 +73,7 @@ Hackolade was specially adapted to support the data types and attributes behavio
 
 &nbsp;
 
-![Image](<lib/Couchbase%20DTD.png>)
+![Couchbase schema tree view](<lib/Couchbase%20schema%20tree%20view.png>)
 
 &nbsp;
 
@@ -128,7 +128,7 @@ We provide a sort of "forward-engineering by example", with an automatic JSON da
 
 &nbsp;
 
-![Image](<lib/Couchbase%20forward-engineering%20script.png>)
+![Couchbase forward-engineering script](<lib/Couchbase%20forward-engineering%20script.png>)
 
 &nbsp;
 

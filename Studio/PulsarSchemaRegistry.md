@@ -14,7 +14,7 @@ Hackolade supports Avro schema and JSON Schema maintenance in the Pulsar Schema 
 
 In effect, Hackolade provides a graphical interface for the design and maintenance of Avro and JSON schemas stored in Pulsar Schema Registry.
 
-![Image](<lib/Avro%20workspace.png>)
+![Pulsar workspace](<lib/Avro%20workspace.png>)
 
 &nbsp;
 
@@ -28,7 +28,7 @@ Schemas for Avro or JSON defined in Hackolade can be added to subjects in the Sc
 
 &nbsp;
 
-![Image](<lib/Pulsar%20Schema%20Registry%20forward-engineering.png>)
+![Pulsar Schema Registry forward-engineering](<lib/Pulsar%20Schema%20Registry%20forward-engineering.png>)
 
 &nbsp;
 

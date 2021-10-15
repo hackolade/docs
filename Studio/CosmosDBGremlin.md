@@ -22,7 +22,7 @@ The data model in the picture below results from the reverse-engineering of a [s
 
 &#49;) a graph view, with familiar circular vertex labels:
 
-![Image](<lib/CosmosDB-Gremlin%20workspace.png>)
+![CosmosDB-Gremlin workspace](<lib/CosmosDB-Gremlin%20workspace.png>)
 
 &nbsp;
 
@@ -30,7 +30,7 @@ The data model in the picture below results from the reverse-engineering of a [s
 
 &#50;) an Entity-Relationship Diagram (ERD) view, with the advantage of displaying properties for both vertex labels and edge labels:
 
-![Image](<lib/CosmosDB-Gremlin%20ERD%20view.png>)
+![CosmosDB-Gremlin ERD view](<lib/CosmosDB-Gremlin%20ERD%20view.png>)
 
 &nbsp;
 
@@ -46,7 +46,7 @@ Vertex labels are a semantic representation of vertices in the graph.&nbsp; Vert
 
 A vertex label usually has attributes, called "properties" where the name (or key) is a string.
 
-![Image](<lib/CosmosDB%20Gremlin%20vertex%20label%20properties.png>)
+![CosmosDB Gremlin vertex label properties](<lib/CosmosDB%20Gremlin%20vertex%20label%20properties.png>)
 
 &nbsp;
 
@@ -70,13 +70,13 @@ In Cosmos DB, edges are unidirectional, going from one vertex label to another v
 
 &nbsp;
 
-![Image](<lib/Neo4j%20relationship%20type.png>)
+![Cosmos DB Gremlin edge label](<lib/Neo4j%20relationship%20type.png>)
 
 &nbsp;
 
 As Cosmos DB Gremlin is a type of graph database known as 'property graph', edge labels may have attributes, or properties, just like vertex labels:
 
-![Image](<lib/Neo4j%20relationship%20type%20property%20keys.png>)
+![Cosmos DB Gremlin edge label property keys](<lib/Neo4j%20relationship%20type%20property%20keys.png>)
 
 &nbsp;
 
@@ -96,7 +96,7 @@ Cosmos DB does not provide an abstraction for schemas. Gremlin is a functional, 
 
 &nbsp;
 
-![Image](<lib/CosmosDB%20Gremlin%20script%20forward-engineering.png>)
+![CosmosDB Gremlin script forward-engineering](<lib/CosmosDB%20Gremlin%20script%20forward-engineering.png>)
 
 &nbsp;
 

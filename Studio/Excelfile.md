@@ -1,6 +1,6 @@
 # Excel file
 
-This feature provides the ability to export a data model, or parts of it, to Microsoft Excel so properties could be easily edited in a tabular format, to be re-imported back into the application.&nbsp; It facilitates maintenance of properties in bulk in a productive manner.&nbsp; It also allows creation of a new model - or additions to an existing model - by team members that might not have access to the application.
+The feature to exchange data with Excel provides the ability to export a data model, or parts of it, to Microsoft Excel so properties could be easily edited in a tabular format, to be re-imported back into the application.&nbsp; It facilitates productive bulk actions for the maintenance of properties.&nbsp; It also allows creation of a new model - or additions to an existing model - by team members that might not have access to the application.
 
 &nbsp;
 

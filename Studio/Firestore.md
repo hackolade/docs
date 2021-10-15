@@ -21,7 +21,7 @@ To perform data modeling for Firestore with Hackolade, you must first download t
 
 Hackolade was specially adapted to support the data modeling of data stored in collections, nested objects, and subcollections.
 
-![Image](<lib/Firestore%20workspace.png>)
+![Firestore workspace](<lib/Firestore%20workspace.png>)
 
 ## Databases
 

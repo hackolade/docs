@@ -16,7 +16,7 @@ JSON Schema holds a central place in the strategy to model NoSQL document schema
 
 &nbsp;
 
-![Image](<lib/Couchbase%20DTD.png>)
+![Image](<lib/Couchbase%20schema%20tree%20view.png>)
 
 &nbsp;
 

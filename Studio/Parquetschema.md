@@ -16,7 +16,7 @@ Hackolade was specially adapted to support the [schema design of Parquet](<https
 
 &nbsp;
 
-![Image](<lib/Parquet%20workspace.png>)
+![Parquet workspace](<lib/Parquet%20workspace.png>)
 
 &nbsp;
 
@@ -50,7 +50,7 @@ Notice that there is no primitive string type. Instead, Parquet defines logical 
 
 BYTE\_ARRAY corresponds to binary in Parquet.&nbsp; Strings are encoded as variable-length binary with the UTF8 type annotation to indicate how to interpret the raw bytes back into a String. UTF8 is the only encoding supported in the format, but not every binary uses UTF8 because not all binary fields are storing string data.
 
-![Image](<lib/Parquet%20data%20types.png>)
+![Parquet data types](<lib/Parquet%20data%20types.png>)
 
 &nbsp;
 
@@ -80,7 +80,7 @@ Hackolade dynamically generates Parquet schema for the structure created with th
 
 &nbsp;
 
-![Image](<lib/Parquet%20forward-engineering.png>)
+![Parquet forward-engineering](<lib/Parquet%20forward-engineering.png>)
 
 &nbsp;
 

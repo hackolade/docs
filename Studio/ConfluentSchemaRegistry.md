@@ -14,7 +14,7 @@ Hackolade supports Avro schema and JSON Schema maintenance in Confluent Schema R
 
 In effect, Hackolade provides a graphical interface for the design and maintenance of Avro and JSON schemas stored in Confluent Schema Registry.
 
-![Image](<lib/Avro%20workspace.png>)
+![confluent Schema Registry workspace](<lib/Avro%20workspace.png>)
 
 &nbsp;
 
@@ -28,7 +28,7 @@ Schemas for Avro or JSON defined in Hackolade can be added to subjects in the Sc
 
 &nbsp;
 
-![Image](<lib/Confluent%20Schema%20Registry%20forward-engineering.png>)
+![Confluent Schema Registry forward-engineering](<lib/Confluent%20Schema%20Registry%20forward-engineering.png>)
 
 &nbsp;
 

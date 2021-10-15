@@ -10,7 +10,7 @@ Hackolade was specially built to support the [data modeling of MongoDB](<https:/
 
 The data model in the picture below results from the reverse-engineering of the [Yelp Challenge Dataset](<https://www.yelp.com/dataset\_challenge> "target=\"\_blank\"").
 
-![Image](<lib/MongoDB%20workspace.png>)
+![MongoDB workspace](<lib/MongoDB%20workspace.png>)
 
 &nbsp;
 
@@ -37,7 +37,7 @@ BSON is a binary serialization format used to store documents and make remote pr
 
 Hackolade was specially built to support the data types and attributes behavior of MongoDB, including the BSON types.
 
-![Image](<lib/MongoDB%20DTD.png>)
+![Image](<lib/MongoDB%20schema%20tree%20view.png>)
 
 ## Indexes
 
@@ -106,7 +106,7 @@ Since version 3.6, this script is now in extended JSON Schema syntax.&nbsp; Hack
 
 &nbsp;
 
-![Image](<lib/Forward-Engineering%20-%20MongoDB%20Script.png>)
+![Forward-Engineering - MongoDB Script](<lib/Forward-Engineering%20-%20MongoDB%20Script.png>)
 
 &nbsp;
 

@@ -20,7 +20,7 @@ Exceptions are possible: some objects in a polyglot model can be flagged as poly
 
 Many customers having accumulated physical data models in Hackolade prior to the introduction of the new functionality will want to convert their target model into a polyglot model.&nbsp; This is done by opening the physical target model, selecting the menu Tools \> Polyglot \> Convert to Polyglot Model...
 
-![Image](<lib/Polyglot%20-%20convert%20to.png>)
+![Polyglot - convert to](<lib/Polyglot%20-%20convert%20to.png>)
 
 &nbsp;
 
@@ -36,13 +36,13 @@ Once you're ready to create a physical data model for a given target, the proces
 
 &nbsp;
 
-![Image](<lib/Polyglot%20-%20derive%20from.png>)
+![Polyglot - derive from](<lib/Polyglot%20-%20derive%20from.png>)
 
 &nbsp;
 
 You may then choose the polyglot data model file:
 
-![Image](<lib/Polyglot%20-%20choose%20file.png>)
+![Polyglot - choose file](<lib/Polyglot%20-%20choose%20file.png>)
 
 &nbsp;
 
@@ -50,13 +50,13 @@ You are then presented with a dialog where you can narrow down the selection of 
 
 &nbsp;
 
-![Image](<lib/Polyglot%20-%20entity%20selection.png>)
+![Polyglot - entity selection](<lib/Polyglot%20-%20entity%20selection.png>)
 
 &nbsp;
 
 Attributes of entities cannot be individually deselected. However, each object, including attributes can be marked as "Polyglot only", meaning that they will not be included in any target models.
 
-![Image](<lib/Polyglot%20only%20property.png>)
+![Polyglot only property](<lib/Polyglot%20only%20property.png>)
 
 &nbsp;
 
@@ -94,7 +94,7 @@ You may supplement the target model with metadata, index and partitioning inform
 
 If the polyglot model changes during the time you're editing the target model, you may refresh the derived objects by clicking the update button which can be found in the model-level Properties Pane:
 
-![Image](<lib/Polyglot%20reference%20property.png>)
+![Polyglot reference property](<lib/Polyglot%20reference%20property.png>)
 
 &nbsp;
 

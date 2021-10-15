@@ -20,7 +20,7 @@ The data model in the picture below results from the data modeling of an applica
 
 &nbsp;
 
-![Image](<lib/Cassandra%20workspace.png>)
+![Cassandra workspace](<lib/Cassandra%20workspace.png>)
 
 ## Keyspace
 
@@ -36,7 +36,7 @@ Tables in Cassandra contain rows of columns, and a primary key identifies the lo
 
 &nbsp;
 
-![Image](<lib/Cassandra%20table.png>)
+![Image](<lib/Cassandra%20table%20schema%20tree%20view.png>)
 
 &nbsp;
 
@@ -54,7 +54,7 @@ Cassandra supports a variety of scalar and complex data types, including lists, 
 
 Hackolade was specially adapted to support the data types and attributes behavior of Cassandra.
 
-![Image](<lib/Cassandra%20data%20types.png>) ![Image](<lib/Cassandra%20string%20modes.png>) ![Image](<lib/Cassandra%20numeric%20modes.png>)
+![Cassandra data types](<lib/Cassandra%20data%20types.png>) ![Cassandra string modes](<lib/Cassandra%20string%20modes.png>) ![Cassandra numeric modes](<lib/Cassandra%20numeric%20modes.png>)
 
 Some scalar types can be configured for different modes.&nbsp;
 
@@ -90,7 +90,7 @@ Hackolade supports Cassandra materialized views, via a SELECT of columns of the 
 
 Hackolade dynamically generates the CQL script to create keyspaces, tables, columns and their types, and indexes for the structure created with the application.
 
-![Image](<lib/Cassandra%20forward-engineering.png>)
+![Cassandra forward-engineering](<lib/Cassandra%20forward-engineering.png>)
 
 &nbsp;
 

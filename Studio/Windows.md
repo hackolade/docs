@@ -12,7 +12,7 @@ The application is shipped as a signed .exe file with an installation wizard aut
 
 **Important:** do NOT install a new version of Hackolade while the application is running.&nbsp; All instances of the application must be closed for the upgrade to proceed properly.&nbsp; Please refer to this page if you get an error such as this one:
 
-![Image](<lib/Installation%20error%20-%20application%20running.png>)
+![Installation error - application running](<lib/Installation%20error%20-%20application%20running.png>)
 
 &nbsp;
 
@@ -20,19 +20,19 @@ After downloading the application from our [download page](<https://hackolade.co
 
 &nbsp;
 
-![Image](<lib/Windows%20install%20-%20publisher%20verification.png>)
+![Windows install - publisher verification](<lib/Windows%20install%20-%20publisher%20verification.png>)
 
 &nbsp;
 
 The wizard starts with a Welcome page stating the version number about to be installed
 
-![Image](<lib/Windows%20install%20-%20Welcome%20page.png>)
+![Windows install - Welcome page](<lib/Windows%20install%20-%20Welcome%20page.png>)
 
 &nbsp;
 
 You need to approve the License Agreement to proceed:
 
-![Image](<lib/Windows%20install%20-%20License%20Agreement.png>)
+![Windows install - License Agreement](<lib/Windows%20install%20-%20License%20Agreement.png>)
 
 &nbsp;
 
@@ -40,7 +40,7 @@ You need to approve the License Agreement to proceed:
 
 A default installation folder is proposed, which may be changed if you wish:
 
-![Image](<lib/Windows%20install%20-%20destination%20folder.png>)
+![Windows install - destination folder](<lib/Windows%20install%20-%20destination%20folder.png>)
 
 &nbsp;
 

@@ -1,6 +1,22 @@
 # v5.x
 
-New features in v5.2.4 \[11-Oct-2021\]
+New features in v5.2.6 \[15-Oct-2021\]
+
+\- Polyglot: added inclusion of Clustering Key in primary key when converting models from Cassandra/ScyllaDB
+
+\- Polyglot: allowed primary on additional data types
+
+\- Neo4j: added support for indexes on relationship types for version 4.3 and above
+
+&nbsp;
+
+New features in v5.2.5 \[11-Oct-2021\]
+
+\- Graph databases: adjusted creation of nodes for missing relationships in ERDV
+
+&nbsp;
+
+New features in v5.2.4 \[08-Oct-2021\]
 
 \- Command Line Interface: added --maxErdEntityBoxes argument to revEng, revEngJSON, revEngYAML, revEndDDL, and revEngXSD
 
@@ -82,7 +98,7 @@ New features in v5.2.0 \[17-Sept-2021\]
 
 \- JSON Schema: adjusted conversion of exclusiveMin/Max when switching from one draft version to another
 
-\- Cassandra and ScyllaDB: adjusted mapping of mapping of complex when reverse-engineering CQL files
+\- Cassandra and ScyllaDB: adjusted mapping of mapping of complex types when reverse-engineering CQL files
 
 \- OpenAPI: adjusted display of Swagger UI interaction
 

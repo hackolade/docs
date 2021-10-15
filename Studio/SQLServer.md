@@ -24,7 +24,7 @@ The data model in the picture below results from the data modeling of the [Adven
 
 &nbsp;
 
-![Image](<lib/SQL%20Server%20workspace.png>)
+![SQL Server workspace](<lib/SQL%20Server%20workspace.png>)
 
 &nbsp;
 
@@ -84,7 +84,7 @@ Hackolade dynamically generates the DDL script to create schemas, tables, column
 
 &nbsp;
 
-![Image](<lib/SQL%20Server%20DDL%20Forward-Engineering.png>)
+![SQL Server DDL Forward-Engineering](<lib/SQL%20Server%20DDL%20Forward-Engineering.png>)
 
 &nbsp;
 

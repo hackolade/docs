@@ -18,7 +18,7 @@ Hackolade was specially adapted to support the data modeling of HBase, including
 
 The data model in the picture below results from the modeling of an example from ["Introduction to HBase Schema Design"](<http://0b4af6cdc2f0c5998459-c0245c5c937c5dedcca3f1764ecc9b2f.r43.cf2.rackcdn.com/9353-login1210\_khurana.pdf> "target=\"\_blank\"") by Amandeep Khurana.
 
-![Image](<lib/HBase%20workspace.png>)
+![HBase workspace](<lib/HBase%20workspace.png>)
 
 ## Namespace
 
@@ -32,7 +32,7 @@ Tables in HBase can serve as the input and output for [MapReduce](<https://en.w
 
 &nbsp;
 
-![Image](<lib/HBase%20table.png>)
+![Image](<lib/HBase%20table%20schema%20tree%20view.png>)
 
 &nbsp;
 
@@ -50,7 +50,7 @@ HBase supports a "bytes-in/bytes-out" interface, so anything that can be convert
 
 Hackolade was specially adapted to support the data types and attributes behavior of HBase.
 
-![Image](<lib/HBase%20-%20treeview.png>)
+![Image](<lib/HBase%20-%20schema%20tree%20view.png>)
 
 &nbsp;
 
@@ -60,7 +60,7 @@ Hackolade generates the create statement for the namespace, table, and column fa
 
 &nbsp;
 
-![Image](<lib/HBase%20forward-engineering%20script.png>)
+![HBase forward-engineering script](<lib/HBase%20forward-engineering%20script.png>)
 
 &nbsp;
 
