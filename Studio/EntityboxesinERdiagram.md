@@ -4,15 +4,15 @@ There are several ways to create a new collection in the ER diagram of a model:
 
 \- via the Actions menu:
 
-![Image](<lib/Menu%20-%20Actions%20-%20Add%20Collection.png>)
+![Menu - Actions - Add Collection](<lib/Menu%20-%20Actions%20-%20Add%20Collection.png>)
 
 \- by pressing the shortcut Ctrl+L
 
-\- with a click of the toolbar icon ![Image](<lib/Icons%20-%20addCollection.jpeg>)&nbsp;
+\- with a click of the toolbar icon ![Icons - addCollection](<lib/Icons%20-%20addCollection.jpeg>)&nbsp;
 
 \- or with a right-click anywhere in the central pane&nbsp;
 
-![Image](<lib/ER%20Diagram%20-%20contextual%20menu%20-%20add%20collection.png>)
+![ER Diagram - contextual menu - add collection](<lib/ER%20Diagram%20-%20contextual%20menu%20-%20add%20collection.png>)
 
 and choose 'Add Collection'. &nbsp;
 
@@ -28,7 +28,7 @@ The usual edit actions are possible on an existing collection: cut, copy, paste,
 
 To move a collection in the ER diagram, hover the mouse to the collection title so the mouse cursor becomes a move cross:
 
-![Image](<lib/ER%20Diagram%20-%20move%20collection.png>)
+![ER Diagram - move collection](<lib/ER%20Diagram%20-%20move%20collection.png>)
 
 then click and hold your left mouse button, then drag the collection where you'd like to place it.&nbsp; If relationships are attached, they follow the collection and reposition themselves dynamically.
 
@@ -38,13 +38,13 @@ The name bar of a collection is blue.&nbsp; When you select a collection by clic
 
 &nbsp;
 
-![Image](<lib/ER%20Diagram%20-%20full%20size%20collection%20box.png>)
+![ER Diagram - full size collection box](<lib/ER%20Diagram%20-%20full%20size%20collection%20box.png>)
 
 &nbsp;
 
 Otherwise, vertical and/or horizontal scroll bars appear:
 
-![Image](<lib/ER%20Diagram%20-%20reduced%20size%20collection%20box.png>)
+![ER Diagram - reduced size collection box](<lib/ER%20Diagram%20-%20reduced%20size%20collection%20box.png>)
 
 &nbsp;
 
@@ -54,7 +54,7 @@ The collection window position and size are saved with the model, so they can be
 
 To open a new tab with the hierarchical schema view of a collection, you double-click on the collection name bar, or right-click then choose Open in new tab, or by clicking on the icon
 
-![Image](<lib/ERD%20-%20open%20in%20a%20new%20tab.png>)
+![ERD - open in a new tab](<lib/ERD%20-%20open%20in%20a%20new%20tab.png>)
 
 &nbsp;
 
@@ -64,7 +64,7 @@ A couple of drag-and-drop operations are possible in the ERD:
 
 \- using the handle on the left of each attribute:
 
-![Image](<lib/ERD%20-%20attribute%20drag-and-drop.png>)
+![ERD - attribute drag-and-drop](<lib/ERD%20-%20attribute%20drag-and-drop.png>)
 
 you may move an attribute up or down within an entity, or to another entity, provided that there are no conflicts.&nbsp; It is not possible to move attributes across different views.&nbsp; By pressing the ctrl key, it is possible to perform a copy operation.
 
@@ -102,9 +102,7 @@ Both dk and dm attributes allow access to the Where-Used function in the context
 
 You may arrange and align entity boxes in the ERD using the menu option Edit \> Align, or the arrange toolbar buttons:
 
-![Image](<lib/ERD%20arrange%20entities%20toolbar%20button.png>)
-
-Options include: align left, align center, align right, align top, align middle, align bottom, distribute horizontally, distribute vertically, distribute orthogonally.
+![ERD arrange entities toolbar button](<lib/ERD%20arrange%20entities%20toolbar%20button.png>)&nbsp; Options include: align left, align center, align right, align top, align middle, align bottom, distribute horizontally, distribute vertically, distribute orthogonally.
 
 &nbsp;
 
@@ -118,13 +116,13 @@ A new Diagram View can be added in different ways:
 
 &#49;) from the Actions menu option:
 
-![Image](<lib/Menu%20Actions.png>)
+![Menu Actions](<lib/Menu%20Actions.png>)
 
 &nbsp;
 
 &#50;) from the toolbar:
 
-![Image](<lib/Toolbar%20Create%20Diagram%20View.png>): toolbar button
+![Toolbar Create Diagram View](<lib/Toolbar%20Create%20Diagram%20View.png>): toolbar button
 
 &nbsp;
 
@@ -132,13 +130,13 @@ A new Diagram View can be added in different ways:
 
 by selecting one or more entities, then doing a right-click on an entity to display the contextual menu:
 
-![Image](<lib/Contextual%20menu%20add%20ERDV.png>)
+![Contextual menu add ERDV](<lib/Contextual%20menu%20add%20ERDV.png>)
 
 &nbsp;
 
 Editing an ER Diagram View name or membership is done from the contextual menu of the Object Browser:
 
-![Image](<lib/Contextual%20menu%20edit%20ERDV.png>)
+![Contextual menu edit ERDV](<lib/Contextual%20menu%20edit%20ERDV.png>)
 
 &nbsp;
 
@@ -146,5 +144,5 @@ Editing an ER Diagram View name or membership is done from the contextual menu o
 
 In this dialog, you may edit the name of the Diagram View and modify the selection of the entities selected:
 
-![Image](<lib/ERDV%20editor.png>)
+![ERDV editor](<lib/ERDV%20editor.png>)
 

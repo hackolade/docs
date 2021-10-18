@@ -22,7 +22,7 @@ By the time we want to promote version 2.0 to production, we want to make sure n
 
 &nbsp;
 
-![Image](<lib/Versioning%20-%20model%20lifecycle.png>)
+![Versioning - model lifecycle](<lib/Versioning%20-%20model%20lifecycle.png>)
 
 &nbsp;
 
@@ -38,7 +38,7 @@ With our feature Compare and Merge Models, we want to facilitate merging 2 data 
 
 &nbsp;
 
-![Image](<lib/Versioning%20Model%20lifecycle%20merge.png>)
+![Versioning Model lifecycle merge](<lib/Versioning%20Model%20lifecycle%20merge.png>)
 
 &nbsp;
 
@@ -56,13 +56,13 @@ In the example below for an existing production database instance (in yellow), H
 
 &nbsp;
 
-![Image](<lib/Versioning%20-%20validating%20schemas%20in%20production.png>)
+![Versioning - validating schemas in production](<lib/Versioning%20-%20validating%20schemas%20in%20production.png>)
 
 &nbsp;
 
 A couple of successive merge operations become necessary.&nbsp; First, the reverse-engineering of the production database into a new model to be merged with model v1.1 into v1.2:
 
-![Image](<lib/Versioning%20-%20validating%20schemas%20-%20step%201.png>)
+![Versioning - validating schemas - step 1](<lib/Versioning%20-%20validating%20schemas%20-%20step%201.png>)
 
 &nbsp;
 
@@ -70,7 +70,7 @@ Followed by the the merging of the resulting v1.2 with 2.0 beta into v2.0 releas
 
 &nbsp;
 
-![Image](<lib/Versioning%20-%20validating%20schemas%20step%202.png>)
+![Versioning - validating schemas step 2](<lib/Versioning%20-%20validating%20schemas%20step%202.png>)
 
 &nbsp;
 
@@ -90,7 +90,7 @@ When you use the Hackolade feature to [generate Swagger/OpenAPI documentation](<
 
 &nbsp;
 
-![Image](<lib/Versioning%20-%20APIs.png>)
+![Versioning - model-driven API generation](<lib/Versioning%20-%20APIs.png>)
 
 &nbsp;
 
@@ -98,7 +98,7 @@ When you use the Hackolade feature to [generate Swagger/OpenAPI documentation](<
 
 The original API model 1.0 was generated automatically from the combination of the underlying data model and the API creation template.&nbsp; The API model evolves into v1.1 with the addition of metadata and other functional adjustments.&nbsp; When the schema evolves in the underlying data model, ti becomes necessary to merge the 2 branches.
 
-![Image](<lib/Versioning%20-%20APIs%20merging.png>)
+![Versioning - APIs merging](<lib/Versioning%20-%20APIs%20merging.png>)
 
 &nbsp;
 

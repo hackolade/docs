@@ -6,7 +6,7 @@ There are several ways to create a new relationship between two collections in t
 
 \- via the Actions menu:
 
-![Image](<lib/Menu%20-%20Add%20relationship.png>)
+![Menu - Add relationship](<lib/Menu%20-%20Add%20relationship.png>)
 
 \- by pressing the shortcut Ctrl+R
 
@@ -14,7 +14,7 @@ There are several ways to create a new relationship between two collections in t
 
 \- or with a right-click anywhere in the central pane&nbsp;
 
-![Image](<lib/ER%20Diagram%20-%20contextual%20menu%20-%20add%20relationsh.png>)
+![ER Diagram - contextual menu - add relationsh](<lib/ER%20Diagram%20-%20contextual%20menu%20-%20add%20relationsh.png>)
 
 &nbsp;
 
@@ -36,11 +36,11 @@ Hackolade adopts an IE-like notation (Information Engineering notation) applied 
 
 | **Symbol** | **Description** |
 | --- | --- |
-| ![Image](<lib/Relationship%20cardinality%20-%20one.png>) | only one |
-| &nbsp;![Image](<lib/Relationship%20cardinality%20-%20many.png>) | many |
-| ![Image](<lib/Relationship%20cardinality%20-%20zero-to-one.png>) | zero or one |
-| ![Image](<lib/Relationship%20cardinality%20-%20zero-to-many.png>) | zero or more |
-| ![Image](<lib/Relationship%20cardinality%20-%20one-to-many.png>) | one or more |
+| ![Relationship cardinality - one](<lib/Relationship%20cardinality%20-%20one.png>) | only one |
+| &nbsp;![Relationship cardinality - many](<lib/Relationship%20cardinality%20-%20many.png>) | many |
+| ![Relationship cardinality - zero-to-one](<lib/Relationship%20cardinality%20-%20zero-to-one.png>) | zero or one |
+| ![Relationship cardinality - zero-to-many](<lib/Relationship%20cardinality%20-%20zero-to-many.png>) | zero or more |
+| ![Relationship cardinality - one-to-many](<lib/Relationship%20cardinality%20-%20one-to-many.png>) | one or more |
 
 
 &nbsp;
@@ -49,7 +49,7 @@ Typically, a relationship identifies a parent field within a parent collection o
 
 &nbsp;
 
-![Image](<lib/Relationships%20and%20denormalization.png>)
+![Relationships and denormalization](<lib/Relationships%20and%20denormalization.png>)
 
 Three relationships can be documented in the model:
 
@@ -61,7 +61,7 @@ Three relationships can be documented in the model:
 
 Occasionally, it might be needed to model recursive relationships where the parent and child collections are identical.&nbsp; In effect they are siblings:
 
-![Image](<lib/Relationships%20-%20siblings.png>)
+![Relationships - siblings](<lib/Relationships%20-%20siblings.png>)
 
 &nbsp;
 
@@ -85,5 +85,5 @@ In RDBMS plugins, it is possible to represent composite (or compound) foreign ke
 
 &nbsp;
 
-![Image](<lib/Relationships%20-%20composite%20foreign%20keys.png>)
+![Relationships - composite foreign keys](<lib/Relationships%20-%20composite%20foreign%20keys.png>)
 

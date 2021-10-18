@@ -12,7 +12,7 @@ This feature is also available via the [Command-Line Interface](<CommandLineInte
 
 &nbsp;
 
-![Image](<lib/Menu%20File%20Generate%20Documentation.png>)
+![Menu File Generate Documentation](<lib/Menu%20File%20Generate%20Documentation.png>)
 
 Currently the following formats are available:
 
@@ -34,7 +34,7 @@ Users may control the different sections to include in the documentation:
 
 &nbsp;
 
-![Image](<lib/Documentation%20options.png>)
+![Documentation options](<lib/Documentation%20options.png>)
 
 and select a company logo to appear at the top of the reports.
 
@@ -42,7 +42,7 @@ and select a company logo to appear at the top of the reports.
 
 As documentation generation can be lengthy, they can set a time limit.&nbsp; A custom logo can also be selected:
 
-![Image](<lib/Tools%20-%20Options%20-%20Doc2.png>)
+![Tools - Options - Doc2](<lib/Tools%20-%20Options%20-%20Doc2.png>)
 
 &nbsp;
 
@@ -78,7 +78,7 @@ b. properties
 
 Before generation of the documentation, you're given the opportunity to filter objects and select only the desired ones:
 
-![Image](<lib/Documentation%20-%20Object%20selection.png>)
+![Documentation - Object selection](<lib/Documentation%20-%20Object%20selection.png>)
 
 &nbsp;
 

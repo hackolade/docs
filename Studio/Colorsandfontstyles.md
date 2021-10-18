@@ -22,7 +22,7 @@ You may wish to use colors and font styles to highlight a particular condition o
 
 For containers and attributes, the options tab in the Properties Pane allows you to modify the color and font style, where the font style allows you to enable *italic* and/or **bold**
 
-![Image](<lib/Options%20tab.png>)
+![Options tab colors and font style](<lib/Options%20tab.png>)
 
 &nbsp;
 
@@ -30,7 +30,7 @@ For containers and attributes, the options tab in the Properties Pane allows you
 
 For entities you may also disable the default auto-height and auto-width of entity boxes in the ERD:
 
-![Image](<lib/Entities%20options%20tab.png>)
+![Entities options tab](<lib/Entities%20options%20tab.png>)
 
 &nbsp;
 
@@ -40,7 +40,7 @@ The color picker dialog let's you choose a predefined color, or to enter a [hexa
 
 &nbsp;
 
-![Image](<lib/Color%20picker.png>)
+![Color picker](<lib/Color%20picker.png>)
 
 &nbsp;
 
@@ -48,5 +48,5 @@ The color picker dialog let's you choose a predefined color, or to enter a [hexa
 
 You may toggle the Italic and Bold buttons for the desired style:
 
-![Image](<lib/Font%20style.png>)
+![Font style](<lib/Font%20style.png>)
 

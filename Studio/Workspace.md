@@ -1,6 +1,6 @@
 # Workspace
 
-![Image](<lib/User%20Interface%20overview.png>)
+![User Interface overview](<lib/User%20Interface%20overview.png>)
 
 &nbsp;
 

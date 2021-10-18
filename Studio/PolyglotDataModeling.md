@@ -48,13 +48,13 @@ With version 5.2.0 of Hackolade Studio, users can now define structures once in 
 
 The polyglot functionality is there to help cope with the challenges of [polyglot persistence](<https://en.wikipedia.org/wiki/Polyglot\_persistence> "target=\"\_blank\"").&nbsp; Polyglot persistence can be applied to different use cases, for example a large operational application:
 
-![Image](<lib/Polyglot%20persistence%20-%20e-commerce.png>)
+![Polyglot persistence - e-commerce](<lib/Polyglot%20persistence%20-%20e-commerce.png>)
 
 &nbsp;
 
 or through a data pipeline:
 
-![Image](<lib/Polyglot%20persistence%20-%20data%20pipeline.png>)&nbsp;
+![Polyglot persistence - data pipeline](<lib/Polyglot%20persistence%20-%20data%20pipeline.png>)&nbsp;
 
 &nbsp;
 
@@ -78,7 +78,7 @@ In a slightly more realistic use case, you could have target models that are eac
 
 Elaborating further, you could derive a target model from multiple polyglot models, or subsets thereof:
 
-![Image](<lib/Polyglot%20multiple%20subsets.png>)
+![Polyglot multiple subsets](<lib/Polyglot%20multiple%20subsets.png>)
 
 &nbsp;
 

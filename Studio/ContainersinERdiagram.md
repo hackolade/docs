@@ -18,5 +18,5 @@ If necessary for your application, you can define multiple groups in the same mo
 
 &nbsp;
 
-![Image](<lib/Couchbase%20multi-bucket%20model.png>)
+![Couchbase multi-bucket model](<lib/Couchbase%20multi-bucket%20model.png>)
 

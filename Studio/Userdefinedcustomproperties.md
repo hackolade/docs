@@ -22,13 +22,13 @@ To create and maintain custom properties for a given target, you access the fold
 
 &nbsp;
 
-![Image](<lib/Plugin%20Manager%20menu%20new.png>)
+![Plugin Manager menu new](<lib/Plugin%20Manager%20menu%20new.png>)
 
 &nbsp;
 
 and choose the Installed tab:
 
-![Image](<lib/Plugin%20Manager%20Installed%20tab.png>)
+![Plugin Manager Installed tab](<lib/Plugin%20Manager%20Installed%20tab.png>)
 
 &nbsp;
 
@@ -38,7 +38,7 @@ then click on the Show plugin customization directory link for the chosen target
 
 For each custom properties plugin, you will find a directory structure similar to this one:
 
-![Image](<lib/Plugin%20-%20Custom%20Prop%20-%20directory%20struc%20new.png>)
+![Plugin - Custom Prop - directory struc new](<lib/Plugin%20-%20Custom%20Prop%20-%20directory%20struc%20new.png>)
 
 &nbsp;
 
@@ -72,19 +72,19 @@ For each level, the Hackolade properties pane may have one or more lower tab:
 
 \- MongoDB model lower tab:
 
-![Image](<lib/MongoDB%20model%20lower%20tab.png>)
+![MongoDB model lower tab](<lib/MongoDB%20model%20lower%20tab.png>)
 
 \- MongoDB dbs lower tab:
 
-![Image](<lib/MongoDB%20dbs%20lower%20tab.png>)
+![MongoDB dbs lower tab](<lib/MongoDB%20dbs%20lower%20tab.png>)
 
 \- MongoDB collection lower tab:
 
-![Image](<lib/MongoDB%20collection%20lower%20tab.png>)
+![MongoDB collection lower tab](<lib/MongoDB%20collection%20lower%20tab.png>)
 
 \- MongoDB field lower tab:
 
-![Image](<lib/MongoDB%20field%20lower%20tab.png>)
+![MongoDB field lower tab](<lib/MongoDB%20field%20lower%20tab.png>)
 
 &nbsp;
 
@@ -98,7 +98,7 @@ The following controls are possible for user-defined properties:
 
 &nbsp;
 
-![Image](<lib/Plugin%20-%20possible%20property%20types.png>)
+![Plugin - possible property types](<lib/Plugin%20-%20possible%20property%20types.png>)
 
 * simple text: one line of text
 * text area: popup for multi-line text entry
@@ -120,11 +120,11 @@ More information [here](<https://github.com/hackolade/plugins#26-property-contro
 
 Examples are provided in the comments section of each config file.&nbsp; Here's an overview of the schema:
 
-![Image](<lib/Plugin%20-%20property%20schema.png>)
+![Plugin - property schema](<lib/Plugin%20-%20property%20schema.png>)
 
 Here's another view, consolidated:
 
-![Image](<lib/Plugin%20-%20custom%20props%20consolidated%20schema.png>)
+![Plugin - custom props consolidated schema](<lib/Plugin%20-%20custom%20props%20consolidated%20schema.png>)
 
 &nbsp;
 

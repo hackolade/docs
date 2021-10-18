@@ -6,7 +6,7 @@
 
 Clicking the Hackolade logo on the top left of the application window brings a menu of window controls:
 
-![Image](<lib/Title%20bar%20-%20window%20menu.png>)
+![Title bar - window menu](<lib/Title%20bar%20-%20window%20menu.png>)
 
 You may also double-click the Hackolade logo to close the application.&nbsp; The application will prompt you to save or abandon any unsaved changes, if any.
 

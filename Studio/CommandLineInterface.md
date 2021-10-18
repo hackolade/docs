@@ -8,7 +8,7 @@ The Hackolade command line can of course be used on a stand alone machine.&nbsp;
 
 &nbsp;
 
-![Image](<lib/CLI%20with%20git.png>)
+![CLI Command Line Interface with git](<lib/CLI%20with%20git.png>)
 
 &nbsp;
 
@@ -119,7 +119,7 @@ More complex example:&nbsp;
 
 **Note:** If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: *"C:\\Program Files\\Hackolade\\hackolade"* .&nbsp; The workaround, assuming:
 
-![Image](<lib/Windows%20Program%20Files.png>)
+![Windows Program Files](<lib/Windows%20Program%20Files.png>)
 
 is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed above.
 
@@ -200,7 +200,7 @@ Cosmos DB example:
 
 **Note:** If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: *"C:\\Program Files\\Hackolade\\hackolade"* .&nbsp; The workaround, assuming:
 
-![Image](<lib/Windows%20Program%20Files.png>)
+![Windows Program Files](<lib/Windows%20Program%20Files.png>)
 
 is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed above.
 
@@ -369,7 +369,7 @@ Example:
 
 **Note:** If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: *"C:\\Program Files\\Hackolade\\hackolade"* .&nbsp; The workaround, assuming:
 
-![Image](<lib/Windows%20Program%20Files.png>)
+![Windows Program Files](<lib/Windows%20Program%20Files.png>)
 
 is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed above.
 
@@ -377,7 +377,7 @@ is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed 
 
 Structure of resulting delta model file:
 
-![Image](<lib/CLI%20compMod%20delta%20model%20structure.png>)
+![CLI compMod delta model structure](<lib/CLI%20compMod%20delta%20model%20structure.png>)
 
 A delta model file may contain any combination of multiple additions, deletions, and modifications.&nbsp; Deeply nested fields are referenced through their structure.&nbsp; To merge newly added fields, open your baseline model in Hackolade, then either copy/paste from the delta model, or reference the new field via an external reference to the delta model, then convert the reference into attributes.
 
@@ -432,7 +432,7 @@ Example:
 
 **Note:** If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: *"C:\\Program Files\\Hackolade\\hackolade"* .&nbsp; The workaround, assuming:
 
-![Image](<lib/Windows%20Program%20Files.png>)
+![Windows Program Files](<lib/Windows%20Program%20Files.png>)
 
 is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed above.
 
@@ -473,7 +473,7 @@ Example:
 
 **Note:** If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: *"C:\\Program Files\\Hackolade\\hackolade"* .&nbsp; The workaround, assuming:
 
-![Image](<lib/Windows%20Program%20Files.png>)
+![Windows Program Files](<lib/Windows%20Program%20Files.png>)
 
 is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed above.
 
@@ -512,7 +512,7 @@ Example:
 
 **Note:** If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: *"C:\\Program Files\\Hackolade\\hackolade"* .&nbsp; The workaround, assuming:
 
-![Image](<lib/Windows%20Program%20Files.png>)
+![Windows Program Files](<lib/Windows%20Program%20Files.png>)
 
 is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed above.
 
@@ -547,7 +547,7 @@ Example:
 
 **Note:** If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: *"C:\\Program Files\\Hackolade\\hackolade"* .&nbsp; The workaround, assuming:
 
-![Image](<lib/Windows%20Program%20Files.png>)
+![Windows Program Files](<lib/Windows%20Program%20Files.png>)
 
 is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed above.
 

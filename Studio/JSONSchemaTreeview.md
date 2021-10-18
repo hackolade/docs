@@ -16,7 +16,7 @@ JSON Schema holds a central place in the strategy to model NoSQL document schema
 
 &nbsp;
 
-![Image](<lib/Couchbase%20schema%20tree%20view.png>)
+![Schema tree view](<lib/Couchbase%20schema%20tree%20view.png>)
 
 &nbsp;
 
@@ -31,5 +31,5 @@ There are many ways to access this screen:
 
 &nbsp;
 
-![Image](<lib/JSON%20Tree%20in%20new%20tab.png>)
+![JSON Tree in new tab](<lib/JSON%20Tree%20in%20new%20tab.png>)
 

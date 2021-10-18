@@ -22,13 +22,13 @@ The comparison in Hackolade handles the synchronized scrolling of hierarchical s
 
 Model comparison can be initiated from the Welcome page of the application without any model being previously opened in the application
 
-![Image](<lib/Welcome%20page%20with%20compare%20and%20merge%20models.png>)
+![Welcome page with compare and merge models](<lib/Welcome%20page%20with%20compare%20and%20merge%20models.png>)
 
 &nbsp;
 
 or from the Tools \> Compare and Merge Models menu option:
 
-![Image](<lib/Tools%20-%20Compare%20and%20Merge%20Models.png>)
+![Tools - Compare and Merge Models](<lib/Tools%20-%20Compare%20and%20Merge%20Models.png>)
 
 &nbsp;
 
@@ -38,7 +38,7 @@ or from the Tools \> Compare and Merge Models menu option:
 
 The operation is started by selecting the 2 models to be compared.&nbsp; Both files need to be valid Hackolade data models for the same target.
 
-![Image](<lib/Compare%20and%20merge%20-%20model%20selection.png>)
+![Compare and merge - model selection](<lib/Compare%20and%20merge%20-%20model%20selection.png>)
 
 &nbsp;
 
@@ -76,7 +76,7 @@ Typically, models are compared using the internal Hackolade ID for the objects i
 
 &nbsp;
 
-![Image](<lib/Compare%20and%20merge%20-%20compare%20view.png>)
+![Compare and merge - compare view](<lib/Compare%20and%20merge%20-%20compare%20view.png>)
 
 &nbsp;
 
@@ -104,7 +104,7 @@ When differences are conflicting, the merge proposal uses the right-hand model v
 
 &nbsp;
 
-![Image](<lib/Compare%20and%20merge%20-%20merge%20view.png>)
+![Compare and merge - merge view](<lib/Compare%20and%20merge%20-%20merge%20view.png>)
 
 ## Saving the merged model
 

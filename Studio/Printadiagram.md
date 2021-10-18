@@ -6,13 +6,13 @@ You may wish to print just the Entity Relationship diagram or hierarchical schem
 
 To do so, choose the menu option File \> Print Diagram
 
-![Image](<lib/File%20menu%20-%20Print%20Diagram.png>)
+![File menu - Print Diagram](<lib/File%20menu%20-%20Print%20Diagram.png>)
 
 &nbsp;
 
 Users may wish to create pictures for different diagrams created with the application.&nbsp; They can be generated in either PDF or PNG format, and for different paper layouts.
 
-![Image](<lib/File%20-%20Print%20Daigram.png>)
+![File - Print Diagram](<lib/File%20-%20Print%20Diagram.png>)
 
 With the controls just below the picture, the user may zoom in, zoom out, or fit the diagram to the page.
 

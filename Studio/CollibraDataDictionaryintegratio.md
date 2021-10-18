@@ -26,7 +26,7 @@ To publish a Hackolade data model to your Collibra Data Dictionary, you choose T
 
 The diagram below describes the integration flow:
 
-![Image](<lib/Collibra%20integration%20flow.png>)
+![Collibra integration flow](<lib/Collibra%20integration%20flow.png>)
 
 &nbsp;
 
@@ -38,11 +38,11 @@ In order to feed data model information to the Collibra instance, it is assumed 
 
 To connect to the Collibra instance, you must first specify connection settings:
 
-![Image](<lib/Collibra%20connection%20settings.png>)
+![Collibra connection settings](<lib/Collibra%20connection%20settings.png>)
 
 as well as authentication credentials:
 
-![Image](<lib/Collibra%20authentication.png>)
+![Collibra authentication](<lib/Collibra%20authentication.png>)
 
 &nbsp;
 
@@ -110,13 +110,13 @@ If the expected configuration cannot be found in Collibra, the user is prompted 
 
 If the configuration is correct, the application uses the Core API to retrieve the existing Communities and Domains and display them so the user can select where the Hackolade Data Model should be loaded.&nbsp; If the domain does not exist, it should be created first.&nbsp; It is recommended to create a new domain with type "Physical Data Dictionary".
 
-![Image](<lib/Collibra%20create%20domain.png>)
+![Collibra create domain](<lib/Collibra%20create%20domain.png>)
 
 ### Select the target domain
 
 All communities and domains are displayed in the box below so the user can select the one where the Hackolade data model should be loaded:
 
-![Image](<lib/Collibra%20resource%20selection.png>)
+![Collibra resource selection](<lib/Collibra%20resource%20selection.png>)
 
 &nbsp;
 
@@ -124,7 +124,7 @@ All communities and domains are displayed in the box below so the user can selec
 
 The user then selects the entities to be loaded to the selected Collibra domains:
 
-![Image](<lib/Collibra%20object%20selection.png>)
+![Collibra object selection](<lib/Collibra%20object%20selection.png>)
 
 &nbsp;
 
@@ -136,7 +136,7 @@ The application uses the [Import API](<https://developer.collibra.com/rest/rest-
 
 &#49;) reverse-engineer from Collibra into the master Hackolade data model, and let the conflict resolution kick-in, letting the user decide whether to merge the information from Collibra.
 
-![Image](<lib/Conflict%20resolution.png>)
+![Conflict resolution](<lib/Conflict%20resolution.png>)
 
 Once the information is merged into the hackolade model, the whole model can be published to Collibra again.
 
@@ -148,31 +148,31 @@ Once the information is merged into the hackolade model, the whole model can be 
 
 The data model information can immediately be viewed inside Collibra:
 
-![Image](<lib/Collibra%20view%20data%20models.png>)
+![Collibra view data models](<lib/Collibra%20view%20data%20models.png>)
 
 &nbsp;
 
 In order to view nested objects in the above screen, it is suggested to enable multipath hierarchy for the relation types: schema contains table, table contains column, and column contains column:
 
-![Image](<lib/Collibra%20configure%20hierarchy.png>)
+![Collibra configure hierarchy](<lib/Collibra%20configure%20hierarchy.png>)
 
 &nbsp;
 
 You may also display the Full Name field to view the nesting path in dot.notation, as well as the hackolade Data Type:
 
-![Image](<lib/Collibra%20fields%20config.png>)
+![Collibra fields config](<lib/Collibra%20fields%20config.png>)
 
 &nbsp;
 
 Users will notice that the data types of the specific target technology:
 
-![Image](<lib/Collibra%20data%20type%20view.png>)
+![Collibra data type view](<lib/Collibra%20data%20type%20view.png>)
 
 &nbsp;
 
 The Entity-Relationship Diagram image can also be viewed as a PNG file:
 
-![Image](<lib/Collibra%20view%20ERD%20file.png>)
+![Collibra view ERD file](<lib/Collibra%20view%20ERD%20file.png>)
 
 &nbsp;
 

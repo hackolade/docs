@@ -48,7 +48,7 @@ Pattern fields (or [pattern properties](<http://json-schema.org/latest/json-sche
 
 For example:
 
-![Image](<lib/patternExample%20and%20ERD.png>)
+![patternExample and ERD](<lib/patternExample%20and%20ERD.png>)
 
 &nbsp;
 
@@ -58,7 +58,7 @@ The sub-document key in the key-value pair is not a fixed word, but a variable.&
 
 In Hackolade, the above example is modeled this way:
 
-![Image](<lib/patternExample%20tree.png>)
+![pattern field property example tree](<lib/patternExample%20tree.png>)
 
 &nbsp;
 
@@ -77,7 +77,7 @@ Schema definitions can use “allOf”, “anyOf”, “oneOf”, and “noneOf�
 
 &nbsp;
 
-![Image](<lib/JSON%20Schema%20choices.png>)
+![JSON Schema choices](<lib/JSON%20Schema%20choices.png>)
 
 &nbsp;
 
@@ -102,7 +102,7 @@ A better application of this feature is when having to allow the application of 
 
 &nbsp;
 
-![Image](<lib/JSON%20Schema%20conditional.png>)
+![JSON Schema conditional](<lib/JSON%20Schema%20conditional.png>)
 
 &nbsp;
 

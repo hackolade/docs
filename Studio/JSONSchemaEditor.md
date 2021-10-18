@@ -14,7 +14,7 @@ Hackolade provides the unique ability to integrate the structure for multiple do
 
 &nbsp;
 
-![Image](<lib/JSON%20Schema%20workspace.png>)
+![JSON Schema workspace](<lib/JSON%20Schema%20workspace.png>)
 
 &nbsp;
 
@@ -22,19 +22,19 @@ Hackolade works great to convert structures from [XSD](<ImportamodelfromXSD.md>)
 
 &nbsp;
 
-![Image](<lib/JSON%20Schema%20preview.png>)
+![JSON Schema preview](<lib/JSON%20Schema%20preview.png>)
 
 &nbsp;
 
 Hackolade handles the polymorphic nature of JSON documents with the support of multiple data types and allOf, anyOf, oneOf choices for [schema combination](<https://json-schema.org/understanding-json-schema/reference/combining.html#combining-schemas> "target=\"\_blank\"").
 
-![Image](<lib/JSON%20Schema%20choices.png>)
+![JSON Schema choices](<lib/JSON%20Schema%20choices.png>)
 
 &nbsp;
 
 Hackolade also supports [conditional application of subschemas](<https://json-schema.org/understanding-json-schema/reference/conditionals.html> "target=\"\_blank\"") whereby the if, then and else keywords allow the application of a subschema based on the outcome of another schema:
 
-![Image](<lib/JSON%20Schema%20conditional.png>)
+![JSON Schema conditional](<lib/JSON%20Schema%20conditional.png>)
 
 &nbsp;
 

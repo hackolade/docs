@@ -10,19 +10,19 @@ Since version 3.5.4, we implemented force-directed layout algorithms with spring
 
 ## Node label controls
 
-![Image](<lib/Graph%20node%20label.png>)
+![Graph node label](<lib/Graph%20node%20label.png>)
 
 Since version 3.5.0, the node label controls only appear when you hover the mouse pointer on the node label circle.
 
 ##### Display node label properties box
 
-![Image](<lib/Graph%20display%20node%20label%20property.png>) This icon lets you toggle the properties for the selected node label.&nbsp;
+![Graph display node label property](<lib/Graph%20display%20node%20label%20property.png>) This icon lets you toggle the properties for the selected node label.&nbsp;
 
 &nbsp;
 
 ##### Create new relationship type
 
-![Image](<lib/Graph%20create%20relationship%20type%20icon.png>) Use this icon to activate the creation of a relationship type, originating from this node label.&nbsp; The next node label will be target of the relationship: if you select the same node label, it will create a recursive relationship, otherwise you should select another node label. &nbsp;
+![Graph create relationship type icon](<lib/Graph%20create%20relationship%20type%20icon.png>) Use this icon to activate the creation of a relationship type, originating from this node label.&nbsp; The next node label will be target of the relationship: if you select the same node label, it will create a recursive relationship, otherwise you should select another node label. &nbsp;
 
 &nbsp;
 
@@ -32,11 +32,11 @@ Since version 3.5.0 you may also create a relationship type line plus a new targ
 
 ##### Change size of node label circle
 
-![Image](<lib/Graph%20change%20size%20of%20node%20label%20icon.png>)This icon toggles the display of a circle size picker:
+![Graph change size of node label icon](<lib/Graph%20change%20size%20of%20node%20label%20icon.png>)This icon toggles the display of a circle size picker:
 
 &nbsp;
 
-![Image](<lib/Graph%20node%20label%20size%20palette.png>)
+![Graph node label size palette](<lib/Graph%20node%20label%20size%20palette.png>)
 
 If you will want to apply a new size to all node labels in the model, check the box prior to choosing the new size.
 
@@ -44,11 +44,11 @@ If you will want to apply a new size to all node labels in the model, check the 
 
 ##### Change color of node label circle
 
-![Image](<lib/Graph%20change%20color%20of%20node%20label%20icon.png>) This icon toggles the display of a color picker:
+![Graph change color of node label icon](<lib/Graph%20change%20color%20of%20node%20label%20icon.png>) This icon toggles the display of a color picker:
+
+![Graph node label color palette](<lib/Graph%20node%20label%20color%20palette.png>)
 
 &nbsp;
-
-![Image](<lib/Graph%20node%20label%20color%20palette.png>)
 
 If you will want to apply a new color to all node labels in the model, check the box prior to choosing the new color.
 
@@ -56,7 +56,7 @@ If you will want to apply a new color to all node labels in the model, check the
 
 ##### Pin node in place (only when force-directed layout is enabled)
 
-![Image](<lib/Graph%20node%20label%20pin.png>)&nbsp; This icon allows you to pin in place the node label.&nbsp; It will not move when other nodes are dragged, using the force-directed layout.
+![Graph node label pin](<lib/Graph%20node%20label%20pin.png>)&nbsp; This icon allows you to pin in place the node label.&nbsp; It will not move when other nodes are dragged, using the force-directed layout.
 
 &nbsp;
 
@@ -66,13 +66,13 @@ For a given node label with its properties, there may be a need to declare addit
 
 &nbsp;
 
-![Image](<lib/Graph%20subclasses.png>)
+![Graph subclasses](<lib/Graph%20subclasses.png>)
 
 &nbsp;
 
 You may edit the edge label in the properties pane of the sub-node:
 
-![Image](<lib/Graph%20subclass%20label.png>)
+![Graph subclass label](<lib/Graph%20subclass%20label.png>)
 
 &nbsp;
 
@@ -84,7 +84,7 @@ You may edit the edge label in the properties pane of the sub-node:
 
 &nbsp;
 
-![Image](<lib/Graph%20relationship%20type.png>)
+![Graph relationship type](<lib/Graph%20relationship%20type.png>)
 
 &nbsp;
 
@@ -94,13 +94,13 @@ Starting with version 3.5.0, you may toggle between 2 positions for the relation
 
 ##### Change relationship type line thickness
 
-![Image](<lib/Graph%20relationship%20line%20thickness%20icon.png>) This icon toggles the display of a line thickness picker
+![Graph relationship line thickness icon](<lib/Graph%20relationship%20line%20thickness%20icon.png>) This icon toggles the display of a line thickness picker
 
 &nbsp;
 
 &nbsp;
 
-![Image](<lib/Graph%20relationship%20line%20thickness%20palette.png>)
+![Graph relationship line thickness palette](<lib/Graph%20relationship%20line%20thickness%20palette.png>)
 
 If you will want to apply a new thickness to all relationship types in the model, check the box prior to choosing the new thickness.
 
@@ -108,21 +108,21 @@ If you will want to apply a new thickness to all relationship types in the model
 
 ##### Display relationship type properties box
 
-![Image](<lib/Graph%20relationship%20type%20property%20box%20icon.png>) This icon toggles the display of the properties for the selected relationship type
+![Graph relationship type property box icon](<lib/Graph%20relationship%20type%20property%20box%20icon.png>) This icon toggles the display of the properties for the selected relationship type
 
 &nbsp;
 
-![Image](<lib/Graph%20relationship%20properties.png>)
+![Graph relationship properties](<lib/Graph%20relationship%20properties.png>)
 
 &nbsp;
 
 ##### Reverse relationship
 
-![Image](<lib/Graph%20relationship%20type%20reverse%20direction%20ico.png>) This icon reverses the direction of the relationship type.&nbsp; For recursive relationships, this control allows to toggle between 2 modes: a loop or a duplicate node label:
+![Graph relationship type reverse direction ico](<lib/Graph%20relationship%20type%20reverse%20direction%20ico.png>) This icon reverses the direction of the relationship type.&nbsp; For recursive relationships, this control allows to toggle between 2 modes: a loop or a duplicate node label:
 
 &nbsp;
 
-![Image](<lib/Graph%20recursive%20loop.png>) and&nbsp; ![Image](<lib/Graph%20recursive%20node%20label.png>)
+![Graph recursive loop](<lib/Graph%20recursive%20loop.png>) and&nbsp; ![Graph recursive node label](<lib/Graph%20recursive%20node%20label.png>)
 
 &nbsp;
 
@@ -132,7 +132,7 @@ If you will want to apply a new thickness to all relationship types in the model
 
 Additional controls are available in the toolbar (and also in the View menu):
 
-![Image](<lib/Graph%20view%20controls%20toolbar%20icons.png>)
+![Graph view controls toolbar icons](<lib/Graph%20view%20controls%20toolbar%20icons.png>)
 
 &nbsp;
 
@@ -154,13 +154,13 @@ A force-directed layout tends to arrange nodes in such a way that highly connect
 
 Beside the ability to move shapes as seen in the example, you have several additional controls:
 
-a) you may pin selected nodes so they are not affected by the force-directed layout.&nbsp; This is done by hovering the mouse cursor over the node label and clicking the pin icon ![Image](<lib/Graph%20node%20label%20pin.png>)
+a) you may pin selected nodes so they are not affected by the force-directed layout.&nbsp; This is done by hovering the mouse cursor over the node label and clicking the pin icon ![Graph node label pin](<lib/Graph%20node%20label%20pin.png>)
 
 b) you may move a single node label (without the others moving as a result of the forced-directed layout) by holding the shift key while selecting and moving the node label.
 
 c) you may adjust the length of the relationship lines with a slider that appears when you hove the toolbar button
 
-![Image](<lib/Graph%20shapes%20-%20toggle%20force-directed%20layout.png>)
+![Graph shapes - toggle force-directed layout](<lib/Graph%20shapes%20-%20toggle%20force-directed%20layout.png>)
 
 &nbsp;
 
