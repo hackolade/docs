@@ -16,7 +16,7 @@ Then, go to Tools \> Reverse-Engineer \> XSD Schema and choose the file exported
 
 &nbsp;
 
-![Image](<lib/Tools%20-%20Reverse-Engineer%20-%20XSD%20Schema.png>)
+![Tools - Reverse-Engineer - XSD Schema](<lib/Tools%20-%20Reverse-Engineer%20-%20XSD%20Schema.png>)
 
 &nbsp;
 
@@ -24,7 +24,7 @@ The structure of an XSD can be imported either as an entity in the Entity Relati
 
 &nbsp;
 
-![Image](<lib/XSD%20RE%20dialog.png>)
+![XSD reverse-engineering dialog](<lib/XSD%20RE%20dialog.png>)
 
 If you wish to force the destination of the reverse-engineering operation, you may specify the container in which the entities should be inserted.
 
@@ -36,7 +36,7 @@ Your next steps might be to start denormalizing and embedding, using this Hackol
 
 By default ERwin does not export primary key and foreign key constraints.&nbsp; It is suggested to use the parameters below when exporting models to XSD:
 
-![Image](<lib/ERwin%20XSD%20export%20parameters.png>)
+![ERwin XSD export parameters](<lib/ERwin%20XSD%20export%20parameters.png>)
 
 &nbsp;
 
@@ -149,22 +149,6 @@ Below is the data type conversion from XSD to JSON Schema.&nbsp; Some additional
 | date | string with "format":"date" |
 | time | string with "format":"time" |
 
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
 
 &nbsp;
 

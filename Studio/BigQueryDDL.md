@@ -4,7 +4,7 @@ Hackolade dynamically generates the DDL script to create datasets, tables, colum
 
 &nbsp;
 
-![Image](<lib/BigQuery%20DDL%20forward-engineering.png>)
+![BigQuery DDL forward-engineering](<lib/BigQuery%20DDL%20forward-engineering.png>)
 
 &nbsp;
 

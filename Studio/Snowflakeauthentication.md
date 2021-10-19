@@ -4,4 +4,4 @@ The Snowflake authentication requires you to enter your password, and possibly y
 
 &nbsp;
 
-![Image](<lib/Snowflake%20Authentication.png>)
+![Snowflake Authentication](<lib/Snowflake%20Authentication.png>)

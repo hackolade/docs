@@ -11,7 +11,7 @@ As you develop the model for your MongoDB collection or views, with field-level 
 
 The information can be viewed in the MongoDB Script tab:
 
-![Image](<lib/Forward-Engineering%20-%20MongoDB%20Script.png>)
+![Forward-Engineering - MongoDB Script](<lib/Forward-Engineering%20-%20MongoDB%20Script.png>)
 
 &nbsp;
 
@@ -19,7 +19,7 @@ The information can be viewed in the MongoDB Script tab:
 
 You may toggle between Create and Update views:
 
-![Image](<lib/MongoDB%20script%20toggle.png>)
+![MongoDB script toggle](<lib/MongoDB%20script%20toggle.png>)
 
 &nbsp;
 
@@ -33,7 +33,7 @@ For version of MongoDB up to v3.4, the MongoDB script is in [aggregation pipelin
 
 You may export these scripts to a JavaScript file with the menu option Tools \> Forward-Engineering \> MongoDB Script:
 
-![Image](<lib/Forward-Engineering%20-%20MongoDB%20Script%20file.png>)
+![Forward-Engineering - MongoDB Script file](<lib/Forward-Engineering%20-%20MongoDB%20Script%20file.png>)
 
 &nbsp;
 

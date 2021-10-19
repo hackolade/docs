@@ -6,7 +6,7 @@ If you open a JSON document from the file system, Hackolade will detect its natu
 
 If you wish to include the schema for a JSON document in an existing model, the process is slightly different.&nbsp; With your model already opened, choose Tools \> Reverse-Engineer \> JSON document. &nbsp;
 
-![Image](<lib/Tools%20-%20Reverse-Engineer%20-%20JSON%20document.png>)
+![Tools - Reverse-Engineer - JSON document](<lib/Tools%20-%20Reverse-Engineer%20-%20JSON%20document.png>)
 
 &nbsp;
 
@@ -20,7 +20,7 @@ Hackolade also supports Newline Delimited JSON as described in [https://ndjson.o
 
 The structure of a JSON document can be imported either as an entity in the Entity Relationship Diagram, or alternatively as a model definition so it could be re-used in the model:
 
-![Image](<lib/JSON%20Doc%20RE%20dailog.png>)
+![JSON Doc revers-engineering dailog](<lib/JSON%20Doc%20RE%20dialog.png>)
 
 &nbsp;
 
@@ -34,5 +34,5 @@ For RDBMS targets, an additional option appears, that allows automatic normaliza
 
 &nbsp;
 
-![Image](<lib/JSON%20Schema%20RE%20dialog%20-%20normalization.png>)
+![JSON reveerse-engineering dialog - normalization](<lib/JSON%20Schema%20RE%20dialog%20-%20normalization.png>)
 

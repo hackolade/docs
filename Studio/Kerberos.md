@@ -12,7 +12,7 @@ The Kerberos parameters are maintained in Hackolade as follows:
 
 &nbsp;
 
-![Image](<lib/Kerberos%20connection%20settings.png>)
+![MongoDB Kerberos connection settings](<lib/Kerberos%20connection%20settings.png>)
 
 &nbsp;
 

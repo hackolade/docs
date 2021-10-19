@@ -14,11 +14,11 @@ Assuming that have downloaded from [https://docs.microsoft.com/en-us/azure/cosmo
 
 &nbsp;
 
-![Image](<lib/Cosmos%20DB%20local%20mongo%20connection.png>)
+![Cosmos DB local mongo connection](<lib/Cosmos%20DB%20local%20mongo%20connection.png>)
 
 &nbsp;
 
-![Image](<lib/Cosmos%20DB%20local%20Mongo%20auth.png>)
+![Cosmos DB local Mongo auth](<lib/Cosmos%20DB%20local%20Mongo%20auth.png>)
 
 &nbsp;
 

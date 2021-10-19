@@ -11,19 +11,19 @@ Even if the user is set up for two-factor authentication (2FA), the connection t
 
 &nbsp;
 
-![Image](<lib/Atlas%20Cluster%20overview.png>)
+![MongoDB Atlas Cluster overview](<lib/Atlas%20Cluster%20overview.png>)
 
 &nbsp;
 
 Click Connect, then Connect with MongoDB Compass:
 
-![Image](<lib/Atlas%20connect%20with%20Compass.png>)
+![MongoDB Atlas connect with Compass](<lib/Atlas%20connect%20with%20Compass.png>)
 
 &nbsp;
 
 Then click the Copy button:
 
-![Image](<lib/Atlas%20MongoDB%20connection%20string%20copy.png>)
+![Atlas MongoDB connection string copy](<lib/Atlas%20MongoDB%20connection%20string%20copy.png>)
 
 &nbsp;
 
@@ -35,11 +35,11 @@ In Hackolade Connection Settings, click on **From URI or SRV** and paste the URI
 
 &nbsp;
 
-![Image](<lib/MongoDB%20Reverse-Engineering%20-%20Atlas%20connectio.png>)
+![MongoDB Reverse-Engineering - Atlas connectio](<lib/MongoDB%20Reverse-Engineering%20-%20Atlas%20connectio.png>)
 
 You may choose the Read Preference from the list:
 
-![Image](<lib/Atlas%20read%20preference.png>)
+![MongoDB Atlas read preference](<lib/Atlas%20read%20preference.png>)
 
 &nbsp;
 
@@ -51,7 +51,7 @@ Don't forget, in the Authentication tab, to replace \<password\> with your real 
 
 In the SSL tab, make sure thatthe option System CA / Atlas Deployment was selected:
 
-![Image](<lib/MongoDB%20Rev%20Eng%20-%20Atlas%20deployment.png>)
+![MongoDB reverse-engineering - Atlas deployment](<lib/MongoDB%20Rev%20Eng%20-%20Atlas%20deployment.png>)
 
 &nbsp;
 

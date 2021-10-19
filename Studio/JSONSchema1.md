@@ -8,7 +8,7 @@ If you wish to include the schema for a JSON Schema file in an existing model, t
 
 &nbsp;
 
-![Image](<lib/Tools%20-%20Reverse-Engineer%20-%20JSON%20Schema.png>)
+![Tools - Reverse-Engineer - JSON Schema](<lib/Tools%20-%20Reverse-Engineer%20-%20JSON%20Schema.png>)
 
 &nbsp;
 
@@ -18,7 +18,7 @@ If you wish to include the schema for a JSON Schema file in an existing model, t
 
 The structure of a JSON Schema can be imported either as an entity in the Entity Relationship Diagram, or alternatively as a model definition so it could be re-used in the model:
 
-![Image](<lib/JSON%20Schema%20RE%20dialog.png>)
+![JSON Schema reverse-engineering dialog](<lib/JSON%20Schema%20RE%20dialog.png>)
 
 &nbsp;
 
@@ -30,5 +30,5 @@ For RDBMS targets, an additional option appears, that allows automatic normaliza
 
 &nbsp;
 
-![Image](<lib/JSON%20Schema%20RE%20dialog%20-%20normalization.png>)
+![JSON Schema reverse-engineering dialog - normalization](<lib/JSON%20Schema%20RE%20dialog%20-%20normalization.png>)
 

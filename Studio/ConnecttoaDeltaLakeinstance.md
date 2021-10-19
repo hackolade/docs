@@ -4,7 +4,7 @@ Connecting a Databricks instance on one of the cloud providers requires to decla
 
 &nbsp;
 
-![Image](<lib/Delta%20Lake%20connection%20settings.png>)
+![Delta Lake Databicks connection settings](<lib/Delta%20Lake%20connection%20settings.png>)
 
 &nbsp;
 
@@ -22,7 +22,7 @@ https://\<databricks-instance\>/#/setting/clusters/\<cluster-id\>
 
 In the following screenshot, the cluster ID is 1115-164516-often242:
 
-![Image](<lib/Delta%20Lake%20connection%20settings%20input.png>)
+![Delta Lake Databricks connection settings input](<lib/Delta%20Lake%20connection%20settings%20input.png>)
 
 &nbsp;
 
@@ -32,7 +32,7 @@ Hackolade uses the Databricks REST API, and requires that an access token be iss
 
 &nbsp;
 
-![Image](<lib/Delta%20Lake%20connections%20settings%20auth.png>)
+![Delta Lake Databricks connections settings auth](<lib/Delta%20Lake%20connections%20settings%20auth.png>)
 
 &nbsp;
 

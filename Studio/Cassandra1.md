@@ -4,5 +4,5 @@ As you develop the model for your Cassandra keyspaces, tables, columns with thei
 
 &nbsp;
 
-![Image](<lib/Cassandra%20forward-engineering.png>)
+![Cassandra forward-engineering](<lib/Cassandra%20forward-engineering.png>)
 

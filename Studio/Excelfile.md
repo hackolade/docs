@@ -32,7 +32,7 @@ The user can configure the exact properties of each object to be exported to Exc
 
 &nbsp;
 
-![Image](<lib/Tools%20Options%20-%20FE%20Excel%20Export.png>)
+![Tools Options - FE Excel Export](<lib/Tools%20Options%20-%20FE%20Excel%20Export.png>)
 
 &nbsp;
 
@@ -40,7 +40,7 @@ The properties for each object are listed in the corresponding sections.&nbsp; I
 
 &nbsp;
 
-![Image](<lib/Tools%20Options%20-%20FE%20Excel%20Object%20Selection.png>)
+![Tools Options - FE Excel Object Selection](<lib/Tools%20Options%20-%20FE%20Excel%20Object%20Selection.png>)
 
 &nbsp;
 
@@ -48,7 +48,7 @@ The properties for each object are listed in the corresponding sections.&nbsp; I
 
 &nbsp;
 
-![Image](<lib/Excel%20-%20Validation%20list%20limit.png>)
+![Excel - Validation list limit](<lib/Excel%20-%20Validation%20list%20limit.png>)
 
 &nbsp;
 

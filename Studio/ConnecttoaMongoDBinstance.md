@@ -32,7 +32,7 @@ The Connection Settings dialog lets define the parameters in different tabs, as 
 
 &nbsp;
 
-![Image](<lib/Rev-Eng%20Connection%20settings%20-%20Direct.png>)
+![Reverse-Engineering MongoDB Connection settings - Direct](<lib/Rev-Eng%20Connection%20settings%20-%20Direct.png>)
 
 These parameters are assembled by Hackolade to create the full connection string when establishing the connection during the Reverse-Engineering process.
 

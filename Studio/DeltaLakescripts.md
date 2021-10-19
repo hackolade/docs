@@ -4,7 +4,7 @@ Hackolade dynamically generates the HiveQL script to create databases, tables, c
 
 &nbsp;
 
-![Image](<lib/Delta%20Lake%20forward-engineering.png>)
+![Delta Lake forward-engineering](<lib/Delta%20Lake%20forward-engineering.png>)
 
 &nbsp;
 

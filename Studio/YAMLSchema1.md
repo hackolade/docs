@@ -4,7 +4,7 @@ To create a YAML Schema file of your entity, choose the menu Tools \> Forward En
 
 &nbsp;
 
-![Image](<lib/Forward-Engineering%20-%20YAML%20Schema.png>)
+![Forward-Engineering - YAML Schema](<lib/Forward-Engineering%20-%20YAML%20Schema.png>)
 
 &nbsp;
 
@@ -16,7 +16,7 @@ The YAMLSchema for the entity can also be viewed in the left-hand pane of the JS
 
 &nbsp;
 
-![Image](<lib/Forward-Engineering%20-%20YAML%20Preview.png>)
+![Forward-Engineering - YAML Preview](<lib/Forward-Engineering%20-%20YAML%20Preview.png>)
 
 &nbsp;
 

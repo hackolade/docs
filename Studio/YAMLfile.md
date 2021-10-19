@@ -4,7 +4,7 @@ If you wish to include the schema for a [YAML](<https://blog.stackpath.com/yaml/
 
 &nbsp;
 
-![Image](<lib/Tools%20-%20Reverse-Engineer%20-%20JSON%20document.png>)
+![Tools - Reverse-Engineer - JSON document](<lib/Tools%20-%20Reverse-Engineer%20-%20JSON%20document.png>)
 
 &nbsp;
 
@@ -17,7 +17,7 @@ The structure of a [YAML](<https://yaml.org/spec/1.2/spec.html> "target=\"\_blan
 
 &nbsp;
 
-![Image](<lib/JSON%20Doc%20RE%20dailog.png>)
+![YAML Doc reverse-engineering dialog](<lib/JSON%20Doc%20RE%20dialog.png>)
 
 &nbsp;
 
@@ -33,4 +33,4 @@ For RDBMS targets, an additional option appears, that allows automatic normaliza
 
 &nbsp;
 
-![Image](<lib/JSON%20Schema%20RE%20dialog%20-%20normalization.png>)
+![YAML Schema reverse-engineering dialog - normalization](<lib/JSON%20Schema%20RE%20dialog%20-%20normalization.png>)

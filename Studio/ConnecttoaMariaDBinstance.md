@@ -8,7 +8,7 @@ In the Hackolade connection settings dialog, give a meaningful name to the conne
 
 &nbsp;
 
-![Image](<lib/MariaDB%20connection%20settings.png>)
+![MariaDB connection settings](<lib/MariaDB%20connection%20settings.png>)
 
 If required, enter your username and password
 

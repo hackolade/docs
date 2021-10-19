@@ -32,7 +32,7 @@ In the connection tab, first give a friendly name to the connection settings.&nb
 
 &nbsp;
 
-![Image](<lib/Hive%20-%20Connection%20settings.png>)
+![Hive - Connection settings](<lib/Hive%20-%20Connection%20settings.png>)
 
 &nbsp;
 
@@ -116,7 +116,7 @@ In the options tab, choose the [transport mode](<https://cwiki.apache.org/conflu
 
 &nbsp;
 
-![Image](<lib/Hive%20-%20Connection%20options.png>)
+![Hive - Connection options](<lib/Hive%20-%20Connection%20options.png>)
 
 &nbsp;
 
@@ -132,7 +132,7 @@ Http transport mode is available for all transport types (Plain SASL, NoSASL, LD
 
 &nbsp;
 
-![Image](<lib/Hive%20connection%20options%20http.png>)
+![Hive connection options http](<lib/Hive%20connection%20options%20http.png>)
 
 ## &#52;) SSL
 
@@ -168,7 +168,7 @@ Hackolade is able to connect to Hive via SSL connection with all of the authenti
 
 If the certificate is not installed locally, you must get a copy of the certificate(s) and reference them in the Certificate Authority field:&nbsp;
 
-![Image](<lib/Hive%20connection%20settings%20SSL-HTTPs.png>)
+![Hive connection settings SSL-HTTPs](<lib/Hive%20connection%20settings%20SSL-HTTPs.png>)
 
 You may declare multiple certificates, separated by a comma. &nbsp;
 
@@ -196,7 +196,7 @@ Alternatively, you may concatenate the certificates into a single file, and the 
 
 Specify the path and filename to keystore, the access password, and the alias name for the Hive instance.
 
-![Image](<lib/Hive%20-%20Connection%20settings%20Java%20Keystore.png>)
+![Hive - Connection settings Java Keystore](<lib/Hive%20-%20Connection%20settings%20Java%20Keystore.png>)
 
 &nbsp;
 
@@ -259,7 +259,7 @@ myapp-dev - alias used by keystore and determined in step 3 above
 
 &nbsp;
 
-![Image](<lib/Hive%20-%20Connection%20settings%20SSL.png>)
+![Hive - Connection settings SSL](<lib/Hive%20-%20Connection%20settings%20SSL.png>)
 
 &nbsp;
 

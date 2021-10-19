@@ -6,13 +6,13 @@ As you develop the model for your Neo4j graph database, with node labels and rel
 
 The information can be viewed in the Cypher Script tab:
 
-![Image](<lib/Neo4j%20forward-engineered%20Cypher.png>)
+![Neo4j forward-engineered Cypher](<lib/Neo4j%20forward-engineered%20Cypher.png>)
 
 &nbsp;
 
 You may export these scripts to a Cypher file with the menu option Tools \> Forward-Engineering \> Cypher Script:
 
-![Image](<lib/Neo4j%20forward-engineering%20Cypher%20menu.png>)
+![Neo4j forward-engineering Cypher menu](<lib/Neo4j%20forward-engineering%20Cypher%20menu.png>)
 
 &nbsp;
 

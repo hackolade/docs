@@ -20,7 +20,7 @@ To import the content of this Excel, use the Hackolade function Tools \> Reverse
 
 &nbsp;
 
-![Image](<lib/Tools%20-%20Reverse-Engineer%20-%20Excel%20Template.png>)
+![Tools - Reverse-Engineer - Excel Template](<lib/Tools%20-%20Reverse-Engineer%20-%20Excel%20Template.png>)
 
 &nbsp;
 
@@ -49,13 +49,13 @@ So as to not create instability or any kind of model corruption at time of impor
 
 If validation is successful, the following message is displayed:
 
-![Image](<lib/Excel%20RE%20validation%20-%20Success.png>)
+![Excel reverse-engineering validation - Success](<lib/Excel%20RE%20validation%20-%20Success.png>)
 
 &nbsp;
 
 But if things don't validate properly, you may get a message such as this one:
 
-![Image](<lib/Excel%20RE%20validation%20-%20error.png>)
+![Excel reverse-engineering validation - error](<lib/Excel%20RE%20validation%20-%20error.png>)
 
 &nbsp;
 

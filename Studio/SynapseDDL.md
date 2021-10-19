@@ -4,7 +4,7 @@ As you develop the model for your Synapse instance schemas, tables, columns with
 
 &nbsp;
 
-![Image](<lib/Synapse%20DDL%20forward-engineering.png>)
+![Synapse DDL forward-engineering](<lib/Synapse%20DDL%20forward-engineering.png>)
 
 &nbsp;
 

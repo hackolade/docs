@@ -4,7 +4,7 @@ In the Authentication tab, select the SQL Server authentication method, then ent
 
 &nbsp;
 
-![Image](<lib/SQL%20Server%20auth.png>)
+![SQL Server auth](<lib/SQL%20Server%20auth.png>)
 
 &nbsp;
 

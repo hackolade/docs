@@ -4,5 +4,5 @@ As you develop the model for your ScyllaDB keyspaces, tables, columns with their
 
 &nbsp;
 
-![Image](<lib/Cassandra%20forward-engineering.png>)
+![Cassandra forward-engineering](<lib/Cassandra%20forward-engineering.png>)
 

@@ -4,7 +4,7 @@ As you develop the model for your SQL Server database schemas, tables, columns w
 
 &nbsp;
 
-![Image](<lib/SQL%20Server%20DDL%20Forward-Engineering.png>)
+![SQL Server DDL Forward-Engineering](<lib/SQL%20Server%20DDL%20Forward-Engineering.png>)
 
 &nbsp;
 

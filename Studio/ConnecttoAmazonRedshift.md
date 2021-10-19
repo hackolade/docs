@@ -6,7 +6,7 @@ To access an Amazon Redshift database, you should obtain the proper credentials 
 
 Give a meaningful name to the connection:
 
-![Image](<lib/Redshift%20connection%20settings.png>)
+![Redshift connection settings](<lib/Redshift%20connection%20settings.png>)
 
 You also must specify the cluster identifier and database name.
 
@@ -18,7 +18,7 @@ Then go to the Authentication tab, and paste the Access Key ID received from you
 
 &nbsp;
 
-![Image](<lib/Glue%20connection%20settings.png>)
+![Redshift connection settings](<lib/Glue%20connection%20settings.png>)
 
 &nbsp;
 

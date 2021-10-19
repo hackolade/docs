@@ -22,7 +22,7 @@ In the Hackolade connection settings dialog, give a meaningful name to the conne
 
 &nbsp;
 
-![Image](<lib/Snowflake%20Connection%20Settings.png>)
+![Snowflake Connection Settings](<lib/Snowflake%20Connection%20Settings.png>)
 
 &nbsp;
 

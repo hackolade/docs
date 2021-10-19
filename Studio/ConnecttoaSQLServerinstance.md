@@ -8,7 +8,7 @@ In the Hackolade connection settings dialog, give a meaningful name to the conne
 
 &nbsp;
 
-![Image](<lib/SQL%20Server%20Connection%20settings.png>)
+![SQL Server Connection settings](<lib/SQL%20Server%20Connection%20settings.png>)
 
 &nbsp;
 
@@ -16,5 +16,5 @@ You may choose to provide a connection string which includes: host, port, userna
 
 &nbsp;
 
-![Image](<lib/SQL%20Server%20Connection%20String.png>)
+![SQL Server Connection String](<lib/SQL%20Server%20Connection%20String.png>)
 

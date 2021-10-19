@@ -4,7 +4,7 @@ To create a Hackolade model from an existing Swagger specification file is extre
 
 &nbsp;
 
-![Image](<lib/Swagger%20reverse-engineering%20menu.png>). &nbsp;
+![Swagger reverse-engineering menu](<lib/Swagger%20reverse-engineering%20menu.png>). &nbsp;
 
 &nbsp;
 

@@ -2,7 +2,7 @@
 
 Hackolade dynamically generates a sample document In JSON or YAML as you construct the document fields and structure.&nbsp; You may even define the sample data you wish to see appear in that sample document.&nbsp; The sample document can be viewed in the right-hand pane of the JSON Preview tab:
 
-![Image](<lib/JSON%20Document.png>)
+![JSON Document](<lib/JSON%20Document.png>)
 
 &nbsp;
 
@@ -10,7 +10,7 @@ To create a JSON Schema file of your entity, choose the menu Tools \> Forward En
 
 &nbsp;
 
-![Image](<lib/Forward-Engineering%20-%20JSON%20Document.png>)
+![Forward-Engineering - JSON Document](<lib/Forward-Engineering%20-%20JSON%20Document.png>)
 
 &nbsp;
 

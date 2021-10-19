@@ -14,13 +14,13 @@ To connect to a Cassandra instance, you need to provide:
 
 &nbsp;
 
-![Image](<lib/Cassandra%20connection%20settings.png>)
+![Cassandra connection settings](<lib/Cassandra%20connection%20settings.png>)
 
 &nbsp;
 
 In the Advanced tab you may change the default request timeout and specify it in milliseconds.
 
-![Image](<lib/Cassandra%20connection%20advanced%20tab.png>)
+![Cassandra connection advanced tab](<lib/Cassandra%20connection%20advanced%20tab.png>)
 
 &nbsp;
 

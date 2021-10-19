@@ -4,7 +4,7 @@ Apache Avro is a language-neutral data serialization system, developed by Doug C
 
 &nbsp;
 
-Hackolade is a visual editor for Avro schema for non-programmers. To perform data modeling for Avro schema with Hackolade, you must first download the Avro [plugin](<https://hackolade.com/help/DownloadadditionalDBtargetplugin.html> "target=\"\_blank\"").  
+Hackolade is a visual editor for **Avro schema** for non-programmers. To perform data modeling for Avro schema with Hackolade, you must first download the Avro [plugin](<https://hackolade.com/help/DownloadadditionalDBtargetplugin.html> "target=\"\_blank\"").  
 
 &nbsp;
 

@@ -14,7 +14,7 @@ In the Connection tab, there are 3 fields:
 
 &nbsp;
 
-![Image](<lib/RE%20-%20MongoDB%20-%20SSH%20connection.png>)
+![reverse-engineering - MongoDB - SSH connection](<lib/RE%20-%20MongoDB%20-%20SSH%20connection.png>)
 
 &nbsp;
 
@@ -22,7 +22,7 @@ In the SSH tab, first check the box 'Use SSH tunnel' to enable the rest of the f
 
 &nbsp;
 
-![Image](<lib/RE%20-%20MongoDB%20-%20SSH%20w%20Private%20Key.png>)
+![Reverse-Engineering - MongoDB - SSH w Private Key](<lib/RE%20-%20MongoDB%20-%20SSH%20w%20Private%20Key.png>)
 
 &nbsp;
 
@@ -74,5 +74,5 @@ Or, if the SSH Auth Method is password:
 
 &nbsp;
 
-![Image](<lib/RE%20-%20MongoDB%20-%20SSH%20w%20Password.png>)
+![Reverse-Engineering - MongoDB - SSH w Password](<lib/RE%20-%20MongoDB%20-%20SSH%20w%20Password.png>)
 

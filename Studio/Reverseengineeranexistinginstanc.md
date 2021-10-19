@@ -50,7 +50,7 @@ Create a new model and select the target of your choice.&nbsp; The reverse-engin
 
 This screen will vary depending on the selected target.
 
-![Image](<lib/Tools%20%20Reverse-Engineer%20%20MongoDB%20Collection.png>)
+![Tools  Reverse-Engineer  MongoDB Collection](<lib/Tools%20%20Reverse-Engineer%20%20MongoDB%20Collection.png>)
 
 &nbsp;
 
@@ -58,7 +58,7 @@ This screen will vary depending on the selected target.
 
 The options here will vary depending on the selected target.&nbsp; Refer to the pages below to find the specific details.&nbsp; The images below refer to MongoDB.
 
-![Image](<lib/Reverse-Engineering%20Connection%20Settings.png>)
+![Reverse-Engineering Connection Settings](<lib/Reverse-Engineering%20Connection%20Settings.png>)
 
 &nbsp;
 
@@ -66,7 +66,7 @@ The options here will vary depending on the selected target.&nbsp; Refer to the 
 
 &nbsp;
 
-![Image](<lib/Reverse-Engineering%20Connection%20Selection.png>)
+![Reverse-Engineering Connection Selection](<lib/Reverse-Engineering%20Connection%20Selection.png>)
 
 &nbsp;
 
@@ -76,7 +76,7 @@ For more information on the various authentication and encryption protocols, ple
 
 ### Selecting one or more collections/entities
 
-![Image](<lib/Reverse-Engineer%20MongoDB%20Collection%20selection.png>)
+![Reverse-Engineer MongoDB Collection selection](<lib/Reverse-Engineer%20MongoDB%20Collection%20selection.png>)
 
 &nbsp;
 
@@ -108,7 +108,7 @@ Note that this sampling mechanism is originally provided in Open Source by [Mong
 
 From the sample set gathered above, measurable metrics can be applied to the schema, including schema depth and width, and class interactions, as described here:
 
-![Image](<lib/RevEng%20schema%20inference.png>)
+![RevEng schema inference](<lib/RevEng%20schema%20inference.png>)
 
 &nbsp;
 
@@ -124,7 +124,7 @@ In this step, when the instance being reverse-engineered is v3.2 and above, stor
 
 As of v2.5.0 of Hackolade, we've also introduced the ability to detect **pattern fields** during the reverse-engineering process.&nbsp; For any sub-object at a given level, we can infer the presence of a pattern field if we detect the recurrence of similar regex patterns in field names.
 
-![Image](<lib/Reverse-Engineering%20pattern%20field%20detection.png>)&nbsp;
+![Reverse-Engineering pattern field detection](<lib/Reverse-Engineering%20pattern%20field%20detection.png>)&nbsp;
 
 &nbsp;
 
@@ -160,7 +160,7 @@ When reverse-engineering into an existing model, it is possible that source obje
 
 &nbsp;
 
-![Image](<lib/Conflict%20resolution%20dialog.png>)
+![Conflict resolution dialog](<lib/Conflict%20resolution%20dialog.png>)
 
 &nbsp;
 

@@ -4,4 +4,4 @@ If required, enter your username and password:
 
 &nbsp;
 
-![Image](<lib/Cassandra%20authentication.png>)
+![Cassandra authentication](<lib/Cassandra%20authentication.png>)

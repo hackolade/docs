@@ -8,7 +8,7 @@ You must provide your network or Azure AD username, or Okta email address,&nbsp;
 
 &nbsp;
 
-![Image](<lib/Snowflake%20Auth%20-%20IdP%20SSO%20External%20browser.png>)
+![Snowflake Auth - Identity Provider SSO External browser](<lib/Snowflake%20Auth%20-%20IdP%20SSO%20External%20browser.png>)
 
 &nbsp;
 
@@ -16,4 +16,4 @@ which will be passed on to the Identity Provider, so you may proceed with the lo
 
 &nbsp;
 
-![Image](<lib/Snowflake%20Okta%20external%20browser%20SSO.png>)
+![Snowflake Okta external browser SSO](<lib/Snowflake%20Okta%20external%20browser%20SSO.png>)

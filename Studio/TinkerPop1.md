@@ -8,7 +8,7 @@ The information can be viewed in the Gremlin tab:
 
 &nbsp;
 
-![Image](<lib/TinkerPop%20forward-engineering%20Gremlin.png>)
+![TinkerPop forward-engineering Gremlin](<lib/TinkerPop%20forward-engineering%20Gremlin.png>)
 
 &nbsp;
 
@@ -16,7 +16,7 @@ You may export these scripts to a Gremlin file with the menu option Tools \> For
 
 &nbsp;
 
-![Image](<lib/Gremlin%20forward-engineering%20menu.png>)
+![Gremlin forward-engineering menu](<lib/Gremlin%20forward-engineering%20menu.png>)
 
 &nbsp;
 

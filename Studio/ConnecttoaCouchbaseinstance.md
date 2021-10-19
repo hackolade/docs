@@ -35,7 +35,7 @@ The Connection Settings dialog lets define the parameters in different tabs, as 
 
 &nbsp;
 
-![Image](<lib/Couchbase%20connection%20settings.png>)
+![Couchbase connection settings](<lib/Couchbase%20connection%20settings.png>)
 
 For buckets on Couchbase versions 3.0 through 4.6, if the a password has been set at the bucket level, it is necessary to create one connection setting per bucket, and provide the bucket name and password. &nbsp;
 
@@ -47,7 +47,7 @@ For buckets on Couchbase versions 3.0 through 4.6, if the a password has been se
 
 For read-only users in versions 3.x through 4.6, or for all users starting with version 5.0, it is necessary to enter the username and password in the Authentication tab:
 
-![Image](<lib/Couchbase%20connection%20settings%20Auth%20tab.png>)
+![Couchbase connection settings Auth tab](<lib/Couchbase%20connection%20settings%20Auth%20tab.png>)
 
 &nbsp;
 

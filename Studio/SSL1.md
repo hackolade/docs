@@ -8,7 +8,7 @@ Neo4 supports SSL certificate authentication for client authentication and inter
 
 &nbsp;
 
-![Image](<lib/MongoDB%20connection%20SSL.png>)
+![Neo4j connection SSL](<lib/MongoDB%20connection%20SSL.png>)
 
 &nbsp;
 

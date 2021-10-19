@@ -6,7 +6,7 @@ To access a Glue Data Catalog, you should obtain the proper credentials from you
 
 Give a meaningful name to the connection:
 
-![Image](<lib/Glue%20connection%20name.png>)
+![Glue data catalog connection name](<lib/Glue%20connection%20name.png>)
 
 &nbsp;
 
@@ -16,7 +16,7 @@ Then go to the Authentication tab, and paste the Access Key ID received from you
 
 &nbsp;
 
-![Image](<lib/Glue%20connection%20settings.png>)
+![Glue data catalog connection settings](<lib/Glue%20connection%20settings.png>)
 
 &nbsp;
 

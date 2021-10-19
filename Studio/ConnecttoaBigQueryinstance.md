@@ -8,7 +8,7 @@ Give a meaningful name to the connection, optionally provide a specific project 
 
 &nbsp;
 
-![Image](<lib/BigQuery%20connection%20settings.png>)
+![BigQuery connection settings](<lib/BigQuery%20connection%20settings.png>)
 
 &nbsp;
 
@@ -38,7 +38,7 @@ and
 
 &nbsp; &nbsp; - BigQuery Job User: in order to be able to forward-engineer (apply SQL script to instance)
 
-![Image](<lib/GigQuery%20Service%20Account%20role%20creation.png>)
+![Image](<lib/BigQuery%20Service%20Account%20role%20creation.png>)
 
 &nbsp;
 
@@ -46,7 +46,7 @@ then save the role
 
 &#53;) select the action Manage Keys for the service account:
 
-![Image](<lib/BigQuery%20Service%20Account%20key%20creation.png>)
+![BigQuery Service Account key creation](<lib/BigQuery%20Service%20Account%20key%20creation.png>)
 
 &nbsp;
 
@@ -55,10 +55,6 @@ and create a new key with JSON type.&nbsp; The .json file gets downloaded in the
 &nbsp;
 
 This is the file to be referenced in the connection settings dialog.
-
-&nbsp;
-
-&nbsp;
 
 &nbsp;
 

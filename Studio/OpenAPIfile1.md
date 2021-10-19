@@ -4,7 +4,7 @@ To create a Hackolade model from an existing OpenAPI specification file is extre
 
 &nbsp;
 
-![Image](<lib/OpenAPI%20recverse-engineering%20menu.png>)
+![Image](<lib/OpenAPI%20reverse-engineering%20menu.png>)
 
 &nbsp;
 

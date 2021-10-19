@@ -8,7 +8,7 @@ The user needs to have a fairly good idea of where he wants to go with the schem
 
 &nbsp;
 
-![Image](<lib/Denormalization%20dialog.png>)
+![Denormalization dialog](<lib/Denormalization%20dialog.png>)
 
 &nbsp;
 
@@ -20,13 +20,13 @@ Example of embedding of sub-documents in child.
 
 Collection 'products' contains a foreign key to 'categories':
 
-![Image](<lib/Denormalization%20--%20sub-document%20in%20child%20-%201.png>)
+![Denormalization -- sub-document in child - 1](<lib/Denormalization%20--%20sub-document%20in%20child%20-%201.png>)
 
 &nbsp;
 
 the resulting denormalization would be:
 
-![Image](<lib/Denormalization%20--%20sub-document%20in%20child%20-%202.png>)
+![Denormalization -- sub-document in child - 2](<lib/Denormalization%20--%20sub-document%20in%20child%20-%202.png>)
 
 with the field category\_id in 'products' being replaced by a sub-document with all the fields of the 'categories' collection, including one foreign key and several foreign master relationships.&nbsp; Depending on your needs, you may want to keep the 'categories' collection, or delete it.
 
@@ -36,13 +36,13 @@ Example of embedding an array in parent.
 
 Collection 'order details' contains a foreign key to 'orders':
 
-![Image](<lib/Denormalisation%20-%20Array%20in%20parent%20-%201.png>)
+![Denormalisation - Array in parent - 1](<lib/Denormalisation%20-%20Array%20in%20parent%20-%201.png>)
 
 &nbsp;
 
 the resulting denormalization would be:
 
-![Image](<lib/Denormalization%20-%20Array%20in%20child%20-%202.png>)
+![Denormalization - Array in child - 2](<lib/Denormalization%20-%20Array%20in%20child%20-%202.png>)
 
 where you notice that all fields of 'order details' have been added in an array of sub-documents in 'orders'.&nbsp; And it makes sense to delete the collection 'order details'.
 

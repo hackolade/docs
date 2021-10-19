@@ -154,7 +154,7 @@
         - [SSH](<SSH2.md>)
         - [Astra](<Astra.md>)
       - [Connect to a Cosmos DB instance](<ConnecttoaCosmosDBinstance.md>)
-        - [SQL API](<SQLAPI.md>)
+        - [Core API](<CoreAPI.md>)
           - [Local instance](<Localinstance1.md>)
           - [Azure instance](<Azureinstance.md>)
         - [MongoDB API](<MongoDBAPI.md>)

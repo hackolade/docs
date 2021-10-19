@@ -35,7 +35,7 @@ Specify the path and filename to keystore, the access password, and the alias na
 
 &nbsp;
 
-![Image](<lib/Cassandra%20Connection%20Settings%20-%20LDAP%20JKS.png>)
+![Cassandra Connection Settings - LDAP JKS](<lib/Cassandra%20Connection%20Settings%20-%20LDAP%20JKS.png>)
 
 &nbsp;
 
@@ -57,7 +57,7 @@ If necessary, you may also declare truststore parameters:
 
 &nbsp;
 
-![Image](<lib/Cassandra%20Connection%20Settings%20-%20LDAP%20truststo.png>)
+![Cassandra Connection Settings - LDAP truststo](<lib/Cassandra%20Connection%20Settings%20-%20LDAP%20truststo.png>)
 
 &nbsp;
 
@@ -146,5 +146,5 @@ myapp-dev - alias used by keystore and determined in step 3 above
 
 &nbsp;
 
-![Image](<lib/Cassandra%20Connection%20Settings%20-%20LDAP%20Certific.png>)
+![Cassandra Connection Settings - LDAP Certificate](<lib/Cassandra%20Connection%20Settings%20-%20LDAP%20Certific.png>)
 

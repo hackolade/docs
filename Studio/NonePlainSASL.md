@@ -16,5 +16,5 @@ If the property “hive.server2.authentication” in the Hive configuration is s
 
 &nbsp;
 
-![Image](<lib/Hive%20-%20Connection%20settings%20-%20Plain%20SASL.png>)
+![Hive - Connection settings - Plain SASL](<lib/Hive%20-%20Connection%20settings%20-%20Plain%20SASL.png>)
 

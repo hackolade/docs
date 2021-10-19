@@ -4,7 +4,7 @@ As you develop the model for Swagger API with metadata, requests, responses, def
 
 &nbsp;
 
-:![Image](<lib/Swagger%20-%20Forward-Engineering.png>)
+:![Swagger - Forward-Engineering](<lib/Swagger%20-%20Forward-Engineering.png>)
 
 &nbsp;
 

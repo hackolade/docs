@@ -4,7 +4,7 @@ After downloading Hackolade, you need to obtain and validate an activation key b
 
 &nbsp;
 
-**Important:** the following domains must be whitelisted: [https://hackolade.com](<https://hackolade.com> "target=\"\_blank\""),&nbsp; [https://quicklicensemanager.com](<https://quicklicensemanager.com/> "target=\"\_blank\""), and [https://github.com](<https://github.com> "target=\"\_blank\"")
+**Important:** the following domains must be whitelisted: [https://hackolade.com](<https://hackolade.com> "target=\"\_blank\""),&nbsp; [https://quicklicensemanager.com](<https://quicklicensemanager.com/> "target=\"\_blank\""), [https://qlmdr.com](<https://qlmdr.com> "target=\"\_blank\""), and [https://github.com](<https://github.com> "target=\"\_blank\"")
 
 &nbsp;
 
@@ -182,7 +182,7 @@ Offline use of the application is possible but requires to start the application
 
 &nbsp;
 
-**Note:** In particular with concurrent licenses, it is strongly suggested to read and apply [this article](<https://hackolade.zendesk.com/hc/en-us/articles/360002719839-Managing-multiple-license-keys-and-seats> "target=\"\_blank\"") so a license administrator can track who's using Hackolade licenses and seats. &nbsp;
+**Note:** In particular with concurrent licenses, it is strongly suggested to read and apply [this article](<Managingmultiplelicensekeysandse.md>) so a license administrator can track who's using Hackolade licenses and seats. &nbsp;
 
 &nbsp;
 

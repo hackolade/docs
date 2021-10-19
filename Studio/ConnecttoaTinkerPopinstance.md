@@ -6,7 +6,7 @@ To perform the reverse-engineering function, Hackolade can connects to the Tinke
 
 The Connection Settings dialog lets define the parameters in different tabs, as needed:
 
-![Image](<lib/TinkerPop%20connection%20settings.png>)
+![TinkerPop connection settings](<lib/TinkerPop%20connection%20settings.png>)
 
 &nbsp;
 

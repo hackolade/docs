@@ -4,5 +4,5 @@ For those in a technology stack using JavaScript with Couchbase, and are using t
 
 &nbsp;
 
-![Image](<lib/Tools%20-%20Forward-Engineer%20-%20Ottoman%20Schema.png>)
+![Tools - Forward-Engineer - Ottoman Schema](<lib/Tools%20-%20Forward-Engineer%20-%20Ottoman%20Schema.png>)
 

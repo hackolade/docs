@@ -18,5 +18,5 @@ If you local instance is installed on your computer and using port 8000, you sho
 
 &nbsp;
 
-![Image](<lib/Rev-Engineering%20-%20DynamoDB%20connection%20local.png>)
+![Reverse-Engineering - DynamoDB connection local](<lib/Rev-Engineering%20-%20DynamoDB%20connection%20local.png>)
 

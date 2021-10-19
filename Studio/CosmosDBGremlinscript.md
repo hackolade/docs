@@ -6,7 +6,7 @@ As you develop the model for your Cosmos DB Gremlin graph database, with vertex 
 
 The information can be viewed in the Gremlin script tab:
 
-![Image](<lib/CosmosDB%20Gremlin%20script%20forward-engineering.png>)
+![CosmosDB Gremlin script forward-engineering](<lib/CosmosDB%20Gremlin%20script%20forward-engineering.png>)
 
 &nbsp;
 

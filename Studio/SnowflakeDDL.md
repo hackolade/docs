@@ -4,7 +4,7 @@ As you develop the model for your Snowflake database schemas, tables, columns wi
 
 &nbsp;
 
-![Image](<lib/Snowflake%20DDL%20forward-engineering.png>)
+![Snowflake DDL forward-engineering](<lib/Snowflake%20DDL%20forward-engineering.png>)
 
 &nbsp;
 

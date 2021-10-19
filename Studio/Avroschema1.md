@@ -2,7 +2,7 @@
 
 Hackolade dynamically generates Avro schema for the structure created with the application.
 
-![Image](<lib/Avro%20forward-engineering.png>)
+![Avro schema forward-engineering](<lib/Avro%20schema%20forward-engineering.png>)
 
 &nbsp;
 

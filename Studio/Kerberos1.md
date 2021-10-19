@@ -94,7 +94,7 @@ The corresponding settings in Hackolade would be:
 
 &nbsp;
 
-![Image](<lib/Hive%20-%20Kerberos%20Authentication%20settings.png>)
+![Hive - Kerberos Authentication settings](<lib/Hive%20-%20Kerberos%20Authentication%20settings.png>)
 
 &nbsp;
 

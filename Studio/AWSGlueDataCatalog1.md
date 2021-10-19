@@ -4,10 +4,10 @@ As you develop the model for your AWS Glue Data Catalog tables, and columns with
 
 &nbsp;
 
-![Image](<lib/Glue%20Forward-Engineering.png>)
+![Glue Data Catalog Forward-Engineering](<lib/Glue%20Forward-Engineering.png>)
 
 &nbsp;
 
 or in HiveQL syntax:
 
-![Image](<lib/Glue%20forward-engineering%20in%20HiveQL.png>)
+![Glue forward-engineering in HiveQL](<lib/Glue%20forward-engineering%20in%20HiveQL.png>)

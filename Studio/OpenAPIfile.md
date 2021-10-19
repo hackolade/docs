@@ -4,7 +4,7 @@ As you develop the model for OpenAPI with metadata, requests, responses, compone
 
 &nbsp;
 
-![Image](<lib/OpenAPI%20-%20Forward-Engineering.png>)
+![OpenAPI - Forward-Engineering](<lib/OpenAPI%20-%20Forward-Engineering.png>)
 
 &nbsp;
 

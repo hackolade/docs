@@ -10,7 +10,7 @@ Specify the path and filename to keystore, the access password, and the alias na
 
 &nbsp;
 
-![Image](<lib/Cassandra%20Connection%20Settings%20-%20LDAP%20JKS.png>)
+![ScyllaDB Connection Settings - LDAP JKS](<lib/Cassandra%20Connection%20Settings%20-%20LDAP%20JKS.png>)
 
 &nbsp;
 
@@ -87,5 +87,5 @@ myapp-dev - alias used by keystore and determined in step 3 above
 
 &nbsp;
 
-![Image](<lib/Cassandra%20Connection%20Settings%20-%20LDAP%20Certific.png>)
+![ScyllaDB Connection Settings - LDAP Certific](<lib/Cassandra%20Connection%20Settings%20-%20LDAP%20Certific.png>)
 

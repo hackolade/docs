@@ -6,13 +6,13 @@ To access a DynamoDB instance, you should obtain the proper credentials from you
 
 Give a meaningful name to the connection and make sure that the option 'use local DynamoDB' is unchecked.
 
-![Image](<lib/Rev-Engineering%20-%20DynamoDB%20connect%20AWS1.png>)
+![Reverse-Engineering - DynamoDB connect AWS1](<lib/Rev-Engineering%20-%20DynamoDB%20connect%20AWS1.png>)
 
 &nbsp;
 
 Then go to the Authentication tab, and paste the Access Key ID received from your administrator, and Secret Access Key for your IAM.&nbsp; Finally, select the appropriate region where your DynamoDB instance is located.
 
-![Image](<lib/Rev-Engineering%20-%20DynamoDB%20connect%20AWS2.png>)
+![Reverse-Engineering - DynamoDB connect AWS2](<lib/Rev-Engineering%20-%20DynamoDB%20connect%20AWS2.png>)
 
 &nbsp;
 

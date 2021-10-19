@@ -24,7 +24,7 @@ The process is as follows:
 
 &nbsp;
 
-![Image](<lib/API%20process.png>)
+![Image](<lib/Model-driven%20API%20generation%20process.png>)
 
 &nbsp;
 
@@ -50,7 +50,7 @@ An API template is typically a Hackolade model itself, but it can also be an Ope
 
 You will find on our sample model [page](<https://hackolade.com/samplemodels.html#api> "target=\"\_blank\"") a sample template that can serve as a basis for your own template.&nbsp; You will see the following screen if you open the OpenAPI sample template:
 
-![Image](<lib/API%20template.png>)
+![Model-driven API generation template](<lib/Model-driven%20API%20generation%20template.png>)
 
 &nbsp;
 
@@ -90,7 +90,7 @@ The application will perform the following operations while creating the destina
 
 The function is accessible through Tools \> Forward-Engineering \> API Model...
 
-![Image](<lib/API%20model%20menu.png>)
+![Model-driven API generation menu](<lib/Model-driven%20API%20generation%20menu.png>)
 
 &nbsp;
 
@@ -100,7 +100,7 @@ You may choose either OpenAPI 3 or Swagger 2 as a destination version.
 
 You are presented with the usual dialog for object select; and you may unselect entities you do not wish to include in the API generation:&nbsp;
 
-![Image](<lib/API%20entity%20selection.png>)
+![Model-driven API generation entity selection](<lib/Model-driven%20API%20generation%20entity%20selection.png>)
 
 You must choose a valid template, either in a Hackolade model format, or in an OpenAPI or Swagger documentation file (either in JSON or YAML.) &nbsp;
 
@@ -118,11 +118,11 @@ Depending on the size of both your source model and your template, the process m
 
 &nbsp;
 
-![Image](<lib/API%20doc%20generation%20info%20dialog.png>)
+![Model-driven API generation doc info dialog](<lib/Model-driven%20API%20generation%20doc%20info%20dialog.png>)
 
 At the end of the process, you will be asked if you wish to open the resulting API model to be opened in a separate Hackolade instance:
 
 &nbsp;
 
-![Image](<lib/API%20model%20generation%20success%20dialog.png>)
+![Image](<lib/Model-driven%20API%20generation%20success%20dialog.png>)
 

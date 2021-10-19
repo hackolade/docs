@@ -6,7 +6,7 @@ From version 5.0 onward, Shield is part of X-Pack.&nbsp; For more information, s
 
 The Connection Settings dialog lets define the parameters in different tabs, as needed:
 
-![Image](<lib/Elasticsearch%20-%20connection%20settings.png>)
+![Elasticsearch - connection settings](<lib/Elasticsearch%20-%20connection%20settings.png>)
 
 These parameters are assembled by Hackolade to create the full connection string when establishing the connection during the Reverse-Engineering process.
 
@@ -14,7 +14,7 @@ These parameters are assembled by Hackolade to create the full connection string
 
 Enter the required username and password:
 
-![Image](<lib/Elasticsearch%20-%20authentication.png>)
+![Elasticsearch - authentication](<lib/Elasticsearch%20-%20authentication.png>)
 
 &nbsp;
 
@@ -30,5 +30,5 @@ To verify the identity of the Elasticsearch deployment you connect to, provide o
 
 Typical file extensions for the certificate are .crt or .pem.
 
-![Image](<lib/Elasticsearch%20-%20SSL.png>)
+![Elasticsearch - SSL](<lib/Elasticsearch%20-%20SSL.png>)
 

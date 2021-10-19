@@ -6,7 +6,7 @@ As you develop the model for your JanusGraph database, with vertex labels, edge 
 
 The information can be viewed in the Gremlin script tab:
 
-![Image](<lib/JanusGraph%20forward-engineering.png>)
+![JanusGraph forward-engineering](<lib/JanusGraph%20forward-engineering.png>)
 
 &nbsp;
 
@@ -22,7 +22,7 @@ Or you may apply these scripts directly with the menu option Tools \> Forward-En
 
 &nbsp;
 
-![Image](<lib/JanusGraph%20forward-engineering%20menu.png>)
+![JanusGraph forward-engineering menu](<lib/JanusGraph%20forward-engineering%20menu.png>)
 
 &nbsp;
 

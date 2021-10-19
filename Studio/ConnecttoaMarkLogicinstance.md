@@ -16,7 +16,7 @@ To connect to a MarkLogic instance, you need to provide:
 
 \- optionally, the database to be fetched
 
-![Image](<lib/MarkLogi%20RE%20connection%20settings.png>)
+![MarkLogi reverse-engineering connection settings](<lib/MarkLogi%20RE%20connection%20settings.png>)
 
 &nbsp;
 

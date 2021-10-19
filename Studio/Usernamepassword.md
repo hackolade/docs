@@ -12,7 +12,7 @@ For authentication methods other than User/Password authentication (like Kerbero
 
 &nbsp;
 
-![Image](<lib/Rev-Eng%20-%20MongoDB%20Connection%20Settings.png>)
+![Reverse-Engineering - MongoDB Connection Settings](<lib/Rev-Eng%20-%20MongoDB%20Connection%20Settings.png>)
 
 &nbsp;
 
@@ -50,13 +50,13 @@ To connect to this instance with Hackolade, the settings could be created as fol
 
 Connection tab:
 
-![Image](<lib/Rev-Eng-Mongo-user-pwd%20connection%20tab.png>)
+![Reverse-engineering Mongo-username-password connection tab](<lib/Rev-Eng-Mongo-user-pwd%20connection%20tab.png>)
 
 &nbsp;
 
 and Authentication tab:
 
-![Image](<lib/Rev-Eng-Mongo-user-pwd%20authenticationtab.png>)
+![Reverse-engineering Mongo-username-password authentication tab](<lib/Rev-Eng-Mongo-user-pwd%20authenticationtab.png>)
 
 &nbsp;
 

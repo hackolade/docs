@@ -4,7 +4,7 @@ As you develop the model for your MariaDB databases, tables, columns with their 
 
 &nbsp;
 
-![Image](<lib/MariaDB%20DDL%20Forward-Engineering.png>)
+![MariaDB DDL Forward-Engineering](<lib/MariaDB%20DDL%20Forward-Engineering.png>)
 
 &nbsp;
 

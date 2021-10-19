@@ -4,7 +4,7 @@ Hackolade easily imports the schema from .avsc or .avro files, located on your l
 
 &nbsp;
 
-![Image](<lib/Cloud%20Selection%20-%20combine%20schemas.png>)
+![Cloud Selection - combine Avro schemas](<lib/Cloud%20Selection%20-%20combine%20schemas.png>)
 
 &nbsp;
 
@@ -18,7 +18,7 @@ Give a meaningful name to the connection to identify it for later, and provide p
 
 &nbsp;
 
-![Image](<lib/Cloud%20Storage%20-%20AWS%20S3%20connection.png>)
+![Cloud Storage - AWS S3 connection for Avro schema](<lib/Cloud%20Storage%20-%20AWS%20S3%20connection.png>)
 
 &nbsp;
 
@@ -26,7 +26,7 @@ Give a meaningful name to the connection to identify it for later, and provide p
 
 If the S3 bucket is private, you must also provide authentication parameters (Access key id and Secret access key):
 
-![Image](<lib/Cloud%20Storage%20-%20AWS%20S3%20authentication.png>)
+![Cloud Storage - AWS S3 authentication avro schema](<lib/Cloud%20Storage%20-%20AWS%20S3%20authentication.png>)
 
 &nbsp;
 
@@ -42,13 +42,13 @@ Give a meaningful name to the connection to identify it for later, and provide p
 
 &nbsp;
 
-![Image](<lib/Cloud%20Storage%20-%20Azure%20connection.png>)
+![Cloud Storage - Azure connection avro schema](<lib/Cloud%20Storage%20-%20Azure%20connection.png>)
 
 &nbsp;
 
 If the storage account is private, you must also provide your Storage access key:
 
-![Image](<lib/Cloud%20Storage%20-%20Azure%20authentication.png>)
+![Cloud Storage - Azure authentication avro schema](<lib/Cloud%20Storage%20-%20Azure%20authentication.png>)
 
 &nbsp;
 
@@ -56,7 +56,7 @@ If the storage account is private, you must also provide your Storage access key
 
 If you wish to filter files, you may enter a file name prefix:
 
-![Image](<lib/Cloud%20Storage%20-%20Azure%20prefix.png>)
+![Cloud Storage - Azure prefix blob name avro schema](<lib/Cloud%20Storage%20-%20Azure%20prefix.png>)
 
 &nbsp;
 
@@ -64,13 +64,13 @@ If you wish to filter files, you may enter a file name prefix:
 
 Give a meaningful name to the connection to identify it for later, and provide proper URI to your GCS bucket, and optional folder path.
 
-![Image](<lib/Cloud%20Storage%20-%20Google%20connection.png>)
+![Cloud Storage - Google connection avro schema](<lib/Cloud%20Storage%20-%20Google%20connection.png>)
 
 &nbsp;
 
 If the&nbsp; bucket is private, you must also access to the Private key:
 
-![Image](<lib/Cloud%20Storage%20-%20Google%20authentication.png>)
+![Cloud Storage - Google authentication avro schema](<lib/Cloud%20Storage%20-%20Google%20authentication.png>)
 
 &nbsp;
 
@@ -82,13 +82,13 @@ Give a meaningful name to the connection to identify it for later, choose Cloud 
 
 &nbsp;
 
-![Image](<lib/Confluent%20Schema%20Registry%20-%20Cloud%20connection.png>)
+![Confluent Schema Registry - Cloud connection avro schema](<lib/Confluent%20Schema%20Registry%20-%20Cloud%20connection.png>)
 
 &nbsp;
 
 Then provide the API key and API secret:
 
-![Image](<lib/Confluence%20Schema%20Registry%20-%20Cloud%20auth.png>)
+![Confluence Schema Registry - Cloud auth avro schema](<lib/Confluence%20Schema%20Registry%20-%20Cloud%20auth.png>)
 
 &nbsp;
 
@@ -96,13 +96,13 @@ Then provide the API key and API secret:
 
 Give a meaningful name to the connection to identify it for later, choose on-premise as a source, and provide the URL to your Schema Registry:
 
-![Image](<lib/Confluent%20Schema%20Registry%20-%20on-premconnection.png>)
+![Confluent Schema Registry - on-prem connection avro schema](<lib/Confluent%20Schema%20Registry%20-%20on-premconnection.png>)
 
 &nbsp;
 
 Then provide your username and password:
 
-![Image](<lib/Confluent%20Schema%20Registry%20-%20on-prem%20auth.png>)
+![Confluent Schema Registry - on-prem auth avro schema](<lib/Confluent%20Schema%20Registry%20-%20on-prem%20auth.png>)
 
 &nbsp;
 
@@ -112,13 +112,13 @@ Then provide your username and password:
 
 Give a meaningful name to the connection to identify it for later, choose Azure Schema Registry, and provide the URL to your Schema Registry:&nbsp; Currently, it is not possible to automatically retrieve the list of Schema Groups, so you should provide the Schema Group concerned.&nbsp; If you need to access more than one Schema Group, you may create one connection per Schema Group.
 
-![Image](<lib/Azure%20Schema%20Registry%20connection%20settings.png>)
+![Azure Schema Registry connection settings avro schema](<lib/Azure%20Schema%20Registry%20connection%20settings.png>)
 
 &nbsp;
 
 Then you need to provide the authentication parameters:
 
-![Image](<lib/Azure%20Schema%20Registry%20connection%20auth%20params.png>)
+![Azure Schema Registry connection auth params avro schema](<lib/Azure%20Schema%20Registry%20connection%20auth%20params.png>)
 
 &nbsp;
 
@@ -128,19 +128,19 @@ Hackolade communicates with the Azure Schema Registry via REST APIs.&nbsp; If yo
 
 The Hackolade application must be registered so Azure accepts the REST API calls, as per these [instructions](<https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal> "target=\"\_blank\"").&nbsp; The **Application (client) ID** and the **Directory (tenant) ID** are retrieved are retrieved from the App registration Overview screen:
 
-![Image](<lib/CosmosDB%20-%20Azure%20App%20registration%20overview.png>)
+![Azure App registration overview](<lib/CosmosDB%20-%20Azure%20App%20registration%20overview.png>)
 
 &nbsp;
 
 **Note:** it is critical to assign the proper role to the application just registered.&nbsp; This is done following the steps outlined [here](<https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal> "target=\"\_blank\"").&nbsp;
 
-![Image](<lib/CosmosDB%20-%20Azure%20IAM%20role%20assignment.png>)
+![Azure IAM role assignment](<lib/CosmosDB%20-%20Azure%20IAM%20role%20assignment.png>)
 
 &nbsp;
 
 Finally, the **Application secret** is obtained from the Certificates \& secrets screen of the App registration:&nbsp;
 
-![Image](<lib/CosmosDB%20-%20Azure%20App%20registration%20secrets%20scr.png>)
+![Azure App registration secrets screen](<lib/CosmosDB%20-%20Azure%20App%20registration%20secrets%20scr.png>)
 
 &nbsp;
 
@@ -154,4 +154,4 @@ If you don't know how to generate some of the above values, you may want to cons
 
 Give a meaningful name to the connection to identify it for later, choose the Pulsar connection type, provide the URL to your Schema Registry
 
-![Image](<lib/Pulsar%20connection%20settings.png>)
+![Pulsar connection settings avro schema](<lib/Pulsar%20connection%20settings.png>)

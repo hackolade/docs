@@ -10,7 +10,7 @@ Hackolade also supports the Kerberos authentication mechanism. For more info on 
 
 The Kerberos parameters for HBase are maintained in Hackolade as follows:
 
-![Image](<lib/HBase%20connection%20Kerberos.png>)
+![HBase connection Kerberos](<lib/HBase%20connection%20Kerberos.png>)
 
 &nbsp;
 
