@@ -6,7 +6,7 @@ You should NOT install a new version of Hackolade while the application is runni
 
 If you get this error message:
 
-![Image](<lib/Installation%20error%20-%20application%20running2.png>)
+![Installation error - application running2](<lib/Installation%20error%20-%20application%20running2.png>)
 
 it is an indication that the application is opened.&nbsp; You should close all instances, then choose Try again in the dialog above.
 

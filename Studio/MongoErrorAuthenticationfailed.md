@@ -15,25 +15,25 @@ But there could be many other details.&nbsp; Compass and Hackolade use the same 
 Just to make sure that the connection string is identical to what you have in Compass, is to copy/paste from Compass into Hackolade.  Here are the steps:\
 &#49;) Open Compass, select the connection, and click on the Edit button:
 
-![Image](<lib/Compass%20connection%20copy%201.png>)​\
+![Compass connection copy 1](<lib/Compass%20connection%20copy%201.png>)​\
 \
 &#50;) click Confirm:
 
-![Image](<lib/Compass%20connection%20copy%202.png>)
+![Compass connection copy 2](<lib/Compass%20connection%20copy%202.png>)
 
 ​\
 &#51;) in the edit window, press ctrl+A to select the entire string, then ctrl+C to copy the string to the clipboard:
 
-![Image](<lib/Compass%20connection%20copy%203.png>)
+![Compass connection copy 3](<lib/Compass%20connection%20copy%203.png>)
 
 ​\
 &#52;) In Hackolade MongoDB model connections settings, add a new one, and press the button "From SRV or URI":
 
-![Image](<lib/Compass%20connection%20copy%204.png>)\
+![Compass connection copy 4](<lib/Compass%20connection%20copy%204.png>)\
 \
 &#53;) then press ctrl+V or right click and choose paste:
 
-![Image](<lib/Compass%20connection%20copy%205.png>)​\
+![Compass connection copy 5](<lib/Compass%20connection%20copy%205.png>)​\
 \
 When you save, this should parse the string and fill-in all the entries automatically.\
 \

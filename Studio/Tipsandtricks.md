@@ -16,13 +16,13 @@ If you need to move your license key to another computer, you first need to rele
 
 To do so, go to the option Help \> Software Key Validation, and choose the action 'I want to...':
 
-![Image](<lib/Registration%20--%20un-register.png>)
+![Registration -- un-register](<lib/Registration%20--%20un-register.png>)
 
 and click the Send button.&nbsp; This will free up the key on our license server. &nbsp;
 
 &nbsp;
 
-![Image](<lib/Registration%20--%20un-register%20confirmation.png>)
+![Registration -- un-register confirmation](<lib/Registration%20--%20un-register%20confirmation.png>)
 
 Make sure to copy the license key and store it (or find your original license key confirmation email) as you will need it to activate on the other computer where you will want to use Hackolade.
 
@@ -44,7 +44,7 @@ Go to the other computer where you want to use Hackolade and validate your licen
 
 &nbsp;
 
-![Image](<lib/License%20Information%20webpage.png>)
+![License Information webpage](<lib/License%20Information%20webpage.png>)
 
 &nbsp;
 
@@ -52,7 +52,7 @@ Go to the other computer where you want to use Hackolade and validate your licen
 
 To have identification information appear in the Computer Name column, users need to go to Help \> Software Key Validation, then release their key, copy it to their clipboard, then fill in the identifier&nbsp; (name or whatever other standard you decide), paste the key, and validate again.
 
-![Image](<lib/License%20dialog.png>)
+![License dialog](<lib/License%20dialog.png>)
 
 &nbsp;
 
@@ -60,7 +60,7 @@ The identifier entered in the this screen will appear in the web page:
 
 &nbsp;
 
-![Image](<lib/License%20Information%20webpage%20w%20username.png>)
+![License Information webpage w username](<lib/License%20Information%20webpage%20w%20username.png>)
 
 &nbsp;
 
@@ -80,7 +80,7 @@ The identifier entered in the this screen will appear in the web page:
 
 ***TIP:*** you many start multiple instances of Hackolade so as to work on multiple models simultaneously.&nbsp; You may also merge 2 Hackolade models, or combine elements from another model with copy/paste from one model in one application instance, to the other model in the second application instance.&nbsp; On Windows, right-click on the Hackolade icon in the toolbar then choose Hackolade:
 
-![Image](<lib/Multiple%20instances.png>)
+![Multiple instances](<lib/Multiple%20instances.png>)
 
 &nbsp;
 
@@ -108,7 +108,7 @@ Running multiple instances on the same PC does not require additional license se
 
 ***TIP:*** it is very convenient to use the search for any string of text to locate one or multiple objects in the model
 
-![Image](<lib/Object%20Browser%20search.png>)
+![Object Browser search](<lib/Object%20Browser%20search.png>)
 
 &nbsp;
 
@@ -122,17 +122,17 @@ Running multiple instances on the same PC does not require additional license se
 
 ### *ERD*
 
-***TIP:*** you may automatically resize an entity shape in the Entity Relationship Diagram view by clicking the double-sided arrow icon ![Image](<lib/ERD%20shape%20auto-resize%20icon.png>) at the top right corner of the shape
+***TIP:*** you may automatically resize an entity shape in the Entity Relationship Diagram view by clicking the double-sided arrow icon ![ERD shape auto-resize icon](<lib/ERD%20shape%20auto-resize%20icon.png>) at the top right corner of the shape
 
-![Image](<lib/ERD%20-%20Collection%20Title.png>)
+![ERD - Collection Title](<lib/ERD%20-%20Collection%20Title.png>)
 
-***TIP:*** you may change the color of a shape title and frame by choosing from a palette that you can access by clicking the eye-dropper icon ![Image](<lib/Toolbar%20-%20Select%20color%20code.png>) just to the left of the auto-resize icon.
+***TIP:*** you may change the color of a shape title and frame by choosing from a palette that you can access by clicking the eye-dropper icon ![Toolbar - Select color code](<lib/Toolbar%20-%20Select%20color%20code.png>) just to the left of the auto-resize icon.
 
-***TIP:*** if you want to get the maximum level of zoom possible while showing all shapes in your diagram, simply click on the double-sided arrow icon ![Image](<lib/Toolbar%20-%20Resize%20box%20to%20fit%20content.png>) in the application toolbar.
+***TIP:*** if you want to get the maximum level of zoom possible while showing all shapes in your diagram, simply click on the double-sided arrow icon ![Toolbar - Resize box to fit content](<lib/Toolbar%20-%20Resize%20box%20to%20fit%20content.png>) in the application toolbar.
 
 &nbsp;
 
-***TIP:*** after you've created shapes and relationships in the ER diagram, you may want to let Hackolade perform a basic distribution of the shapes according to an orthogonal formula, by choosing this grid-like icon ![Image](<lib/Toolbar%20-%20orthogonal%20distribution.png>)in the toolbar..
+***TIP:*** after you've created shapes and relationships in the ER diagram, you may want to let Hackolade perform a basic distribution of the shapes according to an orthogonal formula, by choosing this grid-like icon ![Toolbar - orthogonal distribution](<lib/Toolbar%20-%20orthogonal%20distribution.png>)in the toolbar..
 
 &nbsp;
 
@@ -140,11 +140,11 @@ Running multiple instances on the same PC does not require additional license se
 
 &nbsp;
 
-***TIP:*** when you select 2 or more shapes, these shape alignment toolbar icons become active: ![Image](<lib/ERD%20shape%20alignment%20toolbar%20icons.png>)
+***TIP:*** when you select 2 or more shapes, these shape alignment toolbar icons become active: ![ERD shape alignment toolbar icons](<lib/ERD%20shape%20alignment%20toolbar%20icons.png>)
 
 You may also do a right-click and access the same functions through the contextual menu.
 
-***TIP:*** when you select 3 or more shapes in line, you may distribute them evenly with these toolbar control icons:![Image](<lib/ERD%20shape%20distribution.png>)
+***TIP:*** when you select 3 or more shapes in line, you may distribute them evenly with these toolbar control icons:![ERD shape distribution](<lib/ERD%20shape%20distribution.png>)
 
 &nbsp;
 
@@ -152,7 +152,7 @@ You may also do a right-click and access the same functions through the contextu
 
 &nbsp;
 
-***TIP:*** with denormalization, an ERD can quickly become very busy with all the foreign master lines displayed.&nbsp; You may toggle these lines on or off with this toolbar button ![Image](<lib/Toolbar%20-%20Toggle%20foreign%20master%20lines%20button.png>)
+***TIP:*** with denormalization, an ERD can quickly become very busy with all the foreign master lines displayed.&nbsp; You may toggle these lines on or off with this toolbar button ![Toolbar - Toggle foreign master lines button](<lib/Toolbar%20-%20Toggle%20foreign%20master%20lines%20button.png>)
 
 &nbsp;
 
@@ -162,11 +162,11 @@ You may also do a right-click and access the same functions through the contextu
 
 ### Hierarchical hierarchical schema view of entities (collections/tables/nodes \& edges)
 
-***TIP:*** you may change the order of the fields/attributes with these control icons: ![Image](<lib/DTD%20field%20order%20arrows.png>)
+***TIP:*** you may change the order of the fields/attributes with these control icons: ![DTD field order arrows](<lib/DTD%20field%20order%20arrows.png>)
 
 &nbsp;
 
-***TIP:*** you may toggle more or less details in the view with this toolbar control: ![Image](<lib/DTD%20details%20toggle.png>)
+***TIP:*** you may toggle more or less details in the view with this toolbar control: ![Schema hierarchical treeview details toggle](<lib/DTD%20details%20toggle.png>)
 
 &nbsp;
 

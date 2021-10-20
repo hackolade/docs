@@ -8,6 +8,6 @@ Let's take the example of a field that evolves from being just a string type, to
 
 Traditional ER tools have a hard time dealing graphically with subschemas, whereas with Hackolade:
 
-![Image](<lib/Polymorphism.png>)
+![Polymorphism](<lib/Polymorphism.png>)
 
 A simpler form of JSON's flexibility is for a field to have multiple simple types, i.e. a string in some documents and a numeric in others, or boolean, or null.  Hackolade easily deals with that as well.
