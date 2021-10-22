@@ -1,5 +1,23 @@
 # v5.x
 
+New features in v5.2.7 \[22-Oct-2021\]
+
+\- JSON document: added detection of string length in nested objects when reverse-engineering into RDBMS targets
+
+\- JSON Schema: added explicit forward-engineering of additionalProperties when set to false
+
+\- Graph database plugins: added a graph view to the ERDV capability
+
+\- Model Compare \& Merge: added alpha sorting of objects in trees to facilitate comparison
+
+\- Polyglot: added denormalization of embedded references when deriving from polyglot to an RDBMS target
+
+\- Polyglot: added length decorators in ERD
+
+\- Cassandra/ScyllaDB: added reverse-engineering of data center name, replication factor, and durable writes from CQL file for each keyspace, if present
+
+&nbsp;
+
 New features in v5.2.6 \[15-Oct-2021\]
 
 \- Polyglot: added inclusion of Clustering Key in primary key when converting models from Cassandra/ScyllaDB
