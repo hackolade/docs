@@ -10,9 +10,15 @@ The application is shipped as a signed .exe file with an installation wizard aut
 
 &nbsp;
 
-**Important:** do NOT install a new version of Hackolade while the application is running.&nbsp; All instances of the application must be closed for the upgrade to proceed properly.&nbsp; Please refer to this page if you get an error such as this one:
+**Important:** do NOT install a new version of Hackolade while the application is running.&nbsp; All instances of the application must be closed for the upgrade to proceed properly.&nbsp; Please refer to [this page](<Windowsaccessdeniederrorduringup.md>) if you get an error such as this one:
+
+&nbsp;
+
+&nbsp;
 
 ![Installation error - application running](<lib/Installation%20error%20-%20application%20running.png>)
+
+&nbsp;
 
 &nbsp;
 

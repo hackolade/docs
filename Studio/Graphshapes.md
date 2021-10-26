@@ -166,3 +166,10 @@ c) you may adjust the length of the relationship lines with a slider that appear
 
 &nbsp;
 
+## Graph diagram views
+
+Similar to ER Diagram Views, we introduced with v5.2.7 the possibility to select and view in a separate tab a subset of vertices/nodes selected from the main graph diagram.&nbsp; This features helps manage large models by focusing on a smaller set of vertices/nodes, by domain or subject.&nbsp; Vertices/nodes and their related edges/relationships may appear in multiple Diagram Views.&nbsp; Modifications made inside Diagram Views are immediately reflected in the main diagram and other views where present.&nbsp;
+
+&nbsp;
+
+You may refer to [this page](<EntityboxesinERdiagram.md>) for more details, section ER Diagram Views.
