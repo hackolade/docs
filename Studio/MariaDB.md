@@ -16,7 +16,7 @@ Hackolade was specially adapted to support the data modeling of MariaDB, includi
 
 &nbsp;
 
-In particular, Hackolade has the unique ability to model complex semi-structured objects stored in columns of the LONGTEXT columns.&nbsp; We're not talking about functions that "flatten" JSON into standard columns, which runs the risk of inconsistencies, if not errors, when doing the Cartesian product of multiple complex data types.&nbsp; But about the storage of entire JSON documents.&nbsp; The reverse-engineering function, if it detects JSON documents, will sample records and infer the schema to supplement the DDL table definitions. &nbsp;
+In particular, Hackolade has the unique ability to model complex semi-structured objects stored in columns of the LONGTEXT data type.&nbsp; We're not talking about functions that "flatten" JSON into standard columns, which runs the risk of inconsistencies, if not errors, when doing the Cartesian product of multiple complex data types.&nbsp; But about the storage of entire JSON documents.&nbsp; The reverse-engineering function, if it detects JSON documents, will sample records and infer the schema to supplement the DDL table definitions. &nbsp;
 
 &nbsp;
 
@@ -70,7 +70,7 @@ In MariaDB, each column, local variable, expression, and parameter has a related
 
 &nbsp;
 
-Additionally, in LONGTEXT columns, Hackolade supports the data modeling of JSON files with standard JSON data types: string, number, object, array, boolean, and null.
+Additionally, in LONGTEXT columns, Hackolade supports the data modeling of JSON documents with standard JSON data types: string, number, object, array, boolean, and null.
 
 &nbsp;
 

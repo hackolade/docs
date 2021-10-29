@@ -1,5 +1,47 @@
 # v5.x
 
+New features in v5.2.8 \[29-Oct-2021\]
+
+\- PostgreSQL: added support with a new plugin with full support for forward-engineering of DDL, and reverse-engineering including inference of schemas in JSON and JSONB data types
+
+\- Protobuf: added support with a new plugin with full support for forward-engineering of Protobuf schema, and reverse-engineering, including files on Cloud storage or Schema Registries (Confluent and Pulsar)
+
+\- Added a check when attempting to reverse-engineer a data model instead of just opening it
+
+\- Replaced the .json filename extension when saving a model with a .hackolade.json filename extension to reduce ambiguity with other .json files
+
+\- Added an option in the OS Open dialog to filter files by .hackolade.json extensions
+
+\- Added possibility to define a non-default path for custom properties in Toots \> Options \> Default Paths, for example to align with different development branches
+
+\- Added styling for relationship lines: thickness and color
+
+\- Added possibility to resize textarea dialogs (description, comments, ...)
+
+\- Enhanced line break handling in names of nodes/vertices in graph targets
+
+\- Added logic to auto-select relevant entities of ERD Views when generating documentation
+
+\- Added obfuscation of annotations
+
+\- Collibra: added CLI command to reverse-engineer or synchronize Collibra domain into a Hackolade data model
+
+\- Polyglot: renamed Not Null property to Required (fully understanding that the semantics are different...)
+
+\- Polyglot: implemented conversion of not-required attributes without default for Avro into multiple data types with NULL as primary
+
+\- Polyglot: enhanced the handling of primary keys when deriving from Cassandra, Couchbase, and ScyllaDB
+
+\- Polyglot: adjusted conversion of nvarchar data type for MariaDB into varchar with national = true
+
+\- Polyglot: added back the&nbsp; technical name property, but disabled, to clarify that it is not missing
+
+\- Cassandra/ScyllaDB: ignore column moves in ALTER script
+
+\- Snowflake: implemented dollar-quoted comments in DDL forward-engineering
+
+&nbsp;
+
 New features in v5.2.7 \[22-Oct-2021\]
 
 \- JSON document: added detection of string length in nested objects when reverse-engineering into RDBMS targets

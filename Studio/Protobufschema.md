@@ -4,7 +4,7 @@ Hackolade dynamically generates Protobuf schema for the structure created with t
 
 &nbsp;
 
-![Image](<lib/Protobuf%20schema%20forward-engineering.png>)
+![Protobuf schema forward-engineering](<lib/Protobuf%20schema%20forward-engineering.png>)
 
 &nbsp;
 

@@ -20,7 +20,7 @@ For production use, your Neo4j deployment should use valid certificates generate
 
 &nbsp;
 
-To verify the identity of the MongoDB deployment you connect to, provide one or more certificates of trusted Certificate Authorities.
+To verify the identity of the Neo4j deployment you connect to, provide one or more certificates of trusted Certificate Authorities.
 
 &nbsp;
 

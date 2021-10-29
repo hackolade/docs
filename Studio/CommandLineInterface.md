@@ -52,6 +52,7 @@ Below is the current list of Hackolade CLI commands.&nbsp; Additional commands m
 | forwEng | Forward-engineer structure created with the application to dynamically generate the schema of the selected entities.&nbsp; Or forward-engineer JSON Schema or a sample JSON data document |
 | forwEngAPI | Forward-engineer Swagger or OpenAPI model from merge of a source data model and a user-defined template |
 | forwEngDataDictionary | Publish Hackolade data model to Data Dictionary instance |
+| revEngDataDictionary | Reverse-engineer a data dictionary instance to infer the schema of entities |
 | obfusc | Copy a model, and garble sensitive properties: business name, technical name, description, comments, enumeration.  Use if you need to send a model for troubleshooting but don't want to disclose sensitive aspects of the model. |
 | help | Display commands and their arguments |
 | performance | Records timestamps of application startup steps for performance troubleshooting |
@@ -150,7 +151,7 @@ Usage:&nbsp; &nbsp; *hackolade revEng \[--arguments\]*
 | \--sort="{\<aggregation pipeline expression\>}" | N | For MongoDB only, specify sort criteria for sampling.&nbsp; \[default: "{}"\] |
 | \--update=\< true \| **false** \> | N | Specify whether to update existing model.  If false, existing model will be overwritten \[default: false\] |
 | \--conflictResolution\< **keepBoth** \| replace \| merge \| cancel \> | N | Specify conflict resolution strategy for containers and entities \[default: keepBoth\]&nbsp; \[values: "keepBoth", "replace", "merge", "cancel"\] \[default: "keepBoth"\] |
-| \--selectedObjects= "\<containerName\>: \[\<*entity1\>*,\<*entity2\>*,…\]" | N | Specify container(s) to include in documentation \[default: all\] and an array of entities \[default: all\] - MongoDB: container = dbs; entity = collection - DynamoDB: container = *not applicable*; entity = table - Couchbase: container = bucket; entity = document kind - Cosmos DB: container = collection; entity = document type - Elasticsearch: container = index: entity = type - HBase: container =&nbsp; namespace; entity = table The value is a string surrounded by double quotes (").&nbsp; Entities are represented as an array surrounded by square brackets (\[\]), and are separated by a comma (,).&nbsp; The entities array is separated from the container name by a colon (:).&nbsp; Containers are separated by semi-colons (;). |
+| \--selectedObjects= "\<containerName\>: \[\<*entity1\>*,\<*entity2\>*,…\]" | N | Specify container(s) to reverse-engineer&nbsp; \[default: all\] and an array of entities \[default: all\] - MongoDB: container = dbs; entity = collection - DynamoDB: container = *not applicable*; entity = table - Couchbase: container = bucket; entity = document kind - Cosmos DB: container = collection; entity = document type - Elasticsearch: container = index: entity = type - HBase: container =&nbsp; namespace; entity = table The value is a string surrounded by double quotes (").&nbsp; Entities are represented as an array surrounded by square brackets (\[\]), and are separated by a comma (,).&nbsp; The entities array is separated from the container name by a colon (:).&nbsp; Containers are separated by semi-colons (;). |
 | \--documentKinds= "\<bucketName\>: \<docKindField\>" | N | In Couchbase only, for each bucket, you must specify the field used to distinguish the different objects stored in the same bucket. |
 | \--entityVersion=\<version number\> | N | In EventBridge only, specify schema version \[default: latest\] |
 | \--includeEmpty=\< true \| **false** \> | N | In MongoDB only, specify whether to include empty collections \[default: false\] |
@@ -506,7 +507,51 @@ Usage:&nbsp; &nbsp; *hackolade forwEngDataDictionary \[--arguments\]*
 
 Example:
 
-> C:\\PROGRA~1\\Hackolade\\hackolade forwEngDataDictionary --model=yel --connectioName=Collibra\_instance --targetResource=Yelp &nbsp;
+> C:\\PROGRA~1\\Hackolade\\hackolade forwEngDataDictionary --model=yelp --connectName=Collibra\_instance --targetResource=Yelp &nbsp;
+
+&nbsp;
+
+**Note:** If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: *"C:\\Program Files\\Hackolade\\hackolade"* .&nbsp; The workaround, assuming:
+
+![Windows Program Files](<lib/Windows%20Program%20Files.png>)
+
+is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed above.
+
+&nbsp;
+
+## revEngDataDictionary
+
+The revEngDataDictionary command lets you synchronize a previously published Hackolade data models from a Data Dictionary instance (currently Collibra only.)
+
+&nbsp;
+
+Usage:&nbsp; &nbsp; *hackolade revEngDataDictionary \[--arguments\]*
+
+&nbsp;
+
+| **Argument** | **Required** | **Purpose** |
+| --- | --- | --- |
+| \--target=\<*target*\> | Y | Native target for model: JSON, MONGODB, DYNAMODB, COUCHBASE, or plugin target: Avro, CASSANDRA, COSMOSDB-SQL, COSMOSDB-MONGO, ELASTICSEARCH, EventBridge, Glue, HBase, HIVE, JOI, MSSQLServer; NEO4J, OPENAPI, PARQUET, ScyllaDB, Snowflake, SWAGGER, Synapse, TinkerPop, etc.. |
+| \--connectName=\<connection\> | Y if from instance | Name of connection settings saved in the Hackolade instance where CLI is invoked. Or use --connectFile instead. |
+| \--connectFile=\<*file*\>\* | N | Full file path of connection config file (you don't need to use it when connect name is specified).&nbsp; The simplest way to create a connection file is to create a connection in the GUI application, then export the connection settings to file, encrypted or not. |
+| \--model=\<*file*\>\* | Y | Full path and file name for target Hackolade model into which reverse-engineering process has to be converted.&nbsp; Extension .json is optional |
+| \--dataDictionaryResource=\<resource name\> | Y | Name of the resource (domain) in the Data Dictionary instance being reverse-engineered |
+| \--fieldOrder=\< **keep** \| alpha \> | N | Specify whether to preserve order of fields in sampled document or rearrange in alpha order&nbsp; \[default: keep\] |
+| \--update=\< true \| **false** \> | N | Specify whether to update existing model.  If false, existing model will be overwritten \[default: false\] |
+| \--conflictResolution\< **keepBoth** \| replace \| merge \| cancel \> | N | Specify conflict resolution strategy for containers and entities \[default: keepBoth\]&nbsp; \[values: "keepBoth", "replace", "merge", "cancel"\] \[default: "keepBoth"\] |
+| \--namingConventions=\< business \| technical \> | N | If application parameters are set to enable Naming Conventions, specify whether to reverse-engineer source attributes as business names or as technical names.&nbsp; Conversions will be applied according to your Naming Conventions parameters. &nbsp; \[default: **business**, if Naming Conventions are disabled; or **technical**, if Naming Conventions are enabled in application Tools \> Options\] |
+| \--distribution=\< **true** \| false \> | N | Specify whether to perform orthogonal distribution of model entities on ERD. \[default: true\] |
+| \--maxErdEntityBoxes=\< true \| **false** \> | N | Specify whether to fully expand all collections before distribution.&nbsp; \[default: false\] |
+| \--logLevel=\< 1 \| 2 \| 3 \| **4** \> | N | &#49; = no spinner, no info, no error messages 2 = no spinner, no info 3 = no spinner 4 = full output \[default: 4\] |
+
+
+\*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“)&nbsp; Path can be ignored if file is in local directory.
+
+&nbsp;
+
+Example:
+
+> C:\\PROGRA~1\\Hackolade\\hackolade revEngDataDictionary --target=MONGODB --connectName=Collibra\_instance --dataDictionaryResource=Yelp --model=yelp&nbsp;
 
 &nbsp;
 

@@ -1,6 +1,6 @@
 # Connect to a MariaDB instance
 
-The MariaDB instance can hosted on-premises, or on virtualized machines in a private or public cloud. &nbsp;
+The MariaDB instance can be hosted on-premises, or on virtualized machines in a private or public cloud. &nbsp;
 
 &nbsp;
 
