@@ -8,11 +8,29 @@ In order to secure connections between the server and client, you need to ensure
 
 &nbsp;
 
-![PostgreSQL connection SSL](<lib/MongoDB%20connection%20SSL.png>)
+For a connection to be known SSL-secured, SSL usage must be configured on *both the client and the server* before the connection is made. If it is only configured on the server, the client may end up sending sensitive information (e.g., passwords) before it knows that the server requires high security.&nbsp; All SSL options carry overhead in the form of encryption and key-exchange, so there is a trade-off that has to be made between performance and security. &nbsp; You will find more information on [this page](<https://www.postgresql.org/docs/current/libpq-ssl.html> "target=\"\_blank\"").
+
+&nbsp;
+
+&nbsp;
+
+Communication with Postgres can be set with any of these SSL modes:
+
+&nbsp;
+
+![PostgreSQL sslmode](<lib/PostgreSQL%20sslmode.png>)
+
+&nbsp;
+
+&nbsp;
 
 &nbsp;
 
 Depending on the setup, one or more of the following fields will need to reference the appropriate file:
+
+![Image](<lib/PostgreSQL%20sslmode%20verify-full.png>)
+
+&nbsp;
 
 ## Certificate Authority
 
@@ -51,4 +69,8 @@ A private key can optionally be encrypted with a password.
 &nbsp;
 
 If your private key is password protected, enter the password here. If not, leave the field blank.
+
+&nbsp;
+
+&nbsp;
 

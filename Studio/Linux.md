@@ -2,14 +2,20 @@
 
 ## Standard installation
 
-The application is shipped as a .zip file.&nbsp; To install, you simply unzip the file in the folder of your choice, then start the executable.&nbsp; You must be aware that the installation of the software is a tacit acceptance of our [Terms and Conditions and End-User License Agreement](<https://hackolade.com/eulas.html> "target=\"\_blank\"").&nbsp;
+**Note:** You must be aware that the installation of the software is a tacit acceptance of our [Terms and Conditions and End-User License Agreement](<https://hackolade.com/eulas.html> "target=\"\_blank\"").&nbsp;
 
 &nbsp;
 
-Unfortunately, the issue with running executable file from the file manager still is not resolved:\
-[https://github.com/electron/electron/issues/15406](<https://github.com/electron/electron/issues/15406> "target=\"\_blank\"")\
-The Linux version can be run from the terminal or from a script by terminal:\
+The application is shipped as a .zip file.&nbsp; To install, you simply unzip the file in the folder of your choice, then start the executable. &nbsp;
+
+\
+The application can be run from the terminal or from a script by terminal:\
 /path/to/unzipped/folder/Hackolade\
+&nbsp;
+
+Unfortunately, the issue with running executable file from the file manager still is not resolved:\
+[https://github.com/electron/electron/issues/15406](<https://github.com/electron/electron/issues/15406> "target=\"\_blank\"")
+
 \
 Also, there is a way to create a desktop file to launch the application:\
 [https://stackoverflow.com/questions/55060402/electron-executable-not-recognized-by-nautilus](<https://stackoverflow.com/questions/55060402/electron-executable-not-recognized-by-nautilus> "target=\"\_blank\"")\

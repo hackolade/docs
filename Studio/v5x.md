@@ -1,5 +1,37 @@
 # v5.x
 
+New features in v5.2.10 \[12-Nov-2021\]
+
+\- Protobuf:&nbsp;
+
+&nbsp;
+
+New features in v5.2.9 \[05-Nov-2021\]
+
+\- ERD: enhanced placement of new entities inside visible area
+
+\- Model compare \& merge: added option to match by business name or technical name when matching by ID is not possible
+
+\- Model compare \& merge: use naming conventions display choice when matching by ID, or respective name matching choice
+
+\- Polyglot: added Examples property to allow multiple examples for OpenAPI
+
+\- Polyglot: added primary key for "id" columns during automatic normalization of complex objects when deriving into RDBMS targets
+
+\- Polyglot: added checkbox to disable automatic normalization of complex objects when deriving into RDBMS targets
+
+\- OpenAPI file tab: enabled Cmd+C on Mac
+
+\- OpenApi \& Event Bridge: updated request parameter style prop options
+
+\- PostgreSQL: added sslmode support
+
+\- PostgreSQL: added advanced DDL parsing
+
+\- PostgreSQL: added support for PostGIS data types
+
+&nbsp;
+
 New features in v5.2.8 \[29-Oct-2021\]
 
 \- PostgreSQL: added support with a new plugin with full support for forward-engineering of DDL, and reverse-engineering including inference of schemas in JSON and JSONB data types
@@ -30,7 +62,7 @@ New features in v5.2.8 \[29-Oct-2021\]
 
 \- Polyglot: implemented conversion of not-required attributes without default for Avro into multiple data types with NULL as primary
 
-\- Polyglot: enhanced the handling of primary keys when deriving from Cassandra, Couchbase, and ScyllaDB
+\- Polyglot: enhanced the handling of primary keys when deriving from polyglot into Cassandra, Couchbase, and ScyllaDB
 
 \- Polyglot: adjusted conversion of nvarchar data type for MariaDB into varchar with national = true
 
