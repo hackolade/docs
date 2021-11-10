@@ -227,7 +227,7 @@
       - [Connect to a TinkerPop instance](<ConnecttoaTinkerPopinstance.md>)
   - [Suggest denormalization of a SQL schema](<SuggestdenormalizationofaSQLsche.md>)
   - [Model-Driven API Generation](<Model-DrivenAPIGeneration.md>)
-- [Release notes](<Releasenotes.md>)
+- [Change log](<Changelog.md>)
   - [v5.x](<v5x.md>)
   - [v4.x](<v4x.md>)
   - [v3.x](<v3x.md>)

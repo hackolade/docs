@@ -13,6 +13,6 @@ The installation of Hackolade does not require 'admin rights' for the PC.&nbsp; 
 
 ## Regular user of previous Hackolade versions
 
-* Review the [Release notes](<Releasenotes.md>) since the last last version with which you were familiar.
+* Review the [Release notes](<Changelog.md>) since the last last version with which you were familiar.
 * Take some time to review our [FAQs](<FAQandtroubleshooting.md>) and [tips and tricks](<Tipsandtricks.md>)
 

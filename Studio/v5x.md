@@ -1,11 +1,5 @@
 # v5.x
 
-New features in v5.2.10 \[12-Nov-2021\]
-
-\- Protobuf:&nbsp;
-
-&nbsp;
-
 New features in v5.2.9 \[05-Nov-2021\]
 
 \- ERD: enhanced placement of new entities inside visible area
