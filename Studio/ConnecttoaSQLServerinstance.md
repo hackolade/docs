@@ -4,6 +4,10 @@ The SQL Server engine can hosted on-premises, on virtualized machines in a priva
 
 &nbsp;
 
+Several [authentication methods](<https://docs.microsoft.com/en-us/sql/ssms/f1-help/connect-to-server-database-engine> "target=\"\_blank\"") are available.
+
+&nbsp;
+
 In the Hackolade connection settings dialog, give a meaningful name to the connection, choose the source (on-prem/cloud or Azure SQL Database), then set the database name, the host and port:
 
 &nbsp;
