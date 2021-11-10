@@ -25,3 +25,21 @@ In the Authentication tab of the connection settings dialog, select the applicab
 
 See instructions on [how-to find your tenant ID](<https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-how-to-find-tenant> "target=\"\_blank\"").
 
+&nbsp;
+
+With the MFA method, depending on the set up of your Azure AD, you may be presented with this pop-up dialog:
+
+![Azure AD MFA consent](<lib/Azure%20AD%20MFA%20consent.png>)
+
+&nbsp;
+
+Your IT admin must give consent in order to allow you access to the database.&nbsp; Consent is required once for the organization.
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
