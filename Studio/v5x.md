@@ -1,5 +1,41 @@
 # v5.x
 
+New features in v5.2.10 \[12-Nov-2021\]
+
+\- Replaced the .hackolade.json filename extension when saving a model with a shorter .hck.json filename extension.&nbsp; Also reduces ambiguity with other .json files
+
+\- ERD: added possibility to select multiple objects via mouse shift+click+drag if clicking inside a container, or or new toolbar button
+
+\- Object Browser: added contextual menu option to alpha sort containers
+
+\- Custom properties: added orderedList capability in group control
+
+\- Collibra: changed REST API channel to accommodate Zscaler proxy with SSL inspection
+
+\- Collibra: allowed publishing of polyglot models
+
+\- Collibra: allowed publishing of models when out-of-the box system attribute types have been edited
+
+\- JSON Document reverse-engineering into RDBMS targets: added detection of ISO 8601 date/time/timestamp/duration in JSON strings, and convert them to best matching data type
+
+\- Polyglot: added warning and handling of choices in reverse-engineering of JSON Schema or XSDs
+
+\- Hive: enabled optional normalization of complex data types when reverse-engineering JSON Data, JSON Schema, or XSDs
+
+\- OpenAPI/Swagger: added control to easily reorder tags
+
+\- PostgreSQL: added forward- and reverse-engineering of PostGIS data types
+
+\- Protobuf: adjusted field numbering in case of oneOf, plus added bool data type as a key type of map
+
+\- SQL Server DDL reverse-engineering: added tolerance for spaces in index declaration
+
+\- SQL Server/Azure SQL: added Azure Active Directory options: username/password, integrated, and with MFA
+
+\- all RDBMS targets: when reverse-engineering JSON Schema with null data type while such type is not available in target, added conversion of field into a string-like data type with null allowed
+
+&nbsp;
+
 New features in v5.2.9 \[05-Nov-2021\]
 
 \- ERD: enhanced placement of new entities inside visible area
@@ -22,7 +58,7 @@ New features in v5.2.9 \[05-Nov-2021\]
 
 \- PostgreSQL: added advanced DDL parsing
 
-\- PostgreSQL: added support for PostGIS data types
+\- PostgreSQL: added PostGIS data types
 
 &nbsp;
 

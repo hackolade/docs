@@ -20,6 +20,7 @@ Keyboard shortcuts:
 | Ctrl+V | Cmd+V | Paste |
 | Del | Cmd+Backspace | Delete |
 | Ctrl+D | Cmd+D | Duplicate |
+| Ctrl+Shift+\<mouse click\> | Cmd+Shift+\<mouse click\> | Multi-select objects in ERD |
 | Ctrl+A | Cmd+A | Select all |
 | Shift+\<mouse click\> | Shift+\<mouse click\> | Multiple contiguous select |
 | Ctrl+\<mouse click\> | Cmd+\<mouse click\> | Multiple select |

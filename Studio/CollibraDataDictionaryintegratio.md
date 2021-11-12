@@ -106,6 +106,8 @@ The system will:
 
 If the expected configuration cannot be found in Collibra, the user is prompted for confirmation that the setup should be automatically carried out in the Collibra instance.
 
+![Image](<lib/Collibra%20missing%20config%20warning.png>)
+
 ### Fetch existing Communities and Domains
 
 If the configuration is correct, the application uses the Core API to retrieve the existing Communities and Domains and display them so the user can select where the Hackolade Data Model should be loaded.&nbsp; If the domain does not exist, it should be created first.&nbsp; It is recommended to create a new domain with type "Physical Data Dictionary".
