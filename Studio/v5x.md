@@ -1,5 +1,17 @@
 # v5.x
 
+New features in v5.2.11 \[19-Nov-2021\]
+
+\- Polyglot: added handling of edges (with properties) in the context of graph databases
+
+\- Polyglot: disabled and cleaned technical names in definitions
+
+\- MariaDB: adjust API for MySQL driver
+
+\- OpenAPI: added handling of empty properties in reverse-engineering of file
+
+&nbsp;
+
 New features in v5.2.10 \[12-Nov-2021\]
 
 \- Replaced the .hackolade.json filename extension when saving a model with a shorter .hck.json filename extension.&nbsp; Also reduces ambiguity with other .json files

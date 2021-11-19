@@ -76,11 +76,13 @@ All Product Versions
 | [MongoDB-connection-model](<https://github.com/mongodb-js/connection-model> "target=\"\_blank\"") | (c) 2015 MongoDB Inc. | [Apache](<https://github.com/mongodb-js/connection-model/blob/master/LICENSE> "target=\"\_blank\"") |
 | [MongoDB-schema](<https://github.com/mongodb-js/mongodb-schema> "target=\"\_blank\"") | (c) 2015 MongoDB Inc. | [Apache](<https://github.com/mongolab/mongodb-uri-node> "target=\"\_blank\"") |
 | MongoDB-uri-node | (c) 2013 ObjectLabs Corporation | [MIT](<https://github.com/mongolab/mongodb-uri-node/blob/master/LICENSE> "target=\"\_blank\"") |
+| [MySQL](<https://github.com/mysqljs/mysql> "target=\"\_blank\"") | (c) 2012 Felix Geisendorfer | [MIT](<https://github.com/mysqljs/mysql/blob/master/License> "target=\"\_blank\"") |
 | [Neo4j-javascript-driver](<https://github.com/neo4j/neo4j-javascript-driver> "target=\"\_blank\"") | (c) 2018 Neo4j | [Apache](<https://github.com/neo4j/neo4j-javascript-driver/blob/1.7/LICENSE> "target=\"\_blank\"") |
 | [Node-fetch](<https://github.com/bitinn/node-fetch> "target=\"\_blank\"") | (c) 2016 David Frank | [MIT](<https://github.com/bitinn/node-fetch/blob/master/LICENSE.md> "target=\"\_blank\"") |
 | [Node-folder-hash](<https://github.com/marc136/node-folder-hash> "target=\"\_blank\"") | (c) 2015 Marc Walter | [MIT](<https://github.com/marc136/node-folder-hash/blob/main/LICENSE.txt> "target=\"\_blank\"") |
 | [Node-ipc](<https://github.com/RIAEvangelist/node-ipc> "target=\"\_blank\"") | (c) 2009 Philip Sturgeon | [DBAD](<https://github.com/RIAEvangelist/node-phidget-API/blob/master/license.md> "target=\"\_blank\"") |
 | [Node-mssql](<https://github.com/tediousjs/node-mssql> "target=\"\_blank\"") | (c) 2013-2018 Patrick Simek and contributors | [MIT](<https://github.com/tediousjs/node-mssql/blob/master/LICENSE.md> "target=\"\_blank\"") |
+| [Node-postgres](<https://github.com/brianc/node-postgres> "target=\"\_blank\"") | (c) 2010-2021 Brian Carlson | [MIT](<https://github.com/brianc/node-postgres/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Node-rsa-pem-from-mod-exp](<https://github.com/tracker1/node-rsa-pem-from-mod-exp> "target=\"\_blank\"") | (c) 2014 Michael J. Ryan | [MIT](<https://github.com/tracker1/node-rsa-pem-from-mod-exp/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Node-semver](<https://github.com/npm/node-semver> "target=\"\_blank\"") | (c) Isaac Z. Schlueter and Contributors | [ISC](<https://github.com/npm/node-semver/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Node-uuid](<https://github.com/broofa/node-uuid> "target=\"\_blank\"") | (c) 2010-2012 Robert Kieffer | [MIT](<https://github.com/broofa/node-uuid/blob/master/LICENSE.md> "target=\"\_blank\"") |
@@ -89,6 +91,7 @@ All Product Versions
 | [Parquetjs](<https://github.com/ironSource/parquetjs> "target=\"\_blank\"") | (c) 2017 ironSource Ltd. | [MIT](<https://github.com/ironSource/parquetjs/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Phantomjs](<https://github.com/ariya/phantomjs/> "target=\"\_blank\"") | (c) 2005-2016 Ariya Hidayat | [BSD-3-Clause](<https://github.com/ariya/phantomjs/blob/master/LICENSE.BSD> "target=\"\_blank\"") |
 | [Postal](<https://github.com/postaljs/postal.js> "target=\"\_blank\"") | (c) 2015 Jim Cowart | [MIT](<https://github.com/postaljs/postal.js/blob/master/LICENSE> "target=\"\_blank\"") |
+| [ProtobufJS](<https://github.com/protobufjs/protobuf.js> "target=\"\_blank\"") | (c) 2016 Daniel Wirtz | [BSD-3-Clause](<https://github.com/protobufjs/protobuf.js/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Protocol JSON](<https://github.com/dcodeIO/PSON> "target=\"\_blank\"") | (c) 2014 Daniel Wirtz | [Apache](<https://github.com/dcodeIO/PSON/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Randexp](<https://github.com/fent/randexp.js> "target=\"\_blank\"") | (c) 2011 fent | [MIT](<https://github.com/fent/randexp.js/blob/master/LICENSE> "target=\"\_blank\"") |
 | [React](<https://facebook.github.io/react/> "target=\"\_blank\"") | (c) 2013-present, Facebook, Inc. | [MIT](<https://github.com/facebook/react/blob/master/LICENSE> "target=\"\_blank\"") |
@@ -108,6 +111,7 @@ All Product Versions
 | [Sort-Json](<https://github.com/kesla/sort-json> "target=\"\_blank\"") | (c) 2016 David Björklund | [MIT](<https://github.com/kesla/sort-json> "target=\"\_blank\"") |
 | [Spellchecker](<https://github.com/atom/node-spellchecker> "target=\"\_blank\"") | (c) 2016 Atom | [MIT](<https://github.com/atom/node-spellchecker/blob/master/LICENSE.md> "target=\"\_blank\"") |
 | [Split.js](<https://nathancahill.github.io/split/> "target=\"\_blank\"") | (c) 2015 Nathan Cahill | [MIT](<https://github.com/nathancahill/split/blob/master/LICENSE> "target=\"\_blank\"") |
+| [SQL-formatter](<https://github.com/zeroturnaround/sql-formatter> "target=\"\_blank\"") | (c) 2016-2020 ZeroTurnaround LLC (c) 2020-present George Leslie-Waksman and other contributors | [MIT](<https://github.com/zeroturnaround/sql-formatter/blob/master/LICENSE> "target=\"\_blank\"") |
 | [SSH2-Streams](<https://github.com/mscdex/ssh2-streams> "target=\"\_blank\"") | (c) 2014 Brian White | [MIT](<https://github.com/mscdex/ssh2-streams/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Stringify-object](<https://github.com/yeoman/stringify-object> "target=\"\_blank\"") | (c) 2015 Yeoman team | [BSD-2-Clause](<https://github.com/yeoman/stringify-object/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Swagger-parser](<https://www.npmjs.com/package/swagger-parser> "target=\"\_blank\"") | (c) 2015 James Messinger | [MIT](<https://github.com/APIDevTools/swagger-parser/blob/master/LICENSE> "target=\"\_blank\"") |

@@ -22,6 +22,27 @@ For the details on how to define Avro schema definitions in Hackolade, you shoul
 
 &nbsp;
 
+## Subject Name Strategy
+
+Hackolade supports the 3 strategies offered by the Confluent Schema Registry:&nbsp;
+
+| **Strategy** | **Description** |
+| --- | --- |
+| TopicNameStrategy | Derives subject name from topic name (default) |
+| RecordNameStrategy | Derives subject name from record name , and provides a way to group logically related events that may have different data structures under a subject. |
+| TopicRecordNameStrategy | Derives the subject name from topic and record name, as a way to group logically related events that may have different structures under a subject. |
+
+
+&nbsp;
+
+The TopicNameStrategy is the default and implicitly requires that all messages in the same topic conform to the same schema.&nbsp; The other 2 strategies when a single topic can have records that use multiple schemas.&nbsp; This is useful when data represents a time-ordered sequence of events, with messages having different data structures.
+
+&nbsp;
+
+You can find more details on [this page](<https://docs.confluent.io/platform/current/schema-registry/serdes-develop/index.html#subject-name-strategy> "target=\"\_blank\"").
+
+&nbsp;
+
 ## Forward-Engineering
 
 Schemas for Avro or JSON defined in Hackolade can be added to subjects in the Schema Registry through an Apply button appearing at the bottom of the Avro Schema tab.

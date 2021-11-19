@@ -26,13 +26,13 @@ The data model in the picture below results from the reverse-engineering of a [s
 
 &#49;) a graph view, with familiar circular vertex labels:
 
-![Neptune-Gremlin workspace](<lib/Neptune-Gremlin%20workspace.png>)
+![Image](<lib/Neptune-Gremlin%20workspace.png>)
 
 &nbsp;
 
 &#50;) an Entity-Relationship Diagram (ERD) view, with the advantage of displaying properties for both vertex labels and edge labels:
 
-![Neptune-Gremlin ERD](<lib/Neptune-Gremlin%20ERD.png>)
+![Image](<lib/Neptune-Gremlin%20ERD.png>)
 
 &nbsp;
 
