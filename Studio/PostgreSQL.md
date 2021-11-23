@@ -32,8 +32,6 @@ The data model in the picture below results from the data modeling of the [fligh
 
 &nbsp;
 
-&nbsp;
-
 ## Tablespaces, databases, and schemas
 
 A tablespace is a location on the disk where PostgreSQL stores data files containing database objects e.g., indexes, and tables.&nbsp; Tablespaces allow control of how data is stored in the file system. Tablespaces are useful in many cases such as managing large tables and improving database performance.&nbsp; PostgreSQL uses a tablespace to map a logical name to a physical location on disk.

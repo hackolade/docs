@@ -1,5 +1,19 @@
 # v5.x
 
+New features in v5.2.12 \[23-Nov-2021\]
+
+\- Avro:added handling of multiple references to same definition in schema generation
+
+\- Avro: added handling for external schema references&nbsp;
+
+\- Delta Lake/Databricks: added reverse-engineering of binary subtypes to complex data types
+
+\- SQL Server: added possibility to disable connection encryption with the SQL Server auth method (to match SSMS options)
+
+\- all RDBMS targets: added warning and handling of choices in reverse-engineering of JSON Schema or XSDs, by picking only the first subschema
+
+&nbsp;
+
 New features in v5.2.11 \[19-Nov-2021\]
 
 \- Polyglot: added handling of edges (with properties) in the context of graph databases
