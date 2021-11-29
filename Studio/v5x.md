@@ -1,5 +1,23 @@
 # v5.x
 
+New features in v5.2.13 \[29-Nov-2021\]
+
+\- JSON Schema: added support for undefined data types marked "any"&nbsp;
+
+\- Polyglot: when deriving into an RDMBS target and normalizing, enhanced handling to use existing primary keys
+
+\- Polyglot: when converting from Swagger/OpenAPI model, convert component schema definitions into polyglot entities
+
+\- License key validation and concurrent seat activation/release: added option to switch to disaster recovery license server if primary server is down
+
+\- Network proxy: enhanced handling of basic auth
+
+\- Avro: added possibility to edit references to external Avro schemas
+
+\- Avro: enhanced validator to handle external references
+
+&nbsp;
+
 New features in v5.2.12 \[23-Nov-2021\]
 
 \- Avro:added handling of multiple references to same definition in schema generation
