@@ -55,11 +55,11 @@ Hackolade supports the 3 strategies offered by the Confluent Schema Registry:&nb
 
 &nbsp;
 
-The TopicNameStrategy is the default and implicitly requires that all messages in the same topic conform to the same schema to enforce teh subject-topic constraints. &nbsp;
+The TopicNameStrategy is the default strategy, and implicitly requires that all messages in the same topic conform to the same schema to enforce the subject-topic constraints. &nbsp;
 
 &nbsp;
 
-The other 2 strategies can be used when a single topic can have records that use multiple schemas.&nbsp; This is useful when data represents a time-ordered sequence of events, with messages having different data structures.&nbsp; They use respectively the record name and the topic plus the record name to determine the subject to be used for schema lookups. &nbsp;
+The other 2 strategies can be used when a single topic can have records that use multiple schemas.&nbsp; This is useful when data represents a time-ordered sequence of events, with messages having different data structures.&nbsp; They use respectively the record name, and the topic plus the record name, to determine the subject to be used for schema lookups. &nbsp;
 
 &nbsp;
 
@@ -77,7 +77,7 @@ Introduced with Confluent 5.5, a schema reference is comprised of a reference na
 
 &nbsp;
 
-You will find more details in [this blog](<https://www.confluent.io/blog/multiple-event-types-in-the-same-kafka-topic/> "target=\"\_blank\"").&nbsp; Hackolade does not yet support Avro unions with schema references, but development is under way.
+You will find more details in [this blog](<https://www.confluent.io/blog/multiple-event-types-in-the-same-kafka-topic/> "target=\"\_blank\"").&nbsp; Hackolade does not yet support Avro unions with schema references, but design is under way.
 
 &nbsp;
 

@@ -1,4 +1,4 @@
-# JanusGraph
+# JanusGraph Gremlin
 
 As you develop the model for your JanusGraph database, with vertex labels, edge labels, and indexes, Hackolade dynamically generates the corresponding schema and corresponding Gremlin script.
 

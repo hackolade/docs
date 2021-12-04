@@ -34,6 +34,10 @@ A **right-click** displays a contextual menu of actions possible for the selecte
 
 &nbsp;
 
+&nbsp;
+
+## Find and Replace
+
 At the top of the Object browser pane, a handy search bar lets you type any part of an entity name:
 
 ![Object browser - search box](<lib/Object%20browser%20-%20search%20box.png>)

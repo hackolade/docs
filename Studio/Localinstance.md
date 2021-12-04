@@ -8,7 +8,7 @@ This local version of DynamoDB can help you save on provisional throughput, data
 
 &nbsp;
 
-Assuming that have downloaded from [https://aws.amazon.com/blogs/aws/dynamodb-local-for-desktop-development/](<https://aws.amazon.com/blogs/aws/dynamodb-local-for-desktop-development/> "target=\"\_blank\"") and are running the database locally with the command java -Djava.library.path=./DynamoDBLocal\_lib -jar DynamoDBLocal.jar -sharedDb , you can access the database from a browser at [http://localhost:8000/shell/](<http://localhost:8000/shell/> "target=\"\_blank\"") .&nbsp; Make sure you're able to access your DynamoDB, and have created tables and data before you proceed.
+Assuming that have downloaded from [https://aws.amazon.com/blogs/aws/dynamodb-local-for-desktop-development/](<https://aws.amazon.com/blogs/aws/dynamodb-local-for-desktop-development/> "target=\"\_blank\"") and are running the database locally with the command java -Djava.library.path=./DynamoDBLocal\_lib -jar DynamoDBLocal.jar -sharedDb , you can access the database from a browser at http://localhost:8000/shell/ .&nbsp; Make sure you're able to access your DynamoDB, and have created tables and data before you proceed.
 
 &nbsp;
 

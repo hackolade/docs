@@ -1,4 +1,4 @@
-# Versioning
+# Model versioning
 
 In the advanced [Compare and Merge Models](<Compareandmergemodels.md>) feature, the application offers a side-by-side comparison of 2 models, with the ability to resolve and merge differences. This feature can be used in several use cases described below.
 

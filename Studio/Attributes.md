@@ -28,15 +28,31 @@ One or more attributes (child field, pattern field, or choice) can be created, a
 
 ### Field
 
-This is the most common attribute in a schema.&nbsp; It defines the name-value pair that will be found in the JSON document.&nbsp; The properties define the details and constraints of both the name and the value in the pair.&nbsp; As defined by the JSON Schema specification, the available types for a field value are: string, numeric, boolean, object (document), array, and null.&nbsp; For the purpose of MongoDB, additional BSON types are available: objectID, binary, date, timestamp, regex, JavaScript, JavaScript with scope, symbol, minKey, and maxKey. &nbsp;
+This is the most common attribute in a schema.&nbsp; It defines the name-value pair that will be found in the JSON document.&nbsp; The properties define the details and constraints of both the name and the value in the pair.&nbsp; As defined by the JSON Schema specification, the available data types for a field value are: string, numeric, boolean, object (document), array, and null.&nbsp; For the purpose of MongoDB, additional BSON types are available: objectID, binary, date, timestamp, regex, JavaScript, JavaScript with scope, symbol, minKey, and maxKey. &nbsp;
 
 &nbsp;
 
-The nominal case is for an attribute to have only one type.&nbsp; The JSON specification however allows a field to be of multiple types.&nbsp; The application UI is able to define and maintain multiple types for a field.
+The nominal case is for an attribute to have only one type.&nbsp; The JSON specification however allows a field to be of multiple types.&nbsp; The application UI is able to define and maintain multiple types for a field.&nbsp; If the data types in the multiple set are all scalar types (string, number, boolean, null), then you just press the + sign to the right of the data type property:
+
+![Data types multiple](<lib/Data%20types%20multiple.png>)
+
+If one of the data types is complex (array or object), then you must use a choice, cfr below.
 
 &nbsp;
 
 The nature of attributes is different for document, array, or others.&nbsp; Documents are allowed to have one or more Fields, Pattern Fields, and/or Choices as attributes.&nbsp; Arrays are allowed to have one or more Array Items and/or Choices as attributes.&nbsp; As for all other types of fields, the only possible attribute is ‘Choice’.
+
+&nbsp;
+
+With version 5.3.0, Hackolade introduced the possibility, in the JSON target only, to have an undefined data type called "any".&nbsp; This allows you to have no restriction on the data type.&nbsp; While the declaration of the "any" data type is explicit in the UI, the result in JSON Schema is the absence of a data type declaration.&nbsp; In other words, the selection of the "any" data type:
+
+![JSON Schema undefined data type any](<lib/JSON%20Schema%20undefined%20data%20type%20any.png>)
+
+results in the following JSON Schema declaration:
+
+![Image](<lib/JSON%20Schema%20undefined%20data%20type%20any%20result.png>)
+
+&nbsp;
 
 &nbsp;
 

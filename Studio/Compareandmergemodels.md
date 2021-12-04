@@ -1,6 +1,6 @@
 # Compare and merge models
 
-Before using this feature, you may want to read the [versioning concept page](<Versioning.md>) as it is useful to understand the philosophy behind the compare and merge functionality.&nbsp;
+Before using this feature, you may want to read the [versioning concept page](<Modelversioning.md>) as it is useful to understand the philosophy behind the compare and merge functionality.&nbsp;
 
 &nbsp;
 

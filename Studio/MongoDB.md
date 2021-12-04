@@ -8,7 +8,7 @@ Hackolade was specially built to support the [data modeling of MongoDB](<https:/
 
 &nbsp;
 
-The data model in the picture below results from the reverse-engineering of the [Yelp Challenge Dataset](<https://www.yelp.com/dataset\_challenge> "target=\"\_blank\"").
+The data model in the picture below results from the reverse-engineering of the [Yelp Challenge Dataset](<https://www.kaggle.com/yelp-dataset/yelp-dataset> "target=\"\_blank\"").
 
 ![MongoDB workspace](<lib/MongoDB%20workspace.png>)
 
@@ -110,7 +110,7 @@ Since version 3.6, this script is now in extended JSON Schema syntax.&nbsp; Hack
 
 &nbsp;
 
-A button lets the user apply to a selected instance the script to create databases, collections with optional $jsonschema validator, indexes, and sharding configuration, as well sa sample data if desired.
+A button lets the user apply to a selected instance the script to create databases, collections with optional $jsonschema validator, indexes, and sharding configuration, as well as sample data if desired.
 
 &nbsp;
 
@@ -120,11 +120,7 @@ The connection is established using a connection string including (IP) address a
 
 &nbsp;
 
-The Hackolade process for reverse-engineering of MongoDB databases is different depending on the MongoDB version.&nbsp; For versions prior to 3.2, collections are queried with a random function. Starting with version 3.2, Hackolade uses [$sample](<https://docs.mongodb.com/manual/reference/operator/aggregation/sample/> "target=\"\_blank\"") syntax to perform the statistical sampling followed by the schema inference. &nbsp;
-
-&nbsp;
-
-User may define the sampling with a specific aggregation pipeline query and sort.
+The Hackolade process for reverse-engineering of MongoDB databases is different depending on the MongoDB version.&nbsp; For versions prior to 3.2, collections are queried with a random function. Starting with version 3.2, Hackolade uses [$sample](<https://docs.mongodb.com/manual/reference/operator/aggregation/sample/> "target=\"\_blank\"") syntax to perform the statistical sampling followed by the schema inference.&nbsp; You may define a custom sampling with a specific aggregation pipeline query and sort.&nbsp; You may also enable inference of implicit relationship in the data.
 
 &nbsp;
 

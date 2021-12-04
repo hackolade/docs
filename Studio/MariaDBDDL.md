@@ -1,4 +1,4 @@
-# MariaDB
+# MariaDB DDL
 
 As you develop the model for your MariaDB databases, tables, columns with their data types, as well as indexes and constraints, functions and procedures, Hackolade dynamically generates the corresponding DDL scripts:
 

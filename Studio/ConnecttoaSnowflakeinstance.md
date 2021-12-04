@@ -28,11 +28,11 @@ In the Hackolade connection settings dialog, give a meaningful name to the conne
 
 Host prefixes differ may depend on the platform:
 
-\- AWS: \<account\>.\<region\> for URL [https://\<account\>.\<region\>.snowflakecomputing.com/](<https://\<account\>.\<region\>.snowflakecomputing.com/> "target=\"\_blank\"")
+\- AWS: \<account\>.\<region\> for URL https://\<account\>.\<region\>.snowflakecomputing.com/
 
-[&nbsp;except for US West accounts where the URL follows the format https://\<account\>.snowflakecomputing.com/](<https://\<account\>.snowflakecomputing.com/>)
+[&nbsp;except for US West accounts where the URL follows the format ](<https://\<account\>.snowflakecomputing.com/>)https://\<account\>.snowflakecomputing.com/
 
-[\- Google Cloud: ](<https://os70966.europe-west4.gcp.snowflakecomputing.com/>)\<account\>.\<region\>.gcp for URL[ ](<https://os70966.europe-west4.gcp.snowflakecomputing.com/>)[https://\<account\>.\<region\>.gcp.snowflakecomputing.com/](<https://\<account\>.\<region\>.gcp.snowflakecomputing.com/>)
+[\- Google Cloud: ](<https://os70966.europe-west4.gcp.snowflakecomputing.com/>)\<account\>.\<region\>.gcp for URL[ ](<https://os70966.europe-west4.gcp.snowflakecomputing.com/>)https://\<account\>.\<region\>.gcp.snowflakecomputing.com/
 
 [\- Azure: ](<https://ah42164.west-europe.azure.snowflakecomputing.com/>)\<account\>.\<region\>.azure for URL [https://\<account\>.\<region\>.azure.snowflakecomputing.com/](<https://ah42164.west-europe.azure.snowflakecomputing.com/>)
 

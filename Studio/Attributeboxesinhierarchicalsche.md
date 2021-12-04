@@ -14,7 +14,7 @@ This page explains how to introduce new attributes and control them in a hierarc
 
 &nbsp;
 
-### &#49;. Root
+## &#49;. Root
 
 When you create a new collection, you get an empty hierarchical schema view with a fixed root:
 
@@ -22,7 +22,7 @@ When you create a new collection, you get an empty hierarchical schema view with
 
 &nbsp;
 
-### &#50;. Add, Insert or Append
+## &#50;. Add, Insert or Append
 
 In simple terms, the difference between the 3 actions are:
 
@@ -32,7 +32,7 @@ In simple terms, the difference between the 3 actions are:
 
 \- Append: introduce a new attribute at the bottom of the level of the selected attribute
 
-#### &#50;.1 Add Attribute
+### &#50;.1 Add Attribute
 
 Not all types of fields are allowed to have attributes.&nbsp; Root is allowed to have only attributes as children, no siblings.&nbsp; Documents are also allowed to have attributes a and arrays are will have array items. &nbsp;
 
@@ -40,7 +40,7 @@ Not all types of fields are allowed to have attributes.&nbsp; Root is allowed to
 
 &nbsp;
 
-#### &#50;.2 Insert Attribute
+### &#50;.2 Insert Attribute
 
 Siblings can be inserted before the selected attribute, at the same level. &nbsp; .
 
@@ -50,7 +50,7 @@ Siblings can be inserted before the selected attribute, at the same level. &nbsp
 
 &nbsp;
 
-#### &#50;.3 Append Attribute
+### &#50;.3 Append Attribute
 
 Siblings can be appended at the bottom of the same level.
 
@@ -60,21 +60,21 @@ Siblings can be appended at the bottom of the same level.
 
 &nbsp;
 
-### &#51;. Controls
+## &#51;. Controls
 
 When an attribute is selected, the color of the box is changed to turquoise. &nbsp;
 
-#### &#51;.1 Introduce an attribute
+### &#51;.1 Introduce an attribute
 
 There are 4 ways to introduce a new attribute
 
-##### &#51;.1.1 Menu
+#### &#51;.1.1 Menu
 
 Choose the appropriate option in the Actions menu:
 
 ![Menu - Actions](<lib/Menu%20-%20Actions.png>)
 
-##### &#51;.1.2 Shortcuts
+#### &#51;.1.2 Shortcuts
 
 Press the keyboard shortcut of your choice:
 
@@ -90,7 +90,7 @@ Press the keyboard shortcut of your choice:
 | Ctrl+D | Duplicate |
 
 
-##### &#51;.1.3 Toolbar
+#### &#51;.1.3 Toolbar
 
 Choose the appropriate icon in the toolbar:
 
@@ -129,7 +129,7 @@ with:
 | ![Icons - duplicate](<lib/Icons%20-%20duplicate.jpeg>) | Duplicate |
 
 
-##### &#51;.1.4 Contextual menu
+#### &#51;.1.4 Contextual menu
 
 Right-click on an existing item to display a contextual menu:
 
@@ -137,11 +137,11 @@ Right-click on an existing item to display a contextual menu:
 
 Only available options are activated, depending on the item selected when you perform the right-click.&nbsp; To understand the different types of attributes, you may want to read this [page](<Attributes.md>).
 
-#### &#51;.2 Move an attribute
+### &#51;.2 Move an attribute
 
 To change the order of the attributes within a level, use the Move Up or Move Down icons in the toolbar.&nbsp; You may also move an attribute with your mouse by selecting the attribute, holding your left mouse button and dragging the box up or down in the same level.
 
-#### &#51;.3 Delete an attribute
+### &#51;.3 Delete an attribute
 
 There are several ways to delete an attribute.&nbsp; You must first select it, then:
 
@@ -159,7 +159,7 @@ There are several ways to delete an attribute.&nbsp; You must first select it, t
 
 &nbsp;
 
-#### &#51;.4 Duplicate an attribute
+### &#51;.4 Duplicate an attribute
 
 When you choose to duplicate an attribute, all the properties of the selected item will be copied to a new attribute as a sibling at the same level, including the relationship.&nbsp; There are several ways to delete an attribute.&nbsp; You must first select it, then:
 
@@ -177,13 +177,13 @@ When you choose to duplicate an attribute, all the properties of the selected it
 
 &nbsp;
 
-#### &#51;.5 Cut, Copy, and Paste
+### &#51;.5 Cut, Copy, and Paste
 
 These control have a behavior similar to what is expected in any desktop application.&nbsp; When performing the operation, all the properties of the selected attribute will be copied to a new attribute as a sibling at the same level, including the relationship.&nbsp;
 
 &nbsp;
 
-#### &#51;.6&nbsp; Collapse/Expand
+### &#51;.6&nbsp; Collapse/Expand
 
 When an attribute has at least one attribute, its descendance can be collapse or expanded by pressing the - or the + sign to the right of the box:
 
@@ -195,7 +195,7 @@ When an attribute has at least one attribute, its descendance can be collapse or
 
 &nbsp;
 
-#### &#51;.7 Toggle details
+### &#51;.7 Toggle details
 
 You may also toggle the appearance of details by pressing the ![Icons - toggle Details](<lib/Icons%20-%20toggleDetails.jpeg>) button:
 
@@ -205,9 +205,9 @@ You may also toggle the appearance of details by pressing the ![Icons - toggle D
 
 &nbsp;
 
-### &#52;. Choosing family of attribute, field type, and choice
+## &#52;. Choosing family of attribute, field type, and choice
 
-#### &#52;.1 family of attributes
+### &#52;.1 family of attributes
 
 &nbsp;
 
@@ -229,7 +229,7 @@ For choices:
 
 &nbsp;
 
-#### &#52;.2 Field type
+### &#52;.2 Field type
 
 Field types include standard JSON Schema field types, plus the BSON types not already in JSON Schema.&nbsp; BSON is a binary serialization format used to store documents and make remote procedure calls in MongoDB. The BSON specification is located [here](<http://bsonspec.org> "target=\"\_blank\"").&nbsp; BSON supports the following data types as values in documents.
 
@@ -243,7 +243,7 @@ This list varies depending on the database target.
 
 &nbsp;
 
-'***4.3 Choice***
+### '*4.3 Choice*
 
 You may add choices for alternate sub-schemas:
 
@@ -255,7 +255,7 @@ You may add choices for alternate sub-schemas:
 
 &nbsp;
 
-#### &#52;.4 Reference definition
+### &#52;.4 Reference definition
 
 You may add references to re-usable objects as explained [here](<Reusableobjectsdefinitions.md>).
 
@@ -263,7 +263,7 @@ You may add references to re-usable objects as explained [here](<Reusableobjects
 
 &nbsp;
 
-#### &#52;.5 DBRef (MongoDB only)
+### &#52;.5 DBRef (MongoDB only)
 
 Hackolade supports this MongoDB [convention](<https://docs.mongodb.com/manual/reference/database-references/> "target=\"\_blank\"").&nbsp; &nbsp;
 
@@ -273,7 +273,7 @@ Hackolade supports this MongoDB [convention](<https://docs.mongodb.com/manual/re
 
 &nbsp;
 
-#### &#52;.6 Pick from list
+### &#52;.6 Pick from list
 
 If you want to re-use a previously created attribute (without making it a re-usable reference definition), then you can copy its properties with this option:
 

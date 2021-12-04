@@ -1,8 +1,26 @@
 # v5.x
 
-New features in v5.2.13 \[29-Nov-2021\]
+New features in v5.3.0 \[03-Dec-2021\]
 
 \- JSON Schema: added support for undefined data types marked "any"&nbsp;
+
+\- Amazon DocumentDB: added support with a new plugin with full support for forward-and reverse-engineering including inference of schemas in collections
+
+\- Network proxy: added a Test button with log
+
+\- Confluent Schema Registry with Avro Schema, JSON Schema, and Protobuf: added an option for unvalidated SSL connection
+
+\- Avro: adjusted forward-engineering of nested logicaTypes
+
+\- PostgreSQL: added handling when user has insufficient rights to read view select statement from information\_schema
+
+\- PostgreSQL: added handling of column encoding in forward- and reverse-engineering
+
+\- SQL Server: added support for temporal tables
+
+&nbsp;
+
+New features in v5.2.13 \[29-Nov-2021\]
 
 \- Polyglot: when deriving into an RDMBS target and normalizing, enhanced handling to use existing primary keys
 

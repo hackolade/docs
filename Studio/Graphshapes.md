@@ -60,7 +60,7 @@ If you will want to apply a new color to all node labels in the model, check the
 
 &nbsp;
 
-##### Create a node label subclass &nbsp;
+## Node label subclass &nbsp;
 
 For a given node label with its properties, there may be a need to declare additional node labels.&nbsp; These sub-nodes are a business-driven representation, and do not result in physical storage impacts.&nbsp; They are not forward-engineered, and cannot be inferred during reverse-engineering.&nbsp; Also, sub-nodes do have any properties.
 
@@ -80,7 +80,7 @@ You may edit the edge label in the properties pane of the sub-node:
 
 &nbsp;
 
-## Relationship type line controls
+## Edge labels (aka relationship types) line controls
 
 &nbsp;
 

@@ -6,7 +6,9 @@ Douglas Crockford originally specified the JSON format in the early 2000s. &nbs
 
 When using JSON documents, whether for document databases or data exchanges, it is useful to ensure the integrity and validity of the JSON document being exchanged or stored.&nbsp; In a similar way to how XSD provides a schema definition for XML, the [JSON Schema](<http://json-schema.org/> "target=\"\_blank\"") standard provides a clear human- and machine-readable documentation of of JSON documents that allow their annotation and validation.
 
-Hackolade provides graphical JSON Schema editing of the latest versions including [draft-04](<https://json-schema.org/specification-links.html#draft-4> "target=\"\_blank\""), [draft-06](<https://json-schema.org/specification-links.html#draft-6> "target=\"\_blank\""), [draft-07](<https://json-schema.org/specification-links.html#draft-7> "target=\"\_blank\""), [2019-09](<https://json-schema.org/specification-links.html#2019-09-formerly-known-as-draft-8> "target=\"\_blank\"").&nbsp; It lets you generate JSON Schema without needing to know JSON Schema syntax, and makes it easy to understand and edit your schema.
+## Graphical JSON Schema editor
+
+Hackolade provides graphical JSON Schema editing of the latest versions including [draft-04](<https://json-schema.org/specification-links.html#draft-4> "target=\"\_blank\""), [draft-06](<https://json-schema.org/specification-links.html#draft-6> "target=\"\_blank\""), [draft-07](<https://json-schema.org/specification-links.html#draft-7> "target=\"\_blank\""), [2019-09](<https://json-schema.org/specification-links.html#2019-09-formerly-known-as-draft-8> "target=\"\_blank\""), [2020-12](<https://json-schema.org/specification-links.html#2020-12> "target=\"\_blank\"").&nbsp; It lets you generate JSON Schema without needing to know JSON Schema syntax, and makes it easy to understand and edit your schema.
 
 &nbsp;
 
@@ -18,7 +20,21 @@ Hackolade provides the unique ability to integrate the structure for multiple do
 
 &nbsp;
 
-Hackolade works great to convert structures from [XSD](<ImportamodelfromXSD.md>) (XML Schema), from [DDL](<SQLDDL.md>) (Data Definition Language) for SQL relational databases (RDBMS) as well as all the targets Hackolade supports, whether for data-at-rest or data-in-motion.&nbsp; Hackolade shines at inferring the JSON Schema for any JSON document, and can also generate a sample JSON document for any JSON Schema.&nbsp; Hackolade on-boards a JSON Schema validator, and also allows for user-defined custom properties as well as extensions to allow the specific data types of the different database and protocol targets supported by the tool.&nbsp; A [command-line interface](<CommandLineInterface.md>) makes it easy to automate these functions and integrate them into a CI/CD pipeline.
+Hackolade allows an undefined data type called "any".&nbsp; This allows you to have no restriction on the data type.&nbsp; While the declaration of the "any" data type is explicit in the UI, the result in JSON Schema is the absence of a data type declaration.&nbsp; In other words, the selection of the "any" data type:
+
+![JSON Schema undefined data type any](<lib/JSON%20Schema%20undefined%20data%20type%20any.png>)
+
+results in the following JSON Schema declaration:
+
+![Image](<lib/JSON%20Schema%20undefined%20data%20type%20any%20result.png>)
+
+&nbsp;
+
+&nbsp;
+
+## Convert DDLs and XSD into JSON Schema
+
+Hackolade works great to convert structures from [XSD](<ImportamodelfromXSD.md>) (XML Schema) except for import and include, from [DDL](<SQLDDL.md>) (Data Definition Language) for SQL relational databases (RDBMS) as well as all the targets Hackolade supports, whether for data-at-rest or data-in-motion.&nbsp; Hackolade shines at inferring the JSON Schema for any JSON document, and can also generate a sample JSON document for any JSON Schema.&nbsp; Hackolade on-boards a JSON Schema validator, and also allows for user-defined custom properties as well as extensions to allow the specific data types of the different database and protocol targets supported by the tool.&nbsp; A [command-line interface](<CommandLineInterface.md>) makes it easy to automate these functions and integrate them into a CI/CD pipeline.
 
 &nbsp;
 
@@ -46,4 +62,5 @@ Hackolade provides a powerful and unique [side-by-side comparison of models](<Co
 
 &nbsp;
 
-You may also [generate documentation](<Generatedocumentation.md>) in HTML, Markdown or PDF. 
+You may also [generate documentation](<Generatedocumentation.md>) in HTML, Markdown or PDF. &nbsp;
+
