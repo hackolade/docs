@@ -159,6 +159,8 @@
         - [LDAP](<LDAP2.md>)
         - [SSH](<SSH2.md>)
         - [Astra](<Astra.md>)
+      - [Connect to Confluent Schema Registry](<ConnecttoConfluentSchemaRegistry.md>)
+        - [JKS Trust Store](<JKSTrustStore.md>)
       - [Connect to a Cosmos DB instance](<ConnecttoaCosmosDBinstance.md>)
         - [Core API](<CoreAPI.md>)
           - [Local instance](<Localinstance1.md>)

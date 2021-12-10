@@ -1,6 +1,6 @@
-# LDAP
+# JKS Trust Store
 
-If you require LDAP authentication, it is necessary, in order to connect to the DSE nodes via a secure connection, to select the SSL type.&nbsp; A keystore contains client certificate and client key.&nbsp; Whereas a truststore contains certificate authority (CA).
+If you require LDAP authentication, it is necessary, in order to connect to the Confluent Schema Registry via a secure connection, to select the SSL type.&nbsp; A keystore contains client certificate and client key.&nbsp; Whereas a truststore contains certificate authority (CA).
 
 &nbsp;
 
@@ -18,11 +18,11 @@ Alternatively, you may use certificates issued from the keystore.
 
 ## Accessing the keystore&nbsp;
 
-Specify the path and filename to keystore, the access password, and the alias name for the Cassandra instance.
+Specify the path and filename to keystore, the access password, and the alias name for the Confluent Schema Registry instance.
 
 &nbsp;
 
-![Cassandra Connection Settings - LDAP JKS](<lib/Cassandra%20Connection%20Settings%20-%20LDAP%20JKS.png>)
+![Image](<lib/Confluent%20Connection%20Settings%20-%20LDAP%20JKS.png>)
 
 &nbsp;
 
@@ -41,10 +41,6 @@ The alias can be found in the section “Alias name”.&nbsp; If no alias was se
 ## Accessing the truststore
 
 If necessary, you may also declare truststore parameters:
-
-&nbsp;
-
-![Cassandra Connection Settings - LDAP truststo](<lib/Cassandra%20Connection%20Settings%20-%20LDAP%20truststo.png>)
 
 &nbsp;
 

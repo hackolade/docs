@@ -1,5 +1,35 @@
 # v5.x
 
+New features in v5.3.1 \[10-Dec-2021\]
+
+\- Model compare and merge: increased consistency between CLI and GUI outputs
+
+\- Avro: added logicalType property generation for local-timestamp-millis and local-timestamp-micros
+
+\- BigQuery: added string literals with quotes and new lines in DDL forward-engineering
+
+\- Cassandra/ScyllaDB: adjusted handling of of CQL for columns with data type map
+
+\- Confluent Schema Registry with Avro Schema, JSON Schema, and Protobuf: added ability to attach a Trust Store (.jks) file for connection
+
+\- Hive: added string literals with quotes and new lines in DDL forward-engineering
+
+\- MariaDB: added string literals with quotes and new lines in DDL forward-engineering
+
+\- MongoDB: improved reverse-engineering when empty collections are in instance
+
+\- MongoDB: improved reverse-engineering when views have unsupported pipeline stage
+
+\- PostgreSQL: improved reverse-engineering to retrieve only columns data types json and jsonb for sampling
+
+\- SQL Server: added handling of additional table options in temporal tables
+
+\- Synapse: added handling of views with binding errors during reverse-engineering
+
+\- all RDBMS targets: improved warning to list names when reverse-engineering choices from JSON Schema or XSDs
+
+&nbsp;
+
 New features in v5.3.0 \[03-Dec-2021\]
 
 \- JSON Schema: added support for undefined data types marked "any"&nbsp;
