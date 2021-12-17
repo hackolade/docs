@@ -1,5 +1,21 @@
 # v5.x
 
+New features in v5.3.1 \[17-Dec-2021\]
+
+\- Avro: added logicalType object generation for definitions
+
+\- Delta Lake/Databricks: implemented support for decimal type precision and scale
+
+\- Delta Lake/Databricks: added handling for truncated output response of the Databricks API
+
+\- MarkLogic: filter out non-JSON documents during reverse-engineering
+
+\- SQL Server: added handling for empty DEFAULT during reverse-engineering
+
+\- all RDBMS targets: enabled choices for JSON data types in JSON columns
+
+&nbsp;
+
 New features in v5.3.1 \[10-Dec-2021\]
 
 \- Model compare and merge: increased consistency between CLI and GUI outputs
