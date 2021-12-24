@@ -1,6 +1,22 @@
 # v5.x
 
-New features in v5.3.1 \[17-Dec-2021\]
+New features in v5.3.3 \[24-Dec-2021\]
+
+\- Naming conventions: added tooltips to = signs for coupling of business and technical name
+
+\- Collibra: added Technical Name characteristic and changed mapping of Full Name to use technical name if present
+
+\- JSON Schema: added tolerance for $refs with OpenAPI structure "/components/schemas/..."
+
+\- Avro: added handling of multiple types inside choices
+
+\- Delta Lake/Databricks: refactored reverse-engineering process&nbsp;
+
+\- SQL Server: automatically attempt to reconnect without encryption if localhost set with encryption
+
+&nbsp;
+
+New features in v5.3.2 \[17-Dec-2021\]
 
 \- Avro: added logicalType object generation for definitions
 
