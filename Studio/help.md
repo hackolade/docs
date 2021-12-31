@@ -229,6 +229,8 @@
         - [SQL Server authentication](<SQLServerauthentication.md>)
         - [Windows authentication](<Windowsauthentication.md>)
         - [Azure Active Directory authentication](<AzureActiveDirectoryauthenticati.md>)
+        - [SSL](<SSL5.md>)
+        - [SSH](<SSH6.md>)
       - [Connect to Synapse](<ConnecttoSynapse.md>)
       - [Swagger file](<Swaggerfile1.md>)
       - [Connect to a TinkerPop instance](<ConnecttoaTinkerPopinstance.md>)

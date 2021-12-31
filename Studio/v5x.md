@@ -1,12 +1,28 @@
 # v5.x
 
+New features in v5.3.4 \[31-Dec-2021\]
+
+\- JSON Schema reverse-engineering: display warning dialog if missing external reference files
+
+\- Cassandra/ScyllaDB: harmonized path and file name for ALTER script CQL file from compMod delta model
+
+\- OpenAPI: added possibility to choose between resolution of references when converting to Polyglot, or save as model definitions (UDTs)
+
+\- PostgreSQL: added CLI command to generate ALTER script DDL from compMod delta model
+
+\- SQL Server: added support for SSL and SSH connections
+
+&nbsp;
+
 New features in v5.3.3 \[24-Dec-2021\]
 
 \- Naming conventions: added tooltips to = signs for coupling of business and technical name
 
 \- Collibra: added Technical Name characteristic and changed mapping of Full Name to use technical name if present
 
-\- JSON Schema: added tolerance for $refs with OpenAPI structure "/components/schemas/..."
+\- JSON Schema reverse-engineering: added tolerance for $ref with OpenAPI structure "/components/schemas/..."
+
+\- JSON Schema reverse-engineering: added tolerance for $ref at toot level
 
 \- Avro: added handling of multiple types inside choices
 
