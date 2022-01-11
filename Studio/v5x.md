@@ -1,10 +1,6 @@
 # v5.x
 
-\- Oracle: added support with a new plugin with full support for forward-engineering of DDL, and reverse-engineering including inference of schemas in JSON data types (Oracle 21c and above) and of JSON documents in VARCHAR2, CLOB and BLOB data types (12c, 18c, and 19c)
-
-&nbsp;
-
-New features in v5.3.5 \[10-Jan-2022\]
+New features in v5.3.5 \[11-Jan-2022\]
 
 \- Added help button with link to online documentation in Connection Settings dialog of various targets
 
@@ -13,8 +9,6 @@ New features in v5.3.5 \[10-Jan-2022\]
 \- Added handling for external references to root of JSON Schema, for example "$ref": "party.json#"
 
 \- Collibra: enhanced reverse-engineering to maintain coupling of business and technical names
-
-\-&nbsp;
 
 &nbsp;
 

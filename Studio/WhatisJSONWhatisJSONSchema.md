@@ -102,9 +102,8 @@ The design of a JSON document depend largely on its intended use within an appli
 
 For example for the above order document, the JSON Schema is as follows:
 
-> {
-
-> &nbsp; &nbsp; "$schema": "http://json-schema.org/draft-04/schema#",\
+> {\
+&nbsp; &nbsp; "$schema": "http://json-schema.org/draft-04/schema#",\
 &nbsp; &nbsp; "type": "object",\
 &nbsp; &nbsp; "title": "order",\
 &nbsp; &nbsp; "properties": {\
@@ -154,7 +153,7 @@ For example for the above order document, the JSON Schema is as follows:
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "number"\
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }\
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "additionalProperties": false,\
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "additionalProperties": true,\
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "required": \[\
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "sku",\
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "description",\

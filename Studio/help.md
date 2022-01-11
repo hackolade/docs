@@ -23,6 +23,7 @@
     - [What is JSON?  What is JSON Schema?](<WhatisJSONWhatisJSONSchema.md>)
     - [Create your first data model](<Createyourfirstdatamodel.md>)
     - [Add nested objects and arrays](<Addnestedobjectsandarrays.md>)
+    - [Add a choice, conditional, or pattern field](<Addachoiceconditionalorpatternfi.md>)
 - [NoSQL databases, storage formats, REST APIs](<NoSQLdatabasesJSONRESTAPIs.md>)
   - [Polyglot Data Model](<PolyglotDataModel.md>)
   - [Couchbase](<Couchbase.md>)

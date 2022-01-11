@@ -159,5 +159,5 @@ The sample document generated in the right pane uses dummy values.&nbsp; You may
 
 &nbsp;
 
-In this tutorial, we have reviewed different ways to enter information in Hackolade Studio, as well as different ways to visualize the structure you've created.&nbsp; In the next tutorial, we will see how to create more complex structures.
+In this tutorial, we reviewed different ways to enter information in Hackolade Studio, as well as different ways to visualize the structure you've created.&nbsp; In the next tutorial, we will see how to create more complex structures.
 

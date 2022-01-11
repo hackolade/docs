@@ -1,8 +1,10 @@
 # Add nested objects and arrays
 
-In the previous tutorial, we saw how to create a first data model, which was quite basic but allowed us to review different ways to enter information in Hackolade Studio, as well as different ways to visualize structures.&nbsp; By the end of this second tutorial, you will master the creation of more complex data structures.
+In the previous tutorial, we saw how to create a first data model, which was quite basic but allowed us to review different ways to enter information in Hackolade Studio, as well as different ways to visualize structures.&nbsp; By the end of this tutorial, you will master the creation of more complex data structures.
 
 &nbsp;
+
+**Note:** complex data types are not available in all target technologies supported by Hackolade, in which case the feature is disabled.&nbsp; Or they may use a different terminology: map, struct, list, tuple, enumeration, ...&nbsp; Hackolade uses the terminology and data types supported by the target technology.
 
 ## Object
 
@@ -50,5 +52,5 @@ As expected, Hackolade Studio continues to generate the JSON Schema and sample J
 
 &nbsp;
 
-In this tutorial, we have reviewed how to create more complex structures with objects and arrays.&nbsp; In the next tutorial, we will cover JSON Schema choices (oneOf, allOf, anyOf) as well as conditional application of subschemas.
+In this tutorial, we reviewed how to create more complex structures with objects and arrays.&nbsp; In the next tutorial, we will cover JSON Schema choices (oneOf, allOf, anyOf) as well as conditional application of subschemas, and pattern fields.
 

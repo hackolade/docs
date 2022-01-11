@@ -84,10 +84,10 @@ In Hackolade, the above example is modeled this way:
 
 In JSON Schema, there are 4 possible choices: “allOf”, “anyOf”, “oneOf”, and “noneOf”.&nbsp; Each of these attributes contains an array, with each attribute of the array representing content that will be matched against.&nbsp; The choice of “allOf”, “anyOf”, “oneOf”, or “not” determines how the validation processor will treat the results of the matches:&nbsp;
 
-* allOf requires that all attributes in the array are matched successfully.
-* anyOf requires one or more of the attributes in the array to be matched successfully.
-* oneOf requires one, and only one, of the attributes in the array to match successfully.
-* noneOf requires that no attribute in the array is matched successfully.
+* allOf requires that all attributes in the suschema are matched successfully.
+* anyOf requires one or more of the attributes in the subschema to be matched successfully.
+* oneOf requires one, and only one, of the attributes in the subschema to match successfully.
+* noneOf requires that no attribute in the subschema is matched successfully.
 
 Schema definitions can use “allOf”, “anyOf”, “oneOf”, and “noneOf” individually or in combination, providing significant flexibility for defining attributes that have complex definitions or contextual relationships.&nbsp; These choices apply both to fields and to field properties.&nbsp; In both cases, the only possible attribute of Choice is a Subschema.
 
