@@ -12,5 +12,9 @@ Hackolade's recommended systems configuration is any of the following platforms:
 
 &nbsp;
 
-Note: Hackolade does not have any kind of telemetry, and no information on application usage is collected.&nbsp; For all details, please consult our [Privacy Policy](<https://hackolade.com/privacy.html> "target=\"\_blank\"").
+In particular, in environments with proxies using SSL inspection (Zscalar, BlueCoat, etc.) it is critical that Hackolade be whitelisted to connect properly with SSL/TLS protocols.
+
+&nbsp;
+
+**Note:** Hackolade does not have any kind of telemetry, and no information on application usage is collected.&nbsp; For all details, please consult our [Privacy Policy](<https://hackolade.com/privacy.html> "target=\"\_blank\"").
 

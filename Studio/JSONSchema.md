@@ -24,7 +24,9 @@ The JSON Schema for the entity can also be viewed in the left-hand pane of the J
 
 Several important options are available:
 
-&#49;) JSON Schema compliance:
+## JSON Schema compliance
+
+Hackolade extends JSON Schema for data types as well as non-standard keywords.&nbsp; When displaying or exporting JSON Schema, you may choose the compliance level:
 
 \- standard: only JSON Schema keywords and data types are used -- this output should pass validation with standard validators
 
@@ -38,7 +40,9 @@ Several important options are available:
 
 &nbsp;
 
-&#50;) JSON Schema specification:output is dynamically adapted to the selected specification:
+## JSON Schema specification
+
+JSON Schema output is dynamically adapted to the selected specification:
 
 \- [draft-04](<https://json-schema.org/specification-links.html#draft-4> "target=\"\_blank\"")
 
@@ -52,7 +56,9 @@ Several important options are available:
 
 &nbsp;
 
-&#51;) Definitions:
+## Definitions
+
+When displaying or exporting JSON Schema, the references can used as described or transformed:
 
 \- referenced: definitions are referenced as described in the model, using $ref syntax
 

@@ -162,7 +162,7 @@ You may also do a right-click and access the same functions through the contextu
 
 ### Hierarchical hierarchical schema view of entities (collections/tables/nodes \& edges)
 
-***TIP:*** you may change the order of the fields/attributes with these control icons: ![DTD field order arrows](<lib/DTD%20field%20order%20arrows.png>)
+***TIP:*** you may change the order of the fields/attributes with these control icons: ![Toolbar field order up-down arrows](<lib/DTD%20field%20order%20arrows.png>)
 
 &nbsp;
 

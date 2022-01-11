@@ -8,7 +8,7 @@ Some difficulties start appearing with increased complexity of the data and scal
 
 &nbsp;
 
-A database model describes the business.&nbsp; **A database model is the blueprint** of the application.&nbsp; Such a map helps evaluate design options beforehand, **think through the implications** of different alternatives, and recognize potential hurdles before committing sizable amounts of development effort.&nbsp; A database model helps plan ahead, in order to minimize later rework.&nbsp; In the end, **the modeling process accelerates development, increases quality of the application, and reduces execution risks.** &nbsp;
+A data model describes the business.&nbsp; **A data model is the blueprint** of the application.&nbsp; Such a map helps evaluate design options beforehand, **think through the implications** of different alternatives, and recognize potential hurdles before committing sizable amounts of development effort.&nbsp; A data model helps plan ahead, in order to minimize later rework.&nbsp; In the end, **the modeling process accelerates development, increases quality of the application, and reduces execution risks.** &nbsp;
 
 &nbsp;
 

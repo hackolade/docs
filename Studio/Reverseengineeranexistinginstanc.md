@@ -1,13 +1,13 @@
 # Reverse-engineering
 
-Reverse engineering is a useful feature to facilitate the modeling and documentation of existing instances.&nbsp; After the reverse engineering has been performed, the user can enrich the model created, by filling descriptions, recording constraints that were not obvious from the stored data, documenting relationships, etc…
+The reverse-engineering function is used to import information into pre-existing or empty data.&nbsp; Reverse engineering is a useful feature to facilitate the modeling and documentation of existing instances.&nbsp; After the reverse engineering has been performed, the user can enrich the model created, by filling descriptions, recording constraints that were not obvious from the stored data, documenting relationships, etc…
 
 &nbsp;
 
-Hackolade supports the reverse engineer of different types of data sources:
+Hackolade supports the reverse engineer of different types of data sources foudn in the menu on the left.
 
-* a JSON document: conversion of a basic JSON document into a Hackolade collection schema
-* a JSON Schema: conversion of a JSON Schema file into a Hackolade collection schema
+* a JSON or YAML document: conversion of a basic JSON or YAML document into a Hackolade collection schema
+* a JSON Schema or YAML Schema: conversion of a JSON Schema file into a Hackolade collection schema
 * a Data Definition Language file (DDL): from Oracle, Microsoft SQL Server, MySQL, PostgreSQL, Hadoop Hive, Snowflake, Teradata
 * an XSD schema file from another ER tool, such as erwin, ER/Studio, PowerDesigner, or other
 * an Excel file template: first export a Hackolade model (even an empty one) to generate an Excel file for the target of your choice.&nbsp; Then you may bulk edit your model or create a new one before ingesting it bak into the application.

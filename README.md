@@ -2,7 +2,7 @@
 
 Product documentation: tutorials, how-to guides, reference, conceptual
 
-Following methodology described [here](https://documentation.divio.com/introduction/), also edscirbed in this [article](https://openviewpartners.com/blog/developer-documentation#.YETe22hKhIA).
+Following methodology described [here](https://documentation.divio.com/introduction/), also described in this [article](https://openviewpartners.com/blog/developer-documentation#.YETe22hKhIA).
 
 ## Read docs at https://hackolade.com/help
 

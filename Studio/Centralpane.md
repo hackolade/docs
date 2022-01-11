@@ -1,18 +1,22 @@
 # Central pane
 
-&nbsp;
-
-The central pane is where you can visualize your NoSQL database model and collection schema.&nbsp; The central pane adapts to the selected top and bottom tabs, for example:
+The central pane is where you can visualize your data model and the schema for each individual entity.&nbsp; The central pane adapts to the selected top and bottom tabs:
 
 &nbsp;
 
-Entity Relationship diagram of a database model:
+## Entity Relationship Diagram view
+
+Hackolade has this unique capability to represent hierarchical structures in entity-relationship diagrams in a user-friendly manner.&nbsp; This is an improvement on traditional ERD tools which will represent each nested object in a separate box of the ERD.
+
+&nbsp;
+
+The central pane displays the ERD, letting you create, maintain and visualize your data structure:
 
 ![Central pane - ER diagram](<lib/Central%20pane%20-%20ER%20diagram.png>)
 
 &nbsp;
 
-With large models, it is possible that to fit the entire ERD on screen, the zoom level does not allow to read the information.&nbsp; For performance reasons, Hackolade displays a sketchy rendition of the diagram:
+With large models, it is possible that, to fit the entire ERD on screen, the zoom level does not allow to read the information.&nbsp; For performance reasons, Hackolade displays a sketchy rendition of the diagram:
 
 ![Central pane - sketchy ERD](<lib/Central%20pane%20-%20sketchy%20ERD.png>)
 
@@ -22,7 +26,9 @@ You may control the the zoom level range of the sketchy rendition via a paramete
 
 &nbsp;
 
-Hierarchical schema view of an entity schema:
+## Hierarchical schema view
+
+For each entity in your diagram, it can be very handy to visualize and maintain the structure in a separate tab with the hierarchical schema view of the entity schema:
 
 ![Central pane - hierarchical schema view](<lib/Central%20pane%20-%20hierarchical%20schema%20view.png>)
 
@@ -33,7 +39,7 @@ From the ERD, you may open the hierarchical schema view in a number of ways:
 \- double click on the entity title\
 \- click once on the middle-right icon in the entity title\
 \- right-click on the entity title and choose Open in new tab\
-\- right-click on the entity name in the Object Browser on the left, and choose Open in new tab
+\- right-click on the entity name in the Object Browser on the left, and choose Open in new tab, or double-click on the entity name
 
 &nbsp;
 
@@ -45,27 +51,61 @@ From the ERD, you may open the hierarchical schema view in a number of ways:
 
 &nbsp;
 
-JSON Preview of an entity:
+### JSON Preview
+
+In this upper tab dedicated to a specific entity, there are several lower tabs.&nbsp; The JSON Preview tab provides 2 side-by-side panes: one for the JSON Schema of the entity, and the other tab is for a sample JSON document of the structure:
 
 ![Central pane - JSON Preview](<lib/Central%20pane%20-%20JSON%20Preview.png>)
 
 &nbsp;
 
-Standard is limited to purely JSON Schema data types and keywords.
+&nbsp;
 
-Full is limited to JSON Schema data types, but also includes all properties, including user-defined.
+Several options are available for the display of the JSON Preview lower tab:
 
-Extended generates an output that may include other data types than JSON Schema-compliant data types.
+Hackolade extends JSON Schema for data types as well as non-standard keywords.&nbsp; When displaying or exporting JSON Schema, you may choose the compliance level:
+
+\- standard: only JSON Schema keywords and data types are used -- this output should pass validation with standard validators
+
+\- full: custom keywords are also listed for a full view of the schema, but only standard JSON data types are used -- this output should pass validation as long as additionalProperties are set to true
+
+\- extended: data types are specific to the target of the model, plus internal properties and keywords are also listed. &nbsp;
 
 &nbsp;
 
-Referenced definitions lists $ref references to internal, model, and external definitions
-
-Resolved definitions replaces the references by an instance of the respective definitions
+**Important note:** in extended compliance, it is normal that the exported JSON Schema does not pass the test of validators.&nbsp; This is because data types used for a given target may be non-JSON data types.&nbsp; For example ObjectId for MongoDB, or UUID in Cassandra, etc...
 
 &nbsp;
 
-A set of tabs appears at the top of the central pane.&nbsp; They let you work on several collections in parallel, or consult relevant information in other collections.
+&nbsp;
+
+JSON Schema output is dynamically adapted to the selected specification:
+
+\- [draft-04](<https://json-schema.org/specification-links.html#draft-4> "target=\"\_blank\"")
+
+\- [draft-06](<https://json-schema.org/specification-links.html#draft-6> "target=\"\_blank\"")
+
+\- [draft-07](<https://json-schema.org/specification-links.html#draft-7> "target=\"\_blank\"")
+
+\- [2019-09](<https://json-schema.org/specification-links.html#2019-09-formerly-known-as-draft-8> "target=\"\_blank\"")
+
+\- [2020-12](<https://json-schema.org/specification-links.html#2020-12> "target=\"\_blank\"")
+
+&nbsp;
+
+When displaying or exporting JSON Schema, the references can used as described or transformed:
+
+\- referenced: definitions are referenced as described in the model, using $ref syntax
+
+\- resolved:: definitions are resolved to list the content of the reference.
+
+\- internal: references to external and model definitions are converted into internal definitions
+
+&nbsp;
+
+## Upper and lower tabs
+
+A set of tabs appears at the top of the central pane.&nbsp; They let you work on several entities in parallel, or consult relevant information in other collections.
 
 ![Central pane - top tabs](<lib/Central%20pane%20-%20top%20tabs.png>)
 

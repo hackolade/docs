@@ -4,7 +4,7 @@ The Welcome page gives you a quick access to your recent models and workspace, a
 
 &nbsp;
 
-![Welcome page](<lib/Welcome%20page.png>)
+![Image](<lib/Welcome%20page.png>)
 
 &nbsp;
 
