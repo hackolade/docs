@@ -1,38 +1,17 @@
 # Reverse-engineering
 
-The reverse-engineering function is used to import information into pre-existing or empty data.&nbsp; Reverse engineering is a useful feature to facilitate the modeling and documentation of existing instances.&nbsp; After the reverse engineering has been performed, the user can enrich the model created, by filling descriptions, recording constraints that were not obvious from the stored data, documenting relationships, etc…
+The reverse-engineering function is used to import information into pre-existing or empty data models.&nbsp; Reverse engineering is a useful feature to facilitate the modeling and documentation of existing instances.&nbsp; After the reverse engineering has been performed, the user can enrich the model created, by filling descriptions, recording constraints that were not obvious from the stored data, documenting relationships, etc…
 
 &nbsp;
 
-Hackolade supports the reverse engineer of different types of data sources foudn in the menu on the left.
+Hackolade supports the reverse engineer of different types of data sources found in the menu on the left.
 
 * a JSON or YAML document: conversion of a basic JSON or YAML document into a Hackolade collection schema
 * a JSON Schema or YAML Schema: conversion of a JSON Schema file into a Hackolade collection schema
 * a Data Definition Language file (DDL): from Oracle, Microsoft SQL Server, MySQL, PostgreSQL, Hadoop Hive, Snowflake, Teradata
 * an XSD schema file from another ER tool, such as erwin, ER/Studio, PowerDesigner, or other
-* an Excel file template: first export a Hackolade model (even an empty one) to generate an Excel file for the target of your choice.&nbsp; Then you may bulk edit your model or create a new one before ingesting it bak into the application.
+* an Excel file template: first export a Hackolade model (even an empty one) to generate an Excel file for the target of your choice.&nbsp; Then you may bulk edit your model or create a new one before ingesting it back into the application.
 * target-specific
-  * an Apache Avro data file or schema.Hackolade reads .avro and .avsc files from the file system or cloud storage to convert the Avro schema in a Hackolade model.
-  * a Cassandra or DataStax (DSE) instance: Hackolade accesses a Cassandra instance through the REST API, reads the table and column setup, then samples columns with JSON types to probabilistically infer the Hackolade schema from the sampled JSON data.
-  * a Cosmos DB instance: Hackolade can reverse-engineer a local instance of Cosmos DB or hosted at Azure, using the SQL API (previously known as DocumentDB API), the MongoDB API, or the Gremlin API.&nbsp; The process performs a sampling of the selected collections and document types, and probabilistically infers the Hackolade schema from the sampled data.
-  * a Couchbase instance through a connection, samples the selected bucket(s), and probabilistically infers the Hackolade schema from the sampled data.
-  * a DynamoDB instance: Hackolade accesses DynamoDB either local or hosted at AWS.&nbsp; It performs a sampling of the selected tables, and probabilistically infers the Hackolade schema from the sampled data.
-  * a MongoDB database: Hackolade accesses a MongoDB instance through a connection, samples the selected collection(s), and derives a Hackolade schema from the sampled data
-  * a Mongoose schema: conversion of the JavaScript file containing a Mongoose schema, and transformation into a Hackolade collection schema&nbsp;
-  * a Schema Registry of AWS EventBridge, in OpenAPI 3.0.x format
-  * an Elasticsearch instance: Hackolade accesses an Elasticsearch instance through the REST API, samples the selected indices and types, and probabilistically infers the Hackolade schema from the sampled data plus the retrieved mappings.
-  * an AWS Glue Data Catalog instance: Hackolade access AWS via the CLI to read the catalog databases, tables and columns definitions
-  * an HBase instance: Hackolade accesses an HBase instance through the REST API, reads the table and column family setup, then samples column qualifiers with JSON types to probabilistically infer the Hackolade schema from the sampled JSON data.
-  * an Apache Hive instance: Hackolade accesses Hive via the Thrift service, reads the table and column setup, then samples columns with JSON types to probabilistically infer the Hackolade schema from the sampled JSON data.
-  * a MarkLogic instance: Hackolade access a MarkLogic instance and samples collections (or directories) to infer the schema of sampled documents.
-  * a Neo4j graph instance: Hackolade accesses a Neo4j instance through the REST API, and reads the Cypher setup for node labels and relationship types.
-  * a Parquet data file: Hackolade reads .parquet files from the file system or cloud storage to convert the Parquet schema in a Hackolade model.
-  * a ScyllaDB instance: Hackolade accesses a ScyllaDB instance through the REST API, reads the table and column setup, then samples columns with JSON types to probabilistically infer the Hackolade schema from the sampled JSON data.
-  * SQL Server and Azure SQL: Hackolade accesses an on-prem or cloud-based instance to fetch the DDL and derive the schema.&nbsp; If a column with data type varchar(MAX) or varchar(4000) is detected to contain JSON documents, records are sampled and the schema is inferred. &nbsp;
-  * Snowflake: Hackolade accesses an instance to fetch the DDL and derive the schema.&nbsp; If a column with data type VARIANT is detected to contain JSON documents, records are sampled and the schema is inferred. &nbsp;
-  * Synapse: Hackolade accesses an instance to fetch the DDL and derive the schema.&nbsp; If a column with data type varchar(MAX) or varchar(4000) is detected to contain JSON documents, records are sampled and the schema is inferred. &nbsp;
-  * Swagger and OpenAPI documentation files, in either JSON or YAML format
-  * a TinkerPop instance: Hackolade accesses a TinkerPop instance through the REST API, and reads the Gremlin setup for node labels and edge types.
 
 &nbsp;
 

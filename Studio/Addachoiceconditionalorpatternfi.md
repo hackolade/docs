@@ -1,6 +1,6 @@
 # Add a choice, conditional, or pattern field
 
-In the previous tutorial, we have reviewed how to create more complex structures with objects and arrays..&nbsp; By the end of this tutorial, you will master the creation of other types of JSON Schema attributes: choices, conditionals, and pattern fields.
+In the previous tutorial, we reviewed how to create more complex structures with objects and arrays.&nbsp; By the end of this tutorial, you will master the creation of other types of JSON Schema attributes: choices, conditionals, and pattern fields.
 
 &nbsp;
 
@@ -72,53 +72,53 @@ A better application of this feature is when having to allow the application of 
 
 Here is an example:
 
-> &nbsp; &nbsp; "if": {
+*&nbsp; &nbsp; "if": {*
 
-> &nbsp; &nbsp; &nbsp; &nbsp; "properties": {
+*&nbsp; &nbsp; &nbsp; &nbsp; "properties": {*
 
-> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "country": {
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "country": {*
 
-> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "string",
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "string",*
 
-> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "const": "United States"
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "const": "United States"*
 
-> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }*
 
-> &nbsp; &nbsp; &nbsp; &nbsp; }
+*&nbsp; &nbsp; &nbsp; &nbsp; }*
 
-> &nbsp; &nbsp; },
+*&nbsp; &nbsp; },*
 
-> &nbsp; &nbsp; "then": {
+*&nbsp; &nbsp; "then": {*
 
-> &nbsp; &nbsp; &nbsp; &nbsp; "properties": {
+*&nbsp; &nbsp; &nbsp; &nbsp; "properties": {*
 
-> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "postal\_code": {
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "postal\_code": {*
 
-> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "string",
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "string",*
 
-> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "pattern": "\[0-9\]{5}(-\[0-9\]{4})?"
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "pattern": "\[0-9\]{5}(-\[0-9\]{4})?"*
 
-> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }*
 
-> &nbsp; &nbsp; &nbsp; &nbsp; }
+*&nbsp; &nbsp; &nbsp; &nbsp; }*
 
-> &nbsp; &nbsp; },
+*&nbsp; &nbsp; },*
 
-> &nbsp; &nbsp; "else": {
+*&nbsp; &nbsp; "else": {*
 
-> &nbsp; &nbsp; &nbsp; &nbsp; "properties": {
+*&nbsp; &nbsp; &nbsp; &nbsp; "properties": {*
 
-> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "postal\_code": {
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "postal\_code": {*
 
-> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "string",
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "string",*
 
-> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "pattern": "\[A-Z\]\[0-9\]\[A-Z\] \[0-9\]\[A-Z\]\[0-9\]"
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "pattern": "\[A-Z\]\[0-9\]\[A-Z\] \[0-9\]\[A-Z\]\[0-9\]"*
 
-> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }*
 
-> &nbsp; &nbsp; &nbsp; &nbsp; }
+*&nbsp; &nbsp; &nbsp; &nbsp; }*
 
-> &nbsp; &nbsp; }
+*&nbsp; &nbsp; }*
 
 &nbsp;
 
@@ -138,7 +138,7 @@ To create a conditional structure, simply right-click and choose to add, insert,
 
 The application automatically creates conditional subschemas so you can define the constraints and expected outcomes::
 
-![Image](<lib/NewItem.png>)
+![Conditionals template](<lib/Conditionals%20template.png>)
 
 &nbsp;
 
@@ -170,7 +170,7 @@ To add a pattern field to a document structure, right-click and choose add/inser
 
 &nbsp;
 
-In this tutorial, we reviewed the creation of other types of JSON Schema attributes: choices, conditionals, and pattern fields..&nbsp; In the next tutorial, we will cover how to create reusable definitions.
+In this tutorial, we reviewed the creation of other types of JSON Schema attributes: choices, conditionals, and pattern fields.&nbsp; In the next tutorial, we will cover how to import or reverse-engineer structures in your data model.
 
 &nbsp;
 

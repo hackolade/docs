@@ -102,95 +102,95 @@ The design of a JSON document depend largely on its intended use within an appli
 
 For example for the above order document, the JSON Schema is as follows:
 
-> {\
-&nbsp; &nbsp; "$schema": "http://json-schema.org/draft-04/schema#",\
-&nbsp; &nbsp; "type": "object",\
-&nbsp; &nbsp; "title": "order",\
-&nbsp; &nbsp; "properties": {\
-&nbsp; &nbsp; &nbsp; &nbsp; "orderId": {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "number"\
-&nbsp; &nbsp; &nbsp; &nbsp; },\
-&nbsp; &nbsp; &nbsp; &nbsp; "customer": {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "object",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "properties": {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "custId": {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "string"\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "name": {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "string"\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "contact": {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "string"\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "address": {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "string"\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "additionalProperties": true,\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "required": \[\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "custId",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "name",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "contact",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "address"\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; \]\
-&nbsp; &nbsp; &nbsp; &nbsp; },\
-&nbsp; &nbsp; &nbsp; &nbsp; "line\_items": {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "array",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "additionalItems": true,\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "items": {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "object",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "properties": {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "sku": {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "string"\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "description": {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "string"\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "qty": {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "number"\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "unitPrice": {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "number"\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "additionalProperties": true,\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "required": \[\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "sku",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "description",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "qty",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "unitPrice"\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; \]\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }\
-&nbsp; &nbsp; &nbsp; &nbsp; },\
-&nbsp; &nbsp; &nbsp; &nbsp; "payment": {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "object",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "properties": {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "string"\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "last5": {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "string"\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "expiry": {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "string"\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "additionalProperties": true,\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "required": \[\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "last5",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "expiry"\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; \]\
-&nbsp; &nbsp; &nbsp; &nbsp; }\
-&nbsp; &nbsp; },\
-&nbsp; &nbsp; "additionalProperties": true,\
-&nbsp; &nbsp; "required": \[\
-&nbsp; &nbsp; &nbsp; &nbsp; "orderId",\
-&nbsp; &nbsp; &nbsp; &nbsp; "customer",\
-&nbsp; &nbsp; &nbsp; &nbsp; "line\_items",\
-&nbsp; &nbsp; &nbsp; &nbsp; "payment"\
-&nbsp; &nbsp; \]\
-}
+*{*\
+*&nbsp; &nbsp; "$schema": "http://json-schema.org/draft-04/schema#",*\
+*&nbsp; &nbsp; "type": "object",*\
+*&nbsp; &nbsp; "title": "order",*\
+*&nbsp; &nbsp; "properties": {*\
+*&nbsp; &nbsp; &nbsp; &nbsp; "orderId": {*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "number"*\
+*&nbsp; &nbsp; &nbsp; &nbsp; },*\
+*&nbsp; &nbsp; &nbsp; &nbsp; "customer": {*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "object",*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "properties": {*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "custId": {*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "string"*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "name": {*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "string"*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "contact": {*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "string"*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "address": {*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "string"*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "additionalProperties": true,*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "required": \[*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "custId",*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "name",*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "contact",*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "address"*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; \]*\
+*&nbsp; &nbsp; &nbsp; &nbsp; },*\
+*&nbsp; &nbsp; &nbsp; &nbsp; "line\_items": {*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "array",*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "additionalItems": true,*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "items": {*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "object",*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "properties": {*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "sku": {*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "string"*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "description": {*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "string"*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "qty": {*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "number"*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "unitPrice": {*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "number"*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "additionalProperties": true,*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "required": \[*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "sku",*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "description",*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "qty",*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "unitPrice"*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; \]*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }*\
+*&nbsp; &nbsp; &nbsp; &nbsp; },*\
+*&nbsp; &nbsp; &nbsp; &nbsp; "payment": {*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "object",*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "properties": {*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": {*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "string"*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "last5": {*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "string"*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "expiry": {*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "string"*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "additionalProperties": true,*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "required": \[*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type",*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "last5",*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "expiry"*\
+*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; \]*\
+*&nbsp; &nbsp; &nbsp; &nbsp; }*\
+*&nbsp; &nbsp; },*\
+*&nbsp; &nbsp; "additionalProperties": true,*\
+*&nbsp; &nbsp; "required": \[*\
+*&nbsp; &nbsp; &nbsp; &nbsp; "orderId",*\
+*&nbsp; &nbsp; &nbsp; &nbsp; "customer",*\
+*&nbsp; &nbsp; &nbsp; &nbsp; "line\_items",*\
+*&nbsp; &nbsp; &nbsp; &nbsp; "payment"*\
+*&nbsp; &nbsp; \]*\
+*}*
 
 &nbsp;
 

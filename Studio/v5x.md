@@ -1,5 +1,17 @@
 # v5.x
 
+New features in v5.4.0 \[14-Jan-2022\]
+
+\- Oracle: soft release of a new plugin with full support for forward-engineering of DDL, and reverse-engineering including inference of schemas in JSON data types (Oracle 21c and above) and of JSON documents in VARCHAR2, CLOB and BLOB data types (12c, 18c, and 19c) -- many improvemens still to come...
+
+\- Polyglot: added possibility to modify properties of attributes in target model, and hence deviate from the polyglot model (deactivate an attribute, or change constraints,...)
+
+\- Polyglot enhanced documentation in case of relationships or custom tab of properties&nbsp;
+
+\- JSON Schema reverse-engineering: added dialog to save model when external recursive external references have a relative path
+
+&nbsp;
+
 New features in v5.3.5 \[11-Jan-2022\]
 
 \- Added help button with link to online documentation in Connection Settings dialog of various targets
