@@ -34,17 +34,19 @@ Your next steps might be to start denormalizing and embedding, using this Hackol
 
 &nbsp;
 
-By default ERwin does not export primary key and foreign key constraints.&nbsp; It is suggested to use the parameters below when exporting models to XSD:
+For specific instructions on configuration to export XSD, please refer to the respective pages:
 
-![ERwin XSD export parameters](<lib/ERwin%20XSD%20export%20parameters.png>)
+\- [erwin](<Fromerwin.md>)
+
+\- [ER/Studio](<FromERStudio.md>)
 
 &nbsp;
 
-XSDs can be imported:
+XSDs can be imported in Hackolade:
 
 \- as entities in the ER diagram (not available for Swagger or OpenAPI targets)
 
-\- as model definitions
+\- as model definitions to be reused anywhere in the model
 
 &nbsp;
 

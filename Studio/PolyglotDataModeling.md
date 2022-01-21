@@ -68,11 +68,11 @@ If you add/delete/modify entities or attributes in the polyglot model from which
 
 ## Flexibilty
 
-In a basic use case, you could have just one polyglot model, and several target models derived entirely from the common polyglot models.&nbsp; Each target model would just reflect the physical implementation for its respective technology.&nbsp; Entities can be deleted from the target model, others can be added, and the model can be enriched with entity options, indexes, etc. to generate the proper artifacts (script, DDL, ...)&nbsp; But this use case is a bit theoretical, and reality will quickly dictate more flexible approaches.
+In a basic use case, you could have just one polyglot model, and several target models derived entirely from the common polyglot models.&nbsp; Each target model would just reflect the physical implementation for its respective technology.&nbsp; Entities can be deleted from the target model, others can be added, and the model can be enriched with entity options, indexes, etc. to generate the proper artifacts (script, DDL, ...)&nbsp; You may also deactivate attributes in the target model if they're not necessary, or you may modify some their properties.
 
 &nbsp;
 
-In a slightly more realistic use case, you could have target models that are each a different subset of a same polyglot model.&nbsp; Each target model may be supplemented by its own additional entities.
+But overall, the above use case is a bit theoretical, and reality will quickly dictate more flexible approaches. In a slightly more realistic use case, you could have target models that are each a different subset of a same polyglot model.&nbsp; Each target model may be supplemented by its own additional entities.
 
 &nbsp;
 

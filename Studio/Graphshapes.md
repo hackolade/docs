@@ -20,7 +20,7 @@ Since version 3.5.0, the node label controls only appear when you hover the mous
 
 &nbsp;
 
-##### Create new relationship type
+##### Create new edge label (aka relationship type)
 
 ![Graph create relationship type icon](<lib/Graph%20create%20relationship%20type%20icon.png>) Use this icon to activate the creation of a relationship type, originating from this node label.&nbsp; The next node label will be target of the relationship: if you select the same node label, it will create a recursive relationship, otherwise you should select another node label. &nbsp;
 

@@ -1,12 +1,36 @@
 # v5.x
 
+New features in v5.4.1 \[21-Jan-2022\]
+
+\- ERD: added more display options to hide attributes with specific properties (non-primary keys, non-required attributes, nullable attributes, etc.)
+
+\- Custom properties: ability to mark a custom property with a star (\*) to indicate a required entry, optionally with validation.&nbsp; Consult https://github.com/hackolade/plugins#26-property-controls for more details
+
+\- Model-driven API generation: added choice to keep Swagger/OpenAPI linked to source data model for synchronized evolution, with absolute or relative path
+
+\- Collibra: added publishing of Hackolade custom properties
+
+\- Couchbase: adjusted logic to display dialog to choose document type prompt even if INFER statement returned flavors
+
+\- Delta Lake/Databricks: stopped linking partition keys to primary keys, and detached PARTITION BY statement from column declaration
+
+\- Oracle: added possibility to apply DDL script to instance
+
+\- Snowflake: added GeoSpatial data types
+
+\- SQL Server \& Synapse: added IF NOT EXISTS property for schemas, tables, and views with DDL handling via wrapping of CREATE statement in begin...end and a SELECT to check existence of object
+
+\- all Graph targets when exchanging with Excel: do NOT use a template generated with a previous version of the plugins.&nbsp; Make sure to export model to Excel first, as some of the tab names have been adjusted. &nbsp;
+
+&nbsp;
+
 New features in v5.4.0 \[14-Jan-2022\]
 
 \- Oracle: soft release of a new plugin with full support for forward-engineering of DDL, and reverse-engineering including inference of schemas in JSON data types (Oracle 21c and above) and of JSON documents in VARCHAR2, CLOB and BLOB data types (12c, 18c, and 19c) -- many improvemens still to come...
 
 \- Polyglot: added possibility to modify properties of attributes in target model, and hence deviate from the polyglot model (deactivate an attribute, or change constraints,...)
 
-\- Polyglot enhanced documentation in case of relationships or custom tab of properties&nbsp;
+\- Polyglot: enhanced documentation in case of relationships or custom tab of properties&nbsp;
 
 \- JSON Schema reverse-engineering: added dialog to save model when external recursive external references have a relative path
 

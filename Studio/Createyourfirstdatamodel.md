@@ -34,7 +34,7 @@ You are presented with a blank workspace.&nbsp; Refer to the [overview of the us
 
 ## Create your data model
 
-There are 2 main ways to create a data model: you either [build your data model from scratch](<Whatisadatamodel.md>) based on your analysis of requirements, or you can [reverse-engineer](<Reverseengineeranexistinginstanc.md>) from a variety of sources: an existing [instance](<Target-specific1.md>), from [JSON documents](<JSONdocument1.md>) or [JSON Schema](<JSONSchema1.md>), from [SQL DDLs](<SQLDDL.md>), or from [XSDs](<ImportamodelfromXSD.md>).&nbsp; For the purpose of this tutorial, we will start a model from scratch.
+There are 2 main ways to create a data model: you either [build your data model from scratch](<Whatisadatamodel.md>) based on your analysis of requirements, or you can [reverse-engineer](<Reverseengineeranexistinginstanc.md>) from a variety of sources: an existing [instance](<Target-specific1.md>), from [JSON documents](<JSONdocument1.md>) or [JSON Schema](<JSONSchema1.md>), from [SQL DDLs](<SQLDDL.md>), or from [XSDs](<XSDoflogicalmodels.md>).&nbsp; For the purpose of this tutorial, we will start a model from scratch.
 
 &nbsp;
 
@@ -118,6 +118,16 @@ or by grabbing the handle on the left of the attribute name in the ERD:
 
 &nbsp;
 
+The Options tab in the Properties Pane lets you:
+
+\- in the ERD for a container, change the color and font style (bold and italic);
+
+\- for an entity, change the color and font style (bold and italic), but also toggle auto-height and auto width as you add attributes;
+
+\- for an attribute, change the color and font style (bold and italic)
+
+&nbsp;
+
 ## Hierarchical schema view
 
 In addition to the ERD view, it is possible to have a detailed view of each entity in its own tab, which will be particularly handy in the next tutorial:
@@ -156,6 +166,70 @@ Several options are available for the display of the JSON Preview lower tab.&nbs
 &nbsp;
 
 The sample document generated in the right pane uses dummy values.&nbsp; You may easily make this document more meaningful by entering, for each attribute a sample property (or example, depending on the JSON Schema version), and this value will be used in the JSON Data pane.
+
+&nbsp;
+
+## Saving your work
+
+You obviously don't want to lose the data model you have created.&nbsp; You can simply save your data model to the disk of your local machine.&nbsp; Hackolade data models are persisted in non-proprietary JSON files, typically on the file system in a local folder (possibly of a [cloned Git repository](<Teamcollaboration.md>)) or on a network shared directory.
+
+&nbsp;
+
+You can save your data models by pressing the save icon in the toolbar, by pressing Ctrl+S (in Windows, or Cmd+S on Mac.) &nbsp;
+
+&nbsp;
+
+Even if you don't save your model, a copy is auto-saved on a regular basis in a temporary folder, just in case your PC crashes.&nbsp; Upon restart of the application, you should be prompted in case an unsaved model is found in that folder.
+
+&nbsp;
+
+You should also be aware of several options at your disposal:
+
+\- you may set your application to Auto-save mode with a time interval of your choice (this is available also as button in the toolbar)
+
+\- you may adjust the template for data model file name.&nbsp; You may combine separators with a a few keywords, for example \<modelName\> - \<dbVendor\> - \<version\>
+
+\- as .json file extensions are used for JSON documents, JSON Schema files, and also hackolade data models, we suggest you identify Hackolade models with a hck.json extension to differentiate them.&nbsp; You may disable this option.
+
+&nbsp;
+
+![Tools - Options - General](<lib/Tools%20-%20Options%20-%20General.png>)
+
+&nbsp;
+
+The location by default for data models and other sources and artifacts can also be controlled in the Default Paths tab of the same options dialog:
+
+![Tools - Options - Default Paths](<lib/Tools%20-%20Options%20-%20Default%20Paths.png>)
+
+&nbsp;
+
+&nbsp;
+
+Finally, it may be that you want to send your data model to our helpdesk for troubleshooting, but don't want to reveal its content.&nbsp; You may choose the option to Save as Obfuscated which occults all the object names and text property content.
+
+&nbsp;
+
+## Working simultaneously on several data models
+
+If you need to work on different models at the same time, or you want to copy/paste objects from one model to another (of the same target), you can easily open multiple instances of Hackolade Studio, via File \> Start New Application Instance (or Ctrl+Shift+I)
+
+&nbsp;
+
+Alternatively on Windows, right-click on the Hackolade icon in the toolbar then choose Hackolade:
+
+![Multiple instances](<lib/Multiple%20instances.png>)
+
+&nbsp;
+
+On Mac/Linux, this is done with the command: open -n /Applications/Hackolade.app/
+
+Running multiple instances on the same PC does not require additional license seats.
+
+&nbsp;
+
+## Other tips
+
+To become a power user of Hackolade Studio, you may want to consult many additional [tips and tricks](<Tipsandtricks.md>).
 
 &nbsp;
 

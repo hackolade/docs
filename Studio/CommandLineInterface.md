@@ -22,7 +22,7 @@ It is easier to run the CLI from the directory where the Hackolade executable is
 
 * Windows:&nbsp;
   * cmd command line: all commands below should be preceded by *start /wait hackolade *
-  * PowerShell: all commands below should be preceded by *Start-Process -wait hackolade&nbsp; *
+  * PowerShell: all commands below should be preceded by *Start-Process -wait hackolade* and the commands and arguments should be wrapped in quotes such as *Start-Process -wait hackolade "forwEng --help"* for more details, please consult [this page](<https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/start-process?view=powershell-7.2#example-7--specifying-arguments-to-the-process> "target=\"\_blank\"").
 * Mac: start Terminal and execute: all commands below should be preceded by */Applications/Hackolade.app/Contents/MacOS/Hackolade *
 * Linux: terminal emulator or common shell programs: all commands below should be preceded by *./Hackolade*&nbsp; or *path-to-where-hackolade-was-unzipped/Hackolade *
 
@@ -459,6 +459,8 @@ Usage:&nbsp; &nbsp; *hackolade forwEngAPI \[--arguments\]*
 | \--targetModelFormat=\< Swagger \| **OpenAPI** \> | N | Specify the target of the target model.&nbsp; \["Swagger" or "OpenAPI"\] \[default: OpenAPI\] |
 | \--targetmodel=\<file\>\* | Y | Full path and file name for the obfuscated Hackolade model.  Extension .json is optional. &nbsp; |
 | \--APIdocFile=\<file\>\* | N | If specified, the corresponding documentation file will be generated in the chose model format.&nbsp; Specify the full path and file name for the generated documentation file. |
+| \--keepexternal=\<**true** \| false\> | N | Keep external references to this data model \[default: true\] |
+| \--referencepath=\<**absolute** \| relative\> | N | Specify type of external references path \[default: absolute\] |
 | \--logLevel=\< 1 \| 2 \| 3 \| **4** \> | N | &#49; = no spinner, no info, no error messages 2 = no spinner, no info 3 = no spinner 4 = full output \[default: 4\] |
 
 

@@ -56,5 +56,5 @@ In relational databases, each entity will lead to a physical table with columns 
 
 &nbsp;
 
-With NoSQl databases and [denormalization](<Relationshipsanddenormalization.md>), it's a different story...&nbsp; Plus entities can be called collections, and attributes can be called fields.&nbsp; each vendor may call things differently, as you can see on [this page](<NoSQLdatabasesJSONRESTAPIs.md>).
+With NoSQL databases and [denormalization](<Relationshipsanddenormalization.md>), it's a different story...&nbsp; Plus entities can be called collections, and attributes can be called fields.&nbsp; each vendor may call things differently, as you can see on [this page](<NoSQLdatabasesJSONRESTAPIs.md>).
 

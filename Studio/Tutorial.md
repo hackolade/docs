@@ -7,7 +7,7 @@ We try real hard to make Hackolade Studio as intuitive as possible with a minima
 
 &nbsp;
 
-The complexity appears when diving deeper in each of the use cases.&nbsp; NoSQL and JSON seem simple from the outside, but their power and flexibility offer many permutations that end up increasing complexity.&nbsp; With Hackolade Studio, we try to deal with this complexity in simpler ways, and only when necessary.
+The complexity appears when diving deeper in each of the use cases.&nbsp; NoSQL and JSON seem simple from the outside, but their power and flexibility offer many permutations that end up increasing complexity.&nbsp; With Hackolade Studio, we try to deal with this complexity in simpler ways, and only when necessary.&nbsp; For example, we allow non-technical users to generate JSON Schema files without requiring any knowledge of JSON Schema syntax.&nbsp; Or for such users to create REST APIs without any knowledge of Swagger/OpenAPI specification syntax.
 
 &nbsp;
 
@@ -43,4 +43,6 @@ and
 ![Miro UI view](<lib/Miro%20UI%20view.png>)
 
 &nbsp;
+
+Don't hesitate to let us know your feedback and suggestions for improvement.
 

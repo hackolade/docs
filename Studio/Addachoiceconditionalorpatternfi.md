@@ -170,7 +170,5 @@ To add a pattern field to a document structure, right-click and choose add/inser
 
 &nbsp;
 
-In this tutorial, we reviewed the creation of other types of JSON Schema attributes: choices, conditionals, and pattern fields.&nbsp; In the next tutorial, we will cover how to import or reverse-engineer structures in your data model.
-
-&nbsp;
+In this tutorial, we reviewed the creation of other types of JSON Schema attributes: choices, conditionals, and pattern fields.&nbsp; In the next tutorial, we will cover how to add relationships to your entity-relationship diagram.
 

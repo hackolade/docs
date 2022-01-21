@@ -82,6 +82,7 @@ All Product Versions
 | [Node-folder-hash](<https://github.com/marc136/node-folder-hash> "target=\"\_blank\"") | (c) 2015 Marc Walter | [MIT](<https://github.com/marc136/node-folder-hash/blob/main/LICENSE.txt> "target=\"\_blank\"") |
 | [Node-ipc](<https://github.com/RIAEvangelist/node-ipc> "target=\"\_blank\"") | (c) 2009 Philip Sturgeon | [DBAD](<https://github.com/RIAEvangelist/node-phidget-API/blob/master/license.md> "target=\"\_blank\"") |
 | [Node-mssql](<https://github.com/tediousjs/node-mssql> "target=\"\_blank\"") | (c) 2013-2018 Patrick Simek and contributors | [MIT](<https://github.com/tediousjs/node-mssql/blob/master/LICENSE.md> "target=\"\_blank\"") |
+| [Node-oracledb](<https://github.com/oracle/node-oracledb> "target=\"\_blank\"") | 'c) 2015, 2021, Oracle and/or its affiliates. | [Apache](<https://github.com/oracle/node-oracledb/blob/main/LICENSE.md> "target=\"\_blank\"") |
 | [Node-postgres](<https://github.com/brianc/node-postgres> "target=\"\_blank\"") | (c) 2010-2021 Brian Carlson | [MIT](<https://github.com/brianc/node-postgres/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Node-rsa-pem-from-mod-exp](<https://github.com/tracker1/node-rsa-pem-from-mod-exp> "target=\"\_blank\"") | (c) 2014 Michael J. Ryan | [MIT](<https://github.com/tracker1/node-rsa-pem-from-mod-exp/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Node-semver](<https://github.com/npm/node-semver> "target=\"\_blank\"") | (c) Isaac Z. Schlueter and Contributors | [ISC](<https://github.com/npm/node-semver/blob/master/LICENSE> "target=\"\_blank\"") |
@@ -89,6 +90,7 @@ All Product Versions
 | [Ottoman](<https://github.com/couchbaselabs/node-ottoman> "target=\"\_blank\"") | (c) 2013 Couchbase Inc. | [Apache](<https://www.apache.org/licenses/LICENSE-2.0> "target=\"\_blank\"") |
 | [PapaParse](<https://github.com/mholt/PapaParse> "target=\"\_blank\"") | (c) 2015 Matthew Holt | [MIT](<https://github.com/mholt/PapaParse/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Parquetjs](<https://github.com/ironSource/parquetjs> "target=\"\_blank\"") | (c) 2017 ironSource Ltd. | [MIT](<https://github.com/ironSource/parquetjs/blob/master/LICENSE> "target=\"\_blank\"") |
+| [Perplex](<https://github.com/jrop/perplex> "target=\"\_blank\"") | (c) 2016, Jonathan Apodaca jrapodaca@gmail.com | [ISC](<https://github.com/jrop/perplex#license> "target=\"\_blank\"") |
 | [Phantomjs](<https://github.com/ariya/phantomjs/> "target=\"\_blank\"") | (c) 2005-2016 Ariya Hidayat | [BSD-3-Clause](<https://github.com/ariya/phantomjs/blob/master/LICENSE.BSD> "target=\"\_blank\"") |
 | [Postal](<https://github.com/postaljs/postal.js> "target=\"\_blank\"") | (c) 2015 Jim Cowart | [MIT](<https://github.com/postaljs/postal.js/blob/master/LICENSE> "target=\"\_blank\"") |
 | [ProtobufJS](<https://github.com/protobufjs/protobuf.js> "target=\"\_blank\"") | (c) 2016 Daniel Wirtz | [BSD-3-Clause](<https://github.com/protobufjs/protobuf.js/blob/master/LICENSE> "target=\"\_blank\"") |

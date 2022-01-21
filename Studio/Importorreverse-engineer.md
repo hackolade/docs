@@ -1,6 +1,6 @@
 # Import or reverse-engineer
 
-In the previous tutorial, we reviewed how to create other types of JSON Schema attributes: choices, conditionals, and pattern fields.&nbsp; By the end of this tutorial, importing data structures and reverse-engineering of existing instances will have no secrets for you.
+In the previous tutorial, we reviewed how to add relationships to your entity-relationship diagram.&nbsp; By the end of this tutorial, importing data structures and reverse-engineering of existing instances will have no secrets for you.
 
 &nbsp;
 
@@ -8,15 +8,15 @@ The reverse-engineering function is used to import information into pre-existing
 
 &nbsp;
 
-Hackolade supports the reverse engineer of different types of data sources:
+Hackolade supports the reverse-engineering of different types of data sources:
 
-* a JSON or YAML document: during this process, we infer the schema for the data in the file(s)
-* a JSON Schema or YAML Schema: during this process, when applied to an RDBMS target, we optionally normalize nested structures into separate entities.
-* a Data Definition Language file (DDL): from Oracle, Microsoft SQL Server, MySQL, PostgreSQL, Hadoop Hive, Snowflake, Teradata, DB2, Informix, Redshift, MariaDB
-* an XSD schema file from another ER tool, such as erwin, ER/Studio, PowerDesigner, or other
-* an Excel file template: first export a Hackolade model (even an empty one) to generate an Excel file for the target of your choice.&nbsp; Then you may bulk edit your model or create a new one before ingesting it back into the application.
-* target-specific instances
-* from a data dictionary (currently only Collibra.)
+* a [JSON or YAML document](<JSONdocument1.md>): during this process, we infer the schema for the data in the file(s)
+* a [JSON Schema or YAML Schema](<JSONSchema1.md>): during this process, when applied to an RDBMS target, we optionally normalize nested structures into separate entities.
+* a [Data Definition Language file (DDL)](<SQLDDL.md>): from Oracle, Microsoft SQL Server, MySQL, PostgreSQL, Hadoop Hive, Snowflake, Teradata, DB2, Informix, Redshift, MariaDB
+* an [XSD schema](<XSDoflogicalmodels.md>) file from another ER tool, such as erwin, ER/Studio, PowerDesigner, or other
+* an [Excel file template](<Exceltemplate.md>): first export a Hackolade model (even an empty one) to generate an Excel file for the target of your choice.&nbsp; Then you may bulk edit your model or create a new one before ingesting it back into the application.
+* [target-specific](<Target-specific1.md>) instances: data bases and cloud storage
+* from a data dictionary (currently only [Collibra](<CollibraDataDictionaryintegratio.md>).)
 
 &nbsp;
 
@@ -77,6 +77,10 @@ The connection settings differ for each target, depending on the respective prot
 &nbsp;
 
 When connecting to an instance, the reverse-engineering process differs as well.&nbsp; In the case of RDBMS, we can simply retrieve the DDL.&nbsp; However, things gets trickier when there is JSON in RDBMS or in document databases.&nbsp; In those cases, we launch a sampling process, then proceed with inference of the schema, prior to converting into a Hackolade data model.&nbsp; We apply a similar approach to schemaless NoSQL databases such as property graphs, key-value, and column-oriented databases.
+
+&nbsp;
+
+All reverse-engineering functions are accessible either from the GUI application, or from the [Command-Line Interface](<CommandLineInterface.md>), whether directly or running in [Docker containers](<https://github.com/hackolade/docker/tree/main/Studio> "target=\"\_blank\"").
 
 &nbsp;
 
