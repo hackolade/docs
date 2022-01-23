@@ -29,6 +29,7 @@
     - [Export or forward-engineer](<Exportorforward-engineer.md>)
     - [Generate documentation and pictures](<Generatedocumentationandpictures.md>)
     - [Use graph diagrams](<Usegraphdiagrams.md>)
+    - [Create a REST API model](<CreateaRESTAPImodel.md>)
 - [NoSQL databases, storage formats, REST APIs](<NoSQLdatabasesJSONRESTAPIs.md>)
   - [Polyglot Data Model](<PolyglotDataModel.md>)
   - [Couchbase](<Couchbase.md>)

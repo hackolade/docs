@@ -1,8 +1,14 @@
 # v5.x
 
-New features in v5.4.1 \[21-Jan-2022\]
+New features in v5.4.2 \[28-Jan-2022\]
 
 \- ERD: added more display options to hide attributes with specific properties (non-primary keys, non-required attributes, nullable attributes, etc.)
+
+\- Polyglot: when deriving into Swagger/OpenAPI, added possibility to achieve model-driven API generation by merging with a template&nbsp;
+
+&nbsp;
+
+New features in v5.4.1 \[21-Jan-2022\]
 
 \- Custom properties: ability to mark a custom property with a star (\*) to indicate a required entry, optionally with validation.&nbsp; Consult https://github.com/hackolade/plugins#26-property-controls for more details
 
