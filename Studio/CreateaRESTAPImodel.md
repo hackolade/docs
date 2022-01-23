@@ -38,6 +38,8 @@ and generated the corresponding OpenAPI file:
 
 &nbsp;Here is the [link](<https://hackolade.com/schemas/OpenAPI/shorty\_URL\_shortener.hck.json> "target=\"\_blank\"") if you want to download this data model.
 
+&nbsp;
+
 ## Design the API
 
 An API is an interface for people or systems to consume a service.&nbsp; It is critical to put yourself in the shoes of the consumer, and make the API easy to understand and navigate the service.&nbsp; It must be usable, valuable, credible, and useful.&nbsp; Good design and good documentation go a long way towards adoption, along with collaboration and communication. &nbsp;
@@ -82,11 +84,15 @@ Accordingly, the process to create this API is as follows:
 
 ## Build the API
 
-We will now use Hackolade Studio to build the API step by step.&nbsp; Let's create a new model and choose OpenAPI as a target.&nbsp; Remember that the application will automatically generate the OpenAPI file with proper syntax, as you build the API in the screens. You may check the progress at any time in the lower tab OpenAPI File. &nbsp;
+We will now use Hackolade Studio to build the API step by step.&nbsp; Let's create a new model and choose OpenAPI as a target.&nbsp; Remember that the application will automatically generate the OpenAPI file with proper syntax, as you build the API in the screens. You may check the progress at any time in the lower tab OpenAPI File.&nbsp;
+
+&nbsp;
 
 ### Create reusable components
 
 Often, multiple API operations have some common parameters or return the same response structure. To avoid code duplication and facilitate evolution, you can place the common definitions in the global components section and reference them using [$ref](<https://swagger.io/docs/specification/using-ref/> "target=\"\_blank\"").  In Hackolade, components are handled like model references, and are maintained in the lower tab Components.&nbsp; If a component evolves, these changes are automatically reflected in all places where the component is referenced.
+
+&nbsp;
 
 #### Schema components for the exchange
 
@@ -140,7 +146,7 @@ We also want to give users examples to better understand how to use the API, for
 
 &nbsp;
 
-#### A parameter to fetch a full URL from a previously generated slug
+#### Parameter to fetch a full URL from a previously generated slug
 
 Next, we follow similar steps steps to create the parameter that will be used in the second use case, when submitting a slug (in order to retrieve the full URL)&nbsp; Here, we choose a path.&nbsp; In other APIs, you could also choose a query, a header, or a cookie.
 
@@ -357,6 +363,26 @@ On the right, you can now visualize the API interaction pane.&nbsp; If the servi
 &nbsp;
 
 Don't forget to name your model and save it.&nbsp; Here is the [link](<https://hackolade.com/schemas/OpenAPI/shorty\_URL\_shortener.hck.json> "target=\"\_blank\"") if you want to download this data model.
+
+&nbsp;
+
+There's a raging debate about code-first vs design-first when it comes to API creation.&nbsp; The above approach should demonstrate the advantages of the latter.&nbsp; Design-first will let you think through all the details, discuss alternatives with other stakholders, evaluate impacts, etc. all without writing a single line of code.&nbsp; Some developers may disagree, but the obvious advantages are: lower Total Cost of Ownership, higher quality, easier evolution, and even quicker delivery of the project.&nbsp; While it may seem slower at the beginnning, design-first clearly saves time overall because it reduce risks of rework. &nbsp;
+
+&nbsp;
+
+In particular when multiple teams need to develop in parallel, it becomes indispensable to agree first on a contract for the API.&nbsp; Don't take our word for it: here's [an article ](<https://smartbear.com/blog/embracing-an-api-design-first-approach/> "target=\"\_blank\"")by Smartbear, the original creators of Swager.
+
+&nbsp;
+
+## Next steps
+
+The above API example was simple on purpose.&nbsp; In practice, APIs can be quite complex.&nbsp; And they inevitably evolve over time.&nbsp; We suggest the articles below to help think through a variety of addition considerations that go beyond the scope of this tutorial but are nevertheless important:
+
+\- [versioning](<https://cloud.google.com/blog/products/api-management/api-design-which-version-of-versioning-is-right-for-you> "target=\"\_blank\"")
+
+\- [links vs keys](<https://cloud.google.com/blog/products/application-development/api-design-why-you-should-use-links-not-keys-to-represent-relationships-in-apis> "target=\"\_blank\"")
+
+\- [various best practices and common pitfalls](<https://cloud.google.com/blog/products/api-management/api-design-best-practices-common-pitfalls> "target=\"\_blank\"")
 
 &nbsp;
 
