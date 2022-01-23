@@ -366,11 +366,11 @@ Don't forget to name your model and save it.&nbsp; Here is the [link](<https://h
 
 &nbsp;
 
-There's a raging debate about code-first vs design-first when it comes to API creation.&nbsp; The above approach should demonstrate the advantages of the latter.&nbsp; Design-first will let you think through all the details, discuss alternatives with other stakholders, evaluate impacts, etc. all without writing a single line of code.&nbsp; Some developers may disagree, but the obvious advantages are: lower Total Cost of Ownership, higher quality, easier evolution, and even quicker delivery of the project.&nbsp; While it may seem slower at the beginnning, design-first clearly saves time overall because it reduce risks of rework. &nbsp;
+There's a raging debate about code-first vs design-first when it comes to API creation.&nbsp; The above approach should demonstrate the advantages of the latter.&nbsp; Design-first will let you think through all the details, discuss alternatives with other stakeholders, evaluate impacts, etc. all without writing a single line of code.&nbsp; Some developers may disagree, but the obvious advantages are: lower Total Cost of Ownership, higher quality, easier evolution, and even quicker delivery of the project.&nbsp; While it may seem slower at the beginning, design-first clearly saves time overall because it reduces risks of rework. &nbsp;
 
 &nbsp;
 
-In particular when multiple teams need to develop in parallel, it becomes indispensable to agree first on a contract for the API.&nbsp; Don't take our word for it: here's [an article ](<https://smartbear.com/blog/embracing-an-api-design-first-approach/> "target=\"\_blank\"")by Smartbear, the original creators of Swager.
+In particular when multiple teams need to develop in parallel, it becomes indispensable to agree first on a contract for the API.&nbsp; Don't take our word for it: here's [an article ](<https://smartbear.com/blog/embracing-an-api-design-first-approach/> "target=\"\_blank\"")by Smartbear, the original creators of Swagger.
 
 &nbsp;
 
