@@ -1,4 +1,4 @@
-# What is JSON?  What is JSON Schema?
+# Overview of JSON and JSON Schema
 
 ## JSON
 
@@ -70,7 +70,7 @@ The benefits of a single document atomicity with embedded objects is best illust
 
 &nbsp;
 
-Then, when comes the time to display the information on screen or print the invoice, the information needs to be gathered again, using lengthy joins.&nbsp; Besides the performance impact of these joins, developers encounter difficulties know as [impedence mismatch](<https://en.wikipedia.org/wiki/Object–relational\_impedance\_mismatch> "target=\"\_blank\"").
+Then, when comes the time to display the information on screen or print the invoice, the information needs to be gathered again, using lengthy and CPU-intensive joins.&nbsp; Besides the performance impact of these joins, developers encounter difficulties known as [impedance mismatch](<https://en.wikipedia.org/wiki/Object–relational\_impedance\_mismatch> "target=\"\_blank\"").
 
 &nbsp;
 
@@ -100,101 +100,7 @@ The design of a JSON document depend largely on its intended use within an appli
 
 &nbsp;
 
-For example for the above order document, the JSON Schema is as follows:
-
-*{*\
-*&nbsp; &nbsp; "$schema": "http://json-schema.org/draft-04/schema#",*\
-*&nbsp; &nbsp; "type": "object",*\
-*&nbsp; &nbsp; "title": "order",*\
-*&nbsp; &nbsp; "properties": {*\
-*&nbsp; &nbsp; &nbsp; &nbsp; "orderId": {*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "number"*\
-*&nbsp; &nbsp; &nbsp; &nbsp; },*\
-*&nbsp; &nbsp; &nbsp; &nbsp; "customer": {*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "object",*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "properties": {*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "custId": {*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "string"*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "name": {*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "string"*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "contact": {*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "string"*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "address": {*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "string"*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "additionalProperties": true,*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "required": \[*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "custId",*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "name",*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "contact",*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "address"*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; \]*\
-*&nbsp; &nbsp; &nbsp; &nbsp; },*\
-*&nbsp; &nbsp; &nbsp; &nbsp; "line\_items": {*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "array",*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "additionalItems": true,*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "items": {*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "object",*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "properties": {*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "sku": {*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "string"*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "description": {*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "string"*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "qty": {*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "number"*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "unitPrice": {*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "number"*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "additionalProperties": true,*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "required": \[*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "sku",*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "description",*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "qty",*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "unitPrice"*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; \]*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }*\
-*&nbsp; &nbsp; &nbsp; &nbsp; },*\
-*&nbsp; &nbsp; &nbsp; &nbsp; "payment": {*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "object",*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "properties": {*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": {*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "string"*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "last5": {*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "string"*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "expiry": {*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "string"*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "additionalProperties": true,*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "required": \[*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type",*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "last5",*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "expiry"*\
-*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; \]*\
-*&nbsp; &nbsp; &nbsp; &nbsp; }*\
-*&nbsp; &nbsp; },*\
-*&nbsp; &nbsp; "additionalProperties": true,*\
-*&nbsp; &nbsp; "required": \[*\
-*&nbsp; &nbsp; &nbsp; &nbsp; "orderId",*\
-*&nbsp; &nbsp; &nbsp; &nbsp; "customer",*\
-*&nbsp; &nbsp; &nbsp; &nbsp; "line\_items",*\
-*&nbsp; &nbsp; &nbsp; &nbsp; "payment"*\
-*&nbsp; &nbsp; \]*\
-*}*
-
-&nbsp;
-
-Note that the JSON Schema itself is written in JSON. It is data itself, not a computer program. It’s just a declarative format for “describing the structure of other data”.
+Note that JSON Schema itself is written in JSON. It is data itself, not a computer program. It’s just a declarative format for “describing the structure of other data”.
 
 &nbsp;
 
@@ -240,5 +146,5 @@ And finally, we facilitate the linking of multiple documents in an Entity-Relati
 
 &nbsp;
 
-While foreign key relationships are not enforced by JSON ora document database, it is important for a better understanding, to document implicit relationships in the data.
+While foreign key relationships are not enforced by the document database, it is important for a better understanding, to document implicit relationships in the data.
 

@@ -12,7 +12,7 @@ The polyglot and target models are separate models.&nbsp; But they are related t
 
 &nbsp;
 
-Exceptions are possible: some objects in a polyglot model can be flagged as polyglot-only so they do not appear in the target models.&nbsp; Conversely, you can add objects in the target models that are not reflected in the polyglot model.&nbsp; What is important, mostly, is that, if attributes or properties of an object change in the polyglot model, you may update dependent target models to automatically reflect those changes.
+Exceptions are possible: some objects in a polyglot model can be flagged as polyglot-only so they do not appear in the target models.&nbsp; Conversely, you can deactivate entities and attributes in the target model, or you can add objects in the target models that are not reflected in the polyglot model.&nbsp; What is important, mostly, is that, if attributes or properties of an object change in the polyglot model, you may update dependent target models to reflect those changes.
 
 &nbsp;
 
@@ -54,9 +54,15 @@ You are then presented with a dialog where you can narrow down the selection of 
 
 &nbsp;
 
-Attributes of entities cannot be individually deselected. However, each object, including attributes can be marked as "Polyglot only", meaning that they will not be included in any target models.
+Attributes of entities cannot be individually deselected in the above screen. But 2 options are available, depending on the use case:
+
+&#49;) in the polyglot model, each object, including attributes can be marked as "Polyglot only", meaning that they will not be included in any target models.
 
 ![Polyglot only property](<lib/Polyglot%20only%20property.png>)
+
+&#50;) in a target model you can deselect the IsActivated property, which will cause the attribute to be filtered out (or commented if the target syntax allows it) in the forward-engineering script.
+
+![Polyglot isActivated property](<lib/Polyglot%20isActivated%20property.png>)
 
 &nbsp;
 
@@ -80,7 +86,13 @@ Target-specific transformations rules are applied during the process of deriving
 
 ## Maintain and update the target model
 
-Once a target model has been created and derived from a polyglot model, it contains all the derived objects.&nbsp; You may not currently edit the attributes of an entity, but you may add new entities and views that are specific to the physical target model, for example based on access patterns. You may also remove entities from the target model.&nbsp; This action does not delete the entity in the polyglot model.
+Once a target model has been created and derived from a polyglot model, it contains all the derived objects.&nbsp; You may make some changes to the target model:
+
+\- make changes to the properties of entities and attributes without changing them in the polyglot model.&nbsp; This is used if you need minor deviations;
+
+\- add new entities and views that are specific to the physical target model, for example based on access patterns;
+
+\- remove entities from the target model.&nbsp; This action does not delete the entity in the polyglot model.
 
 &nbsp;
 
@@ -102,11 +114,11 @@ If new objects have appeared in the polyglot model (or there are objects in the 
 
 &nbsp;
 
-You may also permanently break the connection to the polyglot model.&nbsp; This operation should be done with care of course, as it cannot be re-established afterwards without restarting all the steps from scratch.&nbsp; The operation replaces all references to the objects of the polyglot model by the objects themselves.&nbsp; But further modifications in the polyglot model will no longer have any effect in the target model.
+When opening a target model with a reference to one or mode polyglot models, you are presented with the option to update the objects.
 
 &nbsp;
 
-When opening a target model with a reference to one or mode polyglot models, you are presented with the option to update the objects.
+You may also permanently break the connection to the polyglot model.&nbsp; This operation should be done with care of course, as it cannot be re-established afterwards without restarting all the steps from scratch.&nbsp; The operation replaces all references to the objects of the polyglot model by the objects themselves.&nbsp; But further modifications in the polyglot model will no longer have any effect in the target model.
 
 &nbsp;
 

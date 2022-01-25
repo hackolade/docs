@@ -1,5 +1,7 @@
 # What is a data model?
 
+This is the first in a series of tutorials for Hackolade Studio.&nbsp; This first tutorial as well as the next one, covers basic concepts.&nbsp; If these concepts are known to you, you may skip directly to get [hands-on](<Createyourfirstdatamodel.md>) with Hackolade Studio.
+
 ## Overview
 
 A data model is an abstract representation of how elements of data are organized, how they relate to each other, and how how they relate to real-world concepts.&nbsp; It is an explicit representation of the structure of data.&nbsp; The purpose of data modeling is to support the development of IT systems and to ensure consistency, compatibility, and quality of data. &nbsp;
