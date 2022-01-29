@@ -1,12 +1,28 @@
 # Query-driven data modeling based on access patterns
 
-Data modeling for relational databases is performed according to the rules of normalization, so larger tables are divided into smaller ones linked together with relationships.&nbsp; The purpose is to eliminate redundant or duplicate data.&nbsp; But NoSQL databases are completely different.&nbsp; They require a mindshift in schema design in order to leverage their capabilities, as well as a data modeling tool built specially for this new breed of state-of-the art technology.
+Data modeling for relational databases is performed according to the rules of normalization, so larger tables are divided into smaller ones linked together with relationships.&nbsp; The purpose is to eliminate redundant or duplicate data. &nbsp;
+
+&nbsp;
+
+![Image](<lib/JSON%20order%20normalized%20structure.png>)
+
+&nbsp;
+
+But NoSQL databases are completely different.&nbsp; They require a mindshift in schema design in order to leverage their capabilities, as well as a data modeling tool built specially for this new breed of state-of-the art technology.
 
 &nbsp;
 
 ## Query-driven schema design
 
-To leverage the performance of NoSQL databases and the flexibility of JSON, it is important to unlearn the rules of normalization.&nbsp; JSON allows to aggregate information that belongs together so it is ready to be used, instead of splitting data across separate tables, as normalization rules would dictate.&nbsp; In other words, there’s an opportunity to join the data “on write”, instead of the traditional joins “on read” of relational databases which negatively impact performance.&nbsp; This difference is decisively important nowadays when real-time web applications and big data require high scalability and high availability.&nbsp; Note that this capability is not limited to JSON, as other types of NoSQL databases achieve the same result in different ways.
+To leverage the performance of NoSQL databases and the flexibility of JSON, it is important to unlearn the rules of normalization.&nbsp; JSON allows to aggregate information that belongs together so it is ready to be used, instead of splitting data across separate tables, as normalization rules would dictate.&nbsp; In other words, there’s an opportunity to join the data “on write”, instead of the traditional joins “on read” of relational databases which negatively impact performance. &nbsp;
+
+![Image](<lib/JSON%20order%20structure.png>)
+
+&nbsp;
+
+&nbsp;
+
+This difference is decisively important nowadays when real-time web applications and big data require high scalability and high availability.&nbsp; Note that this capability is not limited to JSON, as other types of NoSQL databases achieve the same result in different ways.
 
 ![Image](<lib/Query-Driven%20schema%20design.png>)
 
