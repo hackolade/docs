@@ -100,7 +100,13 @@ You may choose either OpenAPI 3 or Swagger 2 as a destination version.
 
 You are presented with the usual dialog for object select; and you may unselect entities you do not wish to include in the API generation:&nbsp;
 
-![Model-driven API generation entity selection](<lib/Model-driven%20API%20generation%20entity%20selection.png>)
+![Image](<lib/Model-driven%20API%20generation%20entity%20selection.png>)
+
+&nbsp;
+
+By keeping external references, you ensure that, if changes are made to the source data model, the API model can be kept in sync.&nbsp; The path can be absolute or relative.
+
+&nbsp;
 
 You must choose a valid template, either in a Hackolade model format, or in an OpenAPI or Swagger documentation file (either in JSON or YAML.) &nbsp;
 

@@ -1,6 +1,6 @@
 # What is a data model?
 
-This is the first in a series of tutorials for Hackolade Studio.&nbsp; This first tutorial as well as the next one, covers basic concepts.&nbsp; If these concepts are known to you, you may skip directly to get [hands-on](<Createyourfirstdatamodel.md>) with Hackolade Studio.
+This is the first in a series of tutorials for Hackolade Studio.&nbsp; The first few tutorials cover basic concepts to provide a complete and progressive picture.&nbsp; If these concepts are known to you, you may skip directly to get [hands-on](<Createyourfirstdatamodel.md>) with Hackolade Studio.
 
 ## Overview
 

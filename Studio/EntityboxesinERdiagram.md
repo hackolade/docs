@@ -88,6 +88,12 @@ dk: denormalized key (parent of a foreign key.)&nbsp; Marks keys that are denorm
 
 dm: denormalized master (parent of a foreign master.)&nbsp; Marks non-key attributes that are denormalized elsewhere in the model. &nbsp;
 
+PK: partition key, where applicable
+
+CK: clustering key, where applicable
+
+sk: sort key, where applicable
+
 \*: required attribute
 
 \+: only in Avro: null allowed

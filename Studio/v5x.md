@@ -2,9 +2,33 @@
 
 New features in v5.4.2 \[28-Jan-2022\]
 
+\- Software Key Validation dialog: pre-fill of optional Identifier field with Computer Name + OS username.&nbsp; Can be cleared or overwritten if desired
+
 \- ERD: added more display options to hide attributes with specific properties (non-primary keys, non-required attributes, nullable attributes, etc.)
 
-\- Polyglot: when deriving into Swagger/OpenAPI, added possibility to achieve model-driven API generation by merging with a template&nbsp;
+\- Polyglot: when deriving into Swagger/OpenAPI, added possibility to merge with a template, like with model-driven API generation
+
+\- Avro: added possibility to reverse-engineer multiple record schemas in single .avsc file
+
+\- Databricks: enhanced context creation, plus added Runtime 9 support
+
+\- Oracle: added config to allow connection to Amazon RDS
+
+\- Oracle: added connection by SID
+
+\- Oracle: added possibility to narrow scope of discovery of instance to a single user schema
+
+\- Oracle: added reverse-engineering of table and column comments
+
+\- PostgreSQL: adjusted reverse-engineering of indexes and functions when version 10
+
+\- Snowflake: added timeout from tools options, plus used warehouse auth by credentials
+
+\- Snowflake: added handling of cross-schema views
+
+\- Snowflake: added possibility to apply DDL script to instance
+
+\- Snowflake: added snippets for GeoJSON geometries in data type geography
 
 &nbsp;
 

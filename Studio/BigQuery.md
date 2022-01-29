@@ -100,17 +100,11 @@ A button lets the user apply to a selected instance the script to create dataset
 
 ## Reverse-Engineering
 
-The connection is established using a connection using Google Cloud IAM credentials key file:
+The connection is established using a connection using Google Cloud IAM credentials key file.&nbsp; More details can be found [here](<ConnecttoaBigQueryinstance.md>).
 
 &nbsp;
 
-![BigQuery connection settings](<lib/BigQuery%20connection%20settings.png>)
-
-&nbsp;
-
-&nbsp;
-
-The Hackolade process for reverse-engineering of Google BigQuery datasets includes the execution of SQL statements to discover datasets, tables and views, columns and their data types.&nbsp;
+The Hackolade process for reverse-engineering of Google BigQuery datasets includes the execution of SQL statements to discover datasets, tables and views, columns and their data types. If JSON is detected in text columns, Hackolade performs statistical sampling of records followed by probabilistic inference of the JSON document schema.
 
 &nbsp;
 

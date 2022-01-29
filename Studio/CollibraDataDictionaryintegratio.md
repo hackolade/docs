@@ -14,7 +14,7 @@ The process automatically:
 * creates the necessary custom scopes, attributeTypes and assignments to support the granularity of Hackolade features
 * then creates and keeps in sync assets for schemas, tables, views, columns, and foreign key relationships.
 
-The integration specifically handles complex data types, hierarchical structures, and polymorphism found in modern databases, JSON, Avro, Parquet, ProtoBuf, etc...
+The integration specifically handles complex data types, hierarchical structures, and polymorphism found in modern databases, JSON, Avro, Parquet, ProtoBuf, etc...&nbsp; Custom properties defined for a plugin are also published as custom attributeTypes in Collibra.
 
 &nbsp;
 

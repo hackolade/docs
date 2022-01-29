@@ -4,5 +4,5 @@ Model-Driven API generation is performed via the Tools \> Forward-Engineering \>
 
 &nbsp;
 
-You can find all details here.
+You can find all details [here](<APIModel.md>).
 

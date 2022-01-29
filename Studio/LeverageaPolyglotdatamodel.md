@@ -40,6 +40,10 @@ Alternatively, if you have an existing target data model, you can convert it to 
 
 ## Derive a target data model
 
+**Important:** from a polyglot model, you cannot directly forward-engineer DDLs, scripts, schemas, etc for technology targets.&nbsp; You must first create a target data model for the technology of your choice, then pull (or derive) from the polyglot model.&nbsp; Then you're able to forward-engineer the artifacts from the target model.
+
+&nbsp;
+
 Once you're ready to create a physical data model for a given technology, the process starts with the creation of a new model for the target of your choice.&nbsp; Then, from the target model, you derive your physical model from the polyglot data model by selecting the menu Tools \> Polyglot \> Derive from Polyglot Model:
 
 &nbsp;
