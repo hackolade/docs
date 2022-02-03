@@ -1,10 +1,10 @@
 # DynamoDB
 
-Amazon Web Services' DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability.&nbsp; It is derived from the ground-breaking 2007 [Dynamo paper](<http://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf> "target=\"\_blank\"") which, along with Google’s 2006 [Bigtable paper](<http://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf> "target=\"\_blank\""), introduced the concept of NoSQL databases.
+Amazon Web Services' DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability.&nbsp; It is derived from the ground-breaking 2007 [Dynamo paper](<http://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf> "target=\"\_blank\"") which, along with Google’s 2006 [Bigtable paper](<http://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf> "target=\"\_blank\""), popularized the concept of NoSQL databases.
 
 &nbsp;
 
-Hackolade was specially adapted to support the data modeling of DynamoDB tables including partition (hash) and sort (range) keys, supporting multiple regions as well.&nbsp; The application closely follows the terminology of the database.&nbsp; Support was enhanced with v5.0.8 for single-table storage, through the use of views (a more visual equivalent to the concept of facets in the [NoSQL Workbench](<https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.html> "target=\"\_blank\"").)
+Hackolade was specially adapted to support the data modeling of DynamoDB tables including partition (hash) and sort (range) keys, supporting multiple regions as well.&nbsp; The application closely follows the terminology of the database.&nbsp; Support was enhanced with v5.0.8 for single-table storage, through the use of views (a more graphical equivalent to the concept of facets in the [NoSQL Workbench](<https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.html> "target=\"\_blank\"").)
 
 &nbsp;
 
@@ -16,7 +16,7 @@ The data model in the picture below results from the reverse-engineering of the 
 
 ## Table groups
 
-In DynamoDB, you can assign multiple tables to a single group to manage your resources. Simply provide a group name and a key-value pair for tagging your table to the group to be created.
+In DynamoDB, you can assign multiple tables to a single group to manage your resources. Simply provide a group name and a key-value pair for tagging your table to the group to be created.&nbsp; Resources groups can be created through the AWS CLI or Console for [Resource Groups and Tag Editor](<https://docs.aws.amazon.com/ARG/latest/userguide/gettingstarted-query.html> "target=\"\_blank\"").
 
 &nbsp;
 
@@ -106,9 +106,7 @@ In Hackolade, we have enabled the views feature.&nbsp; While these views do not 
 
 &nbsp;
 
-![DynamoDB views](<lib/DynamoDB%20views.png>)&nbsp;
-
-&nbsp;
+![Image](<lib/DynamoDB%20views.png>)
 
 ## Forward-Engineering
 
@@ -118,7 +116,7 @@ Hackolade dynamically generates [CreateTable](<http://docs.aws.amazon.com/amazon
 
 ## Reverse-Engineering
 
-A DynamoDB can be installed either locally or as a managed database at AWS.&nbsp; The connection is established using a connection string including (IP) address and port (typically 8000), and if managed at AWS, authentication using the IAM awsAccessKeyId/awsSecretAccessKey for the region where the DynamoDB instance is located.
+A DynamoDB can be installed either locally or as a managed database at AWS.&nbsp; The connection is established using a connection string including (IP) address and port (typically 8000), and if managed at AWS, authentication using the IAM awsAccessKeyId/awsSecretAccessKey for the region where the DynamoDB instance is located.&nbsp; You should consult [this page](<AWSinstance.md>) for more information on how to connect to DynamoDB.
 
 &nbsp;
 

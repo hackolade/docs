@@ -46,7 +46,7 @@ For queries returning multiple results, the idea is to retrieve all of the docum
 
 ## Factors to take into consideration
 
-JSON seems to liberate users from the constraints of normalization.&nbsp; But you should exercise caution with deep nesting and unbounded arrays.
+JSON seems to liberate users from the constraints of normalization.&nbsp; But you should exercise caution when it comes to deep nesting and unbounded arrays.
 
 &nbsp;
 
@@ -68,7 +68,7 @@ When looking at embedding of one-to-many relationships, it is important to estim
 
 ### Referential integrity
 
-Detractors keep saying that NoSQL databases are not [ACID-compliant](<https://en.wikipedia.org/wiki/ACID> "target=\"\_blank\"") and would therefore not be usable in a transactional use case.&nbsp; Such criticism does not take into account several arguments, mainly that atomicity, integrity and consistency can be naturally achieved through embedding.&nbsp; Another factor, particularly in our modern connected world, is the fact that ACID is only possible when the system owns the full transaction end-to-end.&nbsp; Nowadays, resilience must be built into API processing more than database enforcement.
+Detractors keep saying that NoSQL databases are not [ACID-compliant](<https://en.wikipedia.org/wiki/ACID> "target=\"\_blank\"") and would therefore not be usable in a transactional use case.&nbsp; Such criticism, often driven by bias or lack of knowledge, does not take into account several arguments, mainly that atomicity, integrity and consistency can be naturally achieved through embedding.&nbsp; Another factor, particularly in our modern connected world, is the fact that ACID is only possible when the system owns the full transaction end-to-end.&nbsp; Nowadays, resilience must be built into API processing more than database enforcement.
 
 &nbsp;
 
@@ -84,7 +84,7 @@ Indexes have their costs, and they're tempting features reminding us of the days
 
 ## Schema versioning and schema migration
 
-One of the huge benefits of flexible structures in JSON, is the ability to evolve schemas without interruption of database operations.&nbsp; But this feature should not be abused to the point that dozens of schema versions are supported by the application.&nbsp; As a matter of fact, if more than a single application is reading the data, it quickly becomes a nightmare to synchronize schema handling across multiple applications, let alone reporting and analytics tools.&nbsp; Besides, endless conditional branches in the application code unnecessarily burn CPU cycles.
+One of the huge benefits of flexible structures in JSON, is the ability to evolve schemas without interruption of database operations.&nbsp; But this feature should not be abused to the point that dozens of schema versions of the same document are supported by the application.&nbsp; As a matter of fact, if more than a single application is reading the data, it quickly becomes a nightmare to synchronize schema handling across multiple applications, let alone reporting and analytics tools.&nbsp; Besides, endless conditional branches in the application code unnecessarily burn CPU cycles.
 
 &nbsp;
 
@@ -109,17 +109,19 @@ No database is an island.&nbsp; There may be many systems interacting with it.&n
 
 Another great advantage of NoSQL databases is their horizontal scaling capability, which is achieved through the distribution of data across servers, data centers, and geography.&nbsp; But efficiently leveraging this capability requires careful design.&nbsp; It is a balancing act between spreading evenly storage and load across the different partitions/shards, and the efficient retrieval of information when serving queries, so the information can be retrieved from a minimal number of partitions/shards - ideally just one.&nbsp;
 
-&nbsp;
+polymorphis
 
 &nbsp;
 
 ## Facilitating communication and collaboration
 
-Hackolade Studio is graphical tool for entity-relationship diagrams, extended to represent nested objects found in popular technologies for databases and data exchanges.&nbsp; Developers might tell you that, if you want to see the schema, you should just look at the code.&nbsp; Good practices however teach us that schema design for NoSQL databases is even more important than for relational databases where rules of normalization provide some guardrails.&nbsp; JSON is so flexible and powerful that it can be dangerous in the hands of inexperienced developers or ignorance of the factors described above.
+Hackolade Studio is a graphical tool for entity-relationship diagrams, extended to represent nested objects found in popular technologies for databases and data exchanges.&nbsp; Developers might tell you that, if you want to see the schema, you should just look at the code...&nbsp; Probably not the best way to promote collaboration, particularly with non-programmers.
+
+&nbsp;
+
+Good practices teach us that schema design for NoSQL databases is even more important than for relational databases where rules of normalization provide some guardrails.&nbsp; JSON is so flexible and powerful that it can be dangerous in the hands of inexperienced developers or with ignorance of all the factors described above.
 
 &nbsp;
 
 An ERD picture is worth a thousand words.&nbsp; It fosters communication and helps think through the different ways to denormalize information and balance the different constraints.&nbsp; It also lets non-developers easily visualize and understand data structures that are the foundation of applications and data exchanges.&nbsp; If business users don't understand the context and meaning of the data, it becomes difficult to deploy self-service analytics or make accurate business decisions.
-
-&nbsp;
 

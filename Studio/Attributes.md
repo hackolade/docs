@@ -36,7 +36,23 @@ The nominal case is for an attribute to have only one type.&nbsp; The JSON speci
 
 ![Data types multiple](<lib/Data%20types%20multiple.png>)
 
-If one of the data types is complex (array or object), then you must use a choice, cfr below.
+As a result, the data type in the ERD appears as "multi":
+
+![Data types multiple ERD](<lib/Data%20types%20multiple%20ERD.png>)
+
+&nbsp;
+
+The Properties Pane displays an array of properties for each of the data types:
+
+![Data types multiple Properties Pane](<lib/Data%20types%20multiple%20Properties%20Pane.png>)
+
+&nbsp;
+
+To expand the list&nbsp; of properties for a given data type, press the + sign on the left.&nbsp; To suppress a data type, click the X on the right.
+
+&nbsp;
+
+If one of the data types is complex (array or object, and also list, map, struct, etc. in other targets), then you must use a choice, cfr below.
 
 &nbsp;
 

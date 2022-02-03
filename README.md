@@ -8,4 +8,4 @@ Following methodology described [here](https://documentation.divio.com/introduct
 
 We intend the docs to be read on [hackolade.com](https://hackolade.com/help) — You can read them here of course :-) Just be warned that links won't always work and other things will be missing or less than optimal.
 
-Copyright (c) 2016-2021 IntegrIT SA/NV dba Hackolade. All Rights Reserved.
+Copyright (c) 2016-2022 IntegrIT SA/NV dba Hackolade. All Rights Reserved.
