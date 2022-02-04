@@ -106,7 +106,7 @@ In Hackolade, we have enabled the views feature.&nbsp; While these views do not 
 
 &nbsp;
 
-![Image](<lib/DynamoDB%20views.png>)
+![DynamoDB views](<lib/DynamoDB%20views.png>)
 
 ## Forward-Engineering
 

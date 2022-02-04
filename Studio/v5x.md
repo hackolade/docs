@@ -1,5 +1,29 @@
 # v5.x
 
+New features in v5.4.3 \[04-Feb-2022\]
+
+\- Confluent Schema Registry: added possibility to specify a cookie name-value pair to be inserted in the HTTP header, for example to address BlueCoat SSL inspection re-encrypting with an internal certificate
+
+\- Hive: Added if not exists property for databases, tables, and view
+
+\- Hive: Added forward-engineering of row format serde when stored as input/output format
+
+\- OpenAPI: added validation during reverse-engineering, plus display of warning dialog
+
+\- Oracle: added generation of ALTER statements from delta model
+
+\- Oracle: added possibility to fetch system schemas in table selection dialog
+
+\- PostgreSQL: added connection with ssl modes allow, prefer, require
+
+\- PostgreSQL: added handling for empty body in views and procedures
+
+\- PostgreSQL: added reverse-engineering of functions when user is not their owner
+
+\- Snowflake: added wrapping of role with double quotes when it contains special characters
+
+&nbsp;
+
 New features in v5.4.2 \[28-Jan-2022\]
 
 \- Software Key Validation dialog: pre-fill of optional Identifier field with Computer Name + OS username.&nbsp; Can be cleared or overwritten if desired
@@ -27,6 +51,8 @@ New features in v5.4.2 \[28-Jan-2022\]
 \- Snowflake: added handling of cross-schema views
 
 \- Snowflake: added possibility to apply DDL script to instance
+
+\- Snowflake: added generation of ALTER statements from delta model
 
 \- Snowflake: added snippets for GeoJSON geometries in data type geography
 
@@ -100,7 +126,7 @@ New features in v5.3.3 \[24-Dec-2021\]
 
 \- JSON Schema reverse-engineering: added tolerance for $ref with OpenAPI structure "/components/schemas/..."
 
-\- JSON Schema reverse-engineering: added tolerance for $ref at toot level
+\- JSON Schema reverse-engineering: added tolerance for $ref at root level
 
 \- Avro: added handling of multiple types inside choices
 

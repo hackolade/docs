@@ -86,6 +86,7 @@ All Product Versions
 | [Node-postgres](<https://github.com/brianc/node-postgres> "target=\"\_blank\"") | (c) 2010-2021 Brian Carlson | [MIT](<https://github.com/brianc/node-postgres/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Node-rsa-pem-from-mod-exp](<https://github.com/tracker1/node-rsa-pem-from-mod-exp> "target=\"\_blank\"") | (c) 2014 Michael J. Ryan | [MIT](<https://github.com/tracker1/node-rsa-pem-from-mod-exp/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Node-semver](<https://github.com/npm/node-semver> "target=\"\_blank\"") | (c) Isaac Z. Schlueter and Contributors | [ISC](<https://github.com/npm/node-semver/blob/master/LICENSE> "target=\"\_blank\"") |
+| [Node-SSL-root-CAs](<https://github.com/windhamg/node-ssl-root-cas>) | (c) 2014 Gary Windham | [Apache](<https://github.com/windhamg/node-ssl-root-cas/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Node-uuid](<https://github.com/broofa/node-uuid> "target=\"\_blank\"") | (c) 2010-2012 Robert Kieffer | [MIT](<https://github.com/broofa/node-uuid/blob/master/LICENSE.md> "target=\"\_blank\"") |
 | [Ottoman](<https://github.com/couchbaselabs/node-ottoman> "target=\"\_blank\"") | (c) 2013 Couchbase Inc. | [Apache](<https://www.apache.org/licenses/LICENSE-2.0> "target=\"\_blank\"") |
 | [PapaParse](<https://github.com/mholt/PapaParse> "target=\"\_blank\"") | (c) 2015 Matthew Holt | [MIT](<https://github.com/mholt/PapaParse/blob/master/LICENSE> "target=\"\_blank\"") |
