@@ -386,6 +386,8 @@ The above API example was simple on purpose.&nbsp; In practice, APIs can be quit
 
 &nbsp;
 
+**Tip:** when evolving an API, it is a nice touch to use this [specification for change logs](<https://github.com/smizell/api-changelog> "target=\"\_blank\"") and create x-changlog extensions where applicable.
+
 &nbsp;
 
 In this tutorial, we reviewed how to create a model for REST APIs using Swagger or OpenAPI specification.&nbsp; In the next tutorial, we will cover how to perform data modeling for polyglot storage and transmission, using our Polyglot Data Modeling capabilities.

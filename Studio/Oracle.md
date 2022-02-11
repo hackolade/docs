@@ -1,6 +1,6 @@
 # Oracle
 
-Oracle is a multi-model database management system commonly used for running online transaction processing (OLTP), data warehousing (DW) and mixed (OLTP \& DW) database workloads.&nbsp; It may be run by several service providers on-prem, on-cloud, or as hybrid cloud installation, as well as on Oracle hardware.
+Oracle is a multi-model database management system commonly used for running online transaction processing (OLTP), data warehousing (DW) and mixed (OLTP \& DW) database workloads.&nbsp; It may be run by several service providers on-prem, on-cloud, or as hybrid cloud installation, as well as on Oracle hardware. &nbsp;
 
 &nbsp;
 
@@ -8,11 +8,11 @@ To perform data modeling for Oracle with Hackolade, you must first download the 
 
 &nbsp;
 
-Hackolade was specially adapted to support the data modeling of Oracle, including schemas, tables and views, indexes and constraints, plus the generation of DDL Create Table syntax.&nbsp;
+Hackolade was specially adapted to support the data modeling of Oracle, including schemas, tables and views, indexes and constraints, plus the generation of DDL Create Table syntax. Hackolade also supports the Oracle Autonomous cloud database that uses machine learning to automate database tuning, security, backups, updates, and other routine management tasks traditionally performed by DBAs.&nbsp; This includes the JSON-centric autonomous database.
 
 &nbsp;
 
-In particular, Hackolade has the unique ability to model complex semi-structured objects stored in columns of the JSON data types (v21c and above) and of JSON documents in VARCHAR2, CLOB and BLOB data types (v12c, v18c, and v19c).&nbsp; We're not talking about functions that "flatten" JSON into standard columns, which runs the risk of inconsistencies, if not errors, when doing the Cartesian product of multiple complex data types.&nbsp; But about the storage of entire JSON documents.&nbsp; The reverse-engineering function, if it detects JSON documents, will sample records and infer the schema to supplement the DDL table definitions. &nbsp;
+In particular, Hackolade has the unique ability to model complex semi-structured objects stored in columns of the JSON data types (v21c and above) and of JSON documents in BLOB data types (v12c, v18c, and v19c).&nbsp; We're not talking about functions that "flatten" JSON into standard columns, which runs the risk of inconsistencies, if not errors, when doing the Cartesian product of multiple complex data types.&nbsp; But about the storage of entire JSON documents.&nbsp; The reverse-engineering function, if it detects JSON documents, will sample records and infer the schema to supplement the DDL table definitions. &nbsp;
 
 &nbsp;
 

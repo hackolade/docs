@@ -1,8 +1,40 @@
 # v5.x
 
+New features in v5.4.4 \[11-Feb-2022\]
+
+\- Reverse-Engineering: added progress bar during parsing of views' SELECT statement
+
+\- Confluent Schema Registry: added possibility to specify a cookie name-value pair to be inserted in during forward-engineering the HTTP header, for example to address BlueCoat SSL inspection re-encrypting with an internal certificate
+
+\- Cosmos DB: added choice of Capacity Mode, to choose between provisioned throughput or serverless
+
+\- DynamoDB: added support for JSON structures in attributes of String data type
+
+\- DynamoDB: added property for Table Class to support Standard-IA (Infrequent Access)
+
+\- DynamoDB: added handling of Capacity Mode (aka Billing Mode) for Provisioned Throughput or On-Demand (aka Pay-per-Request)
+
+\- DynamoDB: added possibility for views (aka facets) to have different Primary and Sort keys than their underlying table in single-table design
+
+\- DynamoDB: added primary and sort keys when deriving from Polyglot
+
+\- MongoDB: added handling of missing property in projection of read-only views during reverse-engineering of pipeline
+
+\- Neo4j, version 4.3 and above: added IF NOT EXISTS for CREATE CONSTRAINT statements
+
+\- Oracle: added handling of quotes in comments during reverse-engineering
+
+\- PostgreSQL: changed reverse-engineering to leverage connection pooling
+
+\- PostgreSQL: added checkbox to control whether to include partitions in table selection dialog, default unchecked
+
+\- PostgreSQL: added handling of table triggers (maintenance, forward- and reverse-engineering)
+
+&nbsp;
+
 New features in v5.4.3 \[04-Feb-2022\]
 
-\- Confluent Schema Registry: added possibility to specify a cookie name-value pair to be inserted in the HTTP header, for example to address BlueCoat SSL inspection re-encrypting with an internal certificate
+\- Confluent Schema Registry: added possibility to specify a cookie name-value pair to be inserted in during reverse-engineering the HTTP header, for example to address BlueCoat SSL inspection re-encrypting with an internal certificate
 
 \- Hive: Added if not exists property for databases, tables, and view
 

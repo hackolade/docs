@@ -48,6 +48,10 @@ As fields are always technically required in Avro, it is necessary to facilitate
 
 &nbsp;
 
+**Example:** a sample model can be found [here](<https://hackolade.com/samplemodels.html#avro> "target=\"\_blank\"").
+
+&nbsp;
+
 But how you treat this in the application differs depending on whether the data type(s) is(are) scalar or complex:
 
 \
