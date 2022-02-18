@@ -84,7 +84,11 @@ With a JSON, it make a lot of sense to gather all this information in a single a
 
 ## JSON Schema
 
-JSON Schema is a lightweight data interchange format that generates clear, easy-to-understand documentation, making validation and testing easier.&nbsp; JSON Schema is used to describe the structure and validation constraints of JSON documents.&nbsp; Schemas in general are used to validate files before use to prevent (or at least lower the risk of) software failing in unexpected ways. If there’s an error in the data being validated, the schema fails immediately. Schemas can serve as an extra quality filter for data.
+JSON Schema is a vocabulary to annotate and validate JSON documents. It defines how a JSON should be structured, making it easy to ensure that a JSON is formatted correctly, and it is useful for automated testing and validating. In addition, JSON Schema provides clear human- and machine-readable documentation.&nbsp;
+
+&nbsp;
+
+Schemas in general are used to validate files before use to prevent (or at least lower the risk of) software failing in unexpected ways. If there’s an error in the data being validated, the schema fails immediately. Schemas can serve as an extra quality filter for data.
 
 &nbsp;
 

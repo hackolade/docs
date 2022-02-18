@@ -52,13 +52,13 @@ ii) for field-level definitions, since data types have different property lists,
 
 ## &#50;) Levels
 
-As a reminder, terminology differs between NoSQL databases:
+As a reminder, terminology differs between the targets supported by Hackolade:
 
-\- container means: dbs in MongoDB, region in DynamoDB, and bucket in Couchbase, namespace in Avro, keyspace in Cassandra, etc...
+\- container means: dbs in MongoDB, region in DynamoDB, and bucket in Couchbase, namespace in Avro, keyspace in Cassandra, schema in RDBMS, etc...
 
-\- entity means: collection in MongoDB, table in DynamoDB and Cassandra, and document kind in Couchbase,e tc...
+\- entity means: collection in MongoDB, table in DynamoDB and Cassandra and RDBMS, and document type in Couchbase,e tc...
 
-\- field means: field in MongoDB and Couchbase, and attribute in DynamoDB, column in Cassandra, etc...
+\- field means: field in MongoDB and Couchbase, and attribute in DynamoDB, column in Cassandra and RDBMS, etc...
 
 &nbsp;
 
@@ -66,29 +66,33 @@ You need to edit the corresponding \<object\>LevelConfig.json file to add custom
 
 &nbsp;
 
-## &#51;) Lower tabs
+## &#51;) Tabs
+
+**Note:** tabs in Properties Panes were originally placed at the bottom.&nbsp; To make them more visible, they were subsequently moved to the top. &nbsp;
+
+&nbsp;
 
 For each level, the Hackolade properties pane may have one or more lower tab:
 
-\- MongoDB model lower tab:
+\- MongoDB model tab:
 
 ![MongoDB model lower tab](<lib/MongoDB%20model%20lower%20tab.png>)
 
-\- MongoDB dbs lower tab:
+\- MongoDB dbs tab:
 
 ![MongoDB dbs lower tab](<lib/MongoDB%20dbs%20lower%20tab.png>)
 
-\- MongoDB collection lower tab:
+\- MongoDB collection tab:
 
 ![MongoDB collection lower tab](<lib/MongoDB%20collection%20lower%20tab.png>)
 
-\- MongoDB field lower tab:
+\- MongoDB field&nbsp; tab:
 
 ![MongoDB field lower tab](<lib/MongoDB%20field%20lower%20tab.png>)
 
 &nbsp;
 
-If the level allows multiple tabs, you need to choose to which lower tab you want to add properties.
+If the level allows multiple tabs, you need to choose to which tab you want to add properties.
 
 &nbsp;
 
@@ -98,7 +102,7 @@ The following controls are possible for user-defined properties:
 
 &nbsp;
 
-![Plugin - possible property types](<lib/Plugin%20-%20possible%20property%20types.png>)
+![Plugin - possible property types](<lib/Custom%20Props%20controls.png>)
 
 * simple text: one line of text
 * text area: popup for multi-line text entry

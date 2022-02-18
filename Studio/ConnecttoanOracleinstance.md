@@ -4,6 +4,10 @@ To interact with Oracle databases (Cloud and private), when applying forward-eng
 
 &nbsp;
 
+**Important:** when reverse-engineering an Oracle instance, non-privileged users can see the metadata of only their own objects, so to access others you need to be be granted SELECT\_CATALOG\_ROLE. More information is available [here](<https://docs.oracle.com/cd/B19306\_01/appdev.102/b14258/d\_metada.htm#i1016867> "target=\"\_blank\"").
+
+&nbsp;
+
 **Note:** There are many ways to configure connections to Oracle. Plus firewalls, proxies, and whitelist can be make it hard to access.&nbsp; The easiest way to troubleshoot the connection settings in Hackolade is to make sure first that you have access from the same machine with another client tool.&nbsp; Then it becomes easy to transpose the connection settings from that application to Hackolade.&nbsp; Since [SQL Developer](<https://www.oracle.com/tools/downloads/sqldev-downloads.html> "target=\"\_blank\"") is an Oracle product, it does not require a separate Oracle Instant Client, so having a working connection from SQL Developer is not alone sufficient proof that Hackolade could connect.
 
 &nbsp;

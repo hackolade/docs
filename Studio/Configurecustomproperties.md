@@ -1,0 +1,277 @@
+# Configure custom properties
+
+Hackolade Studio is shipped with standard properties displayed in the Properties Pane.&nbsp; These properties are specific to each object in a data model.&nbsp; They are specific for each target technology, and can even be different for each data type.
+
+&nbsp;
+
+But many users want to define their own properties, for example to track PII or GDPR characteristics, or to tie with metadata management and governance.&nbsp; Some power users create hooks to be leveraged in DevOps CI/CD pipelines or in code generation routines.
+
+&nbsp;
+
+The principles of user-defined custom properties are defined in [this page](<Userdefinedcustomproperties.md>) and leverage the controls described in the [plugin documentation](<https://github.com/hackolade/plugins#26-property-controls> "target=\"\_blank\"").&nbsp; This how-to guide takes you through a hands-on exercise to create custom properties.
+
+&nbsp;
+
+There is no UI for the creation and maintenance of custom properties.&nbsp; It is all done through a configuration in JSON files.&nbsp; This may sound a bit scary, but once you see how it works, it is really simple.
+
+&nbsp;
+
+Each target, whether native (shipped with Hackolade Studio: Polyglot, JSON, Couchbase, DynamoDB, MongoDB) or installed via plugin, gets a structure in the folder:
+
+* **Windows:** C:\\Users\\%username%\\.hackolade\\options\\\<target\>\\customProperties
+* **Mac/Linux:** ~/.hackolade/options/\<target\>/customProperties
+
+&nbsp;
+
+This folder can be access via Help \> Plugin Manager \> Installed and clicking on the ling "Show plugin customization directory" or via the operating system explorer/finder.
+
+&nbsp;
+
+In this guide, we will concentrate on files in these sub-folders:
+
+![Custom Props subfolders](<lib/Custom%20Props%20subfolders.png>)
+
+&nbsp;
+
+As a reminder, terminology differs between the targets supported by Hackolade:
+
+\- container means: dbs in MongoDB, region in DynamoDB, and bucket in Couchbase, namespace in Avro, keyspace in Cassandra, schema in RDBMS, etc...
+
+\- entity means: collection in MongoDB, table in DynamoDB and Cassandra and RDBMS, and document type in Couchbase,e tc...
+
+\- field means: field in MongoDB and Couchbase, and attribute in DynamoDB, column in Cassandra and RDBMS, etc...
+
+&nbsp;
+
+You need to edit the corresponding \<object\>LevelConfig.json file to add custom properties.
+
+&nbsp;
+
+The following controls are possible for user-defined properties:
+
+&nbsp;
+
+![Custom Props controls](<lib/Custom%20Props%20controls.png>)
+
+* simple text: one line of text
+* text area: popup for multi-line text entry
+* dropdown selection (unique) from a defined list of options
+* dropdown selection (multiple) from a defined list of options
+* numeric-only field
+* checkbox: for true/false entry
+* group: addition of a set of properties of given control type
+* field list: selection from list of fields
+* field list with attributes: selection from list of fields with attributes
+
+&nbsp;
+
+The syntax for these controls is described in detail on this [page](<https://github.com/hackolade/plugins#26-property-controls> "target=\"\_blank\"").
+
+&nbsp;
+
+## Entity details tab
+
+Let's add a first custom property to the document entity for the JSON target.&nbsp; It will be a dropdown control for a list of Subject Areas for an insurance company.
+
+&nbsp;
+
+To do so, let's find the folder ***C:\\Users\\%username%\\.hackolade\\options\\**\<target\>**\\customProperties\\entity\_level*** and edit the file ***entityLevelConfig.json*** with a text editor such as [Notepad++](<https://notepad-plus-plus.org/downloads/> "target=\"\_blank\"").&nbsp; The file must be a proper JSON-compliant file (except maybe for the comments which are not accepted by all JSON validators.)
+
+&nbsp;
+
+The first 130-odd lines are commented and provide examples for the different controls.&nbsp; All the changes will take place in the section below the comments, and within the brackets of the "structure":
+
+![Custom Props entity empty](<lib/Custom%20Props%20entity%20empty.png>)
+
+&nbsp;
+
+&nbsp;
+
+To create a control for a dropdown, we'll simply copy from an example further in the file, and paste it in between the brackets:
+
+![Custom Props entity pasted](<lib/Custom%20Props%20entity%20pasted.png>)
+
+&nbsp;
+
+Then we can edit the properties for our needs.&nbsp; There is just one property value that cannot be changed: "propertyType", as it is used by the application to properly handle the control.
+
+![Custom Props entity options](<lib/Custom%20Props%20entity%20options.png>)
+
+&nbsp;
+
+If you need to allow multiple options in the dropdown, simply change the type to "propertyType": "multipleCheckboxSelect" instead of "select".
+
+&nbsp;
+
+You may paste additional controls, separated by commas. &nbsp;
+
+![Custom Props entity options checkbox](<lib/Custom%20Props%20entity%20options%20checkbox.png>)
+
+&nbsp;
+
+You can now save the file.&nbsp; It is necessary to restart the application before you can see the results of your changes, as configuration is only read at startup time.&nbsp; Your custom properties will appear at the bottom of the Properties Pane:
+
+&nbsp;
+
+![Custom Props entity results](<lib/Custom%20Props%20entity%20results.png>)
+
+&nbsp;
+
+![Custom Props entity options dropdown](<lib/Custom%20Props%20entity%20options%20dropdown.png>)
+
+&nbsp;
+
+&nbsp;
+
+Feel free to download [here](<https://hackolade.com/schemas/custProps/entityLevelConfig.json> "target=\"\_blank\"") the file just created, save it the proper directory, then edit it for your own configuration.
+
+&nbsp;
+
+## Attribute details tab for a data type
+
+When it comes to custom properties in the Details tab of attributes, things are slightly trickier, but not much.&nbsp; It is important to understand that the set of properties is different for each data type.&nbsp; As a result, if a custom property is applicable to more than one data type, it is required to repeat your custom properties for each of them.&nbsp; Alternatively, if you have a set of custom properties that are generic, you could decided to create a custom tab.&nbsp; Creating a custom tab is reviewed in a section further down.
+
+&nbsp;
+
+**Important:** as the data types are different from one target to the next, you cannot blindly copy the config file from one target to the next.&nbsp; Also, do NOT mix \<level\>LevelConfig.json files, as they are structured differently.
+
+&nbsp;
+
+This time, let's add custom properties at the attribute (aka field) level for the JSON target.&nbsp; It will be a dropdown control for a list of GDPR classifications..
+
+&nbsp;
+
+To do so, let's find the folder ***C:\\Users\\%username%\\.hackolade\\options\\**\<target\>**\\customProperties\\field\_level*** and edit the file ***fieldLevelConfig.json*** with a text editor such as [Notepad++](<https://notepad-plus-plus.org/downloads/> "target=\"\_blank\"").&nbsp; The file must be a proper JSON-compliant file (except maybe for the comments which are not accepted by all JSON validators.)
+
+&nbsp;
+
+The first 130-odd lines are commented and provide examples for the different controls.&nbsp; All the changes will take place in the section below the comments, and within the brackets of the "structure".&nbsp; A hint has been placed, commented with a double slash //:
+
+&nbsp;
+
+![Custom Props attribute empty](<lib/Custom%20Props%20attribute%20empty.png>)
+
+&nbsp;
+
+Let's remove the doubles slash //.&nbsp; Then to create a control for a dropdown, we'll simply copy from an example further in the file, and paste it in between the brackets.&nbsp; Then we can edit the properties for our needs.&nbsp; There is just one property value that cannot be changed: "propertyType", as it is used by the application to properly handle the control.
+
+&nbsp;
+
+![Custom Props attribute options](<lib/Custom%20Props%20attribute%20options.png>)
+
+&nbsp;
+
+If you need to allow multiple options in the dropdown, simply change the type to "propertyType": "multipleCheckboxSelect" instead of "select".
+
+&nbsp;
+
+You may paste additional controls, separated by commas. &nbsp;
+
+![Image](<lib/Custom%20Props%20attribute%20options%20text.png>)
+
+&nbsp;
+
+&nbsp;
+
+You can now save the file.&nbsp; It is necessary to restart the application before you can see the results of your changes, as configuration is only read at startup time.&nbsp; Your custom properties will appear at the bottom of the Properties Pane:
+
+&nbsp;
+
+![Image](<lib/Custom%20Props%20attribute%20result.png>)
+
+&nbsp;
+
+But, these custom properties are currently only available for the string data type.&nbsp; If they also need to be available in the number data type, a new section must be declared, separated by a comma, and the configuration copied:
+
+![Custom Props attribute numeric options text](<lib/Custom%20Props%20attribute%20numeric%20options%20text.png>)
+
+&nbsp;
+
+And the operation can be repeated for other data types.
+
+&nbsp;
+
+Feel free to download [here](<https://hackolade.com/schemas/custProps/fieldLevelConfig.json> "target=\"\_blank\"") the file just created, save it the proper directory, then edit it for your own configuration.
+
+&nbsp;
+
+## Attribute custom tab
+
+**Note:** Requires Hackolade v5.4.5 or above
+
+&nbsp;
+
+This time, let's add custom properties at the model level for the JSON target.&nbsp; It will be 3 different types of control: a text field, a checkbox, and a dropdown.
+
+&nbsp;
+
+To do so, let's find the folder ***C:\\Users\\%username%\\.hackolade\\options\\**\<target\>**\\customProperties\\model\_level*** and edit the file model***LevelConfig.json*** with a text editor such as [Notepad++](<https://notepad-plus-plus.org/downloads/> "target=\"\_blank\"").&nbsp; The file must be a proper JSON-compliant file (except maybe for the comments which are not accepted by all JSON validators.)
+
+&nbsp;
+
+![Custom Props tab](<lib/Custom%20Props%20tab.png>)
+
+&nbsp;
+
+Note: that we leave alone, the 2 tabs already available, and create a new tab. Don't worry about the "lower" part of the keyword "lowerTab". &nbsp;
+
+&nbsp;
+
+You can now save the file.&nbsp; It is necessary to restart the application before you can see the results of your changes, as configuration is only read at startup time.&nbsp; Your custom properties will appear at the bottom of the Properties Pane:
+
+![Custom Props tab result](<lib/Custom%20Props%20tab%20result.png>)
+
+&nbsp;
+
+Feel free to download [here](<https://hackolade.com/schemas/custProps/modelLevelConfig.json> "target=\"\_blank\"") the file just created, save it the proper directory, then edit it for your own configuration.
+
+&nbsp;
+
+## Advanced syntax
+
+Many additional keywords are available to fine-tune the behavior of controls, which described in the [plugin documentation](<https://github.com/hackolade/plugins#26-property-controls> "target=\"\_blank\""). Among them are 2 popular features: the possibility to mark a property as required, and the possibility to display a property based on the value of another property.
+
+&nbsp;
+
+The requiredProperty keyword displays a red star (\*) charater next to the property label.&nbsp; The validation keyword and structure ensures that the entry is validated.&nbsp; If you set the required flag to false, or do not provide the validation structure, then the red star would be for display only with no enforecement.&nbsp; If the requirement is enforced but not satisfied, a red badge with an explamation point (\!) is displayed.
+
+&nbsp;
+
+![Custom Props required keyword](<lib/Custom%20Props%20required%20keyword.png>)
+
+&nbsp;
+
+The dependecy keyword allows sophisticated logic decribed in the [documentation](<https://github.com/hackolade/plugins#26-property-controls>).&nbsp; to test according multiple criteria, and including and/or/not operators.&nbsp; Here is the simplest of examples:
+
+&nbsp;
+
+![Custom Props dependecy keyword](<lib/Custom%20Props%20dependecy%20keyword.png>)
+
+&nbsp;
+
+The result of the above keywords are displayed below:
+
+![Custom Props tab required dependency result](<lib/Custom%20Props%20tab%20required%20dependency%20result.png>)
+
+&nbsp;
+
+&nbsp;
+
+## Additional considerations
+
+If you use multiple targets, you probably want to display the same custom properties.&nbsp; You may copy the ***C:\\Users\\%username%\\.hackolade\\options\\**\<target\>**\\customProperties\\**\<level\>**\_level\\**\<level\>**LevelConfig.json***&nbsp; &nbsp; file to other targets for all levels except for the field level.&nbsp; The field level configuration file must have data types that match the data types of the target. &nbsp; If you choose to copy the file from another target, you must adjust it to reflect the right data types.
+
+&nbsp;
+
+You may want to share your custom properties with other team members to ensure consistency.&nbsp; We strongly suggest to leverage Git to synchronize and deploy custom properties.
+
+&nbsp;
+
+If you need to change the location of customer properties, you may do so Tools \> Options W Default Paths. &nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+

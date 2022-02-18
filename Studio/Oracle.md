@@ -154,6 +154,10 @@ The Hackolade process for reverse-engineering of Oracle databases includes the e
 
 &nbsp;
 
+**Important:** when reverse-engineering an Oracle instance, non-privileged users can see the metadata of only their own objects, so to access others you need to be be granted SELECT\_CATALOG\_ROLE. More information is available [here](<https://docs.oracle.com/cd/B19306\_01/appdev.102/b14258/d\_metada.htm#i1016867> "target=\"\_blank\"").
+
+&nbsp;
+
 For more information on Oracle in general, please consult the [website](<https://www.oracle.com/database/technologies/> "target=\"\_blank\"") and [documentation](<https://www.postgresql.org/docs/current/index.html> "target=\"\_blank\""). &nbsp;
 
 &nbsp;

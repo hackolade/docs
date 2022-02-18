@@ -1,12 +1,30 @@
 # v5.x
 
+New features in v5.4.5 \[18-Feb-2022\]
+
+\- Custom properties: enabled possibility to create custom tabs at model level and attribute level
+
+\- Properties Pane: added possibility to extend width to 800px
+
+\- Cosmos DB Core API: added choice of Capacity Mode, to choose between provisioned throughput or serverless&nbsp;
+
+\- MongoDB: added MQL validation of query in Collection selection dialog of reverse-engineering
+
+\- DynamoDB: added inference of schema for JSON payloads in attributes of String data type
+
+\- DynamoDB: allowed possibility to change the Sort Key for LSIs
+
+\- PostgreSQL: changed reverse-engineering of triggers in case user is missing the USAGE role
+
+&nbsp;
+
 New features in v5.4.4 \[11-Feb-2022\]
 
 \- Reverse-Engineering: added progress bar during parsing of views' SELECT statement
 
 \- Confluent Schema Registry: added possibility to specify a cookie name-value pair to be inserted in during forward-engineering the HTTP header, for example to address BlueCoat SSL inspection re-encrypting with an internal certificate
 
-\- Cosmos DB: added choice of Capacity Mode, to choose between provisioned throughput or serverless
+\- Cosmos DB Gremlin: added choice of Capacity Mode, to choose between provisioned throughput or serverless
 
 \- DynamoDB: added support for JSON structures in attributes of String data type
 

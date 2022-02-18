@@ -1,13 +1,17 @@
 # Tutorial
 
-We try real hard to make Hackolade Studio as intuitive as possible with a minimalist design, and we avoid to bloat the software with functionality that few people ever use.&nbsp; In reality, the use cases for the tool are quite simple:
+We try real hard to make Hackolade Studio as intuitive as possible with a minimalist design, and we avoid to bloat the software with functionality that few people ever use.&nbsp; In reality, the use cases for the tool are super simple:
 
 * start from a blank page, construct your data structures, then forward-engineer artifacts to be consumed by target technologies or data citizens;
 * or reverse-engineer an existing instance, enrich the model with descriptions and constraints, then publish the documentation
 
 &nbsp;
 
-The complexity appears when diving deeper in each of the use cases.&nbsp; NoSQL and JSON seem simple from the outside, but their power and flexibility offer many permutations that end up increasing complexity.&nbsp; With Hackolade Studio, we try to deal with this complexity in simpler ways, and only when necessary.&nbsp; For example, we allow non-technical users to generate JSON Schema files without requiring any knowledge of JSON Schema syntax.&nbsp; Or for such users to create REST APIs without any knowledge of Swagger/OpenAPI specification syntax.
+The rich feature set appears when you realize the variety of data sources and targets for the tool, and our ability to convert to and from any of them.&nbsp; This is illustrated by the capacity to translate, in any of the target technologies we support, data structures imported from JSON or YAML documents, JSON Schema of various draft levels, DDLs from all kinds of dialects, plus also XSDs or Excel. &nbsp;
+
+&nbsp;
+
+The complexity occurs when diving deeper in each of the use cases.&nbsp; NoSQL and JSON seem simple from the outside, but their power and flexibility offer many permutations that end up increasing complexity.&nbsp; With Hackolade Studio, we try to deal with this complexity in simpler ways, and only when necessary.&nbsp; For example, we allow non-technical users to generate JSON Schema files without requiring any knowledge of JSON Schema syntax.&nbsp; Or for such users to create REST APIs without any knowledge of Swagger/OpenAPI specification syntax.
 
 &nbsp;
 
@@ -19,14 +23,14 @@ People learn in different ways:
 
 * [dive in the application](<https://hackolade.com/download.html> "target=\"\_blank\"") and explore;
 * start by reading user manuals such as this [online help](<https://hackolade.com/help/index.html>);
-* read step-by-step instructions on an ad-hoc basis;
+* read [step-by-step instructions](<How-toguides.md>) on an ad-hoc basis;
 * watch [short videos](<https://hackolade.com/videos.html> "target=\"\_blank\"");
 * receive a personal and [interactive training session](<https://calendly.com/pdesmarets> "target=\"\_blank\"");
 * [open a ticket](<https://hackolade.zendesk.com/hc/en-us/requests/new> "target=\"\_blank\"") to ask a question.
 
 &nbsp;
 
-We try to accommodate whatever method works for our users.
+We try to accommodate whatever method works for our users.&nbsp; This series of tutorials provides a self-paced progressive learning approach to discover the features of Hackolade Studio.
 
 &nbsp;
 
