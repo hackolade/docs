@@ -4,7 +4,7 @@ Data modeling for relational databases is performed according to the rules of no
 
 &nbsp;
 
-![Image](<lib/JSON%20order%20normalized%20structure.png>)
+![JSON order normalized structure](<lib/JSON%20order%20normalized%20structure.png>)
 
 &nbsp;
 
@@ -16,9 +16,9 @@ But NoSQL databases are completely different.&nbsp; They require a mindshift in 
 
 To leverage the performance of NoSQL databases and the flexibility of JSON, it is important to unlearn the rules of normalization.&nbsp; JSON allows to aggregate information that belongs together so it is ready to be used, instead of splitting data across separate tables, as normalization rules would dictate.&nbsp; In other words, there’s an opportunity to join the data “on write”, instead of the traditional joins “on read” of relational databases which negatively impact performance. &nbsp;
 
-![Image](<lib/JSON%20order%20structure.png>)
-
 &nbsp;
+
+![JSON order denormalized structure](<lib/JSON%20order%20denormalized%20structure.png>)
 
 &nbsp;
 

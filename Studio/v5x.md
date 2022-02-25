@@ -1,5 +1,17 @@
 # v5.x
 
+New features in v5.4.6 \[25-Feb-2022\]
+
+\- Documentation generation: added possibility to see very long entity names in documentation ERD
+
+\- Excel export: added warning when content of a property exceeds Excel's cell limit of 32767 characters
+
+\- Excel import: added button to view log file saved to disk
+
+\- DynamoDB: added detection of required fields when inferring schema of JSON in String attributes
+
+&nbsp;
+
 New features in v5.4.5 \[18-Feb-2022\]
 
 \- Custom properties: enabled possibility to create custom tabs at model level and attribute level

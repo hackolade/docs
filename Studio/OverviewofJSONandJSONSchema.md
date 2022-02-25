@@ -70,6 +70,8 @@ The benefits of a single document atomicity with embedded objects is best illust
 
 &nbsp;
 
+&nbsp;
+
 Then, when comes the time to display the information on screen or print the invoice, the information needs to be gathered again, using lengthy and CPU-intensive joins.&nbsp; Besides the performance impact of these joins, developers encounter difficulties known as [impedance mismatch](<https://en.wikipedia.org/wiki/Object–relational\_impedance\_mismatch> "target=\"\_blank\"").
 
 &nbsp;
@@ -78,7 +80,7 @@ With a JSON, it make a lot of sense to gather all this information in a single a
 
 &nbsp;
 
-![JSON order structure](<lib/JSON%20order%20structure.png>)
+![JSON order denormalized structure](<lib/JSON%20order%20denormalized%20structure.png>)
 
 &nbsp;
 
