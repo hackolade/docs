@@ -1,5 +1,29 @@
 # v5.x
 
+New features in v5.4.7 \[04-Mar-2022\]
+
+\- JSON Schema: added tolerance for reverse-engineering of Swagger/OpenAPI "example" keyword into proper "examples" keyword
+
+\- Compare and merge: multiple enhancements: property-level only changes, references in model definitions, relationships when compared by name, metadata (indexes, constraints, triggers, ...) when compared by name
+
+\- Excel import: enhanced import of groups and blocks custom properties controls
+
+\- Avro: added filtering of nested references
+
+\- Cosmos DB with SQL API: enhanced reverse-engineering when documents are nullable
+
+\- Cosmos DB with SQL, MongoDB, and Gremlin APIs: allowed field names starting with an underscore, except for metadata system fields
+
+\- Delta Lake/Databricks: enhanced DDL parsing during reverse-engineering to accommodate truncated output&nbsp;
+
+\- MongoDB: added support for version 5.2
+
+\- MongoDB: disabled MMAPv1 as possible engine for v4.2 and above
+
+\- MongoDB: only declare storageEngine if configString is not null
+
+&nbsp;
+
 New features in v5.4.6 \[25-Feb-2022\]
 
 \- Documentation generation: added possibility to see very long entity names in documentation ERD
