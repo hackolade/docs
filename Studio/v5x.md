@@ -1,8 +1,34 @@
 # v5.x
 
+New features in v5.4.8 \[11-Mar-2022\]
+
+\- Compare \& Merge: eliminated false positives with choices and array items when comparing by name
+
+\- Cassandra forward-engineering of ALTER scripts from delta model: added a flag to explicitly un-comment DROP statements, signifying the understanding of the possible consequences
+
+\- Command-Line interface: added argument --apply-drop-statements to forwEng command when generating DROP statements out of a compMod delta model.&nbsp; The default is false so the user is required to explicitly activate the generation of DROP statements, signifying the understanding of the possible consequences
+
+\- Model-driven API generation: added handling of custom properties for other targets than JSON
+
+\- MongoDB: added option to use indexed columns in sort criteria during reverse-engineering
+
+\- MongoDB: added dialog with instructions when encountering MongoDB error "operation exceeded time limit"
+
+\- MongoDB forward-engineering: added handling of technical name when index is a nested field inside a reference
+
+\- MongoDB script tab: added a linter with warnings and errors to identify missing necessary statements: use database, missing index keys, etc.
+
+\- MongoDB reverse-engineering: improved optional inference of relationships when FKs are inside arrays
+
+\- OpenAPI/Swagger: added tolerance for user mistakenly choosing reverse-engineering from JSON Schema instead of from OpenAPI/Swagger file
+
+\- PotsgreSQL: enhanced creation of connection pool for sslTypes \<allow\> and \<prefer\>
+
+&nbsp;
+
 New features in v5.4.7 \[04-Mar-2022\]
 
-\- JSON Schema: added tolerance for reverse-engineering of Swagger/OpenAPI "example" keyword into proper "examples" keyword
+\- JSON Schema: added tolerance for reverse-engineering of Swagger/OpenAPI "example" keyword into proper "examples" property
 
 \- Compare and merge: multiple enhancements: property-level only changes, references in model definitions, relationships when compared by name, metadata (indexes, constraints, triggers, ...) when compared by name
 

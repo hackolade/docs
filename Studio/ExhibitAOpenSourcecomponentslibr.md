@@ -75,7 +75,7 @@ All Product Versions
 | [MongoDB-collection-sample](<https://github.com/mongodb-js/collection-sample> "target=\"\_blank\"") | (c) 2015 MongoDB Inc. | [Apache](<https://github.com/mongodb-js/collection-sample/blob/master/LICENSE> "target=\"\_blank\"") |
 | [MongoDB-connection-model](<https://github.com/mongodb-js/connection-model> "target=\"\_blank\"") | (c) 2015 MongoDB Inc. | [Apache](<https://github.com/mongodb-js/connection-model/blob/master/LICENSE> "target=\"\_blank\"") |
 | [MongoDB-schema](<https://github.com/mongodb-js/mongodb-schema> "target=\"\_blank\"") | (c) 2015 MongoDB Inc. | [Apache](<https://github.com/mongolab/mongodb-uri-node> "target=\"\_blank\"") |
-| MongoDB-uri-node | (c) 2013 ObjectLabs Corporation | [MIT](<https://github.com/mongolab/mongodb-uri-node/blob/master/LICENSE> "target=\"\_blank\"") |
+| [MongoDB-uri-node](<https://github.com/mongolab/mongodb-uri-node> "target=\"\_blank\"") | (c) 2013 ObjectLabs Corporation | [MIT](<https://github.com/mongolab/mongodb-uri-node/blob/master/LICENSE> "target=\"\_blank\"") |
 | [MySQL](<https://github.com/mysqljs/mysql> "target=\"\_blank\"") | (c) 2012 Felix Geisendorfer | [MIT](<https://github.com/mysqljs/mysql/blob/master/License> "target=\"\_blank\"") |
 | [Neo4j-javascript-driver](<https://github.com/neo4j/neo4j-javascript-driver> "target=\"\_blank\"") | (c) 2018 Neo4j | [Apache](<https://github.com/neo4j/neo4j-javascript-driver/blob/1.7/LICENSE> "target=\"\_blank\"") |
 | [Node-fetch](<https://github.com/bitinn/node-fetch> "target=\"\_blank\"") | (c) 2016 David Frank | [MIT](<https://github.com/bitinn/node-fetch/blob/master/LICENSE.md> "target=\"\_blank\"") |

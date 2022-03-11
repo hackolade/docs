@@ -51,5 +51,11 @@ Keyboard shortcuts:
 | \<mouse wheel up/down\> | &nbsp; | Move up or down in ERD and hierarchical schema view |
 | Shift+\<mouse wheel up/down\> | &nbsp; | Move left or right in ERD and hierarchical schema view |
 | Ctrl+\<mouse wheel up/down\> | &nbsp; | Zoom in or out in ERD and hierarchical schema view |
+| Ctrl+G | Cmd+G | Open Repository View |
+| Ctrl+Shift+O | Cmd+Shift+O | Open Local Repository |
+| Ctrl+Shift+C | Cmd+Shift+C | Commit Changes |
+| Ctrl+Shift+L | Cmd+Shift+L | Pull Commits |
+| Ctrl+Shift+P | Cmd+Shift+P | Push Commits |
+| Ctrl+Shift+R | Cmd+Shift+R | Refresh Repository Status |
 
 

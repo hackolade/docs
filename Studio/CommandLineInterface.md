@@ -418,6 +418,7 @@ Usage:&nbsp; &nbsp; *hackolade forwEng \[--arguments\]*
 | \--level=\<entity \| container \| model\> | N | Specify the forward-engineering level \[values: "entity", "container", "model"\] |
 | \--skipUndefinedLevel=\<true \| **false**\> | N | For JSON document/schema, skip extraneous folder level when container is undefined \[default: false\] |
 | \--structuredpath=\<**true** \| false\> | N | Use a structured path for naming a model folder \[default: true\] |
+| \--apply-drop-statements=\<true \| **false**\> | N | Determines whether DROP statements are active (true) or commented out (false).  The user is required to explicitly activate the generation of DROP statements, signifying the understanding of the possible consequences&nbsp; \[default: false\] |
 | \--logLevel=\< 1 \| 2 \| 3 \| **4** \> | N | &#49; = no spinner, no info, no error messages 2 = no spinner, no info 3 = no spinner 4 = full output \[default: 4\] |
 
 
