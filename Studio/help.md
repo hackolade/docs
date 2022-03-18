@@ -117,6 +117,7 @@
   - [Naming conventions](<Namingconventions.md>)
   - [Lineage capture](<Lineagecapture.md>)
   - [Collibra Data Dictionary integration](<CollibraDataDictionaryintegratio.md>)
+  - [MongoDB Field-Level Encryption](<MongoDBField-LevelEncryption.md>)
 - [Quick start guide](<Quickstartguide.md>)
   - [Create a new model from scratch](<Createanewmodelfromscratch.md>)
     - [Forward-Engineering](<ForwardEngineering.md>)

@@ -1,5 +1,27 @@
 # v5.x
 
+New features in v5.4.9 \[18-Mar-2022\]
+
+\- Compare \& Merge: added flag to allow excluding container ALTER statements, useful when dealing with multiple environments: dev, test, prod, etc.
+
+\- Command-Line Interface forwEng command: added argument --exclude-container-alter-statements
+
+\- Polyglot: changed conversion of object data type to struct for Delta Lake/Databricks, Glue Data Catalog and Hive
+
+\- Polyglot: added automatic deriving of model definitions/UDTs when referenced, even if not actually selected
+
+\- MongoDB: improved relationship inference during reverse-engineering when small sampling value in large collections
+
+\- MongoDB: added field-level encryption support in data model and $jsonschema validator script creation
+
+\- Redhift: added support for interleaved sort keys
+
+\- all SQL-based databases: improved parser for SELECT statements of views
+
+\- Swagger/OpenAPI/EventBrdige: changed conversion of decimals and integers with high capacity to nearest possible data type
+
+&nbsp;
+
 New features in v5.4.8 \[11-Mar-2022\]
 
 \- Compare \& Merge: eliminated false positives with choices and array items when comparing by name

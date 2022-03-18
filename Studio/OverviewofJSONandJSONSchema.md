@@ -86,7 +86,7 @@ With a JSON, it make a lot of sense to gather all this information in a single a
 
 ## JSON Schema
 
-JSON Schema is a vocabulary to annotate and validate JSON documents. It defines how a JSON should be structured, making it easy to ensure that a JSON is formatted correctly, and it is useful for automated testing and validating. In addition, JSON Schema provides clear human- and machine-readable documentation.&nbsp;
+[JSON Schema](<https://json-schema.org/blog/posts/json-schema-in-5-minutes> "target=\"\_blank\"") is a vocabulary to annotate and validate JSON documents. It defines how a JSON should be structured, making it easy to ensure that a JSON is formatted correctly, and it is useful for automated testing and validating. In addition, JSON Schema provides clear human- and machine-readable documentation.&nbsp;
 
 &nbsp;
 

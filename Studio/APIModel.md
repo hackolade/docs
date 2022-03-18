@@ -24,6 +24,8 @@ The process is as follows:
 
 &nbsp;
 
+&nbsp;
+
 ![Image](<lib/Model-driven%20API%20generation%20process.png>)
 
 &nbsp;
