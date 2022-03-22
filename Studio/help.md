@@ -33,6 +33,7 @@
     - [Create a REST API model](<CreateaRESTAPImodel.md>)
     - [Leverage a Polyglot data model](<LeverageaPolyglotdatamodel.md>)
   - [How-to guides](<How-toguides.md>)
+    - [Add reusable definitions](<Addreusabledefinitions.md>)
     - [Configure custom properties](<Configurecustomproperties.md>)
 - [NoSQL databases, storage formats, REST APIs](<NoSQLdatabasesJSONRESTAPIs.md>)
   - [Polyglot Data Model](<PolyglotDataModel.md>)

@@ -6,9 +6,9 @@ Keyboard shortcuts:
 
 | Windows Shortcut | Mac Shortcut | Function |
 | --- | --- | --- |
-| Ctrl+N | Cmd+N | New model |
+| Ctrl+N | Cmd+N | New Data Model |
 | Ctrl+O | Cmd+O | Open |
-| Ctrl+Alt+F4 | Cmd+W | Close |
+| Ctrl+Alt+F4 | Cmd+W | Close Data Model |
 | Ctrl+S | Cmd+S | Save |
 | Ctrl+P | Cmd+P | Print |
 | Ctrl+Shift+I | Cmd+Shift+M | Start new application instance |
@@ -40,6 +40,7 @@ Keyboard shortcuts:
 | Ctrl+B | Cmd+B | Add dbs/Region/Bucket |
 | Ctrl+L | Cmd+L | Add Collection/Table/Document kind |
 | Ctrl+T | Cmd+T | Add Relationship |
+| Ctrl+W | Alt+Cmd+W | Add View |
 | Ctrl+R | Cmd+R | Add Attribute |
 | Ctrl+I | Cmd+I | Insert |
 | Ctrl+E | Cmd+E | Append |
@@ -51,7 +52,7 @@ Keyboard shortcuts:
 | \<mouse wheel up/down\> | &nbsp; | Move up or down in ERD and hierarchical schema view |
 | Shift+\<mouse wheel up/down\> | &nbsp; | Move left or right in ERD and hierarchical schema view |
 | Ctrl+\<mouse wheel up/down\> | &nbsp; | Zoom in or out in ERD and hierarchical schema view |
-| Ctrl+G | Cmd+G | Open Repository View |
+| Ctrl+G | Cmd+G | Open Repository Context |
 | Ctrl+Shift+O | Cmd+Shift+O | Open Local Repository |
 | Ctrl+Shift+C | Cmd+Shift+C | Commit Changes |
 | Ctrl+Shift+L | Cmd+Shift+L | Pull Commits |

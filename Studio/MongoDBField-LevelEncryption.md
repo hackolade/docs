@@ -64,11 +64,9 @@ With field-level encryption, sensitive information like the ssn and phone can be
 **Note:** While MongoDB calls this feature "Field-Level Encryption", the encryption can actually be applied at the collection level as well.\
 &nbsp;
 
-![Image](<https://webimages.mongodb.com/\_com\_assets/cms/FLE-s7oxojve2n-shxql4cyij.gif>)
-
 &nbsp;
 
-&nbsp;
+Watch an [animation](<https://webimages.mongodb.com/\_com\_assets/cms/FLE-s7oxojve2n-shxql4cyij.gif> "target=\"\_blank\"") of the field-level encryption process, along with the following legend of the steps:
 
 ![Image](<lib/MongoDB%20Field-Level%20Encryption%20process%20legend.png>)
 
