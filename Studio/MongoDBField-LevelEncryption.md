@@ -4,17 +4,21 @@ Starting with v4.2, MongoDB provides a field level encryption ("FLE") framework,
 
 &nbsp;
 
+Starting with v5.4.9 of Hackolade Studio, we support MongoDB FLE functionality.
+
+&nbsp;
+
 **Note:** using Client-Side FLE alongside in-flight and at-rest encryption gives an end-to-end, complementary approach in building applications that provide a defense-in-depth security posture to address different threat models.
 
 * In-flight encryption protects all data traversing the network, but does not encrypt data in-memory or at-rest.
 * At-rest encryption protects all stored data, but does not encrypt data in-memory or in-flight.
-* With client-side encryption, the most sensitive data never leaves applications in plaintext. Fields that are encrypted client-side remain encrypted over the network, as they are being processed in database server memory, and at-rest in storage, backups, and logs.
+* With client-side encryption, the most sensitive data never leaves applications in plain text. Fields that are encrypted client-side remain encrypted over the network, as they are being processed in database server memory, and at-rest in storage, backups, and logs.
 
 &nbsp;
 
 &nbsp;
 
-As explained in [this MongoDB page](<https://docs.mongodb.com/manual/core/security-client-side-encryption/#std-label-field-level-encryption-algorithms>), consider the following document:
+As explained in [this MongoDB page](<https://docs.mongodb.com/manual/core/security-client-side-encryption/#std-label-field-level-encryption-algorithms> "target=\"\_blank\""), consider the following document:
 
 {
 
@@ -38,7 +42,7 @@ As explained in [this MongoDB page](<https://docs.mongodb.com/manual/core/securi
 
 &nbsp;
 
-With field-level encryption, sensitive information like the ssn and phone can be encrypted. Encrypted fields are stored as [binary data](<https://docs.mongodb.com/manual/reference/mongodb-extended-json/#mongodb-bsontype-Binary>) with [subtype 6](<https://github.com/mongodb/specifications/blob/master/source/client-side-encryption/subtype6.rst>)
+With field-level encryption, sensitive information like the ssn and phone can be encrypted. Encrypted fields are stored as [binary data](<https://docs.mongodb.com/manual/reference/mongodb-extended-json/#mongodb-bsontype-Binary> "target=\"\_blank\"") with [subtype 6](<https://github.com/mongodb/specifications/blob/master/source/client-side-encryption/subtype6.rst> "target=\"\_blank\"")
 
 {
 
@@ -78,7 +82,7 @@ Either server-side or client-side encryption can be used, or both. It is a good 
 
 &nbsp;
 
-The configuration server-side leverages the familiar [$jsonschema validator](<https://docs.mongodb.com/manual/core/schema-validation/>) to declare the encryption rules, for example for the phone and ssn fields below:
+The configuration server-side leverages the familiar [$jsonschema validator](<https://docs.mongodb.com/manual/core/schema-validation/> "target=\"\_blank\"") to declare the encryption rules, for example for the phone and ssn fields below:
 
 &nbsp;
 
@@ -166,8 +170,8 @@ db.runCommand({
 
 MongoDB also supports two methods of client-side field level encryption:
 
-* Automatic encryption of fields: applications must create a database connection object using the [Mongo()](<https://docs.mongodb.com/manual/reference/method/Mongo/#connect-to-a-mongodb-cluster-with-automatic-client-side-encryption-enabled>) constructor with the automatic encryption configuration settings. The configuration settings must include automatic encryption rules using a strict subset of the $jsonschema validator (same as the server-side encryption described above.) Applications do not have to modify code associated with the read/write operation. See [Automatic Encryption Rules](<https://docs.mongodb.com/manual/reference/security-client-side-automatic-json-schema/#std-label-field-level-encryption-json-schema>) for complete documentation on automatic encryption rules.
-* Explicit (manual) encryption of fields: applications are responsible for selecting the appropriate data encryption key for encryption/decryption on a per-operation basis. The connection is also established using the [Mongo()](<https://docs.mongodb.com/manual/reference/method/Mongo/#connect-to-a-mongodb-cluster-with-client-side-encryption-enabled>) constructor, but without declaring a $jsonschema validator. For more information, see [this page](<https://docs.mongodb.com/manual/core/security-explicit-client-side-encryption/>).\
+* Automatic encryption of fields: applications must create a database connection object using the [Mongo()](<https://docs.mongodb.com/manual/reference/method/Mongo/#connect-to-a-mongodb-cluster-with-automatic-client-side-encryption-enabled> "target=\"\_blank\"") constructor with the automatic encryption configuration settings. The configuration settings must include automatic encryption rules using a strict subset of the $jsonschema validator (same as the server-side encryption described above.) Applications do not have to modify code associated with the read/write operation. See [Automatic Encryption Rules](<https://docs.mongodb.com/manual/reference/security-client-side-automatic-json-schema/#std-label-field-level-encryption-json-schema> "target=\"\_blank\"") for complete documentation on automatic encryption rules.
+* Explicit (manual) encryption of fields: applications are responsible for selecting the appropriate data encryption key for encryption/decryption on a per-operation basis. The connection is also established using the [Mongo()](<https://docs.mongodb.com/manual/reference/method/Mongo/#connect-to-a-mongodb-cluster-with-client-side-encryption-enabled> "target=\"\_blank\"") constructor, but without declaring a $jsonschema validator. For more information, see [this page](<https://docs.mongodb.com/manual/core/security-explicit-client-side-encryption/> "target=\"\_blank\"").\
 In theory this method should not affect Hackolade Studio from a data modeling perspective. But when performing reverse-engineering, we'll be encountering encrypted fields not declared in the $jsonchema validator.&nbsp;
 
 \
@@ -183,7 +187,7 @@ In theory this method should not affect Hackolade Studio from a data modeling pe
 
 ### Encryptions algorithms
 
-MongoDB client-side field level encryption uses the encrypt-then-MAC approach combined with either a deterministic or random initialization vector to encrypt field values. MongoDB *only* supports the [AEAD](<https://en.wikipedia.org/wiki/Authenticated\_encryption#Authenticated\_encryption\_with\_associated\_data\_(AEAD)>) AES-256-CBC encryption algorithm with HMAC-SHA-512 MAC.
+MongoDB client-side field level encryption uses the encrypt-then-MAC approach combined with either a deterministic or random initialization vector to encrypt field values. MongoDB *only* supports the [AEAD](<https://en.wikipedia.org/wiki/Authenticated\_encryption#Authenticated\_encryption\_with\_associated\_data\_(AEAD)> "target=\"\_blank\"") AES-256-CBC encryption algorithm with HMAC-SHA-512 MAC.
 
 * deterministic: gives the same value every time the data is encrypted. While deterministic encryption provides greater support for read operations, encrypted data with low cardinality is susceptible to frequency analysis recovery.
   * supports direct match (equality) against encrypted fields
@@ -212,11 +216,11 @@ More advanced queries should be run on unencrypted fields.\
 
 The encrypt object can contain **only** the following fields:
 
-* [keyId](<https://docs.mongodb.com/manual/reference/security-client-side-automatic-json-schema/#mongodb-autoencryptkeyword-autoencryptkeyword.encrypt.keyId>): *Array of single UUID.* The UUID of the data encryption key to use for encrypting field values. The UUID is a BSON [binary data](<http://bsonspec.org/spec.html>) element of subtype 4.
-* [algorithm](<https://docs.mongodb.com/manual/reference/security-client-side-automatic-json-schema/#mongodb-autoencryptkeyword-autoencryptkeyword.encrypt.algorithm>): Indicates which encryption algorithm to use when encrypting values of \<fieldName\>. Supports the algorithms:
+* [keyId](<https://docs.mongodb.com/manual/reference/security-client-side-automatic-json-schema/#mongodb-autoencryptkeyword-autoencryptkeyword.encrypt.keyId> "target=\"\_blank\""): *Array of single UUID.* The UUID of the data encryption key to use for encrypting field values. The UUID is a BSON [binary data](<http://bsonspec.org/spec.html> "target=\"\_blank\"") element of subtype 4.
+* [algorithm](<https://docs.mongodb.com/manual/reference/security-client-side-automatic-json-schema/#mongodb-autoencryptkeyword-autoencryptkeyword.encrypt.algorithm> "target=\"\_blank\""): Indicates which encryption algorithm to use when encrypting values of \<fieldName\>. Supports the algorithms:
   * AEAD\_AES\_256\_CBC\_HMAC\_SHA\_512-Random
   * AEAD\_AES\_256\_CBC\_HMAC\_SHA\_512-Deterministic
-* [bsonType](<https://docs.mongodb.com/manual/reference/security-client-side-automatic-json-schema/#mongodb-autoencryptkeyword-autoencryptkeyword.encrypt.bsonType>)
+* [bsonType](<https://docs.mongodb.com/manual/reference/security-client-side-automatic-json-schema/#mongodb-autoencryptkeyword-autoencryptkeyword.encrypt.bsonType> "target=\"\_blank\"")
 
 &nbsp;
 
@@ -267,12 +271,12 @@ The encrypt object can contain **only** the following fields:
 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },
 
-#### [encryptMetadata Schema Keyword](<https://docs.mongodb.com/manual/reference/security-client-side-automatic-json-schema/#encrypt-schema-keyword> "target=\"\_blank\"")
+#### [encryptMetadata Schema Keyword](<https://www.mongodb.com/docs/manual/reference/security-client-side-automatic-json-schema/#encryptmetadata-schema-keyword> "target=\"\_blank\"")
 
 **Note:** only at collection level (root object), and optionally for objects inside a collection\
 &nbsp;
 
-encryptMetadata defines encryption options which an [encrypt](<https://docs.mongodb.com/manual/reference/security-client-side-automatic-json-schema/#mongodb-autoencryptkeyword-autoencryptkeyword.encrypt>) object nested in the sibling properties may inherit. If an [encrypt](<https://docs.mongodb.com/manual/reference/security-client-side-automatic-json-schema/#mongodb-autoencryptkeyword-autoencryptkeyword.encrypt>) in a nested field is missing an option required to support encryption, mongocryptd searches the entire tree of parent objects to locate an [encryptMetadata](<https://docs.mongodb.com/manual/reference/security-client-side-automatic-json-schema/#mongodb-autoencryptkeyword-autoencryptkeyword.encryptMetadata>) object that specifies the missing option.
+encryptMetadata defines encryption options which an [encrypt](<https://docs.mongodb.com/manual/reference/security-client-side-automatic-json-schema/#mongodb-autoencryptkeyword-autoencryptkeyword.encrypt> "target=\"\_blank\"") object nested in the sibling properties may inherit. If an [encrypt](<https://docs.mongodb.com/manual/reference/security-client-side-automatic-json-schema/#mongodb-autoencryptkeyword-autoencryptkeyword.encrypt> "target=\"\_blank\"") in a nested field is missing an option required to support encryption, mongocryptd searches the entire tree of parent objects to locate an [encryptMetadata](<https://docs.mongodb.com/manual/reference/security-client-side-automatic-json-schema/#mongodb-autoencryptkeyword-autoencryptkeyword.encryptMetadata> "target=\"\_blank\"") object that specifies the missing. option.
 
 &nbsp;
 
@@ -282,8 +286,8 @@ encryptMetadata must be specified in subschemas with bsonType: "object". encrypt
 
 The encryptMetadata object can contain **only** the following fields:
 
-* [keyId](<https://docs.mongodb.com/manual/reference/security-client-side-automatic-json-schema/#mongodb-autoencryptkeyword-autoencryptkeyword.encrypt.keyId>): *Array of single UUID.* The UUID of the data encryption key to use for encrypting field values. The UUID is a BSON [binary data](<http://bsonspec.org/spec.html>) element of subtype 4.
-* [algorithm](<https://docs.mongodb.com/manual/reference/security-client-side-automatic-json-schema/#mongodb-autoencryptkeyword-autoencryptkeyword.encrypt.algorithm>): Indicates which encryption algorithm to use when encrypting values of \<fieldName\>. Supports the algorithms:
+* [keyId](<https://docs.mongodb.com/manual/reference/security-client-side-automatic-json-schema/#mongodb-autoencryptkeyword-autoencryptkeyword.encrypt.keyId> "target=\"\_blank\""): *Array of single UUID.* The UUID of the data encryption key to use for encrypting field values. The UUID is a BSON [binary data](<http://bsonspec.org/spec.html> "target=\"\_blank\"") element of subtype 4.
+* [algorithm](<https://docs.mongodb.com/manual/reference/security-client-side-automatic-json-schema/#mongodb-autoencryptkeyword-autoencryptkeyword.encrypt.algorithm> "target=\"\_blank\""): Indicates which encryption algorithm to use when encrypting values of \<fieldName\>. Supports the algorithms:
   * AEAD\_AES\_256\_CBC\_HMAC\_SHA\_512-Random
   * AEAD\_AES\_256\_CBC\_HMAC\_SHA\_512-Deterministic
 
@@ -359,7 +363,7 @@ db.runCommand({
 **Note:** the structure is slightly different than for encrypt, with "bsonType": "object", being **outside** the encryptMetadata structure.\
 &nbsp;
 
-See detailed examples [here](<https://docs.mongodb.com/manual/reference/security-client-side-automatic-json-schema/#examples>) on how to encrypt multiple fields with [individual](<https://docs.mongodb.com/manual/reference/security-client-side-automatic-json-schema/#std-label-field-level-encryption-auto-encrypt-multiple-fields>) encrypt, or with encryptMetadata [inheritance](<https://docs.mongodb.com/manual/reference/security-client-side-automatic-json-schema/#std-label-field-level-encryption-auto-encrypt-multiple-fields-inheritance>).
+See detailed examples [here](<https://docs.mongodb.com/manual/reference/security-client-side-automatic-json-schema/#examples> "target=\"\_blank\"") on how to encrypt multiple fields with [individual](<https://docs.mongodb.com/manual/reference/security-client-side-automatic-json-schema/#std-label-field-level-encryption-auto-encrypt-multiple-fields> "target=\"\_blank\"") encrypt, or with encryptMetadata [inheritance](<https://docs.mongodb.com/manual/reference/security-client-side-automatic-json-schema/#std-label-field-level-encryption-auto-encrypt-multiple-fields-inheritance> "target=\"\_blank\"").
 
 \
 **Note:** in an object that had encryptMetadatafor inheritance, it is possible for a nested field to have its own encryption that overrides the parent object encryptMetadata. This is to allow a stricter random algorithm in a nested field than the parent, or a different keyId.\
@@ -369,7 +373,7 @@ See detailed examples [here](<https://docs.mongodb.com/manual/reference/security
 
 #### JSON Data sample (TBA)
 
-The encrypted field appears encrypted in the JSON sample, specifically with random [binary data](<https://docs.mongodb.com/manual/reference/mongodb-extended-json/#mongodb-bsontype-Binary>) with [subtype 6](<https://github.com/mongodb/specifications/blob/master/source/client-side-encryption/subtype6.rst>), e.g; BinData(6,"U2FsdGVkX1+CGIDGUnGgtS46+c7R5u17SwPDEmzyCbA="). In the case of objects with inheritance, the object must appear, but each nested field should be encrypted with a sample in random [binary data](<https://docs.mongodb.com/manual/reference/mongodb-extended-json/#mongodb-bsontype-Binary>) with [subtype 6](<https://github.com/mongodb/specifications/blob/master/source/client-side-encryption/subtype6.rst>).&nbsp;
+The encrypted field appears encrypted in the JSON sample, specifically with random [binary data](<https://docs.mongodb.com/manual/reference/mongodb-extended-json/#mongodb-bsontype-Binary> "target=\"\_blank\"") with [subtype 6](<https://github.com/mongodb/specifications/blob/master/source/client-side-encryption/subtype6.rst> "target=\"\_blank\""), e.g; BinData(6,"U2FsdGVkX1+CGIDGUnGgtS46+c7R5u17SwPDEmzyCbA="). In the case of objects with inheritance, the object must appear, but each nested field should be encrypted with a sample in random [binary data](<https://docs.mongodb.com/manual/reference/mongodb-extended-json/#mongodb-bsontype-Binary> "target=\"\_blank\"") with [subtype 6](<https://github.com/mongodb/specifications/blob/master/source/client-side-encryption/subtype6.rst> "target=\"\_blank\"").&nbsp;
 
 #### MongoDB script (both individual collection tab and model tab)
 
@@ -393,7 +397,7 @@ If the $jsonschema validator includes the encrypt and/or encryptMetadata keyword
 
 &nbsp;
 
-If during schema inference, we encounter a field with [binary data](<https://docs.mongodb.com/manual/reference/mongodb-extended-json/#mongodb-bsontype-Binary>) with [subtype 6](<https://github.com/mongodb/specifications/blob/master/source/client-side-encryption/subtype6.rst>) that was not identified as encrypted in the $jsonschema validator (or there was not $jsonschema validator), we can assume that there was explicit (manual) encryption.&nbsp;
+If during schema inference, we encounter a field with [binary data](<https://docs.mongodb.com/manual/reference/mongodb-extended-json/#mongodb-bsontype-Binary> "target=\"\_blank\"") with [subtype 6](<https://github.com/mongodb/specifications/blob/master/source/client-side-encryption/subtype6.rst> "target=\"\_blank\"") that was not identified as encrypted in the $jsonschema validator (or there was not $jsonschema validator), we can assume that there was explicit (manual) encryption.&nbsp;
 
 &nbsp;
 

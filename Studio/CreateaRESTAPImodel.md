@@ -144,6 +144,10 @@ We also want to give users examples to better understand how to use the API, for
 
 &nbsp;
 
+It is possible to create multiple components requestBodies to pick from in your requests.
+
+&nbsp;
+
 &nbsp;
 
 #### Parameter to fetch a full URL from a previously generated slug
@@ -258,9 +262,21 @@ The easiest way to create the structure for a request is to work in the dedicate
 
 &nbsp;
 
-There are different ways to build a request, all represented in the template.&nbsp; In our case, we will replace the schema object by the reusable component created earlier:
+There are different ways to build a request, all represented in the template.&nbsp; In our case, we will replace the schema object by the reusable component created earlier by choosing Reference \> Replace by Component \> Component \> urlBody in the contextual menu:
+
+&nbsp;
+
+![Tutorial OpenAPI Request replace by reference](<lib/Tutorial%20OpenAPI%20Request%20replace%20by%20reference.png>)
+
+&nbsp;
+
+&nbsp;
+
+This operation creates a reference to the pre-defined requestBody urlBody:
 
 ![Tutorial OpenAPI Request urlBody reference](<lib/Tutorial%20OpenAPI%20Request%20urlBody%20reference.png>)
+
+&nbsp;
 
 We also create examples of a custom slug and a random slug, which will help the developer visualize the possible inputs.
 

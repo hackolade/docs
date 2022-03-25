@@ -1,5 +1,33 @@
 # v5.x
 
+New features in v5.4.10 \[25-Mar-2022\]
+
+\- Mac: mapped shortcut Cmd+W to Close Data Model, and Alt+Cmd+W to Add View
+
+\- Added auto-fix of existing circular external references when opening model
+
+\- Compare and Merge: added spinners
+
+\- Cassandra: when adding a column to an existing search index, use the more efficient script statements ALTER SEARCH INDEX SCHEMA followed by RELOAD SEARCH INDEX and REBUILD SEARCH INDEX, instead of the previous DROP/CREATE SEARCH INDEX statements
+
+\- Delta Lake: adjusted error messages when cluster id or workspace URL does not exist
+
+\- Delta Lake: added responseBody to reverse-engineering logs
+
+\- MongoDB Field-Level Encryption:added generation of JSON Sample with BinaryData level 6 sample for encrypted fields
+
+\- MongoDB Field-Level Encryption: added script linting messages when FLE not appropriately configured
+
+\- Oracle, PostgreSQL, Snowflake forward-engineering of ALTER scripts from delta model: added a flag to explicitly un-comment DROP statements, signifying the understanding of the possible consequences
+
+\- Protobuf: added reverse-engineering of top-level messages into User-Defined Types/model definitions
+
+\- Protobuf: added handling ofr choices in definitions during forward-engineering
+
+\- ScyllaDB: added forward-engineering of ALTER scripts from delta model, including flag to explicitly un-comment DROP statements, signifying the understanding of the possible consequences
+
+&nbsp;
+
 New features in v5.4.9 \[18-Mar-2022\]
 
 \- Compare \& Merge: added flag to allow excluding container ALTER statements, useful when dealing with multiple environments: dev, test, prod, etc.
