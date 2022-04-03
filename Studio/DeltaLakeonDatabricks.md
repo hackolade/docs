@@ -108,6 +108,21 @@ The connection is established using a connection string including the Cloud prov
 
 &nbsp;
 
+Databricks by default allows access to the data using all languages. It is possible for an administrator to limit this capability.  If that's the case, then we require at least:
+
+&nbsp; &nbsp; "spark\_conf":{ \
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "spark.databricks.repl.allowedLanguages":"sql,scala" \
+&nbsp;&nbsp; &nbsp; &nbsp; },&nbsp; &nbsp; &nbsp; &nbsp;
+
+as we require both languages for our reverse-engineering operations.  You may add others such as python, r, etc. but we don't need them.
+
+Additionally in the premium version of Databricks, it is possible to control [table access](<https://docs.databricks.com/security/access-control/table-acls/index.html#table-access-control> "target=\"\_blank\"").  If that's the case, the user must be granted the following [data object privileges](<https://docs.databricks.com/security/access-control/table-acls/object-privileges.html#data-object-privileges> "target=\"\_blank\""):
+
+1. for reverse-engineering: READ\_METADATA and SELECT  on the tables and views
+1. for forward-engineering (apply to instance): rights to CREATE/UPDATE schema, table, and view: CREATE on the CATALOG, and either OWN or both USAGE and CREATE on the schema, tables and views.
+
+&nbsp;
+
 The Hackolade process for reverse-engineering of Delta Lake databases includes the execution of HQL SHOW statements to discover databases, tables, columns and their data types.  If JSON is detected in text columns, Hackolade performs statistical sampling of records followed by probabilistic inference of the JSON document schema.
 
 &nbsp;

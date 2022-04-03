@@ -23,8 +23,9 @@ People learn in different ways:
 
 * [dive in the application](<https://hackolade.com/download.html> "target=\"\_blank\"") and explore;
 * start by reading user manuals such as this [online help](<https://hackolade.com/help/index.html>);
-* read [step-by-step instructions](<How-toguides.md>) on an ad-hoc basis;
+* read this tutorial and [step-by-step instructions](<How-toguides.md>) on an ad-hoc basis;
 * watch [short videos](<https://hackolade.com/videos.html> "target=\"\_blank\"");
+* take a 5 half-day [training course](<https://hackolade.com/training.html>) by Steve Hoberman;
 * receive a personal and [interactive training session](<https://calendly.com/pdesmarets> "target=\"\_blank\"");
 * [open a ticket](<https://hackolade.zendesk.com/hc/en-us/requests/new> "target=\"\_blank\"") to ask a question.
 

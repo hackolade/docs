@@ -246,8 +246,7 @@ The encrypt object can contain **only** the following fields:
     * minKey
     * maxKey
     * null
-    * undefined\
-{% endhint %}
+    * undefined
 
 &nbsp;
 

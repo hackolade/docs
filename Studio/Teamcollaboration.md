@@ -1,10 +1,6 @@
 # Team collaboration
 
-**Note:** You may wish to view the [how-to video](<https://hackolade.com/videos.html#collaboration> "target=\"\_blank\"") on this subject.
-
-&nbsp;
-
-The Hackolade roadmap foresees specific versions to support workgroup collaboration, assuming the base version is successful commercially, and that the market needs this feature.&nbsp; But what can be done in the meantime?
+The Workgroup Edition of Hackolade Studio introduced, starting with v6 and with the appropriate license key upgrade, native integration with Git repositories. Previously, an integration with Git was possible, but required either a separate Git desktop application, or the use of the Git command line interface.&nbsp; Our Workgroup Edition makes it easy for users who are not so familiar with Git to leverage the tremendous power of this popular tool.
 
 &nbsp;
 
@@ -20,6 +16,24 @@ Hackolade has been promoting a GitOps approach for the lifecycle of data models 
 * **easy rollbacks:** if, for any reason, on decides changes made aren't desirable, it’s easy to roll back to an older tag or commit.
 * **testing:** many customers use Hackolade data models as part of a CI/CD pipeline. When testing new application versions, it is easy to include the corresponding feature branch.
 * **build and deploy:** while this may seem software-specific, such process can be leveraged to produce artifacts such as corresponding schemas, scripts, documentation, etc.
+
+&nbsp;
+
+Even if you have little or no experience with Git, we made it very easy to use Git from inside Hackolade Studio, without compromise on the power of Git in more advanced situations. You just need to become familiar with the concepts below.
+
+&nbsp;
+
+The Wokrgroup Edition fully integrates with Git workflows, including a powerful interactive screen to resolve conflicts and merge branches.&nbsp; Read more information on our [repository integration](<Repository.md>).
+
+&nbsp;
+
+## Using Git without the Workgroup Edition
+
+If you don't have the Workgroup Edition, it is still possible to interact with Git, either with a separate Git desktop application, or with the use of the Git command line interface
+
+&nbsp;
+
+**Note:** You may wish to view the [how-to video](<https://hackolade.com/videos.html#collaboration> "target=\"\_blank\"") on this subject.
 
 &nbsp;
 
@@ -60,4 +74,8 @@ Resolving conflicting changes can be a tedious process involving manual interven
 &nbsp;
 
 Sometimes, it may be a good idea, if working on the model for a new release, to Save As the current model to a new version by giving the model file a new name, for example by appending a version number at the end of the file name.
+
+&nbsp;
+
+The Workgroup Edition, on the other hand, fully integrates with the Git workflow, and has a powerful interactive screen to resolve conflict and merge branches.
 

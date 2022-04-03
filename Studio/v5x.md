@@ -1,5 +1,19 @@
 # v5.x
 
+New features in v5.4.11 \[31-Mar-2022\]
+
+\- Added ability to alpha sort attributes from contextual menu of Object Browser, ERD, and schema tree view
+
+\- Delta Lake: added cluster state logs, and improve logs for each API request
+
+\- Delta Lake: made keywords in revers-engineering grammar case-insensitive
+
+\- MariaDB forward-engineering of ALTER scripts from delta model: added a flag to explicitly un-comment DROP statements, signifying the understanding of the possible consequences
+
+\- SQL Server forward-engineering of ALTER scripts from delta model: added a flag to explicitly un-comment DROP statements, signifying the understanding of the possible consequences
+
+&nbsp;
+
 New features in v5.4.10 \[25-Mar-2022\]
 
 \- Mac: mapped shortcut Cmd+W to Close Data Model, and Alt+Cmd+W to Add View
