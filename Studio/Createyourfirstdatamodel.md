@@ -90,7 +90,7 @@ and give it a name:
 
 &nbsp;
 
-When adding new field DOB, we can see taht a description can be added as well as a format to create a constraint for the field:
+When adding new field DOB, we can see that a description can be added as well as a format to create a constraint for the field:
 
 ![Tutorial - atttribute string properties](<lib/Tutorial%20-%20atttribute%20string%20properties.png>)
 
