@@ -42,13 +42,17 @@ Give a meaningful name to the connection to identify it for later, and provide p
 
 &nbsp;
 
+**Note:** be careful to only mention the storage account name, i.e. NOT a full URL or anything other than the storage account name.
+
+&nbsp;
+
 ![Cloud Storage - Azure connection avro schema](<lib/Cloud%20Storage%20-%20Azure%20connection.png>)
 
 &nbsp;
 
 If the storage account is private, you must also provide your Storage access key:
 
-![Cloud Storage - Azure authentication avro schema](<lib/Cloud%20Storage%20-%20Azure%20authentication.png>)
+![Cloud Storage - Azure authentication](<lib/Cloud%20Storage%20-%20Azure%20authentication.png>)
 
 &nbsp;
 

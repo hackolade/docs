@@ -289,6 +289,7 @@
 - [FAQ and troubleshooting](<FAQandtroubleshooting.md>)
   - [How to get help and support?](<Howtogethelpandsupport.md>)
   - [Tips and tricks](<Tipsandtricks.md>)
+  - [Vulnerabilities](<Vulnerabilities.md>)
   - [Licensing FAQ](<LicensingFAQ.md>)
     - [Perpetual license or subscription: which one should I choose?](<Perpetuallicenseorsubscriptionwh.md>)
     - [Transfer a license to a new computer](<Transferalicensetoanewcomputer.md>)

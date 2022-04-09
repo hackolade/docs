@@ -44,13 +44,17 @@ Give a meaningful name to the connection to identify it for later, and provide p
 
 &nbsp;
 
+**Note:** be careful to only mention the storage account name, i.e. NOT a full URL or anything other than the storage account name.
+
+&nbsp;
+
 ![Parquet Cloud Storage - Azure connection](<lib/Cloud%20Storage%20-%20Azure%20connection.png>)
 
 &nbsp;
 
 If the storage account is private, you must also provide your Storage access key:
 
-![Parquet Cloud Storage - Azure authentication](<lib/Cloud%20Storage%20-%20Azure%20authentication.png>)
+![Cloud Storage - Azure authenticationCloud Storage - Azure authentication](<lib/Cloud%20Storage%20-%20Azure%20authentication.png>)
 
 &nbsp;
 

@@ -15,7 +15,11 @@ Hackolade is available in different versions:
 
 &nbsp;
 
-The&nbsp; above editions are packaged in the same software.&nbsp; The activation key obtained through he Hackolade store determines feature access within the application.
+Access this page to [compare the different editions](<https://hackolade.com/editions.html> "target=\"\_blank\"").
+
+&nbsp;
+
+The&nbsp; above editions are packaged in the same software.&nbsp; The activation key obtained through the Hackolade store determines feature access within the application.
 
 &nbsp;
 

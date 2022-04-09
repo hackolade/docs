@@ -47,11 +47,11 @@ All Product Versions
 | [ExcelJS](<https://github.com/exceljs/exceljs> "target=\"\_blank\"") | (c) 2014-2019 Guyon Roche | [MIT](<https://github.com/exceljs/exceljs/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Fast-crc32c](<https://github.com/ashi009/node-fast-crc32c> "target=\"\_blank\"") | (c) 2014 Xiaoyi Shi | [MIT](<https://github.com/ashi009/node-fast-crc32c/blob/master/LICENSE> "target=\"\_blank\"") |
 | [File-loader](<https://github.com/webpack/file-loader> "target=\"\_blank\"") | (c) 2016 Tobias Koppers | [MIT](<https://opensource.org/licenses/MIT> "target=\"\_blank\"") |
-| [Flora SQL Server](<https://github.com/haansn08/flora-sql-parser> "target=\"\_blank\"") | (c) 2015 BorseGo AG | [MIT](<https://github.com/haansn08/flora-sql-parser/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Font-awesome](<https://fortawesome.github.io/Font-Awesome/> "target=\"\_blank\"") | (c) 2016 Dave Gandy | [MIT](<https://fortawesome.github.io/Font-Awesome/license/> "target=\"\_blank\"") |
 | [Form-Data](<https://github.com/form-data/form-data> "target=\"\_blank\"") | (c) 2012 Felix Geisendörfer | [MIT](<https://github.com/form-data/form-data/blob/master/License> "target=\"\_blank\"") |
 | [Fs-extra](<https://github.com/jprichardson/node-fs-extra> "target=\"\_blank\"") | (c) 2011-2016 JP Richardson | [MIT](<https://github.com/jprichardson/node-fs-extra/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Generate-schema](<https://github.com/mjackson/history> "target=\"\_blank\"") | (c) 2015 Nijiko Yonskai | [MIT](<https://github.com/nijikokun/generate-schema/blob/master/LICENSE> "target=\"\_blank\"") |
+| [Git-url-parse](<https://github.com/IonicaBizau/git-url-parse> "target=\"\_blank\"") | &nbsp; | &nbsp; |
 | [Google Cloud BigQuery](<https://github.com/googleapis/nodejs-bigquery> "target=\"\_blank\"") | (c) 2018 Google, Inc. | [Apache](<https://github.com/googleapis/nodejs-bigquery/blob/main/LICENSE> "target=\"\_blank\"") |
 | [Google Cloud Storage](<https://github.com/googleapis/nodejs-storage> "target=\"\_blank\"") | (c) 2016 Google, Inc. | [Apache](<https://github.com/googleapis/nodejs-storage/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Gremlin-javascript](<https://github.com/apache/tinkerpop/tree/master/gremlin-javascript/src/main/javascript/gremlin-javascript> "target=\"\_blank\"") | (c) 2017 Apache TinkerPop team | [Apache](<https://github.com/apache/tinkerpop/blob/master/gremlin-javascript/src/main/javascript/gremlin-javascript/LICENSE> "target=\"\_blank\"") |

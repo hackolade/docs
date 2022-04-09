@@ -42,7 +42,11 @@ Data Definition Language (DDL) is a vocabulary used to define data structures in
 
 &nbsp;
 
-If you generate a DDL from Oracle, Microsoft SQL Server, MySQL, PostgreSQL, or Hadoop Hive, you can then read it with Hackolade and generate a model of the schema.
+If you generate a DDL from Oracle, Microsoft SQL Server, MySQL, PostgreSQL, Snowflake, Hadoop Hive, etc., you can then read it with Hackolade and generate a model of the schema.
+
+&nbsp;
+
+**Note:** to speed up import, it is highly recommended to create a pure DDL, i.e. without any data, rather than a DML (Data Manipulation Language.)
 
 &nbsp;
 

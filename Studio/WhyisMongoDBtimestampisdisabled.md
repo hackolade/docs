@@ -8,4 +8,8 @@ You want to use date which is really an ISODate data type [https://docs.mongodb
 
 &nbsp;
 
+Alternatively, you may want to use a String data type with a date-time format.
+
+&nbsp;
+
 We do display the timestamp data type for backward compatibility purposes, but disabled it so users would not be tempted to use it.

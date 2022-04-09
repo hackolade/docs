@@ -108,7 +108,7 @@ The picture below is an example of what the history of a repository can look lik
 
 &nbsp;
 
-![Workgroup Git ommit history](<lib/Workgroup%20Git%20ommit%20history.png>)
+![Workgroup Git commit history](<lib/Workgroup%20Git%20commit%20history.png>)
 
 &nbsp;
 
