@@ -35,7 +35,7 @@ We try to accommodate whatever method works for our users.&nbsp; This series of 
 
 &nbsp;
 
-Some people like the linear flow of outlines, while others prefer non-linear mindmapping.&nbsp; In addition to the tutorial pages below, we have started an experimental mindmap on this Miro [page](<https://miro.com/app/board/o9J\_kmBxYFg=/> "target=\"\_blank\"").&nbsp; There are 2 views: a functional view, and a user interface view.&nbsp; In the boxes of each view, you can click on the hyperlink to a page of this online documentation.
+Some people like the linear flow of outlines, while others prefer non-linear mindmapping.&nbsp; In addition to the tutorial pages below, we have started an experimental mindmap on this [Miro page](<https://miro.com/app/board/o9J\_kmBxYFg=/> "target=\"\_blank\"").&nbsp; There are 2 views: a functional view, and a user interface view.&nbsp; In the boxes of each view, you can click on the hyperlink to a page of this online documentation.
 
 &nbsp;
 

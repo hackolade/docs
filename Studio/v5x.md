@@ -1,5 +1,11 @@
 # v5.x
 
+New features in v5.4.13 \[18-Apr-2022\]
+
+\- Tech refresh of Electron (v17.4.0)
+
+&nbsp;
+
 New features in v5.4.12 \[08-Apr-2022\]
 
 \- Tech refresh of Electron (v17.3.1), NodeJS (v16.13.0), Chromium (v98.0.4757.141), and Electron-related modules.&nbsp; Addresses Chromium V8 CVE-2022-1096 vulnerability

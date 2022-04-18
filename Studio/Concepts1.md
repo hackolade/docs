@@ -138,3 +138,7 @@ You can merge a branch into another one.
 
 You can delete a branch (after merging it, or not merging it.)
 
+&nbsp;
+
+**Note:** you should should choose carefully the basis for your new branch, if that basis is any other branch than main/master.&nbsp; This is because a new branch inherits all the history and content of the branch on which it is based. This article [explains Git branches with a LEGO analogy](<https://opensource.com/article/22/4/git-branches> "target=\"\_blank\"").
+

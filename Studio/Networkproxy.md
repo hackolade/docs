@@ -44,9 +44,9 @@ If that fails, you should enter the hostname or IP address of the proxy server, 
 
 &nbsp;
 
-If necessary, you may also want to whitelist the domains: [https://hackolade.com](<https://hackolade.com> "target=\"\_blank\""), [https://quicklicensemanager.com](<https://quicklicensemanager.com> "target=\"\_blank\"") and [https://qlmdr.com](<https://qlmdr.com> "target=\"\_blank\"") (for our license server), and and [https://github.com](<https://github.com> "target=\"\_blank\"") (for plugin downloads.)
+If necessary, you may have to whitelist the domains: [https://hackolade.com](<https://hackolade.com> "target=\"\_blank\""), [https://quicklicensemanager.com](<https://quicklicensemanager.com> "target=\"\_blank\"") and [https://qlmdr.com](<https://qlmdr.com> "target=\"\_blank\"") (for our license servers), and and [https://github.com](<https://github.com> "target=\"\_blank\"") (for plugin downloads.)
 
 &nbsp;
 
-In particular, in environments with proxies using SSL inspection (Zscalar, BlueCoat, etc.) it is critical that Hackolade be whitelisted to connect properly with SSL/TLS protocols.
+In particular, in environments with proxies using SSL inspection (Zscaler, BlueCoat, etc.) it is critical that Hackolade be whitelisted to connect properly with SSL/TLS protocols.
 

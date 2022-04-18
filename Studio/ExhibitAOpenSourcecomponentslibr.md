@@ -51,7 +51,8 @@ All Product Versions
 | [Form-Data](<https://github.com/form-data/form-data> "target=\"\_blank\"") | (c) 2012 Felix Geisendörfer | [MIT](<https://github.com/form-data/form-data/blob/master/License> "target=\"\_blank\"") |
 | [Fs-extra](<https://github.com/jprichardson/node-fs-extra> "target=\"\_blank\"") | (c) 2011-2016 JP Richardson | [MIT](<https://github.com/jprichardson/node-fs-extra/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Generate-schema](<https://github.com/mjackson/history> "target=\"\_blank\"") | (c) 2015 Nijiko Yonskai | [MIT](<https://github.com/nijikokun/generate-schema/blob/master/LICENSE> "target=\"\_blank\"") |
-| [Git-url-parse](<https://github.com/IonicaBizau/git-url-parse> "target=\"\_blank\"") | &nbsp; | &nbsp; |
+| [GitHub Desktop](<https://github.com/desktop/desktop> "target=\"\_blank\"") | (c) GitHub, Inc. | [MIT](<https://github.com/desktop/desktop/blob/development/LICENSE> "target=\"\_blank\"") |
+| [Git-url-parse](<https://github.com/IonicaBizau/git-url-parse> "target=\"\_blank\"") | (c) 2015-21 Ionică Bizău \<bizauionica@gmail.com\> | [MIT](<https://github.com/IonicaBizau/git-url-parse/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Google Cloud BigQuery](<https://github.com/googleapis/nodejs-bigquery> "target=\"\_blank\"") | (c) 2018 Google, Inc. | [Apache](<https://github.com/googleapis/nodejs-bigquery/blob/main/LICENSE> "target=\"\_blank\"") |
 | [Google Cloud Storage](<https://github.com/googleapis/nodejs-storage> "target=\"\_blank\"") | (c) 2016 Google, Inc. | [Apache](<https://github.com/googleapis/nodejs-storage/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Gremlin-javascript](<https://github.com/apache/tinkerpop/tree/master/gremlin-javascript/src/main/javascript/gremlin-javascript> "target=\"\_blank\"") | (c) 2017 Apache TinkerPop team | [Apache](<https://github.com/apache/tinkerpop/blob/master/gremlin-javascript/src/main/javascript/gremlin-javascript/LICENSE> "target=\"\_blank\"") |

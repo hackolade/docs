@@ -30,7 +30,7 @@ As you type some text in the Branch drop-down, it is filtered to only list the b
 
 &nbsp;
 
-## Checkout a new branch
+## Create and checkout a new branch
 
 To create a new branch and check it out, you just type a name in the Branch drop-down, then click on the "Create new branch message" appearing in the drop-down.&nbsp; The option to create a new branch with that name appears in the drop-down itself, unless there is already an existing branch with that same name (branch names must be unique).
 

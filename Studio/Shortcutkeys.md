@@ -44,6 +44,7 @@ Keyboard shortcuts:
 | Ctrl+R | Cmd+R | Add Attribute |
 | Ctrl+I | Cmd+I | Insert |
 | Ctrl+E | Cmd+E | Append |
+| Ctrl+Shift+T | Cmd+Shift+T | Open selected entity(ies) in a new tab |
 | Ctrl+M | Cmd+M | Close all tabs |
 | Ctrl+Shift+M | Cmd+Shift+M | Close all tabs except current |
 | Ctrl+F11 | Cmd+F11 | Display lineage (aka impact analysis aka where-used)&nbsp; of a definition or denomalization |
