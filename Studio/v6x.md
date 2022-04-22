@@ -1,5 +1,35 @@
 # v6.x
 
+New features in v6.0.5 \[22-Apr-2022\]
+
+\- Improved application startup performance with streamlined license validation process on Windows
+
+\- Custom properties: added handling of property names collision with reserved JSON Schema keywords
+
+\- Excel export/import: added handling of font size and colors for entities and views
+
+\- JSON Schema Preview: added resolution of references in choices
+
+\- Tools \> Options: added preservation of changes when changing tabs until applied or exist with OK
+
+\- Polyglot: added composite Foreign Key relationships
+
+\- Workgroup: added Review Changes capability to Commit, Pull, and Push screens
+
+\- Workgroup: added display of Git badges on Welcome Page if recent files or recent folders are git-enabled
+
+\- Workgroup: updated simple-git library to latest version 3.6.0
+
+\- Cosmos DB Gremlin: added validation of endpoint in connection settings
+
+\- Delta Lake/Databricks: added reverse-engineering of database location
+
+\- Delta Lake/Databricks: added forward-engineering of reference descriptions in column comments
+
+\- ScyllaDB: caught up with latest Cassandra plugin developments
+
+&nbsp;
+
 New features in v6.0.4 \[18-Apr-2022\]
 
 \- Tech refresh of Electron (v17.4.0), NodeJS (v16.13.0), Chromium (v98.0.4757.141), and Electron-related modules.&nbsp; Addresses Chromium V8 CVE-2022-1096 vulnerability
@@ -15,8 +45,6 @@ New features in v6.0.4 \[18-Apr-2022\]
 \- Polyglot: added possibility to derive a polyglot model from another polyglot model
 
 \- References: added possibility for entities to reference model and external definitions
-
-\- Workgroup: updated simple-git library to latest version to 3.6.0
 
 \- Cassandra: adjusted sequence of ALTER statements from delta model to RELOAD SEARCH INDEX after DROP
 
