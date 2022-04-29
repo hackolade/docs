@@ -12,6 +12,8 @@ The presence of Git submodules in a repository will not prevent you from using H
 
 In case Git submodules are important for the handling of your data models, please [submit a feature request](<https://hackolade.zendesk.com/hc/en-us/requests/new> "target=\"\_blank\"").
 
+&nbsp;
+
 ### How to deal with non-ASCII symbols in file names?
 
 By default, Git replaces non-ASCII symbols in file names with octal notation. For example, a file named "TrainScheduleф.json" will be treated by Git as "TrainSchedule\\321\\204.json".

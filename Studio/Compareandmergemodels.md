@@ -72,7 +72,7 @@ The user may navigate through the differences using the navigation buttons to mo
 
 &nbsp;
 
-Typically, models are compared using the internal Hackolade ID for the objects in the model.&nbsp; That works well if both models have evolved from the same Hackolade base data model.&nbsp; However, if you compare a reference Hackolade model with a new model derived from the reverse-engineering of a database instance for example, then this new model will have generated new internal GUID for the objects.&nbsp; As a result, matching must be made based on object names matching.
+**Important:** Typically, models are compared using the internal Hackolade ID for the objects in the model.&nbsp; That works well if both models have evolved from the same Hackolade base data model.&nbsp; However, if you compare a reference Hackolade model with a new model derived from the reverse-engineering of a database instance for example, then this new model will have generated new internal GUID for the objects.&nbsp; As a result, matching must be made based on object names matching.
 
 &nbsp;
 

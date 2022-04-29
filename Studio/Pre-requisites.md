@@ -32,7 +32,9 @@ Either you do have a Git client but it has not been made available globally thro
 
 &nbsp;
 
-![Workgroup Git diagnostic](<lib/Workgroup%20Git%20diagnostic.png>)
+&nbsp;
+
+![Workgroup Git diagnostic](<lib/Workgroup%20tools%20options%20repository.png>)
 
 &nbsp;
 

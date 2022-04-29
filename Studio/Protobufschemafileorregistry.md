@@ -8,7 +8,7 @@ Hackolade easily imports the schema from .proto files, version 2 and 3, located 
 
 &nbsp;
 
-Protobuf files and schemas can also be reverse-engineered from AWS S3, Azure Blob Storage, and Google Cloud Storage.
+Protobuf files and schemas can also be reverse-engineered from AWS S3, Azure Blob Storage/ADLS, and Google Cloud Storage.
 
 &nbsp;
 
@@ -36,7 +36,7 @@ If you wish to handle AWS authentication through the [credentials file](<https:/
 
 &nbsp;
 
-## Azure Blob Storage
+## Azure Blob Storage and ADLS
 
 Give a meaningful name to the connection to identify it for later, and provide proper Container name and Storage account name.
 
@@ -50,17 +50,87 @@ Give a meaningful name to the connection to identify it for later, and provide p
 
 &nbsp;
 
-If the storage account is private, you must also provide your Storage access key:
-
-![Cloud Storage - Azure authentication](<lib/Cloud%20Storage%20-%20Azure%20authentication.png>)
-
-&nbsp;
-
-&nbsp;
-
 If you wish to filter files, you may enter a file name prefix:
 
 ![Cloud Storage - Azure prefix blob name avro schema](<lib/Cloud%20Storage%20-%20Azure%20prefix.png>)
+
+&nbsp;
+
+### Anonymous Authentication
+
+If the storage is public, you may choose the anonymous method:
+
+![Cloud Storage - Azure anonymous auth](<lib/Cloud%20Storage%20-%20Azure%20anonymous%20auth.png>)
+
+&nbsp;
+
+If the storage account is private, Azure provides a choice of 3 methods with different levels of granularity depending on your security requirements:
+
+### Storage Access Key
+
+The [storage access key](<https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal> "target=\"\_blank\"") is similar to a root password for your storage account. Always be careful to protect your access keys. Microsoft recommends that you use Azure Key Vault to manage your access keys, and that you regularly rotate and regenerate your keys.
+
+&nbsp;
+
+![Cloud Storage - Azure Storage Access Key conf](<lib/Cloud%20Storage%20-%20Azure%20Storage%20Access%20Key%20conf.png>)
+
+&nbsp;
+
+&nbsp;
+
+Select the authentication method and paste the key into the Storage Access Key field:
+
+![Cloud Storage - Azure Storage Access Key auth](<lib/Cloud%20Storage%20-%20Azure%20Storage%20Access%20Key%20auth.png>)
+
+&nbsp;
+
+### Shared Access Signature
+
+A [shared access signature (SAS)](<https://docs.microsoft.com/en-us/azure/storage/common/storage-sas-overview> "target=\"\_blank\"") provides secure delegated access to resources in your storage account, with granular control over how a client can access your data: user delegation, service or account.
+
+&nbsp;
+
+For Hackolade to be able to reverse-engineer, the minimum rights are as shown here:
+
+![Cloud Storage - Azure Shared Access Sign conf](<lib/Cloud%20Storage%20-%20Azure%20Shared%20Access%20Sign%20conf.png>)
+
+&nbsp;
+
+&nbsp;
+
+![Cloud Storage - Azure Shared Access Sign gen](<lib/Cloud%20Storage%20-%20Azure%20Shared%20Access%20Sign%20gen.png>)
+
+&nbsp;
+
+After clicking the button to generate, copy the SAS token from the Azure portal, and paste it in the SAS Token field:
+
+![Cloud Storage - Azure SAS Token auth](<lib/Cloud%20Storage%20-%20Azure%20SAS%20Token%20auth.png>)
+
+### Shared Access Token per container
+
+It is possible to generate [tokens for specific containers](<https://docs.microsoft.com/en-us/azure/cognitive-services/translator/document-translation/create-sas-tokens?tabs=Containers> "target=\"\_blank\"") in the "Shared access tokens" menu option of the container:
+
+![Cloud Storage - Azure Blob SAS Token conf](<lib/Cloud%20Storage%20-%20Azure%20Blob%20SAS%20Token%20conf.png>)
+
+&nbsp;
+
+&nbsp;
+
+The minimum required rights for our reverse-engineering process to succeed are: read and list.
+
+&nbsp;
+
+![Cloud Storage - Azure Blob SAS Token gen](<lib/Cloud%20Storage%20-%20Azure%20Blob%20SAS%20Token%20gen.png>)
+
+&nbsp;
+
+&nbsp;
+
+After clicking the button to generate, copy the Blob SAS token from the Azure portal, and paste it in the SAS Token field:
+
+&nbsp;
+
+![Cloud Storage - Azure Blob SAS Token auth](<lib/Cloud%20Storage%20-%20Azure%20Blob%20SAS%20Token%20auth.png>)
 
 &nbsp;
 

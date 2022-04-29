@@ -1,12 +1,32 @@
 # v6.x
 
+New features in v6.0.6 \[29-Apr-2022\]
+
+\- Excel export/import: added handling of font size and colors for entities and views
+
+\- Excel export: added to the relationships tab the names of parent \& child entities and attributes to illustrate GUIDs
+
+\- External references: added a warning when user attempts to self-reference the model, given the risks of circular references
+
+\- License validation: added version number to UserData1
+
+\- Polyglot: enabled composite Primary Keys and Unique Keys
+
+\- Workgroup: added author and date of last commit to Explore \> Models and All Files table
+
+\- Azure Blob Storage and Azure Data Lake Storage for JSON and Avro: added 3 authentication methods: Anonymous, Shared Access Signature, and Shared Access Token per container
+
+\- Delta Lake: removed unused modules async and thrift from plugin
+
+\- Synapse forward-engineering of ALTER scripts from delta model: added a flag to explicitly un-comment DROP statements, signifying the understanding of the possible consequences
+
+&nbsp;
+
 New features in v6.0.5 \[22-Apr-2022\]
 
 \- Improved application startup performance with streamlined license validation process on Windows
 
 \- Custom properties: added handling of property names collision with reserved JSON Schema keywords
-
-\- Excel export/import: added handling of font size and colors for entities and views
 
 \- JSON Schema Preview: added resolution of references in choices
 

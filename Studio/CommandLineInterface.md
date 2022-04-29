@@ -630,3 +630,11 @@ The --*version* argument displays the version number of Hackolade being invoked.
 
 Usage:&nbsp; &nbsp; *start /wait hackolade --version*
 
+&nbsp;
+
+&nbsp;
+
+## CLI error message
+
+You may download an Excel file with CLI error messages [here](<https://hackolade.com/downloads/CLI\_Error\_Messages\_Hackolade.xlsx> "target=\"\_blank\"").&nbsp;
+
