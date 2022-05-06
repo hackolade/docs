@@ -4,7 +4,7 @@
 
 &nbsp;
 
-The Workgroup Edition of Hackolade Studio introduces, starting with v6 and with the appropriate license key upgrade, native integration with Git repositories. Previously, an integration with Git was possible, but required either a separate Git desktop application, or the use of the Git command line interface.&nbsp; Our Workgroup Edition makes it easy for users who are not so familiar with Git to leverage the tremendous power of this popular tool.
+The Workgroup Edition of Hackolade Studio introduces native integration with Git repositories to provide state-of-the-art collaboration, versioning, branching, conflict resolution, peer review workflows, change tracking and traceability, DevOps CI/CD integration, and more. Previously, an integration with Git was possible, but required either a separate Git desktop application, or the use of the Git command line interface.&nbsp; Our Workgroup Edition makes it easy for users who are not so familiar with Git to leverage the tremendous power of this popular tool.
 
 &nbsp;
 
@@ -12,7 +12,17 @@ Most importantly, user-friendly context-aware screens are provided to review cha
 
 &nbsp;
 
-&nbsp;![Commit your local changes](<lib/Workgroup%20commit.png>)&nbsp; ![Workgroup pull conflict](<lib/Workgroup%20pull%20conflict.png>)
+&nbsp;&nbsp;
+
+![Workgroup commit](<lib/Workgroup%20commit.png>)
+
+&nbsp;
+
+![Workgroup Edition - Review changes to commit](<lib/Workgroup%20Edition%20-%20Review%20changes%20to%20commit.png>)
+
+&nbsp;
+
+&nbsp;![Workgroup pull conflict](<lib/Workgroup%20pull%20conflict.png>)
 
 &nbsp;
 
@@ -48,7 +58,7 @@ Git supports setting up a central repository, called "remote", that users can co
 
 ## Why use Git for Hackolade data models?
 
-Some industry analysts seem to consider as a drawback that Hackolade does not have its own proprietary repository\!?...&nbsp; We consider it an advantage for our users\!
+Some industry analysts seem to consider as a drawback that Hackolade does not have its own proprietary repository\!?...&nbsp; Our users seem to think otherwise\!
 
 &nbsp;
 

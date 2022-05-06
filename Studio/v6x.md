@@ -1,5 +1,29 @@
 # v6.x
 
+New features in v6.0.7 \[06-May-2022\]
+
+\- Added handling of circular external references in JSON Schema&nbsp;
+
+\- Added warning when enumerations are not unique
+
+\- Compare \& Merge: added dialog asking user to handle unsaved changes
+
+\- Compare \& Merge: moved button to generate delta model to the Compare panel
+
+\- Introduced a Read-Only mode for delta models (and future use in model history view of Workgroup Edition)
+
+\- Workgroup Edition: disabled auto-loading of last repository when using the Command-Line Interface
+
+\- Delta Lake: fixed issue when Partition Key was a reference to a definition/UDT
+
+\- MongoDB: re-enabled relationship properties for binary data type
+
+\- Oracle: added generation of constraint names in DDL for composite primary and unique keys
+
+\- Oracle: added support for identity start and increment
+
+&nbsp;
+
 New features in v6.0.6 \[29-Apr-2022\]
 
 \- Excel export/import: added handling of font size and colors for entities and views

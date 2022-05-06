@@ -35,6 +35,7 @@
   - [How-to guides](<How-toguides.md>)
     - [Add reusable definitions](<Addreusabledefinitions.md>)
     - [Configure custom properties](<Configurecustomproperties.md>)
+    - [Pre-populate new entities using snippets](<Pre-populatenewentitiesusingsnip.md>)
 - [NoSQL databases, storage formats, REST APIs](<NoSQLdatabasesJSONRESTAPIs.md>)
   - [Polyglot Data Model](<PolyglotDataModel.md>)
   - [JSON Schema](<JSONSchema2.md>)

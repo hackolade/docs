@@ -27,7 +27,7 @@ This folder can be access via Help \> Plugin Manager \> Installed and clicking o
 
 &nbsp;
 
-In this guide, we will concentrate on files in these sub-folders:
+In this guide, we will concentrate on files in these sub-folders of \\customProperties\\properties\_pane:
 
 ![Custom Props subfolders](<lib/Custom%20Props%20subfolders.png>)
 
@@ -123,7 +123,7 @@ You can now save the file.&nbsp; It is necessary to restart the application befo
 
 &nbsp;
 
-Feel free to download [here](<https://hackolade.com/schemas/custProps/entityLevelConfig.json> "target=\"\_blank\"") the file just created, save it the proper directory, then edit it for your own configuration.
+Feel free to download [here](<https://hackolade.com/schemas/custProps/properties\_pane/entity\_level/entityLevelConfig.json> "target=\"\_blank\"") the file just created, save it the proper directory, then edit it for your own configuration.
 
 &nbsp;
 
@@ -191,7 +191,7 @@ And the operation can be repeated for other data types.
 
 &nbsp;
 
-Feel free to download [here](<https://hackolade.com/schemas/custProps/fieldLevelConfig.json> "target=\"\_blank\"") the file just created, save it the proper directory, then edit it for your own configuration.
+Feel free to download [here](<https://hackolade.com/schemas/custProps/properties\_pane/field\_level/fieldLevelConfig.json> "target=\"\_blank\"") the file just created, save it the proper directory, then edit it for your own configuration.
 
 &nbsp;
 
@@ -223,7 +223,7 @@ You can now save the file.&nbsp; It is necessary to restart the application befo
 
 &nbsp;
 
-Feel free to download [here](<https://hackolade.com/schemas/custProps/modelLevelConfig.json> "target=\"\_blank\"") the file just created, save it the proper directory, then edit it for your own configuration.
+Feel free to download [here](<https://hackolade.com/schemas/custProps/properties\_pane/model\_level/modelLevelConfig.json> "target=\"\_blank\"") the file just created, save it the proper directory, then edit it for your own configuration.
 
 &nbsp;
 
@@ -241,7 +241,7 @@ The requiredProperty keyword displays a red star (\*) charater next to the prope
 
 &nbsp;
 
-The dependecy keyword allows sophisticated logic decribed in the [documentation](<https://github.com/hackolade/plugins#26-property-controls>).&nbsp; to test according multiple criteria, and including and/or/not operators.&nbsp; Here is the simplest of examples:
+The dependecy keyword allows sophisticated logic described in the [documentation](<https://github.com/hackolade/plugins#26-property-controls>).&nbsp; to test according multiple criteria, and including and/or/not operators.&nbsp; Here is the simplest of examples:
 
 &nbsp;
 
