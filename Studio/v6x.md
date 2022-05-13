@@ -1,5 +1,39 @@
 # v6.x
 
+New features in v6.0.8 \[13-May-2022\]
+
+\- References to external definitions: fixed display of relative path
+
+\- Polyglot: added creation of many-to-many join table when normalizing on-the-fly to an RDBMS target during deriving from denormalized polyglot model
+
+\- Workgroup: added Tools \> Options Repository check for adequate Git executable when specifying a custom path
+
+\- Workgroup: minimized chatty git logging when auto-checking for remote commits
+
+\- Workgroup: fixed refresh of model list when checking out a new branch
+
+\- Avro: added min/max length properties for string data type, for documentation purposes only
+
+\- Avro: added support for reverse-engineering of schemas with empty records
+
+\- Delta Lake/Databricks: added fallback for getting view names and improve logging
+
+\- Delta Lake/Databricks: added handling for syntax of USING, BLOOMFILTER, TBLPROPERTIES, and PARTITIONED BY when reverse-engineering from HQL file
+
+\- Delta Lake/Databricks:&nbsp; added support for forward- and reverse-engineering of DISABLE NOVALIDATE
+
+\- Hive:&nbsp; added support for forward- and reverse-engineering of DISABLE NOVALIDATE
+
+\- MongoDB version 5 and higher: added support for Time Series collections
+
+\- OpenAPI and EventBridge Schema Registry: added support for media type including dots
+
+\- Redshift: added support for forward- and reverse-engineering of schema, table, and column comments
+
+\- Synapse: added support for forward- and reverse-engineering of partition keys
+
+&nbsp;
+
 New features in v6.0.7 \[06-May-2022\]
 
 \- Added handling of circular external references in JSON Schema&nbsp;
