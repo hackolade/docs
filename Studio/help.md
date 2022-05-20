@@ -285,6 +285,7 @@
       - [Connect to a TinkerPop instance](<ConnecttoaTinkerPopinstance.md>)
   - [Suggest denormalization of a SQL schema](<SuggestdenormalizationofaSQLsche.md>)
   - [Model-Driven API Generation](<Model-DrivenAPIGeneration.md>)
+  - [Generate mock data for testing](<Generatemockdatafortesting.md>)
 - [Change log](<Changelog.md>)
   - [v6.x](<v6x.md>)
   - [v5.x](<v5x.md>)

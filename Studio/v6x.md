@@ -1,5 +1,41 @@
 # v6.x
 
+New features in v6.1.0 \[20-May-2022\]
+
+\- Generate fake but realistic data for development, testing or demos.&nbsp; More info at https://hackolade.com/help/Generatemockdatafortesting.html
+
+\- Compare and Merge: added auto-selection of matching method when comparing models with different GUIDs
+
+\- Compare and Merge: added display option to only show conflicts
+
+\- Reference definitions: added support in RDBMS targets for definitions containing polymorphic choices
+
+\- License key validation: enabled Tools \> Options so the network proxy settings can be adjusted
+
+\- Workgroup: added auto-discovery of git.exe on Windows in likely places if not specified in system PATH
+
+\- Workgroup: added app version, system info, git version at the top of the git log
+
+\- Workgroup: minimized chatty git logging when auto-checking for remote commits
+
+\- Workgroup: disallowed Review Changes in Push screen if remote branch does not exist
+
+\- Cassandra: added generation of WHERE clause with IS NOT NULL for partition keys, clustering keys, and other selected columns in materialized views
+
+\- MariaDB: added forward-engineering of table comments
+
+\- MongoDB: added possibility to apply to instance Field-Level Encryption parameters in createCollection scripts
+
+\- MongoDB: added detection of Field-Level Encryption during reverse-engineering
+
+\- Oracle: added support for reverse-engineering of identity column
+
+\- Snowflake: added support of identity column in properties and forward-engineering of DDL
+
+\- Synapse: added support for forward- and reverse-engineering of partition keys
+
+&nbsp;
+
 New features in v6.0.8 \[13-May-2022\]
 
 \- References to external definitions: fixed display of relative path
@@ -7,8 +43,6 @@ New features in v6.0.8 \[13-May-2022\]
 \- Polyglot: added creation of many-to-many join table when normalizing on-the-fly to an RDBMS target during deriving from denormalized polyglot model
 
 \- Workgroup: added Tools \> Options Repository check for adequate Git executable when specifying a custom path
-
-\- Workgroup: minimized chatty git logging when auto-checking for remote commits
 
 \- Workgroup: fixed refresh of model list when checking out a new branch
 
@@ -30,7 +64,7 @@ New features in v6.0.8 \[13-May-2022\]
 
 \- Redshift: added support for forward- and reverse-engineering of schema, table, and column comments
 
-\- Synapse: added support for forward- and reverse-engineering of partition keys
+\- Synapse: added support for partitioning
 
 &nbsp;
 

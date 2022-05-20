@@ -26,4 +26,4 @@ Note that Hackolade Studio automatically reopens the last repository by default 
 
 &nbsp;
 
-![Workgroup tools options repository](<lib/NewItem4.png>)
+![Image](<lib/Workgroup%20tools%20options%20repository.png>)

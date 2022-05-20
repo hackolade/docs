@@ -40,3 +40,14 @@ These parameters are assembled by Hackolade to create the full connection string
 
 ***TIP***: if you have instances with a very large number of databases, you may wish to declare a particular database directly in the connection string by appending the address with: /\<name of the database you wish to access directly\>, for example: localhost/NBA
 
+&nbsp;
+
+&nbsp;
+
+## Field-Level Encryption
+
+Hackolade supports MongoDB's Field-Level Encryption framework.&nbsp; More details can be found [here](<MongoDBField-LevelEncryption.md>). &nbsp; To apply forward-engineering script with FLE parameters to a MongoDB instance or reverse-engineer the actual data types of encrypted fields, you need to pass additional information during the connection.
+
+&nbsp;
+
+![MongoDB field-level encryption connection](<lib/MongoDB%20field-level%20encryption%20connection.png>)

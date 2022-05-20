@@ -148,6 +148,10 @@ By clicking on the link or the Send button, you will be directed in your browser
 
 &nbsp;
 
+To manually access the above, you may also use [this link](<https://quicklicensemanager.com/hackolade/QlmCustomerSite/qlmwebactivation.aspx> "target=\"\_blank\"").&nbsp;
+
+&nbsp;
+
 When you click the activate button, an XML file will be downloaded to your PC.&nbsp; With the application, choose the path and filename of the downloaded file:
 
 &nbsp;

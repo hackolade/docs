@@ -45,6 +45,7 @@ All Product Versions
 | [Electron-fetch](<https://github.com/arantes555/electron-fetch> "target=\"\_blank\"") | (c) 2016 Mehdi Kouhen | [MIT](<https://github.com/arantes555/electron-fetch/blob/master/LICENSE.md> "target=\"\_blank\"") |
 | [Electron-store](<https://github.com/sindresorhus/electron-store> "target=\"\_blank\"") | (c) 2017 Sindre Sorhus | [MIT](<https://github.com/sindresorhus/electron-store/blob/master/license> "target=\"\_blank\"") |
 | [ExcelJS](<https://github.com/exceljs/exceljs> "target=\"\_blank\"") | (c) 2014-2019 Guyon Roche | [MIT](<https://github.com/exceljs/exceljs/blob/master/LICENSE> "target=\"\_blank\"") |
+| [FakerJS](<https://github.com/faker-js/faker> "target=\"\_blank\"") | (c) 2022 Faker, 2020 Marak Squires | [MIT](<https://github.com/faker-js/faker/blob/main/LICENSE> "target=\"\_blank\"") |
 | [Fast-crc32c](<https://github.com/ashi009/node-fast-crc32c> "target=\"\_blank\"") | (c) 2014 Xiaoyi Shi | [MIT](<https://github.com/ashi009/node-fast-crc32c/blob/master/LICENSE> "target=\"\_blank\"") |
 | [File-loader](<https://github.com/webpack/file-loader> "target=\"\_blank\"") | (c) 2016 Tobias Koppers | [MIT](<https://opensource.org/licenses/MIT> "target=\"\_blank\"") |
 | [Font-awesome](<https://fortawesome.github.io/Font-Awesome/> "target=\"\_blank\"") | (c) 2016 Dave Gandy | [MIT](<https://fortawesome.github.io/Font-Awesome/license/> "target=\"\_blank\"") |
@@ -136,6 +137,7 @@ All Product Versions
 | [Tunnel-SSH](<https://github.com/agebrock/tunnel-ssh> "target=\"\_blank\"") | (c) 2018 Christoph Hagenbrock&nbsp; | [MIT](<https://github.com/agebrock/tunnel-ssh/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Turndown](<https://github.com/domchristie/turndown> "target=\"\_blank\"") | (c) 2017 Dom Christie | [MIT](<https://github.com/domchristie/turndown/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Twitter Bootstrap](<https://getbootstrap.com/> "target=\"\_blank\"") | (c) 2011-2016 Twitter, Inc. | [MIT](<https://github.com/twbs/bootstrap/blob/master/LICENSE> "target=\"\_blank\"") |
+| [VM2](<https://github.com/patriksimek/vm2> "target=\"\_blank\"") | (c) 2014-2022 Patrik Simek and contributors | [MIT](<https://github.com/patriksimek/vm2/blob/master/LICENSE.md> "target=\"\_blank\"") |
 | [W3c-blob](<https://github.com/chrisdickinson/w3c-blob> "target=\"\_blank\"") | (c) 2016 Chris Dickinson | [MIT](<https://github.com/chrisdickinson/w3c-blob#license> "target=\"\_blank\"") |
 | [Winreg](<https://github.com/fresc81/node-winreg> "target=\"\_blank\"") | (c) 2016 Paul Bottin | [BSD-2-Clause](<https://github.com/fresc81/node-winreg#license> "target=\"\_blank\"") |
 | [Xml2JS](<https://github.com/Leonidas-from-XIV/node-xml2js> "target=\"\_blank\"") | (c) 2010-2013 Marek Kubica | [MIT](<https://github.com/Leonidas-from-XIV/node-xml2js/blob/master/LICENSE> "target=\"\_blank\"") |

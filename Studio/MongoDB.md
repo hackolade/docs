@@ -126,3 +126,9 @@ The Hackolade process for reverse-engineering of MongoDB databases is different 
 
 For more information on MongoDB in general, please consult the [website](<http://www.mongodb.com/> "target=\"\_blank\"").
 
+&nbsp;
+
+## Field-Level Encryption
+
+Hackolade supports MongoDB's Field-Level Encryption framework.&nbsp; More details [here](<MongoDBField-LevelEncryption.md>).
+

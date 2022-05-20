@@ -370,7 +370,7 @@ See detailed examples [here](<https://docs.mongodb.com/manual/reference/security
 
 ### Forward-Engineering
 
-#### JSON Data sample (TBA)
+#### JSON Data sample
 
 The encrypted field appears encrypted in the JSON sample, specifically with random [binary data](<https://docs.mongodb.com/manual/reference/mongodb-extended-json/#mongodb-bsontype-Binary> "target=\"\_blank\"") with [subtype 6](<https://github.com/mongodb/specifications/blob/master/source/client-side-encryption/subtype6.rst> "target=\"\_blank\""), e.g; BinData(6,"U2FsdGVkX1+CGIDGUnGgtS46+c7R5u17SwPDEmzyCbA="). In the case of objects with inheritance, the object must appear, but each nested field should be encrypted with a sample in random [binary data](<https://docs.mongodb.com/manual/reference/mongodb-extended-json/#mongodb-bsontype-Binary> "target=\"\_blank\"") with [subtype 6](<https://github.com/mongodb/specifications/blob/master/source/client-side-encryption/subtype6.rst> "target=\"\_blank\"").&nbsp;
 
@@ -388,7 +388,7 @@ The $jsonschema validator is enriched:
 **Note:**&nbsp; that the keyId and/or algorithm properties can be empty for a given field that has been flagged for encryption, but only if there's an encryptMetadata higher in the object hierarchy. We should probably add this rule to the MongoDB script linter, rather than creating PP rules?\
 &nbsp;
 
-### Reverse-Engineering (TBA)
+### Reverse-Engineering
 
 When performing reverse-engineering, the usual process is to fetch the $jsonschema validator script, then to go through the sampling and schema inference process.
 
@@ -399,4 +399,20 @@ If the $jsonschema validator includes the encrypt and/or encryptMetadata keyword
 If during schema inference, we encounter a field with [binary data](<https://docs.mongodb.com/manual/reference/mongodb-extended-json/#mongodb-bsontype-Binary> "target=\"\_blank\"") with [subtype 6](<https://github.com/mongodb/specifications/blob/master/source/client-side-encryption/subtype6.rst> "target=\"\_blank\"") that was not identified as encrypted in the $jsonschema validator (or there was not $jsonschema validator), we can assume that there was explicit (manual) encryption.&nbsp;
 
 &nbsp;
+
+But for this process to work as described above, it is necessary to provide the proper parameters in Connections Settings.&nbsp; In [this page](<ConnecttoaMongoDBinstance.md>), you will find the parameters required for the application to infer the data type of encrypted fields as well as all the necessary metadata.
+
+Failing to do so will show every encrypted field with a binary data type:
+
+![MongoDB FLE reverse-engineering without param](<lib/MongoDB%20FLE%20reverse-engineering%20without%20param.png>)
+
+&nbsp;
+
+instead of the actual data type:
+
+![MongoDB FLE reverse-engineering with params](<lib/MongoDB%20FLE%20reverse-engineering%20with%20params.png>)
+
+&nbsp;
+
+Consult this MongoDB [field-level encryption guide](<https://www.mongodb.com/docs/drivers/security/client-side-field-level-encryption-guide/> "target=\"\_blank\"") for more details.
 
