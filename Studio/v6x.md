@@ -1,5 +1,23 @@
 # v6.x
 
+New features in v6.1.1 \[27-May-2022\]
+
+\- ERD: added display option in toolbar and Tools \> Options \> Display to show/hide attribute data types
+
+\- Application log files: enhanced so logs are no longer reset with start of additional application instances -- only when first instance gets started
+
+\- Test data generation: added possibility to specify the number of documents to generate in Tools \> Forward-Engineer \> JSON documents
+
+\- Test data generation: added Faker function-based sample generation in script tab to apply to instance of concerned targets (MongoDB, Couchbase, Cosmos DB, DocumentDB, JanusGraph, Neo4j, Neptune, TinkerGraph)
+
+\- Test data generation: upgraded to FakerJS v7 library
+
+\- Workgroup: added action to merge branches
+
+\- Couchbase: added ability to reverse-engineer buckets with no N1QL primary index, by automatically falling back to REST API for sampling and schema inference
+
+&nbsp;
+
 New features in v6.1.0 \[20-May-2022\]
 
 \- Generate fake but realistic data for development, testing or demos.&nbsp; More info at https://hackolade.com/help/Generatemockdatafortesting.html

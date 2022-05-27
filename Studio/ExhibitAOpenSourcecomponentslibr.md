@@ -39,6 +39,7 @@ All Product Versions
 | [Cytoscape-klay](<https://github.com/cytoscape/cytoscape.js-klay> "target=\"\_blank\"") | (c) 2016-2020 The Cytoscpe Consortium | [MIT](<https://github.com/cytoscape/cytoscape.js-klay/blob/master/LICENSE> "target=\"\_blank\"") |
 | [D3](<https://github.com/d3/d3> "target=\"\_blank\"") | (c) 2010-2016 Michael Bostock | [BSD-3-Clause](<https://github.com/mbostock/d3/blob/master/LICENSE> "target=\"\_blank\"") |
 | [D3-force](<https://github.com/d3/d3-force> "target=\"\_blank\"") | (c) 2010-2016 Mike Bostock | [BSD-3-Clause](<https://github.com/d3/d3-force/blob/master/LICENSE> "target=\"\_blank\"") |
+| [DayJS](<https://github.com/iamkun/dayjs> "target=\"\_blank\"") | (c) 2018-present, iamkun | [MIT](<https://github.com/iamkun/dayjs/blob/dev/LICENSE> "target=\"\_blank\"") |
 | [Desktop Trampoline](<https://github.com/desktop/desktop-trampoline> "target=\"\_blank\"") | (c) GitHub, Inc. | [MIT](<https://github.com/desktop/desktop-trampoline/blob/main/LICENSE> "target=\"\_blank\"") |
 | [Elasticsearch](<https://github.com/elastic/elasticsearch-js> "target=\"\_blank\"") | (c) 2014 Elasticsearch | [Apache](<https://github.com/elastic/elasticsearch-js/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Electron](<https://electron.atom.io/> "target=\"\_blank\"") | (c) 2016 GitHub Inc. | [MIT](<https://raw.githubusercontent.com/atom/atom/master/LICENSE.md> "target=\"\_blank\"") |
@@ -95,6 +96,7 @@ All Product Versions
 | [Node-semver](<https://github.com/npm/node-semver> "target=\"\_blank\"") | (c) Isaac Z. Schlueter and Contributors | [ISC](<https://github.com/npm/node-semver/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Node-SSL-root-CAs](<https://github.com/windhamg/node-ssl-root-cas>) | (c) 2014 Gary Windham | [Apache](<https://github.com/windhamg/node-ssl-root-cas/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Node-uuid](<https://github.com/broofa/node-uuid> "target=\"\_blank\"") | (c) 2010-2012 Robert Kieffer | [MIT](<https://github.com/broofa/node-uuid/blob/master/LICENSE.md> "target=\"\_blank\"") |
+| [Node-which](<https://github.com/npm/node-which> "target=\"\_blank\"") | (c) Isaac Z. Schlueter and Contributors | [ISC](<https://github.com/npm/node-which/blob/main/LICENSE> "target=\"\_blank\"") |
 | [Ottoman](<https://github.com/couchbaselabs/node-ottoman> "target=\"\_blank\"") | (c) 2013 Couchbase Inc. | [Apache](<https://www.apache.org/licenses/LICENSE-2.0> "target=\"\_blank\"") |
 | [PapaParse](<https://github.com/mholt/PapaParse> "target=\"\_blank\"") | (c) 2015 Matthew Holt | [MIT](<https://github.com/mholt/PapaParse/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Parcel Bundler Watcher](<https://github.com/parcel-bundler/watcher> "target=\"\_blank\"") | (c) 2017-present Devon Govett | [MIT](<https://github.com/parcel-bundler/watcher/blob/master/LICENSE> "target=\"\_blank\"") |

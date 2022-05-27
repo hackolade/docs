@@ -86,13 +86,19 @@ Be careful that GitHub Desktop, SourceTree and other visual applications are NOT
 
 &nbsp;
 
-With GitHub Desktop, it is possible that the installation did not declare the location of the Git executable in the system PATH.&nbsp; This is a [well documented situation](<https://stackoverflow.com/questions/26620312/git-installing-git-in-path-with-github-client-for-windows> "target=\"\_blank\"")...&nbsp; Possible locations for the Git executable are:
+With GitHub Desktop, it is possible that the installation did not declare the location of the Git executable in the system PATH.&nbsp; This is a [well documented situation](<https://stackoverflow.com/questions/26620312/git-installing-git-in-path-with-github-client-for-windows> "target=\"\_blank\"")...&nbsp; Hackolade Studio has been enhanced to auto-detect the Git executable installed by GitHub Desktop, if in one of its standard locations: &nbsp;
 
 **C:\\Program Files\\Git\\bin\\git.exe**
 
+**C:\\Users\\%username%\\AppData\\Local\\GitHubDesktop\\app-3.0.0\\resources\\app\\git\\cmd\\git.exe** (GitHub Desktop version 1.1 and above)
+
+&nbsp;
+
+If installed elsewhere, like&nbsp;
+
 **C:\\Users\\%username%\\AppData\\Local\\GitHub\\PortableGit\_\<guid\>\\cmd\\git.exe** (GitHub for Windows prior to version 1.1)
 
-**C:\\Users\\%username%\\AppData\\Local\\GitHubDesktop\\app-3.0.0\\resources\\app\\git\\cmd\\git.exe** (GitHub Desktop version 1.1 and above)
+you may have to declare the custom path manually.
 
 &nbsp;
 

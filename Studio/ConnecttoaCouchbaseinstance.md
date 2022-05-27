@@ -21,7 +21,13 @@ With Couchbase 3.x and 4.x fairly basic security, the Administrator can set a pa
 
 &nbsp;
 
-**Important note:** for the Hackolade reverse-engineering process to effectively use the N1QL service, it is critical that the bucket has a PRIMARY INDEX.&nbsp; Also, for the proper discovery of the different document kinds within a bucket, it is critical that the field used to segregate document kinds be indexed (a secondary index is sufficient.)
+**Important note:** for the Hackolade reverse-engineering process to effectively use the N1QL service, it is critical that the bucket has a PRIMARY INDEX.&nbsp; If there is no primary index present for the bucket, we fallback on a process based on Couchbase REST APIs, provided that REST APIs are enabled.
+
+&nbsp;
+
+Also, for the proper discovery of the different document kinds within a bucket, it is critical that the field used to segregate document kinds be indexed (a secondary index is sufficient.)
+
+&nbsp;
 
 As per [https://forums.couchbase.com/t/creating-secondary-index/12783/3](<https://forums.couchbase.com/t/creating-secondary-index/12783/3> "target=\"\_blank\"") : "A primary index of N1QL will allow you to query any field of your JSON. As such, it takes up more space and is less efficient (but much more flexible). It is the basic requirement to be able to use the query language on your data.&nbsp; A secondary index of N1QL is targeted at specific field(s) and will be more performant for queries involving these fields (because the index to scan will be shorter and more to the point)."
 

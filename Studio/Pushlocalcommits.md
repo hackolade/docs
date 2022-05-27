@@ -18,13 +18,17 @@ For users new to Git, let us explain why a pull action is necessary, possibly wi
 
 If I am making changes in the lower green branch below, based on a model originally in the remote, Git will reject my push at the end because changes were made to the same model.&nbsp; That's because my changes would otherwise write over the changes by the other users.
 
-![Workgroup push denied](<lib/Workgroup%20push%20denied.png>)
+&nbsp;
+
+![Workgroup push denied](<lib/git-commit-history1.drawio.png>)
+
+&nbsp;
 
 &nbsp;
 
 It is the responsibility of the last user who pushes changes to do the merge first and ensure that no conflicts exist, before pushing the merged model to the remote:
 
-![Workgroup pull before push](<lib/Workgroup%20pull%20before%20push.png>)
+![Workgroup pull before push](<lib/git-commit-history2.drawio.png>)
 
 &nbsp;
 
@@ -34,5 +38,7 @@ It is the responsibility of the last user who pushes changes to do the merge fir
 
 You will have less headaches if you pull regularly from the remote and merge with your yet-be-pushed changes, so you merge smaller increments and deal with less complexity if conflict resolution turns out to be necessary.
 
-![Image](<lib/Workgroup%20pull%20often%20before%20push.png>)
+&nbsp;
+
+![Workgroup pull often before push](<lib/git-commit-history3.drawio.png>)
 

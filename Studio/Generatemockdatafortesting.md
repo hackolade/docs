@@ -33,17 +33,17 @@ Hackolade leverages an open-source library for this feature: [FakerJS](<https://
 
 Before you start, you should familiarize yourself with the possibilities by consulting [this guide](<https://fakerjs.dev/guide/> "target=\"\_blank\"").&nbsp; Note that the question mark ? in our properties pane opens up the Faker guide page in your default browser:
 
-![Image](<lib/NewItem4.png>)
+![Faker function properties pane](<lib/Faker%20function%20properties%20pane.png>)
 
 &nbsp;
 
 All you need to do is to copy a function from the Faker guide pages and paste it in the property in Hackolade, for example:
 
-![Image](<lib/NewItem5.png>)
+![Faker function](<lib/Faker%20function.png>)
 
 to be pasted&nbsp;
 
-![Image](<lib/NewItem6.png>)
+![Faker function pasted](<lib/Faker%20function%20pasted.png>)
 
 &nbsp;
 
@@ -71,7 +71,7 @@ The Faker function property is only enabled for selected data types, mainly stri
 
 The following model illustrates the capabilities to generate JSON Data:
 
-![Image](<lib/NewItem7.png>)
+![Faker function JSON Data preview](<lib/Faker%20function%20JSON%20Data%20preview.png>)
 
 &nbsp;
 
@@ -103,6 +103,10 @@ using the following functions (in this case exported to Excel for easy bulk edit
 
 ## Generate test data in bulk
 
+Generating one sample document on screen is good, but of limited use.&nbsp; The real benefit comes when you can generate large, if not massive, amounts of test data, for general testing, as well as performance, and even load testing. &nbsp;
+
+&nbsp;
+
 Hackolade can generate 2 types of test data:
 
 * JSON documents for any model entity
@@ -112,7 +116,19 @@ Hackolade can generate 2 types of test data:
 
 ### Create test JSON documents on file system
 
+For any entity in a Hackolade data model, you can easily generate sample data with the menu Tools \> Forward-Engineer \> JSON Document.&nbsp; You can select the entity or entities of your choice.&nbsp; Then you specify the number of documents, and whether or not to minify the output:
+
 &nbsp;
+
+![Faker JSON Doc forward-engineering selection](<lib/Faker%20JSON%20Doc%20forward-engineering%20selection.png>)
+
+&nbsp;
+
+After you choose the folder path, the application will create a JSON file containing an array of sample documents:
+
+&nbsp;
+
+![Faker JSON Doc forward-engineering output](<lib/Faker%20JSON%20Doc%20forward-engineering%20output.png>)
 
 &nbsp;
 
