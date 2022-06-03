@@ -186,6 +186,16 @@ If the&nbsp; bucket is private, you must also access to the Private key:
 
 ## Confluent Schema Registry on Confluence Cloud
 
+## Confluent Schema Registry on Confluence Cloud
+
+To connect to your schema registry instance in the cloud you first must obtain both an API key and API secret for it.&nbsp; They are found in the Schema Registry tab, in the API endpoint section:
+
+![Confluent Schema Registry - API endpoint key](<lib/Confluent%20Schema%20Registry%20-%20API%20endpoint%20key.png>)
+
+&nbsp;
+
+&nbsp;
+
 Give a meaningful name to the connection to identify it for later, choose Cloud as a source, and provide the URL to your Schema Registry:
 
 &nbsp;

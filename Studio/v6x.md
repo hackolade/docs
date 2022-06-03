@@ -1,5 +1,23 @@
 # v6.x
 
+New features in v6.1.2 \[03-Jun-2022\]
+
+\- Redrew toolbar and contextual menu icons with SVG for cleaner hi-res displays
+
+\- Workgroup: added possibility to end or continue merge branch process
+
+\- Polyglot: adjusted warning for UUID enums, sample, and examples properties
+
+\- Added "Apply to instance" button for all remaining RDBMS and SQL-like targets: Databricks, Hive, MariaDB, Oracle, PostgreSQL, Redshift, Snowflake, SQL Server, Synapse
+
+\- OpenAPI/Swagger models derived from Polyglot: added ability to edit properties of references
+
+\- RDBBMS and SQL-like targets: added enforcement that only a single column can be a primary key, or it should be part of of a compound key
+
+\- Hive: enhanced handling of constraints rely/no rely, disable novalidate
+
+&nbsp;
+
 New features in v6.1.1 \[27-May-2022\]
 
 \- ERD: added display option in toolbar and Tools \> Options \> Display to show/hide attribute data types

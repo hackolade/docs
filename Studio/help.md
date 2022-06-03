@@ -140,6 +140,7 @@
     - [Solve conflicts](<Solveconflicts.md>)
     - [Submit for review](<Submitforreview.md>)
     - [Review change requests](<Reviewchangerequests.md>)
+    - [Other actions](<Otheractions.md>)
     - [Jira integration](<Jiraintegration.md>)
     - [Questions & Answers](<QuestionsAnswers.md>)
 - [Quick start guide](<Quickstartguide.md>)
