@@ -1,5 +1,35 @@
 # v6.x
 
+New features in v6.1.3 \[10-Jun-2022\]
+
+\- Network proxy: increased logging and error details
+
+\- Polyglot: added enforcement that only a single column can be a primary key, or it should be part of of a compound key
+
+\- Polyglot: added possibility to edit required property in UDTs
+
+\- Polyglot: fixed resolution of references before normalization when applicable
+
+\- XSD: added translation of mxOccurs=1 into required/not null during reverse-engineering
+
+\- Workgroup: added Git status icons to repository explorer tables
+
+\- Workgroup: disabled Pull button when there is no remote tracking branch
+
+\- Avro: forward-engineer Confluent subject name from schemaGroupName property
+
+\- Hive: added the possibility to apply forward-engineering HQL script to instance
+
+\- Hive: adjusted v2 HQL script to filter out v3-specific features
+
+\- MongoDB synthetic data generation: added possibility to specify the number of mock/fake documents to be created and applied to the instance
+
+\- Parquet on Azure Data Lake Storage: enhanced discovery when many non-parquet files are also present
+
+\- Protobuf: updated protobufjs libraries
+
+&nbsp;
+
 New features in v6.1.2 \[03-Jun-2022\]
 
 \- Redrew toolbar and contextual menu icons with SVG for cleaner hi-res displays

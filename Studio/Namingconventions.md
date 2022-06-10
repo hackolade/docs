@@ -38,6 +38,14 @@ feedback,fdbak,
 
 &nbsp;
 
+**Important note**: if your file contains [diacritics](<https://en.wikipedia.org/wiki/Diacritic> "target=\"\_blank\"") (accents, ...) you must save your file with [UTF-8](<https://en.wikipedia.org/wiki/UTF-8> "target=\"\_blank\"") encoding for the function to work properly.&nbsp; If you edit the file using Excel, you should make sure to save it using this CSV UTF-8 option:
+
+![Naming Conventions - CSV UTF-8](<lib/Naming%20Conventions%20-%20CSV%20UTF-8.png>)
+
+&nbsp;
+
+&nbsp;
+
 ## Conversion parameters
 
 Conversion parameters are specific to each target.&nbsp; To modify the behavior of the name sync feature for a target, user options can be set in Tools \> Options \> Naming Conventions:
