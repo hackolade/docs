@@ -8,7 +8,7 @@ Moreover, manually generating fake data takes time and slows down the testing pr
 
 &nbsp;
 
-The solution is to use Hackolade Studio to generate mock data, i.e. fake but realistic data.&nbsp; With Hackolade, you can generate first names and last names that look real but are not, and the same for company names, product names and descriptions, street addresses, phone numbers, credit card numbers, commit messages, IP addresses, UUIDs, image names, URLs, etc..
+The solution is to use Hackolade Studio to generate mock data, i.e. synthetic or fake but realistic data.&nbsp; With Hackolade, you can generate first names and last names that look real but are not, and the same for company names, product names and descriptions, street addresses, phone numbers, credit card numbers, commit messages, IP addresses, UUIDs, image names, URLs, etc..
 
 &nbsp;
 
@@ -134,11 +134,11 @@ After you choose the folder path, the application will create a JSON file contai
 
 ### Insert documents or records in database instance
 
-TBA
+Starting with v6.1.3 for MongoDB (and progressively thereafter for other targets), you may also generate synthetic data in bulk and apply it to a database instance.&nbsp; All you need to do it to go to the scripot tab, select "Include sample data", and specify the number of documents per collection.&nbsp; Then click the "Apply to instance" button and choose the target instance from the Connection settings dialog.
 
 &nbsp;
 
-&nbsp;
+![Faker bulk synthetic data applied to instance](<lib/Faker%20bulk%20synthetic%20data%20applied%20to%20instance.png>)
 
 &nbsp;
 

@@ -1,5 +1,35 @@
 # v6.x
 
+New features in v6.2.0 \[17-Jun-2022\]
+
+\- Workgroup: added support of GitHub (.com as well as Enterprise Server) for workflow to submit and review Pull Requests
+
+\- Workgroup: added possibility to authenticate on GitHub using personal token
+
+\- MongoDB synthetic data generation: added progress bar when generating in bulk
+
+\- Documentation generation: added support for recursive references
+
+\- Excel import: added support of string formats
+
+\- JSON Schema: added possibility to generate JSON Schema when subschema of choice inside a data type "any" is scalar
+
+\- Polyglot: fixed selection of multiple keys when they are references to model definitions/UDTs
+
+\- Polyglot: fixed rendering of group input properties when referencing definitions
+
+\- Azure Data Lake Storage (for JSON, Parquet, Avro...): enhanced discovery nested sub-folders when empty&nbsp;
+
+\- Azure Data Lake Storage: added Advanced tab in Connection Settings for Prefix selection
+
+\- Hive: enhanced apply to instance with commented drop statement
+
+\- PostgreSQL: added validation of primary/unique keys, plus added warnings in forward-engineering script when primary/unique constraints have no keys
+
+\- Redshift: enhanced fetching of tables/views if schema has more than 500 of entities
+
+&nbsp;
+
 New features in v6.1.3 \[10-Jun-2022\]
 
 \- Network proxy: increased logging and error details
