@@ -154,7 +154,7 @@ New features in v6.0.8 \[13-May-2022\]
 
 \- Hive:&nbsp; added support for forward- and reverse-engineering of DISABLE NOVALIDATE
 
-\- MongoDB version 5 and higher: added support for Time Series collections
+\- MongoDB version 5 and higher: added support for Time-Series collections
 
 \- OpenAPI and EventBridge Schema Registry: added support for media type including dots
 

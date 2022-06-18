@@ -1,10 +1,10 @@
 # Submit for review
 
-The peer review feature is a very popular extension to Git that is supported by most of the repository hubs.&nbsp; It allows changes made by a user to be reviewed and approved by another user before being merged into a target branch.&nbsp; This page describes how you can propose and collaborate on changes to a repository. &nbsp;
+The peer review feature is a very popular collaboration extension to Git, supported by most of the repository hubs.&nbsp; It allows changes made by a user to be submitted for review and approval by another user before being merged into a target branch. &nbsp;
 
 &nbsp;
 
-Changes are proposed in a branch, to ensure that the target branch only contains finished and approved work.&nbsp; Anyone with read access to a repository is allowed to submit changes for review.
+Changes to data models are proposed in a branch, to ensure that the target branch only contains finished and approved work.&nbsp; Anyone with read access to a repository is allowed to submit changes for review.
 
 &nbsp;
 
@@ -12,7 +12,7 @@ Changes are proposed in a branch, to ensure that the target branch only contains
 
 &nbsp;
 
-**Note:**&nbsp; the naming conventions differ slightly between repository hub providers.&nbsp; GitHub, for example, uses the terminology *pull requests*, whereas GitLab uses *merge requests*.&nbsp; Both refer to the same concept.&nbsp; Hackolade Studio takes into account the specific terminology of the hub provider in the screen.&nbsp; However, in this documentation, we abstract them and refer to the more generic "change requests".\
+**Note:**&nbsp; the naming conventions differ slightly between repository hub providers.&nbsp; GitHub, for example, uses the terminology *pull requests*, whereas GitLab uses *merge requests*.&nbsp; Both refer to the same concept.&nbsp; Hackolade Studio takes into account the specific terminology of the hub provider.&nbsp; However, in this documentation, we abstract them and refer to the more generic "change requests".\
 &nbsp;
 
 &nbsp;
@@ -25,7 +25,11 @@ A branch is meant to be temporary: it should be reviewed, typically by another u
 
 &nbsp;
 
-In the repository view, click on the left menu item "Submit for review" to get the screen below:
+&nbsp;
+
+## Submit a change request
+
+In the repository context, select as the active branch, the branch for which you want to submit a change request, then click on the left menu item "Submit for review" to get the screen below:
 
 ![Workgroup submit for review](<lib/Workgroup%20submit%20for%20review.png>)
 
@@ -55,13 +59,15 @@ Once your change request is opened, you get the screen below, displaying a link 
 
 &nbsp;
 
+## Display change requests you submitted
+
 In the left menu, the counter of change requests "open by me" reflects the number of open change requests. Clicking on it displays the list of change requests you authored.
 
 ![Workgroup submit for review - open by me](<lib/Workgroup%20submit%20for%20review%20-%20open%20by%20me.png>)
 
 &nbsp;
 
-You can click on the title of a change request to display a detail screen and check if you received some feedback from reviewer(s). The change request detail screen is documented in the [next page](<Reviewchangerequests.md>).
+You can click on the title of a change request to display a detail screen and check if you received feedback from reviewers. The change request detail screen is documented in the [next page](<Reviewchangerequests.md>).
 
 &nbsp;
 

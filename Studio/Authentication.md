@@ -32,7 +32,7 @@ If your repository has an SSH URL and if your SSH key is protected by a passphra
 
 &nbsp;
 
-If you don't have a SSH key yet, then you need to create one. Follow the links below to get more details about the SSH key creation procedure. Note that some steps of that procedure are specific to the [repository hub](<Connecttoarepositoryhub.md>) that you are using.
+If you don't have an SSH key yet, then you need to create one. Follow the links below to get more details about the SSH key creation procedure for your specific repository hub provider:
 
 * [Connect to GitHub with SSH](<https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh> "target=\"\_blank\"")
 * [Connect to Bitbucket with SSH](<https://support.atlassian.com/bitbucket-cloud/docs/set-up-an-ssh-key/> "target=\"\_blank\"")
@@ -42,5 +42,5 @@ If you don't have a SSH key yet, then you need to create one. Follow the links b
 
 &nbsp;
 
-&nbsp;
+Consult this page for more information on connecting to a [repository hub.](<Connecttoarepositoryhub.md>).
 

@@ -1,8 +1,6 @@
 # Review change requests
 
-&nbsp;
-
-The peer review feature is a very popular extension to Git that is supported by most of the repository hubs. It allows collaboration on changes made by a user so they can be reviewed and approved by another user before being merged into a target branch. This page describes how to list and review change requests.
+The peer review feature is a very popular extension to Git, supported by most of the repository hubs. It allows collaboration on changes made by a user so they can be reviewed and approved by another user before being merged into a target branch.&nbsp;
 
 &nbsp;
 
@@ -10,34 +8,33 @@ The peer review feature is a very popular extension to Git that is supported by 
 
 &nbsp;
 
-**Note:**&nbsp; the naming conventions differ slightly between repository hub providers.&nbsp; GitHub, for example, uses the terminology *pull requests*, whereas GitLab uses *merge requests*.&nbsp; Both refer to the same concept.&nbsp; Hackolade Studio takes into account the specific terminology of the hub provider in the screen.&nbsp; However, in this documentation, we abstract them and refer to the more generic "change requests".
+**Note:**&nbsp; the naming conventions differ slightly between repository hub providers.&nbsp; GitHub, for example, uses the terminology *pull requests*, whereas GitLab uses *merge requests*.&nbsp; Both refer to the same concept.&nbsp; Hackolade Studio takes into account the specific terminology of the hub provider.&nbsp; However, in this documentation, we abstract them and refer to the more generic "change requests".
 
 &nbsp;
 
-Click on the left menu item "All pull requests" to see the list of change requests currently open for the active repository. The buttons at the top of the table allow to display only the open change requests (by default), only the closed ones, or all of them.&nbsp;
+In the repository context, click on the left menu item "All pull requests" to see the list of change requests currently open for the active repository. The buttons at the top of the table allow to display only the open change requests (by default), only the closed ones, or all of them.&nbsp;
 
 &nbsp;
 
-![Image](<lib/gitbookassetsworkgroup-pr-all-open.png>)
+![Workgroup change request list](<lib/Workgroup%20change%20request%20list.png>)
 
 &nbsp;
 
 Click on the title of a change request to get the detail screen:
 
-![Image](<lib/gitbookassetsworkgroup-pr-details%201.png>)
+![Workgroup change request details](<lib/Workgroup%20change%20request%20details.png>)
 
 &nbsp;
 
 * the **title** of the change request is typically a short description of the changes;
 * a **pen icon** next to the title allows editing the details of the change request, aka its title and description;
-* a **refresh icon** next to the title allows to fetch the latest updates from the repository hub, aka the recent commits and comments;&nbsp;
+* a **refresh icon** next to the title allows to fetch the latest updates from the repository hub, if newt commits and comments have been made since displaying the page;&nbsp;
 * the **status** of the change request is rendered below the title.
-- &nbsp;
-  - "Open":
-    - when a change request is created;
-    - when a change request is rejected with some comments to be addressed by the author, its status remains "Open" and&nbsp; does not transition to a different status.
-  - "Merged": when a change request is approved and merged;
-  - "Closed": when a change request is rejected and definitely closed without being merged;
+  * "Open":
+    * when a change request is created;
+    * when a change request is rejected with some comments to be addressed by the author, its status remains "Open" and&nbsp; does not transition to a different status.
+  * "Merged": when a change request is approved and merged;
+  * "Closed": when a change request is rejected and definitely closed without being merged;
 * the **author** of the change request is displayed, as well as the **target branch** and the **source branch**.
 * the main component of this detail page is the **timeline**. It starts by the description of the change request.&nbsp; It then renders every commit and every comment sorted by chronological order.
 
@@ -51,7 +48,7 @@ Besides displaying a lot of information about the change request, this detail sc
 
 You can review the changes that are included in a change request by clicking on "Review changes...".
 
-![Image](<lib/gitbookassetsworkgroup-pr-details-review.png>)
+![Workgroup change request review](<lib/Workgroup%20change%20request%20review.png>)
 
 &nbsp;
 
@@ -59,15 +56,15 @@ Hackolade Studio shows graphically what has been modified in a data model using 
 
 &nbsp;
 
-![Image](<lib/Compare%20and%20merge%20-%20compare%20view.png>)
+![Compare and merge - compare view](<lib/Compare%20and%20merge%20-%20compare%20view.png>)
 
 &nbsp;
 
-## Submit a comment
+## Leave a comment
 
 It is possible to post comments without soliciting adjustments, approving the change request, or closing it.
 
-![Image](<lib/gitbookassetsworkgroup-pr-details-comment-1.png>)
+![Workgroup change request leave comment](<lib/Workgroup%20change%20request%20leave%20comment.png>)
 
 &nbsp;
 
@@ -77,7 +74,7 @@ It is possible to post comments without soliciting adjustments, approving the ch
 
 &nbsp;
 
-![Image](<lib/gitbookassetsworkgroup-pr-details-comment-2.png>)
+![Workgroup change request comments](<lib/Workgroup%20change%20request%20comments.png>)
 
 &nbsp;
 
@@ -85,7 +82,7 @@ It is possible to post comments without soliciting adjustments, approving the ch
 
 If reviewers are not satisfied with the change request, they can solicit adjustments from the author.
 
-![Image](<lib/gitbookassetsworkgroup-pr-details-request-ch1.png>)
+![Workgroup change request solicit adjustments](<lib/Workgroup%20change%20request%20solicit%20adjustments.png>)
 
 &nbsp;
 
@@ -97,7 +94,7 @@ If reviewers are not satisfied with the change request, they can solicit adjustm
 
 This gives the author of the change request the opportunity to process the reviewer's feedback and make adjustments if necessary. The author just needs to make the adjustments solicited in the same branch, [commit](<Commitlocalchanges.md>) them, and [push](<Pushlocalcommits.md>) them. The adjustments will be automatically included in the change request and made available to the reviewer, displayed following a timeline.
 
-![Image](<lib/gitbookassetsworkgroup-pr-details-request-cha.png>)
+![Workgroup change request reject](<lib/Workgroup%20change%20request%20reject.png>)
 
 &nbsp;
 
@@ -105,7 +102,7 @@ This gives the author of the change request the opportunity to process the revie
 
 Once the reviewer is satisfied with the full change request, including adjustments if any, the change request can be approved.
 
-![Image](<lib/gitbookassetsworkgroup-pr-details-approve-1.png>)
+![Workgroup change request approve](<lib/Workgroup%20change%20request%20approve.png>)
 
 &nbsp;
 
@@ -119,9 +116,9 @@ Once the reviewer is satisfied with the full change request, including adjustmen
 
 &nbsp;
 
-**Important:** approving a change request does not merge it into the target branch. The merge itself is a separate action. As you can see below, the change request is still open although it has been approved. This gives the opportunity to other reviewers to also provide their feedback.
+**Important:** approving a change request does not merge it into the target branch. The merge itself is a separate action. In the screen below, the change request is still open although it has been approved. This gives the opportunity to other reviewers to provide additional feedback.
 
-![Image](<lib/gitbookassetsworkgroup-pr-details-approve-2.png>)
+![Workgroup change request approved](<lib/Workgroup%20change%20request%20approved.png>)
 
 &nbsp;
 
@@ -129,17 +126,17 @@ Once the reviewer is satisfied with the full change request, including adjustmen
 
 Once a change request has been approved, it can be merged.&nbsp; Although merging a change request is typically done by the person who reviewed it, it can be done by other users as well, including the author of the change request.
 
-![Image](<lib/gitbookassetsworkgroup-pr-detail-merge.png>)
+![Workgroup change request merge](<lib/Workgroup%20change%20request%20merge.png>)
 
 &nbsp;
 
-There are 3 different merge methods available through the drop-down button.
+There are 3 different merge strategies available through the drop-down button.
 
 * **Merge** creates a merge commit that joins the source branch and the target branch together.
 
 &nbsp;
 
-![Image](<lib/gitbookassetsgit-merge.png>)
+![Workgroup merge strategy](<lib/Workgroup%20merge%20strategy.png>)
 
 &nbsp;
 
@@ -149,7 +146,7 @@ There are 3 different merge methods available through the drop-down button.
 
 &nbsp;
 
-![Image](<lib/gitbookassetsgit-merge-squash.png>)
+![Workgroup merge strategy squash](<lib/Workgroup%20merge%20strategy%20squash.png>)
 
 &nbsp;
 
@@ -159,23 +156,37 @@ There are 3 different merge methods available through the drop-down button.
 
 &nbsp;
 
-![Image](<lib/gitbookassetsgit-merge-rebase.png>)
+![Workgroup merge strategy rebase](<lib/Workgroup%20merge%20strategy%20rebase.png>)
 
 &nbsp;
 
 &nbsp;
 
-Note that a remote repository can be configured to enforce the use of one of these merge methods.
+Your organization can provide guidelines about which merge method to favor, depending on the situation.&nbsp; It can also configure a remote repository to enforce the use of a specific method for merging change requests.
 
 &nbsp;
+
+The advantage of using *Merge* is that it preserves the full history.&nbsp; On the other hand, the target branch keeps an extraneous merge commit every time you need to incorporate changes.&nbsp; This is not only true when merging a change request into a target branch, but also vice-versa, every time you update your own branch with new commits from the target branch.&nbsp; On very active projects, this can quickly pollute the history and make it harder to understand this history.
+
+&nbsp;
+
+Using *Squash and Merge* is especially interesting when merging a branch that contains a lot of commits.&nbsp; However, these commits will not be available on the target branch, as they will be squashed into one single commit.&nbsp; This means that you cannot later port some commits to another branch, unless you have kept the original source branch around.&nbsp; It is basically all or nothing.&nbsp; Also, using *Squash and Merge* is not suited for regularly aligning branches, as it does not create any link between these branches.
+
+&nbsp;
+
+Using *Rebase* creates a clean, linear history that is easy to understand, while preserving individual commits. However, it needs to rewrite the history, creating brand new commits from the original ones.&nbsp; This frequently leads to the need to perform repetitive actions (like fixing the same conflicts again and again), or risky operations (like force push).&nbsp; Rebasing does not play well with change requests.
+
+&nbsp;
+
+We favor the use of *Merge*, as it is the safest method. On very active projects, you may prefer using *Squash and Merge* for merging change requests.
 
 &nbsp;
 
 ## Close a change request (without merging it)
 
-If the reviewer doesn't want a change request to be merged, it can be closed.&nbsp; The changes that it contains will not be integrated into the target branch.
+If the reviewer (or the author) doesn't want a change request to be merged, it can be closed.&nbsp; The changes that it contains will not be integrated into the target branch.
 
-![Image](<lib/gitbookassetsworkgroup-pr-detail-close-1.png>)
+![Workgroup change request close](<lib/Workgroup%20change%20request%20close.png>)
 
 &nbsp;
 
@@ -185,7 +196,7 @@ If the reviewer doesn't want a change request to be merged, it can be closed.&nb
 
 &nbsp;
 
-![Image](<lib/gitbookassetsworkgroup-pr-detail-close-2.png>)
+![Workgroup change request closed](<lib/Workgroup%20change%20request%20closed.png>)
 
 &nbsp;
 
@@ -195,13 +206,13 @@ Generally, reviewers do not need to assign themselves to a request in order to r
 
 &nbsp;
 
-![Image](<lib/gitbookassetsworkgroup-pr-details-assign-1.png>)
+![Workgroup change request assign](<lib/Workgroup%20change%20request%20assign.png>)
 
 &nbsp;
 
 You can access the list of change requests that are assigned to you from the left menu, through *Check pull requests* \> *Assigned to me*.
 
-![Image](<lib/gitbookassetsworkgroup-pr-details-assign-2.png>)
+![Workgroup change request assigned](<lib/Workgroup%20change%20request%20assigned.png>)
 
 &nbsp;
 
