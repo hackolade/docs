@@ -1,5 +1,63 @@
 # v6.x
 
+New features in v6.2.1 \[24-Jun-2022\]
+
+\- Azure Blob Storage and Azure Data Lake Storage (for JSON, Parquet, Avro...): collapsed hierarchical folders so they only get discovered when node is expanded
+
+\- Azure Blob Storage and Azure Data Lake Storage (for JSON, Parquet, Avro...): increased limit of discovered objects to 1000
+
+\- JSON data sample for pattern fields: generate default name by regular expression
+
+\- JSON data sample for fields with data type "any": added handling using sub-object if exists or string
+
+\- JSON Schema: allowed root to be an array (in addition to historic possibility for root to be a document)
+
+\- Polyglot: fixed inconsistency when deriving model definitions/UDTs into a target model
+
+\- Test data generation: upgraded to FakerJS v7.3.0 library
+
+\- Workgroup: adjusted finding consistent source branch during resolution of conflicts during discard
+
+\- Workgroup: prevented lock during background check for remote commits
+
+\- Workgroup: enhanced UX and handling of token expiration state
+
+\- Workgroup: enabled caching for some GitHub API requests
+
+\- Workgroup: enhanced GitHub credentials setup to favor personal tokens, as passwords are now deprecated
+
+\- Workgroup: disabled forbidden actions for users with GitHub read-only tokens
+
+\- Workgroup: added column for authors in lists of change requests
+
+\- Workgroup: added submit and review actions to Repository menu
+
+\- Workgroup: added timestamp tooltip to all screens with relative dates
+
+\- Workgroup: added handling of blocked Pull Requests
+
+\- Hive: adjusted forward-engineering "apply to instance" script with deactivated objects
+
+\- MariaDB: adjusted conversion of sample and default properties when deriving from Polyglot Boolean into tinyint(1)
+
+\- Parquet: enabled primary key property for documentation purposes only
+
+\- PostgreSQL: adjusted mapping when deriving nvarchar from Polyglot to varchar
+
+\- PostgreSQL: added support for MATCH, ON UPDATE, and ON DELETE for FK relationships
+
+\- SQL Server: adjusted conversion of sample and default properties when deriving from Polyglot Boolean into bit
+
+\- SQL Server: adjusted mapping when deriving timestamp from Polyglot to Datetime2
+
+\- Synapse: adjusted conversion of sample and default properties when deriving from Polyglot Boolean into bit
+
+\- Synapse: adjusted mapping when deriving timestamp from Polyglot to Datetime2
+
+\- Synapse: added possibility apply DDL to instance
+
+&nbsp;
+
 New features in v6.2.0 \[17-Jun-2022\]
 
 \- Workgroup: added support of GitHub (.com as well as Enterprise Server) for workflow to submit and review Pull Requests

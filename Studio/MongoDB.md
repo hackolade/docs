@@ -14,6 +14,24 @@ The data model in the picture below results from the reverse-engineering of the 
 
 &nbsp;
 
+## Collections
+
+A MongoDB database stores one or more collections.&nbsp; Collections store data records as documents, specifically in [BSON](<https://bsonspec.org/> "target=\"\_blank\"") format, a binary encoding of JSON-like documents. BSON has been extended to add optional non-JSON-native data type.&nbsp;
+
+&nbsp;
+
+In addition to its standard collections for documents, MongoDB provides [Capped Collections](<https://www.mongodb.com/docs/manual/core/capped-collections/> "target=\"\_blank\"") which are fixed-size collections that support high-throughput operations that insert and retrieve documents based on insertion order.
+
+&nbsp;
+
+With MongoDB v5.0, support has also been introduced for [Time-Series Collections](<https://www.mongodb.com/docs/manual/core/timeseries-collections/> "target=\"\_blank\""), which efficiently store sequences of measurements over a period of time. 
+
+&nbsp;
+
+Starting in MongoDB v4.2, the server supports using schema validation to enforce [encryption](<MongoDBField-LevelEncryption.md>) of specific fields in a collection.
+
+&nbsp;
+
 ## ObjectID
 
 In MongoDB, each document stored in a collection requires a unique \_id field that acts as a primary key. If an inserted document omits the \_id field, the MongoDB driver automatically generates an ObjectId for the \_id field.&nbsp; ObjectIds are small, likely unique, fast to generate, and ordered. ObjectId values consists of 12-bytes, where the first four bytes are a timestamp that reflect the ObjectId’s creation, specifically:
@@ -91,6 +109,10 @@ MongoDB supports 3 sharding strategies for distributing data across sharded clus
 * [hashed sharding](<https://docs.mongodb.com/manual/core/hashed-sharding/> "target=\"\_blank\""): it involves computing a hash of the shard key field’s value.&nbsp; Each chunk is then assigned a range based on the hashed shard key values.&nbsp; MongoDB automatically computes the hashes when resolving queries using hashed indexes.&nbsp; Applications do not need to compute hashes.
 * [ranged sharding](<https://docs.mongodb.com/v3.4/core/ranged-sharding/> "target=\"\_blank\""): it involves dividing data into ranges based on the shard key values.&nbsp; Each chunk is then assigned a range based on the shard key values.
 * [zone sharding](<https://docs.mongodb.com/manual/tutorial/manage-shard-zone/> "target=\"\_blank\"") (previously known as tag-aware): in sharded clusters, you can create zones that represent a group of shards and associate one or more ranges of shard key values to that zone.&nbsp; MongoDB routes reads and writes that fall into a zone range only to those shards inside of the zone.&nbsp;
+
+&nbsp;
+
+&nbsp;
 
 ## Forward-Engineering
 
