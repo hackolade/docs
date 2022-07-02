@@ -56,9 +56,11 @@ Note that a commit can contain multiple changes, possibly in multiple files. It 
 
 &nbsp;
 
-It is important to note that a commit generally is a fairly immutable piece of Git history.&nbsp; For integrity reasons, Hackolade does not let users erase or cancel a commit from the Git history.&nbsp; It can only be undone via a revert operation.&nbsp; If more specific actions are required, only experts should [rewrite history](<https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History> "target=\"\_blank\""), and perform these actions outside of Hackolade.
+It is important to note that a commit, once it has been pushed to the remote repo, is a fairly immutable piece of Git history.&nbsp; For integrity reasons, Hackolade does not let users erase or cancel a commit from the Git history.&nbsp; It can only be discarded undone via a revert operation.&nbsp; If more specific actions are required, only experts should [rewrite history](<https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History> "target=\"\_blank\""), and perform these actions outside of Hackolade.
 
 &nbsp;
+
+Prior to being pushed, a commit can be discarded, or stashed.
 
 ## Pull
 
@@ -143,4 +145,26 @@ You can delete a branch (after merging it, or not merging it.)
 **Note:** you should should choose carefully the basis for your new branch, if that basis is any other branch than main/master.&nbsp; This is because a new branch inherits all the history and content of the branch on which it is based. This article [explains Git branches with a LEGO analogy](<https://opensource.com/article/22/4/git-branches> "target=\"\_blank\"").
 
 &nbsp;
+
+&nbsp;
+
+## Creation of change/merge/pull requests
+
+The peer review feature is a very popular collaboration extension to Git, supported by most of the repository hubs.&nbsp; It allows changes made by a user to be submitted for review and approval by another user before being merged into a target branch. &nbsp;
+
+&nbsp;
+
+Changes to data models are proposed in a branch, to ensure that the target branch only contains finished and approved work.&nbsp; Anyone with read access to a repository is allowed to submit changes for review.
+
+&nbsp;
+
+**Note:**&nbsp; the naming conventions differ slightly between repository hub providers.&nbsp; GitHub, for example, uses the terminology *pull requests*, whereas GitLab uses *merge requests*.&nbsp; Both refer to the same concept.&nbsp; Hackolade Studio takes into account the specific terminology of the hub provider.&nbsp; However, in this documentation, we abstract them and refer to the more generic "change requests".
+
+&nbsp;
+
+&nbsp;
+
+## Review of change/merge/pull requests
+
+Peers may comment a change request and solicit adjustments to be made to the data models in the branch.&nbsp; Designated reviewers may approve or reject change requests.
 

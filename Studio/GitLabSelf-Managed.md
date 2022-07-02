@@ -1,2 +1,0 @@
-# GitLab Self-Managed
-

@@ -63,7 +63,7 @@ But if things don't validate properly, you may get a message such as this one:
 
 Most users will use this Excel export/import feature for a productive manner to edit bulk data for a model, but without changing the structure of the model itself.&nbsp; The feature allows much more:
 
-### &#49;) Add an scalar attribute to an existing entity
+### &#49;) Add a scalar attribute to an existing entity
 
 This is the simplest use case.&nbsp; In the "entity attributes" tab (which could be named "Collection fields", or "Table columns, etc... depending on the target), simply insert a blank line where you want the attribute to appear in the model.&nbsp; You should note the following:
 

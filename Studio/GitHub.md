@@ -1,8 +1,6 @@
 # GitHub
 
-The information below applies to repositories on github.com as well as GitHub Enterprise Server.
-
-&nbsp;
+The information below applies to repositories on github.com as well as GitHub Enterprise Server, but only if you use the hub workflow features to [submit for review](<Submitforreview.md>) or [review change requests](<Reviewchangerequests.md>).
 
 ## Personal access tokens
 
