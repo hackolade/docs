@@ -16,7 +16,17 @@ In the Hackolade connection settings dialog, give a meaningful name to the conne
 
 &nbsp;
 
-You may choose to provide a connection string which includes: host, port, username and password:
+**Important:** the host IP address and the port must correspond exactly to the values in the SQL Server instance.&nbsp; You may want to check using the SQL Server Configuration Manager (SQL Server Network Configuration -\> Protocols for \<instance name\> -\> TCP/IP -\> \[right click\] properties)
+
+![Image](<lib/SQL%20Server%20Configuration%20Manager.png>)
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+Or you may choose to provide a connection string which includes: host, port, username and password:
 
 &nbsp;
 

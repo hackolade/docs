@@ -18,7 +18,11 @@ It includes the following capabilities:&nbsp;
 
 &nbsp;
 
-When doing a roundtrip from Hackolade to Excel and back, it is important to maintain integrity of the model and avoid any corruption.&nbsp; Microsoft Excel does not allow all the controls and validations of the Hackolade applications.&nbsp; Additionally, the application supports a large number of different targets with differing terminology, structure, and characteristics.&nbsp; To address these concerns, it is critical that the template used for export is the one used for the import process.
+When doing a roundtrip from Hackolade to Excel and back, it is important to maintain integrity of the model and avoid any corruption.&nbsp; Microsoft Excel does not allow all the controls and validations of the Hackolade applications.&nbsp; Additionally, the application supports a large number of different targets with differing terminology, structure, and characteristics. &nbsp;
+
+&nbsp;
+
+**Important note:** it is critical that the template used to import is of the same target and plugin version issued by the export process.
 
 &nbsp;
 

@@ -42,7 +42,7 @@ The generation of physical names for entities (could be called tables, collectio
 
 ## Polyglot Data Modeling
 
-With version 5.2.0 of Hackolade Studio, users can now define structures once in a technology-agnostic polyglot data model, complete with with denormalization and complex data types, then represent these structures in a variety of physical data models respecting the specific aspects of each target technology.
+With version 5.2.0 of Hackolade Studio, users can now define structures once in a technology-agnostic polyglot data model, complete with denormalization and complex data types, then represent these structures in a variety of physical data models respecting the specific aspects of each target technology.
 
 &nbsp;
 

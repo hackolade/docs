@@ -13,6 +13,7 @@ All Product Versions
 | [ADM-ZIP](<https://github.com/cthackers/adm-zip> "target=\"\_blank\"") | (c) 2012 Another-D-Mention Software and other contributors | [MIT](<https://github.com/cthackers/adm-zip/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Ajv](<https://github.com/ajv-validator/ajv> "target=\"\_blank\"") | (c) 2015-2017 Evgeny Poberezkin | [MIT](<https://github.com/ajv-validator/ajv/blob/master/LICENSE> "target=\"\_blank\"") |
 | [ANTLR](<https://github.com/antlr/antlr4> "target=\"\_blank\"") | (c) 2012 Terence Parr | [BSD-3-Clause](<https://github.com/antlr/antlr4/blob/master/LICENSE.txt> "target=\"\_blank\"") |
+| [Apollo-client](<https://github.com/apollographql/apollo-client> "target=\"\_blank\"") | (c) 2022 Apollo Graph, Inc. (Formerly Meteor Development Group, Inc.) | [MIT](<https://github.com/apollographql/apollo-client/blob/main/LICENSE> "target=\"\_blank\"") |
 | [Async](<https://github.com/caolan/async> "target=\"\_blank\"") | (c) 2010-2018 Caolan McMahon | [MIT](<https://github.com/caolan/async/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Avsc](<https://github.com/mtth/avsc> "target=\"\_blank\"") | (c) 2015-2017, Matthieu Monsch | [MIT](<https://github.com/mtth/avsc/blob/master/LICENSE> "target=\"\_blank\"") |
 | [AWS-SDK](<https://github.com/aws/aws-sdk-js> "target=\"\_blank\"") | (c) 2014 Amazon Web Services | [Apache](<https://github.com/aws/aws-sdk-js/blob/master/LICENSE.txt> "target=\"\_blank\"") |

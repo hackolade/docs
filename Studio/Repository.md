@@ -62,7 +62,7 @@ Some industry analysts seem to consider as a drawback that Hackolade does not ha
 
 &nbsp;
 
-We decided to leverage a standard and non-proprietary technology that is already extremely popular for software development: [Git](<https://en.wikipedia.org/wiki/Git>), the software code version control technology behind the popular services GitHub, GitLab, and other DevOps platforms.&nbsp; Git is used by over a hundred fifty million developers worldwide, plus there's a huge advantage to co-locating data models, schemas, and code.&nbsp; Along with DevOps CI/CD pipelines and our [Command-Line Interface](<CommandLineInterface.md>), our repository integration supports our vision for [Metadata-as-Code](<https://hackolade.com/metadata-as-code.html>).
+We decided to leverage a standard and non-proprietary technology that is already extremely popular for software development: [Git](<https://en.wikipedia.org/wiki/Git> "target=\"\_blank\""), the software code version control technology behind the popular services GitHub, Bitbucket, GitLab, and other DevOps platforms.&nbsp; Git is used by over a hundred fifty million developers worldwide, plus there's a huge advantage to co-locating data models, schemas, and code.&nbsp; Along with DevOps CI/CD pipelines and our [Command-Line Interface](<CommandLineInterface.md>), our repository integration supports our vision for [Metadata-as-Code](<https://hackolade.com/metadata-as-code.html>).
 
 &nbsp;
 

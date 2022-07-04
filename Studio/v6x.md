@@ -1,5 +1,33 @@
 # v6.x
 
+New features in v6.2.2 \[04-Jul-2022\]
+
+\- JSON Schema: added possibility to declare multiple data types including at least one complex data type without oneOf choice
+
+\- Excel import: added support for relationships on nested attributes
+
+\- Excel import: added support for cross-target references
+
+\- Polyglot: allowed modification of business and technical names for attributes and UDTs/model references
+
+\- Polyglot: added handling of references when multiple derivations from the same polyglot model
+
+\- Workgroup: added auto reuse of provider credentials for Git authentication
+
+\- Workgroup: added GitHub OAuth device flow method
+
+\- Workgroup: added possibility to assign a Pull Request by picking from a list of possible assignable users
+
+\- Workgroup: added handling for Pull Request comments deleted on web console
+
+\- Oracle: added tolerance for GET\_DDL returning concatenated statements without delimiter
+
+\- SQL Server: added support for MATCH, ON UPDATE, and ON DELETE for FK relationships
+
+\- SQL Server: allowed use of named instance in connection host parameter
+
+&nbsp;
+
 New features in v6.2.1 \[24-Jun-2022\]
 
 \- Azure Blob Storage and Azure Data Lake Storage (for JSON, Parquet, Avro...): collapsed hierarchical folders so they only get discovered when node is expanded

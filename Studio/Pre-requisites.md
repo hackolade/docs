@@ -76,5 +76,17 @@ You need to install a Git client if one is not yet present on your machine.&nbsp
 
 &nbsp;
 
+In the .gitconfig file, typically found on Windows in **C:\\Users\\%username%**, you make sure that the following values are set correctly:
+
+\[core\]
+
+&nbsp; &nbsp; autocrlf = true
+
+&nbsp; &nbsp; longpaths = true
+
+&nbsp; &nbsp; fsmonitor = false
+
+&nbsp;
+
 &nbsp;
 
