@@ -48,6 +48,21 @@ Git is currently the most popular distributed version control system, originally
 
 &nbsp;
 
+In layman's terms, Git allows to:
+
+* undo changes;
+* save changes across multiple files as a set;
+* split your path so you can go down one road (called "branch") with one series of changes, and another road with another series of changes, or in fact down dozens of roads with dozens of series of changes;
+* merging those branches back together, either wholesale or selectively;
+* sharing entire sets of changes with coworkers, but selectively, without having to worry about overwriting their changes;
+* sharing not just your current version, but the entire undo/redo log behind your current version.
+
+&nbsp;
+
+**Note:** don't confuser Git and GitHub, as they are different.&nbsp; GitHub is a service hosting Git repositories, where Git is a version control system.
+
+&nbsp;
+
 Git takes care of tracking all changes that are made in files belonging to specific folders. In Git terms, such a folder is called a repository.&nbsp; A repository is like any other traditional folder: the only specificity being the presence of a sub-folder named .git containing the history of all file changes for the folder.
 
 &nbsp;

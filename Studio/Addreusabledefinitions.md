@@ -22,7 +22,7 @@ In the ERD view and hierarchical schema view, the references are are noted:
 
 &nbsp;
 
-**Note:** in some targets such as RDBMS, "model definitions" appear under the name "user-defined types".&nbsp; In Swagger, they are called "definitions" while in OpenAPI, they're called "components".&nbsp; Their behaviors throughout the application are identical.
+**Note:** in some targets such as RDBMS, "model definitions" are also known as "user-defined types" or UDTs.&nbsp; In Swagger, they are called "definitions" while in OpenAPI, they're called "components".&nbsp; Their behaviors throughout the application are identical.
 
 &nbsp;
 

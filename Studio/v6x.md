@@ -1,5 +1,33 @@
 # v6.x
 
+New features in v6.2.3 \[08-Jul-2022\]
+
+\- Command-Line Interface: added commands to export and import with Excel from the CLI
+
+\- Polyglot: allowed deviations in attribute business and technical names in target model when deriving from Polyglot
+
+\- Polyglot: adjusted mapping of binary type when reverse-engineering XSD
+
+\- Workgroup: added possibility to link Change Request to assignees from the Submit for review screen
+
+\- Workgroup: added possibility to link GitHub Pull Request to reviewers from the Submit for review and the Check pR screens
+
+\- Cosmos DB with MongoDB API: added possibility to generate synthetic/mock/fake documents and applied in bulk to the instance
+
+\- DocumentDB: added possibility to generate synthetic/mock/fake documents and applied in bulk to the instance
+
+\- Couchbase: added possibility to generate synthetic/mock/fake documents and applied in bulk to the instance
+
+\- Oracle: added tolerance for GET\_DDL returning concatenated statements without delimiter
+
+\- Oracle: added SQL terminator to view DDL retrieval
+
+\- PostgreSQL: changed escaping from $ to C-style
+
+\- SQL Server: adjusted mapping of data types when deriving from Polyglot to convert string sizes greater than 8000 to (n)varchar(MAX)
+
+&nbsp;
+
 New features in v6.2.2 \[04-Jul-2022\]
 
 \- JSON Schema: added possibility to declare multiple data types including at least one complex data type without oneOf choice

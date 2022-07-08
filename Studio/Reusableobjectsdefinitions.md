@@ -24,8 +24,6 @@ Definitions can be maintained at 3 distinct levels: at the entity-level (called 
 
 **Note:** Definitions are not carried over to many of the NoSQL databases.&nbsp; They are only used in physical modeling in Hackolade.&nbsp; To make things easy for the data modeler, Object Browser, ERD, entity hierarchical schema views, and documentation all show the referenced attributes as if they had been defined directly in the collection(s).
 
-With some RDMBS as well as with Cassandra and Hive for example, Hackolade's model definitions correspond to the concept of User-Defined Types.
-
 &nbsp;
 
 It is easy to create a re-usable definition from scratch, then reference it in a collection.&nbsp; Or by selecting an attribute in an existing collection, and converting it to a re-usable definition, so it can be referenced elsewhere.
@@ -45,6 +43,10 @@ Model definitions can be referenced in any entity of the same Hackolade model. &
 &nbsp;
 
 If a definition is created at the model level, it can be referenced in any entity of the same model, whereas it will be limited to its own entity if it is created as an internal definition. &nbsp;
+
+&nbsp;
+
+With some RDMBS as well as with Cassandra and Hive for example, Hackolade's model definitions correspond to the concept of User-Defined Types or UDTs.
 
 &nbsp;
 
