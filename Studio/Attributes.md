@@ -52,7 +52,9 @@ To expand the list&nbsp; of properties for a given data type, press the + sign o
 
 &nbsp;
 
-If one of the data types is complex (array or object, and also list, map, struct, etc. in other targets), then you must use a choice, cfr below.
+If one of the data types is complex (array or object, and also list, map, struct, etc. in other targets), then you must use a choice, cfr below.&nbsp; With v6.2.2, and only for JSON Schema and MongoDB, it is also possible to specify multiple data type with at least one complex data type, using the simpler method already used with scalar data types:
+
+![Data types multiple complex object and array](<lib/Data%20types%20multiple%20complex%20object%20and%20array.png>)
 
 &nbsp;
 

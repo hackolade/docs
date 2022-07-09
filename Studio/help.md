@@ -322,6 +322,7 @@
     - [Why is MongoDB timestamp is disabled?](<WhyisMongoDBtimestampisdisabled.md>)
     - [Authentication Failed Error Message](<AuthenticationFailedErrorMessage.md>)
     - [MongoError: Authentication failed](<MongoErrorAuthenticationfailed.md>)
+    - [SSH-RSA key rejected with message "no mutual signature algorithm"](<SSH-RSAkeyrejectedwithmessagenom.md>)
   - [Cassandra FAQ](<CassandraFAQ.md>)
     - [Server timeout during read query at consistency LOCAL_ONE](<Servertimeoutduringreadqueryatco.md>)
   - [Couchbase FAQ](<CouchbaseFAQ.md>)

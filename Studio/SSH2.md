@@ -78,3 +78,7 @@ Or, if the SSH Auth Method is password:
 
 &nbsp;
 
+&nbsp;
+
+Consult [this page](<SSH-RSAkeyrejectedwithmessagenom.md>) if your SSH-RSA key rejected with message "no mutual signature algorithm"
+

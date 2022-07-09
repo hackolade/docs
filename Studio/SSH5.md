@@ -62,3 +62,6 @@ Or, if the SSH Auth Method is password:
 
 ![Reverse-engineering PostgreSQL - SSH w Password](<lib/RE%20-%20MongoDB%20-%20SSH%20w%20Password.png>)
 
+&nbsp;
+
+Consult [this page](<SSH-RSAkeyrejectedwithmessagenom.md>) if your SSH-RSA key rejected with message "no mutual signature algorithm"
