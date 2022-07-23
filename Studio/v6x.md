@@ -1,5 +1,45 @@
 # v6.x
 
+New features in v6.2.5 \[23-Jul-2022\]
+
+\- Excel:enhanced validation when exporting graph models
+
+\- Model API generation: added help link next to template selection, plus enhanced error message when selected file is not a template
+
+\- Polyglot: added spinner when large model is being derived
+
+\- Polyglot: enhanced handling when replacing a reference to a definition by its attributes
+
+\- Workgroup: reload data model if changes detected after pull operation
+
+\- Workgroup: leverage GitHub GraphQL API to populate list of Pull Requests screen
+
+\- Workgroup: enhanced conflict resolution after merge of local branches
+
+\- Parquet: fixed issue causing 'Too many files opened" message
+
+&nbsp;
+
+New features in v6.2.4 \[17-Jul-2022\]
+
+\- Command-Line Interface: reordered commands
+
+\- Multiple data types: enhanced removal when complex data type is last one left
+
+\- Polyglot: added possibility to give a name to the polyglot link.&nbsp; Can be helpful when making multiple links to the same polyglot model, for different profiles
+
+\- ArangoDB: allowed custom properties in relationships
+
+\- Avro: enhanced schema validation messages
+
+\- JanusGraph: allowed custom properties in relationships
+
+\- Oracle: enhanced parsing of view SELECT statement
+
+\- Snowflake: enhanced reverse-engineering when data sampling enabled
+
+&nbsp;
+
 New features in v6.2.3 \[08-Jul-2022\]
 
 \- Command-Line Interface: added commands to export and import with Excel from the CLI
