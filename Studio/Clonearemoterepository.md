@@ -30,5 +30,5 @@ You're done\!&nbsp; You now have a local copy of the remote repository in the sp
 
 &nbsp;
 
-![Image](<lib/Workgroup%20explore%20models1.png>)
+![Workgroup explore files](<lib/Workgroup%20explore%20files.png>)
 

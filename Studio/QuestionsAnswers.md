@@ -6,11 +6,11 @@ Git submodules allow you to keep a Git repository as a subdirectory of another G
 
 &nbsp;
 
-The presence of Git submodules in a repository will not prevent you from using Hackolade Studio. But there is no handling of Git submodules currently in Hackolade Studio.
+The presence of Git submodules in a repository will not prevent you from using Hackolade Studio. But there is no handling of Git submodules currently in Hackolade Studio.&nbsp; Even the GitHub Desktop application does not have any special support for submodules...
 
 &nbsp;
 
-In case Git submodules are important for the handling of your data models, please [submit a feature request](<https://hackolade.zendesk.com/hc/en-us/requests/new> "target=\"\_blank\"").
+This [article](<https://www.atlassian.com/git/tutorials/git-subtree> "target=\"\_blank\"") even suggests that a better alternative to Git submodules is to use Git subtrees.
 
 &nbsp;
 

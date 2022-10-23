@@ -51,6 +51,7 @@ All Product Versions
 | [Fast-crc32c](<https://github.com/ashi009/node-fast-crc32c> "target=\"\_blank\"") | (c) 2014 Xiaoyi Shi | [MIT](<https://github.com/ashi009/node-fast-crc32c/blob/master/LICENSE> "target=\"\_blank\"") |
 | [File-loader](<https://github.com/webpack/file-loader> "target=\"\_blank\"") | (c) 2016 Tobias Koppers | [MIT](<https://opensource.org/licenses/MIT> "target=\"\_blank\"") |
 | [Font-awesome](<https://fortawesome.github.io/Font-Awesome/> "target=\"\_blank\"") | (c) 2016 Dave Gandy | [MIT](<https://fortawesome.github.io/Font-Awesome/license/> "target=\"\_blank\"") |
+| [Foreign Key Constraint Identification in Relational Databases](<http://ceur-ws.org/Vol-1885/106.pdf> "target=\"\_blank\"") | (c) 2017 Jan Motl, Pavel Kordík, ITAT 2017 Proceedings. | [BSD-2-Clause](<https://github.com/janmotl/linkifier/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Form-Data](<https://github.com/form-data/form-data> "target=\"\_blank\"") | (c) 2012 Felix Geisendörfer | [MIT](<https://github.com/form-data/form-data/blob/master/License> "target=\"\_blank\"") |
 | [Fs-extra](<https://github.com/jprichardson/node-fs-extra> "target=\"\_blank\"") | (c) 2011-2016 JP Richardson | [MIT](<https://github.com/jprichardson/node-fs-extra/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Generate-schema](<https://github.com/mjackson/history> "target=\"\_blank\"") | (c) 2015 Nijiko Yonskai | [MIT](<https://github.com/nijikokun/generate-schema/blob/master/LICENSE> "target=\"\_blank\"") |
@@ -61,8 +62,9 @@ All Product Versions
 | [Gremlin-javascript](<https://github.com/apache/tinkerpop/tree/master/gremlin-javascript/src/main/javascript/gremlin-javascript> "target=\"\_blank\"") | (c) 2017 Apache TinkerPop team | [Apache](<https://github.com/apache/tinkerpop/blob/master/gremlin-javascript/src/main/javascript/gremlin-javascript/LICENSE> "target=\"\_blank\"") |
 | [History](<https://github.com/mjackson/history> "target=\"\_blank\"") | (c) 2015-2016 Michael Jackson | [MIT](<https://github.com/browserstate/history.js/blob/master/LICENSE.md> "target=\"\_blank\"") |
 | [Html-pdf](<https://github.com/marcbachmann/node-html-pdf> "target=\"\_blank\"") | (c) 2016 Marc Bachmann | [MIT](<https://opensource.org/licenses/MIT> "target=\"\_blank\"") |
-| [Https-proxy-agent](<https://github.com/TooTallNate/node-https-proxy-agent> "target=\"\_blank\"") | (c) 2013 nathan Rajlich | [MIT](<https://github.com/TooTallNate/node-https-proxy-agent#license> "target=\"\_blank\"") |
-| [Java-SSL](<https://github.com/tresata/java-ssl> "target=\"\_blank\"") | (c) 2015 Jayesh Mori | [MIT](<https://github.com/tresata/java-ssl/blob/master/package.json> "target=\"\_blank\"") |
+| [Https-proxy-agent](<https://github.com/TooTallNate/node-https-proxy-agent> "target=\"\_blank\"") | (c) 2013 Nathan Rajlich | [MIT](<https://github.com/TooTallNate/node-https-proxy-agent#license> "target=\"\_blank\"") |
+| [Is Text or Binary?](<https://github.com/bevry/istextorbinary> "target=\"\_blank\"") | (c) 2012+ Bevry Pty Ltd (c) 2011 Benjamin Lupton | [MIT](<https://github.com/bevry/istextorbinary/blob/master/LICENSE.md> "target=\"\_blank\"") |
+| [Jaro-Winkler](<https://github.com/jordanthomas/jaro-winkler> "target=\"\_blank\"") | (c) 2015 Jordan Thomas | [MIT](<https://github.com/jordanthomas/jaro-winkler/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Jayschema](<https://github.com/natesilva/jayschema> "target=\"\_blank\"") | (c) 2013 Nate Silva | [BSD-3-Clause](<https://github.com/natesilva/jayschema/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Jks-js](<https://github.com/lenchv/jks-js> "target=\"\_blank\"") | (c) 2020 Volodymy Liench | [MIT](<https://github.com/lenchv/jks-js/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Jsdiff](<https://github.com/kpdecker/jsdiff> "target=\"\_blank\"") | (c) 2009-2015, Kevin Decker | [BSD-3-Clause](<https://github.com/kpdecker/jsdiff/blob/master/LICENSE> "target=\"\_blank\"") |
@@ -84,6 +86,7 @@ All Product Versions
 | [MongoDB-query-parser](<https://github.com/mongodb-js/query-parser> "target=\"\_blank\"") | (c) 2017 MongoDB Inc. | [Apache](<https://github.com/mongodb-js/query-parser/blob/master/LICENSE> "target=\"\_blank\"") |
 | [MongoDB-schema](<https://github.com/mongodb-js/mongodb-schema> "target=\"\_blank\"") | (c) 2015 MongoDB Inc. | [Apache](<https://github.com/mongolab/mongodb-uri-node> "target=\"\_blank\"") |
 | [MongoDB-uri-node](<https://github.com/mongolab/mongodb-uri-node> "target=\"\_blank\"") | (c) 2013 ObjectLabs Corporation | [MIT](<https://github.com/mongolab/mongodb-uri-node/blob/master/LICENSE> "target=\"\_blank\"") |
+| [Munkres-js](<https://github.com/addaleax/munkres-js> "target=\"\_blank\"") | (c) 2008-2016 Brian M. Clapper | [Apache](<https://github.com/addaleax/munkres-js/blob/master/LICENSE> "target=\"\_blank\"") |
 | [MySQL](<https://github.com/mysqljs/mysql> "target=\"\_blank\"") | (c) 2012 Felix Geisendorfer | [MIT](<https://github.com/mysqljs/mysql/blob/master/License> "target=\"\_blank\"") |
 | [Neo4j-javascript-driver](<https://github.com/neo4j/neo4j-javascript-driver> "target=\"\_blank\"") | (c) 2018 Neo4j | [Apache](<https://github.com/neo4j/neo4j-javascript-driver/blob/1.7/LICENSE> "target=\"\_blank\"") |
 | [Node-comment-json](<https://github.com/kaelzhang/node-comment-json> "target=\"\_blank\"") | (c) 2013 Kaelzang \<\>, contributors | [MIT](<https://github.com/kaelzhang/node-comment-json/blob/master/LICENSE> "target=\"\_blank\"") |
@@ -96,7 +99,6 @@ All Product Versions
 | [Node-rsa-pem-from-mod-exp](<https://github.com/tracker1/node-rsa-pem-from-mod-exp> "target=\"\_blank\"") | (c) 2014 Michael J. Ryan | [MIT](<https://github.com/tracker1/node-rsa-pem-from-mod-exp/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Node-semver](<https://github.com/npm/node-semver> "target=\"\_blank\"") | (c) Isaac Z. Schlueter and Contributors | [ISC](<https://github.com/npm/node-semver/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Node-SSL-root-CAs](<https://github.com/windhamg/node-ssl-root-cas>) | (c) 2014 Gary Windham | [Apache](<https://github.com/windhamg/node-ssl-root-cas/blob/master/LICENSE> "target=\"\_blank\"") |
-| [Node-uuid](<https://github.com/broofa/node-uuid> "target=\"\_blank\"") | (c) 2010-2012 Robert Kieffer | [MIT](<https://github.com/broofa/node-uuid/blob/master/LICENSE.md> "target=\"\_blank\"") |
 | [Node-which](<https://github.com/npm/node-which> "target=\"\_blank\"") | (c) Isaac Z. Schlueter and Contributors | [ISC](<https://github.com/npm/node-which/blob/main/LICENSE> "target=\"\_blank\"") |
 | [Ottoman](<https://github.com/couchbaselabs/node-ottoman> "target=\"\_blank\"") | (c) 2013 Couchbase Inc. | [Apache](<https://www.apache.org/licenses/LICENSE-2.0> "target=\"\_blank\"") |
 | [PapaParse](<https://github.com/mholt/PapaParse> "target=\"\_blank\"") | (c) 2015 Matthew Holt | [MIT](<https://github.com/mholt/PapaParse/blob/master/LICENSE> "target=\"\_blank\"") |
@@ -116,6 +118,7 @@ All Product Versions
 | [React-draggable](<https://github.com/mzabriskie/react-draggable> "target=\"\_blank\"") | (c) 2014-2016 Matt Zabriskie | [MIT](<https://github.com/mzabriskie/react-draggable/blob/master/LICENSE> "target=\"\_blank\"") |
 | [React-native-listener](<https://github.com/erikras/react-native-listener> "target=\"\_blank\"") | (c) 2015 Erik Rasmussen | [MIT](<https://github.com/erikras/react-native-listener/blob/master/LICENSE> "target=\"\_blank\"") |
 | [React-resizable](<https://github.com/STRML/react-resizable> "target=\"\_blank\"") | (c) 2014-2016 Samuel Reed | [MIT](<https://github.com/STRML/react-resizable> "target=\"\_blank\"") |
+| [React-scroll-sync](<https://github.com/okonet/react-scroll-sync> "target=\"\_blank\"") | (c) 2016 Andrey Okonetchnikov | [MIT](<https://github.com/okonet/react-scroll-sync/blob/master/LICENSE> "target=\"\_blank\"") |
 | [React-select](<https://github.com/JedWatson/react-select> "target=\"\_blank\"") | (c) 2019 Jed Watson | [MIT](<https://github.com/JedWatson/react-select/blob/master/LICENSE> "target=\"\_blank\"") |
 | [React-virtualized](<https://github.com/bvaughn/react-virtualized> "target=\"\_blank\"") | (c) 2015 Brian Vaughn | [MIT](<https://github.com/bvaughn/react-virtualized/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Redux](<https://redux.js.org/> "target=\"\_blank\"") | (c) 2015 Dan Abramov | [MIT](<https://github.com/reactjs/redux/blob/master/LICENSE.md> "target=\"\_blank\"") |
@@ -140,8 +143,8 @@ All Product Versions
 | [Tunnel-SSH](<https://github.com/agebrock/tunnel-ssh> "target=\"\_blank\"") | (c) 2018 Christoph Hagenbrock&nbsp; | [MIT](<https://github.com/agebrock/tunnel-ssh/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Turndown](<https://github.com/domchristie/turndown> "target=\"\_blank\"") | (c) 2017 Dom Christie | [MIT](<https://github.com/domchristie/turndown/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Twitter Bootstrap](<https://getbootstrap.com/> "target=\"\_blank\"") | (c) 2011-2016 Twitter, Inc. | [MIT](<https://github.com/twbs/bootstrap/blob/master/LICENSE> "target=\"\_blank\"") |
+| [UUID](<https://github.com/uuidjs/uuid> "target=\"\_blank\"") | (c) 2010-2020 Robert Kieffer and other contributors | [MIT](<https://github.com/uuidjs/uuid/blob/main/LICENSE.md> "target=\"\_blank\"") |
 | [VM2](<https://github.com/patriksimek/vm2> "target=\"\_blank\"") | (c) 2014-2022 Patrik Simek and contributors | [MIT](<https://github.com/patriksimek/vm2/blob/master/LICENSE.md> "target=\"\_blank\"") |
-| [W3c-blob](<https://github.com/chrisdickinson/w3c-blob> "target=\"\_blank\"") | (c) 2016 Chris Dickinson | [MIT](<https://github.com/chrisdickinson/w3c-blob#license> "target=\"\_blank\"") |
 | [Winreg](<https://github.com/fresc81/node-winreg> "target=\"\_blank\"") | (c) 2016 Paul Bottin | [BSD-2-Clause](<https://github.com/fresc81/node-winreg#license> "target=\"\_blank\"") |
 | [Xml2JS](<https://github.com/Leonidas-from-XIV/node-xml2js> "target=\"\_blank\"") | (c) 2010-2013 Marek Kubica | [MIT](<https://github.com/Leonidas-from-XIV/node-xml2js/blob/master/LICENSE> "target=\"\_blank\"") |
 | [XMLDOM](<https://github.com/jindw/xmldom> "target=\"\_blank\"") | (c) 2012-2016 jindw | [MIT](<https://github.com/jindw/xmldom/blob/master/LICENSE> "target=\"\_blank\"") |

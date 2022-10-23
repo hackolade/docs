@@ -134,7 +134,7 @@ Finally, in the Authentication tab of the Hackolade connection dialog:
 
 &nbsp;
 
-You may leave the information blank if you already have an AWSCLI setup.&nbsp; Otherwise, enter either a session token, or the Access Key ID and Secret Access Key combination.
+You may leave the information blank if you already have an AWSCLI setup.&nbsp; Otherwise, enter either a [session token](<https://docs.aws.amazon.com/IAM/latest/UserGuide/id\_credentials\_temp\_use-resources.html> "target=\"\_blank\""), or the Access Key ID and Secret Access Key combination.
 
 &nbsp;
 

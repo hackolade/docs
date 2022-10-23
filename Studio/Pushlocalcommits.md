@@ -20,15 +20,13 @@ If I am making changes in the lower green branch below, based on a model origina
 
 &nbsp;
 
-![Workgroup push denied](<lib/git-commit-history1.drawio.png>)
-
-&nbsp;
+![Image](<lib/Workgroup%20push%20denied.png>)
 
 &nbsp;
 
 It is the responsibility of the last user who pushes changes to do the merge first and ensure that no conflicts exist, before pushing the merged model to the remote:
 
-![Workgroup pull before push](<lib/git-commit-history2.drawio.png>)
+![Workgroup pull before push](<lib/Workgroup%20pull%20before%20push.png>)
 
 &nbsp;
 
@@ -40,5 +38,5 @@ You will have less headaches if you pull regularly from the remote and merge wit
 
 &nbsp;
 
-![Workgroup pull often before push](<lib/git-commit-history3.drawio.png>)
+![Image](<lib/Workgroup%20pull%20often%20before%20push.png>)
 

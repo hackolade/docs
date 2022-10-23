@@ -4,7 +4,7 @@ In the previous tutorial, we reviewed how to create a model for REST APIs using 
 
 &nbsp;
 
-A polyglot data model is a common physical model, where denormalization and complex data types are encouraged.&nbsp; While some people like to compare our polyglot model to a logical model because both are technology-agnostic, you should read [this article](<https://hackolade.com/polyglot-data-modeling.html>) where we emphasize the differences.&nbsp; We strongly advise against creating normalized logical models when using the polyglot functionality.&nbsp; You should instead use this functionality to create denormalized models with complex data types and, if needed, rely on the built-in functionality that will automatically normalize nested objects in RDBMS targets.
+A polyglot data model is a common physical model, where denormalization and complex data types are encouraged.&nbsp; While some people like to compare our polyglot model to a logical model because both are technology-agnostic, you should read [this article](<https://hackolade.com/polyglot-data-modeling.html>) where we emphasize the differences.&nbsp; We&nbsp; advise against creating normalized logical models when using the polyglot functionality.&nbsp; You should instead use this functionality to create denormalized models with complex data types and, if needed, rely on the built-in functionality that will automatically normalize nested objects in RDBMS targets.
 
 &nbsp;
 
@@ -19,6 +19,16 @@ The polyglot and target models are separate models.&nbsp; But they are related t
 &nbsp;
 
 Exceptions are possible, as described further down.
+
+&nbsp;
+
+You may be used to the traditional 3-step process - conceptual-logical-physical - to successively capture scope and language, business rules, and target-specific implementation details. To facilitate the process, we provide, as part of our Polyglot capabilities, a Graph Diagram view of common business language with its entities and their relationships. The graph view is friendlier to business users than Entity-Relationship or UML diagrams.
+
+![Polyglot Cocenptual Graph View](<lib/Polyglot%20Cocenptual%20Graph%20View.png>)
+
+&nbsp;
+
+The behavior of this view is similar to that of [graph targets](<Graphshapes.md>)..
 
 &nbsp;
 
@@ -100,7 +110,7 @@ Once a target model has been created and derived from a polyglot model, it conta
 
 You may also join entities from multiple polyglot models by repeating the operation to derive from polyglot.
 
-&nbsp;
+![Polyglot reference property](<lib/Polyglot%20reference%20property.png>)
 
 &nbsp;
 
@@ -108,11 +118,13 @@ You may also join entities from multiple polyglot models by repeating the operat
 
 When you make changes to a polyglot model and save it, these changes can be reflected in the target models derived from that polyglot model.&nbsp; If the target model is already open, you may refresh the derived objects by clicking the update button which can be found in the model-level Properties Pane:
 
-![Polyglot reference property](<lib/Polyglot%20reference%20property.png>)
+&nbsp;
+
+An impact analysis dialog is displayed to let you decide which objects to include as part of this refresh operation.&nbsp; Maybe these objects were not selected originally, or they could have been added to the polyglot model since the previous refresh or derive operation, or they could have been deleted in the target model. &nbsp;
 
 &nbsp;
 
-If new objects have appeared in the polyglot model (or there are objects in the polyglot model that were not selected in an earlier step), a dialog appears to allow their selection so references could be added to the target model.
+![Polyglot Impact Analysis](<lib/Polyglot%20Impact%20Analysis.png>)
 
 &nbsp;
 

@@ -69,6 +69,12 @@ The syntax for these controls is described in detail on this [page](<https://git
 
 &nbsp;
 
+## If you have never customized the chosen target
+
+The very first step, which needs to be done only once per target, is to tell Hackolade that you wish to create custom properties.&nbsp; The application will create the necessary folders.&nbsp; To do this, you just need to go to Help \> Plugin Manager \> Installed, choose your target, and click on the link "Show plugin customization directory":
+
+![Image](<lib/Custom%20props%20-%20plugin%20manager.png>)
+
 ## Entity details tab
 
 Let's add a first custom property to the document entity for the JSON target.&nbsp; It will be a dropdown control for a list of Subject Areas for an insurance company.
@@ -267,7 +273,7 @@ You may want to share your custom properties with other team members to ensure c
 
 &nbsp;
 
-If you need to change the location of customer properties, you may do so Tools \> Options W Default Paths. &nbsp;
+If you need to change the location of customer properties, you may do so Tools \> Options \> Default Paths. &nbsp;
 
 &nbsp;
 

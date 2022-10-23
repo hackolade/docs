@@ -18,6 +18,20 @@ You may still manage this grant if needed in Security \& Privacy:
 
 &nbsp;
 
+&nbsp;
+
+## The "Git" command requires the command line developer tools
+
+If you don't have XCode installed on your machine, it is possible that you will be presented with this message:
+
+![Mac Git command line developer tools install](<lib/Mac%20Git%20command%20line%20developer%20tools%20install.png>)
+
+&nbsp;
+
+You should install this these tools, then restart Hackolade Studio.
+
+&nbsp;
+
 ## To install the application without admin rights
 
 In a corporate environment if you don't have the admin password to perform installation, you should contact your IT department.&nbsp; They can remotely access your computer and install the software for you.&nbsp; You should comply with the IT policy on non-approved software.

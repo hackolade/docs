@@ -10,7 +10,7 @@ Merging is Git's way of putting a forked history back together again.&nbsp; Merg
 
 &nbsp;
 
-![Workgroup merge branch flow](<lib/git-merge-branch.png>)
+![Workgroup merge branch flow](<lib/Workgroup%20merge%20branch%20flow.png>)
 
 &nbsp;
 

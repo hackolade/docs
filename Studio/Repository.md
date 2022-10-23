@@ -4,7 +4,7 @@
 
 &nbsp;
 
-The Workgroup Edition of Hackolade Studio introduces native integration with Git repositories to provide state-of-the-art collaboration, versioning, branching, conflict resolution, peer review workflows, change tracking and traceability, DevOps CI/CD integration, and more. Previously, an integration with Git was possible, but required either a separate Git desktop application, or the use of the Git command line interface.&nbsp; Our Workgroup Edition makes it easy for users who are not so familiar with Git to leverage the tremendous power of this popular tool.
+The Workgroup Edition of Hackolade Studio introduces native integration with Git repositories to provide state-of-the-art collaboration, versioning, branching, conflict resolution, peer review workflows, change tracking and traceability.&nbsp; Mostly, it allows to co-locate data models and schemas with application code, and further integrate with DevOps CI/CD pipelines as part of our vision for [Metadata-as-Code](<https://hackolade.com/metadata-as-code.html> "target=\"\_blank\""). Previously, an integration with Git was possible, but required either a separate Git desktop application, or the use of the Git command line interface.&nbsp; Our Workgroup Edition makes it easy for users who are not so familiar with Git to leverage the tremendous power of this popular tool.
 
 &nbsp;
 

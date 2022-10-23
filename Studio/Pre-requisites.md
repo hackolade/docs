@@ -64,7 +64,7 @@ you may have to declare the custom path manually.
 
 &nbsp;
 
-## Installing the Git executable
+## Installing the Git executable for Windows
 
 You need to install a Git client if one is not yet present on your machine.&nbsp; You may have to ask your IT department to install the latest version of the Git client from [the official Git website](<https://git-scm.com/downloads> "target=\"\_blank\""), and follow [these instructions](<https://git-scm.com/book/en/v2/Getting-Started-Installing-Git> "target=\"\_blank\"").&nbsp; During the installation process, make sure to NOT disable the use of the credential manager (it is enabled by default).&nbsp; This is the safest way for your Git client to store your credentials and to avoid prompting you every time they are needed.
 
@@ -89,4 +89,18 @@ In the .gitconfig file, typically found on Windows in **C:\\Users\\%username%**,
 &nbsp;
 
 &nbsp;
+
+## Installing the Git executable for Mac
+
+If you don't have XCode installed on your machine, which is probable if you're not a developer, it is necessary to install Git on your machine.&nbsp; There are 3 main sources for Git on macOS: Apple, Homebrew, or the Git website.
+
+&nbsp;
+
+The easiest approach is to simply open Hackolade Studio which will detect the absence of the Git executable, and propose to perform the installation of the command line developer tools from Apple.&nbsp; This is the recommended approach.
+
+![Mac Git command line developer tools install](<lib/Mac%20Git%20command%20line%20developer%20tools%20install.png>)
+
+&nbsp;
+
+Alternatively, you may download Git from [Homebrew Git Formulae](<https://formulae.brew.sh/formula/git> "target=\"\_blank\""), but it also requires the Apple command line developer tools. Finally, you may download Git from the [Git website](<https://git-scm.com> "target=\"\_blank\""), but the Mac version is maintained by a third party, not the Git maintainers, so it isn't always up-to-date.
 

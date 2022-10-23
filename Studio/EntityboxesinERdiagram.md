@@ -1,6 +1,8 @@
 # Entity boxes in ER diagram
 
-There are several ways to create a new collection in the ER diagram of a model:
+## Create an entity
+
+There are several ways to create a new entity (table, collection, etc...) in the ER diagram of a model:
 
 \- via the Actions menu:
 
@@ -34,7 +36,7 @@ then click and hold your left mouse button, then drag the collection where you'd
 
 &nbsp;
 
-The name bar of a collection is blue.&nbsp; When you select a collection by clicking on the name bar, it becomes green and the related properties pane gets displayed.&nbsp; The collection window can be resized so the content fits in.
+The name bar of a collection is blue, unless changed in the Options tab.&nbsp; When you select a collection by clicking on the name bar, the related properties pane gets displayed in the Properties Pane on the right.&nbsp; The collection window can be resized so the content fits in.
 
 &nbsp;
 
@@ -76,6 +78,8 @@ Several of the controls available in the [hierarchical schema view](<Attributebo
 
 &nbsp;
 
+## Visual indicators
+
 The ERD entity boxes have been enriched with visual indicators.&nbsp; Here is a list of abbreviations:
 
 pk: primary key
@@ -109,6 +113,46 @@ Both dk and dm attributes allow access to the Where-Used function in the context
 You may arrange and align entity boxes in the ERD using the menu option Edit \> Align, or the arrange toolbar buttons:
 
 ![ERD arrange entities toolbar button](<lib/ERD%20arrange%20entities%20toolbar%20button.png>)&nbsp; Options include: align left, align center, align right, align top, align middle, align bottom, distribute horizontally, distribute vertically, distribute orthogonally.
+
+&nbsp;
+
+&nbsp;
+
+## Display options
+
+There are different ways to customize your ERD: with the Options tab in the properties pane, you may change the color and font style.&nbsp; You maybe also modify the sizing behavior when adding or removing attributes, if you do not want the box to automatically adjust.
+
+![ERD display options tab-font style and color](<lib/ERD%20display%20options%20tab-font%20style%20and%20color.png>)
+
+&nbsp;
+
+You may also change the display of the ERD:
+
+&nbsp;
+
+![ERD display options toolbar](<lib/ERD%20display%20options%20toolbar.png>)
+
+&nbsp;
+
+to toggle the display of:
+
+\- business names versus technical names
+
+\- the handle allowing to drag-and-drop attributes within the entity
+
+\- annotations
+
+\- materialized/read-only views where applicable
+
+\- foreign master relationships (when denormalization has taken place)
+
+\- data types
+
+\- attributes
+
+\- non-primary key attributes
+
+\- non-required attributes
 
 &nbsp;
 

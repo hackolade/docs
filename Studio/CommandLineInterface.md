@@ -166,6 +166,7 @@ Usage:&nbsp; &nbsp; *hackolade forwEng \[--arguments\]*
 | \--defsStrategy== \<**resolved** \| referenced \| internal\> | N | If outputType=jsonschema, specify whether to output resolved, referenced or internal definitions&nbsp; \[values: "resolved", "referenced", "internal"\] \[default: "resolved"\] |
 | \--updateExtDefs=\<true \| **false**\> | N | When reference to external definition, update current model to ensure latest changes are included. \[default: false\] |
 | \--insertSampleData=\<true \| **false**\> | N | Include sample data to the output if it supports. \[default: false\] |
+| \--quotingType=\<**unquoted** \| simple \|&nbsp; double\> | N | Specify the type of quotes for YAML&nbsp; \[values: "unquoted", "single", "double"\] \[default: "unquoted"\] |
 | \--minify=\<true \| **false**\> | N | For JSON document/schema and Avro Schema, minify output instead of default beautifying format \[default=false\] |
 | \--batchScriptSeparator=\< ; \| GO \> | N | For SQL Server, Azure SQL, and Synapse, specify if you wish a different separator than the default semi-column ";" or the "GO" separator \[choices: ";", "GO"\] \[default: ";"\] |
 | \--validateSchema=\<true \| **false**\> | N | If output script supports validation (JSON Schema, Avro Schema, Swagger, OpenAPI,...), run respective validator, and generate error message if validation failed. \[default: false\] |
@@ -175,7 +176,9 @@ Usage:&nbsp; &nbsp; *hackolade forwEng \[--arguments\]*
 | \--skipUndefinedLevel=\<true \| **false**\> | N | For JSON document/schema, skip extraneous folder level when container is undefined \[default: false\] |
 | \--structuredpath=\<**true** \| false\> | N | Use a structured path for naming a model folder \[default: true\] |
 | \--apply-drop-statements=\<true \| **false**\> | N | Determines whether DROP statements are active (true) or commented out (false).  The user is required to explicitly activate the generation of DROP statements, signifying the understanding of the possible consequences&nbsp; \[default: false\] |
-| \--exclude-container-alter-statements=\<true \| **false**\> | N | Determines whether containers ALTER statements are excluded (true) or not (false) \[default: false\] |
+| \--excludeContainerAlterStatements= \<true \| **false**\> | N | Determines whether containers ALTER statements are excluded (true) or not (false) \[default: false\] |
+| \--resolveApiExternalRefs=\<true \| **false**\> | N | Specify whether to resolve external references in API targets \[default: false\] |
+| \--serialization=\<**BSON** \| JSON\> | N | Specify whether JSON Data must be generated with Plain JSON values or BSON values \[values: "BSON", "JSON"\] \[default: "BSON"\] |
 | \--logLevel=\< 1 \| 2 \| 3 \| **4** \> | N | &#49; = no spinner, no info, no error messages 2 = no spinner, no info 3 = no spinner 4 = full output \[default: 4\] |
 
 

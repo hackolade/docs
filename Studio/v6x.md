@@ -1,5 +1,343 @@
 # v6.x
 
+New features in v6.6.0 \[21-Oct-2022\]
+
+\- Workgroup: added support for Azure DevOps Repos for workflow to submit and review Pull Requests
+
+\- Polyglot: added lower tab Graph Diagram view for conceptual modeling
+
+\- Collibra: added storage of Asset URL for objects during reverse-engineering
+
+\- Avro: refactoring of forward-engineering to facilitate enhancements
+
+\- Avro: added detection of conflict in names of references and records
+
+\- Avro: added detection of missing type name for fixed fields
+
+\- Avro: adjusted level for generation of alias of arrays
+
+\- Avro: adjusted resolution of array references
+
+\- Avro: adjusted order of doc property in case of array with aliases
+
+\- Avro: added possibility to create complex schemas to fields with map data type
+
+\- Avro: added handling of choices with empty names
+
+\- Avro: resolved duplicate named complex types with different structures
+
+\- Cassandra: added filtering in views of columns that have been deactivated in the underlying table
+
+\- Delta Lake/Databricks: added warning dialog when views are invalid due to discrepancy with underlying table structure, and need to be refreshed
+
+&nbsp;
+
+New features in v6.5.5 \[14-Oct-2022\]
+
+\- ERD: added logic to automatically create PK in parent table if not exists, when FK relationship is created via drag-and-drop
+
+\- Test data generation: upgraded to FakerJS v7.6.0 library
+
+\- Test data generation: added tolerance for wrapping functions with quotes instead of backticks
+
+\- Markdown documentation generation: fixed to take out link rule in turndownHelper to speed up generation
+
+\- Workgroup Edition: added handling of non-scp syntax for SSH protocol in remote URL of git config file
+
+\- DDL reverse-engineering: added handling of integer and decimal type of SQL Server T-SQL dialect
+
+\- Collibra: added handling for deactivated objects in publishing and reverse-engineering
+
+\- Avro: added handling of fixed type when size is zero
+
+\- BigQuery: added filtering in views of columns that have been deactivated in the underlying table
+
+\- Delta Lake/Databricks: added parsing of properties pane SELECT statement to determine view columns
+
+\- Hive: added filtering in views of columns that have been deactivated in the underlying table
+
+&nbsp;
+
+New features in v6.5.4 \[07-Oct-2022\]
+
+\- YugabyteDB with YSQL API: added plugin with full support for forward-engineering of DDL, and reverse-engineering including inference of schemas in JSON and JSONB data types
+
+\- Workgroup: added filter by file extension for custom certificate selector
+
+\- Workgroup: pre-filled host domain for self-hosted providers with info from opened git repo
+
+\- Workgroup: only allow pem,crt,key,cer file extensions when specifying custom SSL Certificate Authority for Git and Git provider API
+
+\- Delta Lake/Databricks: enhanced reverse-engineering by querying long list of properties in struct data type
+
+\- Delta Lake/Databricks: added possibility to reverse-engineer a view that references tables in another Databricks database
+
+\- MongoDB: added choice between JSON or BSON serialization in data sample of Preview, forward-engineering, and Command-Line Interface
+
+&nbsp;
+
+New features in v6.5.3 \[30-Sept-2022\]
+
+\- Workgroup: added support for Bitbucket Cloud for workflow to submit and review Pull Requests
+
+\- Workgroup: improved handling of custom Certificate Authority
+
+\- Enum and other multi-text inputs: added bulk edit functionality
+
+\- JSON Schema reverse-engineering: added detection and tolerance for UTF-16 encoding
+
+\- JSON Schema: added support in choice subschemas to convert to definition, replace by attributes, and replace by attributes
+
+\- Avro: adjusted type for references in array items
+
+\- Cassandra: added filtering of solr\_query column during reverse-engineering
+
+\- Cassandra: added searchIndexProfiles to excluded keys in model comparison and generation of delta model
+
+\- Delta Lake/Databricks: made "if not exists" and "or replace" mutually exclusive
+
+\- Delta Lake/Databricks: added filtering in views of columns that have been deactivated in the underlying table
+
+\- Delta Lake/Databricks: enhanced representation of table properties, converting from textarea to key-value pairs
+
+\- Hive: made "if not exists" and "or replace" mutually exclusive
+
+\- MongoDB: enhanced forward-engineering to Mongoose schema so only relevant definitions are included when choosing separate files option
+
+\- OpenAPI/Swagger/EventBridge: added possibility to resolve external references when forward-engineering, in GUI and Command-Line Interface
+
+&nbsp;
+
+New features in v6.5.2 \[23-Sept-2022\]
+
+\- Polyglot: added an impact analysis screen when updating references from polyglot in a target model, based on the model compare screen
+
+\- Workgroup: added possibility to specify custom SSL Certificate Authority for Git and Git provider API
+
+\- Enum and other multi-text inputs: added up/down controls to re-order list
+
+\- ERD annotations: added an Options tab to control color and font style
+
+\- Forward-engineering of ALTER script from delta model: added user-friendly message if script is empty
+
+\- DDL reverse-engineering: adjusted mapping of timestamp, time, and numeric data types for DB2 dialect
+
+\- Delta Lake/Databricks: enhanced reverse-engineering of cross-database views when script does not include related tables
+
+\- Delta Lake/Databricks: improved parser of view statements with CAST of STRUCT when reverse-engineering from HQL file
+
+\- Delta Lake/Databricks: improved parser of view statements with subqueries in FROM section of SELECT statement
+
+\- MongoDB: enhanced forward-engineering of numerics (int32, long, double, decimal128) to be formatted as BSON instead of JSON
+
+\- Redshift: added possibility to connect to instance without region if stored by AWSCLI
+
+\- Snowflake: added to ALTER script from delta model: schema and table rename, comment set/unset, view add, drop and rename
+
+&nbsp;
+
+New features in v6.5.1 \[16-Sept-2022\]
+
+\- Changed some icons of Display options to be more intuitive and consistent
+
+\- JSON Schema: added support for "dependent schemas" property when both business/technical names are present
+
+\- JSON Schema: added tolerance for "example" keyword during reverse-engineering for draft-06 and above, when the keyword should have been "examples"
+
+\- JSON Schema: added support for references in choice subschemas
+
+\- DDL reverse-engineering into Avro target: adjusted mapping of dates and decimal numbers data types&nbsp;
+
+\- DDL reverse-engineering: adjusted handling of $$ comments for Snowflake dialect
+
+\- Workgroup edition: implemented automatic transparent use of of repository connection credentials in Git clone, if previously provided for provider
+
+\- Workgroup edition: added tooltip next to Clone button to describe URL pattern
+
+\- Workgroup edition: update styles and layout of history details to match the "Repository files" screen
+
+\- Cassandra: adjusted handling of ALTER script for default values in search index
+
+\- Delta Lake/Databricks:added extra logging, plus stopped querying count in case of absolute sampling in reverse-engineering
+
+\- Redshift: added possibility to connect to instance without credentials if stored by AWSCLI
+
+\- Snowflake: added filtering of metadata columns for external tables during reverse-engineering
+
+&nbsp;
+
+New features in v6.5.0 \[09-Sept-2022\]
+
+\- Workgroup: added support for Bitbucket Server for workflow to submit and review Pull Requests
+
+\- JSON Schema: added support for "dependent required" property when both business/technical names are present
+
+\- Collibra: added handling of multiple choice subschemas during reverse-engineering
+
+\- Delta Lake/Databricks: enhanced parsing of views to handle CAST statements
+
+\- Redshift: added support for serverless instances
+
+\- Snowflake: added detection of insufficient rights to perform reverse-engineering and display user-friendly dialog
+
+&nbsp;
+
+New features in v6.4.3 \[02-Sept-2022\]
+
+\- FK relationships: added display option to toggle relationship names in ERD
+
+\- Compare and Merge: added user-friendly dialog if user chooses models for different targets
+
+\- Compare and Merge: if comparison by GUIDs is not possible, changed default to comparison by technical name (if exist) when generating delta model, instead of business names
+
+\- Compare and Merge: display placeholder when models only differ by their metadata
+
+\- Compare and Merge: difference pager count takes display filter into account
+
+\- Compare and Merge: when invoked from the Commits History view, added possibility to Open model in new instance
+
+\- Cassandra: added filter for table options in ALTER script of delta model
+
+\- Oracle: added support for ON DELETE for FK relationships
+
+&nbsp;
+
+New features in v6.4.2 \[26-Aug-2022\]
+
+\- Infer Primary Keys and Foreign Key relationships: increased probability to infer FKs in some conditions, while restricting other conditions to reduce false positives
+
+\- Foreign Key relationship: swapped order of entities in automatic naming to follow a more common convention: fist table is the FK table, and second table is the PK table
+
+\- Model API: added user-friendly dialog if user chooses inadequate file for API template
+
+\- Collibra: added support for multiple JSON Schema choices in same table
+
+\- Workgroup: made column width adjustable in Explore Repository Files screen
+
+\- Workgroup: allowed to review closed Change Requests when remote branch has been deleted
+
+\- Workgroup: added visual clue that a copy icon is being clicked
+
+\- BigQuery: added filtering of deactivated objects in forward-engineering of DDL in JSON Schema format
+
+\- Delta Lake/Databricks: added support for table options reverse-engineered from instance
+
+\- Delta Lake/Databricks: added maintaining order of fields when detecting JSOn in string columns
+
+\- Delta Lake/Databricks: added filtering of extraneous Scala metadata when reverse-engineering bloom filters
+
+\- Snowflake: added reverse-engineering of stages and external tables
+
+&nbsp;
+
+New features in v6.4.1 \[19-Aug-2022\]
+
+\- Apple Silicon ARM64: added application build optimized for M1 and M2 processors and achieve unprecedented performance
+
+\- Read-Only Viewer: added edition to allow navigation through models for consultation purposes only -- no creation or editing, no forward-engineering (except JSON Schema and Excel) or reverse-engineering.&nbsp; When connected to Git repositories, also allows pull operations and commenting on change requests.&nbsp; Request pricing at sales@hackolade.com
+
+\- Polyglot: adjusted behavior so external references in polyglot are derived into target physical models as direct external references, instead of transitive via polyglot model
+
+\- References: added handling if a parent object, being converted to a reference, contains a child attribute itself with a prior reference
+
+\- References: added detection of technical name collision when renaming references after copy/paste
+
+\- Workgroup: added ability to detect and visually resolve conflicts affecting change requests when the source branch becomes out-of-sync with the target branch
+
+\- Workgroup: added handling of multiple worktrees by filtering out their branches
+
+\- Workgroup: merged screens for Explore Models and Explore All Files, plus enhanced aesthetics&nbsp;
+
+\- Workgroup: enhanced UX for local-only repositories
+
+\- Workgroup: enhance logging to reduce file size and redundancies, enhanced logging with git provider API call details&nbsp;
+
+\- Avro: enhanced handling of enum symbols when deriving from polyglot
+
+\- BigQuery: added handling of typeMode=required in documentation
+
+\- Collibra: added publishing and reverse-engineering of foreign master relationships in denormalized models
+
+\- Delta Lake/Databricks: throttled fetching databases to accommodate API rate limiting
+
+\- Delta Lake/Databricks: added support for table options reverse-engineered from HQL files
+
+\- DynamoDB: added default JSON data for data types binary and binarySet
+
+\- DynamoDB: added Faker function-based (bulk) sample generation in script tab to apply to instance
+
+\- YAML: added possibility to choose quoting style (unquoted, single-quote, double-quotes) in preview and forward-engineering, including new argument quotingType in CLI forwEng command
+
+&nbsp;
+
+New features in v6.4.0 \[12-Aug-2022\]
+
+\- Tech refresh of Electron (v19.0.10), NodeJS (v16.14.2), Chromium (v102.0.5005.167), V8 (v10.2) and Electron-related modules.&nbsp; Includes backported fix for CVE-2022-2162 vulnerability
+
+\- WARNING: support for Windows 7 is discontinued with this version
+
+\- Workgroup Edition: improved error handling dialog when user has limited or no access to repository
+
+\- Workgroup Edition: harmonized access to Repository options and hub connections
+
+\- Cassandra/ScyllaDB: as ALTER TYPE syntax has been deprecated starting with Cassandra 3.10 and DataStax 5.0.6, replaced with DROP + CREATE column statements in ALTER script of delta model, plus added display of warning badge for incompatible data type change in Compare \& Merge dialog
+
+\- MongoDB reverse-engineering: added timeout in probabilistic schema inference process plus enhanced logging
+
+\- YAML forward-engineering: added double-quote encoding of strings when necessary (semicolons, hash signs, and unicode characters)
+
+&nbsp;
+
+New features in v6.3.1 \[05-Aug-2022\]
+
+\- Detection of outside changes in open model: added handling of models stored and synched on OneDrive
+
+\- Collibra: added handling of relationships when when parent and/or child are in nested objects
+
+\- Compare and merge: enhanced handling when one model has technical names and the other doesn't
+
+\- Compare and merge: enhanced named-based detection to better detect names when differences are minor (underscores between words instead of spaces, etc.)
+
+\- Custom properties: added migration of data models when changing a property from propertyType="select" to propertyType="multipleCheckboxSelect"
+
+\- Workgroup: use commit short hash in model name when opening model from commit history view
+
+\- Workgroup: preserve state and select row of history view when changing context then returning to repository context
+
+\- Workgroup: added auto-refresh of history view when creating or deleting a branch
+
+\- Workgroup: added auto-refresh of history view when discarding local changes from uncommitted row
+
+\- Workgroup: enhanced up and down arrow key navigation in history view to go to previous/next page when available
+
+\- Workgroup: enhanced GitHub OAuth user experience to clarify steps
+
+&nbsp;
+
+New features in v6.3.0 \[29-Jul-2022\]
+
+\- Infer Primary Keys and Foreign Key relationships: for RDBMS targets and related, new feature to automatically help identify candidate PKs and FKs in a model, if not yet explicitly reverse-engineered or declared, based on machine learning and probabilities.&nbsp; Available in BigQuery, Delta Lake/Databricks, Hive, MariaDB, Oracle, PostgreSQL, Redshift, SQL Server, Snowflake, and Synapse plugins.
+
+\- Compare and Merge: refactored dialogs to allows for all permutations of the Workgroup Edition's screens for review changes, merge conflict, and comparisons between different commits
+
+\- Custom properties: added tolerance for presence of unrelated json files (or backups) in properties\_pane/\<level\> directories
+
+\- Tools \> Options \> General: added possibility to backup and restore user parameters and connection settings.&nbsp; Useful also when moving to another machine
+
+\- Workgroup Edition: added repository history screen, including filters by data model, branch, or author
+
+\- BigQuery: added primary key property for documentation purposes only
+
+\- MongoDB: added possibility to reverse-engineer fields declared in validator script but no data type is defined
+
+\- MongoDB: added default creation of \_id field when not present in validator script and collection is empty
+
+\- OpenAPI: adjusted validations of text inputs in block inputs
+
+\- Swagger/OpenAPI: added default opening of components if no resources are reverse-engineered
+
+&nbsp;
+
 New features in v6.2.5 \[23-Jul-2022\]
 
 \- Excel:enhanced validation when exporting graph models
@@ -156,7 +494,7 @@ New features in v6.2.1 \[24-Jun-2022\]
 
 New features in v6.2.0 \[17-Jun-2022\]
 
-\- Workgroup: added support of GitHub (.com as well as Enterprise Server) for workflow to submit and review Pull Requests
+\- Workgroup: added support for GitHub (.com as well as Enterprise Server) for workflow to submit and review Pull Requests
 
 \- Workgroup: added possibility to authenticate on GitHub using personal token
 

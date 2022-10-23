@@ -1,5 +1,9 @@
 # Network proxy
 
+By default, Hackolade Studio accesses the Internet using the proxy settings from the PC's browser, as stored in Windows Internet Options \> Connections of the dialog c:\\Windows\\System32\\inetcpl.cpl&nbsp;
+
+&nbsp;
+
 If you have an HTTP proxy server on your network, you may have to manually set in the application the proxy parameters with the hostname or IP address of the proxy server.
 
 &nbsp;

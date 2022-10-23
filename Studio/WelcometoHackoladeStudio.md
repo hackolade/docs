@@ -8,7 +8,7 @@ Hackolade combines the graphical representation of collections in an Entity Rela
 
 &nbsp;
 
-The software facilitates the work of, and the dialog between analysts, architects, designers, developers, testers, DBAs, and operators of systems that are based on such technologies.&nbsp; It also can generate schema scripts and documentation in a variety of machine-based (e.g.; JSON Schema, MongoDB Validator, Mongoose, DynamoDB CreateTable and ConditionExpression scripts...), Couchbase Ottoman, or human-readable formats such as HTML, Markdown, and PDF reports.
+The software facilitates the work of, and the dialog between analysts, architects, designers, developers, testers, DBAs, and operators of systems that are based on such technologies.&nbsp; It also can generate schema scripts and documentation in a variety of machine-based (e.g.; JSON Schema, MongoDB Validator, Mongoose, DynamoDB CreateTable and ConditionExpression scripts...), Couchbase Ottoman, Cassandra CQL, Elasticsearch mappings, Hive HQL, RDBMS DDLs, or human-readable formats such as HTML, Markdown, and PDF reports.
 
 &nbsp;
 

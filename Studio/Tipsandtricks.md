@@ -16,7 +16,7 @@ If you need to move your license key to another computer, you first need to rele
 
 To do so, go to the option Help \> Software Key Validation, and choose the action 'I want to...':
 
-![Registration -- un-register](<lib/Registration%20--%20un-register.png>)
+![Registration -- release license key](<lib/Registration%20--%20release%20license%20key.png>)
 
 and click the Send button.&nbsp; This will free up the key on our license server. &nbsp;
 

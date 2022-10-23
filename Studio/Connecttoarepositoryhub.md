@@ -1,6 +1,6 @@
 # Connect to a repository hub
 
-A repository hub is a platform hosting repositories remotely and securely. [GitHub](<https://github.com/> "target=\"\_blank\""), [GitLab](<https://gitlab.com/> "target=\"\_blank\""), [Bitbucket](<https://bitbucket.org> "target=\"\_blank\"") and [Azure DevOps](<https://azure.microsoft.com/en-us/services/devops/#overview> "target=\"\_blank\"") are such platforms, just to name a few.
+A repository hub is a platform hosting repositories remotely and securely. [GitHub](<https://github.com/> "target=\"\_blank\""), [GitLab](<https://gitlab.com/> "target=\"\_blank\""), [Bitbucket](<https://bitbucket.org> "target=\"\_blank\"") and [Azure DevOps Repos](<https://azure.microsoft.com/en-us/services/devops/repos/> "target=\"\_blank\"") are such platforms, just to name a few.
 
 &nbsp;
 
@@ -44,7 +44,7 @@ When you click on the connect link / button, a connection management dialog open
 
 &nbsp;
 
-![Workgroup - manage hub connections](<lib/Workgroup%20-%20manage%20hub%20connections.png>)
+![Workgroup - manage hub connections](<lib/Workgroup%20-%20manage%20hub%20connections%20-%20GitHub.png>)
 
 &nbsp;
 
@@ -77,7 +77,7 @@ See pages below for information on how your repository hub generates tokens.
 
 ### OAuth
 
-TBA
+As an alternative to generating a personal access token, some repository hubs also can grant Hackolade Studio access to your account through [OAuth](<https://oauth.net/> "target=\"\_blank\""). Follow the instructions guiding you through the authentication steps specific to each provider.
 
 &nbsp;
 

@@ -1,6 +1,6 @@
 # Compare and merge models
 
-Before using this feature, you may want to read the [versioning concept page](<Modelversioning.md>) as it is useful to understand the philosophy behind the compare and merge functionality.&nbsp;
+Before using this feature, you may want to read the [versioning concept page](<Modelversioning.md>) as it is useful to understand the philosophy behind our approach to comparing and merging.
 
 &nbsp;
 
@@ -76,11 +76,15 @@ The user may navigate through the differences using the navigation buttons to mo
 
 &nbsp;
 
-![Compare and merge - compare view](<lib/Compare%20and%20merge%20-%20compare%20view.png>)
+![Image](<lib/Compare%20and%20merge%20-%20compare%20view.png>)
 
 &nbsp;
 
 **Note:** the model compare feature assumes 2 model files saved on the file system.  Hence the process requires a prior step to reverse-engineer and save the result.  Then compare with a baseline.  Note also that when comparing, because models are of different sources which by definition will have different object IDs, it is required to compare based on object names.  This may require some preperation of the models so objects are comparable, e.g. identical container names and entity names.
+
+&nbsp;
+
+Optionally, you can have the application generate a delta model, which for targets that support it, can be used to create ALTER statements.
 
 &nbsp;
 
@@ -102,21 +106,17 @@ When differences are conflicting, the merge proposal uses the right-hand model v
 
 &nbsp;
 
-![Compare and merge - merge](<lib/Compare%20and%20merge%20-%20merge.png>)
+&nbsp;
+
+![Image](<lib/Compare%20and%20merge%20-%20merge.png>)
 
 &nbsp;
 
-## Saving the merged model
+## Save the merged model
 
 By clicking the Save button, the user has the possibility to save the merged model with only the selected merge proposals.&nbsp; This merged model can be saved as a new Hackolade data model file name (recommended), or be used to write over an existing model on the file system (for example in a Git-enabled environment.)&nbsp; If using the latter method, beware of impacts of writing over an existing file.
 
 &nbsp;
 
 Optionally, the saved merged model can be opened in a separate instance of the application.
-
-&nbsp;
-
-Optionally also, you can have the application generate a delta model, which for targets that support it, can be used to create ALTER statements.
-
-&nbsp;
 

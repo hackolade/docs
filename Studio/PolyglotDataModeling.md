@@ -86,6 +86,18 @@ Elaborating further, you could derive a target model from multiple polyglot mode
 
 &nbsp;
 
+## Conceptual data modeling
+
+It is generally said that there are 3 categories of data modeling: conceptual, logical, and physical.&nbsp; In summary, conceptual modeling captures the common business language and defines the scope, whereas the logical model captures the business rules, and the physical model represents the specific implementation of the model.
+
+&nbsp;
+
+With version 6.6.0 of Hackolade Studio, we facilitate the process of conceptual data modeling by providing a Graph Diagram view to capture the entities and their relationships..
+
+![Polyglot Cocenptual Graph View](<lib/Polyglot%20Cocenptual%20Graph%20View.png>)
+
+&nbsp;
+
 &nbsp;
 
 More information about the philosophy behind our Polyglot Data Model concept can found on [this page](<https://hackolade.com/polyglot-data-modeling.html> "target=\"\_blank\"").
@@ -93,4 +105,6 @@ More information about the philosophy behind our Polyglot Data Model concept can
 &nbsp;
 
 This [other page](<PolyglotDataModel.md>) details how to use polyglot data models.
+
+&nbsp;
 

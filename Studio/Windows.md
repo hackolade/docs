@@ -6,6 +6,10 @@ The application is shipped as a signed .exe file with an installation wizard aut
 
 &nbsp;
 
+**Note:** It is impossible to validate the license key for, or operate the Hackolade Studio software if Windows Group Policies are set to prevent access to the Command Prompt.&nbsp; Please consult [this article](<ErrormessagespawnUNKNOWN.md>) for additional information.
+
+&nbsp;
+
 **Warning:** Do NOT install Hackolade in the AppData directory.  You should select either Program Files, or C:\\Hackolade or some other place where you have Write rights.&nbsp; AppData is for application *data*, not application *programs*.
 
 &nbsp;

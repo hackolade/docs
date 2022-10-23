@@ -51,7 +51,7 @@ Additional subschemas can be added with teh right-click contextual menu.
 
 ## Conditionals
 
-[Draft-07](<https://json-schema.org/specification-links.html#draft-7> "target=\"\_blank\"") of&nbsp; JSON Schema draft-07 introduced the concept of [conditional application of subschemas](<https://json-schema.org/understanding-json-schema/reference/conditionals.html> "target=\"\_blank\"").&nbsp; The if, then and else keywords allow the application of a subschema based on the outcome of another schema.
+[Draft-07](<https://json-schema.org/specification-links.html#draft-7> "target=\"\_blank\"") of JSON Schema introduced the concept of [conditional application of subschemas](<https://json-schema.org/understanding-json-schema/reference/conditionals.html> "target=\"\_blank\"").&nbsp; The if, then and else keywords allow the application of a subschema based on the outcome of another schema.
 
 &nbsp;
 

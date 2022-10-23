@@ -8,7 +8,7 @@ A key component of event streaming is to enable broad compatibility between appl
 
 &nbsp;
 
-Hackolade supports Avro schema and JSON Schema maintenance in Confluent Schema Registry.&nbsp; Unlike many other Hackolade targets, this does not require a special plugin.&nbsp; It is done respectively through the Avro plugin or the JSON native target.&nbsp; Support for ProtoBuf format is not currently available, but foreseen in the near future.
+Hackolade supports Avro schema and JSON Schema maintenance in Confluent Schema Registry.&nbsp; Unlike many other Hackolade targets, this does not require a special plugin.&nbsp; It is done respectively through the Avro, Parquet or ProtoBuf plugins, or the JSON native target. &nbsp;
 
 &nbsp;
 

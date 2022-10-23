@@ -1,6 +1,6 @@
 # GitHub
 
-The information below applies to repositories on github.com as well as GitHub Enterprise Server, but only if you use the hub workflow features to [submit for review](<Submitforreview.md>) or [review change requests](<Reviewchangerequests.md>).
+The information below applies to repositories on github.com in the cloud as well as GitHub Enterprise Server.&nbsp; It explains how to grant Hackolade Studio access to your GitHub account, which is a pre-requisite for using the features "[submit for review](<Submitforreview.md>)" and "[review change requests](<Reviewchangerequests.md>)".
 
 ## Personal access tokens
 
@@ -8,7 +8,7 @@ If you don't have a valid Personal Token, you may get the error message below, i
 
 &nbsp;
 
-![Image](<lib/Workgroup%20-%20GitHub%20token%20error.png>)
+![Workgroup - Github token error](<lib/Workgroup%20-%20GitHub%20token%20error.png>)
 
 &nbsp;
 
@@ -20,7 +20,7 @@ In the repository connection manager, click on the "generate" link located to th
 
 &nbsp;
 
-![Workgroup - manage hub connections](<lib/Workgroup%20-%20manage%20hub%20connections.png>)
+![Workgroup - manage hub connections](<lib/Workgroup%20-%20manage%20hub%20connections%20-%20GitHub.png>)
 
 &nbsp;
 
@@ -48,4 +48,44 @@ If you need to re-issue an expired token, then:
 
 ## OAuth
 
-TBA
+As an alternative to generating a personal access token, GitHub can also let you grant Hackolade Studio access to your account through [OAuth](<https://oauth.net/> "target=\"\_blank\"").&nbsp;
+
+&nbsp;
+
+From the menu Repository \> Manage Repository Connections, create a new connection, select the provider and specify the domain name if necessary, then select the connection method OAuth:
+
+![GitHub OAuth connection settings](<lib/GitHub%20OAuth%20connection%20settings.png>)
+
+&nbsp;
+
+Then click on the "Connect" button to display the instructions:
+
+&nbsp;
+
+![GitHub OAuth connection instructions](<lib/GitHub%20OAuth%20connection%20instructions.png>)
+
+&nbsp;
+
+&nbsp;
+
+You just need to click on "Copy code \& open browser". This will open a page in your browser where you can paste the temporary code.
+
+![GitHub OAuth device activation code](<lib/GitHub%20OAuth%20device%20activation%20code.png>)
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+click on "Continue", then confirm by clicking the "Authorize hackolade" button.&nbsp; Note that Hackolade only requests the minimum subset of permissions for it to function properly.
+
+&nbsp;
+
+![GitHub OAuth device activation auth](<lib/GitHub%20OAuth%20device%20activation%20auth.png>)
+
+&nbsp;
+
+Hackolade Studio should now have access to GitHub.

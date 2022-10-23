@@ -2,11 +2,11 @@
 
 ## Hackolade End User License Agreement
 
-Version 1.4.2, November 2020
+Version 1.6.2, August 2022
 
 &nbsp;
 
-This Agreement applies to Hackolade for Evaluation, Community, Personal, and Professional editions.&nbsp; Other Hackolade products are covered by other agreements, as specified on https://hackolade.com/eulas.html
+This Agreement applies to Hackolade for Evaluation, Community, Personal, Viewer, Professional and Workgroup editions.&nbsp; Other Hackolade products are covered by other agreements, as specified on https://hackolade.com/eulas.html
 
 &nbsp;
 
@@ -14,7 +14,7 @@ Product may be offered in a fixed-term subscription or a perpetual license. Invo
 
 &nbsp;
 
-A patent application has been filed and is pending for the "**METHOD AND SYSTEM TO GRAPHICALLY MODEL SCHEMAS FOR NOSQL DOCUMENT DATABASES AND REST API’S**".
+Patent US11100059 "**METHOD AND SYSTEM TO GRAPHICALLY MODEL SCHEMAS FOR NOSQL DOCUMENT DATABASES AND REST API’S**"
 
 &nbsp;
 

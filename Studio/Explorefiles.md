@@ -1,10 +1,14 @@
-# Explore data models
+# Explore files
 
-When you open a local repository and choose Explore repository \> Models in the left menu, you get a table listing all the Hackolade data models in the repository across the different subfolders, if any.
+When you open a local repository and choose Explore repository \> Files in the left menu, you get a table listing all the Hackolade data models in the repository across the different subfolders, if any.&nbsp; The "Show only models" button lets you toggle the display of all files in the repository, whether they're data models or not.
 
-![Image](<lib/Workgroup%20explore%20models2.png>)
+&nbsp;
 
-Different strategies are available for discovering data models in a repository:
+![Workgroup explore files](<lib/Workgroup%20explore%20files.png>)
+
+&nbsp;
+
+Different strategies are available for discovering data models in a repository, among which you can choose by clicking the cogwheel icon to access the options:
 
 * **Listing all files ending with the extension .hck.json**.
   * Limitation: the models created before the introduction of this extension are not listed.&nbsp; If possible, we advise you to change the extension of these older data models from .json to .hck.json. We introduced this double extension to easily differentiate data models from JSON documents, JSON Schema files, or Swagger/OpenAPI specs.
@@ -19,7 +23,11 @@ You can pick the strategy that best fits your case through the table's filter.&n
 
 &nbsp;
 
-You can open a data model from the table by clicking on the corresponding file name.&nbsp; You can also open it in a new application instance by clicking on the icon at the end of the row.
+You can open a data model from the table by clicking on the corresponding file name.&nbsp; You can also open it in a new application instance by clicking on the icon to the left.
+
+&nbsp;
+
+To display the history of commits for a file, you may click on the icon on the left.
 
 &nbsp;
 

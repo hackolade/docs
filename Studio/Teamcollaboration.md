@@ -4,7 +4,7 @@ The Workgroup Edition of Hackolade Studio introduced, starting with v6 and with 
 
 &nbsp;
 
-It was a design choice from the start to store Hackolade data, not only in JSON format, but also in a non-proprietary text based form.&nbsp; This choice enables easy tracking, control, and versioning of model changes in Hackolade.
+It was a design choice from the start to store Hackolade data models in a non-proprietary text-based format, specifically JSON which made much sense, since Hackolade is built on JSON Schema and is written in JavaScript&nbsp; This choice enables easy tracking, control, and versioning of model changes in Hackolade.
 
 &nbsp;
 
@@ -13,7 +13,7 @@ Hackolade has been promoting a GitOps approach for the lifecycle of data models 
 * **change tracking:** a Git repository holds a complete record of every change to the text files it contains. It’s easy to look through a repository and see what was changed, when, and by whom.
 * **peer review:** changes aren’t typically pushed to the main branch of a Git repository. Instead, changes are pushed to a branch or fork, then a pull/merge request is created, and the changes are reviewed by someone other than their creator before they are approved and merged.
 * **versioning:** Git tags can be used to mark a specific commit as important. Upcoming versions can be prepared in feature branches.
-* **easy rollbacks:** if, for any reason, on decides changes made aren't desirable, it’s easy to roll back to an older tag or commit.
+* **easy rollbacks:** if, for any reason, one decides changes made aren't desirable, it’s easy to roll back to an older tag or commit.
 * **testing:** many customers use Hackolade data models as part of a CI/CD pipeline. When testing new application versions, it is easy to include the corresponding feature branch.
 * **build and deploy:** while this may seem software-specific, such process can be leveraged to produce artifacts such as corresponding schemas, scripts, documentation, etc.
 

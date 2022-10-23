@@ -8,7 +8,7 @@ BigQuery manages the technical aspects of storing structured data, including com
 
 &nbsp;
 
-To perform data modeling for BigQuery with Hackolade, you must first download the Redshift [plugin](<https://hackolade.com/help/DownloadadditionalDBtargetplugin.html> "target=\"\_blank\"").  
+To perform data modeling for BigQuery with Hackolade, you must first download the BigQuery [plugin](<https://hackolade.com/help/DownloadadditionalDBtargetplugin.html> "target=\"\_blank\"").  
 
 &nbsp;
 

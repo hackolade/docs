@@ -56,7 +56,7 @@ Hackolade Studio shows graphically what has been modified in a data model using 
 
 &nbsp;
 
-![Compare and merge - compare view](<lib/Compare%20and%20merge%20-%20compare%20view.png>)
+![Workgroup compare commits](<lib/Workgroup%20-%20History%20commits%20comparison.png>)
 
 &nbsp;
 
@@ -119,6 +119,28 @@ Once the reviewer is satisfied with the full change request, including adjustmen
 **Important:** approving a change request does not merge it into the target branch. The merge itself is a separate action. In the screen below, the change request is still open although it has been approved. This gives the opportunity to other reviewers to provide additional feedback.
 
 ![Workgroup change request approved](<lib/Workgroup%20change%20request%20approved.png>)
+
+&nbsp;
+
+## Update a change request
+
+A change request is about requesting that a source branch gets merged into a target branch that has been protected by some [merge pre-conditions](<https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/about-protected-branches#about-branch-protection-settings> "target=\"\_blank\""), such as peer review(s) or status check(s).
+
+&nbsp;
+
+When you open a change request, other changes may get merged into the target branch, and cause your source branch to become out of sync with the target branch. Updating your source branch with the latest changes from the target branch can help catch problems prior to merging your change request. As an example, it helps detect and solve merge conflicts.
+
+&nbsp;
+
+If Hackolade Studio detects that the source branch is out-of-sync with the target branch when (re-)loading the details of a change request, then an *Update* button is displayed above the Merge button.&nbsp; Clicking on the update button will sync the target branch with the latest upstream changes.&nbsp; If any conflict is detected during the update, the [Solve Conflicts](<Solveconflicts.md>) action will be made available to solve them and finalize the update.
+
+&nbsp;
+
+![Workgroup change request update](<lib/Workgroup%20change%20request%20update.png>)
+
+&nbsp;
+
+Once the target branch is in sync, the Merge button is made available.
 
 &nbsp;
 

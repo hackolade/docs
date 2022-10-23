@@ -4,7 +4,7 @@ If you have data models in ER/Studio and want to leverage them in Hackolade, you
 
 &nbsp;
 
-By default ERwin does not export primary key and foreign key constraints. &nbsp;
+By default ER/Studio does not export primary key and foreign key constraints. &nbsp;
 
 &nbsp;
 

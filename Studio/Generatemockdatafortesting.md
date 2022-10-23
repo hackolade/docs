@@ -49,11 +49,13 @@ to be pasted&nbsp;
 
 You may also paste functions with arguments, such as ***faker.name.firstName("female")*** or compose more sophisticated results by assembling functions with placeholders, for example:
 
-> faker.fake('Hi, my name is {{name.firstName}} {{name.lastName}}\!')&nbsp;
+&nbsp; &nbsp; **\`${faker.address.zipCode()} ${faker.address.city()}\`**
 
-which uses the faker.name.firstName() and faker.name.lastName() method to resolve the placeholders respectively, or&nbsp;
+&nbsp; &nbsp; '**${faker.address.zipCode()} ${faker.address.city()}'**
 
-> faker.fake(\`You can call me at {{phone.phoneNumber(+\!# \!## #### #####\!)}}.')
+&nbsp;
+
+Note that we accept functions wrapped by either backticks or single quotes.
 
 &nbsp;
 
@@ -83,9 +85,9 @@ using the following functions (in this case exported to Excel for easy bulk edit
 
 | **Name** | **Type** | **Faker function** |
 | --- | --- | --- |
-| name | string | faker.name.findName(undefined, undefined, 'female') |
+| name | string | faker.name.fullName() |
 | title | string | faker.name.title() |
-| company | string | faker.fake('{{company.companyName}}, {{company.companySuffix}}') |
+| company | string | '${faker.company.name()}, ${faker.company.suffixes()}' |
 | jobtitle | string | faker.name.jobTitle() |
 | jobDescriptor | string | faker.name.jobDescriptor() |
 | seniority | number | faker.random.numeric() |

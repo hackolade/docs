@@ -92,7 +92,9 @@ Once a target model has been created and derived from a polyglot model, it conta
 
 \- add new entities and views that are specific to the physical target model, for example based on access patterns;
 
-\- remove entities from the target model.&nbsp; This action does not delete the entity in the polyglot model.
+\- remove entities from the target model.&nbsp; This action does not delete the entity in the polyglot model;
+
+\- add, delete or modify attributes, again without effect on the Polyglot model.
 
 &nbsp;
 
@@ -108,9 +110,15 @@ If the polyglot model changes during the time you're editing the target model, y
 
 ![Polyglot reference property](<lib/Polyglot%20reference%20property.png>)
 
+If you have multiple links, possibly to the same polyglot model so you can maintain different profiles, it may be useful to indicate a meaningful name for the link.
+
 &nbsp;
 
-If new objects have appeared in the polyglot model (or there are objects in the polyglot model that were not selected in an earlier step), a dialog appears to allow their selection so references could be added to the target model.
+An impact analysis dialog is displayed to let you decide which objects to include as part of this refresh operation.&nbsp; Maybe these objects were not selected originally, or they could have been added to the polyglot model since the previous refresh or derive operation, or they could have been deleted in the target model. &nbsp;
+
+&nbsp;
+
+![Polyglot Impact Analysis](<lib/Polyglot%20Impact%20Analysis.png>)
 
 &nbsp;
 

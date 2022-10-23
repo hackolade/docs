@@ -36,7 +36,7 @@ If you don't have an SSH key yet, then you need to create one. Follow the links 
 
 * [Connect to GitHub with SSH](<https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh> "target=\"\_blank\"")
 * [Connect to Bitbucket with SSH](<https://support.atlassian.com/bitbucket-cloud/docs/set-up-an-ssh-key/> "target=\"\_blank\"")
-* [Connect to Azure DevOps with SSH](<https://docs.microsoft.com/en-us/azure/devops/repos/git/use-ssh-keys-to-authenticate?view=azure-devops> "target=\"\_blank\"")
+* [Connect to Azure Repos with SSH](<https://docs.microsoft.com/en-us/azure/devops/repos/git/use-ssh-keys-to-authenticate?view=azure-devops> "target=\"\_blank\"")
 * [Connect to GitLab with SSH](<https://docs.gitlab.com/ee/user/ssh.html> "target=\"\_blank\"")
 * [Connect to AWS CodeCommit with SSH](<https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-ssh-unixes.html> "target=\"\_blank\"")
 

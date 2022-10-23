@@ -2,7 +2,7 @@
 
 Hackolade Studio makes it easy to pull commits from a remote repository: you just need to open your own local repository (if not already opened) and navigate to "Pull remote commits".
 
-![Image](<lib/Workgroup%20pull1.png>)
+![Workgroup pull remotecommits](<lib/Workgroup%20pull%20remotecommits.png>)
 
 &nbsp;
 

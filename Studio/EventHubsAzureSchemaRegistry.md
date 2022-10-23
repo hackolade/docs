@@ -8,7 +8,7 @@ In many event streaming and messaging use cases, the event or message payload co
 
 &nbsp;
 
-Hackolade supports Avro schema maintenance in the Azure Schema Registry for Event Hubs.&nbsp; Unlike many other Hackolade targets, this does not require a special plugin.&nbsp; It is done through the Avro plugin. &nbsp;
+Hackolade supports Avro schema maintenance in the Azure Schema Registry for Event Hubs.&nbsp; Unlike many other Hackolade targets, this does not require a special plugin.&nbsp; It is done through the Avro, Parquet or ProtoBuf plugins, or the JSON native target. &nbsp;
 
 &nbsp;
 

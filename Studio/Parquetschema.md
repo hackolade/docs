@@ -8,7 +8,7 @@ Parquet file is an hdfs file that must include the metadata for the file. This a
 
 &nbsp;
 
-Hackolade is a visual editor for Parquet schema for non-programmers. To perform data modeling for Parquet schema with Hackolade, you must first download the Avro [plugin](<https://hackolade.com/help/DownloadadditionalDBtargetplugin.html> "target=\"\_blank\"").  
+Hackolade is a visual editor for Parquet schema for non-programmers. To perform data modeling for Parquet schema with Hackolade, you must first download the Parquet [plugin](<https://hackolade.com/help/DownloadadditionalDBtargetplugin.html> "target=\"\_blank\"").  
 
 &nbsp;
 

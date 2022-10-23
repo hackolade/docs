@@ -4,19 +4,19 @@
 
 When you make changes in a data model, or in any other file, and if you (auto-)save these changes, you see a badge popping up on the icon of the repository view in the left bar. This badge is a reminder that you still need to [commit](<Concepts1.md>) your changes in your local repository, and to [push](<Concepts1.md>) them to the remote repository.
 
-![Image](<lib/Workgroup%20badge.png>)
+![Workgroup reposity change badge](<lib/Workgroup%20reposity%20change%20badge.png>)
 
 &nbsp;
 
 When you open the repository view while having uncommitted changes, you see the number of modified files next to the menu entry "Commit local changes".&nbsp; That counter is colored, the intent being to remind that you need to commit your changes before pushing them. Remember that a same commit can include changes made in multiple files.
 
-![Image](<lib/Workgroup%20explore%20models%203%20chang.png>)
+![Workgroup explore models changes](<lib/Workgroup%20explore%20models%20changes.png>)
 
 &nbsp;
 
 Click on "Commit local changes" to list actions that are related to local changes.&nbsp; The primary action - "commit" in this case - has a blue header.&nbsp; If secondary actions are available, they have a grey header if they are not destructive, and a red header otherwise.
 
-![Image](<lib/Workgroup%20commit1.png>)
+![Workgroup commit changes](<lib/Workgroup%20commit%20changes.png>)
 
 &nbsp;
 
@@ -46,9 +46,7 @@ Prior to committing your changes, you might want to review them.&nbsp; By pressi
 
 . &nbsp;
 
-![Workgroup review changes](<lib/Workgroup%20review%20changes.png>)
-
-&nbsp;
+![Workgroup commits comparison](<lib/Workgroup%20-%20History%20commits%20comparison.png>)
 
 &nbsp;
 

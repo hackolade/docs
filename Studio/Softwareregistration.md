@@ -12,7 +12,7 @@ You can initiate the process of getting an activation key either from the websit
 
 &nbsp;
 
-**Warning:** if you have an HTTP proxy server on your network, you may have to manually set in the application the proxy parameters.&nbsp; You will find more information on the [Network Proxy page](<Networkproxy.md>).
+**Warning:** if you have an HTTP proxy server on your network, you may have to manually set in the application the proxy parameters.&nbsp; You will find more information on the [Network Proxy page](<Networkproxy.md>).&nbsp; In particular, in environments with proxies using SSL inspection (Zscaler, BlueCoat, etc.) it is critical that Hackolade be whitelisted to connect properly with SSL/TLS protocols.
 
 &nbsp;
 
@@ -104,7 +104,7 @@ If you need to move your license key to another computer, you first need to rele
 
 To do so, go to the option Help \> Software Key Validation, and choose the action 'I want to...':
 
-![Registration -- un-register](<lib/Registration%20--%20un-register.png>)
+![Registration -- release license key](<lib/Registration%20--%20release%20license%20key.png>)
 
 and click the Send button.&nbsp; This will free up the key on our license server. &nbsp;
 
@@ -126,19 +126,23 @@ Go to the other computer where you want to use Hackolade and validate your licen
 
 ## Offline validation
 
-**Important note:** offline validation will NOT work for subscriptions or perpetual concurrent licenses.&nbsp; This section is only for Community, Trial and perpetual workstation licenses.
+**Important note:** offline validation will NOT work for subscriptions or perpetual concurrent licenses.&nbsp; This section is only for Community, Trial, and perpetual individual workstation licenses.
 
 &nbsp;
 
-There maybe cases of proxy issues when Hackolade is not able to validate the license key online. To access the Internet, the application uses the proxy settings from the PC's browser, as stored in Windows Internet Options \> Connections of the dialog c:\\Windows\\System32\\inetcpl.cpl&nbsp; or proxy settings may be entered by following the steps described [here](<Networkproxy.md>).
-
-&nbsp;
-
-If the application can detect that it cannot reach the Internet, the following dialog is displayed:
+If the application cannot reach the Internet, the following dialog is displayed:
 
 &nbsp;
 
 ![Offline license activation - connection failu](<lib/Offline%20license%20activation%20-%20connection%20failu.png>)
+
+&nbsp;
+
+If the machine does have access to the Internet, it is possible that a proxy setting is preventing the application from properly connecting, and you should follow the steps described [here](<Networkproxy.md>).
+
+&nbsp;
+
+There are legitimate reasons for the machine to be disconnected from the Internet, in which case you should follow the steps below.
 
 &nbsp;
 
@@ -174,7 +178,7 @@ The application may be installed on a large number of computers, each with the s
 
 &nbsp;
 
-With ***workstation*** licenses, the license key is entered and validated by our Hackolade cloud-based licensing server when the application is first accessed.&nbsp; After that validation, the application no longer needs to access the licensing server.&nbsp; To be complete, each time the maintenance or the subscription expires, the application will again communicate with the licensing server to check if the contract has been renewed.&nbsp;
+With ***individual workstation*** licenses, the license key is entered and validated by our Hackolade cloud-based licensing server when the application is first accessed.&nbsp; After that validation, the application no longer needs to access the licensing server.&nbsp; To be complete, each time the maintenance or the subscription expires, the application will again communicate with the licensing server to check if the contract has been renewed.&nbsp;
 
 &nbsp;
 
