@@ -49,6 +49,9 @@ Below is the current list of Hackolade CLI commands.&nbsp; Additional commands m
 | forwEngXLSX | Export model to Excel file |
 | genDoc | Generate documentation for a Hackolade model, in HTML, Markdown, or PDF format |
 | obfusc | Copy a model, and garble sensitive properties: business name, technical name, description, comments, enumeration.  Use if you need to send a model for troubleshooting but don't want to disclose sensitive aspects of the model. |
+| open | Open Hackolade data model |
+| polyglotDerive | Derive a physical target model from a polyglot data model |
+| polyglotUpdate | Update polyglot definition |
 | revEng | Reverse-engineer a database instance or script file to infer the schema of the selected collections/tables |
 | revEngDataDictionary | Reverse-engineer a data dictionary instance to infer the schema of entities |
 | revEngJSON | Reverse-engineer JSON Schema or documents |
@@ -154,10 +157,10 @@ Usage:&nbsp; &nbsp; *hackolade forwEng \[--arguments\]*
 | --- | --- | --- |
 | \--model=\<*file*\>\* | Y | Full path and file name for target Hackolade model. Extension .json is optional&nbsp; |
 | \--path=\<*file*\>\* | Y | Specify the directory path where the forward-engineered files will be created. |
-| \--outputType=\< **jsonschema** \| jsondata \| yamldata \| script \| schemaregistry \> | Y | Specify the type of output (JSON Schema, sample JSON data, sample YAML data, script, or schemaregistry) \[default: jsonschema\] This allows output of the script corresponding to the target of the specified model, e.g.: CQL for Cassandra, HQL for Hive, etc... It also allows the publication of Avro and JSON schemas to schema registry instances |
+| \--outputType=\< **jsonschema** \| jsondata \| yamldata \| script \| schemaregistry \> | Y | Specify the type of output (JSON Schema, sample JSON data, sample YAML data, script, or schemaregistry) \[default: jsonschema\] This allows output of the script corresponding to the target of the specified model, e.g.: CQL for Cassandra, HQL for Hive, etc... It also allows the publication of Avro, ProtoBuf, and JSON schemas to schema registry instances |
 | –jsonSchemaCompliance=\< **standard** \| full \| extended \> | N | Specify JSON Schema compliance: standard for only JSON Schema keywords and data types, full for additional custom properties, or extended for target-specific data types and internal properties.  \[default: standard\] |
 | \--jsonschemaversion=\< **draft-04** \| draft 06 \| draft-07 \| 2019-09 \| 2020-12 \> | N | Specify JSON Schema specification version \[default: draft-04\] &nbsp; \[values: draft-04, draft-06, draft-07, 2019-09, 2020-12\] \[default: "draft-04"\] |
-| \--format=\< *format* \> | N | Output target-specific schema format: MongoDB: \["shell", "mongoose","js", $jsonchema"\] Couchbase: \["ottoman", "n1ql"\] Avro: \["avroSchema", "schemaRegistry"\] Glue: \["awsCLI", "HiveQL"\] OpenAPI: &nbsp; \["json", "yaml"\] Swagger: &nbsp; \["json", "yaml"\] |
+| \--format=\< *format* \> | N | Output target-specific schema format: MongoDB: \["shell", "mongoose","js", $jsonchema"\] Couchbase: \["ottoman", "n1ql"\] Avro: \["avroSchema","azureSchemaRegistry","confluentSchemaRegistry","pulsarSchemaRegistry"\] JSON Schema: \["azureSchemaRegistry","confluentSchemaRegistry","pulsarSchemaRegistry"\] Glue: \["awsCLI", "HiveQL"\] OpenAPI: &nbsp; \["json", "yaml"\] Protobuf: \["azureSchemaRegistry","confluentSchemaRegistry","pulsarSchemaRegistry"\] Swagger: &nbsp; \["json", "yaml"\] |
 | \--connectName=\<connection\> | Y if to instance | Name of connection settings saved in the Hackolade instance where CLI is invoked. Or use --connectFile instead. |
 | \--connectFile=\<*file*\>\* | N | Full file path of connection config file (you don't need to use it when connect name is specified).&nbsp; The simplest way to create a connection file is to create a connection in the GUI application, then export the connection settings to file, encrypted or not. |
 | \--selectedObjects= "\<containerName\>: \[\<*entity1\>*,\<*entity2\>*,…\]" | N | Specify array of entities to include to result from model \[default: all\] |
@@ -412,6 +415,79 @@ Example:
 is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed above.
 
 &nbsp;
+
+## polyglotDerive&nbsp;
+
+The polyglotDerive command lets you derive a target model from a polyglot model.
+
+&nbsp;
+
+Usage:&nbsp; &nbsp; *hackolade polyglotDerive \[--arguments\]*
+
+&nbsp;
+
+| **Argument** | **Required** | **Purpose** |
+| --- | --- | --- |
+| \--target=\<*target*\> | Y | Native target for model: JSON, MONGODB, DYNAMODB, COUCHBASE, or plugin target: Avro, CASSANDRA, COSMOSDB-SQL, COSMOSDB-MONGO, ELASTICSEARCH, EventBridge, Glue, HBase, HIVE, JOI, MSSQLServer; NEO4J, OPENAPI, PARQUET, ScyllaDB, Snowflake, SWAGGER, Synapse, TinkerPop, etc.. |
+| \--polyglotmodels="\<file1\>;\<file2\>..." | Y | Full path and file name for polyglot model. Extension .json is optional. Accepts paths divided by semicolon when deriving from multiple Polyglot models.. |
+| \--targetmodel=\<file\>\* | Y | Specify the directory path and file name where the derived target model will be created |
+| \--pathType=\< **absolute** \| relative \>&nbsp; | N | Specify the type of path, absolute or relative \[default: absolute\] |
+| \--normalize=\< true \| **false** \>&nbsp; | N | Where applicable, specify whether or not to normalize complex data types in separate entities \[default: false\] |
+| \--APItemplate=\<file\>\* | N | When deriving to Swagger/OpenAPI target to generate model-driven API, specify full path and file name for the template to be used during deriving from Polyglot. The template can be a Hackolade model, or a Swagger or OpenAPI documentation file in either JSON or YAML. |
+| \--selectedObjects= "\<containerName\>: \[\<*entity1\>*,\<*entity2\>*,…\]" | N | Specify container(s) to reverse-engineer&nbsp; \[default: all\] and an array of entities \[default: all\] - MongoDB: container = dbs; entity = collection - DynamoDB: container = *not applicable*; entity = table - Couchbase: container = bucket; entity = document kind - Cosmos DB: container = collection; entity = document type - Elasticsearch: container = index: entity = type - HBase: container =&nbsp; namespace; entity = table The value is a string surrounded by double quotes (").&nbsp; Entities are represented as an array surrounded by square brackets (\[\]), and are separated by a comma (,).&nbsp; The entities array is separated from the container name by a colon (:).&nbsp; Containers are separated by semi-colons (;). |
+| \--logLevel=\< 1 \| 2 \| 3 \| **4** \> | N | &#49; = no spinner, no info, no error messages 2 = no spinner, no info 3 = no spinner 4 = full output \[default: 4\] |
+
+
+\*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“)&nbsp; Path can be ignored if file is in local directory.
+
+&nbsp;
+
+Example:
+
+*C:\\PROGRA~1\\Hackolade\\hackolade polyglotDerive --target=mongodb --polyglotmodels=yelp-polyglot.hck.json --targetmodel=yelp-mongodb.hck.json&nbsp; *
+
+&nbsp;
+
+**Note:** If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: *"C:\\Program Files\\Hackolade\\hackolade"* .&nbsp; The workaround, assuming:
+
+![Windows Program Files](<lib/Windows%20Program%20Files.png>)
+
+is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed above.
+
+&nbsp;
+
+## polyglotUpdate&nbsp;
+
+The polyglotUpdate command lets you update a target model for modifications made to the referenced polyglot models
+
+&nbsp;
+
+Usage:&nbsp; &nbsp; *hackolade polyglotUpdate \[--arguments\]*
+
+&nbsp;
+
+| **Argument** | **Required** | **Purpose** |
+| --- | --- | --- |
+| \--model=\<file\>\* | Y | Full path and file name for target model. Extension .json is optional&nbsp; |
+| \--selectedObjects= "\<containerName\>: \[\<*entity1\>*,\<*entity2\>*,…\]" | N | Specify container(s) to reverse-engineer&nbsp; \[default: all\] and an array of entities \[default: all\] - MongoDB: container = dbs; entity = collection - DynamoDB: container = *not applicable*; entity = table - Couchbase: container = bucket; entity = document kind - Cosmos DB: container = collection; entity = document type - Elasticsearch: container = index: entity = type - HBase: container =&nbsp; namespace; entity = table The value is a string surrounded by double quotes (").&nbsp; Entities are represented as an array surrounded by square brackets (\[\]), and are separated by a comma (,).&nbsp; The entities array is separated from the container name by a colon (:).&nbsp; Containers are separated by semi-colons (;). |
+| \--logLevel=\< 1 \| 2 \| 3 \| **4** \> | N | &#49; = no spinner, no info, no error messages 2 = no spinner, no info 3 = no spinner 4 = full output \[default: 4\] |
+
+
+\*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“)&nbsp; Path can be ignored if file is in local directory.
+
+&nbsp;
+
+Example:
+
+*C:\\PROGRA~1\\Hackolade\\hackolade polyglotUpdate --model=yelp-mongodb.hck.json&nbsp; *
+
+&nbsp;
+
+**Note:** If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: *"C:\\Program Files\\Hackolade\\hackolade"* .&nbsp; The workaround, assuming:
+
+![Windows Program Files](<lib/Windows%20Program%20Files.png>)
+
+is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed above.
 
 &nbsp;
 

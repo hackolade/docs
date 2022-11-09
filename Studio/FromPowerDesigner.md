@@ -1,6 +1,10 @@
 # From PowerDesigner
 
-If you have data models in PowerDesigner and want to leverage them in Hackolade, you need to fist export them to XSD, following the instructions below.&nbsp; You should first consult [this page](<XSDoflogicalmodels.md>) for an overview of the import functionality in Hackolade.
+If you have data models in PowerDesigner and want to leverage them in Hackolade Studio, you need to fist export them to XSD, following the instructions below.&nbsp; You should first consult [this page](<XSDXMLSchemaDefinition.md>) for an overview of the import functionality in Hackolade Studio.
+
+&nbsp;
+
+If the XSD does not contain primary key and foreign key constraints, this reverse-engineering process cannot import them, but it is still possible to use the functionality to [Infer PKs \& FKs](<InferPrimaryKeysandForeignKeyRel.md>).
 
 &nbsp;
 
@@ -58,5 +62,5 @@ To generate the XML model with configuration so primary keys and foreign key rel
 
 &nbsp;
 
-&nbsp;
+After the successful export of your model to XSD, use the instructions in [this page](<XSDXMLSchemaDefinition.md>) to import the XSD into a Hackolade Studio model for the target of your choice.
 

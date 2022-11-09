@@ -1,5 +1,13 @@
 # Collibra Data Dictionary integration
 
+One of the primary challenges severely constraining organizations is to make business sense from technical data structures in applications and databases.&nbsp; This complicates the ability of organizations to identify critical data elements and bring them under governance. &nbsp;
+
+&nbsp;
+
+The integration of data modeling with governance tools and processes enables solving this problem at the source, i.e. where data structures are designed to create schemas and their technical metadata. &nbsp;
+
+&nbsp;
+
 **Note:** You may wish to view the [how-to video](<https://hackolade.com/videos.html#collibra> "target=\"\_blank\"") on this subject.
 
 &nbsp;
@@ -184,4 +192,4 @@ With v5.2.1, we introduced the possibility to reverse-engineer a Collibra physic
 
 \- either into an empty model you wish to create,
 
-\- or into an existing model, possibly the one used to originally publish to Collibra.&nbsp; This is particularly handy if maintenance occurs in Collibra for models created in Hackolade.&nbsp; Refer to the important note above in the section "Publish data model to Collibra".
+\- or into an existing model, possibly the one used to originally publish to Collibra.&nbsp; This is particularly handy if maintenance occurs in Collibra for models created in Hackolade Studio.&nbsp; Refer to the important note above in the section "Publish data model to Collibra".

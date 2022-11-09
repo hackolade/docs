@@ -34,7 +34,7 @@ You are presented with a blank workspace.&nbsp; Refer to the [overview of the us
 
 ## Create your data model
 
-There are 2 main ways to create a data model: you either [build your data model from scratch](<Whatisadatamodel.md>) based on your analysis of requirements, or you can [reverse-engineer](<Reverseengineeranexistinginstanc.md>) from a variety of sources: an existing [instance](<Target-specific1.md>), from [JSON documents](<JSONdocument1.md>) or [JSON Schema](<JSONSchema1.md>), from [SQL DDLs](<SQLDDL.md>), or from [XSDs](<XSDoflogicalmodels.md>).&nbsp; For the purpose of this tutorial, we will start a model from scratch.
+There are 2 main ways to create a data model: you either [build your data model from scratch](<Whatisadatamodel.md>) based on your analysis of requirements, or you can [reverse-engineer](<Reverseengineeranexistinginstanc.md>) from a variety of sources: an existing [instance](<Target-specific1.md>), from [JSON documents](<JSONdocument1.md>) or [JSON Schema](<JSONSchema1.md>), from [SQL DDLs](<SQLDDL.md>), or from [XSDs](<XSDXMLSchemaDefinition.md>).&nbsp; For the purpose of this tutorial, we will start a model from scratch.
 
 &nbsp;
 

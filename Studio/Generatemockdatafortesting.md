@@ -4,6 +4,10 @@ Hackolade Studio allows you to generate fake but realistic data for your data mo
 
 &nbsp;
 
+According to [ThoughtWorks TechRadar](<https://www.thoughtworks.com/radar/techniques?blipid=202210032> "target=\"\_blank\"") 27: "Synthetic data is also useful for exploring edge cases that lack real data or for identifying model bias."
+
+&nbsp;
+
 Moreover, manually generating fake data takes time and slows down the testing process, particularly if large volumes are required.
 
 &nbsp;

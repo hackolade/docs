@@ -1,5 +1,61 @@
 # v6.x
 
+New features in v6.6.2 \[04-Nov-2022\]
+
+\- Command-Line Interface: added command polyglotDerive to derive a target model from a polyglot model
+
+\- Command-Line Interface: added command polyglotUpdate to update a target model for modifications made to the referenced polyglot models
+
+\- Command-Line Interface: added possibility to forward-engineer schema to schema registries (Confluent, Azure, Pulsar)
+
+\- Documentation: fixed issue generating PDF on Ubuntu 24.04
+
+\- Model API generation: added validation of the template to ensure presence of entity/entities in schema components and resources
+
+\- MongoDB: fixed issue with $jsonschema generation when descriptions include Regex-like expressions
+
+\- Workgroup: enhanced handling of user permission errors when submitting change request for review
+
+&nbsp;
+
+New features in v6.6.1 \[28-Oct-2022\]
+
+\- Workgroup: added display of required permissions in the connection manager when issues with the Personal Access Token
+
+\- Workgroup: changed check of repository permission to circumvent lack of proper decoding of slashes in usernames by Bitbucket Server
+
+\- Workgroup: added check for repo permissions when opening Submit for review page, and when switching repos
+
+\- Workgroup: streamlined flow after repo provider authentication error&nbsp;
+
+\- Workgroup: added input auto-height when typing multi-line comments in change requests creation and review
+
+\- Workgroup: harmonized icons for closed and reopened Change Requests in timeline and status badge
+
+\- Workgroup: added preserving reviewers when switching panes during Change Requests
+
+\- Workgroup: improved SSH keys errors and SSH URLs handling
+
+\- Polyglot: fixed refresh of cross-target external reference after conversion to local objects
+
+\- Polyglot: default to ER Diagram tab when opening previously save model
+
+\- Avro: adjusted mapping of detected ISO-8601 dates in JSON data reverse-engineering
+
+\- EventBridge: added ability to add recursive references to resource schemas
+
+\- OpenAPI: added ability to add recursive references to resource schemas
+
+\- Parquet: adjusted mapping of detected ISO-8601 dates in JSON data reverse-engineering
+
+\- PostgreSQL: adjusted mapping of timestamps without timezone
+
+\- Redhift: adjusted mapping of detected ISO-8601 dates in JSON data reverse-engineering
+
+\- YugabyteDB: adjusted mapping of detected ISO-8601 dates in JSON data reverse-engineering
+
+&nbsp;
+
 New features in v6.6.0 \[21-Oct-2022\]
 
 \- Workgroup: added support for Azure DevOps Repos for workflow to submit and review Pull Requests

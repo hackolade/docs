@@ -4,6 +4,10 @@ The information below applies to repositories on Bitbucket Server.&nbsp; It expl
 
 &nbsp;
 
+**Note:** that access to the Bitbucket Server is not sufficient by itself.&nbsp; The user also need proper access rights the repositories, according to the [4 levels of Bitbucket Server permissions](<https://confluence.atlassian.com/bitbucketserverkb/4-levels-of-bitbucket-server-permissions-779171636.html> "target=\"\_blank\"").
+
+&nbsp;
+
 ## Personal access tokens
 
 If you don't have a valid Personal Token, you may get the error message below, indicating that your token has passed its expiration date, or that it does not have the right permissions enabled.

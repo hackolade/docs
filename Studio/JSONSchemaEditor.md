@@ -34,7 +34,7 @@ results in the following JSON Schema declaration:
 
 ## Convert DDLs and XSD into JSON Schema
 
-Hackolade works great to convert structures from [XSD](<XSDoflogicalmodels.md>) (XML Schema) except for import and include, from [DDL](<SQLDDL.md>) (Data Definition Language) for SQL relational databases (RDBMS) as well as all the targets Hackolade supports, whether for data-at-rest or data-in-motion.&nbsp; Hackolade shines at inferring the JSON Schema for any JSON document, and can also generate a sample JSON document for any JSON Schema.&nbsp; Hackolade on-boards a JSON Schema validator, and also allows for user-defined custom properties as well as extensions to allow the specific data types of the different database and protocol targets supported by the tool.&nbsp; A [command-line interface](<CommandLineInterface.md>) makes it easy to automate these functions and integrate them into a CI/CD pipeline.
+Hackolade works great to convert structures from [XSD](<XSDXMLSchemaDefinition.md>) (XML Schema) except for import and include, from [DDL](<SQLDDL.md>) (Data Definition Language) for SQL relational databases (RDBMS) as well as all the targets Hackolade supports, whether for data-at-rest or data-in-motion.&nbsp; Hackolade shines at inferring the JSON Schema for any JSON document, and can also generate a sample JSON document for any JSON Schema.&nbsp; Hackolade on-boards a JSON Schema validator, and also allows for user-defined custom properties as well as extensions to allow the specific data types of the different database and protocol targets supported by the tool.&nbsp; A [command-line interface](<CommandLineInterface.md>) makes it easy to automate these functions and integrate them into a CI/CD pipeline.
 
 &nbsp;
 

@@ -13,7 +13,7 @@ Hackolade supports the reverse-engineering of different types of data sources:
 * a [JSON or YAML document](<JSONdocument1.md>): during this process, we infer the schema for the data in the file(s)
 * a [JSON Schema or YAML Schema](<JSONSchema1.md>): during this process, when applied to an RDBMS target, we optionally normalize nested structures into separate entities.
 * a [Data Definition Language file (DDL)](<SQLDDL.md>): from Oracle, Microsoft SQL Server, MySQL, PostgreSQL, Hadoop Hive, Snowflake, Teradata, DB2, Informix, Redshift, MariaDB
-* an [XSD schema](<XSDoflogicalmodels.md>) file from another ER tool, such as erwin, ER/Studio, PowerDesigner, or other
+* an [XSD schema](<XSDXMLSchemaDefinition.md>) file from another ER tool, such as erwin, ER/Studio, PowerDesigner, or other
 * an [Excel file template](<Exceltemplate.md>): first export a Hackolade model (even an empty one) to generate an Excel file for the target of your choice.&nbsp; Then you may bulk edit your model or create a new one before ingesting it back into the application.
 * [target-specific](<Target-specific1.md>) instances: data bases and cloud storage
 * from a data dictionary (currently only [Collibra](<CollibraDataDictionaryintegratio.md>).)

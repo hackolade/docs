@@ -1,4 +1,4 @@
-# XSD of logical models
+# XSD (XML Schema Definition)
 
 **Important note:** the purpose of this functionality is NOT to provide full compatibility with XSD syntax, but just to import models from other ER tools.&nbsp; As a a result, Hackolade does **not** currently support, among other things, mixed content types, deriving types by restriction, or XSD import and include.
 
