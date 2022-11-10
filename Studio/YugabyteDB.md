@@ -11,7 +11,7 @@ Yugabyte exposes its storage engine DocsDB through two different APIs, each with
 
 &nbsp;
 
-Yugabyte is mostly ProgreSQL-compatible, but with some exceptions.&nbsp; While there is no official list of unsupported features, you may consult the [roadmap](<https://github.com/yugabyte/yugabyte-db#current-roadmap> "target=\"\_blank\"") and [issues](<https://github.com/yugabyte/yugabyte-db/issues> "target=\"\_blank\"") on GitHub for more details.
+Yugabyte is mostly PostgreSQL-compatible, but with some exceptions.&nbsp; While there is no official list of unsupported features, you may consult the [roadmap](<https://github.com/yugabyte/yugabyte-db#current-roadmap> "target=\"\_blank\"") and [issues](<https://github.com/yugabyte/yugabyte-db/issues> "target=\"\_blank\"") on GitHub for more details.
 
 &nbsp;
 
@@ -41,7 +41,11 @@ The data model in the picture below results from the data modeling of the [fligh
 
 ## Tablespaces, databases, and schemas
 
-A tablespace is a location on the disk where YugabyteDB stores data files containing database objects e.g., indexes, and tables.&nbsp; Tablespaces allow control of how data is stored in the file system. Tablespaces are useful in many cases such as managing large tables and improving database performance.&nbsp; YugabyteDB uses a tablespace to map a logical name to a physical location on disk.
+YugabiteDB being a geographically distributed cloud-native database, controlling how data should be spread across the cluster plays a very important role in achieving optimal performance. &nbsp; Such control is done through YugabiteDB tablespaces which are entities that can specify the number of replicas for a set of tables or indexes, and how each of these replicas should be distributed geographically across a set of cloud, regions, zones.  Tablespaces allow to locate tables closer to their clients to decrease the latency.
+
+&nbsp;
+
+A tablespace also allows to configure the [Leader preference](<https://docs.yugabyte.com/preview/explore/ysql-language-features/going-beyond-sql/tablespaces/#leader-preference> "target=\"\_blank\"") to gain even more control about the location of table and indecxes closer to their clients.
 
 &nbsp;
 
@@ -85,9 +89,13 @@ There are six main constraints that are commonly used in PostgreSQL: NOT NULL, U
 
 YugabyteDB supports basic table partitioning.&nbsp; Partitioning refers to splitting what is logically one large table into smaller physical pieces. Partitioning can provide several benefits on the performance side.
 
+YugabyteDB [organizes data automatically](<https://docs.yugabyte.com/preview/explore/linear-scalability/sharding-data/> "target=\"\_blank\"") across nodes and splits user tables into multiple shards, called tablets using different possible strategies. &nbsp;
+
 ## Indexes
 
 The goal of an index on a database table then is to reduce I/O.&nbsp; Properly indexing a YugabyteDB table is key to providing consistent, optimal performance. There are many things to consider when designing an index structure, but this goes beyond the scope of this document. &nbsp;
+
+YugabiteDB provides indexes at tablespace level to further optimize data read queries. &nbsp;
 
 &nbsp;
 
@@ -95,7 +103,7 @@ Hackolade supports the most common types of YugabyteDB indexes. &nbsp;
 
 ## Data types
 
-YugabyteDB a rich set of [data types](<https://www.postgresql.org/docs/current/datatype.html> "target=\"\_blank\"") availble to users.&nbsp; A data type is an attribute that specifies the type of data that the object can hold: integer data, character data, monetary data, date and time data, binary strings, and so on.
+YugabyteDB a rich set of [data types](<https://docs.yugabyte.com/preview/explore/ysql-language-features/data-types/> "target=\"\_blank\"") availble to users.&nbsp; A data type is an attribute that specifies the type of data that the object can hold: integer data, character data, monetary data, date and time data, range, binary strings, and so on.
 
 &nbsp;
 
@@ -103,7 +111,9 @@ Additionally, in JSON and JSONB columns, Hackolade supports the data modeling of
 
 &nbsp;
 
-User-defined data types are based on the data types in YugabyteDB. User-defined data types can be used when several tables store the same domain of values in a column and must ensure that these columns have exactly the same data type, length, and NULLability.
+User-defined data which are called Composite types in YugabiteDB are based on the data types in YugabyteDB. User-defined data types can be used when several tables store the same domain of values in a column and must ensure that these columns have exactly the same data type, length, and NULLability.
+
+&nbsp;
 
 ## Views
 
@@ -113,7 +123,7 @@ A view is a virtual table whose contents are defined by a query. Like a table, a
 
 ## Functions and Procedures
 
-A function takes any number of arguments and returns a value from the function body. The function body can be any valid SQL expression as you would use, for example, in any select expression.A Stored Procedure is a routine invoked with a [CALL](<https://mariadb.com/kb/en/call/>) statement. It may have input parameters, output parameters and parameters that are both input parameters and output parameters.
+A function takes any number of arguments and returns a value from the function body. The function body can be any valid SQL expression as you would use, for example, in any select expression.  A Stored Procedure is a routine invoked with a [CALL](<https://docs.yugabyte.com/preview/explore/ysql-language-features/stored-procedures/> "target=\"\_blank\"") statement. It may have input parameters, output parameters and parameters that are both input parameters and output parameters.
 
 &nbsp;
 
@@ -135,7 +145,7 @@ To apply to instance, you need USAGE privileges, and if that's not possible, the
 
 ## Reverse-Engineering
 
-The YugabyteDB instance can hosted on-premises, or on virtualized machines in a private or public cloud Details on how to connect Hackolade to YugabyteDB can be found on [this page](<ConnecttoYugabyteDB.md>).
+The YugabyteDB instance can be hosted on-premises, or on virtualized machines in a private or public cloud.  Details on how to connect Hackolade to YugabyteDB can be found on [this page](<ConnecttoYugabyteDB.md>).
 
 &nbsp;
 
@@ -143,7 +153,7 @@ The Hackolade process for reverse-engineering of YugabyteDB databases includes t
 
 &nbsp;
 
-**Important:** when reverse-engineering a YugabyteDB instance, non-privileged users can see the metadata of only their own objects, so to access others you need to be be granted the role USAGE. &nbsp; It more granularity is necessary, here are the full details:
+**Important:** when reverse-engineering a YugabyteDB instance, non-privileged users can see the metadata of only their own objects depending on how Role based access control is setup on the instance, so to access others you need to be be granted the role USAGE. &nbsp; It more granularity is necessary, here are the full details:
 
 &#49;) SELECT privileges on all tables in \`pg\_catalog\` schema (is default and included in PUBLIC role).
 
@@ -161,9 +171,8 @@ The Hackolade process for reverse-engineering of YugabyteDB databases includes t
 
 &nbsp;
 
-More information is available [here](<https://www.postgresql.org/docs/current/ddl-priv.html> "target=\"\_blank\"").
+More information is available [here](<https://docs.yugabyte.com/preview/secure/authorization/rbac-model/> "target=\"\_blank\"").
 
 &nbsp;
 
 For more information on YugabyteDB in general, please consult the [website](<https://www.yugabyte.com/> "target=\"\_blank\"") and [documentation](<https://docs.yugabyte.com/> "target=\"\_blank\""). &nbsp;
-
