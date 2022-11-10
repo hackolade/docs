@@ -41,7 +41,7 @@ The data model in the picture below results from the data modeling of the [fligh
 
 ## Tablespaces, databases, and schemas
 
-YugabiteDB being a geographically distributed cloud-native database, controlling how data should be spread across the cluster plays a very important role in achieving optimal performance. &nbsp; Such control is done through YugabiteDB tablespaces which are entities that can specify the number of replicas for a set of tables or indexes, and how each of these replicas should be distributed geographically across a set of cloud, regions, zones.  Tablespaces allow to locate tables closer to their clients to decrease the latency.
+YugabiteDB being a geographically distributed cloud-native database, controlling how data should be spread across the cluster plays a very important role in achieving optimal performance. &nbsp; Such control is achieved through tablespaces which are entities that allow specifying the number of replicas for a set of tables or indexes, and also how each of these replicas should be distributed geographically across a set of cloud, regions, zones.  Tablespaces allow to locate tables closer to their clients to decrease the latency.
 
 &nbsp;
 
@@ -86,8 +86,6 @@ Constraints in PostgreSQL are predefined rules and restrictions that are enforce
 There are six main constraints that are commonly used in PostgreSQL: NOT NULL, UNIQUE, PRIMARY, FOREIGN, CHECK, and DEFAULT. &nbsp;
 
 ## Partitioning
-
-YugabyteDB supports basic table partitioning.&nbsp; Partitioning refers to splitting what is logically one large table into smaller physical pieces. Partitioning can provide several benefits on the performance side.
 
 YugabyteDB [organizes data automatically](<https://docs.yugabyte.com/preview/explore/linear-scalability/sharding-data/> "target=\"\_blank\"") across nodes and splits user tables into multiple shards, called tablets using different possible strategies. &nbsp;
 
