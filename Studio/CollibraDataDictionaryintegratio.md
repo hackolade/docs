@@ -1,6 +1,6 @@
 # Collibra Data Dictionary integration
 
-One of the primary challenges severely constraining organizations is to make business sense from technical data structures in applications and databases.&nbsp; This complicates the ability of organizations to identify critical data elements and bring them under governance. &nbsp;
+One of the primary challenges severely constraining organizations is to make business sense of technical data structures in applications and databases.&nbsp; This complicates the ability of organizations to identify critical data elements and bring them under governance. &nbsp;
 
 &nbsp;
 

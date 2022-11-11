@@ -96,7 +96,7 @@ A view is a virtual table whose contents are defined by a query. Like a table, a
 
 ## Functions and Procedures
 
-A function takes any number of arguments and returns a value from the function body. The function body can be any valid SQL expression as you would use, for example, in any select expression.A Stored Procedure is a routine invoked with a [CALL](<https://mariadb.com/kb/en/call/>) statement. It may have input parameters, output parameters and parameters that are both input parameters and output parameters.
+A function takes any number of arguments and returns a value from the function body. The function body can be any valid SQL expression as you would use, for example, in any select expression.A Stored Procedure is a routine invoked with a [CALL](<https://www.postgresql.org/docs/current/sql-syntax-calling-funcs.html> "target=\"\_blank\"") statement. It may have input parameters, output parameters and parameters that are both input parameters and output parameters.
 
 &nbsp;
 
@@ -118,7 +118,7 @@ To apply to instance, you need USAGE privileges, and if that's not possible, the
 
 ## Reverse-Engineering
 
-The PostgreSQL instance can hosted on-premises, or on virtualized machines in a private or public cloud Details on how to connect Hackolade to PostgreSQL can be found on [this page](<ConnecttoaPostgreSQLinstance.md>).
+The PostgreSQL instance can be hosted on-premises, or on virtualized machines in a private or public cloud.&nbsp; Details on how to connect Hackolade to PostgreSQL can be found on [this page](<ConnecttoaPostgreSQLinstance.md>).
 
 &nbsp;
 

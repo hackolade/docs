@@ -86,7 +86,7 @@ A view is a virtual table whose contents are defined by a query. Like a table, a
 
 ## Functions and Procedures
 
-A function takes any number of arguments and returns a value from the function body. The function body can be any valid SQL expression as you would use, for example, in any select expression.A Stored Procedure is a routine invoked with a [CALL](<https://mariadb.com/kb/en/call/>) statement. It may have input parameters, output parameters and parameters that are both input parameters and output parameters.
+A function takes any number of arguments and returns a value from the function body. The function body can be any valid SQL expression as you would use, for example, in any select expression.A Stored Procedure is a routine invoked with a [CALL](<https://mariadb.com/kb/en/call/> "target=\"\_blank\"") statement. It may have input parameters, output parameters and parameters that are both input parameters and output parameters.
 
 &nbsp;
 
