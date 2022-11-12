@@ -8,7 +8,11 @@ The information below applies to repositories on Bitbucket Server.&nbsp; It expl
 
 &nbsp;
 
-## Personal access tokens
+## Personal HTTP access tokens
+
+**Important note:** in later releases of Bitbucket Server, it is now possible to issue Project tokens.&nbsp; We highly discourage the use of Project tokens in the context of Hackolade, because of identification issues.&nbsp; Personal HTTP tokens should be used instead.
+
+&nbsp;
 
 If you don't have a valid Personal Token, you may get the error message below, indicating that your token has passed its expiration date, or that it does not have the right permissions enabled.
 
@@ -17,6 +21,10 @@ If you don't have a valid Personal Token, you may get the error message below, i
 &nbsp;
 
 In the repository connection manager, click on the "generate" link located to the right of the input field for the personal access token. You can find more information on how to generate a personal access token in the [Bitbucket Server documentation](<https://confluence.atlassian.com/bitbucketserver0717/personal-access-tokens-1087535496.html> "target=\"\_blank\"").
+
+&nbsp;
+
+Depending on the version of Bitbucket Server, you may also be prompted for your username, so the application can assemble the right link in the "generate" button:
 
 &nbsp;
 

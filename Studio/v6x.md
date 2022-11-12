@@ -1,5 +1,31 @@
 # v6.x
 
+New features in v6.6.3 \[11-Nov-2022\]
+
+\- Command-Line Interface: added command polyglotDerive to derive a target model from multiple polyglot models
+
+\- Compare and Merge: allowed comparison by name to take array display names into account
+
+\- Polyglot: added possibility to derive target model when FK relationships involve attributes in nested objects
+
+\- Workgroup for Azure DevOps Repos: added ability to automatically detect and use proxy settings
+
+\- Workgroup Bitbucket Server: detect Server version to adapt required connection parameters accordingly
+
+\- Workgroup Bitbucket Server: show detailed message in logs in case or API errors
+
+\- Cassandra: adjusted ALTER script generation when change in PK
+
+\- Delta Lake/Databricks: added property Column List in view Properties Pane to achieve round-trip engineering
+
+\- Delta Lake/Databricks: added parsing of column list from CREATE VIEW statement in HQL file
+
+\- Delta Lake/Databricks: allowed column lists to be used for aliases as well as filter of columns from SELECT statements
+
+\- Delta Lake/Databricks: added handling of jinja double curly braces in forward-engineering and ALTER scripts
+
+&nbsp;
+
 New features in v6.6.2 \[04-Nov-2022\]
 
 \- Command-Line Interface: added command polyglotDerive to derive a target model from a polyglot model
