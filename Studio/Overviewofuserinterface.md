@@ -27,4 +27,7 @@ and some advanced features
 * [Naming conventions](<Namingconventions.md>)
 * [Lineage capture](<Lineagecapture.md>)
 * [Collibra Data Dictionary integration](<CollibraDataDictionaryintegratio.md>)
+* [Infer Primary Keys and Foreign Keys](<InferPrimaryKeysandForeignKeyRel.md>)
+* [Model-Driven API Generation](<Model-DrivenAPIGeneration.md>)
+* [Generate synthetic data for testing](<Generatemockdatafortesting.md>)
 

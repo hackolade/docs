@@ -10,7 +10,7 @@ The information below applies to repositories on Bitbucket Server.&nbsp; It expl
 
 ## Personal HTTP access tokens
 
-**Important note:** in later releases of Bitbucket Server, it is now possible to issue Project tokens.&nbsp; We highly discourage the use of Project tokens in the context of Hackolade, because of identification issues.&nbsp; Personal HTTP tokens should be used instead.
+**Important note:** in later releases of Bitbucket Server, it is now possible to issue Project tokens.&nbsp; We discourage the use of Project tokens in the context of Hackolade Studio.&nbsp; With Project tokens, Bitbucket Server automatically assigns a new internal username to users, resulting in identification issues in terms of Git history and Pull Requests, as well as other anomalies.&nbsp; Personal HTTP tokens should be used instead.
 
 &nbsp;
 

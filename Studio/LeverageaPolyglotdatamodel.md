@@ -32,6 +32,26 @@ The behavior of this view is similar to that of [graph targets](<Graphshapes.md>
 
 &nbsp;
 
+We strongly suggest to avoid using our Polyglot like a traditional logical model.&nbsp; Please don't, as you might be disappointed by the result.&nbsp; It would be the same as wanting to use MongoDB with a normalized data model.
+
+&nbsp;
+
+Again, while our Polyglot model is technology-agnostic like logical models, it is really a **common physical schema** with the following features:
+
+* allows denormalization, if desired, given access patterns;
+* allows complex data types;
+* generates schemas for a variety of technologies, with automatic mapping to the specific data types of the respective target technologies.
+
+&nbsp;
+
+Typically in logical models, you will have normalized entities, and you may denormalize in the physical model for performance.&nbsp; With a Polyglot model, it is advised to do things the other way around.&nbsp; You should use query-driven access patterns to define Polyglot structures with complex data types, including denormalization and polymorphism.&nbsp; When you derive to an RDBMS target, you will want to let our process normalize the structure, while you will want to keep the hierarchical structure for technology targets that allow it.
+
+&nbsp;
+
+An example is provided [here](<https://hackolade.com/help/PolyglotDataModeling.html#Logical%20modeling>).
+
+&nbsp;
+
 ## Create a polyglot data model
 
 A polyglot data model is just another Hackolade data model.&nbsp; You can create entities with attributes and relationships like you would with a specific Hackolade plugin.&nbsp; It has a more generic terminology and a superset of all data types found in the different technology targets.

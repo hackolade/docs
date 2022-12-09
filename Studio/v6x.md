@@ -1,5 +1,119 @@
 # v6.x
 
+New features in v6.7.2 \[09-Dec-2022\]
+
+\- Added validation warnings in ObjectBrowser and ERD for deeply nested attributes
+
+\- Workgroup Edition: after creation of Pull Requests, redirect user to My Pull Requests screen
+
+\- Workgroup Edition: added provider-specific help links in Repository Connections dialog
+
+\- Workgroup Edition: added rendering of Pull Request timeline in ascending order for GitHub and GitLab
+
+\- Avro: refactored integration with Confluent Schema Registry to better handle different subject name strategies
+
+\- Avro: added capture of Schema Registry URL during reverse-engineering from Confluent
+
+\- Avro: generate subject name according to strategy and schema type unless specified manually
+
+\- Avro: added validation for Topic and Subject properties
+
+\- Collibra: added more user-friendly dialog when attempting to connect with an erroneous URL
+
+\- Delta Lake/Databricks: added support for columns GENERATED AS
+
+\- Swagger/OpenAPI: allowed display options in Schema ERD View
+
+\- Swagger/OpenAPI: added import of FK relationships when deriving Polyglot model into Schema ERD View
+
+&nbsp;
+
+New features in v6.7.1 \[02-Dec-2022\]
+
+\- Polyglot: added normalization of Polyglot choices during derivation into super-type/sub-type for RDBMS targets
+
+\- Polyglot: added creation of references to Polyglot model when converting a target model to Polyglot
+
+\- Compare and Merge: disabled rendering of properties for ghost objects
+
+\- Workgroup Bitbucket Server: enabled network proxy settings
+
+\- Avro: added support for newly introduced Avro spec feature of symbol default property for enum data type
+
+\- Delta Lake/Databricks: added Azure URL suffix in connections dialog for Azure Storage Access
+
+\- ScyllaDB: applied recent ALTER script logic enhancements from Cassandra plugin for partitioning/clustering keys
+
+\- Snowflake: updated snowflake-sdk package in plugin
+
+\- SQL Server: allowed creation of Foreign Relationships referencing columns that are non-PK as long as they have a UNIQUE constraint
+
+\- Swagger/OpenAPI/EventBridge: added parsing of yaml values as JSON
+
+\- Swagger/OpenAPI/EventBridge: added validation of objects after reverse-engineering to display warning badges in Object Browser
+
+&nbsp;
+
+New features in v6.7.0 \[25-Nov-2022\]
+
+\- Workgroup: added support for GitLab Cloud (gitlab.com) and GitLab Server (self-hosted) for workflow to submit and review Merge Requests
+
+\- Workgroup: added showing username and display name for change requests
+
+\- Workgroup Bitbucket Cloud: enabled network proxy settings
+
+\- Network proxy: added possibility to specify a .pac file URL for backend functions such as forward- and reverse-engineering
+
+\- Compare and Merge: adjusted matching for objects inside moved objects
+
+\- Excel: adjusted handling of multiple JSON complex types
+
+\- Avro: reverted mapping of date/time/timestamp fields to semantic meaning when converting from DDL and JSON Schema and inference of JSON data
+
+\- Cassandra: removed duplicated udt in list/set/tuple when reverse-engineering from instance
+
+\- Cassandra: removed business and technical names from array items to keep just display name
+
+\- Delta Lake/Databricks: allowed column lists to be used for aliases as well as filter of columns from SELECT statements when reverse-engineering from instance
+
+\- Hive: added forward- and reverse-engineering of AS SELECT statement for views
+
+\- Hive: added forward-engineering of comments
+
+\- OpenAPI/Swagger: added lower tab "Schema ERD view" to enhance visualization of definitions/component schemas
+
+\- Parquet: reverted mapping of date/time/timestamp fields to semantic meaning when converting from DDL and JSON Schema and inference of JSON data
+
+\- ScyllaDB: removed duplicated udt in list/set/tuple when reverse-engineering from instance
+
+\- ScyllaDB: removed business and technical names from array items to keep just display name
+
+&nbsp;
+
+New features in v6.6.4 \[18-Nov-2022\]
+
+\- Polyglot: added possibility to insert attributes in entities of target model derived from Polyglot
+
+\- Polyglot added impact analysis when calling references refresh from entities
+
+\- Network proxy: added possibility to specify a .pac file URL for access to license server and plugin manager
+
+\- Network proxy: enhanced logging of proxy settings on application startup
+
+\- Workgroup Bitbucket Server: added tolerance for slashes in usernames when displaying Pull Requests
+
+\- Custom properties: allowed defaultValue property in custom tabs
+
+\- Cassandra: adjusted reverse-engineering of list\<udt\>, and adjusted ALTER script generation in case of list\<udt\>
+
+\- Cassandra: fix over eager drop/create table when business names are different but technical names are similar
+
+\- Databricks on Azure: added connection tab to declare ADLS storage passthrough credentials
+
+\- Neo4j and other graph targets: allowed dragging graph nodes with force-directed layout if node has edge is dangling
+
+&nbsp;
+
 New features in v6.6.3 \[11-Nov-2022\]
 
 \- Command-Line Interface: added command polyglotDerive to derive a target model from multiple polyglot models
@@ -20,7 +134,7 @@ New features in v6.6.3 \[11-Nov-2022\]
 
 \- Delta Lake/Databricks: added parsing of column list from CREATE VIEW statement in HQL file
 
-\- Delta Lake/Databricks: allowed column lists to be used for aliases as well as filter of columns from SELECT statements
+\- Delta Lake/Databricks: allowed column lists to be used for aliases as well as filter of columns from SELECT statements when reverse-engineering from HQL files
 
 \- Delta Lake/Databricks: added handling of jinja double curly braces in forward-engineering and ALTER scripts
 

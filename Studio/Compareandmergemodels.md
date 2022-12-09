@@ -56,7 +56,7 @@ The comparison handles the synchronized scrolling of hierarchical structures for
 
 &nbsp;
 
-The term "deletion", i.e. when an object is present in the left model but not in the right model, also includes cases where the left model evolved in parallel to the right model.&nbsp; In such case, the term "deletion" may be semantically inappropriate as it really represents an addition versus an earlier version of the left model.&nbsp; But hte application has no way to know such state, and convention was necessary.
+The term "deletion", i.e. when an object is present in the left model but not in the right model, also includes cases where the left model evolved in parallel to the right model.&nbsp; In such case, the term "deletion" may be semantically inappropriate as it really represents an addition versus an earlier version of the left model.&nbsp; But the application has no way to know such state, and convention was necessary.
 
 &nbsp;
 

@@ -1,6 +1,6 @@
 # Polyglot Data Model
 
-With version 5.2.0 of Hackolade Studio, users can now define structures once in a technology-agnostic polyglot data model, complete with denormalization and complex data types, then represent these structures in a variety of physical data models respecting the specific aspects of each target technology.
+Starting with version 5.2.0 of Hackolade Studio, users can now define structures once in a technology-agnostic polyglot data model, complete with denormalization and complex data types, then represent these structures in a variety of physical data models respecting the specific aspects of each target technology.
 
 &nbsp;
 
@@ -21,6 +21,14 @@ Exceptions are possible: some objects in a polyglot model can be flagged as poly
 Many customers having accumulated physical data models in Hackolade prior to the introduction of the new functionality will want to convert their target model into a polyglot model.&nbsp; This is done by opening the physical target model, selecting the menu Tools \> Polyglot \> Convert to Polyglot Model...
 
 ![Polyglot - convert to](<lib/Polyglot%20-%20convert%20to.png>)
+
+&nbsp;
+
+You must choose whether to make your target dependent of the Polyglot model being created.&nbsp; This is the recommended approach as the Polyglot model should now become the master of changes, and the target model should be dependent of the Polyglot model.
+
+&nbsp;
+
+![Polyglot - make target model dependent](<lib/Polyglot%20-%20make%20target%20model%20dependent.png>)
 
 &nbsp;
 

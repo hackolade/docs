@@ -4,9 +4,7 @@ You may explore your repository in many ways:
 
 &nbsp;
 
-\- explore data models
-
-\- explore all file
+\- [explore files](<Explorefiles.md>)
 
 \- [explore history](<Explorehistory.md>)
 

@@ -30,9 +30,39 @@ There are 8 primitive types (**null**, **boolean**, **int**, **long**, **floa
 
 &nbsp;
 
-Hackolade also supports [Avro logical types](<https://avro.apache.org/docs/1.8.1/spec.html#Logical%20Types> "target=\"\_blank\"").&nbsp;
+Hackolade also supports [Avro logical types](<https://avro.apache.org/docs/1.11.0/spec.html#Logical%20Types> "target=\"\_blank\"").&nbsp;
 
 &nbsp;
+
+**Warning:** the data types date/time/timestamp can be a bit of a trap.&nbsp; The label would make the reader think that the content is similar to what is generally understood in other technologies, like references to:
+
+\- date: a three-part value (year, month, and day) designating a point in time using the Gregorian calendar, which is assumed to have been in effect from the year 1 A.D.
+
+\- time: a three-part value (hour, minute, and second) designating a time of day using a 24-hour clock.
+
+\- timestamp: a six-part or seven-part value (year, month, day, hour, minute, second, and optional fractional second) with an optional time zone specification, that represents a date and time.
+
+&nbsp;
+
+But careful reading of the Avro specification reveals that they are **stored** in a completely different manner:
+
+\- a date logical type annotates an Avro int, where the int stores the number of days from the unix epoch, 1 January 1970 (ISO calendar).
+
+\- a time-millis logical type annotates an Avro int, where the int stores the number of milliseconds after midnight, 00:00:00.000.\
+\- a time-micros logical type annotates an Avro long, where the long stores the number of microseconds after midnight, 00:00:00.000000.\
+\- a timestamp-millis logical type annotates an Avro long, where the long stores the number of milliseconds from the unix epoch, 1 January 1970 00:00:00.000 UTC.\
+\- a timestamp-millis logical type annotates an Avro long, where the long stores the number of milliseconds from the unix epoch, 1 January 1970 00:00:00.000 UTC.\
+\- a timestamp-micros logical type annotates an Avro long, where the long stores the number of microseconds from the unix epoch, 1 January 1970 00:00:00.000000 UTC.\
+\- a local-timestamp-millis logical type annotates an Avro long, where the long stores the number of milliseconds, from 1 January 1970 00:00:00.000.\
+\-&nbsp; local-timestamp-micros logical type annotates an Avro long, where the long stores the number of microseconds, from 1 January 1970 00:00:00.000000.
+
+&nbsp;
+
+When reverse-engineering from other technology sources, Hackolade Studio maps to the above logical types, but if you transfer data, you must ensure to convert the data accordingly, if your connector does not do it automatically.
+
+&nbsp;
+
+**Enum warning:** you may want to read this [excellent article](<https://medium.com/expedia-group-tech/safety-considerations-when-using-enums-in-avro-schemas-82e18baaa081> "target=\"\_blank\"").&nbsp;
 
 &nbsp;
 

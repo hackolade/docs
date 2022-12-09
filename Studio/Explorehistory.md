@@ -67,13 +67,23 @@ The history view makes it easy to review the changes made in a commit.&nbsp; But
 
 &nbsp;
 
-Select which commit should be used in left pane and which other commit should be used in right pane for the comparison using the icons in the table.&nbsp; Your selection is retained even if you apply different filters. Once you have selected 2 commits, you can click on the "Compare" button to open the Compare dialog.
+Select which commit should be used in left pane and which other commit should be used in right pane for the comparison using the icons in the table.&nbsp; Your selection is retained even if you apply different filters.&nbsp;
 
 &nbsp;
 
 In the example below, we are comparing the state of the repository in the "contract" branch with its state in the "main" branch.
 
 ![Workgroup - History commits compare selection](<lib/Workgroup%20-%20History%20commits%20compare%20selection.png>)
+
+Once you have selected 2 commits, you can click on the "Compare" button to open the Compare dialog:
+
+![Visually compare commits](<lib/Compare%20and%20merge%20-%20compare%20view.png>)
+
+&nbsp;
+
+&nbsp;
+
+## Other actions
 
 All the actions related to a given entry of the history are also available through a contextual menu. You just need to click on the 3 dots to open it.
 
