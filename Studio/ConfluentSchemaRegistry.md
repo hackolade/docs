@@ -26,19 +26,19 @@ For the details on how to define Avro schema definitions in Hackolade, you shoul
 
 #### Message
 
-A data item that is made of a key (optional) and a value.&nbsp; Messages are not handled or managed by Hackolade.
+A data item that is made of a key (optional) and a value (the Kafka data payload.)&nbsp; Messages are not handled or managed by Hackolade. A schema type suffix, key or value, may be specified in the subject name.
 
 #### Topic
 
-A collection of of messages, where ordering is maintained for messages with the same key.&nbsp; Topics are not handled or managed by hackolade, but can be referred to in some circumstances.
+A collection of of messages, where ordering is maintained for messages with the same key.&nbsp; Topics are not handled or managed by Hackolade, but can be referred to in some of the subject name strategies (see below.)
 
 #### Schema
 
-A description of how data should be structured.
+A description of how data should be structured.&nbsp; Each schema in Confluent Schema Registry is saved (registered) under a subject.
 
 #### Subject
 
-A named ordered history of schema versions.
+A named ordered history of schema versions.&nbsp; A subject can be seen as a scope in which a schema can evolve and is versioned.
 
 &nbsp;
 
@@ -46,11 +46,11 @@ A named ordered history of schema versions.
 
 Hackolade supports the 3 strategies offered by the Confluent Schema Registry:&nbsp;
 
-| **Strategy** | **Description** |
-| --- | --- |
-| TopicNameStrategy | Derives subject name from topic name (default) |
-| RecordNameStrategy | Derives subject name from the record name, and provides a way to group logically related events that may have different data structures under a subject. |
-| TopicRecordNameStrategy | Derives the subject name from topic and record name, as a way to group logically related events that may have different structures under a subject. |
+| **Strategy** | **Description** | **Format** |
+| --- | --- | --- |
+| TopicNameStrategy | Derives subject name from topic name (default) | \<topic name\>-\<schema type suffix (optional)\> |
+| RecordNameStrategy | Derives subject name from the record name, and provides a way to group logically related events that may have different data structures under a subject. | \<avro namespace\>-\<avro record name\>-\<schema type suffix (optional)\> |
+| TopicRecordNameStrategy | Derives the subject name from topic and record name, as a way to group logically related events that may have different structures under a subject. | \<topic name\>-\<avro namespace\>-\<avro record name\>-\<schema type suffix (optional)\> |
 
 
 &nbsp;
