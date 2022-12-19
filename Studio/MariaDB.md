@@ -48,7 +48,7 @@ All data in MariaDB is stored in database tables, logically structured as collec
 
 ## Unique, Primary, and Foreign Keys, plus Not Null, Check and Default constraints
 
-Constraints in MariaBD are predefined rules and restrictions that are enforced in a single column or multiple columns, regarding the values allowed in the columns, to maintain the integrity, accuracy, and reliability of that column’s data. Constraints in MariaDB can be defined at the column level, where it is specified as part of the column definition and will be applied to that column only, or declared independently at the table level. 
+Constraints in MariaDB are predefined rules and restrictions that are enforced in a single column or multiple columns, regarding the values allowed in the columns, to maintain the integrity, accuracy, and reliability of that column’s data. Constraints in MariaDB can be defined at the column level, where it is specified as part of the column definition and will be applied to that column only, or declared independently at the table level. 
 
 &nbsp;
 
@@ -106,7 +106,7 @@ If you store JSON within LONGTEXT columns, Hackolade allows for the schema desig
 
 ## Reverse-Engineering
 
-The MariaDB engine can hosted on-premises, or on virtualized machines in a private or public cloud Details on how to connect Hackolade to MariaDB can be found on [this page](<ConnecttoaMariaDBinstance.md>).
+The MariaDB database can be hosted on-premises, or on virtualized machines in a private or public cloud Details on how to connect Hackolade to MariaDB can be found on [this page](<ConnecttoaMariaDBinstance.md>).
 
 &nbsp;
 
