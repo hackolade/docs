@@ -88,9 +88,9 @@ fk: foreign key
 
 fm: foreign master
 
-dk: denormalized key (parent of a foreign key.)&nbsp; Marks keys that are denormalized elsewhere in the model.
+dk: destination or denormalized key (parent of a foreign key.)&nbsp; Marks keys that are the parent of a foreign key or are denormalized elsewhere in the model.
 
-dm: denormalized master (parent of a foreign master.)&nbsp; Marks non-key attributes that are denormalized elsewhere in the model. &nbsp;
+dm: destination or denormalized master (parent of a foreign master.)&nbsp; Marks non-key attributes that are the parent of a foreign attribute or are denormalized elsewhere in the model. &nbsp;
 
 PK: partition key, where applicable
 

@@ -109,6 +109,10 @@ In Neo4j, it is possible to create an [index](<https://neo4j.com/docs/developer-
 
 &nbsp;
 
+With Neo4j version 5, new indexes types have been added: range, text, point, and full-text.
+
+&nbsp;
+
 ## Forward-Engineering
 
 Cypher is a declarative graph query language that allows for expressive and efficient querying and updating of a property graph.&nbsp; Hackolade dynamically generates [Cypher](<https://neo4j.com/developer/cypher/> "target=\"\_blank\"") code as the model is created via the application.

@@ -772,7 +772,7 @@ New features in v5.1.2 \[30-Jul-2021\]
 
 \- Model API: greyed out deactivated entities in object selection dialog
 
-\- Command-Line Interface: added forwEng arguments to allow publication of Avro and JSON Schemeleca to schema registries (Confluent, Pulsar, Azure for Event Hubs)
+\- Command-Line Interface: added forwEng arguments to allow publication of Avro and JSON Schema to schema registries (Confluent, Pulsar, Azure for Event Hubs)
 
 \- Collibra: added publishing via Command-Line Interface to Data Dictionary
 

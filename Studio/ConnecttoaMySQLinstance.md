@@ -10,11 +10,13 @@ In the Hackolade connection settings dialog, give a meaningful name to the conne
 
 ![MySQL connection settings](<lib/MySQL%20connection%20settings.png>)
 
+&nbsp;
+
 If required, enter your username and password
 
 &nbsp;
 
-![Image](<lib/MySQL%20connection%20settings%20auth.png>)
+![MySQL connection settings auth](<lib/MariaDB%20connection%20settings%20auth.png>)
 
 &nbsp;
 

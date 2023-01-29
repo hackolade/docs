@@ -64,17 +64,23 @@ To exclude some modified models from your commit,&nbsp; simply uncheck the check
 
 ## Stash changes
 
-&nbsp;
-
-*Coming soon*
+Temporarily shelve your uncommitted changes for later reuse, so you can work on something else in the meantime.
 
 &nbsp;
 
-You may decide that the changes previously saved but not yet committed should not be committed yet, because you urgently need to work on something else, or you have changes conflicting with a commit you need to pull.&nbsp; You may stash away your uncommitred changes, then re-apply them at a later stage.
+Imagine that you are busy working on a data model.&nbsp; You made some changes but they are not ready to be committed yet.&nbsp; For one reason or another, you now need to put your work on hold and switch to another task, potentially on a different branch of the repository.&nbsp; You don't want to discard your changes but you don't want to commit them either.&nbsp; You just want to park your changes and re-apply them later when you start working on this task again.&nbsp; That's exactly what the STASH action is meant for.&nbsp; You may stash away your uncommitted changes, then re-apply them at a later stage.
 
 &nbsp;
 
 ![Workgroup stash changes](<lib/Workgroup%20stash%20changes.png>)
+
+&nbsp;
+
+When stashing your changes, you should provide a description.&nbsp; Doing so will make it easier for you to find your changes, knowing that you can create multiple stashes containing different change sets.&nbsp; You also have the option to stash all your changes or to cherry-pick some files only.
+
+&nbsp;
+
+Like the DISCARD action, the STASH action will cancel your changes. Unlike the DISCARD action, it will save them for later reuse. You can find them back via the left menu, by clicking on "Stashes".
 
 &nbsp;
 

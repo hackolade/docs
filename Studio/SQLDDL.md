@@ -42,7 +42,7 @@ Data Definition Language (DDL) is a vocabulary used to define data structures in
 
 &nbsp;
 
-If you generate a DDL from Oracle, Microsoft SQL Server, MySQL, PostgreSQL, Snowflake, Hadoop Hive, etc., you can then read it with Hackolade and generate a model of the schema.
+If you generate a DDL from Oracle, Microsoft SQL Server, MariaDB, MySQL, PostgreSQL, Snowflake, Hadoop Hive, etc., you can then read it with Hackolade and generate a model of the schema.
 
 &nbsp;
 
@@ -72,7 +72,7 @@ If you wish to force the destination of the reverse-engineering operation, you m
 
 &nbsp;
 
-Hackolade currently supports the following SQL dialects: Oracle, MariaDB, MySQL, SQL Server, DB2, PostgreSQL, Informix, Refshift, Snowflake, and Teradata.
+Hackolade currently supports the following SQL dialects: Oracle, MariaDB, MySQL, SQL Server, DB2, PostgreSQL, Informix, Redshift, Snowflake, and Teradata.
 
 &nbsp;
 

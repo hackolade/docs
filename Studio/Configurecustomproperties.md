@@ -135,7 +135,7 @@ Feel free to download [here](<https://hackolade.com/schemas/custProps/properties
 
 ## Attribute details tab for a data type
 
-When it comes to custom properties in the Details tab of attributes, things are slightly trickier, but not much.&nbsp; It is important to understand that the set of properties is different for each data type.&nbsp; As a result, if a custom property is applicable to more than one data type, it is required to repeat your custom properties for each of them.&nbsp; Alternatively, if you have a set of custom properties that are generic, you could decided to create a custom tab.&nbsp; Creating a custom tab is reviewed in a section further down.
+When it comes to custom properties in the Details tab of attributes, things are slightly trickier, but not much.&nbsp; It is important to understand that the set of properties is different for each data type.&nbsp; As a result, if a custom property is applicable to more than one data type, it is required to repeat your custom properties for each of them.&nbsp; Alternatively, if you have a set of custom properties that are generic, you could decide to create a custom tab.&nbsp; Creating a custom tab is reviewed in a section further down.
 
 &nbsp;
 
@@ -143,7 +143,7 @@ When it comes to custom properties in the Details tab of attributes, things are 
 
 &nbsp;
 
-This time, let's add custom properties at the attribute (aka field) level for the JSON target.&nbsp; It will be a dropdown control for a list of GDPR classifications..
+This time, let's add custom properties at the attribute (aka field) level for the JSON target.&nbsp; It will be a dropdown control for a list of GDPR classifications.
 
 &nbsp;
 

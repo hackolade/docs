@@ -4,11 +4,15 @@ After downloading Hackolade, you need to obtain and validate an activation key b
 
 &nbsp;
 
-**Important:** the following domains must be whitelisted: [https://hackolade.com](<https://hackolade.com> "target=\"\_blank\""),&nbsp; [https://quicklicensemanager.com](<https://quicklicensemanager.com/> "target=\"\_blank\""), [https://qlmdr.com](<https://qlmdr.com> "target=\"\_blank\""), and [https://github.com](<https://github.com> "target=\"\_blank\"")
+You can initiate the process of getting an activation key either from the website, or from inside the application.&nbsp; Once you have an activation key, it needs to be validated from the application.
 
 &nbsp;
 
-You can initiate the process of getting an activation key either from the website, or from inside the application.&nbsp; Once you have an activation key, it needs to be validated from the application.
+**IMPORTANT NOTE:** Your license key is a valuable asset and should be treated with care.&nbsp; If you change computers or a user leaves the organization, take a moment to release the license key on the old PC before retiring it, so your license key can be validated again on your new machine.  All details can be found [here](<Transferalicensetoanewcomputer.md> "Transfer license to a new computer"). &nbsp;
+
+&nbsp;
+
+**Important:** the following domains must be whitelisted: [https://hackolade.com](<https://hackolade.com> "target=\"\_blank\""),&nbsp; [https://quicklicensemanager.com](<https://quicklicensemanager.com/> "target=\"\_blank\""), [https://qlmdr.com](<https://qlmdr.com> "target=\"\_blank\""), and [https://github.com](<https://github.com> "target=\"\_blank\"")
 
 &nbsp;
 
@@ -213,6 +217,10 @@ Example: having 4 Hackolade users on a single VM is the equivalent of having 4 i
 &nbsp;
 
 ### VM configuration
+
+**Note:** it is critical that the VM setup is such that you access a **persistent** VM instance of the application.&nbsp; Non-persistent instances will cause license issues.
+
+&nbsp;
 
 Hackolade licensing is enforced through registration on our license server of a combination of unique identifiers, including the UUID of the computer where Hackolade is installed, a client workstation identification for the PC accessing the application, and the user login.  Each unknown combination reserves one seat on our license server, until you reach the total number of seats purchased for the submitted license key.
 

@@ -78,7 +78,7 @@ A Databricks view is a searchable object in a database, which can be defined by 
 
 &nbsp;
 
-Hackolade supports Delta Lake views, via a SELECT of columns of the underlying base tables.
+Hackolade supports Delta Lake views, via a SELECT of columns of the underlying base tables.&nbsp; We also support the \[column\_list\] syntax, but note that if columns are present in the SELECT statement, they take precedence over the column\_list.
 
 &nbsp;
 

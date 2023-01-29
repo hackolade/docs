@@ -10,6 +10,8 @@ In the Hackolade connection settings dialog, give a meaningful name to the conne
 
 ![MariaDB connection settings](<lib/MariaDB%20connection%20settings.png>)
 
+&nbsp;
+
 If required, enter your username and password
 
 &nbsp;

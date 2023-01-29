@@ -52,3 +52,13 @@ Click on the "Create" button, then copy-paste the generated token in Hackolade S
 
 **Note:** the use of regular username and password has been deprecated by Azure DevOps for security reasons on March 2, 2020 (read [this page](<https://devblogs.microsoft.com/devops/azure-devops-will-no-longer-support-alternate-credentials-authentication/> "target=\"\_blank\"") for more details). That's why it is not supported by Hackolade.
 
+&nbsp;
+
+## Troubleshooting
+
+For issues when Git clone or push fails to an Azure DevOps repository.&nbsp; Please consult this [Microsoft article](<https://learn.microsoft.com/en-us/troubleshoot/azure/devops/git-clone-push-operation-failing-devops-repo> "target=\"\_blank\"")..
+
+&nbsp;
+
+&nbsp;
+

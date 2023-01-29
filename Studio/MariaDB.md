@@ -106,7 +106,7 @@ If you store JSON within LONGTEXT columns, Hackolade allows for the schema desig
 
 ## Reverse-Engineering
 
-The MariaDB database can be hosted on-premises, or on virtualized machines in a private or public cloud Details on how to connect Hackolade to MariaDB can be found on [this page](<ConnecttoaMariaDBinstance.md>).
+The MariaDB database can be hosted on-premises, or on virtualized machines in a private or public cloud Details on how to connect Hackolade to MariaDB or SkySQL can be found on [this page](<ConnecttoaMariaDBinstance.md>).
 
 &nbsp;
 

@@ -50,9 +50,10 @@ Keyboard shortcuts:
 | Ctrl+F11 | Cmd+F11 | Display lineage (aka impact analysis aka where-used)&nbsp; of a definition or denomalization |
 | Ctrl+F1 | Cmd+F1 | Toggle display of Object Browser |
 | Ctrl+F2 | Cmd+F2 | Toggle display of Properties Pane |
-| \<mouse wheel up/down\> | &nbsp; | Move up or down in ERD and hierarchical schema view |
-| Shift+\<mouse wheel up/down\> | &nbsp; | Move left or right in ERD and hierarchical schema view |
-| Ctrl+\<mouse wheel up/down\> | &nbsp; | Zoom in or out in ERD and hierarchical schema view |
+| \<mouse wheel up/down\> | \<mouse wheel up/down\> | Move up or down in ERD and hierarchical schema view |
+| Shift+\<mouse wheel up/down\> | Shift+\<mouse wheel up/down\> | Move left or right in ERD and hierarchical schema view |
+| Ctrl+\<mouse wheel up/down\> | Cmd+\<mouse wheel up/down\> | Zoom in or out in ERD and hierarchical schema view |
+| Ctrl+Shift+\<mouse movement\> | Cmd+Shift+\<mouse movement\> | Draw area in ERD for multiple selection of entities |
 | Ctrl+Down arrow | Cmd+Down arrow | Change to context below in the Context Bar |
 | Ctrl+Up arrow | Cmd+Up arrow | Change to context above in the Context Bar |
 | Ctrl+G | Cmd+G | Open Repository Context |

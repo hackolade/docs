@@ -1,5 +1,203 @@
 # v6.x
 
+New features in v6.9.0 \[03-Feb-2023\]
+
+\- ERD: added possibility to adjust relationship lines by moving anchors and segments, in addition to previously available moving of entity boxes
+
+&nbsp;
+
+&nbsp;
+
+New features in v6.8.5 \[27-Jan-2023\]
+
+\- Compare and Merge Models: generation of delta model for ALTER script when a model has no technical names, while the other has both business names and technical names: fallback on the business names of the model with no technical names
+
+\- Custom properties: added validation and warning badge for multipleCheckboxSelect property
+
+\- JSON document and Schema reverse-engineering: added trimming of invisible characters
+
+\- ERD: prevented duplication of of references during drag-and-drop operations
+
+\- Foreign key relationships: preserve when replacing an attribute by a reference to a definition (internal, model, or external)
+
+\- JSON in RDBMS: enabled simple polymorphism with multiple data types in JSON fields (complex polymorphism was already allowed with oneOf choices)
+
+\- Avro/Parquet: upgrade Azure Blob Storage SDK
+
+\- Avro/Parquet: shortened delay in display of progress bar
+
+\- Avro/Parquet: allowed to open branches without losing previously selected files in other branches
+
+\- Delta Lake/Databricks: added database name to columns in select statement when there is no select statement and columns reference tables in different databases
+
+\- Neo4j: added support for Neo4j v5 and AuraDB, including new indexes and constraints
+
+&nbsp;
+
+New features in v6.8.4 \[20-Jan-2023\]
+
+\- Workgroup Edition: added ability to STASH local changes from the commit screen, plus review, apply, drop, handle conflicts
+
+\- PDF documentation and PDFdiagram print: replaced PhantomJS library for enhanced performance and increased stability
+
+\- JSON Schema: added user-friendly "Display name" property for conditionals for documentation purposes (not forward-engineered, as not part of spec)
+
+\- JSON Schema: prevented possibility to use copy/paste workaround to create multiple conditionals at same level
+
+\- Avro/Parquet reverse-engineering from cloud storage: set default to combine schemas
+
+\- Avro/Parquet reverse-engineering from cloud storage: increased logging of critical operations
+
+\- BigQuery: added configuration of external table options, plus forward- and reverse-engineering of external table options&nbsp;
+
+\- BigQuery: added support for new JSON data type
+
+\- BigQuery: disabled ability to create multiple data types for a columns
+
+\- BigQuery: disabled possibility to create pattern columns, while leaving the possibility inside a column with JSON data type
+
+\- Couchbase: enabled possibility for numeric fields to be marked as primary key of document type for documentation purposes
+
+\- Couchbase: adjusted reverse-engineering logic to continue process after failure to fetch documents from N1QL query
+
+\- MariaDB: added validation warning for empty index names
+
+\- MySQL: added handling of tablespaces
+
+\- MySQL: added Blackhole engine
+
+\- MySQL: added validation warning for empty index names
+
+\- PostgreSQL: added array type for domain data type
+
+\- PostgreSQL: added forcing user to create UDT according to spec for data types domain, enum, composite, and range\_udt https://www.postgresql.org/docs/current/datatype-enum.html
+
+&nbsp;
+
+New features in v6.8.3 \[13-Jan-2023\]
+
+\- References: added shortcut to root level objects or dialog for nested objects in internal and model definitions when adding, inserting, appending
+
+\- Azure Data Lake Storage: improved performance when reverse-engineering Avro, JSON or Parquet files in nested sub-folders
+
+\- Avro: added name property when resolving UDTs
+
+\- Avro: adjusted resolution of references with multiple data types
+
+\- Couchbase: allowed fallback on N1QL for index retrieval if issues encountered in retrieval via REST API
+
+\- MySQL: implemented generation of ALTER script from delta model
+
+\- OpenAPI/Swagger/EventBridge:allowed additional ways to create FK relationships (for documentation purposes) in Schema ERD View tab
+
+\- PostgreSQL: added visual display for array types in ERD
+
+\- Synapse: added handling for empty tableInfo data and null table\_type
+
+&nbsp;
+
+New features in v6.8.2 \[05-Jan-2023\]
+
+\- JSON Schema forward-engineering: adjusted filtering of nested definitions when one is undefined
+
+\- Avro: allowed Doc property of a definition to be replaced by reference description
+
+\- Databricks: adjusted count of number of table buckets when reverse-engineering from HQL file
+
+\- Elasticsearch: added reverse-engineering from cloud instance
+
+\- Glue Data Catalog: adjusted count of number of table buckets when reverse-engineering from HQL file
+
+\- Hive: adjusted count of number of table buckets when reverse-engineering from HQL file
+
+\- Parquet: improved speed of reverse-engineering on Azure Data Lake Storage
+
+\- Synapse: improved detection of parent schema of views
+
+&nbsp;
+
+New features in v6.8.1 \[30-Dec-2022\]
+
+\- Excel: added full path in technical names of nested objects
+
+\- Delta Lake/Databricks: added handling of view table properties, plus added numBuckets cast to number
+
+\- Glue Data Catalog: added handling of view table properties, plus added numBuckets cast to number
+
+\- Hive: added numBuckets cast to number
+
+\- PostgreSQL: added support for v15, including new property NULLS \[NOT\] DISTINCT for columns, table constraints and table indexes
+
+\- PostgreSQL: added support for array types
+
+\- Synapse: added reverse-engineering of views referencing tables in other schemas, and of views in schemas without tables
+
+&nbsp;
+
+New features in v6.8.0 \[23-Dec-2022\]
+
+\- MySQL: added plugin with full support for forward-engineering of DDL, and reverse-engineering including inference of schemas in LONGTEXT data types
+
+\- Tech refresh of Electron (v22.0.0), NodeJS (v16.17.1), Chromium (v108.0.5359.62), V8 (v10.8) and Electron-related modules
+
+\- Mac: fixed shortcut key conflict on Ventura MacOS after screen capture
+
+\- Schema Registries: fixed issue in selection modal when version labels sometimes overlapped when filter is active
+
+\- Cassandra/ScyllaDB: adjusted ALTER script in case of change in Clustering Key
+
+\- MongoDB/DocumentDB/Cosmos DB with MongoDB API: enhanced BSON parser
+
+\- Neo4j and other graph targets: fixed alignment of nodes when not using forced-directed layout
+
+\- PostgreSQL: adjusted parsing of SELECT statements to allow view columns with no underlying table columns (NULL::character varying AS...)
+
+\- PostgreSQL: enhanced reverse-engineering in case of duplicate views in same DDL
+
+\- Redshift: enhanced handling of deactivated columns in forward-engineering
+
+\- Swagger/OpenAPI/EventBridge: enabled copy/paste in responses of interactive SwaggerUI pane
+
+&nbsp;
+
+New features in v6.7.3 \[16-Dec-2022\]
+
+\- Tools \> Options \> Forward-Engineering: added parameter to skip COMMENT in DDL for SQL and SQL-like targets
+
+\- Reverse-Engineering selection dialog: adjusted filter so schema versions don't require matching
+
+\- Undo/Redo: various enhancements
+
+\- Workgroup: added basic support for git subtrees
+
+\- Workgroup: added possibility to commit and push in a single step, provided that there are commits to be pulled first
+
+\- Workgroup: updated simple-git library to latest version
+
+\- Workgroup: adjusted SSH password prompt modal
+
+\- Workgroup: added logging of git configuration when opening a repository
+
+\- Avro: added inference of Subject Name Strategy during reverse-engineering of Confluent Schema Registry
+
+\- Cassandra: added determination of PROFILE value from DESCRIBE SEARCH INDEX during reverse-engineering
+
+\- Cassandra: removed from ‘Profile’ *\<spaceSavingNoTextfield\>* for CQL if DSE version is 6 and higher
+
+\- Cassandra/ScyllaDB: added tolerance for empty lists in reverse-engineering of UDTs
+
+\- Cassandra/ScyllaDB: moved data transfer to UDThelper
+
+\- Cassandra: added check ‘Profile’ values - \<spaceSavingNoTextfield\> and \<spaceSavingSlowTriePrecision\> if they are missing in the reference model
+
+\- PostgreSQL: improved parsing of complex functions during reverse-engineering
+
+\- Protobuf: added conversion of array attributes from Polyglot
+
+\- Swagger/OpenAPI: enabled auto-height and auto-width for entities in Schema ERD View
+
+&nbsp;
+
 New features in v6.7.2 \[09-Dec-2022\]
 
 \- Added validation warnings in ObjectBrowser and ERD for deeply nested attributes
@@ -14,7 +212,7 @@ New features in v6.7.2 \[09-Dec-2022\]
 
 \- Avro: added capture of Schema Registry URL during reverse-engineering from Confluent
 
-\- Avro: generate subject name according to strategy and schema type unless specified manually
+\- Avro: added generation of subject name according to strategy and schema type unless specified manually
 
 \- Avro: added validation for Topic and Subject properties
 
@@ -36,7 +234,7 @@ New features in v6.7.1 \[02-Dec-2022\]
 
 \- Compare and Merge: disabled rendering of properties for ghost objects
 
-\- Workgroup Bitbucket Server: enabled network proxy settings
+\- Workgroup Bitbucket Server: enabled network proxy settings, so self-signed certificates in local store are automatically recognized
 
 \- Avro: added support for newly introduced Avro spec feature of symbol default property for enum data type
 

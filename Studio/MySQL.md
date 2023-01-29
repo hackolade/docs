@@ -1,17 +1,14 @@
 # MySQL
 
-MySQL is one of the most widely used relational database management system (RDBMS) out there.&nbsp;  MsSQL is free and open-source software under the terms of the GNU General Public License, and is also commercially supported. 
+MySQL is one of the most widely used relational database management system (RDBMS) on the market.&nbsp; MySQL is free and open-source software under the terms of the GNU General Public License, and is also commercially supported.&nbsp;
 
 &nbsp;
 
-With version 10, MySQL introduced JSON functions to combine NoSQL and relational concepts in the same database. Users can combine classic relational columns with columns that contain documents formatted as JSON text in the same table, parse and import JSON documents in relational structures, or format relational data to JSON text.
-
-MySQL supports native JSON data types and functions to combine NoSQL and relational concepts in the same database since version 5.7.8. The native JSON data types allows you to store JSON documents more efficiently than the JSON text format in the previous versions.
-MySQL stores JSON documents in an internal format that allows quick read access to document elements. The JSON binary format is structured in the way that permits the server to search for values within the JSON document directly by key or array index, which is very fast.
+MySQL supports native JSON data types and functions to combine NoSQL and relational concepts in the same database since version 5.7.8. The native JSON data types allows you to store JSON documents more efficiently than the JSON text format in the previous versions. MySQL stores JSON documents in an internal format that allows quick read access to document elements. The JSON binary format is structured in the way that permits the server to search for values within the JSON document directly by key or array index, which is very fast.
 
 &nbsp;
 
-To perform data modeling for MySQL with Hackolade, you must first download the MySQL [plugin](<https://hackolade.com/help/DownloadadditionalDBtargetplugin.html> "target=\"\_blank\"").  
+To perform data modeling for MySQL with Hackolade, you must first download the MySQL [plugin.](<https://hackolade.com/help/DownloadadditionalDBtargetplugin.html> "target=\"\_blank\"")
 
 &nbsp;
 
@@ -27,7 +24,7 @@ The data model in the picture below results from the data modeling of the [Sakil
 
 &nbsp;
 
-![MySQL workspace](<lib/MySQL%20workspace.png>)
+![MySQL workspace](<lib/MariaDB%20workspace.png>)
 
 &nbsp;
 
@@ -39,7 +36,7 @@ MySQL tables are contained within database object containers.&nbsp; The database
 
 ## Database engines
 
-Storage engine, like ![InnoDB](<https://dev.mysql.com/doc/refman/8.0/en/innodb-introduction.html>), handle data at the physical level. Storage engines are designed to efficiently manage data files, the data, and the index caches.
+Storage engines, like [InnoDB](<https://dev.mysql.com/doc/refman/8.0/en/innodb-introduction.html> "target=\"\_blank\""), handle data at the physical level. Storage engines are designed to efficiently manage data files, the data, and the index caches.
 
 &nbsp;
 
@@ -99,7 +96,7 @@ Hackolade dynamically generates the DDL script to create databases, tables, colu
 
 &nbsp;
 
-![MySQL DDL Forward-Engineering](<lib/MySQL%20DDL%20Forward-Engineering.png>)
+![MySQL DDL Forward-Engineering](<lib/MariaDB%20DDL%20Forward-Engineering.png>)
 
 &nbsp;
 
@@ -109,7 +106,7 @@ If you store JSON within LONGTEXT columns, Hackolade allows for the schema desig
 
 ## Reverse-Engineering
 
-The MySQL database can be hosted on-premises, or on virtualized machines in a private or public cloud Details on how to connect Hackolade to MySQL can be found on [this page](<ConnecttoaMySQLinstance.md>).
+The MySQL engine can be hosted on-premises, or on virtualized machines in a private or public cloud Details on how to connect Hackolade to MySQL can be found on [this page](<ConnecttoaMySQLinstance.md>).
 
 &nbsp;
 
@@ -117,4 +114,5 @@ The Hackolade process for reverse-engineering of MySQL databases includes the ex
 
 &nbsp;
 
-For more information on MySQL in general, please consult the [website](<https://MySQL.org/> "target=\"\_blank\"") and [documentation](<https://MySQL.org/documentation/> "target=\"\_blank\""). &nbsp;
+For more information on MySQL in general, please consult the [website](<https://mariadb.org/> "target=\"\_blank\"") and [documentation](<https://mariadb.org/documentation/> "target=\"\_blank\""). &nbsp;
+
