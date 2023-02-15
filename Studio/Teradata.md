@@ -108,7 +108,7 @@ Hackolade dynamically generates the DDL script to create tables, columns and the
 
 &nbsp;
 
-If you store documents in JSON or JSONB columns, Hackolade allows for the schema design of those documents.&nbsp; However, the corresponding JSON structure is **not** forward-engineered in the DDL script, but is useful for developers, analysts and designers.
+If you store documents in JSON columns, Hackolade allows for the schema design of those documents.&nbsp; However, the corresponding JSON structure is **not** forward-engineered in the DDL script, but is useful for developers, analysts and designers.
 
 &nbsp;
 
@@ -120,11 +120,11 @@ The Teradata instance can be hosted on-premises, or on virtualized machines in a
 
 &nbsp;
 
-The Hackolade process for reverse-engineering of Teradata instances includes the execution of statements to discover databases, tables, columns and their types, indexes and constraints.&nbsp; For JSON and JSONB columns, Hackolade performs statistical sampling of records followed by probabilistic inference of the JSON document schema.
+The Hackolade process for reverse-engineering of Teradata instances includes the execution of statements to discover databases, tables, columns and their types, indexes and constraints.&nbsp; For JSON columns, Hackolade performs statistical sampling of records followed by probabilistic inference of the JSON document schema.
 
 &nbsp;
 
-**Important:** when reverse-engineering a Teradata instance, the (Teradata) user used to connect to the target instance should have access to read **SYSUDTLIB** system database to retrieve DDL scripts for UDT, UDM etc...
+**Important:** when reverse-engineering/forward-engineering a Teradata instance, the (Teradata) user used to connect to the target instance should have access to read **SYSUDTLIB** system database to retrieve DDL scripts for UDT, UDM etc...
 
 &nbsp;
 
