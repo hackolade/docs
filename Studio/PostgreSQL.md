@@ -78,7 +78,7 @@ Hackolade supports the most common types of PostgreSQL indexes. &nbsp;
 
 ## Data types
 
-PostgreSQLhas a rich set of [data types](<https://www.postgresql.org/docs/current/datatype.html> "target=\"\_blank\"") availble to users.&nbsp; A data type is an attribute that specifies the type of data that the object can hold: integer data, character data, monetary data, date and time data, binary strings, and so on.
+PostgreSQLhas a rich set of [data types](<https://www.postgresql.org/docs/current/datatype.html> "target=\"\_blank\"") available to users.&nbsp; A data type is an attribute that specifies the type of data that the object can hold: integer data, character data, monetary data, date and time data, binary strings, and so on.
 
 &nbsp;
 
