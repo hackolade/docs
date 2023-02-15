@@ -76,7 +76,7 @@ Additionally, in JSON columns, Hackolade supports the data modeling of JSON docu
 &nbsp;
 
 Structured/User-defined data types are based on the data types in Teradata. Structured / User-defined data types can be used when several tables store the same domain of values in a column and must ensure that these columns have exactly the same data type, length, and NULLability.
-- JSON: The JSON data type represents data that is in JSON (JavaScript Object Notation) format.
+- JSON: The JSON data type represents data that is in JSON (JavaScript Object Notation) format.  The JSON data type can be stored physically in BSON (Binary JSON) or UBJSON (Universal Binary JSON).
 - UDT: (User-Defined Type) data types are custom data types that you define to model the structure and behavior of the data used by your applications.
 - XML: The XML data type represents XML content. The data is stored in a compact binary form that preserves the information set of the XML document, including the hierarchy information and type information derived from XML validation.+
 
