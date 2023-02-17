@@ -4,7 +4,11 @@ If you have data models in PowerDesigner and want to leverage them in Hackolade 
 
 &nbsp;
 
-If the XSD does not contain primary key and foreign key constraints, this reverse-engineering process cannot import them, but it is still possible to use the functionality to [Infer PKs \& FKs](<InferPrimaryKeysandForeignKeyRel.md>).
+If the XSD does not contain primary key and foreign key constraints, this reverse-engineering process cannot import them, but it is still possible to use the functionality to [Infer PKs \& FKs](<InferPrimaryKeysandForeignKeyRel.md>).&nbsp; The easiest is to setup the XML extension appropriately:
+
+![PowerDesigner XML extension](<lib/PowerDesigner%20XML%20extension.png>)
+
+&nbsp;
 
 &nbsp;
 
@@ -26,7 +30,9 @@ From PowerDesigner, the process is as follows:
 
 &nbsp;
 
-![Image](<lib/PowerDesigner%20-%20Export%20to%20XML%20Details.png>)
+&nbsp;
+
+![PowerDesigner - Export to XML Details](<lib/PowerDesigner%20-%20Export%20to%20XML%20Details.png>)
 
 &nbsp;
 

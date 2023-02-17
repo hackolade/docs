@@ -98,9 +98,17 @@ In RDBMS plugins, it is possible to represent composite (aka compound) foreign k
 
 With large and complex relational models, the automatic positioning of foreign key relationship lines might look insufficiently organized.&nbsp; As a user, you might want to adjust the lines differently.
 
+&nbsp;
+
 ### Automatic or manual adjustments
 
 You may move entity boxes around by dragging the box title bar, in which case the existing lines follow and auto-adjust.&nbsp; Or you may choose to adjust lines separately, as described below.
+
+&nbsp;
+
+![Image](<lib/Adjustable\_relationship\_lines\_medium.gif>)
+
+&nbsp;
 
 ### Line geometries
 
@@ -118,36 +126,55 @@ An oblique line must have a single segment and be straight. The angle between th
 
 ![ER lines - oblique](<lib/ER%20lines%20-%20oblique.png>)
 
+&nbsp;
+
 ### Line anchors and segments
 
-Each line has 2 anchors, one on each end, attached to their respective entity box.&nbsp; A line can have one or more segments, depending on the relative positions of the entity boxes and the line anchors.&nbsp; Not that we advise it, but it is possible for a line to have as many as 7 segments.
+When you select a line, it gets highlighted, and nodes appear at each end, plus in middle segments, if any.&nbsp; Nodes are are used to move the anchors and segments, by click-and-drag.&nbsp; The mouse cursor when clicking indicates the possible direction(s) you may drag the node.
+
+&nbsp;
+
+Each line has 2 anchors, one on each end and represented by a node, attached to their respective entity box.&nbsp; Middle segments, i.e. segment other than the ones at the end of the line, each have a node in the middle of the segment.
+
+&nbsp;
+
+![ER lines - 3 segments](<lib/ER%20lines%20-%203%20segments.png>)
+
+&nbsp;
+
+A line may have one or more segments, depending on the relative positions of the entity boxes and the line anchors.&nbsp; We don't advise this, but it is possible for a line to have as many as 7 segments.
 
 ![ER lines - max segments](<lib/ER%20lines%20-%20max%20segments.png>)
 
 &nbsp;
 
-When selecting a line, each segment displays a handle, in the form of a big dot, indicating that you can make adjustments.&nbsp; For the segments attached to the entity box, the handle is the anchor itself.&nbsp; For other segments, the handle is located in the middle of the segment.
+The number of segments is automatically adapted when you move anchors to a different side of its entity box.
 
 &nbsp;
-
-The number of segments is automatically adapted when you move anchors to a different side of its entity box.
 
 ### Movements
 
 You may move:
 
-* the whole line if it is a single-segment straight line, whether orthogonal or oblisu,
+* the whole line, whether orthogonal or oblique,
 * each anchor,
 * or each individual segment of a line.
 
 &nbsp;
 
-To move a segment, you may grab anywhere in the segment, as soon as the mouse pointer turns into a 4-headed arrow cross.\
+To move a line, just grab anywhere in the line, and move in any direction.&nbsp; Depending on the direction you drag, segments and anchors are moved, anchors may change box sides,&nbsp; and the number of segments are automatically recaculated.
+
+![ER lines - moving entire line](<lib/ER%20lines%20-%20moving%20entire%20line.png>)
+
+&nbsp;
+
+To move a single segment at a time, you may grab the node in the middle of the segment, or the anchor if it connects to an entity box. As you click on the node, the mouse cursor turns into a 2-headed arrow indicating the possible directions that you can drag.
+
 ![ER lines - 3 segments movements](<lib/ER%20lines%20-%203%20segments%20movements.png>)
 
 &nbsp;
 
-As segments get extended past the anchor of the line, the number of segments may be recalculated, and the anchor moved accordingly.&nbsp; THe application will not allow a line to be hidden by any part of an entity box to which it is attached.
+As segments get extended past the anchor of the line, the number of segments may be recalculated, and the anchor moved accordingly.&nbsp; The application will not allow a line to be hidden by any part of an entity box to which it is attached.
 
 ![ER lines - 4 segments movements](<lib/ER%20lines%20-%204%20segments%20movements.png>)
 
@@ -159,17 +186,13 @@ Similarly, the number of segments can be reduced by aligning parallel segments, 
 
 Since an oblique line can only have a single segment, the anchors on each end can only be attached to the one or maximum 2 sides of the entity box that are facing the other anchor. &nbsp;
 
-&nbsp;
-
 ![ER lines - oblique movements](<lib/ER%20lines%20-%20oblique%20movements.png>)
 
 &nbsp;
 
-Each anchor can be moved as well as the whole line, but is restricted to the one or maximum 2 sides of the entity box?
+Each anchor can be moved, but is restricted to the one or maximum 2 sides of the entity box, so as to avoid having the line covered by any part of the entity box.
 
-&nbsp;
-
-![ER lines - oblique movements horizontal](<lib/ER%20lines%20-%20oblique%20movements%20horizontal.png>)
+![Image](<lib/ER%20lines%20-%20oblique%20movements%20horizontal.png>)
 
 &nbsp;
 

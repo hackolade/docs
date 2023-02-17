@@ -1,10 +1,54 @@
 # v6.x
 
-New features in v6.9.0 \[03-Feb-2023\]
+New features in v6.9.1 \[17-Feb-2023\]
 
-\- ERD: added possibility to adjust relationship lines by moving anchors and segments, in addition to previously available moving of entity boxes
+\- Teradata: added plugin with full data modeling, support for forward-engineering of DDL, and reverse-engineering including inference of schemas in JSON data types
+
+\- Polyglot: added possibility to declare subtypes/subclasses, kept normalized when deriving into RDBMS targets, and converted to oneOf choice subschemas when deriving into targets supporting nested objects
+
+\- ERD: separated position and adjustments of relationship lines in ERD Views from those in the main ERD
+
+\- Undo/redo after copy/paste: adjusted behavior of the undo stack
+
+\- MongoDB: updated driver to latest version, including all dependencies
+
+\- PostgreSQL: added support for security invoker
 
 &nbsp;
+
+New features in v6.9.0 \[10-Feb-2023\]
+
+\- ERD: added possibility to adjust relationship lines by moving anchors and segments, in addition to the previously available moving of entity boxes.&nbsp; See more info at https://hackolade.com/help/RelationshiplinksinERdiagram.html#Adjust%20relationship%20lines
+
+\- Polyglot: enhanced behavior when deriving from polyglot and an attribute that is part of a FK relationship is marked as "Polyglot only"
+
+\- Network proxy: harmonized support for HTTP(S) proxies and company-issued certificates
+
+\- Workgroup edition: added user notification that stash is being preserved after conflict during stash application (pop)
+
+\- Avro: handling converting choices with subtypes with different fields
+
+\- OpenAPI: added handling for discriminator objects
+
+\- OpenAPI/Swagger: fixed cosmetic overlapping of labels for low-res screens in forward-engineering tab
+
+\- Protobuf: fixed issue when empty options generated undefined results in script
+
+&nbsp;
+
+New features in v6.8.6 \[03-Feb-2023\]
+
+\- Polyglot: disabled PK restriction on foreign master relationships
+
+\- Workgroup Edition: added deletion of source branch after merging a Pull Request in Bitbucket Server
+
+\- Workgroup Edition: allowed opening a Pull Request in Bitbucket Server when it is in status UNAPPROVED
+
+\- Delta Lake/Databricks/Hive: added tab with DDL of view
+
+\- Neo4j: added possibility to apply Cypher scrip to instance in forward-engineering use case
+
+\- Neo4j: updated to v4.4.10 of SDK
 
 &nbsp;
 
