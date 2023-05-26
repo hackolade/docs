@@ -12,7 +12,7 @@ However, pushing changes to a protected branch will most likely fail. So what if
 
 &nbsp;
 
-![Workgroup - branch protection error](<lib/Workgroup%20-%20branch%20protection%20error.png>)
+![Workgroup - branch protection error](<lib/Workgroup%20-%20branch%20protection%20error.png>) 
 
 &nbsp;
 
