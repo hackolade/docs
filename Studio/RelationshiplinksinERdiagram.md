@@ -4,7 +4,10 @@
 
 There are several ways to create a new relationship line between two entity boxes in the ER diagram of a model:
 
-* with a **drag-and-drop** action in the ERD by selecting a child attribute and dragging while holding the mouse button towards a parent field with a compatible field type in another entity
+* with a **drag-and-drop** action in the ERD by selecting a child attribute and dragging while holding the mouse button towards a parent attribute with a compatible attribute type in another entity.&nbsp; If the parent attribute is not yet a PK for its table, we automatically make it a PK if there is no conflict.
+
+&nbsp;
+
 * via the **Actions menu**:
 
 ![Menu - Add relationship](<lib/Menu%20-%20Add%20relationship.png>)

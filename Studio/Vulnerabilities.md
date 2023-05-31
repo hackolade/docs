@@ -2,7 +2,7 @@
 
 **\[12-Aug-2022\] [**Chromium CVE-2022-2162](<https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2162> "target=\"\_blank\"")
 
-We are aware of this vulnerability due to iinsufficient policy enforcement in the File System API of Google Chrome on Windows prior to 103.0.5060.53, allowing a remote attacker to bypass file system access via a crafted HTML page.&nbsp; Hackolade uses Electron, the open-source software framework developed and maintained by GitHub.&nbsp; Electron combines the Chromium rendering engine and the Node.js runtime. &nbsp;
+We are aware of this vulnerability due to insufficient policy enforcement in the File System API of Google Chrome on Windows prior to 103.0.5060.53, allowing a remote attacker to bypass file system access via a crafted HTML page.&nbsp; Hackolade uses Electron, the open-source software framework developed and maintained by GitHub.&nbsp; Electron combines the Chromium rendering engine and the Node.js runtime. &nbsp;
 
 &nbsp;
 

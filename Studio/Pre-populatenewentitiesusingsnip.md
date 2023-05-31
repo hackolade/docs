@@ -4,6 +4,10 @@ To avoid the repetitive task of adding the same set of attributes to new entitie
 
 &nbsp;
 
+You may also view this [short video](<https://youtu.be/YHTWOlOl2eE> "target=\"\_blank\"") on YouTube.
+
+&nbsp;
+
 A good example use case would be if your governance standards require to separate metadata header information about a document/record, from data intended for consumption by external processes.&nbsp; Metadata header information may include: schema version, provenance, transformation rules, etc.
 
 ![Image](<lib/Snippet%20metadata.png>)

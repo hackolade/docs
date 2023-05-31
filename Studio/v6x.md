@@ -1,5 +1,387 @@
 # v6.x
 
+New features in v6.10.3 \[26-May-2023\]
+
+\- Object Browser: added search by Regular Expression
+
+\- Reverse-Engineering performance: refactored rendering to handle larger sample faster, as well as multiple JSON columns in RDBMS rows
+
+\- Custom properties: allowed propagation when converting to Polyglot with external references
+
+\- Custom properties: allowed custom tab at model level for Polyglot
+
+\- Workgroup: added Merge \& Push button to branch merge (other actions) screen to simplify process
+
+\- Workgroup: added custom message with documentation link when attempting to push to a protected branch in Azure DevOps Repos
+
+\- Avro: removed API command from .avsc file forward-engineered when Schema Registry is not empty
+
+\- Delta Lake/Databricks: added forward-engineering of Primary Key and Foreign Key constraints in Runtime 11 and above
+
+\- Delta Lake/Databricks: added handling of changes in PK and FK constraints in ALTER script generation of delta models
+
+\- Delta Lake/Databricks: added property for relationships so they appear commented in DDL forward-engineering when isActivated property is disabled
+
+\- OpenAPI: allowed change of OpenAPI version within 3.0.x range
+
+&nbsp;
+
+New features in v6.10.2 \[19-May-2023\]
+
+\- Reverse-engineering: updated tree view in selection modals
+
+\- Reverse-engineering conflict detection: adjusted behavior of "apply to all"
+
+\- Avro: added property "default" to complex data types
+
+\- Databricks: added option to forward-engineer .hql in separate file per database and per table
+
+\- Databricks: adjusted reverse-engineering of views when naming conventions enabled
+
+\- Databricks: added handling of map\<txt\> when converting from Polyglot
+
+\- JSON Schema: added possibility to reverse-engineer JSON file with just an empty array
+
+\- MongoDB: updated workload analysis parameter capture form for collections in light of feedback from MongoDB solution Architects team
+
+\- Teradata: added property for relationships so they appear commented in DDL forward-engineering when isActivated property is disabled
+
+&nbsp;
+
+New features in v6.10.1 \[12-May-2023\]
+
+\- Verify Data Model: added column in report for glossary synonyms
+
+\- Verify Data Model: expanded list of rules by default
+
+\- Polyglot data models: added possibility to mark a (composite) unique key as an Alternate Key, and display in ERD
+
+\- XSD reverse-engineering into Polyglot target: added interpretation of structures declared with substitutionGroup as subtypes&nbsp;
+
+\- XSD reverse-engineering into physical targets: added interpretation of structures declared with substitutionGroup as inheritance tables
+
+\- Documentation: fixed Windows 11 issue with schema tree diagram images
+
+\- Delta Lake/Databricks: added handling of truncated responses in reverse-engineering with Runtime 11 and above
+
+\- MongoDB: added workload analysis parameter capture form for collections
+
+\- MongoDB: added cardinality parameter capture form for array data type
+
+\- MongoDB: added reverse-engineering of text indexes
+
+\- Protobuf: fixed conversion of object type when deriving from Polyglot
+
+&nbsp;
+
+New features in v6.10.0 \[05-May-2023\]
+
+\- Verify Data Model: added tool to verify the consistency and quality according to a glossary of class and primary terms, and target-specific attribute rules such as precision/scale for numeric, and length for string data types
+
+\- OpenAPI: added support for OAS 3.1
+
+\- OpenAPI: updated SwaggerUI panel to latest library version
+
+\- Properties Pane for relationships: added synchronization of entity order in dropdown lists with order of these entities in Object Browser
+
+\- Model Definitions and UDTs: added logic to comment definitions in DDL forward-engineering if they don't have any activated references in model
+
+\- Avro for Confluent Schema Registry: added logic to recursively reverse-engineer all references in a union schema, even if not explicitly selected
+
+\- Redshift: added support for JSON arrays as root of payload
+
+\- Teradata: added escaping of UDT names when used as types
+
+&nbsp;
+
+New features in v6.9.14 \[02-May-2023\]
+
+\- ERD: allowed null values for relationship sides property in persistence schema
+
+\- Print diagram: initialized diagram header and footer
+
+\- Oracle: added support for JSON arrays and scalar types as root of payload
+
+&nbsp;
+
+New features in v6.9.13 \[28-Apr-2023\]
+
+\- Avro for Confluent Schema Registry: added support for schema references (https://docs.confluent.io/platform/current/schema-registry/fundamentals/serdes-develop/index.html#schema-references), and so-called "union schemas"
+
+\- BigQuery, Databricks, Hive, Redshift, Snowflake, Synapse, Teradata targets: added modeling methodology at model level plus dimensional table roles and Data Vault 2.0 components at entity level
+
+\- MariaDB: enhanced reverse-engineering of composite Primary Keys and Unique Keys, plus indexes
+
+\- MongoDB: added support for references to definitions in embedded objects when forward-engineering Mongoose schema
+
+\- OpenAPI: added auto-detection of YAML file to trigger reverse-engineering
+
+\- PostgreSQL: enhanced log messages when sampling rows for JSON/JSONB columns and alert user to reduce sample size if memory full
+
+\- PostgreSQL: enhanced ALTER script generation from delta model to include comments for schemas, tables and attributes, views
+
+\- Snowflake: updated vm2 library to latest
+
+\- Teradata: added logic to comment deactivated database
+
+\- YugabyteDB: enhanced ALTER script generation from delta model to include comments for schemas, tables and attributes, views&nbsp;
+
+&nbsp;
+
+New features in v6.9.12 \[21-Apr-2023\]
+
+\- ERD: improved rendering performance for models with large tables
+
+\- Documentation: added handling of custom relationship lines in ERVs
+
+\- Workgroup: added personal token authentication on Azure DevOps Repos when "Allow public projects" is disabled
+
+\- Workgroup: added handling of revoked or renewed personal token on Azure DevOps Repos&nbsp;
+
+\- Oracle: added meaningful error message when user is missing SELECT\_CATALOG\_ROLE for reverse-engineering
+
+\- PostgreSQL: added support in ALTER script for changes in check constraints
+
+\- PostgreSQL: increased logging when fetching functions, triggers and procedures
+
+\- PostgreSQL: added option to ignore reverse-engineering of functions, procedures, and triggers
+
+\- Synapse: added logic to fetch table info when referenced in views
+
+\- Teradata: changed library to fetch JAVA\_HOME environment variables in Windows and get correct path
+
+\- Teradata: added default port if user does not specify
+
+\- Teradata: added escaping of paths
+
+\- YugabyteDB: added generation ALTER script for changes of precision/scale in numeric and length in strings
+
+&nbsp;
+
+New features in v6.9.11 \[14-Apr-2023\]
+
+\- Polyglot: added option to merge into an existing polyglot model when converting a target model
+
+\- ERD and graph view in polyglot: added adapter to restore lost entity coordinates
+
+\- ERD: fixed auto-scrolling of canvas when mouse button was not pressed
+
+\- Excel export: added export of custom properties when common to different data types
+
+\- Cassandra: added possibility to select multiple CQL files to reverse-engineer
+
+\- Delta Lake/Databricks: enhanced ALTER script generation of comments from delta model so the delete of a comment is disabled by default
+
+\- Delta Lake/Databricks: added possibility to select multiple HQL files to reverse-engineer
+
+\- Delta Lake/Databricks: added handling of serde properties
+
+\- Glue Data Catalog: added button to fetch additional databases beyond the standard Glue limit of 100 databases per request
+
+\- Glue Data Catalog: added possibility to select multiple HQL files to reverse-engineer
+
+\- Glue Data Catalog: added handling of serde properties
+
+\- Hive: added possibility to select multiple HQL files to reverse-engineer
+
+\- Hive: added handling of serde properties
+
+\- MongoDB: added reverse-engineering of wiildcard indexes
+
+\- MySQL: inline/out-of-line primary/unique keys enhancements
+
+\- OpenAPI: added inclusion of default display options in Schema ERD tab
+
+\- PostgreSQL: added generation ALTER script for changes of precision/scale in numeric and length in strings
+
+\- ScyllaDB: added possibility to select multiple CQL files to reverse-engineer
+
+&nbsp;
+
+New features in v6.9.10 \[07-Apr-2023\]
+
+\- ERD: improved rendering performance for models with many relationship lines
+
+\- ERD: for composite primary keys made of a JSON object, display separator line to include entire object
+
+\- Properties Pane: added restriction so nested fields aren't accidentally selected as Primary Key
+
+\- Custom path for custom properties: suppressed extraneous config migration
+
+\- Excel export: added possibility to include custom properties that are repeated in complex data types
+
+\- Excel export: added absolute reference for validation rules in empty lines
+
+\- Model definitions: fixed conversion when attributes are part of composite primary key
+
+\- Print diagram: fixed issue with disappearing relationship lines
+
+\- Delta Lake/Databricks: enhanced ALTER script generation from delta model to include comments for schemas, tables and attributes
+
+\- MongoDB: added support for wildcard indexes
+
+\- MariaDB/Oracle/PostgreSQL/SQL Server/YugabyteDB: inline/out-of-line primary/unique keys enhancements
+
+\- Snowflake: enhanced table detection logic to accommodate recent shortcomings in Snowflake's showTables() function
+
+\- Synapse: added logging for Azure Active Directory authentication with MFA
+
+&nbsp;
+
+New features in v6.9.9 \[31-Mar-2023\]
+
+\- ERD: added drag-sand-scroll possibility towards left and top of canvas
+
+\- Compare and merge: added merging of ERDV container properties
+
+\- Polyglot: disabled possibility to add views which should only appear in physical target models
+
+\- Workgroup: added handling of legacy Azure DevOps DNS and URLs when matching remote origin of repo
+
+\- Workgroup: added handling of fatal git client error wrongly identifying "not a git repository" in history screen
+
+\- Workgroup: added warning badge in Tools \> Options \> Default Paths \> Models as path is overwritten by selected repo location
+
+\- Avro: added default null when multiple data types in oneOf choices
+
+\- Oracle: added parsing and storing of table properties in DDL reverse-engineering
+
+\- PostgresSQL: added tolerance for nextval and other functions in default of columns
+
+\- YugabyteDB: added tolerance for nextval and other functions in default of columns
+
+&nbsp;
+
+New features in v6.9.8 \[24-Mar-2023\]
+
+\- Polyglot: allowed derive of multiple data types to RDBMS when JSON column is supported
+
+\- Polyglot: enabled ability to infer PKs and FKs
+
+\- Cassandra: adjusted comparison to handle missing properties
+
+\- Amazon AWS DynamoDB and S3: harmonized support for HTTP(S) proxies and company-issued certificates (self-signed)
+
+\- MongoDB: added connection to serverless cluster on Atlas
+
+\- MongoDB: added parsing of ISODate sample when simple date format without time/timezone
+
+\- MongoDB: added validation for JSON Schema drafts later than draft-04 when multiple data types with string and date
+
+\- Oracle reverse-engineering: added parsing of supplemental log data and group syntax in DDL
+
+\- ScyllaDB: adjusted comparison to handle missing properties
+
+\- Snowflake: relaxed URL checks to accommodate change in non-VPS account locator formats with some regions missing a cloud provider extension
+
+&nbsp;
+
+New features in v6.9.7 \[17-Mar-2023\]
+
+\- Compare and merge: added granular selection in merge dialog for ERDVs
+
+\- Custom path for custom properties: adjusted directory structure to match default setup and allow for ExcelOptions
+
+\- ERD: added scrolling when dragging objects outside canvas
+
+\- Added warning badge when duplicate technical names detected in same entity regardless of naming conventions settings
+
+\- Avro: adjusted data type conversion when reverse-engineering Oracle DDL for numbers with no precision specified to DECIMAL(38)
+
+\- Azure Blob Storage and Azure Data Lake Storage for Avro, JSON Schema and Parquet: harmonized support for HTTP(S) proxies and company-issued certificates (self-signed)
+
+\- JSON Schema preview and forward-engineering: filter deactivated objects
+
+\- MongoDB: added Load Balanced option in Advanced tab of connection settings to connect to cluster with such topology
+
+\- PostgreSQL: added escaping of special characters in DDL generation for views
+
+\- SQL Server: allowed self-signed certificates for all authentication methods
+
+\- YugabyteDB: added escaping of special characters in DDL generation for views
+
+&nbsp;
+
+New features in v6.9.6 \[12-Mar-2023\]
+
+\- ERD annotations for graph models
+
+&nbsp;
+
+New features in v6.9.5 \[10-Mar-2023\]
+
+\- Polyglot: added subclass relationship connector for logical modeling use cases
+
+\- Undo/redo: now also takes into account changes in Display Options toggle hide/display attributes
+
+\- Excel import into Avro: unmuted error caused by container-level dependency to avoid hanging dialog
+
+\- FK relationship creation from Properties Pane: allowed same flexibility as drag-and-drop when concerning nested references to definitions
+
+\- Tech stack: replaced AWS SDK library v2 with v3 plus @aws-sdk/client-s3 and @aws-sdk/client-dynamodb to reduce bundle size
+
+\- Documentation generation: fixed error for cases when ERDVs contain custom relationship style
+
+\- XSD reverse-engineering: improved handling of cardinality in normalization when PowerDesigner XSD nested entities to represent FK relationships
+
+\- Avro: adjusted data type conversion to decimal when reverse-engineering Oracle DDL for numbers with precision larger than 18&nbsp;
+
+\- MongoDB: added possibility for direct connection to Atlas by force dispatching&nbsp;
+
+\- PostgreSQL: added db version check for security\_invoker to determine whether to include in DDL script
+
+\- PostgreSQL: adjusted sequence of DDL statements when table index is defined with "Concurrent build" enabled
+
+&nbsp;
+
+New features in v6.9.4 \[03-Mar-2023\]
+
+\- XSD reverse-engineering: added support for xpath declaration of FK relationships
+
+\- XSD reverse-engineering: added support for \<xs:unique\> tags to creat corresponding constraints
+
+\- Avro: adjusted data type conversion (int vs long) when reverse-engineering Oracle DDL for numbers with precision larger than 9&nbsp;
+
+\- Delta Lake/Databricks: adjusted default text mode to string when deriving char/varchar from Polyglot
+
+\- Elasticsearch v7 and above: added Faker function-based mock sample generation in bulk
+
+\- Elasticsearch v7 and above: added possibility to apply mappings to instance
+
+\- Glue Data Catalog: disallowed "Clustered By" in forward-engineering if no "Number of Buckets" is declared
+
+&nbsp;
+
+New features in v6.9.3 \[27-Feb-2023\]
+
+\- Relationship line adjustment preservation: stopped triggering orthogonal distribution after import from Excel when no container in model
+
+&nbsp;
+
+New features in v6.9.2 \[24-Feb-2023\]
+
+\- ERD and ERD Views: added separation of Display Options for each and store in model file
+
+\- ERD: adjusted display option Hide Data types to not hide key indicator
+
+\- ERD: many minor enhancements to adjust relationship lines
+
+\- ERD relationship lines adjustments: disallowed oblique lines on recursive relationships
+
+\- Avro: adjusted data type conversion when reverse-engineering Oracle DDL for numbers with precision and scale
+
+\- Polyglot and non-RDBMS targets: added possibility to choose normalization option when reverse-engineering XSDs, JSON Schema or YAML Schema
+
+\- Glue Data Catalog: added logic to fetch table list by chunk beyond the standard Glue limit of 100 tables&nbsp;
+
+\- Google Storage SDK: harmonized support for HTTP(S) proxies and company-issued certificates
+
+\- Synapse: added support for "Masked by function" property
+
+\- Teradata: enabled export/import with Excel
+
+&nbsp;
+
 New features in v6.9.1 \[17-Feb-2023\]
 
 \- Teradata: added plugin with full data modeling, support for forward-engineering of DDL, and reverse-engineering including inference of schemas in JSON data types

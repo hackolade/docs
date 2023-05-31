@@ -90,3 +90,21 @@ Hackolade dynamically generates Parquet schema for the structure created with th
 
 Hackolade easily imports the schema from .parquet files to represent the corresponding Entity Relationship Diagram and schema structure.&nbsp; You may also import and convert from JSON Schema and documents.
 
+&nbsp;
+
+## Cloud Object Storage
+
+In the context of large-scale distributed systems like data lakes, data is often stored in object storage solutions like Amazon S3, Azure ADLS, or Google Cloud Storage.&nbsp; Parquet is designed to be a columnar storage format that allows for efficient processing and analysis of large datasets.
+
+&nbsp;
+
+With Hackolade Studio, you can reverse-engineer Parquet files located on:
+
+\- Amazon S3
+
+\- Azure Blog Storage
+
+\- Azure Data Lake Storage (ADLS) Gen 1 and Gen 2
+
+\- Google Cloud Storage
+

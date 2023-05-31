@@ -200,6 +200,10 @@ Offline use of the application is possible but requires to start the application
 
 ## Licenses on Virtual Machines (or physical computer accessed via RDP or equivalent)
 
+As long as you validate and use Hackolade Studio with the same combination of host machine, remote machine, and login, there should be not issue.&nbsp; If any of these 3 parameters is different, access is blocked.&nbsp; In a VM environment, it is critical that the VM instance is persistent to ensure the stability of the 3 parameter combination.
+
+&nbsp;
+
 **Important note:** installing Hackolade on a central computer (whether on a PC or a server, whether the machine is virtual or physical, and whether on premises or in the Cloud) does **not** change the terms of our [License Agreement](<Licenseagreement.md>).&nbsp; Specifically, that license metric is per "per seat", and that a license must be obtained for each device on or from which the Product is used or accessed. When the Product is accessed remotely across using Terminal Server, Remote Desktop, Citrix XenDesktop or an equivalent method, a separate Product license is required to be assigned to each device from which the application is accessed, i.e. not the virtual machine on which the Product is installed.
 
 &nbsp;

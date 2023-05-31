@@ -4,11 +4,15 @@ Hackolade Studio is shipped with standard properties displayed in the Properties
 
 &nbsp;
 
-But many users want to define their own properties, for example to track PII or GDPR characteristics, or to tie with metadata management and governance.&nbsp; Some power users create hooks to be leveraged in DevOps CI/CD pipelines or in code generation routines.
+Many users want to define their own properties, for example to track PII or GDPR characteristics, or to tie with metadata management and governance.&nbsp; Some power users create hooks to be leveraged in DevOps CI/CD pipelines or in code generation routines.
 
 &nbsp;
 
-The principles of user-defined custom properties are defined in [this page](<Userdefinedcustomproperties.md>) and leverage the controls described in the [plugin documentation](<https://github.com/hackolade/plugins#26-property-controls> "target=\"\_blank\"").&nbsp; This how-to guide takes you through a hands-on exercise to create custom properties.
+The principles of user-defined custom properties are defined in [this page](<Userdefinedcustomproperties.md>) and leverage the controls described in the [plugin documentation](<https://github.com/hackolade/plugins#26-property-controls> "target=\"\_blank\"").&nbsp; This how-to guide takes you through a hands-on exercise to create custom properties. &nbsp;
+
+&nbsp;
+
+You may also view this [short video](<https://youtu.be/eHGhwp03rXo> "target=\"\_blank\"") on YouTube.
 
 &nbsp;
 
@@ -27,7 +31,7 @@ This folder can be access via Help \> Plugin Manager \> Installed and clicking o
 
 &nbsp;
 
-In this guide, we will concentrate on files in these sub-folders of \\customProperties\\properties\_pane:
+In this guide, we will concentrate on files in these sub-folders of **\\customProperties\\properties\_pane:**
 
 ![Custom Props subfolders](<lib/Custom%20Props%20subfolders.png>)
 

@@ -42,7 +42,15 @@ The CLI lets you automatically generate schemas and scripts, or reverse-engineer
 
 &nbsp;
 
-With the CLI, you can automate tasks that you would otherwise perform manually in the GUI application. Some Hackolade customers use this capability nightly in a batch process to identify attributes and structures that may have appeared in the data since the last run.  During a nightly run of the reverse-engineering function, a much larger dataset can be queried as a basis for document sampling, hence making schema inference more precise. Such capability can be useful in a data governance context to properly document the semantics and publish a thorough data dictionary for end users.  It can also be used in the context of compliance with privacy laws to make sure that the company does not store data that it is not supposed to store.  There are many more examples of how to use this functionality.
+With the CLI, you can automate tasks that you would otherwise perform manually in the GUI application. Some Hackolade customers use this capability nightly in a batch process to identify attributes and structures that may have appeared in the data since the last run.  During a nightly run of the reverse-engineering function, a much larger dataset can be queried as a basis for document sampling, hence making schema inference more precise. Such capability can be useful in a data governance context to properly document the semantics and publish a thorough data dictionary for end users. &nbsp;
+
+&nbsp;
+
+The CLI can also be used in the context of compliance with privacy laws to make sure that the company does not store data that it is not supposed to store.  There are many more examples of how to use this functionality.
+
+&nbsp;
+
+Another common use case we've seen is to use the CLI to compare the models reverse-engineered from different environments (e.g; dev, test, integration, prod) to ensure their synchronization.
 
  
 
@@ -106,7 +114,7 @@ In a governance-first approach, a baseline model evolves.  When the branch for 
 
 In a code-first approach, the structure in the production instance evolves.  Every night, a scheduled process goes through the following steps:
 
-1. Reverse-engineer the Databricks instance using the command “revEng”
+1. Reverse-engineer the database instance using the command “revEng”
 1. Compare the resulting model with the baseline model, using the command “compMod”.  This produces a “delta model” and optionally a “merged model”
 1. We suggest here a manual step to review the model comparison and identify whether all changes in production are legitimate.  Maybe adjustments are necessary to the code, data needs migration, etc…  Produce a new merged model if necessary.
 1. Commit the merged model which becomes the new baseline model
@@ -119,11 +127,9 @@ In a code-first approach, the structure in the production instance evolves.  Ev
 
 &nbsp;
 
-&nbsp;
-
 ## Developing and fine-tuning the CLI commands
 
-Many other combinations are possible, and the examples above should inspire the approach fitting your specific use case.
+Many other combinations are possible, and the examples above should inspire the approach fitting your specific use case.&nbsp; You may want to watch a playlist of [short videos](<https://www.youtube.com/playlist?list=PLuoumc7VQje0qPX3zHa8SUaDWQg2EAT40> "target=\"\_blank\"") on YouTube.
 
 &nbsp;
 

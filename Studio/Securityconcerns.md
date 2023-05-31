@@ -96,7 +96,7 @@ This is just one of the physically-local attacks described in the previous sect
 
 &nbsp;
 
-## How does Hackolade studio handle Role-based Access Control for data models?
+## How does Hackolade Studio handle Role-based Access Control for data models?
 
 The tool is a downloadable client and not a client-server or SaaS solution.&nbsp; As a result, it has no Role-Based Access Control.&nbsp; Security of the data models is delegated to the the storage layer, i.e. shared network drives or repositories. &nbsp;
 

@@ -8,25 +8,23 @@ More information is available [here](<https://docs.teradata.com/r/Enterprise\_In
 
 &nbsp;
 
-**Important:** when reverse-engineering or forward-engineering a Teradata instance, Hackolade is leveraging the Teradata **Java** client.&nbsp; You will need a working and properly configured Java environment (minimum Java 11).&nbsp; Hackolade tries to autodetect **JAVA\_HOME** on your system but you can still configure it manually if your installation is specific (or if our automatic detection can’t find **JAVA\_HOME**) in **Tool \> Options.**
-
-&nbsp;
-
-You can configure the Java path in **Tools \> Options \> Reverse Engineering \> Java path** section.
-
-&nbsp;
-
-![Teradata Java path tools options reverse-eng](<lib/Teradata%20Java%20path%20tools%20options%20reverse-eng.png>)
-
-&nbsp;
-
 The Teradata instance can be hosted on-premises, or on virtualized machines in a private or public cloud.  
 
  
 
 In the Hackolade connection settings dialog, give a meaningful name to the connection, then set the the host and port if you wish to limit the scope of the discovery.
 
+&nbsp;
+
 ![Teradata connection settings](<lib/Teradata%20connection%20settings.png>)
+
+&nbsp;
+
+**Important:** when reverse-engineering or forward-engineering a Teradata instance, Hackolade is leveraging the Teradata **Java** client.&nbsp; You will need a working and properly configured Java environment (minimum Java 11).&nbsp; Hackolade tries to autodetect **JAVA\_HOME** on your system but you can still configure it manually if your installation is specific (or if our automatic detection can’t find **JAVA\_HOME**)**.**
+
+![Teradata advanced settings Java binary path](<lib/Teradata%20advanced%20settings%20Java%20binary%20path.png>)
+
+&nbsp;
 
 &nbsp;
 

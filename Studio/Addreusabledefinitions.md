@@ -4,6 +4,10 @@ The purpose of reusable definitions is to increase productivity/convenience and 
 
 &nbsp;
 
+You may also view this [short video](<https://youtu.be/1R7BLabO3-w> "target=\"\_blank\"") on YouTube.
+
+&nbsp;
+
 A simple example of a re-usable definition is an address, but many other domain concepts are candidates for this feature.&nbsp; A definition object may be used in many places inside a single data model, and in different models too.&nbsp; Definitions are created once, then referenced in many different places.&nbsp; In case the structure or properties of the object evolve, you only need to make the change in one place, and all the places where the object is referenced will evolve accordingly.
 
 &nbsp;

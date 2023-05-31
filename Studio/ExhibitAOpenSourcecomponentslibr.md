@@ -19,7 +19,6 @@ All Product Versions
 | [AWS-SDK](<https://github.com/aws/aws-sdk-js> "target=\"\_blank\"") | (c) 2014 Amazon Web Services | [Apache](<https://github.com/aws/aws-sdk-js/blob/master/LICENSE.txt> "target=\"\_blank\"") |
 | [Axios](<https://github.com/axios/axios> "target=\"\_blank\"") | (c) 2014-present Matt Zabriskie | [MIT](<https://github.com/axios/axios/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Azure SDK for JavaScript](<https://github.com/Azure/azure-sdk-for-js> "target=\"\_blank\"") | (c) 2018 Microsoft | [MIT](<https://github.com/Azure/azure-sdk-for-js/blob/master/LICENSE> "target=\"\_blank\"") |
-| [Azure Storage](<https://github.com/Azure/azure-storage-node> "target=\"\_blank\"") | (c) 2014-present Microsoft Corporation | [Apache](<https://github.com/Azure/azure-storage-node/blob/master/LICENSE.txt> "target=\"\_blank\"") |
 | [Babel](<https://babeljs.io/> "target=\"\_blank\"") | (c) 2014-2016 Sebastian McKenzie | [MIT](<https://github.com/babel/babel/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Big.js](<https://github.com/MikeMcl/big.js> "target=\"\_blank\"") | (c) 2018 Michael Mclaughlin | [MIT](<https://github.com/MikeMcl/big.js/blob/master/LICENCE.md> "target=\"\_blank\"") |
 | [Bin-pack](<https://github.com/bryanburgers/bin-pack> "target=\"\_blank\"") | (c) 2014 Bryan Burgers | [MIT](<https://github.com/bryanburgers/bin-pack/blob/master/LICENSE.md> "target=\"\_blank\"") |
@@ -42,19 +41,19 @@ All Product Versions
 | [D3-force](<https://github.com/d3/d3-force> "target=\"\_blank\"") | (c) 2010-2016 Mike Bostock | [BSD-3-Clause](<https://github.com/d3/d3-force/blob/master/LICENSE> "target=\"\_blank\"") |
 | [DayJS](<https://github.com/iamkun/dayjs> "target=\"\_blank\"") | (c) 2018-present, iamkun | [MIT](<https://github.com/iamkun/dayjs/blob/dev/LICENSE> "target=\"\_blank\"") |
 | [Desktop Trampoline](<https://github.com/desktop/desktop-trampoline> "target=\"\_blank\"") | (c) GitHub, Inc. | [MIT](<https://github.com/desktop/desktop-trampoline/blob/main/LICENSE> "target=\"\_blank\"") |
+| [DOMPurify](<https://github.com/cure53/DOMPurify> "target=\"\_blank\"") | (c) 2023 Dr.-Ing. Mario Heiderich, Cure53 | [Apache](<https://github.com/cure53/DOMPurify/blob/main/LICENSE> "target=\"\_blank\"") |
 | [Elasticsearch](<https://github.com/elastic/elasticsearch-js> "target=\"\_blank\"") | (c) 2014 Elasticsearch | [Apache](<https://github.com/elastic/elasticsearch-js/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Electron](<https://electron.atom.io/> "target=\"\_blank\"") | (c) 2016 GitHub Inc. | [MIT](<https://raw.githubusercontent.com/atom/atom/master/LICENSE.md> "target=\"\_blank\"") |
 | [Electron-fetch](<https://github.com/arantes555/electron-fetch> "target=\"\_blank\"") | (c) 2016 Mehdi Kouhen | [MIT](<https://github.com/arantes555/electron-fetch/blob/master/LICENSE.md> "target=\"\_blank\"") |
 | [Electron-store](<https://github.com/sindresorhus/electron-store> "target=\"\_blank\"") | (c) 2017 Sindre Sorhus | [MIT](<https://github.com/sindresorhus/electron-store/blob/master/license> "target=\"\_blank\"") |
 | [ExcelJS](<https://github.com/exceljs/exceljs> "target=\"\_blank\"") | (c) 2014-2019 Guyon Roche | [MIT](<https://github.com/exceljs/exceljs/blob/master/LICENSE> "target=\"\_blank\"") |
 | [FakerJS](<https://github.com/faker-js/faker> "target=\"\_blank\"") | (c) 2022 Faker, 2020 Marak Squires | [MIT](<https://github.com/faker-js/faker/blob/main/LICENSE> "target=\"\_blank\"") |
-| [Fast-crc32c](<https://github.com/ashi009/node-fast-crc32c> "target=\"\_blank\"") | (c) 2014 Xiaoyi Shi | [MIT](<https://github.com/ashi009/node-fast-crc32c/blob/master/LICENSE> "target=\"\_blank\"") |
 | [File-loader](<https://github.com/webpack/file-loader> "target=\"\_blank\"") | (c) 2016 Tobias Koppers | [MIT](<https://opensource.org/licenses/MIT> "target=\"\_blank\"") |
 | [Font-awesome](<https://fortawesome.github.io/Font-Awesome/> "target=\"\_blank\"") | (c) 2016 Dave Gandy | [MIT](<https://fortawesome.github.io/Font-Awesome/license/> "target=\"\_blank\"") |
 | [Foreign Key Constraint Identification in Relational Databases](<http://ceur-ws.org/Vol-1885/106.pdf> "target=\"\_blank\"") | (c) 2017 Jan Motl, Pavel Kordík, ITAT 2017 Proceedings. | [BSD-2-Clause](<https://github.com/janmotl/linkifier/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Form-Data](<https://github.com/form-data/form-data> "target=\"\_blank\"") | (c) 2012 Felix Geisendörfer | [MIT](<https://github.com/form-data/form-data/blob/master/License> "target=\"\_blank\"") |
 | [Fs-extra](<https://github.com/jprichardson/node-fs-extra> "target=\"\_blank\"") | (c) 2011-2016 JP Richardson | [MIT](<https://github.com/jprichardson/node-fs-extra/blob/master/LICENSE> "target=\"\_blank\"") |
-| [Generate-schema](<https://github.com/mjackson/history> "target=\"\_blank\"") | (c) 2015 Nijiko Yonskai | [MIT](<https://github.com/nijikokun/generate-schema/blob/master/LICENSE> "target=\"\_blank\"") |
+| [Git History VSCode](<https://github.com/DonJayamanne/gitHistoryVSCode> "target=\"\_blank\"") | (c) 2015 DonJayamanne | [MIT](<https://github.com/DonJayamanne/gitHistoryVSCode/blob/master/LICENSE> "target=\"\_blank\"") |
 | [GitHub Desktop](<https://github.com/desktop/desktop> "target=\"\_blank\"") | (c) GitHub, Inc. | [MIT](<https://github.com/desktop/desktop/blob/development/LICENSE> "target=\"\_blank\"") |
 | [Git-url-parse](<https://github.com/IonicaBizau/git-url-parse> "target=\"\_blank\"") | (c) 2015-21 Ionică Bizău \<bizauionica@gmail.com\> | [MIT](<https://github.com/IonicaBizau/git-url-parse/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Google Cloud BigQuery](<https://github.com/googleapis/nodejs-bigquery> "target=\"\_blank\"") | (c) 2018 Google, Inc. | [Apache](<https://github.com/googleapis/nodejs-bigquery/blob/main/LICENSE> "target=\"\_blank\"") |
@@ -92,20 +91,20 @@ All Product Versions
 | [Node-comment-json](<https://github.com/kaelzhang/node-comment-json> "target=\"\_blank\"") | (c) 2013 Kaelzang \<\>, contributors | [MIT](<https://github.com/kaelzhang/node-comment-json/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Node-fetch](<https://github.com/bitinn/node-fetch> "target=\"\_blank\"") | (c) 2016 David Frank | [MIT](<https://github.com/bitinn/node-fetch/blob/master/LICENSE.md> "target=\"\_blank\"") |
 | [Node-folder-hash](<https://github.com/marc136/node-folder-hash> "target=\"\_blank\"") | (c) 2015 Marc Walter | [MIT](<https://github.com/marc136/node-folder-hash/blob/main/LICENSE.txt> "target=\"\_blank\"") |
-| [Node-ipc](<https://github.com/RIAEvangelist/node-ipc> "target=\"\_blank\"") | (c) 2009 Philip Sturgeon | [DBAD](<https://github.com/RIAEvangelist/node-phidget-API/blob/master/license.md> "target=\"\_blank\"") |
+| [Node-forge](<https://github.com/digitalbazaar/forge> "target=\"\_blank\"") | (c) 2020 Digital Bazar | [BSD-3-Clause](<https://github.com/digitalbazaar/forge/blob/main/LICENSE> "target=\"\_blank\"") |
+| [Node-ipc](<https://github.com/RIAEvangelist/node-ipc> "target=\"\_blank\"") | (c) 2009 Philip Sturgeon | [MIT](<https://github.com/RIAEvangelist/node-ipc/blob/master/licence> "target=\"\_blank\"") |
 | [Node-mssql](<https://github.com/tediousjs/node-mssql> "target=\"\_blank\"") | (c) 2013-2018 Patrick Simek and contributors | [MIT](<https://github.com/tediousjs/node-mssql/blob/master/LICENSE.md> "target=\"\_blank\"") |
 | [Node-oracledb](<https://github.com/oracle/node-oracledb> "target=\"\_blank\"") | (c) 2015, 2021, Oracle and/or its affiliates | [Apache](<https://github.com/oracle/node-oracledb/blob/main/LICENSE.md> "target=\"\_blank\"") |
 | [Node-postgres](<https://github.com/brianc/node-postgres> "target=\"\_blank\"") | (c) 2010-2021 Brian Carlson | [MIT](<https://github.com/brianc/node-postgres/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Node-rsa-pem-from-mod-exp](<https://github.com/tracker1/node-rsa-pem-from-mod-exp> "target=\"\_blank\"") | (c) 2014 Michael J. Ryan | [MIT](<https://github.com/tracker1/node-rsa-pem-from-mod-exp/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Node-semver](<https://github.com/npm/node-semver> "target=\"\_blank\"") | (c) Isaac Z. Schlueter and Contributors | [ISC](<https://github.com/npm/node-semver/blob/master/LICENSE> "target=\"\_blank\"") |
-| [Node-SSL-root-CAs](<https://github.com/windhamg/node-ssl-root-cas>) | (c) 2014 Gary Windham | [Apache](<https://github.com/windhamg/node-ssl-root-cas/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Node-which](<https://github.com/npm/node-which> "target=\"\_blank\"") | (c) Isaac Z. Schlueter and Contributors | [ISC](<https://github.com/npm/node-which/blob/main/LICENSE> "target=\"\_blank\"") |
 | [Ottoman](<https://github.com/couchbaselabs/node-ottoman> "target=\"\_blank\"") | (c) 2013 Couchbase Inc. | [Apache](<https://www.apache.org/licenses/LICENSE-2.0> "target=\"\_blank\"") |
 | [PapaParse](<https://github.com/mholt/PapaParse> "target=\"\_blank\"") | (c) 2015 Matthew Holt | [MIT](<https://github.com/mholt/PapaParse/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Parcel Bundler Watcher](<https://github.com/parcel-bundler/watcher> "target=\"\_blank\"") | (c) 2017-present Devon Govett | [MIT](<https://github.com/parcel-bundler/watcher/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Parquetjs](<https://github.com/ironSource/parquetjs> "target=\"\_blank\"") | (c) 2017 ironSource Ltd. | [MIT](<https://github.com/ironSource/parquetjs/blob/master/LICENSE> "target=\"\_blank\"") |
+| [Parse-link-header](<https://github.com/thlorenz/parse-link-header> "target=\"\_blank\"") | (c) 2013 Thorsten Lorenz | [MIT](<https://github.com/thlorenz/parse-link-header/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Perplex](<https://github.com/jrop/perplex> "target=\"\_blank\"") | (c) 2016, Jonathan Apodaca jrapodaca@gmail.com | [ISC](<https://github.com/jrop/perplex#license> "target=\"\_blank\"") |
-| [Phantomjs](<https://github.com/ariya/phantomjs/> "target=\"\_blank\"") | (c) 2005-2016 Ariya Hidayat | [BSD-3-Clause](<https://github.com/ariya/phantomjs/blob/master/LICENSE.BSD> "target=\"\_blank\"") |
 | [Postal](<https://github.com/postaljs/postal.js> "target=\"\_blank\"") | (c) 2015 Jim Cowart | [MIT](<https://github.com/postaljs/postal.js/blob/master/LICENSE> "target=\"\_blank\"") |
 | [ProtobufJS](<https://github.com/protobufjs/protobuf.js> "target=\"\_blank\"") | (c) 2016 Daniel Wirtz | [BSD-3-Clause](<https://github.com/protobufjs/protobuf.js/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Protocol JSON](<https://github.com/dcodeIO/PSON> "target=\"\_blank\"") | (c) 2014 Daniel Wirtz | [Apache](<https://github.com/dcodeIO/PSON/blob/master/LICENSE> "target=\"\_blank\"") |
@@ -124,7 +123,6 @@ All Product Versions
 | [Redux](<https://redux.js.org/> "target=\"\_blank\"") | (c) 2015 Dan Abramov | [MIT](<https://github.com/reactjs/redux/blob/master/LICENSE.md> "target=\"\_blank\"") |
 | [Reselect](<https://github.com/reduxjs/reselect> "target=\"\_blank\"") | (c) 2015-2018 Reselect Contributors | [MIT](<https://github.com/reduxjs/reselect/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Rimraf](<https://github.com/isaacs/rimraf> "target=\"\_blank\"") | (c) Isaac Z. Schlueter and Contributors | [ISC](<https://github.com/isaacs/rimraf/blob/master/LICENSE> "target=\"\_blank\"") |
-| [Sanitize-html](<https://github.com/apostrophecms/sanitize-html> "target=\"\_blank\"") | (c) 2013, 2014, 2015 P'unk Avenue LLC | [MIT](<https://github.com/apostrophecms/sanitize-html/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Simple-Git](<https://github.com/steveukx/git-js> "target=\"\_blank\"") | (c) 2022 Steve King | [MIT](<https://github.com/steveukx/git-js/blob/main/LICENSE> "target=\"\_blank\"") |
 | [SnappyJS](<https://github.com/zhipeng-jia/snappyjs> "target=\"\_blank\"") | (c) 2016 Zhipeng Jia | [MIT](<https://github.com/zhipeng-jia/snappyjs/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Snowflake-connector-nodejs](<https://github.com/snowflakedb/snowflake-connector-nodejs> "target=\"\_blank\"") | (c) 2018 Snowflake | [Apache](<https://github.com/snowflakedb/snowflake-connector-nodejs/blob/master/LICENSE.txt> "target=\"\_blank\"") |
@@ -145,6 +143,7 @@ All Product Versions
 | [Twitter Bootstrap](<https://getbootstrap.com/> "target=\"\_blank\"") | (c) 2011-2016 Twitter, Inc. | [MIT](<https://github.com/twbs/bootstrap/blob/master/LICENSE> "target=\"\_blank\"") |
 | [UUID](<https://github.com/uuidjs/uuid> "target=\"\_blank\"") | (c) 2010-2020 Robert Kieffer and other contributors | [MIT](<https://github.com/uuidjs/uuid/blob/main/LICENSE.md> "target=\"\_blank\"") |
 | [VM2](<https://github.com/patriksimek/vm2> "target=\"\_blank\"") | (c) 2014-2022 Patrik Simek and contributors | [MIT](<https://github.com/patriksimek/vm2/blob/master/LICENSE.md> "target=\"\_blank\"") |
+| [W3c-blob](<https://github.com/chrisdickinson/w3c-blob> "target=\"\_blank\"") | (c) 2016 Chris Dickinson | [MIT](<https://github.com/chrisdickinson/w3c-blob#license> "target=\"\_blank\"") |
 | [Winreg](<https://github.com/fresc81/node-winreg> "target=\"\_blank\"") | (c) 2016 Paul Bottin | [BSD-2-Clause](<https://github.com/fresc81/node-winreg#license> "target=\"\_blank\"") |
 | [Xml2JS](<https://github.com/Leonidas-from-XIV/node-xml2js> "target=\"\_blank\"") | (c) 2010-2013 Marek Kubica | [MIT](<https://github.com/Leonidas-from-XIV/node-xml2js/blob/master/LICENSE> "target=\"\_blank\"") |
 | [XMLDOM](<https://github.com/jindw/xmldom> "target=\"\_blank\"") | (c) 2012-2016 jindw | [MIT](<https://github.com/jindw/xmldom/blob/master/LICENSE> "target=\"\_blank\"") |

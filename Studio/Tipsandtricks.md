@@ -4,13 +4,19 @@ The following tips and tricks may be useful to quickly become a Hackolade power 
 
 ## Where does the name Hackolade come from?
 
-;-) Hackolade is derived from a pun in French.&nbsp; We're quite focused on JSON, to say the least, and in French a {curly bracket} is called an "accolade".&nbsp; So we thought it was creative to play with the words and have a unique trademark brand for which the .com domain was available.&nbsp; Only once did we hear from a prospect that they would never purchase from a company whose name started with "hack"...
+;-) Hackolade is derived from a pun in French.&nbsp; We're quite focused on JSON, to say the least, and in French a {curly bracket} is called an "accolade".&nbsp; It is a "double entendre" as it also has the primary meaning "acknowledgment of merit".&nbsp; So we thought it was creative to play with the words and have a distinctive trademark brand for which the .com domain was available.&nbsp; This name is obviously tongue-in-cheek. Just like a hackathon has a positive connotation and does **not** imply breaching security or privacy, Hackolade conveys a positive message of innovative and clever data quality.
+
+&nbsp;
+
+## What is the End-of-Life (EOL) policy for Hackolade Studio?
+
+Hackolade continues to provide support for version X for one calendar year after the release date of major version X+1.&nbsp; Provide that you are current with maintenance fees for your perpetual license key, or with your subscription.
 
 &nbsp;
 
 ## Release the license key from one computer to move to another
 
-If you need to move your license key to another computer, you first need to release it on the PC where your key is currently validated.
+If you need to move your license key to another computer, you first need to release it on the PC where your key is currently validated.&nbsp; The procedure is also detailed in [this page](<Transferalicensetoanewcomputer.md>).
 
 &nbsp;
 
@@ -36,7 +42,7 @@ Go to the other computer where you want to use Hackolade and validate your licen
 
 &nbsp;
 
-***TIP:*** if your company has many licenses, your administrator may require that you enter your name in the Identifier (optional) field.
+***TIP:*** if your company has many licenses, your administrator may require that you enter your name in the Identifier (optional) field.&nbsp; You will find more details in [this page](<Managingmultiplelicensekeysandse.md>).
 
 &nbsp;
 

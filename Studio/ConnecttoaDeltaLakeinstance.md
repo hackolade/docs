@@ -21,6 +21,10 @@ You should consult this [page](<https://docs.databricks.com/workspace/workspace-
 
 &nbsp;
 
+**Note:** the connection must be established with compute clusters, i.e. not with the SQL Warehouse which uses a different API which we do not support.
+
+&nbsp;
+
 To get the cluster ID, click the **Clusters** tab in sidebar and then select a cluster name. The cluster ID is the number after the /clusters/ component in the URL of this page:
 
 https://\<databricks-instance\>/#/setting/clusters/\<cluster-id\>

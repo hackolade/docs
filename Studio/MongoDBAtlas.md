@@ -82,3 +82,9 @@ Click on Add current IP address. MongoDB will automatically detect your current 
 
 MongoDB Atlas will take a few minutes to deploy the changes, after which you should be good to go. The IP address that will appear should be the same that appears when you search for it manually, using tools like [whatsmyip.org](<https://www.whatsmyip.org/> "target=\"\_blank\"").
 
+&nbsp;
+
+## Troubleshoot connection issues
+
+This [MongoDB page](<https://www.mongodb.com/docs/atlas/troubleshoot-connection/> "target=\"\_blank\"") outlines common connection issues and possible resolutions.
+

@@ -36,7 +36,7 @@ In NoSQL, you first define the queries for the application, then you store the d
 
 &nbsp;
 
-This approach is called [embedding](<https://hackolade.com/help/WhatisJSONWhatisJSONSchema.html#JSON%20in%20databases>), whereby the data, that would be in separate tables if normalized, is assembled and stored in a single atomic document, so it can be easily retrieved.&nbsp; Embedding is often opposed to referencing, which leverages foreign key relationships to the data stored elsewhere.&nbsp; While referencing is clearly more efficient in terms of storage costs, embedding provides much higher access performance and is easier for developers to manipulate.
+This approach is called [embedding](<https://hackolade.com/help/OverviewofJSONandJSONSchema.html#JSON%20in%20databases>), whereby the data, that would be in separate tables if normalized, is assembled and stored in a single atomic document, so it can be easily retrieved.&nbsp; Embedding is often opposed to referencing, which leverages foreign key relationships to the data stored elsewhere.&nbsp; While referencing is clearly more efficient in terms of storage costs, embedding provides much higher access performance and is easier for developers to manipulate.
 
 &nbsp;
 

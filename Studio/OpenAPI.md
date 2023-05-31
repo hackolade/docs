@@ -1,14 +1,14 @@
 # OpenAPI
 
-**OpenAPI Specification** or OAS (formerly known as **Swagger Specification**) is an open-source format for describing and documenting APIs. It has become a de-facto standard, language-agnostic interface for designing and describing RESTful APIs which allow both humans and computers to discover and understand the capabilities of the service without access to source code, documentation, or through network traffic inspection.&nbsp; When properly defined via OpenAPI, a consumer can understand and interact with the remote service with a minimal amount of implementation logic.&nbsp; The latest version of OpenAPI is **3.0.2**. OpenAPI definitions can be written in JSON or YAML.
+**OpenAPI Specification** or OAS (formerly known as **Swagger Specification**) is an open-source format for describing and documenting APIs. It has become a de-facto standard, language-agnostic interface for designing and describing RESTful APIs which allow both humans and computers to discover and understand the capabilities of the service without access to source code, documentation, or through network traffic inspection.&nbsp; When properly defined via OpenAPI, a consumer can understand and interact with the remote service with a minimal amount of implementation logic.&nbsp; The latest version of OpenAPI is **3.1.0**. OpenAPI definitions can be written in JSON or YAML.
 
 &nbsp;
 
-OpenAPI is a [formal specification](<https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md> "target=\"\_blank\"") surrounded by a large ecosystem of tools, which includes everything from front-end user interfaces, low-level code libraries and commercial API management solutions.
+OpenAPI is a [formal specification](<https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.1.0.md> "target=\"\_blank\"") surrounded by a large ecosystem of tools, which includes everything from front-end user interfaces, low-level code libraries and commercial API management solutions.
 
 &nbsp;
 
-To perform model-first design of a REST API using OpenAPI 3 with Hackolade, you must first download the OpenAPI [plugin](<DownloadadditionalDBtargetplugin.md>).&nbsp; This plugin is strictly compliant with version 3.0.2 of the OpenAPI specification.&nbsp; If you need support version 2 of the specification (a.k.a. Swagger) you need another plugin described [here](<SwaggerAPI.md>).
+To perform model-first design of a REST API using OpenAPI 3 with Hackolade, you must first download the OpenAPI [plugin](<DownloadadditionalDBtargetplugin.md>).&nbsp; This plugin is strictly compliant with both versions 3.0.x and 3.1.x of the OpenAPI specification.&nbsp; Note that there are breaking changes between version 3.0.x and 3.1.x, so you need to choose the right version when you create a new model.&nbsp; If you need support version 2 of the specification (a.k.a. Swagger) you need another plugin described [here](<SwaggerAPI.md>).
 
 &nbsp;
 
@@ -41,6 +41,10 @@ The OpenAPI specification describes primitives (or scalar) data types which can 
 &nbsp;
 
 ![OpenAPI data types](<lib/Swagger%20data%20types.png>)&nbsp; ![OpenAPI data types - string](<lib/Swagger%20data%20types%20-%20string.png>)&nbsp; ![OpenAPI data types - number](<lib/Swagger%20data%20types%20-%20number.png>)&nbsp; ![OpenAPI data types - integer](<lib/Swagger%20data%20types%20-%20integer.png>) &nbsp;
+
+&nbsp;
+
+Note that with OAS version 3.1.0, full compatibility with [JSON Schema draft-2020-12](<https://json-schema.org/specification.html> "target=\"\_blank\"") has been achieved.&nbsp; For example the null data type has now been introduced.&nbsp; You will find more details in [this blog](<https://lornajane.net/posts/2020/whats-new-in-openapi-3-1> "target=\"\_blank\"").
 
 &nbsp;
 
@@ -215,4 +219,8 @@ It is possible to reference a variety of definitions created elsewhere:
 \- a SwaggerHub API url
 
 \- a SwaggerHub domain url
+
+\- a Polyglot data model
+
+&nbsp;
 

@@ -6,6 +6,10 @@ Not all technology targets support primary keys.&nbsp; However, it might be usef
 
 &nbsp;
 
+You may also view this [short video](<https://www.youtube.com/watch?v=WBYiHEXPTG0> "target=\"\_blank\"") on YouTube.
+
+&nbsp;
+
 To mark an attribute as a simple Primary key is easy: select the attribute in the ERD or the Object Browser, then check the Primary Key property in the Properties Pane.&nbsp; The attribute is moved to the top of the ERD entity box above a separator line, and is marked with a "pk" identifier.&nbsp; A simple PK generally appears in-line in DDL output.
 
 &nbsp;

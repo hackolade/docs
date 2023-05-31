@@ -20,7 +20,7 @@ The data model in the picture below results from the data modeling of the [Czech
 
 &nbsp;
 
-![Image](<lib/PostgreSQL%20workspace.png>)
+![Teradata workspace](<lib/PostgreSQL%20workspace.png>)
 
 &nbsp;
 

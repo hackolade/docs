@@ -21,11 +21,11 @@ Maybe semantically, the intent was conflicting, for example one user created an 
 
 &nbsp;
 
-**Note:** automatic merge can sound a bit scary.&nbsp; This is why we strongly recommend to leverage the standard workflow feature of Git platforms for Change Requests (called Pull Requests in GitHub and Bitbucket) and Reviews.&nbsp; Humans who understand the context and purpose of changes can easily review, then approve or reject changes that, while not conflicting technically, may be unnecessary or even undesirable.&nbsp; Hackolade provides a powerful screen to support this workflow. *(coming soon)*
+**Note:** automatic merge can sound a bit scary.&nbsp; This is why we strongly recommend to leverage the standard workflow feature of Git platforms for Change Requests (called Pull Requests in GitHub and Bitbucket) and Reviews.&nbsp; Humans who understand the context and purpose of changes can easily review, then approve or reject changes that, while not conflicting technically, may be unnecessary or even undesirable.&nbsp; Hackolade provides a powerful screen to support this workflow.&nbsp;
 
 &nbsp;
 
-Also useful is the ability in Hackolade Studio Workgroup to review model history, compare commits on a data model, compare branches, etc. *(coming soon)*&nbsp;
+Also useful is the ability in Hackolade Studio Workgroup to review model history, compare commits on a data model, compare branches, etc.&nbsp;
 
 ### Requires human intervention
 

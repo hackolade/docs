@@ -42,7 +42,7 @@ All data in Synapse is stored in database tables, logically structured as collec
 
 &nbsp;
 
-A fundamental feature of SQL pool is the way it can store and operate on tables across distributions. SQL pool supports three methods for distributing data: [round-robin](<https://docs.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-distribute> "target=\"\_blank\"") (default), [hash](<https://docs.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-distribute> "target=\"\_blank\"") and [replicated](<https://docs.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/design-guidance-for-replicated-tables> "target=\"\_blank\"").&nbsp; While this might not always be true, and therefore can be adjusted by the user, the application will assign a tole during reverse-engineering based on the following logic:
+A fundamental feature of SQL pool is the way it can store and operate on tables across distributions. SQL pool supports three methods for distributing data: [round-robin](<https://docs.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-distribute> "target=\"\_blank\"") (default), [hash](<https://docs.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-distribute> "target=\"\_blank\"") and [replicated](<https://docs.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/design-guidance-for-replicated-tables> "target=\"\_blank\"").&nbsp; While this might not always be true, and therefore can be adjusted by the user, the application will assign a role during reverse-engineering based on the following logic:
 
 \- hash distribution -\> fact role
 

@@ -1,12 +1,22 @@
 # Command Line Interface
 
-With its Command Line Interface (CLI), Hackolade truly supports an agile development approach leveraging the flexibility of NoSQL dynamic schemas.&nbsp; Some Hackolade customers use this capability nightly in a batch process to identify attributes and structures that may have appeared in the data since the last run.&nbsp; During a nightly run of the reverse-engineering function, a much larger dataset can be queried as a basis for document sampling, hence making schema inference more precise. Such capability can be useful in a data governance context to properly document the semantics and publish a thorough data dictionary for end users.&nbsp; It can also be used in the context of compliance with privacy laws to make sure that the company does not store data that it is not supposed to store.&nbsp; There are many more examples of how to use this functionality.
+With its Command Line Interface (CLI), Hackolade truly supports an agile development approach leveraging the flexibility of NoSQL dynamic schemas.&nbsp; Some customers use this capability nightly in a batch process to identify attributes and structures that may have appeared in the data since the last run.&nbsp; During a nightly run of the reverse-engineering function, a much larger dataset can be queried as a basis for document sampling, hence making schema inference more precise. Such capability can be useful in a data governance context to properly document the semantics and publish a thorough data dictionary for end users. &nbsp;
+
+&nbsp;
+
+The CLI can also be used in the context of compliance with privacy laws to make sure that the company does not store data that it is not supposed to store.  There are many more examples of how to use this functionality.
+
+&nbsp;
+
+Another common use case we've seen is to use the CLI to compare the models reverse-engineered from different environments (e.g; dev, test, integration, prod) to ensure their synchronization.
 
 &nbsp;
 
 The Hackolade command line can of course be used on a stand alone machine.&nbsp; It can also be easily combined with a [git repository](<Teamcollaboration.md>) for the storage of versioned models and schema artifacts, as well as with [Docker containers](<https://github.com/hackolade/docker/tree/main/Studio> "target=\"\_blank\"").&nbsp; Customers have been using this combination either in a push mode, triggered by saving or committing model changes, or in a pull mode, when invoked by a DevOps CI/CD pipeline or a scheduled job.
 
 &nbsp;
+
+You may want to watch a playlist of [short videos](<https://www.youtube.com/playlist?list=PLuoumc7VQje0qPX3zHa8SUaDWQg2EAT40> "target=\"\_blank\"") on YouTube.
 
 ![CLI Command Line Interface with git](<lib/CLI%20with%20git.png>)
 
@@ -52,7 +62,7 @@ Below is the current list of Hackolade CLI commands.&nbsp; Additional commands m
 | open | Open Hackolade data model |
 | polyglotDerive | Derive a physical target model from a polyglot data model |
 | polyglotUpdate | Update polyglot definition |
-| revEng | Reverse-engineer a database instance or script file to infer the schema of the selected collections/tables |
+| revEng | Reverse-engineer a database instance or script file to fetch or infer the schema of the selected collections/tables |
 | revEngDataDictionary | Reverse-engineer a data dictionary instance to infer the schema of entities |
 | revEngJSON | Reverse-engineer JSON Schema or documents |
 | revEngYAML | Reverse-engineer YAML or YAML Schema files |
@@ -118,10 +128,9 @@ Note: unless GUID’s are used for the comparison, a change in a field name will
 
 Example:
 
-*C:\\PROGRA~1\\Hackolade\\hackolade compMod --model1=yesterdaysModel --model2=todaysModel --deltaModel=todaysDeltaModel --ignoreGUIDs=true *\
-*\--ignoreExtraProperties=true --ignoreOrder=true *
+> C:\\PROGRA~1\\Hackolade\\hackolade compMod --model1=yesterdaysModel --model2=todaysModel --deltaModel=todaysDeltaModel --ignoreGUIDs=true --ignoreExtraProperties=true --ignoreOrder=true&nbsp;
 
-&nbsp;
+> &nbsp;
 
 **Note:** If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: *"C:\\Program Files\\Hackolade\\hackolade"* .&nbsp; The workaround, assuming:
 

@@ -140,7 +140,7 @@ After you choose the folder path, the application will create a JSON file contai
 
 ### Insert documents or records in database instance
 
-Starting with v6.1.3 for MongoDB (and progressively thereafter for other targets), you may also generate synthetic data in bulk and apply it to a database instance.&nbsp; All you need to do it to go to the scripot tab, select "Include sample data", and specify the number of documents per collection.&nbsp; Then click the "Apply to instance" button and choose the target instance from the Connection settings dialog.
+Starting with v6.1.3 for MongoDB (and progressively thereafter for other targets), you may also generate synthetic data in bulk and apply it to a database instance.&nbsp; All you need to do it to go to the script tab, select "Include sample data", and specify the number of documents per collection.&nbsp; Then click the "Apply to instance" button and choose the target instance from the Connection settings dialog.
 
 &nbsp;
 

@@ -54,13 +54,15 @@ A default installation folder is proposed, which may be changed if you wish:
 
 &nbsp;
 
-**Warning:** Do NOT install Hackolade in the AppData directory.  You should select either Program Files as suggest, or C:\\Hackolade or some other place where you have Write rights.&nbsp; AppData is for application *data*, not application *programs*.
+**Warning:** Do NOT install Hackolade in the AppData directory.  You should select either Program Files as suggested, or C:\\Hackolade or some other place where you have Write rights.&nbsp; AppData is for application *data*, not application *programs*.
 
 &nbsp;
 
 After a couple of additional prompt, the installation process will start.&nbsp; At the end, you will be able to consult the release note, and automatically start the application.
 
 &nbsp;
+
+## Silent installation
 
 The installation program also supports silent mode for command-line installations, with the following arguments:
 
@@ -83,6 +85,10 @@ Hackolade-win64-setup-signed.exe /VERYSILENT /SUPPRESSMSGBOXES /DIR="C:/Users/%u
 
 ## Licenses on Virtual Machines (or physical computer accessed via Remote Desktop Installations \[RDP\] or equivalent)
 
+As long as you validate and use Hackolade Studio with the same combination of host machine, remote machine, and login, there should be not issue.&nbsp; If any of these 3 parameters is different, access is blocked.&nbsp; In a VM environment, it is critical that the VM instance is persistent to ensure the stability of the 3 parameter combination.
+
+&nbsp;
+
 **Important note:** installing Hackolade on a central computer (whether on a PC or a server, whether the machine is virtual or physical, and whether on premises or in the Cloud) does **not** change the terms of our [License Agreement](<Licenseagreement.md>).&nbsp; Specifically, that license metric is per "per seat", and that a license must be obtained for each device on or from which the Product is used or accessed. When the Product is accessed remotely across using Terminal Server, Remote Desktop, Citrix XenDesktop or an equivalent method, a separate Product license is required to be assigned to each device from which the application is accessed, i.e. not the virtual machine on which the Product is installed.
 
 &nbsp;
@@ -100,6 +106,10 @@ Example: having 4 Hackolade users on a single VM is the equivalent of having 4 i
 &nbsp;
 
 ### VM configuration
+
+**Note:** it is critical that the VM setup is such that you access a **persistent** VM instance of the application.&nbsp; Non-persistent instances will cause license issues.
+
+&nbsp;
 
 Hackolade licensing is enforced through registration on our license server of a combination of unique identifiers, including the UUID of the computer where Hackolade is installed, a client workstation identification for the PC accessing the application, and the user login.  Each unknown combination reserves one seat on our license server, until you reach the total number of seats purchased for the submitted license key.
 

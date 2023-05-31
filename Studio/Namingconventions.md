@@ -22,7 +22,7 @@ A conversion file is not mandatory to use the Naming Conventions feature. &nbsp;
 
 &nbsp;
 
-The conversion file is made of at least 2 columns, with Business name as a first column, and Technical name as the second column.&nbsp; Additional columns are ignored by Hackolade.&nbsp; The columns are separated by commas.&nbsp; The first line is the header line, and is ignored in the conversion.&nbsp; The lines are separated by a \<CR\>\<LF\>.&nbsp; There is no limit to the number of lines in the file.&nbsp; The values in the columns are not case-sensitive.&nbsp; A case conversion may be applied in the conversion parameters, cfr below.
+The conversion file is made of at least 2 columns, with Business Name as a first column, and Technical Name as the second column.&nbsp; Additional columns are ignored by Hackolade.&nbsp; The columns are separated by commas.&nbsp; The first line is the header line, and is ignored in the conversion.&nbsp; The lines are separated by a \<CR\>\<LF\>.&nbsp; There is no limit to the number of lines in the file.&nbsp; The values in the columns are not case-sensitive.&nbsp; A case conversion may be applied in the conversion parameters, cfr below.
 
 &nbsp;
 

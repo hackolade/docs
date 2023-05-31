@@ -26,7 +26,7 @@ In traditional data modeling approaches for relational databases using the conce
 
 &nbsp;
 
-In our definition, a Polyglot Data Model sits over the previous boundary between logical and physical. It is sort of a logical model in the sense that it is technology-agnostic, but it is really a **common physical schema** with the following features:
+In our definition, a Polyglot Data Model sits over the previous boundary between logical and physical. It is sort of a logical model in the sense that it is technology-agnostic, but it is really a **common physical model** with the following features:
 
 * allows denormalization, if desired, given access patterns;
 * allows complex data types;
@@ -88,7 +88,7 @@ Elaborating further, you could derive a target model from multiple polyglot mode
 
 ## Conceptual modeling
 
-It is generally said that there are 3 categories of data modeling: conceptual, logical, and physical.&nbsp; In summary, conceptual modeling captures the common business language and defines the scope, whereas the logical model captures the business rules, and the physical model represents the specific implementation of the model.
+It is generally said that there are 3 categories of data modeling: conceptual, logical, and physical.&nbsp; In summary, conceptual modeling captures the common business language and defines the scope, whereas the logical model captures the business rules in a technology-agnostic manner, and the physical model represents the specific implementation of the model.
 
 &nbsp;
 
@@ -100,11 +100,17 @@ With version 6.6.0 of Hackolade Studio, we facilitate the process of conceptual 
 
 ## Logical modeling
 
-**Important:** for users coming from traditional data modeling tools for RDBMS and the traditional process of conceptual, logical, physical, it may be tempting to use Hackolade's Polyglot models purely in the same way as before, and ignore the nuances and purpose of our Polyglot approach.&nbsp; Please don't, as you might be disappointed by the result.&nbsp; It would be the same as wanting to use MongoDB with a normalized data model.
+**Important:** for users coming from traditional data modeling tools for RDBMS and the traditional process of conceptual, logical, physical, it may be tempting to use Hackolade's Polyglot models purely in the same way as before, and ignore the nuances and purpose of our Polyglot approach.&nbsp; Please don't, as you might be disappointed by the result.&nbsp; It would provide results similar to an exercise of using MongoDB with a normalized data model, i.e. not the optimal use of a NoSQL document database...
 
 &nbsp;
 
-Again, while our Polyglot model is technology-agnostic like logical models, it is really a **common physical schema** with the following features:
+**Note:** for decades, it has been said that logical models were "technology-agnostic.&nbsp; All that works well enough using the famous [rules of database normalization](<https://en.wikipedia.org/wiki/Database\_normalization> "target=\"\_blank\"") -- as long as your target technologies are relational only. &nbsp; But as soon as we're having to deal with NoSQL or with APIs and modern storage formats, it turns out that logical models which respect third normal form for many-to-many relationships with junction tables aren't "technology-agnostic" after all.  In a NoSQL document database, you would embed information and not use any junction table.  Similarly, supertypes/subtypes can be handled in NoSQL via polymorphism instead of inheritance tables, etc.
+
+&nbsp;
+
+&nbsp;
+
+While our Polyglot model is truly technology-agnostic, it is also a **common physical model** with the following features:
 
 * allows denormalization, if desired, given access patterns;
 * allows complex data types;
@@ -112,21 +118,49 @@ Again, while our Polyglot model is technology-agnostic like logical models, it i
 
 &nbsp;
 
-Typically in logical models, you will have normalized entities, and you may denormalize in the physical model for performance.&nbsp; With a Polyglot model, it is advised to do things the other way around.&nbsp; You should use query-driven access patterns to define Polyglot structures with complex data types, including denormalization and polymorphism.&nbsp; When you derive to an RDBMS target, you will want to let our process normalize the structure, while you will want to keep the hierarchical structure for technology targets that allow it.
+Typically in logical models, you would have normalized entities, and you may denormalize in the physical model for performance.&nbsp; With a Polyglot model, it is advised to do things the other way around.&nbsp; You should use query-driven access patterns to define Polyglot structures with complex data types, including denormalization and polymorphism.&nbsp; When you derive to an RDBMS target, you will want to let our process normalize the structure on-the-fly, while you will want to keep the hierarchical structure for technology targets that allow it.
 
 &nbsp;
 
-Let's take this example of a Polyglot entity with a complex sub-object as well as a choice representing different possible sub-types for inheritance:
+### Supertypes and subtypes
+
+Hackolade Studio will let you create supertypes and subtypes in a Polyglot model, following either the traditional method:
+
+![Polyglot - normalized complex and sub-types](<lib/Polyglot%20-%20normalized%20complex%20and%20sub-types.png>)
+
+&nbsp;
+
+or a denormalized method, with a complex sub-object as well as a oneOf choice representing different possible sub-types for inheritance
 
 ![Polyglot - complex structure and super-type](<lib/Polyglot%20-%20complex%20structure%20and%20super-type.png>)
 
 &nbsp;
 
-If you derive this Polyglot model in JSON, Avro, or MongoDB/CosmosBD/MarkLogic/etc., the target model will be exactly as above in the Polyglot model, since these technologies handle well complex data types and polymorphism.&nbsp; But if you derive this model in an RDBMS, we automatically normalize into the structure below where the complex attribute is moved into a separate table with a foreign key, and the choice is converted to inheritance tables:
+&nbsp;
 
-![Polyglot - normalized complex and sub-types](<lib/Polyglot%20-%20normalized%20complex%20and%20sub-types.png>)
+Either way, the application will understand, depending on the target technology and its capabilities, whether to normalize with inheritance tables, or denormalize for NoSQL and leverage polymorphism.
 
 &nbsp;
+
+### Many-to-many relationships
+
+With logical models having to be normalized, they are only "technology-agnostic" if their use is limited to relational databases, as explained above.&nbsp; With NoSQL databases allowing for denormalization with embedded objects and arrays, no junction tables are necessary to represent many-to-many relationships.
+
+&nbsp;
+
+Therefore, our Polyglot data models have a more intuitive way of documenting a many-to-many business rule:
+
+![Polyglot many-to-many relationship](<lib/Polyglot%20many-to-many%20relationship.png>)
+
+&nbsp;
+
+And our automatic normalization function, when deriving the Polyglot model to an relational database, will generate the expected junction table:
+
+![Polyglot many-to-many normalization](<lib/Polyglot%20many-to-many%20normalization.png>)
+
+&nbsp;
+
+Conversely, the derivation to a NoSQL target will leave the entities as declared in the Polyglot model and allow for further denormalization according to the needs of the access patterns.&nbsp; Ideally, the denormalization takes place directly in the Polyglot model.
 
 &nbsp;
 

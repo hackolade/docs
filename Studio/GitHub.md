@@ -8,7 +8,7 @@ If you don't have a valid Personal Token, you may get the error message below, i
 
 &nbsp;
 
-![Workgroup - Github token error](<lib/Workgroup%20-%20GitHub%20token%20error.png>)
+![Workgroup - GitHub token error](<lib/Workgroup%20-%20GitHub%20token%20error.png>)
 
 &nbsp;
 

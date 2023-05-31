@@ -59,7 +59,7 @@ Hackolade was specially built to support the data types and attributes behavior 
 
 ## Indexes
 
-MongoDB provides a number of different index types to support specific types of data and queries.
+MongoDB provides a number of different index types to improve query performance reducing the number of documents that need to be scanned to satisfy a query, including:&nbsp;
 
 * [default \_id index](<https://docs.mongodb.com/manual/core/document/#document-id-field> "target=\"\_blank\""):&nbsp; MongoDB creates a unique index on the \_id field during the creation of a collection. The \_id index prevents clients from inserting two documents with the same value for the \_id field. You cannot drop this index on the \_id field.
 * [single field](<https://docs.mongodb.com/manual/core/index-single/> "target=\"\_blank\""): MongoDB supports the creation of user-defined ascending/descending indexes on a single field of a document.
@@ -87,6 +87,16 @@ Read-only views in MongoDB were introduced with version 3.4.&nbsp; DBAs can defi
 &nbsp;
 
 MongoDB views are handled through a pipeline projection of the fields of a collection (with possible $lookup to additional collections.)&nbsp; In Hackolade views are represented in the Entity Relationship diagram alongside collections with a visual icon to distinguish them. &nbsp;
+
+&nbsp;
+
+## In-Use Encryption
+
+MongoDB provides a in-use encryption (previously known as the field level encryption ("FLE") framework), both server-side and client-side. Applications can encrypt fields in documents *prior* to transmitting data over the wire to the server. 
+
+&nbsp;
+
+Hackolade Studio supports MongoDB FLE functionality.&nbsp; See more details [here](<MongoDBField-LevelEncryption.md>).
 
 &nbsp;
 

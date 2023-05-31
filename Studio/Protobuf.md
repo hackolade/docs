@@ -124,3 +124,48 @@ Hackolade easily imports the schema from .proto files to represent the correspon
 &nbsp;
 
 For more information on Protobuf in general, please consult the [website](<https://developers.google.com/protocol-buffers> "target=\"\_blank\"").and [documentation](<https://developers.google.com/protocol-buffers/docs/proto3> "target=\"\_blank\"").
+
+&nbsp;
+
+&nbsp;
+
+## Cloud Object Storage
+
+In the context of large-scale distributed systems like data lakes, data is often stored in object storage solutions like Amazon S3, Azure ADLS, or Google Cloud Storage.&nbsp; Protobuf is designed to be a compact and efficient binary format for serializing data.
+
+&nbsp;
+
+With Hackolade Studio, you can reverse-engineer Protobuf files located on:
+
+\- Amazon S3
+
+\- Azure Blog Storage
+
+\- Azure Data Lake Storage (ADLS) Gen 1 and Gen 2
+
+\- Google Cloud Storage
+
+&nbsp;
+
+## Schema Registries
+
+A key component of event streaming is to enable broad compatibility between applications connecting to Kafka. In a large organizations, trying to ensure data compatibility can be difficult and ultimately ineffective, so schemas should be handled as “contracts” between producers and consumers.
+
+&nbsp;
+
+The main benefit of using a Schema Registry is that it provides a centralized way to manage and version Protobuf schemas, which can be critical for maintaining data compatibility and ensuring data quality in a Kafka ecosystem.
+
+&nbsp;
+
+Hackolade Studio supports Protobuf schema maintenance in:
+
+\- [Confluent Schema Registry](<ConfluentSchemaRegistry.md>)
+
+\- [Azure EventHubs Schema Registry](<EventHubsAzureSchemaRegistry.md>)
+
+\- [Pulsar Schema Registry](<PulsarSchemaRegistry.md>)
+
+&nbsp;
+
+Schemas can be published to the registry via forward-engineering, or reverse-engineered from these schema registries.
+

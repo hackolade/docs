@@ -4,7 +4,7 @@ Starting with v4.2, MongoDB provides a field level encryption ("FLE") framework,
 
 &nbsp;
 
-Starting with v5.4.9 of Hackolade Studio, we support MongoDB FLE functionality.
+Starting with v5.4.9 of Hackolade Studio, we support MongoDB FLE functionality, which is also known as [In-Use Encryption](<https://www.mongodb.com/docs/compass/current/in-use-encryption-tutorial/> "target=\"\_blank\"").
 
 &nbsp;
 

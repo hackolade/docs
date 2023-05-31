@@ -108,3 +108,21 @@ Manual installation steps:
 
 Double-click on the Hackolade.app icon to start the application.
 
+&nbsp;
+
+## Silent installation
+
+The installer can be invoked in a Terminal window after download of the application pkg file in the Downloads folder.
+
+&nbsp;
+
+On Apple silicon arm64:
+
+> sudo installer -target / -pkg $HOME/Downloads/Hackolade-macARM64-setup-signed.pkg
+
+&nbsp;
+
+On Intel 64-bit:
+
+> sudo installer -target / -pkg $HOME/Downloads/Hackolade-mac-setup-signed.pkg
+

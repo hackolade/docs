@@ -4,7 +4,7 @@ The [Confluent Schema Registry](<https://docs.confluent.io/platform/current/sche
 
 &nbsp;
 
-A key component of event streaming is to enable broad compatibility between applications connecting to Kafka. In a large organizations, trying to ensure data compatibility can be difficult and ultimately ineffective, even when using Schema Registry, because schemas are handled as “agreements” at the application level. Kafka cannot prevent unformatted data from being published. As a Kafka deployment scales and the number of connected systems and apps increases, so does the amount of risk and uncertainty regarding data quality.
+A key component of event streaming is to enable broad compatibility between applications connecting to Kafka. In a large organizations, trying to ensure data compatibility can be difficult and ultimately ineffective, so schemas should be handled as “contracts” between producers and consumers. Kafka cannot prevent unformatted data from being published. As a Kafka deployment scales and the number of connected systems and apps increases, so does the amount of risk and uncertainty regarding data quality.
 
 &nbsp;
 
@@ -73,11 +73,23 @@ You should look at [this table](<https://docs.confluent.io/platform/current/sche
 
 ## Avro unions with schema references
 
+Confluent Platform (versions 5.5.0 and later) provides full support for the notion of *schema references*, the ability of a schema to refer to other schemas
+
+&nbsp;
+
 Introduced with Confluent 5.5, a schema reference is comprised of a reference name, and a subject/version for that reference.&nbsp; The Avro union is just a list of event types that could be sent to a topic.&nbsp; And each event type can evolve independently, as they would have with either RecordNameStrategy or TopicRecordNameStrategy, except that you can now use TopicNameStrategy and retain subject-topic constraints,&nbsp;
 
 &nbsp;
 
 You will find more details in [this blog](<https://www.confluent.io/blog/multiple-event-types-in-the-same-kafka-topic/> "target=\"\_blank\"").&nbsp; Hackolade does not yet support Avro unions with schema references, but design is under way.
+
+&nbsp;
+
+A schema reference consists of the following:
+
+* A name for the reference. (For Avro, the reference name is the fully qualified schema name, for JSON Schema it is a URL, and for Protobuf, it is the name of another Protobuf file.)
+* A subject, representing the subject under which the referenced schema is registered.
+* A version, representing the exact version of the schema under the registered subject.
 
 &nbsp;
 

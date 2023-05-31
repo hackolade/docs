@@ -200,3 +200,5 @@ It is possible to reference a variety of definitions created elsewhere:
 
 \- a SwaggerHub domain url
 
+\- a Polyglot data model
+

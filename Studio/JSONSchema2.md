@@ -71,5 +71,5 @@ The JSON Schema can also be exported to a Confluent or Pulsar Schema Registry in
 
 ## Reverse-Engineering
 
-Hackolade can reverse-engineer of course JSON Schema from different drafts, but also infer the schema from JSON, YAML or NDJSON documents.&nbsp; It can lso convert DDLs and XSDs to JSON Schema.
+Hackolade can reverse-engineer of course JSON Schema from different drafts, but also infer the schema from JSON, YAML or NDJSON documents.&nbsp; It can also convert DDLs and XSDs to JSON Schema.
 

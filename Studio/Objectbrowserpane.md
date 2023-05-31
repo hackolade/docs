@@ -58,6 +58,8 @@ There are several controls available to fine-tune the find and replace function:
 
 ![Find - complete word](<lib/Find%20-%20complete%20word.png>) press this button if you want to match only complete words
 
+![Image](<lib/NewItem5.png>) press this button if you want to match according to a regular expression (see [RegEx cheatsheet by example](<https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285> "target=\"\_blank\""))
+
 ![Find - word part](<lib/Find%20-%20word%20part.png>)&nbsp; if match is not on complete words, you have may specify to match only on the beginning or the end of the word
 
 ![Find - object type](<lib/Find%20-%20object%20type.png>) you may restrict the search on specific types of objects or only on data types

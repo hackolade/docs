@@ -88,7 +88,11 @@ A data type matrix mapping table is used to provide bi-directional transformatio
 
 ## Naming conventions
 
-Target-specific transformations rules are applied during the process of deriving from the polyglot model.
+Polyglot models being technology-agnostic, it is normal that only business names are created and maintained here.  \
+ \
+Then when a physical model is derived for any target, it is often the case that the rules to generate physical names from business names are different.  For example, in MongoDB, JSON, Avro, OpenAPI, developers tend to prefer camelCase, whereas some targets like Cassandra cannot have any upper case characters and therefore snake\_case is a typical conversion.\
+ \
+To generate technical names in physical target models when deriving from a polyglot model, you must first enable Business-to-Technical coupling for the chosen target in Tools \> Options \> Naming Conventions.&nbsp; Target-specific transformations rules are applied during the process of deriving from the polyglot model.
 
 &nbsp;
 

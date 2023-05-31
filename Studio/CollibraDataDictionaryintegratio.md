@@ -8,7 +8,7 @@ The integration of data modeling with governance tools and processes enables sol
 
 &nbsp;
 
-**Note:** You may wish to view the [how-to video](<https://hackolade.com/videos.html#collibra> "target=\"\_blank\"") on this subject.
+**Note:** You may wish to view the [how-to video](<https://youtu.be/6UA1Ys\_OlMY> "target=\"\_blank\"") on this subject.
 
 &nbsp;
 

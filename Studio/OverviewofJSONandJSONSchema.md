@@ -128,7 +128,7 @@ The novel added-value provided by Hackolade Studio is its ability to represent n
 
 &nbsp;
 
-If you use a traditional ERD tool to represent the above order document, it can only create a separate for each nested object, something like this:
+If you use a traditional ERD tool to represent the above order document, it can only create a separate box for each nested object, something like this:
 
 ![JSON order normalized ERD](<lib/JSON%20order%20normalized%20ERD.png>)
 
@@ -152,5 +152,5 @@ And finally, we facilitate the linking of multiple documents in an Entity-Relati
 
 &nbsp;
 
-While foreign key relationships are not enforced by the document database, it is important for a better understanding, to document implicit relationships in the data.
+While foreign key relationships are not enforced by document databases, it is important for a better understanding, to document implicit relationships in the data.
 

@@ -14,7 +14,7 @@ We provide this feature in the Tools menu so you can invoke it at any time.&nbsp
 
 &nbsp;
 
-The feature is based on the published paper [Foreign Key Constraint Identification in Relational Databases](<Foreign%20Key%20Constraint%20Identification%20in%20Relational%20Databases> "target=\"\_blank\"") by Jan Motl and Pavel Kordík.&nbsp; The approach is fast and scalable, it is target agnostic, and it is not affected by data quality.
+The feature is based on the published paper [Foreign Key Constraint Identification in Relational Databases](<https://ceur-ws.org/Vol-1885/106.pdf> "target=\"\_blank\"") by Jan Motl and Pavel Kordík.&nbsp; The approach is fast and scalable, it is target agnostic, and it is not affected by data quality.
 
 &nbsp;
 

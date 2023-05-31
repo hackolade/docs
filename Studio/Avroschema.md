@@ -103,7 +103,7 @@ If at least one data type is complex (**record**, **enum**, **array**, **map**,
 
 ![Avro oneOf choice](<lib/Avro%20oneOf%20choice.png>)
 
-&nbsp;
+## &nbsp;
 
 ## Forward-Engineering
 
@@ -122,4 +122,46 @@ This structure can be forward-engineered to a file with .avsc extention or copie
 ## Reverse-Engineering
 
 Hackolade easily imports the schema from .avsc or .avro files to represent the corresponding Entity Relationship Diagram and schema structure.&nbsp; You may also import and convert from JSON Schema and documents.
+
+&nbsp;
+
+## Cloud Object Storage
+
+In the context of large-scale distributed systems like data lakes, data is often stored in object storage solutions like Amazon S3, Azure ADLS, or Google Cloud Storage.&nbsp; Avro can be used to serialize the data into binary format then be stored in the object storage system as a file, making it easily accessible for processing and analysis.
+
+&nbsp;
+
+With Hackolade Studio, you can reverse-engineer Avro files located on:
+
+\- Amazon S3
+
+\- Azure Blog Storage
+
+\- Azure Data Lake Storage (ADLS) Gen 1 and Gen 2
+
+\- Google Cloud Storage
+
+&nbsp;
+
+## Schema Registries
+
+A key component of event streaming is to enable broad compatibility between applications connecting to Kafka. In a large organizations, trying to ensure data compatibility can be difficult and ultimately ineffective, so schemas should be handled as “contracts” between producers and consumers.
+
+&nbsp;
+
+The main benefit of using a Schema Registry is that it provides a centralized way to manage and version Avro schemas, which can be critical for maintaining data compatibility and ensuring data quality in a Kafka ecosystem.
+
+&nbsp;
+
+Hackolade Studio supports Avro schema maintenance in:
+
+\- [Confluent Schema Registry](<ConfluentSchemaRegistry.md>)
+
+\- [Azure EventHubs Schema Registry](<EventHubsAzureSchemaRegistry.md>)
+
+\- [Pulsar Schema Registry](<PulsarSchemaRegistry.md>)
+
+&nbsp;
+
+Schemas can be published to the registry via forward-engineering, or reverse-engineered from these schema registries.
 
