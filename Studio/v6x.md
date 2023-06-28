@@ -1,5 +1,89 @@
 # v6.x
 
+New features in v6.10.9 \[23-Jun-2023\]
+
+\- Document generation with CLI: added tolerance for markdown properties with null value
+
+\- FK relationship creation: added tolerance for when the foreign attribute is a reference to a definition
+
+\- Avro: handled cases when root schema replaced by string reference
+
+\- Delta Lake/Databricks: added detection of subtype for child properties of arrays
+
+\- Model-driven OpenAPI: added info block from template when deriving from polyglot
+
+\- Polyglot: added handling of complex data type in field derived from Polyglot model and it is conflicting with a reserved name
+
+\- Oracle: added support for CREATE SYNONYM syntax in forward- and reverse-engineering
+
+\- PostgreSQL and YugabyteDB: added handling of transition between individual and composite PKs in ALTER scripts
+
+\- SQL Server and Azure SQL: added support for deriving auto-increment from Polyglot
+
+&nbsp;
+
+New features in v6.10.8 \[16-Jun-2023\]
+
+\- Print diagram: added possibility to export images to SVG format
+
+\- Properties Pane: disabled isAvtivated property if attribute is a PK or part of composite PK
+
+\- Faker: upgraded to latest library version 8.0.2.&nbsp; Beware of breaking changes in Faker functions https://github.com/faker-js/faker/blob/next/CHANGELOG.md
+
+\- Avro: moved handling of custom properties at field level
+
+\- Delta Lake/Databricks: adjusted mapping of array when deriving from polyglot without normalization
+
+\- Oracle: added generating index script if index name is undefined
+
+\- PostgreSQL: added support for modifications in Primary Keys and Foreign Key relationships in ALTER scripts of delta models
+
+\- YugabyteDB: added support for modifications in Primary Keys and Foreign Key relationships in ALTER scripts of delta models&nbsp;
+
+&nbsp;
+
+New features in v6.10.7 \[09-Jun-2023\]
+
+\- SQL Server and Azure SQL: added support for comments in forward- and reverse-engineering, leveraging sp\_addextendedproperty syntax
+
+&nbsp;
+
+New features in v6.10.6 \[07-Jun-2023\]
+
+\- Excel: added tolerance for export of attributes with empty business name
+
+\- MongoDB, Cosmos DB w/ Mongo API, and DocumentDB: adjusted EJSON to BSON mapping during reverse-engineering inference of ISODate
+
+&nbsp;
+
+New features in v6.10.5 \[02-Jun-2023\]
+
+\- Properties Pane: added warning validation after data type change
+
+\- Foreign Key relationships creation: added tolerance for matching of data type when child attribute has multiple types
+
+\- Reverse-Engineering: increased sample size limit to over 800 Mb
+
+\- XSD: added reverse-engineering of complexTypes for Sparx Enterprise Architect
+
+\- Avro: added custom property keyword includeInScript = true if user wishes for custom property to be added to AVSC schema.&nbsp; Also handled in Reverse-Engineering from schema registry and avsc files
+
+\- Avro forward-engineering: added resolving of schema references when generating AVSC schema outside of Confluent Schema Registry
+
+\- Oracle: added support for materialized views, including view properties, and indexes on materialized view columns
+
+\- Teradata: added logic to generate ALTER scripts from delta model
+
+&nbsp;
+
+New features in v6.10.4 \[31-May-2023\]
+
+\- ERD: enhanced copy/paste of containers with FK composite relationships
+
+\- ERD: adjusted copy/paste of relationships
+
+&nbsp;
+
 New features in v6.10.3 \[26-May-2023\]
 
 \- Object Browser: added search by Regular Expression

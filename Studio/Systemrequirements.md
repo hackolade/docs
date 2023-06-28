@@ -1,6 +1,6 @@
 # System requirements
 
-**Important:** For proper operation of the software, the following domains must be whitelisted in your corporate and local networking/firewall/security/anti-malware environment: [https://hackolade.com](<https://hackolade.com> "target=\"\_blank\""),&nbsp; [https://quicklicensemanager.com](<https://quicklicensemanager.com/> "target=\"\_blank\""), [https://qlmdr.com](<https://qlmdr.com> "target=\"\_blank\""), and [https://github.com](<https://github.com> "target=\"\_blank\"")
+**Important:** For proper operation of the software, the following domains must be whitelisted in your corporate and local networking/firewall/security/anti-malware environment: [https://hackolade.com](<https://hackolade.com> "target=\"\_blank\""),&nbsp; [https://quicklicensemanager.com](<https://quicklicensemanager.com/> "target=\"\_blank\""), [https://qlmdr.com](<https://qlmdr.com> "target=\"\_blank\""), and [https://github.com/hackolade](<https://github.com/hackolade> "target=\"\_blank\"")
 
 &nbsp;
 

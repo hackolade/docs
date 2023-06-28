@@ -4,6 +4,10 @@ In the previous tutorial, we reviewed how to create other types of JSON Schema a
 
 &nbsp;
 
+You may also [view this tutorial](<https://youtu.be/69zREhcCYuc> "target=\"\_blank\"") on YouTube.&nbsp; Summary slides can be found [here](<https://www.slideshare.net/PascalDesmarets1/hackolade-tutorial-part-7-add-relationshipspdf> "target=\"\_blank\"").
+
+&nbsp;
+
 **Note:** this tutorial does not cover edges of graph targets, a subject which is covered in a later tutorial.
 
 &nbsp;

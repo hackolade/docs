@@ -4,6 +4,10 @@ In the previous tutorial, we reviewed how to add relationships to your entity-re
 
 &nbsp;
 
+You may also [view this tutorial](<https://youtu.be/bPQ3AODOCYM> "target=\"\_blank\"") on YouTube.&nbsp; Summary slides can be found [here](<https://www.slideshare.net/PascalDesmarets1/hackolade-tutorial-part-8-import-or-reverseengineerpdf> "target=\"\_blank\"").
+
+&nbsp;
+
 The reverse-engineering function is used to import information into pre-existing or empty data models.&nbsp; Reverse engineering is a useful feature to facilitate the modeling and documentation of existing instances.&nbsp; After the reverse engineering has been performed, the user can enrich the model created, by filling descriptions, recording constraints that were not obvious from the stored data, documenting relationships, etc…
 
 &nbsp;

@@ -1,5 +1,7 @@
 # Overview of JSON and JSON Schema
 
+You may also [view this tutorial](<https://youtu.be/fbvobxYHKGg> "target=\"\_blank\"") on YouTube.&nbsp; Summary slides can be found [here](<https://www.slideshare.net/PascalDesmarets1/hackolade-tutorial-part-2-overview-of-json-and-json-schema> "target=\"\_blank\"").
+
 ## JSON
 
 **JSON** stands for JavaScript Object Notation.&nbsp; It is a lightweight data-interchange format. It is easy for humans to read and write. It is easy for machines to parse and generate.

@@ -1,6 +1,10 @@
-# Use graph diagrams
+# Create model for graph databases
 
 In the previous tutorial, we reviewed how to generate documentation and pictures for your data model.&nbsp; By the end of this tutorial, you will master the creation of data models for property graph databases.
+
+&nbsp;
+
+You may also [view this tutorial](<https://youtu.be/C0NoEbDMNm4> "target=\"\_blank\"") on YouTube.&nbsp; Summary slides can be found [here](<https://www.slideshare.net/PascalDesmarets1/hackolade-tutorial-part-11-create-a-model-for-graph-databases> "target=\"\_blank\"").
 
 &nbsp;
 

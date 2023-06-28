@@ -1,5 +1,9 @@
 # Create your first data model
 
+You may also [view this tutorial](<https://youtu.be/i9FJ7zJ1STw> "target=\"\_blank\"") on YouTube.&nbsp; Summary slides can be found [here](<https://www.slideshare.net/PascalDesmarets1/hackolade-tutorial-part-4-create-your-first-data-model> "target=\"\_blank\"").
+
+&nbsp;
+
 After [installation](<Installation.md>) and [software key validation](<Softwareregistration.md>), you are now ready to run Hackolade Studio and create your first data model.&nbsp; By the end of this tutorial, you will master different ways to enter information in Hackolade Studio, as well as different ways to visualize structures you've created.
 
 &nbsp;

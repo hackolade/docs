@@ -4,6 +4,10 @@ In the previous tutorial, we reviewed how to create data models for property gra
 
 &nbsp;
 
+You may also [view this tutorial](<https://youtu.be/m2apHbSfMyw> "target=\"\_blank\"") on YouTube.&nbsp; Summary slides can be found [here](<https://www.slideshare.net/PascalDesmarets1/hackolade-tutorial-part-12-create-a-rest-api-model> "target=\"\_blank\"").
+
+&nbsp;
+
 While it is useful to be familiar with REST APIs in general, and the Swagger/OpenAPI specification in particular, the great advantage of Hackolade Studio's handling of REST APIs documentation is that the user does not have to know the syntax for Swagger or OpenAPI.&nbsp; You create your API with the user interface, and the application takes care of generating the proper syntax, thereby avoiding costly mistakes, and increasing productivity and API quality.
 
 &nbsp;
@@ -36,7 +40,7 @@ and generated the corresponding OpenAPI file:
 
 &nbsp;
 
-&nbsp;Here is the [link](<https://hackolade.com/schemas/OpenAPI/shorty\_URL\_shortener.hck.json> "target=\"\_blank\"") if you want to download this data model.
+&nbsp;Here is the [link](<https://hackolade.com/sample-data-models/OpenAPI/shorty\_URL\_shortener.hck.json> "target=\"\_blank\"") if you want to download this data model.
 
 &nbsp;
 
@@ -378,7 +382,7 @@ On the right, you can now visualize the API interaction pane.&nbsp; If the servi
 
 &nbsp;
 
-Don't forget to name your model and save it.&nbsp; Here is the [link](<https://hackolade.com/schemas/OpenAPI/shorty\_URL\_shortener.hck.json> "target=\"\_blank\"") if you want to download this data model.
+Don't forget to name your model and save it.&nbsp; Here is the [link](<https://hackolade.com/sample-data-models/OpenAPI/shorty\_URL\_shortener.hck.json> "target=\"\_blank\"") if you want to download this data model.
 
 &nbsp;
 

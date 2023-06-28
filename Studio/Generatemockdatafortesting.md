@@ -51,11 +51,15 @@ to be pasted&nbsp;
 
 &nbsp;
 
-You may also paste functions with arguments, such as ***faker.name.firstName("female")*** or compose more sophisticated results by assembling functions with placeholders, for example:
+You may also paste functions with arguments, such as ***faker.person.firstName("female")*** or compose more sophisticated results by [assembling functions with helpers](<https://fakerjs.dev/api/helpers.html#fake> "target=\"\_blank\""), for example:
 
-&nbsp; &nbsp; **\`${faker.address.zipCode()} ${faker.address.city()}\`**
+&nbsp; &nbsp; **faker.helpers.fake('{{person.firstName}} {{person.lastName}}')**
 
-&nbsp; &nbsp; '**${faker.address.zipCode()} ${faker.address.city()}'**
+or
+
+**'${faker.company.name()}, ${faker.company.suffixes()}'**
+
+&nbsp;
 
 &nbsp;
 
@@ -63,7 +67,7 @@ Note that we accept functions wrapped by either backticks or single quotes.
 
 &nbsp;
 
-It is NOT possible to use any non-faker method or plain JavaScript.
+For security reasons to avoid vulnerability injection, it is NOT possible to use any non-faker method or plain JavaScript.
 
 &nbsp;
 
@@ -96,7 +100,7 @@ using the following functions (in this case exported to Excel for easy bulk edit
 | jobDescriptor | string | faker.name.jobDescriptor() |
 | seniority | number | faker.random.numeric() |
 | dayOff | string | faker.date.weekday() |
-| phone | string | faker.phone.phoneNumber('+1 (###) ###-####') |
+| phone | string | faker.phone.number('+1 (###) ###-####') |
 
 
 &nbsp;

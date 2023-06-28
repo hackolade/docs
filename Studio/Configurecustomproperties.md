@@ -41,7 +41,7 @@ As a reminder, terminology differs between the targets supported by Hackolade:
 
 \- container means: dbs in MongoDB, region in DynamoDB, and bucket in Couchbase, namespace in Avro, keyspace in Cassandra, schema in RDBMS, etc...
 
-\- entity means: collection in MongoDB, table in DynamoDB and Cassandra and RDBMS, and document type in Couchbase,e tc...
+\- entity means: collection in MongoDB, table in DynamoDB and Cassandra and RDBMS, and document type in Couchbase, etc...
 
 \- field means: field in MongoDB and Couchbase, and attribute in DynamoDB, column in Cassandra and RDBMS, etc...
 
@@ -243,7 +243,7 @@ Many additional keywords are available to fine-tune the behavior of controls, wh
 
 &nbsp;
 
-The requiredProperty keyword displays a red star (\*) charater next to the property label.&nbsp; The validation keyword and structure ensures that the entry is validated.&nbsp; If you set the required flag to false, or do not provide the validation structure, then the red star would be for display only with no enforecement.&nbsp; If the requirement is enforced but not satisfied, a red badge with an explamation point (\!) is displayed.
+The requiredProperty keyword displays a red star (\*) character next to the property label.&nbsp; The validation keyword and structure ensures that the entry is validated.&nbsp; If you set the required flag to false, or do not provide the validation structure, then the red star would be for display only with no enforcement.&nbsp; If the requirement is enforced but not satisfied, a red badge with an explanation point (\!) is displayed.
 
 &nbsp;
 

@@ -1,5 +1,9 @@
 # Query-driven data modeling based on access patterns
 
+You may also [view this tutorial](<https://youtu.be/hASX35Hyx28> "target=\"\_blank\"") on YouTube.&nbsp; Summary slides can be found [here](<https://www.slideshare.net/PascalDesmarets1/hackolade-tutorial-part-3-querydriven-data-modeling-based-on-access-patterns> "target=\"\_blank\"").
+
+&nbsp;
+
 Data modeling for relational databases is performed according to the rules of normalization, so larger tables are divided into smaller ones linked together with relationships.&nbsp; The purpose is to eliminate redundant or duplicate data. &nbsp;
 
 &nbsp;

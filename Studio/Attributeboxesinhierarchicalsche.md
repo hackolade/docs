@@ -241,9 +241,25 @@ This list varies depending on the database target.
 
 &nbsp;
 
+Often with modern databases, you may specify more than one data type for a given attribute, for example string and null.&nbsp; This is the simplest form of polymorphism.
+
 &nbsp;
 
-### '*4.3 Choice*
+To add another type, simply click on the + sign to the right in the Properties Pane:
+
+![Data type - single](<lib/Data%20type%20-%20single.png>)
+
+&nbsp;
+
+Then you may select the additional data type from the dropdown list, change the order with the up/down arrows, or delete with the X:
+
+&nbsp;
+
+![Image](<lib/Data%20type%20-%20multiple.png>)
+
+&nbsp;
+
+### *&#52;.3 Choice*
 
 You may add choices for alternate sub-schemas:
 

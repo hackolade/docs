@@ -10,7 +10,7 @@ To do so, choose the menu option File \> Print Diagram
 
 &nbsp;
 
-Users may wish to create pictures for different diagrams created with the application.&nbsp; They can be generated in either PDF or PNG format, and for different paper layouts.
+Users may wish to create pictures for different diagrams created with the application.&nbsp; They can be generated in either PDF, PNG, or SVG format, and for different paper layouts.
 
 ![File - Print Diagram](<lib/File%20-%20Print%20Diagram.png>)
 

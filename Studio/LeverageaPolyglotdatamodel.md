@@ -4,6 +4,10 @@ In the previous tutorial, we reviewed how to create a model for REST APIs using 
 
 &nbsp;
 
+You may also [view this tutorial](<https://youtu.be/Bv0bzJP6CZ0> "target=\"\_blank\"") on YouTube.&nbsp; Summary slides can be found [here](<https://www.slideshare.net/PascalDesmarets1/hackolade-tutorial-part-13-leverage-a-polyglot-data-model> "target=\"\_blank\"").
+
+&nbsp;
+
 A polyglot data model is a common physical model, where denormalization and complex data types are encouraged.&nbsp; While some people like to compare our polyglot model to a logical model because both are technology-agnostic, you should read [this article](<https://hackolade.com/polyglot-data-modeling.html>) where we emphasize the differences.&nbsp; We&nbsp; advise against creating normalized logical models when using the polyglot functionality.&nbsp; You should instead use this functionality to create denormalized models with complex data types and, if needed, rely on the built-in functionality that will automatically normalize nested objects in RDBMS targets.
 
 &nbsp;
@@ -158,7 +162,7 @@ You may also permanently break the connection to the polyglot model.&nbsp; This 
 
 &nbsp;
 
-**Note:** when converting a target model to polyglot, links are not currently created for the original target model to become dependent on the polyglot.&nbsp; A new model would have to be derived from the polyglot.&nbsp; Example: you have a MongoDB model, and you want to convert to polyglot.&nbsp; First you do the conversion to polyglot, then you create a new MongoDB model and derive it from polyglot.
+**Note:** when converting a target model to polyglot, a link is created for the original target model to become dependent on the polyglot. &nbsp;
 
 &nbsp;
 

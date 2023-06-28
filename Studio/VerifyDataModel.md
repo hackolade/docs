@@ -134,6 +134,15 @@ Remember that a term could be made of several words, e.g. "Universal Unique Iden
 
 &nbsp;
 
+In other words, if a class term is not in the glossary, it is flagged as **invalid**.  Same for a prime term.
+
+\
+If, for a prime+class combination, they are both declared individually in the glossary but the combination is not in the glossary, then the combination is flagged as **inconsistent**.\
+ \
+And it is only thru their position in an name that terms are labeled "prime" or "class" in the logic.  The combination of words in a name could be such that a certain term is a class term in some names, and a prime term in others.
+
+&nbsp;
+
 ## Attribute properties verifications
 
 These verifications are target-specific, evaluating technical names against user-defined properties rules defined in a target-specific fileAny exception to an enabled verification rule is logged into a report.

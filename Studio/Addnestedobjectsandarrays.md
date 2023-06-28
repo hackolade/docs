@@ -4,6 +4,10 @@ In the previous tutorial, we saw how to create a first data model, which was qui
 
 &nbsp;
 
+You may also [view this tutorial](<https://youtu.be/uk-K3aNosJg> "target=\"\_blank\"") on YouTube.&nbsp; Summary slides can be found [here](<https://www.slideshare.net/PascalDesmarets1/hackolade-tutorial-part-5-add-nested-objects-and-arrayspdf> "target=\"\_blank\"").
+
+&nbsp;
+
 **Note:** complex data types are not available in all target technologies supported by Hackolade, in which case the feature is disabled.&nbsp; Or they may use a different terminology: map, struct, list, tuple, enumeration, ...&nbsp; Hackolade uses the terminology and data types supported by the target technology.
 
 ## Object

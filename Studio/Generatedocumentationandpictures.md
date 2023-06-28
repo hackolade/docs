@@ -4,6 +4,10 @@ In the previous tutorial, we reviewed how to export or forward-engineer artifact
 
 &nbsp;
 
+You may also [view this tutorial](<https://youtu.be/11hK9WH773c> "target=\"\_blank\"") on YouTube.&nbsp; Summary slides can be found [here](<https://www.slideshare.net/PascalDesmarets1/hackolade-tutorial-part-10-generate-documentation-and-picturespdf> "target=\"\_blank\"").
+
+&nbsp;
+
 Arguably, documentation and pictures of diagrams are also artifacts.&nbsp; The difference is that forward-engineered artifacts are generally "consumable" by machines, whereas documentation and pictures are clearly for humans.&nbsp; Admittedly, the nuance is subtle and non-exclusive, and the separation in the menu is historical...
 
 ## Generate documentation
@@ -11,7 +15,7 @@ Arguably, documentation and pictures of diagrams are also artifacts.&nbsp; The d
 Documentation for your data models can be generated in 3 formats: HTML, Markdown, and PDF.&nbsp; Their content is identical, but the structure differs:
 
 * HTML documentation is packaged in a single file encapsulating all content.&nbsp; This way, it can be easily moved around, emailed, or posted on on corporate portal.&nbsp; It can also be read via scripts and joined with an integration of the raw data model file (as saved on disk) to feed a homegrown data dictionary.
-* Markdown documentation is particularly handy if you plan to post it on GitHub or other repository operators.&nbsp; While the main markdown file is unique per documentation generation, a major difference with HTML and PDF, is that pictures are extracted and placed in a subdirectory bearing the same name as the documentation file.
+* Markdown documentation is particularly handy if you plan to post it on GitHub or other repository operators.&nbsp; While the main markdown file is unique per documentation generation, a major difference with HTML and PDF, is that pictures are extracted and placed in a subdirectory bearing the same name as the documentation file.&nbsp; Note also, that it is easy to render Markdown documentation with [custom web site generators](<https://jamstack.org/generators/> "target=\"\_blank\"").
 * PDF documentation is also a single file, but with less flexibility and navigation capabilities than the HTML file.
 
 &nbsp;

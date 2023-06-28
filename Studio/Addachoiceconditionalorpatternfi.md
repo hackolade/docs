@@ -4,6 +4,10 @@ In the previous tutorial, we reviewed how to create more complex structures with
 
 &nbsp;
 
+You may also [view this tutorial](<https://youtu.be/\_tjZGmn7ilg> "target=\"\_blank\"") on YouTube.&nbsp; Summary slides can be found [here](<https://www.slideshare.net/PascalDesmarets1/hackolade-tutorial-part-6-add-choice-conditional-pattern-fieldspdf> "target=\"\_blank\"").
+
+&nbsp;
+
 **Note:** some of the features in this tutorial are not available in all target technologies supported by Hackolade, in which case the feature is disabled. &nbsp;
 
 ## Choices

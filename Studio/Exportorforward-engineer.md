@@ -1,6 +1,10 @@
 # Export or forward-engineer
 
-In the previous tutorial, we reviewed how to export or forward-engineer artifacts from your data model.&nbsp; By the end of this tutorial, you will master exporting or forward-engineering of schemas and order artifacts for your data models.
+In the previous tutorial, we reviewed how to import or reverse-engineer artifacts from your data model.&nbsp; By the end of this tutorial, you will master exporting or forward-engineering of schemas and order artifacts for your data models.
+
+&nbsp;
+
+You may also [view this tutorial](<https://youtu.be/vOvJ09fF5dI> "target=\"\_blank\"") on YouTube.&nbsp; Summary slides can be found [here](<https://www.slideshare.net/PascalDesmarets1/hackolade-tutorial-part-9-export-or-forwardengineerpdf> "target=\"\_blank\"").
 
 &nbsp;
 

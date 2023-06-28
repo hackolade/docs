@@ -81,7 +81,7 @@ Introduced with Confluent 5.5, a schema reference is comprised of a reference na
 
 &nbsp;
 
-You will find more details in [this blog](<https://www.confluent.io/blog/multiple-event-types-in-the-same-kafka-topic/> "target=\"\_blank\"").&nbsp; Hackolade does not yet support Avro unions with schema references, but design is under way.
+You will find more details in [this blog](<https://www.confluent.io/blog/multiple-event-types-in-the-same-kafka-topic/> "target=\"\_blank\"") and this [documentation page](<https://docs.confluent.io/platform/current/schema-registry/fundamentals/serdes-develop/serdes-avro.html#schema-references-in-avro> "target=\"\_blank\"").&nbsp; Hackolade supports Avro unions with schema references.
 
 &nbsp;
 
@@ -90,6 +90,26 @@ A schema reference consists of the following:
 * A name for the reference. (For Avro, the reference name is the fully qualified schema name, for JSON Schema it is a URL, and for Protobuf, it is the name of another Protobuf file.)
 * A subject, representing the subject under which the referenced schema is registered.
 * A version, representing the exact version of the schema under the registered subject.
+
+In Hackolade Studio, you can create a reference to another Avro record in the same model through a model reference.&nbsp; Let's say you have 2 records in your Avro model: customer and address.&nbsp; Now you'd like to reference the address record from the customer record.&nbsp; Choose Append field \> Reference \> Model Definition \> Open definitions...
+
+![Confluent Schema Rgistry - add reference](<lib/Confluent%20Schema%20Rgistry%20-%20add%20reference.png>)
+
+&nbsp;
+
+THen choose the address record in the dialog:
+
+![Confluent Schema Rgistry - pick definition](<lib/Confluent%20Schema%20Rgistry%20-%20pick%20definition.png>)
+
+This will result in a reference inside the customer record:
+
+![Confluent Schema Rgistry - union schema](<lib/Confluent%20Schema%20Rgistry%20-%20union%20schema.png>)
+
+&nbsp;
+
+This will result in a references section in the customer schema for the Confluent Schema Registry:
+
+![Confluent Schema Rgistry - union schema outpu](<lib/Confluent%20Schema%20Rgistry%20-%20union%20schema%20outpu.png>)
 
 &nbsp;
 
