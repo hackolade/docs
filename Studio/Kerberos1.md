@@ -4,7 +4,7 @@
 
 &nbsp;
 
-**Important note:** our Kerberos support uses a 3rd-party library to provide cross-platform kerberos authentication using GSSAPI on Linux/Mac, and SSPI on Windows. &nbsp; For Linux and Mac, there are pre-requisites, respectively,&nbsp;
+**Important note:** our Kerberos support uses a 3rd-party library to provide cross-platform kerberos authentication using GSSAPI on Linux/Mac, and SSPI on Windows. &nbsp; For Linux, Mac and Windows, there are pre-requisites, respectively,&nbsp;
 
 for **Linux:**
 
@@ -13,10 +13,25 @@ for **Linux:**
 * A proper C/C++ compiler toolchain, like [GCC](<https://gcc.gnu.org/> "target=\"\_blank\"")
 * Distribution-specific kerberos packages (e.g. krb5-dev on Ubuntu)
 
-and for **Mac:**
+for **Mac:**
 
 * Xcode Command Line Tools: Can be installed with xcode-select --install
 * Distribution-specific kerberos packages (e.g. [krb5 on Homebrew](<https://formulae.brew.sh/formula/krb5> "target=\"\_blank\""))
+
+and for **Windows:**
+
+* Download MIT Kerberos for Windows 4.1 from [this page](https://web.mit.edu/kerberos/dist/#kfw-4.1).
+* Launch the installation wizard
+* Accept the License agreement
+* Chose Setup Type '''Custom''' as by default the installer doesn't install the components we need.
+* In the Custom Setup customization screen, expand the tree by clicking on Kerberos for Windows.  You should see a red cross in front on SDK line.  Click on the red cross box icon and select the option '''Will be installed on local hard drive'''.
+* Proceed with the installation
+
+Alternatively you can also install this third party library using the [Chocolatey package manager](https://chocolatey.org) and the following command line in a Powershell window:
+
+```powershell
+choco install mitkerberos --install-arguments="ADDLOCAL=all"
+```
 
 &nbsp;
 
