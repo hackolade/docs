@@ -76,6 +76,26 @@ Hackolade supports Snowflake (materialized) views, via a SELECT of columns of th
 
 &nbsp;
 
+## Functions, Procedures, Sequences, File Formats, and Stages
+
+You can extend the SQL you use in Snowflake by writing user-defined functions (UDFs) and stored procedures that you can call from SQL. When you write a UDF or procedure, you write its logic in one of the supported handler languages, then create it using SQL.
+
+&nbsp;
+
+Sequences are used to generate unique numbers across sessions and statements, including concurrent statements. They can be used to generate values for a primary key or any column that requires a unique value.
+
+&nbsp;
+
+Snowflake File format is a named database object that can be used to simplify the process of accessing the staged data and streamlines loading data into and unloading data out of database tables. A Snowflake File format encapsulates information of data files, such as file type (CSV, JSON, etc.) and formatting options specific to each type used for bulk loading/unloading.
+
+&nbsp;
+
+Stages are locations where data files are stored (staged) for loading and loading data. They are used to move data from one place to another, and the locations for the stages could be internal or external to the Snowflake environment.
+
+&nbsp;
+
+In Hackolade Studio, functions, procedures, sequences,file formats, and stages are declared and maintained at the schema level, where you find dedicated tabs in the Properties Pane.
+
 ## Forward-Engineering
 
 Hackolade dynamically generates the DDL script to create schemas, tables, columns and their data types, for the structure created with the application.
@@ -100,5 +120,5 @@ The Hackolade process for reverse-engineering of Snowflake databases includes th
 
 &nbsp;
 
-For more information on Snowflake in general, please consult the [website](<https://www.snowflake.com/> "target=\"\_blank\"").&nbsp; See also this excellent [hands-on lab guide](<https://s3.amazonaws.com/snowflake-workshop-lab/Snowflake\_free\_trial\_LabGuide.pdf> "target=\"\_blank\"").
+For more information on Snowflake in general, please consult the [website](<https://www.snowflake.com/> "target=\"\_blank\"").&nbsp; See also this excellent [hands-on lab guide](<https://s3.amazonaws.com/snowflake-workshop-lab/Snowflake\_free\_trial\_LabGuide\_deprecate.pdf> "target=\"\_blank\"").
 

@@ -41,7 +41,7 @@ A prime term can be **a single word** ( or a **phrase** such as 'Unit of Measure
 
 #### Modifying terms
 
-Modifying terms are used to add important business information to a business name, and precede the prime term.&nbsp; Modifying terms are used to add important business information to a business name.
+Modifying terms are used to add important business information to a business name, and precede the prime term. &nbsp;
 
 &nbsp;
 
@@ -95,7 +95,7 @@ While Naming Conventions parameters are target-specific, the glossary/abbreviati
 
 &nbsp;
 
-The glossary file is made of several columns, with Business Name as a first column, and Technical Name as the second column.&nbsp; The come Description and Synonyms.&nbsp; Multiple synonyms are separated by a pipe ("\|"). &nbsp; Additional columns are ignored by Hackolade.&nbsp; The columns are separated by commas.&nbsp; The first line is the header line, and is ignored in the conversion.&nbsp; The lines are separated by a \<CR\>\<LF\>.&nbsp; There is no limit to the number of lines in the file.&nbsp; The values in the columns are not case-sensitive. &nbsp;
+The glossary file is made of several columns, with Business Name as a first column, and Technical Name as the second column.&nbsp; Then come Description and Synonyms.&nbsp; Multiple synonyms are separated by a pipe ("\|"). &nbsp; Additional columns are ignored by Hackolade.&nbsp; The columns are separated by commas.&nbsp; The first line is the header line, and is ignored in the conversion.&nbsp; The lines are separated by a \<CR\>\<LF\>.&nbsp; There is no limit to the number of lines in the file.&nbsp; The values in the columns are not case-sensitive. &nbsp;
 
 &nbsp;
 
@@ -145,7 +145,7 @@ And it is only thru their position in an name that terms are labeled "prime" or 
 
 ## Attribute properties verifications
 
-These verifications are target-specific, evaluating technical names against user-defined properties rules defined in a target-specific fileAny exception to an enabled verification rule is logged into a report.
+These verifications are target-specific, evaluating technical names against user-defined properties rules defined in a target-specific file.&nbsp; Any exception to an enabled verification rule is logged into a report.
 
 ### Technical names
 
@@ -205,7 +205,7 @@ Current target-specific attribute property-related rules are:
   * **Invalid length:** if a string data type, verify that the column value in the propRules file, if set, matches the property of the attribute in the model (i.e., if not declared in the file, then the value in the model can be anything.) If not, an entry is created in the report.
   * **Invalid precision:** if a numeric data type, verify that the column value in the propRules file, if set, matches the property of the attribute in the model (i.e., if not declared in the file, then the value in the model can be anything.) If not, create an entry in the report.
   * **Invalid scale:** if a numeric data type, verify that the column value in the propRules file, if set, matches the property of the attribute in the model (i.e., if not declared in the file, then the value in the model can be anything.) If not, an entry is created in the report.
-* check additional rules that are independent of propRules file:check additional rules that are independent of propRules file:
+* check additional rules that are independent of propRules file:
   * **Technical name conflicts with reserved keywords:** independent of glossary. Each target has a list of reserved words per level. An entry in the report is created if an attribute technical name, in full, is a reserved word.
   * **Excessive technical name length:** independent of glossary. Some target have max length of, for example 128 characters. Some customers may have their own more restrictive standards. An entry in the report is created if an attribute technical name is greater than the user-defined length. We store this user-defined length, per target, for future reuse.
 

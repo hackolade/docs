@@ -4,13 +4,37 @@ Security is a key concern for us and is part of our continuous improvement proce
 
 &nbsp;
 
+## What type of software is Hackolade Studio?
+
+Our software product is of the type Commercial Off-The-Shelf (COTS) in the form of a downloadable client installed on individual workstations.&nbsp; It is NOT a SaaS (Software-as-a-Service) solution that would collect or store any information: no data models, no telemetry, no personal information of any kind.&nbsp; No data comes out of your network, and we do not collect or store anything on our servers.
+
+&nbsp;
+
+Here's an architecture diagram to illustrate:
+
+&nbsp;
+
+![Client architecture diagram](<lib/Client%20architecture%20diagram.png>)
+
+&nbsp;
+
+&nbsp;
+
+The purpose of the software is for data modeling of NoSQL databases, storage formats, REST APIs, and JSON in RDBMS.
+
+&nbsp;
+
 ## Compliance certifications or accreditation like SOC 2 Type 2 or 3, or ISO 27001: what are Hackolade's internal controls related to: network security, security personnel, data security, operational security, risk management, asset management, business continuity, and disaster recovery?
 
-The architecture of our solution must be taken into account.&nbsp; Hackolade Studio is a downloadable client, and **NOT** a Software-as-a-Service solution that would store your data or data models.&nbsp; Also, our software has no telemetry, meaning that no information goes outside of your network.  We don’t collect or store any of your information, except for the license key-related information as described in our [Privacy Policy](<https://hackolade.com/privacy.html>). &nbsp;
+The architecture of our solution must be taken into account.&nbsp; Hackolade Studio is a downloadable COTS client, and **NOT** a Software-as-a-Service solution that would store your data or data models.&nbsp; Also, our software has no telemetry, meaning that no information goes outside of your network.  We don’t collect or store any of your information, except for the license key-related information as described in our [Privacy Policy](<https://hackolade.com/privacy.html>). &nbsp;
 
 &nbsp;
 
 As a result, typical SaaS-related security assessments just don’t apply to us.&nbsp; Our software, since it is installed on hardware controlled by you, relies on your own security measures and controls.
+
+&nbsp;
+
+As it seems to not be sufficient for some that we collect or store absolutely no data models or data from customers, we are embarking on a trust and compliance certification. Sort of a certification that our "[Fort Knox](<https://en.wikipedia.org/wiki/Fort\_Knox> "target=\"\_blank\"")" contains no gold... You can find our policies and controls on [TrustShare page](<https://hackolade.trustshare.com/home> "target=\"\_blank\"").
 
 &nbsp;
 
@@ -48,6 +72,23 @@ We appropriately secure our devices, including by routinely checking for compute
 
 ## How do we integrate security into our Software Development Lifecycle process?
 
+In our software development process, we incorporate secure coding practices, specifically addressing the OWASP Top 10 vulnerabilities, to significantly reduce the risk of common security flaws in software and enhance the overall security posture of our application:
+
+&nbsp;
+
+* Educate Developers to ensure that the development team is aware of secure coding practices, with training sessions to familiarize them with common vulnerabilities and mitigation techniques.
+* Incorporate Security Requirements into the software development life cycle (SDLC): we define secure coding guidelines, standards, and best practices and align them with the OWASP Top 10. These requirements cover areas such as input validation, authentication, access control, secure communication, error handling, and secure configuration.
+* Conduct Code Reviews with process to include security-focused reviews for adherence to secure coding practices and identify potential vulnerabilities. Using static code analysis to assist in identifying security flaws and coding mistakes.
+* Perform Regular Security Testing, including vulnerability assessments, penetration testing, and security scanning, to identify potential issues. We test for vulnerabilities associated with the OWASP Top 10, such as injection attacks, broken authentication, cross-site scripting (XSS), and insecure direct object references.
+* Use Secure Libraries and Frameworks in our software development.&nbsp; We stay up-to-date with security patches and ensure to be using the latest versions to avoid known vulnerabilities.
+* Validate Input and Output: we implement strong input validation techniques to prevent common attacks like SQL injection, cross-site scripting, and command injection. We validate and sanitize user input on both the client and server sides. We implement output encoding and escaping to prevent cross-site scripting vulnerabilities.
+* Implement Proper Authentication and Authorization: we use strong authentication mechanisms to verify user identities and enforce secure session management. We implement secure password storage practices, such as salted hashing, and enforce password complexity requirements. We implement appropriate authorization mechanisms to ensure that users have access only to the resources they need.
+* Secure Data Handling: we apply secure coding practices when handling sensitive data, such as encryption, secure transmission protocols (e.g., HTTPS), secure storage, and proper data sanitization or destruction when no longer needed.
+* Handle Errors Securely: we implement proper error handling mechanisms to avoid exposing sensitive information to attackers.&nbsp; We ensure that error messages provide minimal information to attackers.
+* Stay Updated: we keep track of the latest vulnerabilities, security advisories, and updates related to the OWASP Top 10 and other common security issues. We stay informed about emerging security threats and adjust our coding practices accordingly.
+
+&nbsp;
+
 We carefully select and manage 3rd-party libraries.  We make sure to embed the latest security patches by regularly updating these libraries based on the vulnerability reports that are generated by our package manager.  Our desktop application has no runtime dependency on any external services: nothing leaves the customer's premises, unless requested by the user.&nbsp;
 
  
@@ -57,6 +98,40 @@ Our desktop client application encrypts connection strings, and other secrets th
  
 
 Our most senior engineers organize punctual “white hat hacking sessions” where they analyze if and how specific parts of our product could be attacked.  These sessions sometimes result in the creation of new actions for security improvements that are prioritized, then processed by the development team.
+
+&nbsp;
+
+Threat modeling is used during the application design phase to identify, evaluate, and mitigate potential security threats and vulnerabilities. It involves analyzing the application's architecture, components, and interactions to understand potential risks and prioritize security countermeasures.
+
+&nbsp;
+
+The process of threat modeling consists of the following steps:
+
+&nbsp;
+
+1. Identify Assets: Identify the key assets, data, and functionality that need protection within the application, including sensitive user information, intellectual property, financial transactions, or system resources.
+
+&nbsp;
+
+1. Create a Design Overview: Develop an architectural overview of the application, illustrating its various components, modules, and their interactions, to identify potential entry points, trust boundaries, and data flows.
+
+&nbsp;
+
+1. Identify Threats: Identify potential threats and attack vectors that could exploit vulnerabilities in the application, including unauthorized access, injection attacks, cross-site scripting (XSS), cross-site request forgery (CSRF), and more.&nbsp;
+
+&nbsp;
+
+1. Assess Risks: Evaluate the impact and likelihood of each identified threat. Assign risk ratings based on the potential damage, likelihood of occurrence, and ease of exploitation.&nbsp;
+
+&nbsp;
+
+1. Determine Countermeasures: Determine appropriate countermeasures and security controls to mitigate identified risks. This may involve employing secure coding practices, input validation, encryption, access controls, authentication mechanisms, and other defensive measures.
+
+&nbsp;
+
+1. Validate and Iterate: Review the threat model with relevant stakeholders, including developers, architects, and security experts. Incorporate their feedback and iterate on the design to enhance security.
+
+&nbsp;
 
 &nbsp;
 

@@ -4,14 +4,15 @@ The installation of Hackolade does not require 'admin rights' for the PC.&nbsp; 
 
 &nbsp;
 
-## New to Hackolade
+## New to Hackolade Studio
 
 * Read the sections [Concepts](<Concepts.md>), and [Overview of the user interface](<Overviewofuserinterface.md>).
-* Follow the [Quick start guide](<Quickstartguide.md>) to familiarize yourself with the processes of creating and documenting MongoDB schema models.
+* Follow the [Quick start guide](<Quickstartguide.md>) to familiarize yourself with the processes of creating and documenting MongoDB schema models
+* Follow the tutorials on our [eLearning platform](<https://community.hackolade.com/slides/all> "target=\"\_blank\"").&nbsp;
 
 &nbsp;
 
-## Regular user of previous Hackolade versions
+## Regular user of previous Hackolade Studio versions
 
 * Review the [Release notes](<Changelog.md>) since the last last version with which you were familiar.
 * Take some time to review our [FAQs](<FAQandtroubleshooting.md>) and [tips and tricks](<Tipsandtricks.md>)

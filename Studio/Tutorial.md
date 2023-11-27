@@ -1,5 +1,9 @@
 # Tutorial
 
+An **eLearning video** version of these tutorials and how-to guides, with certification, is available [here](<https://community.hackolade.com/> "target=\"\_blank\"").
+
+&nbsp;
+
 We try real hard to make Hackolade Studio as intuitive as possible with a minimalist design, and we avoid to bloat the software with functionality that few people ever use.&nbsp; In reality, the use cases for the tool are super simple:
 
 * start from a blank page, construct your data structures, then forward-engineer artifacts to be consumed by target technologies or data citizens;
@@ -24,7 +28,7 @@ People learn in different ways:
 * [dive in the application](<https://hackolade.com/download.html> "target=\"\_blank\"") and explore;
 * start by reading user manuals such as this [online help](<https://hackolade.com/help/index.html>);
 * read this tutorial and [step-by-step instructions](<How-toguides.md>) on an ad-hoc basis;
-* watch [tutorial videos](<https://www.youtube.com/playlist?list=PLuoumc7VQje0m35VhJGVnaAbg1FCG4McK> "target=\"\_blank\"");
+* watch [tutorial videos](<https://community.hackolade.com/> "target=\"\_blank\"");
 * take a [training course](<https://hackolade.com/training.html>) of 5 half days by Steve Hoberman;
 * receive a personal and [interactive training session](<https://calendly.com/pdesmarets> "target=\"\_blank\"");
 * [open a ticket](<https://hackolade.zendesk.com/hc/en-us/requests/new> "target=\"\_blank\"") to ask a question.

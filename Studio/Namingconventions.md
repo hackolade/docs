@@ -4,7 +4,7 @@
 
 &nbsp;
 
-Hackolade includes the ability to maintain both a ‘business name’ and a ‘technical name’ for objects (containers, entities, and attributes.)&nbsp; To facilitate the maintenance of these 2 names, it is possible to keep them synchronized and transformed based on a set of user-driven parameters, and optionally based on a conversion file maintained outside of the application.&nbsp; Name conversion can go both directions: Business-to-Technical, or Technical-to-Business.&nbsp; Furthermore, when performing reverse-engineering, it is assumed that the database instance contains technical names, to be transformed in business names.
+Hackolade Studio includes the ability to maintain both a ‘business name’ and a ‘technical name’ for objects (containers, entities, and attributes.)&nbsp; To facilitate the maintenance of these 2 names, it is possible to keep them synchronized and transformed based on a set of user-driven parameters, and optionally based on a conversion file maintained outside of the application.&nbsp; Name conversion can go both directions: Business-to-Technical, or Technical-to-Business.&nbsp; Furthermore, when performing reverse-engineering, it is assumed that the database instance contains technical names, to be transformed in business names.
 
 &nbsp;
 
@@ -55,8 +55,6 @@ Conversion parameters are specific to each target.&nbsp; To modify the behavior 
 ![Windows Program Files](<lib/Naming%20Conventions%20-%20parameters.png>)
 
 **Application target:** select the target for which these parameters apply
-
-**Enable auto-complete:** when this option is enabled, auto-completion is active to use the conversion file to type-ahead names as they are created.
 
 **Default name coupling:** 3 options are available from the dropdown box: No, Business-to-Technical, or Technical-to-Business. &nbsp;
 

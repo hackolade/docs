@@ -52,3 +52,11 @@ A private key can optionally be encrypted with a password.
 
 If your private key is password protected, enter the password here. If not, leave the field blank.
 
+&nbsp;
+
+## Troubleshooting
+
+If you get a message on screen or in the HackoladeRE.log saying "Failed to connect - unable to get local issuer certificate".&nbsp; This is caused by the fact that your organization might be using self-signed certificates (often in the context of dev or test environments -- rarely in prod environments...) and this self-signed certificate is not present in the local certificate storage.&nbsp; This situation and the solution are well described in this [Microsoft link](<https://learn.microsoft.com/en-us/troubleshoot/sql/database-engine/connect/error-message-when-you-connect> "target=\"\_blank\"").
+
+&nbsp;
+

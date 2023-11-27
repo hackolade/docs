@@ -14,7 +14,9 @@ A polyglot data model is a common physical model, where denormalization and comp
 
 With a polyglot data model, you can define data structures once, then easily instantiate them in data models for any of the technologies Hackolade supports:
 
-![Polyglot data modeling concept](<lib/Polyglot%20data%20modeling%20concept.png>)
+&nbsp;
+
+![Image](<lib/Polyglot%20data%20modeling%20concept.png>)
 
 &nbsp;
 

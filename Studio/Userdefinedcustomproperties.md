@@ -4,19 +4,29 @@ For each object in Hackolade, we've defined a set of standard properties that ap
 
 &nbsp;
 
-Hackolade provides a no-code approach so you can create and maintain custom properties simply by editing JSON configuration files.&nbsp; These files are found in folders in C:\\Users\\%username%\\.hackolade\\options (on Mac in Users/$USER/.Hackolade/options) which can be Git-enabled to be shared across an organization if desired.
+Hackolade Studio provides a no-code approach: you can create and maintain custom properties simply by editing JSON configuration files. If desired, you can version those files in a version control system and share them across your organization. We recommend the use of Git as it is a lever for enabling [team collaboration](<Teamcollaboration.md>) using the Workgroup edition of Hackolade Studio.
 
 &nbsp;
 
-**Warning:** For the changes to take effect, it is required to exit Hackolade and restart it.
+The location of the JSON configuration files depends on your environment:
+
+\- If you use the browser application, you can download template files from *Tools \> Options \> Custom Properties*. You can then edit those files and (re-)load them into the application.
+
+\- If you use the desktop application on Windows, you can find the JSON files in C:\\Users\\%username%\\.hackolade\\options. You can edit those files in-place.
+
+\- If you use the desktop application on MacOS, you can find the JSON files in /Users/$USER/.hackolade/options. You can edit those files in-place.
 
 &nbsp;
 
-Customization for native targets (JSON, Couchbase, DynamoDB, and MongoDB) do not require to download a special plugin. &nbsp;
+**Warning:** whatever your environment, you need to restart / reload the application for configuration changes to take effect\!
+
+Note that native targets (aka JSON, Couchbase, DynamoDB, MongoDB, and Polyglot) can be customized without downloading additional plugins. &nbsp;
 
 &nbsp;
 
-## &#49;) Access the target customization directory
+## Access the target customization directory
+
+### Desktop deployment
 
 To create and maintain custom properties for a given target, you access the folder structure from Help \> Plugin Manager
 
@@ -38,6 +48,8 @@ then click on the Show plugin customization directory link for the chosen target
 
 For each custom properties plugin, you will find a directory structure similar to this one:
 
+&nbsp;
+
 ![Plugin - Custom Prop - directory struc new](<lib/Plugin%20-%20Custom%20Prop%20-%20directory%20struc%20new.png>)
 
 &nbsp;
@@ -50,7 +62,55 @@ ii) for field-level definitions, since data types have different property lists,
 
 &nbsp;
 
-## &#50;) Levels
+&nbsp;
+
+### Browser deployment
+
+Given the security requirements browsers, the user experience is quite different.&nbsp; In the browser application, go to *Tools \> Options \> Custom Properties*.
+
+&nbsp;
+
+&nbsp;
+
+![Plugin - Custom Prop - template files](<lib/Plugin%20-%20Custom%20Prop%20-%20template%20files.png>)
+
+&nbsp;
+
+#### You run both the Desktop and the Browser deployments of Hackolade Studio
+
+No need to download any template file if you want to share the same setup of custom properties with the Desktop application (recommended.)
+
+&nbsp;
+
+For each target technology, you must select the folder previously created with the Desktop application.&nbsp; This will typically be:
+
+\- on Windows: C:\\Users\\%username%\\.hackolade\\options\\\<target\>\\customProperties
+
+\- on Mac: /Users/$USER/.hackolade/options/\<target\>/customProperties (note: use Cmd+. to display hidden folders)
+
+&nbsp;
+
+Each time you make changes to the custom properties config files, you must reload the browser page.
+
+#### You only run Hackolade Studio in the browser
+
+Download the template file (zip file) by clicking the link provided.&nbsp; For each target, you must create a folder structure based on the zip file containing structure and templates.&nbsp; You must unzip the archive, and we suggest to store it all under:
+
+\- on Windows: C:\\Users\\%username%\\.hackolade\\options\\\<target\>\\customProperties
+
+\- on Mac: /Users/$USER/.hackolade/options/\<target\>/customProperties (note: use Cmd+. to display hidden folders)
+
+&nbsp;
+
+You may then edit the files according the instructions below.&nbsp; Once you are done editing those files, you need to load them in the application using the directory picker. Note that your configuration remains local to your machine: the JSON files are persisted in your browser and restored across sessions but they are never sent to a remote server.
+
+&nbsp;
+
+&nbsp;
+
+![Image](<lib/Plugin%20-%20Custom%20Prop%20-%20folder%20loaded.png>)
+
+## Levels
 
 As a reminder, terminology differs between the targets supported by Hackolade:
 
@@ -66,7 +126,7 @@ You need to edit the corresponding \<object\>LevelConfig.json file to add custom
 
 &nbsp;
 
-## &#51;) Tabs
+## Tabs
 
 **Note:** tabs in Properties Panes were originally placed at the bottom.&nbsp; To make them more visible, they were subsequently moved to the top. &nbsp;
 
@@ -96,7 +156,7 @@ If the level allows multiple tabs, you need to choose to which tab you want to a
 
 &nbsp;
 
-## &#52;) Property types
+## Property types
 
 The following controls are possible for user-defined properties:
 
@@ -120,7 +180,7 @@ More information [here](<https://github.com/hackolade/plugins#26-property-contro
 
 &nbsp;
 
-## &#53;) Property definition
+## Property definition
 
 Examples are provided in the comments section of each config file.&nbsp; Here's an overview of the schema:
 
@@ -150,7 +210,7 @@ Here's another view, consolidated:
 
 &nbsp;
 
-## &#54;) Share customization with team members
+## Share customization with team members
 
 it is recommended that you share customization using Git.&nbsp; Store your changes in a Git remote repository, and have your team members clone it locally in C:\\Users\\%username%\\.hackolade\\options (on Mac in Users/$USER/.Hackolade/options)&nbsp; That way, all that teams members need to do is to pull regularly, and they will get your latest changes.
 

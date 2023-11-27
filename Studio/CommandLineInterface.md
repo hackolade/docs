@@ -106,8 +106,8 @@ Usage:&nbsp; &nbsp; *hackolade compMod \[--arguments\]*
 
 | **Argument** | **Required** | **Purpose** |
 | --- | --- | --- |
-| \--model1=\<*file*\>\* | Y | Full path and file name for baseline Hackolade model with which comparison will be performed.&nbsp; Extension .json is optional |
-| \--model2=\<file\>\* | Y | Full path and file name for comparison Hackolade model.&nbsp; Extension .json is optional.&nbsp; Both models need to be of the same DB target.&nbsp; Extension .json is optional |
+| \--model1=\[commit:\]\[path\]\<*file*\>\* | Y | Full path and file name for baseline Hackolade model with which comparison will be performed. With the Workgroup Edition, you may precede the full path and file name with a reference to the commit of the model file. &nbsp; &nbsp; The commit can be any valid Git reference and must be followed by a colon: - a short hash, e.g. *97dd2ae* - a long hash, e.g. *97dd2ae065771908ee9ae0fa08ccdb58b5a6b18f* - a branch, e.g. *develop* - a tag, e.g. *v1.0.0* - a pre-defined reference such as *HEAD*, *HEAD\^1*, *HEAD~1*, etc. Extension .json is optional |
+| \--model2=\[commit:\]\[path\]\<file\>\* | Y | Full path and file name for comparison Hackolade model.&nbsp; Extension .json is optional.&nbsp; With the Workgroup Edition, you may precede the full path and file name with a reference to the commit of the model file. &nbsp; &nbsp; Both models need to be of the same DB target.&nbsp; Extension .json is optional |
 | \--deltaModel=\<file\>\* | Y | Full path and file name for differences in model comparisons.&nbsp; The resulting file is a Hackolade model.&nbsp; Extension .json is optional |
 | \--ignoreGUIDs=\<**true** \| false\> | N | Specify whether to include GUIDs in comparison.&nbsp; \[default: true\] |
 | \--ignoreExtraProperties= \<**true** \| false\> | N | Specify whether to include in comparison the Hackolade properties that cannot typically be derived from the data, such as descriptions, comments, samples, defaults, and foreign key-related infos.&nbsp; \[default: true\] |
@@ -169,12 +169,12 @@ Usage:&nbsp; &nbsp; *hackolade forwEng \[--arguments\]*
 | \--outputType=\< **jsonschema** \| jsondata \| yamldata \| script \| schemaregistry \> | Y | Specify the type of output (JSON Schema, sample JSON data, sample YAML data, script, or schemaregistry) \[default: jsonschema\] This allows output of the script corresponding to the target of the specified model, e.g.: CQL for Cassandra, HQL for Hive, etc... It also allows the publication of Avro, ProtoBuf, and JSON schemas to schema registry instances |
 | \--jsonSchemaCompliance=\< **standard** \| full \| extended \> | N | Specify JSON Schema compliance: standard for only JSON Schema keywords and data types, full for additional custom properties, or extended for target-specific data types and internal properties.  \[default: standard\] |
 | \--jsonschemaversion=\< **draft-04** \| draft 06 \| draft-07 \| 2019-09 \| 2020-12 \> | N | Specify JSON Schema specification version \[default: draft-04\] &nbsp; \[values: draft-04, draft-06, draft-07, 2019-09, 2020-12\] \[default: "draft-04"\] |
-| \--format=\< *format* \> | N | Output target-specific schema format: MongoDB: \["shell", "mongoose","js", $jsonchema"\] Couchbase: \["ottoman", "n1ql"\] Avro: \["avroSchema","azureSchemaRegistry","confluentSchemaRegistry","pulsarSchemaRegistry"\] JSON Schema: \["azureSchemaRegistry","confluentSchemaRegistry","pulsarSchemaRegistry"\] Glue: \["awsCLI", "HiveQL"\] OpenAPI: &nbsp; \["json", "yaml"\] Protobuf: \["azureSchemaRegistry","confluentSchemaRegistry","pulsarSchemaRegistry"\] Swagger: &nbsp; \["json", "yaml"\] |
-| \--connectName=\<connection\> | Y if to instance | Name of connection settings saved in the Hackolade instance where CLI is invoked. Or use --connectFile instead. |
-| \--connectFile=\<*file*\>\* | N | Full file path of connection config file (you don't need to use it when connect name is specified).&nbsp; The simplest way to create a connection file is to create a connection in the GUI application, then export the connection settings to file, encrypted or not. |
-| \--selectedObjects= "\<containerName\>: \[\<*entity1\>*,\<*entity2\>*,…\]" | N | Specify array of entities to include to result from model \[default: all\] |
+| \--format=\< *format* \> | N | Output target-specific schema format: MongoDB: \["shell", "mongoose","js", $jsonchema"\] Couchbase: \["ottoman", "n1ql"\] DynamoDB:&nbsp; \["tableScript", "putItemScript"\] Avro: \["avroSchema","azureSchemaRegistry","confluentSchemaRegistry","pulsarSchemaRegistry"\] BigQuery:&nbsp; \["sql", "json"\] CosmosDB-with-Gremlin-API: \["gremlin", "cosmosdb"\] CosmosDB-with-SQL-API: &nbsp; &nbsp; \["containerSettingsJson", "azureCliPowerShell","azureCliZsh","azureCliBash"\] JSON Schema: \["azureSchemaRegistry","confluentSchemaRegistry","pulsarSchemaRegistry"\] Glue: \["awsCLI", "HiveQL"\] OpenAPI: &nbsp; \["json", "yaml"\] Protobuf: \["azureSchemaRegistry","confluentSchemaRegistry","pulsarSchemaRegistry"\] Swagger: &nbsp; \["json", "yaml"\] |
+| \--connectName=\<connection\> | Y if to instance | Currently only available for schema registries.&nbsp; Name of connection settings saved in the Hackolade instance where CLI is invoked. Or use --connectFile instead. |
+| \--connectFile=\<*file*\>\* | N | Currently only available for schema registries.&nbsp; Full file path of connection config file (you don't need to use it when connect name is specified).&nbsp; The simplest way to create a connection file is to create a connection in the GUI application, then export the connection settings to file, encrypted or not. |
+| \--selectedObjects= "\<containerName\>: \[\<*entity1\>*,\<*entity2\>*,…\]" | N | Specify array of entities to include to result from model \[default: all\] For multiple containers, separate them with semi-colon (;) |
 | \--scriptType=\<**create** \| update \> | N | For Cassandra, if outputType=script, specify type of forward engineering script \[default:create\] |
-| \--defsStrategy== \<**resolved** \| referenced \| internal\> | N | If outputType=jsonschema, specify whether to output resolved, referenced or internal definitions&nbsp; \[values: "resolved", "referenced", "internal"\] \[default: "resolved"\] |
+| \--defsStrategy= \<**resolved** \| referenced \| internal\> | N | If outputType=jsonschema, specify whether to output resolved, referenced or internal definitions&nbsp; \[values: "resolved", "referenced", "internal"\] \[default: "resolved"\] |
 | \--updateExtDefs=\<true \| **false**\> | N | When reference to external definition, update current model to ensure latest changes are included. \[default: false\] |
 | \--insertSampleData=\<true \| **false**\> | N | Include sample data to the output if it supports. \[default: false\] |
 | \--quotingType=\<**unquoted** \| simple \|&nbsp; double\> | N | Specify the type of quotes for YAML&nbsp; \[values: "unquoted", "single", "double"\] \[default: "unquoted"\] |
@@ -226,7 +226,7 @@ Usage:&nbsp; &nbsp; *hackolade forwEngAPI \[--arguments\]*
 | **Argument** | **Required** | **Purpose** |
 | --- | --- | --- |
 | \--sourcemodel=\<file\>\* | Y | Full path and file name for the Hackolade model to to serve as a basis for the API generation.  Extension .json is optional |
-| \--selectedObjects= "\<containerName\>: \[\<*entity1\>*,\<*entity2\>*,…\]" | N | Specify array of entities to include to result from model \[default: all\] |
+| \--selectedObjects= "\<containerName\>: \[\<*entity1\>*,\<*entity2\>*,…\]" | N | Specify array of entities to include to result from model \[default: all\] For multiple containers, separate them with semi-colon (;) |
 | \--APItemplate=\<file\>\* | Y | Full path and file name for the template to be used during API generation to create the specified resources for each selected entity of the source model.  The template can be a Hackolade model, or a Swagger or OpenAPI documentation file in either JSON or YAML. |
 | \--targetModelFormat=\< Swagger \| **OpenAPI** \> | N | Specify the target of the target model.&nbsp; \["Swagger" or "OpenAPI"\] \[default: OpenAPI\] |
 | \--targetmodel=\<file\>\* | Y | Full path and file name for the obfuscated Hackolade model.  Extension .json is optional. &nbsp; |
@@ -271,7 +271,7 @@ Usage:&nbsp; &nbsp; *hackolade forwEngDataDictionary \[--arguments\]*
 | \--model=\<file\>\* | Y | Full path and file name for the&nbsp; Hackolade model to be published to the Data Dictionary instance. Extension .json is optional. |
 | \--connectName=\<connection\> | Y if to instance | Name of connection settings saved in the Hackolade instance where CLI is invoked. Or use --connectFile instead. |
 | \--connectFile=\<*file*\>\* | N | Full file path of connection config file (you don't need to use it when connect name is specified).&nbsp; The simplest way to create a connection file is to create a connection in the GUI application, then export the connection settings to file, encrypted or not. |
-| \--selectedObjects= "\<containerName\>: \[\<*entity1\>*,\<*entity2\>*,…\]" | N | Specify array of entities to include to result from model \[default: all\] |
+| \--selectedObjects= "\<containerName\>: \[\<*entity1\>*,\<*entity2\>*,…\]" | N | Specify array of entities to include to result from model \[default: all\] For multiple containers, separate them with semi-colon (;) |
 | \--targetResource=\<resource\> | Y | Name of a target resource (domain) in Data Dictionary instance. |
 | \--forceconfig=\<true \| **false**\> | N | Specify whether to create necessary config in Data Dictionary instance |
 | \--logLevel=\< 1 \| 2 \| 3 \| **4** \> | N | &#49; = no spinner, no info, no error messages 2 = no spinner, no info 3 = no spinner 4 = full output \[default: 4\] |
@@ -313,7 +313,7 @@ Usage:&nbsp; &nbsp; *hackolade forwEngXLSX \[--arguments\]*
 | --- | --- | --- |
 | \--model=\<*file*\>\*&nbsp; | Y | Full path and file name for target Hackolade model. Extension .json is optional |
 | \--path=\<*file*\>\*&nbsp; | Y | Specify the directory path where the forward-engineered files will be created&nbsp; |
-| \--selectedObjects= "\<containerName\>: \[\<*entity1\>*,\<*entity2\>*,…\]" | N | Specify array of entities to include to result from model \[default: all\] |
+| \--selectedObjects= "\<containerName\>: \[\<*entity1\>*,\<*entity2\>*,…\]" | N | Specify array of entities to include to result from model \[default: all\] For multiple containers, separate them with semi-colon (;) |
 | \--relationships=\<**true** \| false\> | N | Specify whether to export relationships \[default: true\] |
 | \--resolvedDefinitions=\<true \| **false**\>&nbsp; | N | Specify whether to resolve referenced definitions \[default: false\]&nbsp; |
 | \--updateExtDefs=\<true \| **false**\>&nbsp; | N | When reference to external definition, update current model to ensure latest changes are included. \[default: false\] |

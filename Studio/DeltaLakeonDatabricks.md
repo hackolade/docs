@@ -121,3 +121,43 @@ The Hackolade process for reverse-engineering of Delta Lake databases includes t
 
 For more information on Delta Lake in general, please consult the [website](<https://delta.io/> "target=\"\_blank\"").&nbsp; Here is the links to the [Databricks website](<https://databricks.com/product/data-lakehouse> "target=\"\_blank\"").
 
+&nbsp;
+
+## Databricks Unity Catalog
+
+The Unity Catalog is a unified governance solution for data and AI assets on the Databricks Lakehouse.&nbsp; It provides centralized access control, auditing, lineage, and data discovery capabilities across Databricks workspaces.&nbsp; It was introduced with Runtime 11.3
+
+&nbsp;
+
+All data in Unity Catalog is referenced using a [three-level namespace](<https://docs.databricks.com/data-governance/unity-catalog/queries.html#three-level-namespace-notation>): catalog.schema.table.
+
+![Unity Catalog object model diagram](<lib/Unity%20Catalog%20object%20model%20diagram.png>)
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+**Catalog:** Catalogs are the highest level in the data hierarchy (catalog \> schema \> table/view/volume) managed by the Unity Catalog metastore. They are intended as the primary unit of data isolation in a typical Databricks data governance model.&nbsp; Catalogs represent a logical grouping of schemas, usually bounded by data access requirements. Catalogs often mirror organizational units or software development lifecycle scopes. You may choose, for example, to have a catalog for production data and a catalog for development data, or a catalog for non-customer data and one for sensitive customer data.
+
+&nbsp;
+
+**Schema (Database):** Schemas, also known as databases, are logical groupings of tabular data (tables and views), non-tabular data (volumes), functions, and machine learning models. They give you a way to organize and control access to data that is more granular than catalogs. Typically they represent a single use case, project, or team sandbox.
+
+&nbsp;
+
+**Tables:** Tables reside in the third layer of Unity Catalog’s three-level namespace. They contains rows of data. Unity Catalog lets you create *managed tables* and *external tables*.
+
+&nbsp;
+
+**Views:** A view is a read-only object derived from one or more tables and views in a metastore.
+
+&nbsp;
+
+**Volumes:** Volumes reside in the third layer of Unity Catalog’s three-level namespace. They manage non-tabular data. You can use volumes to store, organize, and access files in any format, including structured, semi-structured, and unstructured data. Files in volumes cannot be registered as tables.
+
+&nbsp;
+
+For more information on the Unity Catalog, consult the [documentation](<https://docs.databricks.com/data-governance/unity-catalog/index.html> "target=\"\_blank\"").
+

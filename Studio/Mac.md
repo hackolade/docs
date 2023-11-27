@@ -112,6 +112,10 @@ Double-click on the Hackolade.app icon to start the application.
 
 ## Silent installation
 
+**Important license note:** by installing or upgrading, you accept the [license agreement](<Licenseagreement.md>) for the application, even if the silent installation does not prompt you.
+
+&nbsp;
+
 The installer can be invoked in a Terminal window after download of the application pkg file in the Downloads folder.
 
 &nbsp;
@@ -125,4 +129,32 @@ On Apple silicon arm64:
 On Intel 64-bit:
 
 > sudo installer -target / -pkg $HOME/Downloads/Hackolade-mac-setup-signed.pkg
+
+&nbsp;
+
+&nbsp;
+
+## Homebrew
+
+**Important license note:** by installing or upgrading, you accept the [license agreement](<Licenseagreement.md>) for the application, even if the silent installation does not prompt you.
+
+&nbsp;
+
+Homebrew is a package manager for for MacOS and Linux.&nbsp; A package for Hackolade Studio has been published and is maintained by a kind member of the community.&nbsp; Many thanks to him.
+
+&nbsp;
+
+If brew is not installed yet, please do so by following instructions in [this page](<https://brew.sh/> "target=\"\_blank\"").&nbsp; Note that brew requires the installation of XCode Command Line Tools. &nbsp;
+
+&nbsp;
+
+The install command is&nbsp;
+
+&nbsp;
+
+> brew install --cask hackolade
+
+&nbsp;
+
+See this page for [more details](<https://formulae.brew.sh/cask/hackolade> "target=\"\_blank\"").
 

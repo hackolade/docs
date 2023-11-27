@@ -103,7 +103,53 @@ If at least one data type is complex (**record**, **enum**, **array**, **map**,
 
 ![Avro oneOf choice](<lib/Avro%20oneOf%20choice.png>)
 
-## &nbsp;
+&nbsp;
+
+## Namespace references
+
+This feature is barely officially documented if at all.&nbsp; It is well described in [this article](<https://deeptimittalblogger.medium.com/defining-reusable-schemas-in-avro-991f2e21d1ca> "target=\"\_blank\"") with good examples in [this repo](<https://github.com/timtebeek/register-avro-schemas#define-avro-schemas> "target=\"\_blank\"").&nbsp; It allows you to reuse records inside other records by creating references instead of importing or copying the structure.&nbsp; This of course allows for easier maintenance of repeated structures and facilitates quality and governance, while allowing independent evolution of record schemas.
+
+&nbsp;
+
+Starting from a blank page, this is how to build a namespace reference.  The Price record must have been created first.  Then as you build the Order record, append a reference model definition:
+
+&nbsp;
+
+![Avro namespace reference creation](<lib/Avro%20namespace%20reference%20creation.png>)
+
+&nbsp;
+
+Choose the Price record:
+
+&nbsp;
+
+![Avro namespace reference pick record](<lib/Avro%20namespace%20reference%20pick%20record.png>)
+
+&nbsp;
+
+And voilà…
+
+&nbsp;
+
+![Avro namespace reference model](<lib/Avro%20namespace%20reference%20model.png>)
+
+&nbsp;
+
+&nbsp;
+
+The forward-engineered script shows as follows:
+
+![Avro namespace reference avsc script](<lib/Avro%20namespace%20reference%20avsc%20script.png>)
+
+&nbsp;
+
+&nbsp;
+
+When reverse-engineering Avro files containing namespace references, the sequence in which they are ingested is important.&nbsp; In order to insert definitions before insert references to such definitions, we have implemented [topological sorting](<https://en.wikipedia.org/wiki/Topological\_sorting> "target=\"\_blank\"").
+
+&nbsp;
+
+&nbsp;
 
 ## Forward-Engineering
 

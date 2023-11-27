@@ -142,3 +142,77 @@ You may also permanently break the connection to the polyglot model.&nbsp; This 
 
 &nbsp;
 
+## Advanced use cases
+
+### Attribute deviations
+
+After deriving from a Polyglot model into any target, you may want to adjust the properties of some attributes, delete unneeded attributes, or add more attributes. From v5.4.0 it is possible to modify attribute properties, and from v6.6.4 it is possible to delete and insert attributes.
+
+Doing deviations is simple, but be aware that some operations are restricted. For example, it is not allowed to change the data type of an attribute derived from a Polyglot model.&nbsp; The software behaves this way to avoid possible conflicts in the properties because each type has its own set of properties. 
+
+If you need such a change, you may either change the data type in the Polyglot model, then update the target model.&nbsp; Or you may delete the derived attribute in the target model, and create/insert a new one.
+
+Other operations are restricted for derived attributes in target models:\
+\- convert a regular attribute to pattern attribute\
+\- convert a pattern attribute to a regular attribute\
+\- replace a reference by its attributes (if the attribute is a reference to a udt/definition)\
+\- change the “JSON Type” of an attribute (if type supports this)
+
+All deviations are stored in the target model and don’t affect the base polyglot model. &nbsp;
+
+&nbsp;
+
+### Derive subsets from multiple polyglot models
+
+The polyglot architecture provides tremendous power and flexibility.&nbsp; It is possible to derive a target model from multiple polyglot models, or subsets thereof:
+
+![Polyglot derive subsets from multiple polyglot models](<lib/Polyglot%20multiple%20subsets.png>)
+
+&nbsp;
+
+This is done in a target model by clicking the + sign in the model-level Properties Pane, and choosing an additional polyglot model from which to select the object or objects you wish to derive into your target model.
+
+\
+![Polyglot choose additional polyglot sources](<lib/Polyglot%20choose%20additional%20polyglot%20sources.png>)
+
+In some case, you may even have a use case to derive multiple subsets from the same polyglot model.&nbsp; An example if why you may want to do this is if you want different subsets and/or deviations from a given polyglot model in the same target model.&nbsp; In this OpenAPI model, different instantiations of the same User object are justified as you want a different response structure depending on whether a criteria was satisfied, or not.
+
+![Polyglot different instantiations of the same object](<lib/Polyglot%20different%20instantiations%20of%20same%20obj.png>)
+
+&nbsp;
+
+### Impact Analysis
+
+The impact analysis window is an extended version of [model comparison window](<Compareandmergemodels.md>). You may open this window by clicking the update button near the link to the Polyglot model on the properties pane, when the model is selected.
+
+![Polyglot impact analysis trigger](<lib/Polyglot%20impact%20analysis%20trigger.png>)
+
+In the impact analysis window, all entities and attributes in the right-hand pane have checkboxes. The checked state means that this object will be included in the target model after the update.&nbsp; If you want an object to not appear in the target model, you should unchecked the box. &nbsp;
+
+![Polyglot impact analysis screen](<lib/Polyglot%20impact%20analysis%20screen.png>)
+
+Color coding and badges help you understand additions, deletions, and modifications: \
+\- turquoise: deviations in the target model, either:
+
+\- insertion of target-only attributes (plus sign + in blue badge)\
+\- or modification of properties of existing polyglot attribute (exclamation mark \! in yellow badge)
+
+\- red: deletions in the polyglot model (strike through font and x in red badge)&nbsp;
+
+\- blue: attributes in polyglot model and
+
+\- were removed in target model (strike through font and plus sign + in blue badge)\
+\- were added in polyglot model (plus sign + in blue badge)
+
+Added, deleted, and modified attributes in the Polyglot model have blue, red and yellow colors respectively (as in the regular compare models window)
+
+If you are not sure what type of difference it is and whether it is changed in the Polyglot model or target model, you can hover on the icon and read the tooltip.
+
+In the impact analysis window also possible to restore attributes in the target model if they were deleted in the Polyglot model. In this case, attributes will be preserved and will work in the same way as attributes that were added to the target model. So the next time you update references to your Polyglot model, you will see their torque.
+
+To view what properties were changed in the target model you can select the attribute, and on properties panes below you can see properties with turquoise color.
+
+![Polyglot impact analysis screen properties](<lib/Polyglot%20impact%20analysis%20screen%20properties.png>)
+
+&nbsp;
+

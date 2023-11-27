@@ -30,7 +30,7 @@ This kind of situation is common in code development, and has been successfully 
 
 &nbsp;
 
-It was a design choice from the very beginning for the architecture of Hackolale to persist data models in JSON documents, not only so they could be stored in NoSQL document database repositories, but also so we could leverage Git for versioning and collaboration.
+It was a design choice from the very beginning for the architecture of Hackolade to persist data models in JSON documents, not only so they could be stored in NoSQL document database repositories, but also so we could leverage Git for versioning and collaboration.
 
 &nbsp;
 

@@ -6,11 +6,11 @@ The feature to exchange data with Excel provides the ability to export a data mo
 
 It includes the following capabilities:&nbsp;
 
-(i) the basic creation of a new model or the addition of containers, entities, and attributes to an existing model;&nbsp;
+(i) editing containers, entities, and attributes of an existing model;&nbsp;
 
-(ii) the selection, by the user, of which properties of an attribute are exported in the Excel file, and hence which ones are filtered out and not exported; and&nbsp;
+(ii) selecting which properties of an attribute are exported in the Excel file, and hence which ones are filtered out and not exported; and&nbsp;
 
-(iii) the choice, by the user, of custom attributes to be added in the various data types of the plugin.
+(iii) selecting custom attributes to be added in the various data types of the plugin.
 
 &nbsp;
 
@@ -26,11 +26,37 @@ When doing a roundtrip from Hackolade to Excel and back, it is important to main
 
 &nbsp;
 
-To import CSV files into Hackolade, it is advised to go first export an Excel template, then link it to the CSV file, before importing back into Hackolade.
+To import CSV files into Hackolade, it is advised to first export an Excel template, then import the CSV file into the Excel template, before importing back into Hackolade.
 
 &nbsp;
 
-The user can configure the exact properties of each object to be exported to Excel.&nbsp; This configuration is maintained in Tools \> Options \> Forward-Engineering, and there's one configuration per target.&nbsp; The configuration itself can be exported to a JSON file so it can be distributed in the organization, and imported on other instances of the application.
+## Export model
+
+To start your export for a model, simply go to Tools \> Forward-Engineer \> Excel file...&nbsp; In the Object selection dialog, you may deselect objects tht you do not wish to export. &nbsp;
+
+&nbsp;
+
+![Tools Options - FE Excel Export Objet Select](<lib/Tools%20Options%20-%20FE%20Excel%20Export%20Objet%20Select.png>)
+
+&nbsp;
+
+&nbsp;
+
+With the Options button, you may also access a dialog to delect object properties that you do not wish to export:
+
+![Tools Options - FE Excel Properties Selection](<lib/Tools%20Options%20-%20FE%20Excel%20Properties%20Selection.png>)
+
+&nbsp;
+
+The properties for each object are listed in the corresponding sections.&nbsp; If you need to filter out a property, simply uncheck the corresponding box.
+
+&nbsp;
+
+Instructions for the import of an Excel file can be found in [Excel reverse-engineering](<Exceltemplate.md>).
+
+## Maintain configuration
+
+This configuration can also be maintained in Tools \> Options \> Forward-Engineering, and there's one configuration per target.&nbsp; The configuration itself can be exported to a JSON file so it can be distributed in the organization, and imported on other instances of the application.
 
 &nbsp;
 
@@ -40,15 +66,11 @@ The user can configure the exact properties of each object to be exported to Exc
 
 &nbsp;
 
-The properties for each object are listed in the corresponding sections.&nbsp; If you need to filter out a property, simply uncheck the corresponding box.
-
 &nbsp;
 
-![Tools Options - FE Excel Object Selection](<lib/Tools%20Options%20-%20FE%20Excel%20Object%20Selection.png>)
+## Known limitations
 
-&nbsp;
-
-**Limits:** Microsoft Excel (as well as LibreOffice) encounters memory limitations in the handling of validation lists, used to control in Excel boolean checkbox properties and for dropdown properties, and leading to this type of error message:
+Microsoft Excel (as well as LibreOffice) encounters memory limitations in the handling of validation lists, used to control in Excel boolean checkbox properties and for dropdown properties, and leading to this type of error message:
 
 &nbsp;
 
@@ -66,5 +88,5 @@ If you click Yes, you should be aware that values are no longer validated agains
 
 &nbsp;
 
-Instructions for the reverse-engineering of an Excel file can be found [here](<Exceltemplate.md>).
+&nbsp;
 

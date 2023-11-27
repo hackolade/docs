@@ -10,7 +10,7 @@ The following tips and tricks may be useful to quickly become a Hackolade power 
 
 ## What is the End-of-Life (EOL) policy for Hackolade Studio?
 
-Hackolade continues to provide support for version X for one calendar year after the release date of major version X+1.&nbsp; Provide that you are current with maintenance fees for your perpetual license key, or with your subscription.
+Hackolade continues to provide support for version X for one calendar year after the release date of major version X+1, provided that you are current with maintenance fees for your perpetual license key, or with your subscription.
 
 &nbsp;
 

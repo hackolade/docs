@@ -4,9 +4,7 @@ Before using this feature, you may want to read the [versioning concept page](<M
 
 &nbsp;
 
-An organization may create several different versions through the lifecycle of a model.&nbsp; That may be because of the natural evolution of the application in a design-first process, or just to keep up with changes being applied to the database instance.&nbsp; In any case, it is often required to compare different versions of a model to understand the differences, and optionally to merge these differences and create a new reference model.
-
-&nbsp;
+&nbsp;&nbsp; &nbsp;
 
 A compare and merge operation may involve a combination of: a previous reference model, a model issued from the reverse-engineering of a database instance or some other source, a model that has evolved in a separate branch, etc...
 

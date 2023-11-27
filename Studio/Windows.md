@@ -64,6 +64,10 @@ After a couple of additional prompt, the installation process will start.&nbsp; 
 
 ## Silent installation
 
+**Important license note:** by installing, you accept the [license agreement](<Licenseagreement.md>) for the application, even if the silent installation does not prompt you.
+
+&nbsp;
+
 The installation program also supports silent mode for command-line installations, with the following arguments:
 
 | **/SILEN**T | Runs the installer in silent mode (The progress window is displayed) |
@@ -82,6 +86,64 @@ Silently install the program, suppress message boxes, and install in a user dire
 Hackolade-win64-setup-signed.exe /VERYSILENT /SUPPRESSMSGBOXES /DIR="C:/Users/%username%/Hackolade"
 
 &nbsp;
+
+&nbsp;
+
+## Chocolatey
+
+[Chocolatey](<https://chocolatey.org/> "target=\"\_blank\"") is a package installer for Windows.&nbsp; You may read this excellent [overview of Chocolatey](<https://www.codemag.com/article/1901051/Chocolatey-on-Windows> "target=\"\_blank\"") if you're not already familiar with it.&nbsp; Chocolatey must be installed and runs exclusively in Powershell.
+
+&nbsp;
+
+An official Hackolade Studio package has been submitted for review, which is [available here](<https://community.chocolatey.org/packages/hackolade-studio> "target=\"\_blank\"").&nbsp; We're currently in the moderation phase of the package review, which explains why it is not yet listed.
+
+&nbsp;
+
+When first installing Hackolade Studio, run this Powershell command:
+
+&nbsp;
+
+> choco install hackolade-studio --version=\<version\>
+
+&nbsp;
+
+where \<version\> should be replaced with the version number (without the v prefix) of your choice, typically the latest, as visible on our [download page](<https://hackolade.com/download.html> "target=\"\_blank\"").
+
+&nbsp;
+
+Later, to upgrade to the latest version, as we release every week, run this command:
+
+&nbsp;
+
+> choco upgrade hackolade-studio
+
+&nbsp;
+
+**Important license note:** by installing or upgrading, you accept the [license agreement](<Licenseagreement.md>) for the application, even if the silent installation does not prompt you.
+
+&nbsp;
+
+**Important note:** you cannot install or upgrade if the application is opened at the same.&nbsp; Make sure to exit all Hackolade Studio instances prior to running the choco commands if you want to avoid this type of error message:
+
+&nbsp;
+
+> WARNING: User (you) canceled the installation.
+
+> ERROR: Running \["C:\\Users\\%username%\\AppData\\Local\\Temp\\chocolatey\\hackolade-studio\\\<version\>\\Hackolade-win64-setup-signed.exe" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- \] was not successful. Exit code was '5'. Exit code indicates the following: User (you) canceled the installation..
+
+> The install of hackolade-studio was NOT successful.
+
+> Error while running 'C:\\ProgramData\\chocolatey\\lib\\hackolade-studio\\tools\\chocolateyinstall.ps1'.
+
+> &nbsp;See log for details.
+
+> &nbsp;
+
+> Chocolatey installed 0/1 packages. 1 packages failed.
+
+> &nbsp;See the log for details (C:\\ProgramData\\chocolatey\\logs\\chocolatey.log).
+
+> &nbsp;
 
 ## Licenses on Virtual Machines (or physical computer accessed via Remote Desktop Installations \[RDP\] or equivalent)
 
@@ -155,4 +217,8 @@ As per this VMWare [article, setup should generally be OK](<https://pubs.vmware
 &nbsp;
 
 If it is not the case, maybe instructions in [this article](<https://docs.vmware.com/en/VMware-Horizon/2012/virtual-desktops/GUID-E12713D5-3530-422F-B265-B0F3FDD2041E.html> "target=\"\_blank\"") will help your IT department configure appropriately
+
+&nbsp;
+
+&nbsp;
 

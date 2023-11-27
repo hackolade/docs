@@ -37,19 +37,19 @@ While the unit price of a concurrent license is more expensive than an individua
 
 &nbsp;
 
-## Virtual Machines
+## Virtual Machines or Remote Desktop access
+
+License metric "per seat": what does it mean?&nbsp; License means the right to use the Product as defined by Authorized Use. License metric is "per seat", meaning that the number of Authorized Users specified on the Invoice may use the software. A license must be obtained for each device on or from which the Product is used or accessed.
+
+If I have a desktop at home and a laptop at work, does it mean that I can use the same license key? **No**, our license metric is not based on named users. A license must be obtained for each device on or from which the Product is used or accessed.
+
+My company wants to install Hackolade on a server accessed via Remote desktop: is it possible? **Yes**, Remote Desktop is possible. However, a license seat is required **for each combination of host, user login, and remote client** accessing the application.
 
 When installing Hackolade on a VM to share among multiple users and/or accessed via Windows Remote Desktop, it is important to realize that licensing is not attached to just the host machine, but to the combination of the host machine, the remote machine, the user login, and other parameters to determine the uniqueness of the session.
 
-&nbsp;
-
 If you have 1 machine with multiple users (using for example Terminal Server, Remote Desktop, Citrix XenDesktop or an equivalent Virtual Machine method), you will need one license per user and PC accessing the Hackolade installation on the server.  A license must be obtained for each device on or from which the Product is used or accessed.  As a result, you need a license seat per user of that VM.
 
-&nbsp;
-
 Example: having 4 Hackolade users on a single VM is the equivalent of having 4 individual PCs running Hackolade from a licensing point of view: you need 4 license seats to be validated.
-
-&nbsp;
 
 Using a concurrent license key simplifies greatly the behavior in case of VMs and RDP.
 

@@ -48,7 +48,7 @@ A view is a virtual table defined by a SQL query. &nbsp; Views are read-only.&nb
 
 ## Unique, Primary, and Foreign Keys, and Not Null
 
-Google BigQuery has no primary key or unique constraints.&nbsp; There are also no foreign keys enforced by the database, although they can be defined in Hackolade for documentation purposes.
+Starting in March 2023, BigQuery introduced support for primary key constraints.&nbsp; At this point Google BigQuery has no support for unique constraints.&nbsp; There are also no foreign keys enforced by the database, although they can be defined in Hackolade for documentation purposes.
 
 &nbsp;
 

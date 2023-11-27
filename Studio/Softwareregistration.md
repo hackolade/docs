@@ -1,6 +1,10 @@
 # Software registration
 
-After downloading Hackolade, you need to obtain and validate an activation key before you can use the application.
+*If you're using a an older version of Hackolade Studio (up to v6.11.9), consult [*this page](<OldSoftwareValidationdialog.md>) *for the older screenshots and process.*
+
+&nbsp;
+
+After downloading Hackolade Studio, you need to obtain and validate an activation key before you can use the application, except for the Community Edition.
 
 &nbsp;
 
@@ -8,7 +12,7 @@ You can initiate the process of getting an activation key either from the websit
 
 &nbsp;
 
-**IMPORTANT NOTE:** Your license key is a valuable asset and should be treated with care.&nbsp; If you change computers or a user leaves the organization, take a moment to release the license key on the old PC before retiring it, so your license key can be validated again on your new machine.  All details can be found [here](<Transferalicensetoanewcomputer.md> "Transfer license to a new computer"). &nbsp;
+**IMPORTANT NOTE:** Your license key is a valuable asset and should be treated with care.&nbsp; Just like you would reclaim a laptop when seomone leaves, you should do the same for our license keys.&nbsp; If you change computers or a user leaves the organization, take a moment to release the license key on the old PC before retiring it, so your license key can be validated again on a new machine.  Many customers add to the exit checklist of team members the action of releasing the license key.&nbsp; All details can be found [here](<Transferalicensetoanewcomputer.md> "Transfer license to a new computer"). &nbsp;
 
 &nbsp;
 
@@ -16,7 +20,7 @@ You can initiate the process of getting an activation key either from the websit
 
 &nbsp;
 
-**Warning:** if you have an HTTP proxy server on your network, you may have to manually set in the application the proxy parameters.&nbsp; You will find more information on the [Network Proxy page](<Networkproxy.md>).&nbsp; In particular, in environments with proxies using SSL inspection (Zscaler, BlueCoat, etc.) it is critical that Hackolade be whitelisted to connect properly with SSL/TLS protocols.
+**Warning:** if you have an HTTP proxy server on your network, you may have to manually set in the application the proxy parameters.&nbsp; You will find more information on the [Network Proxy page](<Networkproxy.md>).&nbsp; In particular, in environments with proxies using SSL inspection (Zscaler, BlueCoat, etc.) it is critical that Hackolade Studio be whitelisted to connect properly with SSL/TLS protocols.
 
 &nbsp;
 
@@ -28,35 +32,29 @@ You can initiate the process of getting an activation key either from the websit
 
 ## Get a software license key
 
+Starting with v7.0.0, the Community Edition no longer requires a license key.&nbsp; For the Community Edition, the experience is 100% frictionless: no license key, no sign up, no login.&nbsp; Just download the software and start to use use it.&nbsp; If you want to avoid seeing the License Status screen each time you start the application.&nbsp; Just click on the Continue for Free button in the Community Edition card.
+
+&nbsp;
+
+For obvious reasons, it is not possible to accumulate multiple 14-day free trial keys.&nbsp; Once your key has expired, you may take a subscription for the Edition of your choice, or choose to use the Community Edition for free.&nbsp; If you need more time, you may send an email to support@hackolade.com, explainng the evaluation plans and timeline for your organization.
+
 ### from the website
 
-Go to the [pricing page](<http://hackolade.com/pricing.html> "target=\"\_blank\"") and choose the version you prefer (see [here](<Editions.md>) for more info).&nbsp; You will be directed to the Hackolade Store where you'll be guided through the checkout process.&nbsp; A license key will be generated and provided on screen and via email. &nbsp; You will need this key to access the application.&nbsp; Go to step 2 below for instructions.
+Go to the [pricing page](<http://hackolade.com/pricing.html> "target=\"\_blank\"") and choose the version you prefer (see [here](<Editions.md>) for more info).&nbsp; You will be directed to the Hackolade Store where you'll be guided through the checkout process.&nbsp; A license key will be generated and provided on screen and via email. &nbsp; You will need this key to access the application.&nbsp; Go to the validation step below for instructions.
 
 ### from the application
 
-When you start Hackolade, if there is no valid license key present, you are presented with this dialog box:
+When you start Hackolade Studio, if there is no valid license key present, you are presented with this License Status screen, also available by clicking the key icon at the bottom of the context bar in the lower left-hand corner, or by going to Help \> License Status:
 
 &nbsp;
 
-![Registration -- empty dialog](<lib/Registration%20--%20empty%20dialog.png>)
+![License Status - request license key](<lib/License%20Status%20-%20request%20license%20key.png>)
 
 &nbsp;
 
-This screen can also be reached by going to Help \> Software Key Validation.
+Choose your Edition and subscription plan.&nbsp; You will be directed to the Hackolade Store in your browser where you'll be guided through the checkout process.&nbsp; A license key will be generated and sent to you via email. &nbsp; You will need this license key to access the application. &nbsp;
 
 &nbsp;
-
-&nbsp;
-
-Choose one of the following options:
-
-&nbsp;
-
-![Registration -- 4 options](<lib/Registration%20--%204%20options.png>)
-
-&nbsp;
-
-then click the Send button.&nbsp; You will be directed to the Hackolade Store where you'll be guided through the checkout process.&nbsp; A license key will be generated and provided on screen and via email. &nbsp; You will need this license key to access the application.&nbsp; Go to step 2 below for instructions.
 
 ## Validate your license key
 
@@ -64,73 +62,67 @@ If you have not downloaded Hackolade yet, please do so from the [download page](
 
 &nbsp;
 
+![License Status - validate license key](<lib/License%20Status%20-%20validate%20license%20key.png>)
+
+&nbsp;
+
+Paste the license key received by email, or provided by your administrator.&nbsp; The license key has a format of multiple 5-character segment like XXXXX-XXXXX-XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
+
+&nbsp;
+
+The Identifier field is pre-populated with information fetched from your Operating System.&nbsp; This Identifier is important in the management of license keys.
+
+&nbsp;
+
+Click the Validate button.
+
+&nbsp;
+
+You must be connected to the Internet for the validation of your license key with Hackolade's license server.&nbsp; In some rare cases when your machine must be isolated from the Internet, you may use the offline validation process described below.
+
+&nbsp;
+
+If the license key is successfully validated, the following message willbe breifly appear at the top of your screen.
+
+![License Status - license key validated](<lib/License%20Status%20-%20license%20key%20validated.png>)
+
 &nbsp;
 
 &nbsp;
 
-![Registration -- register activation key](<lib/Registration%20--%20register%20activation%20key.png>)
+The License Status screen can be accessed at any time by clicking the key icon at the bottom of the context bar in the lower left-hand corner, or by going to Help \> License Status:
+
+&nbsp;
+
+![License Status - status screen](<lib/License%20Status%20-%20status%20screen.png>)
 
 &nbsp;
 
 &nbsp;
-
-**Step 1:** In the Software Key Validation dialog, please choose the option 'I want to...':
-
-![Registration -- activation](<lib/Registration%20--%20activation.png>)
-
-then **Step 2:** paste your license key, and optionally enter your name or an identifier to help manage multiple licenses
-
-and **Step 3:** click the Send button. &nbsp;
-
-&nbsp;
-
-You need to be connected to the Internet for this step to validate your license key with Hackolade's license server.&nbsp; If your company has many licenses, your administrator may require that you enter your name in the Identifier (optional) field:
-
-![Registration -- license details](<lib/Registration%20--%20license%20details.png>)
-
-&nbsp;
-
-You should be getting this confirmation message:
-
-![Registration -- success message](<lib/Registration%20--%20success%20message.png>)
-
-&nbsp;
-
-and the license details will be filled window will be filled.
 
 &nbsp;
 
 ## Release the license key from one computer to move to another
 
-If you need to move your license key to another computer, you first need to release it on the PC where your key is currently validated.
+If you need to move your license key to another computer, you first need to release it on the machine where it is currently validated.
 
 &nbsp;
 
-To do so, go to the option Help \> Software Key Validation, and choose the action 'I want to...':
-
-![Registration -- release license key](<lib/Registration%20--%20release%20license%20key.png>)
-
-and click the Send button.&nbsp; This will free up the key on our license server. &nbsp;
+To release it, go to the option Help \> License Status then click the Release key button.
 
 &nbsp;
 
-![Registration -- un-register confirmation](<lib/Registration%20--%20un-register%20confirmation.png>)
-
-Make sure to copy the license key and store it (or find your original license key confirmation email) as you will need it to activate on the other computer where you will want to use Hackolade.
+As of this moment, you can no longer use Hackolade Studio on the original computer, unless you you re-register it, or witch back to the Community Edition.
 
 &nbsp;
 
-As of this moment, you can no longer use Hackolade on the original computer, unless you you re-register it.
-
-&nbsp;
-
-Go to the other computer where you want to use Hackolade and validate your license key using the instructions above '2. Validate your license key'
+Go to the other computer where you want to use Hackolade Studio and validate your license key using the instructions above 'Validate your license key'
 
 &nbsp;
 
 ## Offline validation
 
-**Important note:** offline validation will NOT work for subscriptions or perpetual concurrent licenses.&nbsp; This section is only for Community, Trial, and perpetual individual workstation licenses.
+**Important note:** offline validation will NOT work for subscriptions or perpetual concurrent licenses.&nbsp; This section is only for 14-day trial, and perpetual individual workstation licenses.
 
 &nbsp;
 

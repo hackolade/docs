@@ -1,5 +1,495 @@
 # v6.x
 
+New features in v6.11.9 \[10-Nov-2023\]
+
+\- Command-Line Interface: added Git awareness to compMod command so you can models in a specific commit hash or in a path location, with argument --model1=\[commit:\]\[path\]\<file name\>
+
+\- Command-Line Interface: allowed for selection of multiple containers in argument --selectedObject of command forwEngDataDictionary
+
+\- Compare \& Merge: added ability to manage attributes moved via drag-and-drop
+
+\- Cosmos DB with Core API: added new script format for Azure CLI so database and container creation can be executed with azureCLIPowerShell, azureCLIZsh, and azureCLIBash.&nbsp; Available on screen of GUI, forward-engineered to file, or Command-Line Interface
+
+\- Delta Lake/Databricks: added support for DEFAULT column value in ALTER script of delta models
+
+\- Delta Lake/Databricks: split of ADD COLUMN and SET NOT NULL in ALTER scripts of delta models
+
+\- Snowflake: added support for parsing of QUALIFY keyword in SELECT statement defining views
+
+&nbsp;
+
+New features in v6.11.8 \[03-Nov-2023\]
+
+\- MongoDB: added reverse-engineering of Relational Migrator relmig files
+
+\- Command-Line Interface: allowed for selection of multiple containers in argument --selectedObject of commands forwEng, forwEngAPI, forwEngXLSX, polyglotDerive, polyglotUpdate, revEng
+
+\- External references: fixed bug when lineage capture was enabled
+
+\- Subtype/supertype: adjusted behavior so deletion of relationship no longer deletes the subtype entities
+
+\- Avro: added possibility to generate Schema Registry script in JSON format via CLI or Tools \> Forward-Engineering
+
+\- Delta Lake/Databricks: added support for MANAGED LOCATION argument in CREATESCHEMA statements
+
+\- Elasticsearch: added support for flattened data type
+
+\- Oracle: added ability to compare and merge 23c duality views
+
+\- Snowflake: extended the UDF pane config with additional languages - java, scala, python
+
+&nbsp;
+
+New features in v6.11.7 \[27-Oct-2023\]
+
+\- ERD and ERDVs: added further independence of box dimensions
+
+\- Excel: added more detailed logging when importing ERDVs
+
+\- Excel: added case insensitive matching of entity names when importing ERDVs
+
+\- Command-Line Interface suppressed the need for argument --scriptType=update when model is a delta model
+
+\- Command-Line Interface: added possibility to be invoked from Azure DevOps (requires a concurrent license key)
+
+\- Documentation generation: added DDL of views where applicable
+
+\- External references: changed default of file path from absolute to relative
+
+\- Polyglot references: changed default of file path from absolute to relative
+
+\- Model-driven API generation: changed default of file path from absolute to relative
+
+\- Delta Lake/Databricks: added encoding names containing accented or special characters with backticks
+
+&nbsp;
+
+New features in v6.11.6 \[20-Oct-2023\]
+
+\- Check for Application Update dialog: suppressed sporadic Promise Rejection Error message in some Windows 11 instances when clicking Download Now link
+
+\- Compare and Merge: added handling of custom properties in custom tabs
+
+\- Excel: added export/import of ERD views to allow, among other things, for migration of subject areas from erwin
+
+\- Excel: added taking into account PKs when sorting attributes during export
+
+\- Polyglot: added Title Case conversion option during reverse-engineering of XSD files
+
+\- Print diagram: adjusted preview of PNG format
+
+\- Workgroup Edition: allowed author to self-approve change request if platform allows it, as well as other actions (reject, abandon, etc.)
+
+\- Workgroup: added display of username of timeline events in Azure DevOps Repos pull requests
+
+\- Workgroup: added opening of models from comparison pane of change request review
+
+\- Delta Lake/Databricks: adjusted generation of Alter script from delta model
+
+\- Oracle: added support for partition by range with interval
+
+\- Oracle: added support for JSON data type in versions 21c and higher
+
+&nbsp;
+
+New features in v6.11.5 \[13-Oct-2023\]
+
+\- Polyglot: added possibility to set case conversion during reverse-engineering of XSD files
+
+\- Polyglot: added warning if parent file cannot be found
+
+\- Collibra: added custom config pushed automatically so field-level custom properties get displayed in Details tab
+
+\- Delta Lake/Databricks: allowed Generated As properties for integer type
+
+\- Delta Lake/Databricks: allowed nullable value in default property for DDL generation
+
+\- Elasticsearch: added config for language analyzers, index blocks, index routing, index normalizers, and many other index properties
+
+\- Swagger: added sorting keys for enums and required
+
+&nbsp;
+
+New features in v6.11.4 \[06-Oct-2023\]
+
+\- Polyglot: added ability to handle cross-target references to external definitions
+
+\- Polyglot: added ability to handle ambiguity in multiple data types of attributes
+
+\- External references: added warning if definition file cannot be found
+
+\- Excel export/import: added possibility to update custom tabs' properties&nbsp;
+
+\- Avro: added support for namespaces in external references
+
+\- Delta Lake/Databricks: added name property for column-level check constraints
+
+\- Delta Lake/Databricks: added support for identity in Generated As statement, with start and increment
+
+\- Delta Lake/Databricks: changed SQL formatter to SQLtools
+
+&nbsp;
+
+New features in v6.11.3 \[29-Sept-2023\]
+
+\- Workgroup for GitHub: in addition to previously available support for shared repo strategy, added support for Fork and Pull strategy in the context of innersource methodology, with the ability to contribute PRs to an upstream parent repo
+
+\- ERDVs: added ability to share annotations across multiple ERDVs
+
+\- Object Browser: added decorative symbols to tree
+
+\- Polyglot: adjusted data type conversion to JSON Schema for integer, date, time, and uuid
+
+\- Cloud storage reverse-engineering: modified default behavior to not combine schemas
+
+\- Excel: added export of empty columns if selected in options
+
+\- Excel: added export of Avro doc property derived from polyglot
+
+\- Excel: suppressed misleading warning during import&nbsp;
+
+\- Markdown documentation: added display of key path for partition keys when derived from Polyglot
+
+\- Databricks: added support for sequence property of integer data types plus derive from Polyglot autoincrement
+
+\- Databricks: added support for column-level inline check constraints
+
+\- Elasticsearch: added support for copy\_to property
+
+\- Oracle: added support for naming conventions in Duality Views for JSON keys and subqueries
+
+\- Oracle: added support for newly introduced IF NOT EXISTS in 23c DDL script forward-engineering
+
+\- Snowflake: added mapping of Polyglot autoincrement to Snowflakes's identity property of integer data types
+
+\- SQL Server: adjusted forward-engineering of ALTER script in delta models for absent properties
+
+&nbsp;
+
+New features in v6.11.2 \[22-Sept-2023\]
+
+\- ERDV: disconnected resizing of entity boxes between different ERDVs when activating display option "Hide data types"
+
+\- Command-Line Interface: suppressed requirement for Git client in Docker image
+
+\- Polyglot: enhanced generation of JSON Schema for the multiple data types of an attribute
+
+\- Avro: adjusted positioning of labels in dialog for forward-engineering to file
+
+\- BigQuery: added support for extended ASCII characters
+
+\- Elasticsearch: added runtime option in dynamic property, plus changed default value
+
+\- Elasticsearch: allowed reverse-engineering of fields absent in document sampling but present in mappings
+
+&nbsp;
+
+New features in v6.11.1 \[19-Sept-2023\]
+
+\- Oracle 23c Duality Views: added forward-engineering script generation in SQL syntax of duality views
+
+\- Oracle 23c Duality Views: added possibility to apply duality views DDL script to instance&nbsp;
+
+\- Oracle 23c Duality Views: added reverse-engineering of DDL file with duality views in SQL syntax
+
+\- Oracle 23c Duality Views: added reverse-engineering from instance with duality views in SQL syntax
+
+&nbsp;
+
+New features in v6.11.0 \[15-Sept-2023\]
+
+\- Oracle: added support for JSON-Relational Duality Views in version 23c
+
+\- ERD: synchronized display in ERD when changing order of columns in composite keys
+
+\- ERDVs: fixed condition leading to an entity belonging to more than one container after a change of container followed by a Git merge
+
+\- ERDVs: enhanced Diagram View Editor to handle empty containers and entities
+
+\- Excel export: added relationship parent and child attribute names in case of composite keys
+
+\- Excel export: suppressed extraneous auto-increment setting for polyglot models
+
+\- Lineage capture: added event for renaming objects
+
+\- Performance enhancements: fine-tuned undo/redo logging and localization
+
+\- Polyglot: fixed an issue with polyglot definitions making an external reference to model definitions in other polyglot models
+
+\- Properties Pane: FK relationships dropdown lists of parent and child entities display business vs technical name according to Display Options choice
+
+\- Avro: enhanced reverse-engineering to handle possible collisions with field names "properties" or "items that collide with syntax keywords
+
+\- BigQuery: added tolerance for absence of PKs and FKs in public datasets
+
+\- BigQuery: added support for allow\_non\_incremental\_definition option in materialized views
+
+\- Delta Lake/Databricks: added escaping clause for extended ascii characters
+
+&nbsp;
+
+New features in v6.10.20 \[08-Sept-2023\]
+
+\- Schema tree view: allowed drag-and-drop of reference attributes to different level in the tree
+
+\- Compare and Merge: added support for C\&M of subtypes
+
+\- Compare and Merge in Git conflict resolution: added handling of entities in ERDVs
+
+\- External references: removed some false positives of additions in Impact Analysis screen
+
+\- Polyglot: added handling of update of inserted references in target model
+
+\- Workgroup edition: added parsing of repository URLs containing spaces
+
+\- Avro: added support for recursive schema references for Confluent Schema Registry
+
+\- BigQuery: added support for max\_staleness option materialized views
+
+\- BigQuery reverse-engineering: added ability to retrieve tables separately by dataset
+
+\- Cosmos DB with SQL API: added support for hierarchical partition keys
+
+\- EventBridge Schema Registry: added support for OpenAPI 3.0.x extensions
+
+\- OpenAPI: added support for extensions in array data type and components schema root items
+
+\- Snowflake: added support for procedures in modeling, forward- and reverse-engineering
+
+\- SQL Server: added support for PK options changes in ALTER scripts
+
+&nbsp;
+
+New features in v6.10.19 \[01-Sept-2023\]
+
+\- Object Browser: added possibility to modify order of database views (where applicable) using toolbar up/down arrows
+
+\- Foreign key relationships: added validation of technical name with Regular Expression, in particular to control max length in RDBMS targets
+
+\- Polyglot: added default use of technical names of entities and attributes when deriving foreign key relationships
+
+\- Polyglot: reverted transitive references to go back to direct references
+
+\- External references: added handling of reference name changes ancestor
+
+\- Avro: allowed absence of a Subject Name Strategy for record in Confluent Schema Registry, with possibility to edit the subject name
+
+\- Avro: dropped validation of business name if technical name of namespace is valid
+
+\- Elasticsearch: added support for configuration of built-in and custom text analyzers
+
+\- PostgreSQL: removed escaping of default values of array columns in DDL generation
+
+\- OpenAPI/Swagger: added ability to select resources and requests in yaml format forward-engineering
+
+&nbsp;
+
+New features in v6.10.18 \[24-Aug-2023\]
+
+\- Object Browser: added handling of technical names for entities copied in a target model that is derived from polyglot
+
+\- Documentation: changed image path to relative in Markdown format
+
+\- Documentation: added possibility to filter out empty properties for all objects and Properties Pane tabs
+
+\- Excel export: added possibility to deselect color and font properties
+
+\- Excel export: added filtering of deselected properties for attributes of entities and views
+
+\- Print diagram: added handling of custom canvas background color
+
+\- Schema tree view: added preventing drag-and-drop of root
+
+\- Avro: implemented topological sort during reverse-engineering of .avsc files with namespace references
+
+\- Avro: adjusted filtering of special characters in forward-engineering
+
+\- Delta Lake/Databricks: added enhancement to parsing of SELECT statement in views for jinja variables in double curly braces
+
+\- MariaDB, MySQL, Oracle, PostgreSQL, SQL Server: added technical name max length verification for schemas, tables, and columns
+
+&nbsp;
+
+New features in v6.10.17 \[18-Aug-2023\]
+
+\- ERD: added enabling auto-width and auto-height when clicking "Resize box to fit to content" button on the entity box title bar
+
+\- Object Browser: added ability to modify order of ERDVs using toolbar up/down arrows
+
+\- Foreign Key relationships: changed default naming logic to use technical name of entities and attributes if present, otherwise use business name
+
+\- Properties Pane for relationships: now uses the order set in the Object Browser for both parent and child entities
+
+\- Documentation generation: changed the order of objects to reflect order in Object Browser
+
+\- JSON Schema forward-engineering: made array's "contains" property an object type in draft-07, 2019-09, and 202-12 specs
+
+\- JSON Schema forward-engineering: added filtering of deactivated objects derived from polyglot
+
+\- Polyglot: added ability to move an inserted attribute in a target model derived from polyglot
+
+\- Polyglot: added possibility to multi-select attributes in a target model derived from polyglot
+
+\- Avro schema preview: added split panes to display generated sample data
+
+\- BigQuery: added replacement of illegal characters in names of FK relationships with underscores
+
+&nbsp;
+
+New features in v6.10.16 \[11-Aug-2023\]
+
+\- ERD: added automatic disabling of auto-height and auto-width when adjusting entity box size
+
+\- Plugin Manager: added plugin version in new model target picker
+
+\- BigQuery reverse-engineering: added support for single dataset filtering
+
+\- BigQuery: added support for derive from polyglot required property
+
+\- MySQL: added support for fractional seconds for TIME, DATETIME, and TIMESTAMP data types
+
+\- MySQL: added support for property and reverse-engineering of DEFAULT ON UPDATE statements
+
+\- Parquet: added support for derive from polyglot required property
+
+&nbsp;
+
+New features in v6.10.15 \[04-Aug-2023\]
+
+\- ERD: fixed reset of custom relationships when adding attributes
+
+\- Polyglot: added possibility to add/insert/append choices into derived target models&nbsp;
+
+\- Polyglot Impact Analysis: added possibility to (de)select deletions in Polyglot model
+
+\- Avro: added support for namespace references
+
+\- BigQuery: added support for Foreign Key constraints
+
+\- Databricks: added support for PK and FK constraints in Unity Catalog, in other catalogs than hive\_metastore which does not support PKs and FKs
+
+\- MySQL: added support for property and forward-engineering of DEFAULT ON UPDATE statements
+
+\- OpenAPI: added possibility to forward-engineer component schemas to YAML Schema file
+
+\- Oracle DDL reverse-engineering: adjusted mapping of NUMBER with no precision for SQL-like targets
+
+\- PostgreSQL/YugabyteDB: added support for check constraints with multiple statements
+
+\- PostgreSQL/YugabyteDB: added Array Type property for non-reference enums, composite, range\_udt, and domain types
+
+\- SQL Server: added SSL Options for Windows Auth method
+
+&nbsp;
+
+New features in v6.10.14 \[27-Jul-2023\]
+
+\- Polyglot: added support for naming conventions in impact analysis dialog
+
+\- Polyglot: added support for recursive references when converting a target model to polyglot
+
+\- Cassandra: added handling in ALTER script of delta model for changes in table comments
+
+\- Databricks: added support for Unity Catalog
+
+\- OpenAPI: added support for extensions at scalar field level
+
+\- Oracle: added support for Apple Silicon chips (M1 and M2) for reverse-engineering from instance, plus updated SDK to latest version
+
+&nbsp;
+
+New features in v6.10.13 \[21-Jul-2023\]
+
+\- ERD: added possibility to change the background color of the canvas
+
+\- ERD and ER Diagram Views: added display option to show descriptions (comments for SQL targets) instead of attributes
+
+\- ERD and Object Browser: added possibility to display incoming and outgoing relationships of an attribute via contextual menu
+
+\- Polyglot: added fit-to-pane after derive operation
+
+\- Workgroup: fixed commit counter after switching repo
+
+\- Collibra: added possibility to sync descriptions of edge labels of Labeled Property Graph targets
+
+&nbsp;
+
+New features in v6.10.12 \[14-Jul-2023\]
+
+\- ERD \& Object Browser: added scroll bar in contextual menu display of model definitions/UDTs
+
+\- Excel export: added prefix to attribute tab column for custom properties tab
+
+\- Polyglot and reverse-engineering normalization: added logic to determine cardinality based on required/not null property
+
+\- Personal edition: added annual subscription plan
+
+\- Avro: changed separator between namespace and name from a dash to a dot
+
+\- BigQuery: added support for simple Primary Key and composite PK constraints
+
+\- Collibra: added read-only license key (no publication to Collibra)
+
+\- Delta Lake/Databricks: relaxed logic to allow selection of a column in a composite unique key even if the column is part of a partition
+
+\- Delta Lake/Databricks: do not move columns that are part of a composite unique key constraint above the primary key line in ERD box
+
+\- Oracle: added ability to convert auto-increment into identity for Polyglot, and for deriving auto-increment from Polyglot
+
+\- SQL Server/Azure SQL: added support for modifications in constraints (Primary Keys, Foreign Key, check, and not null) in ALTER scripts of delta models
+
+\- Synapse: added ability to convert auto-increment into identity for Polyglot, and for deriving auto-increment from Polyglot
+
+&nbsp;
+
+New features in v6.10.11 \[07-Jul-2023\]
+
+\- Object Browser: added possibility to open entities derived from Polyglot
+
+\- Polyglot: fixed add/insert if entity derived and selected field is a reference
+
+\- External definitions: added handling of choices in impact analysis when refreshing references
+
+\- Model obfuscation: added possibility to obfuscate even if model has invalid schema
+
+\- Workgroup: silenced Git client's git-timeout error after sleep mode and machine unplugged from power supply
+
+\- Workgroup: handled updating a Pull Request on an outdated branch
+
+\- Avro: added detection of enums with similar names to handle them as references in avsc scripts
+
+\- Avro: added possibility to mark reference to other CSR schema as nullable
+
+\- Cassandra: added handling of table comment modifications in ALTER scripts
+
+\- Collibra: added support for publication and reverse-engineering of edge labels of Labeled Property Graph targets
+
+\- MariaDB: added generation of ALTER script for changes in comments and constraints: not null, check, primary key, and foreign key
+
+\- SQL Server/Azure SQL: added option to forward-engineer .sql in separate file per database or per table
+
+\- SQL Server/Azure SQL: added ability to convert auto-increment into identity for Polyglot
+
+&nbsp;
+
+New features in v6.10.10 \[30-Jun-2023\]
+
+\- External definitions: added impact analysis dialog when opening model with references to external definitions (or refreshing references)&nbsp;
+
+\- Internal and model definitions: disabled primary key and unique key properties, as this should be set at the reference level
+
+\- Workgroup: removed redundant prompt to update open model after commit action
+
+\- Avro: added handling of null and not null constraints when reverse-engineering DDL
+
+\- Avro: added handling of null and not null constraints when reverse-engineering XSD
+
+\- OpenAPI/Swagger: added template validation check when deriving from a polyglot model
+
+\- Oracle: added reverse-engineering of synonyms from DDL
+
+&nbsp;
+
 New features in v6.10.9 \[23-Jun-2023\]
 
 \- Document generation with CLI: added tolerance for markdown properties with null value

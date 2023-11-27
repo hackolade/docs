@@ -24,7 +24,9 @@ The structure of an XSD can be imported either as an entity in the Entity Relati
 
 &nbsp;
 
-![XSD reverse-engineering dialog](<lib/XSD%20RE%20dialog.png>)
+![XSD RE dialog](<lib/XSD%20RE%20dialog.png>)
+
+&nbsp;
 
 If you wish to force the destination of the reverse-engineering operation, you may specify the container in which the entities should be inserted.
 
@@ -47,6 +49,10 @@ XSDs can be imported in Hackolade:
 \- as entities in the ER diagram (not available for Swagger or OpenAPI targets)
 
 \- as model definitions to be reused anywhere in the model
+
+&nbsp;
+
+Sometimes with logical models exported from some ER tools likes erwin, they replace spaces in object names with underscores.&nbsp; When importing those models into a Hackolade Studio polyglot model, it might be desirable to restore object names to a regular business name.&nbsp; To that effect, we provide the option to perform a case conversion upon import.&nbsp; Proper Case or Title Case are likely candidates for this option.
 
 &nbsp;
 

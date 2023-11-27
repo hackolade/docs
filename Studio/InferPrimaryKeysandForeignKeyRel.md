@@ -75,7 +75,7 @@ This function is provided on a "best effort" basis.&nbsp; The success of the ope
 
 ### Composite primary keys
 
-The identification of composite PKs should work just fine, as long as attributes are [dopplegängers](<https://en.wikipedia.org/wiki/Doppelgänger> "target=\"\_blank\""), i.e. their names are similar within the same entity, for example atom\_id1 and atom\_id2. &nbsp;
+The identification of composite PKs should work just fine, as long as attributes are [doppelgängers](<https://en.wikipedia.org/wiki/Doppelgänger> "target=\"\_blank\""), i.e. their names are similar within the same entity, for example atom\_id1 and atom\_id2. &nbsp;
 
 &nbsp;
 

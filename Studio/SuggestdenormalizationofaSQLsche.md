@@ -1,6 +1,14 @@
 # Suggest denormalization of a SQL schema
 
+Ease migration from SQL with denormalization suggestions.&nbsp; Hackolade Studio helps with the migration from SQL. You can now reverse-engineer a Data Definition Language (DDL) file from Oracle into a Hackolade model. Then you can apply denormalization functions for embedding and referencing data, and truly leverage the power and benefits of nested objects in JSON and MongoDB.
+
+&nbsp;
+
 You should save the resulting model as a base, for example v0.&nbsp; Then it is suggested you save it again as v1 and work with the denormalization function to make v1 evolve towards a denormalized model.
+
+&nbsp;
+
+![Image](<lib/Suggest%20denormalization%20-%20Northwind.png>)
 
 &nbsp;
 
@@ -12,7 +20,7 @@ The user needs to have a fairly good idea of where he wants to go with the schem
 
 &nbsp;
 
-Select at least 2 tables to which denormalization should be applied.&nbsp; Then select the type of embedding (sub-document in child, array in parent, or both) and the number of cascading levels that should be applied.&nbsp; If a table has a parent, and the parent has a grand-parent, we talk about cascading relationships.&nbsp; This can go on and on.&nbsp; To avoid circular references and other incoherent result, the user can limit the number of cascading levels.
+Select 2 tables to which denormalization should be applied.&nbsp; Then select the type of embedding (sub-document in child, array in parent, or both.)
 
 &nbsp;
 

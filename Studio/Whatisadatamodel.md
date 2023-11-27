@@ -4,7 +4,7 @@ This is the first in a series of tutorials for Hackolade Studio.&nbsp; The first
 
 &nbsp;
 
-You may also [view this tutorial](<https://youtu.be/ZN23PXf5EPY> "target=\"\_blank\"") on YouTube.&nbsp; Summary slides can be found [here](<https://www.slideshare.net/PascalDesmarets1/hackolade-tutorial-part-1-what-is-a-data-model> "target=\"\_blank\"").
+Watch this [short video tutorial](<https://community.hackolade.com/slides/slide/part-1-what-is-a-data-model-3> "target=\"\_blank\"") to learn the basic principles of data modeling.&nbsp; And click here to consult the [slides](<https://www.slideshare.net/PascalDesmarets1/hackolade-tutorial-part-1-what-is-a-data-model> "target=\"\_blank\"").
 
 ## Overview
 

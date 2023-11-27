@@ -34,7 +34,7 @@ Then, mark the desktop file executable by issuing chmod +x myapp.desktop. Doubl
 
 &nbsp;
 
-&nbsp;
+## CentOS 7 with no GUI
 
 For CentOS 7 if [GUI was not selected](<https://www.techrepublic.com/article/how-to-install-a-gui-on-top-of-centos-7/> "target=\"\_blank\"") during installation, a complex procedure is documented below:
 

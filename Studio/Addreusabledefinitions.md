@@ -4,7 +4,7 @@ The purpose of reusable definitions is to increase productivity/convenience and 
 
 &nbsp;
 
-You may also view this [short video](<https://youtu.be/1R7BLabO3-w> "target=\"\_blank\"") on YouTube.
+Watch this [short video](<https://community.hackolade.com/slides/slide/reusable-definitions-7> "target=\"\_blank\"") to learn how to use Hackolade Studio and leverage reusable definitions. &nbsp;
 
 &nbsp;
 

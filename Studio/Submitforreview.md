@@ -75,3 +75,9 @@ You can click on the title of a change request to display a detail screen and ch
 
 &nbsp;
 
+&nbsp;
+
+***Contributing from a fork***\
+\
+If you work with forks and want to submit the changes that you made in your fork, then read [this page](<Workingwithforks.md>).
+

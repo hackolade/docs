@@ -8,6 +8,10 @@ Hackolade was specially built to support the [data modeling of MongoDB](<https:/
 
 &nbsp;
 
+We collaborated with the specialists at MongoDB to write this excellent reference book [MongoDB Data Modeling and Schema Design](<https://hackolade.com/books.html#mongodb> "target=\"\_blank\""). It contains no less than 16 different design patterns and is fully illustrated with Hackolade Studio.
+
+&nbsp;
+
 The data model in the picture below results from the reverse-engineering of the [Yelp Challenge Dataset](<https://www.kaggle.com/yelp-dataset/yelp-dataset> "target=\"\_blank\"").
 
 ![MongoDB workspace](<lib/MongoDB%20workspace.png>)

@@ -12,7 +12,7 @@ Hackolade was specially adapted to support the data modeling of Oracle, includin
 
 &nbsp;
 
-In particular, Hackolade has the unique ability to model complex semi-structured objects stored in columns of the JSON data types (v21c and above) and of JSON documents in BLOB data types (v12c, v18c, and v19c).&nbsp; We're not talking about functions that "flatten" JSON into standard columns, which runs the risk of inconsistencies, if not errors, when doing the Cartesian product of multiple complex data types.&nbsp; But about the storage of entire JSON documents.&nbsp; The reverse-engineering function, if it detects JSON documents, will sample records and infer the schema to supplement the DDL table definitions. &nbsp;
+In particular, Hackolade has the unique ability to model complex semi-structured objects stored in columns of the [JSON data types](<https://docs.oracle.com/en/database/oracle/oracle-database/23/adjsn/json-schema.html> "target=\"\_blank\"") (actually Oracle optimized native binary JSON storage format \[OSON\] in v21c and above) and of JSON documents in BLOB data types (v12c, v18c, and v19c).&nbsp; We're not talking about functions that "flatten" JSON into standard columns, which runs the risk of inconsistencies, if not errors, when doing the Cartesian product of multiple complex data types.&nbsp; But about the storage of entire JSON documents.&nbsp; The reverse-engineering function, if it detects JSON documents, will sample records and infer the schema to supplement the DDL table definitions. &nbsp;
 
 &nbsp;
 
@@ -48,7 +48,9 @@ A table definition includes a table name and set of columns. A [column](<https:
 
 ## Unique, Primary, and Foreign Keys, plus Not Null, Check and Default constraints
 
-Constraints are used to define rules that restricts the values in a database. Oracle Database lets you create six types of constraints and lets you declare them in two ways.
+Constraints are used to define rules that restricts the values in a database. Oracle Database lets you create constraints and lets you declare them in two ways.
+
+&nbsp;
 
 The types of integrity constraint are described briefly below:
 
@@ -121,6 +123,18 @@ Then, the JSON data type was introduced in the Oracle 20c preview release to pro
 A view is a logical representation of another table or combination of tables. A view derives its data from the tables on which it is based. These tables are called base tables. Base tables might in turn be actual tables or might be views themselves. All operations performed on a view actually affect the base table of the view. You can use views in almost the same way as tables. You can query, update, insert into, and delete from views, just as you can standard tables.
 
 Views can provide a different representation (such as subsets or supersets) of the data that resides within other tables and views. Views are very powerful because they allow you to tailor the presentation of data to different types of users.
+
+&nbsp;
+
+## JSON-Relational Duality Views in 23c
+
+Duality Views expose data stored in relational tables as JSON documents. The documents are materialized — generated on demand, not stored as such. Duality views are organized both relationally and hierarchically. They combine the advantages of using JSON documents with the advantages of the relational model, while avoiding the limitations of each.&nbsp;
+
+&nbsp;
+
+Hackolade Studio is the first and only tool to facilitate the adoptions of this revolutionary feature released with Oracle 23c.&nbsp; Many more details are available in [this page](<Oracle23cDualityViews.md>).
+
+&nbsp;
 
 &nbsp;
 
