@@ -8,6 +8,10 @@ Hackolade Studio provides a no-code approach: you can create and maintain custom
 
 &nbsp;
 
+The values you record in custom properties are stored in the model file and are naturally exposed in documentation, JSON Schema (in full and extended compliance), Excel exports.
+
+&nbsp;
+
 The location of the JSON configuration files depends on your environment:
 
 \- If you use the browser application, you can download template files from *Tools \> Options \> Custom Properties*. You can then edit those files and (re-)load them into the application.
