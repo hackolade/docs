@@ -28,6 +28,10 @@ Schemas for Avro defined in Hackolade can be added to groups in the Schema Regis
 
 &nbsp;
 
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
 ![Image](<lib/Event%20Hub%20Schema%20Registry-forward-engineering.png>)
 
 &nbsp;

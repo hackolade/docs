@@ -1,10 +1,22 @@
-# Relationship links in ER diagram
+# Relationship lines in ER diagram
+
+Relationship lines in Entity Relationship diagrams are useful to understand the relationship in the data, and to define Foreign Key constraints used in query joins, and to ensure data consistency. &nbsp;
+
+Note that in NoSQL databases FK relationships are not declared to the database instance and hence not enforced.&nbsp; They are nevertheless useful to understand relationships in the data as well as denormalization when data is repeated in different places.
+
+&nbsp;
+
+Note also that in analytics databases, primary key and foreign key constraints may be absent for performance purposes.&nbsp; If you have reverse-engineered in OLAP store and your model does not show any PK and FK relationship lines, it may still be possible to discover them using our [Infer PKs \& FKs](<InferPrimaryKeysandForeignKeyRel.md>) feature.
 
 ## Create a Foreign Key relationship line
 
-There are several ways to create a new relationship line between two entity boxes in the ER diagram of a model:
+There are several ways to create a new relationship line between the attributes of two entity boxes in the ER diagram of a model:
 
-* with a **drag-and-drop** action in the ERD by selecting a child attribute and dragging while holding the mouse button towards a parent attribute with a compatible attribute type in another entity.&nbsp; If the parent attribute is not yet a PK for its table, we automatically make it a PK if there is no conflict.
+* with a **drag-and-drop** action in the ERD by selecting a child attribute and dragging while holding the mouse button towards a parent attribute with a compatible attribute type in another entity.&nbsp; If the parent attribute is not yet a PK for its table, the application automatically makes the parent attribute a PK, if there is no conflict (i.e. if another attribute in the same entity is not already the PK.) \
+&nbsp;
+* since v7.0.4, the drag-and-drop behavior can be modified from its default via Tools \> Options \> General to become "from parent to child".&nbsp; This is particularly useful in dimensional modeling when you want to take the PK of a parent dimension table and automatically create:
+  * the same attribute in the child fact table with the same data type.&nbsp; Note that you may modify the name of the attribute in the fact table.
+  * the FK relationship from the child attribute in the fact table to the parent PK attribute in the dimension table.
 
 &nbsp;
 

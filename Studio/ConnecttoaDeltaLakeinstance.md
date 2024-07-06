@@ -47,7 +47,7 @@ Hackolade uses the Databricks REST API, and requires that an access token be iss
 
 &nbsp;
 
-For Databricks on Azure, you may have tabes using Azure Data Lake Storage which requires additinal authentication for Databricks to access it.&nbsp; In such case, you may need to declare ADLS credentials passthrough:
+For Databricks on Azure, you may have tables using Azure Data Lake Storage which requires additional authentication for Databricks to access it.&nbsp; In such case, you may need to declare ADLS credentials passthrough:
 
 ![Databricls ADLS passthrough credentials](<lib/Databricls%20ADLS%20passthrough%20credentials.png>)
 

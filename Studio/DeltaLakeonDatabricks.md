@@ -88,6 +88,10 @@ Hackolade dynamically generates the HiveQL script to create databases, tables, c
 
 &nbsp;
 
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
 ![Databricks forward-engineering](<lib/Delta%20Lake%20forward-engineering.png>)
 
 &nbsp;
@@ -160,4 +164,56 @@ All data in Unity Catalog is referenced using a [three-level namespace](<https:
 &nbsp;
 
 For more information on the Unity Catalog, consult the [documentation](<https://docs.databricks.com/data-governance/unity-catalog/index.html> "target=\"\_blank\"").
+
+### Tags in Unity Catalog
+
+This feature is only available for Runtime 13 and up.
+
+&nbsp;
+
+Tags are attributes containing keys and optional values that can be applied to different objects in Unity Catalog. Tagging is useful for organizing and categorizing objects within a metastore. Using tags also simplifies search and discovery of your data assets.
+
+&nbsp;
+
+In Hackolade Studio, tags are groups of key-value pairs that appear at different levels: catalog, schema, table, and attribute. &nbsp;
+
+![Image](<lib/Databricks%20Unity%20Catalog%20tags.png>)
+
+&nbsp;
+
+They translate into the corresponding DDL statements during forward-engineering:
+
+&nbsp;
+
+> ALTER \<LEVEL\> \<levelObject\_name\> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+> SET TAGS ('key1' = 'value1', 'key2' = 'value2')
+
+> &nbsp;
+
+> where SET TAGS ( { tag\_name = tag\_value } \[, …\] )
+
+where tag\_name is a literal STRING. The tag\_name must be unique within the object, and tag\_value is a literal STRING.
+
+&nbsp;
+
+Tags are also picked up during reverse-engineering.
+
+&nbsp;
+
+There are some constraints:
+
+\- to add tags to Unity Catalog securable objects when applying the DDL script to intance, users must have the APPLY TAG privilege on the object, as well as the USE SCHEMA privilege on the object’s parent schema and the USE CATALOG privilege on the object’s parent catalog.
+
+\- you can assign a maximum of 20 tags to a single securable object
+
+\- the maximum length of a tag is 255 characters (use regex validation property)
+
+\- special characters&nbsp; '.', ',', '-', '=', '/', ':', ' ' (blank space) cannot be used in tag names (use regex validation property)
+
+&nbsp;
+
+Note that the tag value is optional, i.e. there can be a tag without value.
+
+&nbsp;
 

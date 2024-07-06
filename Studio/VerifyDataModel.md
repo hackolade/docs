@@ -33,6 +33,22 @@ The class term is the highest level of qualification and the most important word
 
 &nbsp;
 
+Examples:
+
+\- specific instance: code, identifier, name, number
+
+\- numeric: amount, count, percent
+
+\- conditional: indicator, switch
+
+\- temporal: date, time, timestamp
+
+\- spatial: line, point, polygon
+
+\- persistent: constant
+
+\- general: document, file, text
+
 #### Prime terms
 
 A prime term can be **a single word** ( or a **phrase** such as 'Unit of Measure'.)&nbsp; It is the most important **modifier of the class term**, and **directly precedes it**.

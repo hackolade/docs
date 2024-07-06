@@ -104,6 +104,10 @@ Hackolade dynamically generates the DDL script to create schemas, tables, column
 
 &nbsp;
 
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
 ![Synapse DDL forward-engineering](<lib/Synapse%20DDL%20forward-engineering.png>)
 
 &nbsp;

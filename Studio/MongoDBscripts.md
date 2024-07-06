@@ -9,6 +9,10 @@ As you develop the model for your MongoDB collection or views, with field-level 
 
 &nbsp;
 
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
 The information can be viewed in the MongoDB Script tab:
 
 ![Forward-Engineering - MongoDB Script](<lib/Forward-Engineering%20-%20MongoDB%20Script.png>)

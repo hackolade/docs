@@ -10,6 +10,10 @@ If you don't have a local copy of the remote repository yet, then you first need
 
 ![Image](<lib/Workgroup%20clone.png>)
 
+**Important note:** we strongly suggest to **avoid** cloning your repo in a folder which synchronized with the cloud (OneDrive, Google Drive, iCloud, Dropbox, etc...)&nbsp; The sync mechanism may cause perverse performance effects and sometimes conflicts with the Git processes.
+
+&nbsp;
+
 * **Open the repository context**.
   * choose Repository \> Open Repository Context in the top menu;
   * use the keyboard shortcut Ctrl+G (Cmd+G on MacOS);

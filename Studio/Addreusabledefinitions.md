@@ -12,6 +12,18 @@ A simple example of a re-usable definition is an address, but many other domain 
 
 &nbsp;
 
+Hackolade Studio helps breaking down large enterprise models into smaller reusable models from which pieces can be referenced elsewhere:
+
+![Referencing reusable definitions](<lib/Referencing%20reusable%20definitions.png>)
+
+&nbsp;
+
+As these reusable objects are maintained in one place, it is easier to ensure consistency, quality, and governance.&nbsp; Changes and evolutions can be done in a single place, and propagated throughout all the models referencing the definition.&nbsp; This propagation is either done when opening a referencing model or by running a Command-Line Interface update command.
+
+&nbsp;
+
+&nbsp;
+
 Definitions can be maintained at 3 distinct levels: at the entity-level (called internal definitions), at the model-level, and external.&nbsp; Internal definitions may have limited use because they can only be reused (or referenced) within the same entity (a collection or table). But internal definitions ensure JSON Schema compatibility.  Model definitions, on the other hand, can be referenced in any entity of the same Hackolade data model.  Finally, external definitions are external files (Hackolade data models or JSON Schema) that can be referenced, in whole or in part, by any other Hackolade Studio data models.
 
 &nbsp;

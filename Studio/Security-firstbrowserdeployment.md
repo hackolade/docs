@@ -1,0 +1,206 @@
+# Security-first browser deployment
+
+**Important notes:**&nbsp;
+
+&#49;) the browser deployment is currently only available for the Community Edition.&nbsp; Other editions to follow.
+
+&#50;) our browser deployment currently supports the latest versions of Chrome, Edge, Brave, Firefox browsers and Safari. &nbsp;
+
+&#51;) some features have a graceful degradation of the user experience due to limitations imposed by the browser.&nbsp; For example Brave, Firefox, and Safari do not support the [File System Access API](<https://wicg.github.io/file-system-access/> "target=\"\_blank\""), and as a result, the action to save a model is implemented as the download of a new copy.&nbsp; For the best user experience, you should use Chrome or Edge.
+
+&#51;) native features of the application may be restricted due to each browser's own restrictions.&nbsp; User experience may be degraded as a result, typically for legitimate security reasons.
+
+&nbsp;
+
+Obviously, this requires no download or installation.&nbsp; Just go to [https://studio.hackolade.com](<https://studio.hackolade.com> "target=\"\_blank\"") from your favorite browser and start your data modeling work.&nbsp; No sign-up necessary, or complex user management.&nbsp;
+
+&nbsp;
+
+Hackolade Studio has traditionally been available as an offline desktop application for Windows, Mac, and Linux.&nbsp; Starting with v7.0.0, it is now also available as a [cross-browser](<https://en.wikipedia.org/wiki/Cross-browser> "target=\"\_blank\"") [serveless](<https://en.wikipedia.org/wiki/Serverless\_computing> "target=\"\_blank\"") [web app](<https://en.wikipedia.org/wiki/Web\_application> "target=\"\_blank\"") which can open data models from and save them to your local environment.&nbsp; All from the same code base, meaning that, as we add [weekly enhancements](<https://hackolade.com/versionInfo/ReadMe.txt> "target=\"\_blank\"") and new features, they are deployed automatically to the offline desktop and the online browser.&nbsp; The latest version is exactly the same for the browser deployment and all desktop operating systems.
+
+&nbsp;
+
+This serverless setup gives you full control of the residency for your data models, while leveraging the benefits of an online application.&nbsp; In other words, the Hackolade Studio online application runs without any kind of backend system or database.&nbsp; We only host the application itself on a [Content Delivery Network](<https://en.wikipedia.org/wiki/Content\_delivery\_network> "target=\"\_blank\"") like [Azure Front Door](<https://azure.microsoft.com/en-us/products/frontdoor> "target=\"\_blank\"") or [AWS CloudFront](<https://en.wikipedia.org/wiki/Amazon\_CloudFront> "target=\"\_blank\""), while you continue to maintain your data models locally, as you would do with the offline desktop deployment of Hackolade Studio.
+
+&nbsp;
+
+The main benefits of this setup are that you remain in complete control of your data while always running the latest version of Hackolade Studio without having to install and deploy the software. &nbsp;
+
+&nbsp;
+
+![Desktop and Browser architecture](<lib/Desktop%20and%20Browser%20architecture.png>)
+
+&nbsp;
+
+## Security-first, bring-your-own-storage approach
+
+Hackolade Studio is a unique security-first data modeling tool in that we provide the application platform, but your data model only lives in your browser on your local device while you are working on it.&nbsp; Upon saving, your data model is stored at the location of your choice: on your local device, on a shared internal network drive, or in a locally-cloned Git repository. Your data model is never sent to us, even when you save your data model or perform operations with it.
+
+&nbsp;
+
+Even if you export to JSON Schema or print the ER diagram, your data model never leaves your network and is never sent to any server of ours (which we don't have anyway...)
+
+&nbsp;
+
+The added advantage is that we don't create yet another silo for your data models.&nbsp; You keep on storing them wherever is makes the most sense to you.&nbsp; The fact that you run the latest version of the software in a browser does not affect the location of your data models.&nbsp;
+
+&nbsp;
+
+### We are fully committed to data security and privacy
+
+Because your sensitive data model does not leave your infrastructure and is never stored on our servers, Hackolade Studio is a tool which lets you comply with data protection certifications (ISO 27000, 27001 and 27002) and GDPR:&nbsp;
+
+\- w[e do not track your use of the ](<https://www.drawio.com/blog/google-analytics.html>)[https://studio.hackolade.com](<https://studio.hackolade.com> "target=\"\_blank\"") website[ ](<https://www.drawio.com/blog/google-analytics.html>) - there are no cookies, advertisements, analytics, browser fingerprinting or tracking beacons;
+
+\- we don’t track your use of the Hackolade Studio applications, whether online in the browser, or desktop;
+
+\- Hackolade Studio does not allow your data models to be stored on our servers.
+
+&nbsp;
+
+The serverless architecture addresses any security or confidentiality concern users might have with a SaaS platform.&nbsp; Many Software-as-a-Service solutions host not only the software but also your data, sometimes with certification programs such as [ISO 27001](<https://en.wikipedia.org/wiki/ISO/IEC\_27001> "target=\"\_blank\"") or [SOC 2](<https://us.aicpa.org/interestareas/frc/assuranceadvisoryservices/aicpasoc2report> "target=\"\_blank\"").&nbsp; While security concerns are legitimate for full SaaS solutions, they are simply not applicable in the case of the browser deployment of Hackolade Studio, as we never collect or store any of your data or data models.&nbsp; We also do not collect any telemetry.&nbsp; Nothing.
+
+&nbsp;
+
+If you still have any doubts, we suggest this easy test: first load the application in your browser at [https://studio.hackolade.com](<https://studio.hackolade.com> "target=\"\_blank\""), then disconnect entirely from the Internet.&nbsp; You will see that you can continue to use the Hackolade Studio editor in your browser, then save your data model, or work on a previously saved model present on your local drive.&nbsp; You may also use a [network traffic sniffer/analyzer](<https://en.wikipedia.org/wiki/Packet\_analyzer> "target=\"\_blank\"") to validate this claim.
+
+&nbsp;
+
+The secure cloud CDN architecture takes a zero-trust approach to protect against automated bots, injection attacks and application-layer denial-of-service attacks.
+
+&nbsp;
+
+### Offline and secure data modeling with the desktop application
+
+If you want to perform data modeling in a totally secure and offline environment, download and install [Hackolade Studio Desktop](<https://hackolade.com/download.html> "target=\"\_blank\""). This stand-alone desktop application is available for Windows, MacOS, and Linux.
+
+&nbsp;
+
+### Do you need to obfuscate your data models before you share them?
+
+Use the File \> Save Obfuscated As... function to overwrite all texts so you can safely share sensitive ER Diagrams and structures with clients or partners without fear of breaching non-disclosure clauses or the GDPR.&nbsp; This can be particularly useful to help Hackolade support troubleshoot issues you might encounter.
+
+&nbsp;
+
+## Always run the latest and greatest version of Hackolade Studio
+
+Given the weekly frequency of our new version releases bringing continuous enhancements, some organizations have been challenged to keep up.&nbsp; It can be hard sometimes to get the IT department to validate a new version, create an image, and deploy it to a large number of users.&nbsp; With the browser deployment of Hackolade Studio, there is no effort to always have access to the latest feature enhancements.
+
+&nbsp;
+
+The question is sometimes asked whether the browser deployment of Hackolade Studio could be run on an internal server in your organization.&nbsp; While it would technically be possible, we do not offer this possibility.&nbsp; The reasons are:&nbsp;
+
+\- it would remove the main benefit of this architecture, i.e. that you would always access the latest version of the application.&nbsp; We'd be back in the situation where you'd be dependent on your IT Department's validation, installation and deployment of each new version of our software;
+
+\- it would require to support a server-based product, which is an entirely different business model.
+
+&nbsp;
+
+## Browser deployment architecture
+
+For those interested in the inner workings, the browser deployment of Hackolade Studio runs the exact same code base as the offline desktop application.&nbsp; The offline desktop deployment of Hackolade Studio was written from day 1 in ReactJS and packaged as a desktop application with [Electron](<https://en.wikipedia.org/wiki/Electron\_(software\_framework)> "target=\"\_blank\""), the framework developed and maintained by GitHub.&nbsp; Electron runs the application code in the [Chromium](<https://en.wikipedia.org/wiki/Chromium\_(web\_browser)> "target=\"\_blank\"") browser engine, which also powers the Chrome web browser.&nbsp; The browser deployment of Hackolade Studio is just a different packaging of the same code as the offline deployment, so you can now access the same functionality in a more convenient manner.
+
+&nbsp;
+
+[Azure Front Door](<https://azure.microsoft.com/en-us/blog/introducing-the-new-azure-front-door-reimagined-for-modern-apps-and-content/> "target=\"\_blank\"") and [AWS CloudFront](<https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/HowCloudFrontWorks.html> "target=\"\_blank\"") deliver our static application content to you from the edge location closest to you in terms of latency.&nbsp; Processing takes place in your browser and never leaves your network.&nbsp; No data or telemetry is being collected from the processing of your data models. Your data models are persisted locally and never leave your network.&nbsp; There is no data in transit, and if you're using the Workgroup features, all commits, pulls, pushes, change requests, branch merges, etc. take place locally and never across the public network.
+
+&nbsp;
+
+&nbsp;
+
+![Browser - Azure FrontDoor CDN network](<lib/Browser%20-%20Azure%20FrontDoor%20CDN%20network.png>)
+
+&nbsp;
+
+&nbsp;
+
+## Configure your browser to enable site data
+
+Adjusting your browser settings to enable site data for Hackolade Studio Browser ensures that your settings are preserved, even after reloading the application or starting a new session in a new tab. This includes:
+
+&nbsp;
+
+\- Application options
+
+\- [Naming conventions](<Namingconventions.md>)
+
+\- [Custom properties](<Userdefinedcustomproperties.md>)
+
+\- [Excel options](<Excelfile.md>)
+
+&nbsp;
+
+Whether you're using Chrome, Edge, Brave, Firefox, or Safari, enabling site data is a simple yet effective step towards enhancing your user experience with Hackolade Studio Browser.
+
+&nbsp;
+
+### Google Chrome
+
+In the address bar, type *chrome://settings/content/siteData*
+
+&nbsp;
+
+You have the option to enable site data universally or solely for selected websites. Should you prefer the latter, make sure to add the URL&nbsp; [https://studio.hackolade.com](<https://studio.hackolade.com> "target=\"\_blank\"") to the list of sites allowed to store data on your devices.
+
+&nbsp;
+
+Reload the application for the changes to take effect
+
+&nbsp;
+
+### Microsoft Edge
+
+In the address bar, type *edge://settings/content/cookies*
+
+&nbsp;
+
+You have the option to enable site data universally or solely for selected websites. Should you prefer the latter, make sure to add the URL&nbsp; [https://studio.hackolade.com](<https://studio.hackolade.com> "target=\"\_blank\"") to the list of sites allowed to store data on your devices.
+
+&nbsp;
+
+Reload the application for the changes to take effect.
+
+&nbsp;
+
+### Brave
+
+Click on the Brave icon located in the address bar.
+
+&nbsp;
+
+Select "Allow all cookies" or "Block cross-site cookies" from the menu. Brave automatically reloads the application, applying the new privacy settings.
+
+&nbsp;
+
+### Mozilla Firefox
+
+In the address bar, type about:*preferences#privacy*
+
+&nbsp;
+
+In the "Cookies and Site Data" section, click on "Manage Exceptions."
+
+&nbsp;
+
+Make sure to add the [https://studio.hackolade.com](<https://studio.hackolade.com> "target=\"\_blank\"") to the list of sites allowed to store data on your devices.
+
+&nbsp;
+
+Reload the application for the changes to take effect
+
+&nbsp;
+
+### Safari
+
+Go to Safari \> Settings \> Privacy \> Advanced settings.
+
+&nbsp;
+
+Disable the "Block all cookies" option.
+
+&nbsp;
+
+Reload the application for the settings to take effect.
+
+&nbsp;
+

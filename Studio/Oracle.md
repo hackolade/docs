@@ -105,6 +105,12 @@ With 21c, Oracle Database now supports JSON data natively with relational databa
 
 &nbsp;
 
+With version 23ai, Oracle added a new [*data type vector*](<https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/Data-Types.html#GUID-801FFE49-217D-4012-9C55-66DAE1BA806F> "target=\"\_blank\"") with the possible declaration formats below, all supported in Hackolade Studio:
+
+![Oracle vector declaration](<lib/Oracle%20vector%20declaration.png>)
+
+&nbsp;
+
 ### JSON prior to 21c
 
 Oracle recommends that you always use an is\_json check constraint to ensure that column values are valid JSON instances.&nbsp; JSON data in the database is textual, but the text can be stored using data type BLOB, as well as VARCHAR2 or CLOB.&nbsp; When possible, prior to 21c, Oracle recommends that you use BLOB storage.&nbsp; In particular, doing so obviates the need for any character-set conversion plus it allows to store binaries.
@@ -126,13 +132,13 @@ Views can provide a different representation (such as subsets or supersets) of t
 
 &nbsp;
 
-## JSON-Relational Duality Views in 23c
+## JSON-Relational Duality Views in 23ai
 
 Duality Views expose data stored in relational tables as JSON documents. The documents are materialized — generated on demand, not stored as such. Duality views are organized both relationally and hierarchically. They combine the advantages of using JSON documents with the advantages of the relational model, while avoiding the limitations of each.&nbsp;
 
 &nbsp;
 
-Hackolade Studio is the first and only tool to facilitate the adoptions of this revolutionary feature released with Oracle 23c.&nbsp; Many more details are available in [this page](<Oracle23cDualityViews.md>).
+Hackolade Studio is the first and only tool to facilitate the adoptions of this revolutionary feature released with Oracle 23ai.&nbsp; Many more details are available in [this page](<Oracle23aiDualityViews.md>).
 
 &nbsp;
 
@@ -150,6 +156,10 @@ Hackolade dynamically generates the DDL script to create schemas, tables, column
 
 &nbsp;
 
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
 ![Oracle DDL forward-engineering](<lib/Oracle%20DDL%20forward-engineering.png>)
 
 &nbsp;
@@ -160,11 +170,11 @@ If you store documents in JSON columns (21c and above) or for 12c thru 19c in BL
 
 ## Reverse-Engineering
 
-The Oracle instance can hosted on-premises, or on virtualized machines in a private or public cloud.&nbsp; Details on how to connect Hackolade to Oracle can be found on [this page](<ConnecttoanOracleinstance.md>).
+The Oracle instance can hosted on-premises, or on virtualized machines in a private or public cloud.&nbsp; Details on how to connect Hackolade Studio to Oracle can be found on [this page](<ConnecttoanOracleinstance.md>).
 
 &nbsp;
 
-The Hackolade process for reverse-engineering of Oracle databases includes the execution of statements to discover databases, tables, columns and their types, indexes and constraints.&nbsp; For JSON columns (21c and above) or for 12c thru 19c in BLOB columns, as well as VARCHAR2 or CLOB, Hackolade performs statistical sampling of records followed by probabilistic inference of the JSON document schema.
+The Hackolade process for reverse-engineering of Oracle databases includes the execution of statements to discover databases, tables, columns and their types, indexes and constraints.&nbsp; For JSON columns (21c and above) or for 12c thru 19c in BLOB columns, as well as VARCHAR2 or CLOB, Hackolade Studio performs statistical sampling of records followed by probabilistic inference of the JSON document schema.
 
 &nbsp;
 
@@ -172,7 +182,7 @@ The Hackolade process for reverse-engineering of Oracle databases includes the e
 
 &nbsp;
 
-For more information on Oracle in general, please consult the [website](<https://www.oracle.com/database/technologies/> "target=\"\_blank\"") and [documentation](<https://www.postgresql.org/docs/current/index.html> "target=\"\_blank\""). &nbsp;
+For more information on Oracle in general, please consult the [website](<https://www.oracle.com/database/technologies/> "target=\"\_blank\"") and [documentation](<https://docs.oracle.com/en/database/oracle/oracle-database/> "target=\"\_blank\""). &nbsp;
 
 &nbsp;
 

@@ -22,7 +22,11 @@ In DynamoDB, you can assign multiple tables to a single group to manage your res
 
 ## Tables, items and attributes
 
-A table is collection of data.&nbsp; Each table contains zero or more items. An *item* is a group of attributes that is uniquely identifiable among all of the other items. There is no limit to the number of items you can store in a table.&nbsp; Each item is composed of one or more attributes.
+A table is a collection of data.&nbsp; Each table contains zero or more items. An *item* is a group of attributes that is uniquely identifiable among all of the other items. There is no limit to the number of items you can store in a table.&nbsp; Each item is composed of one or more attributes.
+
+&nbsp;
+
+In contrast to relational databases, a table may contain different types of items.
 
 ## Keys
 
@@ -111,6 +115,12 @@ In Hackolade, we have enabled the views feature.&nbsp; While these views do not 
 ## Forward-Engineering
 
 Hackolade dynamically generates [CreateTable](<http://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API\_CreateTable.html> "target=\"\_blank\"") and [ConditionExpression](<http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.SpecifyingConditions.html> "target=\"\_blank\"") scripts based on model attributes and constraints.&nbsp; These can be applied directly to the DynamoDB instance:
+
+&nbsp;
+
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
 
 ![DynamoDB apply to instance](<lib/DynamoDB%20apply%20to%20instance.png>)
 

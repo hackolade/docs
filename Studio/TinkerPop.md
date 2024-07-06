@@ -112,6 +112,10 @@ TinkerPop does not provide an abstraction for schemas. Gremlin is a functional, 
 
 &nbsp;
 
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
 ![TinkerPop forward-engineering Gremlin](<lib/TinkerPop%20forward-engineering%20Gremlin.png>)
 
 &nbsp;

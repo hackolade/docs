@@ -14,14 +14,6 @@ The information below applies to repositories hosted on [Azure Repos](<https://l
 
 ## Personal Access Tokens
 
-If you haven't set a valid personal access token, you may get the error message below, indicating that your token has been revoked, or that it does not grant enough permissions to Hackolade Studio.
-
-&nbsp;
-
-![Worgroup - Azure DevOps Repos token error](<lib/Worgroup%20-%20Azure%20DevOps%20Repos%20token%20error.png>)
-
-&nbsp;
-
 You first need to provide the name of your [Azure DevOps organization](<https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/organization-management?view=azure-devops> "target=\"\_blank\"") in the repository connection manager.
 
 &nbsp;
@@ -51,6 +43,18 @@ Click on the "Create" button, then copy-paste the generated token in Hackolade S
 &nbsp;
 
 **Note:** the use of regular username and password has been deprecated by Azure DevOps for security reasons on March 2, 2020 (read [this page](<https://devblogs.microsoft.com/devops/azure-devops-will-no-longer-support-alternate-credentials-authentication/> "target=\"\_blank\"") for more details). That's why it is not supported by Hackolade.
+
+&nbsp;
+
+If you haven't set a valid personal access token, you may get the error message below, indicating that your token has been revoked, or that it does not grant enough permissions to Hackolade Studio.
+
+&nbsp;
+
+![Worgroup - Azure DevOps Repos token error](<lib/Worgroup%20-%20Azure%20DevOps%20Repos%20token%20error.png>)
+
+&nbsp;
+
+If you see this message, please follow the instructions above.
 
 &nbsp;
 

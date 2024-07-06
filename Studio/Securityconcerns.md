@@ -6,7 +6,7 @@ Security is a key concern for us and is part of our continuous improvement proce
 
 ## What type of software is Hackolade Studio?
 
-Our software product is of the type Commercial Off-The-Shelf (COTS) in the form of a downloadable client installed on individual workstations.&nbsp; It is NOT a SaaS (Software-as-a-Service) solution that would collect or store any information: no data models, no telemetry, no personal information of any kind.&nbsp; No data comes out of your network, and we do not collect or store anything on our servers.
+Our software product is of the type Commercial Off-The-Shelf (COTS) in the form of a downloadable client installed on individual workstations.&nbsp; It is NOT a SaaS (Software-as-a-Service) solution that would collect or store information.&nbsp; We collect, process or store NO data models, NO telemetry, NO personal information of any kind.&nbsp; No data comes out of your network, and we do not collect or store anything on any server.
 
 &nbsp;
 
@@ -34,11 +34,17 @@ As a result, typical SaaS-related security assessments just don’t apply to us.
 
 &nbsp;
 
-As it seems to not be sufficient for some that we collect or store absolutely no data models or data from customers, we are embarking on a trust and compliance certification. Sort of a certification that our "[Fort Knox](<https://en.wikipedia.org/wiki/Fort\_Knox> "target=\"\_blank\"")" contains no gold... You can find our policies and controls on [TrustShare page](<https://hackolade.trustshare.com/home> "target=\"\_blank\"").
+As it seems to not be sufficient for some that we collect or store absolutely no data models or data from customers, we have completed a [full security assessment](<https://app.riskledger.com/p/shared/36724fc5ba0b4f9084c0cf2bc8834cce/assessment> "target=\"\_blank\"") with [Risk Ledger](<https://riskledger.com/> "target=\"\_blank\""), sort of a certification that our "[Fort Knox](<https://en.wikipedia.org/wiki/Fort\_Knox> "target=\"\_blank\"")" contains no gold...&nbsp;
 
 &nbsp;
 
-## Is the Hackolade Studio installer "code signed"?
+## Hackolade Studio is now also available in the browser.&nbsp; Is that not a SaaS solution?
+
+Some SaaS solutions store customer data.&nbsp; This is not the case for the Hackolade Studio browser deployment.&nbsp; Read all the details of our [security-first browser deployment](<Security-firstbrowserdeployment.md>).
+
+&nbsp;
+
+## Is the Hackolade Studio desktop installer "code signed"?
 
 Code signing is a method of putting a digital signature on a program, file, software update or executable, so that its authenticity and integrity can be verified upon installation and execution. It guarantees to the recipient who the publisher is, and that the software hasn't been opened and tampered with.
 
@@ -136,6 +142,10 @@ The process of threat modeling consists of the following steps:
 &nbsp;
 
 ## What is our engineering team's usage of static code analysis tools (SAST, SCA)?
+
+The quality of our code base is continuously analyzed following a [Clean as you Code strategy](<https://docs.sonarsource.com/sonarcloud/improving/clean-as-you-code/> "target=\"\_blank\"").
+
+&nbsp;
 
 In terms of Static Application Security Testing (SAST), we use [Abstract Syntax Tree](<https://en.wikipedia.org/wiki/Abstract\_syntax\_tree> "target=\"\_blank\"")-based tools to proactively detect, report, and fix undesired patterns and vulnerabilities in our codebase.&nbsp; All our software engineers have these tools enabled in their integrated development environment (IDE).&nbsp; They receive immediate feedback in case a problem is detected while they are writing code.&nbsp; We also leverage a Git hook to prevent pushing such problems to our central code repositories.&nbsp; As a last verification layer, the same tools are used in our continuous integration pipeline, making it impossible to build and publish a version of the software that would be affected by detected problems.
 

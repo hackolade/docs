@@ -6,14 +6,6 @@ The information below applies to repositories hosted on Bitbucket Cloud. It expl
 
 ## App passwords
 
-You may get the error message below if you didn't set a valid app password.&nbsp; It can also indicate that your app password has been revoked, or that it does not grant enough permissions to Hackolade Studio.
-
-&nbsp;
-
-![Workgroup - Bitbucket Cloud token error](<lib/Workgroup%20-%20Bitbucket%20Cloud%20token%20error.png>)
-
-&nbsp;
-
 In the repository connection manager, you first need to provide your Bitbucket username (it is displayed on [your Bitbucket profile](<https://bitbucket.org/account/settings/>)). Note that using your email address as username does NOT work.
 
 &nbsp;
@@ -37,4 +29,16 @@ You can find more information about app passwords in the [Bitbucket Cloud docume
 &nbsp;
 
 **Remarks:** To be able to retrieve the list of eligible reviewers for a pull request, you must belong to a user group. If you cannot get access to that list in Hackolade, contact your Bitbucket administrator and ask to be added to a user group.
+
+&nbsp;
+
+You may get the error message below if you didn't set a valid app password.&nbsp; It can also indicate that your app password has been revoked, or that it does not grant enough permissions to Hackolade Studio.
+
+&nbsp;
+
+![Workgroup - Bitbucket Cloud token error](<lib/Workgroup%20-%20Bitbucket%20Cloud%20token%20error.png>)
+
+&nbsp;
+
+If you see this message, please follow the instructions above.
 

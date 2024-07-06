@@ -154,6 +154,20 @@ You may also do a right-click and access the same functions through the contextu
 
 &nbsp;
 
+***TIP:*** you may change the order of the fields/attributes within an entity with these control icons: ![Toolbar field order up-down arrows](<lib/DTD%20field%20order%20arrows.png>)
+
+&nbsp;
+
+***TIP:*** you may also change the order of the fields/attributes using the handle on the left of each attribute:
+
+![ERD - attribute drag-and-drop](<lib/ERD%20-%20attribute%20drag-and-drop.png>)
+
+Furthermore, you may move an attribute to another entity, provided that there are no conflicts.&nbsp; It is not possible to move attributes across different views.&nbsp; By pressing the Ctrl/Cmd key+select the handle with the mouse, it is possible to perform a copy operation.
+
+Note that, if the handle does not show, you may enable its display through the Display Options icon in the toolbar or via Tools \> Options \> Display
+
+&nbsp;
+
 ***TIP:*** create a relationship with drag-and-drop: simply grab a field from one collection with your mouse, and drop it on a type-compatible field in another collection (type-compatible fields in other collections are highlighted as long as the mouse button is pressed.)&nbsp; Be careful that the application considers the source as the child in the foreign key relationship, and the destination is the parent.&nbsp; After the relationship is created, you may change the relationship type (foreign key or foreign master) and the cardinality in the Properties Pane.
 
 &nbsp;
@@ -224,13 +238,19 @@ By calling [rs.slaveOk()](<http://docs.mongodb.org/manual/reference/method/rs.s
 
 &nbsp;
 
-***TIP:*** log files, relating to reverse-engineering or general application errors or license authorization, can be found:
+***TIP:***&nbsp; When you encounter an unexpected issue while using Hackolade Studio, information from the application logs can be immensely helpful for our development team to diagnose and resolve the issue, ideally captured immediately after the issue occurred. Log files can be found:
 
 \- Windows: in the C:\\Users\\%username%\\AppData\\Roaming\\HackoladeLogs directory
 
 \- Mac/Linux: in the Users/$USER/Documents/HackoladeLogs folder.
 
 They may be useful to troubleshoot issues, and requested when opening a support ticket.
+
+Since version 7.3.11, it is possible to access the log files folder via the menu Help \> Access Application Logs
+
+![Access application log files](<lib/Access%20application%20log%20files.png>)
+
+With the browser deployment of Hackolade Studio, logs are visible in the browser console and can be downloaded from the Help menu.
 
 ***TIP:*** you may wish to perform a bulk update of properties, for example changing the color of attributes, or making a bunch of attributes required, or change enter&nbsp; descriptions, etc.&nbsp; The best way to leverage this is by leveraging the Excel export/import capability:
 

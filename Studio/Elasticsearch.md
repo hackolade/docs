@@ -70,6 +70,12 @@ Elasticsearch supports a number of different datatypes for the fields in a docum
 
 Hackolade dynamically generates the mapping for the document structure created with the application.
 
+&nbsp;
+
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
 ![Elasticsearch forward-engineering mappings](<lib/Elasticsearch%20forward-engineering%20mappings.png>)
 
 ## Reverse-Engineering

@@ -1,16 +1,16 @@
-# Oracle 23c Duality Views
+# Oracle 23ai Duality Views
 
 Duality Views expose data stored in relational tables as JSON documents. The documents are materialized -- generated on demand, not stored as such. Duality views are organized both relationally and hierarchically. They combine the advantages of using JSON documents with the advantages of the relational model, while avoiding the limitations of each.&nbsp;
 
 &nbsp;
 
-Hackolade Studio is the first and only tool to facilitate the adoptions of this revolutionary feature released with Oracle 23c.
+Hackolade Studio is the first and only tool to facilitate the adoptions of this revolutionary feature released with Oracle 23ai.
 
 &nbsp;
 
 ## Overview
 
-In this excellent [introductory video](<https://www.youtube.com/watch?v=e8-jBkO1NqY> "target=\"\_blank\""), Oracle explains that there are 2 ways to bake cake.&nbsp; You may start from individual ingredients and follow a recipe:
+In this excellent [introductory video](<https://www.youtube.com/watch?v=e8-jBkO1NqY> "target=\"\_blank\""), Oracle explains that there are 2 ways to bake cake.&nbsp; You may start from individual ingredients and follow a recipe (illustrations courtesy of Oracle):
 
 &nbsp;
 
@@ -36,7 +36,7 @@ The analogy is that a relational database is like assembling different basic ing
 
 &nbsp;
 
-With Oracle 23c, Oracle introduces a way to combine both approaches, hence combining the benefits of normalized tables (traditional Oracle) and the document model (like MongoDB.)
+With Oracle 23ai, Oracle introduces a way to combine both approaches, hence combining the benefits of normalized tables (traditional Oracle) and the document model (like MongoDB.)
 
 &nbsp;
 
@@ -97,7 +97,7 @@ The Oracle plugin has been adapted, based on this [comprehensive developer's gui
 
 &nbsp;
 
-While the duality views feature sounds complex, and probably is quite complex under the hood of the database engine to work efficiently, the implementation in Hackolade Studio is rather straight forward.
+While the duality views feature sounds complex, and probably is quite complex under the hood of the database engine to work efficiently, the use in Hackolade Studio is rather straight forward.
 
 &nbsp;
 
@@ -208,7 +208,7 @@ The update annotations are set using table tags clause constructed by optionally
 
 &nbsp;
 
-## Select columns from root table
+### Select columns from root table
 
 The JSON format of duality views allows to include both root-level fields as well as embedded complex objects that are the result of joins with other tables.&nbsp; Let's start with the root table columns.
 
@@ -252,7 +252,7 @@ You may modify the order of fields using the up/down arrows in the toolbar or dr
 
 &nbsp;
 
-## Add nested object or array subquery
+### Add nested object or array subquery
 
 This is the heart of the benefits of duality views.&nbsp; A duality view is a JSON generation view that has a limited structure, expressly designed so that your applications can update the view, and in so doing automatically update the underlying tables.
 
@@ -300,7 +300,7 @@ You must enter the WHERE clause for the join.
 
 &nbsp;
 
-## Add unnested fields
+### Add unnested fields
 
 In some cases, you might prefer to flatten structures instead of the nested subquery.&nbsp; The unnested subquery allows to select columns in the underlying child table and present the fields in the JSON at the same level as the columns of the prent table.&nbsp; This can be done at any level of the tree.
 

@@ -22,6 +22,26 @@ If your repository has an HTTPS URL, then you might have to provide the username
 
 &nbsp;
 
+## Git Credentials Manager
+
+The [Git Credential Manager](<https://github.com/git-ecosystem/git-credential-manager> "target=\"\_blank\"") is a cross-platform [credential helper](<https://git-scm.com/docs/gitcredentials> "target=\"\_blank\"") that aims to provide a consistent and secure authentication experience, including multi-factor auth, to every major repository hub (e.g. GitHub, GitLab, Bitbucket). It comes as the default credential helper with [Git for Windows](<https://gitforwindows.org/> "target=\"\_blank\"") since the version 2.29 (Oct 19, 2020).
+
+&nbsp;
+
+The Git Credential Manager does not only store your credentials, it also takes over from Hackolade Studio the responsibility of prompting you when credentials are missing. If your Git client has been configured to use the Git Credential Manager, then you will be prompted for credentials outside Hackolade Studio, through the user interface below that belongs to the Git Credential Manager.
+
+![Git Gredential Manager prompt](<lib/Git%20Gredential%20Manager%20prompt.png>)
+
+The easiest option is for you to choose *Sign in with your browser*. Clicking that button will open your browser and direct you to your repository hub in order to grant the Git Credential Manager access to your account. Make sure to complete the authentication flow by clicking the *Authorize* button.
+
+![Git Credential Manager GtiHub Auth](<lib/Git%20Credential%20Manager%20GtiHub%20Auth.png>)
+
+&nbsp;
+
+If the option to sign in with your browser is not supported by your repository hub, then you can fallback to providing your username / password or a token. Another alternative is to cancel the prompt of the Git Credential Manager and [connect to the repository hub](<Connecttoarepositoryhub.md>) using Hackolade Studio.
+
+&nbsp;
+
 ## SSH passphrase
 
 If your repository has an SSH URL and if your SSH key is protected by a passphrase, then you might be prompted for that passphrase.
@@ -43,4 +63,8 @@ If you don't have an SSH key yet, then you need to create one. Follow the links 
 &nbsp;
 
 Consult this page for more information on connecting to a [repository hub.](<Connecttoarepositoryhub.md>).
+
+&nbsp;
+
+&nbsp;
 

@@ -176,6 +176,10 @@ An explicitly defined schema is an important component of a robust graph applica
 
 &nbsp;
 
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
 ![JanusGraph gremlin forward-engineering](<lib/JanusGraph%20forward-engineering.png>)
 
 &nbsp;

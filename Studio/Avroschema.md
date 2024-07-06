@@ -105,6 +105,30 @@ If at least one data type is complex (**record**, **enum**, **array**, **map**,
 
 &nbsp;
 
+## Annotations
+
+The Avro schema specifications documents standard keywords. You may add your own annotations for your use cases.&nbsp; This is done by leveraging the Hackolade Studio [customer properties](<Userdefinedcustomproperties.md>)., making sure to mark the property with the flag includeInScript.
+
+&nbsp;
+
+This can be done at the record level or field level.&nbsp; For example:
+
+&nbsp;&nbsp; {\
+&nbsp; &nbsp; "propertyName": "Tags",\
+&nbsp; &nbsp; "propertyKeyword": "tags",\
+&nbsp; &nbsp; "propertyTooltip": "Select from list of options",\
+&nbsp; &nbsp; "propertyType": "multipleCheckboxSelect",\
+&nbsp; &nbsp; "options": \[\
+&nbsp;&nbsp; &nbsp; "PII",\
+&nbsp;&nbsp; &nbsp; "GDPR",\
+&nbsp;&nbsp; &nbsp; "Sensitive",\
+&nbsp;&nbsp; &nbsp; "Protected"\
+&nbsp; &nbsp; \],\
+&nbsp; &nbsp; "includeInScript": true\
+&nbsp;&nbsp; },
+
+&nbsp;
+
 ## Namespace references
 
 This feature is barely officially documented if at all.&nbsp; It is well described in [this article](<https://deeptimittalblogger.medium.com/defining-reusable-schemas-in-avro-991f2e21d1ca> "target=\"\_blank\"") with good examples in [this repo](<https://github.com/timtebeek/register-avro-schemas#define-avro-schemas> "target=\"\_blank\"").&nbsp; It allows you to reuse records inside other records by creating references instead of importing or copying the structure.&nbsp; This of course allows for easier maintenance of repeated structures and facilitates quality and governance, while allowing independent evolution of record schemas.
@@ -153,7 +177,11 @@ When reverse-engineering Avro files containing namespace references, the sequenc
 
 ## Forward-Engineering
 
-Hackolade dynamically generates Avro schema for the structure created with the application.
+Hackolade dynamically generates Avro schema for the structure created with the application. &nbsp;
+
+&nbsp;
+
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
 
 &nbsp;
 

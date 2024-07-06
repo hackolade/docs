@@ -186,6 +186,10 @@ The files describing the RESTful API in accordance with the [OpenAPI specificati
 
 &nbsp;
 
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
 ![OpenAPI - Forward-Engineering](<lib/OpenAPI%20-%20Forward-Engineering.png>)
 
 &nbsp;

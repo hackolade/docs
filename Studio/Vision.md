@@ -1,6 +1,6 @@
 # Vision
 
-Hackolade Studio, like other legacy tools in the same segment, uses Entity-Relationship Diagrams to visualize and maintain data models.&nbsp; But our next-gen tool takes a modern approach as it does not carry the tech debt of tools built decades ago strictly for relational databases.&nbsp; It embraces 21st-century technology, cloud databases, event-driven architecture patterns, data-in-motion, Git repositories, digital transformation, application modernization, ML/AI, and much more.
+Hackolade Studio, like other legacy tools in the same segment, uses Entity-Relationship Diagrams to visualize and maintain data models.&nbsp; It also includes graph diagrams to represent concepts and relationships, tree views of hierarchical structures, and grid views.&nbsp; But our next-gen tool takes a modern approach to data modeling as it does not carry the tech debt of legacy tools built decades ago strictly for relational databases.&nbsp; We embrace 21st-century technology, cloud databases, event-driven architecture patterns, data-in-motion, Git repositories, digital transformation, application modernization, ML/AI, Domain-Driven Design, and much more.
 
 &nbsp;
 
@@ -8,13 +8,13 @@ Our mission is to help tackle the complexity at the heart of data, and to reconc
 
 &nbsp;
 
-## tdlr;
+## tldr;
 
 If you want your organization to be data-driven, many planets need to be aligned.&nbsp; In particular, you must master new and complex technologies.&nbsp; And your IT department and the business must be working hand-in-hand.&nbsp; In particular, there must be full alignment on the interpretation of data.
 
 &nbsp;
 
-In recent years, Chief Data Officer (CDO) positions have been created in many organizations, and big budgets have been invested in data catalogs, schema registries, as well as solutions for metadata management, data quality and data governance.&nbsp; Are these solutions achieving the objectives?&nbsp; Do all parties share the same interpretation of the data?&nbsp; Is there a single source-of-truth for metadata?
+In recent years, Chief Data Officer (CDO) positions have been created in many organizations, and big budgets have been invested in data catalogs, schema registries, as well as solutions for metadata management, data quality and data governance.&nbsp; Are these solutions achieving the objectives?&nbsp; Do all parties share the same interpretation of the data?&nbsp; Is there a truly single source-of-truth for metadata?
 
 &nbsp;
 
@@ -42,7 +42,7 @@ Information drives businesses who make decisions based on data. Data is a corpor
 
 &nbsp;
 
-Additionally, there has been the buzz around the terms NoSQL, schemaless, schema-on-read, and non-relational databases and data lakes, which further promoted the illusion of a silver bullet.&nbsp;
+Additionally, there has been the buzz around the terms NoSQL, schemaless, schema-on-read, and non-relational databases and data lakes, which further promoted the illusion of a silver bullet. But...
 
 &nbsp;
 
@@ -58,7 +58,7 @@ A data model is not just documentation\!&nbsp; One artifact out of a data model 
 
 &nbsp;
 
-Not only is data modeling not a bottleneck to application development, it has repeatedly demonstrated that it accelerates development, significantly reduces maintenance, increases application quality, and lowers execution risks across the enterprise. Experience has shown that relying on the intuition of software developers is not a repeatable process or one insuring first-time-right success.
+Not only is data modeling not a bottleneck to application development, it has repeatedly demonstrated that it accelerates development, significantly reduces maintenance, increases application quality, and lowers execution risks across the enterprise. Experience has shown that just relying on the intuition of software developers is not a repeatable process or one insuring first-time-right success.
 
 &nbsp;
 
@@ -67,6 +67,12 @@ Not only is data modeling not a bottleneck to application development, it has re
 &nbsp;
 
 You may read more details in the following pages, then pursue with the following sections in this online documentation, including [Getting Started](<Gettingstarted.md>), [Tutorials](<Tutorial.md>), [How-To Guides](<How-toguides.md>), and the rest of the user manual.&nbsp;
+
+&nbsp;
+
+Enjoy our next-gen data modeling tool for 21st Century technology.
+
+&nbsp;
 
 &nbsp;
 

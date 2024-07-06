@@ -142,6 +142,10 @@ Since version 3.6, this script is now in extended JSON Schema syntax.&nbsp; Hack
 
 &nbsp;
 
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
 ![Forward-Engineering - MongoDB Script](<lib/Forward-Engineering%20-%20MongoDB%20Script.png>)
 
 &nbsp;

@@ -4,5 +4,5 @@ If you feel that several document kinds in your bucket are not identified by Hac
 
 An easy way to check is to got to the Couchbase console http://localhost:8091/ui/index.html#/query/workbench and make sure that your bucket does not appear in the 'Non-Indexed Buckets' list. 
 
-Refer to [https://developer.couchbase.com/documentation/server/current/n1ql/n1ql-language-reference/createindex.html](<https://developer.couchbase.com/documentation/server/current/n1ql/n1ql-language-reference/createindex.html> "target=\"\_blank\"") and [https://developer.couchbase.com/documentation/server/current/n1ql/n1ql-language-reference/createprimaryindex.html](<https://developer.couchbase.com/documentation/server/current/n1ql/n1ql-language-reference/createprimaryindex.html> "target=\"\_blank\"") for more information.
+Refer to [https://docs.couchbase.com/server/current/n1ql/n1ql-language-reference/createindex.html](<https://docs.couchbase.com/server/current/n1ql/n1ql-language-reference/createindex.html> "target=\"\_blank\"") and [https://docs.couchbase.com/server/current/n1ql/n1ql-language-reference/createprimaryindex.html](<https://docs.couchbase.com/server/current/n1ql/n1ql-language-reference/createprimaryindex.html> "target=\"\_blank\"") for more information.
 

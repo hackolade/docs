@@ -109,6 +109,10 @@ Hackolade dynamically generates Protobuf schema for the structure created with t
 
 &nbsp;
 
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
 ![Image](<lib/Protobuf%20schema%20forward-engineering.png>)
 
 &nbsp;

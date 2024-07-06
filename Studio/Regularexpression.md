@@ -22,5 +22,5 @@ The following regular expression tokens are supported:
 
 &nbsp;
 
-Ref: [http://json-schema.org/latest/json-schema-validation.html#anchor6](<http://json-schema.org/latest/json-schema-validation.html#anchor6> "target=\"\_blank\"") and [https://regex101.com/#javascript](<https://regex101.com/#javascript> "target=\"\_blank\"")
+Ref: [https://json-schema.org/draft/2020-12/json-schema-validation#name-regex](<https://json-schema.org/draft/2020-12/json-schema-validation#name-regex> "target=\"\_blank\"") and [https://regex101.com/#javascript](<https://regex101.com/#javascript> "target=\"\_blank\"")
 

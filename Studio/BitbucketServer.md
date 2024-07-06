@@ -14,12 +14,6 @@ The information below applies to repositories on Bitbucket Server.&nbsp; It expl
 
 &nbsp;
 
-If you don't have a valid Personal Token, you may get the error message below, indicating that your token has passed its expiration date, or that it does not have the right permissions enabled.
-
-![Workgroup - Bitbucket Cloud token error](<lib/Workgroup%20-%20Bitbucket%20Cloud%20token%20error.png>)
-
-&nbsp;
-
 In the repository connection manager, click on the "generate" link located to the right of the input field for the personal access token. You can find more information on how to generate a personal access token in the [Bitbucket Server documentation](<https://confluence.atlassian.com/bitbucketserver0717/personal-access-tokens-1087535496.html> "target=\"\_blank\"").
 
 &nbsp;
@@ -52,7 +46,15 @@ To re-issue an expired token, proceed like creating a new one, then:
 
 &nbsp;
 
-# &nbsp;
+If you don't have a valid Personal Token, you may get the error message below, indicating that your token has passed its expiration date, or that it does not have the right permissions enabled.
+
+![Workgroup - Bitbucket Cloud token error](<lib/Workgroup%20-%20Bitbucket%20Cloud%20token%20error.png>)
+
+&nbsp;
+
+If you see this message, please follow the instructions above.
+
+&nbsp;
 
 ## Username and Password
 

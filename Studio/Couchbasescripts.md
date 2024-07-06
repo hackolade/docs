@@ -1,6 +1,6 @@
 # Couchbase scripts
 
-For those in a technology stack using JavaScript, and are using the [Ottoman ODM](<http://ottomanjs.com/> "target=\"\_blank\""), Hackolade also provides the option to export a JavaScript Ottoman schema file for the collection definition via the menu option Tools \> Forward-Engineering \> Ottoman Schema:
+For those in a technology stack using JavaScript, and are using the [Ottoman ODM](<http://ottomanjs.com/> "target=\"\_blank\""), Hackolade also provides the option to export a JavaScript Ottoman schema file for the collection definition via the menu option Tools \> Forward-Engineering \> Ottoman Schema or Couchbase script
 
 &nbsp;
 

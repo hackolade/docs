@@ -16,7 +16,9 @@ With a polyglot data model, you can define data structures once, then easily ins
 
 &nbsp;
 
-![Image](<lib/Polyglot%20data%20modeling%20concept.png>)
+&nbsp;
+
+![Polyglot data modeling concept](<lib/Polyglot%20data%20modeling%20concept.png>)
 
 &nbsp;
 
@@ -30,7 +32,7 @@ Exceptions are possible, as described further down.
 
 You may be used to the traditional 3-step process - conceptual-logical-physical - to successively capture scope and language, business rules, and target-specific implementation details. To facilitate the process, we provide, as part of our Polyglot capabilities, a Graph Diagram view of common business language with its entities and their relationships. The graph view is friendlier to business users than Entity-Relationship or UML diagrams.
 
-![Polyglot Cocenptual Graph View](<lib/Polyglot%20Cocenptual%20Graph%20View.png>)
+![Polyglot Cocenptual Graph View](<lib/Polyglot%20Conceptual%20Graph%20View.png>)
 
 &nbsp;
 

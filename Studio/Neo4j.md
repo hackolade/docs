@@ -117,6 +117,12 @@ With Neo4j version 5, new indexes types have been added: range, text, point, and
 
 Cypher is a declarative graph query language that allows for expressive and efficient querying and updating of a property graph.&nbsp; Hackolade dynamically generates [Cypher](<https://neo4j.com/developer/cypher/> "target=\"\_blank\"") code as the model is created via the application.
 
+&nbsp;
+
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
 ![Neo4j forward-engineered Cypher](<lib/Neo4j%20forward-engineered%20Cypher.png>)
 
 &nbsp;

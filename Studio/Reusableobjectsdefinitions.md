@@ -60,6 +60,10 @@ Any entity (collection, table, ...) - or attribute herein - within a Hackolade c
 
 &nbsp;
 
+In legacy data modeling tools, this feature is sometimes called "domain" or "template".&nbsp; In Hackolade Studio, this feature not only provides a quick way to speed the model design process and make the model easy to maintain, but it also is much more powerful and flexible than with other tools since we accommodate complex data types.
+
+&nbsp;
+
 External models can be used to create a company-wide library of re-usable objects.&nbsp; You may ask yourself whether it is best to have one single model hold all of your company's re-usable definitions, or to have one model per object, or various degrees in-between.&nbsp; There are pros and cons to each approach. &nbsp; We would advise against putting all objects in a single model.  One model per domain, or even one model per sub-domain would make more sense from these perspectives:
 
 \- maintenance responsibilities (maybe a department does not want its definitions be altered by another department)
@@ -77,6 +81,8 @@ In order for changes to a *referenced* external model to be activated in a *refe
 ![Definitions reference refresh](<lib/Definitions%20reference%20refresh.png>)
 
 &nbsp;
+
+### Attributes
 
 If you have defined a separate model with the structure of an address, you may reference it in any other Hackolade model:
 
@@ -103,6 +109,34 @@ You then can choose an individual attribute, or an entire structure:
 &nbsp;
 
 **Note:** it is not intended to combine definition levels.&nbsp; In other words, if you have a Hackolade model with attribute structures intended to be re-used in other models, you should define these as simple attributes, not as internal or model definitions.
+
+&nbsp;
+
+### Entities
+
+You also might want to have an entity reference an entire entity in another model.&nbsp; This is also possible.&nbsp; To do so:
+
+&#49;) select the entity in the object browser or ERD
+
+&#50;) in the Properties Pane on the right, click on the ellipsis of the $ref property
+
+![External entty references property](<lib/External%20entty%20references%20property.png>)
+
+&#51;) choose the reference type External:
+
+![External entty references selection](<lib/External%20entty%20references%20selection.png>)
+
+&#52;) choose a relative or absolute path to the model holding the entity definition (we recommend to use a relative path:
+
+![Image](<lib/External%20entty%20references%20path.png>)
+
+&#53;) select the entity of your choice, and clock OK.
+
+&nbsp;
+
+**Warning:** any attributes you may have previously defined are replaced by the attributes of the selected definition.&nbsp; In other words, all previous entities are erased.&nbsp; Be careful how you use this feature.
+
+&nbsp;
 
 &nbsp;
 

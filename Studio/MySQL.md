@@ -96,6 +96,10 @@ Hackolade dynamically generates the DDL script to create databases, tables, colu
 
 &nbsp;
 
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
 ![MySQL DDL Forward-Engineering](<lib/MariaDB%20DDL%20Forward-Engineering.png>)
 
 &nbsp;

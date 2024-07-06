@@ -15,8 +15,6 @@ Our large customers generally use one out of 3 different strategies to handle ou
 
 Note that licensing rules do not change because the software is deployed on a VM.  Licensing is still "per seat" whereby each user client on the VM will be counted as a seat.
 
-&nbsp;
-
 As a reminder, Hackolade installation does not require admin rights as it does not interact with Windows Registry.  But installation by individual users may be forbidden by IT policy, even if it is technically possible.
 
 Don't hesitate to contact [support@hackolade.com](<mailto:support@hackolade.com>) if you have other questions.

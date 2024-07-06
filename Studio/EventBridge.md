@@ -93,6 +93,10 @@ The files describing the RESTful API in accordance with the [OpenAPI specificati
 
 &nbsp;
 
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
 ![EventBridge script forward-engineering](<lib/EventBridge%20script%20forward-engineering.png>)
 
 &nbsp;

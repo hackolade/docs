@@ -62,6 +62,118 @@ After a couple of additional prompt, the installation process will start.&nbsp; 
 
 &nbsp;
 
+&nbsp;
+
+## Ensure that Hackolade Studio has the proper rights on your local drive
+
+Hackolade Studio must be able to write on your local drive: to save data model files, to preserve parameters, to install plugins, etc.&nbsp; While you, as a user may have the rights to folders on your local drive, it is possible that some environments limit the rights of our application.&nbsp; It can be due to virtualization or sandboxing setup or most likely an anti-virus software.&nbsp; In particular, aggressive Windows Defender settings may prevent the application to operate properly, resulting in error messages like these:
+
+&nbsp;
+
+![Plugins - Virus Threat Protection error](<lib/Plugins%20-%20Virus%20Threat%20Protection%20error.png>)
+
+&nbsp;
+
+![Image](<lib/Anti-virus%20EPERM%20error.png>)
+
+&nbsp;
+
+![Image](<lib/Anti-virus%20EBUSY%20error.png>)
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+If your anti-virus is Windows Defender, you, or your IT department, can create an exclusion in Windows Defender. Follow these steps:
+
+**Open Windows Security:**
+
+\- Press the **Windows key + I** to open Settings.
+
+\- Select "Privacy \& Security."
+
+\- Click on "Windows Security" in the left sidebar.
+
+&nbsp;
+
+**Access Virus \& Threat Protection Settings:**
+
+\- In the Windows Security window, click on "Virus \& threat protection."
+
+![Image](<lib/Plugins%20-%20Virus%20Threat%20Protection.png>)
+
+&nbsp;
+
+&nbsp;
+
+**Manage Settings:**
+
+\- Under the "Virus \& threat protection settings" section, click on "Manage settings."
+
+&nbsp;
+
+![Plugins Windows Defender Manage settings](<lib/Plugins%20Windows%20Defender%20Manage%20settings.png>)
+
+&nbsp;
+
+&nbsp;
+
+**Add or Remove Exclusions:**
+
+\- Scroll down to the bottom, to the "Exclusions" section.
+
+\- Click on "Add or remove exclusions."
+
+&nbsp;
+
+![Plugins Windows Defender add exclusion](<lib/Plugins%20Windows%20Defender%20add%20exclusion.png>)
+
+&nbsp;
+
+**Add a Folder Exclusion:**
+
+\- Click on "Add an exclusion."
+
+\- Choose "Folder" from the drop-down menu.
+
+&nbsp;
+
+If you get the message that you don't have the permission to create this exclusion, you will need for your IT Security team to access your machine and allow this operation.&nbsp; Or ask them to perform it for you.
+
+&nbsp;
+
+![Image](<lib/Plugins%20-%20Windows%20Defender%20no%20permission.png>)
+
+&nbsp;
+
+&nbsp;
+
+**Specify the Folder Path:**
+
+\- Navigate to the folder **C:\\Users\\%username%\\.hackolade** and select it;
+
+\- also Navigate to the folder **C:\\Users\\%username%\\AppData\\Roaming** and select it.
+
+![Plugins Windows Defender add folder path](<lib/Plugins%20Windows%20Defender%20add%20folder%20path.png>)
+
+&nbsp;
+
+**Save Changes:**
+
+\- Save your changes.
+
+This exclusion tells Windows Defender not to scan or interfere with files and processes within the specified folder. Hackolade Studio should now have the necessary WRITE or EXECUTE permissions in the specified directory.\
+\
+Remember to replace **%username%** in the folder path with the actual username. After making these changes, the application should be able to operate in the specified directory without being blocked by Windows Defender.
+
+&nbsp;
+
 ## Silent installation
 
 **Important license note:** by installing, you accept the [license agreement](<Licenseagreement.md>) for the application, even if the silent installation does not prompt you.
@@ -95,7 +207,7 @@ Hackolade-win64-setup-signed.exe /VERYSILENT /SUPPRESSMSGBOXES /DIR="C:/Users/%u
 
 &nbsp;
 
-An official Hackolade Studio package has been submitted for review, which is [available here](<https://community.chocolatey.org/packages/hackolade-studio> "target=\"\_blank\"").&nbsp; We're currently in the moderation phase of the package review, which explains why it is not yet listed.
+An official Hackolade Studio package has been submitted for review, which is [available here](<https://community.chocolatey.org/packages/hackolade-studio> "target=\"\_blank\""). &nbsp;
 
 &nbsp;
 

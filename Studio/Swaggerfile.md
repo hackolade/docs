@@ -4,6 +4,10 @@ As you develop the model for Swagger API with metadata, requests, responses, def
 
 &nbsp;
 
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
 :![Swagger - Forward-Engineering](<lib/Swagger%20-%20Forward-Engineering.png>)
 
 &nbsp;

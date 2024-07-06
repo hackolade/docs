@@ -1,6 +1,6 @@
 # MarkLogic
 
-MarkLogic is a database designed from the ground up to make massive quantities of heterogeneous data easily accessible through search.&nbsp; MarkLogic is a leading 'multi-model' database, supporting traditional relational tables, XML and JSON documents, and RDF triples, all with ACID transactions capabilities.&nbsp; While Hackolade does not yet support the XML part, all other models are part of the solution.
+MarkLogic is a database designed from the ground up to make massive quantities of heterogeneous data easily accessible through search.&nbsp; MarkLogic is a leading 'multi-model' database, supporting traditional relational tables, XML and JSON documents, and RDF triples, all with ACID transactions capabilities.&nbsp; While Hackolade does not support the XML part, all other models are part of the solution.
 
 &nbsp;
 
@@ -79,6 +79,10 @@ Hackolade helps manage [range indexing](<https://docs.marklogic.com/guide/concep
 ## Forward-Engineering
 
 Forward-engineering of JSON Schema is available for use by [https://docs.marklogic.com/xdmp.jsonValidate](<https://docs.marklogic.com/xdmp.jsonValidate> "target=\"\_blank\"").
+
+&nbsp;
+
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
 
 ![MarkLogic Forward-Engineering](<lib/MarkLogic%20Forward-Engineering.png>)
 

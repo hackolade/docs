@@ -82,6 +82,12 @@ Azure Cosmos DB's language integrated transactional execution of JavaScript lets
 
 We provide a sort of "forward-engineering by example", with an automatic JSON data sample generation.&nbsp; The script also includes the creation of indexes, stored Procedures, triggers, and UDFs, and it can be applied to the Azure instance.
 
+&nbsp;
+
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
 ![Cosmos DB SQL API forward-engineering script](<lib/Cosmos%20DB%20SQL%20API%20forward-engineering%20script.png>)
 
 &nbsp;

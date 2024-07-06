@@ -4,6 +4,10 @@ As you develop the model for your Neo4j graph database, with node labels and rel
 
 &nbsp;
 
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
 The information can be viewed in the Cypher Script tab:
 
 ![Neo4j forward-engineered Cypher](<lib/Neo4j%20forward-engineered%20Cypher.png>)

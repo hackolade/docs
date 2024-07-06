@@ -60,6 +60,10 @@ Hackolade generates the create statement for the namespace, table, and column fa
 
 &nbsp;
 
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
 ![HBase forward-engineering script](<lib/HBase%20forward-engineering%20script.png>)
 
 &nbsp;

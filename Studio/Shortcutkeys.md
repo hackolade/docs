@@ -24,6 +24,7 @@ Keyboard shortcuts:
 | Ctrl+A | Cmd+A | Select all |
 | Shift+\<mouse click\> | Shift+\<mouse click\> | Multiple contiguous select |
 | Ctrl+\<mouse click\> | Cmd+\<mouse click\> | Multiple select |
+| Alt+\<mouse click\> in Object Browser | Option+\<mouse click\> in Object Browser | Center canvas on selected object without zoom |
 | Ctrl+F | Cmd+F | Find |
 | F3 | Cmd+F3 | Next in matched objects |
 | Shift+F3 | Shift+F3 | Previous in matched objects |

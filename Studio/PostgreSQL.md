@@ -78,11 +78,15 @@ Hackolade supports the most common types of PostgreSQL indexes. &nbsp;
 
 ## Data types
 
-PostgreSQLhas a rich set of [data types](<https://www.postgresql.org/docs/current/datatype.html> "target=\"\_blank\"") available to users.&nbsp; A data type is an attribute that specifies the type of data that the object can hold: integer data, character data, monetary data, date and time data, binary strings, and so on.
+PostgreSQL has a rich set of [data types](<https://www.postgresql.org/docs/current/datatype.html> "target=\"\_blank\"") available to users.&nbsp; A data type is an attribute that specifies the type of data that the object can hold: integer data, character data, monetary data, date and time data, binary strings, and so on.
 
 &nbsp;
 
 Additionally, in JSON and JSONB columns, Hackolade supports the data modeling of JSON documents with standard JSON data types: string, number, object, array, boolean, and null.&nbsp; We also support geometries and geographies used in PostGIS.
+
+&nbsp;
+
+TBA soon, Hackolade Studio will introduce support for the [pgvector extension](<https://github.com/pgvector/pgvector> "target=\"\_blank\"") that provides powerful functionalities for working with vectors in high-dimensional space. It introduces a dedicated data type, vector with sub types halfvec and sparsevec, as well as new index methods hnsw and ivfflat.&nbsp; You may want to read this good [introductory article](<https://www.timescale.com/learn/postgresql-extensions-pgvector> "target=\"\_blank\"").
 
 &nbsp;
 
@@ -107,6 +111,10 @@ In Hackolade Studio, functions and procedures are maintained at the schema level
 ## Forward-Engineering
 
 Hackolade dynamically generates the DDL script to create databases, tables, columns and their data types, indexes and constraints for the structure created with the application, as well as functions and procedures.
+
+&nbsp;
+
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
 
 &nbsp;
 

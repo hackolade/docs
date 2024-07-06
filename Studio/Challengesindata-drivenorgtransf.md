@@ -1,6 +1,10 @@
 # Challenges in data-driven org transformation
 
-According to a 2023 [survey](<https://static1.squarespace.com/static/62adf3ca029a6808a6c5be30/t/63a477e23d7f9162b7771d6b/1671722982363/WAVESTONE%20NVP--%20Data%20\&%20Analytics%20Executive%20Leadership%202023--Survey%20Findings.pdf> "target=\"\_blank\"") by Wavestone's New Vantage Partners, and relayed by [Harvard Business Review](<https://hbr.org/2023/06/why-chief-data-and-ai-officers-are-set-up-to-fail> "target=\"\_blank\""),&nbsp; 80% of data executives and business leaders cite cultural impediments – people, business process, organizational alignment – as the primary barrier to data-driven organizational transformation. &nbsp;
+According to a 2023 [survey](<https://static1.squarespace.com/static/62adf3ca029a6808a6c5be30/t/63a477e23d7f9162b7771d6b/1671722982363/WAVESTONE%20NVP--%20Data%20\&%20Analytics%20Executive%20Leadership%202023--Survey%20Findings.pdf> "target=\"\_blank\"") by Wavestone's New Vantage Partners, and relayed by [Harvard Business Review](<https://hbr.org/2023/06/why-chief-data-and-ai-officers-are-set-up-to-fail> "target=\"\_blank\""),&nbsp; 80% of data executives and business leaders cite cultural impediments – people, business process, organizational alignment – as the primary barrier to data-driven organizational transformation.&nbsp; That's well above the 20% scored by technical limitations.
+
+&nbsp;
+
+![Vision - survey of data-driven challenges](<lib/Vision%20-%20survey%20of%20data-driven%20challenges.png>)
 
 &nbsp;
 
@@ -10,7 +14,15 @@ Without organizational alignment, it is hard to implement process changes, to mo
 
 &nbsp;
 
-Before we can propose our own solution for this situation, it is important to identify some of the critical root causes.
+Before we can propose our own solution for this situation, it is important to identify some of the critical root causes:
+
+\- technology stacks have dramatically increase in complexity;
+
+\- data, its definition, its transmission, its processing, its storage, its management -- all of it is a complex business -- there is no magic wand;
+
+\- if business and IT are not pulling together, everything gets harder for all parties;
+
+\- many promises of technology solutions remain unfulfilled
 
 &nbsp;
 
@@ -30,7 +42,7 @@ The evolution towards modern event-driven architecture patterns, microservices, 
 
 &nbsp;
 
-However, it also introduces new challenges related to monitoring, security, and data consistency, which require careful consideration in the design and operation of these systems.
+However, this evolution also introduces new challenges related to monitoring, security, and data consistency, which require careful consideration in the design and operation of these systems.
 
 &nbsp;
 
@@ -46,7 +58,7 @@ It used to be that a single team could determine the business needs, then design
 
 &nbsp;
 
-### Impatience
+### Impatience, and the illusion of "quick-and-dirty" solutions
 
 The venture capitalist Mark Andreesen wrote in the Wall Street Journal that “software is eating the world”, highlighting the growing influence and ubiquity of software in various industries.&nbsp; Also encouraged by other quotes like Mark Zuckerberg's "move fast and break things", as well as by an erroneous interpretation of the principles of the Agile Manifesto, many developers have adopted a code-first approach which carries inherent risks, including poor quality and a lot of rework, when it turns out that a little forethought would have helped tremendously.&nbsp;
 
@@ -62,21 +74,21 @@ It used to be that data modelers facilitated well-designed structures from the s
 
 &nbsp;
 
-### Polarization
+### Polarization, or the impacts of an "us and them" culture
 
 The ownership of data in an organization is a complex and often debated topic. In reality, it's not a matter of the business or IT owning the data exclusively.&nbsp; Instead, it's a shared responsibility that involves both business stakeholders and IT teams. The roles and responsibilities of these groups may differ, but they should work together to ensure the proper management, governance, and utilization of data.
 
 &nbsp;
 
-According to the same report by Wavestone's New Vantage Partners, there was previously a general agreement that the Chief Data Officer (CDO) function was best suited to fit within the Chief Information Officer (CIO) organization.&nbsp; Now, a majority – 55.6% – of CDOs (or CDAOs -- Chief Data Analytics Officers) appear to report to business rather than technology functions.
+According to the same report by Wavestone's New Vantage Partners, there was previously a general agreement that the Chief Data Officer (CDO) function was best suited to fit within the Chief Information Officer (CIO) organization.&nbsp; Now, a majority – 56% – of CDOs (or CDAOs -- Chief Data Analytics Officers) appear to report to business rather than technology functions.
 
 &nbsp;
 
-The key to successful data management is collaboration between business and IT. Ownership of data should be seen as a partnership. Business stakeholders define what they need from data, while IT teams provide the tools, infrastructure, and expertise to support those needs.&nbsp; Effective data governance practices can help establish roles and responsibilities and ensure that data is used responsibly, securely, and in alignment with business objectives.&nbsp; Ultimately, the organization as a whole benefits from this shared approach to data ownership, as it ensures that data is both a valuable business asset and a well-managed technical resource. In practice,
+The key to successful data management is collaboration between business and IT. Ownership of data should be seen as a partnership. Business stakeholders define what they need from data, while IT teams provide the tools, infrastructure, and expertise to support those needs.&nbsp; Effective data governance practices can help establish roles and responsibilities and ensure that data is used responsibly, securely, and in alignment with business objectives.&nbsp; Ultimately, the organization as a whole benefits from this shared approach to data ownership, as it ensures that data is both a valuable business asset and a well-managed technical resource.&nbsp;
 
 &nbsp;
 
-The installation of Data Catalogs, Metadata Management (MDM), and Data Quality Management (DQM) solutions was supposed to facilitate the collaboration.&nbsp; Unfortunately, there is a misalignment between the business-focused ownership of metadata management solutions (typically overseen by Chief Data Officers or business stakeholders) and the technical needs of IT developers, leading to challenges and inefficiencies in data management and utilization. &nbsp;
+The installation of Data Catalogs, Metadata Management (MDM), and Data Quality Management (DQM) solutions was supposed to facilitate the collaboration.&nbsp; Unfortunately, their adoption in organization has been limited mostly to business users.&nbsp; There is a misalignment between the business-focused ownership of metadata management solutions (typically overseen by Chief Data Officers or business stakeholders) and the technical needs of IT developers, leading to challenges and inefficiencies in data management and utilization. &nbsp;
 
 &nbsp;
 
@@ -84,7 +96,7 @@ The installation of Data Catalogs, Metadata Management (MDM), and Data Quality M
 
 &nbsp;
 
-In particular, these solutions lack a critical aspect of data management: the robust support for schema design, definition, evolution, validation, version control and lifecycle management.&nbsp; Such shortcomings explain the struggle for adoption of Metadata Management suites by technical users in the organization..
+In particular, these solutions lack a critical aspect of data management: the robust support for schema design, definition, evolution, validation, version control and lifecycle management.&nbsp; Such shortcomings explain the struggle for adoption of Metadata Management suites by technical users in the organization.
 
 &nbsp;
 
@@ -106,7 +118,7 @@ Typically, each organization may own several of these families of metadata recep
 
 \- repository for data models stored in a proprietary format, from a legacy provider, and used by data architects and data modelers;
 
-\- data governance solutions used by the data citizens on the business side (Alation, Apache Atlas, Azure Purview, BigID, Collibra, DataHub, Informatica EDC, or some sort of homegrown solution.)
+\- data governance solutions used by the data citizens on the business side (Alation, Acryl DataHub, Apache Atlas, Azure Purview, BigID, Collibra, Informatica EDC, or some sort of homegrown solution.)
 
 &nbsp;
 
@@ -130,7 +142,7 @@ As each community goes its own way, metadata management solutions failed to fulf
 
 &nbsp;
 
-On the business side, metadata management suites primarily focus on documenting and organizing metadata after data structures are already in place, an inherently reactive method. Such a reactive approach greatly increases the risks for inaccuracies and omissions in both the data itself and its metadata that may not fully reflect the complexities and nuances of the data structures, resulting in incorrect assumptions, misunderstandings, and errors.&nbsp; Let's add to that inconsistencies, operational inefficiencies, data security and compliance risks, scalability challenges, higher costs and lack of trust.
+On the business side, metadata management suites primarily focus on harvesting, documenting and organizing metadata well after data structures have been in place, an inherently reactive method. Such a reactive approach greatly increases the risks for inaccuracies and omissions in both the data itself and its metadata that may not fully reflect the complexities and nuances of the data structures, resulting in incorrect assumptions, misunderstandings, and errors.&nbsp; Let's add to that inconsistencies, operational inefficiencies, data security and compliance risks, scalability challenges, higher costs and lack of trust.
 
 &nbsp;
 
@@ -138,15 +150,19 @@ Data model marts by legacy data modeling providers also fail to deliver on the p
 
 &nbsp;
 
-Proceed to the [next page](<Solutionoverview.md>) to see the solution we propose with Hackolade Studio to improve collaboration, make complexity manageable, align the interests, and in the end restore the trust between business and IT...Hint...it does NOT involve the creation of yet another receptacle\!
+## Conclusion
+
+While it is clear that cultural impediments – people, business process, organizational alignment – are the primary barrier to data-driven organizational transformation, it is also obvious that many technical factors contribute to the problem instead of providing solutions:
+
+\- technology stacks and architecture patterns are increasingly complex;
+
+\- misunderstood agile principles, code-first development, and management impatience have created enormous technical debt and decreasing data quality;
+
+\- instead of treating collaboration and ownership of data as a partnership, business and IT have worked in their corner and implemented tools that tend to polarize teams;
+
+\- every vendor is pushing it own "single" source-of-truth solution to replace x silos.&nbsp; After implementation, it becomes obvious that now the organization has x+1 silos..
 
 &nbsp;
 
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;&nbsp;
+It is time to address these root causes head-on\!&nbsp; Proceed to the [next page](<Solutionoverview.md>) to see the solution we propose with Hackolade Studio to improve collaboration, make complexity manageable, align the interests, and in the end restore the trust between business and IT...Hint...it does NOT involve the creation of yet another receptacle\!
 

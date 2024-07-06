@@ -4,5 +4,9 @@ As you develop the model for your Cassandra keyspaces, tables, columns with thei
 
 &nbsp;
 
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
 ![Cassandra forward-engineering](<lib/Cassandra%20forward-engineering.png>)
 

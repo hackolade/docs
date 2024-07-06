@@ -1,42 +1,29 @@
 # Polyglot Data Modeling
 
-Hackolade was originally created to perform schema design, i.e. physical data models only.&nbsp; But as support for more and more targets grew, customers started asking to be able to save a model for one target into a model for another target.&nbsp; Then they also started to ask that Hackolade could ensure the consistency of schemas across different technologies in data pipelines.
+In traditional data modeling for relational databases using the conceptual, logical, and physical types of models, the purpose for a logical model has been defined as a database-agnostic view of normalized structures and business rules. &nbsp;
 
 &nbsp;
 
-With RDBMS vendors, the differences between the physical implementations are fairly minor, and so are the differences between the SQL dialects.&nbsp; Not so with all the targets supported by Hackolade for data-at-rest and data-in-motion.&nbsp; The feature set, the storage model, the terminology, the data types, the indexing capabilities, the schema syntax, etc.: there is very little in common between a MongoDB and a Cassandra data model, or between a Parquet and a DynamoDB data model for example.
+It becomes quickly obvious that a logical model can only be technology-agnostic if and only if the target is strictly RDBMS.&nbsp; But as soon as you need for the logical model to be useful with other technologies, the strict definition of a logical model becomes too constraining.&nbsp; Given that Hackolade Studio supports so many technologies of databases and data exchanges that are not RDBMS, it was necessary to free ourselves from the strict constraints of the definition of logical models.&nbsp; To emphasize the differences, we found that using a different word was also necessary. &nbsp;
 
 &nbsp;
 
-Nevertheless, we had to find a solution.&nbsp; Hackolade having been built on top of JSON Schema, it seemed natural to use it as a bridge to convert from one physical target to another.&nbsp; But there a couple of major limitations with JSON Schema:&nbsp;
-
-* the data types are very limited and don't provide the granularity found in many targets,&nbsp;
-* only a single entity can be represented in a schema file
-* there is no way to represent Foreign Key relationships
+> polyglot \| \\ ˈpä-lē-ˌglät \\ : speaking or writing several languages : multilingual
 
 &nbsp;
 
-Other schema standards presented similar issues (Avro or XSD) or other equally challenging issues (DDLs in SQL don't include nested objects or are able to represent polymorphism, Snowflake, Hive, ...). &nbsp;
+Also with RDBMS vendors, the differences between the physical implementations are fairly minor, and so are the differences between the SQL dialects.&nbsp; Not so with all the targets supported by Hackolade for data-at-rest and data-in-motion.&nbsp; The feature set, the storage model, the terminology, the data types, the indexing capabilities, the schema syntax, etc.: there is very little in common between a MongoDB and a Cassandra data model, or between a Parquet and a Neo4j data model for example.&nbsp; The generation of physical names for entities (could be called tables, collections, nodes, vertices, files, etc.. in target technology) and attributes (could be called columns, fields, etc.. in target technology) should be capable of following different transformation rules, as Cassandra for example does not allow UPPERCASE while MongoDB will prefer camelCase, etc.
 
 &nbsp;
 
-## A common physical schema from which target schemas are derived
+In our definition, a Polyglot Data Model is sort of a logical model in the sense that it is technology-agnostic, but with additional features:
 
-In traditional data modeling approaches for relational databases using the conceptual, logical, and physical types of models, the purpose for a logical model has been defined as a database-agnostic view of normalized structures and business rules. &nbsp;
-
-&nbsp;
-
-In our definition, a Polyglot Data Model sits over the previous boundary between logical and physical. It is sort of a logical model in the sense that it is technology-agnostic, but it is really a **common physical model** with the following features:
-
-* allows denormalization, if desired, given access patterns;
-* allows complex data types;
-* generates schemas for a variety of technologies, with automatic mapping to the specific data types of the respective target technologies.
+* it allows denormalization, if desired, given query-driven access patterns;
+* it allows complex data types;
+* it generates schemas for a variety of technologies, with automatic mapping to the specific data types of the respective target technologies;
+* it combines in a single model both a conceptual layer in the form of a graph diagram view to be friendly to business users, as well as an ER Diagram for the logical layer.
 
 &nbsp;
-
-In RDBMS the different dialects of SQL will lead to fairly similar DDLs, whereas schema syntax for Avro, Parquet, OpenAPI, HiveQL, Neo4j Cypher, MongoDB, etc... are vastly different.
-
-The generation of physical names for entities (could be called tables, collections, nodes, vertices, files, etc.. in target technology) and attributes (could be called columns, fields, etc.. in target technology) should be capable of following different transformation rules, as Cassandra for example does not allow UPPERCASE while MongoDB will prefer camelCase, etc.
 
 &nbsp;
 
@@ -94,7 +81,7 @@ It is generally said that there are 3 categories of data modeling: conceptual, l
 
 With version 6.6.0 of Hackolade Studio, we facilitate the process of conceptual data modeling by providing a Graph Diagram view to capture the entities and their relationships..
 
-![Polyglot Cocenptual Graph View](<lib/Polyglot%20Cocenptual%20Graph%20View.png>)
+![Polyglot Conceptual Graph View](<lib/Polyglot%20Conceptual%20Graph%20View.png>)
 
 &nbsp;
 
@@ -173,4 +160,42 @@ More information about the philosophy behind our Polyglot Data Model concept can
 This [other page](<PolyglotDataModel.md>) details how to use polyglot data models.
 
 &nbsp;
+
+&nbsp;
+
+## Lineage and impact analysis of changes
+
+Once a target model has been created and derived from a polyglot model, it contains all the derived objects.&nbsp; You may make some changes to the target model:
+
+\- make changes to the properties of entities and attributes without changing them in the polyglot model.&nbsp; This is used if you need minor deviations;
+
+\- add new entities and views that are specific to the physical target model, for example based on access patterns;
+
+\- remove entities from the target model.&nbsp; This action does not delete the entity in the polyglot model;
+
+\- add, delete or modify attributes, again without effect on the Polyglot model.
+
+&nbsp;
+
+You may also join entities from multiple polyglot models by repeating the operation to derive from polyglot.
+
+&nbsp;
+
+You may supplement the target model with metadata, index and partitioning information specific to the target technology, then forward-engineer artifacts according to your use case.
+
+&nbsp;
+
+An impact analysis dialog is displayed to let you decide which objects to include as part of this refresh operation.&nbsp; Maybe these objects were not selected originally, or they could have been added to the polyglot model since the previous refresh or derive operation, or they could have been deleted in the target model. &nbsp;
+
+&nbsp;
+
+![Polyglot Impact Analysis](<lib/Polyglot%20Impact%20Analysis.png>)
+
+&nbsp;
+
+When opening a target model with a reference to one or more polyglot models, you are presented with the option to update the objects.
+
+&nbsp;
+
+You may also permanently break the connection to the polyglot model.&nbsp; This operation should be done with care of course, as it cannot be re-established afterwards without restarting all the steps from scratch.&nbsp; The operation replaces all references to the objects of the polyglot model by the objects themselves.&nbsp; But further modifications in the polyglot model will no longer have any effect in the target model.
 

@@ -124,6 +124,136 @@ Hackolade can generate 2 types of test data:
 
 &nbsp;
 
+## Assign a Faker function at the entity level
+
+Since version 7.5.0 of Hackolade Studio, it is now possible to define a Faker function at the entity level, ensuring consistent and related attributes within an entity. This approach is particularly useful for generating coherent attributes, such as creating an email address from a person's first and last names.
+
+&nbsp;
+
+Note: the attributes defined in the Faker function at the entity level must correspond to actual attributes in the entity.
+
+&nbsp;
+
+### Example usage
+
+Using this piece of code in the Faker function property of the entity:
+
+&nbsp;
+
+**(()=\> {**
+
+**&nbsp; &nbsp; &nbsp; const sex = faker.person.sex();**
+
+**&nbsp; &nbsp; &nbsp; const firstName = faker.person.firstName(sex);**
+
+**&nbsp; &nbsp; &nbsp; const lastName = faker.person.lastName(sex);**
+
+**&nbsp; &nbsp; &nbsp; const fullName = faker.person.fullName({ firstName, lastName, sex });**
+
+**&nbsp; &nbsp; &nbsp; const domain = faker.internet.domainName();**
+
+**&nbsp; &nbsp; &nbsp; const email = faker.internet.email({ firstName: firstName, lastName: lastName, provider: domain})**
+
+**&nbsp; &nbsp; &nbsp; const normalized\_email = email.toLowerCase();**
+
+**&nbsp; &nbsp; &nbsp; const alias = \`${firstName}@${domain}\`;**
+
+**&nbsp; &nbsp; &nbsp; const initials = \`${firstName\[0\]}.${lastName\[0\]}.\`;**
+
+&nbsp;
+
+**&nbsp;&nbsp; &nbsp; return {**
+
+**&nbsp;&nbsp; &nbsp; sex,**
+
+**&nbsp;&nbsp; &nbsp; firstName,**
+
+**&nbsp;&nbsp; &nbsp; lastName,**
+
+**&nbsp;&nbsp; &nbsp; fullName,**
+
+**&nbsp;&nbsp; &nbsp; domain,**
+
+**&nbsp;&nbsp; &nbsp; normalized\_email,**
+
+**&nbsp;&nbsp; &nbsp; email,**
+
+**&nbsp;&nbsp; &nbsp; alias,**
+
+**&nbsp;&nbsp; &nbsp; initials**
+
+**&nbsp;&nbsp; &nbsp; }**
+
+**})()**
+
+&nbsp;
+
+This function ensures logically related and consistent data across attributes, e.g.:
+
+**{**
+
+**&nbsp; &nbsp; "id": "4ace053785d90d3aa5f5c66359888e88",**
+
+**&nbsp; &nbsp; "sex": "female",**
+
+**&nbsp; &nbsp; "firstName": "Alexandra",**
+
+**&nbsp; &nbsp; "lastName": "Upton",**
+
+**&nbsp; &nbsp; "fullName": "Miss Alexandra Upton",**
+
+**&nbsp; &nbsp; "initials": "A.U.",**
+
+**&nbsp; &nbsp; "domain": "crooked-tomatillo.org",**
+
+**&nbsp; &nbsp; "email": "Alexandra\_Upton@crooked-tomatillo.org",**
+
+**&nbsp; &nbsp; "normalized\_email": "alexandra\_upton@crooked-tomatillo.org",**
+
+**&nbsp; &nbsp; "alias": "Alexandra@crooked-tomatillo.org",**
+
+**&nbsp; &nbsp; "age": 34**
+
+**}**
+
+&nbsp;
+
+### Defining Faker Functions at Attribute and Entity Level
+
+Faker functions can be defined at both the attribute level and the entity level for the same entity. This allows for flexible data generation where attributes that need to be coherent can be defined at the entity level, while independent attributes can remain at the attribute level.
+
+#### Priority of Faker Functions
+
+When an attribute has a Faker function defined both at the attribute level and the entity level, the Faker function at the entity level takes precedence. The Faker function at the attribute level will be ignored in this case, ensuring that coherent data is generated as specified by the entity-level Faker function.
+
+&nbsp;
+
+Referring to the example above, attributes such as *email*, *alias*, and *initials* are defined coherently at the entity level, while independent attributes like id and age can be defined separately at the attribute level. However, this is not mandatory; all attributes can be faked at the entity level if desired.
+
+### Syntax
+
+There are 3 ways to setup a custom function at the entity level:
+
+&nbsp;
+
+\- Via a self-calling function as in the example above:
+
+**(()=\> { const firstName = faker.person.firstName(); const lastName = faker.person.lastName(); return { firstName, lastName, } })()**
+
+&nbsp;
+
+\- Via a function declaration:
+
+**function getPersonData() { const firstName = faker.person.firstName(); const lastName = faker.person.lastName(); return { firstName, lastName, } } getPersonData();**
+
+&nbsp;
+
+\- Via a faker helper to return JSON string:
+
+**faker.helpers.fake(\`{"firstName": "${faker.person.firstName()}", "lastName": "${faker.person.lastName()}"}\`);**
+
+&nbsp;
+
 ### Create test JSON documents on file system
 
 For any entity in a Hackolade data model, you can easily generate sample data with the menu Tools \> Forward-Engineer \> JSON Document.&nbsp; You can select the entity or entities of your choice.&nbsp; Then you specify the number of documents, and whether or not to minify the output:

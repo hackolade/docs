@@ -84,6 +84,10 @@ Hackolade dynamically generates the DDL script to create schemas, tables, column
 
 &nbsp;
 
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
 ![SQL Server DDL Forward-Engineering](<lib/SQL%20Server%20DDL%20Forward-Engineering.png>)
 
 &nbsp;

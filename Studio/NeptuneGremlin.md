@@ -101,6 +101,10 @@ Neptune-Gremlin does not provide an abstraction for schemas. Gremlin is a functi
 
 &nbsp;
 
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
 &nbsp;
 
 ![Neptune-Gremlin script forward-engineering](<lib/Neptune-Gremlin%20script%20forward-engineering.png>)

@@ -4,14 +4,14 @@ The reverse-engineering function is used to import information into pre-existing
 
 &nbsp;
 
-Hackolade supports the reverse engineer of different types of data sources found in the menu on the left.
+Hackolade supports the reverse engineer of different types of data sources:
 
-* a JSON or YAML document: conversion of a basic JSON or YAML document into a Hackolade collection schema
-* a JSON Schema or YAML Schema: conversion of a JSON Schema file into a Hackolade collection schema
+* a JSON or YAML document: schema inference of JSON or YAML documents into a Hackolade Studio data model for any target
+* a JSON Schema or YAML Schema: conversion of JSON Schema files into a Hackolade Studio data model for any target
 * a Data Definition Language file (DDL): from Oracle, Microsoft SQL Server, MySQL, PostgreSQL, Hadoop Hive, Snowflake, Teradata
 * an XSD schema file from another ER tool, such as erwin, ER/Studio, PowerDesigner, or other
 * an Excel file template: first export a Hackolade model (even an empty one) to generate an Excel file for the target of your choice.&nbsp; Then you may bulk edit your model or create a new one before ingesting it back into the application.
-* target-specific
+* target-specific instances
 
 &nbsp;
 

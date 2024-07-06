@@ -34,7 +34,7 @@ Cloning a remote repository should normally happen only once, whereas the other 
 
 &nbsp;
 
-**Note:** we skipped on purpose the concept of *creating* a repository.&nbsp; In most cases, you will work with existing repositories, created by the administrator in your organization.&nbsp; If you need to create a new repo, you should create it first on your provider's platform ([GitHub](<https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository> "target=\"\_blank\""), [GitLab](<https://docs.gitlab.com/ee/user/project/working\_with\_projects.html#create-a-project> "target=\"\_blank\""), [Bitbucket](<https://support.atlassian.com/bitbucket-cloud/docs/create-a-git-repository/> "target=\"\_blank\""),[ Azure Repos](<https://azure.microsoft.com/en-us/services/devops/repos/> "target=\"\_blank\""), [AWS CodeCommit](<https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-create-repository.html> "target=\"\_blank\""), [Google Cloud Source Repositories](<https://cloud.google.com/source-repositories/docs/create-code-repository> "target=\"\_blank\"")), then clone it in Hackolade Studio as described [here](<Clonearemoterepository.md>).
+**Note:** we skipped on purpose the concept of *creating* a repository.&nbsp; In most cases, you will work with existing repositories, created by the administrator in your organization.&nbsp; If you need to create a new repo, you should create it first on your provider's platform ([GitHub](<https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository> "target=\"\_blank\""), [GitLab](<https://docs.gitlab.com/ee/user/project/working\_with\_projects.html#create-a-project> "target=\"\_blank\""), [Bitbucket](<https://support.atlassian.com/bitbucket-cloud/docs/create-a-git-repository/> "target=\"\_blank\""),[ Azure Repos](<https://azure.microsoft.com/en-us/services/devops/repos/> "target=\"\_blank\"")), then clone it in Hackolade Studio as described [here](<Clonearemoterepository.md>).
 
 &nbsp;
 
@@ -56,7 +56,7 @@ Note that a commit can contain multiple changes, possibly in multiple files. It 
 
 &nbsp;
 
-It is important to note that a commit, once it has been pushed to the remote repo, is a fairly immutable piece of Git history.&nbsp; For integrity reasons, Hackolade does not let users erase or cancel a commit from the Git history.&nbsp; It can only be discarded undone via a revert operation.&nbsp; If more specific actions are required, only experts should [rewrite history](<https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History> "target=\"\_blank\""), and perform these actions outside of Hackolade.
+It is important to note that a commit, once it has been pushed to the remote repo, is a fairly immutable piece of Git history.&nbsp; For integrity reasons, Hackolade Studio does not let users erase or cancel a commit from the Git history.&nbsp; It can only be discarded undone via a revert operation.&nbsp; If more specific actions are required, only experts should [rewrite history](<https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History> "target=\"\_blank\""), and perform these actions outside of Hackolade Studio.
 
 &nbsp;
 

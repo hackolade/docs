@@ -74,6 +74,10 @@ Hackolade dynamically generates the HQL script to create tables, columns and the
 
 &nbsp;
 
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
 ![Hive forward-engineering](<lib/Hive%20forward-engineering.png>)
 
 &nbsp;

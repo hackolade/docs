@@ -28,6 +28,10 @@ Schemas for Avro or JSON defined in Hackolade can be added to subjects in the Sc
 
 &nbsp;
 
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
 ![Pulsar Schema Registry forward-engineering](<lib/Pulsar%20Schema%20Registry%20forward-engineering.png>)
 
 &nbsp;

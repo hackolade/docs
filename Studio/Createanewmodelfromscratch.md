@@ -119,7 +119,7 @@ For example:
 
 ![ER Diagram - contextual menu - add relationsh](<lib/ER%20Diagram%20-%20contextual%20menu%20-%20add%20relationsh.png>)
 
-For more details, you may consult the [Relationship links in ER diagram](<RelationshiplinksinERdiagram.md>) page.
+For more details, you may consult the [Relationship links in ER diagram](<RelationshiplinesinERdiagram.md>) page.
 
 ### &#49;0. Save the model
 

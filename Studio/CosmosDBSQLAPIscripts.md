@@ -4,6 +4,10 @@ As you develop the model for your Cosmos DB SQL API database, with containers an
 
 &nbsp;
 
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
 The information can be viewed in the Cosmos DB script tab:
 
 ![Cosmos DB SQL APi script](<lib/Cosmos%20DB%20SQL%20APi%20script.png>)

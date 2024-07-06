@@ -62,6 +62,10 @@ Hackolade dynamically generates both the AWS CLI command and the HQL script to c
 
 &nbsp;
 
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
 ![AWS Glue Data catalog Forward-Engineering](<lib/Glue%20Forward-Engineering.png>)
 
 &nbsp;

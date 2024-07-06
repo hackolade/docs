@@ -134,7 +134,7 @@ An impact analysis dialog is displayed to let you decide which objects to includ
 
 &nbsp;
 
-When opening a target model with a reference to one or mode polyglot models, you are presented with the option to update the objects.
+When opening a target model with a reference to one or more polyglot models, you are presented with the option to update the objects.
 
 &nbsp;
 

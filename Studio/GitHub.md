@@ -4,18 +4,6 @@ The information below applies to repositories on github.com in the cloud as well
 
 ## Personal access tokens
 
-If you don't have a valid Personal Token, you may get the error message below, indicating that your token has passed its expiration date, or that it does not have the right scopes enabled
-
-&nbsp;
-
-![Workgroup - GitHub token error](<lib/Workgroup%20-%20GitHub%20token%20error.png>)
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
 In the repository connection manager, click on the "generate" link located to the right of the input field for the personal access token.&nbsp; You can find more information on how to generate a personal access token in the [GitHub documentation](<https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token> "target=\"\_blank\"").
 
 &nbsp;
@@ -46,7 +34,21 @@ If you need to re-issue an expired token, then:
 
 &nbsp;
 
+If you don't have a valid Personal Token, you may get the error message below, indicating that your token has passed its expiration date, or that it does not have the right scopes enabled
+
+&nbsp;
+
+![Workgroup - GitHub token error](<lib/Workgroup-GitHub%20personal%20accesstoken%20error.png>)
+
+&nbsp;
+
+If you see this message, please follow the instructions above.
+
 ## OAuth
+
+**Important:** this option is only available on github.com (Enterprise or not) where we can control the declaration of our app as a trusted source.&nbsp; OAuth for Hackolade Studio is NOT available with GitHub Server (self-hosted) as we have no such access to the instance.
+
+&nbsp;
 
 As an alternative to generating a personal access token, GitHub can also let you grant Hackolade Studio access to your account through [OAuth](<https://oauth.net/> "target=\"\_blank\"").&nbsp;
 

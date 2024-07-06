@@ -4,6 +4,10 @@ As you develop the model for your JanusGraph database, with vertex labels, edge 
 
 &nbsp;
 
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
 The information can be viewed in the Gremlin script tab:
 
 ![JanusGraph forward-engineering](<lib/JanusGraph%20forward-engineering.png>)

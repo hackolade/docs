@@ -1,6 +1,6 @@
 # User-defined custom properties
 
-For each object in Hackolade, we've defined a set of standard properties that appear in the properties pane.&nbsp; But it is possible that your organization wants to define and track its own metadata properties for models, containers, entities, and attributes.&nbsp; This could be for data governance reasons, and/or to leverage properties in code generation, etc...&nbsp;
+For each object in Hackolade Studio, we've defined a set of standard properties that appear in the properties pane.&nbsp; But it is possible that your organization wants to define and track its own metadata properties for models, containers, entities, and attributes.&nbsp; This could be for data governance reasons, and/or to leverage properties in code generation, etc...&nbsp;
 
 &nbsp;
 
@@ -40,6 +40,10 @@ To create and maintain custom properties for a given target, you access the fold
 
 &nbsp;
 
+&nbsp;
+
+&nbsp;
+
 and choose the Installed tab:
 
 ![Plugin Manager Installed tab](<lib/Plugin%20Manager%20Installed%20tab.png>)
@@ -65,6 +69,32 @@ i)&nbsp; it is always necessary to restart the application after having saved ch
 ii) for field-level definitions, since data types have different property lists, it may be necessary to define custom properties for multiple data types.
 
 &nbsp;
+
+When you open a *xLevelConfig.json* file, it starts with a section showing examples of how different controls are structured.&nbsp; Then at the end, you find the section where changes are made:
+
+![Custom properties - empty config](<lib/Custom%20properties%20-%20empty%20config.png>)
+
+&nbsp;
+
+It is an array of objects, themselves containing and array of control objects.
+
+&nbsp;
+
+Adding control objects inside the structure array of Details would add custom properties at the bottom the of the Details tab in the Properties Pane.&nbsp; If you want to define a custom tab, it would be by adding an object in the array:
+
+![Custom properties - custom tab](<lib/Custom%20properties%20-%20custom%20tab.png>)
+
+&nbsp;
+
+To add a control object, copy from one of the examples at the top of the file, and paste it in the right place, for example:
+
+![Custom properties - custom tab custom control](<lib/Custom%20properties%20-%20custom%20tab%20custom%20control.png>)
+
+&nbsp;
+
+If you need to add a custom property to a data type, but not to all data types, you must do it under the data type specific to the technology target:
+
+![Custom properties - field level control](<lib/Custom%20properties%20-%20field%20level%20control.png>)
 
 &nbsp;
 
@@ -95,6 +125,8 @@ For each target technology, you must select the folder previously created with t
 &nbsp;
 
 Each time you make changes to the custom properties config files, you must reload the browser page.
+
+&nbsp;
 
 #### You only run Hackolade Studio in the browser
 
@@ -223,4 +255,14 @@ it is recommended that you share customization using Git.&nbsp; Store your chang
 For the changes to take effect on each computer, it is required to exit Hackolade and restart it.
 
 &nbsp;
+
+## Models with custom properties lacking configuration
+
+It is possible that you might be opening a model in which some custom properties were recorded, and and for which you don't have the configuration.&nbsp; In such case, we display a custom tab with a warning badge to alert you of this situation.
+
+![Image](<lib/Custom%20props%20lacking%20configuration.png>)
+
+&nbsp;
+
+You may have to synchronize or pull the latest version of the custom configuration, or adjust your configuration to match the custom properties in the model.
 

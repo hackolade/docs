@@ -4,6 +4,10 @@ Forward-engineering of JSON Schema is available for use by [https://docs.marklog
 
 &nbsp;
 
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
 For each collection, access the JSON Schema Preview:
 
 ![MarkLogic - Forward-eng - JSON Schema Preview](<lib/MarkLogic%20-%20Forward-eng%20-%20JSON%20Schema%20Preview.png>)

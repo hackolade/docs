@@ -4,6 +4,10 @@ Hackolade dynamically generates the HiveQL script to create databases, tables, c
 
 &nbsp;
 
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
 ![Delta Lake forward-engineering](<lib/Delta%20Lake%20forward-engineering.png>)
 
 &nbsp;

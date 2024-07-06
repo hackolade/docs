@@ -56,7 +56,7 @@ Composite PK constraints appear out-of-line in DDL output.
 
 ## Foreign key relationships
 
-As described in [this page](<RelationshiplinksinERdiagram.md>), simple foreign key relationships can be defined in a number of different ways, via drag-and-drop in the ERD, using the Actions menu or the contextual menu, or via the Properties Pane.
+As described in [this page](<RelationshiplinesinERdiagram.md>), simple foreign key relationships can be defined in a number of different ways, via drag-and-drop in the ERD, using the Actions menu or the contextual menu, or via the Properties Pane.
 
 &nbsp;
 

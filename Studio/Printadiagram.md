@@ -12,9 +12,13 @@ To do so, choose the menu option File \> Print Diagram
 
 Users may wish to create pictures for different diagrams created with the application.&nbsp; They can be generated in either PDF, PNG, or SVG format, and for different paper layouts.
 
+&nbsp;
+
 ![File - Print Diagram](<lib/File%20-%20Print%20Diagram.png>)
 
-With the controls just below the picture, the user may zoom in, zoom out, or fit the diagram to the page.
+&nbsp;
+
+With the controls just below the picture, the user may zoom in, zoom out, fit the diagram to the page, or toggle between business names and technical names
 
 &nbsp;
 

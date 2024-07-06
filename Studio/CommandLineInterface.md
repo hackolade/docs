@@ -42,7 +42,7 @@ To take full advantage of the capability, you may run the CLI from scheduled bat
 
 &nbsp;
 
-**Note:** a properly licensed copy of Hackolade is required to run the CLI.&nbsp; The CLI functionality is only available in the Professional and Trial editions of Hackolade.
+**Note:** a properly licensed copy of Hackolade is required to run the CLI.&nbsp; The CLI functionality is only available in the following editions of Hackolade Studio: Professional, Workgroup, and 14-Day Free Trial.
 
 &nbsp;
 
@@ -59,7 +59,7 @@ Below is the current list of Hackolade CLI commands.&nbsp; Additional commands m
 | forwEngXLSX | Export model to Excel file |
 | genDoc | Generate documentation for a Hackolade model, in HTML, Markdown, or PDF format |
 | obfusc | Copy a model, and garble sensitive properties: business name, technical name, description, comments, enumeration.  Use if you need to send a model for troubleshooting but don't want to disclose sensitive aspects of the model. |
-| open | Open Hackolade data model |
+| open | Open Hackolade Studio data model |
 | polyglotDerive | Derive a physical target model from a polyglot data model |
 | polyglotUpdate | Update polyglot definition |
 | revEng | Reverse-engineer a database instance or script file to fetch or infer the schema of the selected collections/tables |
@@ -315,6 +315,7 @@ Usage:&nbsp; &nbsp; *hackolade forwEngXLSX \[--arguments\]*
 | \--path=\<*file*\>\*&nbsp; | Y | Specify the directory path where the forward-engineered files will be created&nbsp; |
 | \--selectedObjects= "\<containerName\>: \[\<*entity1\>*,\<*entity2\>*,…\]" | N | Specify array of entities to include to result from model \[default: all\] For multiple containers, separate them with semi-colon (;) |
 | \--relationships=\<**true** \| false\> | N | Specify whether to export relationships \[default: true\] |
+| \--fullPathTechnicalNames=\<**true** \| false\> | N | Specify whether, for nested complex structures, to include the full path in dot notation for the technical name \[default: true\] |
 | \--resolvedDefinitions=\<true \| **false**\>&nbsp; | N | Specify whether to resolve referenced definitions \[default: false\]&nbsp; |
 | \--updateExtDefs=\<true \| **false**\>&nbsp; | N | When reference to external definition, update current model to ensure latest changes are included. \[default: false\] |
 | \--logLevel=\< 1 \| 2 \| 3 \| **4** \> | N | &#49; = no spinner, no info, no error messages 2 = no spinner, no info 3 = no spinner 4 = full output \[default: 4\] |
@@ -384,6 +385,39 @@ More complex example:&nbsp;
 is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed above.
 
 &nbsp;
+
+## Open
+
+It is possible to open Hackolade Studio data model from the command line. &nbsp;
+
+&nbsp;
+
+Usage:&nbsp; &nbsp; *hackolade open \[--arguments\]*
+
+&nbsp;
+
+| **Argument** | **Required** | **Purpose** |
+| --- | --- | --- |
+| \--model=\<*ffile*\> | Y | Full path and file name for the Hackolade Studio data model to open.  Extension .json is optional |
+| \--updateReferences=\<true \| **false**\> | N | Specify whether to update external and polyglot references if present \[default: false\] |
+| \--logLevel=\< 1 \| 2 \| 3 \| **4** \> | N | &#49; = no spinner, no info, no error messages 2 = no spinner, no info 3 = no spinner 4 = full output \[default: 4\] |
+
+
+\*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“)&nbsp; Path can be ignored if file is in local directory.
+
+&nbsp;
+
+Example:
+
+*C:\\PROGRA~1\\Hackolade\\hackolade open --model="/data models/yelp-mongodb.hck.json"&nbsp; *
+
+&nbsp;
+
+**Note:** If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: *"C:\\Program Files\\Hackolade\\hackolade"* .&nbsp; The workaround, assuming:
+
+![Windows Program Files](<lib/Windows%20Program%20Files.png>)
+
+is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed above.
 
 &nbsp;
 
@@ -477,7 +511,7 @@ Usage:&nbsp; &nbsp; *hackolade polyglotUpdate \[--arguments\]*
 | **Argument** | **Required** | **Purpose** |
 | --- | --- | --- |
 | \--model=\<file\>\* | Y | Full path and file name for target model. Extension .json is optional&nbsp; |
-| \--selectedObjects= "\<containerName\>: \[\<*entity1\>*,\<*entity2\>*,…\]" | N | Specify container(s) to reverse-engineer&nbsp; \[default: all\] and an array of entities \[default: all\] - MongoDB: container = dbs; entity = collection - DynamoDB: container = *not applicable*; entity = table - Couchbase: container = bucket; entity = document kind - Cosmos DB: container = collection; entity = document type - Elasticsearch: container = index: entity = type - HBase: container =&nbsp; namespace; entity = table The value is a string surrounded by double quotes (").&nbsp; Entities are represented as an array surrounded by square brackets (\[\]), and are separated by a comma (,).&nbsp; The entities array is separated from the container name by a colon (:).&nbsp; Containers are separated by semi-colons (;). |
+| \--references= "\<*name1\>*,\<*name2\>*,…" | N | Specify the name of the referenced polyglot models for which the target model must be updated. The value is a string surrounded by double quotes ("). The names are separated by a comma (,). ![CLI - Polyglot reference name](<lib/CLI%20-%20Polyglot%20reference%20name.png>) \[default: all\] |
 | \--logLevel=\< 1 \| 2 \| 3 \| **4** \> | N | &#49; = no spinner, no info, no error messages 2 = no spinner, no info 3 = no spinner 4 = full output \[default: 4\] |
 
 

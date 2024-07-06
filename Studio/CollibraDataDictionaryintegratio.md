@@ -14,17 +14,17 @@ The integration of data modeling with governance tools and processes enables sol
 
 [Collibra](<https://www.collibra.com/> "target=\"\_blank\"") is one of the leaders in the space of data governance and metadata management solutions.&nbsp; Metadata management is a core aspect of an organization’s ability to manage its data and information assets. The term “metadata” describes the various facets of an information asset that can improve its usability throughout its life cycle. Metadata is used as a reference for business-oriented and technical projects, and lays the foundations for describing, inventorying and understanding data for multiple use cases.
 
-Hackolade has partnered with Collibra to provide an officially supported integration with Collibra's Data Dictionary, using its [Core and Import APIs](<https://developer.collibra.com/rest/#apis> "target=\"\_blank\"").&nbsp; With this integration, users can easily publish into Collibra domains, and keep synchronized, their Hackolade data models for any of the many targets supported by Hackolade.&nbsp; Even the schema definitions of REST APIs documented in Swagger or OpenAPI.
+Hackolade has partnered with Collibra to provide an officially supported integration with Collibra's Data Dictionary, using its [Core, Import, and output module APIs](<https://developer.collibra.com/rest/#apis> "target=\"\_blank\"").&nbsp; With this integration, users can easily publish into Collibra domains, and keep synchronized, their Hackolade data models for any of the many targets supported by Hackolade.&nbsp; Even the schema definitions of REST APIs documented in Swagger or OpenAPI.
 
 The process automatically:
 
 * checks the configuration in Collibra
 * creates the necessary custom scopes, attributeTypes and assignments to support the granularity of Hackolade features
-* then creates and keeps in sync assets for schemas, tables, views, columns, and foreign key relationships.
+* then creates and keeps in sync assets for schemas, tables, views, columns, models, entities, attributes, and foreign key relationships.
 
 The integration specifically handles complex data types, hierarchical structures, and polymorphism found in modern databases, JSON, Avro, Parquet, ProtoBuf, etc...&nbsp; Custom properties defined for a plugin are also published as custom attributeTypes in Collibra.
 
-&nbsp;
+Hackolade Studio data models for physical targets are published to Physical Data Dictionaries in the form of schemas/tables/columns assets in Collibra, whereas since v7.3.1 of Hackolade Studio, Polyglot models are published to Logical Data Dictionaries in the form of models/entities/attributes assets in Collibra.
 
 **Important note:** the Collibra integration is an add-on feature which requires a specific license key which can be purchased from us [here](<mailto:support@hackolade.com?subject=Collibra%20integration%20license>).
 
@@ -73,14 +73,20 @@ To successfully import a Hackolade model into Collibra, a user should have the a
       * Update
   * **Attachment:**
     * Add
-  * **Domain:** *(This is necessary for the future enhancement of views and work with Hackolade Mapping Domain)*
+  * **Domain:** *(This is necessary for views and work with Hackolade Mapping Domain)*
     * Add
     * Remove
     * Update
 
 &nbsp;
 
-We also recommend assigning a user with the above permissions to the parent community of the target domain. It will be needed to create/update/delete Hackolade Mapping Domain.
+We also recommend assigning a user with the above permissions to the parent community of the target domain. It is needed to create/update/delete Hackolade Mapping Domain.
+
+&nbsp;
+
+The Hackolade Mapping Domain is used to represent links between view columns and columns in tables, for example:
+
+![Collibra Mapping Domain](<lib/Collibra%20Mapping%20Domain.png>)
 
 &nbsp;
 
@@ -94,7 +100,7 @@ To ensure successful processing of the Hackolade model information, the system u
 
 The system will:
 
-&#49;) confirm that the [out-of-the-box assetTypes](<https://productresources.collibra.com/docs/user/5.7/#Assets/AssetTypes/ref\_ootb-asset-types.htm> "target=\"\_blank\"") exist: schema, table, database view, column, foreign key, mapping specification
+&#49;) confirm that the [out-of-the-box assetTypes](<https://productresources.collibra.com/docs/user/5.7/#Assets/AssetTypes/ref\_ootb-asset-types.htm> "target=\"\_blank\"") exist: model, entity, attribute, schema, table, database view, column, foreign key, mapping specification
 
 &#50;) confirm that the [out-of-the-box relationTypes](<https://productresources.collibra.com/docs/user/5.7/#Assets/Characteristics/Attributes/AttributeTypes/ref\_attribute-types.htm> "target=\"\_blank\"") exist: schema contains table, and table contains column
 
@@ -104,7 +110,7 @@ The system will:
 
 \- custom attributeTypes to handle Hackolade-specific information
 
-\- custom assignments of attributeTypes to out-of-the-box assetTypes: schema, tables, database views, columns
+\- custom assignments of attributeTypes to out-of-the-box assetTypes: model, entity, attribute, schema, tables, database views, columns
 
 \- custom characteristics for schema, table, columns, and database views
 
@@ -118,7 +124,7 @@ If the expected configuration cannot be found in Collibra, the user is prompted 
 
 ### Fetch existing Communities and Domains
 
-If the configuration is correct, the application uses the Core API to retrieve the existing Communities and Domains and display them so the user can select where the Hackolade Data Model should be loaded.&nbsp; If the domain does not exist, it should be created first.&nbsp; It is recommended to create a new domain with type "Physical Data Dictionary".
+If the configuration is correct, the application uses the Core API to retrieve the existing Communities and Domains and display them so the user can select where the Hackolade Data Model should be loaded.&nbsp; If the domain does not exist, it should be created first.&nbsp; It is recommended to create a new domain with type "Physical Data Dictionary" for physical models of Hackolade Studio, and "Logical Data Dictionary" for polyglot models.
 
 ![Collibra create domain](<lib/Collibra%20create%20domain.png>)
 
@@ -193,3 +199,4 @@ With v5.2.1, we introduced the possibility to reverse-engineer a Collibra physic
 \- either into an empty model you wish to create,
 
 \- or into an existing model, possibly the one used to originally publish to Collibra.&nbsp; This is particularly handy if maintenance occurs in Collibra for models created in Hackolade Studio.&nbsp; Refer to the important note above in the section "Publish data model to Collibra".
+

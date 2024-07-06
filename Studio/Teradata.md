@@ -104,6 +104,10 @@ Hackolade dynamically generates the DDL script to create tables, columns and the
 
 &nbsp;
 
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
 ![Teradata forward-engineering](<lib/Teradata%20forward-engineering.png>)
 
 &nbsp;

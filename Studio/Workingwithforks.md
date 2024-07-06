@@ -14,6 +14,10 @@ With a *shared repository* strategy, contributors are granted push access rights
 
 ### Fork \& Pull strategy
 
+The purpose of a fork and pull strategy in Git repositories is to allow contributors to independently work on their own copies (forks) of a project, and then propose changes (pull requests) to the original repository for review and integration.
+
+&nbsp;
+
 With the *fork \& pull* strategy, contributors create their own (remote) copy of the original repository and push changes to that copy, which is referred to as a *fork*.&nbsp; Once a contribution is ready, it can be submitted through a pull request: the contributor basically requests the maintainer(s) of the original repository to pull into that repository the work that has been prepared in a fork.&nbsp; Note that nothing prevents multiple contributors from working together in the same fork prior to submitting their changes to the original repository.
 
 &nbsp;

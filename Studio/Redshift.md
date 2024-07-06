@@ -116,6 +116,10 @@ Hackolade dynamically generates the DDL script to create schemas, tables, column
 
 &nbsp;
 
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
 ![Redshift DDL forward-engineering](<lib/Redshift%20DDL%20forward-engineering.png>)
 
 &nbsp;

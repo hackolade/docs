@@ -85,6 +85,10 @@ DocumentDB does not provide an abstraction for schemas. In order to provide adde
 
 &nbsp;
 
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
 ![Image](<lib/DocumentDB%20forward-engineering.png>)
 
 &nbsp;

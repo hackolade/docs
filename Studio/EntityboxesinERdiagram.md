@@ -1,14 +1,32 @@
 # Entity boxes in ER diagram
 
+In Hackolade Studio, we use the generic name of "entity" to designate objects for which data is collected or transmitted.&nbsp; In physical data models, this entity bears a different name depending on the target technology: table in relational and analytics databases, collection in document database (MongoDB, Couchbase, DocumentDB, etc...), node in graph database, record in Avro, message in Parquet and Protobuf, request and response in REST APIs and GraphQL, class in RDF triple stores, etc...
+
 ## Create an entity
 
-There are several ways to create a new entity (table, collection, etc...) in the ER diagram of a model:
+In Hackolade Studio, there are many ways to add an entity to the central pane canvas:
+
+\- menu : Action \> Add Entity (added at default location)
+
+\- keyboard shortcut (Ctrl/Cmd+L): added at location of mouse cursor
+
+\- toolbar: Add Entity icon: added at location of mouse cursor
+
+\- Diagram Object pane: Add entity via click (added to default location), or via drag-and-drop to the location of your choice
+
+\- Object Browser pane: right-click on container name and use contextual menu (added at default location)
+
+\- Central pane: right-click on model name and use contextual menu (added at default location)
+
+&nbsp;
+
+&nbsp;
 
 \- via the Actions menu:
 
 ![Menu - Actions - Add Collection](<lib/Menu%20-%20Actions%20-%20Add%20Collection.png>)
 
-\- by pressing the shortcut Ctrl+L
+\- by pressing the shortcut Ctrl/Cmd+L
 
 \- with a click of the toolbar icon ![Icons - addCollection](<lib/Icons%20-%20addCollection.jpeg>)&nbsp;
 
@@ -156,43 +174,9 @@ to toggle the display of:
 
 &nbsp;
 
-## ER Diagram Views
+## Diagram Views
 
-With v4.3.2, Hackolade has introduced the possibility to add separate ER Diagram Views (ERDV): a subset of entities selected from the main ER diagram, to help manage large models by focusing on a smaller set of entities, by domain or subject.&nbsp; Entities may appear in multiple Diagram Views.&nbsp; Modifications made inside Diagram Views are immediately reflected in the main diagram and other views where present.&nbsp; And vice-versa.
-
-&nbsp;
-
-A new Diagram View can be added in different ways:
-
-&#49;) from the Actions menu option:
-
-![Menu Actions](<lib/Menu%20Actions.png>)
+Description of this feature, to create subsets of the main diagram in separate views, has now been moved [here](<DiagramViews.md>).
 
 &nbsp;
-
-&#50;) from the toolbar:
-
-![Toolbar Create Diagram View](<lib/Toolbar%20Create%20Diagram%20View.png>): toolbar button
-
-&nbsp;
-
-&#51;) from the Object Browser or the main Entity Relationship Diagram:
-
-by selecting one or more entities, then doing a right-click on an entity to display the contextual menu:
-
-![Contextual menu add ERDV](<lib/Contextual%20menu%20add%20ERDV.png>)
-
-&nbsp;
-
-Editing an ER Diagram View name or membership is done from the contextual menu of the Object Browser:
-
-![Contextual menu edit ERDV](<lib/Contextual%20menu%20edit%20ERDV.png>)
-
-&nbsp;
-
-&nbsp;
-
-In this dialog, you may edit the name of the Diagram View and modify the selection of the entities selected:
-
-![ERDV editor](<lib/ERDV%20editor.png>)
 

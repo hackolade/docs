@@ -4,6 +4,10 @@ As you develop the model for your Cosmos DB Gremlin graph database, with vertex 
 
 &nbsp;
 
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
 The information can be viewed in the Gremlin script tab:
 
 ![CosmosDB Gremlin script forward-engineering](<lib/CosmosDB%20Gremlin%20script%20forward-engineering.png>)

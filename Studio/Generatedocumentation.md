@@ -4,7 +4,7 @@ Model documentation is an important output of data modeling.&nbsp; Models are en
 
 &nbsp;
 
-Hackolade easily produces a customizable report, and allows also to output just the diagrams.
+Hackolade Studio easily produces a customizable report, and allows also to output just the diagrams.
 
 &nbsp;
 
@@ -21,6 +21,10 @@ Currently the following formats are available:
 \- Markdown for the Pro editions (free 14-trial and paid)
 
 \- HTML for the Pro editions (free 14-trial and paid)
+
+&nbsp;
+
+The Markdown format is particularly useful for publishing in Git repositories, but also for customization of layout.
 
 &nbsp;
 
@@ -78,7 +82,13 @@ b. properties
 
 Before generation of the documentation, you're given the opportunity to filter objects and select only the desired ones:
 
+&nbsp;
+
 ![Documentation - Object selection](<lib/Documentation%20-%20Object%20selection.png>)
+
+&nbsp;
+
+You may generate the diagrams with business names or technical names by choosing the corresponding option in the dropdown box.
 
 &nbsp;
 

@@ -88,6 +88,10 @@ Hackolade dynamically generates the DDL script to create datasets, tables, colum
 
 &nbsp;
 
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
 ![BigQuery DDL forward-engineering](<lib/BigQuery%20DDL%20forward-engineering.png>)
 
 &nbsp;

@@ -96,6 +96,10 @@ Cosmos DB does not provide an abstraction for schemas. Gremlin is a functional, 
 
 &nbsp;
 
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
 ![CosmosDB Gremlin script forward-engineering](<lib/CosmosDB%20Gremlin%20script%20forward-engineering.png>)
 
 &nbsp;

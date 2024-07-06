@@ -26,8 +26,6 @@ The slide below outlines the mapping of our solution and resulting business outc
 
 ![Vision - From Challenges to Outcomes](<lib/Vision%20-%20From%20Challenges%20to%20Outcomes.png>)
 
-&nbsp;
-
 ## Next-gen data modeling
 
 > Across all industries, everyone agrees when talking about quality: the sooner a defect is detected, the cheaper it is to correct it.&nbsp; Data is no exception. &nbsp;
@@ -72,7 +70,7 @@ Data modeling is traditionally made of 3 levels: conceptual, logical, and physic
 
 &nbsp;
 
-Although this is sometimes subject to interpretation, logical data models are supposed to be strictly normalized and to use only scalar data types.&nbsp; These constraints directly contradict the main characteristic according to which logical models must be technology-agnostic.&nbsp; The problem is that they can only be technology-agnostic if, and only if, the target technology is a relational database, therby excluding any modern technology that is more flexible and powerful.&nbsp; Converting a technology-agnostic logical model into the different dialects of SQL for RDBMS is relatively easy, and all the legacy data modeling tools can do it.&nbsp; But it is much harder to abstract the capabilities and understand the syntax of each modern technology, and be able to define a technology-agnostic data model that also allows denormalization and complex data types. &nbsp;
+Although this is sometimes subject to interpretation, logical data models are supposed to be strictly normalized and to use only scalar data types.&nbsp; These constraints directly contradict the main characteristic according to which logical models must be technology-agnostic.&nbsp; The problem is that they can only be technology-agnostic if, and only if, the target technology is a relational database, thereby excluding any modern technology that is more flexible and powerful.&nbsp; Converting a technology-agnostic logical model into the different dialects of SQL for RDBMS is relatively easy, and all the legacy data modeling tools can do it.&nbsp; But it is much harder to abstract the capabilities and understand the syntax of each modern technology, and be able to define a technology-agnostic data model that also allows denormalization and complex data types. &nbsp;
 
 &nbsp;
 
@@ -170,9 +168,7 @@ The major principles are:
 
 &nbsp;
 
-![Vision - Domain-Driven Data Modeling](<lib/Vision%20-%20Domain-Driven%20Data%20Modeling.png>)
-
-&nbsp;
+![Image](<lib/Vision%20-%20Domain-Driven%20Data%20Modeling.png>)
 
 &nbsp;
 

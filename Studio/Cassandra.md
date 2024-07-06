@@ -90,6 +90,12 @@ Hackolade supports Cassandra materialized views, via a SELECT of columns of the 
 
 Hackolade dynamically generates the CQL script to create keyspaces, tables, columns and their types, and indexes for the structure created with the application.
 
+&nbsp;
+
+The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+
+&nbsp;
+
 ![Cassandra forward-engineering](<lib/Cassandra%20forward-engineering.png>)
 
 &nbsp;
