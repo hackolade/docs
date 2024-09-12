@@ -21,6 +21,7 @@
 More information is available [here](<https://www.postgresql.org/docs/current/ddl-priv.html> "target=\"\_blank\"").
 
 The PostgreSQL instance can be hosted on-premises, or on virtualized machines in a private or public cloud. &nbsp;
+For example AWS RDS PostgreSQL or AWS RDS Aurora PostgreSQL.  More specific details on how to create a connection to such databases can be found ![here](<ConnecttoanAWSRDSInstance.md>)
 
 &nbsp;
 
