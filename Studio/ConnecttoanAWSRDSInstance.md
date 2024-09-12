@@ -4,7 +4,7 @@ Amazon RDS offers two options to run PostgreSQL database engines in the Cloud, t
 
 Before being able to connect to an AWS RDS instance, you'll need to gather a bunch of information and files.
 
-- Access to an EC2 instance server, you'll need an ssh key pair and identify the ssh user to use with that key to connect on the server and open an ssh tunnel to the RDS instance. In general to identify which user to use you need to know the type of platform that is running your EC2 instance (Amazon Linux, Ubuntu, ...).  You can find this information in the ![Instance Details tab](<lib/RDS%20SSH%20EC2%20Instance%20Details%20Tab.png>).  In general when your instance runs Ubuntu the user will be '''ubuntu''' but otherwise it's most of the time '''ec2-user'''.
+- Access to an EC2 instance server, you'll need an ssh key pair and identify the ssh user to use with that key to connect on the server and open an ssh tunnel to the RDS instance. In general to identify which user to use you need to know the type of platform that is running your EC2 instance (Amazon Linux, Ubuntu, ...).  You can find this information in the ![Instance Details tab](<lib/RDS%20SSH%20EC2%20Instance%20Details%20Tab.png>).  In general when your instance runs Ubuntu the user will be '''ubuntu''' but otherwise it's most of the time '''ec2-user'''.  Check [AWS doc](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/managing-users.html#ami-default-user-names) for more details.
 - The database endpoint to use as the host (and port, usually 5432 like any PostgreSQL).
 - The SSL certificate authority bundle used by AWS to encrypt/decrypt all communications.
 
