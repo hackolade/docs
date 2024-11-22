@@ -53,8 +53,8 @@ Download the [latest release](<https://s3-eu-west-1.amazonaws.com/hackolade/curr
 
 Then unzip:
 ```bash
-    unzip hackolade.zip
-    rm hackolade.zip
+    unzip Hackolade-linux-x64.zip
+    rm Hackolade-linux-x64.zip
     cd Hackolade-linux-x64
 ```
 &nbsp;
