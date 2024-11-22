@@ -90,6 +90,10 @@ Press “review and launch”, then in the dialog, create and download key pair:
 
 &nbsp;
 
+### Ensure you have the proper IAM acces rights to Neptune infrastructure
+
+To be able to access your Neptune cluster from Hackolade you need to have the right to run the action `rds:DescribeDBClusters`.
+
 ## In Hackolade
 
 Fill in the connection settings, from either the forward- or reverse-engineering functions:
