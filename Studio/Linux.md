@@ -91,6 +91,10 @@ The application can be run from the terminal or from a script by terminal from t
 
 ## FAQ
 
+### Unable to run on AWS Amazon Linux 2
+
+Hackolade is an Electron application that has components that are incompatible with Amazon Linux 2.  We advise you to use EC2 instances running `Amazon Linux 3 AMI` instead.
+
 ### Unable to run from File Manager
 
 Unfortunately, the issue with running executable file from the file manager still is not resolved:\
