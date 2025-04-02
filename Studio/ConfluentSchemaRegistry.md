@@ -176,7 +176,7 @@ server {
 
 ## On premises custom instance
 
-Please refer to [Confluent Schema Registry](https://docs.confluent.io/platform/current/schema-registry/installation/config.html#access-control-allow-origin) configuration reference to properly configure your custom instance with adding the property '''access.control.allow.origin''' to your '''schema-registry.properties''' file.
+Please refer to [Confluent Schema Registry](https://docs.confluent.io/platform/current/schema-registry/installation/config.html#access-control-allow-origin) configuration reference to properly configure your custom instance.  You need to add (at least) the property '''access.control.allow.origin''' to your '''schema-registry.properties''' file. '''access.control.allow.methods''' set to '*' is also often useful.
 
 
 ```schema-registry.properties
