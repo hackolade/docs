@@ -154,7 +154,7 @@ To make it work with https://studio.hackolade.com you will need to setup a CORS 
 
 We give you an example of how to deploy such a reverse proxy and use this endpoint as the host URL to execute RE/FE from https://studio.hackolade.com.
 
-For example with NGinx reverse proxy served on https://cors-proxy-for-confluent-cloud.mydomain.com
+For example with NGinx reverse proxy served on https://cors-proxy-for-confluent-cloud.mydomain.com, after you picked up the public url for your Confluent Schema registry (something like https://<schema registry instance>.confluent.cloud):
 
 ```
 server {
