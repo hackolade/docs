@@ -141,3 +141,47 @@ For more information, make sure to consult the Confluent Schema Registry [overvi
 
 &nbsp;
 
+# Configuring CORS for accessing Confluent Schema Registries from the browser
+
+When interacting (FE/RE) with Confluent Schema Registries from [https://studio.hackolade.com](https://studio.hackolade.com), a specific CORS configuration needs to be setup on the instance(s).
+
+The CORS configuration ('''Allow-Access-Origin''' header) must allow for the '''studio.hackolade.com''' origin to interact with the instance otherwise the browser will block any interaction happening with the Schema Registry.
+
+## Confluent SAAS platform
+
+Confluent SAAS platform doesn't currently allows configuring the [CORS](https://itnext.io/understanding-cors-4157bf640e11), for Cross Origin Resource Sharing, '''Access-Control-Allow-Origin''' header when accessing the schema registry on their domain.
+To make it work with https://studio.hackolade.com you will need to setup a CORS Reverse Proxy that serves the Confluent provided schema registry while overriding response headers when the response is sent back to studio.hackolade.com.
+
+We give you an example of how to deploy such a reverse proxy and use this endpoint as the host URL to execute RE/FE from https://studio.hackolade.com.
+
+For example with NGinx reverse proxy served on https://cors-proxy-for-confluent-cloud.mydomain.com
+
+```
+server {
+        listen       443;
+        server_name  confluent-proxy;
+        location  / {
+            add_header Access-Control-Allow-Origin 'https://studio.hackolade.com' always;
+            add_header Access-Control-Allow-Headers '*';
+            add_header Access-Control-Allow-Methods '*';
+            add_header Access-Control-Allow-Credentials 'true';
+            if ($request_method = 'OPTIONS') {
+                return 204;
+            }
+            proxy_pass  https://<schema registry instance>.confluent.cloud;
+        }
+    }
+```
+
+
+## On premises custom instance
+
+Please refer to [Confluent Schema Registry](https://docs.confluent.io/platform/current/schema-registry/installation/config.html#access-control-allow-origin) configuration reference to properly configure your custom instance with adding the property '''access.control.allow.origin''' to your '''schema-registry.properties''' file.
+
+
+```schema-registry.properties
+...
+access.control.allow.origin=https://studio.hackolade.com
+access.control.allow.methods=*
+...
+```
