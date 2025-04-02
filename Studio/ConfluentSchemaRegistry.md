@@ -143,13 +143,13 @@ For more information, make sure to consult the Confluent Schema Registry [overvi
 
 # Configuring CORS for accessing Confluent Schema Registries from the browser
 
-When interacting (FE/RE) with Confluent Schema Registries from [https://studio.hackolade.com](https://studio.hackolade.com), a specific CORS configuration needs to be setup on the instance(s).
+When interacting (FE/RE) with Confluent Schema Registries from [https://studio.hackolade.com](https://studio.hackolade.com), a specific [CORS](https://itnext.io/understanding-cors-4157bf640e11), for Cross Origin Resource Sharing, configuration needs to be setup on the instance(s).
 
 The CORS configuration ('''Allow-Access-Origin''' header) must allow for the '''studio.hackolade.com''' origin to interact with the instance otherwise the browser will block any interaction happening with the Schema Registry.
 
 ## Confluent SAAS platform
 
-Confluent SAAS platform doesn't currently allows configuring the [CORS](https://itnext.io/understanding-cors-4157bf640e11), for Cross Origin Resource Sharing, '''Access-Control-Allow-Origin''' header when accessing the schema registry on their domain.
+Confluent SAAS platform doesn't currently allows configuring the CORS '''Access-Control-Allow-Origin''' header when accessing the schema registry on their domain.
 To make it work with https://studio.hackolade.com you will need to setup a CORS Reverse Proxy that serves the Confluent provided schema registry while overriding response headers when the response is sent back to studio.hackolade.com.
 
 We give you an example of how to deploy such a reverse proxy and use this endpoint as the host URL to execute RE/FE from https://studio.hackolade.com.
