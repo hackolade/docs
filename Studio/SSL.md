@@ -4,7 +4,7 @@ MongoDB supports SSL certificate authentication for client authentication and in
 
 &nbsp;
 
-![MongoDB connection SSL](<lib/MongoDB%20connection%20SSL.png>)
+![MongoDB connection SSL](<lib/MongoDB connection SSL.png>)
 
 &nbsp;
 

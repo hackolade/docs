@@ -22,13 +22,13 @@ The data model in the picture below results from the reverse-engineering of the 
 
 &#49;) a graph view, with familiar circular node labels
 
-![Graph Neo4j workspace](<lib/Graph%20Neo4j%20workspace.png>)
+![Graph Neo4j workspace](<lib/Graph Neo4j workspace.png>)
 
 &nbsp;
 
 &#50;) an Entity-Relationship Diagram (ERD) view, with the advantage of displaying properties for both node labels and relationship types:
 
-![Neo4j workspace](<lib/Neo4j%20workspace.png>)
+![Neo4j workspace](<lib/Neo4j workspace.png>)
 
 &nbsp;
 
@@ -42,7 +42,7 @@ Node labels are a semantic representation of nodes in the graph.&nbsp; Node labe
 
 &nbsp;
 
-![Neo4j node label](<lib/Neo4j%20node%20label.png>)
+![Neo4j node label](<lib/Neo4j node label.png>)
 
 &nbsp;
 
@@ -50,7 +50,7 @@ Node labels are a semantic representation of nodes in the graph.&nbsp; Node labe
 
 A node label usually has attributes, called "property keys" where the name (or key) is a string.
 
-![Neo4j node label property keys](<lib/Neo4j%20node%20label%20property%20keys.png>)
+![Neo4j node label property keys](<lib/Neo4j node label property keys.png>)
 
 &nbsp;
 
@@ -59,13 +59,18 @@ A node label usually has attributes, called "property keys" where the name (or k
 The supported property types are:
 
 * *Number*, an abstract type, which has the following subtypes:
+
   * Integer
   * Float
+
 * String
 * Boolean
 * *Spatial types*:
+
   * Point (with subtypes: WGS84, WGS84 3D, Cartesian and Cartersian 3D)
+
 * *Temporal types*:
+
   * Date
   * Time
   * LocalTime
@@ -79,7 +84,7 @@ The supported property types are:
 
 A node key constraint ensures that all nodes with a particular label have a set of defined properties whose combined value is unique, and where all properties in the set are present.
 
-![Neo4j node key contraint](<lib/Neo4j%20node%20key%20contraint.png>)
+![Neo4j node key contraint](<lib/Neo4j node key contraint.png>)
 
 ## Relationship types
 
@@ -91,13 +96,13 @@ In Neo4j, relationship types are unidirectional, going from one node label to an
 
 &nbsp;
 
-![Neo4j relationship type](<lib/Neo4j%20relationship%20type.png>)
+![Neo4j relationship type](<lib/Neo4j relationship type.png>)
 
 &nbsp;
 
 As Neo4j is a type of graph database known as 'property graph', relationship types may have attributes, or property keys, just like node labels:
 
-![Neo4j relationship type property keys](<lib/Neo4j%20relationship%20type%20property%20keys.png>)
+![Neo4j relationship type property keys](<lib/Neo4j relationship type property keys.png>)
 
 &nbsp;
 
@@ -105,7 +110,7 @@ As Neo4j is a type of graph database known as 'property graph', relationship typ
 
 In Neo4j, it is possible to create an [index](<https://neo4j.com/docs/developer-manual/current/cypher/schema/index/> "target=\"\_blank\"") on a single property for any given label.&nbsp; A so-called composite index can also be created on more than one property for a given label.
 
-![Neo4j node index](<lib/Neo4j%20node%20index.png>)
+![Neo4j node index](<lib/Neo4j node index.png>)
 
 &nbsp;
 
@@ -123,7 +128,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![Neo4j forward-engineered Cypher](<lib/Neo4j%20forward-engineered%20Cypher.png>)
+![Neo4j forward-engineered Cypher](<lib/Neo4j forward-engineered Cypher.png>)
 
 &nbsp;
 

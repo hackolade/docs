@@ -16,7 +16,7 @@ The data model in the picture below results from the reverse-engineering of a sa
 
 &nbsp;
 
-![Elasticsearch workspace](<lib/Elasticsearch%20workspace.png>)
+![Elasticsearch workspace](<lib/Elasticsearch workspace.png>)
 
 ## Indices
 
@@ -34,7 +34,7 @@ When mixing different types of documents into the same index (in ES versions pri
 
 &nbsp;
 
-![Elasticsearch meta-fields](<lib/Elasticsearch%20meta-fields.png>)
+![Elasticsearch meta-fields](<lib/Elasticsearch meta-fields.png>)
 
 &nbsp;
 
@@ -56,11 +56,11 @@ Elasticsearch supports a number of different datatypes for the fields in a docum
 
 &nbsp;
 
-![Elasticsearch data types](<lib/Elasticsearch%20data%20types.png>) ![Elasticsearch geo-point sub-types](<lib/Elasticsearch%20geo-point%20sub-types.png>)![Elasticsearch geo-shape subtypes](<lib/Elasticsearch%20geo-shape%20subtypes.png>)
+![Elasticsearch data types](<lib/Elasticsearch data types.png>) ![Elasticsearch geo-point sub-types](<lib/Elasticsearch geo-point sub-types.png>)![Elasticsearch geo-shape subtypes](<lib/Elasticsearch geo-shape subtypes.png>)
 
 &nbsp;
 
-![Elasticsearch linestring structure](<lib/Elasticsearch%20linestring%20structure.png>)
+![Elasticsearch linestring structure](<lib/Elasticsearch linestring structure.png>)
 
 &nbsp;
 
@@ -76,7 +76,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![Elasticsearch forward-engineering mappings](<lib/Elasticsearch%20forward-engineering%20mappings.png>)
+![Elasticsearch forward-engineering mappings](<lib/Elasticsearch forward-engineering mappings.png>)
 
 ## Reverse-Engineering
 

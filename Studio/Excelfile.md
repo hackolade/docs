@@ -36,7 +36,7 @@ To start your export for a model, simply go to Tools \> Forward-Engineer \> Exce
 
 &nbsp;
 
-![Tools Options - FE Excel Export Objet Select](<lib/Tools%20Options%20-%20FE%20Excel%20Export%20Objet%20Select.png>)
+![Tools Options - FE Excel Export Objet Select](<lib/Tools Options - FE Excel Export Objet Select.png>)
 
 &nbsp;
 
@@ -44,7 +44,7 @@ To start your export for a model, simply go to Tools \> Forward-Engineer \> Exce
 
 With the Options button, you may also access a dialog to delect object properties that you do not wish to export:
 
-![Tools Options - FE Excel Properties Selection](<lib/Tools%20Options%20-%20FE%20Excel%20Properties%20Selection.png>)
+![Tools Options - FE Excel Properties Selection](<lib/Tools Options - FE Excel Properties Selection.png>)
 
 &nbsp;
 
@@ -62,7 +62,7 @@ This configuration can also be maintained in Tools \> Options \> Forward-Enginee
 
 &nbsp;
 
-![Tools Options - FE Excel Export](<lib/Tools%20Options%20-%20FE%20Excel%20Export.png>)
+![Tools Options - FE Excel Export](<lib/Tools Options - FE Excel Export.png>)
 
 &nbsp;
 
@@ -74,7 +74,7 @@ Microsoft Excel (as well as LibreOffice) encounters memory limitations in the ha
 
 &nbsp;
 
-![Excel - Validation list limit](<lib/Excel%20-%20Validation%20list%20limit.png>)
+![Excel - Validation list limit](<lib/Excel - Validation list limit.png>)
 
 &nbsp;
 

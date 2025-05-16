@@ -8,7 +8,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-:![Swagger - Forward-Engineering](<lib/Swagger%20-%20Forward-Engineering.png>)
+:![Swagger - Forward-Engineering](<lib/Swagger - Forward-Engineering.png>)
 
 &nbsp;
 

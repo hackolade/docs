@@ -8,7 +8,7 @@ In the Hackolade connection settings dialog, give a meaningful name to the conne
 
 &nbsp;
 
-![JanusGraph connection settings](<lib/JanusGraph%20connection%20settings.png>)
+![JanusGraph connection settings](<lib/JanusGraph connection settings.png>)
 
 &nbsp;
 
@@ -16,7 +16,7 @@ If required, enter your username and password
 
 &nbsp;
 
-![JanusGraph connection settings auth](<lib/JanusGraph%20connection%20settings%20auth.png>)
+![JanusGraph connection settings auth](<lib/JanusGraph connection settings auth.png>)
 
 &nbsp;
 

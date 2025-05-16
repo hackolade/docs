@@ -14,13 +14,13 @@ It is suggested to use the parameters below when exporting models to XSD,&nbsp;
 
 \- if from a physical model:
 
-![ERwin XSD export parameters - physical](<lib/ERwin%20XSD%20export%20parameters%20-%20physical.png>)
+![ERwin XSD export parameters - physical](<lib/ERwin XSD export parameters - physical.png>)
 
 &nbsp;
 
 \- if from a logical model:
 
-![Image](<lib/ERwin%20XSD%20export%20parameters%20-%20logical.png>)
+![Image](<lib/ERwin XSD export parameters - logical.png>)
 
 &nbsp;
 
@@ -64,7 +64,7 @@ The steps are as follows:
 
 &#51;) open in Excel the Subject Area Report.csv file.&nbsp; It contains 2 columns and several rows, for example:
 
-![ERwin - Subject Area Report CSV](<lib/ERwin%20-%20Subject%20Area%20Report%20CSV.png>)
+![ERwin - Subject Area Report CSV](<lib/ERwin - Subject Area Report CSV.png>)
 
 &nbsp;
 
@@ -74,7 +74,7 @@ The steps are as follows:
 
 \- "Entity Name" column of the Subject Area Report must be copied and pasted into the "Entity Name" of the model Excel
 
-![ERwin - Subject Area Report pasted in Excel](<lib/ERwin%20-%20Subject%20Area%20Report%20pasted%20in%20Excel.png>)
+![ERwin - Subject Area Report pasted in Excel](<lib/ERwin - Subject Area Report pasted in Excel.png>)
 
 &nbsp;
 
@@ -86,7 +86,7 @@ The steps are as follows:
 
 Assuming that the Subject Area report matched the model file, the name matching of entities should work as expected and ERDVs will be created inthe model:
 
-![Image](<lib/ERwin%20-%20Subject%20Areas%20created%20as%20ERDVs.png>)
+![Image](<lib/ERwin - Subject Areas created as ERDVs.png>)
 
 &nbsp;
 

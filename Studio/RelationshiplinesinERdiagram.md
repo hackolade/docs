@@ -15,6 +15,7 @@ There are several ways to create a new relationship line between the attributes 
 * with a **drag-and-drop** action in the ERD by selecting a child attribute and dragging while holding the mouse button towards a parent attribute with a compatible attribute type in another entity.&nbsp; If the parent attribute is not yet a PK for its table, the application automatically makes the parent attribute a PK, if there is no conflict (i.e. if another attribute in the same entity is not already the PK.) \
 &nbsp;
 * since v7.0.4, the drag-and-drop behavior can be modified from its default via Tools \> Options \> General to become "from parent to child".&nbsp; This is particularly useful in dimensional modeling when you want to take the PK of a parent dimension table and automatically create:
+
   * the same attribute in the child fact table with the same data type.&nbsp; Note that you may modify the name of the attribute in the fact table.
   * the FK relationship from the child attribute in the fact table to the parent PK attribute in the dimension table.
 
@@ -22,13 +23,13 @@ There are several ways to create a new relationship line between the attributes 
 
 * via the **Actions menu**:
 
-![Menu - Add relationship](<lib/Menu%20-%20Add%20relationship.png>)
+![Menu - Add relationship](<lib/Menu - Add relationship.png>)
 
 * by pressing the **shortcut Ctrl+R** and filling the properties in the right Pane
-* with a click of the **toolbar icon** ![Image](<lib/Icons%20-%20addRelationship.jpeg>)&nbsp;
+* with a click of the **toolbar icon** ![Image](<lib/Icons - addRelationship.jpeg>)&nbsp;
 * with a **right-click** anywhere in the central pane to display the **contextual menu**
 
-![ER Diagram - contextual menu - add relationsh](<lib/ER%20Diagram%20-%20contextual%20menu%20-%20add%20relationsh.png>)
+![ER Diagram - contextual menu - add relationsh](<lib/ER Diagram - contextual menu - add relationsh.png>)
 
 &nbsp;
 
@@ -36,7 +37,7 @@ and choose 'Add Relationship'. &nbsp;
 
 * from the Properties Pane of a child attribute
 
-![Properties - Foreign Key relationship](<lib/Properties%20-%20Foreign%20Key%20relationship.png>)
+![Properties - Foreign Key relationship](<lib/Properties - Foreign Key relationship.png>)
 
 &nbsp;
 
@@ -54,11 +55,11 @@ Hackolade adopts an IE-like notation (Information Engineering notation) applied 
 
 | **Symbol** | **Description** |
 | --- | --- |
-| ![Relationship cardinality - one](<lib/Relationship%20cardinality%20-%20one.png>) | only one |
-| &nbsp;![Relationship cardinality - many](<lib/Relationship%20cardinality%20-%20many.png>) | many |
-| ![Relationship cardinality - zero-to-one](<lib/Relationship%20cardinality%20-%20zero-to-one.png>) | zero or one |
-| ![Relationship cardinality - zero-to-many](<lib/Relationship%20cardinality%20-%20zero-to-many.png>) | zero or more |
-| ![Relationship cardinality - one-to-many](<lib/Relationship%20cardinality%20-%20one-to-many.png>) | one or more |
+| ![Relationship cardinality - one](<lib/Relationship cardinality - one.png>) | only one |
+| &nbsp;![Relationship cardinality - many](<lib/Relationship cardinality - many.png>) | many |
+| ![Relationship cardinality - zero-to-one](<lib/Relationship cardinality - zero-to-one.png>) | zero or one |
+| ![Relationship cardinality - zero-to-many](<lib/Relationship cardinality - zero-to-many.png>) | zero or more |
+| ![Relationship cardinality - one-to-many](<lib/Relationship cardinality - one-to-many.png>) | one or more |
 
 
 &nbsp;
@@ -67,7 +68,7 @@ Typically, a relationship identifies a parent field within a parent collection o
 
 &nbsp;
 
-![Relationships and denormalization](<lib/Relationships%20and%20denormalization.png>)
+![Relationships and denormalization](<lib/Relationships and denormalization.png>)
 
 Three relationships can be documented in the model:
 
@@ -79,7 +80,7 @@ Three relationships can be documented in the model:
 
 Occasionally, it might be needed to model recursive relationships where the parent and child collections are identical.&nbsp; In effect they are siblings:
 
-![Relationships - siblings](<lib/Relationships%20-%20siblings.png>)
+![Relationships - siblings](<lib/Relationships - siblings.png>)
 
 &nbsp;
 
@@ -105,7 +106,7 @@ In RDBMS plugins, it is possible to represent composite (aka compound) foreign k
 
 &nbsp;
 
-![Relationships - composite foreign keys](<lib/Relationships%20-%20composite%20foreign%20keys.png>)
+![Relationships - composite foreign keys](<lib/Relationships - composite foreign keys.png>)
 
 &nbsp;
 
@@ -133,13 +134,13 @@ In ERDs (hence excluding here graph diagrams, where edges tend to be curved), th
 
 An orthogonal line is one where the segments can only be vertical or horizontal. As a result, the angle between the line and the entity boxes can only be 90 degrees. An orthogonal line can be straight if it has a single segment. If multi-segment, the segments can only have a 90-degree angled elbow between them.
 
-![ER lines - orthogonal](<lib/ER%20lines%20-%20orthogonal.png>)
+![ER lines - orthogonal](<lib/ER lines - orthogonal.png>)
 
 &nbsp;
 
 An oblique line must have a single segment and be straight. The angle between the line and an entity box can be anything, including 90 degrees in some cases.&nbsp; Oblique lines are often used in star schemas, but not only.
 
-![ER lines - oblique](<lib/ER%20lines%20-%20oblique.png>)
+![ER lines - oblique](<lib/ER lines - oblique.png>)
 
 &nbsp;
 
@@ -153,13 +154,13 @@ Each line has 2 anchors, one on each end and represented by a node, attached to 
 
 &nbsp;
 
-![ER lines - 3 segments](<lib/ER%20lines%20-%203%20segments.png>)
+![ER lines - 3 segments](<lib/ER lines - 3 segments.png>)
 
 &nbsp;
 
 A line may have one or more segments, depending on the relative positions of the entity boxes and the line anchors.&nbsp; We don't advise this, but it is possible for a line to have as many as 7 segments.
 
-![ER lines - max segments](<lib/ER%20lines%20-%20max%20segments.png>)
+![ER lines - max segments](<lib/ER lines - max segments.png>)
 
 &nbsp;
 
@@ -179,19 +180,19 @@ You may move:
 
 To move a line, just grab anywhere in the line, and move in any direction.&nbsp; Depending on the direction you drag, segments and anchors are moved, anchors may change box sides,&nbsp; and the number of segments are automatically recaculated.
 
-![ER lines - moving entire line](<lib/ER%20lines%20-%20moving%20entire%20line.png>)
+![ER lines - moving entire line](<lib/ER lines - moving entire line.png>)
 
 &nbsp;
 
 To move a single segment at a time, you may grab the node in the middle of the segment, or the anchor if it connects to an entity box. As you click on the node, the mouse cursor turns into a 2-headed arrow indicating the possible directions that you can drag.
 
-![ER lines - 3 segments movements](<lib/ER%20lines%20-%203%20segments%20movements.png>)
+![ER lines - 3 segments movements](<lib/ER lines - 3 segments movements.png>)
 
 &nbsp;
 
 As segments get extended past the anchor of the line, the number of segments may be recalculated, and the anchor moved accordingly.&nbsp; The application will not allow a line to be hidden by any part of an entity box to which it is attached.
 
-![ER lines - 4 segments movements](<lib/ER%20lines%20-%204%20segments%20movements.png>)
+![ER lines - 4 segments movements](<lib/ER lines - 4 segments movements.png>)
 
 &nbsp;
 
@@ -201,19 +202,19 @@ Similarly, the number of segments can be reduced by aligning parallel segments, 
 
 Since an oblique line can only have a single segment, the anchors on each end can only be attached to the one or maximum 2 sides of the entity box that are facing the other anchor. &nbsp;
 
-![ER lines - oblique movements](<lib/ER%20lines%20-%20oblique%20movements.png>)
+![ER lines - oblique movements](<lib/ER lines - oblique movements.png>)
 
 &nbsp;
 
 Each anchor can be moved, but is restricted to the one or maximum 2 sides of the entity box, so as to avoid having the line covered by any part of the entity box.
 
-![Image](<lib/ER%20lines%20-%20oblique%20movements%20horizontal.png>)
+![Image](<lib/ER lines - oblique movements horizontal.png>)
 
 &nbsp;
 
 At any time, you may swicth geometry, which will restore the line to default anchors
 
-![ER lines - style and gemetries](<lib/ER%20lines%20-%20style%20and%20gemetries.png>)
+![ER lines - style and gemetries](<lib/ER lines - style and gemetries.png>)
 
 &nbsp;
 

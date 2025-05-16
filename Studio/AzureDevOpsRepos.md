@@ -18,7 +18,7 @@ You first need to provide the name of your [Azure DevOps organization](<https://
 
 &nbsp;
 
-![Worgroup - manage connection Azure DevOps](<lib/Worgroup%20-%20manage%20connection%20Azure%20DevOps.png>)
+![Worgroup - manage connection Azure DevOps](<lib/Worgroup - manage connection Azure DevOps.png>)
 
 &nbsp;
 
@@ -32,7 +32,7 @@ On Azure DevOps, click on the "New token" button, give it a meaningful name - e.
 
 &nbsp;
 
-![Worgroup - Azure DevOps Repos token form](<lib/Worgroup%20-%20Azure%20DevOps%20Repos%20token%20form.png>)
+![Worgroup - Azure DevOps Repos token form](<lib/Worgroup - Azure DevOps Repos token form.png>)
 
 &nbsp;
 
@@ -50,7 +50,7 @@ If you haven't set a valid personal access token, you may get the error message 
 
 &nbsp;
 
-![Worgroup - Azure DevOps Repos token error](<lib/Worgroup%20-%20Azure%20DevOps%20Repos%20token%20error.png>)
+![Worgroup - Azure DevOps Repos token error](<lib/Worgroup - Azure DevOps Repos token error.png>)
 
 &nbsp;
 

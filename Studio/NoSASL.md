@@ -16,5 +16,5 @@
 
 &nbsp;
 
-![Hive Connection settings - NoSASL](<lib/Hive%20Connection%20settings%20-%20NoSASL.png>)
+![Hive Connection settings - NoSASL](<lib/Hive Connection settings - NoSASL.png>)
 

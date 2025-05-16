@@ -12,6 +12,10 @@ Access to Snowflake by Hackolade and permission to perform reverse-engineering a
 
 \- “SELECT” privilege for tables
 
+\- rights to run the utility function [GET\_DDL](<https://docs.snowflake.com/en/sql-reference/functions/get\_ddl>) and get the information returned. Here is a [link](<https://docs.snowflake.com/en/user-guide/views-secure#interacting-with-secure-views:~:text=The%20definition%20of%20a%20secure%20view%20is%20only%20exposed%20to%20authorized%20users%20(i.e.%20users%20who%20have%20been%20granted%20the%20role%20that%20owns%20the%20view).%20If%20an%20unauthorized%20user%20uses%20any%20of%20the%20following%20commands%20or%20interfaces>) for additional explanation. Note that DESC VIEW does not provide sufficient information in the API for our reverse-engineering needs.&nbsp; For Secure Views, it is necessary to access the structure stored in the **VIEW\_DEFINITION** column of **INFORMATION\_SCHEMA**.**VIEWS.**  If access to **VIEW\_DEFINITION** is restricted based on privileges, an unauthorized user cannot apparently retrieve the required metadata for reverse engineering.   This is the same as for **GET\_DDL**.
+
+&nbsp;
+
 &nbsp;
 
 Your Snowflake administrator might have to create a read-only user for you.&nbsp; Here's a [good example](<https://gist.github.com/vdparikh/7931f0c22e55f98d491a1df737260a53> "target=\"\_blank\"").
@@ -22,7 +26,7 @@ In the Hackolade connection settings dialog, give a meaningful name to the conne
 
 &nbsp;
 
-![Snowflake Connection Settings](<lib/Snowflake%20Connection%20Settings.png>)
+![Snowflake Connection Settings](<lib/Snowflake Connection Settings.png>)
 
 &nbsp;
 

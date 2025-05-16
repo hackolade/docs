@@ -72,7 +72,7 @@ In order, to support InnerSource without compromising integrity and security, it
 
 &nbsp;
 
-![Image](<lib/Innersource%20fork%20and%20pull%20process.png>)
+![Image](<lib/Innersource fork and pull process.png>)
 
 &nbsp;
 
@@ -90,7 +90,7 @@ Please refer to the user documentation of your Git provider to know how to fork 
 
 &nbsp;
 
-**Note:** Hackolade Studio supports the *fork \& pull* strategy currently only for GitHub. Other providers will be covered in future releases.
+**Note:** Hackolade Studio supports the *fork \& pull* strategy currently only for GitHub, GitLab, Bitbucket Cloud, and Azure DevOps Repos. Bitbucket Data Center will be added in future releases.
 
 &nbsp;
 
@@ -130,7 +130,9 @@ The only difference with non-forked repo is the presence of an additional dropdo
 
 &nbsp;
 
-![Innersource - Fork and Pull contribute to a fork](<lib/Innersource%20Fork%20N%20Pull%20contribute%20to%20a%20fork.png>)
+![Innersource Fork N Pull contribute to a fork](<lib/Innersource Fork N Pull contribute to a fork.png>)
+
+&nbsp;
 
 &nbsp;
 
@@ -156,7 +158,7 @@ If the repository opened in Hackolade Studio is a fork of an upstream repository
 
 &nbsp;
 
-![Innersource Fork and Pull - keep a fork up-to-date](<lib/Innersource%20Fork%20N%20Pull%20keep%20fork%20up-to-date.png>)
+![Innersource Fork and Pull - keep a fork up-to-date](<lib/Innersource Fork N Pull keep fork up-to-date.png>)
 
 &nbsp;
 
@@ -170,7 +172,7 @@ As explained in the previous section, Hackolade Studio makes the branches of the
 
 &nbsp;
 
-![Innersource Fork and Pull - compare a fork with its upstream repo](<lib/Innersource%20Fork%20N%20Pull%20compare%20fork%20with%20ups.png>)
+![Innersource Fork and Pull - compare a fork with its upstream repo](<lib/Innersource Fork N Pull compare fork with ups.png>)
 
 &nbsp;
 
@@ -184,7 +186,7 @@ If you are only interested in the history of one repository (the fork or the ups
 
 &nbsp;
 
-![Innersource Fork and Pull - compare fork filter history](<lib/Fork%20and%20Pull%20-%20compare%20fork%20filter%20history.png>)
+![Innersource Fork and Pull - compare fork filter history](<lib/Fork and Pull - compare fork filter history.png>)
 
 &nbsp;
 
@@ -206,7 +208,7 @@ In the history of the upstream repository, you see a dropdown list named *Remote
 
 &nbsp;
 
-![Innersource Fork and Pull - compare a repo with one of its forks](<lib/Fork%20and%20Pull%20-%20compare%20repo%20with%20its%20forks.png>)
+![Innersource Fork and Pull - compare a repo with one of its forks](<lib/Fork and Pull - compare repo with its forks.png>)
 
 &nbsp;
 

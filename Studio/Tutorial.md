@@ -43,13 +43,13 @@ Some people like the linear flow of outlines, while others prefer non-linear min
 
 &nbsp;
 
-![Miro functional view](<lib/Miro%20functional%20view.png>)
+![Miro functional view](<lib/Miro functional view.png>)
 
 &nbsp;
 
 and
 
-![Miro UI view](<lib/Miro%20UI%20view.png>)
+![Miro UI view](<lib/Miro UI view.png>)
 
 &nbsp;
 

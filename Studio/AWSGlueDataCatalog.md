@@ -16,7 +16,7 @@ The data model in the picture below results from the modeling of an application 
 
 &nbsp;
 
-![AWS Glue Data Catalog workspace](<lib/Glue%20workspace.png>)
+![AWS Glue Data Catalog workspace](<lib/Glue workspace.png>)
 
 &nbsp;
 
@@ -28,9 +28,9 @@ Tables in in the Glue Data Catalog contain references to data that is used as so
 
 &nbsp;
 
-![AWS Glue Data Catalog table properties](<lib/Glue%20table%20properties.png>)&nbsp;
+![AWS Glue Data Catalog table properties](<lib/Glue table properties.png>)&nbsp;
 
-![AWS Glue Data Catalog table properties - part 2](<lib/Glue%20table%20properties%20-%20part%202.png>)
+![AWS Glue Data Catalog table properties - part 2](<lib/Glue table properties - part 2.png>)
 
 &nbsp;
 
@@ -52,7 +52,7 @@ Hackolade was specially adapted to support the data types and attributes behavio
 
 &nbsp;
 
-![AWS Glue Data Catalog data types](<lib/Hive%20data%20types.png>)
+![AWS data types](<lib/Hive data types.png>)
 
 &nbsp;
 
@@ -66,7 +66,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![AWS Glue Data catalog Forward-Engineering](<lib/Glue%20Forward-Engineering.png>)
+![AWS Glue Data catalog Forward-Engineering](<lib/Glue Forward-Engineering.png>)
 
 &nbsp;
 
@@ -76,7 +76,7 @@ As many people store JSON within text columns, Hackolade allows for the schema d
 
 The connection is established using a connection using AWS IAM credentials:
 
-![AWS Glue Dta Catalog connection settings](<lib/Glue%20connection%20settings.png>)
+![AWS Glue Dta Catalog connection settings](<lib/Glue connection settings.png>)
 
 &nbsp;
 

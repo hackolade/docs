@@ -4,11 +4,35 @@ To interact with Oracle databases (Cloud and private), when applying forward-eng
 
 &nbsp;
 
-**Important:** when reverse-engineering an Oracle instance, non-privileged users can see the metadata of only their own objects, so to access others you need to be be granted SELECT\_CATALOG\_ROLE. More information is available [here](<https://docs.oracle.com/cd/B19306\_01/appdev.102/b14258/d\_metada.htm#i1016867> "target=\"\_blank\"").
+**Important:** when reverse-engineering an Oracle instance, non-privileged users can see the metadata of only their own objects, so to access others you need to be be granted SELECT\_CATALOG\_ROLE. More information is available [here](<https://docs.oracle.com/cd/B19306\_01/appdev.102/b14258/d\_metada.htm#i1016867> "target=\"\_blank\"") and [here](<https://docs.oracle.com/en/database/oracle/oracle-database/23/arpls/DBMS\_METADATA.html#GUID-005EEF26-0254-4996-A43A-C5236ADA8829> "target=\"\_blank\"").
+
+&nbsp;
+
+If you encounter an error *ORA-16000: database or pluggable database open for read-only access,* it has been confirmed by Oracle that pluggable and stand-by instances of Oracle are read-only which prevents the operation of the DBMS\_METADATA.GET\_DDL PL/SQL function which we need to perform reverse-engineering of the instance.&nbsp; Hackolade Studio will not perform the reverse-engineering operation correctly if connected to a pluggable or stand-by instance. &nbsp;
+
+&nbsp;
 
 &nbsp;
 
 **Note:** There are many ways to configure connections to Oracle. Plus firewalls, proxies, and whitelist can be make it hard to access.&nbsp; The easiest way to troubleshoot the connection settings in Hackolade is to make sure first that you have access from the same machine with another client tool.&nbsp; Then it becomes easy to transpose the connection settings from that application to Hackolade.&nbsp; Since [SQL Developer](<https://www.oracle.com/tools/downloads/sqldev-downloads.html> "target=\"\_blank\"") is an Oracle product, it does not require a separate Oracle Instant Client, so having a working connection from SQL Developer is not alone sufficient proof that Hackolade could connect.
+
+&nbsp;
+
+&nbsp;
+
+## Thin vs Thick mode
+
+The Hackolade Studio plugin for Oracle includes a thin client to facilitate connections to an Oracle instance, whether on-premises or in the cloud. &nbsp;
+
+![Oracle Thin mode client](<lib/Oracle Thin mode client.png>)
+
+&nbsp;
+
+You just need to give your connection a meanigful name, enter your host and port (default 1521), and either a Service Name or a SID.&nbsp; Then move to the Authentication tab to entre your credentials.
+
+&nbsp;
+
+If running on Oracle Cloud Infrastructure, things are even simpler if you fetch a Wallet, as described below.
 
 &nbsp;
 
@@ -31,8 +55,7 @@ If ORACLE\_HOME is not set, the output will simply give back %ORACLE\_HOME%.&nbs
 
 **On Unix/Linux:** type env&nbsp; grep \| ORACLE\_HOME
 
-If ORACLE\_HOME is set, then you may choose this option:\
-![Oracle connection ORACLE\_HOME](<lib/Oracle%20connection%20ORACLE\_HOME.png>)
+If ORACLE\_HOME is set, then you may choose this option:![Oracle connection ORACLE\_HOME](<lib/Oracle connection ORACLE\_HOME.png>)
 
 &nbsp;
 
@@ -50,7 +73,9 @@ You may set your ORACLE\_HOME environment variable to this location, or simply s
 
 &nbsp;
 
-![Oracle connection instant client](<lib/Oracle%20connection%20instant%20client.png>)
+![Oracle connection instant client](<lib/Oracle connection instant client.png>)
+
+&nbsp;
 
 &nbsp;
 
@@ -60,7 +85,7 @@ On MacOS, a trusted signed package is required.&nbsp; When you download from [Or
 
 &nbsp;
 
-![Image](<lib/Oracle%20Instant%20Client%20MacOS.png>)
+![Image](<lib/Oracle Instant Client MacOS.png>)
 
 &nbsp;
 
@@ -70,7 +95,7 @@ Once the package is downloaded, open the \`\<instant-client\>.dmg\` and copy **a
 
 ## Connection method
 
-We support 3 connection methods: basic, with an Oracle wallet, or with a tnsnames.ora configuration file.
+We support 3 connection methods: basic, with an Oracle Cloud Wallet, or with a tnsnames.ora configuration file.
 
 &nbsp;
 
@@ -80,13 +105,13 @@ With the basic method, you must specify all the necessary parameters for the cli
 
 &nbsp;
 
-![Oracle basic connection service name](<lib/Oracle%20basic%20connection%20service%20name.png>)
+![Oracle basic connection service name](<lib/Oracle basic connection service name.png>)
 
 &nbsp;
 
 or&nbsp;
 
-![Image](<lib/Oracle%20basic%20connection%20SID.png>)
+![Image](<lib/Oracle basic connection SID.png>)
 
 &nbsp;
 
@@ -102,7 +127,7 @@ With Oracle Autonomous, you may also generate a wallet using [these instructions
 
 &nbsp;
 
-![Oracle connection wallet](<lib/Oracle%20connection%20wallet.png>)
+![Oracle connection wallet](<lib/Oracle connection wallet.png>)
 
 &nbsp;
 
@@ -120,7 +145,7 @@ You must specify the folder location of the tnsnames.ora file as well as the ser
 
 &nbsp;
 
-![Image](<lib/Oracle%20connection%20tnsnames%20ora.png>)
+![Image](<lib/Oracle connection tnsnames ora.png>)
 
 &nbsp;
 
@@ -134,7 +159,7 @@ You must provide the username, passwaord, and optionally a role for your connect
 
 &nbsp;
 
-![Oracle connection authentication](<lib/Oracle%20connection%20authentication.png>)
+![Oracle connection authentication](<lib/Oracle connection authentication.png>)
 
 &nbsp;
 
@@ -148,11 +173,13 @@ Oracle instances can be quite large with many user schemas.&nbsp; If you want to
 
 &nbsp;
 
-![Oracle connection advanced limit scope discov](<lib/Oracle%20connection%20advanced%20limit%20scope%20discov.png>)
+![Oracle connection advanced limit scope discov](<lib/Oracle connection advanced limit scope discov.png>)
 
 &nbsp;
 
 ## Connecting to Oracle on Amazon RDS
 
-If you're running Oracle on Amazon RDS, the [instructions to connect](<https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER\_ConnectToOracleInstance.html> "target=\"\_blank\"") to SQL Developer can be followed to connect to Hackolade in a similar way.
+If you're running Oracle on Amazon RDS , the [instructions to connect](<https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER\_ConnectToOracleInstance.html> "target=\"\_blank\"") to SQL Developer can be followed to connect to Hackolade Studio in a similar way.&nbsp; More details can also be found [here](<AmazonRDSorAurora.md>).
+
+&nbsp;
 

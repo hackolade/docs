@@ -18,7 +18,7 @@ Communication with YugabyteDB can be set with any of these SSL modes:
 
 &nbsp;
 
-![PostgreSQL sslmode](<lib/PostgreSQL%20sslmode.png>)
+![PostgreSQL sslmode](<lib/PostgreSQL sslmode.png>)
 
 &nbsp;
 
@@ -28,7 +28,7 @@ Communication with YugabyteDB can be set with any of these SSL modes:
 
 Depending on the setup, one or more of the following fields will need to reference the appropriate file:
 
-![Image](<lib/PostgreSQL%20sslmode%20verify-full.png>)
+![Image](<lib/PostgreSQL sslmode verify-full.png>)
 
 &nbsp;
 

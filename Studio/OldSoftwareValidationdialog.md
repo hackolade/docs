@@ -38,7 +38,7 @@ When you start Hackolade, if there is no valid license key present, you are pres
 
 &nbsp;
 
-![Registration -- empty dialog](<lib/Registration%20--%20empty%20dialog.png>)
+![Registration -- empty dialog](<lib/Registration -- empty dialog.png>)
 
 &nbsp;
 
@@ -52,7 +52,7 @@ Choose one of the following options:
 
 &nbsp;
 
-![Registration -- 4 options](<lib/Registration%20--%204%20options.png>)
+![Registration -- 4 options](<lib/Registration -- 4 options.png>)
 
 &nbsp;
 
@@ -68,7 +68,7 @@ If you have not downloaded Hackolade yet, please do so from the [download page](
 
 &nbsp;
 
-![Registration -- register activation key](<lib/Registration%20--%20register%20activation%20key.png>)
+![Registration -- register activation key](<lib/Registration -- register activation key.png>)
 
 &nbsp;
 
@@ -76,7 +76,7 @@ If you have not downloaded Hackolade yet, please do so from the [download page](
 
 **Step 1:** In the Software Key Validation dialog, please choose the option 'I want to...':
 
-![Registration -- activation](<lib/Registration%20--%20activation.png>)
+![Registration -- activation](<lib/Registration -- activation.png>)
 
 then **Step 2:** paste your license key, and optionally enter your name or an identifier to help manage multiple licenses
 
@@ -86,13 +86,13 @@ and **Step 3:** click the Send button. &nbsp;
 
 You need to be connected to the Internet for this step to validate your license key with Hackolade's license server.&nbsp; If your company has many licenses, your administrator may require that you enter your name in the Identifier (optional) field:
 
-![Registration -- license details](<lib/Registration%20--%20license%20details.png>)
+![Registration -- license details](<lib/Registration -- license details.png>)
 
 &nbsp;
 
 You should be getting this confirmation message:
 
-![Registration -- success message](<lib/Registration%20--%20success%20message.png>)
+![Registration -- success message](<lib/Registration -- success message.png>)
 
 &nbsp;
 
@@ -108,13 +108,13 @@ If you need to move your license key to another computer, you first need to rele
 
 To do so, go to the option Help \> Software Key Validation, and choose the action 'I want to...':
 
-![Registration -- release license key](<lib/Registration%20--%20release%20license%20key.png>)
+![Registration -- release license key](<lib/Registration -- release license key.png>)
 
 and click the Send button.&nbsp; This will free up the key on our license server. &nbsp;
 
 &nbsp;
 
-![Registration -- un-register confirmation](<lib/Registration%20--%20un-register%20confirmation.png>)
+![Registration -- un-register confirmation](<lib/Registration -- un-register confirmation.png>)
 
 Make sure to copy the license key and store it (or find your original license key confirmation email) as you will need it to activate on the other computer where you will want to use Hackolade.
 
@@ -138,7 +138,7 @@ If the application cannot reach the Internet, the following dialog is displayed:
 
 &nbsp;
 
-![Offline license activation - connection failu](<lib/Offline%20license%20activation%20-%20connection%20failu.png>)
+![Offline license activation - connection failu](<lib/Offline license activation - connection failu.png>)
 
 &nbsp;
 
@@ -152,7 +152,7 @@ There are legitimate reasons for the machine to be disconnected from the Interne
 
 By clicking on the link or the Send button, you will be directed in your browser to this page (or you should copy the URL so it could be used on a different computer with Internet access), with the fields pre-filled:
 
-![Offline license activation - web screen](<lib/Offline%20license%20activation%20-%20web%20screen.png>)
+![Offline license activation - web screen](<lib/Offline license activation - web screen.png>)
 
 &nbsp;
 
@@ -164,7 +164,7 @@ When you click the activate button, an XML file will be downloaded to your PC.&n
 
 &nbsp;
 
-![Offline license activation - choose file](<lib/Offline%20license%20activation%20-%20choose%20file.png>)
+![Offline license activation - choose file](<lib/Offline license activation - choose file.png>)
 
 &nbsp;
 
@@ -204,7 +204,7 @@ As long as you validate and use Hackolade Studio with the same combination of ho
 
 &nbsp;
 
-**Important note:** installing Hackolade on a central computer (whether on a PC or a server, whether the machine is virtual or physical, and whether on premises or in the Cloud) does **not** change the terms of our [License Agreement](<Licenseagreement.md>).&nbsp; Specifically, that license metric is per "per seat", and that a license must be obtained for each device on or from which the Product is used or accessed. When the Product is accessed remotely across using Terminal Server, Remote Desktop, Citrix XenDesktop or an equivalent method, a separate Product license is required to be assigned to each device from which the application is accessed, i.e. not the virtual machine on which the Product is installed.
+**Important note:** installing Hackolade on a central computer (whether on a PC or a server, whether the machine is virtual or physical, and whether on premises or in the Cloud) does **not** change the terms of our [License Agreement](<Licenseagreement.md>).&nbsp; Specifically, that license metric is per "per seat", and that a license must be obtained for each device on or from which the Product is used or accessed. When the Product is accessed remotely across using Terminal Server, Remote Desktop, Windows App, virtual machine, Citrix, or an equivalent method, a separate Product license is required to be assigned to each device from which the application is accessed, i.e. not the virtual machine on which the Product is installed.
 
 &nbsp;
 

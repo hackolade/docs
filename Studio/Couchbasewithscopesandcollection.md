@@ -20,7 +20,7 @@ The data model in the picture below results from the reverse-engineering of the 
 
 &nbsp;
 
-![Couchbase v7 workspace - scopes \& collections](<lib/Couchbase%20v7%20workspace%20-%20scopes%20-%20collections.png>)
+![Couchbase v7 workspace - scopes \& collections](<lib/Couchbase v7 workspace - scopes - collections.png>)
 
 &nbsp;
 
@@ -138,27 +138,29 @@ In a basic use case, you could have a simple document key made of single unique 
 
 With this flexible key design, it is now possible to structure a composite key (a.k.a compound key) and assemble multiple segments.&nbsp; For example, given this document model:
 
-![Couchbase PK Structure model](<lib/Couchbase%20PK%20Structure%20model.png>)
+![Couchbase PK Structure model](<lib/Couchbase PK Structure model.png>)
 
 &nbsp;
 
 and the defined PK structure:
 
-![Couchbase PK Structure properties](<lib/Couchbase%20PK%20Structure%20properties.png>)
+![Couchbase PK Structure properties](<lib/Couchbase PK Structure properties.png>)
 
 &nbsp;
 
 an example of key could be this:
 
-![Couchbase PK Structure script](<lib/Couchbase%20PK%20Structure%20script.png>)
+![Couchbase PK Structure script](<lib/Couchbase PK Structure script.png>)
 
 &nbsp;
 
-You may define PK Structure using 4 types of segments: constant, field, separator, and regex pattern.&nbsp; There is no theoretical limit to the number of segments, but the total length of the key cannot exceed 250 bytes.&nbsp; If you use a numeric field for a segment, it should ideally be an integrer, and ti will be converted to a string (as the key can only be of string data type.
+You may define PK Structure using 4 types of segments: constant, field, separator, and regex pattern.&nbsp; There is no theoretical limit to the number of segments, but the total length of the key cannot exceed 250 bytes.&nbsp; If you use a numeric field for a segment, it should ideally be an integer, and it will be converted to a string (as the key can only be of string data type.
 
 &nbsp;
 
 Typical separators for Couchbase are column (:), double column (::) or hash (#).&nbsp; Separators are not mandatory, but they are strongly recommended, at least between fields, as they facilitate parsing, and inference during reverse-engineering.&nbsp;
+
+&nbsp;
 
 ## Attributes data types
 
@@ -170,7 +172,7 @@ Hackolade was specially adapted to support the data types and attributes behavio
 
 &nbsp;
 
-![Couchbase schema tree view](<lib/Couchbase%20schema%20tree%20view.png>)
+![Couchbase schema tree view](<lib/Couchbase schema tree view.png>)
 
 &nbsp;
 
@@ -225,7 +227,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![Couchbase forward-engineering script](<lib/Couchbase%20forward-engineering%20script.png>)
+![Couchbase forward-engineering script](<lib/Couchbase forward-engineering script.png>)
 
 &nbsp;
 

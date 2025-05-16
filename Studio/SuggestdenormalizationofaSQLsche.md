@@ -8,7 +8,7 @@ You should save the resulting model as a base, for example v0.&nbsp; Then it is 
 
 &nbsp;
 
-![Image](<lib/Suggest%20denormalization%20-%20Northwind.png>)
+![Image](<lib/Suggest denormalization - Northwind.png>)
 
 &nbsp;
 
@@ -16,7 +16,7 @@ The user needs to have a fairly good idea of where he wants to go with the schem
 
 &nbsp;
 
-![Denormalization dialog](<lib/Denormalization%20dialog.png>)
+![Denormalization dialog](<lib/Denormalization dialog.png>)
 
 &nbsp;
 
@@ -28,13 +28,13 @@ Example of embedding of sub-documents in child.
 
 Collection 'products' contains a foreign key to 'categories':
 
-![Denormalization -- sub-document in child - 1](<lib/Denormalization%20--%20sub-document%20in%20child%20-%201.png>)
+![Denormalization -- sub-document in child - 1](<lib/Denormalization -- sub-document in child - 1.png>)
 
 &nbsp;
 
 the resulting denormalization would be:
 
-![Denormalization -- sub-document in child - 2](<lib/Denormalization%20--%20sub-document%20in%20child%20-%202.png>)
+![Denormalization -- sub-document in child - 2](<lib/Denormalization -- sub-document in child - 2.png>)
 
 with the field category\_id in 'products' being replaced by a sub-document with all the fields of the 'categories' collection, including one foreign key and several foreign master relationships.&nbsp; Depending on your needs, you may want to keep the 'categories' collection, or delete it.
 
@@ -44,13 +44,13 @@ Example of embedding an array in parent.
 
 Collection 'order details' contains a foreign key to 'orders':
 
-![Denormalisation - Array in parent - 1](<lib/Denormalisation%20-%20Array%20in%20parent%20-%201.png>)
+![Denormalisation - Array in parent - 1](<lib/Denormalisation - Array in parent - 1.png>)
 
 &nbsp;
 
 the resulting denormalization would be:
 
-![Denormalization - Array in child - 2](<lib/Denormalization%20-%20Array%20in%20child%20-%202.png>)
+![Denormalization - Array in child - 2](<lib/Denormalization - Array in child - 2.png>)
 
 where you notice that all fields of 'order details' have been added in an array of sub-documents in 'orders'.&nbsp; And it makes sense to delete the collection 'order details'.
 

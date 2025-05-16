@@ -2,5 +2,5 @@
 
 If required, enter your username and password:&nbsp;
 
-![ScyllaDB authentication](<lib/ScyllaDB%20authentication.png>)
+![ScyllaDB authentication](<lib/ScyllaDB authentication.png>)
 

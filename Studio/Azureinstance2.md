@@ -12,7 +12,7 @@ When performing reverse-engineering of Cosmos DB, most of the information can be
 
 Give a meaningful name to the connection to identify it for later, and provide proper connection string parameters:
 
-![Cosmos DB connection settings dialog](<lib/Cosmos%20DB%20connection%20settings%20dialog.png>)
+![Cosmos DB connection settings dialog](<lib/Cosmos DB connection settings dialog.png>)
 
 &nbsp;
 
@@ -22,7 +22,7 @@ Go to the [Azure portal](<https://portal.azure.com/> "target=\"\_blank\"") to re
 
 &nbsp;
 
-![Azure Portal - DocDB connection](<lib/Azure%20Portal%20-%20DocDB%20connection.png>)
+![Azure Portal - DocDB connection](<lib/Azure Portal - DocDB connection.png>)
 
 &nbsp;
 
@@ -34,7 +34,7 @@ The REST API connection should be enabled and all the proper parameters provided
 
 &nbsp;
 
-![CosmosDB Data Plane dialog](<lib/CosmosDB%20Data%20Plane%20dialog.png>)
+![CosmosDB Data Plane dialog](<lib/CosmosDB Data Plane dialog.png>)
 
 &nbsp;
 
@@ -42,25 +42,25 @@ The REST API connection should be enabled and all the proper parameters provided
 
 First, you must provide the **Resource Group Name** and **Subscription ID** of Cosmos DB instance, as found in the Overview screen of the Comos DB instance. More information [here](<https://docs.microsoft.com/en-us/azure/cosmos-db/how-to-manage-database-account#create-an-account> "target=\"\_blank\"").
 
-![CosmosDB - Azure instance overview screen](<lib/CosmosDB%20-%20Azure%20instance%20overview%20screen.png>)
+![CosmosDB - Azure instance overview screen](<lib/CosmosDB - Azure instance overview screen.png>)
 
 &nbsp;
 
 Next, the Hackolade application must be registered so Azure accepts the REST API calls, as per these [instructions](<https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal> "target=\"\_blank\"").&nbsp; The **Application (client) ID** and the **Directory (tenant) ID** are retrieved are retrieved from the App registration Overview screen:
 
-![CosmosDB - Azure App registration overview](<lib/CosmosDB%20-%20Azure%20App%20registration%20overview.png>)
+![CosmosDB - Azure App registration overview](<lib/CosmosDB - Azure App registration overview.png>)
 
 &nbsp;
 
 **Note:** it is critical to assign the proper role to the application just registered.&nbsp; This is done following the steps outlined [here](<https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal> "target=\"\_blank\"").&nbsp;
 
-![CosmosDB - Azure IAM role assignment](<lib/CosmosDB%20-%20Azure%20IAM%20role%20assignment.png>)
+![CosmosDB - Azure IAM role assignment](<lib/CosmosDB - Azure IAM role assignment.png>)
 
 &nbsp;
 
 Finally, the **Application secret** is obtained from the Certificates \& secrets screen of the App registration:&nbsp;
 
-![CosmosDB - Azure App registration secrets scr](<lib/CosmosDB%20-%20Azure%20App%20registration%20secrets%20scr.png>)
+![CosmosDB - Azure App registration secrets scr](<lib/CosmosDB - Azure App registration secrets scr.png>)
 
 &nbsp;
 

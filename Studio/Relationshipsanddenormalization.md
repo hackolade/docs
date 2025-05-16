@@ -24,7 +24,7 @@ Let's take a simplified example... Say we have a master collection of customers,
 
 &nbsp;
 
-![Relationships and denormalization](<lib/Relationships%20and%20denormalization.png>)
+![Relationships and denormalization](<lib/Relationships and denormalization.png>)
 
 Three relationships can be documented in the model:
 
@@ -48,7 +48,7 @@ Originally, MongoDB did not support server-side foreign key relationships.&nbsp;
 
 &nbsp;
 
-![MongoDB left-outer join](<lib/MongoDB%20left-outer%20join.png>)
+![MongoDB left-outer join](<lib/MongoDB left-outer join.png>)
 
 (source: [http://www.mongodb.com/blog/post/joins-and-other-aggregation-enhancements-coming-in-mongodb-3-2-part-1-of-3-introduction](<http://www.mongodb.com/blog/post/joins-and-other-aggregation-enhancements-coming-in-mongodb-3-2-part-1-of-3-introduction> "target=\"\_blank\""))
 

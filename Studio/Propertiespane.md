@@ -4,7 +4,7 @@ The right-hand pane displays the properties for any entity you select in the obj
 
 &nbsp;
 
-You may adjust the width of the pane by moving the vertical ellipse ![Central pane - ellipse hovered](<lib/Central%20pane%20-%20ellipse%20hovered.png>)separating the central and properties panes.&nbsp; You may toggle the appearance of the Properties pane by choosing the menu option View \> Properties pane.
+You may adjust the width of the pane by moving the vertical ellipse ![Central pane - ellipse hovered](<lib/Central pane - ellipse hovered.png>)separating the central and properties panes.&nbsp; You may toggle the appearance of the Properties pane by choosing the menu option View \> Properties pane.
 
 &nbsp;
 
@@ -14,13 +14,13 @@ The relevant properties pane is displayed depending on the context being worked 
 
 Database users properties:
 
-![Properties pane - users tab](<lib/Properties%20pane%20-%20users%20tab.png>)
+![Properties pane - users tab](<lib/Properties pane - users tab.png>)
 
 &nbsp;
 
 Collection details properties:
 
-![Properties pane - collection details tab](<lib/Properties%20pane%20-%20collection%20details%20tab.png>)
+![Properties pane - collection details tab](<lib/Properties pane - collection details tab.png>)
 
 &nbsp;
 
@@ -28,7 +28,7 @@ Collection details properties:
 
 Attribute details properties:
 
-![Properties pane - field details](<lib/Properties%20pane%20-%20field%20details.png>)
+![Properties pane - field details](<lib/Properties pane - field details.png>)
 
 &nbsp;
 
@@ -52,7 +52,7 @@ With v4.2, Hackolade has introduced the capability to control the activation of 
 
 The properties pane may contains multiple elements, in which case, you can expand the list or collapse it using the&nbsp;
 
-![Properties pane controls - plus and minus](<lib/Properties%20pane%20controls%20-%20plus%20and%20minus.png>)
+![Properties pane controls - plus and minus](<lib/Properties pane controls - plus and minus.png>)
 
 signs.
 
@@ -62,7 +62,7 @@ signs.
 
 A typical property is a text box to record a name or a description.&nbsp; It accepts alpha-numeric characters.
 
-![Properties pane controls - text box](<lib/Properties%20pane%20controls%20-%20text%20box.png>)
+![Properties pane controls - text box](<lib/Properties pane controls - text box.png>)
 
 &nbsp;
 
@@ -70,17 +70,17 @@ A typical property is a text box to record a name or a description.&nbsp; It acc
 
 When a longer text is typically needed for a property, an ellipse at the end of the text box&nbsp;
 
-![Properties pane controls - text box ellipse](<lib/Properties%20pane%20controls%20-%20text%20box%20ellipse.png>) indicates that a bigger dialog box can be accessed:
+![Properties pane controls - text box ellipse](<lib/Properties pane controls - text box ellipse.png>) indicates that a bigger dialog box can be accessed:
 
 &nbsp;
 
-![Properties pane controls - large text dialog](<lib/Properties%20pane%20controls%20-%20large%20text%20dialog.png>)
+![Properties pane controls - large text dialog](<lib/Properties pane controls - large text dialog.png>)
 
 &nbsp;
 
 The ellipse is also used to pop-up a relationship field picker:
 
-![Properies pane controls - field picker](<lib/Properies%20pane%20controls%20-%20field%20picker.png>)
+![Properies pane controls - field picker](<lib/Properies pane controls - field picker.png>)
 
 &nbsp;
 
@@ -88,7 +88,7 @@ The ellipse is also used to pop-up a relationship field picker:
 
 When a property is boolean, it is represented with a checkbox:
 
-![Properties pane controls - checkbox](<lib/Properties%20pane%20controls%20-%20checkbox.png>)
+![Properties pane controls - checkbox](<lib/Properties pane controls - checkbox.png>)
 
 &nbsp;
 
@@ -96,7 +96,7 @@ When a property is boolean, it is represented with a checkbox:
 
 When a limited list of possible entries is provided, it is in the form of a dropdown list:
 
-![Properties pane controls - dropdown list](<lib/Properties%20pane%20controls%20-%20dropdown%20list.png>)
+![Properties pane controls - dropdown list](<lib/Properties pane controls - dropdown list.png>)
 
 &nbsp;
 
@@ -106,13 +106,13 @@ When a limited list of possible entries is provided, it is in the form of a drop
 
 When it is provided, you can add an entry by pressing the plus sign:
 
-![Properties pane controls - add entry](<lib/Properties%20pane%20controls%20-%20add%20entry.png>)
+![Properties pane controls - add entry](<lib/Properties pane controls - add entry.png>)
 
 &nbsp;
 
 To delete the entry, click on the X to the right of the text box:
 
-![Properties pane controls - delete entry](<lib/Properties%20pane%20controls%20-%20delete%20entry.png>)
+![Properties pane controls - delete entry](<lib/Properties pane controls - delete entry.png>)
 
 &nbsp;
 

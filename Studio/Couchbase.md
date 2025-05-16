@@ -10,7 +10,7 @@ Hackolade Studio was specially adapted to support the data modeling of multiple 
 
 The data model in the picture below results from the reverse-engineering of the sample travel application described [here](<https://docs.couchbase.com/java-sdk/current/ref/travel-app-data-model.html> "target=\"\_blank\"").
 
-![Couchbase workspace](<lib/Couchbase%20workspace.png>)
+![Couchbase workspace](<lib/Couchbase workspace.png>)
 
 ## Buckets
 
@@ -50,7 +50,7 @@ Documents are stored as JSON on the server. Because JSON is a structured format,
 
 When mixing different types of objects into the same bucket, it becomes necessary to specify a "type" attribute to differentiate the various objects stored in the bucket.&nbsp; In Hackolade Studio, each Document Kind is modeled as a separate entity or box, so its attributes can be defined separately.&nbsp; A specific attribute name must be identified to differentiate the different document kinds.&nbsp; The unique key and the document kind field are common to all document kinds in the bucket, and displayed at the top of each box in the ERD document:
 
-![Couchbase ERD shapes](<lib/Couchbase%20ERD%20shapes.png>)
+![Couchbase ERD shapes](<lib/Couchbase ERD shapes.png>)
 
 &nbsp;
 
@@ -81,19 +81,19 @@ In a basic use case, you could have a simple document key made of single unique 
 
 With this flexible key design, it is now possible to structure a composite key (a.k.a compound key) and assemble multiple segments.&nbsp; For example, given this document model:
 
-![Image](<lib/Couchbase%20PK%20Structure%20model.png>)
+![Image](<lib/Couchbase PK Structure model.png>)
 
 &nbsp;
 
 and the defined PK structure:
 
-![Image](<lib/Couchbase%20PK%20Structure%20properties.png>)
+![Image](<lib/Couchbase PK Structure properties.png>)
 
 &nbsp;
 
 an example of key could be this:
 
-![Image](<lib/Couchbase%20PK%20Structure%20script.png>)
+![Image](<lib/Couchbase PK Structure script.png>)
 
 &nbsp;
 
@@ -115,7 +115,7 @@ Hackolade was specially adapted to support the data types and attributes behavio
 
 &nbsp;
 
-![Couchbase schema tree view](<lib/Couchbase%20schema%20tree%20view.png>)
+![Couchbase schema tree view](<lib/Couchbase schema tree view.png>)
 
 &nbsp;
 
@@ -174,7 +174,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![Couchbase forward-engineering script](<lib/Couchbase%20forward-engineering%20script.png>)
+![Couchbase forward-engineering script](<lib/Couchbase forward-engineering script.png>)
 
 &nbsp;
 

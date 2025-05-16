@@ -26,7 +26,7 @@ The application closely follows the terminology of the specification.&nbsp; The 
 
 The diagram below results from the reverse-engineering of AWS event aws.glue@GlueDataCatalogTableStateChange
 
-![EventBridge workspace](<lib/EventBridge%20workspace.png>)
+![EventBridge workspace](<lib/EventBridge workspace.png>)
 
 &nbsp;
 
@@ -43,7 +43,7 @@ Each EBSR schema corresponds to a single Hackolade model file.&nbsp; While the s
 
 &nbsp;
 
-![EBSR lower tab](<lib/EBSR%20lower%20tab.png>)
+![EBSR lower tab](<lib/EBSR lower tab.png>)
 
 &nbsp;
 
@@ -53,7 +53,7 @@ The OpenAPI specification used by EBSR describes primitives (or scalar) data typ
 
 &nbsp;
 
-![EventBridge Schema Registry data types](<lib/Swagger%20data%20types.png>)&nbsp; ![EventBridge Schema Registry data types - string](<lib/Swagger%20data%20types%20-%20string.png>)&nbsp; ![EventBridge Schema Registry data types - number](<lib/Swagger%20data%20types%20-%20number.png>)&nbsp; ![EventBridge Schema Registry data types - integer](<lib/Swagger%20data%20types%20-%20integer.png>) &nbsp;
+![EventBridge Schema Registry data types](<lib/Swagger data types.png>)&nbsp; ![EventBridge Schema Registry data types - string](<lib/Swagger data types - string.png>)&nbsp; ![EventBridge Schema Registry data types - number](<lib/Swagger data types - number.png>)&nbsp; ![EventBridge Schema Registry data types - integer](<lib/Swagger data types - integer.png>) &nbsp;
 
 &nbsp;
 
@@ -61,7 +61,7 @@ The OpenAPI specification used by EBSR describes primitives (or scalar) data typ
 
 A number of properties describing the registry and each schema can be reverse-engineered and maintained in the model:
 
-&nbsp; ![EventBridge Schema Registry metadata](<lib/EBSR%20metadata.png>)
+&nbsp; ![EventBridge Schema Registry metadata](<lib/EBSR metadata.png>)
 
 &nbsp;
 
@@ -79,7 +79,7 @@ Data types can be objects, but also primitives and arrays. This object is based 
 
 &nbsp;
 
-![EventBridge Schema Registry - Components](<lib/OpenAPI%20-%20Components.png>)
+![EventBridge Schema Registry - Components](<lib/OpenAPI - Components.png>)
 
 &nbsp;
 
@@ -97,7 +97,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![EventBridge script forward-engineering](<lib/EventBridge%20script%20forward-engineering.png>)
+![EventBridge script forward-engineering](<lib/EventBridge script forward-engineering.png>)
 
 &nbsp;
 
@@ -107,7 +107,7 @@ By pressing the button "Apply to instance" the system will automatically create 
 
 The connection is established using a connection using AWS IAM credentials:
 
-![Event Bridge Schema Registry connection settings](<lib/Glue%20connection%20settings.png>)
+![Event Bridge Schema Registry connection settings](<lib/Glue connection settings.png>)
 
 &nbsp;
 

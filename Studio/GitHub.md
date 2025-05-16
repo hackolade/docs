@@ -8,7 +8,7 @@ In the repository connection manager, click on the "generate" link located to th
 
 &nbsp;
 
-![Workgroup - manage hub connections](<lib/Workgroup%20-%20manage%20hub%20connections%20-%20GitHub.png>)
+![Workgroup - manage hub connections](<lib/Workgroup - manage hub connections - GitHub.png>)
 
 &nbsp;
 
@@ -16,7 +16,7 @@ In the repository connection manager, click on the "generate" link located to th
 
 Clicking on the "generate" link brings you to the GitHub form pre-filled with most of the information needed to be provided.&nbsp; Note that, in terms of permissions / scopes, Hackolade Studio only needs "repo" (aka full control of private repositories).
 
-![Workgroup - GitHub token scopes](<lib/Workgroup%20-%20GitHub%20token%20scopes.png>)
+![Workgroup - GitHub token scopes](<lib/Workgroup - GitHub token scopes.png>)
 
 &nbsp;
 
@@ -38,7 +38,7 @@ If you don't have a valid Personal Token, you may get the error message below, i
 
 &nbsp;
 
-![Workgroup - GitHub token error](<lib/Workgroup-GitHub%20personal%20accesstoken%20error.png>)
+![Workgroup - GitHub token error](<lib/Workgroup-GitHub personal accesstoken error.png>)
 
 &nbsp;
 
@@ -56,7 +56,7 @@ As an alternative to generating a personal access token, GitHub can also let you
 
 From the menu Repository \> Manage Repository Connections, create a new connection, select the provider and specify the domain name if necessary, then select the connection method OAuth:
 
-![GitHub OAuth connection settings](<lib/GitHub%20OAuth%20connection%20settings.png>)
+![GitHub OAuth connection settings](<lib/GitHub OAuth connection settings.png>)
 
 &nbsp;
 
@@ -64,7 +64,7 @@ Then click on the "Connect" button to display the instructions:
 
 &nbsp;
 
-![GitHub OAuth connection instructions](<lib/GitHub%20OAuth%20connection%20instructions.png>)
+![GitHub OAuth connection instructions](<lib/GitHub OAuth connection instructions.png>)
 
 &nbsp;
 
@@ -72,7 +72,7 @@ Then click on the "Connect" button to display the instructions:
 
 You just need to click on "Copy code \& open browser". This will open a page in your browser where you can paste the temporary code.
 
-![GitHub OAuth device activation code](<lib/GitHub%20OAuth%20device%20activation%20code.png>)
+![GitHub OAuth device activation code](<lib/GitHub OAuth device activation code.png>)
 
 &nbsp;
 
@@ -86,7 +86,7 @@ click on "Continue", then confirm by clicking the "Authorize hackolade" button.&
 
 &nbsp;
 
-![GitHub OAuth device activation auth](<lib/GitHub%20OAuth%20device%20activation%20auth.png>)
+![GitHub OAuth device activation auth](<lib/GitHub OAuth device activation auth.png>)
 
 &nbsp;
 

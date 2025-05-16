@@ -12,13 +12,13 @@ Hackolade was specially adapted to support the [schema design of Avro](<https://
 
 &nbsp;
 
-![Avro workspace](<lib/Avro%20workspace.png>)
+![Avro workspace](<lib/Avro workspace.png>)
 
 &nbsp;
 
 ## Avro Schema
 
-An  Avro schema is created in JSON format and contains 4 attributes: **name**, **namespace**, **type**, and **fields. **
+An  Avro schema is created in JSON format and contains 4 attributes: **name**, **namespace**, **type**, and **fields.**&nbsp;
 
 ## Data Types
 
@@ -26,7 +26,7 @@ There are 8 primitive types (**null**, **boolean**, **int**, **long**, **floa
 
 &nbsp;
 
-![Avro data types](<lib/Avro%20data%20types.png>)
+![Avro data types](<lib/Avro data types.png>)
 
 &nbsp;
 
@@ -70,7 +70,7 @@ When reverse-engineering from other technology sources, Hackolade Studio maps to
 
 As fields are always technically required in Avro, it is necessary to facilitate forward- and backward-compatibility by allowing fields to have a null type in addition to their natural data type.&nbsp; In Hackolade, when you create a new field, it is created with the required property selected.&nbsp; If you want to make a field logically optional, it must still be present physically, but with a default which must be null.&nbsp; To do this in Hackolade, you would set the data type to null, then de-select the required property, and make the default property = null (without quotes):
 
-![Avro union types](<lib/Avro%20union%20types.png>)
+![Avro union types](<lib/Avro union types.png>)
 
 &nbsp;
 
@@ -89,11 +89,11 @@ But how you treat this in the application differs depending on whether the data 
 
 Combining a null type with a scalar data type (**boolean**, **int**, **long**, **float**, **double**, **bytes**, and **string**) is very simple, you must click on the + sign to the right of the type property to become:
 
-![Multi-type creation](<lib/Multi-type%20creation.png>)
+![Multi-type creation](<lib/Multi-type creation.png>)
 
 which results in multiple blocks of properties appearing below in the Properties Pane:
 
-![Multiple-type block](<lib/Multiple-type%20block.png>)
+![Multiple-type block](<lib/Multiple-type block.png>)
 
 &nbsp;
 
@@ -101,13 +101,13 @@ which results in multiple blocks of properties appearing below in the Properties
 
 If at least one data type is complex (**record**, **enum**, **array**, **map**, **union**, or **fixed**), then you must use a oneOf choice, for example:
 
-![Avro oneOf choice](<lib/Avro%20oneOf%20choice.png>)
+![Avro oneOf choice](<lib/Avro oneOf choice.png>)
 
 &nbsp;
 
 ## Annotations
 
-The Avro schema specifications documents standard keywords. You may add your own annotations for your use cases.&nbsp; This is done by leveraging the Hackolade Studio [customer properties](<Userdefinedcustomproperties.md>)., making sure to mark the property with the flag includeInScript.
+The Avro schema specifications documents standard keywords. You may add your own annotations for your use cases.&nbsp; This is done by leveraging the Hackolade Studio [custom properties](<Userdefinedcustomproperties.md>)., making sure to mark the property with the flag includeInScript.
 
 &nbsp;
 
@@ -139,7 +139,7 @@ Starting from a blank page, this is how to build a namespace reference.  The Pr
 
 &nbsp;
 
-![Avro namespace reference creation](<lib/Avro%20namespace%20reference%20creation.png>)
+![Avro namespace reference creation](<lib/Avro namespace reference creation.png>)
 
 &nbsp;
 
@@ -147,7 +147,7 @@ Choose the Price record:
 
 &nbsp;
 
-![Avro namespace reference pick record](<lib/Avro%20namespace%20reference%20pick%20record.png>)
+![Avro namespace reference pick record](<lib/Avro namespace reference pick record.png>)
 
 &nbsp;
 
@@ -155,7 +155,7 @@ And voilà…
 
 &nbsp;
 
-![Avro namespace reference model](<lib/Avro%20namespace%20reference%20model.png>)
+![Avro namespace reference model](<lib/Avro namespace reference model.png>)
 
 &nbsp;
 
@@ -163,7 +163,7 @@ And voilà…
 
 The forward-engineered script shows as follows:
 
-![Avro namespace reference avsc script](<lib/Avro%20namespace%20reference%20avsc%20script.png>)
+![Avro namespace reference avsc script](<lib/Avro namespace reference avsc script.png>)
 
 &nbsp;
 
@@ -185,7 +185,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![Confluent Schema Registry forward-engineering](<lib/Confluent%20Schema%20Registry%20forward-engineering.png>)
+![Confluent Schema Registry forward-engineering](<lib/Confluent Schema Registry forward-engineering.png>)
 
 &nbsp;
 
@@ -209,7 +209,7 @@ With Hackolade Studio, you can reverse-engineer Avro files located on:
 
 \- Amazon S3
 
-\- Azure Blog Storage
+\- Azure Blob Storage
 
 \- Azure Data Lake Storage (ADLS) Gen 1 and Gen 2
 

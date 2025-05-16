@@ -8,10 +8,10 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![Glue Data Catalog Forward-Engineering](<lib/Glue%20Forward-Engineering.png>)
+![Glue Data Catalog Forward-Engineering](<lib/Glue Forward-Engineering.png>)
 
 &nbsp;
 
 or in HiveQL syntax:
 
-![Glue forward-engineering in HiveQL](<lib/Glue%20forward-engineering%20in%20HiveQL.png>)
+![Glue forward-engineering in HiveQL](<lib/Glue forward-engineering in HiveQL.png>)

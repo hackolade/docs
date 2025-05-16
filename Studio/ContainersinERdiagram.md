@@ -8,7 +8,7 @@ If necessary for your application, you can define multiple container in the same
 
 &nbsp;
 
-![Couchbase multi-bucket model](<lib/Couchbase%20multi-bucket%20model.png>)
+![Couchbase multi-bucket model](<lib/Couchbase multi-bucket model.png>)
 
 &nbsp;
 

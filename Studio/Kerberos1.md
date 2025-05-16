@@ -4,7 +4,7 @@
 
 &nbsp;
 
-**Important note:** our Kerberos support uses a 3rd-party library to provide cross-platform kerberos authentication using GSSAPI on Linux/Mac, and SSPI on Windows. &nbsp; For Linux and Mac, there are pre-requisites, respectively,&nbsp;
+**Important note:** our Kerberos support uses a 3rd-party library to provide cross-platform kerberos authentication using GSSAPI on Linux/Mac, and SSPI on Windows. &nbsp; For Linux, Windows, and Mac, there are pre-requisites, respectively,&nbsp;
 
 for **Linux:**
 
@@ -13,7 +13,7 @@ for **Linux:**
 * A proper C/C++ compiler toolchain, like [GCC](<https://gcc.gnu.org/> "target=\"\_blank\"")
 * Distribution-specific kerberos packages (e.g. krb5-dev on Ubuntu)
 
-and for **Mac:**
+for **Mac:**
 
 * Xcode Command Line Tools: Can be installed with xcode-select --install
 * Distribution-specific kerberos packages (e.g. [krb5 on Homebrew](<https://formulae.brew.sh/formula/krb5> "target=\"\_blank\""))
@@ -23,6 +23,30 @@ and for **Mac:**
 If issues are encountered, it is generally a good idea to validate first that the whole environment has been set up correctly by connecting with [Beeline](<https://cwiki.apache.org/confluence/display/Hive/HiveServer2%20Clients> "target=\"\_blank\"").&nbsp; It may be required to obtain a valid Kerberos ticket before you attempt a connection to HiveServer2.&nbsp; This step can be done by running *kinit* from a terminal (Linux/mac) or a command line (Windows):&nbsp;
 
 \[example\_user@host ~\] $ $BIGINSIGHTS\_HOME/jdk/jre/bin/kinit -k -t /home/example\_user/example\_user.keytab example\_user@YOUR-REALM.COM
+
+&nbsp;
+
+For **Windows:**
+
+\* Download MIT Kerberos for Windows 4.1 from [this page](<https://web.mit.edu/kerberos/dist/#kfw-4.1> "target=\"\_blank\"").
+
+\* Launch the installation wizard
+
+\* Accept the License agreement
+
+\* Chose Setup Type '''Custom''' as by default the installer doesn't install the components we need.
+
+\* In the Custom Setup customization screen, expand the tree by clicking on Kerberos for Windows.&nbsp; You should see a red cross in front on SDK line.&nbsp; Click on the red cross box icon and select the option '''Will be installed on local hard drive'''.
+
+\* Proceed with the installation
+
+&nbsp;
+
+Alternatively you can also install this third party library using the \[Chocolatey package manager\](https://chocolatey.org) and the following command line in a PowerShell window:
+
+> choco install mitkerberos --install-arguments="ADDLOCAL=all"
+
+&nbsp;
 
 &nbsp;
 
@@ -94,7 +118,7 @@ The corresponding settings in Hackolade would be:
 
 &nbsp;
 
-![Hive - Kerberos Authentication settings](<lib/Hive%20-%20Kerberos%20Authentication%20settings.png>)
+![Hive - Kerberos Authentication settings](<lib/Hive - Kerberos Authentication settings.png>)
 
 &nbsp;
 

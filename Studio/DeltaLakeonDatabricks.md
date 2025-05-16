@@ -20,7 +20,7 @@ The data model in the picture below results from the modeling of an application 
 
 &nbsp;
 
-![Delta Lake on Databricks workspace](<lib/Delta%20Lake%20on%20Databricks%20workspace.png>)
+![Delta Lake on Databricks workspace](<lib/Delta Lake on Databricks workspace.png>)
 
 &nbsp;
 
@@ -48,11 +48,11 @@ Every Databricks deployment has a central Hive metastore accessible by all clust
 
 &nbsp;
 
-Delta Lake does not support multi-table transactions, primary or foreign keys. The only constraints supported by Delta Lake are NOT NULL and CHECK.
+Delta Lake does not enforce multi-table transactions, primary or foreign keys, but they still can be declared . The only constraints supported by Delta Lake are NOT NULL and CHECK.
 
 &nbsp;
 
-![Databricks table properties](<lib/Hive%20table%20properties.png>)
+![Databricks table properties](<lib/Hive table properties.png>)
 
 &nbsp;
 
@@ -68,7 +68,13 @@ Hackolade was specially adapted to support the data types and attributes behavio
 
 &nbsp;
 
-![Databricks data types](<lib/Hive%20data%20types.png>)
+In addition to the Hive data types, Databricks also supports the semi-structured data types: VARIANT, OBJECT and ARRAY to represent arbitrary data structures which can be used to import and operate on semi-structured data (JSON, Avro, ORC, Parquet, or XML.)&nbsp; Variant provides an order of magnitude performance improvements compared with storing these data as JSON strings, while maintaining the flexibility for supporting highly nested and evolving schema.
+
+&nbsp;
+
+&nbsp;
+
+![Hive data types](<lib/Hive data types.png>)
 
 &nbsp;
 
@@ -82,6 +88,97 @@ Hackolade supports Delta Lake views, via a SELECT of columns of the underlying b
 
 &nbsp;
 
+## Databricks Unity Catalog
+
+The Unity Catalog is a unified governance solution for data and AI assets on the Databricks Lakehouse.&nbsp; It provides centralized access control, auditing, lineage, and data discovery capabilities across Databricks workspaces.&nbsp; It was introduced with Runtime 11.3
+
+&nbsp;
+
+All data in Unity Catalog is referenced using a [three-level namespace](<https://docs.databricks.com/data-governance/unity-catalog/queries.html#three-level-namespace-notation>): catalog.schema.table.
+
+![Unity Catalog object model diagram](<lib/Unity Catalog object model diagram.png>)
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+**Catalog:** Catalogs are the highest level in the data hierarchy (catalog \> schema \> table/view/volume) managed by the Unity Catalog metastore. They are intended as the primary unit of data isolation in a typical Databricks data governance model.&nbsp; Catalogs represent a logical grouping of schemas, usually bounded by data access requirements. Catalogs often mirror organizational units or software development lifecycle scopes. You may choose, for example, to have a catalog for production data and a catalog for development data, or a catalog for non-customer data and one for sensitive customer data.
+
+&nbsp;
+
+**Schema (Database):** Schemas, also known as databases, are logical groupings of tabular data (tables and views), non-tabular data (volumes), functions, and machine learning models. They give you a way to organize and control access to data that is more granular than catalogs. Typically they represent a single use case, project, or team sandbox.
+
+&nbsp;
+
+**Tables:** Tables reside in the third layer of Unity Catalog’s three-level namespace. They contains rows of data. Unity Catalog lets you create *managed tables* and *external tables*.
+
+&nbsp;
+
+**Views:** A view is a read-only object derived from one or more tables and views in a metastore.
+
+&nbsp;
+
+**Volumes:** Volumes reside in the third layer of Unity Catalog’s three-level namespace. They manage non-tabular data. You can use volumes to store, organize, and access files in any format, including structured, semi-structured, and unstructured data. Files in volumes cannot be registered as tables.
+
+&nbsp;
+
+For more information on the Unity Catalog, consult the [documentation](<https://docs.databricks.com/data-governance/unity-catalog/index.html> "target=\"\_blank\"").
+
+&nbsp;
+
+### Tags in Unity Catalog
+
+This feature is only available for Runtime 13 and up.
+
+&nbsp;
+
+Tags are attributes containing keys and optional values that can be applied to different objects in Unity Catalog. Tagging is useful for organizing and categorizing objects within a metastore. Using tags also simplifies search and discovery of your data assets.
+
+&nbsp;
+
+In Hackolade Studio, tags are groups of key-value pairs that appear at different levels: catalog, schema, table, and attribute. &nbsp;
+
+![Image](<lib/Databricks Unity Catalog tags.png>)
+
+&nbsp;
+
+They translate into the corresponding DDL statements during forward-engineering:
+
+&nbsp;
+
+> ALTER \<LEVEL\> \<levelObject\_name\>\
+SET TAGS ('key1' = 'value1', 'key2' = 'value2')\
+\
+where SET TAGS ( { tag\_name = tag\_value } \[, …\] )
+
+> &nbsp;
+
+> where tag\_name is a literal STRING. The tag\_name must be unique within the object, and tag\_value is a literal STRING.
+
+&nbsp;
+
+Tags are also picked up during reverse-engineering.
+
+&nbsp;
+
+There are some constraints:
+
+\- to add tags to Unity Catalog securable objects when applying the DDL script to intance, users must have the APPLY TAG privilege on the object, as well as the USE SCHEMA privilege on the object’s parent schema and the USE CATALOG privilege on the object’s parent catalog.
+
+\- you can assign a maximum of 20 tags to a single securable object
+
+\- the maximum length of a tag is 255 characters (use regex validation property)
+
+\- special characters&nbsp; '.', ',', '-', '=', '/', ':', ' ' (blank space) cannot be used in tag names (use regex validation property)
+
+&nbsp;
+
+Note that the tag value is optional, i.e. there can be a tag without value.
+
+&nbsp;
+
 ## Forward-Engineering
 
 Hackolade dynamically generates the HiveQL script to create databases, tables, columns and their data types, as well as views for the structure created with the application.
@@ -92,7 +189,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![Databricks forward-engineering](<lib/Delta%20Lake%20forward-engineering.png>)
+![Databricks forward-engineering](<lib/Delta Lake forward-engineering.png>)
 
 &nbsp;
 
@@ -124,96 +221,4 @@ The Hackolade process for reverse-engineering of Delta Lake databases includes t
 &nbsp;
 
 For more information on Delta Lake in general, please consult the [website](<https://delta.io/> "target=\"\_blank\"").&nbsp; Here is the links to the [Databricks website](<https://databricks.com/product/data-lakehouse> "target=\"\_blank\"").
-
-&nbsp;
-
-## Databricks Unity Catalog
-
-The Unity Catalog is a unified governance solution for data and AI assets on the Databricks Lakehouse.&nbsp; It provides centralized access control, auditing, lineage, and data discovery capabilities across Databricks workspaces.&nbsp; It was introduced with Runtime 11.3
-
-&nbsp;
-
-All data in Unity Catalog is referenced using a [three-level namespace](<https://docs.databricks.com/data-governance/unity-catalog/queries.html#three-level-namespace-notation>): catalog.schema.table.
-
-![Unity Catalog object model diagram](<lib/Unity%20Catalog%20object%20model%20diagram.png>)
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-**Catalog:** Catalogs are the highest level in the data hierarchy (catalog \> schema \> table/view/volume) managed by the Unity Catalog metastore. They are intended as the primary unit of data isolation in a typical Databricks data governance model.&nbsp; Catalogs represent a logical grouping of schemas, usually bounded by data access requirements. Catalogs often mirror organizational units or software development lifecycle scopes. You may choose, for example, to have a catalog for production data and a catalog for development data, or a catalog for non-customer data and one for sensitive customer data.
-
-&nbsp;
-
-**Schema (Database):** Schemas, also known as databases, are logical groupings of tabular data (tables and views), non-tabular data (volumes), functions, and machine learning models. They give you a way to organize and control access to data that is more granular than catalogs. Typically they represent a single use case, project, or team sandbox.
-
-&nbsp;
-
-**Tables:** Tables reside in the third layer of Unity Catalog’s three-level namespace. They contains rows of data. Unity Catalog lets you create *managed tables* and *external tables*.
-
-&nbsp;
-
-**Views:** A view is a read-only object derived from one or more tables and views in a metastore.
-
-&nbsp;
-
-**Volumes:** Volumes reside in the third layer of Unity Catalog’s three-level namespace. They manage non-tabular data. You can use volumes to store, organize, and access files in any format, including structured, semi-structured, and unstructured data. Files in volumes cannot be registered as tables.
-
-&nbsp;
-
-For more information on the Unity Catalog, consult the [documentation](<https://docs.databricks.com/data-governance/unity-catalog/index.html> "target=\"\_blank\"").
-
-### Tags in Unity Catalog
-
-This feature is only available for Runtime 13 and up.
-
-&nbsp;
-
-Tags are attributes containing keys and optional values that can be applied to different objects in Unity Catalog. Tagging is useful for organizing and categorizing objects within a metastore. Using tags also simplifies search and discovery of your data assets.
-
-&nbsp;
-
-In Hackolade Studio, tags are groups of key-value pairs that appear at different levels: catalog, schema, table, and attribute. &nbsp;
-
-![Image](<lib/Databricks%20Unity%20Catalog%20tags.png>)
-
-&nbsp;
-
-They translate into the corresponding DDL statements during forward-engineering:
-
-&nbsp;
-
-> ALTER \<LEVEL\> \<levelObject\_name\> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-
-> SET TAGS ('key1' = 'value1', 'key2' = 'value2')
-
-> &nbsp;
-
-> where SET TAGS ( { tag\_name = tag\_value } \[, …\] )
-
-where tag\_name is a literal STRING. The tag\_name must be unique within the object, and tag\_value is a literal STRING.
-
-&nbsp;
-
-Tags are also picked up during reverse-engineering.
-
-&nbsp;
-
-There are some constraints:
-
-\- to add tags to Unity Catalog securable objects when applying the DDL script to intance, users must have the APPLY TAG privilege on the object, as well as the USE SCHEMA privilege on the object’s parent schema and the USE CATALOG privilege on the object’s parent catalog.
-
-\- you can assign a maximum of 20 tags to a single securable object
-
-\- the maximum length of a tag is 255 characters (use regex validation property)
-
-\- special characters&nbsp; '.', ',', '-', '=', '/', ':', ' ' (blank space) cannot be used in tag names (use regex validation property)
-
-&nbsp;
-
-Note that the tag value is optional, i.e. there can be a tag without value.
-
-&nbsp;
 

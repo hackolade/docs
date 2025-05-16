@@ -30,11 +30,11 @@ Hackolade also loosely applies Information Engineering notation to relationship 
 
 | **Symbol** | **Description** |
 | --- | --- |
-| ![Relationship cardinality - one](<lib/Relationship%20cardinality%20-%20one.png>) | only one |
-| &nbsp;![Relationship cardinality - many](<lib/Relationship%20cardinality%20-%20many.png>) | many |
-| ![Relationship cardinality - zero-to-one](<lib/Relationship%20cardinality%20-%20zero-to-one.png>) | zero or one |
-| ![Relationship cardinality - zero-to-many](<lib/Relationship%20cardinality%20-%20zero-to-many.png>) | zero or more |
-| ![Relationship cardinality - one-to-many](<lib/Relationship%20cardinality%20-%20one-to-many.png>) | one or more |
+| ![Relationship cardinality - one](<lib/Relationship cardinality - one.png>) | only one |
+| &nbsp;![Relationship cardinality - many](<lib/Relationship cardinality - many.png>) | many |
+| ![Relationship cardinality - zero-to-one](<lib/Relationship cardinality - zero-to-one.png>) | zero or one |
+| ![Relationship cardinality - zero-to-many](<lib/Relationship cardinality - zero-to-many.png>) | zero or more |
+| ![Relationship cardinality - one-to-many](<lib/Relationship cardinality - one-to-many.png>) | one or more |
 
 
 &nbsp;

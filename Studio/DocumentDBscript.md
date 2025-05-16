@@ -8,7 +8,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![Image](<lib/DocumentDB%20forward-engineering.png>)
+![Image](<lib/DocumentDB forward-engineering.png>)
 
 &nbsp;
 

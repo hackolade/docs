@@ -8,7 +8,7 @@ In order to secure connections between the server and client, you need to ensure
 
 &nbsp;
 
-![JanusGraph connection SSL](<lib/MongoDB%20connection%20SSL.png>)
+![JanusGraph connection SSL](<lib/MongoDB connection SSL.png>)
 
 &nbsp;
 

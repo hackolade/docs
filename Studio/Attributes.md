@@ -34,17 +34,17 @@ This is the most common attribute in a schema.&nbsp; It defines the name-value p
 
 The nominal case is for an attribute to have only one type.&nbsp; The JSON specification however allows a field to be of multiple types.&nbsp; The application UI is able to define and maintain multiple types for a field.&nbsp; If the data types in the multiple set are all scalar types (string, number, boolean, null), then you just press the + sign to the right of the data type property:
 
-![Data types multiple](<lib/Data%20types%20multiple.png>)
+![Data types multiple](<lib/Data types multiple.png>)
 
 As a result, the data type in the ERD appears as "multi":
 
-![Data types multiple ERD](<lib/Data%20types%20multiple%20ERD.png>)
+![Data types multiple ERD](<lib/Data types multiple ERD.png>)
 
 &nbsp;
 
 The Properties Pane displays an array of properties for each of the data types:
 
-![Data types multiple Properties Pane](<lib/Data%20types%20multiple%20Properties%20Pane.png>)
+![Data types multiple Properties Pane](<lib/Data types multiple Properties Pane.png>)
 
 &nbsp;
 
@@ -54,7 +54,7 @@ To expand the list&nbsp; of properties for a given data type, press the + sign o
 
 If one of the data types is complex (array or object, and also list, map, struct, etc. in other targets), then you must use a choice, cfr below.&nbsp; With v6.2.2, and only for JSON Schema and MongoDB, it is also possible to specify multiple data type with at least one complex data type, using the simpler method already used with scalar data types:
 
-![Data types multiple complex object and array](<lib/Data%20types%20multiple%20complex%20object%20and%20array.png>)
+![Data types multiple complex object and array](<lib/Data types multiple complex object and array.png>)
 
 &nbsp;
 
@@ -64,11 +64,11 @@ The nature of attributes is different for document, array, or others.&nbsp; Docu
 
 With version 5.3.0, Hackolade introduced the possibility, in the JSON target only, to have an undefined data type called "any".&nbsp; This allows you to have no restriction on the data type.&nbsp; While the declaration of the "any" data type is explicit in the UI, the result in JSON Schema is the absence of a data type declaration.&nbsp; In other words, the selection of the "any" data type:
 
-![JSON Schema undefined data type any](<lib/JSON%20Schema%20undefined%20data%20type%20any.png>)
+![JSON Schema undefined data type any](<lib/JSON Schema undefined data type any.png>)
 
 results in the following JSON Schema declaration:
 
-![Image](<lib/JSON%20Schema%20undefined%20data%20type%20any%20result.png>)
+![Image](<lib/JSON Schema undefined data type any result.png>)
 
 &nbsp;
 
@@ -82,7 +82,7 @@ Pattern fields (or [pattern properties](<http://json-schema.org/latest/json-sche
 
 For example:
 
-![patternExample and ERD](<lib/patternExample%20and%20ERD.png>)
+![patternExample and ERD](<lib/patternExample and ERD.png>)
 
 &nbsp;
 
@@ -92,7 +92,7 @@ The sub-document key in the key-value pair is not a fixed word, but a variable.&
 
 In Hackolade, the above example is modeled this way:
 
-![pattern field property example tree](<lib/patternExample%20tree.png>)
+![pattern field property example tree](<lib/patternExample tree.png>)
 
 &nbsp;
 
@@ -100,7 +100,7 @@ In Hackolade, the above example is modeled this way:
 
 ### Choice
 
-In JSON Schema, there are 4 possible choices: “allOf”, “anyOf”, “oneOf”, and “noneOf”.&nbsp; Each of these attributes contains an array, with each attribute of the array representing content that will be matched against.&nbsp; The choice of “allOf”, “anyOf”, “oneOf”, or “not” determines how the validation processor will treat the results of the matches:&nbsp;
+In JSON Schema, there are 4 possible [schema composition](<https://json-schema.org/understanding-json-schema/reference/combining> "target=\"\_blank\"") choices: “allOf”, “anyOf”, “oneOf”, and “noneOf”.&nbsp; Each of these attributes contains an array, with each attribute of the array representing content that will be matched against.&nbsp; The choice of “allOf”, “anyOf”, “oneOf”, or “not” determines how the validation processor will treat the results of the matches:&nbsp;
 
 * allOf requires that all attributes in the suschema are matched successfully.
 * anyOf requires one or more of the attributes in the subschema to be matched successfully.
@@ -111,7 +111,7 @@ Schema definitions can use “allOf”, “anyOf”, “oneOf”, and “noneOf�
 
 &nbsp;
 
-![JSON Schema choices](<lib/JSON%20Schema%20choices.png>)
+![JSON Schema choices](<lib/JSON Schema choices.png>)
 
 &nbsp;
 
@@ -136,7 +136,7 @@ A better application of this feature is when having to allow the application of 
 
 &nbsp;
 
-![JSON Schema conditional](<lib/JSON%20Schema%20conditional.png>)
+![JSON Schema conditional](<lib/JSON Schema conditional.png>)
 
 &nbsp;
 

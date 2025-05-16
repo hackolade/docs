@@ -14,19 +14,19 @@ You may also [view this tutorial](<https://youtu.be/uk-K3aNosJg> "target=\"\_bla
 
 To append a sub-object in an ERD entity, we can right-click in the entity
 
-![Tutorial - add an object in ERD](<lib/Tutorial%20-%20add%20an%20object%20in%20ERD.png>)
+![Tutorial - add an object in ERD](<lib/Tutorial - add an object in ERD.png>)
 
 &nbsp;
 
 We can do the same thing in the entity's tab:
 
-![Tutorial - add an object in tab](<lib/Tutorial%20-%20add%20an%20object%20in%20tab.png>)
+![Tutorial - add an object in tab](<lib/Tutorial - add an object in tab.png>)
 
 &nbsp;
 
 While it is not possible to add a child attribute to a scalar data type, a complex (non-scalar) data type such as objects and arrays hold a sub-structure, for example:
 
-![Tutorial - add an address object](<lib/Tutorial%20-%20add%20an%20address%20object.png>)
+![Tutorial - add an address object](<lib/Tutorial - add an address object.png>)
 
 &nbsp;
 
@@ -36,19 +36,19 @@ While it is not possible to add a child attribute to a scalar data type, a compl
 
 Similarly, you can add an array where each item matches the same schema:
 
-![Image](<lib/Tutorial%20-%20add%20an%20array%20item.png>)
+![Image](<lib/Tutorial - add an array item.png>)
 
 &nbsp;
 
 or tuples, with a sequence of ordered items with possibly different schemas
 
-![Image](<lib/Tutorial%20-%20add%20a%20tuple.png>)
+![Image](<lib/Tutorial - add a tuple.png>)
 
 &nbsp;
 
 Note that in Hackolade for documentation purposes, you may assign a friendly name to an array item:
 
-![Image](<lib/Tutorial%20-%20array%20item%20friendly%20name.png>)
+![Image](<lib/Tutorial - array item friendly name.png>)
 
 &nbsp;
 

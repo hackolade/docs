@@ -11,7 +11,7 @@ Connecting a Databricks instance on one of the cloud providers requires to decla
 
 &nbsp;
 
-![Delta Lake Databicks connection settings](<lib/Delta%20Lake%20connection%20settings.png>)
+![Delta Lake Databicks connection settings](<lib/Delta Lake connection settings.png>)
 
 &nbsp;
 
@@ -33,7 +33,7 @@ https://\<databricks-instance\>/#/setting/clusters/\<cluster-id\>
 
 In the following screenshot, the cluster ID is 1115-164516-often242:
 
-![Delta Lake Databricks connection settings input](<lib/Delta%20Lake%20connection%20settings%20input.png>)
+![Delta Lake Databricks connection settings input](<lib/Delta Lake connection settings input.png>)
 
 &nbsp;
 
@@ -43,13 +43,13 @@ Hackolade uses the Databricks REST API, and requires that an access token be iss
 
 &nbsp;
 
-![Delta Lake Databricks connections settings auth](<lib/Delta%20Lake%20connections%20settings%20auth.png>)
+![Delta Lake Databricks connections settings auth](<lib/Delta Lake connections settings auth.png>)
 
 &nbsp;
 
 For Databricks on Azure, you may have tables using Azure Data Lake Storage which requires additional authentication for Databricks to access it.&nbsp; In such case, you may need to declare ADLS credentials passthrough:
 
-![Databricls ADLS passthrough credentials](<lib/Databricls%20ADLS%20passthrough%20credentials.png>)
+![Databricls ADLS passthrough credentials](<lib/Databricls ADLS passthrough credentials.png>)
 
 &nbsp;
 

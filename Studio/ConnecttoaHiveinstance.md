@@ -32,7 +32,7 @@ In the connection tab, first give a friendly name to the connection settings.&nb
 
 &nbsp;
 
-![Hive - Connection settings](<lib/Hive%20-%20Connection%20settings.png>)
+![Hive - Connection settings](<lib/Hive - Connection settings.png>)
 
 &nbsp;
 
@@ -116,7 +116,7 @@ In the options tab, choose the [transport mode](<https://cwiki.apache.org/conflu
 
 &nbsp;
 
-![Hive - Connection options](<lib/Hive%20-%20Connection%20options.png>)
+![Hive - Connection options](<lib/Hive - Connection options.png>)
 
 &nbsp;
 
@@ -132,7 +132,7 @@ Http transport mode is available for all transport types (Plain SASL, NoSASL, LD
 
 &nbsp;
 
-![Hive connection options http](<lib/Hive%20connection%20options%20http.png>)
+![Hive connection options http](<lib/Hive connection options http.png>)
 
 ## &#52;) SSL
 
@@ -164,11 +164,11 @@ Hackolade is able to connect to Hive via SSL connection with all of the authenti
 
 &nbsp;
 
-## &#52;a) Using HTTPs
+### &#52;a) Using HTTPs
 
 If the certificate is not installed locally, you must get a copy of the certificate(s) and reference them in the Certificate Authority field:&nbsp;
 
-![Hive connection settings SSL-HTTPs](<lib/Hive%20connection%20settings%20SSL-HTTPs.png>)
+![Hive connection settings SSL-HTTPs](<lib/Hive connection settings SSL-HTTPs.png>)
 
 You may declare multiple certificates, separated by a comma. &nbsp;
 
@@ -196,7 +196,7 @@ Alternatively, you may concatenate the certificates into a single file, and the 
 
 Specify the path and filename to keystore, the access password, and the alias name for the Hive instance.
 
-![Hive - Connection settings Java Keystore](<lib/Hive%20-%20Connection%20settings%20Java%20Keystore.png>)
+![Hive - Connection settings Java Keystore](<lib/Hive - Connection settings Java Keystore.png>)
 
 &nbsp;
 
@@ -210,9 +210,11 @@ The following instruction shows how to convert JKS (java key store) certificate 
 
 1. Install java if you don't have it: [https://www.java.com/en/download/](<https://www.java.com/en/download/>)
 1. Install openssl: [https://wiki.openssl.org/index.php/Binaries](<https://wiki.openssl.org/index.php/Binaries>)
+
    1. Linux: sudo apt-get install openssl
    1. MacOS: brew install openssl
    1. Windows: [https://slproweb.com/products/Win32OpenSSL.html](<https://slproweb.com/products/Win32OpenSSL.html>)
+
 1. Find out alias used by keystore
 
 Run the following command to find out what alias is used by keystore:
@@ -223,7 +225,7 @@ where keystore.jks is the java key store file granting access to the cassandra i
 
 alias will be in the section “Alias name”
 
-1. Generate PKS key
+4. Generate PKS key
 
 \> keytool -importkeystore -srckeystore keystore.jks -destkeystore myapp.p12 -srcalias myapp-dev -srcstoretype jks -deststoretype pkcs12
 
@@ -259,7 +261,7 @@ myapp-dev - alias used by keystore and determined in step 3 above
 
 &nbsp;
 
-![Hive - Connection settings SSL](<lib/Hive%20-%20Connection%20settings%20SSL.png>)
+![Hive - Connection settings SSL](<lib/Hive - Connection settings SSL.png>)
 
 &nbsp;
 

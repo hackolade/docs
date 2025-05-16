@@ -8,13 +8,14 @@ If you don't have a local copy of the remote repository yet, then you first need
 
 &nbsp;
 
-![Image](<lib/Workgroup%20clone.png>)
+![Image](<lib/Workgroup clone.png>)
 
-**Important note:** we strongly suggest to **avoid** cloning your repo in a folder which synchronized with the cloud (OneDrive, Google Drive, iCloud, Dropbox, etc...)&nbsp; The sync mechanism may cause perverse performance effects and sometimes conflicts with the Git processes.
+**Important note:** we strongly suggest to **avoid** cloning your repo in a folder which is synchronized with the cloud (OneDrive, Google Drive, iCloud, Dropbox, etc...)&nbsp; The sync mechanism may cause perverse performance effects and sometimes conflicts with the Git processes.
 
 &nbsp;
 
 * **Open the repository context**.
+
   * choose Repository \> Open Repository Context in the top menu;
   * use the keyboard shortcut Ctrl+G (Cmd+G on MacOS);
   * or switch to the repository context via the icon in the vertical Context Bar on the left;
@@ -34,5 +35,5 @@ You're done\!&nbsp; You now have a local copy of the remote repository in the sp
 
 &nbsp;
 
-![Workgroup explore files](<lib/Workgroup%20explore%20files.png>)
+![Workgroup explore files](<lib/Workgroup explore files.png>)
 

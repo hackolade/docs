@@ -10,7 +10,7 @@ Hackolade was specially adapted to support the data modeling of DynamoDB tables 
 
 The data model in the picture below results from the reverse-engineering of the sample application described [here](<http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SampleData.CreateTables.html> "target=\"\_blank\"").
 
-![DynamoDB workspace](<lib/DynamoDB%20workspace.png>)
+![DynamoDB workspace](<lib/DynamoDB workspace.png>)
 
 &nbsp;
 
@@ -65,8 +65,10 @@ DynamoDB supports many different data types for attributes within a table.&nbsp;
 
 * Scalar Types – A scalar type can represent exactly one value.&nbsp; The scalar types are **number, string, binary, Boolean, and null.**
 * Document Types – A document type can represent a complex structure with nested attributes—such as you would find in a JSON document.&nbsp; The document types are list and map.
+
   * A list type attribute can store an ordered collection of values.&nbsp; Lists are enclosed in square brackets: \[ ... \]&nbsp; **A list is similar to a JSON array.**&nbsp; There are no restrictions on the data types that can be stored in a list element, and the elements in a list element do not have to be of the same type.
   * A map type attribute can store an unordered collection of name-value pairs.&nbsp; Maps are enclosed in curly braces: { ... }&nbsp; **A map is similar to a JSON object.**&nbsp; There are no restrictions on the data types that can be stored in a map element, and the elements in a map do not have to be of the same type.&nbsp; Maps are ideal for storing JSON documents in DynamoDB.&nbsp;
+
 * Set Types – A set type can represent multiple scalar values.&nbsp; The set types are string set, number set, and binary set.&nbsp; All of the elements within a set must be of the same type.&nbsp; For example, an attribute of type Number Set can only contain numbers; String Set can only contain strings; and so on.
 
 Note that date values are stored as ISO-8601 formatted strings, shifted to UTC, with millisecond precision.
@@ -77,7 +79,7 @@ Hackolade was specially adapted to support the data types and attributes behavio
 
 &nbsp;
 
-![Image](<lib/DynamoDB%20schema%20tree%20view.png>)
+![Image](<lib/DynamoDB schema tree view.png>)
 
 &nbsp;
 
@@ -106,11 +108,13 @@ More information can be found [here](<http://docs.aws.amazon.com/amazondynamodb/
 
 ## Views
 
-In Hackolade, we have enabled the views feature.&nbsp; While these views do not get forward-engineered to the database instance, they are useful in the context of single-table storage, in order to visualize and document access patterns for a table.&nbsp; Views are a more visual equivalent to the concept of facets in the [NoSQL Workbench](<https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.html> "target=\"\_blank\"")).
+In Hackolade, we have enabled the views feature.&nbsp; While these views do not get forward-engineered to the database instance, they are useful in the context of single-table storage, in order to visualize and document access patterns for a table.&nbsp; Views are a more visual equivalent to the concept of facets in the [NoSQL Workbench](<https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.html> "target=\"\_blank\"")).&nbsp; Views can also be used to visually represent secondary indexes in your ERD.
 
 &nbsp;
 
-![DynamoDB views](<lib/DynamoDB%20views.png>)
+![DynamoDB views](<lib/DynamoDB views.png>)
+
+&nbsp;
 
 ## Forward-Engineering
 
@@ -122,7 +126,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![DynamoDB apply to instance](<lib/DynamoDB%20apply%20to%20instance.png>)
+![DynamoDB apply to instance](<lib/DynamoDB apply to instance.png>)
 
 ## Reverse-Engineering
 

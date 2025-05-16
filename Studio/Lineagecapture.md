@@ -35,7 +35,7 @@ Once lineage capture is enabled for a model, lineage sources are generally creat
 
 &nbsp;
 
-![Lineage model source](<lib/Lineage%20model%20source.png>)
+![Lineage model source](<lib/Lineage model source.png>)
 
 &nbsp;
 
@@ -91,7 +91,7 @@ A lineage entry is created at the attribute level when it is impacted, referenci
 
 &nbsp;
 
-![Lineage source reference](<lib/Lineage%20source%20reference.png>)
+![Lineage source reference](<lib/Lineage source reference.png>)
 
 &nbsp;
 
@@ -103,7 +103,7 @@ Aside from the description is possible transformation entries, which can be defi
 
 &nbsp;
 
-![Lineage - entity level](<lib/Lineage%20-%20entity%20level.png>)
+![Lineage - entity level](<lib/Lineage - entity level.png>)
 
 &nbsp;
 

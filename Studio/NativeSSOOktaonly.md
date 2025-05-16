@@ -16,5 +16,5 @@ The proper Okta authenticator URL, Okta usernamein email format and Okta passwor
 
 &nbsp;
 
-![Snowflake authentication - Native SSO Okta](<lib/Snowflake%20authentication%20-%20Native%20SSO%20Okta.png>)
+![Snowflake authentication - Native SSO Okta](<lib/Snowflake authentication - Native SSO Okta.png>)
 

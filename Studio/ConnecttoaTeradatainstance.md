@@ -16,13 +16,13 @@ In the Hackolade connection settings dialog, give a meaningful name to the conne
 
 &nbsp;
 
-![Teradata connection settings](<lib/Teradata%20connection%20settings.png>)
+![Teradata connection settings](<lib/Teradata connection settings.png>)
 
 &nbsp;
 
 **Important:** when reverse-engineering or forward-engineering a Teradata instance, Hackolade is leveraging the Teradata **Java** client.&nbsp; You will need a working and properly configured Java environment (minimum Java 11).&nbsp; Hackolade tries to autodetect **JAVA\_HOME** on your system but you can still configure it manually if your installation is specific (or if our automatic detection can’t find **JAVA\_HOME**)**.**
 
-![Teradata advanced settings Java binary path](<lib/Teradata%20advanced%20settings%20Java%20binary%20path.png>)
+![Teradata advanced settings Java binary path](<lib/Teradata advanced settings Java binary path.png>)
 
 &nbsp;
 
@@ -32,4 +32,4 @@ If required, you may enter your username and password
 
 &nbsp;
 
-![Image](<lib/MariaDB%20connection%20settings%20auth.png>)
+![Image](<lib/MariaDB connection settings auth.png>)

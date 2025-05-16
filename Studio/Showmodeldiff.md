@@ -8,15 +8,15 @@ As Hackolade persists models in text files, it is easy to do a basic comparison 
 
 &nbsp;
 
-![Model compare -- selection](<lib/Model%20compare%20--%20selection.png>)
+![Model compare -- selection](<lib/Model compare -- selection.png>)
 
-If you want to swap the 2 models, simply click on the arrows:![Model compare -- swap left-right](<lib/Model%20compare%20--%20swap%20left-right.png>)
+If you want to swap the 2 models, simply click on the arrows:![Model compare -- swap left-right](<lib/Model compare -- swap left-right.png>)
 
 &nbsp;
 
 By default, you get a side-by-side view of the differences.
 
-![Tools - Model compare - side-by-side](<lib/Tools%20-%20Model%20compare%20-%20side-by-side.png>)
+![Tools - Model compare - side-by-side](<lib/Tools - Model compare - side-by-side.png>)
 
 Using the scroll bar (or mouse wheel), you can review the changes, with the 2 windows scrolling in sync.
 
@@ -24,7 +24,7 @@ Using the scroll bar (or mouse wheel), you can review the changes, with the 2 wi
 
 If you prefer an in-line view of the differences, you can toggle using the button at the bottom left of the window:
 
-![Tools - Model compare - in-line](<lib/Tools%20-%20Model%20compare%20-%20in-line.png>)
+![Tools - Model compare - in-line](<lib/Tools - Model compare - in-line.png>)
 
 &nbsp;
 

@@ -6,7 +6,7 @@ You should NOT install a new version of Hackolade while the application is runni
 
 If you get this error message:
 
-![Installation error - application running](<lib/Installation%20error%20-%20application%20running.png>)
+![Installation error - application running](<lib/Installation error - application running.png>)
 
 &nbsp;
 

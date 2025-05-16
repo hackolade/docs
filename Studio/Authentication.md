@@ -14,7 +14,7 @@ If your repository has an HTTPS URL, then you might have to provide the username
 
 &nbsp;
 
-![Workgroup auth https](<lib/Workgroup%20auth%20https.png>)
+![Workgroup auth https](<lib/Workgroup auth https.png>)
 
 &nbsp;
 
@@ -30,11 +30,11 @@ The [Git Credential Manager](<https://github.com/git-ecosystem/git-credential-ma
 
 The Git Credential Manager does not only store your credentials, it also takes over from Hackolade Studio the responsibility of prompting you when credentials are missing. If your Git client has been configured to use the Git Credential Manager, then you will be prompted for credentials outside Hackolade Studio, through the user interface below that belongs to the Git Credential Manager.
 
-![Git Gredential Manager prompt](<lib/Git%20Gredential%20Manager%20prompt.png>)
+![Git Gredential Manager prompt](<lib/Git Gredential Manager prompt.png>)
 
 The easiest option is for you to choose *Sign in with your browser*. Clicking that button will open your browser and direct you to your repository hub in order to grant the Git Credential Manager access to your account. Make sure to complete the authentication flow by clicking the *Authorize* button.
 
-![Git Credential Manager GtiHub Auth](<lib/Git%20Credential%20Manager%20GtiHub%20Auth.png>)
+![Git Credential Manager GtiHub Auth](<lib/Git Credential Manager GtiHub Auth.png>)
 
 &nbsp;
 
@@ -48,7 +48,7 @@ If your repository has an SSH URL and if your SSH key is protected by a passphra
 
 &nbsp;
 
-![Workgroup auth SSH](<lib/Workgroup%20auth%20SSH.png>)
+![Workgroup auth SSH](<lib/Workgroup auth SSH.png>)
 
 &nbsp;
 
@@ -58,9 +58,8 @@ If you don't have an SSH key yet, then you need to create one. Follow the links 
 * [Connect to Bitbucket with SSH](<https://support.atlassian.com/bitbucket-cloud/docs/set-up-an-ssh-key/> "target=\"\_blank\"")
 * [Connect to Azure Repos with SSH](<https://docs.microsoft.com/en-us/azure/devops/repos/git/use-ssh-keys-to-authenticate?view=azure-devops> "target=\"\_blank\"")
 * [Connect to GitLab with SSH](<https://docs.gitlab.com/ee/user/ssh.html> "target=\"\_blank\"")
-* [Connect to AWS CodeCommit with SSH](<https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-ssh-unixes.html> "target=\"\_blank\"")
 
-&nbsp;
+[](<https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-ssh-unixes.html> "target=\"\_blank\"")
 
 Consult this page for more information on connecting to a [repository hub.](<Connecttoarepositoryhub.md>).
 

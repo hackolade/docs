@@ -8,7 +8,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![OpenAPI - Forward-Engineering](<lib/OpenAPI%20-%20Forward-Engineering.png>)
+![OpenAPI - Forward-Engineering](<lib/OpenAPI - Forward-Engineering.png>)
 
 &nbsp;
 

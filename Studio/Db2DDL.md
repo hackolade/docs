@@ -8,7 +8,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![Db2 DDL forward-engineering](<lib/Db2%20DDL%20forward-engineering.png>)
+![Db2 DDL forward-engineering](<lib/Db2 DDL forward-engineering.png>)
 
 &nbsp;
 

@@ -2,7 +2,7 @@
 
 ## Hackolade End User License Agreement
 
-Version 1.6.2, August 2022
+Version 1.8.1, March 2025
 
 &nbsp;
 
@@ -10,11 +10,11 @@ This Agreement applies to Hackolade for Evaluation, Community, Personal, Viewer,
 
 &nbsp;
 
-Product may be offered in a fixed-term subscription or a perpetual license. Invoices identify whether license rights are perpetual or term-based.&nbsp; A perpetual license allows end users to use the software for as long as the end user complies with all terms of the license agreement.&nbsp; A fixed-term license allows the end user to use the software for a specified license term so long as the end user complies with all the terms of the license agreement. At the end of the license term, the end user must stop using the software, extend the license term, or purchase new licenses through a new agreement with Hackolade.
+Product may be provided as a fixed-term subscription or a perpetual license. Invoices identify whether license rights are term-based or perpetual.&nbsp; A fixed-term license allows the end user to use the software for a specified license term so long as the end user complies with all the terms of the license agreement. At the end of the license term, the end user must stop using the software, extend the license term, or purchase new licenses through a new agreement with Hackolade.&nbsp; A perpetual license allows end users to use the software for as long as the end user complies with all terms of the license agreement. &nbsp;
 
 &nbsp;
 
-Patent US11100059 "**METHOD AND SYSTEM TO GRAPHICALLY MODEL SCHEMAS FOR NOSQL DOCUMENT DATABASES AND REST API’S**"
+Patent [US 111,000,59 B2](<https://patents.google.com/patent/US11100059B2>) **"METHOD AND SYSTEM TO GRAPHICALLY MODEL SCHEMAS FOR NOSQL DOCUMENT DATABASES AND REST API’S"** with its continuation patent [US 12,242,436 B2](<https://patents.google.com/patent/US11100059B2>) **“Construction of Database Schema Models for Database Systems and REST API's”.**
 
 &nbsp;
 
@@ -33,6 +33,10 @@ IMPORTANT:&nbsp; THE INDIVIDUAL INSTALLING OR USING THIS SOFTWARE REPRESENTS THA
 
 &nbsp;
 
+**Authorized Reseller** means an entity authorized by Hackolade to distribute and resell the Product to end-users in accordance with the terms of this Agreement.
+
+&nbsp;
+
 **Authorized Use** means the defined number of copies or instances of the Product that may be used by Licensee, and where applicable, limited to the number of Authorized Machines and Authorized Users, as designated in the Quote/Receipt/Invoice issued by Hackolade.
 
 &nbsp;
@@ -41,11 +45,11 @@ IMPORTANT:&nbsp; THE INDIVIDUAL INSTALLING OR USING THIS SOFTWARE REPRESENTS THA
 
 &nbsp;
 
-**Commencement Date** means the date on which Licensee first installs Product for the first time.
+**Commencement Date** means the date when Licensee first installs Product for the first time.
 
 &nbsp;
 
-**License** means the right to use the Product as defined by Authorized Use. License metric is per "per seat", meaning that the number of Authorized Users specified on the Invoice may use the software. A license must be obtained for each device on or from which the Product is used or accessed. When the Product is accessed remotely across using Terminal Server, Remote Desktop, Citrix XenDesktop or an equivalent method, a separate Product license is required to be assigned to each device from which the application is accessed, i.e. not the virtual machine on which the Product is installed.
+**License** means the right to use the Product as defined by Authorized Use. License metric is per "per seat", meaning that the number of Authorized Users specified on the Invoice may use the software. A license must be obtained for each device on or from which the Product is used or accessed. When the Product is accessed remotely across using Terminal Server, Remote Desktop, Windows App, virtual machine, Citrix, or an equivalent method, a separate Product license is required to be assigned to each device from which the application is accessed, i.e. not the virtual machine on which the Product is installed.
 
 &nbsp;
 
@@ -53,7 +57,7 @@ IMPORTANT:&nbsp; THE INDIVIDUAL INSTALLING OR USING THIS SOFTWARE REPRESENTS THA
 
 &nbsp;
 
-**Maintenance Start Date** means the beginning date of the Software Maintenance period, as designated in the Quote/Receipt/Invoice issued by Hackolade, or the Invoice date if no beginning date is specified.
+**Maintenance Start Date,** in the case of perpetual licenses, means the beginning date of the Software Maintenance period, as designated in the Quote/Receipt/Invoice issued by Hackolade, or the Invoice date if no beginning date is specified.
 
 &nbsp;
 
@@ -65,53 +69,70 @@ IMPORTANT:&nbsp; THE INDIVIDUAL INSTALLING OR USING THIS SOFTWARE REPRESENTS THA
 
 &nbsp;
 
-### &#50;. Fees
-
-#### &#50;.1 Perpetual License Fee
-
-A one-time fee paid by Licensee to Hackolade, as designated by Product, in consideration for the Authorized Use of the Product. License fee is payable upon acceptance of the terms and conditions set out herein. License fee is nonrefundable after 30 days from the date payment is received by Hackolade.
+**Subscription** means a fixed-term license that grants the Licensee the right to use the Product for a specified period, subject to the terms and conditions outlined in this agreement.
 
 &nbsp;
 
-#### &#50;.2 Subscription Fee
+**Technical Support** means the online helpdesk accessible only to one Licensee-designated technical contact for the sole purpose of addressing technical issues relating to the use of the Product
 
-A periodic fee paid by Licensee to Hackolade, as designated by Product, in consideration for the Authorized Use of the Product for the corresponding fixed term. Subscription fee is payable, for the initial payment upon acceptance of the terms and conditions set out herein, and subsequent payment upon expiration of the previous term. Subscription fee is nonrefundable.
+&nbsp;
+
+### &#50;. Fees
+### *&#50;.1 Subscription Fee*
+
+A periodic fee paid by Licensee to Hackolade, as designated by Product, in consideration for the Authorized Use of the Product for the corresponding fixed term. Subscription fee is payable, for the initial payment upon acceptance of the terms and conditions set out herein, and subsequent payment upon expiration of the previous term. Subscription fee is not refundable.
+
+#### &#50;.2 Perpetual License Fee
+
+For a perpetual license only, a one-time fee paid by Licensee to Hackolade, as designated by Product, in consideration for the Authorized Use of the Product. License fee is payable upon acceptance of the terms and conditions set out herein. License fee is non-refundable after 30 days from the date payment is received by Hackolade.
 
 &nbsp;
 
 ### &#51;. License Grant and Right of Use
 
-#### &#51;.1 Perpetual License Grant
+***&#51;.1 Subscription Grant***
 
-Subject to the terms of this Agreement, including limitations defined by the License, Hackolade hereby grants to Licensee, and Licensee accepts from Hackolade, a perpetual, irrevocable (except pursuant to Clause 12 below), fully paid, worldwide, non-exclusive, non-transferable (except pursuant to Clause 18 below), non-sublicensable (except to Licensee’s related entities) License to use the Product as defined by Authorized Use.
+A periodic fee paid by Licensee to Hackolade, as designated by Product, in consideration for the Authorized Use of the Product for the corresponding fixed term. Subscription fee is payable, for the initial payment upon acceptance of the terms and conditions set out herein, and subsequent payment upon expiration of the previous term. Subscription fee is not refundable.
 
-&nbsp;
+#### &#51;.2 Perpetual License Grant
 
-***&#51;.2 Subscription Grant***
-
-Subject to the terms of this Agreement, including limitations defined by the License, Hackolade hereby grants to Licensee, and Licensee accepts from Hackolade, a fixed-term, irrevocable (except pursuant to Clause 12 below), fully paid, worldwide, non-exclusive, non-transferable (except pursuant to Clause 18 below), non-sublicensable (except to Licensee’s related entities) Subscription to use the Product as defined by Authorized Use.
+For a perpetual license only, a one-time fee paid by Licensee to Hackolade, as designated by Product, in consideration for the Authorized Use of the Product. License fee is payable upon acceptance of the terms and conditions set out herein. License fee is non-refundable after 30 days from the date payment is received by Hackolade.
 
 &nbsp;
 
 ### &#52;. No Warranty
 
-Except as described in this Agreement and save as provided in Clauses 13, 14 and 16 below, the Product is provided on an “as is” and "as available" basis without warranty, express or implied, of any kind or nature, including, but not limited to, any warranties of performance or merchantability or fitness for a particular purpose, including without limitation that Hackolade does not warranty that the Product will be error-free, complete, or correct. Hackolade provides evaluation copies of the Product so that customers can assess the Product.
+Except as described in Clauses 13, 14 and 16 below, the Product is provided on an “as is” and "as available" basis without warranty, express or implied, of any kind or nature, including, but not limited to, any warranties of performance or merchantability or fitness for a particular purpose, including without limitation that Hackolade does not warranty that the Product will be error-free, complete, or correct. Hackolade provides evaluation copies of the Product so that customers can assess the Product.
 
 &nbsp;
 
 ### &#53;. Hackolade’s Obligations
 
-Upon receipt of Licensee Fee from Licensee, Hackolade will (a) supply the Licensee with the Product via electronic download; and (b) provide Software Maintenance as defined in Clause 6 below, if the Licensee has purchased the Software Maintenance option at the time of purchase of the Product and has continued payment for the Software Maintenance annual renewals.&nbsp; Hackolade will also deliver via email an activation key for the Product.
-
-&nbsp;
+Upon receipt of Licensee Fee from Licensee, Hackolade will (a) supply the Licensee with the Product via electronic download; and (b) provide Software Maintenance as defined in Clause 6 below.&nbsp; Hackolade will also deliver via email an activation key for the Product.
 
 ### &#54;. Software Maintenance
 
-Software Maintenance includes Hackolade’s provisioning to Licensee Product minor-version updates (using Semantic Versioning Major.Minor.Patch) and/or enhancements made generally available to customers from time to time.&nbsp; If the option was purchased with the Product, Software Maintenance also includes online technical support via online helpdesk only to one Licensee-designated technical contact for the sole purpose of addressing technical issues relating to the use of the Product, for a period of twelve (12) months from the Maintenance Start Date. No additional support will be provided after expiration of the Software Maintenance.
+Software Maintenance includes Hackolade’s provisioning to Licensee Product minor-version updates (using Semantic Versioning Major.Minor.Patch) and/or enhancements made generally available to customers from time to time. &nbsp;
+
+&nbsp;
+
+For subscriptions, and for as long as the subscription remains valid, then online Technical Support, maintenance, and upgrades are included.&nbsp; Technical Support, maintenance, and upgrades expire if the subscription comes to term and is not renewed.
+
+&nbsp;
+
+For perpetual licenses, if the option was purchased with the Product, Software Maintenance also includes online Technical Support for a period of twelve (12) months from the Maintenance Start Date. No additional support is provided after expiration of the Software Maintenance, unless Maintenance is renewed.
 
 &nbsp;
 
 ### &#55;. Licensee Obligations
+
+Hackolade grants Authorized Resellers the right to market and distribute licenses of the Product to Licensees, provided that Licensee agrees to be bound by the terms of this EULA prior to using the Product.
+
+&nbsp;
+
+Licensees obtaining the Product through a Reseller, authorized or not, are bound by the terms of this EULA as if they had purchased the Product directly from Hackolade.
+
+&nbsp;
 
 The Licensee must at all times: (a) ensure that only an Authorized User may use the Product and only for Authorized Use in accordance with the terms and conditions of this Agreement; (b) promptly advise Hackolade, including in writing, if the Licensee becomes aware of any unauthorized use or distribution of the Licensee's License Information (Name and Key) by any person.
 
@@ -171,7 +192,7 @@ Licensee may terminate this Agreement at any time by destroying all copies of th
 
 &nbsp;
 
-Hackolade reserves the right to discontinue the Product at any time. In this event, Hackolade will announce an End-Of-Life date on the Hackolade website. The End-Of-Life date will be at least 12 months after the announcement date. Hackolade will honor the terms of this Agreement until the End-Of-Life date. Should Licensee’s Software Maintenance period exceed the End-Of-Life date, Hackolade will offer a refund for any unused maintenance time. At the End-Of-Life date, this Agreement will terminate.
+Hackolade reserves the right to discontinue the Product at any time. In this event, Hackolade will announce an End-Of-Life date on the Hackolade website. The End-Of-Life date will be at least 12 months after the announcement date. Hackolade will honor the terms of this Agreement until the End-Of-Life date. Should Licensee’s Subscription period, or Software Maintenance period in the case of Perpetual licenses, exceed the End-Of-Life date, Hackolade will offer a refund for any unused time when the End-Of-Life date is reached. At the End-Of-Life date, this Agreement will terminate.
 
 &nbsp;
 
@@ -209,7 +230,7 @@ Excluding Hackolade’s indemnification obligations described in Clause 13 hereo
 
 ### &#49;5. Ownership / Intellectual Property
 
-This Agreement only confers the right to use the Product and does not convey any rights of ownership in or to the Product. The Licensee acknowledges that the Product and all intellectual property rights in relation to the Product are the property of Hackolade and Hackolade is entitled to take whatever action it may decide in order to protect its intellectual property rights in the Product. Hackolade does not claim intellectual property rights over models created with the Product.
+This Agreement only confers the right to use the Product and does not convey any rights of ownership in or to the Product. The Licensee acknowledges that the Product and all intellectual property rights in relation to the Product are the property of Hackolade and Hackolade is entitled to take whatever action it may decide in order to protect its intellectual property rights in the Product. Hackolade does not claim intellectual property rights over data or data models created with the Product.
 
 &nbsp;
 
@@ -241,7 +262,7 @@ All open source software included in Hackolade Product is listed on Exhibit A at
 
 &nbsp;
 
-(b) Licensee can deny Hackolade this right by submitting a written request via email to info@hackolade.com, requesting to be excluded from Hackolad's website and/or Product promotional material. Confirmation of such denial (via reply email) must be received prior to downloading for this exclusion to be effective.
+(b) Licensee can deny Hackolade this right by submitting a written request via email to info@hackolade.com, requesting to be excluded from Hackolade's website and/or Product promotional material. Confirmation of such denial (via reply email) must be received prior to downloading for this exclusion to be effective.
 
 &nbsp;
 

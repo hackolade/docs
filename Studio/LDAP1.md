@@ -54,5 +54,5 @@ Where:
 
 In Hackolade set “User Name” and “Password”:
 
-![Hive - LDAP Connection Settings](<lib/Hive%20-%20LDAP%20Connection%20Settings.png>)
+![Hive - LDAP Connection Settings](<lib/Hive - LDAP Connection Settings.png>)
 

@@ -28,7 +28,7 @@ In the Hackolade connection settings dialog, give a meaningful name to the conne
 
 &nbsp;
 
-![PostgreSQL connection settings](<lib/PostgreSQL%20connection%20settings.png>)
+![PostgreSQL connection settings](<lib/PostgreSQL connection settings.png>)
 
 &nbsp;
 
@@ -36,4 +36,4 @@ If required, you may enter your username and password
 
 &nbsp;
 
-![Image](<lib/MariaDB%20connection%20settings%20auth.png>)
+![Image](<lib/MariaDB connection settings auth.png>)

@@ -242,7 +242,7 @@ New features with v3.5.5 \[13-Dec-2019\]
 
 New features with v3.5.4 \[30-Nov-2019\]
 
-\- Graph plugins: implemented force-directed layout algorithms with spring-like attractive forces, see example: https://bit.ly/341x5l0
+\- Graph plugins: implemented force-directed layout algorithms with spring-like attractive forces
 
 \- Graph plugins: enhanced orthogonal distribution of ERD view
 

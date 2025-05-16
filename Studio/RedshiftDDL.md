@@ -8,7 +8,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![Redshift DDL forward-engineering](<lib/Redshift%20DDL%20forward-engineering.png>)
+![Redshift DDL forward-engineering](<lib/Redshift DDL forward-engineering.png>)
 
 &nbsp;
 

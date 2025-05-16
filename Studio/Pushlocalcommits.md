@@ -2,7 +2,7 @@
 
 Once you have [committed the changes](<Commitlocalchanges.md>) made in your local repository, you need to push your local commits to the remote repository in order to make your changes available to other people.&nbsp; Hackolade Studio makes it easy for you to push commits to a remote repository: you just need to open your own local repository (if not already opened) and navigate to "Push local commits".
 
-![Image](<lib/Workgroup%20push1.png>)
+![Image](<lib/Workgroup push1.png>)
 
 All your local commits that you haven't pushed yet are listed with their date, author (you), and message.
 
@@ -20,13 +20,13 @@ If I am making changes in the lower green branch below, based on a model origina
 
 &nbsp;
 
-![Image](<lib/Workgroup%20push%20denied.png>)
+![Image](<lib/Workgroup push denied.png>)
 
 &nbsp;
 
 It is the responsibility of the last user who pushes changes to do the merge first and ensure that no conflicts exist, before pushing the merged model to the remote:
 
-![Workgroup pull before push](<lib/Workgroup%20pull%20before%20push.png>)
+![Workgroup pull before push](<lib/Workgroup pull before push.png>)
 
 &nbsp;
 
@@ -38,5 +38,5 @@ You will have less headaches if you pull regularly from the remote and merge wit
 
 &nbsp;
 
-![Image](<lib/Workgroup%20pull%20often%20before%20push.png>)
+![Image](<lib/Workgroup pull often before push.png>)
 

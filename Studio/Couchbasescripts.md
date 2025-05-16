@@ -4,13 +4,13 @@ For those in a technology stack using JavaScript, and are using the [Ottoman ODM
 
 &nbsp;
 
-![Forward-Engineering - Ottoman Schema file](<lib/Forward-Engineering%20-%20Ottoman%20Schema%20file.png>)
+![Forward-Engineering - Ottoman Schema file](<lib/Forward-Engineering - Ottoman Schema file.png>)
 
 &nbsp;
 
 The same information can also be viewed in the Ottoman Schema tab:
 
-![Forward-Engineering - Couchbase Ottoman Schem](<lib/Forward-Engineering%20-%20Couchbase%20Ottoman%20Schem.png>)
+![Forward-Engineering - Couchbase Ottoman Schem](<lib/Forward-Engineering - Couchbase Ottoman Schem.png>)
 
 &nbsp;
 
@@ -18,7 +18,7 @@ We provide a sort of "forward-engineering by example", with an automatic JSON da
 
 &nbsp;
 
-![Couchbase forward-engineering script](<lib/Couchbase%20forward-engineering%20script.png>)
+![Couchbase forward-engineering script](<lib/Couchbase forward-engineering script.png>)
 
 &nbsp;
 

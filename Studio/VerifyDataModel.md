@@ -49,6 +49,8 @@ Examples:
 
 \- general: document, file, text
 
+&nbsp;
+
 #### Prime terms
 
 A prime term can be **a single word** ( or a **phrase** such as 'Unit of Measure'.)&nbsp; It is the most important **modifier of the class term**, and **directly precedes it**.
@@ -131,7 +133,7 @@ feedback,fdbak,,
 * the first line in the glossary file is a header line describing the columns in the file
 * if a cell contains commas, it must be stored in the CSV file in between double quotes
 * if your file contains [diacritics](<https://en.wikipedia.org/wiki/Diacritic> "target=\"\_blank\"") (accents, ...) you must save your file with [UTF-8](<https://en.wikipedia.org/wiki/UTF-8> "target=\"\_blank\"") encoding for the function to work properly.&nbsp; If you edit the file using Excel, you should make sure to save it using this CSV UTF-8 option:
-* ![Naming Conventions - CSV UTF-8](<lib/Naming%20Conventions%20-%20CSV%20UTF-8.png>)
+* ![Naming Conventions - CSV UTF-8](<lib/Naming Conventions - CSV UTF-8.png>)
 * multiple synonyms are separated by a pipe ("\|")
 
 &nbsp;
@@ -181,7 +183,7 @@ The property rules file is typically stored in the folder:
 
 > .hackolade/OPTIONS/\<target\>&nbsp;
 
-> &nbsp;
+&nbsp;
 
 It contains several columns:
 
@@ -215,13 +217,16 @@ amt,,,decimal,0,18,3
 Current target-specific attribute property-related rules are:
 
 * check that the properties of each attribute in the model match the specification in the propRules file. An entry is created in the report for each attribute property not matching the declared value in the target-specific propRules file.
+
   * **Invalid data type:** verify that the column value in the propRules file, if set, matches the property of the attribute in the model (i.e., if not declared in the file, then the value in the model can be anything.) If not, an entry is created in the report.
   * **Missing required property:** verify that the column value in the propRules file, if set, matches the property of the attribute in the model (i.e., if not declared in the file, then the value in the model can be either true or false.) If not, an entry is created in the report.
   * **Invalid default property:** verify that the column value in the propRules file, if set, matches the property of the attribute in the model (i.e., if not declared in the file, then the value in the model can be anything.) If not, an entry is created in the report.
   * **Invalid length:** if a string data type, verify that the column value in the propRules file, if set, matches the property of the attribute in the model (i.e., if not declared in the file, then the value in the model can be anything.) If not, an entry is created in the report.
   * **Invalid precision:** if a numeric data type, verify that the column value in the propRules file, if set, matches the property of the attribute in the model (i.e., if not declared in the file, then the value in the model can be anything.) If not, create an entry in the report.
   * **Invalid scale:** if a numeric data type, verify that the column value in the propRules file, if set, matches the property of the attribute in the model (i.e., if not declared in the file, then the value in the model can be anything.) If not, an entry is created in the report.
+
 * check additional rules that are independent of propRules file:
+
   * **Technical name conflicts with reserved keywords:** independent of glossary. Each target has a list of reserved words per level. An entry in the report is created if an attribute technical name, in full, is a reserved word.
   * **Excessive technical name length:** independent of glossary. Some target have max length of, for example 128 characters. Some customers may have their own more restrictive standards. An entry in the report is created if an attribute technical name is greater than the user-defined length. We store this user-defined length, per target, for future reuse.
 
@@ -243,19 +248,19 @@ So these rules did not get included in the list above.
 
 A couple of default paths have been added to the user parameters in Tools \> Options, for the default path of the Glossary file, and for the default path where the reports should be created:
 
-![Verify Data Model - Default paths](<lib/Verify%20Data%20Model%20-%20Default%20paths.png>)
+![Verify Data Model - Default paths](<lib/Verify Data Model - Default paths.png>)
 
 &nbsp;
 
 The tool can be found in Tools \> Verify Data Model
 
-![Verify Data Model - menu](<lib/Verify%20Data%20Model%20-%20menu.png>)
+![Verify Data Model - menu](<lib/Verify Data Model - menu.png>)
 
 &nbsp;
 
 When you invoke the tool, you are first presented with a dialog box:
 
-![Verify Data Model - main dialog](<lib/Verify%20Data%20Model%20-%20main%20dialog.png>)
+![Verify Data Model - main dialog](<lib/Verify Data Model - main dialog.png>)
 
 &nbsp;
 
@@ -265,7 +270,7 @@ With this dialog, you may select and deselect rules to be verified for the loade
 
 After you click the Submit button and select the report name and path for storage, the application executes the selected rules, and displays this dialog at the end of the process:
 
-![Verify Data Model - open in Excel](<lib/Verify%20Data%20Model%20-%20open%20in%20Excel.png>)
+![Verify Data Model - open in Excel](<lib/Verify Data Model - open in Excel.png>)
 
 &nbsp;
 

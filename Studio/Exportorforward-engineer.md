@@ -38,7 +38,7 @@ For the JSON target, the menu looks as shown below.&nbsp; The menu is dynamicall
 
 &nbsp;
 
-![Tutorial - forward-engineering menu](<lib/Tutorial%20-%20forward-engineering%20menu.png>)
+![Tutorial - forward-engineering menu](<lib/Tutorial - forward-engineering menu.png>)
 
 &nbsp;
 
@@ -50,13 +50,13 @@ For file-based exports, you are first prompted to select the entities you wish t
 
 &nbsp;
 
-![Tutorial - object selection dialog](<lib/Tutorial%20-%20object%20selection%20dialog.png>)
+![Tutorial - object selection dialog](<lib/Tutorial - object selection dialog.png>)
 
 &nbsp;
 
 Then you are prompted with the OS-specific dialog to save in the folder of your choice, for example in Windows:
 
-![Image](<lib/Tutorial%20-%20forward-engineering%20save%20dialog.png>)
+![Image](<lib/Tutorial - forward-engineering save dialog.png>)
 
 &nbsp;
 
@@ -68,7 +68,7 @@ When applying scripts to database instances, applying schemas to registries, or 
 
 &nbsp;
 
-![Tutorial - Connections dialog](<lib/Tutorial%20-%20Connections%20dialog.png>)
+![Tutorial - Connections dialog](<lib/Tutorial - Connections dialog.png>)
 
 &nbsp;
 

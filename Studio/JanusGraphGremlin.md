@@ -10,7 +10,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 The information can be viewed in the Gremlin script tab:
 
-![JanusGraph forward-engineering](<lib/JanusGraph%20forward-engineering.png>)
+![JanusGraph forward-engineering](<lib/JanusGraph forward-engineering.png>)
 
 &nbsp;
 
@@ -26,7 +26,7 @@ Or you may apply these scripts directly with the menu option Tools \> Forward-En
 
 &nbsp;
 
-![JanusGraph forward-engineering menu](<lib/JanusGraph%20forward-engineering%20menu.png>)
+![JanusGraph forward-engineering menu](<lib/JanusGraph forward-engineering menu.png>)
 
 &nbsp;
 

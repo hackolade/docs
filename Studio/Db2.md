@@ -28,7 +28,7 @@ The data model in the picture below results from the data modeling of the [IBM S
 
 &nbsp;
 
-![Image](<lib/Db2%20workspace.png>)
+![Image](<lib/Db2 workspace.png>)
 
 ## Schemas
 
@@ -105,7 +105,7 @@ Some data types have parameters that further define the operators and functions 
 
 &nbsp;
 
-![Db2 data types](<lib/Db2%20data%20types.png>)
+![Db2 data types](<lib/Db2 data types.png>)
 
 &nbsp;
 
@@ -135,7 +135,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![Db2 DDL forward-engineering](<lib/Db2%20DDL%20forward-engineering.png>)
+![Db2 DDL forward-engineering](<lib/Db2 DDL forward-engineering.png>)
 
 &nbsp;
 

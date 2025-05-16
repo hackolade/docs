@@ -12,9 +12,11 @@ Hackolade's recommended systems configuration is any of the following platforms:
 
 * **Windows:** Windows 10 Core 2 Duo or better with 4GB+ RAM.&nbsp; Windows Group Policies must allow access to the Command Prompt.&nbsp; Please consult [this article](<ErrormessagespawnUNKNOWN.md>) for additional information.
 * **Mac:**&nbsp;
+
   * Intel processors: OS X 10.11 (El Capitan) or higher, 64-bit only
   * Apple Silicon ARM64 processors: OS X 11 (Big Sur) or above
-* **Linux:** 64-bit only Ubuntu 14.04 or higher, and Red Hat RHEL 8 or above.&nbsp; Fedora 24 and Debian 8 might work as well, but have not been verified.&nbsp; CentOS without GUI will NOT work.
+
+* **Linux:** 64-bit only Ubuntu 20 or higher, and Red Hat RHEL 8 or above.&nbsp; Fedora 24 and Debian 8 might work as well, but have not been verified.&nbsp; CentOS without GUI will NOT work.
 
 &nbsp;
 

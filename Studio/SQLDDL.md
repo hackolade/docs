@@ -52,7 +52,7 @@ If you generate a DDL from Oracle, Microsoft SQL Server, MariaDB, MySQL, Postgre
 
 Choose Tools \> Reverse-Engineering \> Data Definition Language file:
 
-![Reverse-Engineering -- DDL menu](<lib/Reverse-Engineering%20--%20DDL%20menu.png>)
+![Reverse-Engineering -- DDL menu](<lib/Reverse-Engineering -- DDL menu.png>)
 
 &nbsp;
 
@@ -60,7 +60,7 @@ Then choose the source database (as each vendor has it's own implementation of t
 
 &nbsp;
 
-![Reverse-Engineering -- DDL select file](<lib/Reverse-Engineering%20--%20DDL%20select%20file.png>)
+![Reverse-Engineering -- DDL select file](<lib/Reverse-Engineering -- DDL select file.png>)
 
 &nbsp;
 
@@ -78,7 +78,7 @@ Hackolade currently supports the following SQL dialects: Oracle, MariaDB, MySQL,
 
 When you click OK, Hackolade will read the DDL file and generate the schema model, for example:
 
-![Reverse-engineering -- Northwind Oracle](<lib/Reverse-engineering%20--%20Northwind%20Oracle.png>)
+![Reverse-engineering -- Northwind Oracle](<lib/Reverse-engineering -- Northwind Oracle.png>)
 
 &nbsp;
 
@@ -92,7 +92,7 @@ The user needs to have a fairly good idea of where he wants to go with the schem
 
 &nbsp;
 
-![Suggest denormalization -- select tables](<lib/Suggest%20denormalization%20--%20select%20tables.png>)
+![Suggest denormalization -- select tables](<lib/Suggest denormalization -- select tables.png>)
 
 The successive steps could include:
 
@@ -108,7 +108,7 @@ The successive steps could include:
 
 &nbsp;
 
-![Reverse-Engineering - denormalization](<lib/Reverse-Engineering%20-%20denormalization.png>)
+![Reverse-Engineering - denormalization](<lib/Reverse-Engineering - denormalization.png>)
 
 &nbsp;
 
@@ -116,7 +116,7 @@ As a susequent step, the modeler may want to denormalize products information in
 
 &nbsp;
 
-![Reverse-Engineering - denomalization step 2](<lib/Reverse-Engineering%20-%20denomalization%20step%202.png>)
+![Reverse-Engineering - denomalization step 2](<lib/Reverse-Engineering - denomalization step 2.png>)
 
 &nbsp;
 

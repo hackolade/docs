@@ -24,7 +24,7 @@ The data model in the picture below results from the data modeling of the [Sakil
 
 &nbsp;
 
-![MariaDB workspace](<lib/MariaDB%20workspace.png>)
+![MariaDB workspace](<lib/MariaDB workspace.png>)
 
 &nbsp;
 
@@ -100,7 +100,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![MariaDB DDL Forward-Engineering](<lib/MariaDB%20DDL%20Forward-Engineering.png>)
+![MariaDB DDL Forward-Engineering](<lib/MariaDB DDL Forward-Engineering.png>)
 
 &nbsp;
 

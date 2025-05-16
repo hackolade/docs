@@ -32,7 +32,7 @@ To import from these sources, you simply go to Tools \> Reverse-Engineer and cho
 
 &nbsp;
 
-![Image](<lib/Tutorial%20-%20import%20reverse-engineer.png>)
+![Image](<lib/Tutorial - import reverse-engineer.png>)
 
 &nbsp;
 
@@ -44,7 +44,7 @@ For file-based imports, you are prompted with a dialog which varies slightly for
 
 &nbsp;
 
-![Image](<lib/Tutorial%20-%20Reverse-engineer%20from%20JSON%20Schema.png>)
+![Image](<lib/Tutorial - Reverse-engineer from JSON Schema.png>)
 
 You must select one or more files to import.&nbsp; In most cases, you will want to import as entities in the Entity-Relationship Diagram.&nbsp; But also may want to import the schema as model definitions (user-defined types for RDBMS and some other targets, component schemas for OpenAPI) so they can be reused in many places in the model.
 
@@ -56,7 +56,7 @@ When importing in the ERD, you may also merge the imported structure into an exi
 
 Finally, when importing nested structures into RDBMS targets (which don't support complex data types), you are presented with an option to automatically normalize into flat tables:
 
-![Image](<lib/Titorial%20-%20normalize%20complex%20data%20types.png>)
+![Image](<lib/Titorial - normalize complex data types.png>)
 
 &nbsp;
 
@@ -68,7 +68,7 @@ When you reverse-engineer from on-prem or cloud instances, you generally must pr
 
 &nbsp;
 
-![Tutorial - Connections dialog](<lib/Tutorial%20-%20Connections%20dialog.png>)
+![Tutorial - Connections dialog](<lib/Tutorial - Connections dialog.png>)
 
 &nbsp;
 

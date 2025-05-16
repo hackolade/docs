@@ -8,7 +8,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![SQL Server DDL Forward-Engineering](<lib/SQL%20Server%20DDL%20Forward-Engineering.png>)
+![SQL Server DDL Forward-Engineering](<lib/SQL Server DDL Forward-Engineering.png>)
 
 &nbsp;
 

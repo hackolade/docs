@@ -18,7 +18,7 @@ At a higher level, a data model describes a business.&nbsp; It is a blueprint fo
 
 A data model can be easily understood with an Entity-Relationship Diagram (ERD), a graphical representation of entities (things a business needs to remember in order to perform processes), their characteristics, and how they all relate to one another.
 
-![Physical data model](<lib/Physical%20data%20model.png>)
+![Physical data model](<lib/Physical data model.png>)
 
 &nbsp;
 
@@ -26,7 +26,7 @@ While graphical representations are useful for humans, they are not "consumable"
 
 &nbsp;
 
-![Physical schema](<lib/Physical%20schema.png>)
+![Physical schema](<lib/Physical schema.png>)
 
 &nbsp;
 
@@ -62,5 +62,5 @@ In relational databases, each entity will lead to a physical table with columns 
 
 &nbsp;
 
-With NoSQL databases and [denormalization](<Relationshipsanddenormalization.md>), it's a different story...&nbsp; Plus entities can be called collections, and attributes can be called fields.&nbsp; each vendor may call things differently, as you can see on [this page](<NoSQLdatabasesJSONRESTAPIs.md>).
+With NoSQL databases and [denormalization](<Relationshipsanddenormalization.md>), it's a different story...&nbsp; Plus entities can be called collections, and attributes can be called fields.&nbsp; each vendor may call things differently, as you can see on [this page](<SQLandNoSQLdatabasesAPIsandstora.md>).
 

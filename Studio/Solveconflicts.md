@@ -63,7 +63,7 @@ Although not strictly necessary (but always a good idea), it is mandatory in thi
 
 &nbsp;
 
-![Workgroup pull uncommitted changes](<lib/Workgroup%20pull%20uncommitted%20changes.png>)
+![Workgroup pull uncommitted changes](<lib/Workgroup pull uncommitted changes.png>)
 
 &nbsp;
 
@@ -71,13 +71,13 @@ Although not strictly necessary (but always a good idea), it is mandatory in thi
 
 After committing the changes, the next step is to pull the remote commits:
 
-![Workgroup pull unpushed changes](<lib/Workgroup%20pull%20unpushed%20changes.png>)
+![Workgroup pull unpushed changes](<lib/Workgroup pull unpushed changes.png>)
 
 &nbsp;
 
 Git prevents you from pushing your local commits if you have remote commits to pull, as you are not up-to-date with the remote repository. So let's [pull the remote commits](<Pullremotecommits.md>).
 
-![Workgroup pull conflict](<lib/Workgroup%20pull%20conflict.png>)
+![Workgroup pull conflict](<lib/Workgroup pull conflict.png>)
 
 In this case, pulling remote commits triggers a conflict because the changes you made and committed conflict with the ones in the remote pushed by your teammate. The screen displays the files concerned.&nbsp;
 
@@ -88,7 +88,7 @@ Hackolade Studio provides different options for solving conflicts...
 &nbsp;
 
 * **Solve conflicts:** open a merge dialog and choose interactively how to resolve each individual conflict.\
-![Image](<lib/Workgroup%20merge%20dialog.png>)
+![Image](<lib/Workgroup merge dialog.png>)
 
 &nbsp;
 
@@ -110,7 +110,7 @@ In the example above, there is a conflict between 2 commits that altered differe
 
 Note that, if you (re-)open a repository that has conflicts, you get a different screen but offering similar options.
 
-![Workgroup conflict](<lib/Workgroup%20conflict.png>)
+![Workgroup conflict](<lib/Workgroup conflict.png>)
 
 ### &nbsp;
 
@@ -130,7 +130,7 @@ If you try to open a data model that contains conflicts, you get the dialog belo
 
 &nbsp;
 
-![Workgroup open model conflict](<lib/Workgroup%20open%20model%20conflict.png>)
+![Workgroup open model conflict](<lib/Workgroup open model conflict.png>)
 
 &nbsp;
 

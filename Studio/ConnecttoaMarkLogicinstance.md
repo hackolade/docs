@@ -16,17 +16,17 @@ To connect to a MarkLogic instance, you need to provide:
 
 \- optionally, the database to be fetched
 
-![MarkLogi reverse-engineering connection settings](<lib/MarkLogi%20RE%20connection%20settings.png>)
+![MarkLogi reverse-engineering connection settings](<lib/MarkLogi RE connection settings.png>)
 
 &nbsp;
 
 The credentials must be entered in the Authentication tab:
 
-![Image](<lib/MarkLogic%20RE%20authentication%20tab.png>)
+![Image](<lib/MarkLogic RE authentication tab.png>)
 
 &nbsp;
 
 Optionally, SSL can be enabled and a certificate provided for SSL inspection:
 
-![Image](<lib/MarkLogic%20RE%20SSL%20tab.png>)
+![Image](<lib/MarkLogic RE SSL tab.png>)
 

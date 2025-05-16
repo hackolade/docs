@@ -11,10 +11,13 @@ Authentication is the process of verifying the identity of a client. When access
 With Couchbase 3.x and 4.x fairly basic security, the Administrator can set a password at the bucket level, but anyone with that password gets full rights on the bucket.  With Couchbase 5.x a new role-based access control is introduced.&nbsp; Hackolade supports security of all these versions, but special attention is required for proper configuration:
 
 * if N1QL service is running, we use Couchbase nodejs SDK and a combination of INFER when available (Enterprise 4.5 and above) and N1QL queries, plus:
+
   * v5.x and above: we use role-based access control 
   * v4.x: we use read-only credentials combined with bucket name/password if any 
   * v3.x: not possible as N1QL did not exist
+
 * if N1QL is not running, we fall back to the REST API, plus:
+
   * v5.x and above: we use RBAC credentials (specified in the Authentication tab)
   * v4.x: we use read-only credentials combined with bucket name/password if any: the bucket name/password needs to be filled in Connection tab, while the Read-Only username/password is entered in the Authentication tab.  This is required, as per:&nbsp; "Couchbase requires Cluster level authentication for certain REST commands and Bucket level for others"
   * v3.x: we need the console admin name/password (specified in the Authentication tab)
@@ -41,7 +44,7 @@ The Connection Settings dialog lets define the parameters in different tabs, as 
 
 &nbsp;
 
-![Couchbase connection settings](<lib/Couchbase%20connection%20settings.png>)
+![Couchbase connection settings](<lib/Couchbase connection settings.png>)
 
 For buckets on Couchbase versions 3.0 through 4.6, if the a password has been set at the bucket level, it is necessary to create one connection setting per bucket, and provide the bucket name and password. &nbsp;
 
@@ -53,7 +56,7 @@ For buckets on Couchbase versions 3.0 through 4.6, if the a password has been se
 
 For read-only users in versions 3.x through 4.6, or for all users starting with version 5.0, it is necessary to enter the username and password in the Authentication tab:
 
-![Couchbase connection settings Auth tab](<lib/Couchbase%20connection%20settings%20Auth%20tab.png>)
+![Couchbase connection settings Auth tab](<lib/Couchbase connection settings Auth tab.png>)
 
 &nbsp;
 

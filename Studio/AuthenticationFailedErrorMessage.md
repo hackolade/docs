@@ -17,7 +17,9 @@ We recommend that you double-check the username and password, make sure the Mong
 For further troubleshooting:
 
 * If you are using Atlas, please refer the instructions on the [Atlas Connect](<https://docs.atlas.mongodb.com/compass-connection/>).
+
 - You may find the [Connect to MongoDB](<https://docs.mongodb.com/compass/current/connect/>) documentation a helpful resource.
+
 * Are you able to successfully connect to the server using the [mongo shell](<https://docs.mongodb.com/manual/mongo/>)? If not, this suggests a potential problem with your database credentials.  In that case, please contact your database administrator.  If you are able to connect via the [mongo shell](<https://docs.mongodb.com/manual/mongo/>), please provide the relevant shell connection settings and a screenshot of the error in the Compass connection dialog.
 
 &nbsp;

@@ -8,7 +8,7 @@ In order to secure connections between the server and client, you need to ensure
 
 &nbsp;
 
-![MariaDB connection SSL](<lib/MongoDB%20connection%20SSL.png>)
+![MariaDB connection SSL](<lib/MongoDB connection SSL.png>)
 
 &nbsp;
 

@@ -12,13 +12,13 @@ Hackolade has this unique capability to represent hierarchical structures in ent
 
 The central pane displays the ERD, letting you create, maintain and visualize your data structure:
 
-![Central pane - ER diagram](<lib/Central%20pane%20-%20ER%20diagram.png>)
+![Central pane - ER diagram](<lib/Central pane - ER diagram.png>)
 
 &nbsp;
 
 With large models, it is possible that, to fit the entire ERD on screen, the zoom level does not allow to read the information.&nbsp; For performance reasons, Hackolade displays a sketchy rendition of the diagram:
 
-![Central pane - sketchy ERD](<lib/Central%20pane%20-%20sketchy%20ERD.png>)
+![Central pane - sketchy ERD](<lib/Central pane - sketchy ERD.png>)
 
 &nbsp;
 
@@ -30,7 +30,7 @@ You may control the the zoom level range of the sketchy rendition via a paramete
 
 For each entity in your diagram, it can be very handy to visualize and maintain the structure in a separate tab with the hierarchical schema view of the entity schema:
 
-![Central pane - hierarchical schema view](<lib/Central%20pane%20-%20hierarchical%20schema%20view.png>)
+![Central pane - hierarchical schema view](<lib/Central pane - hierarchical schema view.png>)
 
 &nbsp;
 
@@ -43,7 +43,7 @@ From the ERD, you may open the hierarchical schema view in a number of ways:
 
 &nbsp;
 
-![JSON Tree in new tab](<lib/JSON%20Tree%20in%20new%20tab.png>)
+![JSON Tree in new tab](<lib/JSON Tree in new tab.png>)
 
 &nbsp;
 
@@ -55,7 +55,7 @@ From the ERD, you may open the hierarchical schema view in a number of ways:
 
 In this upper tab dedicated to a specific entity, there are several lower tabs.&nbsp; The JSON Preview tab provides 2 side-by-side panes: one for the JSON Schema of the entity, and the other tab is for a sample JSON document of the structure:
 
-![Central pane - JSON Preview](<lib/Central%20pane%20-%20JSON%20Preview.png>)
+![Central pane - JSON Preview](<lib/Central pane - JSON Preview.png>)
 
 &nbsp;
 
@@ -107,7 +107,7 @@ When displaying or exporting JSON Schema, the references can used as described o
 
 A set of tabs appears at the top of the central pane.&nbsp; They let you work on several entities in parallel, or consult relevant information in other collections.
 
-![Central pane - top tabs](<lib/Central%20pane%20-%20top%20tabs.png>)
+![Central pane - top tabs](<lib/Central pane - top tabs.png>)
 
 The first tab is fixed and cannot be closed.&nbsp; It is the main tab of the model, showing the Entity Relationship diagram for the database model, and other database model-level information.&nbsp; The other tabs are collection tabs.&nbsp; They are opened when you want to see or maintain collection-level information.&nbsp; They can be closed individually by pressing the x on the right of the tab.&nbsp; To close all tabs, use the shortcut Ctrl+M.&nbsp; If you want to close all tabs except the current one, press Ctrl+Shift+M.
 
@@ -117,7 +117,7 @@ Note that the application remembers the opened tabs of your model, if you save i
 
 If you open more tabs than the width of the central pane can hold, the tabs will shrink as needed.&nbsp; If you hover your mouse cursor over a tab, a handy tooltip pops-up to display the full name:
 
-![Central pane - tab tooltip](<lib/Central%20pane%20-%20tab%20tooltip.png>)
+![Central pane - tab tooltip](<lib/Central pane - tab tooltip.png>)
 
 &nbsp;
 
@@ -129,13 +129,13 @@ A set of tabs also appears at the bottom of the central pane.&nbsp; The bottom t
 
 Database model bottom tabs:
 
-![Central pane - DB bottom tabs](<lib/Central%20pane%20-%20DB%20bottom%20tabs.png>)
+![Central pane - DB bottom tabs](<lib/Central pane - DB bottom tabs.png>)
 
 &nbsp;
 
 Collection bottom tabs:
 
-![Central pane - collection bottom tabs](<lib/Central%20pane%20-%20collection%20bottom%20tabs.png>)
+![Central pane - collection bottom tabs](<lib/Central pane - collection bottom tabs.png>)
 
 &nbsp;
 

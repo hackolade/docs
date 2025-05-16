@@ -10,7 +10,7 @@ The bar of icon button let you access the frequently used actions.&nbsp; The ico
 
 A handy tooltip pops-up to remind you of the function of the button, if the icon is activated.
 
-![Toolbar tooltip](<lib/Toolbar%20tooltip.png>)
+![Toolbar tooltip](<lib/Toolbar tooltip.png>)
 
 &nbsp;
 

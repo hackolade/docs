@@ -4,7 +4,7 @@ For those in a technology stack using JavaScript, and are using the [Mongoose OD
 
 &nbsp;
 
-![Forward-Engineering - Mongoose Schema](<lib/Forward-Engineering%20-%20Mongoose%20Schema.png>)
+![Forward-Engineering - Mongoose Schema](<lib/Forward-Engineering - Mongoose Schema.png>)
 
 &nbsp;
 
@@ -16,7 +16,7 @@ As you export Mongoose schema, you have several choices:
 
 \- whether to export the schema as one single file or one file per collection
 
-![Mongoose - FE selection](<lib/Mongoose%20-%20FE%20selection.png>)
+![Mongoose - FE selection](<lib/Mongoose - FE selection.png>)
 
 &nbsp;
 

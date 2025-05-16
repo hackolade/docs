@@ -10,7 +10,7 @@ In the repository connection manager, you need to provide an access token, which
 
 &nbsp;
 
-![Workgroup GitLab - manager repo connections](<lib/Workgroup%20GitLab%20-%20manager%20repo%20connections.png>)
+![Workgroup GitLab - manager repo connections](<lib/Workgroup GitLab - manager repo connections.png>)
 
 &nbsp;
 
@@ -18,7 +18,7 @@ Click on the "generate" link located to the right of the input field to navigate
 
 &nbsp;
 
-![Workgroup GitLab - Personal Access Tokens](<lib/Workgroup%20GitLab%20-%20Personal%20Access%20Tokens.png>)
+![Workgroup GitLab - Personal Access Tokens](<lib/Workgroup GitLab - Personal Access Tokens.png>)
 
 &nbsp;
 
@@ -36,7 +36,7 @@ As an alternative to generating a personal access token, GitLab can also let you
 
 &nbsp;
 
-![Workgroup GitLab - OAuth](<lib/Workgroup%20GitLab%20-%20OAuth.png>)
+![Workgroup GitLab - OAuth](<lib/Workgroup GitLab - OAuth.png>)
 
 &nbsp;
 
@@ -44,7 +44,7 @@ You just need to click on the "Connect" button to get the instructions below in 
 
 &nbsp;
 
-![Workgroup GitLab - OAuth Authorization](<lib/Workgroup%20GitLab%20-%20OAuth%20Authorization.png>)
+![Workgroup GitLab - OAuth Authorization](<lib/Workgroup GitLab - OAuth Authorization.png>)
 
 &nbsp;
 

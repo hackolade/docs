@@ -31,7 +31,7 @@ A branch is meant to be temporary: it should be reviewed, typically by another u
 
 In the repository context, select as the active branch, the branch for which you want to submit a change request, then click on the left menu item "Submit for review" to get the screen below:
 
-![Workgroup submit for review](<lib/Workgroup%20submit%20for%20review.png>)
+![Workgroup submit for review](<lib/Workgroup submit for review.png>)
 
 * provide a **title**, a short description of the changes made;
 * optionally provide a more detailed **description** of the changes.&nbsp; You can write that description using the [Markdown syntax](<https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax>);&nbsp;
@@ -41,7 +41,7 @@ In the repository context, select as the active branch, the branch for which you
 
 &nbsp;
 
-![Workgroup submit for review markdown](<lib/Workgroup%20submit%20for%20review%20markdown.png>)
+![Workgroup submit for review markdown](<lib/Workgroup submit for review markdown.png>)
 
 Hackolade lists all the commits to be included in the review.&nbsp; You can self-review the changes in these commits before submitting them using the "Review changes..." button. It opens up the [compare dialog](<Compareandmergemodels.md>) and provides a graphical visualization of the changes.
 
@@ -55,7 +55,7 @@ Once your change request is opened, you get the screen below, displaying a link 
 
 &nbsp;
 
-![Workgroup submit for review - submitted](<lib/Workgroup%20submit%20for%20review%20-%20submitted.png>)
+![Workgroup submit for review - submitted](<lib/Workgroup submit for review - submitted.png>)
 
 &nbsp;
 
@@ -63,7 +63,7 @@ Once your change request is opened, you get the screen below, displaying a link 
 
 In the left menu, the counter of change requests "open by me" reflects the number of open change requests. Clicking on it displays the list of change requests you authored.
 
-![Workgroup submit for review - open by me](<lib/Workgroup%20submit%20for%20review%20-%20open%20by%20me.png>)
+![Workgroup submit for review - open by me](<lib/Workgroup submit for review - open by me.png>)
 
 &nbsp;
 

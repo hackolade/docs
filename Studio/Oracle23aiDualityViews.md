@@ -14,7 +14,7 @@ In this excellent [introductory video](<https://www.youtube.com/watch?v=e8-jBkO1
 
 &nbsp;
 
-![Oracle Duality Views - Baking cake ingredients](<lib/ORD%20-%20Baking%20cake%20ingredients.png>)
+![Oracle Duality Views - Baking cake ingredients](<lib/ORD - Baking cake ingredients.png>)
 
 &nbsp;
 
@@ -24,7 +24,7 @@ Or you may start with a cake mix:
 
 &nbsp;
 
-![Oracle Duality Views - Baking cake mix](<lib/ORD%20-%20Baking%20cake%20mix.png>)
+![Oracle Duality Views - Baking cake mix](<lib/ORD - Baking cake mix.png>)
 
 &nbsp;
 
@@ -32,7 +32,7 @@ The analogy is that a relational database is like assembling different basic ing
 
 &nbsp;
 
-![Oracle Duality Views - relational cake ingredients](<lib/ORD%20-%20relational%20cake%20ingredients.png>)
+![Oracle Duality Views - relational cake ingredients](<lib/ORD - relational cake ingredients.png>)
 
 &nbsp;
 
@@ -40,7 +40,7 @@ With Oracle 23ai, Oracle introduces a way to combine both approaches, hence comb
 
 &nbsp;
 
-![Image](<lib/ORD%20-%20Power%20and%20Simplicty.png>)
+![Image](<lib/ORD - Power and Simplicty.png>)
 
 &nbsp;
 
@@ -50,7 +50,7 @@ The idea is to create a convergence of the traditional relational/normalized app
 
 &nbsp;
 
-![Oracle Duality Views - Best of both worlds](<lib/ORD%20-%20Best%20of%20both%20worlds.png>)
+![Oracle Duality Views - Best of both worlds](<lib/ORD - Best of both worlds.png>)
 
 &nbsp;
 
@@ -58,7 +58,7 @@ Oracle call this approach "JSON-Relational Duality Views"
 
 &nbsp;
 
-![Oracle JSON-Relational Duality Views](<lib/ORD%20-%20JSON-Relational%20Duality%20Views.png>)
+![Oracle JSON-Relational Duality Views](<lib/ORD - JSON-Relational Duality Views.png>)
 
 &nbsp;
 
@@ -85,7 +85,7 @@ The persistence model presents two aspects for the same data: table and document
 
 &nbsp;
 
-![Oracle JSON Document Relational duality](<lib/ORD%20-%20JSON%20Document%20Relational%20duality.png>)
+![Oracle JSON Document Relational duality](<lib/ORD - JSON Document Relational duality.png>)
 
 &nbsp;
 
@@ -118,13 +118,13 @@ The examples below are based on this [repository](<https://github.com/oracle-sam
 
 The reverse-engineering of the relational tables in [this sample DDL](<https://github.com/oracle-samples/oracle-db-examples/blob/main/json-relational-duality/DualityViewTutorial.sql> "target=\"\_blank\"") generates this car racing model:
 
-![Oracle Duality Views- relational tables ERD](<lib/ORD%20-%20relational%20tables%20ERD.png>)
+![Oracle Duality Views- relational tables ERD](<lib/ORD - relational tables ERD.png>)
 
 &nbsp;
 
 The duality views defined with point-and-click in Hackolade Studio lead to this part of the ERD:
 
-![Oracle Duality Views ERD](<lib/ORD%20-%20Duality%20Views%20ERD.png>)
+![Oracle Duality Views ERD](<lib/ORD - Duality Views ERD.png>)
 
 &nbsp;
 
@@ -132,7 +132,7 @@ and the application automatically produces the syntactically correct part of the
 
 &nbsp;
 
-![Oracle Duality Views - DDL](<lib/ORD%20-%20DDL.png>)
+![Oracle Duality Views - DDL](<lib/ORD - DDL.png>)
 
 &nbsp;
 
@@ -140,7 +140,7 @@ The syntax is based on this Oracle [documentation page](<https://docs.oracle.com
 
 &nbsp;
 
-![Oracle Duality Views - Syntax](<lib/ORD%20-%20Syntax.png>)
+![Oracle Duality Views - Syntax](<lib/ORD - Syntax.png>)
 
 &nbsp;
 
@@ -156,7 +156,7 @@ As usual with Hackolade Studio, there are several different ways to do things.&n
 
 &nbsp;
 
-![Oracle duality view creation menu](<lib/ORD%20-%20duality%20view%20creation%20menu.png>)
+![Oracle duality view creation menu](<lib/ORD - duality view creation menu.png>)
 
 &nbsp;
 
@@ -166,7 +166,7 @@ or the contextual menu (via mouse right-click) in either the Object Browser or t
 
 &nbsp;
 
-![Oracle duality view creation contextual menu](<lib/ORD%20-%20duality%20view%20creation%20contextual%20menu.png>)
+![Oracle duality view creation contextual menu](<lib/ORD - duality view creation contextual menu.png>)
 
 &nbsp;
 
@@ -176,7 +176,7 @@ Then you tick the checkbox "Duality" to display the related properties:
 
 &nbsp;
 
-![Oracle duality view properties](<lib/ORD%20-%20duality%20view%20properties.png>)
+![Oracle duality view properties](<lib/ORD - duality view properties.png>)
 
 &nbsp;
 
@@ -216,7 +216,7 @@ The JSON format of duality views allows to include both root-level fields as wel
 
 From the Object Browser, from the selected view in the ERD pane, or from the hierarchical schema tab, you must right-click to bring the contextual menu and choose the option "Pick from field list":
 
-![Oracle duality view pick columns](<lib/ORD%20-%20duality%20view%20pick%20columns.png>)
+![Oracle duality view pick columns](<lib/ORD - duality view pick columns.png>)
 
 &nbsp;
 
@@ -226,7 +226,7 @@ This brings a dialog where you can select one or more columns from the selected 
 
 &nbsp;
 
-![Oracle duality view pick columns dialog](<lib/ORD%20-%20duality%20view%20pick%20columns%20dialog.png>)
+![Oracle duality view pick columns dialog](<lib/ORD - duality view pick columns dialog.png>)
 
 &nbsp;
 
@@ -234,7 +234,7 @@ This brings a dialog where you can select one or more columns from the selected 
 
 For each field, you may set a JSON key alias if it is different than the underlying column name:
 
-![Oracle duality view field properties](<lib/ORD%20-%20duality%20view%20field%20properties.png>)
+![Oracle duality view field properties](<lib/ORD - duality view field properties.png>)
 
 &nbsp;
 
@@ -274,7 +274,7 @@ To add a subquery, invoke the contextual menu to append a column and choose Subq
 
 &nbsp;
 
-![Oracle duality view contextual menu adding subquery](<lib/ORD%20-%20duality%20view%20add%20subquery.png>)
+![Oracle duality view contextual menu adding subquery](<lib/ORD - duality view add subquery.png>)
 
 &nbsp;
 
@@ -282,7 +282,7 @@ You should provide a name for the subquery and choose the type object or array d
 
 &nbsp;
 
-![Oracle duality view subquery properties](<lib/ORD%20-%20duality%20view%20subquery%20properties.png>)
+![Oracle duality view subquery properties](<lib/ORD - duality view subquery properties.png>)
 
 &nbsp;
 
@@ -306,7 +306,7 @@ In some cases, you might prefer to flatten structures instead of the nested subq
 
 &nbsp;
 
-![Oracle duality view unnested subquery properties](<lib/ORD%20-%20duality%20view%20unnest%20subquery%20properties.png>)
+![Oracle duality view unnested subquery properties](<lib/ORD - duality view unnest subquery properties.png>)
 
 &nbsp;
 
@@ -314,13 +314,13 @@ While the fields are unnested in the JSON document, the unnesting structure rema
 
 &nbsp;
 
-![Oracle duality view ERD Entity-Relationship Diagram](<lib/ORD%20-%20duality%20view%20ERD.png>)
+![Oracle duality view ERD Entity-Relationship Diagram](<lib/ORD - duality view ERD.png>)
 
 &nbsp;
 
 or in the hierarchical schema tab
 
-![Oracle duality view hierarchical schema tab](<lib/ORD%20-%20duality%20view%20hierarchical%20schema%20tab.png>)
+![Oracle duality view hierarchical schema tab](<lib/ORD - duality view hierarchical schema tab.png>)
 
 &nbsp;
 
@@ -334,7 +334,7 @@ The application automatically produces the syntactically correct DDL script, wit
 
 &nbsp;
 
-![Oracle duality view DDL script](<lib/ORD%20-%20duality%20view%20DDL%20script.png>)
+![Oracle duality view DDL script](<lib/ORD - duality view DDL script.png>)
 
 &nbsp;
 

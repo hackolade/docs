@@ -26,7 +26,7 @@ The data model in the picture below results from the data modeling of the [Adven
 
 &nbsp;
 
-![Synapse workspace](<lib/Synapse%20workspace.png>)
+![Synapse workspace](<lib/Synapse workspace.png>)
 
 &nbsp;
 
@@ -108,7 +108,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![Synapse DDL forward-engineering](<lib/Synapse%20DDL%20forward-engineering.png>)
+![Synapse DDL forward-engineering](<lib/Synapse DDL forward-engineering.png>)
 
 &nbsp;
 

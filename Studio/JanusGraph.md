@@ -26,13 +26,13 @@ The data model in the picture below results from the reverse-engineering of a [s
 
 &#49;) a graph view, with familiar circular vertex labels:
 
-![JanusGraph workspace](<lib/JanusGraph%20workspace.png>)
+![JanusGraph workspace](<lib/JanusGraph workspace.png>)
 
 &nbsp;
 
 &#50;) an Entity-Relationship Diagram (ERD) view, with the advantage of displaying properties for both vertex labels and edge labels:
 
-![JanusGraph ERD](<lib/JanusGraph%20ERD.png>)
+![JanusGraph ERD](<lib/JanusGraph ERD.png>)
 
 &nbsp;
 
@@ -60,7 +60,7 @@ Vertex TTL is defined on a per-vertex label basis, meaning that all vertices of 
 
 A vertex label usually has attributes, called "property keys" where the name (or key) is a string.
 
-![JanusGraph vertex label properties](<lib/CosmosDB%20Gremlin%20vertex%20label%20properties.png>)
+![JanusGraph vertex label properties](<lib/CosmosDB Gremlin vertex label properties.png>)
 
 &nbsp;
 
@@ -74,7 +74,7 @@ JanusGraph will enforce that all values associated with the key have the configu
 
 JanusGraph natively supports the following data types:
 
-![JanusGraph property key data types](<lib/JanusGraph%20property%20key%20data%20types.png>)
+![JanusGraph property key data types](<lib/JanusGraph property key data types.png>)
 
 &nbsp;
 
@@ -108,13 +108,13 @@ In JanusGraph, edges are bi-directional by default.&nbsp; If you set edge labels
 
 &nbsp;
 
-![JanusGraph edge label](<lib/Neo4j%20relationship%20type.png>)
+![JanusGraph edge label](<lib/Neo4j relationship type.png>)
 
 &nbsp;
 
 As JanusGraph is a type of graph database known as 'property graph', edge labels may have attributes, called property keys, just like vertex labels:
 
-![JanusGraph edge label property keys](<lib/Neo4j%20relationship%20type%20property%20keys.png>)
+![JanusGraph edge label property keys](<lib/Neo4j relationship type property keys.png>)
 
 &nbsp;
 
@@ -149,7 +149,9 @@ Composite indexes are very fast and efficient but limited to equality lookups fo
 &nbsp;
 
 1. Use a composite index for exact match index retrievals. Composite indexes do not require configuring or operating an external index system and are often significantly faster than mixed indexes.
+
    1. As an exception, use a mixed index for exact matches when the number of distinct values for query constraint is relatively small or if one value is expected to be associated with many elements in the graph (i.e. in case of low selectivity).
+
 1. Use a mixed index for numeric range, full-text or geo-spatial indexing. Also, using a mixed index can speed up the order().by() queries.
 
 &nbsp;
@@ -180,7 +182,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![JanusGraph gremlin forward-engineering](<lib/JanusGraph%20forward-engineering.png>)
+![JanusGraph gremlin forward-engineering](<lib/JanusGraph forward-engineering.png>)
 
 &nbsp;
 

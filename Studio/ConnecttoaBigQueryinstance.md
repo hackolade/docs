@@ -8,7 +8,7 @@ Give a meaningful name to the connection, optionally provide a specific project 
 
 &nbsp;
 
-![BigQuery connection settings](<lib/BigQuery%20connection%20settings.png>)
+![BigQuery connection settings](<lib/BigQuery connection settings.png>)
 
 &nbsp;
 
@@ -38,7 +38,7 @@ and
 
 &nbsp; &nbsp; - BigQuery Job User: in order to be able to forward-engineer (apply SQL script to instance)
 
-![Image](<lib/BigQuery%20Service%20Account%20role%20creation.png>)
+![Image](<lib/BigQuery Service Account role creation.png>)
 
 &nbsp;
 
@@ -46,7 +46,7 @@ then save the role
 
 &#53;) select the action Manage Keys for the service account:
 
-![BigQuery Service Account key creation](<lib/BigQuery%20Service%20Account%20key%20creation.png>)
+![BigQuery Service Account key creation](<lib/BigQuery Service Account key creation.png>)
 
 &nbsp;
 

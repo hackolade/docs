@@ -8,7 +8,7 @@ Data modeling for relational databases is performed according to the rules of no
 
 &nbsp;
 
-![JSON order normalized structure](<lib/JSON%20order%20normalized%20structure.png>)
+![JSON order normalized structure](<lib/JSON order normalized structure.png>)
 
 &nbsp;
 
@@ -22,13 +22,13 @@ To leverage the performance of NoSQL databases and the flexibility of JSON, it i
 
 &nbsp;
 
-![JSON order denormalized structure](<lib/JSON%20order%20denormalized%20structure.png>)
+![JSON order denormalized structure](<lib/JSON order denormalized structure.png>)
 
 &nbsp;
 
 This difference is decisively important nowadays when real-time web applications and big data require high scalability and high availability.&nbsp; Note that this capability is not limited to JSON, as other types of NoSQL databases achieve the same result in different ways.
 
-![Image](<lib/Query-Driven%20schema%20design.png>)
+![Image](<lib/Query-Driven schema design.png>)
 
 &nbsp;
 

@@ -4,7 +4,7 @@ If you wish to include the schema for a YAML Schema file in an existing model, t
 
 &nbsp;
 
-![Tools - Reverse-Engineer - YAML Schema](<lib/Tools%20-%20Reverse-Engineer%20-%20JSON%20Schema.png>)
+![Tools - Reverse-Engineer - YAML Schema](<lib/Tools - Reverse-Engineer - JSON Schema.png>)
 
 &nbsp;
 
@@ -16,7 +16,7 @@ The structure of a JSON Schema can be imported either as an entity in the Entity
 
 &nbsp;
 
-![YAML Schema reverse-engineering dialog](<lib/JSON%20Schema%20RE%20dialog.png>)
+![YAML Schema reverse-engineering dialog](<lib/JSON Schema RE dialog.png>)
 
 &nbsp;
 
@@ -30,5 +30,5 @@ For RDBMS targets, an additional option appears, that allows automatic normaliza
 
 &nbsp;
 
-![YAML Schema reverse-engineering dialog - normalization](<lib/JSON%20Schema%20RE%20dialog%20-%20normalization.png>)
+![YAML Schema reverse-engineering dialog - normalization](<lib/JSON Schema RE dialog - normalization.png>)
 

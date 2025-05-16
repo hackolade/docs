@@ -40,7 +40,7 @@ feedback,fdbak,
 
 **Important note**: if your file contains [diacritics](<https://en.wikipedia.org/wiki/Diacritic> "target=\"\_blank\"") (accents, ...) you must save your file with [UTF-8](<https://en.wikipedia.org/wiki/UTF-8> "target=\"\_blank\"") encoding for the function to work properly.&nbsp; If you edit the file using Excel, you should make sure to save it using this CSV UTF-8 option:
 
-![Naming Conventions - CSV UTF-8](<lib/Naming%20Conventions%20-%20CSV%20UTF-8.png>)
+![Naming Conventions - CSV UTF-8](<lib/Naming Conventions - CSV UTF-8.png>)
 
 &nbsp;
 
@@ -52,7 +52,7 @@ Conversion parameters are specific to each target.&nbsp; To modify the behavior 
 
 &nbsp;
 
-![Windows Program Files](<lib/Naming%20Conventions%20-%20parameters.png>)
+![Windows Program Files](<lib/Naming Conventions - parameters.png>)
 
 **Application target:** select the target for which these parameters apply
 
@@ -103,7 +103,7 @@ Upon exit of the dialog (via OK or Apply) after making a change in parameters, t
 
 &nbsp;
 
-![Naming Conventions - apply changes dialog](<lib/Naming%20Conventions%20-%20apply%20changes%20dialog.png>)
+![Naming Conventions - apply changes dialog](<lib/Naming Conventions - apply changes dialog.png>)
 
 &nbsp;
 
@@ -119,7 +119,7 @@ In the properties pane, the relationship between business name and technical nam
 
 Let’s say we have this starting situation:
 
-![Naming Conventions - properties](<lib/Naming%20Conventions%20-%20properties.png>)
+![Naming Conventions - properties](<lib/Naming Conventions - properties.png>)
 
 &nbsp;
 
@@ -129,7 +129,7 @@ To indicate that coupling is OFF between business and technical name, the 2 = si
 
 Now, if the user wants to apply naming convention by using the conversion file referenced in the parameters, he would just click on the = sign to the right of the Technical name:
 
-![Naming Conventions - B2T properties](<lib/Naming%20Conventions%20-%20B2T%20properties.png>)
+![Naming Conventions - B2T properties](<lib/Naming Conventions - B2T properties.png>)
 
 where the = sign icon shown as pressed, and the Business name is converted into the Technical name by using the conversion file and other conversion parameters.&nbsp; While the = sign icon is ON, the Technical name field is locked and cannot be edited.
 
@@ -139,7 +139,7 @@ where the = sign icon shown as pressed, and the Business name is converted into 
 
 If the Technical name = sign icon is pressed again, the entry field is unlocked and the entry can be edited again:
 
-![Naming Conventions - neutral properties](<lib/Naming%20Conventions%20-%20neutral%20properties.png>)
+![Naming Conventions - neutral properties](<lib/Naming Conventions - neutral properties.png>)
 
 &nbsp;
 
@@ -159,7 +159,7 @@ If coupling is set to either Business-to-Technical, or Technical-to-Business, th
 
 But you may wonder why the handling is done as such when the coupling parameter is set to Business-to-Technical... The following dialog is presented to the user:
 
-![Naming Conventions - RE warning](<lib/Naming%20Conventions%20-%20RE%20warning.png>)
+![Naming Conventions - RE warning](<lib/Naming Conventions - RE warning.png>)
 
 &nbsp;
 
@@ -173,7 +173,7 @@ The only safe method we can ensure is one by which the Technical Name come from 
 
 You may wish to disable any coupling between Business and Technical Names and maintain both manually.&nbsp; You may also decide that you want to empty all Technical Name properties.&nbsp; You may do so by setting coupling to No.&nbsp; When you get the following dialog:
 
-![Naming Conventions - apply changes with clear](<lib/Naming%20Conventions%20-%20apply%20changes%20with%20clear.png>)
+![Naming Conventions - apply changes with clear](<lib/Naming Conventions - apply changes with clear.png>)
 
 you may choose to check the box "Clear all Technical Names".&nbsp; Be careful of course.&nbsp; You may want to save a version of your model prior to applying this clearing, and test that the behavior matches your expectations.
 
@@ -213,7 +213,7 @@ Plus we natively use 2 word separators when parsing the input line: blank (' ') 
 
 How you set the Invalid Characters behavior is important, as it affects the case conversion behavior.&nbsp; Say, for example that you have camelCase conversion with this Invalid Characters setting:
 
-![Naming Conv - invalid char - remove](<lib/Naming%20Conv%20-%20invalid%20char%20-%20remove.png>)
+![Naming Conv - invalid char - remove](<lib/Naming Conv - invalid char - remove.png>)
 
 where a blank (" ") appears in the list of invalid characters (hardly visible, but present in front of the exclamation mark.)&nbsp;
 
@@ -225,7 +225,7 @@ Going through "Customer Account", first we convert the word with the conversion 
 
 If however, you do a replace blank by underscore:
 
-![Naming Conv - invalid char - replace](<lib/Naming%20Conv%20-%20invalid%20char%20-%20replace.png>)
+![Naming Conv - invalid char - replace](<lib/Naming Conv - invalid char - replace.png>)
 
 the sequence becomes "cust acct" then "cust\_acct", then "custAcct" which is the expected behavior.
 
@@ -243,7 +243,7 @@ To better understand the impacts of choices in this dialog:
 
 &nbsp;
 
-![Naming Conventions - apply changes with clear](<lib/Naming%20Conventions%20-%20apply%20changes%20with%20clear.png>)
+![Naming Conventions - apply changes with clear](<lib/Naming Conventions - apply changes with clear.png>)
 
 Let's look at the user cases.&nbsp; It is possible that, during the course of maintaining a model:
 

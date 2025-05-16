@@ -8,4 +8,4 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![EventBridge forward-engineering](<lib/EventBridge%20forward-engineering.png>)
+![EventBridge forward-engineering](<lib/EventBridge forward-engineering.png>)

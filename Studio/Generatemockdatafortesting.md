@@ -37,17 +37,17 @@ Hackolade leverages an open-source library for this feature: [FakerJS](<https://
 
 Before you start, you should familiarize yourself with the possibilities by consulting [this guide](<https://fakerjs.dev/guide/> "target=\"\_blank\"").&nbsp; Note that the question mark ? in our properties pane opens up the Faker guide page in your default browser:
 
-![Faker function properties pane](<lib/Faker%20function%20properties%20pane.png>)
+![Faker function properties pane](<lib/Faker function properties pane.png>)
 
 &nbsp;
 
 All you need to do is to copy a function from the Faker guide pages and paste it in the property in Hackolade, for example:
 
-![Faker function](<lib/Faker%20function.png>)
+![Faker function](<lib/Faker function.png>)
 
 to be pasted&nbsp;
 
-![Faker function pasted](<lib/Faker%20function%20pasted.png>)
+![Faker function pasted](<lib/Faker function pasted.png>)
 
 &nbsp;
 
@@ -81,7 +81,7 @@ The Faker function property is only enabled for selected data types, mainly stri
 
 The following model illustrates the capabilities to generate JSON Data:
 
-![Faker function JSON Data preview](<lib/Faker%20function%20JSON%20Data%20preview.png>)
+![Faker function JSON Data preview](<lib/Faker function JSON Data preview.png>)
 
 &nbsp;
 
@@ -260,7 +260,7 @@ For any entity in a Hackolade data model, you can easily generate sample data wi
 
 &nbsp;
 
-![Faker JSON Doc forward-engineering selection](<lib/Faker%20JSON%20Doc%20forward-engineering%20selection.png>)
+![Faker JSON Doc forward-engineering selection](<lib/Faker JSON Doc forward-engineering selection.png>)
 
 &nbsp;
 
@@ -268,7 +268,7 @@ After you choose the folder path, the application will create a JSON file contai
 
 &nbsp;
 
-![Faker JSON Doc forward-engineering output](<lib/Faker%20JSON%20Doc%20forward-engineering%20output.png>)
+![Faker JSON Doc forward-engineering output](<lib/Faker JSON Doc forward-engineering output.png>)
 
 &nbsp;
 
@@ -278,7 +278,7 @@ Starting with v6.1.3 for MongoDB (and progressively thereafter for other targets
 
 &nbsp;
 
-![Faker bulk synthetic data applied to instance](<lib/Faker%20bulk%20synthetic%20data%20applied%20to%20instance.png>)
+![Faker bulk synthetic data applied to instance](<lib/Faker bulk synthetic data applied to instance.png>)
 
 &nbsp;
 

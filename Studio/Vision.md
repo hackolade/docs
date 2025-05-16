@@ -4,7 +4,7 @@ Hackolade Studio, like other legacy tools in the same segment, uses Entity-Relat
 
 &nbsp;
 
-Our mission is to help tackle the complexity at the heart of data, and to reconcile Business and IT through a shared understanding of the context and meaning of data.&nbsp; This is achieved through the pillars of our vision: [Polyglot Data Modeling](<PolyglotDataModeling1.md>) and [Metadata-as-Code](<Metadata-as-Code1.md>), which are best executed through [Domain-Driven Data Modeling](<Domain-DrivenDataModeling1.md>).
+Our mission is to help tackle the complexity at the heart of data, and to reconcile Business and IT through a shared understanding of the context and meaning of data.&nbsp; This is achieved through the pillars of our vision: [Polyglot Data Modeling](<https://hackolade.com/polyglot-data-modeling.html>) and [Metadata-as-Code](<https://hackolade.com/metadata-as-code.html>), which are best executed through [Domain-Driven Data Modeling](<https://hackolade.com/domain-driven-data-modeling.html>).
 
 &nbsp;
 
@@ -46,7 +46,7 @@ Additionally, there has been the buzz around the terms NoSQL, schemaless, schema
 
 &nbsp;
 
-*The lack of a data model is still a model -- just a crummy one\!&nbsp; *
+*The lack of a data model is still a model -- just a crummy one\!* &nbsp;
 
 &nbsp;
 

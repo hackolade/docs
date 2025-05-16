@@ -12,41 +12,41 @@ For ER/Studio, the suggested parameters in the wizard are as follows:
 
 &nbsp;
 
-![ER-Studio Wizard - page 1](<lib/ER-Studio%20Wizard%20-%20page%201.png>)
+![ER-Studio Wizard - page 1](<lib/ER-Studio Wizard - page 1.png>)
 
 &nbsp;
 
-![ER-Studio Wizard - page 2](<lib/ER-Studio%20Wizard%20-%20page%202.png>)
+![ER-Studio Wizard - page 2](<lib/ER-Studio Wizard - page 2.png>)
 
 &nbsp;
 
-![ER-Studio Wizard - page 3 model](<lib/ER-Studio%20Wizard%20-%20page%203%20model.png>)
+![ER-Studio Wizard - page 3 model](<lib/ER-Studio Wizard - page 3 model.png>)
 
 &nbsp;
 
-![ER-Studio Wizard - page 3 dictionary](<lib/ER-Studio%20Wizard%20-%20page%203%20dictionary.png>)
+![ER-Studio Wizard - page 3 dictionary](<lib/ER-Studio Wizard - page 3 dictionary.png>)
 
 &nbsp;
 
-![ER-Studio Wizard - page 3 general](<lib/ER-Studio%20Wizard%20-%20page%203%20general.png>)
-
-&nbsp;
-
-&nbsp;
-
-![ER-Studio Wizard - page 3 datatype](<lib/ER-Studio%20Wizard%20-%20page%203%20datatype.png>)
+![ER-Studio Wizard - page 3 general](<lib/ER-Studio Wizard - page 3 general.png>)
 
 &nbsp;
 
 &nbsp;
 
-![ER-Studio Wizard - page 3 name conversion](<lib/ER-Studio%20Wizard%20-%20page%203%20name%20conversion.png>)
+![ER-Studio Wizard - page 3 datatype](<lib/ER-Studio Wizard - page 3 datatype.png>)
+
+&nbsp;
+
+&nbsp;
+
+![ER-Studio Wizard - page 3 name conversion](<lib/ER-Studio Wizard - page 3 name conversion.png>)
 
 &nbsp;
 
 Knowing that the export function does not work with all version of ER/Studio, another option is to use the MetaWizard export in XSD format:
 
-![ER-Studio Wizard - Meta export](<lib/ER-Studio%20Wizard%20-%20Meta%20export.png>)
+![ER-Studio Wizard - Meta export](<lib/ER-Studio Wizard - Meta export.png>)
 
 &nbsp;
 

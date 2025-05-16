@@ -48,7 +48,7 @@ When you start Hackolade Studio, if there is no valid license key present, you a
 
 &nbsp;
 
-![License Status - request license key](<lib/License%20Status%20-%20request%20license%20key.png>)
+![License Status - request license key](<lib/License Status - request license key.png>)
 
 &nbsp;
 
@@ -62,11 +62,11 @@ If you have not downloaded Hackolade yet, please do so from the [download page](
 
 &nbsp;
 
-![License Status - validate license key](<lib/License%20Status%20-%20validate%20license%20key.png>)
+![License Status - validate license key](<lib/License Status - validate license key.png>)
 
 &nbsp;
 
-Paste the license key received by email, or provided by your administrator.&nbsp; The license key has a format of multiple 5-character segment like XXXXX-XXXXX-XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
+Paste the license key received by email, or provided by your administrator.&nbsp; The license key has a format of multiple 5-character segment like XXXXX-XXXXX-XXXXX-XXXXX-XXXXX-XXXXX-XXXXX.&nbsp; Note that the dashes ("-") are cosmetic and optional.&nbsp; A proper license key with no dashes validates equally well.
 
 &nbsp;
 
@@ -84,7 +84,7 @@ You must be connected to the Internet for the validation of your license key wit
 
 If the license key is successfully validated, the following message willbe breifly appear at the top of your screen.
 
-![License Status - license key validated](<lib/License%20Status%20-%20license%20key%20validated.png>)
+![License Status - license key validated](<lib/License Status - license key validated.png>)
 
 &nbsp;
 
@@ -94,7 +94,7 @@ The License Status screen can be accessed at any time by clicking the key icon a
 
 &nbsp;
 
-![License Status - status screen](<lib/License%20Status%20-%20status%20screen.png>)
+![License Status - status screen](<lib/License Status - status screen.png>)
 
 &nbsp;
 
@@ -130,7 +130,7 @@ If the application cannot reach the Internet, the following dialog is displayed:
 
 &nbsp;
 
-![Offline license activation - connection failu](<lib/Offline%20license%20activation%20-%20connection%20failu.png>)
+![Offline license activation - connection failu](<lib/Offline license activation - connection failu.png>)
 
 &nbsp;
 
@@ -144,7 +144,7 @@ There are legitimate reasons for the machine to be disconnected from the Interne
 
 By clicking on the link or the Send button, you will be directed in your browser to this page (or you should copy the URL so it could be used on a different computer with Internet access), with the fields pre-filled:
 
-![Offline license activation - web screen](<lib/Offline%20license%20activation%20-%20web%20screen.png>)
+![Offline license activation - web screen](<lib/Offline license activation - web screen.png>)
 
 &nbsp;
 
@@ -156,7 +156,7 @@ When you click the activate button, an XML file will be downloaded to your PC.&n
 
 &nbsp;
 
-![Offline license activation - choose file](<lib/Offline%20license%20activation%20-%20choose%20file.png>)
+![Offline license activation - choose file](<lib/Offline license activation - choose file.png>)
 
 &nbsp;
 
@@ -192,11 +192,11 @@ Offline use of the application is possible but requires to start the application
 
 ## Licenses on Virtual Machines (or physical computer accessed via RDP or equivalent)
 
-As long as you validate and use Hackolade Studio with the same combination of host machine, remote machine, and login, there should be not issue.&nbsp; If any of these 3 parameters is different, access is blocked.&nbsp; In a VM environment, it is critical that the VM instance is persistent to ensure the stability of the 3 parameter combination.
+As long as you validate and use Hackolade Studio with the same combination of host machine, remote machine, and login, there should be no issue.&nbsp; If any of these 3 parameters is different, access is blocked.&nbsp; In a VM environment, it is critical that the VM instance is persistent to ensure the stability of the 3-parameter combination.
 
 &nbsp;
 
-**Important note:** installing Hackolade on a central computer (whether on a PC or a server, whether the machine is virtual or physical, and whether on premises or in the Cloud) does **not** change the terms of our [License Agreement](<Licenseagreement.md>).&nbsp; Specifically, that license metric is per "per seat", and that a license must be obtained for each device on or from which the Product is used or accessed. When the Product is accessed remotely across using Terminal Server, Remote Desktop, Citrix XenDesktop or an equivalent method, a separate Product license is required to be assigned to each device from which the application is accessed, i.e. not the virtual machine on which the Product is installed.
+**Important note:** installing Hackolade on a central computer (whether on a PC or a server, whether the machine is virtual or physical, and whether on premises or in the Cloud) does **not** change the terms of our [License Agreement](<Licenseagreement.md>).&nbsp; Specifically, that license metric is per "per seat", and that a license must be obtained for each device on or from which the Product is used or accessed. When the Product is accessed remotely across using Terminal Server, Remote Desktop, Windows App, virtual machine, Citrix, or an equivalent method, a separate Product license is required to be assigned to each device from which the application is accessed, i.e. not the virtual machine on which the Product is installed.
 
 &nbsp;
 
@@ -214,7 +214,11 @@ Example: having 4 Hackolade users on a single VM is the equivalent of having 4 i
 
 ### VM configuration
 
-**Note:** it is critical that the VM setup is such that you access a **persistent** VM instance of the application.&nbsp; Non-persistent instances will cause license issues.
+**Note:** it is critical that the VM setup is such that you access a **persistent** VM instance of the application.&nbsp; Non-persistent instances will cause license issues.&nbsp; See [this article](<https://www.parallels.com/blogs/ras/persistent-vdi-vs-non-persistent/> "target=\"\_blank\"") for a good discussion of persistent vs non-persistent (or stateless) VDI.
+
+&nbsp;
+
+![Persistent vs non-persistent VDI](<lib/Persistent vs non-persistent VDI.png>)
 
 &nbsp;
 

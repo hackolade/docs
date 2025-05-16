@@ -8,13 +8,13 @@ In the Hackolade connection settings dialog for Synapse, give a meaningful name 
 
 &nbsp;
 
-![Synapse connection settings](<lib/Synapse%20connection%20settings.png>)
+![Synapse connection settings](<lib/Synapse connection settings.png>)
 
 &nbsp;
 
 then enter your username/password:
 
-![Synapse connection authentication](<lib/Synapse%20connection%20authentication.png>)
+![Synapse connection authentication](<lib/Synapse connection authentication.png>)
 
 &nbsp;
 
@@ -28,7 +28,7 @@ https://docs.microsoft.com/en-us/azure/synapse-analytics/sql/sql-authentication?
 
 Alternatively, you may choose to provide a connection string which includes: host, port, username and password:
 
-![Synapse Connection String](<lib/Synapse%20Connection%20String.png>)
+![Synapse Connection String](<lib/Synapse Connection String.png>)
 
 &nbsp;
 
@@ -40,7 +40,7 @@ If you choose Azure Active Directory, you must also specify your "Tenant ID" ([h
 
 &nbsp;
 
-![Synapse Azure AD Directory tenant ID](<lib/Synapse%20Azure%20AD%20Directory%20tenant%20ID.png>)
+![Synapse Azure AD Directory tenant ID](<lib/Synapse Azure AD Directory tenant ID.png>)
 
 please also consult:
 
@@ -64,7 +64,7 @@ The REST API connection should be enabled and all the proper parameters provided
 
 &nbsp;
 
-![Synapse Data Plane dialog](<lib/CosmosDB%20Data%20Plane%20dialog.png>)
+![Synapse Data Plane dialog](<lib/CosmosDB Data Plane dialog.png>)
 
 &nbsp;
 
@@ -72,25 +72,25 @@ The REST API connection should be enabled and all the proper parameters provided
 
 First, you must provide the **Resource Group Name** and **Subscription ID** of Cosmos DB instance, as found in the Overview screen of the Comos DB instance. More information [here](<https://docs.microsoft.com/en-us/azure/cosmos-db/how-to-manage-database-account#create-an-account> "target=\"\_blank\"").
 
-![Synapse - Azure instance overview screen](<lib/CosmosDB%20-%20Azure%20instance%20overview%20screen.png>)
+![Synapse - Azure instance overview screen](<lib/CosmosDB - Azure instance overview screen.png>)
 
 &nbsp;
 
 Next, the Hackolade application must be registered so Azure accepts the REST API calls, as per these [instructions](<https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal> "target=\"\_blank\"").&nbsp; The **Application (client) ID** and the **Directory (tenant) ID** are retrieved are retrieved from the App registration Overview screen:
 
-![Synapse - Azure App registration overview](<lib/CosmosDB%20-%20Azure%20App%20registration%20overview.png>)
+![Synapse - Azure App registration overview](<lib/CosmosDB - Azure App registration overview.png>)
 
 &nbsp;
 
 **Note:** it is critical to assign the proper role to the application just registered.&nbsp; This is done following the steps outlined [here](<https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal> "target=\"\_blank\"").&nbsp;
 
-![Synapse- Azure IAM role assignment](<lib/CosmosDB%20-%20Azure%20IAM%20role%20assignment.png>)
+![Synapse- Azure IAM role assignment](<lib/CosmosDB - Azure IAM role assignment.png>)
 
 &nbsp;
 
 Finally, the **Application secret** is obtained from the Certificates \& secrets screen of the App registration:&nbsp;
 
-![Synapse - Azure App registration secrets scr](<lib/CosmosDB%20-%20Azure%20App%20registration%20secrets%20scr.png>)
+![Synapse - Azure App registration secrets scr](<lib/CosmosDB - Azure App registration secrets scr.png>)
 
 &nbsp;
 

@@ -10,7 +10,7 @@ This strategy has a business purpose to promote a shared understanding of meanin
 
 It also has a technical purpose to ensure that the evolution of data models and their schema artifacts follow the same lifecycle as application code, through their co-location in Git repository and branches.
 
-![Metadata-as-Code infinity loop](<lib/Metadata-as-Code%20infinity%20loop.png>)
+![Metadata-as-Code infinity loop](<lib/Metadata-as-Code infinity loop.png>)
 
 &nbsp;
 
@@ -28,7 +28,7 @@ With the Workgroup Edition, Hackolade Studio integrates natively with the featur
 
 &nbsp;
 
-In the context of Metadata-as-Code, the Workgroup Edition also allows for the co-location of data models and their schema artifacts with the corresponding application code and their respective but co-ordinated changes in a Git branch.&nbsp; Artifacts also include ALTER scripts, if applicable to the target technology, resulting from model evolutions.![Metadata-as-Code co-locate model schema code](<lib/Metadata-as-Code%20co-locate%20model%20schema%20code.png>)
+In the context of Metadata-as-Code, the Workgroup Edition also allows for the co-location of data models and their schema artifacts with the corresponding application code and their respective but co-ordinated changes in a Git branch.&nbsp; Artifacts also include ALTER scripts, if applicable to the target technology, resulting from model evolutions.![Metadata-as-Code co-locate model schema code](<lib/Metadata-as-Code co-locate model schema code.png>)
 
 &nbsp;
 
@@ -54,7 +54,7 @@ Another common use case we've seen is to use the CLI to compare the models rever
 
  
 
-The Hackolade command line can of course be used on a stand alone machine.  It can also be easily combined with a [git repository](<Teamcollaboration.md>) for the storage of versioned models and schema artifacts, as well as with [Docker containers](<https://github.com/hackolade/docker/tree/main/Studio> "target=\"\_blank\"").  Customers have been using this combination either in a push mode, triggered by saving or committing model changes, or in a pull mode, when invoked by a DevOps CI/CD pipeline or a scheduled job. ![Metadata-as-Code CLI workflow automation](<lib/Metadata-as-Code%20CLI%20workflow%20automation.png>)
+The Hackolade command line can of course be used on a stand alone machine.  It can also be easily combined with a [git repository](<Teamcollaboration.md>) for the storage of versioned models and schema artifacts, as well as with [Docker containers](<https://github.com/hackolade/docker/tree/main/Studio> "target=\"\_blank\"").  Customers have been using this combination either in a push mode, triggered by saving or committing model changes, or in a pull mode, when invoked by a DevOps CI/CD pipeline or a scheduled job. ![Metadata-as-Code CLI workflow automation](<lib/Metadata-as-Code CLI workflow automation.png>)
 
 &nbsp;
 
@@ -68,7 +68,7 @@ The Hackolade command line can of course be used on a stand alone machine.  It 
 
 The CLI can also be used for end-to-end synchronization of data structures with business-facing data dictionaries:
 
-![Metadata-as-Code pipeline orchestration](<lib/Metadata-as-Code%20pipeline%20orchestration.png>)
+![Metadata-as-Code pipeline orchestration](<lib/Metadata-as-Code pipeline orchestration.png>)
 
 &nbsp;
 
@@ -106,7 +106,17 @@ In a governance-first approach, a baseline model evolves.  When the branch for 
 
 &nbsp;
 
-![CLI governance-first use case](<lib/CLI%20governance-first%20use%20case.png>)
+![CLI governance-first use case](<lib/CLI governance-first use case.png>)
+
+&nbsp;
+
+You may want to read this [architecture article](<DevOpsCICDarchitecture.md>) to see the details of this diagram:
+
+&nbsp;
+
+![CLI architecture in Docker containers](<lib/CLI architecture in Docker containers.png>)
+
+&nbsp;
 
 &nbsp;
 
@@ -121,7 +131,7 @@ In a code-first approach, the structure in the production instance evolves.  Ev
 
 &nbsp;
 
-![CLI development-first use case](<lib/CLI%20development-first%20use%20case.png>)
+![CLI development-first use case](<lib/CLI development-first use case.png>)
 
 &nbsp;
 

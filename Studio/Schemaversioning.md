@@ -16,17 +16,17 @@ A given field name can have multiple data types.  We support this too.  Not on
 
 &nbsp;
 
-![Multiple data type - select](<lib/Multiple%20data%20types%20-%20select.png>)​
+![Multiple data type - select](<lib/Multiple data types - select.png>)​
 
-![Image](<lib/Multiple%20data%20types.png>)​\
+![Image](<lib/Multiple data types.png>)​\
 \
 or at least one of them is a complex data type.  In this case, we have to represent them using a oneOf choice, for example:
 
-![Image](<lib/Polymorphism%20simple.png>)​\
+![Image](<lib/Polymorphism simple.png>)​\
 \
 In the ERD, the representation is as follows:
 
-![Polymorphism ERD](<lib/Polymorphism%20ERD.png>)​
+![Polymorphism ERD](<lib/Polymorphism ERD.png>)​
 
 \
 We detect this polymorphism during reverse-engineering.

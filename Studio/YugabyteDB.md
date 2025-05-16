@@ -35,7 +35,7 @@ The data model in the picture below results from the data modeling of the [fligh
 
 &nbsp;
 
-![Image](<lib/PostgreSQL%20workspace.png>)
+![Image](<lib/PostgreSQL workspace.png>)
 
 &nbsp;
 
@@ -135,7 +135,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![Image](<lib/PostgreSQL%20DDL%20forward-engineering.png>)
+![Image](<lib/PostgreSQL DDL forward-engineering.png>)
 
 &nbsp;
 

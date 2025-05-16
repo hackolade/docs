@@ -14,7 +14,7 @@ Hackolade supports Avro schema maintenance in the Azure Schema Registry for Even
 
 In effect, Hackolade provides a graphical interface for the design and maintenance of Avro schemas stored in teh Azure Schema Registry for Event Hubs.
 
-![Event Hubs Schema Registry workspace](<lib/Avro%20workspace.png>)
+![Event Hubs Schema Registry workspace](<lib/Avro workspace.png>)
 
 &nbsp;
 
@@ -32,7 +32,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![Image](<lib/Event%20Hub%20Schema%20Registry-forward-engineering.png>)
+![Image](<lib/Event Hub Schema Registry-forward-engineering.png>)
 
 &nbsp;
 

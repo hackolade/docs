@@ -1,6 +1,6 @@
 # Menu bar
 
-![Image](<lib/Menu%20bar.png>)
+![Image](<lib/Menu bar.png>)
 
 &nbsp;
 
@@ -10,7 +10,7 @@ The line of action words provide access to most functions of the application.&nb
 
 The corresponding menu appears with menu items:
 
-![Menu bar - File menu](<lib/Menu%20bar%20-%20File%20menu.png>)
+![Menu bar - File menu](<lib/Menu bar - File menu.png>)
 
 &nbsp;
 

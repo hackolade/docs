@@ -14,13 +14,15 @@ Here's an architecture diagram to illustrate:
 
 &nbsp;
 
-![Client architecture diagram](<lib/Client%20architecture%20diagram.png>)
+![Client architecture diagram](<lib/Client architecture diagram.png>)
 
 &nbsp;
 
 &nbsp;
 
-The purpose of the software is for data modeling of NoSQL databases, storage formats, REST APIs, and JSON in RDBMS.
+&nbsp;
+
+The purpose of the software is for data modeling of SQL and NoSQL databases, APIs, and storage formats.
 
 &nbsp;
 
@@ -30,7 +32,7 @@ The architecture of our solution must be taken into account.&nbsp; Hackolade Stu
 
 &nbsp;
 
-As a result, typical SaaS-related security assessments just don’t apply to us.&nbsp; Our software, since it is installed on hardware controlled by you, relies on your own security measures and controls.
+The application runs with no backend and no data storage.&nbsp; As a result, typical SaaS-related security assessments just don’t apply to us.&nbsp; Our software, since it is installed on hardware controlled by you, relies on your own security measures and controls.
 
 &nbsp;
 
@@ -40,7 +42,25 @@ As it seems to not be sufficient for some that we collect or store absolutely no
 
 ## Hackolade Studio is now also available in the browser.&nbsp; Is that not a SaaS solution?
 
-Some SaaS solutions store customer data.&nbsp; This is not the case for the Hackolade Studio browser deployment.&nbsp; Read all the details of our [security-first browser deployment](<Security-firstbrowserdeployment.md>).
+The general understanding of SaaS solutions is that the provider stores customer data. &nbsp;
+
+![Image](<lib/SaaS - Traditional understanding.png>)
+
+&nbsp;
+
+As a matter of fact, we tend to think that Saas is a bit of misnomer as it implies more than "software as a service" but "software and data storage as a service".&nbsp; As data modelers, we know how important it is to match the right name with the meaning...
+
+&nbsp;
+
+Hackolade Studio is a pioneer in a solution that we call "Bring Your Own Storage" to a true SaaS approach:
+
+![SaaS - Security-First - Bring You Own Storage](<lib/SaaS - Security-First - Bring You Own Storage.png>)
+
+&nbsp;
+
+&nbsp;
+
+Read all the details of our [security-first browser deployment](<Security-firstbrowserdeployment.md>).
 
 &nbsp;
 
@@ -119,23 +139,23 @@ The process of threat modeling consists of the following steps:
 
 &nbsp;
 
-1. Create a Design Overview: Develop an architectural overview of the application, illustrating its various components, modules, and their interactions, to identify potential entry points, trust boundaries, and data flows.
+2. Create a Design Overview: Develop an architectural overview of the application, illustrating its various components, modules, and their interactions, to identify potential entry points, trust boundaries, and data flows.
 
 &nbsp;
 
-1. Identify Threats: Identify potential threats and attack vectors that could exploit vulnerabilities in the application, including unauthorized access, injection attacks, cross-site scripting (XSS), cross-site request forgery (CSRF), and more.&nbsp;
+3. Identify Threats: Identify potential threats and attack vectors that could exploit vulnerabilities in the application, including unauthorized access, injection attacks, cross-site scripting (XSS), cross-site request forgery (CSRF), and more.&nbsp;
 
 &nbsp;
 
-1. Assess Risks: Evaluate the impact and likelihood of each identified threat. Assign risk ratings based on the potential damage, likelihood of occurrence, and ease of exploitation.&nbsp;
+4. Assess Risks: Evaluate the impact and likelihood of each identified threat. Assign risk ratings based on the potential damage, likelihood of occurrence, and ease of exploitation.&nbsp;
 
 &nbsp;
 
-1. Determine Countermeasures: Determine appropriate countermeasures and security controls to mitigate identified risks. This may involve employing secure coding practices, input validation, encryption, access controls, authentication mechanisms, and other defensive measures.
+5. Determine Countermeasures: Determine appropriate countermeasures and security controls to mitigate identified risks. This may involve employing secure coding practices, input validation, encryption, access controls, authentication mechanisms, and other defensive measures.
 
 &nbsp;
 
-1. Validate and Iterate: Review the threat model with relevant stakeholders, including developers, architects, and security experts. Incorporate their feedback and iterate on the design to enhance security.
+6. Validate and Iterate: Review the threat model with relevant stakeholders, including developers, architects, and security experts. Incorporate their feedback and iterate on the design to enhance security.
 
 &nbsp;
 
@@ -143,7 +163,7 @@ The process of threat modeling consists of the following steps:
 
 ## What is our engineering team's usage of static code analysis tools (SAST, SCA)?
 
-The quality of our code base is continuously analyzed following a [Clean as you Code strategy](<https://docs.sonarsource.com/sonarcloud/improving/clean-as-you-code/> "target=\"\_blank\"").
+The quality of our code base is continuously analyzed following a [Clean as you Code strategy](<https://docs.sonarsource.com/sonarcloud/improving/clean-as-you-code/> "target=\"\_blank\"") with SonarQube (previously SonarLint and SonarCloud), the solution trusted and used by 7 million developers around the world.&nbsp;
 
 &nbsp;
 
@@ -175,13 +195,19 @@ There are a few things you can do to mitigate risks from people who have physica
 
 &nbsp;
 
+## Does Hackolade Studio store and encrypt passwords?
+
+It goes without saying that we would of course not leave secrets un-encrypted.&nbsp; We encrypt passwords, passphrases, and other secrets.&nbsp; We delegate the storage to known 3rd-party technologies: Git Credentials, OS-specific secret storage (Mac keychain, Windows Credentials Manager, Linux kwallet), and other safe storage methods.&nbsp;
+
+&nbsp;
+
 ## What about unmasking of passwords in Connection Settings?
 
 This is just one of the physically-local attacks described in the previous section, and all of those points apply here as well.&nbsp; The reason the password is masked is only to prevent disclosure via “shoulder-surfing” (i.e. the passive viewing of your screen by nearby persons), not because it is a secret unknown to the application. The application knows the password at many layers, including JavaScript, developer tools, process memory, and so on.&nbsp; When you are physically local to the computer, and only when you are physically local to the computer, there are, and always will be, tools for extracting the password from any of these places.
 
 &nbsp;
 
-## How does Hackolade Studio handle Role-based Access Control for data models?
+## How does Hackolade Studio handle Role-Based Access Control for data models?
 
 The tool is a downloadable client and not a client-server or SaaS solution.&nbsp; As a result, it has no Role-Based Access Control.&nbsp; Security of the data models is delegated to the the storage layer, i.e. shared network drives or repositories. &nbsp;
 

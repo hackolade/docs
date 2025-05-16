@@ -21,6 +21,20 @@ This feature is also available via the [Command-Line Interface](<CommandLineInte
 
 This process includes a series of steps outlined below.&nbsp; After going through the steps, the user is free to enrich the model for documentation purposes, and to generate forward-engineering scripts.
 
+&nbsp;
+
+The time taken to reverse-engineer a MongoDB instance depends on several factors:
+
+* sample size defined in Tools \> Options \> Reverse-Engineering \> Record Sampling
+* number of collections
+* size of the respective sampled documents
+
+The process will stop sampling if the total size of the sample reaches 500 megabytes.
+
+If your documents are fairly heterogeneous, a high sampling size will only increase processing time with no added value.  So you may want to experiment by starting with a really low sampling size, for example just 1 document per collection, and make sure that it all works fine.  Then gradually increase to 10, 50, 100, 250, 500, etc...  until you find the acceptable balance between processing time and a representative sample.
+
+You can also see (and send us if the necessary) the log file by going to Help \> Access Application Logs \> HackoladeRE.log 
+
 ### Choose the model target
 
 Create a new model and select the target of your choice.&nbsp; The reverse-engineering process is fairly similar for all targets, with local nuances when needed.&nbsp; But the terminology and connection protocols can be very different.
@@ -29,7 +43,7 @@ Create a new model and select the target of your choice.&nbsp; The reverse-engin
 
 This screen will vary depending on the selected target.
 
-![Tools  Reverse-Engineer  MongoDB Collection](<lib/Tools%20%20Reverse-Engineer%20%20MongoDB%20Collection.png>)
+![Tools  Reverse-Engineer  MongoDB Collection](<lib/Tools  Reverse-Engineer  MongoDB Collection.png>)
 
 &nbsp;
 
@@ -37,7 +51,7 @@ This screen will vary depending on the selected target.
 
 The options here will vary depending on the selected target.&nbsp; Refer to the pages below to find the specific details.&nbsp; The images below refer to MongoDB.
 
-![Reverse-Engineering Connection Settings](<lib/Reverse-Engineering%20Connection%20Settings.png>)
+![Reverse-Engineering Connection Settings](<lib/Reverse-Engineering Connection Settings.png>)
 
 &nbsp;
 
@@ -45,7 +59,7 @@ The options here will vary depending on the selected target.&nbsp; Refer to the 
 
 &nbsp;
 
-![Reverse-Engineering Connection Selection](<lib/Reverse-Engineering%20Connection%20Selection.png>)
+![Reverse-Engineering Connection Selection](<lib/Reverse-Engineering Connection Selection.png>)
 
 &nbsp;
 
@@ -55,7 +69,7 @@ For more information on the various authentication and encryption protocols, ple
 
 ### Selecting one or more collections/entities
 
-![Reverse-Engineer MongoDB Collection selection](<lib/Reverse-Engineer%20MongoDB%20Collection%20selection.png>)
+![Reverse-Engineer MongoDB Collection selection](<lib/Reverse-Engineer MongoDB Collection selection.png>)
 
 &nbsp;
 
@@ -87,7 +101,7 @@ Note that this sampling mechanism is originally provided in Open Source by [Mong
 
 From the sample set gathered above, measurable metrics can be applied to the schema, including schema depth and width, and class interactions, as described here:
 
-![RevEng schema inference](<lib/RevEng%20schema%20inference.png>)
+![RevEng schema inference](<lib/RevEng schema inference.png>)
 
 &nbsp;
 
@@ -105,7 +119,7 @@ In this step, when the instance being reverse-engineered is v3.2 and above, stor
 
 As of v2.5.0 of Hackolade, we've also introduced the ability to detect **pattern fields** during the reverse-engineering process.&nbsp; For any sub-object at a given level, we can infer the presence of a pattern field if we detect the recurrence of similar regex patterns in field names.
 
-![Reverse-Engineering pattern field detection](<lib/Reverse-Engineering%20pattern%20field%20detection.png>)&nbsp;
+![Reverse-Engineering pattern field detection](<lib/Reverse-Engineering pattern field detection.png>)&nbsp;
 
 &nbsp;
 
@@ -141,7 +155,7 @@ When reverse-engineering into an existing model, it is possible that source obje
 
 &nbsp;
 
-![Conflict resolution dialog](<lib/Conflict%20resolution%20dialog.png>)
+![Conflict resolution dialog](<lib/Conflict resolution dialog.png>)
 
 &nbsp;
 

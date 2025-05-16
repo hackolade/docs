@@ -72,7 +72,7 @@ With field-level encryption, sensitive information like the ssn and phone can be
 
 Watch an [animation](<https://webimages.mongodb.com/\_com\_assets/cms/FLE-s7oxojve2n-shxql4cyij.gif> "target=\"\_blank\"") of the field-level encryption process, along with the following legend of the steps:
 
-![Image](<lib/MongoDB%20Field-Level%20Encryption%20process%20legend.png>)
+![Image](<lib/MongoDB Field-Level Encryption process legend.png>)
 
 &nbsp;
 
@@ -178,11 +178,11 @@ In theory this method should not affect Hackolade Studio from a data modeling pe
 **Warning:** The automatic feature of field level encryption is only available in MongoDB Enterprise 4.2 or later, and MongoDB Atlas 4.2 or later clusters. Most of our major customers are on Enterprise or Atlas.\
 &nbsp;
 
-| &nbsp; | **Community** | **Enterprise** | **Atlas** |
+|  | **Community** | **Enterprise** | **Atlas** |
 | --- | --- | --- | --- |
 | Automatic encryption | \-- | X | X |
 | Explicit (manual) encryption | X | X | X |
-| &nbsp; | &nbsp; | &nbsp; | &nbsp; |
+|  |  |  |  |
 
 
 ### Encryptions algorithms
@@ -190,10 +190,13 @@ In theory this method should not affect Hackolade Studio from a data modeling pe
 MongoDB client-side field level encryption uses the encrypt-then-MAC approach combined with either a deterministic or random initialization vector to encrypt field values. MongoDB *only* supports the [AEAD](<https://en.wikipedia.org/wiki/Authenticated\_encryption#Authenticated\_encryption\_with\_associated\_data\_(AEAD)> "target=\"\_blank\"") AES-256-CBC encryption algorithm with HMAC-SHA-512 MAC.
 
 * deterministic: gives the same value every time the data is encrypted. While deterministic encryption provides greater support for read operations, encrypted data with low cardinality is susceptible to frequency analysis recovery.
+
   * supports direct match (equality) against encrypted fields
   * uses indexes to provide efficient data access
   * does not support the more complex queries (ranges, aggregations) directly against encrypted fields
+
 * randomized: gives a different value every time the data is encrypted. While randomized encryption provides the strongest guarantees of data confidentiality, it also prevents support for any read operations which must operate on the encrypted field to evaluate the query.
+
   * strongest level of protection&nbsp;
   * prevents direct match (equality) queries against encrypted fields
 
@@ -218,8 +221,10 @@ The encrypt object can contain **only** the following fields:
 
 * [keyId](<https://docs.mongodb.com/manual/reference/security-client-side-automatic-json-schema/#mongodb-autoencryptkeyword-autoencryptkeyword.encrypt.keyId> "target=\"\_blank\""): *Array of single UUID.* The UUID of the data encryption key to use for encrypting field values. The UUID is a BSON [binary data](<http://bsonspec.org/spec.html> "target=\"\_blank\"") element of subtype 4.
 * [algorithm](<https://docs.mongodb.com/manual/reference/security-client-side-automatic-json-schema/#mongodb-autoencryptkeyword-autoencryptkeyword.encrypt.algorithm> "target=\"\_blank\""): Indicates which encryption algorithm to use when encrypting values of \<fieldName\>. Supports the algorithms:
+
   * AEAD\_AES\_256\_CBC\_HMAC\_SHA\_512-Random
   * AEAD\_AES\_256\_CBC\_HMAC\_SHA\_512-Deterministic
+
 * [bsonType](<https://docs.mongodb.com/manual/reference/security-client-side-automatic-json-schema/#mongodb-autoencryptkeyword-autoencryptkeyword.encrypt.bsonType> "target=\"\_blank\"")
 
 &nbsp;
@@ -227,8 +232,10 @@ The encrypt object can contain **only** the following fields:
 **Warning:**
 
 * if the algorithm is **deterministic**, then:
+
   * bsonType must specify a **single** value -- multiple data types are NOT allowed
   * bsonType does **not** support any of the following BSON types:&nbsp;
+
     * double
     * decimal128
     * bool
@@ -239,10 +246,13 @@ The encrypt object can contain **only** the following fields:
     * maxKey
     * null
     * undefined
+
 * if the algorithm is **random**, then:
+
   * bsonType may specify an array of supported bson types -- multiple data types are allowed
   * for fields with bsonType of array or object, the client encrypts the *entire* array or object and not their individual elements.
   * bsonType does **not** support any of the following BSON types:&nbsp;
+
     * minKey
     * maxKey
     * null
@@ -287,6 +297,7 @@ The encryptMetadata object can contain **only** the following fields:
 
 * [keyId](<https://docs.mongodb.com/manual/reference/security-client-side-automatic-json-schema/#mongodb-autoencryptkeyword-autoencryptkeyword.encrypt.keyId> "target=\"\_blank\""): *Array of single UUID.* The UUID of the data encryption key to use for encrypting field values. The UUID is a BSON [binary data](<http://bsonspec.org/spec.html> "target=\"\_blank\"") element of subtype 4.
 * [algorithm](<https://docs.mongodb.com/manual/reference/security-client-side-automatic-json-schema/#mongodb-autoencryptkeyword-autoencryptkeyword.encrypt.algorithm> "target=\"\_blank\""): Indicates which encryption algorithm to use when encrypting values of \<fieldName\>. Supports the algorithms:
+
   * AEAD\_AES\_256\_CBC\_HMAC\_SHA\_512-Random
   * AEAD\_AES\_256\_CBC\_HMAC\_SHA\_512-Deterministic
 
@@ -380,6 +391,7 @@ The $jsonschema validator is enriched:
 
 * if encryption is enabled AND explicit (manual) is disabled
 * taking into account the difference in structure
+
   * if encrypt, then create structure with bsonType, keyId, and algorithm
   * if encryptMetadata, then create structure with keyIdand algorithm
 
@@ -404,13 +416,13 @@ But for this process to work as described above, it is necessary to provide the 
 
 Failing to do so will show every encrypted field with a binary data type:
 
-![MongoDB FLE reverse-engineering without param](<lib/MongoDB%20FLE%20reverse-engineering%20without%20param.png>)
+![MongoDB FLE reverse-engineering without param](<lib/MongoDB FLE reverse-engineering without param.png>)
 
 &nbsp;
 
 instead of the actual data type:
 
-![MongoDB FLE reverse-engineering with params](<lib/MongoDB%20FLE%20reverse-engineering%20with%20params.png>)
+![MongoDB FLE reverse-engineering with params](<lib/MongoDB FLE reverse-engineering with params.png>)
 
 &nbsp;
 

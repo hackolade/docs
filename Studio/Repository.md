@@ -14,19 +14,19 @@ Most importantly, user-friendly context-aware screens are provided to review cha
 
 &nbsp;&nbsp;
 
-![Workgroup commit](<lib/Workgroup%20commit.png>)
+![Workgroup commit](<lib/Workgroup commit.png>)
 
 &nbsp;
 
-![Workgroup Edition - Review changes to commit](<lib/Workgroup%20Edition%20-%20Review%20changes%20to%20commit.png>)
+![Workgroup Edition - Review changes to commit](<lib/Workgroup Edition - Review changes to commit.png>)
 
 &nbsp;
 
-&nbsp;![Workgroup pull conflict](<lib/Workgroup%20pull%20conflict.png>)
+&nbsp;![Workgroup pull conflict](<lib/Workgroup pull conflict.png>)
 
 &nbsp;
 
-![Image](<lib/Workgroup%20merge%20dialog.png>)
+![Image](<lib/Workgroup merge dialog.png>)
 
 &nbsp;
 
@@ -44,22 +44,24 @@ A repository is a central folder where you can store data models and other files
 
 ## What is Git?
 
-Git is currently the most popular distributed version control system, originally designed for software source code, and now used for many other purposes, including the operational framework known as [GitOps](<https://about.gitlab.com/topics/gitops/> "target=\"\_blank\"").
+Git is currently the most popular distributed version control system, originally designed for software source code, and now used for many other purposes, including the operational framework known as [GitOps](<https://about.gitlab.com/topics/gitops/> "target=\"\_blank\"").&nbsp; The popularity cannot be understated as 200+ million developers worldwide are enthusiastic users of this revolutionary technology.
 
 &nbsp;
 
 In layman's terms, Git allows to:
 
-* undo changes;
+* keep an immutable history of changes;
+* automatically version files with each officialized change;
+* undo changes prior to officializing them (i.e. not by rewriting history, but by further evolving the current version, or going back to a prior version);
 * save changes across multiple files as a set;
 * split your path so you can go down one road (called "branch") with one series of changes, and another road with another series of changes, or in fact down dozens of roads with dozens of series of changes;
-* merging those branches back together, either wholesale or selectively;
-* sharing entire sets of changes with coworkers, but selectively, without having to worry about overwriting their changes;
-* sharing not just your current version, but the entire undo/redo log behind your current version.
+* merge those branches back together, either wholesale or selectively;
+* share entire sets of changes with coworkers, but selectively, without having to worry about overwriting their changes;
+* share not just your current version, but the entire undo/redo log behind your current version.
 
 &nbsp;
 
-**Note:** don't confuser Git and GitHub, as they are different.&nbsp; GitHub is a service hosting Git repositories, where Git is a version control system.
+**Note:** don't confuser [Git](<https://git-scm.com/> "target=\"\_blank\"") with [GitHub](<https://github.com/> "target=\"\_blank\""), as they are different.&nbsp; GitHub is a service hosting Git repositories, where Git is a version control system.&nbsp; GitHub is a Git provider, as are [Bitbucket](<https://bitbucket.org/product/> "target=\"\_blank\""), [GitLab](<https://about.gitlab.com/free-trial/devsecops/> "target=\"\_blank\""), or [Azure DevOps Repos](<https://azure.microsoft.com/en-us/products/devops/repos> "target=\"\_blank\"").
 
 &nbsp;
 

@@ -14,13 +14,13 @@ To perform model-first design of a REST API using Swagger with Hackolade, you mu
 
 Creating APIs is not easy\! And writing Swagger documentation in a design-first approach can be tedious at best, generally error-prone and frustrating...&nbsp; Hackolade takes a **visual schema-centric** approach so you can focus on the content of requests and responses. The application also assists with all the metadata to produce validated Swagger files and test the transactions.&nbsp; You can also reverse-engineer existing Swagger files in JSON or YAML to produce a graphical representation of your APIs.
 
-Hackolade was specially adapted to support the API design of Swagger, including all the necessary metadata for the API, the requests and responses.&nbsp; The application closely follows the terminology of the specification.&nbsp; The visual tool puts the focus on what really matters in an API: the schema of the information being exchanged between systems.&nbsp; At the same time, it provides assistance to modelers and does not require perfect mastery of the Swagger syntax.&nbsp; It generates validated files that are syntactically correct and compatible with the specification thereby greatly improving productivity and quality. &nbsp; A step-by-step tutorial is available in a [YouTube video](<https://hackolade.com/videos.html#swagger> "target=\"\_blank\"").
+Hackolade was specially adapted to support the API design of Swagger, including all the necessary metadata for the API, the requests and responses.&nbsp; The application closely follows the terminology of the specification.&nbsp; The visual tool puts the focus on what really matters in an API: the schema of the information being exchanged between systems.&nbsp; At the same time, it provides assistance to modelers and does not require perfect mastery of the Swagger syntax.&nbsp; It generates validated files that are syntactically correct and compatible with the specification thereby greatly improving productivity, consistency, and quality. &nbsp; A step-by-step tutorial is available in a [YouTube video](<https://hackolade.com/videos.html#swagger> "target=\"\_blank\"").
 
 &nbsp;
 
 The diagram below results from the reverse-engineering of the [Pet Store](<https://mermade.org.uk/examples/swagger.json> "target=\"\_blank\"") sample API.
 
-![Swagger - Workspace](<lib/Swagger%20-%20Workspace.png>)
+![Swagger - Workspace](<lib/Swagger - Workspace.png>)
 
 &nbsp;
 
@@ -30,7 +30,7 @@ The Swagger specification describes primitives (or scalar) data types which can 
 
 &nbsp;
 
-![Swagger data types](<lib/Swagger%20data%20types.png>)&nbsp; ![Swagger data types - string](<lib/Swagger%20data%20types%20-%20string.png>)&nbsp; ![Swagger data types - number](<lib/Swagger%20data%20types%20-%20number.png>)&nbsp; ![Swagger data types - integer](<lib/Swagger%20data%20types%20-%20integer.png>) &nbsp;
+![Swagger data types](<lib/Swagger data types.png>)&nbsp; ![Swagger data types - string](<lib/Swagger data types - string.png>)&nbsp; ![Swagger data types - number](<lib/Swagger data types - number.png>)&nbsp; ![Swagger data types - integer](<lib/Swagger data types - integer.png>) &nbsp;
 
 &nbsp;
 
@@ -40,7 +40,7 @@ The Swagger specification describes primitives (or scalar) data types which can 
 
 The info object, as well as the host, basePath, schemes, consumes, produces, the securityDefinitions object, the security object, the tags object, and externalDocs object are fixed fields treated as metadata and maintained at model-level in Hackolade.
 
-&nbsp;![Swagger - Info object 1](<lib/Swagger%20-%20Info%20object%201.png>)&nbsp; ![Swagger - Info object 2](<lib/Swagger%20-%20Info%20object%202.png>)&nbsp; ![Swagger - Info object 3](<lib/Swagger%20-%20Info%20object%203.png>)
+&nbsp;![Swagger - Info object 1](<lib/Swagger - Info object 1.png>)&nbsp; ![Swagger - Info object 2](<lib/Swagger - Info object 2.png>)&nbsp; ![Swagger - Info object 3](<lib/Swagger - Info object 3.png>)
 
 &nbsp;
 
@@ -50,7 +50,7 @@ An object of [schema objects](<https://github.com/OAI/OpenAPI-Specification/blob
 
 &nbsp;
 
-![Swagger - Definitions](<lib/Swagger%20-%20Definitions.png>)
+![Swagger - Definitions](<lib/Swagger - Definitions.png>)
 
 &nbsp;
 
@@ -64,25 +64,25 @@ The resource path object is a container representing the relative path to an ind
 
 Each resource contains one or more "[path item objects](<https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#path-item-object> "target=\"\_blank\"")" made of a request and one or more responses:
 
-![Swagger - Resource container](<lib/Swagger%20-%20Resource%20container.png>)
+![Swagger - Resource container](<lib/Swagger - Resource container.png>)
 
 &nbsp;
 
 You may create a new resource via right-click anywhere in the ERD view and choosing the contextual menu option:
 
-![Swagger - Add resource contextual menu](<lib/Swagger%20-%20Add%20resource%20contextual%20menu.png>)
+![Swagger - Add resource contextual menu](<lib/Swagger - Add resource contextual menu.png>)
 
 &nbsp;
 
 or via the menu:
 
-![Swagger - Add resource action menu](<lib/Swagger%20-%20Add%20resource%20action%20menu.png>)
+![Swagger - Add resource action menu](<lib/Swagger - Add resource action menu.png>)
 
 &nbsp;
 
 or the toolbar:
 
-![Swagger - Add resource toolbar button](<lib/Swagger%20-%20Add%20resource%20toolbar%20button.png>)
+![Swagger - Add resource toolbar button](<lib/Swagger - Add resource toolbar button.png>)
 
 &nbsp;
 
@@ -98,7 +98,7 @@ The [Parameter Object](<https://github.com/OAI/OpenAPI-Specification/blob/master
 
 &nbsp;
 
-![Swagger - Request parameter 1](<lib/Swagger%20-%20Request%20parameter%201.png>) &nbsp; ![Swagger - Request parameter 2](<lib/Swagger%20-%20Request%20parameter%202.png>)
+![Swagger - Request parameter 1](<lib/Swagger - Request parameter 1.png>) &nbsp; ![Swagger - Request parameter 2](<lib/Swagger - Request parameter 2.png>)
 
 &nbsp;
 
@@ -106,21 +106,21 @@ To create a request within a resource container, you may:
 
 \- right-click inside the container area of the ERD pane, and choose the contextual menu option:
 
-![Swagger - Add request contextual menu](<lib/Swagger%20-%20Add%20request%20contextual%20menu.png>)
+![Swagger - Add request contextual menu](<lib/Swagger - Add request contextual menu.png>)
 
 \- choose the Action menu:
 
-![Swagger - Add request action menu](<lib/Swagger%20-%20Add%20request%20action%20menu.png>)
+![Swagger - Add request action menu](<lib/Swagger - Add request action menu.png>)
 
 \- choose the toolbar button:
 
-![Swagger - Add request toolbar button](<lib/Swagger%20-%20Add%20request%20toolbar%20button.png>)
+![Swagger - Add request toolbar button](<lib/Swagger - Add request toolbar button.png>)
 
 &nbsp;
 
 It is easy to maintain the metadata for a request in the properties pane:
 
-![Swagger - Request properties](<lib/Swagger%20-%20Request%20properties.png>)
+![Swagger - Request properties](<lib/Swagger - Request properties.png>)
 
 &nbsp;
 
@@ -130,13 +130,13 @@ It is easy to maintain the metadata for a request in the properties pane:
 
 &nbsp;
 
-![Swagger - Request-Responses](<lib/Swagger%20-%20Request-Responses.png>)
+![Swagger - Request-Responses](<lib/Swagger - Request-Responses.png>)
 
 &nbsp;
 
 A response may have a schema that is defined as individual fields or references a definition:
 
-![Swagger - Response schema](<lib/Swagger%20-%20Response%20schema.png>)
+![Swagger - Response schema](<lib/Swagger - Response schema.png>)
 
 &nbsp;
 
@@ -144,21 +144,21 @@ To create a response for a given request, you may:
 
 \- right-click on the request in the ERD and choose the contextual menu option:
 
-![Swagger - Add response contextual menu](<lib/Swagger%20-%20Add%20response%20contextual%20menu.png>)
+![Swagger - Add response contextual menu](<lib/Swagger - Add response contextual menu.png>)
 
 \- or choose the Action menu:
 
-![Swagger - Add response action menu](<lib/Swagger%20-%20Add%20response%20action%20menu.png>)
+![Swagger - Add response action menu](<lib/Swagger - Add response action menu.png>)
 
 \- or choose the toolbar button:
 
-![Swagger - Add response toolbar button](<lib/Swagger%20-%20Add%20response%20toolbar%20button.png>)
+![Swagger - Add response toolbar button](<lib/Swagger - Add response toolbar button.png>)
 
 &nbsp;
 
 It is easy to maintain the metadata for a response in the properties pane:
 
-![Swagger - Response properties](<lib/Swagger%20-%20Response%20properties.png>)
+![Swagger - Response properties](<lib/Swagger - Response properties.png>)
 
 ## Forward-Engineering
 
@@ -172,7 +172,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![Swagger - Forward-Engineering](<lib/Swagger%20-%20Forward-Engineering.png>)
+![Swagger - Forward-Engineering](<lib/Swagger - Forward-Engineering.png>)
 
 &nbsp;
 

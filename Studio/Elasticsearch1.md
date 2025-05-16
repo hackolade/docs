@@ -8,4 +8,4 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![Elasticsearch forward-engineering mappings](<lib/Elasticsearch%20forward-engineering%20mappings.png>)
+![Elasticsearch forward-engineering mappings](<lib/Elasticsearch forward-engineering mappings.png>)

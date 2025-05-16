@@ -40,13 +40,13 @@ Using the GUI application [Compare \& Merge](<Compareandmergemodels.md>) functio
 
 &nbsp;
 
-![Delta model compare](<lib/Delta%20model%20compare.png>)
+![Delta model compare](<lib/Delta model compare.png>)
 
 &nbsp;
 
 The delta model looks like any other model, but it is filled with objects that have been calculated during the comparison.&nbsp; It helps visualize, for each level of objects, the differences between the Left and the Right model, using the Left model as a basis.
 
-![Compare and Merge delta model](<lib/Compare%20and%20Merge%20delta%20model.png>)
+![Compare and Merge delta model](<lib/Compare and Merge delta model.png>)
 
 &nbsp;
 
@@ -74,7 +74,7 @@ Using the the GUI application, you may review the ALTER script on screen first, 
 
 As noted earlier, all DROP statements are commented by default, as they can potentially result in loss of data.&nbsp; It is your responsibility as a user to decide whether such script commands should be applied to the database.&nbsp; As a user, you have to explicitly un-comment these lines, which signifies that you understand the consequences of applying such statements.
 
-![Compare and Merge ALTER script](<lib/Compare%20and%20Merge%20ALTER%20script.png>)
+![Compare and Merge ALTER script](<lib/Compare and Merge ALTER script.png>)
 
 &nbsp;
 

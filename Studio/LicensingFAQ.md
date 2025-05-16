@@ -92,7 +92,11 @@ Hackolade's store with FastSpring is PCI compliant, securely processes sensitive
 
 ## It says the subscription will automatically renew – what does this mean?
 
-All self-service subscriptions are automatically renewed forever, unless canceled during the subscription period.
+Subscriptions done via Purchase Order directly with us, or via an authorized reseller, do not auto-renew. &nbsp;
+
+&nbsp;
+
+All self-service subscriptions are automatically renewed forever, unless canceled during the subscription period. &nbsp;
 
 &nbsp;
 

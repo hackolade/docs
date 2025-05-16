@@ -2,7 +2,7 @@
 
 ## Coming soon
 
-We will integrate with Jira Software issue and project tracking, the # 1 software development tool used by agile teams to ship early and often.&nbsp; The purpose is to foster team collaboration and reduce overhead by bringing Jira closer to your day-to-day work, while enabling just enough automation to create a seamless work experience.&nbsp; Jira issues can be viewed in Hackolade, and easily referenced in new branch names, commit messages, and change requests.&nbsp; This is particularly useful if your Jira installation is configured with an [app link](<https://confluence.atlassian.com/adminjiraserver/using-applinks-to-link-to-other-applications-938846918.html> "target=\"\_blank\"") to your repository service, and if [workflow triggers](<https://support.atlassian.com/jira-cloud-administration/docs/configure-workflow-triggers/> "target=\"\_blank\"") have been configured in Jira Software.
+We will integrate with Jira Software issue and project tracking, the # 1 software development tool used by agile teams to ship early and often.&nbsp; The purpose is to foster team collaboration and reduce overhead by bringing Jira closer to your day-to-day work, while enabling just enough automation to create a seamless work experience.&nbsp; Jira issues can be viewed in Hackolade Studio, and easily referenced in new branch names, commit messages, and change requests.&nbsp; This is particularly useful if your Jira installation is configured with an [app link](<https://confluence.atlassian.com/adminjiraserver/using-applinks-to-link-to-other-applications-938846918.html> "target=\"\_blank\"") to your repository service, and if [workflow triggers](<https://support.atlassian.com/jira-cloud-administration/docs/configure-workflow-triggers/> "target=\"\_blank\"") have been configured in Jira Software.
 
 &nbsp;
 
@@ -12,14 +12,14 @@ The key benefits of this integration include visibility and automation.&nbsp; Yo
 
 &nbsp;
 
-![Workgroup list Jira issues](<lib/Workgroup%20list%20Jira%20issues.png>)
+![Workgroup list Jira issues](<lib/Workgroup list Jira issues.png>)
 
 &nbsp;
 
-![Workgroup Jira issue details](<lib/Workgroup%20Jira%20issue%20details.png>)
+![Workgroup Jira issue details](<lib/Workgroup Jira issue details.png>)
 
 &nbsp;
 
 &nbsp;
 
-![Workgroup Jira issue start work](<lib/Workgroup%20Jira%20issue%20start%20work.png>)
+![Workgroup Jira issue start work](<lib/Workgroup Jira issue start work.png>)

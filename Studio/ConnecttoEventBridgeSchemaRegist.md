@@ -6,7 +6,7 @@ To access an EventBridge Schema Registry, you should obtain the proper credentia
 
 Give a meaningful name to the connection:
 
-![EventBridge schema registry connection name](<lib/Glue%20connection%20name.png>)
+![EventBridge schema registry connection name](<lib/Glue connection name.png>)
 
 &nbsp;
 
@@ -16,9 +16,9 @@ Then go to the Authentication tab, and paste the Access Key ID received from you
 
 &nbsp;
 
-![EventBridge schema registry connection settings](<lib/Glue%20connection%20settings.png>)
+![EventBridge schema registry connection settings](<lib/Glue connection settings.png>)
 
 &nbsp;
 
-If you wish to handle AWS authentication through the [credentials file](<https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html> "target=\"\_blank\""), you may leave blank the Access Key ID and Secret Access Key fields, knowing that Hackolade supplies credentials following the recommendations described [here](<https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html> "target=\"\_blank\"").
+If you wish to handle AWS authentication through the [credentials file](<https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html> "target=\"\_blank\""), you may leave blank the Access Key ID and Secret Access Key fields, knowing that Hackolade Studio supplies credentials following the recommendations described [here](<https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html> "target=\"\_blank\"").
 

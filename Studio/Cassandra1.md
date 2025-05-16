@@ -8,5 +8,5 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![Cassandra forward-engineering](<lib/Cassandra%20forward-engineering.png>)
+![Cassandra forward-engineering](<lib/Cassandra forward-engineering.png>)
 

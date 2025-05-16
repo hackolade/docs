@@ -2,7 +2,7 @@
 
 When you open a local repository in Hackolade Studio, you see the name of the active [branch](<Concepts1.md>) in the top bar.&nbsp; Remember that every change you make and commit affects only that branch.
 
-![Image](<lib/Workgroup%20explore%20models3.png>)
+![Image](<lib/Workgroup explore models3.png>)
 
 You can perform many branch-related actions directly from Hackolade Studio:
 
@@ -22,7 +22,7 @@ Hackolade Studio makes all these functionalities available through the Branch dr
 
 When you open the Branch drop-down, you see the list of all the branches that you have checked out at least once.&nbsp; If you just cloned a repository, then you only see one single branch, the "main" (or "master") branch.
 
-![List your branches](<lib/Workgroup%20branch%20list1.png>)
+![List your branches](<lib/Workgroup branch list1.png>)
 
 ## Search for a branch
 
@@ -32,25 +32,36 @@ As you type some text in the Branch drop-down, it is filtered to only list the b
 
 ## Create and checkout a new branch
 
-To create a new branch and check it out, you just type a name in the Branch drop-down, then click on the "Create new branch message" appearing in the drop-down.&nbsp; The option to create a new branch with that name appears in the drop-down itself, unless there is already an existing branch with that same name (branch names must be unique).
+To create a new branch and check it out, you just type a name in the Branch drop-down, then click on the "Create new branch message" appearing in the drop-down.&nbsp; The option to create a new branch with that name appears in the drop-down itself, unless there is already an existing branch with that same name.&nbsp; Branch names must be unique and have some restrictions. &nbsp; If possible, create branch names that don't contain special characters, as these would need to be escaped. A safe default set of characters to use for branch names names is:
 
-![Image](<lib/Workgroup%20branch%20create.png>)
+* The English alphabet (a to z and A to Z)
+* Numbers (0 to 9)
+* A limited set of punctuation characters:
+
+- period (.)
+- hyphen (-)
+- underscore (\_)
+- forward slash (/)
+
+To avoid confusion, you should start branch names with a letter.
+
+![Image](<lib/Workgroup branch create.png>)
 
 ## Checkout a remote branch
 
 Besides your own branches, there are also branches that have been pushed by other users to the remote repository.&nbsp; You can checkout such a remote branch as well: you just need to start typing the name of the desired branch in the Branch drop-down.&nbsp; The drop-down offers the option to checkout any remote branch whose name matches your search pattern.
 
-![Image](<lib/Workgroup%20branch%20checkout%20remote.png>)
+![Image](<lib/Workgroup branch checkout remote.png>)
 
 ## Delete a branch
 
 If you open the Branch drop-down, you can delete any branch, except the active one.
 
-![Image](<lib/Workgroup%20branch%20list.png>)
+![Image](<lib/Workgroup branch list.png>)
 
 &nbsp;
 
-![Workgroup confirm branch deletion](<lib/Workgroup%20confirm%20branch%20deletion.png>)
+![Workgroup confirm branch deletion](<lib/Workgroup confirm branch deletion.png>)
 
 &nbsp;
 

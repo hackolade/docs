@@ -57,7 +57,7 @@ To leverage Git in the context of Hackolade, it is suggested to follow these ste
 
 Here are some basic Git principles and commands to be used in combination with Hackolade.&nbsp; The commands are executed with a Git client (such as SourceTree), as Hackolade does not yet have a Git client integrated.
 
-![Git workflow](<lib/Git%20workflow.png>)
+![Git workflow](<lib/Git workflow.png>)
 
 &nbsp;
 

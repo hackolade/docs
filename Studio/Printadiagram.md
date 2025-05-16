@@ -4,9 +4,13 @@ You may wish to print just the Entity Relationship diagram or hierarchical schem
 
 &nbsp;
 
-To do so, choose the menu option File \> Print Diagram
+In terms of image quality, PDF is well known for it poor resolution when zooming in on large images.  The technical solution we provide to work around this limitation is the option to select the vector format SVG.  In between these 2 format qualities, we have the PNG format which is better than PDF, but not scalable like SVG format.   
 
-![File menu - Print Diagram](<lib/File%20menu%20-%20Print%20Diagram.png>)
+&nbsp;
+
+To print a diagram, choose the menu option File \> Print Diagram
+
+![File menu - Print Diagram](<lib/File menu - Print Diagram.png>)
 
 &nbsp;
 
@@ -14,7 +18,7 @@ Users may wish to create pictures for different diagrams created with the applic
 
 &nbsp;
 
-![File - Print Diagram](<lib/File%20-%20Print%20Diagram.png>)
+![File - Print Diagram](<lib/File - Print Diagram.png>)
 
 &nbsp;
 

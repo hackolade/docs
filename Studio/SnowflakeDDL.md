@@ -8,7 +8,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![Snowflake DDL forward-engineering](<lib/Snowflake%20DDL%20forward-engineering.png>)
+![Snowflake DDL forward-engineering](<lib/Snowflake DDL forward-engineering.png>)
 
 &nbsp;
 

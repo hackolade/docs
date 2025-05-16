@@ -12,7 +12,7 @@ The information can be viewed in the Gremlin script tab.&nbsp; The script can be
 
 &nbsp;
 
-![Neptune-Gremlin script forward-engineering](<lib/Neptune-Gremlin%20script%20forward-engineering.png>)
+![Neptune-Gremlin script forward-engineering](<lib/Neptune-Gremlin script forward-engineering.png>)
 
 &nbsp;
 
@@ -22,7 +22,7 @@ By pressing the button "Apply to instance" the system will automatically create 
 
 Or you may apply these scripts to a Gremlin directly to the selected instance with the menu option Tools \> Forward-Engineering \> Gremlin script:
 
-![Neptune-Gremlin forward-engineering menu](<lib/Neptune-Gremlin%20forward-engineering%20menu.png>)
+![Neptune-Gremlin forward-engineering menu](<lib/Neptune-Gremlin forward-engineering menu.png>)
 
 &nbsp;
 
