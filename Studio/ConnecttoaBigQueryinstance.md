@@ -26,8 +26,8 @@ As stated by [Google Cloud Platform's documentation](https://cloud.google.com/do
 ):
 
 1. Install [gcloud](https://cloud.google.com/sdk/docs/install) client on your workstation
-2. Then initialize gcloud: ```gcloud init```
-3. Authenticate yourself to GCP: ```gcloud auth application-default login```
+2. Then in a terminal initialize gcloud: ```gcloud init```
+3. And finally authenticate yourself to GCP: ```gcloud auth application-default login```
 
 Gcloud creates an ***application_default_credentials.json*** credential file in the following location depending on your system:
 
