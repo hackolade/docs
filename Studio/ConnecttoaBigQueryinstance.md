@@ -1,6 +1,6 @@
 # Connect to a BigQuery instance
 
-To access an Google BigQuery project, Hackolade currently supports access using two methods, [Application Default Credentials](https://cloud.google.com/docs/authentication/set-up-adc-local-dev-environment) or [Service account](https://cloud.google.com/iam/docs/service-account-overview).
+To access a Google BigQuery project, Hackolade currently supports access using two methods, [Application Default Credentials](https://cloud.google.com/docs/authentication/set-up-adc-local-dev-environment) and [Service account](https://cloud.google.com/iam/docs/service-account-overview).
 
 Choosing the most appropriate method depends on the use case.
 
