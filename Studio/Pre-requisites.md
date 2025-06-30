@@ -3,7 +3,7 @@
 There are 2 pre-requisites for using the Workgroup Edition of Hackolade Studio:
 
 * you or your organization must have purchased the Workgroup Edition, or the Workgroup upgrade option to the Professional Edition. This repository feature is not available in the Community, Personal, or Professional Editions. If you don't have the Workgroup Edition yet, you may contact us at [sales@hackolade.com](<mailto:sales@hackolade.com?subject=Interested%20in%20Workgroup%20Edition>).
-* you must have a Git client installed on your computer.&nbsp;
+* you must have a Git client installed on your computer, and be allowed to execute Git commands through that client.
 
 &nbsp;
 
@@ -37,6 +37,8 @@ If you already have a Git client installed, it should normally be available glob
 ![Workgroup tools options repository](<lib/Workgroup tools options repository.png>)
 
 &nbsp;
+
+If you encounter an error "[spawn git ENOENT](<ErrorspawngitENOENT.md>)", it is probably because Windows Group Policies is set to prevent access to either the Command Prompt, or PowerShell, or both.&nbsp; Such access is required for the application to execute OS commands such as running Git binary commands.
 
 &nbsp;
 
@@ -87,6 +89,8 @@ In the .gitconfig file, typically found on Windows in **C:\\Users\\%username%**,
 &nbsp; &nbsp; fsmonitor = false
 
 &nbsp;
+
+If you encounter an error "[spawn git ENOENT](<ErrorspawngitENOENT.md>)", it is probably because Windows Group Policies is set to prevent access to either the Command Prompt, or PowerShell, or both.&nbsp; Such access is required for the application to execute OS commands such as running Git binary commands.
 
 &nbsp;
 

@@ -1,18 +1,10 @@
-# Error message: spawn UNKNOWN
+# Error: spawn git ENOENT
 
-The message&nbsp; "errorMsg": "spawn UNKNOWN" generally occurs because Windows Group Policies are set to prevent access to either the Command Prompt, or PowerShell, or both. Such access is required for the application to execute OS commands such as fetching the processor UUID.
-
-&nbsp;
-
-![Spawn error message](<lib/Spawn error message.png>)
+One of the [pre-requisites](<Pre-requisites.md>) to leverage the full user experience of the Workgroup Edition is to be able to use the Git executable installed on your machine. &nbsp;
 
 &nbsp;
 
-or
-
-&nbsp;
-
-![Spawn license screen error](<lib/Spawn license screen error.png>)
+The message&nbsp; "errorMsg": "spawn git ENOENT" generally occurs because Windows Group Policies are set to prevent access to either the Command Prompt, or PowerShell, or both. Such access is required for the application to execute OS commands such as running Git binary commands.
 
 &nbsp;
 
@@ -24,7 +16,7 @@ To confirm that your IT department did indeed disable the Command Prompt, type *
 
 &nbsp;
 
-Without them, it is impossible to validate the license key for, or to operate the Hackolade Studio software.
+Without them, it is impossible to operate the Git-related features of Hackolade Studio.
 
 &nbsp;
 

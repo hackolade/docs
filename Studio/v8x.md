@@ -1,5 +1,179 @@
 # v8.x
 
+New features in v8.3.0 \[27-Jun-2025\]
+
+\- Archimate: added possibility to generate data object file in .archimate format or Open Exchange .xml format for containers, entities, and relationships of any model, to be imported in Enterprise Architecture tools
+
+\- Licensing: refactored logic as a library so it can be shared across Studio Desktop, Studio Browser, and Model Hub
+
+\- Open From: added&nbsp; ability to check for remote changes to retrieve latest changes, if any, to model opened directly from remote repo
+
+\- Open From/Save To: added possibility to save model in different location than where it was originally opened from
+
+\- Save To: added possibility, both in browser and desktop, to save a model directly to Bitbucket Data Center repository without need for local clone, provided adequate license and repo credentials
+
+\- Polyglot: enhanced visibility of annotations on the Entity-Relationship Diagram after adding them via the impact analysis
+
+\- Verify Data Model: added possibility to select specific user-defined regular expression rules for verification
+
+\- Relationships: allowed removal of FK constraints from Properties Pane of child attribute
+
+\- Relationships: added metadata in the Properties Pane for all data types that could be in a PK or FK constraint
+
+\- Workgroup: added support for AzureDev Ops cross-organization connection tokens
+
+\- Collibra: updated publishing configurations to comply with new validation rules
+
+\- Collibra: added selective configuration publication and updates based on whether the Guided Stewardship feature is enabled in Collibra instance
+
+\- Delta Lake/Databricks: introduced flexibility in script generation for controlling constraints in CREATE scripts (3 choices: “In CREATE statement”, “In separate statement” or “Ignore”), controllable from Tools \> Options \> Forward-Engineering parameters
+
+&nbsp;
+
+New features in v8.2.3 \[20-Jun-2025\]
+
+\- Open data model: added possibility, both in browser and desktop, to open a model directly from Bitbucket Data Center repository without need for local clone, provided adequate license and repo credentials
+
+\- Share model link URL: added ability to share link to view model in browser directly from Bitbucket Data Center assumes that users of the link have a valid license and proper access to the model repo\]
+
+\- Share model link: enabled creation of shareable links for models in the Files screen and History screen of the repository context
+
+\- Polyglot: enhanced Convert \& Merge feature to maintain derived objects in target model
+
+\- Polyglot: added confirmation checkbox for breaking the link with Polyglot, ensuring users acknowledge the irreversible nature of this action before proceeding
+
+\- PowerDesigner: enabled bulk resizing of entity boxes after reverse-engineering to ensure full visibility of all entities
+
+\- Verify Data Model: added new out-of-the-box rule for detecting missing primary keys in entities
+
+\- Verify Data Model: added new out-of-the-box rules for annotations
+
+\- Workgroup: added OAUTH authentication with Azure EntraID for Azure DevOps Repos
+
+\- Teradata: clarified error message when unable to connect to instance
+
+&nbsp;
+
+New features in v8.2.2 \[13-Jun-2025\]
+
+\- Browser deployment: added possibility to forward- and reverse-engineer with BigQuery instance (given the proper license key)
+
+\- Workgroup with GitLab (Cloud \& Server): added possibility to save data model directly to remote repository (i.e. without need for a locally-cloned repo) either by committing to the current branch or to a new branch
+
+\- Workgroup with Bitbucket Cloud: added possibility to save data model directly to remote repository (i.e. without need for a locally-cloned repo) either by committing to the current branch or to a new branch
+
+\- Workgroup: added possibility to create, push, and delete tags for Viewer Edition users
+
+\- Open From/Save To: added memory of last location and filter used when same action was last executed
+
+\- Verify Data Model: added ability to define custom rules using regular expressions (regex) for out-of-the-box and custom root scalar properties of objects: model, container, entity, view, relationship, and attribute
+
+\- PostgreSQL: added handling for derive of arrays from Polyglot as columns with Array type in PostgreSQL
+
+\- Snowflake: improved reverse-engineering of Views in DDL to support FULL JOIN and FLATTEN() in the SELECT AS statement
+
+\- Teradata: added logging information to facilitate troubleshooting when connecting to an instance
+
+&nbsp;
+
+New features in v8.2.1 \[06-Jun-2025\]
+
+\- Verify Data Model: added more than a dozen new out-of-the-box rules, at various levels: model, container, entity, view, and attribute
+
+\- Browser deployment: added possibility to open current model in the Desktop client.&nbsp; Requires that model was opened via shareable link or directly from the remote repo with Open From \[works only for WIndows and Mac -- not Linux\]
+
+\- Share Model link: added possibility to open model link in the Desktop client.&nbsp; Requires that model was opened via shareable link or directly from the remote repo with Open From \[works only for WIndows and Mac -- not Linux\]
+
+\- Workgroup with Azure DevOps Repos: added possibility to save data model directly to remote repository (i.e. without need for a locally-cloned repo) either by committing to the current branch or to a new branch
+
+\- Save To: added possibility to save new model to an empty repo to facilitate first commit process
+
+\- Save To dialog: added clickable link to remote repo to easily access the remote repository
+
+\- External references: added option to view and forward-engineer JSON Schema with resolved or internal definitions for entity references
+
+\- Polyglot: added conversion of JSON Schema pattern fields from a target physical model to polyglot
+
+\- Polyglot: promoted variant to its own data type so that it can be derived in Snowflake with embedded structure
+
+\- Polyglot: promoted JSON to its own data type so that it can be derived in PostgreSQL and Oracle with embedded structure
+
+\- Polyglot: clean-up irrelevant dependent properties in persisted model file when changing data type
+
+\- Collibra: enhanced publishing to accommodate handling of complex relationships
+
+\- Delta Lake/Databricks: added timezone\_ntz data type in Runtime 15 and up
+
+\- GraphQL: optimized rendering performance of Object Browser
+
+\- Snowflake: enhanced conversion of Object and Array data types to maintain their original structure during the Polyglot convert
+
+&nbsp;
+
+New features in v8.2.0 \[30-May-2025\]
+
+\- Tech refresh of ElectronJS (v36.3.1), NodeJS (v22.15.1), Chromium (v136.0.7103.113), V8 (v13.6.233.10) and related modules
+
+\- Excel: enhanced reverse-engineering so that cleared custom properties update model
+
+\- Polyglot: allowed to convert to Polyglot from an ERDV tab
+
+\- Open From/Save To: added warning when saving a model if it has been removed on the remote in the meantime
+
+\- Open From/Save To: adjusted auto-merge of model metadata to reduce chances for conflicts
+
+\- Open From/Save To: adjusted auto-merge to keep by default the remote model metadata (right-hand pane in conflict resolution screen)
+
+\- Collibra: updated disclaimer text to clarify that existing assets will be updated with model information, emphasizing the need for reverse-engineering from Collibra before proceeding with forward-engineering
+
+\- Delta Lake/Databricks: added handling for NaN (Not a Number) when applying bulk test data to instance
+
+\- Snowflake: adjusted derive and convert of variant data type from and to Polyglot for new derived models only
+
+&nbsp;
+
+New features in v8.1.8 \[23-May-2025\]
+
+\- Workgroup: added possibility in Bitbucket Data Center (previously known as Bitbucket Server) to follow a Fork \& Pull innersourcing strategy&nbsp;
+
+\- Workgroup: improved model refresh in editor after resolving merge conflicts
+
+\- Workgroup: added fetching remote tags when executing PULL action
+
+\- Open From/Save To: enabled review of changes when newer remote modifications are detected, with possibility to merge current changes with remote changes&nbsp;
+
+\- Open From/Save To: extended functionality to manage conflicting remote changes by introducing several options: Solve conflicts, Keep only incoming changes, Keep only local changes, and Create new branch
+
+\- Open From: added title indication (remote) or (remote, read-only) for models opened from remote sources
+
+\- Core application: introduced possibility to define a deployment policy configuration allowing to disable user access to the application updates dialog
+
+\- Excel: enhanced reverse-engineering to allow changes in relationship custom properties
+
+\- Model validation: added detection of duplicated object names inside an entity at model opening
+
+\- Polyglot: made app tolerant to the absence of refIdPath in view column when deriving from polyglot
+
+\- Polyglot: enhanced impact analysis screen to detect and allow addition of subtypes during update of references, as well as removal of supertypes
+
+\- Polyglot: improved visibility of superclasses properties in relationships Properties Pane when custom properties are added
+
+\- Relationships: improved registration of nested parent/child attributes in Properties Pane, plus enhanced consistency when using drag-and-drop
+
+\- Collibra: normalized logging of publishing flows
+
+\- Cassandra, CosmosDB-with-Mongo-API, CouchbaseV7Plus, DeltaLake/Databricks, GraphQL, JanusGraph, Neo4j, ScyllaDB, Snowflake: enhanced IPv6 compatibility in URL parsing
+
+\- Cassandra, CouchbaseV7Plus, DocumentDB, Glue, Hive, MarkLogic, Neo4j, Oracle, SQLServer, ScyllaDB, Snowflake, Synapse: moved system and connection logging from each plugin and consolidated into core application
+
+\- Delta Lake/Databricks: increased reliability of bulk test data generation on Windows when temporary file in removed during the process of applying to instance
+
+\- GraphQL: optimized rendering performance of ERD and type definitions tab by reducing memory usage and handling of deeply nested definition attributes
+
+\- GraphQL: improved performance of SDL generation for large models
+
+&nbsp;
+
 New features in v8.1.7 \[16-May-2025\]
 
 \- Workgroup: added possibility in Azure DevOps Repos to follow a Fork \& Pull innersourcing strategy&nbsp;
@@ -17,6 +191,8 @@ New features in v8.1.7 \[16-May-2025\]
 &nbsp;
 
 New features in v8.1.6 \[09-May-2025\]
+
+\- Browser deployment: added possibility to forward- and reverse-engineer with Delta Lake/Databricks instance (given the proper license key)
 
 \- Documentation: added further performance enhancements by using React Server-Side Rendering and closing intermediary windows when no longer needed
 

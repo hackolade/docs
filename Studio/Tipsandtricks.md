@@ -80,11 +80,11 @@ The identifier entered in the this screen will appear in the web page:
 
 &nbsp;
 
-***TIP:*** in any of the Comments dialogs, you may press the timestamp button to log data and time for your entires.
+***TIP:*** in any of the Comments dialogs, you may press the timestamp button to log data and time for your entries.
 
 &nbsp;
 
-***TIP:*** you many start multiple instances of Hackolade so as to work on multiple models simultaneously.&nbsp; You may also merge 2 Hackolade models, or combine elements from another model with copy/paste from one model in one application instance, to the other model in the second application instance.&nbsp; On Windows, right-click on the Hackolade icon in the toolbar then choose Hackolade:
+***TIP:*** you many start multiple instances of Hackolade Studio on the same machine session, so as to work on multiple models simultaneously.&nbsp; You may also merge 2 Hackolade models, or combine elements from another model with copy/paste from one model in one application instance, to the other model in the second application instance.&nbsp; On Windows, right-click on the Hackolade icon in the toolbar then choose Hackolade:
 
 ![Multiple instances](<lib/Multiple instances.png>)
 

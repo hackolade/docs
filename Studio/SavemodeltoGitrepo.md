@@ -34,7 +34,7 @@ If you select a Git provider that you connected to (e.g. *github.com*), a list o
 
 ![Save to remote repository dialog](<lib/Save to remote repository dialog.png>)
 
-(TBA) If necessary, you have the option to create folders by using the *Create folder* button in the footer or an icon that is positioned after the breadcrumb.
+If necessary, you have the option to create folders by using the *Create folder* button in the footer or an icon that is positioned after the breadcrumb.
 
 Note that newly created folders will not be materialized in the remote repository until the save action is triggered. The reason is that empty folders are not allowed in Git.
 
@@ -55,4 +55,6 @@ Once validation passes, the *Save to remote repository* dialog is displayed.
 ![Save to remote repository commit dialog](<lib/Save to remote repository commit dialog.png>)
 
 Once a data model has been saved to a location, it is not treated as a new data model anymore but as an existing data model for which the location is the one it was saved into. Similarly, if you save a copy of an existing model to a different location, that last location becomes the default location for saving the model in place.&nbsp;
+
+If changes have been made to your model on the repository while you were editing the model, there is the possibility of a conflict.&nbsp; Consult the following page to learn how to [solve such conflicts](<Solveconflicts1.md>).
 

@@ -203,7 +203,27 @@ Hackolade-win64-setup-signed.exe /VERYSILENT /SUPPRESSMSGBOXES /DIR="C:/Users/%u
 
 &nbsp;
 
+## Corporate deployments - how to prevent checks for application updates?
+
+With v8.1.8, we&nbsp; introduced the possibility to disable the optional dialog checking for the availability of an application version newer than the one running on that machine.&nbsp; In any case, note that we **NEVER** do automatic application updates\!&nbsp; Even if the user received a dialog showing that a new application version is present -- notification that can be disabled with a single click of the checkbox, it would take multiple manual actions by the user for the update to be downloaded and installed.&nbsp; We never install or update the desktop application without those actions by a user.
+
 &nbsp;
+
+![Check for new application version](<lib/Check for new application version.png>)
+
+&nbsp;
+
+In the folder where the application executable is installed - generally C:\\Program Files -- there is a text file (in [TOML format](<https://toml.io/en/> "target=\"\_blank\"")) named *hackolade-deployment-policy.toml*&nbsp; If you edit that file, you can add the line below, which is *true* by default, and set it to *false*.
+
+&nbsp;
+
+> \# Whether or not the check for application updates is allowed\
+canCheckForApplicationUpdates = false
+
+\
+&nbsp;
+
+The value set in the file will be carried in the deployed image of the application.
 
 ## Chocolatey
 
@@ -243,23 +263,17 @@ Later, to upgrade to the latest version, as we release every week, run this comm
 
 &nbsp;
 
-> WARNING: User (you) canceled the installation.
+> WARNING: User (you) canceled the installation.\
+ERROR: Running \["C:\\Users\\%username%\\AppData\\Local\\Temp\\chocolatey\\hackolade-studio\\\<version\>\\Hackolade-win64-setup-signed.exe" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- \] was not successful. Exit code was '5'. Exit code indicates the following: User (you) canceled the installation..\
+The install of hackolade-studio was NOT successful.\
+Error while running 'C:\\ProgramData\\chocolatey\\lib\\hackolade-studio\\tools\\chocolateyinstall.ps1'.\
+&nbsp;See log for details.
 
-> ERROR: Running \["C:\\Users\\%username%\\AppData\\Local\\Temp\\chocolatey\\hackolade-studio\\\<version\>\\Hackolade-win64-setup-signed.exe" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- \] was not successful. Exit code was '5'. Exit code indicates the following: User (you) canceled the installation..
+> \
+Chocolatey installed 0/1 packages. 1 packages failed.\
+&nbsp;See the log for details (C:\\ProgramData\\chocolatey\\logs\\chocolatey.log).
 
-> The install of hackolade-studio was NOT successful.
-
-> Error while running 'C:\\ProgramData\\chocolatey\\lib\\hackolade-studio\\tools\\chocolateyinstall.ps1'.
-
-> &nbsp;See log for details.
-
-> &nbsp;
-
-> Chocolatey installed 0/1 packages. 1 packages failed.
-
-> &nbsp;See the log for details (C:\\ProgramData\\chocolatey\\logs\\chocolatey.log).
-
-> &nbsp;
+&nbsp;
 
 ## Licenses on Virtual Machines (or physical computer accessed via Remote Desktop Installations \[RDP\] or equivalent)
 

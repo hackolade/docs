@@ -90,7 +90,7 @@ Please refer to the user documentation of your Git provider to know how to fork 
 
 &nbsp;
 
-**Note:** Hackolade Studio supports the *fork \& pull* strategy currently only for GitHub, GitLab, Bitbucket Cloud, and Azure DevOps Repos. Bitbucket Data Center will be added in future releases.
+**Note:** Hackolade Studio supports the *fork \& pull* strategy for GitHub, GitLab, Bitbucket Cloud and Data Center, and Azure DevOps Repos.&nbsp;
 
 &nbsp;
 

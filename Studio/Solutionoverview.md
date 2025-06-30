@@ -86,7 +86,11 @@ With our polyglot data model, you can define a data structure once, then transla
 
 &nbsp;
 
+&nbsp;
+
 ![Vision - Polyglot Data Modeling](<lib/Vision - Polyglot Data Modeling.png>)
+
+&nbsp;
 
 &nbsp;
 

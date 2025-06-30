@@ -91,3 +91,6 @@ click on "Continue", then confirm by clicking the "Authorize hackolade" button.&
 &nbsp;
 
 Hackolade Studio should now have access to GitHub.
+
+&nbsp;
+

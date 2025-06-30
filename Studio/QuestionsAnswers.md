@@ -166,3 +166,23 @@ And when using a dedicated repo, some wonder about whether there should be one r
 
 Our application can accommodate any and all of those repo organizations, but each customer has its own perspective, and we don't know enough to judge.
 
+&nbsp;
+
+## Why is there no auto-commit capability?
+
+Git itself does not provide this feature.&nbsp; And the reason is that there are too many risks:
+
+\- Risk of unintentional commits: auto-committing can cause unintended commits that might include unnecessary or incomplete changes.
+
+\- Loss of control: it might push changes that you're not ready to share, or break models
+
+\- Inconsistent history: it can create a mess in your commit history, making it harder to understand the changes over time.
+
+&nbsp;
+
+## How are permissions managed?
+
+1. Even for the viewer edition, anyone who needs to have access to a file somewhere must be given proper access.  Same as in anywhere in the digital or physical world.&nbsp; If a model is stored on a shared drive or in a Git repository, the user must be granted access for that location in order for the user to be able to open the model. &nbsp;
+1. &nbsp;
+1. Just like with any client application, like Microsoft Excel for example, the access control is delegated to the storage layer: the local file system, a shared drive, or the Git repository.  If someone has access to a file, then the application can open it.  The right to edit a modelis shared between the license key (author or viewer -- if you only have viewer rights, you cannot edit a model, even if you have write rights) and the repository -- even if you have the workgroup edition, you cannot save the model in a place where you have no rights to do so.
+1. 

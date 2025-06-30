@@ -12,7 +12,7 @@
 
 &nbsp;
 
-Obviously, this requires no download or installation.&nbsp; Just go to [https://studio.hackolade.com](<https://studio.hackolade.com> "target=\"\_blank\"") from your favorite browser and start your data modeling work.&nbsp; No sign-up necessary, or complex user management.&nbsp;
+Obviously, this requires no installation or deployment of an application by your IT department.&nbsp; Just go to [https://studio.hackolade.com](<https://studio.hackolade.com> "target=\"\_blank\"") from your favorite browser and start your data modeling work.&nbsp; No sign-up necessary or complex user management.&nbsp; All the processing is done inside your browser -- there is no server-side processing, as their are no servers.
 
 &nbsp;
 
@@ -151,6 +151,32 @@ It is also better to use your browser in its standard mode, i.e. NOT in a guest,
 &nbsp;
 
 Whether you're using Chrome, Edge, Brave, Firefox, or Safari, enabling site data is a simple yet effective step towards enhancing your user experience with Hackolade Studio Browser.
+
+&nbsp;
+
+In private/incognito/guest mode, the browser does not [block site data](</o/HBtg1gLTy0nw4NaX0MaV/s/k3cNzEeXGnIxGNnOQdDa/studio-core/browser-deployment/browser-blocking-site-data>) but it clears them when closing the window. From a user's perspective, the result is the same: the state of the application is lost. We provide a *Health Check* screen, as shown below to evaluate the environment and its impact on our functionality:
+
+&nbsp;
+
+You can reach the Health Check screen either by clicking the icon in the lower left-hand corner off the screen, or by choosing the menu option Help \> Health Check.&nbsp; When all parameters are OK, you should see a screen like this one:
+
+![Browser health check OK](<lib/Browser health check OK.png>)
+
+&nbsp;
+
+&nbsp;
+
+Running the same in incognito mode, for example, reveals expected issues:
+
+![Browser health check NOK](<lib/Browser health check NOK.png>)
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+**Note** that we do not use any cookies in general, or specifically any [cross-domain cookies](<https://syrenis.com/resources/blog/what-is-a-cross-domain-cookie/> "target=\"\_blank\"").&nbsp; What we do use is a browser’s "siteData", which are not shared across domains.&nbsp; In other words, this information cannot be read when surfing on another site.&nbsp; No information is shared with other websites, which should address any privacy, security, consent or control concerns.
 
 &nbsp;
 

@@ -21,6 +21,14 @@ There are different permutations to be aware of: Hackolade Studio is available i
 
 &nbsp;
 
+For example we recently enabled reverse-engineering with the browser from a Databricks instance, and will soon add from a BigQuery and also Snowflake instance.&nbsp; But you will never be able with the browser to reverse-engineer from an Oracle on-prem database, at least not without an “agent” (for security reasons as explained [here](<Security-firstbrowserdeployment.md>).)&nbsp; Our agent will remain the desktop.&nbsp; Also, we currently cannot execute, in the browser, some features of the desktop:&nbsp; external references, derive from polyglot, update references, or handle the Git workflow such as submit for review, review change/pull requests.
+
+&nbsp;
+
+Also, we are currently working on a scheme to allow sharing a license seat across the desktop and the browser on a single machine, if only so that a desktop user for example can verify that a [model link](<SharemodellinkURL.md>) works as expected in the browser.&nbsp; Again for browser security reasons, it is impossible for the browser to access the license information of the desktop.&nbsp; We have designed and are currently developing a process that would allow such exchange without causing any security risk, and without impeding our revenue protection.&nbsp; In the meantime, if you want to work both in the desktop and in the browser, each consumes its own license seat.
+
+&nbsp;
+
 ## Deployment
 
 Hackolade Studio has traditionally been available as an offline desktop application for Windows, Mac, and Linux.&nbsp; Starting with v7.0.0, it is now also available as a security-first [cross-browser](<https://en.wikipedia.org/wiki/Cross-browser> "target=\"\_blank\"") [serveless](<https://en.wikipedia.org/wiki/Serverless\_computing> "target=\"\_blank\"") [web app](<https://en.wikipedia.org/wiki/Web\_application> "target=\"\_blank\"") which can open data models from and save them to your local environment.&nbsp; All from the same code base, meaning that, as we add [weekly enhancements](<https://hackolade.com/versionInfo/ReadMe.txt> "target=\"\_blank\"") and new features, they are deployed automatically to the offline desktop (provided that you upgrade to that latest version...) and the online browser.&nbsp; The latest version is exactly the same for the browser deployment and all desktop operating systems.&nbsp; &nbsp;

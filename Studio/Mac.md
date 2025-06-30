@@ -132,6 +132,28 @@ On Intel 64-bit:
 
 &nbsp;
 
+## Corporate deployments - how to prevent checks for application updates?
+
+With v8.1.8, we&nbsp; introduced the possibility to disable the optional dialog checking for the availability of an application version newer than the one running on that machine.&nbsp; In any case, note that we **NEVER** do automatic application updates\!&nbsp; Even if the user received a dialog showing that a new application version is present -- notification that can be disabled with a single click of the checkbox, it would take multiple manual actions by the user for the update to be downloaded and installed.&nbsp; We never install or update the desktop application without those actions by a user.
+
+&nbsp;
+
+![Check for new application version](<lib/Check for new application version.png>)
+
+&nbsp;
+
+In a folder below where the application is installed - *Hackolade.app/Contents/Plug-Ins* --there is a text file (in [TOML format](<https://toml.io/en/> "target=\"\_blank\"")) named *hackolade-deployment-policy.toml*&nbsp; If you edit that file, you can add the line below, which is *true* by default, and set it to *false*.
+
+&nbsp;
+
+> \# Whether or not the check for application updates is allowed\
+canCheckForApplicationUpdates = false
+
+\
+&nbsp;
+
+The value set in the file will be carried in the deployed image of the application.
+
 &nbsp;
 
 ## Homebrew

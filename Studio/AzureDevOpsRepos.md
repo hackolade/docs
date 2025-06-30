@@ -68,3 +68,47 @@ A possible cause, as provided by the HackoladeGit.log can be "SSL certificate pr
 
 &nbsp;
 
+&nbsp;
+
+## OAuth
+
+As an alternative to generating a personal access token, Azure DevOps Repos can also let you grant Hackolade Studio access to your account through [OAuth](<https://oauth.net/> "target=\"\_blank\"").&nbsp;
+
+&nbsp;
+
+From the menu Repository \> Manage Repository Connections, create a new connection, select the provider and specify the domain name if necessary, then select the connection method OAuth:
+
+&nbsp;
+
+![Azure DevOps Repos OAuth connection settings](<lib/Azure DevOps Repos OAuth connection settings.png>)
+
+&nbsp;
+
+&nbsp;
+
+Make sure to enter the correct Oraganization name.&nbsp; Then click on the "Connect" button to proceed.
+
+&nbsp;
+
+A browser window will appear to request your acknowqledgment, and create the necessary authorization,&nbsp;
+
+&nbsp;
+
+![Azure DevOps Repos OAuth permissions request](<lib/Azure DevOps Repos OAuth permissions request.png>)
+
+&nbsp;
+
+&nbsp;
+
+:
+
+Then display this message::
+
+![Azure DevOps Repos OAuth success](<lib/Azure DevOps Repos OAuth success.png>)
+
+&nbsp;
+
+Hackolade Studio should now have access to Azure DevOps Repos.
+
+&nbsp;
+

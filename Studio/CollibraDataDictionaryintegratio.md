@@ -164,7 +164,7 @@ With v5.2.1, we introduced the possibility to reverse-engineer a Collibra physic
 
 With v7.6.1 of Hackolade Studio, it is now possible to publish lineage relations between logical Polyglot models and their derived physical targets for all their assets (model/schema, entity/table, attribute/column)
 
-This fetures is in support of the Guided Stewardship operating model of Collibra:
+This feature is in support of the [Guided Stewardship operating model](<https://productresources.collibra.com/docs/collibra/latest/Content/Catalog/GuidedStewardship/OperatingModel/to\_catalog-om.htm> "target=\"\_blank\"") of Collibra:&nbsp; But it is only possible Guided Stewardship is enabled on your instance as part of the Ultimate licensing tier of Collibra.
 
 ![Collibra Guided Stewardship operating model](<lib/Collibra Guided Stewardship operating model.png>)
 
@@ -186,3 +186,16 @@ In Collibra, it is then possible to display the lineage relations automatically 
 
 &nbsp;
 
+If your instance of your Collibra Dat Intelligence Platform is not of the the Ultimate type of subscription, you may receive messages like this below.
+
+&nbsp;
+
+Without Guided Stewardship on the Collibra instance, it is not possible to publish Hackolade Studio's polyglot models:
+
+![Collibra Guided Stewardship missing](<lib/Collibra Guided Stewardship missing.png>)
+
+&nbsp;
+
+And without Guided Stewardship on the Collibra instance, it is not possible to publish lineage from physical models to polyglot models (since polyglot models cannot be published to Collibra...):
+
+![Collibra Guided Stewardship limited lineage](<lib/Collibra Guided Stewardship limited lineage.png>)

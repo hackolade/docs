@@ -15,13 +15,13 @@ Chances for conflicts are minimized by the structure of Hackolade data model fil
 The following cases are examples of non-conflicting changes which are therefore merged automatically:
 
 * users add an entity or an attribute to the same model in their respective environments.&nbsp; The first user pushes the data model to the remote, and encounters no issue.&nbsp; The second users must pull from the remote first, but since there are no conflicts, merges are performed automatically, and the user has no problem pushing the latest version to the remote.\
-Maybe semantically, the intent was conflicting, for example one user created an entity called "person" while the other user created one called "party".&nbsp; Or one user added an attribute called "zipCode", while another user added "postalCode".&nbsp; But to Git and Hackolade, these are separate objects, and both will be kept during an automatic merge. &nbsp;
+Maybe semantically, the intent was conflicting, for example one user created an entity called "person" while the other user created one called "party".&nbsp; Or one user added an attribute called "zipCode", while another user added "postalCode".&nbsp; But to Git and Hackolade Studio, these are separate objects, and both will be kept during an automatic merge. &nbsp;
 * users make changes on the same objects (container, entity, attribute, view, relationship, definition, etc.) but the changes are made on different properties.&nbsp; For example one user changes the name of an entity, while another user adds an index to that entity.&nbsp; Different properties of a same object are non-conflicting changes in Hackolade data models, so these changes are merged automatically.
 * users move entities in the ERD. The x-y coordinates of entities in the ERD are automatically merged, even if conflicting per se, as well as the timestamp of last modifications, and internal model cross references.&nbsp; These are considered model metadata that Hackolade automatically arbitrates based on the strategy chosen in Tools \> Options \> Repository \> Default strategy for merging conflicts: either "Keep only incoming changes" (from the remote) or "Keep only local changes".
 
 &nbsp;
 
-**Note:** automatic merge can sound a bit scary.&nbsp; This is why we strongly recommend to leverage the standard workflow feature of Git platforms for Change Requests (called Pull Requests in GitHub and Bitbucket) and Reviews.&nbsp; Humans who understand the context and purpose of changes can easily review, then approve or reject changes that, while not conflicting technically, may be unnecessary or even undesirable.&nbsp; Hackolade provides a powerful screen to support this workflow.&nbsp;
+**Note:** automatic merge can sound a bit scary.&nbsp; This is why we strongly recommend to leverage the standard workflow feature of Git platforms for Change Requests (called Pull Requests in GitHub and Bitbucket) and Reviews.&nbsp; Humans who understand the context and purpose of changes can easily review, then approve or reject changes that, while not conflicting technically, may be unnecessary or even undesirable.&nbsp; Hackolade provides a powerful screen to support this workflow to [submit changes for review](<Submitforreview.md>).&nbsp;
 
 &nbsp;
 
@@ -43,6 +43,7 @@ Fortunately, conflict resolution of data models is made easy by a powerful inter
 
 As a user, you generally don't even know that changes may have occurred elsewhere, and even less whether some of these changes might cause a conflict. No worries, this is a normal use case. The regular process to publish your changes is as follows:
 
+* save your changes (in your locally-cloned repo);
 * commit your local changes;
 * pull remote commits, and solve conflicts, if any;
 * push local commits.
