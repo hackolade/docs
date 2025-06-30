@@ -8,6 +8,7 @@ Keyboard shortcuts:
 | --- | --- | --- |
 | Ctrl+N | Cmd+N | New Data Model |
 | Ctrl+O | Cmd+O | Open |
+| Ctrl+Alt+O | Cmd+Option+O | Open From (repository provider) |
 | Ctrl+Alt+F4 | Cmd+W | Close Data Model |
 | Ctrl+S | Cmd+S | Save |
 | Ctrl+P | Cmd+P | Print |
@@ -25,23 +26,25 @@ Keyboard shortcuts:
 | Shift+\<mouse click\> | Shift+\<mouse click\> | Multiple contiguous select |
 | Ctrl+\<mouse click\> | Cmd+\<mouse click\> | Multiple select |
 | Alt+\<mouse click\> in Object Browser | Option+\<mouse click\> in Object Browser | Center canvas on selected object without zoom |
+| Alt+Right arrow | Option+Right arrow | Resize all selected entity boxes to fit to content |
+| Alt+Shift+Right arrow | Option+Shift+Right arrow | Resize all visible entity boxes to fit to content |
 | Ctrl+F | Cmd+F | Find |
 | F3 | Cmd+F3 | Next in matched objects |
 | Shift+F3 | Shift+F3 | Previous in matched objects |
 | Ctrl+H | Cmd+H | Replace |
-| Ctrl+Alt+1 | Option+Cmd+1 | Align Left |
-| Ctrl+Alt+2 | Option+Cmd+2 | Align Center |
-| Ctrl+Alt+3 | Option+Cmd+3 | Align Right |
-| Ctrl+Alt+4 | Option+Cmd+4 | Align Top |
-| Ctrl+Alt+5 | Option+Cmd+5 | Align Middle |
-| Ctrl+Alt+6 | Option+Cmd+6 | Align Right |
+| Ctrl+Alt+1 | Cmd+Option+1 | Align Left |
+| Ctrl+Alt+2 | Cmd+Option+2 | Align Center |
+| Ctrl+Alt+3 | Cmd+Option+3 | Align Right |
+| Ctrl+Alt+4 | Cmd+Option+4 | Align Top |
+| Ctrl+Alt+5 | Cmd+Option+5 | Align Middle |
+| Ctrl+Alt+6 | Cmd+Option+6 | Align Right |
 | Ctrl+= | Cmd+= | Zoom In |
 | Ctrl+- | Cmd+- | Zoom Out |
 | Ctrl+0 | Cmd+0 | Fit to Pane |
 | Ctrl+B | Cmd+B | Add dbs/Region/Bucket |
 | Ctrl+L | Cmd+L | Add Collection/Table/Document kind |
 | Ctrl+T | Cmd+T | Add Relationship |
-| Ctrl+W | Alt+Cmd+W | Add View |
+| Ctrl+W | Cmd+Option+W | Add View |
 | Ctrl+R | Cmd+R | Add Attribute |
 | Ctrl+I | Cmd+I | Insert |
 | Ctrl+E | Cmd+E | Append |
@@ -51,6 +54,8 @@ Keyboard shortcuts:
 | Ctrl+F11 | Cmd+F11 | Display lineage (aka impact analysis aka where-used)&nbsp; of a definition or denomalization |
 | Ctrl+F1 | Cmd+F1 | Toggle display of Object Browser |
 | Ctrl+F2 | Cmd+F2 | Toggle display of Properties Pane |
+| Ctrl+Tab | Cmd+Option+right arrow | Move forward between tabs of the add/modify connections dialog |
+| Ctrl+Shift+Tab | Cmd+Option+right arrow | Move backward between tabs of the add/modify connections dialog |
 | \<mouse wheel up/down\> | \<mouse wheel up/down\> | Move up or down in ERD and hierarchical schema view |
 | Shift+\<mouse wheel up/down\> | Shift+\<mouse wheel up/down\> | Move left or right in ERD and hierarchical schema view |
 | Ctrl+\<mouse wheel up/down\> | Cmd+\<mouse wheel up/down\> | Zoom in or out in ERD and hierarchical schema view |

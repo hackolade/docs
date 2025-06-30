@@ -62,9 +62,9 @@ $ git config --global core.fsmonitor false
 
 ## I'm getting an error core.useBuiltinFSMonitor=true is deprecated
 
-Starting with version 2.36.0, the congif keyword useBuiltinFSMonitor has been deprecated, and replaced by fsmonitor. When opening a repository, if you get the error:
+Starting with version 2.36.0, the config keyword useBuiltinFSMonitor has been deprecated, and replaced by fsmonitor. When opening a repository, if you get the error:
 
-![Image](<lib/Workgroup%20useBuiltinFSMonitor%20deprecated%20erro.png>)
+![Image](<lib/Workgroup useBuiltinFSMonitor deprecated erro.png>)
 
 &nbsp;
 
@@ -82,7 +82,7 @@ Be careful that GitHub Desktop, SourceTree and other visual applications are NOT
 
 &nbsp;
 
-![Workgroup tools options repository](<lib/Workgroup%20tools%20options%20repository.png>)
+![Workgroup tools options repository](<lib/Workgroup tools options repository.png>)
 
 &nbsp;
 
@@ -104,3 +104,85 @@ you may have to declare the custom path manually.
 
 See more info in the [pre-requisites page](<Pre-requisites.md>).
 
+&nbsp;
+
+## How should I organize our models in the repository?
+
+Should we co-locate models in the application code repo?&nbsp; Or should we have a separate repo?&nbsp; Should we have one or more repos?
+
+&nbsp;
+
+These are excellent questions.&nbsp; But there is no black-and-white answer, except "it depends"...&nbsp; You should experiment, and discuss with multiple stakeholders, to find the best setup for your organization.
+
+&nbsp;
+
+You may already have reviewed our resources specific to the Git integration:
+
+\- [online documentation](<Repository.md>) and pages below
+
+\- eLearning platform [videos](<https://community.hackolade.com/slides/hackolade-studio-tutorial-5-workgroup-collaboration-and-versioning-5> "target=\"\_blank\"")
+
+&nbsp;
+
+On the specific question of the repo organization:
+
+\- you may co-locate models with application code
+
+\- advantages:&nbsp;
+
+&nbsp; &nbsp; - model changes follow the same lifecycle as the application code
+
+\- model changes provide additional context for the application code
+
+\- disadvantages
+
+&nbsp; &nbsp; - it is harder to decouple models from application code if, for example the target is shared across different applications
+
+\- rights management whereby maybe you don't want modelers to have access to the application code
+
+&nbsp;
+
+\- you may want to have a separate repo for models
+
+&nbsp; &nbsp; - pros and cons are the mirror of the above
+
+&nbsp;
+
+Some customers choose the former, others the latter.&nbsp; There is no rule.
+
+&nbsp;
+
+Also, when choosing a dedicated repo for models, the folder structure differs widely between customers.&nbsp; Some are domain-oriented, some are application-oriented, some are access rights-oriented, etc.
+
+&nbsp;
+
+And when using a dedicated repo, some wonder about whether there should be one repo per domain, or multiple repos.&nbsp; We generally advise to have a single repository.&nbsp; If you're worried about the protection of your models, so their changes follow a process, you have 2 options:
+
+\- you can force in your repo that changes be made through change (pull) requests
+
+\- better yet, you may want to force adopt a [fork \& pull strategy](<Workingwithforks.md>), also known as innersourcing.
+
+&nbsp;
+
+Our application can accommodate any and all of those repo organizations, but each customer has its own perspective, and we don't know enough to judge.
+
+&nbsp;
+
+## Why is there no auto-commit capability?
+
+Git itself does not provide this feature.&nbsp; And the reason is that there are too many risks:
+
+\- Risk of unintentional commits: auto-committing can cause unintended commits that might include unnecessary or incomplete changes.
+
+\- Loss of control: it might push changes that you're not ready to share, or break models
+
+\- Inconsistent history: it can create a mess in your commit history, making it harder to understand the changes over time.
+
+&nbsp;
+
+## How are permissions managed?
+
+1. Even for the viewer edition, anyone who needs to have access to a file somewhere must be given proper access.  Same as in anywhere in the digital or physical world.&nbsp; If a model is stored on a shared drive or in a Git repository, the user must be granted access for that location in order for the user to be able to open the model. &nbsp;
+1. &nbsp;
+1. Just like with any client application, like Microsoft Excel for example, the access control is delegated to the storage layer: the local file system, a shared drive, or the Git repository.  If someone has access to a file, then the application can open it.  The right to edit a modelis shared between the license key (author or viewer -- if you only have viewer rights, you cannot edit a model, even if you have write rights) and the repository -- even if you have the workgroup edition, you cannot save the model in a place where you have no rights to do so.
+1. 

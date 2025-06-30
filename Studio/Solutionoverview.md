@@ -14,7 +14,7 @@ At a tactical level, data modeling serves a **design purpose** -- the design of 
 
 At a more strategic level, the purpose of data modeling is therefore to&nbsp;
 
-![Vision - mission](<lib/Vision%20-%20Mission.png>)
+![Vision - mission](<lib/Vision - Mission.png>)
 
 &nbsp;
 
@@ -24,7 +24,7 @@ When business and IT don't work hand-in-hand on projects, the vocabulary diverge
 
 The slide below outlines the mapping of our solution and resulting business outcomes to the defined challenges.
 
-![Vision - From Challenges to Outcomes](<lib/Vision%20-%20From%20Challenges%20to%20Outcomes.png>)
+![Vision - From Challenges to Outcomes](<lib/Vision - From Challenges to Outcomes.png>)
 
 ## Next-gen data modeling
 
@@ -56,7 +56,7 @@ To create a visual representation of data structures, data modeling tools have t
 
 &nbsp;
 
-![Vision - Entity-Relationship Diagrams](<lib/Vision%20-%20Entity-Relationship%20Diagrams.png>)
+![Vision - Entity-Relationship Diagrams](<lib/Vision - Entity-Relationship Diagrams.png>)
 
 &nbsp;
 
@@ -86,7 +86,11 @@ With our polyglot data model, you can define a data structure once, then transla
 
 &nbsp;
 
-![Vision - Polyglot Data Modeling](<lib/Vision%20-%20Polyglot%20Data%20Modeling.png>)
+&nbsp;
+
+![Vision - Polyglot Data Modeling](<lib/Vision - Polyglot Data Modeling.png>)
+
+&nbsp;
 
 &nbsp;
 
@@ -110,7 +114,7 @@ With Metadata-as-Code, we mean 3 main principles:&nbsp;
 
 &nbsp;
 
-![Vision - Metadata-as-Code infinity loop](<lib/Vision%20-%20Metadata-as-Code%20infinity%20loop.png>)
+![Vision - Metadata-as-Code infinity loop](<lib/Vision - Metadata-as-Code infinity loop.png>)
 
 &nbsp;
 
@@ -168,7 +172,7 @@ The major principles are:
 
 &nbsp;
 
-![Image](<lib/Vision%20-%20Domain-Driven%20Data%20Modeling.png>)
+![Image](<lib/Vision - Domain-Driven Data Modeling.png>)
 
 &nbsp;
 
@@ -184,7 +188,7 @@ At a tactical level, data modeling serves a **design purpose** -- the design of 
 
 At a more strategic level, the purpose of data modeling is therefore to&nbsp;
 
-![Image](<lib/Vision%20-%20Mission.png>)
+![Image](<lib/Vision - Mission.png>)
 
 &nbsp;
 

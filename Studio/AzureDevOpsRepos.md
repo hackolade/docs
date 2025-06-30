@@ -18,7 +18,7 @@ You first need to provide the name of your [Azure DevOps organization](<https://
 
 &nbsp;
 
-![Worgroup - manage connection Azure DevOps](<lib/Worgroup%20-%20manage%20connection%20Azure%20DevOps.png>)
+![Worgroup - manage connection Azure DevOps](<lib/Worgroup - manage connection Azure DevOps.png>)
 
 &nbsp;
 
@@ -32,7 +32,7 @@ On Azure DevOps, click on the "New token" button, give it a meaningful name - e.
 
 &nbsp;
 
-![Worgroup - Azure DevOps Repos token form](<lib/Worgroup%20-%20Azure%20DevOps%20Repos%20token%20form.png>)
+![Worgroup - Azure DevOps Repos token form](<lib/Worgroup - Azure DevOps Repos token form.png>)
 
 &nbsp;
 
@@ -50,7 +50,7 @@ If you haven't set a valid personal access token, you may get the error message 
 
 &nbsp;
 
-![Worgroup - Azure DevOps Repos token error](<lib/Worgroup%20-%20Azure%20DevOps%20Repos%20token%20error.png>)
+![Worgroup - Azure DevOps Repos token error](<lib/Worgroup - Azure DevOps Repos token error.png>)
 
 &nbsp;
 
@@ -65,6 +65,50 @@ For issues when Git clone or push fails to an Azure DevOps repository.&nbsp; Ple
 &nbsp;
 
 A possible cause, as provided by the HackoladeGit.log can be "SSL certificate problem: unable to get local issuer certificate".&nbsp; This is caused by the fact that your organization might be using self-signed certificates (often in the context of dev or test environments -- rarely in prod environments...) and this self-signed certificate is not present in the local certificate storage.&nbsp; This situtaion and the solution are well described in this [Microsoft link](<https://learn.microsoft.com/en-us/troubleshoot/azure/devops/git-clone-push-operation-failing-devops-repo#cause-2-git-uses-a-local-self-signed-certificate> "target=\"\_blank\"").
+
+&nbsp;
+
+&nbsp;
+
+## OAuth
+
+As an alternative to generating a personal access token, Azure DevOps Repos can also let you grant Hackolade Studio access to your account through [OAuth](<https://oauth.net/> "target=\"\_blank\"").&nbsp;
+
+&nbsp;
+
+From the menu Repository \> Manage Repository Connections, create a new connection, select the provider and specify the domain name if necessary, then select the connection method OAuth:
+
+&nbsp;
+
+![Azure DevOps Repos OAuth connection settings](<lib/Azure DevOps Repos OAuth connection settings.png>)
+
+&nbsp;
+
+&nbsp;
+
+Make sure to enter the correct Oraganization name.&nbsp; Then click on the "Connect" button to proceed.
+
+&nbsp;
+
+A browser window will appear to request your acknowqledgment, and create the necessary authorization,&nbsp;
+
+&nbsp;
+
+![Azure DevOps Repos OAuth permissions request](<lib/Azure DevOps Repos OAuth permissions request.png>)
+
+&nbsp;
+
+&nbsp;
+
+:
+
+Then display this message::
+
+![Azure DevOps Repos OAuth success](<lib/Azure DevOps Repos OAuth success.png>)
+
+&nbsp;
+
+Hackolade Studio should now have access to Azure DevOps Repos.
 
 &nbsp;
 

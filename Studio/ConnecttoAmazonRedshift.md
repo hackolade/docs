@@ -8,7 +8,7 @@ To access an Amazon Redshift database, you should obtain the proper credentials 
 
 Give a meaningful name to the connection:
 
-![Redshift connection settings](<lib/Redshift%20connection%20settings.png>)
+![Redshift connection settings](<lib/Redshift connection settings.png>)
 
 You also must specify the cluster identifier and database name.
 
@@ -20,11 +20,11 @@ Then go to the Authentication tab, and paste the Access Key ID received from you
 
 &nbsp;
 
-![Redshift authentication](<lib/Redshift%20authentication.png>)
+![Redshift authentication](<lib/Redshift authentication.png>)
 
 &nbsp;
 
-If you wish to handle AWS authentication through the [credentials file](<https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html> "target=\"\_blank\""), you may leave blank the Access Key ID and Secret Access Key fields, knowing that Hackolade supplies credentials following the recommendations described [here](<https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html> "target=\"\_blank\""). Or use a temporary [session token](<https://docs.aws.amazon.com/IAM/latest/UserGuide/id\_credentials\_temp\_use-resources.html> "target=\"\_blank\"").
+If you wish to handle AWS authentication through the [credentials file](<https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html> "target=\"\_blank\""), you may leave blank the Access Key ID and Secret Access Key fields, knowing that Hackolade Studio supplies credentials following the recommendations described [here](<https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html> "target=\"\_blank\""). Or use a temporary [session token](<https://docs.aws.amazon.com/IAM/latest/UserGuide/id\_credentials\_temp\_use-resources.html> "target=\"\_blank\"").
 
 &nbsp;
 
@@ -34,7 +34,7 @@ If you wish to handle AWS authentication through the [credentials file](<https:/
 
 With serverless Redshift; you must specify the workgroup as well as the database name:
 
-![Redshift - serverless connection settings](<lib/Redshift%20-%20serverless%20connection%20settings.png>)
+![Redshift - serverless connection settings](<lib/Redshift - serverless connection settings.png>)
 
 &nbsp;
 

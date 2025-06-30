@@ -43,7 +43,7 @@ With v3.6.2, we have removed the link "Show Plugin Directory" from the Help menu
 
 Go to Help \> Plugin Manager \> Installed, and you will see a listing like this one:
 
-![CustomProp migration - plugin manager before](<lib/CustomProp%20migration%20-%20plugin%20manager%20before.png>)
+![CustomProp migration - plugin manager before](<lib/CustomProp migration - plugin manager before.png>)
 
 &nbsp;
 
@@ -53,7 +53,7 @@ In the above, we can see 2 plugins: one for a *native target* (MongoDB) and one 
 
 When you press the Migrate button for a **plugin** target, you get this dialog:
 
-![CustomProp migration - plugin target warning](<lib/CustomProp%20migration%20-%20plugin%20target%20warning.png>)
+![CustomProp migration - plugin target warning](<lib/CustomProp migration - plugin target warning.png>)
 
 If you confirm, the process will check if you have any custom properties in your old plugin for that target, and will migrate them to the new structure in C:\\Users\\%username%\\.hackolade\\options (on Mac in Users/$USER/.Hackolade/options)
 
@@ -61,13 +61,13 @@ If you confirm, the process will check if you have any custom properties in your
 
 The success of the operation is confirmed with this dialog:
 
-![CustomProp migration - success dialog](<lib/CustomProp%20migration%20-%20success%20dialog.png>)
+![CustomProp migration - success dialog](<lib/CustomProp migration - success dialog.png>)
 
 &nbsp;
 
 After restarting the application, and should see no visible changes to your custom properties, but you now have a link to the directory where you can maintain your properties for that plugin.
 
-![CustomProp migration - plugin mgr after 1](<lib/CustomProp%20migration%20-%20plugin%20mgr%20after%201.png>)
+![CustomProp migration - plugin mgr after 1](<lib/CustomProp migration - plugin mgr after 1.png>)
 
 &nbsp;
 
@@ -83,7 +83,7 @@ Because this is a plugin target (i.e. not JSON, Couchbase, DynamoDB, or MongoDB)
 
 When you press the Migrate button for a **native** target, you get this dialog:
 
-![CustomProp migration - native target warning](<lib/CustomProp%20migration%20-%20native%20target%20warning.png>)
+![CustomProp migration - native target warning](<lib/CustomProp migration - native target warning.png>)
 
 &nbsp;
 
@@ -93,13 +93,13 @@ The migration process is slightly different than for plugin targets.&nbsp; If yo
 
 The success of the operation is confirmed with this dialog:
 
-![CustomProp migration - success dialog](<lib/CustomProp%20migration%20-%20success%20dialog.png>)
+![CustomProp migration - success dialog](<lib/CustomProp migration - success dialog.png>)
 
 &nbsp;
 
 After restarting the application, and should see no visible changes to your custom properties, but you now have a link to the directory where you can maintain your properties for that plugin.
 
-![CustomProp migration - plugin mgr after 2](<lib/CustomProp%20migration%20-%20plugin%20mgr%20after%202.png>)
+![CustomProp migration - plugin mgr after 2](<lib/CustomProp migration - plugin mgr after 2.png>)
 
 &nbsp;
 
@@ -117,7 +117,7 @@ This step is only necessary for native targets (JSON, Couchbase, DynamoDB, and M
 
 When a Hackolade model for a migrated native target is opened with the application, the content of the model evolves automatically to the new structure (i.e. the customProperties sub-object is suppressed after moving your custom properties.) &nbsp; You will get this confirmation:
 
-![CustomProp migration - model migration conf](<lib/CustomProp%20migration%20-%20model%20migration%20conf.png>)
+![CustomProp migration - model migration conf](<lib/CustomProp migration - model migration conf.png>)
 
 &nbsp;
 

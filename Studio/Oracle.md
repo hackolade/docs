@@ -24,7 +24,7 @@ The data model in the picture below results from the data modeling of the [Oracl
 
 &nbsp;
 
-![Image](<lib/Oracle%20workspace.png>)
+![Image](<lib/Oracle workspace.png>)
 
 ## Schemas
 
@@ -107,7 +107,7 @@ With 21c, Oracle Database now supports JSON data natively with relational databa
 
 With version 23ai, Oracle added a new [*data type vector*](<https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/Data-Types.html#GUID-801FFE49-217D-4012-9C55-66DAE1BA806F> "target=\"\_blank\"") with the possible declaration formats below, all supported in Hackolade Studio:
 
-![Oracle vector declaration](<lib/Oracle%20vector%20declaration.png>)
+![Oracle vector declaration](<lib/Oracle vector declaration.png>)
 
 &nbsp;
 
@@ -160,7 +160,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![Oracle DDL forward-engineering](<lib/Oracle%20DDL%20forward-engineering.png>)
+![Oracle DDL forward-engineering](<lib/Oracle DDL forward-engineering.png>)
 
 &nbsp;
 

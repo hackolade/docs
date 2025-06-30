@@ -24,7 +24,7 @@ The data model in the picture below results from the reverse-engineering of the 
 
 &nbsp;
 
-![Image](<lib/DocumentDB%20workspace.png>)
+![Image](<lib/DocumentDB workspace.png>)
 
 &nbsp;
 
@@ -89,7 +89,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![Image](<lib/DocumentDB%20forward-engineering.png>)
+![Image](<lib/DocumentDB forward-engineering.png>)
 
 &nbsp;
 

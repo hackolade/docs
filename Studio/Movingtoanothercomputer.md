@@ -46,7 +46,7 @@ In many organizations, custom properties are maintained by an administrator and 
 
 ## Data models
 
-Ideally, your models are in a Git repository, on a shared drive, or in a folder synchronized with the cloud (OneDrive, Google Drive, iCloud, Dropbox, etc...) in which case changing to another client machine should not affect your data models.&nbsp; Make sure, when you get your new machine, to set things up so you again have access to your data models.&nbsp; Note that we strongly suggest to **avoid** combining your Git clone with a cloud-synchronized folder\!&nbsp; Do not clone your repo in a folder which synchronized with the cloud (OneDrive, Google Drive, iCloud, Dropbox, etc...)&nbsp; The sync mechanism may cause perverse performance effects and sometimes conflicts with the Git processes.
+Ideally, your models are in a Git repository, on a shared drive, or in a folder synchronized with the cloud (OneDrive, Google Drive, iCloud, Dropbox, etc...) in which case changing to another client machine should not affect your data models.&nbsp; Make sure, when you get your new machine, to set things up so you again have access to your data models.&nbsp; Note that we strongly suggest to **avoid** combining your Git clone with a cloud-synchronized folder\!&nbsp; Do not clone your repo in a folder which is synchronized with the cloud (OneDrive, Google Drive, iCloud, Dropbox, etc...)&nbsp; The sync mechanism may cause perverse performance effects and sometimes conflicts with the Git processes.
 
 &nbsp;
 
@@ -60,7 +60,7 @@ To facilitate the migration of your parameters, Hackolade Studio provides a hand
 
 &nbsp;
 
-![Backup preferences parameters connections](<lib/Backup%20preferences%20parameters%20connections.png>)
+![Backup preferences parameters connections](<lib/Backup preferences parameters connections.png>)
 
 &nbsp;
 

@@ -11,7 +11,9 @@ Connecting a Databricks instance on one of the cloud providers requires to decla
 
 &nbsp;
 
-![Delta Lake Databicks connection settings](<lib/Delta%20Lake%20connection%20settings.png>)
+![Image](<lib/Delta Lake connection settings.png>)
+
+&nbsp;
 
 &nbsp;
 
@@ -21,19 +23,31 @@ You should consult this [page](<https://docs.databricks.com/workspace/workspace-
 
 &nbsp;
 
-**Note:** the connection must be established with compute clusters, i.e. not with the SQL Warehouse which uses a different API which we do not support.
+**Note:** the connection must be established with compute clusters, i.e. not with the SQL Warehouse which uses a different API which we do not support.&nbsp; It is not currently possible to connect using only a Serverless compute.&nbsp; The problem, if we don't leverage the compute cluster, is that many functions of our reverse-engineering process are not supported by the API.  We will lose at least the reverse-engineering of views and of Bloom filters, plus maybe other things. &nbsp;
 
 &nbsp;
 
-To get the cluster ID, click the **Clusters** tab in sidebar and then select a cluster name. The cluster ID is the number after the /clusters/ component in the URL of this page:
+To get the cluster ID, click the **Clusters** tab in sidebar and then select a cluster name. The cluster ID is the number after the /clusters/ component in the URL of this page, and before the ?o=:
 
 https://\<databricks-instance\>/#/setting/clusters/\<cluster-id\>
 
 &nbsp;
 
-In the following screenshot, the cluster ID is 1115-164516-often242:
+In the following screenshot, the cluster ID is 0522-122550-st68dyc7
 
-![Delta Lake Databricks connection settings input](<lib/Delta%20Lake%20connection%20settings%20input.png>)
+&nbsp;
+
+![Delta Lake connection settings input](<lib/Delta Lake connection settings input.png>)
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
 
 &nbsp;
 
@@ -43,13 +57,13 @@ Hackolade uses the Databricks REST API, and requires that an access token be iss
 
 &nbsp;
 
-![Delta Lake Databricks connections settings auth](<lib/Delta%20Lake%20connections%20settings%20auth.png>)
+![Delta Lake Databricks connections settings auth](<lib/Delta Lake connections settings auth.png>)
 
 &nbsp;
 
 For Databricks on Azure, you may have tables using Azure Data Lake Storage which requires additional authentication for Databricks to access it.&nbsp; In such case, you may need to declare ADLS credentials passthrough:
 
-![Databricls ADLS passthrough credentials](<lib/Databricls%20ADLS%20passthrough%20credentials.png>)
+![Databricls ADLS passthrough credentials](<lib/Databricls ADLS passthrough credentials.png>)
 
 &nbsp;
 

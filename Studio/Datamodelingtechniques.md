@@ -1,6 +1,6 @@
 # Data modeling techniques
 
-Hackolade Studio provides support for different techniques of data modeling for our different targets.&nbsp; Of course we support relational for RDBMS, complex data types for NoSQL and storage formats, etc.. &nbsp;
+Hackolade Studio provides support for different techniques of data modeling for our different targets.&nbsp; Of course we support relational for RDBMS through Entity-Relationship Diagrams, complex data types for NoSQL and storage formats, graph diagrams for graph databases and conceptual modeling, etc.. &nbsp;
 
 &nbsp;
 
@@ -10,7 +10,7 @@ For big data analytics, we also support 2 very popular methodologies: Dimensiona
 
 For these targets, the choice of modeling technique is made at the model level:
 
-![Modeling technique - choice](<lib/Modeling%20technique%20-%20choice.png>)
+![Modeling technique - choice](<lib/Modeling technique - choice.png>)
 
 &nbsp;
 
@@ -52,7 +52,7 @@ They provide a controlled environment for data preparation and allow for data cl
 
 You may assign a role to each table in your dimensional model:
 
-![Modeling technique - dimensional table role](<lib/Modeling%20technique%20-%20dimensional%20table%20role.png>)
+![Modeling technique - dimensional table role](<lib/Modeling technique - dimensional table role.png>)
 
 &nbsp;
 
@@ -100,7 +100,7 @@ Additionally, let's explore the concepts of bridge, point in time, and reference
 
 You may assign a vault component to each table in your vault model:
 
-![Modeling technique - data vault components](<lib/Modeling%20technique%20-%20data%20vault%20components.png>)
+![Modeling technique - data vault components](<lib/Modeling technique - data vault components.png>)
 
 &nbsp;
 

@@ -1,4 +1,4 @@
-# NoSQL databases, storage formats, REST APIs
+# SQL and NoSQL databases, APIs, and storage formats
 
 Hackolade's main added value is in providing the ability to perform the data modeling for JSON-based databases, mainly nested objects (sub-documents and arrays, a.k.a. maps and lists.)&nbsp; Hackolade even has a pending patent on its "Method and Process to graphically model schemas for NoSQL and multimodel databases and REST APIs".
 
@@ -40,18 +40,18 @@ Whereas most relational database adhere to a SQL standard which ensures a common
 
 &nbsp;
 
-| **Generic terminology** | **Parquet** | **AWS Glue Data Catalog** | **ScyllaDB** | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
+| **Generic terminology** | **Parquet** | **AWS Glue Data Catalog** | **ScyllaDB** | **RDBMS** |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Container | File | Database | Keyspace | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
-| Entity | Message | Table | Table | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
-| Record | Row | Row | Row | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
-| Attribute | Column | Column | Column | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
-| Primary Key | n/a | Partition Key+ Clustering Key&nbsp; | Partition Key+ Clustering Key&nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
-| Index | n/a | Index | Index | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
-| Partition | n/a | Partition | Parition | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
-| View | n/a | View | Materialized view | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
-| Object | Map | Map | Map | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
-| Array | List | List | List | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
+| Container | File | Database | Keyspace | Schema/user |  |  |  |
+| Entity | Message | Table | Table | Table |  |  |  |
+| Record | Row | Row | Row | Row |  |  |  |
+| Attribute | Column | Column | Column | Column |  |  |  |
+| Primary Key | n/a | Partition Key+ Clustering Key&nbsp; | Partition Key+ Clustering Key&nbsp; | Primary Key |  |  |  |
+| Index | n/a | Index | Index | Index |  |  |  |
+| Partition | n/a | Partition | Partition | Partition |  |  |  |
+| View | n/a | View | Materialized view | View |  |  |  |
+| Object | Map | Map | Map | n/a |  |  |  |
+| Array | List | List | List | n/a |  |  |  |
 
 
 &nbsp;

@@ -12,7 +12,41 @@ Even if you have little or no experience with Git, we made it very easy to use G
 
 &nbsp;
 
-![Workgroup Git local remote repos](<lib/Workgroup%20Git%20local%20remote%20repos.png>)
+## Remote repository
+
+The term "remote repository" may be intimidating, but it simply means the "central storage", in this case for your data models.&nbsp; It is "remote", in the sense that it is not "local".&nbsp; And it differs from a traditional folder in the sense that it is enabled for tracking changes in text files.&nbsp; As a result, every time someone "saves" a file into a remote repo, an immutable state and history is automatically logged and accumulated.&nbsp; Immutability does not mean that you cannot make additional changes.&nbsp; It simply means that you cannot rewrite history: you may only make additional changes (possibly if necessary, to undo some other change made in the past) in a new version of that file.&nbsp; It is easy to see when a change was made and by whom. &nbsp;
+
+&nbsp;
+
+Note that an additional benefit of Git is that it is not necessary to explicitly create new versions of a file: each new commit made on the remote repo is a new and automatic version of the file.&nbsp; It is possible to capture a milestone in the Git history, generally to mark a version release (i.e. v1.0.1), by creating a tag, which is a marker pointing to a specific state of the repository, an arbitrary commit.
+
+&nbsp;
+
+## Remote vs Local repo
+
+One of the many advantages of Git vs previous source control systems, is that it can be (and often is) "distributed", as opposed to strictly central.&nbsp; In the old days, collaborating on a central file imposed a big constraint on collaboration.&nbsp; In most cases, it was necessary for one user to "checkout" the file and lock it so no one could make changes in parallel.&nbsp; Then when finished, the user would do a "checkin" of the new version into the central storage.&nbsp; When using the distributed nature of Git, users are able to make changes in parallel on the same file, being confident that these changes will be automatically merged.&nbsp; If a conflict occurs, there is a method for a user to easily resolve these conflicts.
+
+&nbsp;
+
+There are 2 ways to work with a remote repository:
+
+\- for occasional access, or users simply consulting models in read-only mode, they may access the central storage directly.&nbsp; It is&nbsp; possible to operate in read-write mode to create a new or modify an existing file (and Hackolade Studio supports this mode since v8.1.2), but users lose several benefits, as described below. &nbsp;
+
+&nbsp;
+
+![Workgroup Git direct remote repo](<lib/Workgroup Git direct remote repo.png>)
+
+&nbsp;
+
+&nbsp;
+
+\- for more intensive use with a richer experience and feature set, by cloning the remote repository on the user's local machine.&nbsp; The richer experience includes the benefits related to the distributed nature of Git: advanced features, ability to group changes to multiple files in sets, more flexible collaboration, offline access, multiple backups, etc.
+
+&nbsp;
+
+&nbsp;
+
+![Workgroup Git local remote repos](<lib/Workgroup Git local remote repos.png>)
 
 &nbsp;
 
@@ -62,6 +96,8 @@ It is important to note that a commit, once it has been pushed to the remote rep
 
 Prior to being pushed, a commit can be discarded, or stashed.
 
+&nbsp;
+
 ## Pull
 
 Pulling remote commits is the action of downloading from the remote repository the commits that have been pushed by other users.&nbsp; As long as you don't pull these commits, those changes are not available to you.
@@ -110,7 +146,7 @@ The picture below is an example of what the history of a repository can look lik
 
 &nbsp;
 
-![Workgroup Git commit history](<lib/Workgroup%20Git%20commit%20history.png>)
+![Workgroup Git commit history](<lib/Workgroup Git commit history.png>)
 
 &nbsp;
 
@@ -148,7 +184,7 @@ You can delete a branch (after merging it, or not merging it.)
 
 &nbsp;
 
-## Creation of change/merge/pull requests
+## Create a change/merge/pull requests
 
 The peer review feature is a very popular collaboration extension to Git, supported by most of the repository hubs.&nbsp; It allows changes made by a user to be submitted for review and approval by another user before being merged into a target branch. &nbsp;
 
@@ -167,4 +203,14 @@ Changes to data models are proposed in a branch, to ensure that the target branc
 ## Review of change/merge/pull requests
 
 Peers may comment a change request and solicit adjustments to be made to the data models in the branch.&nbsp; Designated reviewers may approve or reject change requests.
+
+&nbsp;
+
+&nbsp;
+
+## Tags
+
+A [Git tag](<https://git-scm.com/docs/git-tag> "target=\"\_blank\"") is a reference pointing to a specific commit in the Git history. [Tagging](<https://git-scm.com/book/en/v2/Git-Basics-Tagging> "target=\"\_blank\"") is used to capture a milestone in the Git history, generally to mark a version release (i.e. v1.0.1).&nbsp; The Git client makes it possible to tag a given commit with an arbitrary name. It is also possible - but not mandatory - to provide a description when tagging a commit.
+
+&nbsp;
 

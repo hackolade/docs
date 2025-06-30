@@ -1,6 +1,6 @@
 # Connect to a Neptune instance
 
-As per this [Amazon page](<https://docs.aws.amazon.com/neptune/latest/userguide/graph-notebooks.html#graph-notebooks-local-with-neptune> "target=\"\_blank\""), "The most convenient way for most people, however, is to connect to set up an Amazon EC2 proxy server within the VPC and then use [SSH tunnelling](<https://www.ssh.com/ssh/tunneling/> "target=\"\_blank\"") (also called port fowarding), to connect to it."&nbsp; And on [this page](<https://docs.aws.amazon.com/neptune/latest/userguide/get-started-access-graph.html> "target=\"\_blank\""), "For information about connecting to an EC2 instance using SSH, see [Connect to Your Linux Instance](<https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html> "target=\"\_blank\"") in the *Amazon EC2 User Guide for Linux Instances*."
+As per this [Amazon page](<https://docs.aws.amazon.com/neptune/latest/userguide/graph-notebooks.html#graph-notebooks-local-with-neptune> "target=\"\_blank\""), "The most convenient way for most people, however, is to connect to set up an Amazon EC2 proxy server within the VPC and then use [SSH tunneling](<https://www.ssh.com/ssh/tunneling/> "target=\"\_blank\"") (also called port forwarding), to connect to it."&nbsp; And on [this page](<https://docs.aws.amazon.com/neptune/latest/userguide/get-started-access-graph.html> "target=\"\_blank\""), "For information about connecting to an EC2 instance using SSH, see [Connect to Your Linux Instance](<https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html> "target=\"\_blank\"") in the *Amazon EC2 User Guide for Linux Instances*."
 
 &nbsp;
 
@@ -10,11 +10,11 @@ Below are step-by-step instructions in the context of Hackolade.
 
 ### Go to Neptune in AWS console and create database
 
-### ![Neptune connect 1](<lib/Neptune%20connect%201.png>)
+### ![Neptune connect 1](<lib/Neptune connect 1.png>)
 
 &nbsp;
 
-![Neptune connect 2](<lib/Neptune%20connect%202.png>)
+![Neptune connect 2](<lib/Neptune connect 2.png>)
 
 &nbsp;
 
@@ -26,7 +26,7 @@ Make sure to select "Create new VPC", then open up "Additional connectivity conf
 
 &nbsp;
 
-![Neptune connect 3](<lib/Neptune%20connect%203.png>)
+![Neptune connect 3](<lib/Neptune connect 3.png>)
 
 &nbsp;
 
@@ -40,7 +40,7 @@ Then, press the Create data base button.
 
 Select the VPC security group created above:
 
-![Neptune connect 4](<lib/Neptune%20connect%204.png>)
+![Neptune connect 4](<lib/Neptune connect 4.png>)
 
 &nbsp;
 
@@ -50,7 +50,7 @@ Select the VPC security group created above:
 
 Add SSH port with CIDR 0.0.0.0/0 and to port 8182 add CIDR 0.0.0.0/0.&nbsp; Or restrict to the IP addresses of your Hackolade installation.
 
-![Neptune connect 5](<lib/Neptune%20connect%205.png>)
+![Neptune connect 5](<lib/Neptune connect 5.png>)
 
 &nbsp;
 
@@ -62,13 +62,13 @@ Create an instance in the same region as your Neptune cluster, e.g. “Ubuntu Se
 
 &nbsp;
 
-![Neptune connect 6](<lib/Neptune%20connect%206.png>)
+![Neptune connect 6](<lib/Neptune connect 6.png>)
 
 &nbsp;
 
 In the configuration section select the same VPC as for Neptune, choose one of the Subnets and assign public IP:
 
-![Neptune connect 7](<lib/Neptune%20connect%207.png>)
+![Neptune connect 7](<lib/Neptune connect 7.png>)
 
 &nbsp;
 
@@ -78,15 +78,21 @@ In the configuration section select the same VPC as for Neptune, choose one of t
 
 In the security group section select existing security group (neptune-security-group)
 
-![Neptune connect 8](<lib/Neptune%20connect%208.png>)
+![Neptune connect 8](<lib/Neptune connect 8.png>)
 
 &nbsp;
 
 Press “review and launch”, then in the dialog, create and download key pair:
 
-![Neptune connect 9](<lib/Neptune%20connect%209.png>)
+![Neptune connect 9](<lib/Neptune connect 9.png>)
 
 &nbsp;
+
+### &nbsp;
+
+### Ensure you have the proper IAM acces rights to Neptune infrastructure
+
+To be able to access your Neptune cluster from Hackolade you need to have the right to run the action rds:DescribeDBClusters.
 
 &nbsp;
 
@@ -94,7 +100,7 @@ Press “review and launch”, then in the dialog, create and download key pair:
 
 Fill in the connection settings, from either the forward- or reverse-engineering functions:
 
-![Neptune connect 10](<lib/Neptune%20connect%2010.png>)
+![Neptune connect 10](<lib/Neptune connect 10.png>)
 
 &nbsp;
 
@@ -104,7 +110,7 @@ where:
 
 **Cluster identifier** corresponds to the cluster name you assigned to the Neptune cluster:
 
-![Neptune connect 11](<lib/Neptune%20connect%2011.png>)
+![Neptune connect 11](<lib/Neptune connect 11.png>)
 
 &nbsp;
 
@@ -118,7 +124,7 @@ where:
 
 &nbsp;
 
-![Neptune connect 12](<lib/Neptune%20connect%2012.png>)
+![Neptune connect 12](<lib/Neptune connect 12.png>)
 
 &nbsp;
 
@@ -130,7 +136,7 @@ Finally, in the Authentication tab of the Hackolade connection dialog:
 
 &nbsp;
 
-![Neptune connect 13](<lib/Neptune%20connect%2013.png>)
+![Neptune connect 13](<lib/Neptune connect 13.png>)
 
 &nbsp;
 

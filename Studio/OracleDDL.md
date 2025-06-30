@@ -8,7 +8,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![Oracle DDL forward-engineering](<lib/Oracle%20DDL%20forward-engineering.png>)
+![Oracle DDL forward-engineering](<lib/Oracle DDL forward-engineering.png>)
 
 &nbsp;
 

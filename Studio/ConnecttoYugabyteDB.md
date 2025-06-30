@@ -32,7 +32,7 @@ In the Hackolade connection settings dialog, give a meaningful name to the conne
 
 &nbsp;
 
-![YugabyteDB connection settings](<lib/YugabyteDB%20connection%20settings.png>)
+![YugabyteDB connection settings](<lib/YugabyteDB connection settings.png>)
 
 &nbsp;
 
@@ -42,4 +42,4 @@ If required, you may enter your username and password
 
 &nbsp;
 
-![Image](<lib/MariaDB%20connection%20settings%20auth.png>)
+![Image](<lib/MariaDB connection settings auth.png>)

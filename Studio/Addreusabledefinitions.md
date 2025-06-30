@@ -14,7 +14,7 @@ A simple example of a re-usable definition is an address, but many other domain 
 
 Hackolade Studio helps breaking down large enterprise models into smaller reusable models from which pieces can be referenced elsewhere:
 
-![Referencing reusable definitions](<lib/Referencing%20reusable%20definitions.png>)
+![Referencing reusable definitions](<lib/Referencing reusable definitions.png>)
 
 &nbsp;
 
@@ -50,13 +50,13 @@ There are 2 simple ways to create a definition.&nbsp; Either it is created ahead
 
 Let's create a simple JSON document structure with a sub-object for the address. &nbsp;
 
-![How-to definitions address object](<lib/How-to%20definitions%20address%20object.png>)
+![How-to definitions address object](<lib/How-to definitions address object.png>)
 
 &nbsp;
 
 Let’s convert this object into a model definition by doing a right-click on the “address” object.&nbsp; In the contextual menu, choose Reference \> Convert to Definition \> Model. &nbsp; This action is not available through the menus or the toolbar.&nbsp; It is only possible via the contextual menus, in the Object Browser, the ERD or the hierarchical schema tree view of each entity tab.
 
-![How-to definitions convert to model def](<lib/How-to%20definitions%20convert%20to%20model%20def.png>)
+![How-to definitions convert to model def](<lib/How-to definitions convert to model def.png>)
 
 &nbsp;
 
@@ -64,13 +64,13 @@ Two things happened:
 
 &#49;) in the ERD and also in the schema tree view, the attribute is replaced by a reference to the definition:
 
-![How-to definitions schema view of reference](<lib/How-to%20definitions%20schema%20view%20of%20reference.png>)
+![How-to definitions schema view of reference](<lib/How-to definitions schema view of reference.png>)
 
 &nbsp;
 
 &#50;) and in the Model Definitions tab, there is now a definition.:
 
-![How-to definitions model def tab](<lib/How-to%20definitions%20model%20def%20tab.png>)
+![How-to definitions model def tab](<lib/How-to definitions model def tab.png>)
 
 &nbsp;
 
@@ -90,7 +90,7 @@ Right-click on an attribute of the entity where you want to add the reference.&n
 
 &nbsp;
 
-![How-to definitions reference existing def](<lib/How-to%20definitions%20reference%20existing%20def.png>)
+![How-to definitions reference existing def](<lib/How-to definitions reference existing def.png>)
 
 &nbsp;
 
@@ -98,11 +98,11 @@ Right-click on an attribute of the entity where you want to add the reference.&n
 
 In the dialog, search and select the object or attribute of your choice:
 
-![Image](<lib/How-to%20definitions%20add%20ref%20to%20a%20definition.png>)
+![Image](<lib/How-to definitions add ref to a definition.png>)
 
 then click the Apply button.
 
-![How-to definitions mutiple refs](<lib/How-to%20definitions%20mutiple%20refs.png>)
+![How-to definitions mutiple refs](<lib/How-to definitions mutiple refs.png>)
 
 &nbsp;
 
@@ -112,13 +112,13 @@ then click the Apply button.
 
 Go to the Model Definitions tab change the zip code to a string field, and add a country attribute.
 
-![How-to definitions maintain](<lib/How-to%20definitions%20maintain.png>)
+![How-to definitions maintain](<lib/How-to definitions maintain.png>)
 
 &nbsp;
 
 We can see that the changes in the model definition are immediately reflected wherever referenced:
 
-![How-to definitions maintain applied](<lib/How-to%20definitions%20maintain%20applied.png>)
+![How-to definitions maintain applied](<lib/How-to definitions maintain applied.png>)
 
 &nbsp;
 
@@ -132,25 +132,25 @@ To see the JSON Schema representation of the person structure, let's open the en
 
 &nbsp;
 
-![How-to defs JSON Schema preview referenced](<lib/How-to%20defs%20JSON%20Schema%20preview%20referenced.png>)
+![How-to defs JSON Schema preview referenced](<lib/How-to defs JSON Schema preview referenced.png>)
 
 &nbsp;
 
 There are 2 other interesting settings for definitions: Resolved and Internal:
 
-![How-to defs JSON Schema preview choices](<lib/How-to%20defs%20JSON%20Schema%20preview%20choices.png>)
+![How-to defs JSON Schema preview choices](<lib/How-to defs JSON Schema preview choices.png>)
 
 &nbsp;
 
 If you choose Resolved, the $ref pointer is replaced by the actual structure of the definition:
 
-![How-to defs JSON Schema preview resolved](<lib/How-to%20defs%20JSON%20Schema%20preview%20resolved.png>)
+![How-to defs JSON Schema preview resolved](<lib/How-to defs JSON Schema preview resolved.png>)
 
 &nbsp;
 
 Whereas, if you choose Internal, the model definition is converted into an internal definition for the entity, according to the JSON Schema standard:
 
-![How-to defs JSON Schema preview internal](<lib/How-to%20defs%20JSON%20Schema%20preview%20internal.png>)
+![How-to defs JSON Schema preview internal](<lib/How-to defs JSON Schema preview internal.png>)
 
 &nbsp;
 
@@ -172,7 +172,7 @@ Right-click on the reference either in the ERD or in the hierarchical schema vie
 
 &nbsp;
 
-![Reference definitions - replace by attributes](<lib/Reference%20definitions%20-%20replace%20by%20attributes.png>)
+![Reference definitions - replace by attributes](<lib/Reference definitions - replace by attributes.png>)
 
 &nbsp;
 
@@ -184,13 +184,13 @@ If your definitions are used in multiple places, you may find useful to see wher
 
 &nbsp;
 
-![How-to definitions where-used menu](<lib/How-to%20definitions%20where-used%20menu.png>)
+![How-to definitions where-used menu](<lib/How-to definitions where-used menu.png>)
 
 &nbsp;
 
 A dialog box will let you see the different references to the selected definition.&nbsp; You can select one and click the Go to button, and the Object Browser will take you to that object.
 
-![How-to definitions where-used dialog](<lib/How-to%20definitions%20where-used%20dialog.png>)
+![How-to definitions where-used dialog](<lib/How-to definitions where-used dialog.png>)
 
 &nbsp;
 
@@ -204,7 +204,7 @@ In the contextual menu, choose Append Attribute \> Reference \> External. &nbsp
 
 &nbsp;
 
-![Image](<lib/How-to%20definitions%20external%20menu.png>)
+![Image](<lib/How-to definitions external menu.png>)
 
 &nbsp;
 
@@ -218,7 +218,7 @@ References can also be made to files accessible at a URL.
 
 &nbsp;
 
-![How-to definitions external path dialog](<lib/How-to%20definitions%20external%20path%20dialog.png>)
+![How-to definitions external path dialog](<lib/How-to definitions external path dialog.png>)
 
 &nbsp;
 
@@ -228,7 +228,7 @@ References can also be made to files accessible at a URL.
 
 You are then presented with a dialog to choose one or more objects to reference:
 
-![How-to definitions external selection dialog](<lib/How-to%20definitions%20external%20selection%20dialog.png>)
+![How-to definitions external selection dialog](<lib/How-to definitions external selection dialog.png>)
 
 &nbsp;
 
@@ -240,17 +240,17 @@ When you open a data model with references to external files, you are prompted t
 
 &nbsp;
 
-![How-to definitions external update refs](<lib/How-to%20definitions%20external%20update%20refs.png>)
+![How-to definitions external update refs](<lib/How-to definitions external update refs.png>)
 
 &nbsp;
 
 While in a model with external references, you may at any time update the path to the external file (ellipsis button), or refresh the references in case the external file changed (refresh button.)
 
-![How-to definitions external ref property](<lib/How-to%20definitions%20external%20ref%20property.png>)
+![How-to definitions external ref property](<lib/How-to definitions external ref property.png>)
 
 &nbsp;
 
-![How-to definitions external update ref dialog](<lib/How-to%20definitions%20external%20update%20ref%20dialog.png>)
+![How-to definitions external update ref dialog](<lib/How-to definitions external update ref dialog.png>)
 
 &nbsp;
 

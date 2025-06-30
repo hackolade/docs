@@ -10,7 +10,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 The information can be viewed in the Gremlin script tab:
 
-![CosmosDB Gremlin script forward-engineering](<lib/CosmosDB%20Gremlin%20script%20forward-engineering.png>)
+![CosmosDB Gremlin script forward-engineering](<lib/CosmosDB Gremlin script forward-engineering.png>)
 
 &nbsp;
 
@@ -22,7 +22,7 @@ A button lets the user apply to a selected Azure instance the script to create g
 
 Or you may apply these scripts to a Gremlin directly to the selected instance with the menu option Tools \> Forward-Engineering \> Gremlin script:
 
-![Image](<lib/Cosmos%20DB%20Gremlin%20forward-engineering%20menu.png>)
+![Image](<lib/Cosmos DB Gremlin forward-engineering menu.png>)
 
 &nbsp;
 

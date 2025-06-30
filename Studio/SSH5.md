@@ -1,6 +1,6 @@
 # SSH
 
-If your PostgreSQL instance is located in the Cloud at Amazon Web Services RDS for example or Microsoft Azure, your preferred access to your instance will be over SSH through port 22.
+If your PostgreSQL instance is located in the Cloud at Amazon Web Services for example or Microsoft Azure, your preferred access to your instance will be over SSH through port 22.
 
 &nbsp;
 
@@ -8,7 +8,7 @@ In the SSH tab, first check the box 'Use SSH tunnel' to enable the rest of the f
 
 &nbsp;
 
-![Reverse-engineering PostgreSQL - SSH w Private Key](<lib/RE%20-%20MongoDB%20-%20SSH%20w%20Private%20Key.png>)
+![Reverse-engineering PostgreSQL - SSH w Private Key](<lib/RE - MongoDB - SSH w Private Key.png>)
 
 &nbsp;
 
@@ -60,7 +60,7 @@ Or, if the SSH Auth Method is password:
 
 &nbsp;
 
-![Reverse-engineering PostgreSQL - SSH w Password](<lib/RE%20-%20MongoDB%20-%20SSH%20w%20Password.png>)
+![Reverse-engineering PostgreSQL - SSH w Password](<lib/RE - MongoDB - SSH w Password.png>)
 
 &nbsp;
 

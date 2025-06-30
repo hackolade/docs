@@ -8,7 +8,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![Synapse DDL forward-engineering](<lib/Synapse%20DDL%20forward-engineering.png>)
+![Synapse DDL forward-engineering](<lib/Synapse DDL forward-engineering.png>)
 
 &nbsp;
 

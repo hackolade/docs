@@ -16,17 +16,17 @@ Hackolade provides the unique ability to integrate the structure for multiple do
 
 &nbsp;
 
-![JSON Schema workspace](<lib/JSON%20Schema%20workspace.png>)
+![JSON Schema workspace](<lib/JSON Schema workspace.png>)
 
 &nbsp;
 
 Hackolade allows an undefined data type called "any".&nbsp; This allows you to have no restriction on the data type.&nbsp; While the declaration of the "any" data type is explicit in the UI, the result in JSON Schema is the absence of a data type declaration.&nbsp; In other words, the selection of the "any" data type:
 
-![JSON Schema undefined data type any](<lib/JSON%20Schema%20undefined%20data%20type%20any.png>)
+![JSON Schema undefined data type any](<lib/JSON Schema undefined data type any.png>)
 
 results in the following JSON Schema declaration:
 
-![Image](<lib/JSON%20Schema%20undefined%20data%20type%20any%20result.png>)
+![Image](<lib/JSON Schema undefined data type any result.png>)
 
 &nbsp;
 
@@ -38,19 +38,19 @@ Hackolade works great to convert structures from [XSD](<XSDXMLSchemaDefinition.m
 
 &nbsp;
 
-![JSON Schema preview](<lib/JSON%20Schema%20preview.png>)
+![JSON Schema preview](<lib/JSON Schema preview.png>)
 
 &nbsp;
 
 Hackolade handles the polymorphic nature of JSON documents with the support of multiple data types and allOf, anyOf, oneOf choices for [schema combination](<https://json-schema.org/understanding-json-schema/reference/combining.html#combining-schemas> "target=\"\_blank\"").
 
-![JSON Schema choices](<lib/JSON%20Schema%20choices.png>)
+![JSON Schema choices](<lib/JSON Schema choices.png>)
 
 &nbsp;
 
 Hackolade also supports [conditional application of subschemas](<https://json-schema.org/understanding-json-schema/reference/conditionals.html> "target=\"\_blank\"") whereby the if, then and else keywords allow the application of a subschema based on the outcome of another schema:
 
-![JSON Schema conditional](<lib/JSON%20Schema%20conditional.png>)
+![JSON Schema conditional](<lib/JSON Schema conditional.png>)
 
 &nbsp;
 

@@ -16,7 +16,7 @@ The data model in the picture below results from the modeling of an application 
 
 &nbsp;
 
-![Hive workspace](<lib/Hive%20workspace.png>)
+![Hive workspace](<lib/Hive workspace.png>)
 
 &nbsp;
 
@@ -28,7 +28,7 @@ The table in Hive is logically made up of the data being stored. And the associa
 
 &nbsp;
 
-![Hive table properties](<lib/Hive%20table%20properties.png>)
+![Hive table properties](<lib/Hive table properties.png>)
 
 &nbsp;
 
@@ -50,7 +50,7 @@ Hackolade was specially adapted to support the data types and attributes behavio
 
 &nbsp;
 
-![Hive data types](<lib/Hive%20data%20types.png>)
+![Hive data types](<lib/Hive data types.png>)
 
 &nbsp;
 
@@ -78,7 +78,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![Hive forward-engineering](<lib/Hive%20forward-engineering.png>)
+![Hive forward-engineering](<lib/Hive forward-engineering.png>)
 
 &nbsp;
 

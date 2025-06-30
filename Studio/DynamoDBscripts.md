@@ -8,7 +8,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![DynamoDB apply to instance](<lib/DynamoDB%20apply%20to%20instance.png>)
+![DynamoDB apply to instance](<lib/DynamoDB apply to instance.png>)
 
 &nbsp;
 

@@ -12,13 +12,13 @@ A new Diagram View can be added in different ways:
 
 &#49;) from the Actions menu option:
 
-![Menu Actions](<lib/Menu%20Actions.png>)
+![Menu Actions](<lib/Menu Actions.png>)
 
 &nbsp;
 
 &#50;) from the toolbar:
 
-![Toolbar Create Diagram View](<lib/Toolbar%20Create%20Diagram%20View.png>): toolbar button
+![Toolbar Create Diagram View](<lib/Toolbar Create Diagram View.png>): toolbar button
 
 &nbsp;
 
@@ -26,13 +26,13 @@ A new Diagram View can be added in different ways:
 
 by selecting one or more entities, then doing a right-click on an entity to display the contextual menu:
 
-![Contextual menu add ERDV](<lib/Contextual%20menu%20add%20ERDV.png>)
+![Contextual menu add ERDV](<lib/Contextual menu add ERDV.png>)
 
 &nbsp;
 
 Editing an ER Diagram View name or membership is done from the contextual menu of the Object Browser:
 
-![Contextual menu edit ERDV](<lib/Contextual%20menu%20edit%20ERDV.png>)
+![Contextual menu edit ERDV](<lib/Contextual menu edit ERDV.png>)
 
 &nbsp;
 
@@ -40,7 +40,7 @@ Editing an ER Diagram View name or membership is done from the contextual menu o
 
 In this dialog, you may edit the name of the Diagram View and modify the selection of the entities selected:
 
-![ERDV editor](<lib/ERDV%20editor.png>)
+![ERDV editor](<lib/ERDV editor.png>)
 
 &nbsp;
 

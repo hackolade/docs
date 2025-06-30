@@ -17,7 +17,7 @@ According to [json.org](<https://www.json.org/json-en.html> "target=\"\_blank\""
 
 An *object* is an unordered set of name/value pairs.&nbsp; An *object* begins with a **{**&#8202;*left brace* and end with a **}**&#8202;*right brace*.&nbsp; Each name is followed by a **:**&#8202;*colon* and the name/value pairs are separated by a **,**&#8202;*comma*.
 
-![JSON object syntax](<lib/JSON%20object%20syntax.png>)
+![JSON object syntax](<lib/JSON object syntax.png>)
 
 &nbsp;
 
@@ -25,13 +25,13 @@ An *array* is an ordered collection of values.&nbsp; An *array* begins with a **
 
 &nbsp;
 
-![JSON array syntax](<lib/JSON%20array%20syntax.png>)
+![JSON array syntax](<lib/JSON array syntax.png>)
 
 &nbsp;
 
 A *value* can be a *string* in double quotes, or a *number*, or **true** or **false** or **null**, or an *object* or an *array*. These structures can be nested.
 
-![JSON array syntax](<lib/JSON%20value%20syntax.png>)
+![JSON array syntax](<lib/JSON value syntax.png>)
 
 &nbsp;
 
@@ -39,7 +39,7 @@ A *value* can be a *string* in double quotes, or a *number*, or **true** 
 
 Keys must be strings (text) and values must be valid JSON data types: string, number, another JSON object, array, boolean or null.
 
-![JSON key-value pairs](<lib/JSON%20key-value%20pairs.png>)
+![JSON key-value pairs](<lib/JSON key-value pairs.png>)
 
 &nbsp;
 
@@ -49,7 +49,7 @@ Keys must be strings (text) and values must be valid JSON data types: string, nu
 
 There are infinite ways to organize JSON objects, depending on your needs. It can be as simple as a list or attributes (keys) and values, or it can become very complex with nested JSON objects, arrays of JSON objects, arrays inside attributes, etc...
 
-![JSON document object](<lib/JSON%20document%20object.png>)
+![JSON document object](<lib/JSON document object.png>)
 
 &nbsp;
 
@@ -68,7 +68,7 @@ One of the big advantages of document databases such as MongoDB, Couchbase, Docu
 
 The benefits of a single document atomicity with embedded objects is best illustrated with a shopping cart or an invoice.&nbsp; With relational databases, the storage of this information would require multiple tables with foreign keys, implying that data is split between all these tables when storing the data. &nbsp;
 
-![JSON order normalized structure](<lib/JSON%20order%20normalized%20structure.png>)
+![JSON order normalized structure](<lib/JSON order normalized structure.png>)
 
 &nbsp;
 
@@ -82,7 +82,7 @@ With a JSON, it make a lot of sense to gather all this information in a single a
 
 &nbsp;
 
-![JSON order denormalized structure](<lib/JSON%20order%20denormalized%20structure.png>)
+![JSON order denormalized structure](<lib/JSON order denormalized structure.png>)
 
 &nbsp;
 
@@ -132,25 +132,25 @@ The novel added-value provided by Hackolade Studio is its ability to represent n
 
 If you use a traditional ERD tool to represent the above order document, it can only create a separate box for each nested object, something like this:
 
-![JSON order normalized ERD](<lib/JSON%20order%20normalized%20ERD.png>)
+![JSON order normalized ERD](<lib/JSON order normalized ERD.png>)
 
 &nbsp;
 
 We think that this is a fundamentally flawed approach.&nbsp; One that is neither user-friendly nor scalable, particularly in the context of document databases with many different databases.&nbsp; We prefer to present the schema of the JSON in a single atomic unit which respects the structure, the sequence, and the indentation of the document:
 
-![JSON order ERD](<lib/JSON%20order%20ERD.png>)
+![JSON order ERD](<lib/JSON order ERD.png>)
 
 &nbsp;
 
 We supplement this view with a hierarchical schema view which is sometimes preferred by users to manipulated nested objects:
 
-![Image](<lib/JSON%20order%20hierarchical%20schema%20view.png>)
+![Image](<lib/JSON order hierarchical schema view.png>)
 
 &nbsp;
 
 And finally, we facilitate the linking of multiple documents in an Entity-Relationship Diagram:
 
-![Image](<lib/JSON%20multiple%20entity%20ERD.png>)
+![Image](<lib/JSON multiple entity ERD.png>)
 
 &nbsp;
 

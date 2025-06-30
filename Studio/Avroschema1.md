@@ -6,7 +6,7 @@ Hackolade dynamically generates Avro schema for the structure created with the a
 
 The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
 
-![Avro schema forward-engineering](<lib/Avro%20schema%20forward-engineering.png>)
+![Avro schema forward-engineering](<lib/Avro schema forward-engineering.png>)
 
 &nbsp;
 

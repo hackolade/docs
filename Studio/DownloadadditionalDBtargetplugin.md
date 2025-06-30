@@ -4,7 +4,7 @@ The latest version of each plugin is always available for download from the Plug
 
 &nbsp;
 
-![Plugin Manager menu new](<lib/Plugin%20Manager%20menu%20new.png>)
+![Plugin Manager menu new](<lib/Plugin Manager menu new.png>)
 
 &nbsp;
 
@@ -12,13 +12,13 @@ The latest version of each plugin is always available for download from the Plug
 
 You may choose which plugin to install on your computer.
 
-![Plugin - manager available custom props](<lib/Plugin%20-%20manager%20available%20custom%20props.png>)
+![Plugin - manager available custom props](<lib/Plugin - manager available custom props.png>)
 
 &nbsp;
 
 This will result in the plugin appearing in the Installed tab of the plugin manager.
 
-![Plugin - Manager installed custom props](<lib/Plugin%20-%20Manager%20installed%20custom%20props.png>)
+![Plugin - Manager installed custom props](<lib/Plugin - Manager installed custom props.png>)
 
 &nbsp;
 
@@ -36,21 +36,25 @@ Does&nbsp; your organization prevent access to GitHub?&nbsp; You may need to hav
 
 &nbsp;
 
-There is an alternative: you may download the plugin from [our GitHub repo](<https://github.com/hackolade> "target=\"\_blank\""), then go to the plugin of your choice, and click on link in the About section on the right-hand side of the page:
-
-&nbsp;
-
-![GitHub Plugin Download](<lib/GitHub%20Plugin%20Download.png>)
+There is an alternative: you may download the plugin from [our GitHub repo](<https://github.com/hackolade> "target=\"\_blank\""), then go to the plugin of your choice, and click on link in the About section on the right-hand side of the page:
 
 &nbsp;
 
 &nbsp;
 
-This link leads you to a page where you can click on the Source code (zip) link to download the zip file:
+&nbsp;
+
+![GitHub Plugin Download](<lib/GitHub Plugin Download.png>)
 
 &nbsp;
 
-![GitHub Plugin Download step 2](<lib/GitHub%20Plugin%20Download%20step%202.png>)
+This link leads you to a page with the latest release, where you can click on the link **\<plugin\>-\<version\>.zip** link to download the zip file:
+
+&nbsp;
+
+&nbsp;
+
+![GitHub Plugin Download step 2](<lib/GitHub Plugin Download step 2.png>)
 
 &nbsp;
 
@@ -64,7 +68,7 @@ Then to install the plugin, go to Help \> Plugin Manager and click the button In
 
 &nbsp;
 
-![Plugin Manager - Install from zip](<lib/Plugin%20Manager%20-%20Install%20from%20zip.png>)
+![Plugin Manager - Install from zip](<lib/Plugin Manager - Install from zip.png>)
 
 &nbsp;
 
@@ -74,7 +78,7 @@ Then to install the plugin, go to Help \> Plugin Manager and click the button In
 
 While you, as a user may have the rights to the folder where plugins are installed, it is possible that some environments limit the rights of our application.&nbsp; It can be a virtualization or sandboxing setup or most likely an anti-virus software. &nbsp;
 
-![Plugins - Virus Threat Protection error](<lib/Plugins%20-%20Virus%20Threat%20Protection%20error.png>)
+![Plugins - Virus Threat Protection error](<lib/Plugins - Virus Threat Protection error.png>)
 
 &nbsp;
 
@@ -94,7 +98,7 @@ If your anti-virus is Windows Defender, you, or your IT department, can create a
 
 \- In the Windows Security window, click on "Virus \& threat protection."
 
-![Image](<lib/Plugins%20-%20Virus%20Threat%20Protection.png>)
+![Image](<lib/Plugins - Virus Threat Protection.png>)
 
 &nbsp;
 
@@ -106,7 +110,7 @@ If your anti-virus is Windows Defender, you, or your IT department, can create a
 
 &nbsp;
 
-![Plugins Windows Defender Manage settings](<lib/Plugins%20Windows%20Defender%20Manage%20settings.png>)
+![Plugins Windows Defender Manage settings](<lib/Plugins Windows Defender Manage settings.png>)
 
 &nbsp;
 
@@ -120,7 +124,7 @@ If your anti-virus is Windows Defender, you, or your IT department, can create a
 
 &nbsp;
 
-![Plugins Windows Defender add exclusion](<lib/Plugins%20Windows%20Defender%20add%20exclusion.png>)
+![Plugins Windows Defender add exclusion](<lib/Plugins Windows Defender add exclusion.png>)
 
 &nbsp;
 
@@ -136,7 +140,7 @@ If you get the message that you don't have the permission to create this exclusi
 
 &nbsp;
 
-![Image](<lib/Plugins%20-%20Windows%20Defender%20no%20permission.png>)
+![Image](<lib/Plugins - Windows Defender no permission.png>)
 
 &nbsp;
 
@@ -146,7 +150,7 @@ If you get the message that you don't have the permission to create this exclusi
 
 \- Navigate to the folder **C:\\Users\\%username%\\.hackolade** and select it.
 
-![Plugins Windows Defender add folder path](<lib/Plugins%20Windows%20Defender%20add%20folder%20path.png>)
+![Plugins Windows Defender add folder path](<lib/Plugins Windows Defender add folder path.png>)
 
 &nbsp;
 
@@ -164,7 +168,7 @@ Remember to replace **%username%** in the folder path with the actual username. 
 
 In the Installed tab of the Plugin Manager, you may see multiple buttons:
 
-![Plugin Manager Installed tab - buttons](<lib/Plugin%20Manager%20Installed%20tab%20-%20buttons.png>)
+![Plugin Manager Installed tab - buttons](<lib/Plugin Manager Installed tab - buttons.png>)
 
 &nbsp;
 

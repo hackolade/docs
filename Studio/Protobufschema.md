@@ -8,7 +8,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![Protobuf schema forward-engineering](<lib/Protobuf%20schema%20forward-engineering.png>)
+![Protobuf schema forward-engineering](<lib/Protobuf schema forward-engineering.png>)
 
 &nbsp;
 

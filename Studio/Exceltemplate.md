@@ -20,7 +20,7 @@ To import the content of this Excel, use the Hackolade function Tools \> Reverse
 
 &nbsp;
 
-![Tools - Reverse-Engineer - Excel Template](<lib/Tools%20-%20Reverse-Engineer%20-%20Excel%20Template.png>)
+![Tools - Reverse-Engineer - Excel Template](<lib/Tools - Reverse-Engineer - Excel Template.png>)
 
 &nbsp;
 
@@ -50,13 +50,13 @@ So as to not create instability or any kind of model corruption at time of impor
 
 If validation is successful, the following message is displayed:
 
-![Excel reverse-engineering validation - Success](<lib/Excel%20RE%20validation%20-%20Success.png>)
+![Excel reverse-engineering validation - Success](<lib/Excel RE validation - Success.png>)
 
 &nbsp;
 
 But if things don't validate properly, you may get a message such as this one:
 
-![Excel reverse-engineering validation - error](<lib/Excel%20RE%20validation%20-%20error.png>)
+![Excel reverse-engineering validation - error](<lib/Excel RE validation - error.png>)
 
 &nbsp;
 
@@ -82,11 +82,11 @@ To add a nested object, itself made of attributes, you can extent the dot notati
 
 \- one line for the object, for example *user.address* with a data type *object* (or document or map, depending on the target)
 
-![Image](<lib/Excel%20-%20object.png>)
+![Image](<lib/Excel - object.png>)
 
 \- a line per attribute of the object, for example:
 
-![Image](<lib/Excel%20-%20Object%20attributes.png>)
+![Image](<lib/Excel - Object attributes.png>)
 
 while following the guidelines in 1) above.&nbsp; Nesting can go several levels deep, within the limits of each target.
 
@@ -100,7 +100,7 @@ For arrays, the same dot notation is supported.&nbsp; For example to add an arra
 
 \- one line for the array item, with the data type of the item&nbsp; Array items don't have names.
 
-![Image](<lib/Excel%20-%20Array.png>)
+![Image](<lib/Excel - Array.png>)
 
 &nbsp;
 

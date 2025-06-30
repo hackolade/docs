@@ -20,7 +20,7 @@ In the Hackolade connection settings dialog, give a meaningful name to the conne
 
 &nbsp;
 
-![DocumentDB connection tab](<lib/DocumentDB%20connection%20tab.png>)
+![DocumentDB connection tab](<lib/DocumentDB connection tab.png>)
 
 &nbsp;
 
@@ -30,7 +30,7 @@ In the Authentication tab, please enter your username and password:
 
 &nbsp;
 
-![DocumentDB authentication tab](<lib/DocumentDB%20authentication%20tab.png>)
+![DocumentDB authentication tab](<lib/DocumentDB authentication tab.png>)
 
 &nbsp;
 
@@ -38,7 +38,7 @@ As indicated in Step 6 of the EC2 [instructions,](<https://docs.aws.amazon.com/d
 
 &nbsp;
 
-![DocumentDB SSL tab](<lib/DocumentDB%20SSL%20tab.png>)
+![DocumentDB SSL tab](<lib/DocumentDB SSL tab.png>)
 
 &nbsp;
 
@@ -50,7 +50,7 @@ The private key for your EC2 instance is created in the left menu of your EC2 in
 
 &nbsp;
 
-![DocumentDB SSH tab](<lib/DocumentDB%20SSH%20tab.png>)
+![DocumentDB SSH tab](<lib/DocumentDB SSH tab.png>)
 
 &nbsp;
 
@@ -60,9 +60,9 @@ Finally, in order to retrieve the cluster metadata, go to the Authentication tab
 
 &nbsp;
 
-![DocumentDB AWS access tab](<lib/DocumentDB%20AWS%20access%20tab.png>)
+![DocumentDB AWS access tab](<lib/DocumentDB AWS access tab.png>)
 
-If you wish to handle AWS authentication through the [credentials file](<https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html> "target=\"\_blank\""), you may leave blank the Access Key ID and Secret Access Key fields, knowing that Hackolade supplies credentials following the recommendations described [here](<https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html> "target=\"\_blank\""). Or use a temporary [session token](<https://docs.aws.amazon.com/IAM/latest/UserGuide/id\_credentials\_temp\_use-resources.html> "target=\"\_blank\"").
+If you wish to handle AWS authentication through the [credentials file](<https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html> "target=\"\_blank\""), you may leave blank the Access Key ID and Secret Access Key fields, knowing that Hackolade Studio supplies credentials following the recommendations described [here](<https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html> "target=\"\_blank\""). Or use a temporary [session token](<https://docs.aws.amazon.com/IAM/latest/UserGuide/id\_credentials\_temp\_use-resources.html> "target=\"\_blank\"").
 
 &nbsp;
 

@@ -1,5 +1,13 @@
 # From PowerDesigner
 
+While there is still the possibility to use the XSD method described below, there is a much more powerful and easy method of directly reading PowerDesigner files.&nbsp; See [this page](<PowerDesigner.md>) for more details.
+
+&nbsp;
+
+&nbsp;
+
+## Deprecated
+
 If you have data models in PowerDesigner and want to leverage them in Hackolade Studio, you need to first export them to XSD, following the instructions below.&nbsp; Then you should consult [this page](<XSDXMLSchemaDefinition.md>) for an overview of the import functionality in Hackolade Studio.
 
 &nbsp;
@@ -30,7 +38,7 @@ In PowerDesigner with your logical data model open, go to Tools \> Generate Phys
 
 &nbsp;
 
-![PowerDesigner LSM to PDM menu](<lib/PowerDesigner%20LSM%20to%20PDM%20menu.png>)
+![PowerDesigner LSM to PDM menu](<lib/PowerDesigner LSM to PDM menu.png>)
 
 &nbsp;
 
@@ -38,7 +46,7 @@ In PowerDesigner with your logical data model open, go to Tools \> Generate Phys
 
 Then choose the DBMS platform for the physical model
 
-![PowerDesigner LSM to PDM general tab](<lib/PowerDesigner%20LSM%20to%20PDM%20general%20tab.png>)
+![PowerDesigner LSM to PDM general tab](<lib/PowerDesigner LSM to PDM general tab.png>)
 
 &nbsp;
 
@@ -66,13 +74,13 @@ In PowerDesigner with your physical data model open, go to Tools \> Generate XML
 
 &nbsp;
 
-![PowerDesigner PDM to XSM menu](<lib/PowerDesigner%20PDM%20to%20XSM%20menu.png>)
+![PowerDesigner PDM to XSM menu](<lib/PowerDesigner PDM to XSM menu.png>)
 
 &nbsp;
 
 Then give your model a name:
 
-![PowerDesigner - Export to XML General](<lib/PowerDesigner%20-%20Export%20to%20XML%20General.png>)
+![PowerDesigner - Export to XML General](<lib/PowerDesigner - Export to XML General.png>)
 
 &nbsp;
 
@@ -80,7 +88,7 @@ Then give your model a name:
 
 And in the Details tab, select the following options:
 
-![PowerDesigner - Export to XML Details](<lib/PowerDesigner%20-%20Export%20to%20XML%20Details.png>)
+![PowerDesigner - Export to XML Details](<lib/PowerDesigner - Export to XML Details.png>)
 
 &nbsp;
 
@@ -102,7 +110,7 @@ Click **OK** to begin generation.
 
 You may have to setup the XML extension appropriately:
 
-![PowerDesigner XML extension](<lib/PowerDesigner%20XML%20extension.png>)
+![PowerDesigner XML extension](<lib/PowerDesigner XML extension.png>)
 
 &nbsp;
 
@@ -116,7 +124,7 @@ With your XSM model open, go to Language \> Generate XML Schema Definition File
 
 &nbsp;
 
-![PowerDesigner XSM to XSD menu](<lib/PowerDesigner%20XSM%20to%20XSD%20menu.png>)
+![PowerDesigner XSM to XSD menu](<lib/PowerDesigner XSM to XSD menu.png>)
 
 &nbsp;
 
@@ -124,7 +132,7 @@ With your XSM model open, go to Language \> Generate XML Schema Definition File
 
 Choose the destination for your output
 
-![PowerDesigner XSM to XSD destination](<lib/PowerDesigner%20XSM%20to%20XSD%20destination.png>)
+![PowerDesigner XSM to XSD destination](<lib/PowerDesigner XSM to XSD destination.png>)
 
 &nbsp;
 
@@ -150,7 +158,7 @@ As PowerDesigner represents some Foreign Key relationships with the embedding of
 
 &nbsp;
 
-![PowerDesigner XSD to Hackolade dialog](<lib/PowerDesigner%20XSD%20to%20Hackolade%20dialog.png>)
+![PowerDesigner XSD to Hackolade dialog](<lib/PowerDesigner XSD to Hackolade dialog.png>)
 
 &nbsp;
 

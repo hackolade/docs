@@ -26,13 +26,13 @@ Still on terminology, an entity (of a data model) representing a node is called 
 
 Data modeling for graph databases must of course follow similar principles.&nbsp; This is why we introduced a special Graph Diagram in plugins for property graph database targets:
 
-![Tutorial - Graph diagram](<lib/Tutorial%20-%20Graph%20diagram.png>)
+![Tutorial - Graph diagram](<lib/Tutorial - Graph diagram.png>)
 
 &nbsp;
 
 While the above is a much more user-friendly view of a graph data model, we nevertheless keep an Entity-Relationship view.&nbsp; Note that the ERD is adapted to accommodate attributes (aka properties) for relationships:
 
-![Image](<lib/Tutorial%20-%20Graph%20ERD.png>)
+![Image](<lib/Tutorial - Graph ERD.png>)
 
 &nbsp;
 
@@ -44,7 +44,7 @@ The creation of data model for graph databases using this ERD is similar to what
 
 Let's see with an example how to create a data model for a property graph database.&nbsp; You first create a new model, having chosen a graph database such as Neo4j.&nbsp; You create a container for the database, then right-click in it and choose Add Node Label.
 
-![Image](<lib/Tutorial%20Graph%20Add%20Node%20Label.png>)
+![Image](<lib/Tutorial Graph Add Node Label.png>)
 
 &nbsp;
 
@@ -52,7 +52,7 @@ Let's see with an example how to create a data model for a property graph databa
 
 A shape will be added to the diagram, to which you can assign a name, for example Person:
 
-![Image](<lib/Graph%20node%20label.png>)
+![Image](<lib/Graph node label.png>)
 
 &nbsp;
 
@@ -62,13 +62,13 @@ The different controls appearing inside the circle when you hover over the shape
 
 You can follow the same process to create a second node label, or you can click on the control to add an edge label&nbsp; (top right control in the circle) then click elsewhere in the container, which will add both an additional node label, plus the edge label between the 2.&nbsp; After naming the different objects, you get something like this:
 
-![Tutorial - Graph 2 nodes 1 edge](<lib/Tutorial%20-%20Graph%202%20nodes%201%20edge.png>)
+![Tutorial - Graph 2 nodes 1 edge](<lib/Tutorial - Graph 2 nodes 1 edge.png>)
 
 &nbsp;
 
 It is now time to create some properties to the node labels and edge label:
 
-![Image](<lib/Tutorial%20-%20Graph%202%20nodes%201%20edge%20with%20attribut.png>)
+![Image](<lib/Tutorial - Graph 2 nodes 1 edge with attribut.png>)
 
 &nbsp;
 
@@ -78,7 +78,7 @@ You should note a couple of toolbar buttons to control the layout:
 
 \- the display options controlling the orientation of the edge label names, as well as whether attribute boxes should appear or not
 
-![Tutorial - Graph display options](<lib/Tutorial%20-%20Graph%20display%20options.png>)
+![Tutorial - Graph display options](<lib/Tutorial - Graph display options.png>)
 
 &nbsp;
 

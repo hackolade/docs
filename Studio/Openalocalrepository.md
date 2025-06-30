@@ -2,7 +2,7 @@
 
 If you already have a local copy of the remote repository, then you just need to (re-)open it. No need to clone it again.
 
-![Image](<lib/Workgroup%20open.png>)
+![Image](<lib/Workgroup open.png>)
 
 You have different options for opening a local repository in Hackolade Studio:
 
@@ -13,7 +13,7 @@ You have different options for opening a local repository in Hackolade Studio:
 
 &nbsp;
 
-![Image](<lib/Workgroup%20open%20recent.png>)
+![Image](<lib/Workgroup open recent.png>)
 
 Hackolade Studio remembers previously opened repositories.&nbsp; So you have additional options if you had previously opened that repository:
 
@@ -26,4 +26,4 @@ Note that Hackolade Studio automatically reopens the last repository by default 
 
 &nbsp;
 
-![Image](<lib/Workgroup%20tools%20options%20repository.png>)
+![Image](<lib/Workgroup tools options repository.png>)

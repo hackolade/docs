@@ -4,25 +4,25 @@
 
 When you make changes in a data model, or in any other file, and if you (auto-)save these changes, you see a badge popping up on the icon of the repository view in the left bar. This badge is a reminder that you still need to [commit](<Concepts1.md>) your changes in your local repository, and to [push](<Concepts1.md>) them to the remote repository.
 
-![Workgroup reposity change badge](<lib/Workgroup%20reposity%20change%20badge.png>)
+![Workgroup reposity change badge](<lib/Workgroup reposity change badge.png>)
 
 &nbsp;
 
 When you open the repository view while having uncommitted changes, you see the number of modified files next to the menu entry "Commit local changes".&nbsp; That counter is colored, the intent being to remind that you need to commit your changes before pushing them. Remember that a same commit can include changes made in multiple files.
 
-![Workgroup explore models changes](<lib/Workgroup%20explore%20models%20changes.png>)
+![Workgroup explore models changes](<lib/Workgroup explore models changes.png>)
 
 &nbsp;
 
 Click on "Commit local changes" to list actions that are related to local changes.&nbsp; The primary action - "commit" in this case - has a blue header.&nbsp; If secondary actions are available, they have a grey header if they are not destructive, and a red header otherwise.
 
-![Workgroup commit changes](<lib/Workgroup%20commit%20changes.png>)
+![Workgroup commit changes](<lib/Workgroup commit changes.png>)
 
 &nbsp;
 
 You can show the sequence of Git commands executed by Hackolade Studio, if you are familiar with the Git command line interface and want to better understand what happens under the hood,&nbsp;
 
-![Image](<lib/Workgroup%20commit%20git%20commands.png>)
+![Image](<lib/Workgroup commit git commands.png>)
 
 &nbsp;
 
@@ -46,7 +46,7 @@ Prior to committing your changes, you might want to review them.&nbsp; By pressi
 
 . &nbsp;
 
-![Workgroup commits comparison](<lib/Workgroup%20-%20History%20commits%20comparison.png>)
+![Workgroup commits comparison](<lib/Workgroup - History commits comparison.png>)
 
 &nbsp;
 
@@ -56,7 +56,7 @@ To exclude some modified models from your commit,&nbsp; simply uncheck the check
 
 &nbsp;
 
-![Image](<lib/Workgroup%20commit%20partial.png>)
+![Image](<lib/Workgroup commit partial.png>)
 
 &nbsp;
 
@@ -72,7 +72,7 @@ Imagine that you are busy working on a data model.&nbsp; You made some changes b
 
 &nbsp;
 
-![Workgroup stash changes](<lib/Workgroup%20stash%20changes.png>)
+![Workgroup stash changes](<lib/Workgroup stash changes.png>)
 
 &nbsp;
 
@@ -94,7 +94,7 @@ You may decide that the changes previously saved but not yet committed, should n
 
 &nbsp;
 
-![Workgroup discard changes confirmation](<lib/Workgroup%20discard%20changes%20confirmation.png>)
+![Workgroup discard changes confirmation](<lib/Workgroup discard changes confirmation.png>)
 
 &nbsp;
 
@@ -104,7 +104,27 @@ To exclude some modified models from being discarded,&nbsp; simply uncheck the c
 
 &nbsp;
 
-![Image](<lib/Workgroup%20discard%20changes.png>)
+![Image](<lib/Workgroup discard changes.png>)
+
+&nbsp;
+
+&nbsp;
+
+## Sign commits with a digital signature
+
+Adding a digital signature to your commit helps confirm that it genuinely came from you and not someone else impersonating you. It’s a cryptographic tool used to verify the commit’s authenticity.&nbsp; Git providers generally allow signature with SSH and GPG, sometimes with X.509 and others, with the [exception, apparently, of Azure DevOps Repos](<https://developercommunity.visualstudio.com/t/show-whether-commits-are-verified-with-gpg-key-on/383281> "target=\"\_blank\"").
+
+In all cases, this option must be configured outside of Hackolade Studio.&nbsp; When configured properly, Hackolade Studio simply invoke commit routines that leverage whatever way the Git client has been configured.
+
+Please follow the instructions of your Git provider:&nbsp;
+
+\- Bitbucket: [https://support.atlassian.com/bitbucket-cloud/docs/learn-how-to-use-commits/](<https://support.atlassian.com/bitbucket-cloud/docs/learn-how-to-use-commits/> "target=\"\_blank\"")
+
+\- GitHub: [https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits](<https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits> "target=\"\_blank\"")
+
+\- GitLab: [https://docs.gitlab.com/user/project/repository/signed\_commits/](<https://docs.gitlab.com/user/project/repository/signed\_commits/> "target=\"\_blank\"")
+
+&nbsp;
 
 &nbsp;
 

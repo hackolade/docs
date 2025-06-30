@@ -14,7 +14,7 @@ Hackolade was specially adapted to support the data modeling of MarkLogic, inclu
 
 The data model in the picture below results from the reverse-engineering of a sample ordering&nbsp; application imported in MarkLogic.
 
-![MarkLogic workspace](<lib/MarkLogic%20workspace.png>)
+![MarkLogic workspace](<lib/MarkLogic workspace.png>)
 
 &nbsp;
 
@@ -44,7 +44,7 @@ GeoSpatial structure templates:
 
 Given the complex geospatial searches capability of MarkLogic, Hackolade facilitates the creation of geoJSON types (point, box, circle, polygon, linestring) with pre-defined templates:
 
-![MarkLogic geospatial](<lib/MarkLogic%20geospatial.png>)
+![MarkLogic geospatial](<lib/MarkLogic geospatial.png>)
 
 &nbsp;
 
@@ -52,13 +52,13 @@ Triple structure template:
 
 Semantics enables the discovery of facts and relationships in data, and provides context for these facts.&nbsp; MarkLogic allows the natively store, search, and manage RDF triples, queried with SPARQL.&nbsp; Hackolade facilitates the creatio of triple structures with a predefined template:
 
-![MarkLogic triple](<lib/MarkLogic%20triple.png>)
+![MarkLogic triple](<lib/MarkLogic triple.png>)
 
 Quad structure template:
 
 A quad is a representation of subject, predicate, and object, plus an additional resource for the context of the triple.
 
-![MarkLogic quad](<lib/MarkLogic%20quad.png>)
+![MarkLogic quad](<lib/MarkLogic quad.png>)
 
 &nbsp;
 
@@ -84,7 +84,7 @@ Forward-engineering of JSON Schema is available for use by [https://docs.marklog
 
 The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
 
-![MarkLogic Forward-Engineering](<lib/MarkLogic%20Forward-Engineering.png>)
+![MarkLogic Forward-Engineering](<lib/MarkLogic Forward-Engineering.png>)
 
 ## Reverse-Engineering
 

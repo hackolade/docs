@@ -4,5 +4,5 @@ HBase can be configured to provide User Authentication, which ensures that only 
 
 &nbsp;
 
-![HBase connection settings](<lib/HBase%20connection%20settings.png>)
+![HBase connection settings](<lib/HBase connection settings.png>)
 

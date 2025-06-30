@@ -26,13 +26,13 @@ Documentation can quickly grow to a very large size, so it is recommended to use
 
 Parameters are maintained in Tools \> Options \> Documentation to select the segments and behavior.&nbsp; .
 
-![Tools - Options - Documentation](<lib/Tools%20-%20Options%20-%20Documentation.png>)
+![Tools - Options - Documentation](<lib/Tools - Options - Documentation.png>)
 
 ### Selection
 
 Each time you generate documentation for a data model, you will be prompted to select the the objects of the data models that you wish to be included:
 
-![Generate documentation - object selection](<lib/Generate%20documentation%20-%20object%20selection.png>)
+![Generate documentation - object selection](<lib/Generate documentation - object selection.png>)
 
 You may deselect groups of objects or individual objects.
 
@@ -64,7 +64,7 @@ You may want to generate PNG or PDF files for your Entity-Relationship Diagrams 
 
 &nbsp;
 
-![Tutorial - Print diagram](<lib/Tutorial%20-%20Print%20diagram.png>)
+![Tutorial - Print diagram](<lib/Tutorial - Print diagram.png>)
 
 &nbsp;
 

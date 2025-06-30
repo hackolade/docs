@@ -12,7 +12,7 @@ In Hackolade, views constitute another type of object in the Entity Relationship
 
 &nbsp;
 
-![Views - ERD](<lib/Views%20-%20ERD.png>)
+![Views - ERD](<lib/Views - ERD.png>)
 
 &nbsp;
 
@@ -24,7 +24,7 @@ They are visually distinguished by the dotted-line box plus the icon in the top 
 
 To build your new view, you add fields by picking existing ones from the collection.&nbsp; Right click on the the root box in the hierarchical schema view to get the contextual menu, then select 'Pick from field list':
 
-![Views - contextual menu](<lib/Views%20-%20contextual%20menu.png>)
+![Views - contextual menu](<lib/Views - contextual menu.png>)
 
 A dialog containing all the fields of the underlying collection lets you pick the field you want to include (multiple selections will be added at a later time.)
 
@@ -32,7 +32,7 @@ A dialog containing all the fields of the underlying collection lets you pick th
 
 A corresponding box is added to the hierarchical schema:
 
-![Views - schema tree view](<lib/Views%20-%20DTD.png>)
+![Views - schema tree view](<lib/Views - DTD.png>)
 
 &nbsp;
 
@@ -104,13 +104,13 @@ In MongoDB, it is possible to link related data from multiple collections into o
 
 &nbsp;
 
-![Views - lookup contextual menu](<lib/Views%20-%20lookup%20contextual%20menu.png>)
+![Views - lookup contextual menu](<lib/Views - lookup contextual menu.png>)
 
 &nbsp;
 
 You then get prompted to fill the lookup fields:
 
-![Views - add lookup](<lib/Views%20-%20add%20lookup.png>)
+![Views - add lookup](<lib/Views - add lookup.png>)
 
 &nbsp;
 

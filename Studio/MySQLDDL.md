@@ -8,7 +8,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![MySQL DDL Forward-Engineering](<lib/MariaDB%20DDL%20Forward-Engineering.png>)
+![MySQL DDL Forward-Engineering](<lib/MariaDB DDL Forward-Engineering.png>)
 
 &nbsp;
 

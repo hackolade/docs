@@ -14,13 +14,13 @@ It is suggested to use the parameters below when exporting models to XSD,&nbsp;
 
 \- if from a physical model:
 
-![ERwin XSD export parameters - physical](<lib/ERwin%20XSD%20export%20parameters%20-%20physical.png>)
+![ERwin XSD export parameters - physical](<lib/ERwin XSD export parameters - physical.png>)
 
 &nbsp;
 
 \- if from a logical model:
 
-![Image](<lib/ERwin%20XSD%20export%20parameters%20-%20logical.png>)
+![Image](<lib/ERwin XSD export parameters - logical.png>)
 
 &nbsp;
 
@@ -64,7 +64,7 @@ The steps are as follows:
 
 &#51;) open in Excel the Subject Area Report.csv file.&nbsp; It contains 2 columns and several rows, for example:
 
-![ERwin - Subject Area Report CSV](<lib/ERwin%20-%20Subject%20Area%20Report%20CSV.png>)
+![ERwin - Subject Area Report CSV](<lib/ERwin - Subject Area Report CSV.png>)
 
 &nbsp;
 
@@ -74,7 +74,7 @@ The steps are as follows:
 
 \- "Entity Name" column of the Subject Area Report must be copied and pasted into the "Entity Name" of the model Excel
 
-![ERwin - Subject Area Report pasted in Excel](<lib/ERwin%20-%20Subject%20Area%20Report%20pasted%20in%20Excel.png>)
+![ERwin - Subject Area Report pasted in Excel](<lib/ERwin - Subject Area Report pasted in Excel.png>)
 
 &nbsp;
 
@@ -86,11 +86,79 @@ The steps are as follows:
 
 Assuming that the Subject Area report matched the model file, the name matching of entities should work as expected and ERDVs will be created inthe model:
 
-![Image](<lib/ERwin%20-%20Subject%20Areas%20created%20as%20ERDVs.png>)
+![Image](<lib/ERwin - Subject Areas created as ERDVs.png>)
 
 &nbsp;
 
 &nbsp;
+
+&nbsp;
+
+## Export User-Defined Properties
+
+In Erwin, you can define custom properties and assign them to the different classes of model objects. These user-defined properties (UDPs) are properties that you create to document and notate the logical and physical object classes.&nbsp; This is equivalent to our own Hackolade Studio [custom properties](<Userdefinedcustomproperties.md>).&nbsp; When migrating your library of Erwin models to Hackolade Studio, it is of course critical to keep those UDP's accumulated with our models.
+
+&nbsp;
+
+![Erwin User-Defined Properties](<lib/Erwin User-Defined Properties.png>)
+
+&nbsp;
+
+Unfortunately, the proprietary format of Erwin files complicates matters, plus the export to XSD does not include UDPs.&nbsp; It is therefore necessary to proceed with some additional steps outlined below:
+
+&nbsp;
+
+One-time setup in Hackolade Studio:
+
+&#49;) Create custom properties for tne target or targets, following instructions in this [how-to guide](<https://hackolade.com/help/Configurecustomproperties.html>) and [video](<https://community.hackolade.com/slides/slide/user-defined-custom-properties-8>).&nbsp; This should be done at the entity/table level and attribute/column/field level.&nbsp; If you have many UDPs for each level, it may be useful to create a custom tab for your custom properties.
+
+&nbsp;
+
+In Erwin:&nbsp;
+
+&#50;) From the model file, generate the XSD according to the instructions above in this page.
+
+&#51;) Use the Report Designer to create a report including UDPs at the entity/table level and attribute/column level, then crete the export for your model.&nbsp;
+
+&nbsp;
+
+In Hackolade Studio
+
+&#52;) Import the XSD into a Hackolade Studio data model.&nbsp; Save it.
+
+&#53;) Generate the Excel export for your Hackolade data model, using [these instructions](<Excelfile.md>).
+
+&nbsp;
+
+In Excel:
+
+&#54;) The export will include empty Excel columns for each of the custom properties defined in step 1):
+
+![Erwin UDPs - HCK model export headings](<lib/Erwin UDPs - HCK model export headings.png>)
+
+&nbsp;
+
+&#55;) For each cell of the custom props columns that you wish to populate, you can create an [XLOOKUP](<https://support.microsoft.com/en-us/office/xlookup-function-b7fd680e-6d10-43e6-84f9-88eae8bf5929> "target=\"\_blank\"") Excel function to find the appropriate cell value in the Excel generated from the Erwin model, for example:
+
+&nbsp;
+
+> \=IF(XLOOKUP($B2,'\[User Defined Property values.xlsx\]Table Level UDP'\!$C$3:$C$6,'\[User Defined Property values.xlsx\]Table Level UDP'\!$K$3:$K$6)=0,"",XLOOKUP($B2,'\[User Defined Property values.xlsx\]Table Level UDP'\!$C$3:$C$6,'\[User Defined Property values.xlsx\]Table Level UDP'\!$K$3:$K$6))
+
+&nbsp;
+
+Great care must be applied to ensure that the proper values are set in the right places.&nbsp; The above can be customized and enhanced with additional logic.
+
+&nbsp;
+
+&#56;) Save the Excel file.
+
+&nbsp;
+
+Back in Hackolade Studio:
+
+&#57;) Import the Excel file into the Hackolade Studio model, using [these instructions](<Exceltemplate.md>).
+
+&#49;0) Double-check that the result corresponds to your expectations.
 
 &nbsp;
 

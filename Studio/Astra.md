@@ -10,7 +10,7 @@ In the Astra console, select the database to which you would like to connect wit
 
 &nbsp;
 
-![DataStax Astra console - connect](<lib/DataStax%20Astra%20console%20-%20connect.png>)
+![DataStax Astra console - connect](<lib/DataStax Astra console - connect.png>)
 
 &nbsp;
 
@@ -20,7 +20,7 @@ In the Hackolade connection settings, choose the Installation option "DataStax A
 
 &nbsp;
 
-![DataStax Astra connection settings](<lib/DataStax%20Astra%20connection%20settings.png>)
+![DataStax Astra connection settings](<lib/DataStax Astra connection settings.png>)
 
 &nbsp;
 
@@ -34,7 +34,7 @@ You must manually enter your username and password in the Authentication tab, as
 
 &nbsp;
 
-![Cassandra authentication](<lib/Cassandra%20authentication.png>)
+![Cassandra authentication](<lib/Cassandra authentication.png>)
 
 &nbsp;
 
@@ -44,7 +44,7 @@ To obtain a token in the Astra console, go to the Settings tab then click on the
 
 &nbsp;
 
-![DataStax Astra console - token request](<lib/DataStax%20Astra%20console%20-%20token%20request.png>)
+![DataStax Astra console - token request](<lib/DataStax Astra console - token request.png>)
 
 &nbsp;
 
@@ -52,7 +52,7 @@ In the resulting screen, make sure to download the CSV:
 
 &nbsp;
 
-![DataStax Astra - token request result](<lib/DataStax%20Astra%20-%20token%20request%20result.png>)
+![DataStax Astra - token request result](<lib/DataStax Astra - token request result.png>)
 
 &nbsp;
 
@@ -60,5 +60,5 @@ In the Hackolade Authentication tab, select the token-based type, and paste the 
 
 &nbsp;
 
-![Cassandra connection auth token](<lib/Cassandra%20connection%20auth%20token.png>)
+![Cassandra connection auth token](<lib/Cassandra connection auth token.png>)
 

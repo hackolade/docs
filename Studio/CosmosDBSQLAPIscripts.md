@@ -10,7 +10,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 The information can be viewed in the Cosmos DB script tab:
 
-![Cosmos DB SQL APi script](<lib/Cosmos%20DB%20SQL%20APi%20script.png>)
+![Cosmos DB SQL APi script](<lib/Cosmos DB SQL APi script.png>)
 
 &nbsp;
 
@@ -20,7 +20,7 @@ A button lets the user apply to a selected Azure instance the script to create c
 
 Or you may export these scripts to a Gremlin file with the menu option Tools \> Forward-Engineering \> Cosmos DB script:
 
-![Cosmos DB SQL API forward-engineering menu](<lib/Cosmos%20DB%20SQL%20API%20forward-engineering%20menu.png>)
+![Cosmos DB SQL API forward-engineering menu](<lib/Cosmos DB SQL API forward-engineering menu.png>)
 
 &nbsp;
 

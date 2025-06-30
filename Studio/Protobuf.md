@@ -24,7 +24,7 @@ Hackolade was specially adapted to support the schema design of Protobuf schema.
 
 &nbsp;
 
-![Image](<lib/Protobuf%20workspace.png>)
+![Image](<lib/Protobuf workspace.png>)
 
 &nbsp;
 
@@ -93,7 +93,7 @@ Protobuf supports different families of data types: [scalar](<https://developers
 
 &nbsp;
 
-![Protobuf data types](<lib/Protobuf%20data%20types.png>)
+![Protobuf data types](<lib/Protobuf data types.png>)
 
 &nbsp;
 
@@ -113,7 +113,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![Image](<lib/Protobuf%20schema%20forward-engineering.png>)
+![Image](<lib/Protobuf schema forward-engineering.png>)
 
 &nbsp;
 
@@ -143,7 +143,7 @@ With Hackolade Studio, you can reverse-engineer Protobuf files located on:
 
 \- Amazon S3
 
-\- Azure Blog Storage
+\- Azure Blob Storage
 
 \- Azure Data Lake Storage (ADLS) Gen 1 and Gen 2
 

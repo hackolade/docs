@@ -12,6 +12,10 @@ The application is shipped as a signed .exe file with an installation wizard aut
 
 **Warning:** Do NOT install Hackolade in the AppData directory.  You should select either Program Files, or C:\\Hackolade or some other place where you have Write rights.&nbsp; AppData is for application *data*, not application *programs*.
 
+![Installation error - AppData folder](<lib/Installation error - AppData folder.png>)
+
+&nbsp;
+
 &nbsp;
 
 **Important:** do NOT install a new version of Hackolade while the application is running.&nbsp; All instances of the application must be closed for the upgrade to proceed properly.&nbsp; Please refer to [this page](<Windowsaccessdeniederrorduringup.md>) if you get an error such as this one:
@@ -20,7 +24,7 @@ The application is shipped as a signed .exe file with an installation wizard aut
 
 &nbsp;
 
-![Installation error - application running](<lib/Installation%20error%20-%20application%20running.png>)
+![Installation error - application running](<lib/Installation error - application running.png>)
 
 &nbsp;
 
@@ -30,19 +34,19 @@ After downloading the application from our [download page](<https://hackolade.co
 
 &nbsp;
 
-![Windows install - publisher verification](<lib/Windows%20install%20-%20publisher%20verification.png>)
+![Windows install - publisher verification](<lib/Windows install - publisher verification.png>)
 
 &nbsp;
 
 The wizard starts with a Welcome page stating the version number about to be installed
 
-![Windows install - Welcome page](<lib/Windows%20install%20-%20Welcome%20page.png>)
+![Windows install - Welcome page](<lib/Windows install - Welcome page.png>)
 
 &nbsp;
 
 You need to approve the License Agreement to proceed:
 
-![Windows install - License Agreement](<lib/Windows%20install%20-%20License%20Agreement.png>)
+![Windows install - License Agreement](<lib/Windows install - License Agreement.png>)
 
 &nbsp;
 
@@ -50,7 +54,7 @@ You need to approve the License Agreement to proceed:
 
 A default installation folder is proposed, which may be changed if you wish:
 
-![Windows install - destination folder](<lib/Windows%20install%20-%20destination%20folder.png>)
+![Windows install - destination folder](<lib/Windows install - destination folder.png>)
 
 &nbsp;
 
@@ -70,15 +74,15 @@ Hackolade Studio must be able to write on your local drive: to save data model f
 
 &nbsp;
 
-![Plugins - Virus Threat Protection error](<lib/Plugins%20-%20Virus%20Threat%20Protection%20error.png>)
+![Plugins - Virus Threat Protection error](<lib/Plugins - Virus Threat Protection error.png>)
 
 &nbsp;
 
-![Image](<lib/Anti-virus%20EPERM%20error.png>)
+![Image](<lib/Anti-virus EPERM error.png>)
 
 &nbsp;
 
-![Image](<lib/Anti-virus%20EBUSY%20error.png>)
+![Image](<lib/Anti-virus EBUSY error.png>)
 
 &nbsp;
 
@@ -106,7 +110,7 @@ If your anti-virus is Windows Defender, you, or your IT department, can create a
 
 \- In the Windows Security window, click on "Virus \& threat protection."
 
-![Image](<lib/Plugins%20-%20Virus%20Threat%20Protection.png>)
+![Image](<lib/Plugins - Virus Threat Protection.png>)
 
 &nbsp;
 
@@ -118,7 +122,7 @@ If your anti-virus is Windows Defender, you, or your IT department, can create a
 
 &nbsp;
 
-![Plugins Windows Defender Manage settings](<lib/Plugins%20Windows%20Defender%20Manage%20settings.png>)
+![Plugins Windows Defender Manage settings](<lib/Plugins Windows Defender Manage settings.png>)
 
 &nbsp;
 
@@ -132,7 +136,7 @@ If your anti-virus is Windows Defender, you, or your IT department, can create a
 
 &nbsp;
 
-![Plugins Windows Defender add exclusion](<lib/Plugins%20Windows%20Defender%20add%20exclusion.png>)
+![Plugins Windows Defender add exclusion](<lib/Plugins Windows Defender add exclusion.png>)
 
 &nbsp;
 
@@ -148,7 +152,7 @@ If you get the message that you don't have the permission to create this exclusi
 
 &nbsp;
 
-![Image](<lib/Plugins%20-%20Windows%20Defender%20no%20permission.png>)
+![Image](<lib/Plugins - Windows Defender no permission.png>)
 
 &nbsp;
 
@@ -160,7 +164,7 @@ If you get the message that you don't have the permission to create this exclusi
 
 \- also Navigate to the folder **C:\\Users\\%username%\\AppData\\Roaming** and select it.
 
-![Plugins Windows Defender add folder path](<lib/Plugins%20Windows%20Defender%20add%20folder%20path.png>)
+![Plugins Windows Defender add folder path](<lib/Plugins Windows Defender add folder path.png>)
 
 &nbsp;
 
@@ -188,7 +192,7 @@ The installation program also supports silent mode for command-line installation
 | **/SUPPRESSMSGBOXES** | Suppress message boxes. Only has an effect when combined with '/SILENT' and '/VERYSILENT'. |
 | **/NOCANCEL** | Disables canceling the installation process. |
 | **/DIR="x:\\dirname"** | Overrides the default install directory. |
-| &nbsp; | &nbsp; |
+|  |  |
 
 
 *Example:*
@@ -199,7 +203,27 @@ Hackolade-win64-setup-signed.exe /VERYSILENT /SUPPRESSMSGBOXES /DIR="C:/Users/%u
 
 &nbsp;
 
+## Corporate deployments - how to prevent checks for application updates?
+
+With v8.1.8, we&nbsp; introduced the possibility to disable the optional dialog checking for the availability of an application version newer than the one running on that machine.&nbsp; In any case, note that we **NEVER** do automatic application updates\!&nbsp; Even if the user received a dialog showing that a new application version is present -- notification that can be disabled with a single click of the checkbox, it would take multiple manual actions by the user for the update to be downloaded and installed.&nbsp; We never install or update the desktop application without those actions by a user.
+
 &nbsp;
+
+![Check for new application version](<lib/Check for new application version.png>)
+
+&nbsp;
+
+In the folder where the application executable is installed - generally C:\\Program Files -- there is a text file (in [TOML format](<https://toml.io/en/> "target=\"\_blank\"")) named *hackolade-deployment-policy.toml*&nbsp; If you edit that file, you can add the line below, which is *true* by default, and set it to *false*.
+
+&nbsp;
+
+> \# Whether or not the check for application updates is allowed\
+canCheckForApplicationUpdates = false
+
+\
+&nbsp;
+
+The value set in the file will be carried in the deployed image of the application.
 
 ## Chocolatey
 
@@ -239,31 +263,25 @@ Later, to upgrade to the latest version, as we release every week, run this comm
 
 &nbsp;
 
-> WARNING: User (you) canceled the installation.
+> WARNING: User (you) canceled the installation.\
+ERROR: Running \["C:\\Users\\%username%\\AppData\\Local\\Temp\\chocolatey\\hackolade-studio\\\<version\>\\Hackolade-win64-setup-signed.exe" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- \] was not successful. Exit code was '5'. Exit code indicates the following: User (you) canceled the installation..\
+The install of hackolade-studio was NOT successful.\
+Error while running 'C:\\ProgramData\\chocolatey\\lib\\hackolade-studio\\tools\\chocolateyinstall.ps1'.\
+&nbsp;See log for details.
 
-> ERROR: Running \["C:\\Users\\%username%\\AppData\\Local\\Temp\\chocolatey\\hackolade-studio\\\<version\>\\Hackolade-win64-setup-signed.exe" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- \] was not successful. Exit code was '5'. Exit code indicates the following: User (you) canceled the installation..
-
-> The install of hackolade-studio was NOT successful.
-
-> Error while running 'C:\\ProgramData\\chocolatey\\lib\\hackolade-studio\\tools\\chocolateyinstall.ps1'.
-
-> &nbsp;See log for details.
-
-> &nbsp;
-
-> Chocolatey installed 0/1 packages. 1 packages failed.
-
-> &nbsp;See the log for details (C:\\ProgramData\\chocolatey\\logs\\chocolatey.log).
-
-> &nbsp;
-
-## Licenses on Virtual Machines (or physical computer accessed via Remote Desktop Installations \[RDP\] or equivalent)
-
-As long as you validate and use Hackolade Studio with the same combination of host machine, remote machine, and login, there should be not issue.&nbsp; If any of these 3 parameters is different, access is blocked.&nbsp; In a VM environment, it is critical that the VM instance is persistent to ensure the stability of the 3 parameter combination.
+> \
+Chocolatey installed 0/1 packages. 1 packages failed.\
+&nbsp;See the log for details (C:\\ProgramData\\chocolatey\\logs\\chocolatey.log).
 
 &nbsp;
 
-**Important note:** installing Hackolade on a central computer (whether on a PC or a server, whether the machine is virtual or physical, and whether on premises or in the Cloud) does **not** change the terms of our [License Agreement](<Licenseagreement.md>).&nbsp; Specifically, that license metric is per "per seat", and that a license must be obtained for each device on or from which the Product is used or accessed. When the Product is accessed remotely across using Terminal Server, Remote Desktop, Citrix XenDesktop or an equivalent method, a separate Product license is required to be assigned to each device from which the application is accessed, i.e. not the virtual machine on which the Product is installed.
+## Licenses on Virtual Machines (or physical computer accessed via Remote Desktop Installations \[RDP\] or equivalent)
+
+As long as you validate and use Hackolade Studio with the same combination of host machine, remote machine, and login, there should be no issue.&nbsp; If any of these 3 parameters is different, access is blocked.&nbsp; In a VM environment, it is critical that the VM instance is persistent to ensure the stability of the 3-parameter combination. &nbsp;
+
+&nbsp;
+
+**Important note:** installing Hackolade on a central computer (whether on a PC or a server, whether the machine is virtual or physical, and whether on premises or in the Cloud) does **not** change the terms of our [License Agreement](<Licenseagreement.md>).&nbsp; Specifically, that license metric is per "per seat", and that a license must be obtained for each device on or from which the Product is used or accessed. When the Product is accessed remotely across using Terminal Server, Remote Desktop, Windows App, virtual machine, Citrix, or an equivalent method, a separate Product license is required to be assigned to each device from which the application is accessed, i.e. not the virtual machine on which the Product is installed.
 
 &nbsp;
 
@@ -281,7 +299,11 @@ Example: having 4 Hackolade users on a single VM is the equivalent of having 4 i
 
 ### VM configuration
 
-**Note:** it is critical that the VM setup is such that you access a **persistent** VM instance of the application.&nbsp; Non-persistent instances will cause license issues.
+**Note:** it is critical that the VM setup is such that you access a **persistent** VM instance of the application.&nbsp; Non-persistent instances will cause license issues.&nbsp; See [this article](<https://www.parallels.com/blogs/ras/persistent-vdi-vs-non-persistent/> "target=\"\_blank\"") for a good discussion of persistent vs non-persistent (or stateless) VDI.
+
+&nbsp;
+
+![Persistent vs non-persistent VDI](<lib/Persistent vs non-persistent VDI.png>)
 
 &nbsp;
 

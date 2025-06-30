@@ -8,4 +8,4 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![Parquet forward-engineering](<lib/Parquet%20forward-engineering.png>)
+![Parquet forward-engineering](<lib/Parquet forward-engineering.png>)

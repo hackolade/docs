@@ -30,6 +30,7 @@ The graphical interface lets the user **visualize and maintain a diagram of the 
 
 * a detailed documentation of the model in HTML and PDF formats;
 * scripts
+
   * MongoDB: validator script and Mongoose schema
   * DynamoDB: Create Table and Condition Expression scripts
   * Couchbase: Ottoman schema;&nbsp;
@@ -40,6 +41,7 @@ The graphical interface lets the user **visualize and maintain a diagram of the 
   * Parquet: Parquet schema;
   * DW and RDBMS: DDL scripts;
   * etc...
+
 * sample JSON documents and JSON Schema compliant JSON models.&nbsp;
 
 &nbsp;

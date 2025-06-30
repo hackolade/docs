@@ -2,8 +2,8 @@
 
 There are 2 pre-requisites for using the Workgroup Edition of Hackolade Studio:
 
-* you or your organization must have purchased the Workgroup Edition, or the Workgroup upgrade option to the Professional Edition. This repository feature is not available in the Community, Personal or Professional Editions. If you don't have the Workgroup Edition yet, you may contact us at [sales@hackolade.com](<mailto:sales@hackolade.com?subject=Interested%20in%20Workgroup%20Edition>).
-* you must have a Git client installed on your computer.&nbsp;
+* you or your organization must have purchased the Workgroup Edition, or the Workgroup upgrade option to the Professional Edition. This repository feature is not available in the Community, Personal, or Professional Editions. If you don't have the Workgroup Edition yet, you may contact us at [sales@hackolade.com](<mailto:sales@hackolade.com?subject=Interested%20in%20Workgroup%20Edition>).
+* you must have a Git client installed on your computer, and be allowed to execute Git commands through that client.
 
 &nbsp;
 
@@ -24,7 +24,7 @@ If you do have the Workgroup Edition, then **look at the top bar while in the Re
 
 &nbsp;
 
-![Image](<lib/Workgroup%20invalid%20git%20client.png>)
+![Image](<lib/Workgroup invalid git client.png>)
 
 &nbsp;
 
@@ -34,9 +34,11 @@ If you already have a Git client installed, it should normally be available glob
 
 &nbsp;
 
-![Workgroup tools options repository](<lib/Workgroup%20tools%20options%20repository.png>)
+![Workgroup tools options repository](<lib/Workgroup tools options repository.png>)
 
 &nbsp;
+
+If you encounter an error "[spawn git ENOENT](<ErrorspawngitENOENT.md>)", it is probably because Windows Group Policies is set to prevent access to either the Command Prompt, or PowerShell, or both.&nbsp; Such access is required for the application to execute OS commands such as running Git binary commands.
 
 &nbsp;
 
@@ -70,7 +72,7 @@ You need to install a Git client if one is not yet present on your machine.&nbsp
 
 &nbsp;
 
-![Image](<lib/Workgroup%20Git%20for%20Windows%20Installation.png>)
+![Image](<lib/Workgroup Git for Windows Installation.png>)
 
 &nbsp;
 
@@ -88,6 +90,8 @@ In the .gitconfig file, typically found on Windows in **C:\\Users\\%username%**,
 
 &nbsp;
 
+If you encounter an error "[spawn git ENOENT](<ErrorspawngitENOENT.md>)", it is probably because Windows Group Policies is set to prevent access to either the Command Prompt, or PowerShell, or both.&nbsp; Such access is required for the application to execute OS commands such as running Git binary commands.
+
 &nbsp;
 
 ## Installing the Git executable for Mac
@@ -98,7 +102,7 @@ If you don't have XCode installed on your machine, which is probable if you're n
 
 The easiest approach is to simply open Hackolade Studio which will detect the absence of the Git executable, and propose to perform the installation of the command line developer tools from Apple.&nbsp; This is the recommended approach.
 
-![Mac Git command line developer tools install](<lib/Mac%20Git%20command%20line%20developer%20tools%20install.png>)
+![Mac Git command line developer tools install](<lib/Mac Git command line developer tools install.png>)
 
 &nbsp;
 

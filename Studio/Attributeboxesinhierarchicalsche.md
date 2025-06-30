@@ -18,7 +18,7 @@ This page explains how to introduce new attributes and control them in a hierarc
 
 When you create a new collection, you get an empty hierarchical schema view with a fixed root:
 
-![Tree view - root](<lib/Tree%20view%20-%20root.png>)
+![Tree view - root](<lib/Tree view - root.png>)
 
 &nbsp;
 
@@ -36,7 +36,7 @@ In simple terms, the difference between the 3 actions are:
 
 Not all types of fields are allowed to have attributes.&nbsp; Root is allowed to have only attributes as children, no siblings.&nbsp; Documents are also allowed to have attributes a and arrays are will have array items. &nbsp;
 
-![Tree view - root doc or array box](<lib/Tree%20view%20-%20root%20doc%20or%20array%20box.png>) **plus** ![Contextual menu - Add Attribute selected](<lib/Contextual%20menu%20-%20Add%20Attribute%20selected.png>) **equals** ![Tree view - Child added](<lib/Tree%20view%20-%20Child%20added.png>)
+![Tree view - root doc or array box](<lib/Tree view - root doc or array box.png>) **plus** ![Contextual menu - Add Attribute selected](<lib/Contextual menu - Add Attribute selected.png>) **equals** ![Tree view - Child added](<lib/Tree view - Child added.png>)
 
 &nbsp;
 
@@ -46,7 +46,7 @@ Siblings can be inserted before the selected attribute, at the same level. &nbsp
 
 &nbsp;
 
-![Tree view - Child added](<lib/Tree%20view%20-%20Child%20added.png>) **plus** ![Contextual menu - Insert selected](<lib/Contextual%20menu%20-%20Insert%20selected.png>)**equals** ![Tree view - field inserted](<lib/Tree%20view%20-%20field%20inserted.png>)
+![Tree view - Child added](<lib/Tree view - Child added.png>) **plus** ![Contextual menu - Insert selected](<lib/Contextual menu - Insert selected.png>)**equals** ![Tree view - field inserted](<lib/Tree view - field inserted.png>)
 
 &nbsp;
 
@@ -54,7 +54,7 @@ Siblings can be inserted before the selected attribute, at the same level. &nbsp
 
 Siblings can be appended at the bottom of the same level.
 
-![Tree view - field inserted](<lib/Tree%20view%20-%20field%20inserted.png>) **plus** ![Contextual menu - Append selected](<lib/Contextual%20menu%20-%20Append%20selected.png>) **equals** ![Tree view - field appended](<lib/Tree%20view%20-%20field%20appended.png>)
+![Tree view - field inserted](<lib/Tree view - field inserted.png>) **plus** ![Contextual menu - Append selected](<lib/Contextual menu - Append selected.png>) **equals** ![Tree view - field appended](<lib/Tree view - field appended.png>)
 
 &nbsp;
 
@@ -72,7 +72,7 @@ There are 4 ways to introduce a new attribute
 
 Choose the appropriate option in the Actions menu:
 
-![Menu - Actions](<lib/Menu%20-%20Actions.png>)
+![Menu - Actions](<lib/Menu - Actions.png>)
 
 #### &#51;.1.2 Shortcuts
 
@@ -94,7 +94,7 @@ Press the keyboard shortcut of your choice:
 
 Choose the appropriate icon in the toolbar:
 
-![Tree view - icons](<lib/Tree%20view%20-%20icons.png>)
+![Tree view - icons](<lib/Tree view - icons.png>)
 
 with:
 
@@ -102,19 +102,19 @@ with:
 
 | **Icon** | **Description** |
 | --- | --- |
-| ![Image](<lib/Icons%20-%20addChild.jpeg>) | Add attribute |
-| ![Image](<lib/Icons%20-%20insertField.jpeg>) | Insert field |
-| ![Image](<lib/Icons%20-%20appendField.jpeg>) | Append field |
-| ![Image](<lib/Icons%20-%20moveUp.jpeg>) | Move up |
-| ![Image](<lib/Icons%20-%20moveDown.jpeg>) | Move down |
-| ![Image](<lib/Icons%20-%20toggleDetails.jpeg>) | Toggle details in diagram |
+| ![Image](<lib/Icons - addChild.jpeg>) | Add attribute |
+| ![Image](<lib/Icons - insertField.jpeg>) | Insert field |
+| ![Image](<lib/Icons - appendField.jpeg>) | Append field |
+| ![Image](<lib/Icons - moveUp.jpeg>) | Move up |
+| ![Image](<lib/Icons - moveDown.jpeg>) | Move down |
+| ![Image](<lib/Icons - toggleDetails.jpeg>) | Toggle details in diagram |
 
 
 &nbsp;
 
 and also:
 
-![Toolbar - Edit section](<lib/Toolbar%20-%20Edit%20section.png>)
+![Toolbar - Edit section](<lib/Toolbar - Edit section.png>)
 
 with:
 
@@ -122,18 +122,18 @@ with:
 
 | **Icon** | **Description** |
 | --- | --- |
-| ![Icons - cut](<lib/Icons%20-%20cut.jpeg>) | Cut |
-| ![Icons - copy](<lib/Icons%20-%20copy.jpeg>) | Copy |
-| ![Icons - paste](<lib/Icons%20-%20paste.jpeg>) | Paste |
-| ![Icons - delete](<lib/Icons%20-%20delete.jpeg>) | Del |
-| ![Icons - duplicate](<lib/Icons%20-%20duplicate.jpeg>) | Duplicate |
+| ![Icons - cut](<lib/Icons - cut.jpeg>) | Cut |
+| ![Icons - copy](<lib/Icons - copy.jpeg>) | Copy |
+| ![Icons - paste](<lib/Icons - paste.jpeg>) | Paste |
+| ![Icons - delete](<lib/Icons - delete.jpeg>) | Del |
+| ![Icons - duplicate](<lib/Icons - duplicate.jpeg>) | Duplicate |
 
 
 #### &#51;.1.4 Contextual menu
 
 Right-click on an existing item to display a contextual menu:
 
-![Tree view - contextual menu](<lib/Tree%20view%20-%20contextual%20menu.png>)
+![Tree view - contextual menu](<lib/Tree view - contextual menu.png>)
 
 Only available options are activated, depending on the item selected when you perform the right-click.&nbsp; To understand the different types of attributes, you may want to read this [page](<Attributes.md>).
 
@@ -147,15 +147,15 @@ There are several ways to delete an attribute.&nbsp; You must first select it, t
 
 \- choose Delete from the Edit menu
 
-![Menu Edit - Delete selected](<lib/Menu%20Edit%20-%20Delete%20selected.png>)
+![Menu Edit - Delete selected](<lib/Menu Edit - Delete selected.png>)
 
 \-&nbsp; press the Delete key on your keyboard
 
-\- click the button ![Icons - delete](<lib/Icons%20-%20delete.jpeg>)in the toolbar
+\- click the button ![Icons - delete](<lib/Icons - delete.jpeg>)in the toolbar
 
 \- right-click the attribute and choose Delete
 
-![Contextual menu - Delete selected](<lib/Contextual%20menu%20-%20Delete%20selected.png>)
+![Contextual menu - Delete selected](<lib/Contextual menu - Delete selected.png>)
 
 &nbsp;
 
@@ -165,15 +165,15 @@ When you choose to duplicate an attribute, all the properties of the selected it
 
 \- choose Duplicate from the Edit menu
 
-![Contextual menu - Duplicate selected1](<lib/Contextual%20menu%20-%20Duplicate%20selected1.png>)
+![Contextual menu - Duplicate selected1](<lib/Contextual menu - Duplicate selected1.png>)
 
 \- press the shortcut Ctrl+D
 
-\- click the button ![Image](<lib/Icons%20-%20duplicate.jpeg>) in the toolbar
+\- click the button ![Image](<lib/Icons - duplicate.jpeg>) in the toolbar
 
 \- right-click the attribute and choose Duplicate
 
-![Contextual menu - Duplicate selected](<lib/Contextual%20menu%20-%20Duplicate%20selected.png>)
+![Contextual menu - Duplicate selected](<lib/Contextual menu - Duplicate selected.png>)
 
 &nbsp;
 
@@ -187,9 +187,9 @@ These control have a behavior similar to what is expected in any desktop applica
 
 When an attribute has at least one attribute, its descendance can be collapse or expanded by pressing the - or the + sign to the right of the box:
 
-![Tree view - expanded](<lib/Tree%20view%20-%20expanded.png>)
+![Tree view - expanded](<lib/Tree view - expanded.png>)
 
-![Tree view - collapsed](<lib/Tree%20view%20-%20collapsed.png>)
+![Tree view - collapsed](<lib/Tree view - collapsed.png>)
 
 &nbsp;
 
@@ -197,9 +197,9 @@ When an attribute has at least one attribute, its descendance can be collapse or
 
 ### &#51;.7 Toggle details
 
-You may also toggle the appearance of details by pressing the ![Icons - toggle Details](<lib/Icons%20-%20toggleDetails.jpeg>) button:
+You may also toggle the appearance of details by pressing the ![Icons - toggle Details](<lib/Icons - toggleDetails.jpeg>) button:
 
-![Tree view - no details](<lib/Tree%20view%20-%20no%20details.png>)
+![Tree view - no details](<lib/Tree view - no details.png>)
 
 &nbsp;
 
@@ -211,7 +211,7 @@ You may also toggle the appearance of details by pressing the ![Icons - toggle D
 
 &nbsp;
 
-![Family of Attributes](<lib/Family%20of%20Attributes.png>)
+![Family of Attributes](<lib/Family of Attributes.png>)
 
 &nbsp;
 
@@ -219,13 +219,13 @@ You may also toggle the appearance of details by pressing the ![Icons - toggle D
 
 For an array:
 
-![Family of Attributes - Array](<lib/Family%20of%20Attributes%20-%20Array.png>)
+![Family of Attributes - Array](<lib/Family of Attributes - Array.png>)
 
 &nbsp;
 
-For choices:
+For [schema composition](<https://json-schema.org/understanding-json-schema/reference/combining> "target=\"\_blank\"") choices:
 
-![Family of Attributes - choices](<lib/Family%20of%20Attributes%20-%20choices.png>)
+![Family of Attributes - choices](<lib/Family of Attributes - choices.png>)
 
 &nbsp;
 
@@ -233,7 +233,7 @@ For choices:
 
 Field types include standard JSON Schema field types, plus the BSON types not already in JSON Schema.&nbsp; BSON is a binary serialization format used to store documents and make remote procedure calls in MongoDB. The BSON specification is located [here](<http://bsonspec.org> "target=\"\_blank\"").&nbsp; BSON supports the following data types as values in documents.
 
-![Tree view - field types](<lib/Tree%20view%20-%20field%20types.png>)
+![Tree view - field types](<lib/Tree view - field types.png>)
 
 &nbsp;
 
@@ -247,7 +247,7 @@ Often with modern databases, you may specify more than one data type for a given
 
 To add another type, simply click on the + sign to the right in the Properties Pane:
 
-![Data type - single](<lib/Data%20type%20-%20single.png>)
+![Data type - single](<lib/Data type - single.png>)
 
 &nbsp;
 
@@ -255,17 +255,17 @@ Then you may select the additional data type from the dropdown list, change the 
 
 &nbsp;
 
-![Image](<lib/Data%20type%20-%20multiple.png>)
+![Image](<lib/Data type - multiple.png>)
 
 &nbsp;
 
 ### *&#52;.3 Choice*
 
-You may add choices for alternate sub-schemas:
+For [schema composition](<https://json-schema.org/understanding-json-schema/reference/combining> "target=\"\_blank\"") choices, you may add choices for alternate sub-schemas:
 
 &nbsp;
 
-![Tree view - choices](<lib/Tree%20view%20-%20choices.png>)
+![Tree view - choices](<lib/Tree view - choices.png>)
 
 &nbsp;
 
@@ -275,7 +275,7 @@ You may add choices for alternate sub-schemas:
 
 You may add references to re-usable objects as explained [here](<Reusableobjectsdefinitions.md>).
 
-![Family of Attributes - Ref Def](<lib/Family%20of%20Attributes%20-%20Ref%20Def.png>)
+![Family of Attributes - Ref Def](<lib/Family of Attributes - Ref Def.png>)
 
 &nbsp;
 
@@ -285,7 +285,7 @@ Hackolade supports this MongoDB [convention](<https://docs.mongodb.com/manual/re
 
 &nbsp;
 
-![Family of Atributes - DBRref](<lib/Family%20of%20Atributes%20-%20DBRref.png>)
+![Family of Atributes - DBRref](<lib/Family of Atributes - DBRref.png>)
 
 &nbsp;
 
@@ -295,7 +295,7 @@ If you want to re-use a previously created attribute (without making it a re-usa
 
 &nbsp;
 
-![Family of Attributes - Pick from List](<lib/Family%20of%20Attributes%20-%20Pick%20from%20List.png>)
+![Family of Attributes - Pick from List](<lib/Family of Attributes - Pick from List.png>)
 
 &nbsp;
 
@@ -317,9 +317,9 @@ For each of the 3 methods (Add attribute, Insert, and Append), there are 4 ways 
 
 \- press the shortcut Ctrl+H (Add attribute), Ctrl+E (Insert field), or Ctrl+D (Append field)&nbsp;
 
-\- from the toolbar, choose the 'add attribute' button ![Image](<lib/Icons%20-%20addChild.jpeg>)
+\- from the toolbar, choose the 'add attribute' button ![Image](<lib/Icons - addChild.jpeg>)
 
 \- inside the central pane, Schema tab, right-click on the box for which you want to create a child attribute, and choose Add Attribute
 
-![Contextual menu - attributes](<lib/Contextual%20menu%20-%20attributes.png>)
+![Contextual menu - attributes](<lib/Contextual menu - attributes.png>)
 

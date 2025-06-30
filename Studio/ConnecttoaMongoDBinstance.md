@@ -23,7 +23,7 @@ MongoDB supports a number of authentication mechanisms that clients can use to v
 * [SSL](<SSL.md>) certificate authentication
 * [X.509](<X509.md>) authentication
 * [LDAP](<LDAP.md>) proxy authentication
-* [Kerberos](<Kerberos.md>) authentication
+* [Kerberos](<Kerberos.md>) authentication (deprecated as of v8.1.5)&nbsp;
 * for access to a MongoDB instance in the Cloud, you may need [SSH tunneling](<SSH.md>).
 
 &nbsp;
@@ -32,7 +32,7 @@ The Connection Settings dialog lets define the parameters in different tabs, as 
 
 &nbsp;
 
-![Reverse-Engineering MongoDB Connection settings - Direct](<lib/Rev-Eng%20Connection%20settings%20-%20Direct.png>)
+![Reverse-Engineering MongoDB Connection settings - Direct](<lib/Rev-Eng Connection settings - Direct.png>)
 
 These parameters are assembled by Hackolade to create the full connection string when establishing the connection during the Reverse-Engineering process.
 
@@ -44,7 +44,11 @@ These parameters are assembled by Hackolade to create the full connection string
 
 &nbsp;
 
-## Field-Level Encryption
+## Field-Level Encryption (deprecated as of v8.1.5)
+
+contact support@hackolade.com if needed
+
+&nbsp;
 
 Hackolade supports MongoDB's Field-Level Encryption framework.&nbsp; More details can be found [here](<MongoDBField-LevelEncryption.md>). &nbsp; To apply forward-engineering script with FLE parameters to a MongoDB instance or reverse-engineer the actual data types of encrypted fields, you need to pass additional information during the connection.
 
@@ -54,7 +58,7 @@ We assume that your instance is set up according to this MongoDB [field-level en
 
 &nbsp;
 
-![MongoDB field-level encryption connection](<lib/MongoDB%20field-level%20encryption%20connection.png>)
+![MongoDB field-level encryption connection](<lib/MongoDB field-level encryption connection.png>)
 
 &nbsp;
 
@@ -68,7 +72,7 @@ The MongoDB driver stores the key in a key vault collection where FLE-enabled cl
 
 The client uses the KMS provider settings to discover the master key.
 
-![MongoDB FLE KMS Providers](<lib/MongoDB%20FLE%20KMS%20Providers.png>)
+![MongoDB FLE KMS Providers](<lib/MongoDB FLE KMS Providers.png>)
 
 &nbsp;
 
@@ -84,13 +88,13 @@ The MongoDB client communicates with a separate encryption application called m
 
 **Mongocryptd:** you must specify the location of this component, either a with a path and executable filename:
 
-![MongoDB FLE mongocryptd path](<lib/MongoDB%20FLE%20mongocryptd%20path.png>)
+![MongoDB FLE mongocryptd path](<lib/MongoDB FLE mongocryptd path.png>)
 
 &nbsp;
 
 or URI and port:
 
-![MongoDB FLE mongocryptd URI and port](<lib/MongoDB%20FLE%20mongocryptd%20URI%20and%20port.png>)
+![MongoDB FLE mongocryptd URI and port](<lib/MongoDB FLE mongocryptd URI and port.png>)
 
 &nbsp;
 

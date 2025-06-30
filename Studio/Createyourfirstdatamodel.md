@@ -10,7 +10,7 @@ After [installation](<Installation.md>) and [software key validation](<Softwarer
 
 The application starts with a Welcome Page (there's also a slide show overview of the application functionality, but will skip this here):
 
-![Image](<lib/Welcome%20page.png>)
+![Image](<lib/Welcome page.png>)
 
 &nbsp;
 
@@ -20,7 +20,7 @@ The application starts with a Welcome Page (there's also a slide show overview o
 
 If you click "New Model", you are presented with a dialog to choose your target:
 
-![Image](<lib/Target%20selection.png>)
+![Image](<lib/Target selection.png>)
 
 &nbsp;
 
@@ -48,61 +48,61 @@ There are many ways to create a data model in Hackolade Studio: using the menu b
 
 Let' do a right-click in the middle ERD pane and choose Add document:
 
-![ERD contextual menu](<lib/ERD%20contextual%20menu.png>)
+![ERD contextual menu](<lib/ERD contextual menu.png>)
 
 &nbsp;
 
 Then in the Properties pane on the right, let's give a name to this document:
 
-![Image](<lib/Tutorial%20-%20entity%20name%20property.png>)
+![Image](<lib/Tutorial - entity name property.png>)
 
 &nbsp;
 
 We now have our first entity in the ERD:
 
-![Image](<lib/Tutorial%20-%20person%20entity.png>)
+![Image](<lib/Tutorial - person entity.png>)
 
 &nbsp;
 
 To add our first attribute, we can use right-click again to get the contextual menu and choose the data type String:
 
-![ERD - entity contextual menu](<lib/ERD%20-%20entity%20contextual%20menu.png>)
+![ERD - entity contextual menu](<lib/ERD - entity contextual menu.png>)
 
 &nbsp;
 
 We can give it a name:
 
-![Image](<lib/Tutorial%20-%20attribute%20name%20property.png>)
+![Image](<lib/Tutorial - attribute name property.png>)
 
 &nbsp;
 
 So it appears in the ERD:
 
-![Image](<lib/Tutorial%20-%20entity%20with%20first%20attribute.png>)
+![Image](<lib/Tutorial - entity with first attribute.png>)
 
 &nbsp;
 
 We can add a new field by clicking the Append Field button in the toolbar:
 
-![Image](<lib/Toolbar%20-%20append%20attribute.png>)
+![Image](<lib/Toolbar - append attribute.png>)
 
 &nbsp;
 
 and give it a name:
 
-![Tutorial - entity with 2 attributes](<lib/Tutorial%20-%20entity%20with%202%20attributes.png>)
+![Tutorial - entity with 2 attributes](<lib/Tutorial - entity with 2 attributes.png>)
 
 &nbsp;
 
 When adding new field DOB, we can see that a description can be added as well as a format to create a constraint for the field:
 
-![Tutorial - atttribute string properties](<lib/Tutorial%20-%20atttribute%20string%20properties.png>)
+![Tutorial - atttribute string properties](<lib/Tutorial - atttribute string properties.png>)
 
 &nbsp;
 
 When adding another field, we can see also that we can pick a different data type from the list.&nbsp; This list is specific to each technology target.
 
-![Image](<lib/Tutorial%20-%20atttribute%20data%20types.png>)
+![Image](<lib/Tutorial - atttribute data types.png>)
 
 &nbsp;
 
@@ -114,11 +114,11 @@ You may add additional constraints and descriptive properties, default, enumerat
 
 You may move the attributes up or down, either using the up and down arrow keys in the toolbar:
 
-![Toolbar field order up-down arrows](<lib/DTD%20field%20order%20arrows.png>)
+![Toolbar field order up-down arrows](<lib/DTD field order arrows.png>)
 
 or by grabbing the handle on the left of the attribute name in the ERD:
 
-![ERD - attribute drag-and-drop](<lib/ERD%20-%20attribute%20drag-and-drop.png>)
+![ERD - attribute drag-and-drop](<lib/ERD - attribute drag-and-drop.png>)
 
 &nbsp;
 
@@ -136,7 +136,7 @@ The Options tab in the Properties Pane lets you:
 
 In addition to the ERD view, it is possible to have a detailed view of each entity in its own tab, which will be particularly handy in the next tutorial:
 
-![Tutorial - hierarchical schema view](<lib/Tutorial%20-%20hierarchical%20schema%20view.png>)
+![Tutorial - hierarchical schema view](<lib/Tutorial - hierarchical schema view.png>)
 
 &nbsp;
 
@@ -149,7 +149,7 @@ We call it the "hierarchical schema view" because it let's you easily create and
 
 &nbsp;
 
-![JSON Tree in new tab](<lib/JSON%20Tree%20in%20new%20tab.png>)
+![JSON Tree in new tab](<lib/JSON Tree in new tab.png>)
 
 &nbsp;
 
@@ -159,7 +159,7 @@ We call it the "hierarchical schema view" because it let's you easily create and
 
 In this upper tab dedicated to a specific entity, there are several lower tabs.&nbsp; The JSON Preview tab provides 2 side-by-side panes: one for the JSON Schema of the entity, and the other tab is for a sample JSON document of the structure:
 
-![Central pane - JSON Preview](<lib/Central%20pane%20-%20JSON%20Preview.png>)
+![Central pane - JSON Preview](<lib/Central pane - JSON Preview.png>)
 
 &nbsp;
 
@@ -197,13 +197,13 @@ You should also be aware of several options at your disposal:
 
 &nbsp;
 
-![Tools - Options - General](<lib/Tools%20-%20Options%20-%20General.png>)
+![Tools - Options - General](<lib/Tools - Options - General.png>)
 
 &nbsp;
 
 The location by default for data models and other sources and artifacts can also be controlled in the Default Paths tab of the same options dialog:
 
-![Tools - Options - Default Paths](<lib/Tools%20-%20Options%20-%20Default%20Paths.png>)
+![Tools - Options - Default Paths](<lib/Tools - Options - Default Paths.png>)
 
 &nbsp;
 
@@ -221,7 +221,7 @@ If you need to work on different models at the same time, or you want to copy/pa
 
 Alternatively on Windows, right-click on the Hackolade icon in the toolbar then choose Hackolade:
 
-![Multiple instances](<lib/Multiple%20instances.png>)
+![Multiple instances](<lib/Multiple instances.png>)
 
 &nbsp;
 

@@ -1,6 +1,6 @@
 # Welcome to Hackolade Studio
 
-Hackolade Studio is an intuitive yet powerful application to perform the visually data modeling and schema design of many NoSQL databases, storage formats, REST APIs, and JSON in RDBMS.
+Hackolade Studio is an intuitive yet powerful application to perform the visually data modeling and schema design of many SQL and NoSQL databases, APIS, and storage formats.
 
 &nbsp;
 

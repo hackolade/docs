@@ -4,7 +4,7 @@ According to a 2023 [survey](<https://static1.squarespace.com/static/62adf3ca029
 
 &nbsp;
 
-![Vision - survey of data-driven challenges](<lib/Vision%20-%20survey%20of%20data-driven%20challenges.png>)
+![Vision - survey of data-driven challenges](<lib/Vision - survey of data-driven challenges.png>)
 
 &nbsp;
 
@@ -30,7 +30,7 @@ Before we can propose our own solution for this situation, it is important to id
 
 The architecture of monolithic applications used to be fairly simple with 3 tiers:
 
-![Vision - Tech stack complexity before](<lib/Vision%20-%20Tech%20stack%20complexity%20before.png>)
+![Vision - Tech stack complexity before](<lib/Vision - Tech stack complexity before.png>)
 
 &nbsp;
 
@@ -38,7 +38,7 @@ The evolution towards modern event-driven architecture patterns, microservices, 
 
 &nbsp;
 
-![Vision - Tech stack complexity now](<lib/Vision%20-%20Tech%20stack%20complexity%20now.png>)
+![Vision - Tech stack complexity now](<lib/Vision - Tech stack complexity now.png>)
 
 &nbsp;
 
@@ -50,7 +50,7 @@ Polyglot persistence is a natural response to the diversity of data types and ac
 
 &nbsp;
 
-![Vision - Polyglot persistence](<lib/Vision%20-%20Polyglot%20persistence.png>)
+![Vision - Polyglot persistence](<lib/Vision - Polyglot persistence.png>)
 
 &nbsp;
 
@@ -66,7 +66,7 @@ The venture capitalist Mark Andreesen wrote in the Wall Street Journal that “s
 
 &nbsp;
 
-![Vision - Design-First vs Code-First](<lib/Vision%20-%20Design-First%20vs%20Code-First.png>)
+![Vision - Design-First vs Code-First](<lib/Vision - Design-First vs Code-First.png>)
 
 &nbsp;
 
@@ -92,7 +92,7 @@ The installation of Data Catalogs, Metadata Management (MDM), and Data Quality M
 
 &nbsp;
 
-![Vision - Polarization of Business and IT](<lib/Vision%20-%20Polarization%20of%20Business%20and%20IT.png>)
+![Vision - Polarization of Business and IT](<lib/Vision - Polarization of Business and IT.png>)
 
 &nbsp;
 
@@ -122,7 +122,7 @@ Typically, each organization may own several of these families of metadata recep
 
 &nbsp;
 
-![Vision - metadata receptacle silos](<lib/Vision%20-%20metadata%20receptacle%20silos.png>)
+![Vision - metadata receptacle silos](<lib/Vision - metadata receptacle silos.png>)
 
 &nbsp;
 

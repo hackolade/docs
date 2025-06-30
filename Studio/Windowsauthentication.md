@@ -4,5 +4,5 @@ In the Authentication tab, select the Windows authentication method, then provid
 
 &nbsp;
 
-![SQL Server - Windows Authentication](<lib/SQL%20Server%20-%20Windows%20Authentication.png>)
+![SQL Server - Windows Authentication](<lib/SQL Server - Windows Authentication.png>)
 

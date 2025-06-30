@@ -12,7 +12,7 @@ You may also [view this tutorial](<https://youtu.be/\_tjZGmn7ilg> "target=\"\_bl
 
 ## Choices
 
-JSON Schema provides a way to combine schemas with the use of [*choice* keywords](<https://json-schema.org/understanding-json-schema/reference/combining.html> "target=\"\_blank\""):
+JSON Schema provides a way to [combine schemas](<https://json-schema.org/understanding-json-schema/reference/combining> "target=\"\_blank\"") with the use of [*choice* keywords](<https://json-schema.org/understanding-json-schema/reference/combining.html> "target=\"\_blank\""):
 
 * allOf: the constraint must be valid against all of the subschemas (AND)
 * anyOf: the constraint must be valid against any of the subschemas (OR)
@@ -31,19 +31,19 @@ Put a different way, choices are a great way to implement [polymorphism](<Whatis
 
 There are many different use cases for choices.&nbsp; One that illustrates the capability is when a given field can be either a string or a complex subschema.&nbsp; For example in e-commerce, a shipping address could be "same as billing", or it's own full address structure:
 
-![JSON Schema choices](<lib/JSON%20Schema%20choices.png>)
+![JSON Schema choices](<lib/JSON Schema choices.png>)
 
 &nbsp;
 
 To create a choice, simply right-click and choose to add, insert, or append a Choice, followed by the keyword adapted to you subschema validation criteria:
 
-![Tutorila - append a choice](<lib/Tutorila%20-%20append%20a%20choice.png>)
+![Tutorila - append a choice](<lib/Tutorila - append a choice.png>)
 
 &nbsp;
 
 The application automatically creates 2 subschemas which can be defined independently by adding child attributes:
 
-![Tutorial - choice subschemas](<lib/Tutorial%20-%20choice%20subschemas.png>)
+![Tutorial - choice subschemas](<lib/Tutorial - choice subschemas.png>)
 
 &nbsp;
 
@@ -128,7 +128,7 @@ Here is an example:
 
 which is represented in Hackolade:
 
-![JSON Schema conditional](<lib/JSON%20Schema%20conditional.png>)
+![JSON Schema conditional](<lib/JSON Schema conditional.png>)
 
 &nbsp;
 
@@ -136,13 +136,13 @@ which is represented in Hackolade:
 
 To create a conditional structure, simply right-click and choose to add, insert, or append a Conditional. &nbsp;
 
-![Tutorila - append a conditional](<lib/Tutorila%20-%20append%20a%20conditional.png>)
+![Tutorila - append a conditional](<lib/Tutorila - append a conditional.png>)
 
 &nbsp;
 
 The application automatically creates conditional subschemas so you can define the constraints and expected outcomes::
 
-![Conditionals template](<lib/Conditionals%20template.png>)
+![Conditionals template](<lib/Conditionals template.png>)
 
 &nbsp;
 
@@ -154,11 +154,11 @@ Pattern fields function in exactly the same way as standard fields, with one exc
 
 For example:
 
-![Pattern property example](<lib/Pattern%20property%20example.png>)
+![Pattern property example](<lib/Pattern property example.png>)
 
 This is represented in the Hackolade ERD as:
 
-![Pattern property ERD](<lib/Pattern%20property%20ERD.png>)
+![Pattern property ERD](<lib/Pattern property ERD.png>)
 
 The name in the name-value pair is not a fixed word, but a variable.  That's what pattern fields are for.  They are typically controlled by a regular expression, hence the name of pattern field.
 
@@ -166,11 +166,11 @@ You should not look at it as a 'field name', but as a key to a sub-document wh
 
 In Hackolade, the above example is modeled this way:
 
-![Pattern property schema](<lib/Pattern%20property%20schema.png>)
+![Pattern property schema](<lib/Pattern property schema.png>)
 
 To add a pattern field to a document structure, right-click and choose add/insert/append \> Pattern Field then the field data type:
 
-![Pattern property contextual menu](<lib/Pattern%20property%20contextual%20menu.png>)
+![Pattern property contextual menu](<lib/Pattern property contextual menu.png>)
 
 &nbsp;
 

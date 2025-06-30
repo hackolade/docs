@@ -8,5 +8,5 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![Hive forward-engineering](<lib/Hive%20forward-engineering.png>)
+![Hive forward-engineering](<lib/Hive forward-engineering.png>)
 

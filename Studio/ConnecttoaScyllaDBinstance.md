@@ -12,13 +12,13 @@ To connect to a ScyllaDB instance, whether on-premises or Cloud, you need to pro
 
 &nbsp;
 
-![ScyllaDB connection settings](<lib/ScyllaDB%20connection%20settings.png>)
+![ScyllaDB connection settings](<lib/ScyllaDB connection settings.png>)
 
 &nbsp;
 
 In the Advanced tab you may change the default request timeout and specify it in milliseconds.
 
-![Cassandra connection advanced tab](<lib/Cassandra%20connection%20advanced%20tab.png>)
+![Cassandra connection advanced tab](<lib/Cassandra connection advanced tab.png>)
 
 &nbsp;
 

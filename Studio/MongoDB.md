@@ -4,7 +4,7 @@ MongoDB is a free and open-source cross-platform document-oriented database prog
 
 &nbsp;
 
-Hackolade was specially built to support the [data modeling of MongoDB](<https://hackolade.com/nosqldb/mongodb-data-modeling.html> "target=\"\_blank\"") collections, supporting multiple databases as well.&nbsp; The application closely follows the terminology of the database.
+Hackolade was specially built to support the [data modeling of MongoDB](<https://hackolade.com/nosqldb/mongodb-data-modeling.html> "target=\"\_blank\"") collections, supporting multiple databases as well.&nbsp; The application closely follows the terminology of the database. &nbsp; Note that you may also use it to model [Azure Cosmos DB for MongoDB vCore](<https://devblogs.microsoft.com/cosmosdb/mongovcorega/> "target=\"\_blank\"").
 
 &nbsp;
 
@@ -14,7 +14,7 @@ We collaborated with the specialists at MongoDB to write this excellent referenc
 
 The data model in the picture below results from the reverse-engineering of the [Yelp Challenge Dataset](<https://www.kaggle.com/yelp-dataset/yelp-dataset> "target=\"\_blank\"").
 
-![MongoDB workspace](<lib/MongoDB%20workspace.png>)
+![MongoDB workspace](<lib/MongoDB workspace.png>)
 
 &nbsp;
 
@@ -59,7 +59,7 @@ BSON is a binary serialization format used to store documents and make remote pr
 
 Hackolade was specially built to support the data types and attributes behavior of MongoDB, including the BSON types.
 
-![Image](<lib/MongoDB%20schema%20tree%20view.png>)
+![Image](<lib/MongoDB schema tree view.png>)
 
 ## Indexes
 
@@ -146,7 +146,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![Forward-Engineering - MongoDB Script](<lib/Forward-Engineering%20-%20MongoDB%20Script.png>)
+![Forward-Engineering - MongoDB Script](<lib/Forward-Engineering - MongoDB Script.png>)
 
 &nbsp;
 

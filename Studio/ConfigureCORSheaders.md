@@ -1,6 +1,6 @@
 # Configure CORS headers
 
-This page is only relevant for you for self-hosted repository hub: GitHub Server, GitLab Server or Bitbucket Server, and to let users open Hackolade data models from that repository hub using the Hackolade browser application: [https://studio.hackolade.com](<https://studio.hackolade.com> "target=\"\_blank\"").&nbsp; You may skip it if it is not the case.
+This page is only relevant for you for self-hosted repository hub: GitHub Server, GitLab Server or Bitbucket Data Center, and to let users open Hackolade data models from that repository hub using the Hackolade browser application: [https://studio.hackolade.com](<https://studio.hackolade.com> "target=\"\_blank\"").&nbsp; You may skip it if it is not the case.
 
 &nbsp;
 
@@ -40,7 +40,7 @@ The location where you need to configure those headers depends on your infrastru
 
 \- If you use **GitLab Server**, then [this discussion](<https://gitlab.com/gitlab-org/omnibus-gitlab/-/issues/5425> "target=\"\_blank\"") suggests that CORS should also be enabled by default for /api requests. So no action is required either.
 
-\- If you use **Bitbucket Server**, then CORS is not enabled by default and there is unfortunately no [configuration properties](<https://confluence.atlassian.com/bitbucketserver/configuration-properties-776640155.html> "target=\"\_blank\"") for it. The solution is to set up a reverse proxy (e.g. [nginx](<https://nginx.org/en/> "target=\"\_blank\""), [traefik](<https://doc.traefik.io/traefik/> "target=\"\_blank\"")) in front of your Bitbucket Server instance and to configure the HTTP headers for CORS there.
+\- If you use **Bitbucket Data Center**, then CORS is not enabled by default and there is unfortunately no [configuration properties](<https://confluence.atlassian.com/bitbucketserver/configuration-properties-776640155.html> "target=\"\_blank\"") for it. The solution is to set up a reverse proxy (e.g. [nginx](<https://nginx.org/en/> "target=\"\_blank\""), [traefik](<https://doc.traefik.io/traefik/> "target=\"\_blank\"")) in front of your Bitbucket Data Center instance and to configure the HTTP headers for CORS there.
 
 &nbsp;
 

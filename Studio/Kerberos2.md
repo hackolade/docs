@@ -10,7 +10,7 @@ Hackolade also supports the Kerberos authentication mechanism. For more info on 
 
 The Kerberos parameters for HBase are maintained in Hackolade as follows:
 
-![HBase connection Kerberos](<lib/HBase%20connection%20Kerberos.png>)
+![HBase connection Kerberos](<lib/HBase connection Kerberos.png>)
 
 &nbsp;
 
@@ -59,7 +59,7 @@ The minimum requirements to be able to connect with the Kerberos protocol are:
 * All layers of Hadoop must be set up with Kerberos auth
 * Yarn must be set up with SSL certificates
 * Kerberos or Kerberos packages *“krb5-admin-server”* and *“krb5-kdc”* must be installed and run
-* HBase REST service must be running&nbsp; REST should have administrative access. One can provide it by running HBASE command: *grant 'rest\_server', 'RWCA' *\
+* HBase REST service must be running&nbsp; REST should have administrative access. One can provide it by running HBASE command: *grant 'rest\_server', 'RWCA'* \
 [https://hbase.apache.org/book.html#\_client\_side\_configuration\_for\_secure\_operation\_rest\_gateway](<https://hbase.apache.org/book.html#\_client\_side\_configuration\_for\_secure\_operation\_rest\_gateway> "target=\"\_blank\"")
 
 &nbsp;
@@ -67,17 +67,24 @@ The minimum requirements to be able to connect with the Kerberos protocol are:
 Instructions:
 
 1. Start Kerberos services:
+
    1. service krb5-admin-server start
    1. service krb5-kdc start
+
 1. Start HBase with Kerberos:
+
    1. Hadoop (dfs.sh, yarn.sh)
    1. Zookeeper (zkServer.sh)
    1. HBase (start-hbase.sh)
    1. HBase Rest (hbase rest start)
+
 1. Obtains and caches an initial ticket-granting ticket for principal:
+
    1. kinit hbase@EXAMPLE.COM (pass:\<password\>)
    1. klist - (check if ticket received)
+
 1. Check by curl request:
+
    1. curl -i --negotiate -u : http://\<host\>:\<port\>/version/cluster
    1. curl -i --negotiate -u : http://\<host\>:\<port\>/namespaces
 

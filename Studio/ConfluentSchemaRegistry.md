@@ -14,7 +14,7 @@ Hackolade supports Avro schema and JSON Schema maintenance in Confluent Schema R
 
 In effect, Hackolade provides a graphical interface for the design and maintenance of Avro and JSON schemas stored in Confluent Schema Registry.
 
-![confluent Schema Registry workspace](<lib/Avro%20workspace.png>)
+![confluent Schema Registry workspace](<lib/Avro workspace.png>)
 
 &nbsp;
 
@@ -93,23 +93,23 @@ A schema reference consists of the following:
 
 In Hackolade Studio, you can create a reference to another Avro record in the same model through a model reference.&nbsp; Let's say you have 2 records in your Avro model: customer and address.&nbsp; Now you'd like to reference the address record from the customer record.&nbsp; Choose Append field \> Reference \> Model Definition \> Open definitions...
 
-![Confluent Schema Rgistry - add reference](<lib/Confluent%20Schema%20Rgistry%20-%20add%20reference.png>)
+![Confluent Schema Rgistry - add reference](<lib/Confluent Schema Rgistry - add reference.png>)
 
 &nbsp;
 
-THen choose the address record in the dialog:
+Then choose the address record in the dialog:
 
-![Confluent Schema Rgistry - pick definition](<lib/Confluent%20Schema%20Rgistry%20-%20pick%20definition.png>)
+![Confluent Schema Rgistry - pick definition](<lib/Confluent Schema Rgistry - pick definition.png>)
 
 This will result in a reference inside the customer record:
 
-![Confluent Schema Rgistry - union schema](<lib/Confluent%20Schema%20Rgistry%20-%20union%20schema.png>)
+![Confluent Schema Rgistry - union schema](<lib/Confluent Schema Rgistry - union schema.png>)
 
 &nbsp;
 
 This will result in a references section in the customer schema for the Confluent Schema Registry:
 
-![Confluent Schema Rgistry - union schema outpu](<lib/Confluent%20Schema%20Rgistry%20-%20union%20schema%20outpu.png>)
+![Confluent Schema Rgistry - union schema outpu](<lib/Confluent Schema Rgistry - union schema outpu.png>)
 
 &nbsp;
 
@@ -123,7 +123,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![Confluent Schema Registry forward-engineering](<lib/Confluent%20Schema%20Registry%20forward-engineering.png>)
+![Confluent Schema Registry forward-engineering](<lib/Confluent Schema Registry forward-engineering.png>)
 
 &nbsp;
 
@@ -141,3 +141,64 @@ For more information, make sure to consult the Confluent Schema Registry [overvi
 
 &nbsp;
 
+&nbsp;
+
+## Configure CORS to access Confluent Schema Registries from Hackolade Studio in the browser
+
+&nbsp;
+
+When interacting (forward- or reverse-engineering) with Confluent Schema Registries (CSR) from [https://studio.hackolade.com](<https://studio.hackolade.com> "target=\"\_blank\""), a specific [Cross Origin Resource Sharing](<https://itnext.io/understanding-cors-4157bf640e11> "target=\"\_blank\"") (CORS) configuration must be set up on the CSR instance(s).
+
+&nbsp;
+
+The CORS configuration Allow-Access-Origin header must allow for the '''studio.hackolade.com''' origin to interact with the instance, otherwise the browser blocks any interaction of Hackolade Studio in the browser with the schema registry.
+
+&nbsp;
+
+### Confluent Cloud
+
+The Confluent Cloud platform doesn't allows custom configuration of the CORS Access-Control-Allow-Origin header when accessing the schema registry on their "confluent.cloud" domain.
+
+&nbsp;
+
+To make it accept transactions from [https://studio.hackolade.com](<https://studio.hackolade.com> "target=\"\_blank\""), you (or your IT department) must first set up a CORS [Reverse Proxy](<https://en.wikipedia.org/wiki/Reverse\_proxy> "target=\"\_blank\"") that serves the Confluent-provided schema registry while overriding response headers when the response is sent back to studio.hackolade.com.
+
+&nbsp;
+
+We give you an example of how to deploy such a reverse proxy and use this endpoint as the host URL to execute forward- or reverse-engineering operations from [https://studio.hackolade.com](<https://studio.hackolade.com> "target=\"\_blank\"").
+
+&nbsp;
+
+For example with an Nginx reverse proxy served on https://cors-proxy-for-confluent-cloud.mydomain.com, after you picked up the public URL for your Confluent Schema registry (something like https://\<schema registry instance\>.confluent.cloud):
+
+&nbsp;
+
+> server {\
+&nbsp; &nbsp; &nbsp; &nbsp; listen &nbsp; &nbsp; &nbsp; 443;\
+&nbsp; &nbsp; &nbsp; &nbsp; server\_name&nbsp; confluent-proxy;\
+&nbsp; &nbsp; &nbsp; &nbsp; location&nbsp; / {\
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; add\_header Access-Control-Allow-Origin 'https://studio.hackolade.com' always;\
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; add\_header Access-Control-Allow-Headers '\*';\
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; add\_header Access-Control-Allow-Methods '\*';\
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; add\_header Access-Control-Allow-Credentials 'true';\
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if ($request\_method = 'OPTIONS') {\
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return 204;\
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }\
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; proxy\_pass&nbsp; https://\<schema registry instance\>.confluent.cloud;\
+&nbsp; &nbsp; &nbsp; &nbsp; }\
+&nbsp; &nbsp; }
+
+> &nbsp;
+
+&nbsp;
+
+### On premises custom instance
+
+Please refer to the Confluent Schema Registry [configuration reference](<https://docs.confluent.io/platform/current/schema-registry/installation/config.html#access-control-allow-origin> "target=\"\_blank\"") to properly configure your custom instance.&nbsp; You need to add (at least) the property "access.control.allow.origin" to your "schema-registry.properties" file. It is often usesul too to set "access.control.allow.methods" to "\*".
+
+&nbsp;
+
+> access.control.allow.origin=https://studio.hackolade.com\
+access.control.allow.methods=\*
+
+> 

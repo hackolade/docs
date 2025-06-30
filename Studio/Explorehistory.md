@@ -8,7 +8,7 @@ Not only can you see what's changed, but also who made the changes, why and when
 
 &nbsp;
 
-![Workgroup - History commits list](<lib/Workgroup%20-%20History%20commits%20list.png>)
+![Workgroup - History commits list](<lib/Workgroup - History commits list.png>)
 
 ## Anatomy of the history view
 
@@ -24,7 +24,7 @@ The details pane displays more information about the commit row selected in the 
 
 &nbsp;
 
-![Workgroup - History commit details](<lib/Workgroup%20-%20History%20commit%20details.png>)
+![Workgroup - History commit details](<lib/Workgroup - History commit details.png>)
 
 &nbsp;
 
@@ -40,7 +40,7 @@ You can see all files that have been added, modified, or deleted in the selected
 
 &nbsp;
 
-![Workgroup - History commits comparison](<lib/Workgroup%20-%20History%20commits%20comparison.png>)
+![Workgroup - History commits comparison](<lib/Workgroup - History commits comparison.png>)
 
 &nbsp;
 
@@ -57,7 +57,7 @@ Different filters help you to find specific commits you might be looking for:
 
 And, of course, you may combine filters to refine your search.
 
-![Workgroup - History commits models filter](<lib/Workgroup%20-%20History%20commits%20models%20filter.png>)
+![Workgroup - History commits models filter](<lib/Workgroup - History commits models filter.png>)
 
 &nbsp;
 
@@ -73,11 +73,11 @@ Select which commit should be used in left pane and which other commit should be
 
 In the example below, we are comparing the state of the repository in the "contract" branch with its state in the "main" branch.
 
-![Workgroup - History commits compare selection](<lib/Workgroup%20-%20History%20commits%20compare%20selection.png>)
+![Workgroup - History commits compare selection](<lib/Workgroup - History commits compare selection.png>)
 
 Once you have selected 2 commits, you can click on the "Compare" button to open the Compare dialog:
 
-![Visually compare commits](<lib/Compare%20and%20merge%20-%20compare%20view.png>)
+![Visually compare commits](<lib/Compare and merge - compare view.png>)
 
 &nbsp;
 
@@ -87,7 +87,13 @@ Once you have selected 2 commits, you can click on the "Compare" button to open 
 
 All the actions related to a given entry of the history are also available through a contextual menu. You just need to click on the 3 dots to open it.
 
-![Workgroup - History list contextual menu](<lib/Workgroup%20-%20History%20list%20contextual%20menu.png>)
+![Workgroup - History list contextual menu](<lib/Workgroup - History list contextual menu.png>)
 
-Note that more actions are coming soon, like reverting commits, or tagging them with an arbitrary label such as a version number.
+&nbsp;
+
+For more information about tags for a commit, you may refer to the [tag screen documentation page](<Exploretags.md>).
+
+&nbsp;
+
+&nbsp;
 

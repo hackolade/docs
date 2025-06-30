@@ -60,6 +60,10 @@ Any entity (collection, table, ...) - or attribute herein - within a Hackolade c
 
 &nbsp;
 
+**Note:** while internal and model definitions above require some preparation before they can be used, there is zero preparation required for references to external definitions.&nbsp; From a given model, you may create a reference to ANY entity or attribute from ANY other model of ANY target.
+
+&nbsp;
+
 In legacy data modeling tools, this feature is sometimes called "domain" or "template".&nbsp; In Hackolade Studio, this feature not only provides a quick way to speed the model design process and make the model easy to maintain, but it also is much more powerful and flexible than with other tools since we accommodate complex data types.
 
 &nbsp;
@@ -78,7 +82,7 @@ Depending on size, you may even use sub-directories to help manage the library o
 
 In order for changes to a *referenced* external model to be activated in a *referencing* model, the latter needs to be opened in the application. &nbsp; Alternatively, you may manually refresh a reference in an open referencing model
 
-![Definitions reference refresh](<lib/Definitions%20reference%20refresh.png>)
+![Definitions reference refresh](<lib/Definitions reference refresh.png>)
 
 &nbsp;
 
@@ -86,7 +90,7 @@ In order for changes to a *referenced* external model to be activated in a *refe
 
 If you have defined a separate model with the structure of an address, you may reference it in any other Hackolade model:
 
-![Definitions - contextual menu referencing ext](<lib/Definitions%20-%20contextual%20menu%20referencing%20ext.png>)
+![Definitions - contextual menu referencing ext](<lib/Definitions - contextual menu referencing ext.png>)
 
 &nbsp;
 
@@ -94,13 +98,13 @@ next, you're prompted to choose the reference model, either from your file syste
 
 &nbsp;
 
-![Defintions - Choose external dialog](<lib/Defintions%20-%20Choose%20external%20dialog.png>)
+![Defintions - Choose external dialog](<lib/Defintions - Choose external dialog.png>)
 
 &nbsp;
 
 You then can choose an individual attribute, or an entire structure:
 
-![Definitions external choose](<lib/Definitions%20external%20choose.png>)
+![Definitions external choose](<lib/Definitions external choose.png>)
 
 &nbsp;
 
@@ -120,15 +124,15 @@ You also might want to have an entity reference an entire entity in another mode
 
 &#50;) in the Properties Pane on the right, click on the ellipsis of the $ref property
 
-![External entty references property](<lib/External%20entty%20references%20property.png>)
+![External entty references property](<lib/External entty references property.png>)
 
 &#51;) choose the reference type External:
 
-![External entty references selection](<lib/External%20entty%20references%20selection.png>)
+![External entty references selection](<lib/External entty references selection.png>)
 
 &#52;) choose a relative or absolute path to the model holding the entity definition (we recommend to use a relative path:
 
-![Image](<lib/External%20entty%20references%20path.png>)
+![Image](<lib/External entty references path.png>)
 
 &#53;) select the entity of your choice, and clock OK.
 
@@ -150,13 +154,13 @@ A definition can be created from scratch, just like any collection, either by se
 
 &nbsp;
 
-![Definitions - Lower collection tabs](<lib/Definitions%20-%20Lower%20collection%20tabs.png>)
+![Definitions - Lower collection tabs](<lib/Definitions - Lower collection tabs.png>)
 
 &nbsp;
 
 or by selecting the Model Definitions lower tab at the model ERD level:
 
-![Definitions - Lower model tabs](<lib/Definitions%20-%20Lower%20model%20tabs.png>)
+![Definitions - Lower model tabs](<lib/Definitions - Lower model tabs.png>)
 
 &nbsp;
 
@@ -164,7 +168,7 @@ or by selecting the Model Definitions lower tab at the model ERD level:
 
 In our address example, the definition may look like this:
 
-![Definitions - Address example](<lib/Definitions%20-%20Address%20example.png>)
+![Definitions - Address example](<lib/Definitions - Address example.png>)
 
 &nbsp;
 
@@ -172,13 +176,13 @@ Once the definition is created, it can be referenced in a collection, via the co
 
 &nbsp;
 
-![Definitions - Contextual menu](<lib/Definitions%20-%20Contextual%20menu.png>)
+![Definitions - Contextual menu](<lib/Definitions - Contextual menu.png>)
 
 As a result, a reference is created in the collection.&nbsp; The application displays all the elements of the definition, as if they were in the collection, but only a reference to the definition is actually stored in the collection:
 
 &nbsp;
 
-![Definitions - billing and shipping references](<lib/Definitions%20-%20billing%20and%20shipping%20references.png>)
+![Definitions - billing and shipping references](<lib/Definitions - billing and shipping references.png>)
 
 The reference is marked with the middle line in the hierarchical schema box, showing the name of the referenced definition, followed by either (m) for model definitions, or (i) for internal definitions.
 
@@ -186,7 +190,7 @@ The reference is marked with the middle line in the hierarchical schema box, sho
 
 At any point, it is possible, if desired, to replace a reference by the object definition structure:&nbsp;
 
-![Definitions - replace by attributes](<lib/Definitions%20-%20replace%20by%20attributes.png>)
+![Definitions - replace by attributes](<lib/Definitions - replace by attributes.png>)
 
 &nbsp;
 
@@ -194,7 +198,7 @@ At any point, it is possible, if desired, to replace a reference by the object d
 
 If you want to make an attribute available for use elsewhere in the same collection, or in another collection, you can convert it with just a few clicks:
 
-![Definitions - convert reference to def](<lib/Definitions%20-%20convert%20reference%20to%20def.png>)
+![Definitions - convert reference to def](<lib/Definitions - convert reference to def.png>)
 
 This will create the internal or model definition, and replace the attribute (and its children if any) by a reference to the definition.
 
@@ -204,7 +208,7 @@ This will create the internal or model definition, and replace the attribute (an
 
 For internal and model definitions, it may be useful to find all occurrences of definition references within a model.&nbsp; This where-used function (aka impact analysis, aka lineage) is available from the contextual menu (or the Ctrl+F11 shortcut key):
 
-![Definition Where-Used contextual menu](<lib/Definition%20Where-Used%20contextual%20menu.png>)
+![Definition Where-Used contextual menu](<lib/Definition Where-Used contextual menu.png>)
 
 &nbsp;
 
@@ -214,7 +218,7 @@ Choosing this option displays a dialog displaying all instances of references to
 
 &nbsp;
 
-![Definition where-used dialog](<lib/Definition%20where-used%20dialog.png>)
+![Definition where-used dialog](<lib/Definition where-used dialog.png>)
 
 You may select an instance and go to the hierarchical schema view of that reference. &nbsp; Lineage is enabled from the Object Browser and definition tab (model and internal.)&nbsp;
 
@@ -224,13 +228,13 @@ You may select an instance and go to the hierarchical schema view of that refere
 
 When displaying the JSON Schema preview or forward-engineering JSON Schema, the user may choose between the standard "Referenced definitions"
 
-&nbsp;![JSON Schema preview Referenced definitions](<lib/JSON%20Schema%20preview%20Referenced%20definitions.png>)
+&nbsp;![JSON Schema preview Referenced definitions](<lib/JSON Schema preview Referenced definitions.png>)
 
 &nbsp;
 
 &nbsp;
 
-![JSON Schema FE Referenced definitions](<lib/JSON%20Schema%20FE%20Referenced%20definitions.png>)
+![JSON Schema FE Referenced definitions](<lib/JSON Schema FE Referenced definitions.png>)
 
 &nbsp;
 
@@ -238,21 +242,21 @@ When displaying the JSON Schema preview or forward-engineering JSON Schema, the 
 
 or "Resolved definitions"
 
-![JSON Schema preview Resolved definitions](<lib/JSON%20Schema%20preview%20Resolved%20definitions.png>)
+![JSON Schema preview Resolved definitions](<lib/JSON Schema preview Resolved definitions.png>)
 
 &nbsp;
 
-![JSON Schema forward-engineering Resolved definitions](<lib/JSON%20Schema%20FE%20Resolved%20definitions.png>)
+![JSON Schema forward-engineering Resolved definitions](<lib/JSON Schema FE Resolved definitions.png>)
 
 &nbsp;
 
 or "Internal".&nbsp; This option converts to an internal definition, the references to model definition and external definitions:
 
-![JSON Schema preview Internalized definitions](<lib/JSON%20Schema%20preview%20Internalized%20definitions.png>)
+![JSON Schema preview Internalized definitions](<lib/JSON Schema preview Internalized definitions.png>)
 
 &nbsp;
 
-![JSON Schema forward-engineering Internalized definitions](<lib/JSON%20Schema%20FE%20Internalized%20definitions.png>)
+![JSON Schema forward-engineering Internalized definitions](<lib/JSON Schema FE Internalized definitions.png>)
 
 &nbsp;
 

@@ -6,7 +6,7 @@ With its Command Line Interface (CLI), Hackolade truly supports an agile develop
 
 The CLI can also be used in the context of compliance with privacy laws to make sure that the company does not store data that it is not supposed to store.  There are many more examples of how to use this functionality.
 
-&nbsp;
+&nbsp;&nbsp; &nbsp;
 
 Another common use case we've seen is to use the CLI to compare the models reverse-engineered from different environments (e.g; dev, test, integration, prod) to ensure their synchronization.
 
@@ -18,7 +18,7 @@ The Hackolade command line can of course be used on a stand alone machine.&nbsp;
 
 You may want to watch a playlist of [short videos](<https://www.youtube.com/playlist?list=PLuoumc7VQje0qPX3zHa8SUaDWQg2EAT40> "target=\"\_blank\"") on YouTube.
 
-![CLI Command Line Interface with git](<lib/CLI%20with%20git.png>)
+![CLI Command Line Interface with git](<lib/CLI with git.png>)
 
 &nbsp;
 
@@ -31,10 +31,12 @@ To understand how to set the different CLI arguments, it is often helpful to fir
 It is easier to run the CLI from the directory where the Hackolade executable is installed, from a terminal program:
 
 * Windows:&nbsp;
-  * cmd command line: all commands below should be preceded by *start /wait hackolade *
+
+  * cmd command line: all commands below should be preceded by *start /wait hackolade*&nbsp;
   * PowerShell: all commands below should be preceded by *Start-Process -wait hackolade* and the commands and arguments should be wrapped in quotes such as *Start-Process -wait hackolade "forwEng --help"* for more details, please consult [this page](<https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/start-process?view=powershell-7.2#example-7--specifying-arguments-to-the-process> "target=\"\_blank\"").
-* Mac: start Terminal and execute: all commands below should be preceded by */Applications/Hackolade.app/Contents/MacOS/Hackolade *
-* Linux: terminal emulator or common shell programs: all commands below should be preceded by *./Hackolade*&nbsp; or *path-to-where-hackolade-was-unzipped/Hackolade *
+
+* Mac: start Terminal and execute: all commands below should be preceded by */Applications/Hackolade.app/Contents/MacOS/Hackolade*&nbsp;
+* Linux: terminal emulator or common shell programs: all commands below should be preceded by *./Hackolade*&nbsp; or *path-to-where-hackolade-was-unzipped/Hackolade*&nbsp;
 
 &nbsp;
 
@@ -53,6 +55,7 @@ Below is the current list of Hackolade CLI commands.&nbsp; Additional commands m
 | **Command** | **Purpose** |
 | --- | --- |
 | compMod | Compare two Hackolade models to detect differences, and optionally merge them |
+| extRefUpdate | Update external references |
 | forwEng | Forward-engineer structure created with the application to dynamically generate the schema of the selected entities.&nbsp; Or forward-engineer JSON Schema or a sample JSON data document |
 | forwEngAPI | Forward-engineer Swagger or OpenAPI model from merge of a source data model and a user-defined template |
 | forwEngDataDictionary | Publish Hackolade data model to Data Dictionary instance |
@@ -64,6 +67,7 @@ Below is the current list of Hackolade CLI commands.&nbsp; Additional commands m
 | polyglotUpdate | Update polyglot definition |
 | revEng | Reverse-engineer a database instance or script file to fetch or infer the schema of the selected collections/tables |
 | revEngDataDictionary | Reverse-engineer a data dictionary instance to infer the schema of entities |
+| revEngDiagram | Reverse-engineer model from PowerDesign file&nbsp; |
 | revEngJSON | Reverse-engineer JSON Schema or documents |
 | revEngYAML | Reverse-engineer YAML or YAML Schema files |
 | revEngDDL | Reverse-engineer RDBMS data definition language files with .sql extensions |
@@ -79,10 +83,6 @@ Below is the current list of Hackolade CLI commands.&nbsp; Additional commands m
 &nbsp;
 
 Usage: &nbsp; &nbsp; *hackolade command \[--arguments\]*
-
-&nbsp;
-
-&nbsp;
 
 &nbsp;
 
@@ -134,7 +134,7 @@ Example:
 
 **Note:** If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: *"C:\\Program Files\\Hackolade\\hackolade"* .&nbsp; The workaround, assuming:
 
-![Windows Program Files](<lib/Windows%20Program%20Files.png>)
+![Windows Program Files](<lib/Windows Program Files.png>)
 
 is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed above.
 
@@ -142,13 +142,39 @@ is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed 
 
 Structure of resulting delta model file:
 
-![CLI compMod delta model structure](<lib/CLI%20compMod%20delta%20model%20structure.png>)
+![CLI compMod delta model structure](<lib/CLI compMod delta model structure.png>)
 
 A delta model file may contain any combination of multiple additions, deletions, and modifications.&nbsp; Deeply nested fields are referenced through their structure.&nbsp; To merge newly added fields, open your baseline model in Hackolade, then either copy/paste from the delta model, or reference the new field via an external reference to the delta model, then convert the reference into attributes.
 
 &nbsp;
 
+## extRefUpdate
+
+The extRefUpdate command lets you update a referrer model for modifications made to the external referenced models.
+
 &nbsp;
+
+Usage:&nbsp; &nbsp; *hackolade extRefUpdate \[--arguments\]*
+
+&nbsp;
+
+| **Argument** | **Required** | **Purpose** |
+| --- | --- | --- |
+| \--model=\<*file*\>\* | Y | Full path and file name for referrer model. Extension .json is optional |
+| \--logLevel=\< 1 \| 2 \| 3 \| **4** \> | N | &#49; = no spinner, no info, no error messages 2 = no spinner, no info 3 = no spinner 4 = full output \[default: 4\] |
+
+
+&nbsp;
+
+\*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“)&nbsp; Path can be ignored if file is in local directory.
+
+&nbsp;
+
+Example:
+
+> C:\\PROGRA~1\\Hackolade\\hackolade extRefUpdate --model=referrerModel &nbsp;
+
+> &nbsp;
 
 &nbsp;
 
@@ -165,11 +191,11 @@ Usage:&nbsp; &nbsp; *hackolade forwEng \[--arguments\]*
 | **Argument** | **Required** | **Purpose** |
 | --- | --- | --- |
 | \--model=\<*file*\>\* | Y | Full path and file name for target Hackolade model. Extension .json is optional&nbsp; |
-| \--path=\<*file*\>\* | Y | Specify the directory path where the forward-engineered files will be created. |
-| \--outputType=\< **jsonschema** \| jsondata \| yamldata \| script \| schemaregistry \> | Y | Specify the type of output (JSON Schema, sample JSON data, sample YAML data, script, or schemaregistry) \[default: jsonschema\] This allows output of the script corresponding to the target of the specified model, e.g.: CQL for Cassandra, HQL for Hive, etc... It also allows the publication of Avro, ProtoBuf, and JSON schemas to schema registry instances |
+| \--path=\<*file*\>\* | Y | Specify the directory path and file name where the forward-engineered files will be created. |
+| \--outputType=\< **jsonschema** \| jsondata \| yamldata \| script \| schemaregistry \| dbt \> | Y | Specify the type of output (JSON Schema, sample JSON data, sample YAML data, script, or schemaregistry, dbt) \[default: jsonschema\] This allows output of the script corresponding to the target of the specified model, e.g.: CQL for Cassandra, HQL for Hive, etc... It also allows the publication of Avro, ProtoBuf, and JSON schemas to schema registry instances |
 | \--jsonSchemaCompliance=\< **standard** \| full \| extended \> | N | Specify JSON Schema compliance: standard for only JSON Schema keywords and data types, full for additional custom properties, or extended for target-specific data types and internal properties.  \[default: standard\] |
 | \--jsonschemaversion=\< **draft-04** \| draft 06 \| draft-07 \| 2019-09 \| 2020-12 \> | N | Specify JSON Schema specification version \[default: draft-04\] &nbsp; \[values: draft-04, draft-06, draft-07, 2019-09, 2020-12\] \[default: "draft-04"\] |
-| \--format=\< *format* \> | N | Output target-specific schema format: MongoDB: \["shell", "mongoose","js", $jsonchema"\] Couchbase: \["ottoman", "n1ql"\] DynamoDB:&nbsp; \["tableScript", "putItemScript"\] Avro: \["avroSchema","azureSchemaRegistry","confluentSchemaRegistry","pulsarSchemaRegistry"\] BigQuery:&nbsp; \["sql", "json"\] CosmosDB-with-Gremlin-API: \["gremlin", "cosmosdb"\] CosmosDB-with-SQL-API: &nbsp; &nbsp; \["containerSettingsJson", "azureCliPowerShell","azureCliZsh","azureCliBash"\] JSON Schema: \["azureSchemaRegistry","confluentSchemaRegistry","pulsarSchemaRegistry"\] Glue: \["awsCLI", "HiveQL"\] OpenAPI: &nbsp; \["json", "yaml"\] Protobuf: \["azureSchemaRegistry","confluentSchemaRegistry","pulsarSchemaRegistry"\] Swagger: &nbsp; \["json", "yaml"\] |
+| \--format=\< *format* \> | N | Output target-specific schema format: MongoDB: \["shell", "mongoose","js", $jsonchema"\] Couchbase: \["ottoman", "n1ql"\] DynamoDB:&nbsp; \["tableScript", "putItemScript"\] Avro: \["avroSchema","schemaRegistry", "azureSchemaRegistry","confluentSchemaRegistry","pulsarSchemaRegistry"\] BigQuery:&nbsp; \["sql", "json"\] CosmosDB-with-Gremlin-API: \["gremlin", "cosmosdb"\] CosmosDB-with-SQL-API: &nbsp; &nbsp; \["containerSettingsJson", "azureCliPowerShell","azureCliZsh","azureCliBash"\] JSON Schema: \["azureSchemaRegistry","confluentSchemaRegistry","pulsarSchemaRegistry"\] Glue: \["awsCLI", "HiveQL"\] OpenAPI: &nbsp; \["json", "yaml"\] Oracle: \["quotedIdentifier", "nonquotedIdentifier"\] Protobuf: \["azureSchemaRegistry","confluentSchemaRegistry","pulsarSchemaRegistry"\] Snowflake: \["snowSight", "classicUI"\] Swagger: &nbsp; \["json", "yaml"\] |
 | \--connectName=\<connection\> | Y if to instance | Currently only available for schema registries.&nbsp; Name of connection settings saved in the Hackolade instance where CLI is invoked. Or use --connectFile instead. |
 | \--connectFile=\<*file*\>\* | N | Currently only available for schema registries.&nbsp; Full file path of connection config file (you don't need to use it when connect name is specified).&nbsp; The simplest way to create a connection file is to create a connection in the GUI application, then export the connection settings to file, encrypted or not. |
 | \--selectedObjects= "\<containerName\>: \[\<*entity1\>*,\<*entity2\>*,…\]" | N | Specify array of entities to include to result from model \[default: all\] For multiple containers, separate them with semi-colon (;) |
@@ -205,7 +231,7 @@ Example:
 
 **Note:** If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: *"C:\\Program Files\\Hackolade\\hackolade"* .&nbsp; The workaround, assuming:
 
-![Windows Program Files](<lib/Windows%20Program%20Files.png>)
+![Windows Program Files](<lib/Windows Program Files.png>)
 
 is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed above.
 
@@ -227,8 +253,9 @@ Usage:&nbsp; &nbsp; *hackolade forwEngAPI \[--arguments\]*
 | --- | --- | --- |
 | \--sourcemodel=\<file\>\* | Y | Full path and file name for the Hackolade model to to serve as a basis for the API generation.  Extension .json is optional |
 | \--selectedObjects= "\<containerName\>: \[\<*entity1\>*,\<*entity2\>*,…\]" | N | Specify array of entities to include to result from model \[default: all\] For multiple containers, separate them with semi-colon (;) |
-| \--APItemplate=\<file\>\* | Y | Full path and file name for the template to be used during API generation to create the specified resources for each selected entity of the source model.  The template can be a Hackolade model, or a Swagger or OpenAPI documentation file in either JSON or YAML. |
+| \--APItemplate=\<file\>\* | N | Full path and file name for the template to be used during API generation to create the specified resources for each selected entity of the source model.  The template can be a Hackolade model, or a Swagger or OpenAPI documentation file in either JSON or YAML.&nbsp; When no template is provided, the&nbsp; --apiTargetVersion argument must be specified instead. |
 | \--targetModelFormat=\< Swagger \| **OpenAPI** \> | N | Specify the target of the target model.&nbsp; \["Swagger" or "OpenAPI"\] \[default: OpenAPI\] |
+| \--apiTargetVersion | N | Specify the API schema version to be used during API generation when no API template is provided. This argument cannot be used together with the --APItemplate argument. \["3.0.3" or "3.1.0"\]\[default= "3.0.3"\] |
 | \--targetmodel=\<file\>\* | Y | Full path and file name for the obfuscated Hackolade model.  Extension .json is optional. &nbsp; |
 | \--APIdocFile=\<file\>\* | N | If specified, the corresponding documentation file will be generated in the chose model format.&nbsp; Specify the full path and file name for the generated documentation file. |
 | \--keepexternal=\<**true** \| false\> | N | Keep external references to this data model \[default: true\] |
@@ -248,7 +275,7 @@ Example:
 
 **Note:** If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: *"C:\\Program Files\\Hackolade\\hackolade"* .&nbsp; The workaround, assuming:
 
-![Windows Program Files](<lib/Windows%20Program%20Files.png>)
+![Windows Program Files](<lib/Windows Program Files.png>)
 
 is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed above.
 
@@ -289,7 +316,7 @@ Example:
 
 **Note:** If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: *"C:\\Program Files\\Hackolade\\hackolade"* .&nbsp; The workaround, assuming:
 
-![Windows Program Files](<lib/Windows%20Program%20Files.png>)
+![Windows Program Files](<lib/Windows Program Files.png>)
 
 is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed above.
 
@@ -312,7 +339,7 @@ Usage:&nbsp; &nbsp; *hackolade forwEngXLSX \[--arguments\]*
 | **Argument** | **Required** | **Purpose** |
 | --- | --- | --- |
 | \--model=\<*file*\>\*&nbsp; | Y | Full path and file name for target Hackolade model. Extension .json is optional |
-| \--path=\<*file*\>\*&nbsp; | Y | Specify the directory path where the forward-engineered files will be created&nbsp; |
+| \--path=\<*file*\>\*&nbsp; | Y | Specify the directory path and file name where the forward-engineered files will be created&nbsp; |
 | \--selectedObjects= "\<containerName\>: \[\<*entity1\>*,\<*entity2\>*,…\]" | N | Specify array of entities to include to result from model \[default: all\] For multiple containers, separate them with semi-colon (;) |
 | \--relationships=\<**true** \| false\> | N | Specify whether to export relationships \[default: true\] |
 | \--fullPathTechnicalNames=\<**true** \| false\> | N | Specify whether, for nested complex structures, to include the full path in dot notation for the technical name \[default: true\] |
@@ -347,9 +374,9 @@ Usage:&nbsp; &nbsp; *hackolade genDoc \[--arguments\]*
 | \--diagram=\<**true** \| false\> | N | Include model diagram \[default: true\] |
 | \--diagramViews=\["\<*ERDV1\>"*,"\<*ERDV2\>"*,…\]" | N | Specify an array of diagram views to be included.&nbsp; The value is a string surrounded by double quotes (").&nbsp; ER Diagram View names are represented as an array surrounded by square brackets (\[\]), and are separated by a comma (,).&nbsp; \[default: all\] |
 | \--sepContDiag=\<**true** \| false\> | N | Include separate container diagrams (database, region, buckets, keyspaces...)&nbsp; \[default: true\] |
-| \--entityDiagrams=\<**true** \| false\> | N | Include entity hierarchical schema diagrams \[default: true\] |
-| \--attribTree=\<**all** \| complex \| none\> | N | Include individual hierarchical schema view for all attributes \[all\], for complex attributes only \[complex\], or for no attributes \[none\]. \[default: all\] |
-| \--properties=\<**all** \| notNull \| none\> | N | Include all field properties \[all\], only field properties with information \[notnull\], or no field properties \[none\]. \[default: all\] |
+| \--entityDiagrams=\<true \| **false**\> | N | Include entity hierarchical schema diagrams \[default: false\] |
+| \--attribTree=\<all \| **complex** \| none\> | N | Include individual hierarchical schema view for all attributes \[all\], for complex attributes only \[complex\], or for no attributes \[none\]. \[default: complex\] |
+| \--properties=\<all \| **notNull** \| none\> | N | Include all field properties \[all\], only field properties with information \[notnull\], or no field properties \[none\]. \[default: notNull\] |
 | \--relationships=\<**true** \| false\> | N | Include Relationships \[default: true\] |
 | \--JSONSchema=\<**true** \| false\> | N | Include JSON Schema code \[default: true\] |
 | \--JSONData=\<**true** \| false\> | N | Include JSON Data sample \[default: true\] |
@@ -380,13 +407,13 @@ More complex example:&nbsp;
 
 **Note:** If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: *"C:\\Program Files\\Hackolade\\hackolade"* .&nbsp; The workaround, assuming:
 
-![Windows Program Files](<lib/Windows%20Program%20Files.png>)
+![Windows Program Files](<lib/Windows Program Files.png>)
 
 is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed above.
 
 &nbsp;
 
-## Open
+## open
 
 It is possible to open Hackolade Studio data model from the command line. &nbsp;
 
@@ -409,13 +436,13 @@ Usage:&nbsp; &nbsp; *hackolade open \[--arguments\]*
 
 Example:
 
-*C:\\PROGRA~1\\Hackolade\\hackolade open --model="/data models/yelp-mongodb.hck.json"&nbsp; *
+*C:\\PROGRA~1\\Hackolade\\hackolade open --model="/data models/yelp-mongodb.hck.json"* &nbsp;
 
 &nbsp;
 
 **Note:** If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: *"C:\\Program Files\\Hackolade\\hackolade"* .&nbsp; The workaround, assuming:
 
-![Windows Program Files](<lib/Windows%20Program%20Files.png>)
+![Windows Program Files](<lib/Windows Program Files.png>)
 
 is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed above.
 
@@ -446,13 +473,13 @@ Usage:&nbsp; &nbsp; *hackolade obfusc \[--arguments\]*
 
 Example:
 
-*C:\\PROGRA~1\\Hackolade\\hackolade obfusc --sourcemodel=masterdata --targetmodel=garbeledmasterdata&nbsp; *
+*C:\\PROGRA~1\\Hackolade\\hackolade obfusc --sourcemodel=masterdata --targetmodel=garbeledmasterdata* &nbsp;
 
 &nbsp;
 
 **Note:** If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: *"C:\\Program Files\\Hackolade\\hackolade"* .&nbsp; The workaround, assuming:
 
-![Windows Program Files](<lib/Windows%20Program%20Files.png>)
+![Windows Program Files](<lib/Windows Program Files.png>)
 
 is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed above.
 
@@ -471,12 +498,14 @@ Usage:&nbsp; &nbsp; *hackolade polyglotDerive \[--arguments\]*
 | **Argument** | **Required** | **Purpose** |
 | --- | --- | --- |
 | \--target=\<*target*\> | Y | Native target for model: JSON, MONGODB, DYNAMODB, COUCHBASE, or plugin target: Avro, CASSANDRA, COSMOSDB-SQL, COSMOSDB-MONGO, ELASTICSEARCH, EventBridge, Glue, HBase, HIVE, JOI, MSSQLServer; NEO4J, OPENAPI, PARQUET, ScyllaDB, Snowflake, SWAGGER, Synapse, TinkerPop, etc.. |
+| \--targetVersion=\<version\> | N | Specify the version number where applicable and necessary.(currently Oracle)&nbsp; \[default: latest\] |
 | \--polyglotmodels="\<file1\>;\<file2\>..." | Y | Full path and file name for polyglot model. Extension .json is optional. Accepts paths divided by semicolon when deriving from multiple Polyglot models.. |
 | \--targetmodel=\<file\>\* | Y | Specify the directory path and file name where the derived target model will be created |
 | \--pathType=\< **absolute** \| relative \>&nbsp; | N | Specify the type of path, absolute or relative \[default: absolute\] |
 | \--normalize=\< true \| **false** \>&nbsp; | N | Where applicable, specify whether or not to normalize complex data types in separate entities \[default: false\] |
 | \--APItemplate=\<file\>\* | N | When deriving to Swagger/OpenAPI target to generate model-driven API, specify full path and file name for the template to be used during deriving from Polyglot. The template can be a Hackolade model, or a Swagger or OpenAPI documentation file in either JSON or YAML. |
 | \--selectedObjects= "\<containerName\>: \[\<*entity1\>*,\<*entity2\>*,…\]" | N | Specify container(s) to reverse-engineer&nbsp; \[default: all\] and an array of entities \[default: all\] - MongoDB: container = dbs; entity = collection - DynamoDB: container = *not applicable*; entity = table - Couchbase: container = bucket; entity = document kind - Cosmos DB: container = collection; entity = document type - Elasticsearch: container = index: entity = type - HBase: container =&nbsp; namespace; entity = table The value is a string surrounded by double quotes (").&nbsp; Entities are represented as an array surrounded by square brackets (\[\]), and are separated by a comma (,).&nbsp; The entities array is separated from the container name by a colon (:).&nbsp; Containers are separated by semi-colons (;). |
+| \--selectedViews= "\<containerName\>: \[\<*entity1\>*,\<*entity2\>*,…\]" | N | Specify container(s) to derive \[default: none\] and an array of views. The value is a string surrounded by double quotes ("). Views are represented as an array surrounded by square brackets (\[\]), and are separated by a comma (,). The views array is separated from the container name by a colon (:). Containers are separated by semi-colons (;) |
 | \--logLevel=\< 1 \| 2 \| 3 \| **4** \> | N | &#49; = no spinner, no info, no error messages 2 = no spinner, no info 3 = no spinner 4 = full output \[default: 4\] |
 
 
@@ -486,13 +515,13 @@ Usage:&nbsp; &nbsp; *hackolade polyglotDerive \[--arguments\]*
 
 Example:
 
-*C:\\PROGRA~1\\Hackolade\\hackolade polyglotDerive --target=mongodb --polyglotmodels=yelp-polyglot.hck.json --targetmodel=yelp-mongodb.hck.json&nbsp; *
+*C:\\PROGRA~1\\Hackolade\\hackolade polyglotDerive --target=mongodb --polyglotmodels=yelp-polyglot.hck.json --targetmodel=yelp-mongodb.hck.json* &nbsp;
 
 &nbsp;
 
 **Note:** If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: *"C:\\Program Files\\Hackolade\\hackolade"* .&nbsp; The workaround, assuming:
 
-![Windows Program Files](<lib/Windows%20Program%20Files.png>)
+![Windows Program Files](<lib/Windows Program Files.png>)
 
 is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed above.
 
@@ -511,7 +540,7 @@ Usage:&nbsp; &nbsp; *hackolade polyglotUpdate \[--arguments\]*
 | **Argument** | **Required** | **Purpose** |
 | --- | --- | --- |
 | \--model=\<file\>\* | Y | Full path and file name for target model. Extension .json is optional&nbsp; |
-| \--references= "\<*name1\>*,\<*name2\>*,…" | N | Specify the name of the referenced polyglot models for which the target model must be updated. The value is a string surrounded by double quotes ("). The names are separated by a comma (,). ![CLI - Polyglot reference name](<lib/CLI%20-%20Polyglot%20reference%20name.png>) \[default: all\] |
+| \--references= "\<*name1\>*,\<*name2\>*,…" | N | Specify the name of the referenced polyglot models for which the target model must be updated. The value is a string surrounded by double quotes ("). The names are separated by a comma (,). ![CLI - Polyglot reference name](<lib/CLI - Polyglot reference name.png>) \[default: all\] |
 | \--logLevel=\< 1 \| 2 \| 3 \| **4** \> | N | &#49; = no spinner, no info, no error messages 2 = no spinner, no info 3 = no spinner 4 = full output \[default: 4\] |
 
 
@@ -521,13 +550,13 @@ Usage:&nbsp; &nbsp; *hackolade polyglotUpdate \[--arguments\]*
 
 Example:
 
-*C:\\PROGRA~1\\Hackolade\\hackolade polyglotUpdate --model=yelp-mongodb.hck.json&nbsp; *
+*C:\\PROGRA~1\\Hackolade\\hackolade polyglotUpdate --model=yelp-mongodb.hck.json* &nbsp;
 
 &nbsp;
 
 **Note:** If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: *"C:\\Program Files\\Hackolade\\hackolade"* .&nbsp; The workaround, assuming:
 
-![Windows Program Files](<lib/Windows%20Program%20Files.png>)
+![Windows Program Files](<lib/Windows Program Files.png>)
 
 is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed above.
 
@@ -608,9 +637,112 @@ Cosmos DB example:
 
 **Note:** If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: *"C:\\Program Files\\Hackolade\\hackolade"* .&nbsp; The workaround, assuming:
 
-![Windows Program Files](<lib/Windows%20Program%20Files.png>)
+![Windows Program Files](<lib/Windows Program Files.png>)
 
 is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed above.
+
+&nbsp;
+
+## revEngDataDictionary
+
+The revEngDataDictionary command lets you synchronize a previously published Hackolade data models from a Data Dictionary instance (currently Collibra only.)
+
+&nbsp;
+
+Usage:&nbsp; &nbsp; *hackolade revEngDataDictionary \[--arguments\]*
+
+&nbsp;
+
+| **Argument** | **Required** | **Purpose** |
+| --- | --- | --- |
+| \--target=\<*target*\> | Y | Native target for model: JSON, MONGODB, DYNAMODB, COUCHBASE, or plugin target: Avro, CASSANDRA, COSMOSDB-SQL, COSMOSDB-MONGO, ELASTICSEARCH, EventBridge, Glue, HBase, HIVE, JOI, MSSQLServer; NEO4J, OPENAPI, PARQUET, ScyllaDB, Snowflake, SWAGGER, Synapse, TinkerPop, etc.. |
+| \--connectName=\<connection\> | Y if from instance | Name of connection settings saved in the Hackolade instance where CLI is invoked. Or use --connectFile instead. |
+| \--connectFile=\<*file*\>\* | N | Full file path of connection config file (you don't need to use it when connect name is specified).&nbsp; The simplest way to create a connection file is to create a connection in the GUI application, then export the connection settings to file, encrypted or not. |
+| \--model=\<*file*\>\* | Y | Full path and file name for target Hackolade model into which reverse-engineering process has to be converted.&nbsp; Extension .json is optional |
+| \--dataDictionaryResource=\<resource name\> | Y | Name of the resource (domain) in the Data Dictionary instance being reverse-engineered |
+| \--fieldOrder=\< **keep** \| alpha \> | N | Specify whether to preserve order of fields in sampled document or rearrange in alpha order&nbsp; \[default: keep\] |
+| \--update=\< true \| **false** \> | N | Specify whether to update existing model.  If false, existing model will be overwritten \[default: false\] |
+| \--conflictResolution\< **keepBoth** \| replace \| merge \| cancel \> | N | Specify conflict resolution strategy for containers and entities \[default: keepBoth\]&nbsp; \[values: "keepBoth", "replace", "merge", "cancel"\] \[default: "keepBoth"\] |
+| \--namingConventions=\< business \| technical \> | N | If application parameters are set to enable Naming Conventions, specify whether to reverse-engineer source attributes as business names or as technical names.&nbsp; Conversions will be applied according to your Naming Conventions parameters. &nbsp; \[default: **business**, if Naming Conventions are disabled; or **technical**, if Naming Conventions are enabled in application Tools \> Options\] |
+| \--distribution=\< **true** \| false \> | N | Specify whether to perform orthogonal distribution of model entities on ERD. \[default: true\] |
+| \--maxErdEntityBoxes=\< true \| **false** \> | N | Specify whether to fully expand all collections before distribution.&nbsp; \[default: false\] |
+| \--logLevel=\< 1 \| 2 \| 3 \| **4** \> | N | &#49; = no spinner, no info, no error messages 2 = no spinner, no info 3 = no spinner 4 = full output \[default: 4\] |
+
+
+\*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“)&nbsp; Path can be ignored if file is in local directory.
+
+&nbsp;
+
+Example:
+
+> C:\\PROGRA~1\\Hackolade\\hackolade revEngDataDictionary --target=MONGODB --connectName=Collibra\_instance --dataDictionaryResource=Yelp --model=yelp&nbsp;
+
+&nbsp;
+
+**Note:** If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: *"C:\\Program Files\\Hackolade\\hackolade"* .&nbsp; The workaround, assuming:
+
+![Windows Program Files](<lib/Windows Program Files.png>)
+
+is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed above.
+
+&nbsp;
+
+## revEngDDL
+
+The *revEngDDL* command allows to trigger a reverse-engineering process of a Data Definition Language file from a database instance, as described in [this page](<SQLDDL.md>).
+
+&nbsp;
+
+Usage:&nbsp; &nbsp; *hackolade revEngDDL \[--arguments\]*
+
+&nbsp;
+
+| **Argument** | **Required** | **Purpose** |
+| --- | --- | --- |
+| \--target=\<*target*\> | Y | Native target for model: MONGODB, DYNAMODB, COUCHBASE, or plugin target: ArangoDB, Avro, CASSANDRA, COSMOSDB-SQL, COSMOSDB-MONGO, ELASTICSEARCH, EventBridge, Glue, HBase, HIVE, JOI, MSSQLServer; NEO4J, OPENAPI, PARQUET, ScyllaDB, Snowflake, SWAGGER, Synapse, TinkerPop |
+| \--file=\<*file*\>\* | Y | Specify the directory path and file name where the schema file to be reverse-engineered is located (file type must be compatible with selected target.)&nbsp; |
+| \--model=\<*file*\>\* | Y | Full path and file name for target Hackolade model into which reverse-engineering process has to be converted.&nbsp; Extension .json is optional |
+| \--entityHandling=\< **ERD** \| definitions \> | N | Specify whether must be reverse-engineered as entities in ERD or as model definitions \[default: ERD\] |
+| \--container=\<containerName\> | N | Specify a container name into which reverse-engineered entities will be inserted \[default=""\] |
+| \--database=\< oracle \| mysql \| mssqlserver \| db2 \| postgres \| informix \| snowflake \| teradata \> | Y | Name of database of DDL script&nbsp; |
+| \--update=\< true \| **false** \> | N | Specify whether to update existing model.  If false, existing model will be overwritten \[default: false\] |
+| \--conflictResolution=\< **keepBoth** \| replace \| merge \| cancel \> | N | Specify conflict strategy for containers and entities \[default: keepBoth\] |
+| \--namingConventions=\< business \| technical \> | N | If application parameters are set to enable Naming Conventions, specify whether to reverse-engineer source attributes as business names or as technical names.&nbsp; Conversions will be applied according to your Naming Conventions parameters. &nbsp; \[default: **business**, if Naming Conventions are disabled; or **technical**, if Naming Conventions are enabled in application Tools \> Options\] |
+| \--maxErdEntityBoxes=\< true \| **false** \> | N | Specify whether to fully expand all collections before distribution.&nbsp; \[default: false\] |
+| \--logLevel=\< 1 \| 2 \| 3 \| **4** \> | N | &#49; = no spinner, no info, no error messages 2 = no spinner, no info 3 = no spinner 4 = full output \[default: 4\] |
+
+
+\*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“)&nbsp; Path can be ignored if file is in local directory.
+
+&nbsp;
+
+## revEngDiagram
+
+The *revEngDiagram* command allows to trigger a reverse-engineering process of a [PowerDesigner file](<PowerDesigner.md>) for logical models (typically .ldm extension) and soon for physical models (typically .pdm extension.)&nbsp;
+
+&nbsp;
+
+Usage:&nbsp; &nbsp; *hackolade revEngDiagram \[--arguments\]*
+
+&nbsp;
+
+| **Argument** | **Required** | **Purpose** |
+| --- | --- | --- |
+| \--source=\<source\> | Y | Specify the modeling tool providing the source file.&nbsp; Currently only powerdesigner is a possible value |
+| \--file=\<*file*\>\* | Y | Specify the directory path and file name where the file to be reverse-engineered is located (file must be a valid file for the source.)&nbsp; Absolute and relative paths are allowed. &nbsp; Currently supported extensions: .ldm, . mld (logical models from PowerDesigner) |
+| \--model=\<*file*\>\* | Y | Full path and file name for target Hackolade model into which reverse-engineering process has to be converted.&nbsp; Extension .json is optional.&nbsp; If not specified, the target Hackolade model is located in the same directory than the data model file to be reverse-engineered and receives the same name, with the Hackolade extension .hck.json. |
+| \--target=\<*target*\> | Y | Specify the target for the Hackolade Studio model to create.&nbsp; For a logical model, the target must be polyglot.&nbsp; For a physical model, the target must be one of the Hackolade Studio physical targets. |
+| \--maxErdEntityBoxes=\< true \| **false** \> | N | Specify whether to fully expand all collections before distribution.&nbsp; \[default: false\] |
+| \--logLevel=\< 1 \| 2 \| 3 \| **4** \> | N | &#49; = no spinner, no info, no error messages 2 = no spinner, no info 3 = no spinner 4 = full output \[default: 4\] |
+
+
+\*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“)&nbsp; Path can be ignored if file is in local directory.
+
+&nbsp;
+
+Exxample:
+
+*start /wait hackolade revEngDiagram --source=PowerDesigner --file=MyLogicalDataModel.ldm --target=Polyglot*
 
 &nbsp;
 
@@ -672,37 +804,6 @@ Usage:&nbsp; &nbsp; *hackolade revEngJSON \[--arguments\]*
 
 &nbsp;
 
-## revEngDDL
-
-The *revEngDDL* command allows to trigger a reverse-engineering process of a Data Definition Language file from a database instance, as described in [this page](<SQLDDL.md>).
-
-&nbsp;
-
-Usage:&nbsp; &nbsp; *hackolade revEngDDL \[--arguments\]*
-
-&nbsp;
-
-| **Argument** | **Required** | **Purpose** |
-| --- | --- | --- |
-| \--target=\<*target*\> | Y | Native target for model: MONGODB, DYNAMODB, COUCHBASE, or plugin target: ArangoDB, Avro, CASSANDRA, COSMOSDB-SQL, COSMOSDB-MONGO, ELASTICSEARCH, EventBridge, Glue, HBase, HIVE, JOI, MSSQLServer; NEO4J, OPENAPI, PARQUET, ScyllaDB, Snowflake, SWAGGER, Synapse, TinkerPop |
-| \--file=\<*file*\>\* | Y | Specify the directory path and file name where the schema file to be reverse-engineered is located (file type must be compatible with selected target.)&nbsp; |
-| \--model=\<*file*\>\* | Y | Full path and file name for target Hackolade model into which reverse-engineering process has to be converted.&nbsp; Extension .json is optional |
-| \--entityHandling=\< **ERD** \| definitions \> | N | Specify whether must be reverse-engineered as entities in ERD or as model definitions \[default: ERD\] |
-| \--container=\<containerName\> | N | Specify a container name into which reverse-engineered entities will be inserted \[default=""\] |
-| \--database=\< oracle \| mysql \| mssqlserver \| db2 \| postgres \| informix \| snowflake \| teradata \> | Y | Name of database of DDL script&nbsp; |
-| \--update=\< true \| **false** \> | N | Specify whether to update existing model.  If false, existing model will be overwritten \[default: false\] |
-| \--conflictResolution=\< **keepBoth** \| replace \| merge \| cancel \> | N | Specify conflict strategy for containers and entities \[default: keepBoth\] |
-| \--namingConventions=\< business \| technical \> | N | If application parameters are set to enable Naming Conventions, specify whether to reverse-engineer source attributes as business names or as technical names.&nbsp; Conversions will be applied according to your Naming Conventions parameters. &nbsp; \[default: **business**, if Naming Conventions are disabled; or **technical**, if Naming Conventions are enabled in application Tools \> Options\] |
-| \--maxErdEntityBoxes=\< true \| **false** \> | N | Specify whether to fully expand all collections before distribution.&nbsp; \[default: false\] |
-| \--logLevel=\< 1 \| 2 \| 3 \| **4** \> | N | &#49; = no spinner, no info, no error messages 2 = no spinner, no info 3 = no spinner 4 = full output \[default: 4\] |
-
-
-\*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“)&nbsp; Path can be ignored if file is in local directory.
-
-&nbsp;
-
-&nbsp;
-
 ## revEngXLSX
 
 The *revEngXLSX* command allows to import an Excel template into a data model. &nbsp;
@@ -725,8 +826,6 @@ Usage:&nbsp; &nbsp; *hackolade revEngXLSX \[--arguments\]*
 
 
 \*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“)&nbsp; Path can be ignored if file is in local directory.
-
-&nbsp;
 
 &nbsp;
 
@@ -757,50 +856,6 @@ Usage:&nbsp; &nbsp; *hackolade revEngXSD \[--arguments\]*
 
 &nbsp;
 
-## revEngDataDictionary
-
-The revEngDataDictionary command lets you synchronize a previously published Hackolade data models from a Data Dictionary instance (currently Collibra only.)
-
-&nbsp;
-
-Usage:&nbsp; &nbsp; *hackolade revEngDataDictionary \[--arguments\]*
-
-&nbsp;
-
-| **Argument** | **Required** | **Purpose** |
-| --- | --- | --- |
-| \--target=\<*target*\> | Y | Native target for model: JSON, MONGODB, DYNAMODB, COUCHBASE, or plugin target: Avro, CASSANDRA, COSMOSDB-SQL, COSMOSDB-MONGO, ELASTICSEARCH, EventBridge, Glue, HBase, HIVE, JOI, MSSQLServer; NEO4J, OPENAPI, PARQUET, ScyllaDB, Snowflake, SWAGGER, Synapse, TinkerPop, etc.. |
-| \--connectName=\<connection\> | Y if from instance | Name of connection settings saved in the Hackolade instance where CLI is invoked. Or use --connectFile instead. |
-| \--connectFile=\<*file*\>\* | N | Full file path of connection config file (you don't need to use it when connect name is specified).&nbsp; The simplest way to create a connection file is to create a connection in the GUI application, then export the connection settings to file, encrypted or not. |
-| \--model=\<*file*\>\* | Y | Full path and file name for target Hackolade model into which reverse-engineering process has to be converted.&nbsp; Extension .json is optional |
-| \--dataDictionaryResource=\<resource name\> | Y | Name of the resource (domain) in the Data Dictionary instance being reverse-engineered |
-| \--fieldOrder=\< **keep** \| alpha \> | N | Specify whether to preserve order of fields in sampled document or rearrange in alpha order&nbsp; \[default: keep\] |
-| \--update=\< true \| **false** \> | N | Specify whether to update existing model.  If false, existing model will be overwritten \[default: false\] |
-| \--conflictResolution\< **keepBoth** \| replace \| merge \| cancel \> | N | Specify conflict resolution strategy for containers and entities \[default: keepBoth\]&nbsp; \[values: "keepBoth", "replace", "merge", "cancel"\] \[default: "keepBoth"\] |
-| \--namingConventions=\< business \| technical \> | N | If application parameters are set to enable Naming Conventions, specify whether to reverse-engineer source attributes as business names or as technical names.&nbsp; Conversions will be applied according to your Naming Conventions parameters. &nbsp; \[default: **business**, if Naming Conventions are disabled; or **technical**, if Naming Conventions are enabled in application Tools \> Options\] |
-| \--distribution=\< **true** \| false \> | N | Specify whether to perform orthogonal distribution of model entities on ERD. \[default: true\] |
-| \--maxErdEntityBoxes=\< true \| **false** \> | N | Specify whether to fully expand all collections before distribution.&nbsp; \[default: false\] |
-| \--logLevel=\< 1 \| 2 \| 3 \| **4** \> | N | &#49; = no spinner, no info, no error messages 2 = no spinner, no info 3 = no spinner 4 = full output \[default: 4\] |
-
-
-\*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“)&nbsp; Path can be ignored if file is in local directory.
-
-&nbsp;
-
-Example:
-
-> C:\\PROGRA~1\\Hackolade\\hackolade revEngDataDictionary --target=MONGODB --connectName=Collibra\_instance --dataDictionaryResource=Yelp --model=yelp&nbsp;
-
-&nbsp;
-
-**Note:** If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: *"C:\\Program Files\\Hackolade\\hackolade"* .&nbsp; The workaround, assuming:
-
-![Windows Program Files](<lib/Windows%20Program%20Files.png>)
-
-is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed above.
-
-&nbsp;
-
 ## obfusc&nbsp;
 
 The obfusc command lets you garble sensitive properties: business name, technical name, description, comments, enumeration.  Use if you need to send a model for troubleshooting but don't want to disclose sensitive aspects of the model.
@@ -824,13 +879,13 @@ Usage:&nbsp; &nbsp; *hackolade obfusc \[--arguments\]*
 
 Example:
 
-*C:\\PROGRA~1\\Hackolade\\hackolade obfusc --sourcemodel=masterdata --targetmodel=garbeledmasterdata&nbsp; *
+*C:\\PROGRA~1\\Hackolade\\hackolade obfusc --sourcemodel=masterdata --targetmodel=garbeledmasterdata* &nbsp;
 
 &nbsp;
 
 **Note:** If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: *"C:\\Program Files\\Hackolade\\hackolade"* .&nbsp; The workaround, assuming:
 
-![Windows Program Files](<lib/Windows%20Program%20Files.png>)
+![Windows Program Files](<lib/Windows Program Files.png>)
 
 is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed above.
 

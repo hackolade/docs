@@ -12,7 +12,7 @@ The Advanced tab allows you to enter name-value pairs in the form of \<cookie-na
 
 &nbsp;
 
-![Confluent advanced cookie name-value](<lib/Confluent%20advanced%20cookie%20name-value.png>)
+![Confluent advanced cookie name-value](<lib/Confluent advanced cookie name-value.png>)
 
 &nbsp;
 
@@ -20,7 +20,7 @@ If you wish to reference an environment variable, you may do so, wrapped in doub
 
 &nbsp;
 
-![Confluent advanced cookie environment var](<lib/Confluent%20advanced%20cookie%20environment%20var.png>)
+![Confluent advanced cookie environment var](<lib/Confluent advanced cookie environment var.png>)
 
 &nbsp;
 

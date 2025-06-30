@@ -12,7 +12,7 @@ In Hackolade, the address of the LDAP server and port number need to be specifie
 
 &nbsp;
 
-![MongoDB connection LDAP 1](<lib/MongoDB%20connection%20LDAP%201.png>)
+![MongoDB connection LDAP 1](<lib/MongoDB connection LDAP 1.png>)
 
 &nbsp;
 
@@ -20,5 +20,5 @@ Then select LDAP in the authentication dropdown box, before specifying the usern
 
 &nbsp;
 
-![MongoDB connection LDAP 2](<lib/MongoDB%20connection%20LDAP%202.png>)
+![MongoDB connection LDAP 2](<lib/MongoDB connection LDAP 2.png>)
 

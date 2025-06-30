@@ -4,17 +4,22 @@ When you open a local repository and choose Explore repository \> Files in the l
 
 &nbsp;
 
-![Workgroup explore files](<lib/Workgroup%20explore%20files.png>)
+![Workgroup explore files](<lib/Workgroup explore files.png>)
 
 &nbsp;
 
 Different strategies are available for discovering data models in a repository, among which you can choose by clicking the cogwheel icon to access the options:
 
 * **Listing all files ending with the extension .hck.json**.
+
   * Limitation: the models created before the introduction of this extension are not listed.&nbsp; If possible, we advise you to change the extension of these older data models from .json to .hck.json. We introduced this double extension to easily differentiate data models from JSON documents, JSON Schema files, or Swagger/OpenAPI specs.
+
 * **Listing all files ending with the extension .json**.
+
   * Limitation: if your repository contains other JSON files that are not data models (documents, JSON Schema, OpenAPI, etc.), they are also listed here.&nbsp; If possible, we advise you to change the extension of the data models from .json to .hck.json and to use the first strategy above.
+
 * **Scanning the content of the JSON files**.
+
   * Limitation: although this strategy may give more accurate results, it can be much slower depending on the size of your repository and of the JSON files present, as the application must open each .json file to determine whether it is a Hackolade data model or not.
 
 &nbsp;

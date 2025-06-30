@@ -18,7 +18,7 @@ With a polyglot data model, you can define data structures once, then easily ins
 
 &nbsp;
 
-![Polyglot data modeling concept](<lib/Polyglot%20data%20modeling%20concept.png>)
+![Polyglot data modeling concept](<lib/Polyglot data modeling concept.png>)
 
 &nbsp;
 
@@ -32,7 +32,7 @@ Exceptions are possible, as described further down.
 
 You may be used to the traditional 3-step process - conceptual-logical-physical - to successively capture scope and language, business rules, and target-specific implementation details. To facilitate the process, we provide, as part of our Polyglot capabilities, a Graph Diagram view of common business language with its entities and their relationships. The graph view is friendlier to business users than Entity-Relationship or UML diagrams.
 
-![Polyglot Cocenptual Graph View](<lib/Polyglot%20Conceptual%20Graph%20View.png>)
+![Polyglot Cocenptual Graph View](<lib/Polyglot Conceptual Graph View.png>)
 
 &nbsp;
 
@@ -68,7 +68,7 @@ A polyglot data model is just another Hackolade data model.&nbsp; You can create
 
 To create a new polyglot data model, simply choose Polyglot as your target, and follow the instructions in [this tutorial](<Createyourfirstdatamodel.md>).
 
-![Image](<lib/Target%20selection%20polyglot.png>)
+![Image](<lib/Target selection polyglot.png>)
 
 &nbsp;
 
@@ -86,13 +86,13 @@ Once you're ready to create a physical data model for a given technology, the pr
 
 &nbsp;
 
-![Polyglot - derive from](<lib/Polyglot%20-%20derive%20from.png>)
+![Polyglot - derive from](<lib/Polyglot - derive from.png>)
 
 &nbsp;
 
 You may then choose the polyglot data model file:
 
-![Polyglot - choose file](<lib/Polyglot%20-%20choose%20file.png>)
+![Polyglot - choose file](<lib/Polyglot - choose file.png>)
 
 &nbsp;
 
@@ -100,17 +100,17 @@ You are then presented with a dialog where you can narrow down the selection of 
 
 &nbsp;
 
-![Polyglot - entity selection](<lib/Polyglot%20-%20entity%20selection.png>)&nbsp;
+![Polyglot - entity selection](<lib/Polyglot - entity selection.png>)&nbsp;
 
 Attributes of entities cannot be individually deselected in the above screen. But 2 options are available, depending on the use case:
 
 &#49;) in the polyglot model, each object, including attributes can be marked as "Polyglot only", meaning that they will not be included in any target models.
 
-![Polyglot only property](<lib/Polyglot%20only%20property.png>)
+![Polyglot only property](<lib/Polyglot only property.png>)
 
 &#50;) in a target model you can deselect the IsActivated property, which will cause the attribute to remain in the model, but be filtered out (or commented if the target syntax allows it) in the forward-engineering script.
 
-![Polyglot isActivated property](<lib/Polyglot%20isActivated%20property.png>)
+![Polyglot isActivated property](<lib/Polyglot isActivated property.png>)
 
 &nbsp;
 
@@ -138,7 +138,7 @@ Once a target model has been created and derived from a polyglot model, it conta
 
 You may also join entities from multiple polyglot models by repeating the operation to derive from polyglot.
 
-![Polyglot reference property](<lib/Polyglot%20reference%20property.png>)
+![Polyglot reference property](<lib/Polyglot reference property.png>)
 
 &nbsp;
 
@@ -152,7 +152,7 @@ An impact analysis dialog is displayed to let you decide which objects to includ
 
 &nbsp;
 
-![Polyglot Impact Analysis](<lib/Polyglot%20Impact%20Analysis.png>)
+![Polyglot Impact Analysis](<lib/Polyglot Impact Analysis.png>)
 
 &nbsp;
 

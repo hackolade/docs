@@ -20,15 +20,15 @@ If you need to move your license key to another computer, you first need to rele
 
 &nbsp;
 
-To do so, go to the option Help \> Software Key Validation, and choose the action 'I want to...':
+To do so, go to the option Help \> License Status, and click the button "Release key"':
 
-![Registration -- release license key](<lib/Registration%20--%20release%20license%20key.png>)
+![Registration -- release license key](<lib/Registration -- release license key.png>)
 
 and click the Send button.&nbsp; This will free up the key on our license server. &nbsp;
 
 &nbsp;
 
-![Registration -- un-register confirmation](<lib/Registration%20--%20un-register%20confirmation.png>)
+![Registration -- un-register confirmation](<lib/Registration -- un-register confirmation.png>)
 
 Make sure to copy the license key and store it (or find your original license key confirmation email) as you will need it to activate on the other computer where you will want to use Hackolade.
 
@@ -50,7 +50,7 @@ Go to the other computer where you want to use Hackolade and validate your licen
 
 &nbsp;
 
-![License Information webpage](<lib/License%20Information%20webpage.png>)
+![License Information webpage](<lib/License Information webpage.png>)
 
 &nbsp;
 
@@ -58,7 +58,7 @@ Go to the other computer where you want to use Hackolade and validate your licen
 
 To have identification information appear in the Computer Name column, users need to go to Help \> Software Key Validation, then release their key, copy it to their clipboard, then fill in the identifier&nbsp; (name or whatever other standard you decide), paste the key, and validate again.
 
-![License dialog](<lib/License%20dialog.png>)
+![License dialog](<lib/License dialog.png>)
 
 &nbsp;
 
@@ -66,13 +66,13 @@ The identifier entered in the this screen will appear in the web page:
 
 &nbsp;
 
-![License Information webpage w username](<lib/License%20Information%20webpage%20w%20username.png>)
+![License Information webpage w username](<lib/License Information webpage w username.png>)
 
 &nbsp;
 
 ### *Workspace*
 
-***TIP:*** you may create extra space on your desktop by sliding the Object Browser or Properties panes with this control ![Image](<lib/Central%20pane%20-%20ellipse.png>) appearing between the panes. You may also toggle the appearance of these panes in the View menu, or by double-clicking on the separation control.
+***TIP:*** you may create extra space on your desktop by sliding the Object Browser or Properties panes with this control ![Image](<lib/Central pane - ellipse.png>) appearing between the panes. You may also toggle the appearance of these panes in the View menu, or by double-clicking on the separation control.
 
 &nbsp;
 
@@ -80,13 +80,13 @@ The identifier entered in the this screen will appear in the web page:
 
 &nbsp;
 
-***TIP:*** in any of the Comments dialogs, you may press the timestamp button to log data and time for your entires.
+***TIP:*** in any of the Comments dialogs, you may press the timestamp button to log data and time for your entries.
 
 &nbsp;
 
-***TIP:*** you many start multiple instances of Hackolade so as to work on multiple models simultaneously.&nbsp; You may also merge 2 Hackolade models, or combine elements from another model with copy/paste from one model in one application instance, to the other model in the second application instance.&nbsp; On Windows, right-click on the Hackolade icon in the toolbar then choose Hackolade:
+***TIP:*** you many start multiple instances of Hackolade Studio on the same machine session, so as to work on multiple models simultaneously.&nbsp; You may also merge 2 Hackolade models, or combine elements from another model with copy/paste from one model in one application instance, to the other model in the second application instance.&nbsp; On Windows, right-click on the Hackolade icon in the toolbar then choose Hackolade:
 
-![Multiple instances](<lib/Multiple%20instances.png>)
+![Multiple instances](<lib/Multiple instances.png>)
 
 &nbsp;
 
@@ -114,7 +114,7 @@ Running multiple instances on the same PC does not require additional license se
 
 ***TIP:*** it is very convenient to use the search for any string of text to locate one or multiple objects in the model
 
-![Object Browser search](<lib/Object%20Browser%20search.png>)
+![Object Browser search](<lib/Object Browser search.png>)
 
 &nbsp;
 
@@ -128,17 +128,17 @@ Running multiple instances on the same PC does not require additional license se
 
 ### *ERD*
 
-***TIP:*** you may automatically resize an entity shape in the Entity Relationship Diagram view by clicking the double-sided arrow icon ![ERD shape auto-resize icon](<lib/ERD%20shape%20auto-resize%20icon.png>) at the top right corner of the shape
+***TIP:*** you may automatically resize an entity shape in the Entity Relationship Diagram view by clicking the double-sided arrow icon ![ERD shape auto-resize icon](<lib/ERD shape auto-resize icon.png>) at the top right corner of the shape
 
-![ERD - Collection Title](<lib/ERD%20-%20Collection%20Title.png>)
+![ERD - Collection Title](<lib/ERD - Collection Title.png>)
 
-***TIP:*** you may change the color of a shape title and frame by choosing from a palette that you can access by clicking the eye-dropper icon ![Toolbar - Select color code](<lib/Toolbar%20-%20Select%20color%20code.png>) just to the left of the auto-resize icon.
+***TIP:*** you may change the color of a shape title and frame by choosing from a palette that you can access by clicking the eye-dropper icon ![Toolbar - Select color code](<lib/Toolbar - Select color code.png>) just to the left of the auto-resize icon.
 
-***TIP:*** if you want to get the maximum level of zoom possible while showing all shapes in your diagram, simply click on the double-sided arrow icon ![Toolbar - Resize box to fit content](<lib/Toolbar%20-%20Resize%20box%20to%20fit%20content.png>) in the application toolbar.
+***TIP:*** if you want to get the maximum level of zoom possible while showing all shapes in your diagram, simply click on the double-sided arrow icon ![Toolbar - Resize box to fit content](<lib/Toolbar - Resize box to fit content.png>) in the application toolbar.
 
 &nbsp;
 
-***TIP:*** after you've created shapes and relationships in the ER diagram, you may want to let Hackolade perform a basic distribution of the shapes according to an orthogonal formula, by choosing this grid-like icon ![Toolbar - orthogonal distribution](<lib/Toolbar%20-%20orthogonal%20distribution.png>)in the toolbar..
+***TIP:*** after you've created shapes and relationships in the ER diagram, you may want to let Hackolade perform a basic distribution of the shapes according to an orthogonal formula, by choosing this grid-like icon ![Toolbar - orthogonal distribution](<lib/Toolbar - orthogonal distribution.png>)in the toolbar..
 
 &nbsp;
 
@@ -146,21 +146,21 @@ Running multiple instances on the same PC does not require additional license se
 
 &nbsp;
 
-***TIP:*** when you select 2 or more shapes, these shape alignment toolbar icons become active: ![ERD shape alignment toolbar icons](<lib/ERD%20shape%20alignment%20toolbar%20icons.png>)
+***TIP:*** when you select 2 or more shapes, these shape alignment toolbar icons become active: ![ERD shape alignment toolbar icons](<lib/ERD shape alignment toolbar icons.png>)
 
 You may also do a right-click and access the same functions through the contextual menu.
 
-***TIP:*** when you select 3 or more shapes in line, you may distribute them evenly with these toolbar control icons:![ERD shape distribution](<lib/ERD%20shape%20distribution.png>)
+***TIP:*** when you select 3 or more shapes in line, you may distribute them evenly with these toolbar control icons:![ERD shape distribution](<lib/ERD shape distribution.png>)
 
 &nbsp;
 
-***TIP:*** you may change the order of the fields/attributes within an entity with these control icons: ![Toolbar field order up-down arrows](<lib/DTD%20field%20order%20arrows.png>)
+***TIP:*** you may change the order of the fields/attributes within an entity with these control icons: ![Toolbar field order up-down arrows](<lib/DTD field order arrows.png>)
 
 &nbsp;
 
 ***TIP:*** you may also change the order of the fields/attributes using the handle on the left of each attribute:
 
-![ERD - attribute drag-and-drop](<lib/ERD%20-%20attribute%20drag-and-drop.png>)
+![ERD - attribute drag-and-drop](<lib/ERD - attribute drag-and-drop.png>)
 
 Furthermore, you may move an attribute to another entity, provided that there are no conflicts.&nbsp; It is not possible to move attributes across different views.&nbsp; By pressing the Ctrl/Cmd key+select the handle with the mouse, it is possible to perform a copy operation.
 
@@ -172,7 +172,7 @@ Note that, if the handle does not show, you may enable its display through the D
 
 &nbsp;
 
-***TIP:*** with denormalization, an ERD can quickly become very busy with all the foreign master lines displayed.&nbsp; You may toggle these lines on or off with this toolbar button ![Toolbar - Toggle foreign master lines button](<lib/Toolbar%20-%20Toggle%20foreign%20master%20lines%20button.png>)
+***TIP:*** with denormalization, an ERD can quickly become very busy with all the foreign master lines displayed.&nbsp; You may toggle these lines on or off with this toolbar button ![Toolbar - Toggle foreign master lines button](<lib/Toolbar - Toggle foreign master lines button.png>)
 
 &nbsp;
 
@@ -182,11 +182,11 @@ Note that, if the handle does not show, you may enable its display through the D
 
 ### Hierarchical hierarchical schema view of entities (collections/tables/nodes \& edges)
 
-***TIP:*** you may change the order of the fields/attributes with these control icons: ![Toolbar field order up-down arrows](<lib/DTD%20field%20order%20arrows.png>)
+***TIP:*** you may change the order of the fields/attributes with these control icons: ![Toolbar field order up-down arrows](<lib/DTD field order arrows.png>)
 
 &nbsp;
 
-***TIP:*** you may toggle more or less details in the view with this toolbar control: ![Schema hierarchical treeview details toggle](<lib/DTD%20details%20toggle.png>)
+***TIP:*** you may toggle more or less details in the view with this toolbar control: ![Schema hierarchical treeview details toggle](<lib/DTD details toggle.png>)
 
 &nbsp;
 
@@ -248,7 +248,7 @@ They may be useful to troubleshoot issues, and requested when opening a support 
 
 Since version 7.3.11, it is possible to access the log files folder via the menu Help \> Access Application Logs
 
-![Access application log files](<lib/Access%20application%20log%20files.png>)
+![Access application log files](<lib/Access application log files.png>)
 
 With the browser deployment of Hackolade Studio, logs are visible in the browser console and can be downloaded from the Help menu.
 

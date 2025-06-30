@@ -26,7 +26,7 @@ Proxy configuration can be achieved in 3 different ways:
 
 The default setting is to use the proxy setting from you system/browser:
 
-![Proxy settings - automatic](<lib/Proxy%20settings%20-%20automatic.png>)
+![Proxy settings - automatic](<lib/Proxy settings - automatic.png>)
 
 &nbsp;
 
@@ -34,7 +34,7 @@ The default setting is to use the proxy setting from you system/browser:
 
 The following option should only be used if you knowingly handle proxy setup through HTTPS\_PROXY environment variables:
 
-![Proxy settings - HTTPS\_PROXY environment var](<lib/Proxy%20settings%20-%20HTTPS\_PROXY%20environment%20var.png>)
+![Proxy settings - HTTPS\_PROXY environment var](<lib/Proxy settings - HTTPS\_PROXY environment var.png>)
 
 &nbsp;
 
@@ -44,7 +44,7 @@ If that fails, you should enter the hostname or IP address of the proxy server, 
 
 &nbsp;
 
-![Proxy settings -- manual](<lib/Proxy%20settings%20--%20manual.png>)
+![Proxy settings -- manual](<lib/Proxy settings -- manual.png>)
 
 &nbsp;
 

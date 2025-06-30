@@ -18,7 +18,7 @@ Before you export, you first should go through the steps of creating the [Mappin
 
 This export can be performed either from the opening screen by clicking on the ellipsis menu for a given project and choosing Export:
 
-![Relational Migrator - export from opening scr](<lib/Relational%20Migrator%20-%20export%20from%20opening%20scr.png>)
+![Relational Migrator - export from opening scr](<lib/Relational Migrator - export from opening scr.png>)
 
 &nbsp;
 
@@ -26,13 +26,13 @@ This export can be performed either from the opening screen by clicking on the e
 
 or from inside a project, by clicking the top 3 dots menu and choosing Export:
 
-![Relational Migrator - export from project](<lib/Relational%20Migrator%20-%20export%20from%20project.png>)
+![Relational Migrator - export from project](<lib/Relational Migrator - export from project.png>)
 
 &nbsp;
 
 Next, the Relational Migrator displays this dialog.&nbsp; Click Export:
 
-![Relational Migrator - export dialog](<lib/Relational%20Migrator%20-%20export%20dialog.png>)
+![Relational Migrator - export dialog](<lib/Relational Migrator - export dialog.png>)
 
 &nbsp;
 
@@ -52,7 +52,7 @@ Select the menu Tools \> Reverse-Engineer \> MongoDB Relational Migrator file...
 
 &nbsp;
 
-![Relational Migrator - reverse-engineering menu](<lib/Relational%20Migrator-%20reverse-engineering%20menu.png>)
+![Relational Migrator - reverse-engineering menu](<lib/Relational Migrator- reverse-engineering menu.png>)
 
 &nbsp;
 
@@ -60,13 +60,13 @@ Select the menu Tools \> Reverse-Engineer \> MongoDB Relational Migrator file...
 
 Click the folder icon from the following dialog, and use your OS file picker to choose the .relmig file previously downloaded, then click OK:
 
-![Relational Migrator - file picker](<lib/Relational%20Migrator%20-%20file%20picker.png>)
+![Relational Migrator - file picker](<lib/Relational Migrator - file picker.png>)
 
 &nbsp;
 
 The model will promptly be created in Hackolade Studio where it can be enriched:
 
-![Relational Migrator - imported data model](<lib/Relational%20Migrator%20-%20imported%20data%20model.png>)
+![Relational Migrator - imported data model](<lib/Relational Migrator - imported data model.png>)
 
 &nbsp;
 

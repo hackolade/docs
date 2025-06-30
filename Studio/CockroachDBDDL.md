@@ -8,7 +8,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![PostgreSQL DDL forward-engineering](<lib/PostgreSQL%20DDL%20forward-engineering.png>)
+![PostgreSQL DDL forward-engineering](<lib/PostgreSQL DDL forward-engineering.png>)
 
 &nbsp;
 

@@ -26,7 +26,7 @@ Hackolade Studio helps you keep your Git subtrees up-to-date in the parent repos
 
 &nbsp;
 
-![Image](<lib/Workgroup%20-%20Git%20subtree.png>)
+![Image](<lib/Workgroup - Git subtree.png>)
 
 &nbsp;
 

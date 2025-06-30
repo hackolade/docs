@@ -20,7 +20,7 @@ The data model in the picture below results from the data modeling of the [Czech
 
 &nbsp;
 
-![Teradata workspace](<lib/PostgreSQL%20workspace.png>)
+![Teradata workspace](<lib/PostgreSQL workspace.png>)
 
 &nbsp;
 
@@ -108,7 +108,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![Teradata forward-engineering](<lib/Teradata%20forward-engineering.png>)
+![Teradata forward-engineering](<lib/Teradata forward-engineering.png>)
 
 &nbsp;
 

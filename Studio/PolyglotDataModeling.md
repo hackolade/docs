@@ -35,13 +35,13 @@ Starting with version 5.2.0 of Hackolade Studio, users can now define structures
 
 The polyglot functionality is there to help cope with the challenges of [polyglot persistence](<https://en.wikipedia.org/wiki/Polyglot\_persistence> "target=\"\_blank\"").&nbsp; Polyglot persistence can be applied to different use cases, for example a large operational application:
 
-![Polyglot persistence - e-commerce](<lib/Polyglot%20persistence%20-%20e-commerce.png>)
+![Polyglot persistence - e-commerce](<lib/Polyglot persistence - e-commerce.png>)
 
 &nbsp;
 
 or through a data pipeline:
 
-![Polyglot persistence - data pipeline](<lib/Polyglot%20persistence%20-%20data%20pipeline.png>)&nbsp;
+![Polyglot persistence - data pipeline](<lib/Polyglot persistence - data pipeline.png>)&nbsp;
 
 &nbsp;
 
@@ -65,7 +65,7 @@ But overall, the above use case is a bit theoretical, and reality will quickly d
 
 Elaborating further, you could derive a target model from multiple polyglot models, or subsets thereof:
 
-![Polyglot multiple subsets](<lib/Polyglot%20multiple%20subsets.png>)
+![Polyglot multiple subsets](<lib/Polyglot multiple subsets.png>)
 
 &nbsp;
 
@@ -81,7 +81,15 @@ It is generally said that there are 3 categories of data modeling: conceptual, l
 
 With version 6.6.0 of Hackolade Studio, we facilitate the process of conceptual data modeling by providing a Graph Diagram view to capture the entities and their relationships..
 
-![Polyglot Conceptual Graph View](<lib/Polyglot%20Conceptual%20Graph%20View.png>)
+![Polyglot Conceptual Graph View](<lib/Polyglot Conceptual Graph View.png>)
+
+&nbsp;
+
+A conceptual model is created as part of a polyglot model.&nbsp; The Graph View lower tab of the central pane shows a graph visualization.&nbsp; It is also possible to use the ER Diagram tab of a polyglot model, or create an [ERD View](<DiagramViews.md>) so that you can toggle the [Display Options](<https://hackolade.com/help/EntityboxesinERdiagram.html#Display%20options> "target=\"\_blank\"") to show the desired level of details, for example with attributes and no data types, or with no attributes, etc...
+
+&nbsp;
+
+For business glossary, Hackolade Studio currently leverages a CSV file as defined in the [model verification](<VerifyDataModel.md>) page.
 
 &nbsp;
 
@@ -111,15 +119,15 @@ Typically in logical models, you would have normalized entities, and you may den
 
 ### Supertypes and subtypes
 
-Hackolade Studio will let you create supertypes and subtypes in a Polyglot model, following either the traditional method:
+Also known as superclasses and subclasses.&nbsp; Hackolade Studio will let you create supertypes and subtypes in a Polyglot model, following either the traditional method:
 
-![Polyglot - normalized complex and sub-types](<lib/Polyglot%20-%20normalized%20complex%20and%20sub-types.png>)
+![Polyglot - normalized complex and sub-types](<lib/Polyglot - normalized complex and sub-types.png>)
 
 &nbsp;
 
 or a denormalized method, with a complex sub-object as well as a oneOf choice representing different possible sub-types for inheritance
 
-![Polyglot - complex structure and super-type](<lib/Polyglot%20-%20complex%20structure%20and%20super-type.png>)
+![Polyglot - complex structure and super-type](<lib/Polyglot - complex structure and super-type.png>)
 
 &nbsp;
 
@@ -137,13 +145,13 @@ With logical models having to be normalized, they are only "technology-agnostic"
 
 Therefore, our Polyglot data models have a more intuitive way of documenting a many-to-many business rule:
 
-![Polyglot many-to-many relationship](<lib/Polyglot%20many-to-many%20relationship.png>)
+![Polyglot many-to-many relationship](<lib/Polyglot many-to-many relationship.png>)
 
 &nbsp;
 
-And our automatic normalization function, when deriving the Polyglot model to an relational database, will generate the expected junction table:
+And our automatic normalization function, when deriving the Polyglot model to a relational database, will generate the expected junction table:
 
-![Polyglot many-to-many normalization](<lib/Polyglot%20many-to-many%20normalization.png>)
+![Polyglot many-to-many normalization](<lib/Polyglot many-to-many normalization.png>)
 
 &nbsp;
 
@@ -189,7 +197,19 @@ An impact analysis dialog is displayed to let you decide which objects to includ
 
 &nbsp;
 
-![Polyglot Impact Analysis](<lib/Polyglot%20Impact%20Analysis.png>)
+![Polyglot Impact Analysis](<lib/Polyglot Impact Analysis.png>)
+
+&nbsp;
+
+The Highlight section on the left displays a legend of the colors.&nbsp; It also allows you to select the differences you want to display or hide:
+
+\- Modifications in Polyglot since last update (yellow)
+
+\- Deviations in Target (green).&nbsp; Deviations in Target (green) are not highlighted by default to avoid noise and confusions
+
+\- Additions in Polyglot (blue)
+
+\- Deletions in Polyglot (red)
 
 &nbsp;
 

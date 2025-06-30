@@ -49,6 +49,8 @@ Examples:
 
 \- general: document, file, text
 
+&nbsp;
+
 #### Prime terms
 
 A prime term can be **a single word** ( or a **phrase** such as 'Unit of Measure'.)&nbsp; It is the most important **modifier of the class term**, and **directly precedes it**.
@@ -131,14 +133,14 @@ feedback,fdbak,,
 * the first line in the glossary file is a header line describing the columns in the file
 * if a cell contains commas, it must be stored in the CSV file in between double quotes
 * if your file contains [diacritics](<https://en.wikipedia.org/wiki/Diacritic> "target=\"\_blank\"") (accents, ...) you must save your file with [UTF-8](<https://en.wikipedia.org/wiki/UTF-8> "target=\"\_blank\"") encoding for the function to work properly.&nbsp; If you edit the file using Excel, you should make sure to save it using this CSV UTF-8 option:
-* ![Naming Conventions - CSV UTF-8](<lib/Naming%20Conventions%20-%20CSV%20UTF-8.png>)
+* ![Naming Conventions - CSV UTF-8](<lib/Naming Conventions - CSV UTF-8.png>)
 * multiple synonyms are separated by a pipe ("\|")
 
 &nbsp;
 
 &nbsp;
 
-### Verifications
+### Glossary verifications
 
 Current glossary-related rules are:
 
@@ -159,9 +161,15 @@ And it is only thru their position in an name that terms are labeled "prime" or 
 
 &nbsp;
 
-## Attribute properties verifications
+## Attribute properties
 
-These verifications are target-specific, evaluating technical names against user-defined properties rules defined in a target-specific file.&nbsp; Any exception to an enabled verification rule is logged into a report.
+All the properties verifications are target-specific.
+
+Hackolade Studio offers predefined, out-of-the-box rules for standard modeling objects such as Containers, Entities, Views, Attributes, and Relationships. These rules can be individually activated or deactivated based on user needs.
+
+In addition, custom verification rules can be defined via configuration files, offering flexibility and control over data quality.
+
+&nbsp;
 
 ### Technical names
 
@@ -181,7 +189,7 @@ The property rules file is typically stored in the folder:
 
 > .hackolade/OPTIONS/\<target\>&nbsp;
 
-> &nbsp;
+&nbsp;
 
 It contains several columns:
 
@@ -210,18 +218,28 @@ amt,,,decimal,0,18,3
 
 &nbsp;
 
-### Verifications
+### Out-of-the-box verification rules
 
-Current target-specific attribute property-related rules are:
+The objects Container, Entity, View, Attribute, and the Model itself can be automatically checked for the following standard property-related rules:
+
+&nbsp;
 
 * check that the properties of each attribute in the model match the specification in the propRules file. An entry is created in the report for each attribute property not matching the declared value in the target-specific propRules file.
+
   * **Invalid data type:** verify that the column value in the propRules file, if set, matches the property of the attribute in the model (i.e., if not declared in the file, then the value in the model can be anything.) If not, an entry is created in the report.
   * **Missing required property:** verify that the column value in the propRules file, if set, matches the property of the attribute in the model (i.e., if not declared in the file, then the value in the model can be either true or false.) If not, an entry is created in the report.
   * **Invalid default property:** verify that the column value in the propRules file, if set, matches the property of the attribute in the model (i.e., if not declared in the file, then the value in the model can be anything.) If not, an entry is created in the report.
   * **Invalid length:** if a string data type, verify that the column value in the propRules file, if set, matches the property of the attribute in the model (i.e., if not declared in the file, then the value in the model can be anything.) If not, an entry is created in the report.
   * **Invalid precision:** if a numeric data type, verify that the column value in the propRules file, if set, matches the property of the attribute in the model (i.e., if not declared in the file, then the value in the model can be anything.) If not, create an entry in the report.
   * **Invalid scale:** if a numeric data type, verify that the column value in the propRules file, if set, matches the property of the attribute in the model (i.e., if not declared in the file, then the value in the model can be anything.) If not, an entry is created in the report.
+
 * check additional rules that are independent of propRules file:
+
+  * **Business name is not empty**
+  * **Technical name is not empty**
+  * **Business name does not start with:** user-defined string, default: "New"
+  * **Technical name does not start with:** user-defined string, default: "New"
+  * **Description is not empty**
   * **Technical name conflicts with reserved keywords:** independent of glossary. Each target has a list of reserved words per level. An entry in the report is created if an attribute technical name, in full, is a reserved word.
   * **Excessive technical name length:** independent of glossary. Some target have max length of, for example 128 characters. Some customers may have their own more restrictive standards. An entry in the report is created if an attribute technical name is greater than the user-defined length. We store this user-defined length, per target, for future reuse.
 
@@ -239,23 +257,123 @@ So these rules did not get included in the list above.
 
 &nbsp;
 
+### User-defined regular expression verification rules
+
+You can define your own verification rules for any string property of any modeling object using regular expressions in a CSV configuration file.
+
+This CSV format enables multiple validation rules per property, supporting more complex and nuanced validation scenarios. It ensures data complies with internal standards and naming conventions.
+
+&nbsp;
+
+#### Supported Properties
+
+User-defined verification rules apply to both standard Hackolade properties and custom properties. Currently, only simple scalar properties (at the root level) are supported. Future releases may include complex types, such as block and group properties.
+
+&nbsp;
+
+#### Regular expression regExpRules file
+
+The regular expression rules file is typically located in the following directory:
+
+> .hackolade/OPTIONS/\<target\>&nbsp;
+
+&nbsp;
+
+The file contains multiple columns that define the rules and their scope.
+
+&nbsp;
+
+| **Column** | **Purpose** | **Allowed values and example** |
+| --- | --- | --- |
+| Rule Keyword | A unique identifier for the rule | Any unique string to identify the rule, example: *viewNameRule* |
+| Rule Name | The name of the rule for the generated report | Any descriptive name for the rule, for example:&nbsp; *verification rule on view name* |
+| Severity | Indication of the severity level when a rule fails | Allowed values: *warning* or *error* |
+| Object | Identifies the nature of the modeling object for the rule | Use the abstract name of the modeling object:&nbsp; *model, container, entity, view, relationship, attribute* |
+| Property | Specifies the property keyword of the object targeted by the rule | Use the JSON keyword found in the persistence model file.&nbsp; This value is case-sensitive and must match exactly how the property is defined in the model.&nbsp; Otherwise, the rule will not be applied.&nbsp; For example: *version, author, description* To identify the correct property keyword, you can open a model file in a text editor such as Notepad, and inspect the JSON content |
+| Regular Expression | The pattern with which the property value must match | Any [JavaScript regular expression](<https://www.w3schools.com/jsref/jsref\_obj\_regexp.asp> "target=\"\_blank\"") written using the standard format */yourPattern/flags*. If the expression is not valid, the application will fallback to a simple string comparison (which may yield incorrect results.) &nbsp; There is no verification of the syntax correctness of the regex provided. If your expression contains a comma, enclose it in double quotes to ensure correct CSV formatting.&nbsp; Line breaks are not allowed.&nbsp; See example patterns below. |
+
+
+&nbsp;
+
+#### Example regExpRules file
+
+> Rule keyword;Rule name;Severity;Object;Property;Regular expression\
+&#49;-model-author-not-empty;Model author is specified;Warning;model;author;/\^.+$/\
+&#50;-model-version-not-empty;Model version is specified;Warning;model;version;/\^.+$/\
+&#51;-table-name-starts-with-T\_-prefix;Table technical name starts with T\_ prefix;warning;entity;code;/\^T\_\[a-zA-Z0-9\_-\]+/\
+&#52;-view-name-starts-with-V\_-prefix;View technical name starts with V\_ prefix;warning;view;code;/\^V\_\[a-zA-Z0-9\_-\]+/\
+&#53;-relationship-name-starts-with-FK\_-prefix;Relationship name starts with FK\_ prefix;warning;relationship;name;/\^FK\_\[a-zA-Z0-9\_-\]+/
+
+&nbsp;
+
+#### Common regular expression examples
+
+To assist in creating effective regular expressions, here are some common patterns:
+
+&nbsp;
+
+| **Rule** | **RegeEx** |
+| --- | --- |
+| must be numeric only &nbsp; | */\^\\d+$/* |
+| must start with A (case sensitive)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | */\^A/* |
+| does **not** start with A (case sensitive)&nbsp; &nbsp; | */\^(?\!A)/* |
+| must start with A (case insensitive)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | */\^A/i* |
+| does **not** start with A (case insensitive)&nbsp; | */\^(?\!A)/i* |
+| must end with A (case sensitive)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | */A$/* |
+| does **not** end with A (case sensitive)&nbsp; &nbsp; &nbsp; | */\[\^A\]$/* |
+| must end with A (case insensitive)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | */A$/i* |
+| does **not** end with A (case insensitive)&nbsp; &nbsp; | */\[\^A\]$/i* |
+| must contain A (case sensitive) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | */A/* |
+| does **not** contain A (case sensitive) &nbsp; &nbsp; &nbsp; | */\^\[\^A\]\*$/* |
+| must contain A (case insensitive) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | */A/i* |
+| does **not** contain A (case insensitive) &nbsp; &nbsp; | */\^\[\^A\]\*$/i* |
+
+
+&nbsp;
+
+&nbsp;
+
+#### Tips for authoring valid JavaScript regular expressions
+
+For help creating more advanced regular expressions, consider using tools like ChatGPT to generate and refine your patterns. To improve the quality and usability of the generated output, make sure to include format requirements in your prompt.
+
+&nbsp;
+
+For example:
+
+"Generate a JavaScript regular expression that starts and ends with slashes (e.g., */.../*), includes appropriate flags if necessary, and is suitable for insertion into a CSV file (i.e., no line breaks, and wrap the regex in double quotes if it contains a comma). The regex should validate that a name starts with *\<insert your rule here, for example a single uppercase letter (A-Z)\>*, followed by one or more alphanumeric characters (*a-z*, *A-Z*, or *0-9*) and allows dashes and underscores."
+
+&nbsp;
+
+You can also use [regex101.com](<https://regex101.com/> "target=\"\_blank\"") to validate your expressions by selecting the JavaScript (ECMAScript) flavor from the menu.
+
+&nbsp;
+
+⚠️ **Important:** Regular expressions are case-sensitive by default. To ensure matches are not affected by letter casing, use the *i* flag as shown above.
+
+&nbsp;
+
+&nbsp;
+
 ## Using the tool to Verify Data Models
 
 A couple of default paths have been added to the user parameters in Tools \> Options, for the default path of the Glossary file, and for the default path where the reports should be created:
 
-![Verify Data Model - Default paths](<lib/Verify%20Data%20Model%20-%20Default%20paths.png>)
+![Verify Data Model - Default paths](<lib/Verify Data Model - Default paths.png>)
 
 &nbsp;
 
 The tool can be found in Tools \> Verify Data Model
 
-![Verify Data Model - menu](<lib/Verify%20Data%20Model%20-%20menu.png>)
+![Verify Data Model - menu](<lib/Verify Data Model - menu.png>)
 
 &nbsp;
 
 When you invoke the tool, you are first presented with a dialog box:
 
-![Verify Data Model - main dialog](<lib/Verify%20Data%20Model%20-%20main%20dialog.png>)
+![Verify Data Model - main dialog](<lib/Verify Data Model - main dialog.png>)
+
+&nbsp;
 
 &nbsp;
 
@@ -265,7 +383,7 @@ With this dialog, you may select and deselect rules to be verified for the loade
 
 After you click the Submit button and select the report name and path for storage, the application executes the selected rules, and displays this dialog at the end of the process:
 
-![Verify Data Model - open in Excel](<lib/Verify%20Data%20Model%20-%20open%20in%20Excel.png>)
+![Verify Data Model - open in Excel](<lib/Verify Data Model - open in Excel.png>)
 
 &nbsp;
 

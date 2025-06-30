@@ -4,7 +4,7 @@ Hackolade easily imports the schema from .avsc or .avro files, located on your l
 
 &nbsp;
 
-![Cloud Selection - combine Avro schemas](<lib/Cloud%20Selection%20-%20combine%20schemas.png>)
+![Cloud Selection - combine Avro schemas](<lib/Cloud Selection - combine schemas.png>)
 
 &nbsp;
 
@@ -18,7 +18,7 @@ Give a meaningful name to the connection to identify it for later, and provide p
 
 &nbsp;
 
-![Cloud Storage - AWS S3 connection for Avro schema](<lib/Cloud%20Storage%20-%20AWS%20S3%20connection.png>)
+![Cloud Storage - AWS S3 connection for Avro schema](<lib/Cloud Storage - AWS S3 connection.png>)
 
 &nbsp;
 
@@ -26,11 +26,11 @@ Give a meaningful name to the connection to identify it for later, and provide p
 
 If the S3 bucket is private, you must also provide authentication parameters (Access key id and Secret access key):
 
-![Cloud Storage - AWS S3 authentication avro schema](<lib/Cloud%20Storage%20-%20AWS%20S3%20authentication.png>)
+![Cloud Storage - AWS S3 authentication avro schema](<lib/Cloud Storage - AWS S3 authentication.png>)
 
 &nbsp;
 
-If you wish to handle AWS authentication through the [credentials file](<https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html> "target=\"\_blank\""), you may leave blank the Access Key ID and Secret Access Key fields, knowing that Hackolade supplies credentials following the recommendations described [here](<https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html> "target=\"\_blank\"").
+If you wish to handle AWS authentication through the [credentials file](<https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html> "target=\"\_blank\""), you may leave blank the Access Key ID and Secret Access Key fields, knowing that Hackolade Studio supplies credentials following the recommendations described [here](<https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html> "target=\"\_blank\"").
 
 &nbsp;
 
@@ -46,13 +46,13 @@ Give a meaningful name to the connection to identify it for later, and provide p
 
 &nbsp;
 
-![Cloud Storage - Azure connection avro schema](<lib/Cloud%20Storage%20-%20Azure%20connection.png>)
+![Cloud Storage - Azure connection avro schema](<lib/Cloud Storage - Azure connection.png>)
 
 &nbsp;
 
 If you wish to filter files, you may enter a file name prefix:
 
-![Cloud Storage - Azure prefix blob name avro schema](<lib/Cloud%20Storage%20-%20Azure%20prefix.png>)
+![Cloud Storage - Azure prefix blob name avro schema](<lib/Cloud Storage - Azure prefix.png>)
 
 &nbsp;
 
@@ -60,7 +60,7 @@ If you wish to filter files, you may enter a file name prefix:
 
 If the storage is public, you may choose the anonymous method:
 
-![Cloud Storage - Azure anonymous auth](<lib/Cloud%20Storage%20-%20Azure%20anonymous%20auth.png>)
+![Cloud Storage - Azure anonymous auth](<lib/Cloud Storage - Azure anonymous auth.png>)
 
 &nbsp;
 
@@ -72,7 +72,7 @@ The [storage access key](<https://docs.microsoft.com/en-us/azure/storage/common/
 
 &nbsp;
 
-![Cloud Storage - Azure Storage Access Key conf](<lib/Cloud%20Storage%20-%20Azure%20Storage%20Access%20Key%20conf.png>)
+![Cloud Storage - Azure Storage Access Key conf](<lib/Cloud Storage - Azure Storage Access Key conf.png>)
 
 &nbsp;
 
@@ -80,7 +80,7 @@ The [storage access key](<https://docs.microsoft.com/en-us/azure/storage/common/
 
 Select the authentication method and paste the key into the Storage Access Key field:
 
-![Cloud Storage - Azure Storage Access Key auth](<lib/Cloud%20Storage%20-%20Azure%20Storage%20Access%20Key%20auth.png>)
+![Cloud Storage - Azure Storage Access Key auth](<lib/Cloud Storage - Azure Storage Access Key auth.png>)
 
 &nbsp;
 
@@ -92,25 +92,25 @@ A [shared access signature (SAS)](<https://docs.microsoft.com/en-us/azure/storag
 
 For Hackolade to be able to reverse-engineer, the minimum rights are as shown here:
 
-![Cloud Storage - Azure Shared Access Sign conf](<lib/Cloud%20Storage%20-%20Azure%20Shared%20Access%20Sign%20conf.png>)
+![Cloud Storage - Azure Shared Access Sign conf](<lib/Cloud Storage - Azure Shared Access Sign conf.png>)
 
 &nbsp;
 
 &nbsp;
 
-![Cloud Storage - Azure Shared Access Sign gen](<lib/Cloud%20Storage%20-%20Azure%20Shared%20Access%20Sign%20gen.png>)
+![Cloud Storage - Azure Shared Access Sign gen](<lib/Cloud Storage - Azure Shared Access Sign gen.png>)
 
 &nbsp;
 
 After clicking the button to generate, copy the SAS token from the Azure portal, and paste it in the SAS Token field:
 
-![Cloud Storage - Azure SAS Token auth](<lib/Cloud%20Storage%20-%20Azure%20SAS%20Token%20auth.png>)
+![Cloud Storage - Azure SAS Token auth](<lib/Cloud Storage - Azure SAS Token auth.png>)
 
 ### Shared Access Token per container
 
 It is possible to generate [tokens for specific containers](<https://docs.microsoft.com/en-us/azure/cognitive-services/translator/document-translation/create-sas-tokens?tabs=Containers> "target=\"\_blank\"") in the "Shared access tokens" menu option of the container:
 
-![Cloud Storage - Azure Blob SAS Token conf](<lib/Cloud%20Storage%20-%20Azure%20Blob%20SAS%20Token%20conf.png>)
+![Cloud Storage - Azure Blob SAS Token conf](<lib/Cloud Storage - Azure Blob SAS Token conf.png>)
 
 &nbsp;
 
@@ -120,7 +120,7 @@ The minimum required rights for our reverse-engineering process to succeed are: 
 
 &nbsp;
 
-![Cloud Storage - Azure Blob SAS Token gen](<lib/Cloud%20Storage%20-%20Azure%20Blob%20SAS%20Token%20gen.png>)
+![Cloud Storage - Azure Blob SAS Token gen](<lib/Cloud Storage - Azure Blob SAS Token gen.png>)
 
 &nbsp;
 
@@ -130,7 +130,7 @@ After clicking the button to generate, copy the Blob SAS token from the Azure po
 
 &nbsp;
 
-![Cloud Storage - Azure Blob SAS Token auth](<lib/Cloud%20Storage%20-%20Azure%20Blob%20SAS%20Token%20auth.png>)
+![Cloud Storage - Azure Blob SAS Token auth](<lib/Cloud Storage - Azure Blob SAS Token auth.png>)
 
 &nbsp;
 
@@ -140,13 +140,13 @@ After clicking the button to generate, copy the Blob SAS token from the Azure po
 
 Give a meaningful name to the connection to identify it for later, and provide proper URI to your GCS bucket, and optional folder path.
 
-![Cloud Storage - Google connection avro schema](<lib/Cloud%20Storage%20-%20Google%20connection.png>)
+![Cloud Storage - Google connection avro schema](<lib/Cloud Storage - Google connection.png>)
 
 &nbsp;
 
 If the&nbsp; bucket is private, you must also access to the Private key:
 
-![Cloud Storage - Google authentication avro schema](<lib/Cloud%20Storage%20-%20Google%20authentication.png>)
+![Cloud Storage - Google authentication avro schema](<lib/Cloud Storage - Google authentication.png>)
 
 &nbsp;
 
@@ -156,7 +156,7 @@ If the&nbsp; bucket is private, you must also access to the Private key:
 
 To connect to your schema registry instance in the cloud you first must obtain both an API key and API secret for it.&nbsp; They are found in the Schema Registry tab, in the API endpoint section:
 
-![Confluent Schema Registry - API endpoint key](<lib/Confluent%20Schema%20Registry%20-%20API%20endpoint%20key.png>)
+![Confluent Schema Registry - API endpoint key](<lib/Confluent Schema Registry - API endpoint key.png>)
 
 &nbsp;
 
@@ -166,13 +166,13 @@ Give a meaningful name to the connection to identify it for later, choose Cloud 
 
 &nbsp;
 
-![Confluent Schema Registry - Cloud connection avro schema](<lib/Confluent%20Schema%20Registry%20-%20Cloud%20connection.png>)
+![Confluent Schema Registry - Cloud connection avro schema](<lib/Confluent Schema Registry - Cloud connection.png>)
 
 &nbsp;
 
 Then provide the API key and API secret:
 
-![Confluence Schema Registry - Cloud auth avro schema](<lib/Confluence%20Schema%20Registry%20-%20Cloud%20auth.png>)
+![Confluence Schema Registry - Cloud auth avro schema](<lib/Confluence Schema Registry - Cloud auth.png>)
 
 &nbsp;
 
@@ -180,13 +180,13 @@ Then provide the API key and API secret:
 
 Give a meaningful name to the connection to identify it for later, choose on-premise as a source, and provide the URL to your Schema Registry:
 
-![Confluent Schema Registry - on-prem connection avro schema](<lib/Confluent%20Schema%20Registry%20-%20on-premconnection.png>)
+![Confluent Schema Registry - on-prem connection avro schema](<lib/Confluent Schema Registry - on-premconnection.png>)
 
 &nbsp;
 
 Then provide your username and password:
 
-![Confluent Schema Registry - on-prem auth avro schema](<lib/Confluent%20Schema%20Registry%20-%20on-prem%20auth.png>)
+![Confluent Schema Registry - on-prem auth avro schema](<lib/Confluent Schema Registry - on-prem auth.png>)
 
 &nbsp;
 
@@ -196,13 +196,13 @@ Then provide your username and password:
 
 Give a meaningful name to the connection to identify it for later, choose Azure Schema Registry, and provide the URL to your Schema Registry:&nbsp; Currently, it is not possible to automatically retrieve the list of Schema Groups, so you should provide the Schema Group concerned.&nbsp; If you need to access more than one Schema Group, you may create one connection per Schema Group.
 
-![Azure Schema Registry connection settings avro schema](<lib/Azure%20Schema%20Registry%20connection%20settings.png>)
+![Azure Schema Registry connection settings avro schema](<lib/Azure Schema Registry connection settings.png>)
 
 &nbsp;
 
 Then you need to provide the authentication parameters:
 
-![Azure Schema Registry connection auth params avro schema](<lib/Azure%20Schema%20Registry%20connection%20auth%20params.png>)
+![Azure Schema Registry connection auth params avro schema](<lib/Azure Schema Registry connection auth params.png>)
 
 &nbsp;
 
@@ -212,19 +212,19 @@ Hackolade communicates with the Azure Schema Registry via REST APIs.&nbsp; If yo
 
 The Hackolade application must be registered so Azure accepts the REST API calls, as per these [instructions](<https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal> "target=\"\_blank\"").&nbsp; The **Application (client) ID** and the **Directory (tenant) ID** are retrieved are retrieved from the App registration Overview screen:
 
-![Azure App registration overview](<lib/CosmosDB%20-%20Azure%20App%20registration%20overview.png>)
+![Azure App registration overview](<lib/CosmosDB - Azure App registration overview.png>)
 
 &nbsp;
 
 **Note:** it is critical to assign the proper role to the application just registered.&nbsp; This is done following the steps outlined [here](<https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal> "target=\"\_blank\"").&nbsp;
 
-![Azure IAM role assignment](<lib/CosmosDB%20-%20Azure%20IAM%20role%20assignment.png>)
+![Azure IAM role assignment](<lib/CosmosDB - Azure IAM role assignment.png>)
 
 &nbsp;
 
 Finally, the **Application secret** is obtained from the Certificates \& secrets screen of the App registration:&nbsp;
 
-![Azure App registration secrets screen](<lib/CosmosDB%20-%20Azure%20App%20registration%20secrets%20scr.png>)
+![Azure App registration secrets screen](<lib/CosmosDB - Azure App registration secrets scr.png>)
 
 &nbsp;
 
@@ -238,4 +238,4 @@ If you don't know how to generate some of the above values, you may want to cons
 
 Give a meaningful name to the connection to identify it for later, choose the Pulsar connection type, provide the URL to your Schema Registry
 
-![Pulsar connection settings avro schema](<lib/Pulsar%20connection%20settings.png>)
+![Pulsar connection settings avro schema](<lib/Pulsar connection settings.png>)

@@ -44,11 +44,11 @@ As expected, there are many different ways to create relationships in Hackolade 
 
 \- with the menu Actions \> Add relationship, or the toolbar icon, or a right-click then Add relationship in the contextual menu of the ERD or Object Browser, or by pressing the + sign in the relationships properties pane tab at the model level.&nbsp; All these methods let you enter in the properties pane the name, description, parent and child entities and attributes, etc.
 
-![Tutorial relationship properties](<lib/Tutorial%20relationship%20properties.png>)
+![Tutorial relationship properties](<lib/Tutorial relationship properties.png>)
 
 \- in the properties pane of an attribute, where you can choose the foreign entity and attribute, as well as setting the relationship name and cardinality:
 
-![Tutorial relationship child properties](<lib/Tutorial%20relationship%20child%20properties.png>)
+![Tutorial relationship child properties](<lib/Tutorial relationship child properties.png>)
 
 &nbsp;
 
@@ -58,7 +58,7 @@ With the Style group, you may adjust the thickness and color of each relationshi
 
 In the case of compound keys in RDBMS, you declare multiple attributes on each side of the relationship, provided that data types are compatible:
 
-![Tutorial relationship compound child props](<lib/Tutorial%20relationship%20compound%20child%20props.png>)
+![Tutorial relationship compound child props](<lib/Tutorial relationship compound child props.png>)
 
 &nbsp;
 

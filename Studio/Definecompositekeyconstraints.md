@@ -16,7 +16,7 @@ To mark an attribute as a simple Primary key is easy: select the attribute in th
 
 As soon as an attribute in an entity has been marked as a PK, the primary key property of all other attributes is disabled:
 
-![Composite PKs property](<lib/Composite%20PKs%20property.png>)
+![Composite PKs property](<lib/Composite PKs property.png>)
 
 &nbsp;
 
@@ -28,7 +28,7 @@ When the target supports composite keys (a.k.a. compound keys), the order of the
 
 &nbsp;
 
-![Composite PK creation](<lib/Composite%20PK%20creation.png>)
+![Composite PK creation](<lib/Composite PK creation.png>)
 
 &nbsp;
 
@@ -42,7 +42,7 @@ To add multiple attributes a part of the composite PK, click the + sign and do a
 
 You may change the order of the keys using the up and down arrows, delete keys from the selection by clicking the X, and choose additional options when available:
 
-![Composite PK selection](<lib/Composite%20PK%20selection.png>)
+![Composite PK selection](<lib/Composite PK selection.png>)
 
 &nbsp;
 
@@ -62,7 +62,7 @@ As described in [this page](<RelationshiplinesinERdiagram.md>), simple foreign k
 
 When it comes to composite foreign keys, it is not possible to define via drag-and-drop.&nbsp; Actually, you may start from a simple FK relationship defined&nbsp; with any of the of the methods above (including drag-and-drop), then enrich it with using the Properties Pane for the relationship by adding the parent and child attributes, using the + sign:
 
-![Relationships - composite foreign keys](<lib/Relationships%20-%20composite%20foreign%20keys.png>)
+![Relationships - composite foreign keys](<lib/Relationships - composite foreign keys.png>)
 
 &nbsp;
 

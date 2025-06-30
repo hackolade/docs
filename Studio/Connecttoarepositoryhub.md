@@ -22,7 +22,7 @@ If you already cloned a repository from your repository hub, you can just open y
 
 &nbsp;
 
-![Workgroup - hub connection automatic](<lib/Workgroup%20-%20hub%20connection%20automatic.png>)
+![Workgroup - hub connection automatic](<lib/Workgroup - hub connection automatic.png>)
 
 Note that Hackolade Studio only tries to configure the connection automatically if you open a repository cloned over HTTPS.&nbsp; It is not possible to configure the connection automatically for a repository over SSH.&nbsp; In this case, you must configure the connection manually, following the instructions below.
 
@@ -32,11 +32,11 @@ Note that Hackolade Studio only tries to configure the connection automatically 
 
 If Hackolade Studio is not yet connected to your repository hub, a blue link in the top right corner of the repository view invites you to configure the connection:
 
-![Workgroup - hub connection manual](<lib/Workgroup%20-%20hub%20connection%20manual.png>)
+![Workgroup - hub connection manual](<lib/Workgroup - hub connection manual.png>)
 
 Alternatively, when you access the peer review features in the left menu, a placeholder invites you to connect to the repository hub.
 
-![Workgroup - hub connection placeholder](<lib/Workgroup%20-%20hub%20connection%20placeholder.png>)
+![Workgroup - hub connection placeholder](<lib/Workgroup - hub connection placeholder.png>)
 
 &nbsp;
 
@@ -44,7 +44,7 @@ When you click on the connect link / button, a connection management dialog open
 
 &nbsp;
 
-![Workgroup - manage hub connections](<lib/Workgroup%20-%20manage%20hub%20connections%20-%20GitHub.png>)
+![Workgroup - manage hub connections](<lib/Workgroup - manage hub connections - GitHub.png>)
 
 &nbsp;
 
@@ -95,7 +95,7 @@ Then select the connection you want to edit, click on the "Edit" button, modify 
 
 &nbsp;
 
-![Image](<lib/Workgroup%20-%20manage%20hub%20connections%20-%20tokens.png>)
+![Image](<lib/Workgroup - manage hub connections - tokens.png>)
 
 &nbsp;
 

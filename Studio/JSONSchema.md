@@ -2,7 +2,7 @@
 
 To create a JSON Schema file of your entity, choose the menu Tools \> Forward Engineering \> JSON Schema:
 
-![Forward-Engineering - JSON Schema](<lib/Forward-Engineering%20-%20JSON%20Schema.png>)
+![Forward-Engineering - JSON Schema](<lib/Forward-Engineering - JSON Schema.png>)
 
 &nbsp;
 
@@ -16,7 +16,7 @@ The JSON Schema for the entity can also be viewed in the left-hand pane of the J
 
 &nbsp;
 
-![Forward-Engineering - JSON Preview](<lib/Forward-Engineering%20-%20JSON%20Preview.png>)
+![Forward-Engineering - JSON Preview](<lib/Forward-Engineering - JSON Preview.png>)
 
 &nbsp;
 

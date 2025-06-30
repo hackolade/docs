@@ -1,5 +1,9 @@
 # Kerberos
 
+**This feature has been deprecated as of v8.1.5**&nbsp; -- contact support@hackolade.com if needed
+
+&nbsp;
+
 MongoDB Enterprise provides support for Kerberos authentication of MongoDB clients.&nbsp; Kerberos is an industry standard authentication protocol for large client/server systems. Kerberos allows MongoDB and applications to take advantage of existing authentication infrastructure and processes.
 
 &nbsp;
@@ -12,7 +16,7 @@ The Kerberos parameters are maintained in Hackolade as follows:
 
 &nbsp;
 
-![MongoDB Kerberos connection settings](<lib/Kerberos%20connection%20settings.png>)
+![MongoDB Kerberos connection settings](<lib/Kerberos connection settings.png>)
 
 &nbsp;
 

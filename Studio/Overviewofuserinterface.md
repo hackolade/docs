@@ -30,4 +30,3 @@ and some advanced features
 * [Infer Primary Keys and Foreign Keys](<InferPrimaryKeysandForeignKeyRel.md>)
 * [Model-Driven API Generation](<Model-DrivenAPIGeneration.md>)
 * [Generate synthetic data for testing](<Generatemockdatafortesting.md>)
-

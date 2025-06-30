@@ -4,7 +4,7 @@ The Microsoft Azure cloud-based service provides support for Hive in the HDInsig
 
 &nbsp;
 
-![Hive - HDInsight connection](<lib/Hive%20-%20HDInsight%20connection.png>)
+![Hive - HDInsight connection](<lib/Hive - HDInsight connection.png>)
 
 &nbsp;
 
@@ -18,7 +18,7 @@ Go to the Hive section, open the "Configs" tab then the "Advanced" tab. There us
 
 Select the authentication type: None (Plain SASL):
 
-![Hive - HDInsight authentication](<lib/Hive%20-%20HDInsight%20authentication.png>)
+![Hive - HDInsight authentication](<lib/Hive - HDInsight authentication.png>)
 
 &nbsp;
 
@@ -26,13 +26,13 @@ Select the authentication type: None (Plain SASL):
 
 Then transport mode http with the HTTP path corresponding to the default value set in HDInsight \> Configs \> Advanced
 
-![Hive - HDInsight options](<lib/Hive%20-%20HDInsight%20options.png>)
+![Hive - HDInsight options](<lib/Hive - HDInsight options.png>)
 
 &nbsp;
 
 Finally, set SSL type to HTTPs:
 
-![Hive - HDInsight SSL](<lib/Hive%20-%20HDInsight%20SSL.png>)
+![Hive - HDInsight SSL](<lib/Hive - HDInsight SSL.png>)
 
 ## &#50;) Using LDAP
 
@@ -42,13 +42,13 @@ Select the authentication type: LDAP
 
 &nbsp;
 
-![Hive - HDInsight - LDAP auth](<lib/Hive%20-%20HDInsight%20-%20LDAP%20auth.png>)
+![Hive - HDInsight - LDAP auth](<lib/Hive - HDInsight - LDAP auth.png>)
 
 &nbsp;
 
 Then select the transport mode corresponding to your HDInsight setup: "binary" of "http".If "http",&nbsp;
 
-![Hive - HDInsight - http transport](<lib/Hive%20-%20HDInsight%20-%20http%20transport.png>)
+![Hive - HDInsight - http transport](<lib/Hive - HDInsight - http transport.png>)
 
 &nbsp;
 

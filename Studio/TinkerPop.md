@@ -22,13 +22,13 @@ The data model in the picture below results from the reverse-engineering of the 
 
 &#49;) a graph view, with familiar circular node labels
 
-![TinkerPop workspace](<lib/TinkerPop%20workspace.png>)
+![TinkerPop workspace](<lib/TinkerPop workspace.png>)
 
 &nbsp;
 
 &#50;) an Entity-Relationship Diagram (ERD) view, with the advantage of displaying properties for both vertex labels and edge labels:
 
-![Tinkerpop workspace ERD](<lib/Tinkerpop%20workspace%20ERD.png>)
+![Tinkerpop workspace ERD](<lib/Tinkerpop workspace ERD.png>)
 
 &nbsp;
 
@@ -42,7 +42,7 @@ Vertex labels are a semantic representation of vertices (nodes) in the graph.&nb
 
 &nbsp;
 
-![Neo4j node label](<lib/Neo4j%20node%20label.png>)
+![Neo4j node label](<lib/Neo4j node label.png>)
 
 &nbsp;
 
@@ -50,7 +50,7 @@ Vertex labels are a semantic representation of vertices (nodes) in the graph.&nb
 
 A vertex label usually has attributes, called "property keys" where the name (or key) is a string.
 
-![Neo4j node label property keys](<lib/Neo4j%20node%20label%20property%20keys.png>)
+![Neo4j node label property keys](<lib/Neo4j node label property keys.png>)
 
 &nbsp;
 
@@ -88,13 +88,13 @@ In TinkerPop, edges are unidirectional, going from one vertex to another vertex.
 
 &nbsp;
 
-![Neo4j relationship type](<lib/Neo4j%20relationship%20type.png>)
+![Neo4j relationship type](<lib/Neo4j relationship type.png>)
 
 &nbsp;
 
 As TinkerPop is a type of graph database known as 'property graph', edge labels may have attributes, or properties, just like vertex labels do:
 
-![Neo4j relationship type property keys](<lib/Neo4j%20relationship%20type%20property%20keys.png>)
+![Neo4j relationship type property keys](<lib/Neo4j relationship type property keys.png>)
 
 &nbsp;
 
@@ -102,7 +102,7 @@ As TinkerPop is a type of graph database known as 'property graph', edge labels 
 
 TinkerPop is also agnostic when it comes to inex management.&nbsp; It is however possible to create an [index](<http://tinkerpop.apache.org/docs/current/reference/#index-step> "target=\"\_blank\"") on a single property key for any given label.&nbsp; A so-called composite index can also be created on more than one property key for a given label.
 
-![Neo4j node index](<lib/Neo4j%20node%20index.png>)
+![Neo4j node index](<lib/Neo4j node index.png>)
 
 &nbsp;
 
@@ -116,7 +116,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![TinkerPop forward-engineering Gremlin](<lib/TinkerPop%20forward-engineering%20Gremlin.png>)
+![TinkerPop forward-engineering Gremlin](<lib/TinkerPop forward-engineering Gremlin.png>)
 
 &nbsp;
 

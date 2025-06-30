@@ -10,7 +10,7 @@ Merging is Git's way of putting a forked history back together again.&nbsp; Merg
 
 &nbsp;
 
-![Workgroup merge branch flow](<lib/Workgroup%20merge%20branch%20flow.png>)
+![Workgroup merge branch flow](<lib/Workgroup merge branch flow.png>)
 
 &nbsp;
 
@@ -22,7 +22,7 @@ To merge branches in the Repository context, you first must make sure that the b
 
 &nbsp;
 
-![Workgroup merge branch screen](<lib/Workgroup%20merge%20branch%20screen.png>)
+![Workgroup merge branch screen](<lib/Workgroup merge branch screen.png>)
 
 &nbsp;
 
@@ -30,7 +30,7 @@ To merge branches in the Repository context, you first must make sure that the b
 
 You may review the changes first before you click the merge button.&nbsp; If no conflict is detected, a merge commit will be created to be pushed to the remote repository.
 
-![Workgroup merge branch success](<lib/Workgroup%20merge%20branch%20success.png>)
+![Workgroup merge branch success](<lib/Workgroup merge branch success.png>)
 
 &nbsp;
 
@@ -38,7 +38,7 @@ If the two branches you're trying to merge both changed the same part of the sa
 
 &nbsp;
 
-![Workgroup merge branch conflict](<lib/Workgroup%20merge%20branch%20conflict.png>)
+![Workgroup merge branch conflict](<lib/Workgroup merge branch conflict.png>)
 
 &nbsp;
 
@@ -48,7 +48,7 @@ The great part of Hackolade's merging process is that it uses the familiar side
 
 &nbsp;
 
-![Workgroup merge branch solve conflict](<lib/Workgroup%20merge%20branch%20solve%20conflict.png>)
+![Workgroup merge branch solve conflict](<lib/Workgroup merge branch solve conflict.png>)
 
 &nbsp;
 

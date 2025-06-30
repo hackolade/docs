@@ -12,7 +12,7 @@ Assuming that have downloaded from [https://docs.microsoft.com/en-us/azure/cosmo
 
 &nbsp;
 
-![Cosmos DB connection settings dialog - local](<lib/Cosmos%20DB%20connection%20settings%20dialog%20-%20local.png>)
+![Cosmos DB connection settings dialog - local](<lib/Cosmos DB connection settings dialog - local.png>)
 
 &nbsp;
 

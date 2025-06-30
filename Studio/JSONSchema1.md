@@ -10,7 +10,7 @@ If you wish to include the schema for a JSON Schema file in an existing model, t
 
 &nbsp;
 
-![Tools - Reverse-Engineer - JSON Schema](<lib/Tools%20-%20Reverse-Engineer%20-%20JSON%20Schema.png>)
+![Tools - Reverse-Engineer - JSON Schema](<lib/Tools - Reverse-Engineer - JSON Schema.png>)
 
 &nbsp;
 
@@ -20,7 +20,7 @@ If you wish to include the schema for a JSON Schema file in an existing model, t
 
 The structure of a JSON Schema can be imported either as an entity in the Entity Relationship Diagram, or alternatively as a model definition so it could be re-used in the model:
 
-![JSON Schema reverse-engineering dialog](<lib/JSON%20Schema%20RE%20dialog.png>)
+![JSON Schema reverse-engineering dialog](<lib/JSON Schema RE dialog.png>)
 
 &nbsp;
 
@@ -32,7 +32,7 @@ For RDBMS targets, an additional option appears, that allows automatic normaliza
 
 &nbsp;
 
-![JSON Schema reverse-engineering dialog - normalization](<lib/JSON%20Schema%20RE%20dialog%20-%20normalization.png>)
+![JSON Schema reverse-engineering dialog - normalization](<lib/JSON Schema RE dialog - normalization.png>)
 
 &nbsp;
 
@@ -42,7 +42,7 @@ For RDBMS targets, an additional option appears, that allows automatic normaliza
 
 JSON files and schemas can also be reverse-engineered from AWS S3, Azure Blob Storage/ADLS, and Google Cloud Storage.
 
-![Cloud Selection - combine Avro schemas](<lib/Cloud%20Selection%20-%20combine%20schemas.png>)
+![Cloud Selection - combine Avro schemas](<lib/Cloud Selection - combine schemas.png>)
 
 &nbsp;
 
@@ -52,7 +52,7 @@ Give a meaningful name to the connection to identify it for later, and provide p
 
 &nbsp;
 
-![Cloud Storage - AWS S3 connection for Avro schema](<lib/Cloud%20Storage%20-%20AWS%20S3%20connection.png>)
+![Cloud Storage - AWS S3 connection for Avro schema](<lib/Cloud Storage - AWS S3 connection.png>)
 
 &nbsp;
 
@@ -60,7 +60,7 @@ Give a meaningful name to the connection to identify it for later, and provide p
 
 If the S3 bucket is private, you must also provide authentication parameters (Access key id and Secret access key):
 
-![Cloud Storage - AWS S3 authentication avro schema](<lib/Cloud%20Storage%20-%20AWS%20S3%20authentication.png>)
+![Cloud Storage - AWS S3 authentication avro schema](<lib/Cloud Storage - AWS S3 authentication.png>)
 
 &nbsp;
 
@@ -80,13 +80,13 @@ Give a meaningful name to the connection to identify it for later, and provide p
 
 &nbsp;
 
-![Cloud Storage - Azure connection avro schema](<lib/Cloud%20Storage%20-%20Azure%20connection.png>)
+![Cloud Storage - Azure connection avro schema](<lib/Cloud Storage - Azure connection.png>)
 
 &nbsp;
 
 If you wish to filter files, you may enter a file name prefix:
 
-![Cloud Storage - Azure prefix blob name avro schema](<lib/Cloud%20Storage%20-%20Azure%20prefix.png>)
+![Cloud Storage - Azure prefix blob name avro schema](<lib/Cloud Storage - Azure prefix.png>)
 
 &nbsp;
 
@@ -94,7 +94,7 @@ If you wish to filter files, you may enter a file name prefix:
 
 If the storage is public, you may choose the anonymous method:
 
-![Cloud Storage - Azure anonymous auth](<lib/Cloud%20Storage%20-%20Azure%20anonymous%20auth.png>)
+![Cloud Storage - Azure anonymous auth](<lib/Cloud Storage - Azure anonymous auth.png>)
 
 &nbsp;
 
@@ -106,7 +106,7 @@ The [storage access key](<https://docs.microsoft.com/en-us/azure/storage/common/
 
 &nbsp;
 
-![Cloud Storage - Azure Storage Access Key conf](<lib/Cloud%20Storage%20-%20Azure%20Storage%20Access%20Key%20conf.png>)
+![Cloud Storage - Azure Storage Access Key conf](<lib/Cloud Storage - Azure Storage Access Key conf.png>)
 
 &nbsp;
 
@@ -114,7 +114,7 @@ The [storage access key](<https://docs.microsoft.com/en-us/azure/storage/common/
 
 Select the authentication method and paste the key into the Storage Access Key field:
 
-![Cloud Storage - Azure Storage Access Key auth](<lib/Cloud%20Storage%20-%20Azure%20Storage%20Access%20Key%20auth.png>)
+![Cloud Storage - Azure Storage Access Key auth](<lib/Cloud Storage - Azure Storage Access Key auth.png>)
 
 &nbsp;
 
@@ -126,25 +126,25 @@ A [shared access signature (SAS)](<https://docs.microsoft.com/en-us/azure/storag
 
 For Hackolade to be able to reverse-engineer, the minimum rights are as shown here:
 
-![Cloud Storage - Azure Shared Access Sign conf](<lib/Cloud%20Storage%20-%20Azure%20Shared%20Access%20Sign%20conf.png>)
+![Cloud Storage - Azure Shared Access Sign conf](<lib/Cloud Storage - Azure Shared Access Sign conf.png>)
 
 &nbsp;
 
 &nbsp;
 
-![Cloud Storage - Azure Shared Access Sign gen](<lib/Cloud%20Storage%20-%20Azure%20Shared%20Access%20Sign%20gen.png>)
+![Cloud Storage - Azure Shared Access Sign gen](<lib/Cloud Storage - Azure Shared Access Sign gen.png>)
 
 &nbsp;
 
 After clicking the button to generate, copy the SAS token from the Azure portal, and paste it in the SAS Token field:
 
-![Cloud Storage - Azure SAS Token auth](<lib/Cloud%20Storage%20-%20Azure%20SAS%20Token%20auth.png>)
+![Cloud Storage - Azure SAS Token auth](<lib/Cloud Storage - Azure SAS Token auth.png>)
 
 ### Shared Access Token per container
 
 It is possible to generate [tokens for specific containers](<https://docs.microsoft.com/en-us/azure/cognitive-services/translator/document-translation/create-sas-tokens?tabs=Containers> "target=\"\_blank\"") in the "Shared access tokens" menu option of the container:
 
-![Cloud Storage - Azure Blob SAS Token conf](<lib/Cloud%20Storage%20-%20Azure%20Blob%20SAS%20Token%20conf.png>)
+![Cloud Storage - Azure Blob SAS Token conf](<lib/Cloud Storage - Azure Blob SAS Token conf.png>)
 
 &nbsp;
 
@@ -154,7 +154,7 @@ The minimum required rights for our reverse-engineering process to succeed are: 
 
 &nbsp;
 
-![Cloud Storage - Azure Blob SAS Token gen](<lib/Cloud%20Storage%20-%20Azure%20Blob%20SAS%20Token%20gen.png>)
+![Cloud Storage - Azure Blob SAS Token gen](<lib/Cloud Storage - Azure Blob SAS Token gen.png>)
 
 &nbsp;
 
@@ -164,7 +164,7 @@ After clicking the button to generate, copy the Blob SAS token from the Azure po
 
 &nbsp;
 
-![Cloud Storage - Azure Blob SAS Token auth](<lib/Cloud%20Storage%20-%20Azure%20Blob%20SAS%20Token%20auth.png>)
+![Cloud Storage - Azure Blob SAS Token auth](<lib/Cloud Storage - Azure Blob SAS Token auth.png>)
 
 &nbsp;
 
@@ -172,13 +172,13 @@ After clicking the button to generate, copy the Blob SAS token from the Azure po
 
 Give a meaningful name to the connection to identify it for later, and provide proper URI to your GCS bucket, and optional folder path.
 
-![Cloud Storage - Google connection avro schema](<lib/Cloud%20Storage%20-%20Google%20connection.png>)
+![Cloud Storage - Google connection avro schema](<lib/Cloud Storage - Google connection.png>)
 
 &nbsp;
 
 If the&nbsp; bucket is private, you must also access to the Private key:
 
-![Cloud Storage - Google authentication avro schema](<lib/Cloud%20Storage%20-%20Google%20authentication.png>)
+![Cloud Storage - Google authentication avro schema](<lib/Cloud Storage - Google authentication.png>)
 
 &nbsp;
 
@@ -188,7 +188,7 @@ If the&nbsp; bucket is private, you must also access to the Private key:
 
 To connect to your schema registry instance in the cloud you first must obtain both an API key and API secret for it.&nbsp; They are found in the Schema Registry tab, in the API endpoint section:
 
-![Confluent Schema Registry - API endpoint key](<lib/Confluent%20Schema%20Registry%20-%20API%20endpoint%20key.png>)
+![Confluent Schema Registry - API endpoint key](<lib/Confluent Schema Registry - API endpoint key.png>)
 
 &nbsp;
 
@@ -198,13 +198,13 @@ Give a meaningful name to the connection to identify it for later, choose Cloud 
 
 &nbsp;
 
-![Confluent Schema Registry - Cloud connection avro schema](<lib/Confluent%20Schema%20Registry%20-%20Cloud%20connection.png>)
+![Confluent Schema Registry - Cloud connection avro schema](<lib/Confluent Schema Registry - Cloud connection.png>)
 
 &nbsp;
 
 Then provide the API key and API secret:
 
-![Confluence Schema Registry - Cloud auth avro schema](<lib/Confluence%20Schema%20Registry%20-%20Cloud%20auth.png>)
+![Confluence Schema Registry - Cloud auth avro schema](<lib/Confluence Schema Registry - Cloud auth.png>)
 
 &nbsp;
 
@@ -212,13 +212,13 @@ Then provide the API key and API secret:
 
 Give a meaningful name to the connection to identify it for later, choose on-premise as a source, and provide the URL to your Schema Registry:
 
-![Confluent Schema Registry - on-prem connection avro schema](<lib/Confluent%20Schema%20Registry%20-%20on-premconnection.png>)
+![Confluent Schema Registry - on-prem connection avro schema](<lib/Confluent Schema Registry - on-premconnection.png>)
 
 &nbsp;
 
 Then provide your username and password:
 
-![Confluent Schema Registry - on-prem auth avro schema](<lib/Confluent%20Schema%20Registry%20-%20on-prem%20auth.png>)
+![Confluent Schema Registry - on-prem auth avro schema](<lib/Confluent Schema Registry - on-prem auth.png>)
 
 &nbsp;
 
@@ -226,4 +226,4 @@ Then provide your username and password:
 
 Give a meaningful name to the connection to identify it for later, choose the Pulsar connection type, provide the URL to your Schema Registry
 
-![Pulsar connection settings avro schema](<lib/Pulsar%20connection%20settings.png>)
+![Pulsar connection settings avro schema](<lib/Pulsar connection settings.png>)

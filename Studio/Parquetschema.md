@@ -16,7 +16,7 @@ Hackolade was specially adapted to support the [schema design of Parquet](<https
 
 &nbsp;
 
-![Parquet workspace](<lib/Parquet%20workspace.png>)
+![Parquet workspace](<lib/Parquet workspace.png>)
 
 &nbsp;
 
@@ -50,7 +50,7 @@ Notice that there is no primitive string type. Instead, Parquet defines logical 
 
 BYTE\_ARRAY corresponds to binary in Parquet.&nbsp; Strings are encoded as variable-length binary with the UTF8 type annotation to indicate how to interpret the raw bytes back into a String. UTF8 is the only encoding supported in the format, but not every binary uses UTF8 because not all binary fields are storing string data.
 
-![Parquet data types](<lib/Parquet%20data%20types.png>)
+![Parquet data types](<lib/Parquet data types.png>)
 
 &nbsp;
 
@@ -60,12 +60,16 @@ Logical types are used to extend the types that parquet can be used to store, by
 
 * DATE is used to for a logical date type, without a time of day.&nbsp; It must annotate an **int32** data types that stores the number of days from the Unix epoch, 1 January 1970.
 * TIME is used for a logical time type without a date with millisecond or microsecond precision.&nbsp; The type has two type parameters: UTC adjustment (true or false) and precision (MILLIS or MICROS, NANOS).
+
   * TIME with precision MILLIS is used for millisecond precision. It must annotate an **int32** that stores the number of milliseconds after midnight.
   * TIME with precision MICROS is used for microsecond precision. It must annotate an **int64** that stores the number of microseconds after midnight.
   * TIME with precision NANOS is used for nanosecond precision. It must annotate an **int64** that stores the number of nanoseconds after midnight.
+
 * TIMESTAMP is used for a logical type can be decoded into year, month, day, hour, minute, second and sub-second fields.&nbsp; It must annotate a single **int64** number.&nbsp; The TIMESTAMP type has two type parameters:
+
   * isAdjustedToUTC must be either true or false.
   * precision must be one of MILLIS, MICROS or NANOS.&nbsp;
+
 * INTERVAL is used for an interval of time. It must annotate a **fixed\_len\_byte\_array** of length 12. &nbsp;
 * JSON is used for an embedded JSON document. It must annotate a **binary** primitive type.&nbsp; The binary data is interpreted as a UTF-8 encoded character string of valid JSON.&nbsp; I’m tempted here to have an&nbsp;
 * BSON is used for an embedded BSON document. It must annotate a **binary** primitive type. The binary data is interpreted as an encoded BSON document.&nbsp; – pretty sure that it is not needed in a first phase???&nbsp; Let’s see if customers ask for it.
@@ -84,7 +88,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![Parquet forward-engineering](<lib/Parquet%20forward-engineering.png>)
+![Parquet forward-engineering](<lib/Parquet forward-engineering.png>)
 
 &nbsp;
 
@@ -106,7 +110,7 @@ With Hackolade Studio, you can reverse-engineer Parquet files located on:
 
 \- Amazon S3
 
-\- Azure Blog Storage
+\- Azure Blob Storage
 
 \- Azure Data Lake Storage (ADLS) Gen 1 and Gen 2
 

@@ -22,7 +22,7 @@ Specify the path and filename to keystore, the access password, and the alias na
 
 &nbsp;
 
-![Image](<lib/Confluent%20Connection%20Settings%20-%20LDAP%20JKS.png>)
+![Image](<lib/Confluent Connection Settings - LDAP JKS.png>)
 
 &nbsp;
 
@@ -82,9 +82,11 @@ Assuming cassandra server config (cassandra.yaml):
 
 1. Install java if you don't have it: [https://www.java.com/en/download/](<https://www.java.com/en/download/> "target=\"\_blank\"")
 1. Install openssl: [https://wiki.openssl.org/index.php/Binaries](<https://wiki.openssl.org/index.php/Binaries> "target=\"\_blank\"")
+
    1. Linux: sudo apt-get install openssl
    1. MacOS: brew install openssl
    1. Windows: [https://slproweb.com/products/Win32OpenSSL.html](<https://slproweb.com/products/Win32OpenSSL.html> "target=\"\_blank\"")
+
 1. Find out alias used by keystore
 
 Run the following command to find out what alias is used by keystore:
@@ -95,7 +97,7 @@ where keystore.jks is the java key store file granting access to the cassandra i
 
 alias will be in the section “Alias name”
 
-1. Generate PKS key
+4. Generate PKS key
 
 \> keytool -importkeystore -srckeystore keystore.jks -destkeystore myapp.p12 -srcalias myapp-dev -srcstoretype jks -deststoretype pkcs12
 
@@ -129,5 +131,5 @@ myapp-dev - alias used by keystore and determined in step 3 above
 
 &nbsp;
 
-![Cassandra Connection Settings - LDAP Certificate](<lib/Cassandra%20Connection%20Settings%20-%20LDAP%20Certific.png>)
+![Cassandra Connection Settings - LDAP Certificate](<lib/Cassandra Connection Settings - LDAP Certific.png>)
 

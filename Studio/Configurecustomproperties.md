@@ -33,7 +33,7 @@ This folder can be access via Help \> Plugin Manager \> Installed and clicking o
 
 In this guide, we will concentrate on files in these sub-folders of **\\customProperties\\properties\_pane:**
 
-![Custom Props subfolders](<lib/Custom%20Props%20subfolders.png>)
+![Custom Props subfolders](<lib/Custom Props subfolders.png>)
 
 &nbsp;
 
@@ -55,7 +55,7 @@ The following controls are possible for user-defined properties:
 
 &nbsp;
 
-![Custom Props controls](<lib/Custom%20Props%20controls.png>)
+![Custom Props controls](<lib/Custom Props controls.png>)
 
 * simple text: one line of text
 * text area: popup for multi-line text entry
@@ -77,7 +77,7 @@ The syntax for these controls is described in detail on this [page](<https://git
 
 The very first step, which needs to be done only once per target, is to tell Hackolade that you wish to create custom properties.&nbsp; The application will create the necessary folders.&nbsp; To do this, you just need to go to Help \> Plugin Manager \> Installed, choose your target, and click on the link "Show plugin customization directory":
 
-![Image](<lib/Custom%20props%20-%20plugin%20manager.png>)
+![Image](<lib/Custom props - plugin manager.png>)
 
 ## Entity details tab
 
@@ -91,7 +91,7 @@ To do so, let's find the folder ***C:\\Users\\%username%\\.hackolade\\options\\*
 
 The first 130-odd lines are commented and provide examples for the different controls.&nbsp; All the changes will take place in the section below the comments, and within the brackets of the "structure":
 
-![Custom Props entity empty](<lib/Custom%20Props%20entity%20empty.png>)
+![Custom Props entity empty](<lib/Custom Props entity empty.png>)
 
 &nbsp;
 
@@ -99,13 +99,13 @@ The first 130-odd lines are commented and provide examples for the different con
 
 To create a control for a dropdown, we'll simply copy from an example further in the file, and paste it in between the brackets:
 
-![Custom Props entity pasted](<lib/Custom%20Props%20entity%20pasted.png>)
+![Custom Props entity pasted](<lib/Custom Props entity pasted.png>)
 
 &nbsp;
 
 Then we can edit the properties for our needs.&nbsp; There is just one property value that cannot be changed: "propertyType", as it is used by the application to properly handle the control.
 
-![Custom Props entity options](<lib/Custom%20Props%20entity%20options.png>)
+![Custom Props entity options](<lib/Custom Props entity options.png>)
 
 &nbsp;
 
@@ -115,7 +115,7 @@ If you need to allow multiple options in the dropdown, simply change the type to
 
 You may paste additional controls, separated by commas. &nbsp;
 
-![Custom Props entity options checkbox](<lib/Custom%20Props%20entity%20options%20checkbox.png>)
+![Custom Props entity options checkbox](<lib/Custom Props entity options checkbox.png>)
 
 &nbsp;
 
@@ -123,11 +123,11 @@ You can now save the file.&nbsp; It is necessary to restart the application befo
 
 &nbsp;
 
-![Custom Props entity results](<lib/Custom%20Props%20entity%20results.png>)
+![Custom Props entity results](<lib/Custom Props entity results.png>)
 
 &nbsp;
 
-![Custom Props entity options dropdown](<lib/Custom%20Props%20entity%20options%20dropdown.png>)
+![Custom Props entity options dropdown](<lib/Custom Props entity options dropdown.png>)
 
 &nbsp;
 
@@ -159,7 +159,7 @@ The first 130-odd lines are commented and provide examples for the different con
 
 &nbsp;
 
-![Custom Props attribute empty](<lib/Custom%20Props%20attribute%20empty.png>)
+![Custom Props attribute empty](<lib/Custom Props attribute empty.png>)
 
 &nbsp;
 
@@ -167,7 +167,7 @@ Let's remove the doubles slash //.&nbsp; Then to create a control for a dropdown
 
 &nbsp;
 
-![Custom Props attribute options](<lib/Custom%20Props%20attribute%20options.png>)
+![Custom Props attribute options](<lib/Custom Props attribute options.png>)
 
 &nbsp;
 
@@ -177,7 +177,7 @@ If you need to allow multiple options in the dropdown, simply change the type to
 
 You may paste additional controls, separated by commas. &nbsp;
 
-![Image](<lib/Custom%20Props%20attribute%20options%20text.png>)
+![Image](<lib/Custom Props attribute options text.png>)
 
 &nbsp;
 
@@ -187,13 +187,13 @@ You can now save the file.&nbsp; It is necessary to restart the application befo
 
 &nbsp;
 
-![Image](<lib/Custom%20Props%20attribute%20result.png>)
+![Image](<lib/Custom Props attribute result.png>)
 
 &nbsp;
 
 But, these custom properties are currently only available for the string data type.&nbsp; If they also need to be available in the number data type, a new section must be declared, separated by a comma, and the configuration copied:
 
-![Custom Props attribute numeric options text](<lib/Custom%20Props%20attribute%20numeric%20options%20text.png>)
+![Custom Props attribute numeric options text](<lib/Custom Props attribute numeric options text.png>)
 
 &nbsp;
 
@@ -219,7 +219,7 @@ To do so, let's find the folder ***C:\\Users\\%username%\\.hackolade\\options\\*
 
 &nbsp;
 
-![Custom Props tab](<lib/Custom%20Props%20tab.png>)
+![Custom Props tab](<lib/Custom Props tab.png>)
 
 &nbsp;
 
@@ -229,7 +229,7 @@ Note: that we leave alone, the 2 tabs already available, and create a new tab. D
 
 You can now save the file.&nbsp; It is necessary to restart the application before you can see the results of your changes, as configuration is only read at startup time.&nbsp; Your custom properties will appear at the bottom of the Properties Pane:
 
-![Custom Props tab result](<lib/Custom%20Props%20tab%20result.png>)
+![Custom Props tab result](<lib/Custom Props tab result.png>)
 
 &nbsp;
 
@@ -247,7 +247,7 @@ The requiredProperty keyword displays a red star (\*) character next to the prop
 
 &nbsp;
 
-![Custom Props required keyword](<lib/Custom%20Props%20required%20keyword.png>)
+![Custom Props required keyword](<lib/Custom Props required keyword.png>)
 
 &nbsp;
 
@@ -255,13 +255,13 @@ The dependecy keyword allows sophisticated logic described in the [documentation
 
 &nbsp;
 
-![Custom Props dependecy keyword](<lib/Custom%20Props%20dependecy%20keyword.png>)
+![Custom Props dependecy keyword](<lib/Custom Props dependecy keyword.png>)
 
 &nbsp;
 
 The result of the above keywords are displayed below:
 
-![Custom Props tab required dependency result](<lib/Custom%20Props%20tab%20required%20dependency%20result.png>)
+![Custom Props tab required dependency result](<lib/Custom Props tab required dependency result.png>)
 
 &nbsp;
 

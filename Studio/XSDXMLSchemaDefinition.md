@@ -16,7 +16,7 @@ Then, go to Tools \> Reverse-Engineer \> XSD Schema and choose the file exported
 
 &nbsp;
 
-![Tools - Reverse-Engineer - XSD Schema](<lib/Tools%20-%20Reverse-Engineer%20-%20XSD%20Schema.png>)
+![Tools - Reverse-Engineer - XSD Schema](<lib/Tools - Reverse-Engineer - XSD Schema.png>)
 
 &nbsp;
 
@@ -24,7 +24,7 @@ The structure of an XSD can be imported either as an entity in the Entity Relati
 
 &nbsp;
 
-![XSD RE dialog](<lib/XSD%20RE%20dialog.png>)
+![XSD RE dialog](<lib/XSD RE dialog.png>)
 
 &nbsp;
 

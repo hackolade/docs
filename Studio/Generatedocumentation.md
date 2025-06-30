@@ -12,7 +12,7 @@ This feature is also available via the [Command-Line Interface](<CommandLineInte
 
 &nbsp;
 
-![Menu File Generate Documentation](<lib/Menu%20File%20Generate%20Documentation.png>)
+![Menu File Generate Documentation](<lib/Menu File Generate Documentation.png>)
 
 Currently the following formats are available:
 
@@ -24,7 +24,11 @@ Currently the following formats are available:
 
 &nbsp;
 
-The Markdown format is particularly useful for publishing in Git repositories, but also for customization of layout.
+In general, PDF should only be used for smaller models, as the number of pages can quickly grow beyond a manageable number of pages.&nbsp; For medium-size models, the HTML option is great because it produces one single HTML file including all assets and pictures.&nbsp; The HTML file can easily be sent via email or placed on a corporate portal.&nbsp; For large models, it is advised to use the Markdown option where the images are produced in a sub-folder, and the Markdown file only has text content formatted in Markdown syntax.
+
+&nbsp;
+
+The Markdown format is particularly useful for publishing in Git repositories, but also for customization of layout.&nbsp; There are many free tools available in different languages, for example [Docsify-This](<https://docsify-this.net/#/> "target=\"\_blank\"") or [MKDocs](<https://www.mkdocs.org/> "target=\"\_blank\"").&nbsp; See [this example](<https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hackolade/HCK-docs-markdown/e73d25c0fec59e7e2c21ee906f8a6d34071e03e7/Yelp\&homepage=Yelp%20Challenge%20dataset%20documentation.md\&sidebar=true#/> "target=\"\_blank\"").
 
 &nbsp;
 
@@ -32,13 +36,13 @@ Documentation can be configured using 2 sets of controls:
 
 &nbsp;
 
-### Parameters in Tools \> Options \> Documentation
+## Parameters in Tools \> Options \> Documentation
 
 Users may control the different sections to include in the documentation:
 
 &nbsp;
 
-![Documentation options](<lib/Documentation%20options.png>)
+![Documentation options](<lib/Documentation options.png>)
 
 and select a company logo to appear at the top of the reports.
 
@@ -46,7 +50,7 @@ and select a company logo to appear at the top of the reports.
 
 As documentation generation can be lengthy, they can set a time limit.&nbsp; A custom logo can also be selected:
 
-![Tools - Options - Doc2](<lib/Tools%20-%20Options%20-%20Doc2.png>)
+![Tools - Options - Doc2](<lib/Tools - Options - Doc2.png>)
 
 &nbsp;
 
@@ -78,13 +82,13 @@ b. properties
 
 &nbsp;
 
-### Object selection in File \> Generate Documentation
+## Object selection in File \> Generate Documentation
 
 Before generation of the documentation, you're given the opportunity to filter objects and select only the desired ones:
 
 &nbsp;
 
-![Documentation - Object selection](<lib/Documentation%20-%20Object%20selection.png>)
+![Documentation - Object selection](<lib/Documentation - Object selection.png>)
 
 &nbsp;
 
@@ -100,7 +104,7 @@ If you get a "write EPIPE" error:
 
 >  "stack": "Error: write EPIPE\\n    at WriteWrap.onWriteComplete \[as oncomplete\] (internal/stream\_base\_commons.js:83:16)",
 
-> &nbsp;
+&nbsp;
 
 It may be due to an open issue documented [here](<https://github.com/wch/webshot/issues/90> "target=\"\_blank\"") and [here](<https://github.com/marcbachmann/node-html-pdf/issues/531> "target=\"\_blank\"").
 

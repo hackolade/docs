@@ -6,7 +6,7 @@ To access a Glue Data Catalog, you should obtain the proper credentials from you
 
 Give a meaningful name to the connection:
 
-![Glue data catalog connection name](<lib/Glue%20connection%20name.png>)
+![Glue data catalog connection name](<lib/Glue connection name.png>)
 
 &nbsp;
 
@@ -16,11 +16,11 @@ Then go to the Authentication tab, and paste the Access Key ID received from you
 
 &nbsp;
 
-![Glue data catalog connection settings](<lib/Glue%20connection%20settings.png>)
+![Glue data catalog connection settings](<lib/Glue connection settings.png>)
 
 &nbsp;
 
-If you wish to handle AWS authentication through the [credentials file](<https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html> "target=\"\_blank\""), you may leave blank the Access Key ID and Secret Access Key fields, knowing that Hackolade supplies credentials following the recommendations described [here](<https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html> "target=\"\_blank\"").&nbsp; Or use a temporary [session token](<https://docs.aws.amazon.com/IAM/latest/UserGuide/id\_credentials\_temp\_use-resources.html>).
+If you wish to handle AWS authentication through the [credentials file](<https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html> "target=\"\_blank\""), you may leave blank the Access Key ID and Secret Access Key fields, knowing that Hackolade Studio supplies credentials following the recommendations described [here](<https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html> "target=\"\_blank\"").&nbsp; Or use a temporary [session token](<https://docs.aws.amazon.com/IAM/latest/UserGuide/id\_credentials\_temp\_use-resources.html>).
 
 &nbsp;
 

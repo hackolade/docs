@@ -24,11 +24,15 @@ The PostgreSQL instance can be hosted on-premises, or on virtualized machines in
 
 &nbsp;
 
+For example Amazon RDS PostgreSQL or Amazon Aurora PostgreSQL. More specific details on how to create a connection to such databases can be found [here](<AmazonRDSorAurora.md>).
+
+&nbsp;
+
 In the Hackolade connection settings dialog, give a meaningful name to the connection, then set the the host and port, and an optional database name if you wish to limit the scope of the discovery.
 
 &nbsp;
 
-![PostgreSQL connection settings](<lib/PostgreSQL%20connection%20settings.png>)
+![PostgreSQL connection settings](<lib/PostgreSQL connection settings.png>)
 
 &nbsp;
 
@@ -36,4 +40,4 @@ If required, you may enter your username and password
 
 &nbsp;
 
-![Image](<lib/MariaDB%20connection%20settings%20auth.png>)
+![Image](<lib/MariaDB connection settings auth.png>)

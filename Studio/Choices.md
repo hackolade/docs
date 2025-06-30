@@ -1,6 +1,6 @@
 # Choices
 
-JSON Schema includes keywords to allow the combination of schemas and corresponding to the boolean algebra concepts AND, OR, XOR, and NOT.
+JSON Schema includes keywords to allow [schema composition](<https://json-schema.org/understanding-json-schema/reference/combining> "target=\"\_blank\"") or the combination of schemas and corresponding to the boolean algebra concepts AND, OR, XOR, and NOT.
 
 &nbsp;
 
@@ -28,19 +28,19 @@ You may add choices to your model either from the ERD pane, or from the hierarch
 
 Instead of adding a simple attribute, choose
 
-![oneOf choice create](<lib/oneOf%20choice%20create.png>)
+![oneOf choice create](<lib/oneOf choice create.png>)
 
 &nbsp;
 
 This action automatically creates 2 sub-schema objects.
 
-![Image](<lib/oneOf%20choice%20subschemas.png>)
+![Image](<lib/oneOf choice subschemas.png>)
 
 &nbsp;
 
 Then you can define each sub-schema:
 
-![oneOf choice subschemas structure](<lib/oneOf%20choice%20subschemas%20structure.png>)
+![oneOf choice subschemas structure](<lib/oneOf choice subschemas structure.png>)
 
 &nbsp;
 

@@ -24,15 +24,15 @@ In Hackolade Studio, there are many ways to add an entity to the central pane ca
 
 \- via the Actions menu:
 
-![Menu - Actions - Add Collection](<lib/Menu%20-%20Actions%20-%20Add%20Collection.png>)
+![Menu - Actions - Add Collection](<lib/Menu - Actions - Add Collection.png>)
 
 \- by pressing the shortcut Ctrl/Cmd+L
 
-\- with a click of the toolbar icon ![Icons - addCollection](<lib/Icons%20-%20addCollection.jpeg>)&nbsp;
+\- with a click of the toolbar icon ![Icons - addCollection](<lib/Icons - addCollection.jpeg>)&nbsp;
 
 \- or with a right-click anywhere in the central pane&nbsp;
 
-![ER Diagram - contextual menu - add collection](<lib/ER%20Diagram%20-%20contextual%20menu%20-%20add%20collection.png>)
+![ER Diagram - contextual menu - add collection](<lib/ER Diagram - contextual menu - add collection.png>)
 
 and choose 'Add Collection'. &nbsp;
 
@@ -48,7 +48,7 @@ The usual edit actions are possible on an existing collection: cut, copy, paste,
 
 To move a collection in the ER diagram, hover the mouse to the collection title so the mouse cursor becomes a move cross:
 
-![ER Diagram - move collection](<lib/ER%20Diagram%20-%20move%20collection.png>)
+![ER Diagram - move collection](<lib/ER Diagram - move collection.png>)
 
 then click and hold your left mouse button, then drag the collection where you'd like to place it.&nbsp; If relationships are attached, they follow the collection and reposition themselves dynamically.
 
@@ -58,13 +58,13 @@ The name bar of a collection is blue, unless changed in the Options tab.&nbsp; W
 
 &nbsp;
 
-![ER Diagram - full size collection box](<lib/ER%20Diagram%20-%20full%20size%20collection%20box.png>)
+![ER Diagram - full size collection box](<lib/ER Diagram - full size collection box.png>)
 
 &nbsp;
 
 Otherwise, vertical and/or horizontal scroll bars appear:
 
-![ER Diagram - reduced size collection box](<lib/ER%20Diagram%20-%20reduced%20size%20collection%20box.png>)
+![ER Diagram - reduced size collection box](<lib/ER Diagram - reduced size collection box.png>)
 
 &nbsp;
 
@@ -74,7 +74,7 @@ The collection window position and size are saved with the model, so they can be
 
 To open a new tab with the hierarchical schema view of a collection, you double-click on the collection name bar, or right-click then choose Open in new tab, or by clicking on the icon
 
-![ERD - open in a new tab](<lib/ERD%20-%20open%20in%20a%20new%20tab.png>)
+![ERD - open in a new tab](<lib/ERD - open in a new tab.png>)
 
 &nbsp;
 
@@ -84,7 +84,7 @@ A couple of drag-and-drop operations are possible in the ERD:
 
 \- using the handle on the left of each attribute:
 
-![ERD - attribute drag-and-drop](<lib/ERD%20-%20attribute%20drag-and-drop.png>)
+![ERD - attribute drag-and-drop](<lib/ERD - attribute drag-and-drop.png>)
 
 you may move an attribute up or down within an entity, or to another entity, provided that there are no conflicts.&nbsp; It is not possible to move attributes across different views.&nbsp; By pressing the ctrl key, it is possible to perform a copy operation.
 
@@ -103,6 +103,8 @@ The ERD entity boxes have been enriched with visual indicators.&nbsp; Here is a 
 pk: primary key
 
 fk: foreign key
+
+uk: unique key
 
 fm: foreign master
 
@@ -130,7 +132,7 @@ Both dk and dm attributes allow access to the Where-Used function in the context
 
 You may arrange and align entity boxes in the ERD using the menu option Edit \> Align, or the arrange toolbar buttons:
 
-![ERD arrange entities toolbar button](<lib/ERD%20arrange%20entities%20toolbar%20button.png>)&nbsp; Options include: align left, align center, align right, align top, align middle, align bottom, distribute horizontally, distribute vertically, distribute orthogonally.
+![ERD arrange entities toolbar button](<lib/ERD arrange entities toolbar button.png>)&nbsp; Options include: align left, align center, align right, align top, align middle, align bottom, distribute horizontally, distribute vertically, distribute orthogonally.
 
 &nbsp;
 
@@ -140,7 +142,7 @@ You may arrange and align entity boxes in the ERD using the menu option Edit \> 
 
 There are different ways to customize your ERD: with the Options tab in the properties pane, you may change the color and font style.&nbsp; You maybe also modify the sizing behavior when adding or removing attributes, if you do not want the box to automatically adjust.
 
-![ERD display options tab-font style and color](<lib/ERD%20display%20options%20tab-font%20style%20and%20color.png>)
+![ERD display options tab-font style and color](<lib/ERD display options tab-font style and color.png>)
 
 &nbsp;
 
@@ -148,7 +150,7 @@ You may also change the display of the ERD:
 
 &nbsp;
 
-![ERD display options toolbar](<lib/ERD%20display%20options%20toolbar.png>)
+![ERD display options toolbar](<lib/ERD display options toolbar.png>)
 
 &nbsp;
 

@@ -12,6 +12,10 @@ The integration of data modeling with governance tools and processes enables sol
 
 &nbsp;
 
+**Important note:** the Collibra integration is an add-on feature which requires a specific license key which can be purchased from us [here](<mailto:support@hackolade.com?subject=Collibra%20integration%20license>).
+
+&nbsp;
+
 [Collibra](<https://www.collibra.com/> "target=\"\_blank\"") is one of the leaders in the space of data governance and metadata management solutions.&nbsp; Metadata management is a core aspect of an organization’s ability to manage its data and information assets. The term “metadata” describes the various facets of an information asset that can improve its usability throughout its life cycle. Metadata is used as a reference for business-oriented and technical projects, and lays the foundations for describing, inventorying and understanding data for multiple use cases.
 
 Hackolade has partnered with Collibra to provide an officially supported integration with Collibra's Data Dictionary, using its [Core, Import, and output module APIs](<https://developer.collibra.com/rest/#apis> "target=\"\_blank\"").&nbsp; With this integration, users can easily publish into Collibra domains, and keep synchronized, their Hackolade data models for any of the many targets supported by Hackolade.&nbsp; Even the schema definitions of REST APIs documented in Swagger or OpenAPI.
@@ -26,7 +30,7 @@ The integration specifically handles complex data types, hierarchical structures
 
 Hackolade Studio data models for physical targets are published to Physical Data Dictionaries in the form of schemas/tables/columns assets in Collibra, whereas since v7.3.1 of Hackolade Studio, Polyglot models are published to Logical Data Dictionaries in the form of models/entities/attributes assets in Collibra.
 
-**Important note:** the Collibra integration is an add-on feature which requires a specific license key which can be purchased from us [here](<mailto:support@hackolade.com?subject=Collibra%20integration%20license>).
+With v7.6.1 of Hackolade Studio, we added publishing of lineage relations between logical Polyglot models and their derived physical targets for all their assets (model/schema, entity/table, attribute/column)
 
 ## Publishing process flow
 
@@ -34,63 +38,13 @@ To publish a Hackolade data model to your Collibra Data Dictionary, you choose T
 
 The diagram below describes the integration flow:
 
-![Collibra integration flow](<lib/Collibra%20integration%20flow.png>)
+![Collibra integration flow](<lib/Collibra integration flow.png>)
 
 &nbsp;
 
 ### Connect to your Collibra instance
 
-In order to feed data model information to the Collibra instance, it is assumed that you have sufficient credentials to do so.&nbsp; If not, please contact your Collibra administrator.
-
-&nbsp;
-
-To connect to the Collibra instance, you must first specify connection settings:
-
-![Collibra connection settings](<lib/Collibra%20connection%20settings.png>)
-
-as well as authentication credentials:
-
-![Collibra authentication](<lib/Collibra%20authentication.png>)
-
-&nbsp;
-
-### User rights
-
-To successfully import a Hackolade model into Collibra, a user should have the author's license type. The role that is assigned to the user should have been provided with the following permissions:
-
-&nbsp;
-
-* For global role and permissions:
-  * **System administration** - *(This is necessary to apply the custom Hackolade configuration: attributeTypes, relationTypes, scope...)*
-* For resource role and permissions:
-  * **Asset:**
-    * Add
-    * Remove
-    * Update
-    * **Attribute:**
-      * Add
-      * Remove
-      * Update
-  * **Attachment:**
-    * Add
-  * **Domain:** *(This is necessary for views and work with Hackolade Mapping Domain)*
-    * Add
-    * Remove
-    * Update
-
-&nbsp;
-
-We also recommend assigning a user with the above permissions to the parent community of the target domain. It is needed to create/update/delete Hackolade Mapping Domain.
-
-&nbsp;
-
-The Hackolade Mapping Domain is used to represent links between view columns and columns in tables, for example:
-
-![Collibra Mapping Domain](<lib/Collibra%20Mapping%20Domain.png>)
-
-&nbsp;
-
-&nbsp;
+See mode details in [this page](<Connectionandauthentication.md>).
 
 ### Check for the proper configuration
 
@@ -100,11 +54,15 @@ To ensure successful processing of the Hackolade model information, the system u
 
 The system will:
 
-&#49;) confirm that the [out-of-the-box assetTypes](<https://productresources.collibra.com/docs/user/5.7/#Assets/AssetTypes/ref\_ootb-asset-types.htm> "target=\"\_blank\"") exist: model, entity, attribute, schema, table, database view, column, foreign key, mapping specification
+&#49;) confirm that the necessary [out-of-the-box assetTypes](<https://productresources.collibra.com/docs/collibra/latest/Content/Assets/AssetTypes/ref\_ootb-asset-types.htm> "target=\"\_blank\"") exist: model, entity, attribute, schema, table, database view, column, foreign key, mapping specification
 
-&#50;) confirm that the [out-of-the-box relationTypes](<https://productresources.collibra.com/docs/user/5.7/#Assets/Characteristics/Attributes/AttributeTypes/ref\_attribute-types.htm> "target=\"\_blank\"") exist: schema contains table, and table contains column
+&#50;) confirm that the necessary [out-of-the-box attributeTypes](<https://productresources.collibra.com/docs/collibra/latest/Content/Assets/Characteristics/Attributes/AttributeTypes/ref\_attribute-types.htm> "target=\"\_blank\"") exist: description, comment, scale, etc...
 
-&#51;) confirm that the Hackolade setup exists:
+&#51;) confirm that the necessary [out-of-the-box relationTypes](<https://productresources.collibra.com/docs/collibra/latest/Content/Assets/Characteristics/Relations/RelationTypes/ref\_relation-types.htm> "target=\"\_blank\"") exist: schema contains table, and table contains column
+
+&#52;) confirm that the necessary [out-of-the-box complexRelationTypes](<https://productresources.collibra.com/docs/collibra/latest/Content/Assets/Characteristics/ComplexRelations/ComplexRelationTypes/ref\_complex-relation-types.htm> "target=\"\_blank\"") exist
+
+&#53;) confirm that the necessary Hackolade setup exists:
 
 \- custom attribute scope
 
@@ -120,19 +78,19 @@ The system will:
 
 If the expected configuration cannot be found in Collibra, the user is prompted for confirmation that the setup should be automatically carried out in the Collibra instance.
 
-![Image](<lib/Collibra%20missing%20config%20warning.png>)
+![Image](<lib/Collibra missing config warning.png>)
 
 ### Fetch existing Communities and Domains
 
 If the configuration is correct, the application uses the Core API to retrieve the existing Communities and Domains and display them so the user can select where the Hackolade Data Model should be loaded.&nbsp; If the domain does not exist, it should be created first.&nbsp; It is recommended to create a new domain with type "Physical Data Dictionary" for physical models of Hackolade Studio, and "Logical Data Dictionary" for polyglot models.
 
-![Collibra create domain](<lib/Collibra%20create%20domain.png>)
+![Collibra create domain](<lib/Collibra create domain.png>)
 
 ### Select the target domain
 
-All communities and domains are displayed in the box below so the user can select the one where the Hackolade data model should be loaded:
+For performance reasons, we do not display all the communities and domains.&nbsp; Instead you must expand the tree and fetch the domains for the relevant communty.&nbsp; Once the domains are displayed in the box below, you can select the one where the Hackolade data model should be published:
 
-![Collibra resource selection](<lib/Collibra%20resource%20selection.png>)
+![Collibra resource selection](<lib/Collibra resource selection.png>)
 
 &nbsp;
 
@@ -140,7 +98,7 @@ All communities and domains are displayed in the box below so the user can selec
 
 The user then selects the entities to be loaded to the selected Collibra domains:
 
-![Collibra object selection](<lib/Collibra%20object%20selection.png>)
+![Collibra object selection](<lib/Collibra object selection.png>)
 
 &nbsp;
 
@@ -152,7 +110,7 @@ The application uses the [Import API](<https://developer.collibra.com/rest/rest-
 
 &#49;) reverse-engineer from Collibra into the master Hackolade data model, and let the conflict resolution kick-in, letting the user decide whether to merge the information from Collibra.
 
-![Conflict resolution](<lib/Conflict%20resolution.png>)
+![Conflict resolution](<lib/Conflict resolution.png>)
 
 Once the information is merged into the hackolade model, the whole model can be published to Collibra again.
 
@@ -164,31 +122,31 @@ Once the information is merged into the hackolade model, the whole model can be 
 
 The data model information can immediately be viewed inside Collibra:
 
-![Collibra view data models](<lib/Collibra%20view%20data%20models.png>)
+![Collibra view data models](<lib/Collibra view data models.png>)
 
 &nbsp;
 
 In order to view nested objects in the above screen, it is suggested to enable multipath hierarchy for the relation types: schema contains table, table contains column, and column contains column:
 
-![Collibra configure hierarchy](<lib/Collibra%20configure%20hierarchy.png>)
+![Collibra configure hierarchy](<lib/Collibra configure hierarchy.png>)
 
 &nbsp;
 
 You may also display the Full Name field to view the nesting path in dot.notation, as well as the hackolade Data Type:
 
-![Collibra fields config](<lib/Collibra%20fields%20config.png>)
+![Collibra fields config](<lib/Collibra fields config.png>)
 
 &nbsp;
 
 Users will notice that the data types of the specific target technology:
 
-![Collibra data type view](<lib/Collibra%20data%20type%20view.png>)
+![Collibra data type view](<lib/Collibra data type view.png>)
 
 &nbsp;
 
 The Entity-Relationship Diagram image can also be viewed as a PNG file:
 
-![Collibra view ERD file](<lib/Collibra%20view%20ERD%20file.png>)
+![Collibra view ERD file](<lib/Collibra view ERD file.png>)
 
 &nbsp;
 
@@ -200,3 +158,44 @@ With v5.2.1, we introduced the possibility to reverse-engineer a Collibra physic
 
 \- or into an existing model, possibly the one used to originally publish to Collibra.&nbsp; This is particularly handy if maintenance occurs in Collibra for models created in Hackolade Studio.&nbsp; Refer to the important note above in the section "Publish data model to Collibra".
 
+&nbsp;
+
+## Publish lineage relations
+
+With v7.6.1 of Hackolade Studio, it is now possible to publish lineage relations between logical Polyglot models and their derived physical targets for all their assets (model/schema, entity/table, attribute/column)
+
+This feature is in support of the [Guided Stewardship operating model](<https://productresources.collibra.com/docs/collibra/latest/Content/Catalog/GuidedStewardship/OperatingModel/to\_catalog-om.htm> "target=\"\_blank\"") of Collibra:&nbsp; But it is only possible Guided Stewardship is enabled on your instance as part of the Ultimate licensing tier of Collibra.
+
+![Collibra Guided Stewardship operating model](<lib/Collibra Guided Stewardship operating model.png>)
+
+&nbsp;
+
+This process requires the orchestration of several successive operations:
+
+\- publish to Collibra the Polyglot model(s) from which physical target models are derived in Hackolade.&nbsp; Each Polyglot model is typically published into a Collibra Logical Data Dictionary with the models/data entitty/data attribute structure (possibly specifying the hierarchy "Data Attribute **contains** Data Attribute) ;
+
+\- make sure to save the model(s) in Hackolade Studio, so the Collibra internal IDs are persisted in the Polyglot model(s);
+
+\- open the derived model(s) in Hackolade Studio and make sure to refresh the references to parent Polyglot model(s), which will ensure that the links between objects are persisted in the derived model(s);
+
+\- publish the derived model(s) to Collibra, generally into a Collibra Physical Data Dictionary (unless the derived model is itself a Polyglot model, in which case it would be published to a Logical Data Dictionary.)&nbsp;
+
+In Collibra, it is then possible to display the lineage relations automatically created by Hackolade Studio during publishing.
+
+![Collibra lineage](<lib/Collibra lineage.png>)
+
+&nbsp;
+
+If your instance of your Collibra Dat Intelligence Platform is not of the the Ultimate type of subscription, you may receive messages like this below.
+
+&nbsp;
+
+Without Guided Stewardship on the Collibra instance, it is not possible to publish Hackolade Studio's polyglot models:
+
+![Collibra Guided Stewardship missing](<lib/Collibra Guided Stewardship missing.png>)
+
+&nbsp;
+
+And without Guided Stewardship on the Collibra instance, it is not possible to publish lineage from physical models to polyglot models (since polyglot models cannot be published to Collibra...):
+
+![Collibra Guided Stewardship limited lineage](<lib/Collibra Guided Stewardship limited lineage.png>)

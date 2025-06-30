@@ -8,7 +8,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-![BigQuery DDL forward-engineering](<lib/BigQuery%20DDL%20forward-engineering.png>)
+![BigQuery DDL forward-engineering](<lib/BigQuery DDL forward-engineering.png>)
 
 &nbsp;
 

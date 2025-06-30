@@ -10,13 +10,13 @@ You may also view this [short video](<https://youtu.be/YHTWOlOl2eE> "target=\"\_
 
 A good example use case would be if your governance standards require to separate metadata header information about a document/record, from data intended for consumption by external processes.&nbsp; Metadata header information may include: schema version, provenance, transformation rules, etc.
 
-![Image](<lib/Snippet%20metadata.png>)
+![Image](<lib/Snippet metadata.png>)
 
 &nbsp;
 
 Another example could be the creation of a section for canonical data, separate from the idiomatic data coming from the source.&nbsp; Say that you have multiple systems feeding a collection, using different labels for the same type of information: zip, zipcode, postcode, postal code.&nbsp; You wish to keep the source of data as-is, yet be able to query or index the data despite the different labels across documents.&nbsp; You could store the canonical data in a separate section such as:
 
-![Snippet canonical](<lib/Snippet%20canonical.png>)
+![Snippet canonical](<lib/Snippet canonical.png>)
 
 &nbsp;
 
@@ -39,7 +39,7 @@ You may create many snippets, but only one can be active, per target, at any tim
 
 &nbsp;
 
-![Snippets folder structure](<lib/Snippets%20folder%20structure.png>)
+![Snippets folder structure](<lib/Snippets folder structure.png>)
 
 &nbsp;
 
@@ -51,7 +51,7 @@ A snippet is a simple JSON file with a .json extension. You may [download this e
 
 &nbsp;
 
-![Snippet metadata JSON](<lib/Snippet%20metadata%20JSON.png>)
+![Snippet metadata JSON](<lib/Snippet metadata JSON.png>)
 
 &nbsp;
 
@@ -61,7 +61,7 @@ Or you may [download this example](<https://hackolade.com/schemas/custProps/snip
 
 &nbsp;
 
-![Snippet canonical JSON](<lib/Snippet%20canonical%20JSON.png>)
+![Snippet canonical JSON](<lib/Snippet canonical JSON.png>)
 
 &nbsp;
 
@@ -79,7 +79,7 @@ Simply replace the empty object {} by an object such as this one:
 
 &nbsp;
 
-![Snippets activation](<lib/Snippets%20activation.png>)
+![Snippets activation](<lib/Snippets activation.png>)
 
 &nbsp;
 
@@ -91,7 +91,7 @@ If you wish to use a different snippet, just change the value in defaultData.jso
 
 &nbsp;
 
-![Snippets deactivation](<lib/Snippets%20deactivation.png>)
+![Snippets deactivation](<lib/Snippets deactivation.png>)
 
 &nbsp;
 
