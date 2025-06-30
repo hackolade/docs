@@ -4,7 +4,7 @@ To access an Google BigQuery project, Hackolade currently supports access using 
 
 Choosing the most appropriate method depends on the use case.
 
-If you want to connect from your local workstation, then you should favor using ***Application Default Credentials*** method because it allows for better auditing and access management, as you will be authenticated as a user to Google Cloud Platform.
+If you want to connect from your local workstation, then you should favor using ***Application Default Credentials*** method because it allows for better auditing and access management, as you will be authenticated as a user (e.g. yourself) to Google Cloud Platform.
 
 While if your use case implies running the Hackolade Studio cli on servers (for instance using Docker), then you should favor using the ***Service Account*** because this method is tailored for ***Machine to Machine*** use cases.
 
