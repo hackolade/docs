@@ -25,7 +25,7 @@ Give a meaningful name to the connection, provide a specific project id you have
 As stated by [Google Cloud Platform's documentation](https://cloud.google.com/docs/authentication/set-up-adc-local-dev-environment
 ):
 
-1. Install [gcloud](https://cloud.google.com/sdk/docs/install) client on your workstation
+1. Install [gcloud](https://cloud.google.com/sdk/docs/install) client on your workstation. Alternatively, you can use ```choco install gcloudsdk``` on Windows or ```brew install --cask google-cloud-sdk``` on Mac OS.
 2. Then in a terminal initialize gcloud: ```gcloud init```
 3. And finally authenticate yourself to GCP: ```gcloud auth application-default login```
 
