@@ -35,7 +35,7 @@ Gcloud creates an ***application_default_credentials.json*** credential file in 
 - Mac: ***${HOME}/.config/gcloud/application_default_credentials.json***
 - Linux: ***${HOME}/.config/gcloud/application_default_credentials.json***
 
-Note that on Mac and Linux this location is in a hidden folder.  On Mac to be able to select it in a file picker you might need to use the ***CMD + SHIFT + .*** to for MacOS to show them in the picker.  On Linux all folders are displayed.
+Note that on Mac and Linux this location is in a hidden folder.  On Mac to be able to select a hidden folder in a file picker, you might need to use the ***CMD + SHIFT + .*** keyboard shortcut for MacOS to show them in the picker first.  On Linux all folders are displayed.
 
 ## Service account
 Service Account Credentials are loaded from a file created in the [Google IAM \& Admin console](<https://console.cloud.google.com/iam-admin/iam> "target=\"\_blank\"") by your administrator.
