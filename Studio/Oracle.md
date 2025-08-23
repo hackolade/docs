@@ -97,7 +97,7 @@ When you create a table or cluster, you must specify a data type for each of its
 
 &nbsp;
 
-Oracle Database provides a number of built-in data types as well as several categories for user-defined types that can be used as data types. A data type is either scalar or nonscalar. A scalar type contains an atomic value, whereas a nonscalar contains a set of values. A large object (LOB) is a special form of scalar data type representing a large scalar value of binary or character data. LOBs are subject to some restrictions that do not affect other scalar types because of their size. 
+Oracle Database provides a number of built-in data types as well as several categories for user-defined types that can be used as data types. A data type is either scalar or non-scalar. A scalar type contains an atomic value, whereas a non-scalar contains a set of values. A large object (LOB) is a special form of scalar data type representing a large scalar value of binary or character data. LOBs are subject to some restrictions that do not affect other scalar types because of their size. 
 
 &nbsp;
 

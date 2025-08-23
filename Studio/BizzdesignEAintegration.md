@@ -10,7 +10,7 @@ Hackolade has partnered with Bizzdesign to create an integration allowing Hackol
 
 ## Archimate data objects file generation
 
-With v8.3.0, we released the generation of [Archimate](<https://www.opengroup.org/archimate-forum> "target=\"\_blank\"") files with data objects according to the [Archimate 3.1 specification](<https://www.opengroup.org/xsd/archimate/> "target=\"\_blank\""), as well as according to the [Open Exchange format](<https://www.opengroup.org/open-group-archimate-model-exchange-file-format> "target=\"\_blank\""). See [this page](<Archimateapplicationsdataobjects.md>) for more details.&nbsp; The Open Exchange format can be easily imported into Bizzdesign Horizzon, following these [instructions](<https://help.bizzdesign.com/articles/#\!horizzon-help/importing-archimate-model-data> "target=\"\_blank\"").
+With v8.3.0, we released the generation of [Archimate](<https://www.opengroup.org/archimate-forum> "target=\"\_blank\"") files with data objects according to the [Archimate 3.1 specification](<https://www.opengroup.org/xsd/archimate/> "target=\"\_blank\""), as well as according to the [Open Exchange format](<https://www.opengroup.org/open-group-archimate-model-exchange-file-format> "target=\"\_blank\""). See [this page](<ArchiMateapplicationdataobjects.md>) for more details.&nbsp; The Open Exchange format can be easily imported into Bizzdesign Horizzon, following these [instructions](<https://help.bizzdesign.com/articles/#\!horizzon-help/importing-archimate-model-data> "target=\"\_blank\"").
 
 &nbsp;
 

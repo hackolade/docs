@@ -416,7 +416,7 @@ New features with v2.2.0:
 
 \- Fixed reverse-engineering of Excel template for MongoDB target
 
-\- Fixed installation on Windows when conflict between envirnment variables
+\- Fixed installation on Windows when conflict between environment variables
 
 &nbsp;
 

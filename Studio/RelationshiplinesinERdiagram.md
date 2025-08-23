@@ -178,7 +178,7 @@ You may move:
 
 &nbsp;
 
-To move a line, just grab anywhere in the line, and move in any direction.&nbsp; Depending on the direction you drag, segments and anchors are moved, anchors may change box sides,&nbsp; and the number of segments are automatically recaculated.
+To move a line, just grab anywhere in the line, and move in any direction.&nbsp; Depending on the direction you drag, segments and anchors are moved, anchors may change box sides,&nbsp; and the number of segments are automatically recalculated.
 
 ![ER lines - moving entire line](<lib/ER lines - moving entire line.png>)
 
@@ -196,7 +196,7 @@ As segments get extended past the anchor of the line, the number of segments may
 
 &nbsp;
 
-Similarly, the number of segments can be reduced by aligning parallel segments, or by moving an anchor to a box side closer to the opposite andchor.
+Similarly, the number of segments can be reduced by aligning parallel segments, or by moving an anchor to a box side closer to the opposite anchor.
 
 &nbsp;
 
@@ -212,7 +212,7 @@ Each anchor can be moved, but is restricted to the one or maximum 2 sides of the
 
 &nbsp;
 
-At any time, you may swicth geometry, which will restore the line to default anchors
+At any time, you may switch geometry, which will restore the line to default anchors
 
 ![ER lines - style and gemetries](<lib/ER lines - style and gemetries.png>)
 

@@ -84,7 +84,7 @@ The application will perform the following operations while creating the destina
 
 \- create responses components from the template
 
-\- perform the cartesian product of each entity of the source model with each resource of the template, including requests and responses
+\- perform the Cartesian product of each entity of the source model with each resource of the template, including requests and responses
 
 &nbsp;
 
@@ -100,7 +100,7 @@ You may choose either OpenAPI 3 or Swagger 2 as a destination version.
 
 &nbsp;
 
-You are presented with the usual dialog for object select; and you may unselect entities you do not wish to include in the API generation:&nbsp;
+You are presented with the usual dialog for object select; and you may deselect entities you do not wish to include in the API generation:&nbsp;
 
 ![Image](<lib/Model-driven API generation entity selection.png>)
 

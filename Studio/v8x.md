@@ -1,12 +1,236 @@
 # v8.x
 
+New features in v8.3.9 \[22-Aug-2025\]&nbsp;
+
+\- Delta Lake/Databricks: aligned global option for Request Timeout with the custom deferred requests to Databricks API
+
+\- Delta Lake/Databricks: included cluster metadata in logs while fetching the databases info
+
+\- ERD: ensured that UK and AK markers remain for attributes involved in multiple composite keys, when composite keys are removed or updated
+
+\- ERDVs: added possibility to select only a subset of all subtypes of a supertype
+
+\- ERDVs: adjust container size when relationship is manually extended beyond container boundaries
+
+\- Excel: hardened checks during import for key constraints referring to non-existent attributes
+
+\- Glue Data Catalog: added support for AWS Glue 3.0, plus added support for Iceberg tables
+
+&nbsp;
+
+New features in v8.3.8 \[15-Aug-2025\]&nbsp;
+
+\- Compare \& Merge: improved message to clarify when no alter script is generated in delta model via CLI due to no changes impacting the database
+
+\- ERDV: adapted all ERDVs to accurately reflect changes when an entity is moved to another container which is initially not present in the ERDV
+
+\- ERDV: added adapter to redraw relationships based on shortest path between entities while keeping the anchor position on each entity boxes
+
+\- Polyglot: added display of block and group custom properties for derived relationships
+
+\- XSD reverse-engineering: set “resolve references” to true by default for Erwin source
+
+\- Avro: added use of UDT technical name for schema forward-engineering when referencing UDT Enums
+
+\- BigQuery, CockroachDB, Db2, Hive, MariaDB, MySQL, Oracle, PostgreSQL, Redshift, SQL Server/Azure SQL, Synapse, Teradata, YugabyteDB: added possibility for views to be based on another view (not just on a table)
+
+\- PostgreSQL: added support for single unique constraint options in the alter script of delta models
+
+\- SQL Server/Azure SQL: removed extraneous space in comment formatting of DDL forward-engineering
+
+\- Snowflake: extend ability to select more file extensions (.pem, .p8, .crt, .cert) when setting up key-pair authentication
+
+\- Snowflake: added more user-friendly message in case of missing or invalid passphrase when setting up key-pair authentication
+
+\- Synapse: removed extraneous ASC keyword in generated script
+
+\- Synapse: added reverse-engineering of (composite) Unique Key constraints
+
+&nbsp;
+
+New features in v8.3.7 \[12-Aug-2025\]&nbsp;
+
+\- Print Diagram: added rendering of relationships in ERDV when generating PDF Hi-Res image
+
+\- SQL Server/AzureSQL: added adapter when DB version is downgraded from 2025, converting JSON data type into nvarchar with hasMaxLength:true
+
+\- Synapse: removed extraneous ASC keyword in Primary Key DDL statement
+
+&nbsp;
+
+New features in v8.3.6 \[08-Aug-2025\]&nbsp;
+
+\- Collibra: added support for integration with non-Ultimate Collibra instances (those with Scopes disabled) allowing model publishing through extended global assignments and custom attribute types
+
+\- Custom properties: fixed false positive undeclared for native property “error”
+
+\- Documentation: improved ERD diagram views to utilize the full page and fit document
+
+\- ERDV: improved container resizing behavior when entity is moved to another container
+
+\- Polyglot: added display of block and group custom properties for derived objects
+
+\- Delta Lake/Databricks: added tolerance for MASK and RELY keyword in column constraints
+
+\- Snowflake: added support for key-pair authentication in connection to instances
+
+\- SQL Server/Azure SQL: display attribute data type "json" in ERD
+
+&nbsp;
+
+New features in v8.3.5 \[01-Aug-2025\]&nbsp;
+
+\- Mermaid added reverse-engineering of attributes on both sides of FK relationships through inference, given that they are not specified in Mermaid ER code
+
+\- Mermaid: added Command-Line Interface support with command -revEngDiagram and argument --source=mermaid
+
+\- ERD: adjusted font of entity title bar when zooming out to sketchy level
+
+\- Polyglot: enhanced handling of name coupling during updates of references
+
+\- Polyglot: enhanced model derive process to prevent multiple references to the same Polyglot model, and prompt user for Impact Analysis screen
+
+\- Print Diagram: improved performance of PDF generation for large models by reducing the SVG file size significantly
+
+\- Print Diagram: adjusted positioning of relationship names in SVG exports to ensure that all names are displayed above the relationship lines
+
+\- Print Diagram: added auto-zoom of Graph Diagrams to fit full page
+
+\- Delta Lake/Databricks: added possibility for views to be based on another view (not just on a table)
+
+\- Delta Lake/Databricks: added support for CLUSTER BY keyword in reverse-engineering
+
+\- SQL Server/Azure SQL: added support for v2025, including native JSON data type
+
+\- SQL Server/Azure SQL: added automatic generation of FK constraint name if none is specified by user
+
+&nbsp;
+
+New features in v8.3.4 \[25-Jul-2025\]
+
+\- ArchiMate: added forward-engineering of object descriptions (models, containers, entities, relationships, ERDVs)
+
+\- Mermaid: added possibility to reverse-engineer ER diagram code from copy/paste with Clipboard
+
+\- Mermaid: added possibility to reverse-engineer ER diagram code from Git remote location
+
+\- Mermaid: added possibility to reverse-engineer ER diagram code from drag-and-drop of one or more .mmd files
+
+\- Mermaid: added reverse-engineering of entity and attribute comments that start with %%
+
+\- Mermaid: added possibility to reverse-engineer Mermaid ER diagram code files with .mmd extension with the Command-Line Interface revEngDiagram --source=mermaid
+
+\- PowerDesigner import: added tolerance for inconsistencies with PD specification when PDM file is generated from Erwin
+
+\- PowerDesigner import: added support for physical diagrams within packages
+
+\- Print Diagram: added possibility to generate vector image in Hi-Resolution PDF, allowing legible output even at 6400% zoom in Acrobat Reader
+
+\- Print Diagram: improved empty canvas space trimming
+
+\- Constraints: added an adapter to set properties correctly after a PK/unique constraint ambiguity was created by user in Excel, plus added verification during Excel import to prevent such cases
+
+\- Avro: added handling of JSON Schema enum values when field is converted into an Avro enum
+
+\- CockroachDB: enhanced JSON Schema forward-engineering to only expose additionalProperties property when its value is false; added support for v24.x and v25.x
+
+\- Db2: enhanced JSON Schema forward-engineering to only expose additionalProperties property when its value is false; added support for v12.x
+
+\- MariaDB: enhanced JSON Schema forward-engineering to only expose additionalProperties property when its value is false; added support for v11.x
+
+\- MySQL: enhanced JSON Schema forward-engineering to only expose additionalProperties property when its value is false; added support for v9.x
+
+\- PostgreSQL: added support for v17.x
+
+\- Snowflake: added possibility for views to be based on another view (not just on a table)
+
+\- SQL Server/Azure SQL: introduced flexibility in script generation for controlling constraints in CREATE scripts (3 choices: “In CREATE statement”, “In separate statement” or “Ignore”), controllable from Tools \> Options \> Forward-Engineering parameters, plus from forward-engineering lower tab and via Tools \> Forward-Engineer menu
+
+&nbsp;
+
+New features in v8.3.3 \[18-Jul-2025\]
+
+\- ERD: enhanced ERD performance when scrolling/zooming/moving entities and rendering large number of relationships
+
+\- ArchiMate: added forward-engineering of supertype/subtype relationships as a Specialization relationship type
+
+\- Collibra: added handling of conflicting signature when creating relation type
+
+\- Mermaid: added handling for conflict resolution when importing entities with same name as existing
+
+\- Avro: added handling for reverse-engineering of JSON Schema with multi-type complex types that are required
+
+\- Delta Lake/Databricks: adjusted encoding of dots and spaces in FK relationship names in DDL forward-engineering
+
+\- Delta Lake/Databricks: added PK constraints in separate statements as part of script generation configuration
+
+&nbsp;
+
+New features in v8.3.2 \[11-Jul-2025\]
+
+\- Mermaid: added possibility to import (reverse-engineer) models in Mermaid ER diagram code, often created from GenAI prompts, cfr https://hackolade.com/help/GenAI-createdMermaidERdiagram.html
+
+\- Licensing: added seat synchronization with desktop so that browser does not validate an extra seat on same machine
+
+\- ArchiMate: added possibility to select ER Diagram views to be generated in ArchiMate file
+
+\- Browser: added tolerance for opening models saved with a later plugin version than deployed
+
+\- JSON Schema: added tolerance for http in $schema keyword when resolving references across different drafts&nbsp;
+
+\- Polyglot: added warning badge in case of constraint with empty name
+
+\- EventBridge, GraphQL, OpenAPI, Swagger, PostgreSQL, YugabyteDB: moved comma position in forward-engineered DDL in case of warning comment about invalid constraint name
+
+\- Delta Lake/Databricks: added tolerance for special characters and formats in Unity Catalog tags
+
+\- Delta Lake/Databricks: placed NOT NULL constraints in ALTER statements before PK constraints
+
+\- Delta Lake/Databricks: applied script generation options also to views and schema comments
+
+\- Delta Lake/Databricks: resolved schema name on using the ALTER Schema COMMENT
+
+\- Delta Lake/Databricks, PostgreSQL, YugabyteDB: enhanced JSON Schema forward-engineering to only expose additionalProperties property when its value is false
+
+\- Glue Data Catalog: enabled feature to infer PKs and FKs
+
+\- Snowflake: added properties IF NOT EXISTS and OR REPLACE for views and linked to forward- and reverse-engineering processes
+
+&nbsp;
+
+New features in v8.3.1 \[04-Jul-2025\]
+
+\- ArchiMate: added shared model link URL in output file to easily open models in Browser directly from third-party interface
+
+\- ArchiMate: added generation of an ArchiMate view for main ERD
+
+\- ArchiMate: added Command-Line Interface possibility with forweng command to generate data object file in .archimate format (argument --outputtype=archimatemodel) or Open Exchange .xml format (argument --outputtype=openexchange)
+
+\- ERDV: allowed users to expand style block and disable auto-positioning
+
+\- Open From: added ability to search for repositories in Bitbucket Data Center
+
+\- Workgroup: added support for Azure DevOps Repos cross-organization token management
+
+\- BigQuery: added authentication through GCP Application Default Credentials
+
+\- Collibra: added to Command-Line Interface command forwEngDataDictionary the support for selective configuration publication and updates based on whether the Guided Stewardship feature is enabled in Collibra instance
+
+\- Delta Lake/Databricks: introduced flexibility in script generation for controlling constraints in ALTER scripts of delta models
+
+\- Delta Lake/Databricks: added ability to change global script generation options directly from the forward-engineering features (lower tab and via Forward-Engineer menu).
+
+\- OpenAPI: enhanced forward-engineering to only expose additionalProperties property when its value is false
+
+&nbsp;
+
 New features in v8.3.0 \[27-Jun-2025\]
 
 \- Archimate: added possibility to generate data object file in .archimate format or Open Exchange .xml format for containers, entities, and relationships of any model, to be imported in Enterprise Architecture tools
 
 \- Licensing: refactored logic as a library so it can be shared across Studio Desktop, Studio Browser, and Model Hub
 
-\- Open From: added&nbsp; ability to check for remote changes to retrieve latest changes, if any, to model opened directly from remote repo
+\- Open From: added ability to check for remote changes to retrieve latest changes, if any, to model opened directly from remote repo
 
 \- Open From/Save To: added possibility to save model in different location than where it was originally opened from
 

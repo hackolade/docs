@@ -128,7 +128,7 @@ New features with v1.12.10:
 
 \- fixed documentation handling of MongoDB indexes depending on collation flag
 
-\- not displaying unselected sections in documentation
+\- not displaying deselected sections in documentation
 
 \- better tolerance in reverse-engineering of JSON Schema for ordering of fields and missing properties of choices
 
@@ -246,7 +246,7 @@ New features with v1.12.2:
 
 \- allow opening of model file corrupted with a prior version
 
-\- workaround for Couchbase error: "An unknown N1QL error occured. This is usually related to an out-of-memory condition"
+\- workaround for Couchbase error: "An unknown N1QL error occurred. This is usually related to an out-of-memory condition"
 
 &nbsp;
 
@@ -432,7 +432,7 @@ New features with v1.8.3:
 
 \- improved handling of 2-way referencing in denormalization
 
-\- more accurate numeric type handling in DDL reverse-enginerring in case of JSON target
+\- more accurate numeric type handling in DDL reverse-engineering in case of JSON target
 
 \- proper rendering of changed custom attributes for JSON and native DB targets
 

@@ -23,7 +23,7 @@ With these enhancements, we introduce a new structure on your local file system 
 
 &nbsp;
 
-From now on, and while we will continue to store our offical plugins in that same place, your custom properties will be stored in the folder C:\\Users\\%username%\\.hackolade\\**options** (on Mac in Users/$USER/.Hackolade/**options**)&nbsp; If you use the Excel import/export functionality, this is also where we store the object selection profiles for each target.
+From now on, and while we will continue to store our official plugins in that same place, your custom properties will be stored in the folder C:\\Users\\%username%\\.hackolade\\**options** (on Mac in Users/$USER/.Hackolade/**options**)&nbsp; If you use the Excel import/export functionality, this is also where we store the object selection profiles for each target.
 
 &nbsp;
 
@@ -87,7 +87,7 @@ When you press the Migrate button for a **native** target, you get this dialog:
 
 &nbsp;
 
-The migration process is slightly different than for plugin targets.&nbsp; If you confirm, the process will also check if you have any custom properties in your old plugin for that target, and will migrate them to the new structure in C:\\Users\\%username%\\.hackolade\\options (on Mac in Users/$USER/.Hackolade/options)&nbsp; For native targets, the original plugin is removed entirely (it is no longer necessary), and only customization are kept.&nbsp; Just in case, a zip achive of the plugin is kept under C:\\Users\\%username%\\.hackolade\\tmp (on Mac in Users/$USER/.Hackolade/tmp)
+The migration process is slightly different than for plugin targets.&nbsp; If you confirm, the process will also check if you have any custom properties in your old plugin for that target, and will migrate them to the new structure in C:\\Users\\%username%\\.hackolade\\options (on Mac in Users/$USER/.Hackolade/options)&nbsp; For native targets, the original plugin is removed entirely (it is no longer necessary), and only customization are kept.&nbsp; Just in case, a zip archive of the plugin is kept under C:\\Users\\%username%\\.hackolade\\tmp (on Mac in Users/$USER/.Hackolade/tmp)
 
 &nbsp;
 

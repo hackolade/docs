@@ -1,5 +1,19 @@
 # Collibra Data Dictionary integration
 
+**Important note:** Collibra started to provide its Data Intelligence platform in 3 packages: Standard, Premier, and Ultimate.&nbsp; Our integration with Collibra, was historically developed based on functionality that was previously included by default.&nbsp; Now, a "Federated Operating model" is required but only as part of the "Ultimate" package.&nbsp; The Federated Operating model can be procured for an add-on price, even with the Standard and Premier packages.&nbsp; Please contact your Collibra sales account executive. &nbsp;
+
+&nbsp;
+
+For our standard Collibra integration, we must be able to create [scopes](<https://productresources.collibra.com/docs/collibra/latest/Content/Settings/OperatingModel/Scopes/to\_scopes.htm> "target=\"\_blank\"") and scope assignments which are required in order to support the advanced integration necessary for graph database, REST APIs, nested hierarchies, and polymorphism. &nbsp;
+
+&nbsp;
+
+If you do not have the Ultimate package and did not get the Federated Operating model add-on, then starting with v8.3.6, we provide an integration, albeit with some graceful degradation, some limitations, and some required manual configuration described [in this page](<Non-Ultimateeditionintegration.md>).
+
+&nbsp;
+
+## Ultimate Edition integration
+
 One of the primary challenges severely constraining organizations is to make business sense of technical data structures in applications and databases.&nbsp; This complicates the ability of organizations to identify critical data elements and bring them under governance. &nbsp;
 
 &nbsp;
@@ -26,7 +40,7 @@ The process automatically:
 * creates the necessary custom scopes, attributeTypes and assignments to support the granularity of Hackolade features
 * then creates and keeps in sync assets for schemas, tables, views, columns, models, entities, attributes, and foreign key relationships.
 
-The integration specifically handles complex data types, hierarchical structures, and polymorphism found in modern databases, JSON, Avro, Parquet, ProtoBuf, etc...&nbsp; Custom properties defined for a plugin are also published as custom attributeTypes in Collibra.
+The integration specifically handles complex data types, hierarchical structures, and polymorphism found in modern databases, JSON, Avro, Parquet, Protobuf, etc...&nbsp; Custom properties defined for a plugin are also published as custom attributeTypes in Collibra.
 
 Hackolade Studio data models for physical targets are published to Physical Data Dictionaries in the form of schemas/tables/columns assets in Collibra, whereas since v7.3.1 of Hackolade Studio, Polyglot models are published to Logical Data Dictionaries in the form of models/entities/attributes assets in Collibra.
 
@@ -64,7 +78,7 @@ The system will:
 
 &#53;) confirm that the necessary Hackolade setup exists:
 
-\- custom attribute scope
+\- custom attribute scope and scope assignments
 
 \- custom attributeTypes to handle Hackolade-specific information
 
@@ -88,7 +102,7 @@ If the configuration is correct, the application uses the Core API to retrieve t
 
 ### Select the target domain
 
-For performance reasons, we do not display all the communities and domains.&nbsp; Instead you must expand the tree and fetch the domains for the relevant communty.&nbsp; Once the domains are displayed in the box below, you can select the one where the Hackolade data model should be published:
+For performance reasons, we do not display all the communities and domains.&nbsp; Instead you must expand the tree and fetch the domains for the relevant community.&nbsp; Once the domains are displayed in the box below, you can select the one where the Hackolade data model should be published:
 
 ![Collibra resource selection](<lib/Collibra resource selection.png>)
 
@@ -172,7 +186,7 @@ This feature is in support of the [Guided Stewardship operating model](<https://
 
 This process requires the orchestration of several successive operations:
 
-\- publish to Collibra the Polyglot model(s) from which physical target models are derived in Hackolade.&nbsp; Each Polyglot model is typically published into a Collibra Logical Data Dictionary with the models/data entitty/data attribute structure (possibly specifying the hierarchy "Data Attribute **contains** Data Attribute) ;
+\- publish to Collibra the Polyglot model(s) from which physical target models are derived in Hackolade.&nbsp; Each Polyglot model is typically published into a Collibra Logical Data Dictionary with the models/data entity/data attribute structure (possibly specifying the hierarchy "Data Attribute **contains** Data Attribute) ;
 
 \- make sure to save the model(s) in Hackolade Studio, so the Collibra internal IDs are persisted in the Polyglot model(s);
 
@@ -186,7 +200,7 @@ In Collibra, it is then possible to display the lineage relations automatically 
 
 &nbsp;
 
-If your instance of your Collibra Dat Intelligence Platform is not of the the Ultimate type of subscription, you may receive messages like this below.
+If your instance of your Collibra Data Intelligence Platform is not of the the Ultimate type of subscription, you may receive messages like this below.
 
 &nbsp;
 
@@ -199,3 +213,4 @@ Without Guided Stewardship on the Collibra instance, it is not possible to publi
 And without Guided Stewardship on the Collibra instance, it is not possible to publish lineage from physical models to polyglot models (since polyglot models cannot be published to Collibra...):
 
 ![Collibra Guided Stewardship limited lineage](<lib/Collibra Guided Stewardship limited lineage.png>)
+

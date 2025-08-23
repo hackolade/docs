@@ -10,11 +10,10 @@ Following good practices, you first need to declare each child repository as bei
 
 &nbsp;
 
-> \# e.g. git remote add models https://github.com/org/models.git
+> \# e.g. git remote add models https://github.com/org/models.git\
+git remote add \<child name\> \<child URL\>
 
-> git remote add \<child name\> \<child URL\>
-
-> &nbsp;
+&nbsp;
 
 Once you have executed that command for every child repository, Hackolade Studio detects that the parent repository has multiple remotes and will provide you with additional actions.
 

@@ -149,7 +149,7 @@ The Db2 instance can hosted on-premises, or on virtualized machines in a private
 
 &nbsp;
 
-The Hackolade process for reverse-engineering of Db2 databases includes the execution of statements to discover schemas, tables, columns and their types, indexes and constraints.&nbsp; For JSON&nbsp; documents in text columns, Hackolade Sudio performs statistical sampling of records followed by probabilistic inference of the JSON document schema.
+The Hackolade process for reverse-engineering of Db2 databases includes the execution of statements to discover schemas, tables, columns and their types, indexes and constraints.&nbsp; For JSON&nbsp; documents in text columns, Hackolade Studio performs statistical sampling of records followed by probabilistic inference of the JSON document schema.
 
 &nbsp;
 

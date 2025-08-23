@@ -302,7 +302,7 @@ You must enter the WHERE clause for the join.
 
 ### Add unnested fields
 
-In some cases, you might prefer to flatten structures instead of the nested subquery.&nbsp; The unnested subquery allows to select columns in the underlying child table and present the fields in the JSON at the same level as the columns of the prent table.&nbsp; This can be done at any level of the tree.
+In some cases, you might prefer to flatten structures instead of the nested subquery.&nbsp; The unnested subquery allows to select columns in the underlying child table and present the fields in the JSON at the same level as the columns of the parent table.&nbsp; This can be done at any level of the tree.
 
 &nbsp;
 

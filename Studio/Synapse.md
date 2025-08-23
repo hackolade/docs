@@ -130,7 +130,7 @@ For more information on Synapse in general, please consult the [website](<https:
 
 &nbsp;
 
-During reverse-engineering, a "best guess" attempt is made to determine the table role (Fact vs Dimension vs Staging) using recommendations found [https://docs.microsoft.com/en-us/azure/synapse-analytics/sql/develop-tables-overview#common-distribution-methods-for-tables](<https://docs.microsoft.com/en-us/azure/synapse-analytics/sql/develop-tables-overview#common-distribution-methods-for-tables> "target=\"\_blank\""), but admittedly, thes recommendations are ambiguous and it is likely that the user will need to adjust the role after reverse-engineering.
+During reverse-engineering, a "best guess" attempt is made to determine the table role (Fact vs Dimension vs Staging) using recommendations found [https://docs.microsoft.com/en-us/azure/synapse-analytics/sql/develop-tables-overview#common-distribution-methods-for-tables](<https://docs.microsoft.com/en-us/azure/synapse-analytics/sql/develop-tables-overview#common-distribution-methods-for-tables> "target=\"\_blank\""), but admittedly, these recommendations are ambiguous and it is likely that the user will need to adjust the role after reverse-engineering.
 
 &nbsp;
 

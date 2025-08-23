@@ -36,7 +36,9 @@ With the Azure AD methods, whether with Username/Password or with MFA, the Azure
 
 &nbsp;
 
-![Image](<lib/Azure AD MFA consent.png>)
+&nbsp;
+
+![Azure AD MFA consent](<lib/Azure AD MFA consent.png>)
 
 &nbsp;
 

@@ -8,7 +8,11 @@ You may also [view this tutorial](<https://youtu.be/Bv0bzJP6CZ0> "target=\"\_bla
 
 &nbsp;
 
-A polyglot data model is a common physical model, where denormalization and complex data types are encouraged.&nbsp; While some people like to compare our polyglot model to a logical model because both are technology-agnostic, you should read [this article](<https://hackolade.com/polyglot-data-modeling.html>) where we emphasize the differences.&nbsp; We&nbsp; advise against creating normalized logical models when using the polyglot functionality.&nbsp; You should instead use this functionality to create denormalized models with complex data types and, if needed, rely on the built-in functionality that will automatically normalize nested objects in RDBMS targets.
+A polyglot data model can be viewed as a logical model in the sense that it is technology-independent.&nbsp; And if your physical models will be strictly relational, a polyglot model can be logical, just like you've been used to with traditional legacy data modeling tools.
+
+&nbsp;
+
+But a POlyglot model can be much more than that.&nbsp; It is a common physical model, where denormalization and complex data types are encouraged.&nbsp; While some people like to compare our polyglot model to a logical model because both are technology-agnostic, you should read [this article](<https://hackolade.com/polyglot-data-modeling.html>) where we emphasize the differences.&nbsp; We&nbsp; advise against creating normalized logical models when using the polyglot functionality.&nbsp; You should instead use this functionality to create denormalized models with complex data types and, if needed, rely on the built-in functionality that will automatically normalize nested objects in RDBMS targets.
 
 &nbsp;
 

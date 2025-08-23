@@ -53,7 +53,7 @@ Users are able to choose to have one file per entity or one file per schema, in 
 
 ## dbt keywords
 
-There are many keywords in dbt, called properties and configs.&nbsp; Below is a list of the relevant keywords in the context of Hackolade Studio.
+There are many keywords in dbt, called properties and configs.&nbsp; Below is a list of the relevant keywords in the context of Hackolade Studio.&nbsp; See also this [styling guide](<https://docs.getdbt.com/best-practices/how-we-style/1-how-we-style-our-dbt-models> "target=\"\_blank\"") for dbt models.
 
 &nbsp;
 
@@ -87,7 +87,7 @@ models:\
 
 &nbsp;
 
-For multiline description: we use YAML [block notation](<https://yaml-multiline.info/> "target=\"\_blank\"") to split a longer description over multiple lines
+For multi-line description: we use YAML [block notation](<https://yaml-multiline.info/> "target=\"\_blank\"") to split a longer description over multiple lines
 
 &nbsp;
 
@@ -121,7 +121,7 @@ models:\
 
 ### Columns
 
-[Columns](<https://docs.getdbt.com/reference/resource-properties/columns>): can define sub-properties, including name, description, data\_type, constraints.
+[Columns](<https://docs.getdbt.com/reference/resource-properties/columns> "target=\"\_blank\""): can define sub-properties, including name, description, data\_type, constraints.
 
 &nbsp;
 
@@ -129,7 +129,7 @@ models:\
 
 ### Data type
 
-[data\_type](<https://docs.getdbt.com/sql-reference/data-types>): dbt supports scalar and complex semi-structured data types:
+[data\_type](<https://docs.getdbt.com/sql-reference/data-types> "target=\"\_blank\""): dbt supports scalar and complex semi-structured data types:
 
 &nbsp;
 
@@ -247,7 +247,7 @@ There are platform-specific configs for [BigQuery](<https://docs.getdbt.com/refe
 
 ### Contract (TBA)
 
-[Contract](<https://docs.getdbt.com/reference/resource-configs/contract>): when the contract configuration is enforced, dbt will ensure that your model's returned dataset exactly matches the attributes you have defined in yaml:
+[Contract](<https://docs.getdbt.com/reference/resource-configs/contract> "target=\"\_blank\""): when the contract configuration is enforced, dbt will ensure that your model's returned dataset exactly matches the attributes you have defined in yaml:
 
 &nbsp;
 
@@ -257,7 +257,7 @@ There are platform-specific configs for [BigQuery](<https://docs.getdbt.com/refe
 
 &nbsp;
 
-This is to ensure that the people querying your model downstream—both inside and outside dbt—have a predictable and consistent set of columns to use in their analyses. dbt uses built-in type aliasing for the data\_type defined in your YAML. For example, you can specify string in your contract, and on Postgres/Redshift, dbt will convert it to text. If dbt doesn't recognize the data\_type name among its known aliases, it will pass it through as-is. This is enabled by default, but you can opt-out by setting alias\_types to false.
+This is to ensure that the people querying your model downstream -- both inside and outside dbt -- have a predictable and consistent set of columns to use in their analyses. dbt uses built-in type aliasing for the data\_type defined in your YAML. For example, you can specify string in your contract, and on Postgres/Redshift, dbt will convert it to text. If dbt doesn't recognize the data\_type name among its known aliases, it will pass it through as-is. This is enabled by default, but you can opt-out by setting alias\_types to false.
 
 &nbsp;
 

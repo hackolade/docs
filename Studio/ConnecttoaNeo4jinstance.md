@@ -10,7 +10,7 @@ The Connection Settings dialog lets define the parameters in different tabs, as 
 
 &nbsp;
 
-As an illustration, taking the Neo4j sandox for movie recommendations:
+As an illustration, taking the Neo4j sandbox for movie recommendations:
 
 ![Neo4j Recommendations Sandbox](<lib/Neo4j Recommendations Sandbox.png>)
 

@@ -192,7 +192,7 @@ Usage:&nbsp; &nbsp; *hackolade forwEng \[--arguments\]*
 | --- | --- | --- |
 | \--model=\<*file*\>\* | Y | Full path and file name for target Hackolade model. Extension .json is optional&nbsp; |
 | \--path=\<*file*\>\* | Y | Specify the directory path and file name where the forward-engineered files will be created. |
-| \--outputType=\< **jsonschema** \| jsondata \| yamldata \| script \| schemaregistry \| dbt \> | Y | Specify the type of output (JSON Schema, sample JSON data, sample YAML data, script, or schemaregistry, dbt) \[default: jsonschema\] This allows output of the script corresponding to the target of the specified model, e.g.: CQL for Cassandra, HQL for Hive, etc... It also allows the publication of Avro, ProtoBuf, and JSON schemas to schema registry instances |
+| \--outputType=\< **jsonschema** \| jsondata \| yamldata \| script \| schemaregistry \| dbt \| archimatemodel \| openexchange \> | Y | Specify the type of output (JSON Schema, sample JSON data, sample YAML data, script, or schemaregistry, dbt, Archimate model or Archimate OpenExchange) \[default: jsonschema\] This allows output of the script corresponding to the target of the specified model, e.g.: CQL for Cassandra, HQL for Hive, etc... It also allows the publication of Avro, ProtoBuf, and JSON schemas to schema registry instances |
 | \--jsonSchemaCompliance=\< **standard** \| full \| extended \> | N | Specify JSON Schema compliance: standard for only JSON Schema keywords and data types, full for additional custom properties, or extended for target-specific data types and internal properties.  \[default: standard\] |
 | \--jsonschemaversion=\< **draft-04** \| draft 06 \| draft-07 \| 2019-09 \| 2020-12 \> | N | Specify JSON Schema specification version \[default: draft-04\] &nbsp; \[values: draft-04, draft-06, draft-07, 2019-09, 2020-12\] \[default: "draft-04"\] |
 | \--format=\< *format* \> | N | Output target-specific schema format: MongoDB: \["shell", "mongoose","js", $jsonchema"\] Couchbase: \["ottoman", "n1ql"\] DynamoDB:&nbsp; \["tableScript", "putItemScript"\] Avro: \["avroSchema","schemaRegistry", "azureSchemaRegistry","confluentSchemaRegistry","pulsarSchemaRegistry"\] BigQuery:&nbsp; \["sql", "json"\] CosmosDB-with-Gremlin-API: \["gremlin", "cosmosdb"\] CosmosDB-with-SQL-API: &nbsp; &nbsp; \["containerSettingsJson", "azureCliPowerShell","azureCliZsh","azureCliBash"\] JSON Schema: \["azureSchemaRegistry","confluentSchemaRegistry","pulsarSchemaRegistry"\] Glue: \["awsCLI", "HiveQL"\] OpenAPI: &nbsp; \["json", "yaml"\] Oracle: \["quotedIdentifier", "nonquotedIdentifier"\] Protobuf: \["azureSchemaRegistry","confluentSchemaRegistry","pulsarSchemaRegistry"\] Snowflake: \["snowSight", "classicUI"\] Swagger: &nbsp; \["json", "yaml"\] |
@@ -425,7 +425,7 @@ Usage:&nbsp; &nbsp; *hackolade open \[--arguments\]*
 
 | **Argument** | **Required** | **Purpose** |
 | --- | --- | --- |
-| \--model=\<*ffile*\> | Y | Full path and file name for the Hackolade Studio data model to open.  Extension .json is optional |
+| \--model=\<*file*\> | Y | Full path and file name for the Hackolade Studio data model to open.  Extension .json is optional |
 | \--updateReferences=\<true \| **false**\> | N | Specify whether to update external and polyglot references if present \[default: false\] |
 | \--logLevel=\< 1 \| 2 \| 3 \| **4** \> | N | &#49; = no spinner, no info, no error messages 2 = no spinner, no info 3 = no spinner 4 = full output \[default: 4\] |
 
@@ -718,7 +718,7 @@ Usage:&nbsp; &nbsp; *hackolade revEngDDL \[--arguments\]*
 
 ## revEngDiagram
 
-The *revEngDiagram* command allows to trigger a reverse-engineering process of a [PowerDesigner file](<PowerDesigner.md>) for logical models (typically .ldm extension) and soon for physical models (typically .pdm extension.)&nbsp;
+The *revEngDiagram* command allows to trigger a reverse-engineering process of a [PowerDesigner file](<PowerDesigner.md>) for logical models (typically .ldm extension) and soon for physical models (typically .pdm extension), or files with [Mermaid ER diagram code](<GenAI-createdMermaidERdiagram.md>).
 
 &nbsp;
 
@@ -728,7 +728,7 @@ Usage:&nbsp; &nbsp; *hackolade revEngDiagram \[--arguments\]*
 
 | **Argument** | **Required** | **Purpose** |
 | --- | --- | --- |
-| \--source=\<source\> | Y | Specify the modeling tool providing the source file.&nbsp; Currently only powerdesigner is a possible value |
+| \--source=\<source\> | Y | Specify the modeling tool providing the source file.&nbsp; Currently only powerdesigner and mermaid are a possible value |
 | \--file=\<*file*\>\* | Y | Specify the directory path and file name where the file to be reverse-engineered is located (file must be a valid file for the source.)&nbsp; Absolute and relative paths are allowed. &nbsp; Currently supported extensions: .ldm, . mld (logical models from PowerDesigner) |
 | \--model=\<*file*\>\* | Y | Full path and file name for target Hackolade model into which reverse-engineering process has to be converted.&nbsp; Extension .json is optional.&nbsp; If not specified, the target Hackolade model is located in the same directory than the data model file to be reverse-engineered and receives the same name, with the Hackolade extension .hck.json. |
 | \--target=\<*target*\> | Y | Specify the target for the Hackolade Studio model to create.&nbsp; For a logical model, the target must be polyglot.&nbsp; For a physical model, the target must be one of the Hackolade Studio physical targets. |
@@ -740,7 +740,7 @@ Usage:&nbsp; &nbsp; *hackolade revEngDiagram \[--arguments\]*
 
 &nbsp;
 
-Exxample:
+Example:
 
 *start /wait hackolade revEngDiagram --source=PowerDesigner --file=MyLogicalDataModel.ldm --target=Polyglot*
 

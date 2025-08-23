@@ -1,6 +1,6 @@
 # SQL DDL
 
-Migrating from relational databases to NoSQL requires a mind shift, and Hacklolade can help in the migration of the schema from a relational model to a model combining embedding and referencing, so you can leverage the power, performance, and flexibility of NoSQL.
+Migrating from relational databases to NoSQL requires a mind shift, and Hackolade can help in the migration of the schema from a relational model to a model combining embedding and referencing, so you can leverage the power, performance, and flexibility of NoSQL.
 
 &nbsp;
 
@@ -112,7 +112,7 @@ The successive steps could include:
 
 &nbsp;
 
-As a susequent step, the modeler may want to denormalize products information into the order detail lines by embedding product sub-documents in the child, the deleting the unnecesary fields.&nbsp; This time, as a products master collection is justified as its own entity, it should not be deleted.
+As a subsequent step, the modeler may want to denormalize products information into the order detail lines by embedding product sub-documents in the child, the deleting the unnecesary fields.&nbsp; This time, as a products master collection is justified as its own entity, it should not be deleted.
 
 &nbsp;
 

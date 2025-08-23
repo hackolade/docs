@@ -8,13 +8,13 @@ Hackolade Studio’s training and support ecosystem offers a **scalable, multi-m
 
 &nbsp;
 
-Hackolade Studio offers a **multi-tiered training strategy** to ensure all stakeholders—from technical administrators to casual end-users—can quickly and confidently adopt and use the platform. Training is **self-paced by default**, with optional **live or virtual sessions** available to supplement onboarding, particularly during early adoption phases or key milestones.&nbsp; The training plan includes:
+Hackolade Studio offers a **multi-tiered training strategy** to ensure all stakeholders -- from technical administrators to casual end-users -- can quickly and confidently adopt and use the platform. Training is **self-paced by default**, with optional **live or virtual sessions** available to supplement on-boarding, particularly during early adoption phases or key milestones.&nbsp; The training plan includes:
 
 &nbsp;
 
 | **Audience** | **Training Focus** | **Delivery Methods** |
 | --- | --- | --- |
-| **Technical Infrastructure Support** | Installation, system configuration, CI/CD integration, Git integration, security setup. | \- Online documentation - How-to guides - Virtual onboarding sessions (optional) |
+| **Technical Infrastructure Support** | Installation, system configuration, CI/CD integration, Git integration, security setup. | \- Online documentation - How-to guides - Virtual on-boarding sessions (optional) |
 | **Product Administrators** | User management, repository setup, governance enforcement, backup \& recovery. | \- eLearning platform (certified tutorials) - How-to guides - Live workshops (if needed) |
 | **End-Users / Data Modelers** | Modeling principles, domain modeling, schema design, Git workflows, CLI documentation. | \- Self-paced eLearning (video tutorials) - Online help center - Live Q\&A webinars (optional) |
 
@@ -41,9 +41,9 @@ Hackolade provides a **broad suite of training and support resources**, all of w
 | 📘 [Online Documentation](<WelcometoHackoladeStudio.md>) | Comprehensive user manual with contextual help for every feature | Publicly available; updated regularly |
 | 📹 [Tutorials](<Tutorial.md>) | Short walkthroughs for key use cases and tasks | Embedded in Help portal&nbsp; |
 | 🛠️ [How-To Guides](<How-toguides.md>) | Step-by-step guidance on common modeling and admin tasks | Categorized by use case |
-| 🎓 [eLearning Platform](<https://community.hackolade.com/slides/all> "target=\"\_blank\"") | Structured learning with **6 progressive courses**, **50+ videos**, and **certification** upon completion | Accessible on demand, ideal for onboarding and certification |
+| 🎓 [eLearning Platform](<https://community.hackolade.com/slides/all> "target=\"\_blank\"") | Structured learning with **6 progressive courses**, **50+ videos**, and **certification** upon completion | Accessible on demand, ideal for on-boarding and certification |
 | 📚 [Community Knowledge Base](<https://community.hackolade.com/forum> "target=\"\_blank\"") | Includes FAQs, troubleshooting tips, and best practices | Hosted online, continuously expanded by the community |
-| 🎙️ Webinars \& Live Sessions | Optional live Q\&A sessions and deep-dive webinars during onboarding or rollout phases | Can be scheduled as needed with Hackolade experts |
+| 🎙️ Webinars \& Live Sessions | Optional live Q\&A sessions and deep-dive webinars during on-boarding or rollout phases | Can be scheduled as needed with Hackolade experts |
 
 
 &nbsp;

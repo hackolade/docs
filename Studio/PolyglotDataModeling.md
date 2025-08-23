@@ -25,6 +25,8 @@ In our definition, a Polyglot Data Model is sort of a logical model in the sense
 
 &nbsp;
 
+Physically, in the sense of storing on a disk,&nbsp; a polyglot model is a single atomic unit.&nbsp; It is not like the model files of other legacy tools that may contain both a logical and a physical model.&nbsp; Our model file does not contain multiple models.&nbsp; This is done on purpose and is viewed as a huge advantage that allows much of the modular architecture that sets our tool apart.&nbsp; Logically, it is this modular architecture that allows us to selectively derive so many very different models from a polyglot model.&nbsp; Or derive from (parts of) multiple polyglot models.&nbsp; Or derive a polyglot model from other polyglot model(s), etc...&nbsp; Or allow to put in place a [Domain-Driven Data Modeling](<https://hackolade.com/domain-driven-data-modeling.html>) approach.&nbsp; While our different approach may surprise some veteran users of other tools, you will quickly appreciate the advantages.
+
 &nbsp;
 
 ## Polyglot Data Modeling
@@ -53,7 +55,7 @@ If you add/delete/modify entities or attributes in the polyglot model from which
 
 &nbsp;
 
-## Flexibilty
+## Flexibility
 
 In a basic use case, you could have just one polyglot model, and several target models derived entirely from the common polyglot models.&nbsp; Each target model would just reflect the physical implementation for its respective technology.&nbsp; Entities can be deleted from the target model, others can be added, and the model can be enriched with entity options, indexes, etc. to generate the proper artifacts (script, DDL, ...)&nbsp; You may also deactivate attributes in the target model if they're not necessary, or you may modify some their properties.
 
@@ -65,9 +67,9 @@ But overall, the above use case is a bit theoretical, and reality will quickly d
 
 Elaborating further, you could derive a target model from multiple polyglot models, or subsets thereof:
 
-![Polyglot multiple subsets](<lib/Polyglot multiple subsets.png>)
-
 &nbsp;
+
+![Polyglot multiple subsets](<lib/Polyglot multiple subsets.png>)
 
 &nbsp;
 

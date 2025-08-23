@@ -113,7 +113,7 @@ Developing user personas can be a useful part of ensuring that the change manage
 | --- | --- | --- |
 | **Data Architects/Modelers** | Learning curve, automation, collaboration, integration with workflows | Hands-on workshops, pilot program, focus on Git-based workflows, internal champions, community of practice |
 | **IT Infrastructure/DevOps** | Deployment security, integration with DevOps, user role management | Technical workshops, setup docs, Git and CI/CD integration, security-focused setup |
-| **Business Users (Analysts)** | Simple interface, easy access to data models, business-relevant insights | Cross-functional workshops, model transparency, onboarding support, easy-to-read model documentation |
+| **Business Users (Analysts)** | Simple interface, easy access to data models, business-relevant insights | Cross-functional workshops, model transparency, on-boarding support, easy-to-read model documentation |
 | **Data Governance Teams** | Compliance, security, governance in data modeling | Governance-focused workshops, security-first architecture, compliance documentation, monitoring practices |
 | **End Users (Operational)** | Reliable data models, access to reports, no technical complexity | Data quality assurance, communication on model improvements, accessible reports/dashboards |
 
@@ -192,7 +192,7 @@ Further details can be found below:
 * **User-Friendly Interface**: Highlight **Hackolade Studio’s user-friendly interface** and its ability to streamline **data model visualization**, making it easier for non-technical users to understand the models.
 * **Data Model Transparency**: Provide **model documentation** and **easy-to-read diagrams** that show how the data relates to their business processes.
 * **Cross-Functional Workshops**: Organize **cross-functional workshops** that involve both technical and business users to facilitate understanding of how data models support specific business outcomes.
-* **Onboarding \& Support**: Offer **light-touch onboarding** that focuses on using models rather than technical training. Provide quick-access support for questions related to business data needs.
+* **On-boarding \& Support**: Offer **light-touch on-boarding** that focuses on using models rather than technical training. Provide quick-access support for questions related to business data needs.
 
 &nbsp;
 

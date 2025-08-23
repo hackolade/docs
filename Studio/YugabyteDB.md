@@ -45,7 +45,7 @@ YugabyteDB being a geographically distributed cloud-native database, controlling
 
 &nbsp;
 
-A tablespace also allows to configure the [Leader preference](<https://docs.yugabyte.com/preview/explore/ysql-language-features/going-beyond-sql/tablespaces/#leader-preference> "target=\"\_blank\"") to gain even more control about the location of table and indecxes closer to their clients.
+A tablespace also allows to configure the [Leader preference](<https://docs.yugabyte.com/preview/explore/ysql-language-features/going-beyond-sql/tablespaces/#leader-preference> "target=\"\_blank\"") to gain even more control about the location of table and indexes closer to their clients.
 
 &nbsp;
 

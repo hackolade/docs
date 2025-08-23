@@ -194,7 +194,7 @@ For example with an Nginx reverse proxy served on https://cors-proxy-for-conflue
 
 ### On premises custom instance
 
-Please refer to the Confluent Schema Registry [configuration reference](<https://docs.confluent.io/platform/current/schema-registry/installation/config.html#access-control-allow-origin> "target=\"\_blank\"") to properly configure your custom instance.&nbsp; You need to add (at least) the property "access.control.allow.origin" to your "schema-registry.properties" file. It is often usesul too to set "access.control.allow.methods" to "\*".
+Please refer to the Confluent Schema Registry [configuration reference](<https://docs.confluent.io/platform/current/schema-registry/installation/config.html#access-control-allow-origin> "target=\"\_blank\"") to properly configure your custom instance.&nbsp; You need to add (at least) the property "access.control.allow.origin" to your "schema-registry.properties" file. It is often useful too to set "access.control.allow.methods" to "\*".
 
 &nbsp;
 

@@ -64,7 +64,7 @@ Many applications can benefit from the ability to capture changes to items store
 DynamoDB supports many different data types for attributes within a table.&nbsp; They can be categorized as follows:
 
 * Scalar Types – A scalar type can represent exactly one value.&nbsp; The scalar types are **number, string, binary, Boolean, and null.**
-* Document Types – A document type can represent a complex structure with nested attributes—such as you would find in a JSON document.&nbsp; The document types are list and map.
+* Document Types – A document type can represent a complex structure with nested attributes -- such as you would find in a JSON document.&nbsp; The document types are list and map.
 
   * A list type attribute can store an ordered collection of values.&nbsp; Lists are enclosed in square brackets: \[ ... \]&nbsp; **A list is similar to a JSON array.**&nbsp; There are no restrictions on the data types that can be stored in a list element, and the elements in a list element do not have to be of the same type.
   * A map type attribute can store an unordered collection of name-value pairs.&nbsp; Maps are enclosed in curly braces: { ... }&nbsp; **A map is similar to a JSON object.**&nbsp; There are no restrictions on the data types that can be stored in a map element, and the elements in a map do not have to be of the same type.&nbsp; Maps are ideal for storing JSON documents in DynamoDB.&nbsp;
@@ -85,7 +85,7 @@ Hackolade was specially adapted to support the data types and attributes behavio
 
 ## Indexes
 
-Whenever a write occurs on a table, all of the table's indexes must be updated. In a write-heavy environment with large tables, this can consume large amounts of system resources. In a read-only or read-mostly environment, this is not as much of a concern—however, one should ensure that the indexes are actually being used by the application, and not simply taking up space.
+Whenever a write occurs on a table, all of the table's indexes must be updated. In a write-heavy environment with large tables, this can consume large amounts of system resources. In a read-only or read-mostly environment, this is not as much of a concern -- however, one should ensure that the indexes are actually being used by the application, and not simply taking up space.
 
 &nbsp;
 

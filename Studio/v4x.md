@@ -370,7 +370,7 @@ New features in v4.3.1 \[22-Dec-2020\]
 
 New features in v4.3.0 \[11-Dec-2020\]
 
-\- Reduced footprint of saved models by removing extraneous falsy values (*“false”*, empty *string "",* empty *array* and *object*)
+\- Reduced footprint of saved models by removing extraneous faulty values (*“false”*, empty *string "",* empty *array* and *object*)
 
 \- Added detection of ISO 8601 date/time/timestamp/duration in JSON strings during reverse-engineering of database instances for MongoDB, Cosmos DB with MongoDB API, and Elasticsearch
 

@@ -50,7 +50,7 @@ Don't forget, in the Authentication tab, to replace \<password\> with your real 
 
 &nbsp;
 
-In the SSL tab, make sure thatthe option System CA / Atlas Deployment was selected:
+In the SSL tab, make sure that the option System CA / Atlas Deployment was selected:
 
 ![MongoDB reverse-engineering - Atlas deployment](<lib/MongoDB Rev Eng - Atlas deployment.png>)
 

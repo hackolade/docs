@@ -14,7 +14,7 @@ When you open the repository view while having uncommitted changes, you see the 
 
 &nbsp;
 
-Click on "Commit local changes" to list actions that are related to local changes.&nbsp; The primary action - "commit" in this case - has a blue header.&nbsp; If secondary actions are available, they have a grey header if they are not destructive, and a red header otherwise.
+Click on "Commit local changes" to list actions that are related to local changes.&nbsp; The primary action - "commit" in this case - has a blue header.&nbsp; If secondary actions are available, they have a gray header if they are not destructive, and a red header otherwise.
 
 ![Workgroup commit changes](<lib/Workgroup commit changes.png>)
 

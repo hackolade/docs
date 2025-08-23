@@ -47,7 +47,7 @@ The application automatically creates 2 subschemas which can be defined independ
 
 &nbsp;
 
-Additional subschemas can be added with teh right-click contextual menu.
+Additional subschemas can be added with the right-click contextual menu.
 
 &nbsp;
 

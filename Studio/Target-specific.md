@@ -16,5 +16,21 @@ With v8.2.3, we started to introduce parameters to allow you to adjust the DDL s
 
 &nbsp;
 
+The configuration is available from Tools \> Options \> Forward-Engineering \> Script Generation:
+
+&nbsp;
+
 ![Script generation parameters](<lib/Script generation parameters.png>)
+
+&nbsp;
+
+It is also available from a button at the bottom of the DDL script tab, and from a button at the bottom of the forward-engineering table selection dialog:
+
+&nbsp;
+
+![Image](<lib/Script generation options.png>)
+
+&nbsp;
+
+&nbsp;
 

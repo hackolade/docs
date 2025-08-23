@@ -8,7 +8,7 @@ This page deals only with the property graph side using the Gremlin query langua
 
 &nbsp;
 
-**Note:**&nbsp; There are a few important differences between the Amazon Neptune implementation of Gremlin and the implementation defined by Apache TinkerPop.&nbsp; They are detailed in [this page](<https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-gremlin-differences.html> "target=\"\_blank\"").&nbsp; Also, and contrary to JanusGraph for example, Netptune-Gremlin is schemaless. &nbsp;
+**Note:**&nbsp; There are a few important differences between the Amazon Neptune implementation of Gremlin and the implementation defined by Apache TinkerPop.&nbsp; They are detailed in [this page](<https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-gremlin-differences.html> "target=\"\_blank\"").&nbsp; Also, and contrary to JanusGraph for example, Neptune-Gremlin is schemaless. &nbsp;
 
 &nbsp;
 

@@ -166,7 +166,9 @@ All deviations are stored in the target model and don’t affect the base polygl
 
 The polyglot architecture provides tremendous power and flexibility.&nbsp; It is possible to derive a target model from multiple polyglot models, or subsets thereof:
 
-![Polyglot derive subsets from multiple polyglot models](<lib/Polyglot multiple subsets.png>)
+![Polyglot multiple subsets](<lib/Polyglot multiple subsets.png>)
+
+&nbsp;
 
 &nbsp;
 

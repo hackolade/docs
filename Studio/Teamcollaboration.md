@@ -23,7 +23,7 @@ Even if you have little or no experience with Git, we made it very easy to use G
 
 &nbsp;
 
-The Wokrgroup Edition fully integrates with Git workflows, including a powerful interactive screen to resolve conflicts and merge branches.&nbsp; Read more information on our [repository integration](<Repository.md>).
+The Workgroup Edition fully integrates with Git workflows, including a powerful interactive screen to resolve conflicts and merge branches.&nbsp; Read more information on our [repository integration](<Repository.md>).
 
 &nbsp;
 

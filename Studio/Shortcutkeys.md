@@ -51,7 +51,7 @@ Keyboard shortcuts:
 | Ctrl+Shift+T | Cmd+Shift+T | Open selected entity(ies) in a new tab |
 | Ctrl+M | Cmd+M | Close all tabs |
 | Ctrl+Shift+M | Cmd+Shift+M | Close all tabs except current |
-| Ctrl+F11 | Cmd+F11 | Display lineage (aka impact analysis aka where-used)&nbsp; of a definition or denomalization |
+| Ctrl+F11 | Cmd+F11 | Display lineage (aka impact analysis aka where-used)&nbsp; of a definition or denormalization |
 | Ctrl+F1 | Cmd+F1 | Toggle display of Object Browser |
 | Ctrl+F2 | Cmd+F2 | Toggle display of Properties Pane |
 | Ctrl+Tab | Cmd+Option+right arrow | Move forward between tabs of the add/modify connections dialog |

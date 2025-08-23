@@ -66,7 +66,7 @@ Semantic layers and BI tool catalogs are designed to serve business analysts by 
 
 &nbsp;
 
-Hackolade addresses an earlier stage in the data lifecycle. It provides a **model-driven foundation** for defining, documenting, and evolving data structures—before they are consumed by BI tools. Rather than focusing on metric definitions or visualization metadata, Hackolade ensures that the underlying data models are well-structured, version-controlled, and aligned with both technical and business requirements.
+Hackolade addresses an earlier stage in the data lifecycle. It provides a **model-driven foundation** for defining, documenting, and evolving data structures -- before they are consumed by BI tools. Rather than focusing on metric definitions or visualization metadata, Hackolade ensures that the underlying data models are well-structured, version-controlled, and aligned with both technical and business requirements.
 
 &nbsp;
 
@@ -104,7 +104,7 @@ Instead, Hackolade provides an innovative architecture that combines the advanta
 
 &nbsp;
 
-![Architecture Hub Studio Desktop Browser](<lib/Architecture Hub Studio Desktop Browser.png>)
+![Hub Studio Desktop Browser Architecture](<lib/Hub Studio Desktop Browser Architecture.png>)
 
 &nbsp;
 
@@ -136,7 +136,7 @@ The technical requirements for the Hub are numerous, ambitious, and strict.&nbsp
 
 &nbsp;
 
-No offense to the excellent vendors (which we support in many ways), but only Oracle 23ai Autonomous JSON running on OCI checked all the boxes.&nbsp; No other vendor provided all the pieces of the puzzle to achieve our vision and architecture, while satisfying the security-first architecture constraints. &nbsp;
+No offense to the excellent vendors (which we support in many ways), but only Oracle 23ai Autonomous JSON running on OCI checked all the boxes of our requirements.&nbsp; No other vendor provided all the pieces of the puzzle to achieve our vision and architecture, while satisfying the security-first architecture constraints. &nbsp;
 
 &nbsp;
 
@@ -178,7 +178,7 @@ All data models are persisted in JSON format for all targets supported by Hackol
 
 &nbsp;
 
-## Is it possible to view the ERD for a model or part of it?
+### Is it possible to view the ERD for a model or part of it?
 
 This is a function where Hackolade Studio excels.&nbsp; On each screen of the Hub, a button (blue, up top) allows to open the model in Studio (browser or desktop, according to the user preference.)&nbsp; Whether the model opens up in Studio in read-only or editable mode depends on the type of license (viewer or workgroup.) Saving changes depends also on the user's rights on the repo.&nbsp; For changes to be committed and pushed to the repo (then be visible in the Hub), it may be required to create a branch and submit a change request.
 
@@ -186,7 +186,7 @@ This is a function where Hackolade Studio excels.&nbsp; On each screen of the Hu
 
 ### Can users make changes to models in the Hub database?
 
-No, not directly.&nbsp; The Hub is entirely in read-only mode for users.&nbsp; The "master" for your data models is your Git repository.&nbsp; The Hub database is only a replication of the selected repository or repositories.&nbsp; This also means, from a data integrity point of view, that there is zero risk of conflicting information or of destroying the database.&nbsp; The database can be reconstructed at any time based on your repo(s).
+Not directly in the Hub, but easily in the Studio.&nbsp; The philosophy and architecture of the Hub is to be model-driven.&nbsp; The Hub is entirely in read-only mode for users.&nbsp; The "master" for your data models is your Git repository.&nbsp; The Hub database is only a replication of the selected repository or repositories.&nbsp; This also means, from a data integrity point of view, that there is zero risk of conflicting information or of destroying the database.&nbsp; The database can be reconstructed at any time based on your repo(s).
 
 &nbsp;
 
@@ -200,7 +200,7 @@ When setting the Hub, the administrator points it to one ore more Git repositori
 
 &nbsp;
 
-### The Hub does not seem to be up-to-date with the latest changes to the repository
+### The Hub does not seem to be up-to-date with the latest changes to the repository?
 
 In the unlikely event that the hub database missed a webhook notification from the repository, an administrator can press a button to catch up and replicate the Hub database.
 
@@ -220,7 +220,7 @@ Yes.&nbsp; If no longer needed, you could of course delete the model from the re
 
 ### I want to harvest metadata from a new source.&nbsp; Can I do that from the Hub?
 
-No.&nbsp; Harvesting metadata from a source is an action called [reverse-engineering](<Reverseengineeranexistinginstanc.md>) in Hackolade Studio.&nbsp; The resulting model must be saved and pushed to the repo before it can be seen in the Hub through the automatic replication. Different terms are used, all more or less describing the same process: harvest, extract, discover, crawl, ingest, infer, reverse-engineer...
+Harvesting metadata from a source is an action called [reverse-engineering](<Reverseengineeranexistinginstanc.md>) in Hackolade Studio.&nbsp; The resulting model must be saved and pushed to the repo before it can be seen in the Hub through the automatic replication. Different terms are used, all more or less describing the same process: harvest, extract, discover, crawl, ingest, infer, reverse-engineer...
 
 &nbsp;
 
@@ -234,7 +234,7 @@ Again, this is a function of Hackolade Studio.&nbsp; With the [Command-Line Inte
 
 ### Is it possible to view or forward-engineer from the Hub: DDLs, scripts, schemas and other artifacts?
 
-No, but these functions are just one click away, by opening the model in Studio, from any screen of the Hub for any part of the model.
+These functions are just one click away, by opening the model in Studio, from any screen of the Hub for any part of the model.
 
 &nbsp;
 
@@ -272,7 +272,7 @@ This is not currently foreseen.
 
 ### Why is it required to have a license key to access the Hub?
 
-Hackolade Studio and the Data Model Hub are well integrated.&nbsp; They are complementary, and there is no functionality overlap.&nbsp; While you can use Studio without the Hub, the reverse is not possible.&nbsp; We made it easy to add a Hub option to the Viewer and Workgroup editions of Studio.&nbsp; For authors, only the Workgroup edition can be supplemented with the Hub option.&nbsp; The option is NOT available for the Community, Trial, Personal, or Professional editions.
+Hackolade Studio and the Data Model Hub are well integrated, each adding much value to users.&nbsp; They are complementary, and there is no functionality overlap.&nbsp; While you can use Studio without the Hub, the reverse is not possible.&nbsp; We made it easy to add a Hub option to the Viewer and Workgroup editions of Studio.&nbsp; For authors, only the Workgroup edition can be supplemented with the Hub option.&nbsp; The option is NOT available for the Community, Trial, Personal, or Professional editions.
 
 &nbsp;
 
@@ -286,7 +286,7 @@ Provided that you have the appropriate license - Viewer+Hub or Workgroup+Hub - t
 
 &nbsp;
 
-If you have originally validated your license key in the Desktop, a small manipulation is required, due to web browser security.&nbsp; The process is described in detail in this page (link TBA).
+If you have originally validated your license key in the Desktop, a small manipulation is required, due to web browser security.&nbsp; The process is described in detail in [this page](<https://hackolade.com/help/Softwareregistration.html#Reuse%20in%20the%20Browser%20your%20license%20key%20already%20validated%20in%20the%20Desktop> "target=\"\_blank\"").
 
 &nbsp;
 

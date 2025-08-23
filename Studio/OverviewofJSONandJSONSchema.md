@@ -100,7 +100,7 @@ Furthermore, when used in the context of the [MongoDB validator](<https://docs.m
 
 &nbsp;
 
-JSON Schema is a [standard](<https://json-schema.org/> "target=\"\_blank\"") providing a format for what JSON data is required for a given application and how to interact with it.&nbsp; Understanding JSON Schema involves a learning curve, so we suggest reading [this guide](<https://json-schema.org/understanding-json-schema> "target=\"\_blank\"") for more information.&nbsp; But Hackolade makes is super simple for users as it dynamically generates JSON Schema for structures created with the tool.&nbsp; While a basic understanding of JSON Schema helps leverage the power of the tool, it is not necessary to know the JSON Schema syntax.&nbsp; Also, the tool onboards a validator so you can be sure that all quotes, braces, brackets, and commas are in the right places.
+JSON Schema is a [standard](<https://json-schema.org/> "target=\"\_blank\"") providing a format for what JSON data is required for a given application and how to interact with it.&nbsp; Understanding JSON Schema involves a learning curve, so we suggest reading [this guide](<https://json-schema.org/understanding-json-schema> "target=\"\_blank\"") for more information.&nbsp; But Hackolade makes is super simple for users as it dynamically generates JSON Schema for structures created with the tool.&nbsp; While a basic understanding of JSON Schema helps leverage the power of the tool, it is not necessary to know the JSON Schema syntax.&nbsp; Also, the tool on-boards a validator so you can be sure that all quotes, braces, brackets, and commas are in the right places.
 
 &nbsp;
 

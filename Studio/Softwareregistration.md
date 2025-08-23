@@ -4,7 +4,7 @@
 
 &nbsp;
 
-After downloading Hackolade Studio, you need to obtain and validate an activation key before you can use the application, except for the Community Edition.
+After downloading Hackolade Studio Desktop, you need to obtain and validate an activation key before you can use the application, except for the Community Edition.
 
 &nbsp;
 
@@ -12,7 +12,7 @@ You can initiate the process of getting an activation key either from the websit
 
 &nbsp;
 
-**IMPORTANT NOTE:** Your license key is a valuable asset and should be treated with care.&nbsp; Just like you would reclaim a laptop when seomone leaves, you should do the same for our license keys.&nbsp; If you change computers or a user leaves the organization, take a moment to release the license key on the old PC before retiring it, so your license key can be validated again on a new machine.  Many customers add to the exit checklist of team members the action of releasing the license key.&nbsp; All details can be found [here](<Transferalicensetoanewcomputer.md> "Transfer license to a new computer"). &nbsp;
+**IMPORTANT NOTE:** Your license key is a valuable asset and should be treated with care.&nbsp; Just like you would reclaim a laptop when someone leaves, you should do the same for our license keys.&nbsp; If you change computers or a user leaves the organization, take a moment to release the license key on the old PC before retiring it, so your license key can be validated again on a new machine.  Many customers add to the exit checklist of team members the action of releasing the license key.&nbsp; All details can be found [here](<Transferalicensetoanewcomputer.md> "Transfer license to a new computer"). &nbsp;
 
 &nbsp;
 
@@ -32,11 +32,11 @@ You can initiate the process of getting an activation key either from the websit
 
 ## Get a software license key
 
-Starting with v7.0.0, the Community Edition no longer requires a license key.&nbsp; For the Community Edition, the experience is 100% frictionless: no license key, no sign up, no login.&nbsp; Just download the software and start to use use it.&nbsp; If you want to avoid seeing the License Status screen each time you start the application.&nbsp; Just click on the Continue for Free button in the Community Edition card.
+Starting with v7.0.0, the Community Edition no longer requires a license key.&nbsp; For the Community Edition, the experience is 100% friction-less: no license key, no sign up, no login.&nbsp; Just download the software and start to use use it.&nbsp; If you want to avoid seeing the License Status screen each time you start the application.&nbsp; Just click on the Continue for Free button in the Community Edition card.
 
 &nbsp;
 
-For obvious reasons, it is not possible to accumulate multiple 14-day free trial keys.&nbsp; Once your key has expired, you may take a subscription for the Edition of your choice, or choose to use the Community Edition for free.&nbsp; If you need more time, you may send an email to support@hackolade.com, explainng the evaluation plans and timeline for your organization.
+For obvious reasons, it is not possible to accumulate multiple 14-day free trial keys.&nbsp; Once your key has expired, you may take a subscription for the Edition of your choice, or choose to use the Community Edition for free.&nbsp; If you need more time, you may send an email to support@hackolade.com, explaining the evaluation plans and timeline for your organization.
 
 ### from the website
 
@@ -82,7 +82,7 @@ You must be connected to the Internet for the validation of your license key wit
 
 &nbsp;
 
-If the license key is successfully validated, the following message willbe breifly appear at the top of your screen.
+If the license key is successfully validated, the following message will briefly appear at the top of your screen.
 
 ![License Status - license key validated](<lib/License Status - license key validated.png>)
 
@@ -112,7 +112,7 @@ To release it, go to the option Help \> License Status then click the Release ke
 
 &nbsp;
 
-As of this moment, you can no longer use Hackolade Studio on the original computer, unless you you re-register it, or witch back to the Community Edition.
+As of this moment, you can no longer use Hackolade Studio on the original computer, unless you you re-register it, or switch back to the Community Edition.
 
 &nbsp;
 
@@ -266,4 +266,110 @@ As per this VMWare [article, setup should generally be OK](<https://pubs.vmware
 &nbsp;
 
 If it is not the case, maybe instructions in [this article](<https://docs.vmware.com/en/VMware-Horizon/2012/virtual-desktops/GUID-E12713D5-3530-422F-B265-B0F3FDD2041E.html> "target=\"\_blank\"") will help your IT department configure appropriately
+
+&nbsp;
+
+&nbsp;
+
+## Reuse in the Browser your license key already validated in the Desktop
+
+Remember that the Desktop deployment of Hackolade Studio remains the flagship product that includes all the features, depending on the license key.&nbsp; The Browser deployment is provided for convenience, particularly useful for read-only viewers, but, as explained [here](<Security-firstbrowserdeployment.md>) and [here](<Editions.md>), not all the features are possible from the browser.
+
+&nbsp;
+
+If you use both the browser and desktop deployments of Hackolade Studio on the same machine, it would be annoying if 2 license seats were necessary...&nbsp; Same user on the same machine, it seems logical that only a single license seat would be required.&nbsp; We recognize that, but finding a solution was technically quite challenging.&nbsp; This mutualization of the license key validation is possible starting with v8.3.2 and allows to reuse in the Browser the license key already validated in the Desktop for the same machine plus user combination (don't try it on virtual machines across different users ;-)...).&nbsp; This synchronization is NOT possible if your Desktop version is lower than v8.3.2.
+
+&nbsp;
+
+**Important note:** the synchronization of the license validation must be performed in a specific sequence. The license must be validated first in the Desktop, then synchronized from the Browser.&nbsp; If you originally validated the license in the Browser, and you decide that you now want to use the Desktop, then you must first release the license in the browser, then validate it in the Desktop, then synchronize from the Browser.
+
+&nbsp;
+
+For security purposes, browsers are not allowed easy access to local drive resources without repeatedly asking for permission.&nbsp; This constraint prevents us from accessing the license information, originally created with the Desktop,&nbsp; directly from the Browser.&nbsp; A special process is therefore required.
+
+&nbsp;
+
+**Important note:** the synchronization only works for the default browser of your operation system.&nbsp; If you have multiple browsers on your machine, the synchronization will fail if started from another browser than your default browser.&nbsp; It also cannot be started from an incognito instance of your browser, or the license information will be lost as soon as you close the tab.
+
+&nbsp;
+
+### License key reuse process
+
+Assuming that you validated your license key with the Desktop, go to [https://studio.hackolade.com](<https://studio.hackolade.com> "target=\"\_blank\"") to access the browser deployment of Hackolade Studio.&nbsp; Then go to Help \> License Status, or click&nbsp; on the key icon in the lower left-hand corner of the screen.
+
+&nbsp;
+
+The license screen should look similar to this image:
+
+&nbsp;
+
+![Browser - 1 - License key reuse](<lib/Browser - 1 - License key reuse.png>)
+
+&nbsp;
+
+&nbsp;
+
+Click the radio button "Yes" to the question "Do you already have a validated license key in Hackolade Studio Desktop?"&nbsp; Of course, we assume that you do indeed have Hackolade Studio Desktop installed on your machine, in version v8.3.2 or above, and with a validated license key.
+
+&nbsp;
+
+The dialog changes to this screen, so you can click the button "Reuse license key from desktop app":
+
+&nbsp;
+
+![Browser - 2 - License key reuse](<lib/Browser - 2 - License key reuse.png>)
+
+&nbsp;
+
+&nbsp;
+
+When you click the button, a new browser tab opens with the following message:
+
+![Browser - 3 - License key reuse](<lib/Browser - 3 - License key reuse.png>)
+
+&nbsp;
+
+Click the button "Open Hackolade", and the system starts Hackolade Studio Desktop to fetch the license key information.
+
+&nbsp;
+
+If all goes well, the additional tab should flash this message before disappearing:
+
+![Browser - 4 - License key reuse](<lib/Browser - 4 - License key reuse.png>)
+
+&nbsp;
+
+then return to the Welcome screen of the application.&nbsp; If you access again the License Status screen, you should see something like this, where the license key and license metadata is identical to that in your Desktop application:
+
+![Browser - 5 - License key reuse](<lib/Browser - 5 - License key reuse.png>)
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+### Troubleshooting
+
+If no license key was validated in the Desktop, you will get this message:
+
+![Browser - 6 - License key reuse](<lib/Browser - 6 - License key reuse.png>)
+
+&nbsp;
+
+If you get the message below, it is probably because the Desktop application could not be found on your machine, or that your Desktop version is not at least v8.3.2:
+
+![Browser - 7 - License key reuse](<lib/Browser - 7 - License key reuse.png>)
+
+&nbsp;
+
+If you get this message, it is probably because you did not start the process from your default browser:
+
+&nbsp;
+
+![Image](<lib/Browser - 8 - License key reuse.png>)
+
+&nbsp;
+
+&nbsp;
 

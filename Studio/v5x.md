@@ -50,7 +50,7 @@ New features in v5.4.10 \[25-Mar-2022\]
 
 \- Protobuf: added reverse-engineering of top-level messages into User-Defined Types/model definitions
 
-\- Protobuf: added handling ofr choices in definitions during forward-engineering
+\- Protobuf: added handling for choices in definitions during forward-engineering
 
 \- ScyllaDB: added forward-engineering of ALTER scripts from delta model, including flag to explicitly un-comment DROP statements, signifying the understanding of the possible consequences
 
@@ -272,7 +272,7 @@ New features in v5.4.1 \[21-Jan-2022\]
 
 New features in v5.4.0 \[14-Jan-2022\]
 
-\- Oracle: soft release of a new plugin with full support for forward-engineering of DDL, and reverse-engineering including inference of schemas in JSON data types (Oracle 21c and above) and of JSON documents in VARCHAR2, CLOB and BLOB data types (12c, 18c, and 19c) -- many improvemens still to come...
+\- Oracle: soft release of a new plugin with full support for forward-engineering of DDL, and reverse-engineering including inference of schemas in JSON data types (Oracle 21c and above) and of JSON documents in VARCHAR2, CLOB and BLOB data types (12c, 18c, and 19c) -- many improvements still to come...
 
 \- Polyglot: added possibility to modify properties of attributes in target model, and hence deviate from the polyglot model (deactivate an attribute, or change constraints,...)
 
@@ -770,7 +770,7 @@ New features in v5.1.2 \[30-Jul-2021\]
 
 \- Schema inference during reverse-engineering of JSON documents and databases: supplemented detection of pattern fields when using ID-like keys
 
-\- Model API: greyed out deactivated entities in object selection dialog
+\- Model API: grayed out deactivated entities in object selection dialog
 
 \- Command-Line Interface: added forwEng arguments to allow publication of Avro and JSON Schema to schema registries (Confluent, Pulsar, Azure for Event Hubs)
 

@@ -191,7 +191,7 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-This structure can be forward-engineered to a file with .avsc extention or copied/pasted to code.&nbsp; It can also be forward-engineered to a Azure, [Confluent or Pulsar Schema Registry](<ConfluentSchemaRegistry.md>) instance.
+This structure can be forward-engineered to a file with .avsc extension or copied/pasted to code.&nbsp; It can also be forward-engineered to a Azure, [Confluent or Pulsar Schema Registry](<ConfluentSchemaRegistry.md>) instance.
 
 ## Reverse-Engineering
 

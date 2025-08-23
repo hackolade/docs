@@ -4,7 +4,7 @@ MongoDB developed a handy tool to accelerate customer migrations from legacy rel
 
 &nbsp;
 
-The dernomalization part of the Relational Migrator is inspired by our [own feature](<SuggestdenormalizationofaSQLsche.md>) on the subject, developed back in 2016...
+The denormalization part of the Relational Migrator is inspired by our [own feature](<SuggestdenormalizationofaSQLsche.md>) on the subject, developed back in 2016...
 
 &nbsp;
 

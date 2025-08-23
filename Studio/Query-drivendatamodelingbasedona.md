@@ -113,8 +113,6 @@ No database is an island.&nbsp; There may be many systems interacting with it.&n
 
 Another great advantage of NoSQL databases is their horizontal scaling capability, which is achieved through the distribution of data across servers, data centers, and geography.&nbsp; But efficiently leveraging this capability requires careful design.&nbsp; It is a balancing act between spreading evenly storage and load across the different partitions/shards, and the efficient retrieval of information when serving queries, so the information can be retrieved from a minimal number of partitions/shards - ideally just one.&nbsp;
 
-polymorphis
-
 &nbsp;
 
 ## Facilitating communication and collaboration

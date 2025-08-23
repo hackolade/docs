@@ -42,7 +42,7 @@ Suggested steps:
 &#50;.4.- Select *Data Model Export Wizard* under the *Data* section as the export destination and click Next
 
 \
-&#50;.5.- Select *W3C XML Schema x.y (XSD)* as the Model format, where *x.y* identifies the version (ie. 1.0)\
+&#50;.5.- Select *W3C XML Schema x.y (XSD)* as the Model format, where *x.y* identifies the version (i.e. 1.0)\
 \
 &#50;.6.- Click the *Browse...* button to the side of label *Model:* and select the script corresponding to the DB2 DDL file you want to export
 

@@ -70,7 +70,7 @@ The REST API connection should be enabled and all the proper parameters provided
 
 &nbsp;
 
-First, you must provide the **Resource Group Name** and **Subscription ID** of Cosmos DB instance, as found in the Overview screen of the Comos DB instance. More information [here](<https://docs.microsoft.com/en-us/azure/cosmos-db/how-to-manage-database-account#create-an-account> "target=\"\_blank\"").
+First, you must provide the **Resource Group Name** and **Subscription ID** of Synapse instance, as found in the Overview screen of the Synapse instance. More information [here](<https://docs.microsoft.com/en-us/azure/cosmos-db/how-to-manage-database-account#create-an-account> "target=\"\_blank\"").
 
 ![Synapse - Azure instance overview screen](<lib/CosmosDB - Azure instance overview screen.png>)
 

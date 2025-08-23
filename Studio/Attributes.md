@@ -144,7 +144,7 @@ A better application of this feature is when having to allow the application of 
 
 ### Array item
 
-This is the only possible attribute type of an Array field.&nbsp; Different types of array items are possible for a same parent attribute.&nbsp; Each can have from 0 to n occurences, but can be limited by the minItems and maxItems properties of the Array.
+This is the only possible attribute type of an Array field.&nbsp; Different types of array items are possible for a same parent attribute.&nbsp; Each can have from 0 to n occurrences, but can be limited by the minItems and maxItems properties of the Array.
 
 &nbsp;
 

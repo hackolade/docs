@@ -124,7 +124,7 @@ Then go to Tools \> Reverse-Engineer \> PowerDesigner, and select the PowserDesi
 
 ## PowerDesigner physical data models stored in .pdm files
 
-Starting with v7.9.10 for import into a polyglot model.&nbsp; Starting from v8.0.0 for import into a target maodel
+Starting with v7.9.10 for import into a polyglot model.&nbsp; Starting from v8.0.0 for import into a target model
 
 &nbsp;
 
@@ -142,7 +142,7 @@ PowerDesigner physical models typically should be imported in into a Hackolade S
 
 &nbsp;
 
-Inside PowerDesigner files, the different objects are mapped to equivalent objects in a Hackolade Studio modesls, mainly:&nbsp;
+Inside PowerDesigner files, the different objects are mapped to equivalent objects in a Hackolade Studio models, mainly:&nbsp;
 
 \- containers (corresponding to the concept of the target: databases, schemas, namespaces, buckets, keyspace, etc...);
 

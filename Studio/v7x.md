@@ -296,7 +296,7 @@ New features in v7.8.5 \[15-Nov-2024\]
 
 \- SQL Server, Synapse: ignored default port number when parsing NamedInstance from connection string
 
-\- Snowflake: filtered column definitions in DDLs for Iceberg tables when catalog is external (glue, iceberg files, iceberg rest, delata files)
+\- Snowflake: filtered column definitions in DDLs for Iceberg tables when catalog is external (glue, iceberg files, iceberg rest, delta files)
 
 \- Synapse: optimized queries for indexes and memory-optimized tables during reverse-engineering
 
@@ -691,7 +691,7 @@ New features in v7.7.2 \[02-Aug-2024\]
 
 \- Hive: added forward-engineering of cross-schema foreign key relationship constraints
 
-\- Oracle: added option to choose to generate DDL with either quoted identifiers or nonquoted identifiers
+\- Oracle: added option to choose to generate DDL with either quoted identifiers or non-quoted identifiers
 
 \- Oracle: added workload analysis form for 23ai Duality Views
 

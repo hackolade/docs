@@ -108,7 +108,7 @@ In the merge dialog, you see you local model in the left pane, the remote model 
 
 &nbsp;
 
-When you click the save button, all the selected changesare merged into your local model, so that you can now commit the change to the remote repo.
+When you click the save button, all the selected changes are merged into your local model, so that you can now commit the change to the remote repo.
 
 &nbsp;
 

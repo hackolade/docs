@@ -7,7 +7,7 @@ The Google Firebase Realtime Database is a cloud-hosted database.&nbsp; Data is 
 Google offers two cloud-based, client-accessible database solutions that support real time data syncing:
 
 * Realtime database: is Firebase's original database
-* Cloud Firestore: an improved solution with a more intuitive data model.&nbsp; It features richer, faster queries and scales better than the Realtime Firesbase database.
+* Cloud Firestore: an improved solution with a more intuitive data model.&nbsp; It features richer, faster queries and scales better than the Realtime Firebase database.
 
 &nbsp;
 

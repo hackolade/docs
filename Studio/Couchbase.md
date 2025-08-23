@@ -97,7 +97,7 @@ an example of key could be this:
 
 &nbsp;
 
-You may define PK Structure using 4 types of segments: constant, field, separator, and regex pattern.&nbsp; There is no theoretical limit to the number of segments, but the total length of the key cannot exceed 250 bytes.&nbsp; If you use a numeric field for a segment, it should ideally be an integrer, and ti will be converted to a string (as the key can only be of string data type.
+You may define PK Structure using 4 types of segments: constant, field, separator, and regex pattern.&nbsp; There is no theoretical limit to the number of segments, but the total length of the key cannot exceed 250 bytes.&nbsp; If you use a numeric field for a segment, it should ideally be an integer, and ti will be converted to a string (as the key can only be of string data type.
 
 &nbsp;
 
@@ -348,7 +348,7 @@ function OnDelete(meta) {
 
 // given a document and a json-schema structure, determine if the
 
-// document matches the scehma. This function is compatible with
+// document matches the schema. This function is compatible with
 
 // the extensions to json-schema used by the N1QL INFER command,
 

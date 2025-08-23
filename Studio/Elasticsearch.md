@@ -1,10 +1,10 @@
 # Elasticsearch
 
-Elasticsearch is a RESTful search and analytics engine based on Apache Lucene.&nbsp; It provides a distributed, multi-tenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents.&nbsp; Elasticsearch is developed alongside a data-collection and log-parsing engine called Logstash, and an analytics and visualisation platform called Kibana.&nbsp; The three products are designed for use as an integrated solution, referred to as the "Elastic Stack" (formerly the "ELK stack").
+Elasticsearch is a RESTful search and analytics engine based on Apache Lucene.&nbsp; It provides a distributed, multi-tenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents.&nbsp; Elasticsearch is developed alongside a data-collection and log-parsing engine called Logstash, and an analytics and visualization platform called Kibana.&nbsp; The three products are designed for use as an integrated solution, referred to as the "Elastic Stack" (formerly the "ELK stack").
 
 &nbsp;
 
-To perform data modeling for Elasticsearch with Hackolade, you must first download the Elasticsearch [plugin](<DownloadadditionalDBtargetplugin.md>).&nbsp; **Important note:** with v7, a new typeless API has been introduced, and the old APIs that accept types have been deprecated (more details [here](<https://www.elastic.co/blog/moving-from-types-to-typeless-apis-in-elasticsearch-7-0> "target=\"\_blank\"").)&nbsp; As a result a different plugin is required, depending on whether you're running ES v2;0 thu 6.\!, or ES v7.0 and above.&nbsp; Please make sure to use the appropriate plugin.
+To perform data modeling for Elasticsearch with Hackolade, you must first download the Elasticsearch [plugin](<DownloadadditionalDBtargetplugin.md>).&nbsp; **Important note:** with v7, a new typeless API has been introduced, and the old APIs that accept types have been deprecated (more details [here](<https://www.elastic.co/blog/moving-from-types-to-typeless-apis-in-elasticsearch-7-0> "target=\"\_blank\"").)&nbsp; As a result a different plugin is required, depending on whether you're running ES v2;0 thru 6.\!, or ES v7.0 and above.&nbsp; Please make sure to use the appropriate plugin.
 
 &nbsp;
 

@@ -84,7 +84,7 @@ The architecture, courtesy of Amazon, looks like this:
 
 &nbsp;
 
-Perform all steps above for the public acces, plus this additional and critical last step...
+Perform all steps above for the public access, plus this additional and critical last step...
 
 ### SSH certificate of the EC2 server&nbsp;
 
@@ -102,7 +102,7 @@ You can find this information in the EC2 details screen&nbsp;
 
 &nbsp;
 
-![RDS - EC2 Bastion instance info](<lib/NewItem 3.png>)
+![RDS - EC2 Bastion instance info](<lib/RDS - EC2 Bastion instance info.png>)
 
 &nbsp;
 

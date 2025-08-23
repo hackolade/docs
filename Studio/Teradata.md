@@ -54,7 +54,7 @@ There are six main constraints that are commonly used in Teradata: NOT NULL, UNI
 
 ## Partitioning
 
-Teradata supports table partitioning. Partitioning refers to splitting what is logically one large table into smaller physical pieces. Partitioning can provide several benefits on the performance side. Large tables and join indexes are usually better candidates for row partitioning than smaller tables and join indexes because there is not much benefit to partitioning a table or join index small enough that a full‑table scan on the nonpartitioned table or join index takes only a few seconds.
+Teradata supports table partitioning. Partitioning refers to splitting what is logically one large table into smaller physical pieces. Partitioning can provide several benefits on the performance side. Large tables and join indexes are usually better candidates for row partitioning than smaller tables and join indexes because there is not much benefit to partitioning a table or join index small enough that a full table scan on the non-partitioned table or join index takes only a few seconds.
 
 ## Indexes
 

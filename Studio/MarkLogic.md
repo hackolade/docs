@@ -50,7 +50,7 @@ Given the complex geospatial searches capability of MarkLogic, Hackolade facilit
 
 Triple structure template:
 
-Semantics enables the discovery of facts and relationships in data, and provides context for these facts.&nbsp; MarkLogic allows the natively store, search, and manage RDF triples, queried with SPARQL.&nbsp; Hackolade facilitates the creatio of triple structures with a predefined template:
+Semantics enables the discovery of facts and relationships in data, and provides context for these facts.&nbsp; MarkLogic allows the natively store, search, and manage RDF triples, queried with SPARQL.&nbsp; Hackolade facilitates the creation of triple structures with a predefined template:
 
 ![MarkLogic triple](<lib/MarkLogic triple.png>)
 

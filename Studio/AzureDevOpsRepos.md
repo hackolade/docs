@@ -64,7 +64,7 @@ For issues when Git clone or push fails to an Azure DevOps repository.&nbsp; Ple
 
 &nbsp;
 
-A possible cause, as provided by the HackoladeGit.log can be "SSL certificate problem: unable to get local issuer certificate".&nbsp; This is caused by the fact that your organization might be using self-signed certificates (often in the context of dev or test environments -- rarely in prod environments...) and this self-signed certificate is not present in the local certificate storage.&nbsp; This situtaion and the solution are well described in this [Microsoft link](<https://learn.microsoft.com/en-us/troubleshoot/azure/devops/git-clone-push-operation-failing-devops-repo#cause-2-git-uses-a-local-self-signed-certificate> "target=\"\_blank\"").
+A possible cause, as provided by the HackoladeGit.log can be "SSL certificate problem: unable to get local issuer certificate".&nbsp; This is caused by the fact that your organization might be using self-signed certificates (often in the context of dev or test environments -- rarely in prod environments...) and this self-signed certificate is not present in the local certificate storage.&nbsp; This situation and the solution are well described in this [Microsoft link](<https://learn.microsoft.com/en-us/troubleshoot/azure/devops/git-clone-push-operation-failing-devops-repo#cause-2-git-uses-a-local-self-signed-certificate> "target=\"\_blank\"").
 
 &nbsp;
 
@@ -86,15 +86,17 @@ From the menu Repository \> Manage Repository Connections, create a new connecti
 
 &nbsp;
 
-Make sure to enter the correct Oraganization name.&nbsp; Then click on the "Connect" button to proceed.
+Make sure to enter the correct Organization name.&nbsp; Then click on the "Connect" button to proceed.
 
 &nbsp;
 
-A browser window will appear to request your acknowqledgment, and create the necessary authorization,&nbsp;
+A browser window will appear to request your acknowledgment, and create the necessary authorization,&nbsp;
 
 &nbsp;
 
-![Azure DevOps Repos OAuth permissions request](<lib/Azure DevOps Repos OAuth permissions request.png>)
+![Azure AD MFA consent](<lib/Azure AD MFA consent.png>)
+
+&nbsp;
 
 &nbsp;
 

@@ -16,7 +16,7 @@ The line of action words provide access to most functions.&nbsp; The menu items 
 
 3. ### [Toolbar](<Toolbar.md>)
 
-The bar of icon button let you access the frequently used actions.&nbsp; The icons are contextually activated so only relevant icons can be accessed.&nbsp; Other icons are greyed if unavailable.
+The bar of icon button let you access the frequently used actions.&nbsp; The icons are contextually activated so only relevant icons can be accessed.&nbsp; Other icons are grayed if unavailable.
 
 4. ### [Object browser pane](<Objectbrowserpane.md>)
 

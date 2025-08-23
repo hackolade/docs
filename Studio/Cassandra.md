@@ -1,6 +1,6 @@
 # Cassandra
 
-Apache Cassandra is designed to handle large amounts of data across many commodity servers, providing high availability through robust support for clusterspanning of multiple datacenters and asynchronous masterless replication and low latency operations.&nbsp; It is essentially a hybrid between a key-value and a column-oriented database.&nbsp; Rows are organized into tables.&nbsp; The first component of a primary key is a partition key, and rows clustered by the remaining columns of the key.&nbsp; Other columns may be indexed separately from the primary key.
+Apache Cassandra is designed to handle large amounts of data across many commodity servers, providing high availability through robust support for clusters spanning of multiple data centers and asynchronous masterless replication and low latency operations.&nbsp; It is essentially a hybrid between a key-value and a column-oriented database.&nbsp; Rows are organized into tables.&nbsp; The first component of a primary key is a partition key, and rows clustered by the remaining columns of the key.&nbsp; Other columns may be indexed separately from the primary key.
 
 &nbsp;
 
@@ -78,7 +78,7 @@ Hackolade supports [Global Secondary Indexes](<https://docs.datastax.com/en/dse/
 
 ## Materialized Views
 
-With version 3.0, Cassandra introduced materialized views to handle automated server-side denormalization.&nbsp; In theory, this removes the need for client-side handling and would ensure consistency between base and view data.&nbsp; Materialized views work particularly well with immutable insert-only data, but should not be used in case of low-cardinality data.&nbsp; Materialized views are designed to alleviate the pain for developers, but are essentially a trade-off of performance for connectedness.&nbsp; See more info in this [article](<http://www.doanduyhai.com/blog/?p=1930> "target=\"\_blank\"").
+With version 3.0, Cassandra introduced materialized views to handle automated server-side denormalization.&nbsp; In theory, this removes the need for client-side handling and would ensure consistency between base and view data.&nbsp; Materialized views work particularly well with immutable insert-only data, but should not be used in case of low-cardinality data.&nbsp; Materialized views are designed to alleviate the pain for developers, but are essentially a trade-off of performance for accuracy.&nbsp; See more info in this [article](<http://www.doanduyhai.com/blog/?p=1930> "target=\"\_blank\"").
 
 &nbsp;
 

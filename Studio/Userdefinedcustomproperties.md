@@ -152,7 +152,7 @@ As a reminder, terminology differs between the targets supported by Hackolade:
 
 \- container means: dbs in MongoDB, region in DynamoDB, and bucket in Couchbase, namespace in Avro, keyspace in Cassandra, schema in RDBMS, etc...
 
-\- entity means: collection in MongoDB, table in DynamoDB and Cassandra and RDBMS, and document type in Couchbase,e tc...
+\- entity means: collection in MongoDB, table in DynamoDB and Cassandra and RDBMS, and document type in Couchbase,etc...
 
 \- field means: field in MongoDB and Couchbase, and attribute in DynamoDB, column in Cassandra and RDBMS, etc...
 
@@ -242,17 +242,17 @@ Here's another view, consolidated:
 
 \- template: optional, this is needed in the case of propertyType = details, to define a popup multi-line text.&nbsp; Possible value: textarea
 
-\- valueType: optional, this is needed in to specify that a property is numberic only.&nbsp; Possible values: numeric
+\- valueType: optional, this is needed in to specify that a property is numeric only.&nbsp; Possible values: numeric
 
 &nbsp;
 
 ## Share customization with team members
 
-it is recommended that you share customization using Git.&nbsp; Store your changes in a Git remote repository, and have your team members clone it locally in C:\\Users\\%username%\\.hackolade\\options (on Mac in Users/$USER/.Hackolade/options)&nbsp; That way, all that teams members need to do is to pull regularly, and they will get your latest changes.
+It is recommended that you share customization using Git.&nbsp; Store your changes in a Git remote repository, and have your team members clone it locally in C:\\Users\\%username%\\.hackolade\\options (on Mac in Users/$USER/.Hackolade/options)&nbsp; That way, all that teams members need to do is to pull regularly, and they will get your latest changes.
 
 &nbsp;
 
-For custom property changes to take effect on each computer, it is required to exit Hackolade and restart it.
+For custom property changes to take effect on each computer, it is required to exit Hackolade Studio and restart it.
 
 &nbsp;
 

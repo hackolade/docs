@@ -8,7 +8,7 @@ A demo playground of the Model Hub is available at [https://hub.hackolade.com/](
 
 &nbsp;
 
-**Note:** this repository is public for demonstration purposes, whereas your own repo would of course be private in a production environment.&nbsp; Also, this repo is on GitHub in the cloud.&nbsp; The production solution, if you purchase it, would be integrated with the provider of your choice: Azure DevOps Repos, Bitbucket Cloud, Github Cloud, GitHub Server, GitLab Cloud, or GitLab Server.
+**Note:** this repository is public for demonstration purposes, whereas your own repo would of course be private in a production environment.&nbsp; This repo is on GitHub in the cloud.&nbsp; The production solution, if you purchase it, would be integrated with the provider of your choice: Azure DevOps Repos, Bitbucket Cloud, Github Cloud, GitHub Server, GitLab Cloud, or GitLab Server.
 
 &nbsp;
 

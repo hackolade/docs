@@ -48,7 +48,7 @@ New features with v3.6.8 \[6-Mar-2020\]
 
 \-- added description and tooltip for response codes in Properties Pane dropdown
 
-\-- fixed inconsistent contextual menu for definitions/componenents in Object Browser
+\-- fixed inconsistent contextual menu for definitions/components in Object Browser
 
 \-- added possibility to add and remove responses from Properties Pane of request
 
@@ -604,7 +604,7 @@ New features with v3.3.1:
 
 \- Object with a validation error (default or example not respecting data type, invalid names, etc...) appear in red in Object Browser, ERD and hierarchical schema view
 
-\- Avro: integrated Avro schema validator to Avro Schema tavb
+\- Avro: integrated Avro schema validator to Avro Schema tab
 
 \- Avro: added 'Null allowed' property to complex types
 

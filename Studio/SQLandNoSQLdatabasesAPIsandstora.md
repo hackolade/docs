@@ -24,7 +24,7 @@ Whereas most relational database adhere to a SQL standard which ensures a common
 
 &nbsp;
 
-| **Generic terminology** | **Google RealTime Firebase** | **Google Cloud Firestore** | **MarkLogic** | **Apache Hive** | **Apache Avro** | **Couchbase Analytics** | **Goocle Cloud BigQuery** |
+| **Generic terminology** | **Google RealTime Firebase** | **Google Cloud Firestore** | **MarkLogic** | **Apache Hive** | **Apache Avro** | **Couchbase Analytics** | **Google Cloud BigQuery** |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Container | User schema | Database | Database | Database | Namespace | Dataverse | Dataset |
 | Entity | Table | Collection | Collection/Directory | Table | Record | Dataset | Table |

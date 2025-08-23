@@ -4,7 +4,7 @@ JanusGraph is an open-source, distributed, massively scalable graph database, op
 
 &nbsp;
 
-JanusGraph is focused on compact graph serialization, rich graph data modeling, and efficient query execution. It implements robust, modular interfaces for data persistence, data indexing, and client access. JanusGraph’s modular architecture allows it to interoperate with a wide range of storage, index, and client technologies. &nbsp;
+JanusGraph is focused on compact graph serialization, rich graph data modeling, and efficient query execution. It implements robust, modular interfaces for data persistence, data indexing, and client access. JanusGraph’s modular architecture allows it to inter-operate with a wide range of storage, index, and client technologies. &nbsp;
 
 &nbsp;
 

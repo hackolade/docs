@@ -1,6 +1,6 @@
-# Archimate applications data objects
+# ArchiMate application data objects
 
-ArchiMate is an open‑standard, visual modeling language for enterprise architecture, developed and maintained by [The Open Group’s ArchiMate Forum](<https://www.opengroup.org/archimate-forum/archimate-overview> "target=\"\_blank\""). Its mission is to enable architects to **describe**, **analyze**, and **visualize** the relationships across business processes, organizational structures, information flows, IT systems, and infrastructure.&nbsp; This is done using a common, lean notation of around 50 core concepts, deliberately designed to be simpler and more accessible than UML or BPMN.
+ArchiMate is an open-standard, visual modeling language for enterprise architecture, developed and maintained by [The Open Group’s ArchiMate Forum](<https://www.opengroup.org/archimate-forum/archimate-overview> "target=\"\_blank\""). Its mission is to enable architects to **describe**, **analyze**, and **visualize** the relationships across business processes, organizational structures, information flows, IT systems, and infrastructure.&nbsp; This is done using a common, lean notation of around 50 core concepts, deliberately designed to be simpler and more accessible than UML or BPMN.
 
 &nbsp;
 
@@ -12,7 +12,7 @@ ArchiMate has a structured and layered approach to modeling, and while it’s no
 
 &nbsp;
 
-Note that there is no built-in support in Archimate for **attributes, cardinality**, or **normalization** like in ER models.
+Note that there is no built-in support in ArchiMate for **attributes, cardinality**, or **normalization** like in ER models.
 
 &nbsp;
 
@@ -20,13 +20,13 @@ When it comes to data, it uses data objects to describe containers, entities and
 
 &nbsp;
 
-Since v8.3.0, Hackolade Studio allows you to generate Archimate-compliant files with applications data objects for your Hackolade Studio data models.&nbsp; To be clear, Hackolade Studio does not cover any of the many other layers of the [Archimate specification](<https://www.opengroup.org/xsd/archimate/> "target=\"\_blank\"") -- only applications data objects -- so they can be imported in specialized tools such as Archi, Bizzdesign, Mega, LeanIX, etc.
+Since v8.3.0, Hackolade Studio allows you to generate ArchiMate-compliant files with applications data objects for your Hackolade Studio data models.&nbsp; To be clear, Hackolade Studio does not cover any of the many other layers of the [Archimate specification](<https://www.opengroup.org/xsd/archimate/> "target=\"\_blank\"") -- only applications data objects -- so they can be imported in specialized tools such as Archi, Bizzdesign, Mega, LeanIX, etc.
 
 &nbsp;
 
 This feature is only available in the editions: Professional, Workgroup, Free Trial, and Community. &nbsp;
 
-## Archimate application data objects file
+## ArchiMate application data objects file
 
 Hackolade Studio generates a .archimate file, in XML format.&nbsp; This file format can be opened by tools such as the open-source [Archi](<https://www.archimatetool.com/> "target=\"\_blank\"") tool.
 
@@ -36,7 +36,7 @@ Hackolade Studio generates a .archimate file, in XML format.&nbsp; This file for
 
 &nbsp;
 
-## Archimate Open Exchange file
+## ArchiMate Open Exchange file
 
 The [Open Exchange file format](<https://www.opengroup.org/open-group-archimate-model-exchange-file-format> "target=\"\_blank\"") is tailored for third party tools that are Archimate-aware to exchange data structures, paradigms, concepts, etc...This format is also an XML structure that is quite close to the .archimate internals.&nbsp; It uses UTF-8 encoding (e.g. support special characters).&nbsp; The main difference is that the organization of the objects is separated from the objects declaration themselves.
 

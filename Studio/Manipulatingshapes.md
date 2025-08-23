@@ -10,5 +10,5 @@ There are 5 types of objects in Hackolade:
 * [Relationships](<RelationshiplinesinERdiagram.md>) edges (graph databases)
 * [Views](<Read-onlyviews.md>): where applicable
 
-[](<Attributeboxesinhierarchicalsche.md>)
+&nbsp;
 

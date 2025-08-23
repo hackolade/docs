@@ -243,7 +243,7 @@ Many additional keywords are available to fine-tune the behavior of controls, wh
 
 &nbsp;
 
-The requiredProperty keyword displays a red star (\*) character next to the property label.&nbsp; The validation keyword and structure ensures that the entry is validated.&nbsp; If you set the required flag to false, or do not provide the validation structure, then the red star would be for display only with no enforcement.&nbsp; If the requirement is enforced but not satisfied, a red badge with an explanation point (\!) is displayed.
+The *requiredProperty* keyword displays a red star (\*) character next to the property label.&nbsp; The validation keyword and structure ensures that the entry is validated.&nbsp; If you set the required flag to false, or do not provide the validation structure, then the red star would be for display only with no enforcement.&nbsp; If the requirement is enforced but not satisfied, a red badge with an explanation point (\!) is displayed.
 
 &nbsp;
 
@@ -251,7 +251,7 @@ The requiredProperty keyword displays a red star (\*) character next to the prop
 
 &nbsp;
 
-The dependecy keyword allows sophisticated logic described in the [documentation](<https://github.com/hackolade/plugins#26-property-controls>).&nbsp; to test according multiple criteria, and including and/or/not operators.&nbsp; Here is the simplest of examples:
+The keyword *dependency* allows sophisticated logic described in the [documentation](<https://github.com/hackolade/plugins#26-property-controls>).&nbsp; to test according multiple criteria, and including and/or/not operators.&nbsp; Here is the simplest of examples:
 
 &nbsp;
 
@@ -264,6 +264,29 @@ The result of the above keywords are displayed below:
 ![Custom Props tab required dependency result](<lib/Custom Props tab required dependency result.png>)
 
 &nbsp;
+
+&nbsp;
+
+The keyword *⁠enableForReference* is an optional boolean parameter used in the property definition.&nbsp; By default, properties of references to a definition (whether internal, model, or external) are typically disabled. However, by setting this keyword to *true*, the custom property becomes editable in the reference, allowing users to specify a value that takes precedence over the same property value from the referenced definition.
+
+&nbsp;
+
+This keyword is applicable not only to references but also to attributes of views (column view), which are references to underlying table attributes.&nbsp; This means that when the reference is resolved, the property values will be taken from the reference (if present) rather than from its original definition.
+
+&nbsp;
+
+Example Usage:
+
+To define a custom property that can be edited in the reference or view attribute, include the ⁠enableForReference keyword in the property definition as shown below:
+
+&nbsp;
+
+> {\
+&nbsp; &nbsp; "propertyName": "Count",\
+&nbsp; &nbsp; "propertyKeyword": "count",\
+&nbsp; &nbsp; "propertyType": "numeric",\
+&nbsp; &nbsp; "enableForReference": true\
+}
 
 &nbsp;
 

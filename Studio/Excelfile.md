@@ -14,11 +14,11 @@ It includes the following capabilities:&nbsp;
 
 &nbsp;
 
-**Note:** in order to maintain integrity, when a reference to a definition is exported Excel, it is not resolved.&nbsp; In other words, the sub-structure of the object is not exported.&nbsp; Neither are the definitions themselves (currently - to be added soon.)
+When doing a roundtrip from Hackolade to Excel and back, it is important to maintain integrity of the model and avoid any corruption.&nbsp; Microsoft Excel does not allow all the controls and validations of the Hackolade applications.&nbsp; Additionally, the application supports a large number of different targets with differing terminology, structure, and characteristics. &nbsp;
 
 &nbsp;
 
-When doing a roundtrip from Hackolade to Excel and back, it is important to maintain integrity of the model and avoid any corruption.&nbsp; Microsoft Excel does not allow all the controls and validations of the Hackolade applications.&nbsp; Additionally, the application supports a large number of different targets with differing terminology, structure, and characteristics. &nbsp;
+**Important note:** let's not misunderstand what is meant with "bulk editing"...&nbsp; the purpose of this function is to facilitate the enrichment of existing models, thanks to the flexibility and power of Excel, including the ability to xlookup, copy/paste information, etc. &nbsp; The purpose is NOT to find a creative way to leverage Excel's lack of integrity rules to circumvent the logic and checks built in the application.&nbsp; We suggest to be extra careful in particular when performing operations that touch the object GUIDs.&nbsp; Copying or changing GUIDs create risks of corrupting the model upon import.
 
 &nbsp;
 
@@ -32,7 +32,7 @@ To import CSV files into Hackolade, it is advised to first export an Excel templ
 
 ## Export model
 
-To start your export for a model, simply go to Tools \> Forward-Engineer \> Excel file...&nbsp; In the Object selection dialog, you may deselect objects tht you do not wish to export. &nbsp;
+To start your export for a model, simply go to Tools \> Forward-Engineer \> Excel file...&nbsp; In the Object selection dialog, you may deselect objects that you do not wish to export. &nbsp;
 
 &nbsp;
 
@@ -42,7 +42,7 @@ To start your export for a model, simply go to Tools \> Forward-Engineer \> Exce
 
 &nbsp;
 
-With the Options button, you may also access a dialog to delect object properties that you do not wish to export:
+With the Options button, you may also access a dialog to select object properties that you do not wish to export:
 
 ![Tools Options - FE Excel Properties Selection](<lib/Tools Options - FE Excel Properties Selection.png>)
 
@@ -63,6 +63,12 @@ This configuration can also be maintained in Tools \> Options \> Forward-Enginee
 &nbsp;
 
 ![Tools Options - FE Excel Export](<lib/Tools Options - FE Excel Export.png>)
+
+&nbsp;
+
+**Note:** depending on the purpose of your export, you may want to resolve referenced definitions, or not.&nbsp; When the purpose is to do bulk editing, then import the Excel back into your model, then in order to maintain integrity, when a reference to a definition is exported Excel, it must NOT&nbsp; be resolved.&nbsp; In other words, the sub-structure of the object is not exported. &nbsp;
+
+If on the other hand, the purpose is to publish a catalog of the objects in the model, it may be desirable to resolve the references.&nbsp; Choose this option wisely.
 
 &nbsp;
 

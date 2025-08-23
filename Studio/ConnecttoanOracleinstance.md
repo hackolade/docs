@@ -28,7 +28,7 @@ The Hackolade Studio plugin for Oracle includes a thin client to facilitate conn
 
 &nbsp;
 
-You just need to give your connection a meanigful name, enter your host and port (default 1521), and either a Service Name or a SID.&nbsp; Then move to the Authentication tab to entre your credentials.
+You just need to give your connection a meaningful name, enter your host and port (default 1521), and either a Service Name or a SID.&nbsp; Then move to the Authentication tab to enter your credentials.
 
 &nbsp;
 
@@ -65,7 +65,7 @@ If ORACLE\_HOME is not set, you probably need to [download](<https://www.oracle.
 
 &nbsp;
 
-Oracle Instant client is a basic lightweight client which can be unzipped in a location without any installation, it contains only the communication layer to be able to connect to oracle. When using Instant Client, just unzip it to a location of your choice.&nbsp; Keep a note of the path to this folder, as you will have to specify it in the connexion settings to your Oracle instance.&nbsp;
+Oracle Instant client is a basic lightweight client which can be unzipped in a location without any installation, it contains only the communication layer to be able to connect to oracle. When using Instant Client, just unzip it to a location of your choice.&nbsp; Keep a note of the path to this folder, as you will have to specify it in the connection settings to your Oracle instance.&nbsp;
 
 &nbsp;
 
@@ -89,7 +89,7 @@ On MacOS, a trusted signed package is required.&nbsp; When you download from [Or
 
 &nbsp;
 
-Once the package is downloaded, open the \`\<instant-client\>.dmg\` and copy **all the files** to a dedicated folder of your chioce. For example, \`/Users/\<username\>/databases/clients/oracle\`. Keep a note of the path to this folder, as you will have to specify it in the connexion settings to your Oracle instance.&nbsp;
+Once the package is downloaded, open the \`\<instant-client\>.dmg\` and copy **all the files** to a dedicated folder of your choice. For example, \`/Users/\<username\>/databases/clients/oracle\`. Keep a note of the path to this folder, as you will have to specify it in the connection settings to your Oracle instance.&nbsp;
 
 &nbsp;
 
@@ -155,7 +155,7 @@ Hackolade does not yet support OS-based or Kerberos authentication.
 
 &nbsp;
 
-You must provide the username, passwaord, and optionally a role for your connection.
+You must provide the username, password, and optionally a role for your connection.
 
 &nbsp;
 

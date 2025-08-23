@@ -24,13 +24,33 @@ The data model in the picture below results from the modeling of an application 
 
 ## Tables
 
-Tables in in the Glue Data Catalog contain references to data that is used as sources and targets of&nbsp; extract, transform, and load (ETL) jobs in AWS Glue. The table properties are based on Hive 2.x metadata structure.
+Tables in in the Glue Data Catalog contain references to data that is used as sources and targets of&nbsp; extract, transform, and load (ETL) jobs in AWS Glue.&nbsp;
+
+&nbsp;
+
+### Standard tables
+
+The table properties are based on Hive 2.x metadata structure.
 
 &nbsp;
 
 ![AWS Glue Data Catalog table properties](<lib/Glue table properties.png>)&nbsp;
 
 ![AWS Glue Data Catalog table properties - part 2](<lib/Glue table properties - part 2.png>)
+
+&nbsp;
+
+&nbsp;
+
+### Iceberg tables
+
+AWS Glue 3.0 and later supports the Apache Iceberg framework for data lakes. Iceberg provides a high-performance table format that works just like a SQL table.&nbsp; AWS Glue can be used to perform read and write operations on Iceberg tables in Amazon S3, or work with Iceberg tables using the AWS Glue Data Catalog.
+
+&nbsp;
+
+Hackolade Studio supports Iceberg tables in AWS Glue Data Catalog, including the ability to maintain the relevant properties, plus forward- and reverse-engineering.
+
+![Glue Iceberg table properties](<lib/Glue Iceberg table properties.png>)
 
 &nbsp;
 

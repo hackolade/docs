@@ -6,7 +6,7 @@
 
 &nbsp;
 
-![Image](<lib/Client architecture diagram.png>)
+![Client architecture diagram](<lib/Client architecture diagram.png>)
 
 &nbsp;
 
@@ -14,7 +14,7 @@ Even when leveraging the browser deployment, the security-first architecture is 
 
 &nbsp;
 
-![Image](<lib/Desktop and Browser architecture.png>)
+![Desktop and Browser architecture](<lib/Desktop and Browser architecture.png>)
 
 &nbsp;
 

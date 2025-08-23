@@ -1,13 +1,13 @@
 # Firestore
 
-The Google Cloud Firestore is a flexible, scalable database for mobile, web, and server development from Firebase and Google Cloud Platform.&nbsp; Like Firebase, it keeps data in sync across client apps through relatime listeners, and offers offline support for mobile and web, so developers can build responsive apps that work regardless of network latency or Internet connectivity.
+The Google Cloud Firestore is a flexible, scalable database for mobile, web, and server development from Firebase and Google Cloud Platform.&nbsp; Like Firebase, it keeps data in sync across client apps through real-time listeners, and offers offline support for mobile and web, so developers can build responsive apps that work regardless of network latency or Internet connectivity.
 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .
 
 Google offers two cloud-based, client-accessible database solutions that support real time data syncing:
 
 * Realtime database: is Firebase's original database
-* Cloud Firestore: an improved solution with a more intuitive data model.&nbsp; It features richer, faster queries and scales better than the Realtime Firesbase database.
+* Cloud Firestore: an improved solution with a more intuitive data model.&nbsp; It features richer, faster queries and scales better than the Realtime Firebase database.
 
 &nbsp;
 
@@ -43,7 +43,7 @@ Subcollections are an implementation of [multi-table inheritance](<https://danch
 
 &nbsp;
 
-The unique key is based on a timestamp, so list items will automatically be ordered chornologically.&nbsp; The Firebase JavaScript clients provide a push() function that generates a unique ID, or key, for each new child.
+The unique key is based on a timestamp, so list items will automatically be ordered chronologically.&nbsp; The Firebase JavaScript clients provide a push() function that generates a unique ID, or key, for each new child.
 
 &nbsp;
 

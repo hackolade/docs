@@ -59,7 +59,7 @@ If you don't have an SSH key yet, then you need to create one. Follow the links 
 * [Connect to Azure Repos with SSH](<https://docs.microsoft.com/en-us/azure/devops/repos/git/use-ssh-keys-to-authenticate?view=azure-devops> "target=\"\_blank\"")
 * [Connect to GitLab with SSH](<https://docs.gitlab.com/ee/user/ssh.html> "target=\"\_blank\"")
 
-[](<https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-ssh-unixes.html> "target=\"\_blank\"")
+&nbsp;
 
 Consult this page for more information on connecting to a [repository hub.](<Connecttoarepositoryhub.md>).
 

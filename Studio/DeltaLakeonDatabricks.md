@@ -165,7 +165,7 @@ Tags are also picked up during reverse-engineering.
 
 There are some constraints:
 
-\- to add tags to Unity Catalog securable objects when applying the DDL script to intance, users must have the APPLY TAG privilege on the object, as well as the USE SCHEMA privilege on the object’s parent schema and the USE CATALOG privilege on the object’s parent catalog.
+\- to add tags to Unity Catalog securable objects when applying the DDL script to instance, users must have the APPLY TAG privilege on the object, as well as the USE SCHEMA privilege on the object’s parent schema and the USE CATALOG privilege on the object’s parent catalog.
 
 \- you can assign a maximum of 20 tags to a single securable object
 

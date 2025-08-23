@@ -1,6 +1,6 @@
 # HBase
 
-A Bigtable is a sparse, distributed, persistent multidimensional sorted map.&nbsp; The map is indexed by a row key, column key, and a timestamp; each value in the map is an uninterpreted array of bytes.&nbsp; HBase uses a data model very similar to that of Bigtable.&nbsp; Users store data rows in labelled tables.&nbsp; A data row has a sortable key and an arbitrary number of columns.&nbsp; The table is stored sparsely, so that rows in the same table can have crazily-varying columns, if the user likes.&nbsp; Unlike most map implementations, in HBase/BigTable the key/value pairs are kept in strict alphabetical order. &nbsp;
+A Bigtable is a sparse, distributed, persistent multidimensional sorted map.&nbsp; The map is indexed by a row key, column key, and a timestamp; each value in the map is an uninterpreted array of bytes.&nbsp; HBase uses a data model very similar to that of Bigtable.&nbsp; Users store data rows in labeled tables.&nbsp; A data row has a sortable key and an arbitrary number of columns.&nbsp; The table is stored sparsely, so that rows in the same table can have crazily-varying columns, if the user likes.&nbsp; Unlike most map implementations, in HBase/BigTable the key/value pairs are kept in strict alphabetical order. &nbsp;
 
 &nbsp;
 

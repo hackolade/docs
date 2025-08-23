@@ -4,7 +4,7 @@ If you get this message:
 
 ![Couchbase reverse-engineering error](<lib/Couchbase RE error.png>)
 
-and the log file HackoladeRE.log in C:\\Users%userprofile%\\AppData\\Roaming\\HackoladeLogs shows the error "message": "An unknown N1QL error occured. This is usually related to an out-of-memory condition."
+and the log file HackoladeRE.log in C:\\Users%userprofile%\\AppData\\Roaming\\HackoladeLogs shows the error "message": "An unknown N1QL error occurred. This is usually related to an out-of-memory condition."
 
 There's a workaround for this Couchbase issue.  In Hackolade go to Tools \> Options \> Reverse-Engineering and enable Query Pagination.
 

@@ -172,7 +172,7 @@ Note that, tags being set at the schema level require an ALTER SCHEMA command as
 
 &nbsp;
 
-You may find parts of [this article](<https://thinketl.com/tagging-in-snowflake/> "target=\"\_blank\"") useful to understand how to use tags in Snowflake, knowing of course taht Hackolade Studio handles the generation of the required DDL syntax, for example:
+You may find parts of [this article](<https://thinketl.com/tagging-in-snowflake/> "target=\"\_blank\"") useful to understand how to use tags in Snowflake, knowing of course that Hackolade Studio handles the generation of the required DDL syntax, for example:
 
 &nbsp;
 

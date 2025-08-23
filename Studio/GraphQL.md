@@ -18,11 +18,11 @@ To perform model-first design of a GraphQL API with Hackolade Studio, you must f
 
 Creating APIs is not easy\! And creating a GraphQL SDL (Schema Designing Language) in a design-first approach can be tedious at best, and often error-prone and frustrating...&nbsp; Hackolade takes a **graphical** and **schema-centric** approach so you can focus on the content of queries and responses. The application also assists with all the metadata to produce validated GraphQL SDL files.&nbsp; You can also reverse-engineer existing GraphQL SDL to produce a graphical representation of your APIs.
 
-A notable differentiator versus all the existing tools in the GraphQL ecosystem is the Hackolade patent-pending nested representation in an entity-relationships diagram of relatinships between types.&nbsp; Our drastically different visualization approach is anchored in the fact that both queries and responses are done using JSON with nested objects, regardless of whether the data source is relational or not.&nbsp; All current tools representing GraphQL schemas stick to a flat and relational visualization, for example
+A notable differentiator versus all the existing tools in the GraphQL ecosystem is the Hackolade patent-pending nested representation in an entity-relationships diagram of relationships between types.&nbsp; Our drastically different visualization approach is anchored in the fact that both queries and responses are done using JSON with nested objects, regardless of whether the data source is relational or not.&nbsp; All current tools representing GraphQL schemas stick to a flat and relational visualization, for example
 
 ![GraphQL existing tools visualization](<lib/GraphQL existing tools visualization.png>)
 
-While this visualization may be structured with some corrrelation to the SDL syntax and the relational structures. &nbsp; But there are several issues with his visualization:
+While this visualization may be structured with some correlation to the SDL syntax and the relational structures. &nbsp; But there are several issues with his visualization:
 
 \- it seems acceptable for super simple models, but it quickly become hard to read with larger models.&nbsp; In other words, it does not scale.
 
@@ -162,7 +162,7 @@ One of the major advantages of GraphQL is that it allows for naturally querying 
 
 &nbsp;
 
-**GraphQL** allows a client to specify exactly what data it needs from the API.&nbsp; In the example above, a user can adapt the query to only return the relevant information.&nbsp; If the field age in the example above is not relevan tfor this query, then the query could be adjusted so that the field age is not included in the response:
+**GraphQL** allows a client to specify exactly what data it needs from the API.&nbsp; In the example above, a user can adapt the query to only return the relevant information.&nbsp; If the field age in the example above is not relevant for this query, then the query could be adjusted so that the field age is not included in the response:
 
 > {\
 &nbsp; &nbsp; allPersons {\
@@ -222,9 +222,9 @@ It is possible to also query information when sending mutations, which can be a 
 
 &nbsp;
 
-### Realtime Updates with Subscriptions
+### Real-time Updates with Subscriptions
 
-Another important requirement for many applications today is to have a *realtime* connection to the server in order to get immediately informed about important events. For this use case, GraphQL offers the concept of *subscriptions*.
+Another important requirement for many applications today is to have a *real-time* connection to the server in order to get immediately informed about important events. For this use case, GraphQL offers the concept of *subscriptions*.
 
 &nbsp;
 
@@ -372,8 +372,6 @@ Then replace the list item by a reference to the previously defined Episode Enum
 
 &nbsp;
 
-&nbsp;
-
 and it results in this structure:
 
 ![GraphQL obect structure with reference](<lib/GraphQL obect structure with reference.png>)
@@ -502,7 +500,7 @@ Hackolade Studio allows users to create a connection, with authentication if nec
 
 ## How does the Hackolade Studio plugin for GraphQL compare with Apollo Studio?
 
-The Apollo page for [GraphQL Schema *Basics*](<https://www.apollographql.com/docs/apollo-server/schema/schema> "target=\"\_blank\"") is a different version of the information you can find above.&nbsp; But instead of having to type it all up without making any typos, Hackolade Studio provides a way to build your schema with a few click of a mouse.&nbsp; Or better yet, based on an existing target model, or by importing DDLs, etc.&nbsp; As such, it is a great completment to the Apollo suite of tools for GraphQL.&nbsp;
+The Apollo page for [GraphQL Schema *Basics*](<https://www.apollographql.com/docs/apollo-server/schema/schema> "target=\"\_blank\"") is a different version of the information you can find above.&nbsp; But instead of having to type it all up without making any typos, Hackolade Studio provides a way to build your schema with a few click of a mouse.&nbsp; Or better yet, based on an existing target model, or by importing DDLs, etc.&nbsp; As such, it is a great complement to the Apollo suite of tools for GraphQL.&nbsp;
 
 &nbsp;
 
@@ -510,7 +508,7 @@ With our GraphQL plugin, we can do much more than design schemas.&nbsp; More on 
 
 &nbsp;
 
-If you don't yet have an API endpoiint up and running, you may stiill use the [Apollo Studio](<ttps://studio.apollographql.com> "target=\"\_blank\"") where you can import the Schema Definition Language SDL file out of Hackolade Studio.&nbsp; When you create a new a new graph, you're first prompted to provide an endpoint.&nbsp; If you provide one that is not accessible, Apollo Studio proposes to upload your schema:
+If you don't yet have an API endpoint up and running, you may still use the [Apollo Studio](<ttps://studio.apollographql.com> "target=\"\_blank\"") where you can import the Schema Definition Language SDL file out of Hackolade Studio.&nbsp; When you create a new a new graph, you're first prompted to provide an endpoint.&nbsp; If you provide one that is not accessible, Apollo Studio proposes to upload your schema:
 
 &nbsp;
 
@@ -520,7 +518,7 @@ If you don't yet have an API endpoiint up and running, you may stiill use the [A
 
 &nbsp;
 
-You can simply copy from the Hackoalde Studio and paste in the Apollo Studio dialog:
+You can simply copy from the Hackolade Studio and paste in the Apollo Studio dialog:
 
 ![GraphQL Apollo Studio upload schema dialog](<lib/GraphQL Apollo Studio upload schema dialog.png>)
 

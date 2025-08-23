@@ -410,7 +410,7 @@ There are different groups of columns in the report:
 * Objects Business Names and Technical Names: these columns contain the names of the object hierarchy and which might have been used in the glossary verification.&nbsp; They are: modelBusName, modelTechName, containerBusName, containerTechName, entityBusName, entityTechName, relationshipName, attribBusName, attribTechName
 * Attributes properties: these columns contain the properties verified by the tool.&nbsp; They are: attribDataType, attribLength, attribPrecision, attribScale, attribRequired, attribDefault
 * Glossary entries: these columns contain the values Business Names in the glossary against which the object name was verified, as well as the corresponding Technical Names, for reference.&nbsp; They are: glossTermBusName, glossTermTechName, glossSysnonyms
-* Attribute rules values: these columns contain the values for Required, Deaful, Data Type, Length, Precision and Scale, that are used for verification of the attribute properties.&nbsp; The columns are: rulesRequired, rulesDefault, rulesDataType, rulesLength, rulesPrecision, rulesScale
+* Attribute rules values: these columns contain the values for Required, Default, Data Type, Length, Precision and Scale, that are used for verification of the attribute properties.&nbsp; The columns are: rulesRequired, rulesDefault, rulesDataType, rulesLength, rulesPrecision, rulesScale
 
 &nbsp;
 

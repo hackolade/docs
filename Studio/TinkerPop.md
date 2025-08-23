@@ -100,7 +100,7 @@ As TinkerPop is a type of graph database known as 'property graph', edge labels 
 
 ## Indexes
 
-TinkerPop is also agnostic when it comes to inex management.&nbsp; It is however possible to create an [index](<http://tinkerpop.apache.org/docs/current/reference/#index-step> "target=\"\_blank\"") on a single property key for any given label.&nbsp; A so-called composite index can also be created on more than one property key for a given label.
+TinkerPop is also agnostic when it comes to index management.&nbsp; It is however possible to create an [index](<http://tinkerpop.apache.org/docs/current/reference/#index-step> "target=\"\_blank\"") on a single property key for any given label.&nbsp; A so-called composite index can also be created on more than one property key for a given label.
 
 ![Neo4j node index](<lib/Neo4j node index.png>)
 

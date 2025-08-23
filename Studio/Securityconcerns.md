@@ -22,6 +22,8 @@ Here's an architecture diagram to illustrate:
 
 &nbsp;
 
+&nbsp;
+
 The purpose of the software is for data modeling of SQL and NoSQL databases, APIs, and storage formats.
 
 &nbsp;
@@ -48,7 +50,7 @@ The general understanding of SaaS solutions is that the provider stores customer
 
 &nbsp;
 
-As a matter of fact, we tend to think that Saas is a bit of misnomer as it implies more than "software as a service" but "software and data storage as a service".&nbsp; As data modelers, we know how important it is to match the right name with the meaning...
+As a matter of fact, we tend to think that SaaS is a bit of misnomer as it implies more than "software as a service" but "software and data storage as a service".&nbsp; As data modelers, we know how important it is to match the right name with the meaning...
 
 &nbsp;
 

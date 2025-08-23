@@ -68,7 +68,7 @@ Similarly, the corresponding Create View script is dynamically generated and can
 
 &nbsp;
 
-db.createView( "rov\_bussiness",
+db.createView( "rov\_business",
 
 "businesses",
 
@@ -118,7 +118,7 @@ The localField represents the foreign key upon which the $lookup will perform th
 
 &nbsp;
 
-When you click 'Apply', the application will fetch all the fields of the foreign collection, add them to the hierarchical schema view and update the pipeline expression.&nbsp; You may now suppress and/or reorder foreign fileds in the view.
+When you click 'Apply', the application will fetch all the fields of the foreign collection, add them to the hierarchical schema view and update the pipeline expression.&nbsp; You may now suppress and/or reorder foreign fields in the view.
 
 &nbsp;
 

@@ -912,7 +912,7 @@ New features in v6.9.4 \[03-Mar-2023\]
 
 \- XSD reverse-engineering: added support for xpath declaration of FK relationships
 
-\- XSD reverse-engineering: added support for \<xs:unique\> tags to creat corresponding constraints
+\- XSD reverse-engineering: added support for \<xs:unique\> tags to create corresponding constraints
 
 \- Avro: adjusted data type conversion (int vs long) when reverse-engineering Oracle DDL for numbers with precision larger than 9&nbsp;
 

@@ -20,7 +20,7 @@ Hackolade was specially adapted to support the data modeling of JSON files.
 
 &nbsp;
 
-[](<http://www.json.org/> "target=\"\_blank\"")
+&nbsp;
 
 [JSON](<http://www.json.org/> "target=\"\_blank\"") (JavaScript Object Notation) is a lightweight data-interchange format. It is easy for humans to read and write. It is easy for machines to parse and generate.&nbsp; It is based on a subset of the JavaScript Programming Language.&nbsp; JSON is a text format that is completely language independent but uses conventions that are familiar to programmers of the C-family of languages.&nbsp; These properties make JSON an ideal data-interchange language.&nbsp; JSON is built on two structures:
 

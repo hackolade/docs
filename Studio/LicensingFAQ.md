@@ -134,7 +134,7 @@ Yes, for subscriptions, we offer 2 months free (an 18.75% discount) on annual pl
 
 ## Does Hackolade offer plans for students?
 
-The Community edition is available free of charge.&nbsp; N﻿o academic license key is provided to individual students, who should either get a 14-day free trial key, or ask their faculty to enter into an academic agreement with us.
+The Community edition is available free of charge.&nbsp; No academic license key is provided to individual students, who should either get a 14-day free trial key, or ask their faculty to enter into an academic agreement with us.
 
 &nbsp;
 

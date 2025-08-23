@@ -206,7 +206,7 @@ Clauses 1, 4, 8 – 10, 13 – 24 shall survive any termination of this Agreemen
 
 &nbsp;
 
-(b) If the Product becomes, or in the opinion of Hackolade may become, the subject of a claim of infringement of any third party right, Hackolade may, at its option and in its discretion promptly: (i) procure for Licensee the right to use the Product free of any liability; (ii) replace or modify the Product to make it noninfringing; or (iii) refund any License Fees related to this Product paid by Licensee.
+(b) If the Product becomes, or in the opinion of Hackolade may become, the subject of a claim of infringement of any third party right, Hackolade may, at its option and in its discretion promptly: (i) procure for Licensee the right to use the Product free of any liability; (ii) replace or modify the Product to make it non-infringing; or (iii) refund any License Fees related to this Product paid by Licensee.
 
 &nbsp;
 

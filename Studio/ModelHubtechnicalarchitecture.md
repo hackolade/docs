@@ -6,7 +6,7 @@ The Hackolade Model Hub is a new product licensed separately from Hackolade Stud
 
 &nbsp;
 
-![Image](<lib/Architecture Hub Studio Desktop Browser.png>)
+![Hub Studio Desktop Browser Architecture](<lib/Hub Studio Desktop Browser Architecture.png>)
 
 &nbsp;
 
@@ -58,11 +58,19 @@ Based on customer needs and feedback, we chose the database and hosting technolo
 
 &nbsp;
 
+We are aware of possible resistance regarding Oracle as a solution.&nbsp; It may be due to technical and/or commercial reasons.&nbsp; To cite the [2025 Gartner report for Magic Quadrant for Cloud DBMS](<https://www.gartner.com/doc/reprints?id=1-2K63370S\&ct=250205\&st=sb> "target=\"\_blank\""):&nbsp;
+
+\- Fast-paced improvements: Oracle has an excellent track record of enhancing its database products with modern features as demand for them emerges.&nbsp;
+
+\- Perception of high cost:&nbsp; Oracle still suffers from the perception of having high costs in the marketplace. However, greater transparency and a focus on value for money is countering this. **Rather than making assumptions, potential customers should ensure that they properly understand** and project likely costs **to make an informed decision**.&nbsp;
+
+&nbsp;
+
 ### We are fully committed to data security and privacy
 
 Because none of your sensitive data leaves your infrastructure and is never stored on our servers, Hackolade Model Hub is a platform which lets you comply with data protection certifications (ISO 27000, 27001 and 27002) and GDPR:&nbsp;
 
-\- we do not track your use of the [https://hub.hackolade.com](<https://hub.hackolade.com> "target=\"\_blank\"") website[ ](<https://www.drawio.com/blog/google-analytics.html>) - there are no cookies, no advertisements, no analytics, no browser fingerprinting, and no tracking beacons;
+\- we do not track your use of the [https://hub.hackolade.com](<https://hub.hackolade.com> "target=\"\_blank\"") website - there are no cookies, no advertisements, no analytics, no browser fingerprinting, and no tracking beacons;
 
 \- Hackolade Model Hub does not allow your data models to be stored on our servers.
 

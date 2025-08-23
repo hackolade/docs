@@ -74,7 +74,7 @@ Each value that Amazon Redshift stores or retrieves has a data type with a fixed
 
 &nbsp;
 
-With the flexible semistructured SUPER data type, currently only available in preview, Redshift can receive and ingest schemaless JSON into a SUPER value.&nbsp; The SUPER column requires no schema modifications while ingesting the irregular structures of schemaless JSON. The native format used for the SUPER data type is a binary format that requires lesser space than the JSON value in its textual form. This enables faster ingestion and runtime processing of SUPER values at query time.
+With the flexible semi-structured SUPER data type, currently only available in preview, Redshift can receive and ingest schemaless JSON into a SUPER value.&nbsp; The SUPER column requires no schema modifications while ingesting the irregular structures of schemaless JSON. The native format used for the SUPER data type is a binary format that requires lesser space than the JSON value in its textual form. This enables faster ingestion and runtime processing of SUPER values at query time.
 
 &nbsp;
 

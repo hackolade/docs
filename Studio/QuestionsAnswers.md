@@ -10,7 +10,7 @@ The presence of Git submodules in a repository will not prevent you from using H
 
 &nbsp;
 
-This [article](<https://www.atlassian.com/git/tutorials/git-subtree> "target=\"\_blank\"") even suggests that a better alternative to Git submodules is to use Git subtrees.
+This [article](<https://www.atlassian.com/git/tutorials/git-subtree> "target=\"\_blank\"") even suggests that a better alternative to Git submodules is to use Git subtrees. Hackolade Studio supports Git subtrees as described [here](<Gitsubtree.md>).
 
 &nbsp;
 
@@ -184,5 +184,5 @@ Git itself does not provide this feature.&nbsp; And the reason is that there are
 
 1. Even for the viewer edition, anyone who needs to have access to a file somewhere must be given proper access.  Same as in anywhere in the digital or physical world.&nbsp; If a model is stored on a shared drive or in a Git repository, the user must be granted access for that location in order for the user to be able to open the model. &nbsp;
 1. &nbsp;
-1. Just like with any client application, like Microsoft Excel for example, the access control is delegated to the storage layer: the local file system, a shared drive, or the Git repository.  If someone has access to a file, then the application can open it.  The right to edit a modelis shared between the license key (author or viewer -- if you only have viewer rights, you cannot edit a model, even if you have write rights) and the repository -- even if you have the workgroup edition, you cannot save the model in a place where you have no rights to do so.
+1. Just like with any client application, like Microsoft Excel for example, the access control is delegated to the storage layer: the local file system, a shared drive, or the Git repository.  If someone has access to a file, then the application can open it.  The right to edit a model is shared between the license key (author or viewer -- if you only have viewer rights, you cannot edit a model, even if you have write rights) and the repository -- even if you have the workgroup edition, you cannot save the model in a place where you have no rights to do so.
 1. 

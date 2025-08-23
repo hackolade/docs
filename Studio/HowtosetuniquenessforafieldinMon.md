@@ -10,7 +10,7 @@ The JSON Schema specification allows to set [uniqueness in arrays](<https://json
 
 But this uniqueness feature is not available for scalar fields in a document.
 
-However, you can set in MongoDB a [unique index](<https://www.mongodb.com/docs/v3.0/core/index-unique/#index-type-unique> "target=\"\_blank\"")  on a field or a set of fields.  This is done in Hackolade, at the collection level, in the Indexes tab whe you can create your index, which will generate the corresponding script in forward-engineering.
+However, you can set in MongoDB a [unique index](<https://www.mongodb.com/docs/v3.0/core/index-unique/#index-type-unique> "target=\"\_blank\"")  on a field or a set of fields.  This is done in Hackolade, at the collection level, in the Indexes tab when you can create your index, which will generate the corresponding script in forward-engineering.
 
 ![Image](<lib/MongoDB unique index.png>)
 

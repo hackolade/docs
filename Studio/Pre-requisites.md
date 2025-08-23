@@ -16,7 +16,7 @@ In Hackolade Studio, **open the repository context**.
 * choose Repository \> Open Repository Context in the top menu;
 * use the keyboard shortcut Ctrl+G (Cmd+G on MacOS);
 * switch to the repository context through the vertical Context Bar on the left;
-* move up or down in the Context bar by using the shorcut Ctrl+Up/Down arrow (Cmd+Up/Down arrow on MacOS).
+* move up or down in the Context bar by using the shortcut Ctrl+Up/Down arrow (Cmd+Up/Down arrow on MacOS).
 
 &nbsp;
 

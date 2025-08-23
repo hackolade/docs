@@ -54,7 +54,7 @@ The goal of an index on a database table then is to reduce I/O.&nbsp; Properly i
 
 &nbsp;
 
-Hackolade supports the most common types of SQL Server indexes, but not all of them yet.&nbsp; Currently, the following types of indexes are not supported: hash, memory-optimized nonclustered, filtered, spatial, XML, and full-text.
+Hackolade supports the most common types of SQL Server indexes, but not all of them yet.&nbsp; Currently, the following types of indexes are not supported: hash, memory-optimized non-clustered, filtered, spatial, XML, and full-text.
 
 &nbsp;
 

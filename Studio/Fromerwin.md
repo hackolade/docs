@@ -34,6 +34,22 @@ With logical models exported from erwin, spaces in object names are generally re
 
 &nbsp;
 
+If your erwin models contains Erwin "domains", it is preferable to "resolve references" so that the properties in the Hackolade Studio model remain editable (while being originally created with the properties of the Erwin domains.)
+
+![Erwin reverse-engineer resolved references](<lib/Erwin reverse-engineer resolved references.png>)
+
+&nbsp;
+
+If you want to keep the Erwin domains as Hackolade Studio User-Defined Types/Model Definitions for future use, then you should do a double import:
+
+&#49;) first you reverse-engineer the XSD without resolving the references
+
+&#50;) then you reverse-engineer the XSD immediately again, this time with resolution of the references, and when presented with the conflict resolution screen, make sure to use the Replace option:
+
+![Erwin model import conflict resolution](<lib/Erwin model import conflict resolution.png>)
+
+&nbsp;
+
 &nbsp;
 
 ## Export subject areas from erwin
@@ -84,7 +100,7 @@ The steps are as follows:
 
 &nbsp;
 
-Assuming that the Subject Area report matched the model file, the name matching of entities should work as expected and ERDVs will be created inthe model:
+Assuming that the Subject Area report matched the model file, the name matching of entities should work as expected and ERDVs will be created in the model:
 
 ![Image](<lib/ERwin - Subject Areas created as ERDVs.png>)
 
@@ -110,7 +126,7 @@ Unfortunately, the proprietary format of Erwin files complicates matters, plus t
 
 One-time setup in Hackolade Studio:
 
-&#49;) Create custom properties for tne target or targets, following instructions in this [how-to guide](<https://hackolade.com/help/Configurecustomproperties.html>) and [video](<https://community.hackolade.com/slides/slide/user-defined-custom-properties-8>).&nbsp; This should be done at the entity/table level and attribute/column/field level.&nbsp; If you have many UDPs for each level, it may be useful to create a custom tab for your custom properties.
+&#49;) Create custom properties for the target or targets, following instructions in this [how-to guide](<https://hackolade.com/help/Configurecustomproperties.html>) and [video](<https://community.hackolade.com/slides/slide/user-defined-custom-properties-8>).&nbsp; This should be done at the entity/table level and attribute/column/field level.&nbsp; If you have many UDPs for each level, it may be useful to create a custom tab for your custom properties.
 
 &nbsp;
 
@@ -118,7 +134,7 @@ In Erwin:&nbsp;
 
 &#50;) From the model file, generate the XSD according to the instructions above in this page.
 
-&#51;) Use the Report Designer to create a report including UDPs at the entity/table level and attribute/column level, then crete the export for your model.&nbsp;
+&#51;) Use the Report Designer to create a report including UDPs at the entity/table level and attribute/column level, then create the export for your model.&nbsp;
 
 &nbsp;
 

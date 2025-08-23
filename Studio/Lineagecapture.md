@@ -87,7 +87,7 @@ While lineage sources are typically created automatically by certain operations,
 
 ## Lineage sources are referenced at individual attribute level
 
-A lineage entry is created at the attribute level when it is impacted, referencing the model-level lineage source.&nbsp; It displays the busines name and technical name for the source entity and the source attribute.&nbsp; It is possible to document further with a description and possibly with a transformation.
+A lineage entry is created at the attribute level when it is impacted, referencing the model-level lineage source.&nbsp; It displays the business name and technical name for the source entity and the source attribute.&nbsp; It is possible to document further with a description and possibly with a transformation.
 
 &nbsp;
 

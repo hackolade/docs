@@ -24,7 +24,7 @@ The diagram below results from the reverse-engineering of the [Pet Store](<https
 
 &nbsp;
 
-Note the toolbar button to toogle the level of details displayed in the ER Diagram view. &nbsp;
+Note the toolbar button to toggle the level of details displayed in the ER Diagram view. &nbsp;
 
 ![OpenAPI - Toggle field details](<lib/OpenAPI - Toggle field details.png>)
 
@@ -182,7 +182,7 @@ It is easy to maintain the metadata for a response in the properties pane:
 
 ## Forward-Engineering
 
-The files describing the RESTful API in accordance with the [OpenAPI specification](<https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md> "target=\"\_blank\"") OAS are represented as JSON objects and conform to the JSON standards.&nbsp; Hackolade generates OpenAPI documentation in JSON format or YAML format.&nbsp; The schema exposes two types of fields. Fixed fields, which have a declared name, and patterned fields, which declare a regex pattern for the field name. Patterned fields can have multiple occurrences as long as each has a unique name.&nbsp; The OpenAPI representation of the API is made of a single file. However, parts of the definitions can be split into separate files, at the discretion of the user. This is applicable for $ref fields in the specification as follows from the [JSON Schema ](<http://json-schema.org/> "target=\"\_blank\"")definitions.
+The files describing the RESTful API in accordance with the [OpenAPI specification](<https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md> "target=\"\_blank\"") OAS are represented as JSON objects and conform to the JSON standards.&nbsp; Hackolade generates OpenAPI documentation in JSON format or YAML format.&nbsp; The schema exposes two types of fields. Fixed fields, which have a declared name, and patterned fields, which declare a regex pattern for the field name. Patterned fields can have multiple occurrences as long as each has a unique name.&nbsp; The OpenAPI representation of the API is made of a single file. However, parts of the definitions can be split into separate files, at the discretion of the user. This is applicable for $ref fields in the specification as follows from the [JSON Schema](<http://json-schema.org/> "target=\"\_blank\"") definitions.
 
 &nbsp;
 

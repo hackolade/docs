@@ -152,7 +152,7 @@ Additional details of a change management plan:
   * Hands-on workshops, webinars, and in-depth sessions.
 
 * **Continuous Learning**: Provide ongoing learning opportunities, such as “lunch and learns” or an internal knowledge-sharing platform.
-* **Onboarding Support**: Offer **one-on-one coaching** or **mentorship** for key staff who will serve as internal champions of the tool.
+* **On-boarding Support**: Offer **one-on-one coaching** or **mentorship** for key staff who will serve as internal champions of the tool.
 * **Knowledge Base**: Create and maintain a centralized repository for user guides, best practices, FAQs, and troubleshooting resources.
 
 &nbsp;

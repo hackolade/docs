@@ -67,7 +67,7 @@ The supported property types are:
 * Boolean
 * *Spatial types*:
 
-  * Point (with subtypes: WGS84, WGS84 3D, Cartesian and Cartersian 3D)
+  * Point (with subtypes: WGS84, WGS84 3D, Cartesian and Cartesian 3D)
 
 * *Temporal types*:
 

@@ -20,7 +20,11 @@ Hackolade Studio has traditionally been available as an offline desktop applicat
 
 &nbsp;
 
-This serverless setup gives you full control of the residency for your data models, while leveraging the benefits of an online application.&nbsp; In other words, the Hackolade Studio online application runs without any kind of backend system or database.&nbsp; We don't host the application.&nbsp; We publish it on a [Content Delivery Network](<https://en.wikipedia.org/wiki/Content\_delivery\_network> "target=\"\_blank\"") like [Azure Front Door](<https://azure.microsoft.com/en-us/products/frontdoor> "target=\"\_blank\"") or [AWS CloudFront](<https://en.wikipedia.org/wiki/Amazon\_CloudFront> "target=\"\_blank\""), while you continue to maintain your data models locally, as you would do with the offline desktop deployment of Hackolade Studio. The app runs entirely **client-side in the browser**, but securely — with no backend server, either on the customer side or on the Hackolade side.&nbsp; No server-side processing -- everything takes place inside your browser.
+This serverless setup gives you full control of the residency for your data models, while leveraging the benefits of an online application.&nbsp; In other words, the Hackolade Studio online application runs without any kind of backend system or database.&nbsp; We don't host the application.&nbsp; We publish it on a [Content Delivery Network](<https://en.wikipedia.org/wiki/Content\_delivery\_network> "target=\"\_blank\"") like [Azure Front Door](<https://azure.microsoft.com/en-us/products/frontdoor> "target=\"\_blank\"") or [AWS CloudFront](<https://en.wikipedia.org/wiki/Amazon\_CloudFront> "target=\"\_blank\""), while you continue to maintain your data models locally, as you would do with the offline desktop deployment of Hackolade Studio. The app runs entirely **client-side in the browser**, but securely -- with no backend server, either on the customer side or on the Hackolade side.&nbsp; No server-side processing -- everything takes place inside your browser.
+
+&nbsp;
+
+Data isolation is possible because all your data model editing is "sandboxed" in your browser memory.&nbsp; When you save your model, the only possible locations are your own local machine or network, or your own repository.&nbsp; While it is possible that your repository is in the cloud, it is the repository of your choice.&nbsp; We do not ever see you data models or data.&nbsp; It does not even transit through our network or systems.&nbsp; Our approach is similar to [Visual Studio Code for the Web](<https://code.visualstudio.com/docs/setup/vscode-web> "target=\"\_blank\""), and is even more confidential as we don't even collect any anonymous telemetry.
 
 &nbsp;
 
@@ -64,7 +68,7 @@ The added advantage is that we don't create yet another silo for your data model
 
 Because your sensitive data model does not leave your infrastructure and is never stored on our servers (which we don't have anyway), Hackolade Studio is a tool which lets you comply with data protection certifications (ISO 27000, 27001 and 27002, or SOC2) and GDPR:&nbsp;
 
-\- w[e do not track your use of the ](<https://www.drawio.com/blog/google-analytics.html>)[https://studio.hackolade.com](<https://studio.hackolade.com> "target=\"\_blank\"") website[ ](<https://www.drawio.com/blog/google-analytics.html>) - there are no cookies, no advertisements, no analytics, no browser fingerprinting, and no tracking beacons;
+\- w[e do not track your use of the ](<https://www.drawio.com/blog/google-analytics.html>)[https://studio.hackolade.com](<https://studio.hackolade.com> "target=\"\_blank\"") website - there are no cookies, no advertisements, no analytics, no browser fingerprinting, and no tracking beacons;
 
 \- we don’t track your use of the Hackolade Studio applications, whether online in the browser, or desktop;
 

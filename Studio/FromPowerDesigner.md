@@ -154,7 +154,7 @@ In Hackolade Studio, go to Tools \> Reverse-Engineer \> XSD Schema and select pr
 
 &nbsp;
 
-As PowerDesigner represents some Foreign Key relationships with the embedding of the child table in the paretn table, if it advised to select the check box "Normalize complex data types in separate entities".&nbsp; Even if your target model allows complex data types and denormalization, you may want to analyze your access patterns and do the [denormalization](<SuggestdenormalizationofaSQLsche.md>) manually.
+As PowerDesigner represents some Foreign Key relationships with the embedding of the child table in the parent table, if it advised to select the check box "Normalize complex data types in separate entities".&nbsp; Even if your target model allows complex data types and denormalization, you may want to analyze your access patterns and do the [denormalization](<SuggestdenormalizationofaSQLsche.md>) manually.
 
 &nbsp;
 

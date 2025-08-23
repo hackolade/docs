@@ -24,11 +24,11 @@ This strategy gets executed through a combination of our [Workgroup Edition feat
 
 ## Hackolade Studio Workgroup Edition
 
-With the Workgroup Edition, Hackolade Studio integrates natively with the features, commands, and workflow of Git and the Git plaforms: GitHub, GitLab, Bitbucket, and Azure DevOps Repos.&nbsp; This allows for collaboration, versioning, branching, change tracking, peer reviews, conflict resolution, etc. &nbsp;
+With the Workgroup Edition, Hackolade Studio integrates natively with the features, commands, and workflow of Git and the Git platforms: GitHub, GitLab, Bitbucket, and Azure DevOps Repos.&nbsp; This allows for collaboration, versioning, branching, change tracking, peer reviews, conflict resolution, etc. &nbsp;
 
 &nbsp;
 
-In the context of Metadata-as-Code, the Workgroup Edition also allows for the co-location of data models and their schema artifacts with the corresponding application code and their respective but co-ordinated changes in a Git branch.&nbsp; Artifacts also include ALTER scripts, if applicable to the target technology, resulting from model evolutions.![Metadata-as-Code co-locate model schema code](<lib/Metadata-as-Code co-locate model schema code.png>)
+In the context of Metadata-as-Code, the Workgroup Edition also allows for the co-location of data models and their schema artifacts with the corresponding application code and their respective but coordinated changes in a Git branch.&nbsp; Artifacts also include ALTER scripts, if applicable to the target technology, resulting from model evolutions.![Metadata-as-Code co-locate model schema code](<lib/Metadata-as-Code co-locate model schema code.png>)
 
 &nbsp;
 
@@ -54,7 +54,9 @@ Another common use case we've seen is to use the CLI to compare the models rever
 
  
 
-The Hackolade command line can of course be used on a stand alone machine.  It can also be easily combined with a [git repository](<Teamcollaboration.md>) for the storage of versioned models and schema artifacts, as well as with [Docker containers](<https://github.com/hackolade/docker/tree/main/Studio> "target=\"\_blank\"").  Customers have been using this combination either in a push mode, triggered by saving or committing model changes, or in a pull mode, when invoked by a DevOps CI/CD pipeline or a scheduled job. ![Metadata-as-Code CLI workflow automation](<lib/Metadata-as-Code CLI workflow automation.png>)
+The Hackolade command line can of course be used on a stand alone machine.  It can also be easily combined with a [git repository](<Teamcollaboration.md>) for the storage of versioned models and schema artifacts, as well as with [Docker containers](<https://github.com/hackolade/docker/tree/main/Studio> "target=\"\_blank\"").  Customers have been using this combination either in a push mode, triggered by saving or committing model changes, or in a pull mode, when invoked by a DevOps CI/CD pipeline or a scheduled job.&nbsp; An example of GitHub Actions workflow&nbsp; running the Hackolade Studio CLI is provided [here](<https://github.com/hackolade/studio-cli-github-actions-examples> "target=\"\_blank\"").
+
+&nbsp;![Metadata-as-Code CLI workflow automation](<lib/Metadata-as-Code CLI workflow automation.png>)
 
 &nbsp;
 

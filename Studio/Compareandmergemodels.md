@@ -78,7 +78,7 @@ The user may navigate through the differences using the navigation buttons to mo
 
 &nbsp;
 
-**Note:** the model compare feature assumes 2 model files saved on the file system.  Hence the process requires a prior step to reverse-engineer and save the result.  Then compare with a baseline.  Note also that when comparing, because models are of different sources which by definition will have different object IDs, it is required to compare based on object names.  This may require some preperation of the models so objects are comparable, e.g. identical container names and entity names.
+**Note:** the model compare feature assumes 2 model files saved on the file system.  Hence the process requires a prior step to reverse-engineer and save the result.  Then compare with a baseline.  Note also that when comparing, because models are of different sources which by definition will have different object IDs, it is required to compare based on object names.  This may require some preparation of the models so objects are comparable, e.g. identical container names and entity names.
 
 &nbsp;
 
@@ -92,7 +92,7 @@ Toggling the display brings up the 3-pane merge view.&nbsp; While the left- and 
 
 &nbsp;
 
-Merge proposals can be unchecked (unselected) globally per type of difference using the action buttons at the top, or individually by clicking the corresponding checkbox in the middle pane of the the upper part of the display.&nbsp; When multiple differences occur on a given object, checkboxes also appear next to the impacted properties in the lower part of the display.
+Merge proposals can be unchecked (deselected) globally per type of difference using the action buttons at the top, or individually by clicking the corresponding checkbox in the middle pane of the the upper part of the display.&nbsp; When multiple differences occur on a given object, checkboxes also appear next to the impacted properties in the lower part of the display.
 
 &nbsp;
 

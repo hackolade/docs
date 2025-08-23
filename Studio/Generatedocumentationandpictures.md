@@ -46,7 +46,7 @@ Documentation generation is accessible either from the GUI application, or from 
 
 You may want to generate PNG or PDF files for your Entity-Relationship Diagrams or hierarchical schema views.&nbsp; There are many choices for configuration:
 
-\- type of diagram: the entire mdeol ERD, separate ER diagram views, individual entities, or read-only views if any;
+\- type of diagram: the entire model ERD, separate ER diagram views, individual entities, or read-only views if any;
 
 \- paper size: either A paper (A0 through A4) or US (letter, tabloid, or ledger)
 

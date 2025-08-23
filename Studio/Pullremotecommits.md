@@ -10,7 +10,7 @@ All remote commits detected by Hackolade Studio are listed with their date, auth
 
 &nbsp;
 
-Git takes care of merging remote changes into your local repository.&nbsp; Most of the time, this happens "automagically"...&nbsp; However, there are 2 noticeable exceptions where a manual intervention may be required:
+Git takes care of merging remote changes into your local repository.&nbsp; Most of the time, this happens "auto-magically"...&nbsp; However, there are 2 noticeable exceptions where a manual intervention may be required:
 
 * Git cannot merge changes into uncommitted files.&nbsp; If someone pushed a change in a remote file when you have uncommitted changes in your local copy of that same file, then Git requests to commit your changes first, then it aborts the pull operation.&nbsp; You must [commit your changes](<Commitlocalchanges.md>) then redo the pull.
 * Git cannot merge 2 versions of a same file where the same line has been modified differently.&nbsp; This is called a [conflict](<Concepts1.md>) and you need to choose which version must be kept.&nbsp; Fortunately, Hackolade Studio comes with a feature to visually [solve conflicts in data model files](<Solveconflicts.md>).

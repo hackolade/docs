@@ -22,7 +22,7 @@ The same-origin policy of the browser will prevent the Hackolade Studio browser 
 
 To let the Hackolade Studio browser application contact your self-hosted repository hub, you need to enable [cross-origin resource sharing (CORS)](<https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS> "target=\"\_blank\""). This comes down to configuring the following HTTP headers for your repository hub.
 
-[](<https://developer.mozilla.org/fr/docs/Web/HTTP/Headers/Access-Control-Allow-Origin>)
+&nbsp;
 
 > [Access-Control-Allow-Origin](<https://developer.mozilla.org/fr/docs/Web/HTTP/Headers/Access-Control-Allow-Origin> "target=\"\_blank\""): https://studio.hackolade.com
 
