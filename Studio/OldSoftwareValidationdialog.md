@@ -106,15 +106,21 @@ If you need to move your license key to another computer, you first need to rele
 
 &nbsp;
 
-To do so, go to the option Help \> Software Key Validation, and choose the action 'I want to...':
+To do so, go to the option Help \> Software Key Validation, and choose the action 'I want to...
 
-![Registration -- release license key](<lib/Registration -- release license key.png>)
+&nbsp;
+
+![Old license key release](<lib/Old license key release.png>)
+
+&nbsp;
 
 and click the Send button.&nbsp; This will free up the key on our license server. &nbsp;
 
 &nbsp;
 
-![Registration -- un-register confirmation](<lib/Registration -- un-register confirmation.png>)
+![Old license key release completed](<lib/Old license key release completed.png>)
+
+&nbsp;
 
 Make sure to copy the license key and store it (or find your original license key confirmation email) as you will need it to activate on the other computer where you will want to use Hackolade.
 

@@ -4,6 +4,10 @@ Reverse-Engineering of an Excel file pre-supposes that you have first performed 
 
 &nbsp;
 
+**Important note:** deleting a line in Excel will NOT result in a delete operation in the model when reverse-engineering the Excel back into the Hackolade model. &nbsp;
+
+&nbsp;
+
 **WARNINGS**:
 
 \- Do not change the titles or order of the columns\!&nbsp;

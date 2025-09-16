@@ -4,7 +4,7 @@ At Hackolade, we try to make it easy and convenient to do business with us, and 
 
 &nbsp;
 
-As per the terms of our [License Agreement](<Licenseagreement.md>), the license metric is per "per seat", and that a license must be obtained for each device on or from which the Product is used or accessed. When the Product is accessed remotely across using Terminal Server, Remote Desktop, Windows App, virtual machine, Citrix, or an equivalent method, a separate Product license is required to be assigned to each device from which the application is accessed, i.e. not the virtual machine on which the Product is installed.
+As per the terms of our [License Agreement](<Licenseagreement.md>), the license metric is per "per seat", and a license must be obtained for each device on or from which the Product is used or accessed. When the Product is accessed remotely across using Terminal Server, Remote Desktop, Windows App, virtual machine, Citrix, or an equivalent method, a separate Product license seat is required to be assigned to each device from which the application is accessed, i.e. not the virtual machine on which the Product is installed.
 
 &nbsp;
 
@@ -12,35 +12,58 @@ A "seat" is an instance of a license key.&nbsp; A license key can be issued for 
 
 &nbsp;
 
-There are 2 dimensions in our pricing:
+There are two main dimensions to our pricing:
 
-&#49;) Professional vs Workgroup\
-&#50;) Dedicated vs Concurrent\
+**&#49;. Authors vs. Viewers**
+
+**&#50;. Dedicated vs. Concurrent**
+
+Both authoring and viewing license keys are available in either dedicated or concurrent types.\
 &nbsp;
 
-## Professional vs Workgroup
+## Authors vs Viewers
 
-The Workgroup Edition of Hackolade Studio includes all of the features of the Professional edition, plus a native integration with Git repositories for your data models. &nbsp; The Workgroup Edition makes it easy for users who are not so familiar with Git to leverage the tremendous power of this popular tool, to leverage versioning, branching, change tracking, collaboration, peer review, and other related capabilities detailed [here](<Repository.md>).
+Hackolade Studio licenses are available in two types: **authoring** (for creating and maintaining models) and **viewing** (for read-only access). Both types can be purchased as either **dedicated** or **concurrent** licenses.
+
+**\- Authors**: Typically data modelers, data architects, or data engineers. They use the **Workgroup Edition**, which allows editing and saving data models, provided the user has appropriate write permissions in the storage layer.
+
+**\- Viewers**: Typically subject-matter experts, business users, or any user -- technical or non-technical -- who only needs read-only access. Viewer licenses are priced at one-tenth the cost of Workgroup licenses.
 
 &nbsp;
 
-Access this page to [compare the different editions](<https://hackolade.com/editions.html> "target=\"\_blank\"").
+### Professional vs Workgroup
+
+The Workgroup Edition of Hackolade Studio includes all of the features of the Professional edition, plus a native integration with Git repositories for your data models. &nbsp; The Workgroup Edition makes it easy for users who are not so familiar with Git to leverage the tremendous power of this popular tool, to leverage collaboration, versioning, branching, change tracking, peer review, and other related capabilities detailed [here](<Repository.md>). &nbsp;
+
+&nbsp;
+
+Because of the added value of Git integration, most new licenses today are for the **Workgroup Edition**, even for individual users
+
+&nbsp;
+
+See [this page](<https://hackolade.com/editions.html> "target=\"\_blank\"") for a detailed comparison of editions.
 
 &nbsp;
 
 ## Dedicated vs Concurrent
 
-You may want to view [this video](<https://community.hackolade.com/slides/slide/concurrent-license-key-behavior-66> "target=\"\_blank\"") to fully understand the behavior of a concurrent license key.
+**Dedicated licenses** are best suited for regular, intensive users. Each license is tied to a single *seat* rather than to a named user. A seat is associated with an OS user instance, whether on Windows, Mac, Linux for desktop deployments, or a browser instance for browser deployments. Seats can be reassigned through a [self-service process](<Transferalicensetoanewcomputer.md>) without providing personal information, which offers flexibility while protecting privacy and supporting regulatory compliance. However, if you use two PCs, you will need either two separate licenses or a license that covers two seats. This arrangement is often referred to as [node-locked](<https://en.wikipedia.org/wiki/Node-locked\_licensing> "target=\"\_blank\"").
 
-Each individually dedicated workstation license or subscription is attached to a single "seat".  It means that the license is not attached to a named user, but to an OS user instance (Windows, Mac, or Linux for the Desktop deployment, or browser in the case of the browser deployment.) &nbsp;
+&nbsp;
 
-Many people are familiar with the concept of "named user" licenses.&nbsp; The fact we don’t have “named user” licenses but “dedicated” licenses is a subtle nuance, but unnamed dedicated licenses provides you with extra flexibility since we, at Hackolade, don’t care about who is using the license.  You may actually re-assign it self-service without involving us, as per the procedure in [this article.](<Movingtoanothercomputer.md>)  Plus, we don’t need to record any personal information about who is using the license., which is to everyone’s advantage.
+**Concurrent licenses**, on the other hand, are better suited for organizations with many occasional users. The software can be installed on an unlimited number of PCs, but only the licensed number of users can access it at the same time. If the maximum number of concurrent users is reached, additional users must wait until a seat becomes available. This setup does not require an on-premises server and is sometimes referred to as a [floating](<https://en.wikipedia.org/wiki/Floating\_licensing> "target=\"\_blank\"") *license*.&nbsp; View [this video](<https://community.hackolade.com/slides/slide/concurrent-license-key-behavior-66> "target=\"\_blank\"") to fully understand the behavior of a concurrent license key.
 
-However, If you have 2 PCs you need either 2 licenses, or a license for 2 seats.&nbsp; This type of license is often referred to as [node-locked](<https://en.wikipedia.org/wiki/Node-locked\_licensing> "target=\"\_blank\"").
+&nbsp;
 
-Dedicated license keys are for exclusive use by regular, intensive users of the application, whereas the concurrent license key is for shared use across many occasional users.
+Many customers choose to have a mix of dedicated and concurrent seats.&nbsp; Dedicated to support the needs of intensive users of Hackolade Studio, plus concurrent to support the needs of occasional users. &nbsp;
 
-Some organizations prefer the flexibility of concurrent licenses.  In this case, you may install the software on an unlimited number PCs, but only the licensed number of simultaneous users are allowed to use the application.  If the maximum number of seats has been reached, the next user will be denied access to the application until another user exits the application.  This scheme does not require a special server on-premises.&nbsp; This type of license is sometimes referred to as [floating](<https://en.wikipedia.org/wiki/Floating\_licensing> "target=\"\_blank\"").
+&nbsp;
+
+The **pricing model for concurrent licenses** is based on the maximum number of simultaneous users, or the size of the user pool, rather than the total number of potential users. For example, an organization with 200 potential users but only 20 people who need to access the software at the same time would require just 20 seats. The ratio of total users to concurrent seats varies depending on how intensively the software is used within the organization, typically ranging from 10-to-1 down to 4-to-1. Concurrent seats are priced at four times the cost of dedicated seats.
+
+&nbsp;
+
+&nbsp;
 
 ![Dedicated vs concurrent license seat](<lib/Dedicated vs concurrent license seat 1.png>)
 
@@ -50,7 +73,7 @@ In the above example, the concurrent license was for a single seat, meaning that
 
 &nbsp;
 
-While the unit price of a concurrent license is more expensive than an individual license, you need a lot less seats to satisfy an equivalent number of users.&nbsp; For example, you may need only 25 concurrent license seats to satisfy&nbsp; usage by 100 users, counting on the fact that only 25 out of the 100 users can use the software at the same time.
+While the unit price of a concurrent license is more expensive than an individual license, you need a lot less seats to satisfy an equivalent number of users.&nbsp; For example, you may need only 50 concurrent license seats to satisfy usage by 200 users, counting on the fact that only 50 out of the 200 users can use the software at the same time.
 
 ![License keys tracked in the cloud](<lib/License keys tracked in the cloud.png>)
 
@@ -58,41 +81,32 @@ There is no need to install and maintain a server inside your infrastructure.  
 
 &nbsp;
 
-Many organizations purchase a mix of dedicated and concurrent keys.&nbsp; This mix allows for users who need Hackolade Studio all day every day to be confident that they will never be locked out of seat.&nbsp; And at the same time, the cost of allowing more ad-hoc users to access the application, for example half a day every 2 weeks during the design phase of each spring) is spread across a pool of users.
+You may also want to consult [this page](<Concurrentlicensekeybehavior.md>) with more details on the behavior of concurrent license keys.
 
 &nbsp;
-
-Concurrent licenses are not available for purchase with a credit card.  They are 4 times more expensive per seat than an individual license.
-
-You may also want to consult [this page](<Concurrentlicensekeybehavior.md>) with more details on the behavior of concurrent license keys.
 
 ## Virtual Machines or Remote Desktop access
 
-License metric "per seat": what does it mean?&nbsp; License means the right to use the Product as defined by Authorized Use. License metric is "per seat", meaning that the number of Authorized Users specified on the Invoice may use the software. A license must be obtained for each device on or from which the Product is used or accessed.
+**License metric “per seat”:&nbsp; what does it mean?**\
+A license grants the right to use the product as defined by *Authorized Use*. The license metric is “per seat,” which means the number of authorized users specified on your invoice determines how many may use the software. A separate license is required for each device on or from which the product is used or accessed.
 
 &nbsp;
 
-If I have a desktop at home and a laptop at work, does it mean that I can use the same license key? **No**, our license metric is not based on named users. A license must be obtained for each device on or from which the Product is used or accessed.
+**Can I use the same license key on both my home desktop and my work laptop?**\
+No. Licenses are not tied to named users but to devices. You must obtain a separate license for each device you use to access the product.
 
 &nbsp;
 
-My company wants to install Hackolade on a server accessed via Remote desktop: is it possible? **Yes**, Remote Desktop is possible. However, a license seat is required **for each combination of host, user login, and remote client** accessing the application.
+**Can Hackolade Studio be installed on a server accessed via Remote Desktop?**\
+Yes, Remote Desktop access is supported. However, a license seat is required for each unique combination of host machine, user login, and remote client accessing the application.
+
+When Hackolade is installed on a virtual machine (VM) and shared among multiple users or accessed through Windows Remote Desktop, licensing is not attached solely to the host machine. Instead, it is tied to the combination of the host, the remote machine, the user login, and other parameters that define the uniqueness of each session.
+
+If multiple users access Hackolade on the same machine, whether through Terminal Server, Remote Desktop, Windows App, Citrix, or another VM solution, then each user and PC requires its own license seat. In other words, you need a license for every user/device combination that accesses the installation.
+
+**Example:** Four Hackolade Studio users sharing a single VM require four license seats, the same as if they were running Hackolade Studio on four individual PCs.
 
 &nbsp;
-
-When installing Hackolade on a VM to share among multiple users and/or accessed via Windows Remote Desktop, it is important to realize that licensing is not attached to just the host machine, but to the combination of the host machine, the remote machine, the user login, and other parameters to determine the uniqueness of the session.
-
-&nbsp;
-
-If you have 1 machine with multiple users (using for example Terminal Server, Remote Desktop, Windows App, virtual machine, Citrix, or an equivalent Virtual Machine method), you will need one license per user and PC accessing the Hackolade installation on the server.  A license must be obtained for each device on or from which the Product is used or accessed.  As a result, you need a license seat per user of that VM.
-
-&nbsp;
-
-Example: having 4 Hackolade users on a single VM is the equivalent of having 4 individual PCs running Hackolade from a licensing point of view: you need 4 license seats to be validated.
-
-&nbsp;
-
-Using a concurrent license key simplifies greatly the behavior in case of VMs and RDP.
 
 ## Notes
 

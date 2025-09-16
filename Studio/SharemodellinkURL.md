@@ -1,6 +1,6 @@
 # Share model link URL
 
-**Warning:** this feature is available only to Workgroup Edition license users
+**Warning:** the creation of shared model link is available only to Workgroup Edition license users.&nbsp; The resulting URL can be opened by other Editions, possibly with [limitations according to each edition](<Editions.md>).
 
 &nbsp;
 

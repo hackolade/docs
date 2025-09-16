@@ -122,6 +122,8 @@ Typically, each organization may own several of these families of metadata recep
 
 &nbsp;
 
+&nbsp;
+
 ![Vision - metadata receptacle silos](<lib/Vision - metadata receptacle silos.png>)
 
 &nbsp;

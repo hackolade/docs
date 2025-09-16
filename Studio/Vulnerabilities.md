@@ -4,6 +4,16 @@ We commit to acknowledging vulnerability reports within 5 business days, and add
 
 &nbsp;
 
+**\[08-Sept-2025\]** [npm Author Qix Compromised via Phishing Email in Major Supply Chain Attack](<https://socket.dev/blog/npm-author-qix-compromised-in-major-supply-chain-attack> "target=\"\_blank\"")
+
+Socket has detected a supply chain attack targeting the NPM ecosystem. The account of prolific maintainer **Qix** has been compromised, and attackers have already published malicious versions of widely used packages.&nbsp; A list of package versions have been confirmed as malicious.
+
+&nbsp;
+
+While Hackolade uses NPM, this vulnerability does not affect our product.&nbsp; We have promptly confirmed that none of the compromised dependencies have been used in Hackolade Studio or its plugins, or in Hackolade Model Hub.
+
+&nbsp;
+
 &nbsp;
 
 **\[19-Jul-2025\] [**NPM package 'is' CVE-2025-54313](<https://www.cve.org/CVERecord?id=CVE-2025-54313> "target=\"\_blank\"")

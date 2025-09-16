@@ -26,6 +26,10 @@ When doing a roundtrip from Hackolade to Excel and back, it is important to main
 
 &nbsp;
 
+**Important note:** deleting a line in Excel will NOT result in a delete operation in the model when reverse-engineering the Excel back into the Hackolade model. &nbsp;
+
+&nbsp;
+
 To import CSV files into Hackolade, it is advised to first export an Excel template, then import the CSV file into the Excel template, before importing back into Hackolade.
 
 &nbsp;
@@ -53,6 +57,8 @@ The properties for each object are listed in the corresponding sections.&nbsp; I
 &nbsp;
 
 Instructions for the import of an Excel file can be found in [Excel reverse-engineering](<Exceltemplate.md>).
+
+&nbsp;
 
 ## Maintain configuration
 

@@ -168,7 +168,13 @@ Some transformations occur, and extraneous information is ignored.&nbsp; We also
 
 \- Packages, and map them to our Diagram Views,
 
-\- and most importantly we also import ExtendedAttributes, and map them to our custom properties.
+\- Indexes, as long as there is a match between the source technology and the Hackolade Studio target model,
+
+\- database views,
+
+\- domains and [Abstract Data Types](<https://help.sap.com/docs/SAP\_POWERDESIGNER/1f914d86319d43b7b2402532666583c0/b3e01e20f33f45699fe21f6e9fec9e21.html> "target=\"\_blank\""),
+
+\- ExtendedAttributes, mapped them to our custom properties.
 
 &nbsp;
 
@@ -192,27 +198,17 @@ Then go to Tools \> Reverse-Engineer \> PowerDesigner, and select the PowserDesi
 
 Currently, the following PowerDesigner features are not supported:
 
-\- domains (in progress)
-
-\- views (TBA)
-
-\- [Abstract Data Types](<https://help.sap.com/docs/SAP\_POWERDESIGNER/1f914d86319d43b7b2402532666583c0/b3e01e20f33f45699fe21f6e9fec9e21.html> "target=\"\_blank\"") (TBA)
-
-\- indexes (TBA)
-
 \- [XEM extension files](<https://help.sap.com/docs/SAP\_POWERDESIGNER/31c48596e34446a68956e0aa7e700a2e/c7d31d216e1b1014ab88822700700793.html> "target=\"\_blank\"")
 
 \- links [between models](<https://help.sap.com/docs/SAP\_POWERDESIGNER/abd3434b4987485c92057ab9392aadbe/c7e25fae6e1b1014a7948b49b3cdd8fa.html> "target=\"\_blank\"")
 
-\- [business rules](<https://help.sap.com/docs/SAP\_POWERDESIGNER/abd3434b4987485c92057ab9392aadbe/c7dd23a26e1b1014a4afd4132cef9ef8.html?\&version=16.6.5> "target=\"\_blank\""), etc...
+\- [business rules](<https://help.sap.com/docs/SAP\_POWERDESIGNER/abd3434b4987485c92057ab9392aadbe/c7dd23a26e1b1014a4afd4132cef9ef8.html?\&version=16.6.5> "target=\"\_blank\"")
+
+\- support for BPMN, UML, export of XML, etc...
 
 &nbsp;
 
-## Bulk import (TBD)
+## Bulk import
 
-Using the [Command-Line Interface](<CommandLineInterface.md>), it is easy to orchestrate a batch import of selected PowerDesigner files into Hackolade Studio models, using the command revEngDiagram with its required and options arguments.
-
-&nbsp;
-
-&nbsp;
+Using the [Command-Line Interface](<CommandLineInterface.md>), it is easy to orchestrate a batch import of selected PowerDesigner files into Hackolade Studio models, using the command revEngDiagram with its required and options arguments.&nbsp; If you need to import multiple PowerDesigner files, you must repeat the command.
 

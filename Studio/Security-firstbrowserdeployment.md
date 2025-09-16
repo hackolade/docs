@@ -1,5 +1,9 @@
 # Security-first browser deployment
 
+This is feature is particularly handy when combined with the ability to share a model link, as described in [this page](<SharemodellinkURL.md>).
+
+&nbsp;
+
 **Important notes:**&nbsp;
 
 &#49;) the browser deployment is fully available for the Community Edition, and the Read-Only Viewer Edition.&nbsp; The Community edition does not require a license key.&nbsp; Other editions do require a license key.&nbsp; Since v7.9.3, it is also possible to use a Personal, Professional, or Workgroup edition license key in the browser.&nbsp; However, users should be conscious that not all features of these editions are enabled in the browser for a variety of security and technical reasons.&nbsp; While we are progressively enabling many of those features, some might be only available in the desktop deployment.
@@ -12,7 +16,7 @@
 
 &nbsp;
 
-Obviously, this requires no installation or deployment of an application by your IT department.&nbsp; Just go to [https://studio.hackolade.com](<https://studio.hackolade.com> "target=\"\_blank\"") from your favorite browser and start your data modeling work.&nbsp; No sign-up necessary or complex user management.&nbsp; All the processing is done inside your browser -- there is no server-side processing, as their are no servers.
+Obviously, the ability to run Hackolade Studio in the browser requires no installation or deployment of an application by your IT department.&nbsp; Just go to [https://studio.hackolade.com](<https://studio.hackolade.com> "target=\"\_blank\"") from your favorite browser and start your data modeling work.&nbsp; No sign-up necessary or complex user management.&nbsp; All the processing is done inside your browser -- there is no server-side processing, as their are no servers.
 
 &nbsp;
 

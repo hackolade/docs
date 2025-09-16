@@ -96,7 +96,7 @@ Best practices at major companies leverage schema versioning for transition peri
 
 * eager migration: like in the old days... convert the data prior to launching a new version of the software.&nbsp; This strategy does not leverage the flexible evolution capabilities of JSON;
 * lazy migration: update the schema of a document only after it has been used.&nbsp; A potential issue is that some documents will never be accessed, hence the migration will never end;
-* incremental migration: arbitrary chuncks of data are migrated, ideally at times when database loads are lower;
+* incremental migration: arbitrary chunks of data are migrated, ideally at times when database loads are lower;
 * predictive migration: heuristics and probabilistic judgments are used to migrate documents before they are used;
 * combination of predictive migration first, followed by incremental to finish off the migration;
 * endless versioning: not desirable, particularly if constant evolution of the schema.

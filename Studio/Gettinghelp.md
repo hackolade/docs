@@ -23,7 +23,7 @@ It is useful to share precise and detailed information in order to speed up trou
 
 \- additional information : provide other details that might help with troubleshooting and a speedy response to your request.
 
-\- log files: information from the application logs can be immensely helpful for our development team to diagnose and resolve the issue, ideally captured immediately after the issue occurred. Log files can be found:
+\- log files: information from the application logs can be immensely helpful for our development team to diagnose and resolve the issue, ideally captured immediately after the issue occurred. Log files can be found in Help \> Access Application Logs, or at:
 
 \-- Windows: in the C:\\Users\\%username%\\AppData\\Roaming\\HackoladeLogs directory
 
@@ -70,4 +70,47 @@ Hackolade provides maintenance and support for its products according to the fol
 
 &nbsp;
 
-## 
+## Tracking your organization's support requests
+
+For large customers of Hackolade, it might be useful for a person to be able to have a consolidated view of all the tickets of their organization.&nbsp; Hackolade uses the helpdesk solution by [Zendesk.](<https://www.zendesk.com/> "target=\"\_blank\"")&nbsp; You would be tracking your org tickets following these [instructions](<https://urldefense.com/v3/\_\_https:/support.zendesk.com/hc/en-us/articles/4408846805530-Submitting-and-tracking-requests-in-the-help-center-Customer-Portal\*topic\_vgd\_mqd\_yy\_\_;Iw\!\!MjXRb4uW6x5k\!Go5HRJbg8MJP-igoFe9N2EEP040b9SP7Iz-nVw3hH-GF1l8sptTcmzZlP5JDbq4Jhj8JEMTX9Ejh9b7DZ5Gp5JtAeYrW0Ue2$> "target=\"\_blank\"").&nbsp; Please follow the steps below:
+
+&nbsp;
+
+\- request from our support to create an organization in our Zendesk platform and provide the domain name or names that should be included.&nbsp; Also include the email addresses of each user who should have the rights to view all their org's tickets (as opposed to the default which is that a viewer can only see their own tickets.)
+
+\- each user who needs to view this portal will need to sign up on [https://hackolade.zendesk.com/hc/en-us/signin](<https://hackolade.zendesk.com/hc/en-us/signin> "target=\"\_blank\"") then click on the Signup link
+
+&nbsp;
+
+![Zendesk signin](<lib/Zendesk signin.png>)
+
+&nbsp;
+
+then fill out the form:
+
+![Zendesk signup form](<lib/Zendesk signup form.png>)
+
+&nbsp;
+
+Once signed up, go to [https://hackolade.zendesk.com/hc/en-us/requests](<https://hackolade.zendesk.com/hc/en-us/requests> "target=\"\_blank\"") (you may want to bookmark this link...) and identify yourself if necessary.&nbsp; Then click in the box with your name, and choose My activities:
+
+![Image](<lib/Zendesk Choose My activities.png>)
+
+&nbsp;
+
+Depending on the rights you have been given, you should see just your requests and those for which you were Cc'd, or also your organization requests:
+
+&nbsp;
+
+![Zendesk My activities](<lib/Zendesk My activities.png>)
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+

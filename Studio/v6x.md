@@ -150,7 +150,7 @@ New features in v6.11.3 \[29-Sept-2023\]
 
 \- Markdown documentation: added display of key path for partition keys when derived from Polyglot
 
-\- Databricks: added support for sequence property of integer data types plus derive from Polyglot autoincrement
+\- Databricks: added support for sequence property of integer data types plus derive from Polyglot auto-increment
 
 \- Databricks: added support for column-level inline check constraints
 
@@ -160,7 +160,7 @@ New features in v6.11.3 \[29-Sept-2023\]
 
 \- Oracle: added support for newly introduced IF NOT EXISTS in 23c DDL script forward-engineering
 
-\- Snowflake: added mapping of Polyglot autoincrement to Snowflakes's identity property of integer data types
+\- Snowflake: added mapping of Polyglot auto-increment to Snowflakes's identity property of integer data types
 
 \- SQL Server: adjusted forward-engineering of ALTER script in delta models for absent properties
 

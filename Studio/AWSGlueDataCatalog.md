@@ -44,11 +44,11 @@ The table properties are based on Hive 2.x metadata structure.
 
 ### Iceberg tables
 
-AWS Glue 3.0 and later supports the Apache Iceberg framework for data lakes. Iceberg provides a high-performance table format that works just like a SQL table.&nbsp; AWS Glue can be used to perform read and write operations on Iceberg tables in Amazon S3, or work with Iceberg tables using the AWS Glue Data Catalog.
+AWS Glue 3.0 and later supports the Apache [Iceberg framework](<https://aws.amazon.com/blogs/big-data/introducing-aws-glue-crawler-and-create-table-support-for-apache-iceberg-format/> "target=\"\_blank\"") for data lakes. Iceberg provides a high-performance table format that works just like a SQL table.&nbsp; AWS Glue can be used to perform read and write operations on [Iceberg tables](<https://docs.aws.amazon.com/lake-formation/latest/dg/create-databases-tables-s3-catalog.html> "target=\"\_blank\"") in Amazon S3, or work with Iceberg tables using the AWS Glue Data Catalog.
 
 &nbsp;
 
-Hackolade Studio supports Iceberg tables in AWS Glue Data Catalog, including the ability to maintain the relevant properties, plus forward- and reverse-engineering.
+Hackolade Studio supports [Iceberg tables](<https://docs.aws.amazon.com/lake-formation/latest/dg/creating-iceberg-tables.html> "target=\"\_blank\"") in AWS Glue Data Catalog, including the ability to maintain the relevant properties, plus forward- and reverse-engineering.
 
 ![Glue Iceberg table properties](<lib/Glue Iceberg table properties.png>)
 

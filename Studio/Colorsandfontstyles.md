@@ -40,7 +40,9 @@ The color picker dialog let's you choose a predefined color, or to enter a [hexa
 
 &nbsp;
 
-![Color picker](<lib/Color picker.png>)
+![Image](<lib/Color picker.png>)
+
+&nbsp;
 
 &nbsp;
 

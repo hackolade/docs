@@ -22,13 +22,17 @@ If you need to move your license key to another computer, you first need to rele
 
 To do so, go to the option Help \> License Status, and click the button "Release key"':
 
-![Registration -- release license key](<lib/Registration -- release license key.png>)
+![Image](<lib/Registration -- release license key.png>)
+
+&nbsp;
 
 and click the Send button.&nbsp; This will free up the key on our license server. &nbsp;
 
 &nbsp;
 
 ![Registration -- un-register confirmation](<lib/Registration -- un-register confirmation.png>)
+
+&nbsp;
 
 Make sure to copy the license key and store it (or find your original license key confirmation email) as you will need it to activate on the other computer where you will want to use Hackolade.
 
@@ -62,6 +66,8 @@ To have identification information appear in the Computer Name column, users nee
 
 &nbsp;
 
+&nbsp;
+
 The identifier entered in the this screen will appear in the web page:
 
 &nbsp;
@@ -70,7 +76,7 @@ The identifier entered in the this screen will appear in the web page:
 
 &nbsp;
 
-### *Workspace*
+## Workspace
 
 ***TIP:*** you may create extra space on your desktop by sliding the Object Browser or Properties panes with this control ![Image](<lib/Central pane - ellipse.png>) appearing between the panes. You may also toggle the appearance of these panes in the View menu, or by double-clicking on the separation control.
 
@@ -84,7 +90,11 @@ The identifier entered in the this screen will appear in the web page:
 
 &nbsp;
 
-***TIP:*** you many start multiple instances of Hackolade Studio on the same machine session, so as to work on multiple models simultaneously.&nbsp; You may also merge 2 Hackolade models, or combine elements from another model with copy/paste from one model in one application instance, to the other model in the second application instance.&nbsp; On Windows, right-click on the Hackolade icon in the toolbar then choose Hackolade:
+***TIP:*** you may start multiple instances of Hackolade Studio on the same machine session, so as to work on multiple models simultaneously.&nbsp; You may also merge 2 Hackolade models, or combine elements from another model with copy/paste from one model in one application instance, to the other model in the second application instance.&nbsp; From within the application, this is easily done with the shortcut Ctrl+Shift+I (on Mac Cmd+Shift+I) or with the menu option File \> Start New Application Instance
+
+&nbsp;
+
+Or from the operating system, on Windows, right-click on the Hackolade icon in the toolbar then choose Hackolade:
 
 ![Multiple instances](<lib/Multiple instances.png>)
 
@@ -108,7 +118,7 @@ Running multiple instances on the same PC does not require additional license se
 
 &nbsp;
 
-***Object Browser***
+### *Object Browser*
 
 &nbsp;
 
@@ -180,7 +190,7 @@ Note that, if the handle does not show, you may enable its display through the D
 
 &nbsp;
 
-### Hierarchical hierarchical schema view of entities (collections/tables/nodes \& edges)
+## Hierarchical hierarchical schema view of entities (collections/tables/nodes \& edges)
 
 ***TIP:*** you may change the order of the fields/attributes with these control icons: ![Toolbar field order up-down arrows](<lib/DTD field order arrows.png>)
 
@@ -198,7 +208,7 @@ Note that, if the handle does not show, you may enable its display through the D
 
 &nbsp;
 
-### JSON Preview
+## JSON Preview
 
 &nbsp;
 
@@ -214,7 +224,7 @@ Note that, if the handle does not show, you may enable its display through the D
 
 &nbsp;
 
-### Reverse-Engineering
+## Reverse-Engineering
 
 &nbsp;
 
@@ -234,7 +244,7 @@ In MongoDB, reads to a primary have [strict consistency](<http://docs.mongodb.o
 
 By calling [rs.slaveOk()](<http://docs.mongodb.org/manual/reference/method/rs.slaveOk/> "target=\"\_blank\"") you are indicating to the system that you acknowledge that reads will be eventually consistent and wish to be able to run reverse-engineering from the secondary anyway.
 
-### General
+## General
 
 &nbsp;
 

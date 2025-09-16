@@ -30,7 +30,7 @@ The process is as follows:
 
 &nbsp;
 
-&#49;) Open or create a Hackolade model with entities: collections for MongoDB, tables for Cassandra/Hive/RDBMS, node labels and relationship types dfor Neo4j, etc...
+&#49;) Open or create a Hackolade model with entities: collections for MongoDB, tables for Cassandra/Hive/RDBMS, node labels and relationship types for Neo4j, etc...
 
 &#50;) Go to Tools \> Forward-Engineering \> API model and choose a previously defined template to use for the merge operation
 

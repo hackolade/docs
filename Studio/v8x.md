@@ -1,5 +1,99 @@
 # v8.x
 
+New features in v8.4.3 \[19-Sept-2025\]&nbsp;
+
+\- Excel: enhanced handling of numeric properties so that cleared numeric values in Excel are emptied in the model during reverse-engineering
+
+&nbsp;
+
+&nbsp;
+
+New features in v8.4.2 \[12-Sept-2025\]&nbsp;
+
+\- Relationships: added technical name property with support for naming conventions
+
+\- ERD: improved display of rectangle names when positioned at the top of a container
+
+\- JSON Schema: mapped business names of view objects to title when technical name is present
+
+\- Polyglot: preserved original graph view nodes layout when deriving into a graph target or into another polyglot model
+
+\- Polyglot: added handling of relationships marked as polyglot-only when deriving
+
+\- PowerDesigner: added support for database views
+
+\- PowerDesigner: added disclaimer if source PDM indexes are not compatible with model target
+
+\- PowerDesigner: added handling of tag \<a:Mandatory\> and mapped to required/not null in addition to already handled tag \<a:Column.Mandatory\>
+
+\- Print Diagram: added attribute color coding in Hi-Res PDF
+
+\- Workgroup: added segregation of local commits from remote commits in Review Changes screen in respectively Push and Pull screen
+
+\- Workgroup: added support for Bitbucket Cloud connection via API tokens with scopes
+
+\- Workgroup: added expiration date for Bitbucket Cloud deprecated connections with app password (June 9, 2026)
+
+\- CockroachDB, CosmosDB-with-Gremlin-API, DeltaLake/Databricks, Glue, Hive, JanusGraph, MariaDB, Neo4j, Neptune, Oracle, PostgreSQL, SQLServer, Tinkerpop, YugabyteDB-YSQL: added a technical name property with support for naming conventions
+
+\- PostgreSQL, YugabyteDB: mapped empty index method to btree during reverse-engineering
+
+&nbsp;
+
+New features in v8.4.1 \[05-Sept-2025\]&nbsp;
+
+\- Compare \& Merge: introduced the ability to merge any model into previously derived models while maintaining the Polyglot link and creating deviations based on user merge choices
+
+\- ERD and DDLs: introduced display option to disable the automatic positioning of primary keys as first columns, allowing users to arrange columns in their preferred sequence
+
+\- ERD: introduced new color palette for objects
+
+\- Excel: moved column subtype between columns type and logical type when exporting for an Avro model&nbsp;
+
+\- Excel: allowed groups with absent composite keys when importing into an empty model
+
+\- Polyglot adjusted array type adapter when converting model from PostgreSQL
+
+\- PowerDesigner: enabled reverse-engineering of indexes from Physical Data Model (PDM) files
+
+\- Avro: sanitized use of avsc library across components by extracting customizations and aligning the lib version to latest
+
+\- OpenAPI: enabled extensions on references
+
+\- OpenAPI: fine-tuned performance for reverse-engineering of larger files
+
+\- OpenAPI: introduced an entity number threshold for collapsing reverse-engineered entity fields, enhancing performance for large schemas with over 250 entities
+
+\- Oracle: introduced flexibility in script generation for controlling constraints in CREATE scripts (3 choices: “In CREATE statement”, “In separate statement” or “Ignore”), controllable from Tools \> Options \> Forward-Engineering parameters, plus from forward-engineering lower tab and via Tools \> Forward-Engineer menu
+
+&nbsp;
+
+New features in v8.4.0 \[29-Aug-2025\]&nbsp;
+
+\- ERD: added possibility to enrich organization of diagrams with rectangle symbol, for example for visual grouping of entities
+
+\- ERD: enabled zoom shortcuts to also work with numeric keypad keys (Ctrl++ and Ctrl+-)
+
+\- ERDV: prevented orthogonal distribution when adding an entity to existing selection
+
+\- Polyglot: allowed custom properties of view attributes derived from Polyglot to deviate from the props of the underlying table
+
+\- Avro: added possibility to resolve namespace references also for external references to other Avro models
+
+\- CockroachDB, Delta Lake/Databricks, MariaDB, PostgreSQL, SQL Server, Synapse, YugabyteDB: improved generation of ALTER script in forward-engineering when an attribute is added or removed to a composite key
+
+\- Db2, Teradata: removed devDependencies from package-lock.json in release artifact
+
+\- Glue Data Catalog: added support for AWS Glue 3.0, plus added support for Iceberg tables
+
+\- OpenAPI: improved performance on reverse-engineering
+
+\- Oracle, PostgreSQL: fixed double index statement in generation of ALTER script in case of new composite key&nbsp;
+
+\- PostgreSQL: enhanced sequence of generated ALTER script in forward-engineering
+
+&nbsp;
+
 New features in v8.3.9 \[22-Aug-2025\]&nbsp;
 
 \- Delta Lake/Databricks: aligned global option for Request Timeout with the custom deferred requests to Databricks API
@@ -13,8 +107,6 @@ New features in v8.3.9 \[22-Aug-2025\]&nbsp;
 \- ERDVs: adjust container size when relationship is manually extended beyond container boundaries
 
 \- Excel: hardened checks during import for key constraints referring to non-existent attributes
-
-\- Glue Data Catalog: added support for AWS Glue 3.0, plus added support for Iceberg tables
 
 &nbsp;
 

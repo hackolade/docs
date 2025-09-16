@@ -1,7 +1,5 @@
 # Extended referencing hybrid with selective duplication
 
-# Extended referencing: hybrid with selective duplication
-
 In some scenarios, both entities involved in the relationship are considered important enough to exist independently, yet optimizing access patterns justifies duplicating certain attributes between them.
 
 This approach follows the well-established **Extended Reference Pattern**, widely used in document modeling practices.
