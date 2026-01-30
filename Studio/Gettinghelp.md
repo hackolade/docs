@@ -9,25 +9,81 @@ The different options currently available are:
 
 &nbsp;
 
+&nbsp;
+
+## AI Browsers
+
+Both our [online documentation](<https://hackolade.com/help> "target=\"\_blank\"") and our [eLearning platform](<https://community.hackolade.com/slides/all>) have powerful search boxes.&nbsp; Recently, new AI browsers such as [Perplexity Comet](<https://www.perplexity.ai/comet> "target=\"\_blank\""), [OpenAI Atlas](<https://openai.com/index/introducing-chatgpt-atlas/> "target=\"\_blank\""), [Brave Leo AI](<https://brave.com/leo/> "target=\"\_blank\""), or the [Gemini in Chrome](<https://www.google.com/chrome/ai-innovations/> "target=\"\_blank\"") introduced Natural Language processing of your questions.&nbsp; Right now, it seems that only Perplexity Comet fully leverages our knowledge resources for an even richer experience.&nbsp; For other destinations than the Hackolade online documentation, you may want to be careful with AI browsers and some [security concerns](<https://martinfowler.com/articles/2025-11-03-frags.html> "target=\"\_blank\"") around them.
+
+&nbsp;
+
+Here is an example, asking a question from the Comet assistant from any page of our [online documentation](<https://hackolade.com/help>), and getting the correct response plus related link to the relevant page:
+
+&nbsp;
+
+![Perplexity Comet Assistant example 1](<lib/Perplexity Comet Assistant example 1.png>)
+
+&nbsp;
+
+&nbsp;
+
+Alternatively, you can create a notebook in Google's [NotebookLM](<https://notebooklm.google.com/> "target=\"\_blank\""), and include these 3 sources:
+
+[https://hackolade.com](<https://hackolade.com>)
+
+[https://hackolade.com/help](<https://hackolade.com/help>)
+
+[https://community.hackolade.com/slides/all](<https://community.hackolade.com/slides/all>)
+
+then you may ask any Hackolade-related questions.
+
+&nbsp;
+
+In our experience as of the time of writing -- and recognizing tools evolve at lightning speed -- we have found that, while NotebookLM is impressive at first, and super fast, in fact the Assistant of Perplexity Comet provides the best and most thorough results, including accurate step-by-step instructions:
+
+&nbsp;
+
+![Perplexity Comet Assistant example 2](<lib/Perplexity Comet Assistant example 2.png>)
+
+&nbsp;
+
+&nbsp;
+
 ## When opening a ticket
 
-It is useful to share precise and detailed information in order to speed up troubleshooting and resolution:
+When contacting the helpdesk, please include as much relevant context as possible in your initial message rather than holding back information until later. Providing details about your goal, environment, recent changes, error messages, and what you have already tried allows us to understand your situation quickly and accurately.&nbsp;
 
-\- context: provide information about your situation, what you’re trying to accomplish
+&nbsp;
 
-\- steps to reproduce: list the different steps leading to the error message, and ideally provide the data model file.  If necessary, you may mask information in the model file with File \> Save Obfuscated As…
+When key context is missing, we often need to ask several follow-up questions, which slows down the process and can lead to misunderstandings or incomplete solutions. Sharing the full picture upfront helps us diagnose the issue faster, avoid unnecessary back-and-forth, and get you to a solution more efficiently.
 
-\- current behavior: describe what happened.  In most case, it is useful to provide screenshots or a short movie capture.&nbsp;
+&nbsp;
 
-\- expected behavior: explain what result or output you would expect for the operation.  In some cases, it may help to illustrate with a mockup.
+At Hackolade, we release a new version of the software every single week with new enhancements.&nbsp; Prior to opening a ticket, it is best to be running a recent, if not current version of the software.
 
-\- additional information : provide other details that might help with troubleshooting and a speedy response to your request.
+&nbsp;
 
-\- log files: information from the application logs can be immensely helpful for our development team to diagnose and resolve the issue, ideally captured immediately after the issue occurred. Log files can be found in Help \> Access Application Logs, or at:
+Please share precise and complete information in order to speed up troubleshooting and resolution:
 
-\-- Windows: in the C:\\Users\\%username%\\AppData\\Roaming\\HackoladeLogs directory
+* context: briefly describe what you’re trying to do, your environment (OS, software version), and whether the issue affects all users or specific ones.
+* steps to reproduce: list the different steps leading to the error message, and ideally provide the data model file.  If necessary, you may mask information in the model file with File \> Save Obfuscated As…
+* current behavior: describe what happened.  In most case, it is useful to provide screenshots or a short movie capture.&nbsp;
+* expected behavior: explain what result or output you would expect for the operation.  In some cases, it may help to illustrate with a mockup.
+* additional information : provide other details that might help with troubleshooting and a speedy response to your request.
+* log files: information from the application logs can be immensely helpful for our development team to diagnose and resolve the issue, ideally captured immediately after the issue occurred. Log files can be found in Help \> Access Application Logs, or at:
 
-\-- Mac/Linux: in the Users/$USER/Documents/HackoladeLogs folder.
+  * Windows: in the C:\\Users\\%username%\\AppData\\Roaming\\HackoladeLogs directory
+  * Mac/Linux: in the Users/$USER/Documents/HackoladeLogs folder.
+
+&nbsp;
+
+## When responding to a helpdesk email
+
+In the email sent by our Zendesk helpdesk solution, the communication starts with the line "##- Please type your reply above this line -##".  &nbsp;
+
+It is important to avoid replying with inline comments below that line\!&nbsp; If you type anything below that line, our helpdesk operator will not see your inline comments.
+
+This line serves as a separator so that only your new comments are captured in the Zendesk operator screen.&nbsp; To ensure we get your feedback, please type your comments above that line.
 
 &nbsp;
 

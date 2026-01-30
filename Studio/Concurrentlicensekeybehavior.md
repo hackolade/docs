@@ -14,6 +14,29 @@ With a concurrent license key, you may install the software on an unlimited numb
 
 &nbsp;
 
+Let's illustrate with an example of 5 users sharing a pool of 3 concurrent/floating seats, meaning that, in this example, a maximum of 3 seats can be in use at any time.
+
+&nbsp;
+
+| **Time** | **User 1** | **User 2** | **User 3** | **User 4** | **User 5** | **Notes** |
+| :---: | --- | --- | --- | --- | --- | --- |
+| &#57;:00 AM | ✅ Active | ✅ Active | ✅ Active | &nbsp;- | &nbsp;- | &nbsp;3 seats in use |
+| &#57;:10 AM | ✅ Active | ✅ Active | ✅ Active | ⏳ Access denied | ⏳ Access denied | &nbsp;Users 4 \& 5 attempt to access |
+| &#57;:20 AM | ✅ Active | &nbsp;X&nbsp; Closes app | ✅ Active | ✅ Active | ⏳ Access denied | &nbsp;Seat freed, User 4 can join |
+| &#57;:30 AM | ✅ Active | &nbsp;- | ✅ Active | ✅ Active | ⏳ Access denied | &nbsp;Still full |
+| &#57;:40 AM | &nbsp;X&nbsp; Closes app | &nbsp;- | ✅ Active | ✅ Active | ✅ Active | &nbsp;Seat freed, User 5 can join |
+| &#57;:50 AM | &nbsp;- | &nbsp;- | ✅ Active | &nbsp;X&nbsp; Closes app | ✅ Active | &nbsp;Seat freed again |
+| &#57;:50:01 AM | &nbsp;- | &nbsp;- | ✅ Active | &nbsp;- | ✅ Active | &nbsp;2 seats in use |
+
+
+&nbsp;
+
+&nbsp;
+
+While dedicated seats are assigned to a specific user, a concurrent seat is floating, and is only assigned to a given user while the application is opened for that user.&nbsp; As the user closes the application, the seat becomes available to be used by another user.
+
+&nbsp;
+
 ![Dedicated vs concurrent license seat](<lib/Dedicated vs concurrent license seat 1.png>)
 
 ![Dedicated vs concurrent license seat 2](<lib/Dedicated vs concurrent license seat 2.png>)
@@ -35,6 +58,16 @@ Note that if you have one virtual machine with multiple users, each user will be
 ## Virtual Machines
 
 **Note:** it is critical that the VM setup is such that you access a **persistent** VM instance of the application.&nbsp; Non-persistent instances will cause license issues.&nbsp; See [this article](<https://www.parallels.com/blogs/ras/persistent-vdi-vs-non-persistent/> "target=\"\_blank\"") for a good discussion of persistent vs non-persistent (or stateless) VDI.
+
+&nbsp;
+
+Regardless of the license seat reservation, the lack of session persistence would mean that parameters, preferences, custom properties, etc.. are all lost between sessions. &nbsp;
+
+&nbsp;
+
+For all these reasons, you must have persistent VMs/VDIs.
+
+&nbsp;
 
 &nbsp;
 

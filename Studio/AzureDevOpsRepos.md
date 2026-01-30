@@ -58,18 +58,6 @@ If you see this message, please follow the instructions above.
 
 &nbsp;
 
-## Troubleshooting
-
-For issues when Git clone or push fails to an Azure DevOps repository.&nbsp; Please consult this [Microsoft article](<https://learn.microsoft.com/en-us/troubleshoot/azure/devops/git-clone-push-operation-failing-devops-repo> "target=\"\_blank\"")..
-
-&nbsp;
-
-A possible cause, as provided by the HackoladeGit.log can be "SSL certificate problem: unable to get local issuer certificate".&nbsp; This is caused by the fact that your organization might be using self-signed certificates (often in the context of dev or test environments -- rarely in prod environments...) and this self-signed certificate is not present in the local certificate storage.&nbsp; This situation and the solution are well described in this [Microsoft link](<https://learn.microsoft.com/en-us/troubleshoot/azure/devops/git-clone-push-operation-failing-devops-repo#cause-2-git-uses-a-local-self-signed-certificate> "target=\"\_blank\"").
-
-&nbsp;
-
-&nbsp;
-
 ## OAuth
 
 As an alternative to generating a personal access token, Azure DevOps Repos can also let you grant Hackolade Studio access to your account through [OAuth](<https://oauth.net/> "target=\"\_blank\"").&nbsp;
@@ -111,6 +99,22 @@ Then display this message::
 &nbsp;
 
 Hackolade Studio should now have access to Azure DevOps Repos.
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+## Troubleshooting
+
+For issues when Git clone or push fails to an Azure DevOps repository, please consult this [Microsoft article](<https://learn.microsoft.com/en-us/troubleshoot/azure/devops/git-clone-push-operation-failing-devops-repo> "target=\"\_blank\"").
+
+&nbsp;
+
+A possible cause, as provided by the HackoladeGit.log can be "SSL certificate problem: unable to get local issuer certificate".&nbsp; This is caused by the fact that your organization might be using self-signed certificates (often in the context of dev or test environments -- rarely in prod environments...) and this self-signed certificate is not present in the local certificate storage.&nbsp; This situation and the solution are well described in this [Microsoft link](<https://learn.microsoft.com/en-us/troubleshoot/azure/devops/git-clone-push-operation-failing-devops-repo#cause-2-git-uses-a-local-self-signed-certificate> "target=\"\_blank\"").
 
 &nbsp;
 

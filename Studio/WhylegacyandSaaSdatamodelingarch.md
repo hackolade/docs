@@ -176,6 +176,8 @@ We recognize that some customers may have reservations about Oracle technologies
 
 **\- Autonomous operations:** unlike legacy Oracle deployments that required significant DBA overhead, the Autonomous JSON Database is fully managed, self-tuning, and self-securing. It requires virtually no manual intervention, making it lightweight and low-maintenance.
 
+\- **Performance:** the [performance of Oracle Autonomous JSON](<https://www.linkedin.com/pulse/why-binary-document-protocols-all-created-equal-rick-houlihan-cbrzc/> "target=\"\_blank\"") is inherently higher than other document databases, resulting in lower cost than any of the alternatives.
+
 **\- Usage-based pricing:** customers only pay for what they consume. This shifts the economics dramatically: the service is cost-competitive with, and often cheaper than, comparable cloud-native document databases from other providers.
 
 **\- Modern developer experience:** the database is designed for JSON-native workloads, aligning perfectly with Hackolade’s Metadata-as-Code and Git-native architecture.
@@ -185,6 +187,8 @@ We recognize that some customers may have reservations about Oracle technologies
 **\- Security and sovereignty:** the database runs entirely in the customer’s OCI account, keeping all models under the organization’s exclusive control and ensuring full compliance with data residency, privacy, and governance requirements.
 
 **\- Portability and neutrality:** Hackolade selected OCI not for brand, but because it offers the right mix of security, performance, and cost efficiency to support a serverless Model Hub.&nbsp; Importantly, the customer fully owns and controls the database instance in their OCI account. Neither Hackolade nor Oracle has access to the customer’s data or models.
+
+&nbsp;
 
 **\- No vendor lock-in:** because Hackolade models are stored in human-readable JSON in Git, customers are never locked into the database technology itself. The Hub leverages Oracle for coordination and discoverability, but intellectual property remains portable.
 

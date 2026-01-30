@@ -27,6 +27,7 @@ People learn in different ways:
 
 * [dive in the application](<https://hackolade.com/download.html> "target=\"\_blank\"") and explore;
 * start by reading user manuals such as this [online help](<https://hackolade.com/help/index.html>);
+* ask natural language questions with an [AI browser assistant](<https://hackolade.com/help/Gettinghelp.html#AI%20Browsers>);
 * read this tutorial and [step-by-step instructions](<How-toguides.md>) on an ad-hoc basis;
 * watch [tutorial videos](<https://community.hackolade.com/> "target=\"\_blank\"");
 * take a [training course](<https://hackolade.com/training.html>) of 5 half days by Steve Hoberman;

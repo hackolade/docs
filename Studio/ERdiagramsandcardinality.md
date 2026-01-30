@@ -24,7 +24,7 @@ With v4.3.2, Hackolade has introduced the possibility to add separate ER Diagram
 
 &nbsp;
 
-Hackolade also loosely applies Information Engineering notation to relationship lines.
+Hackolade adopts an IE-like notation (Information Engineering with [crow's foot](<https://en.wikipedia.org/wiki/Entity–relationship\_model#Crow's\_foot\_notation> "target=\"\_blank\"") notation) applied to physical models in order to display multiplicities on each side of the relationship to represent the cardinality:&nbsp;
 
 &nbsp;
 
@@ -36,6 +36,21 @@ Hackolade also loosely applies Information Engineering notation to relationship 
 | ![Relationship cardinality - zero-to-many](<lib/Relationship cardinality - zero-to-many.png>) | zero or more |
 | ![Relationship cardinality - one-to-many](<lib/Relationship cardinality - one-to-many.png>) | one or more |
 
+
+&nbsp;
+
+You may have noticed that one side of the relationship has crow's foot cardinality displayed in blue on the parent side, and red on the child side.
+
+| **Symbol** | **Description** |
+| --- | --- |
+| ![Relationship child cardinality - one](<lib/Relationship child cardinality - one.png>) | only one |
+| &nbsp;![Relationship cardinality - many](<lib/Relationship child cardinality - many.png>) | many |
+| ![Relationship child cardinality - zero-to-one](<lib/Relationship child cardinality - zero-to-one.png>) | zero or one |
+| ![Relationship child cardinality - zero-to-many](<lib/Relationship child cardinality - zero-to-many.png>) | zero or more |
+| ![Relationship child cardinality - one-to-many](<lib/Relationship child cardinality - one-to-many.png>) | one or more |
+
+
+&nbsp;
 
 &nbsp;
 

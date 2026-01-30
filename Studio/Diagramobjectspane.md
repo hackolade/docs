@@ -8,6 +8,8 @@ Starting with v7.4.0, a collapsible pane has been added above the Object Browser
 
 &nbsp;
 
+&nbsp;
+
 If you don't want to use the Diagram Objects pane, for example to leave room for a longer Object Browser, you may do so by clicking the caret in the title bar:
 
 ![Diagram Objects pane - collapsed](<lib/Diagram Objects pane - collapsed.png>)

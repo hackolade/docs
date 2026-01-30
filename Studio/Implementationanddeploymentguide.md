@@ -32,7 +32,7 @@ Below is a possible implementation and deployment roadmap:
 
 &nbsp;
 
-**🗺️ Phase 3: Planning \& Strategy**
+## 🗺️ Phase 3: Planning \& Strategy
 
 | **Step** | **Description** |
 | --- | --- |
@@ -43,7 +43,9 @@ Below is a possible implementation and deployment roadmap:
 
 &nbsp;
 
-**🧪 Phase 4: Pilot Execution**
+&nbsp;
+
+## 🧪 Phase 4: Pilot Execution
 
 | **Step** | **Description** |
 | --- | --- |
@@ -56,7 +58,9 @@ Below is a possible implementation and deployment roadmap:
 
 &nbsp;
 
-**🏗️ Phase 5: Gradual Rollout**
+&nbsp;
+
+## 🏗️ Phase 5: Gradual Rollout
 
 | **Step** | **Description** |
 | --- | --- |
@@ -68,7 +72,9 @@ Below is a possible implementation and deployment roadmap:
 
 &nbsp;
 
-**📈 Phase 6: Optimization \& Adoption**
+&nbsp;
+
+## 📈 Phase 6: Optimization \& Adoption
 
 | **Step** | **Description** |
 | --- | --- |

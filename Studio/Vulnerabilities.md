@@ -4,6 +4,44 @@ We commit to acknowledging vulnerability reports within 5 business days, and add
 
 &nbsp;
 
+&nbsp;
+
+**\[05-Dec-25\]** [React2Shell affecting server-side use of React.js](<https://react2shell.com/> "target=\"\_blank\"")
+
+This critical severity vulnerability affects server-side use of React.js, tracked as [CVE-2025-55182](<https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components>) in React.js and [CVE-2025-66478](<https://github.com/vercel/next.js/security/advisories/GHSA-9qr9-h5gf-34mp>) specifically for the Next.js framework.&nbsp;
+
+&nbsp;
+
+While Hackolade uses ReactJS, we do not use it for server-side rendering.&nbsp; We do not use react-server-... components.&nbsp; And we do not user the ReactJS versions impacted.
+
+&nbsp;
+
+&nbsp;
+
+**\[05-Dec-25\]** [interpretation-conflict (CWE-436) vulnerability in node-forge versions 1.3.1 and earlier (CVE-2025-12816)](<https://nvd.nist.gov/vuln/detail/CVE-2025-12816> "target=\"\_blank\"")
+
+This vulnerability in node-forge versions 1.3.1 and earlier would enable man-in-the-middle attackers to craft ASN.1 structures to desynchronize schema validations, yielding a semantic divergence that may bypass downstream cryptographic verifications and security decisions.
+
+&nbsp;
+
+No publicly available exploit code exists for node-forge's CVE-2025-12816 vulnerability.&nbsp; Security advisories and reports confirm that researcher Hunter Wodzenski from Palo Alto Networks provided a proof-of-concept (PoC) internally during responsible disclosure, but it has not been released publicly.&nbsp; No GitHub repositories, exploit-db entries, or public PoCs were found across vulnerability databases like NVD, OSV, or CERT/CC.&nbsp; Hackolade Studio Desktop v8.7.2 and above run more recent versions of the library than those affected by this vulnerability.
+
+&nbsp;
+
+&nbsp;
+
+**\[16-Sept-2025\]** [Supply Chain Attack Targets CrowdStrike npm Packages](<https://socket.dev/blog/ongoing-supply-chain-attack-targets-crowdstrike-npm-packages> "target=\"\_blank\"")
+
+Multiple CrowdStrike npm packages published by the [**crowdstrike-publisher**](<https://socket.dev/npm/user/crowdstrike-publisher> "target=\"\_blank\"") npm account were compromised. This looks like a continuation of the ongoing malicious supply chain campaign known as the “Shai-Halud attack”.&nbsp;
+
+&nbsp;
+
+While Hackolade uses NPM, this vulnerability does not affect our product.&nbsp; We have promptly confirmed that none of the compromised dependencies have been used in Hackolade Studio or its plugins, or in Hackolade Model Hub.
+
+&nbsp;
+
+&nbsp;
+
 **\[08-Sept-2025\]** [npm Author Qix Compromised via Phishing Email in Major Supply Chain Attack](<https://socket.dev/blog/npm-author-qix-compromised-in-major-supply-chain-attack> "target=\"\_blank\"")
 
 Socket has detected a supply chain attack targeting the NPM ecosystem. The account of prolific maintainer **Qix** has been compromised, and attackers have already published malicious versions of widely used packages.&nbsp; A list of package versions have been confirmed as malicious.
@@ -44,7 +82,7 @@ Nevertheless, and as a precautionary measure, Hackolade Studio’s version 6.4.0
 
 &nbsp;
 
-**\[08-Apr-22\] [**Chromium CVE-2022-1096 vulnerability](<https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1096> "target=\"\_blank\"")
+\[08-Apr-22\] [Chromium CVE-2022-1096 vulnerability](<https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1096> "target=\"\_blank\"")
 
 We are aware of this vulnerability due to [type confusion in V8](<https://chromereleases.googleblog.com/2022/03/stable-channel-update-for-desktop\_25.html> "target=\"\_blank\"").&nbsp; Hackolade uses Electron, the open-source software framework developed and maintained by GitHub, which is owned by Microsoft.&nbsp; Electron combines the Chromium rendering engine and the Node.js runtime.&nbsp; Chromium uses V8, Google's open source JavaScript engine.
 

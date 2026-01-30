@@ -30,7 +30,17 @@ The application is shipped as a signed .exe file with an installation wizard aut
 
 &nbsp;
 
+Windows Extended Validation (EV) Code Signing certificates enhance trust in security dialogs by prominently displaying the verified publisher's name. These certificates undergo rigorous publisher validation, ensuring the organization's identity is clear to users. Unlike standard certificates, EV Code Signing Certificates make the publisher information more visible during software execution or installation. &nbsp;
+
+&nbsp;
+
+EV-signed executables trigger the standard User Account Control (UAC) prompt displayed below, showing Hackolade Studio's producer NV IntegrIT, as the verified publisher name, with enhanced indicators like the blue title bar. This distinguishes from unsigned or standard-signed apps, reducing perceived risk.
+
+&nbsp;
+
 After downloading the application from our [download page](<https://hackolade.com/download.html>), double-click on the downloaded .exe file and the wizard will start.&nbsp; You will first see the publisher verification dialog letting you check the authenticity of the download signed with Hackolade's parent company NV IntegrIT's extended validation certificate.
+
+&nbsp;
 
 &nbsp;
 
@@ -78,7 +88,13 @@ Hackolade Studio must be able to write on your local drive: to save data model f
 
 &nbsp;
 
+EPERM: operation not permitted, rename...
+
+&nbsp;
+
 ![Image](<lib/Anti-virus EPERM error.png>)
+
+EBUSY; resource busy or locked, open...
 
 &nbsp;
 

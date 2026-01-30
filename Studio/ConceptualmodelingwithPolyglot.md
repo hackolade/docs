@@ -16,7 +16,7 @@ The conceptual model helps to create alignment among stakeholders to:
 
 &nbsp;
 
-This phase aligns perfectly with the principles of **Ubiquitous Language**, a core concept from Domain-Driven Design (DDD).&nbsp; Ubiquitous Language promotes using the same terminology across all discussions, documents,&nbsp; models, and even database tables and columns, and application code, thereby ensuring consistency from business conversations to technical implementation.
+This phase aligns perfectly with the principles of [**Ubiquitous Language**](<https://martinfowler.com/bliki/UbiquitousLanguage.html> "target=\"\_blank\""), a core concept from Domain-Driven Design (DDD).&nbsp; Ubiquitous Language promotes using the same terminology across all discussions, documents,&nbsp; models, and even database tables and columns, and application code, thereby ensuring consistency from business conversations to technical implementation.
 
 &nbsp;
 
@@ -51,6 +51,10 @@ This makes the model easy to understand for all stakeholders, even those without
 &nbsp;
 
 Once the conceptual model is validated, teams can progressively move toward more detailed logical and physical models, grounded in a consistent and shared understanding.
+
+&nbsp;
+
+Make sure to read our article [Conceptual to Logical with Polyglot relationships](<ConceptualtoLogicalwithPolyglotr.md>).&nbsp; Polyglot relationships are designed to help you express meaning and structure first, without being constrained too early by implementation details such as foreign key constraints, join tables, or platform-specific rules.&nbsp; We make it easy to discuss concepts with business users, who might not be familiar with the technical aspects of data modeling, so as to focus on facts.
 
 &nbsp;
 

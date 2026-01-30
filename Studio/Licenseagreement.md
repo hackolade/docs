@@ -2,7 +2,7 @@
 
 ## Hackolade End User License Agreement
 
-Version 1.8.1, March 2025
+Version 1.8.2, November 2025
 
 &nbsp;
 
@@ -92,11 +92,11 @@ For a perpetual license only, a one-time fee paid by Licensee to Hackolade, as d
 
 ***&#51;.1 Subscription Grant***
 
-A periodic fee paid by Licensee to Hackolade, as designated by Product, in consideration for the Authorized Use of the Product for the corresponding fixed term. Subscription fee is payable, for the initial payment upon acceptance of the terms and conditions set out herein, and subsequent payment upon expiration of the previous term. Subscription fee is not refundable.
+Subject to the terms of this Agreement, including limitations defined by the License, and provided that the Subscription Fee has be paid, Hackolade hereby grants to Licensee, and Licensee accepts from Hackolade, a fixed-term, irrevocable (except pursuant to Clause 12 below), fully paid, worldwide, non-exclusive, non-transferable (except pursuant to Clause 19 below), non-sublicensable (except to Licensee’s related entities) Subscription to use the Product as defined by Authorized Use.
 
 #### &#51;.2 Perpetual License Grant
 
-For a perpetual license only, a one-time fee paid by Licensee to Hackolade, as designated by Product, in consideration for the Authorized Use of the Product. License fee is payable upon acceptance of the terms and conditions set out herein. License fee is non-refundable after 30 days from the date payment is received by Hackolade.
+Subject to the terms of this Agreement, including limitations defined by the License, and provided that the Perpetual License Fee has be paid, Hackolade hereby grants to Licensee, and Licensee accepts from Hackolade, a perpetual, irrevocable (except pursuant to Clause 12 below), fully paid, worldwide, non-exclusive, non-transferable (except pursuant to Clause 18 below), non-sublicensable (except to Licensee’s related entities) License to use the Product as defined by Authorized Use.
 
 &nbsp;
 
@@ -196,7 +196,7 @@ Hackolade reserves the right to discontinue the Product at any time. In this eve
 
 &nbsp;
 
-Clauses 1, 4, 8 – 10, 13 – 24 shall survive any termination of this Agreement.
+Clauses 1, 4, 8 – 10, 13 – 17, 19 -- 25 shall survive any termination of this Agreement.
 
 &nbsp;
 
@@ -270,43 +270,49 @@ All open source software included in Hackolade Product is listed on Exhibit A at
 
 &nbsp;
 
-### &#49;8. No Assignment or Amendment
+### &#49;8. Artificial Intelligence
+
+Hackolade does not develop or train any Language Models.&nbsp; When including or deploying any feature or aspect of the Product that utilizes artificial intelligence (each, an “AI Feature”), Hackolade shall ensure that each AI Feature is deployed in a manner that allows a Licensee and their users to enable or keep disabled such AI Feature, and/or (ii) is not made available to Licensee and their users unless and until Licensee affirmatively requests that such AI Feature be enabled and made available to Licensee and their respective users.&nbsp;
+
+&nbsp;
+
+### &#49;9. No Assignment or Amendment
 
 Licensee may not amend this Agreement without prior written consent of Hackolade. Licensee may assign this Agreement to succeeding parties in the case of a merger, acquisition or change of control so long as in doing so, Hackolade is notified in writing via email to sales@hackolade.com within ninety (90) days of the closure of such transaction. If Licensee merges into or with a direct competitor of Hackolade, as determined in Hackolade’s sole discretion, then this Agreement will automatically terminate as of the effective date of such merger. Hackolade may assign its rights and obligation under this Agreement without consent of Licensee.
 
 &nbsp;
 
-### &#49;9. Tax
+### &#50;0. Tax
 
 Payments made by the Licensee under this Agreement exclude any taxes or duties payable in respect of the goods or services supplied in the jurisdiction where the payment is made or received. To the extent that any such taxes or duties are payable by Hackolade, the Licensee must pay to Hackolade the amount of such taxes or duties in addition to the license fee under this Agreement unless Licensee is exempt from paying such taxes or duties at the time such taxes or duties are levied or assessed. Hackolade will provide the Licensee with documents requested by Licensee necessary to enable the Licensee to obtain a tax or duty refund or credit.
 
 &nbsp;
 
-### &#50;0. Governing Law
+### &#50;1. Governing Law
 
 This Agreement is governed by the laws of Belgium, regardless of conflict of law provisions, and the parties hereby irrevocably and unconditionally submit to the exclusive jurisdiction of the courts in Brussels, Belgium.
 
 &nbsp;
 
-### &#50;1. Attorneys Fees
+### &#50;2. Attorneys Fees
 
 The prevailing party in any legal action or arbitration relating to this Agreement will be entitled to recover its attorneys’ fees and litigation costs and expenses incurred in connection with such action or arbitration as part of the same proceeding.
 
 &nbsp;
 
-### &#50;2. Counterparts/Signatures
+### &#50;3. Counterparts/Signatures
 
 This Agreement may be executed in any number of counterparts, each of which will be an original and all of which will constitute together one and the same document.
 
 &nbsp;
 
-### &#50;3. No Waiver
+### &#50;4. No Waiver
 
 The failure of either party hereto to prosecute its rights with respect to a breach hereunder will not constitute a waiver of the right to enforce its rights with respect to the same or any other breach.
 
 &nbsp;
 
-### &#50;4. Notices
+### &#50;5. Notices
 
 Hackolade may give notice by means of a general notice on the Hackolade website, electronic mail to your e-mail address on record with Hackolade, or by written communication sent by postal mail to the Licensee's address on record. Such notice will be deemed to have been given upon the expiration of 48 hours after mailing or posting or 12 hours after sending (if sent by email). The Licensee may give notice to Hackolade at any time by any of the following: letter delivered by internationally recognized overnight delivery service or registered postal mail to Hackolade’s addresses on its website.
 
@@ -318,5 +324,5 @@ Licensee agrees that the Product will not be shipped, transferred or exported in
 
 &nbsp;
 
-[Exhibit A – Open Source Components/Libraries](<ExhibitAOpenSourcecomponentslibr.md>)
+[Exhibit A – Open Source Components/Libraries](<ExhibitA-OpenSourcecomponentslib.md>)
 

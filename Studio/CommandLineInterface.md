@@ -63,7 +63,8 @@ Below is the current list of Hackolade CLI commands.&nbsp; Additional commands m
 | genDoc | Generate documentation for a Hackolade model, in HTML, Markdown, or PDF format |
 | obfusc | Copy a model, and garble sensitive properties: business name, technical name, description, comments, enumeration.  Use if you need to send a model for troubleshooting but don't want to disclose sensitive aspects of the model. |
 | open | Open Hackolade Studio data model |
-| polyglotDerive | Derive a physical target model from a polyglot data model |
+| polyglotConvert | Convert a model to a Polyglot model |
+| polyglotDerive | Derive a model (polyglot or physical target) from a polyglot data model |
 | polyglotUpdate | Update polyglot definition |
 | revEng | Reverse-engineer a database instance or script file to fetch or infer the schema of the selected collections/tables |
 | revEngDataDictionary | Reverse-engineer a data dictionary instance to infer the schema of entities |
@@ -174,7 +175,7 @@ Example:
 
 > C:\\PROGRA~1\\Hackolade\\hackolade extRefUpdate --model=referrerModel &nbsp;
 
-> &nbsp;
+&nbsp;
 
 &nbsp;
 
@@ -210,14 +211,17 @@ Usage:&nbsp; &nbsp; *hackolade forwEng \[--arguments\]*
 | \--ignoredoc=\<true \| **false**\> | N | Ignore description and comment properties which may be too wordy for this purpose \[default: false\] |
 | \--definitions=\<true \| **false**\> | N | JSON Schema only, specify whether to generate json schema of model definitions \[default: false\] |
 | \--level=\<entity \| container \| model\> | N | Specify the forward-engineering level \[values: "entity", "container", "model"\] |
+| \--skipModelFolder=\<true \| **false**\> | N | Skip extraneous root folder named after the model, allowing for direct export of files into the selected location \[default: false\] |
 | \--skipUndefinedLevel=\<true \| **false**\> | N | For JSON document/schema, skip extraneous folder level when container is undefined \[default: false\] |
-| \--structuredpath=\<**true** \| false\> | N | Use a structured path for naming a model folder \[default: true\] |
 | \--apply-drop-statements=\<true \| **false**\> | N | Determines whether DROP statements are active (true) or commented out (false).  The user is required to explicitly activate the generation of DROP statements, signifying the understanding of the possible consequences&nbsp; \[default: false\] |
 | \--excludeContainerAlterStatements= \<true \| **false**\> | N | Determines whether containers ALTER statements are excluded (true) or not (false) \[default: false\] |
 | \--resolveApiExternalRefs=\<true \| **false**\> | N | Specify whether to resolve external references in API targets \[default: false\] |
 | \--serialization=\<**BSON** \| JSON\> | N | Specify whether JSON Data must be generated with Plain JSON values or BSON values \[values: "BSON", "JSON"\] \[default: "BSON"\] |
+| \--pkAtTop=\<**true** \| false\> | N | Place Primary Key at the top of the attribute list \[default: true\] |
 | \--logLevel=\< 1 \| 2 \| 3 \| **4** \> | N | &#49; = no spinner, no info, no error messages 2 = no spinner, no info 3 = no spinner 4 = full output \[default: 4\] |
 
+
+&nbsp;
 
 \*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“)&nbsp; Path can be ignored if file is in local directory.
 
@@ -260,6 +264,7 @@ Usage:&nbsp; &nbsp; *hackolade forwEngAPI \[--arguments\]*
 | \--APIdocFile=\<file\>\* | N | If specified, the corresponding documentation file will be generated in the chose model format.&nbsp; Specify the full path and file name for the generated documentation file. |
 | \--keepexternal=\<**true** \| false\> | N | Keep external references to this data model \[default: true\] |
 | \--referencepath=\<**absolute** \| relative\> | N | Specify type of external references path \[default: absolute\] |
+| \--pkAtTop=\<**true** \| false\> | N | Place Primary Key at the top of the attribute list \[default: true\] |
 | \--logLevel=\< 1 \| 2 \| 3 \| **4** \> | N | &#49; = no spinner, no info, no error messages 2 = no spinner, no info 3 = no spinner 4 = full output \[default: 4\] |
 
 
@@ -345,6 +350,7 @@ Usage:&nbsp; &nbsp; *hackolade forwEngXLSX \[--arguments\]*
 | \--fullPathTechnicalNames=\<**true** \| false\> | N | Specify whether, for nested complex structures, to include the full path in dot notation for the technical name \[default: true\] |
 | \--resolvedDefinitions=\<true \| **false**\>&nbsp; | N | Specify whether to resolve referenced definitions \[default: false\]&nbsp; |
 | \--updateExtDefs=\<true \| **false**\>&nbsp; | N | When reference to external definition, update current model to ensure latest changes are included. \[default: false\] |
+| \--pkAtTop=\<**true** \| false\> | N | Place Primary Key at the top of the attribute list \[default: true\] |
 | \--logLevel=\< 1 \| 2 \| 3 \| **4** \> | N | &#49; = no spinner, no info, no error messages 2 = no spinner, no info 3 = no spinner 4 = full output \[default: 4\] |
 
 
@@ -485,9 +491,48 @@ is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed 
 
 &nbsp;
 
+## polyglotConvert&nbsp;
+
+The polyglotConcert command lets you convert a model (polyglot or physical target) to a polyglot model.
+
+&nbsp;
+
+Usage:&nbsp; &nbsp; *hackolade polyglotConvert \[--arguments\]*
+
+&nbsp;
+
+| **Argument** | **Required** | **Purpose** |
+| --- | --- | --- |
+| \--model=\<sourceModelFile\> | Y | Full path and file name of the target model to convert to Polyglot. Extension .json is optional&nbsp; |
+| \--polyglotModel=\<polyglotModelFile\> | Y | Full path and file name for converted Polyglot model. Extension .json is optional. If Polyglot model doesn't exist yet, it will be created. If it does exist, the argument --mergeWithExistingPolyglot can be used to determine whether to merge or replace it. |
+| \--polyglotDependence=\< independent \| dependentRelative \| dependentAbsolute \> | Y | Specify whether to keep the model to convert dependent on the Polyglot model or to keep them independent&nbsp; If dependent, the path can be relative (recommended) or absolute. |
+| \--mergeWithExistingPolyglot=\< true \| **false** \>  | N | f Polyglot model already exists, specify whether to merge the converted Polyglot into the existing one. If false, the existing Polyglot model will be replaced. \[Default: false\] |
+| \--APIModelDefsHandling=\< **resolve** \| saveAsDefinitions \>  | N | Specify how to handle definitions when the model to convert is an API model. Definitions can either be resolved or saved as definitions in the converted Polyglot model. \[Default: resolve\] |
+| \--convertViews=\< true \| **false** \>  | N | Specify whether to convert the views to Polyglot views. \[Default: false\] |
+| \--logLevel=\< 1 \| 2 \| 3 \| **4** \> | N | &#49; = no spinner, no info, no error messages 2 = no spinner, no info 3 = no spinner 4 = full output \[default: 4\] |
+
+
+\*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“)&nbsp; Path can be ignored if file is in local directory.
+
+&nbsp;
+
+Example:
+
+*C:\\PROGRA~1\\Hackolade\\hackolade polyglotConvert --model=yelp-mongodb.hck.json --polyglotmodel=yelp-polyglot.hck.json --polyglotDependence=dependentRelative --mergeWithExistingPolyglot=true --convertViews=true*
+
+&nbsp;
+
+**Note:** If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: *"C:\\Program Files\\Hackolade\\hackolade"* .&nbsp; The workaround, assuming:
+
+![Windows Program Files](<lib/Windows Program Files.png>)
+
+is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed above.
+
+&nbsp;
+
 ## polyglotDerive&nbsp;
 
-The polyglotDerive command lets you derive a target model from a polyglot model.
+The polyglotDerive command lets you derive a model (polyglot or physical target) from a polyglot model.
 
 &nbsp;
 
@@ -503,9 +548,11 @@ Usage:&nbsp; &nbsp; *hackolade polyglotDerive \[--arguments\]*
 | \--targetmodel=\<file\>\* | Y | Specify the directory path and file name where the derived target model will be created |
 | \--pathType=\< **absolute** \| relative \>&nbsp; | N | Specify the type of path, absolute or relative \[default: absolute\] |
 | \--normalize=\< true \| **false** \>&nbsp; | N | Where applicable, specify whether or not to normalize complex data types in separate entities \[default: false\] |
+| \--generateAssociativeEntities=\< true \| **false** \>  | N | Generate associative entities for many-to-many relationships \[default: false\]&nbsp; |
 | \--APItemplate=\<file\>\* | N | When deriving to Swagger/OpenAPI target to generate model-driven API, specify full path and file name for the template to be used during deriving from Polyglot. The template can be a Hackolade model, or a Swagger or OpenAPI documentation file in either JSON or YAML. |
 | \--selectedObjects= "\<containerName\>: \[\<*entity1\>*,\<*entity2\>*,…\]" | N | Specify container(s) to reverse-engineer&nbsp; \[default: all\] and an array of entities \[default: all\] - MongoDB: container = dbs; entity = collection - DynamoDB: container = *not applicable*; entity = table - Couchbase: container = bucket; entity = document kind - Cosmos DB: container = collection; entity = document type - Elasticsearch: container = index: entity = type - HBase: container =&nbsp; namespace; entity = table The value is a string surrounded by double quotes (").&nbsp; Entities are represented as an array surrounded by square brackets (\[\]), and are separated by a comma (,).&nbsp; The entities array is separated from the container name by a colon (:).&nbsp; Containers are separated by semi-colons (;). |
 | \--selectedViews= "\<containerName\>: \[\<*entity1\>*,\<*entity2\>*,…\]" | N | Specify container(s) to derive \[default: none\] and an array of views. The value is a string surrounded by double quotes ("). Views are represented as an array surrounded by square brackets (\[\]), and are separated by a comma (,). The views array is separated from the container name by a colon (:). Containers are separated by semi-colons (;) |
+| \--applytargetnamingconventions=\< true \| **false** \>&nbsp; | N | Specify whether to apply the target model's naming conventions when deriving names.&nbsp; If set to true, names will be generated using the target's naming rules. If set to false, names defined in the Polyglot model will be preserved.&nbsp; \[default: false\] |
 | \--logLevel=\< 1 \| 2 \| 3 \| **4** \> | N | &#49; = no spinner, no info, no error messages 2 = no spinner, no info 3 = no spinner 4 = full output \[default: 4\] |
 
 
@@ -585,6 +632,7 @@ Usage:&nbsp; &nbsp; *hackolade revEng \[--arguments\]*
 | \--inferRelationships=\< true \| **false** \> | N | For MongoDB only, optionally specify whether to attempt relationship inference based on ObjectID data type. &nbsp; |
 | \--query="{\<aggregation pipeline expression\>}" | N | For MongoDB only, specify query criteria for sampling.&nbsp; \[string\] \[default: "{}"\] |
 | \--sort="{\<aggregation pipeline expression\>}" | N | For MongoDB only, specify sort criteria for sampling.&nbsp; \[default: "{}"\] |
+| \--useIndexInSort=\< true \| **false** \> | N | For MongoDB only, specify whether to use index columns in sort criteria \[default= false\] |
 | \--update=\< true \| **false** \> | N | Specify whether to update existing model.  If false, existing model will be overwritten \[default: false\] |
 | \--conflictResolution\< **keepBoth** \| replace \| merge \| cancel \> | N | Specify conflict resolution strategy for containers and entities \[default: keepBoth\]&nbsp; \[values: "keepBoth", "replace", "merge", "cancel"\] \[default: "keepBoth"\] |
 | \--selectedObjects= "\<containerName\>: \[\<*entity1\>*,\<*entity2\>*,…\]" | N | Specify container(s) to reverse-engineer&nbsp; \[default: all\] and an array of entities \[default: all\] - MongoDB: container = dbs; entity = collection - DynamoDB: container = *not applicable*; entity = table - Couchbase: container = bucket; entity = document kind - Cosmos DB: container = collection; entity = document type - Elasticsearch: container = index: entity = type - HBase: container =&nbsp; namespace; entity = table The value is a string surrounded by double quotes (").&nbsp; Entities are represented as an array surrounded by square brackets (\[\]), and are separated by a comma (,).&nbsp; The entities array is separated from the container name by a colon (:).&nbsp; Containers are separated by semi-colons (;). |
@@ -729,7 +777,7 @@ Usage:&nbsp; &nbsp; *hackolade revEngDiagram \[--arguments\]*
 | **Argument** | **Required** | **Purpose** |
 | --- | --- | --- |
 | \--source=\<source\> | Y | Specify the modeling tool providing the source file.&nbsp; Currently only powerdesigner and mermaid are a possible value |
-| \--file=\<*file*\>\* | Y | Specify the directory path and file name where the file to be reverse-engineered is located (file must be a valid file for the source.)&nbsp; Absolute and relative paths are allowed. &nbsp; Currently supported extensions: .ldm, . mld (logical models from PowerDesigner) |
+| \--file=\<*file*\>\* | Y | Specify the directory path and file name where the file to be reverse-engineered is located (file must be a valid file for the source.)&nbsp; Absolute and relative paths are allowed. &nbsp; Supported extensions: .cdm, .ldm, .pdm (conceptual, logical, and physical models from PowerDesigner), .mmd (Mermaid ER diagrams) |
 | \--model=\<*file*\>\* | Y | Full path and file name for target Hackolade model into which reverse-engineering process has to be converted.&nbsp; Extension .json is optional.&nbsp; If not specified, the target Hackolade model is located in the same directory than the data model file to be reverse-engineered and receives the same name, with the Hackolade extension .hck.json. |
 | \--target=\<*target*\> | Y | Specify the target for the Hackolade Studio model to create.&nbsp; For a logical model, the target must be polyglot.&nbsp; For a physical model, the target must be one of the Hackolade Studio physical targets. |
 | \--maxErdEntityBoxes=\< true \| **false** \> | N | Specify whether to fully expand all collections before distribution.&nbsp; \[default: false\] |

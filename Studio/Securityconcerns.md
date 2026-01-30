@@ -30,7 +30,7 @@ The purpose of the software is for data modeling of SQL and NoSQL databases, API
 
 ## Compliance certifications or accreditation like SOC 2 Type 2 or 3, or ISO 27001: what are Hackolade's internal controls related to: network security, security personnel, data security, operational security, risk management, asset management, business continuity, and disaster recovery?
 
-The architecture of our solution must be taken into account.&nbsp; Hackolade Studio is a downloadable COTS client, and **NOT** a Software-as-a-Service solution that would store your data or data models.&nbsp; Also, our software has no telemetry, meaning that no information goes outside of your network.  We don’t collect or store any of your information, except for the license key-related information as described in our [Privacy Policy](<https://hackolade.com/privacy.html>). &nbsp;
+The architecture of our solution must be taken into account.&nbsp; Hackolade Studio is a downloadable COTS client-only solution with no backed, and **NOT** a Software-as-a-Service solution that would store your data or data models.&nbsp; Also, our software has no telemetry, meaning that no information goes outside of your network.  We don’t collect or store any of your information, except for the license key-related information as described in our [Privacy Policy](<https://hackolade.com/privacy.html>). &nbsp;
 
 &nbsp;
 
@@ -96,7 +96,7 @@ Specifically, the following DORA articles exonerate Hackolade from being subject
 
 ## Is the Hackolade Studio desktop installer "code signed"?
 
-Code signing is a method of putting a digital signature on a program, file, software update or executable, so that its authenticity and integrity can be verified upon installation and execution. It guarantees to the recipient who the publisher is, and that the software hasn't been opened and tampered with.
+Code signing is a method of putting a digital signature on a program, file, software update or executable, so that its authenticity and integrity can be verified upon installation and execution. It guarantees to the recipient who the publisher is, and that the software hasn't been opened and tampered with.&nbsp; Additionally, the application includes integrity validation to protect against code tampering that would attempt to alter its behavior, for example by injecting malicious code to steal secrets.&nbsp; The application compares at runtime against a SHA-256 hash, and terminates if there is any mismatch.
 
 &nbsp;
 
@@ -110,7 +110,7 @@ The code signing of our software depends on the OS platform capabilities:
 
 &nbsp;
 
-&#51;) Linux: this OS platform does not provide an installer or standard code-signing.
+&#51;) Linux: this OS platform does not provide an installer or standard code-signing.&nbsp; We therefore provide a SHA-256 checksum file to be downloaded along with Hackolade Studio for Linux.
 
 &nbsp;
 
@@ -191,13 +191,13 @@ The process of threat modeling consists of the following steps:
 
 &nbsp;
 
-## What is our engineering team's usage of static code analysis tools (SAST, SCA)?
+## What is our engineering team's usage of Static Code Analysis tools (SAST, SCA)?
 
 The quality of our code base is continuously analyzed following a [Clean as you Code strategy](<https://docs.sonarsource.com/sonarcloud/improving/clean-as-you-code/> "target=\"\_blank\"") with SonarQube (previously SonarLint and SonarCloud), the solution trusted and used by 7 million developers around the world.&nbsp;
 
 &nbsp;
 
-In terms of Static Application Security Testing (SAST), we use [Abstract Syntax Tree](<https://en.wikipedia.org/wiki/Abstract\_syntax\_tree> "target=\"\_blank\"")-based tools to proactively detect, report, and fix undesired patterns and vulnerabilities in our codebase.&nbsp; All our software engineers have these tools enabled in their integrated development environment (IDE).&nbsp; They receive immediate feedback in case a problem is detected while they are writing code.&nbsp; We also leverage a Git hook to prevent pushing such problems to our central code repositories.&nbsp; As a last verification layer, the same tools are used in our continuous integration pipeline, making it impossible to build and publish a version of the software that would be affected by detected problems.
+In terms of [Static Application Security Testing (SAST)](<https://en.wikipedia.org/wiki/Static\_application\_security\_testing> "target=\"\_blank\""), we use [Abstract Syntax Tree](<https://en.wikipedia.org/wiki/Abstract\_syntax\_tree> "target=\"\_blank\"")-based tools to proactively detect, report, and fix undesired patterns and vulnerabilities in our codebase.&nbsp; All our software engineers have these tools enabled in their integrated development environment (IDE).&nbsp; They receive immediate feedback in case a problem is detected while they are writing code.&nbsp; We also leverage a Git hook to prevent pushing such problems to our central code repositories.&nbsp; As a last verification layer, the same tools are used in our continuous integration pipeline, making it impossible to build and publish a version of the software that would be affected by detected problems.
 
 &nbsp;
 
@@ -206,6 +206,96 @@ As part of our internal continuous improvement process, we regularly evaluate ad
 &nbsp;
 
 Regarding Software Composition Analysis (SCA), we use industry standard audit tools to assess our 3rd-party dependencies and make sure to keep them up-to-date with the latest security patches.&nbsp; We also leverage "docker scan" (powered by Snyk) to detect vulnerabilities in the Docker images used in our DevOps CI/CD pipeline.
+
+&nbsp;
+
+&nbsp;
+
+## Does Hackolade perform any Dynamic Application Security Testing (DAST) or Penetration Testing?
+
+[SAST (Static Application Security Testing)](<https://en.wikipedia.org/wiki/Static\_application\_security\_testing> "target=\"\_blank\"") examines an application’s source code from the “inside out” to find coding vulnerabilities.&nbsp; [DAST (Dynamic Application Security Testing)](<https://en.wikipedia.org/wiki/Dynamic\_application\_security\_testing> "target=\"\_blank\"") tests a running application from the “outside in,” simulating attacks a malicious user would carry out and flagging unexpected or unsafe responses.&nbsp; Together, SAST and DAST provide complementary views and are considered best practice for a complete vulnerability picture.
+
+&nbsp;
+
+Penetration testing (pentesting) is a hands-on form of DAST in which testers try to exploit weaknesses -- either manually or with automated tooling -- to prove vulnerabilities exist, validate defenses and response plans, and confirm fixes.&nbsp;
+
+&nbsp;
+
+Pentests typically follow three stages:
+
+* Explore — discover software, endpoints, patches and likely weaknesses;
+* Attack — attempt exploits to confirm vulnerabilities;
+* Report — document findings, exploitation steps, difficulty and severity.
+
+&nbsp;
+
+Automated pentesting is useful inside CI/CD because it continuously detects new issues and regressions in fast-changing, collaborative environments.
+
+&nbsp;
+
+We run automated DAST/pentesting in our DevOps pipeline using [Zed Attack Proxy (ZAP)](<https://www.zaproxy.org/getting-started/> "target=\"\_blank\"") by Checkmarx — an open-source, extensible web-application proxy that intercepts and manipulates traffic between the browser and the application (a “man-in-the-middle” proxy).&nbsp;
+
+&nbsp;
+
+We also perform penetration testing for application code tampering.
+
+&nbsp;
+
+## Does Hackolade use other code scanning strategies?
+
+Vulnerability scanners, which find CVEs in dependencies, and static analysis tools, which analyze application code, provide useful alerts and assistance.&nbsp; We feel that we also need to be more pro-active in our protection to detect supply chain attacks in dependencies.&nbsp; To that effect, we strictly practice dependency version pinning to complement additional security measures, and prevent any automatic updates that&nbsp; could introduce vulnerabilities.
+
+&nbsp;
+
+&nbsp;
+
+## You say that Hackolade Studio is secure, but how can we be sure?
+
+Customers have scanned Hackolade Studio with [Spectra Assure](<https://www.reversinglabs.com/products/software-supply-chain-security> "target=\"\_blank\""), the Software Supply Chain Security (SSCS) product by the cybersecurity company [Reversing Labs](<https://www.reversinglabs.com/> "target=\"\_blank\"").&nbsp; The product uses "SAFE levels" (which stands for "Software Assurance Foundational Evaluation"), a gradual, guided approach to improving software quality by letting users attain specific security goals.&nbsp; The product comes with an extensive set of built-in policies carefully crafted according to industry standards and expert Reversing Labs insights. Those policies are used when analyzing software packages to identify and report a range of software quality and security issues. &nbsp;
+
+&nbsp;
+
+Another way to look at SAFE Levels is to relate them to the concept of maturity models, where each level is a maturity estimation. There are [five SAFE Levels](<https://docs.secure.software/concepts/levels#safe-levels-definitions> "target=\"\_blank\"").&nbsp; At Level 1,&nbsp; software is the least mature and satisfies only the bare minimum of security.&nbsp; At Level 5,&nbsp; software is the most mature and able to pass the most advanced security checks.
+
+&nbsp;
+
+Key software safety concerns include license and secret compliance, security with vulnerability and application hardening, as well as tampering and malware threads.
+
+&nbsp;
+
+Security is a never-ending process, and we follow a strict protocol to possibly detect and address possible new risks.&nbsp; The following results are based on the scanning of our version v8.5.0.&nbsp; The application passed levels 1 through 5.&nbsp; If you run the scan again yourself, make sure to do it on the latest version of the application. &nbsp;
+
+&nbsp;
+
+![Security ReversingLabs C5 Pass](<lib/Security ReversingLabs C5 Pass.png>)
+
+&nbsp;
+
+![Image](<lib/Security ReversingLabs levels.png>)
+
+&nbsp;
+
+To be fully transparent, 2 policies were whitelisted because considered as false positives as they do not affect how we use the framework, and where a corrective action would be outside of our control. &nbsp;
+
+&nbsp;
+
+The 2 issues are:
+
+\- SQ34108: *Detected presence of private keys*
+
+\- SQ34109: *Detected presence of hardcoded private keys*
+
+&nbsp;
+
+Both are related to Electron, the JavaScript framework and runtime for developing cross-platform desktop applications.&nbsp; This [very popular framework](<https://www.electronjs.org/apps> "target=\"\_blank\"") is produced by GitHub and Microsoft, and is also used by Discord, GitHub Desktop, Figma, Notion, Slack, Microsoft Teams, VS Code, WhatsApp, and many others.&nbsp; All these applications would reveal the same detections. &nbsp; We validated with the Electron executable and the VS Code executable, and they both include the same private keys.
+
+&nbsp;
+
+Hackolade Studio does not use the detected private keys in any of its processing, and instead uses OS-provided keychains (macOS, Windows DPAPI, Linux secret stores) accessible via Electron's safeStorage API or other secure key management methods.
+
+&nbsp;
+
+Without these 2 policies, Hackolade Studio would pass non-customized levels L1 through L5.
 
 &nbsp;
 

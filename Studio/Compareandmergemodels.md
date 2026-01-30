@@ -46,7 +46,7 @@ Left and right models can be swapped at this stage, or later on as well.
 
 ## Compare models
 
-The comparison handles the synchronized scrolling of hierarchical structures for easy merging of additions, deletions, modifications and moves.&nbsp; All objects (containers, entities, views, relationships, definitions, attributes, etc...) and their properties in a Hackolade data model are compared, and if necessary marked as an addition, a deletion, a modification or a move.&nbsp; Separate colors and corresponding badge icons help identify the differences.&nbsp; The display can be filtered by category of differences.&nbsp; Objects are shown in the upper part of the display, whereas properties for the selected object are shown in the lower part of the display.&nbsp; By default, matching properties are filtered, but a checkbox at the bottom enables their display.
+The comparison handles the synchronized scrolling of hierarchical structures for easy merging of additions, deletions, modifications and moves.&nbsp; All objects (containers, entities, views, relationships, definitions, attributes, etc...) and their properties in a Hackolade data model are compared, and if necessary marked as an addition, a deletion, a modification or a move.&nbsp; Separate colors and corresponding badge icons help identify the differences.&nbsp; The display can be filtered by category of differences.&nbsp; Objects are shown in the upper part of the display, whereas properties for the selected object are shown in the lower part of the display.&nbsp; By default, matching properties are filtered, but an option on the left enables their display.
 
 &nbsp;
 
@@ -54,11 +54,11 @@ The comparison handles the synchronized scrolling of hierarchical structures for
 
 &nbsp;
 
-The term "deletion", i.e. when an object is present in the left model but not in the right model, also includes cases where the left model evolved in parallel to the right model.&nbsp; In such case, the term "deletion" may be semantically inappropriate as it really represents an addition versus an earlier version of the left model.&nbsp; But the application has no way to know such state, and convention was necessary.
+The term "deletion", i.e. when an object is present in the left model but not in the right model, also includes cases where the left model evolved in parallel with the right model.&nbsp; In such case, the term "deletion" may be semantically debatable, as it really represents an addition versus an earlier version of the left model.&nbsp; But the application has no way to know such state.&nbsp; And convention was necessary.
 
 &nbsp;
 
-While field order may not be important in JSON or even enforced in database systems, it is convenient for humans to maintain attributes in a logical order.&nbsp; Therefore moves are tracked as differences during comparison. &nbsp;
+While field order may not be important in JSON or even enforced in some database systems, it is convenient for humans to maintain attributes in a logical order.&nbsp; Therefore, moves are tracked as differences during comparison. &nbsp;
 
 &nbsp;
 
@@ -66,15 +66,54 @@ Modifications are typically differences in properties of the model objects.
 
 &nbsp;
 
-The user may navigate through the differences using the navigation buttons to move forward or back within the differences.&nbsp; It is possible to make models swap sides, and to reload the models if changes have been applied separately since the time they were first loaded. &nbsp;
+The user may navigate through the differences using the navigation buttons to move forward or back within the differences.&nbsp; It is possible to make models swap sides, and to reload the models if changes have been applied separately since the time they were first loaded, or open each model in a separate instance.&nbsp;
 
 &nbsp;
 
-**Important:** Typically, models are compared using the internal Hackolade ID for the objects in the model.&nbsp; That works well if both models have evolved from the same Hackolade base data model.&nbsp; However, if you compare a reference Hackolade model with a new model derived from the reverse-engineering of a database instance for example, then this new model will have generated new internal GUID for the objects.&nbsp; As a result, matching must be made based on object names matching.
+&nbsp;
+
+![Compare and merge - compare view](<lib/Compare and merge - compare view.png>)
 
 &nbsp;
 
-![Image](<lib/Compare and merge - compare view.png>)
+Added, deleted, and modified objects have blue, yellow, green or red colors.&nbsp; Color coding and badges help you understand additions, deletions, and modifications:&nbsp;
+
+* pale blue for addition: an attribute is present in the right pane, but not in the left pane
+* yellow for modification: an attribute appears on both sides, but has different properties on each side
+* green for move: an attribute is present on both sides, but in a different position
+* red for deletion: an attribute is present in the left pane, but not in the right pane
+
+&nbsp;
+
+If you are not sure what type of difference it is and whether it is changed in the left or right model, you can hover on the icon and read the tooltip.&nbsp;
+
+&nbsp;
+
+A dark blue bar across both panes indicates the selected object, triggering the display of the object's properties in the lower part of the screen.
+
+&nbsp;
+
+In the Display Options column on the left, the application shows only difference by default.&nbsp; If an object in a branch has a difference, all its ancestors in the tree are displayed.&nbsp; It is possible change the display options on the left, depending on what you are trying to understand.
+
+![Compare and merge display options](<lib/Compare and merge display options.png>)
+
+&nbsp;
+
+Further below in the same column, the application displays the selected matching criteria.&nbsp; **Important:** Typically, models are compared using the internal Hackolade ID for the objects in the model.&nbsp; That works well if both models have evolved from the same Hackolade base data model.&nbsp; However, if you compare a reference Hackolade model with a new model derived from the reverse-engineering of a database instance for example, then this new model will have generated new internal GUID for the objects.&nbsp; As a result, matching must be made based on object names matching.&nbsp; In the absence of matching internal IDs, the application automatically falls back to matching on technical names.&nbsp; And if technical names are absent, the application falls further back to matching on business names.&nbsp; You may manually choose in the left column a different matching criteria than the automatically assigned one.
+
+![Compare and merge matching criteria](<lib/Compare and merge matching criteria.png>)
+
+&nbsp;
+
+Further below in the same column, the application shows the display options, in the lower part of the screen, for the properties of the selected object.&nbsp; By default, only the differences are displayed.
+
+![Compare and merge properties display options](<lib/Compare and merge properties display options.png>)
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
 
 &nbsp;
 
@@ -88,7 +127,7 @@ Optionally, you can have the application generate a delta model, which for targe
 
 ## Merge models
 
-Toggling the display brings up the 3-pane merge view.&nbsp; While the left- and right-hand models remain in their places, a middle pane proposes the result of the merge operation, and displays the colors and badge icons previously found in the compare view.
+Toggling the display brings up the 3-pane merge view.&nbsp; While the left- and right-hand models remain in their places, a middle pane proposes the result of the merge operation, and displays the colors and badge icons previously found in the compare models view.
 
 &nbsp;
 
@@ -110,9 +149,17 @@ When differences are conflicting, the merge proposal uses the right-hand model v
 
 &nbsp;
 
+See Compare Models section above for an explanation of the display options, matching criteria, color coding and badges.
+
+&nbsp;
+
+Action buttons above the Merged model pane allow you to batch check or uncheck boxes to include objects, or not in the merged model.&nbsp; You may also manually check or uncheck individual objects.
+
+&nbsp;
+
 ## Save the merged model
 
-By clicking the Save button, the user has the possibility to save the merged model with only the selected merge proposals.&nbsp; This merged model can be saved as a new Hackolade data model file name (recommended), or be used to write over an existing model on the file system (for example in a Git-enabled environment.)&nbsp; If using the latter method, beware of impacts of writing over an existing file.
+By clicking the Save button, the user has the possibility to save the merged model with only the selected merge proposals.&nbsp; This merged model can be saved as a new Hackolade data model file name (recommended if you're not using Git for versionning), or be used to write over an existing model on the file system (for example in a Git-enabled environment.)&nbsp; If using the latter method, beware of impacts of writing over an existing file.
 
 &nbsp;
 

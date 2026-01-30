@@ -1,6 +1,6 @@
 # Delta model and ALTER script
 
-The feature to create an ALTER script from the differences between 2 Hackolade data models is only available for the technologies that allow such syntax and that we support, currently: BigQuery, Cassandra and DataStax, Databricks and Delta Lake, Hive, MariaDB and SkySQL, MySQL, Oracle and Autonomous Database, PostgreSQL and EnterpriseDB, Amazon RDS, Redshift, SQL Server and Azure SQL, Google Cloud SQL, ScyllaDB, Snowflake, and Synapse.
+The feature to create an ALTER script from the differences between 2 Hackolade data models is only available for the technologies that allow such syntax and that we support, currently: BigQuery, Cassandra and DataStax, Databricks and Delta Lake, Hive, MariaDB and SkySQL, MySQL, Oracle and Autonomous Database, PostgreSQL and EnterpriseDB, Amazon RDS, Redshift, SQL Server and Azure SQL, Google Cloud SQL, ScyllaDB, Snowflake, Synapse, and Teradata..
 
 &nbsp;
 

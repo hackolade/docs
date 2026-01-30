@@ -25,7 +25,7 @@ For example we recently enabled reverse-engineering with the browser from a Data
 
 &nbsp;
 
-Also, we are currently working on a scheme to allow sharing a license seat across the desktop and the browser on a single machine, if only so that a desktop user for example can verify that a [model link](<SharemodellinkURL.md>) works as expected in the browser.&nbsp; Again for browser security reasons, it is impossible for the browser to access the license information of the desktop.&nbsp; We have designed and are currently developing a process that would allow such exchange without causing any security risk, and without impeding our revenue protection.&nbsp; In the meantime, if you want to work both in the desktop and in the browser, each consumes its own license seat.
+The license seat can be shared across the desktop and the browser on a single machine, for example is a desktop user wants to verify that a [model link](<SharemodellinkURL.md>) works as expected in the browser.&nbsp; Again for browser security reasons, it is impossible for the browser to access the license information of the desktop.&nbsp; The process allows such exchange without causing any security risk, and without impeding our revenue protection.&nbsp; This license seat sharing process is described [here](<https://hackolade.com/help/Softwareregistration.html#Reuse%20in%20the%20Browser%20your%20license%20key%20already%20validated%20in%20the%20Desktop>).
 
 &nbsp;
 

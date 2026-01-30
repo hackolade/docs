@@ -1,5 +1,7 @@
 # Define composite key constraints
 
+This page shows how to create composite primary keys (a.k.a. composite PK, compound primary keys, or complex primary keys), as well as composite foreign keys (a.k.a. composite FK, compound foreign keys or complex foreign keys.)&nbsp;
+
 ## Primary keys
 
 Not all technology targets support primary keys.&nbsp; However, it might be useful to mark primary keys for documentation purposes.

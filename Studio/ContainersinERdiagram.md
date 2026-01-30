@@ -28,5 +28,5 @@ Containers are not mandatory in models, but recommended if you want DDLs to be c
 
 &nbsp;
 
-&nbsp;
+When using containers in Polyglot models, please make sure to read [this article](<Howtoorganizemodels.md>) reviewing how to organize models.
 

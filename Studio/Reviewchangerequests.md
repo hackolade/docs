@@ -242,5 +242,51 @@ You can access the list of change requests that are assigned to you from the lef
 
 &nbsp;
 
-You can unassign yourself from a change request by clicking on the cross icon next to your name in the list of assignees.
+You can unassign yourself from a change request by clicking on the cross icon next to your name in the list of assignee's.
+
+&nbsp;
+
+&nbsp;
+
+## Note on temporary worktrees and temporary branches
+
+The application does not create a temporary branch: everything happens in the current branch.   The nominal case of conflict resolution is described in [this article](<Solveconflicts.md>) and is executed without the creation of any temporary branch.
+
+&nbsp;
+
+For those more familiar with Git, we detail the commands used when performing a Pull operation:
+
+![Workgroup PULL git commands](<lib/Workgroup PULL git commands.png>)
+
+&nbsp;
+
+If a conflict is detected during merge, the user is given the opportunity to solve the conflict:
+
+![Workgroup conflict resolution](<lib/Workgroup conflict resolution.png>)
+
+&nbsp;
+
+&nbsp;
+
+With the conflict resolution taking the form of this modeling context-aware screen:
+
+![Workgroup merge dialog](<lib/Workgroup merge dialog.png>)
+
+&nbsp;
+
+However, it is also possible that a user, while working in one branch, needs to review a pull request on a different branch, and that PR contains a conflict.  While this use case is less common, it is possible, and probably the use case experienced by the prospect.  In that case, the application logic involves checking out the pull request branch as a temporary branch named - tmp-\<timestamp\> -  but created in a separate [working tree](<https://git-scm.com/docs/git-worktree> "target=\"\_blank\""). This difference is linked to the fact that the pull request branch (where the conflicts must be solved) is not necessarily the current branch of the user. Using a separate working tree behind the scenes (which should normally not be visible to the user) allows us to check out two branches at the same time and let the user solve the pull request conflicts without impacting at all what he is working on in his current branch. Thanks to the separate working tree, there is no need for the user to save pending changes, to stash or commit them, to checkout a different branch, etc. Everything happens within the user's local repository. At the end of the process, the result of the conflict resolution is pushed to the remote repository, in the pull request branch. Note that the logic is the same when the user updates a pull request. 
+
+&nbsp;
+
+You can see in this screenshot where the 2nd command creates the temporary worktree, and where the last 2 commands deletes the temporary worktree and temporary branch:
+
+![Workgroup update branch git commands](<lib/Workgroup update branch git commands.png>)
+
+&nbsp;
+
+The temporary worktree and branch are always performed locally, and discarded after use.   They are never pushed to the remote repository.
+
+&nbsp;
+
+&nbsp;
 

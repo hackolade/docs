@@ -8,15 +8,21 @@ Note that in NoSQL databases FK relationships are not declared to the database i
 
 Note also that in analytics databases, primary key and foreign key constraints may be absent for performance purposes.&nbsp; If you have reverse-engineered in OLAP store and your model does not show any PK and FK relationship lines, it may still be possible to discover them using our [Infer PKs \& FKs](<InferPrimaryKeysandForeignKeyRel.md>) feature.
 
+&nbsp;
+
+For conceptual and Logical modeling with Polyglot relationships, make sure to read [this article](<RelationshiplinesinERdiagram.md>).
+
+&nbsp;
+
 ## Create a Foreign Key relationship line
 
 There are several ways to create a new relationship line between the attributes of two entity boxes in the ER diagram of a model:
 
 * with a **drag-and-drop** action in the ERD by selecting a child attribute and dragging while holding the mouse button towards a parent attribute with a compatible attribute type in another entity.&nbsp; If the parent attribute is not yet a PK for its table, the application automatically makes the parent attribute a PK, if there is no conflict (i.e. if another attribute in the same entity is not already the PK.) \
 &nbsp;
-* since v7.0.4, the drag-and-drop behavior can be modified from its default via Tools \> Options \> General to become "from parent to child".&nbsp; This is particularly useful in dimensional modeling when you want to take the PK of a parent dimension table and automatically create:
+* since v7.0.4, the drag-and-drop behavior can be swapped from its default via Tools \> Options \> General to become "from parent to child".&nbsp; This is particularly useful in dimensional modeling when you want to take the PK of a parent dimension table and automatically create:
 
-  * the same attribute in the child fact table with the same data type.&nbsp; Note that you may modify the name of the attribute in the fact table.
+  * the same attribute in the child fact table with the same data type, if you drop (release the mouse key) when the cursor is in between 2 attributes.&nbsp; Note that you may modify the name of the attribute in the fact table.&nbsp; If you wish to create the relationships without adding an attribute in the child table, then you must drop (release the mouse key) exactly on an existing attribute.
   * the FK relationship from the child attribute in the fact table to the parent PK attribute in the dimension table.
 
 &nbsp;
@@ -25,7 +31,7 @@ There are several ways to create a new relationship line between the attributes 
 
 ![Menu - Add relationship](<lib/Menu - Add relationship.png>)
 
-* by pressing the **shortcut Ctrl+R** and filling the properties in the right Pane
+* by pressing the **shortcut Ctrl+T** and filling the properties in the right Pane
 * with a click of the **toolbar icon** ![Image](<lib/Icons - addRelationship.jpeg>)&nbsp;
 * with a **right-click** anywhere in the central pane to display the **contextual menu**
 
@@ -43,13 +49,53 @@ and choose 'Add Relationship'. &nbsp;
 
 &nbsp;
 
+### Relationship name
+
+Since version v8.4.2,&nbsp; the technical name property can be derived automatically based on [naming conventions](<Namingconventions.md>) rules, just like other model objects.
+
+&nbsp;
+
+When creating a relationship manually (via the Actions menu, the Ctrl+T shortcut, the toolbar icon, the contextual menu), you are free to enter any name for the new relationship in the properties pane.
+
+&nbsp;
+
+When creating a relationship via drag-and-drop, the relationship name is automatically assembled, based on a configuration in Tools \> Options \> General
+
+![FK relationship name configuration](<lib/FK relationship name configuration.png>)
+
+where the possible variable keywords are&nbsp;
+
+![FK relationship name configuration keywords](<lib/FK relationship name configuration keywords.png>)
+
+&nbsp;
+
+In the configuration, you may enter constants before, in between, and after the keywords.&nbsp; For example:
+
+> FK \<childEntity\> to \<parentEntity\> \<parentAttribute\>
+
+&nbsp;
+
+Remember that you may want a different configuration, depending on whether or not naming conventions are enabled.&nbsp; The above example, with naming convention with conversion to snake\_case could result in this example:
+
+> fk\_orders\_customers\_cust\_id
+
+&nbsp;
+
+Note also that when creating a new relationship with a name conflicting with an existing one, the new name will be automatically appended with a number.
+
+&nbsp;
+
+You may edit a relationship name created automatically with drag-and-drop.
+
+&nbsp;
+
 ### Relationship lines
 
 Hackolade documents and helps visualize 2 types of relationships: foreign key and foreign master.&nbsp; The foreign key relationship is the unique identifier of the data.&nbsp; The foreign master relationship identifies the master for the duplicated field of the denormalized data.&nbsp;
 
 &nbsp;
 
-Hackolade adopts an IE-like notation (Information Engineering notation) applied to physical models in order to display multiplicities on each side of the relationship to represent the cardinality:&nbsp;
+Hackolade adopts an IE-like notation (Information Engineering with [crow's foot](<https://en.wikipedia.org/wiki/Entity–relationship\_model#Crow's\_foot\_notation> "target=\"\_blank\"") notation) applied to physical models in order to display multiplicities on each side of the relationship to represent the cardinality:&nbsp;
 
 &nbsp;
 
@@ -60,6 +106,19 @@ Hackolade adopts an IE-like notation (Information Engineering notation) applied 
 | ![Relationship cardinality - zero-to-one](<lib/Relationship cardinality - zero-to-one.png>) | zero or one |
 | ![Relationship cardinality - zero-to-many](<lib/Relationship cardinality - zero-to-many.png>) | zero or more |
 | ![Relationship cardinality - one-to-many](<lib/Relationship cardinality - one-to-many.png>) | one or more |
+
+
+&nbsp;
+
+You may have noticed that one side of the relationship has crow's foot cardinality displayed in blue on the parent side, and red on the child side.
+
+| **Symbol** | **Description** |
+| --- | --- |
+| ![Relationship child cardinality - one](<lib/Relationship child cardinality - one.png>) | only one |
+| &nbsp;![Relationship cardinality - many](<lib/Relationship child cardinality - many.png>) | many |
+| ![Relationship child cardinality - zero-to-one](<lib/Relationship child cardinality - zero-to-one.png>) | zero or one |
+| ![Relationship child cardinality - zero-to-many](<lib/Relationship child cardinality - zero-to-many.png>) | zero or more |
+| ![Relationship child cardinality - one-to-many](<lib/Relationship child cardinality - one-to-many.png>) | one or more |
 
 
 &nbsp;

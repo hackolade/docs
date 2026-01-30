@@ -88,11 +88,15 @@ A data type matrix mapping table is used to provide bi-directional transformatio
 
 ## Naming conventions
 
-Polyglot models being technology-agnostic, it is normal that only business names are created and maintained here.  \
+Polyglot models being technology-agnostic, it could be that only business names are created and maintained here.  \
  \
 Then when a physical model is derived for any target, it is often the case that the rules to generate physical names from business names are different.  For example, in MongoDB, JSON, Avro, OpenAPI, developers tend to prefer camelCase, whereas some targets like Cassandra cannot have any upper case characters and therefore snake\_case is a typical conversion.\
  \
 To generate technical names in physical target models when deriving from a polyglot model, you must first enable Business-to-Technical coupling for the chosen target in Tools \> Options \> Naming Conventions.&nbsp; Target-specific transformations rules are applied during the process of deriving from the polyglot model.
+
+&nbsp;
+
+Starting with v8.6.0, it is also possible to enable [Naming Conventions](<Namingconventions.md>) in Polyglot models.&nbsp; The details are further described in [this how-to guide](<TechnicalnamesinPolyglotmodels.md>) and sub pages.
 
 &nbsp;
 
@@ -193,18 +197,18 @@ In the impact analysis window, all entities and attributes in the right-hand pan
 
 ![Polyglot impact analysis screen](<lib/Polyglot impact analysis screen.png>)
 
-Color coding and badges help you understand additions, deletions, and modifications: \
-\- turquoise: deviations in the target model, either:
+Color coding and badges help you understand additions, deletions, and modifications:&nbsp;
 
-\- insertion of target-only attributes (plus sign + in blue badge)\
-\- or modification of properties of existing polyglot attribute (exclamation mark \! in yellow badge)
+* turquoise: deviations in the target model, either:
 
-\- red: deletions in the polyglot model (strike through font and x in red badge)&nbsp;
+  * insertion of target-only attributes (plus sign + in blue badge)
+  * or modification of properties of existing polyglot attribute (exclamation mark \! in yellow badge)
 
-\- blue: attributes in polyglot model and
+* red: deletions in the polyglot model (strike through font and x in red badge)&nbsp;
+* blue: attributes in polyglot model and
 
-\- were removed in target model (strike through font and plus sign + in blue badge)\
-\- were added in polyglot model (plus sign + in blue badge)
+  * were removed in target model (strike through font and plus sign + in blue badge)
+  * were added in polyglot model (plus sign + in blue badge)
 
 &nbsp;
 

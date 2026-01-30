@@ -66,9 +66,13 @@ When reverse-engineering from other technology sources, Hackolade Studio maps to
 
 &nbsp;
 
-### [Union types](<https://avro.apache.org/docs/current/spec.html#Unions> "target=\"\_blank\"")
+### Union types
 
-As fields are always technically required in Avro, it is necessary to facilitate forward- and backward-compatibility by allowing fields to have a null type in addition to their natural data type.&nbsp; In Hackolade, when you create a new field, it is created with the required property selected.&nbsp; If you want to make a field logically optional, it must still be present physically, but with a default which must be null.&nbsp; To do this in Hackolade, you would set the data type to null, then de-select the required property, and make the default property = null (without quotes):
+In Avro, [union types](<https://avro.apache.org/docs/%20%20version%20%20/specification/#unions> "target=\"\_blank\"") are used to represent alternative data types for a field. They play a key role in [schema evolution and compatibility](<https://docs.confluent.io/platform/current/schema-registry/fundamentals/schema-evolution.html> "target=\"\_blank\""), and in modeling logical choices such as *oneOf*.&nbsp; More details can be found in this [How-To guide](<UniontypesinAvro.md>).
+
+&nbsp;
+
+As fields are always technically required in Avro, it is necessary to facilitate forward- and backward-compatibility by allowing fields to have a null type in addition to their natural data type.&nbsp; In Hackolade Studio, when you create a new field, it is created with the required property selected.&nbsp; If you want to make a field logically optional, it must still be present physically, but with a default which must be null.&nbsp; To do this in Hackolade Studio, you would set the data type to null, then de-select the required property, and make the default property = null (without quotes):
 
 ![Avro union types](<lib/Avro union types.png>)
 

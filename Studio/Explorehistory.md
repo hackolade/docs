@@ -77,7 +77,9 @@ In the example below, we are comparing the state of the repository in the "contr
 
 Once you have selected 2 commits, you can click on the "Compare" button to open the Compare dialog:
 
-![Visually compare commits](<lib/Compare and merge - compare view.png>)
+![Image](<lib/Compare and merge - compare view.png>)
+
+&nbsp;
 
 &nbsp;
 
@@ -94,6 +96,8 @@ All the actions related to a given entry of the history are also available throu
 For more information about tags for a commit, you may refer to the [tag screen documentation page](<Exploretags.md>).
 
 &nbsp;
+
+**Important note**: when opening a model file from a commit in the history screen, the model file is opened in read-only mode.&nbsp; This is normal behavior to protect the user from making changes in a version that is not the latest version of the model.&nbsp; You should open the latest version of the model from the Files screen or from your locally cloned repository on the file system.&nbsp; Or, if you really want to go back to an old version of the model to make it the current version again, then you must Save As... the read-only version.
 
 &nbsp;
 

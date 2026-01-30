@@ -12,6 +12,37 @@ Even if you have little or no experience with Git, we made it very easy to use G
 
 &nbsp;
 
+## Source control paradigms: checkout-and-lock vs Git
+
+Most major legacy data modeling tools enable collaboration via a decades-old approach to source control: a checkout-and-lock mechanism.&nbsp; This mechanism was inspired by the way applications were developed a long time ago.&nbsp; Then Git came out and freed developers from the constraints of such rigid source control systems.&nbsp; Here is a simple analogy to help understand the differences.
+
+&nbsp;
+
+Imagine the old system like a single pencil everyone has to share. If I’m editing a file, I grab the pencil and lock it. You can’t touch it until I’m finished. That prevents conflicts, but it slows everyone down and forces us to wait on each other.
+
+&nbsp;
+
+Git works differently. It gives everyone their own pencil and their own copy of the paper. You can make changes to your copy whenever you want, at the same time as me. Later, when we’re both done, we put our papers together. If our changes don’t touch the same spot, Git just merges them automatically. If we did write in the same place, Git politely asks us to decide together which version is right.
+
+&nbsp;
+
+So instead of waiting for locks, we all work in parallel. Git is smart enough to keep track of the history of changes and to help us merge our work back into one version
+
+&nbsp;
+
+The key points are:&nbsp;
+
+* In "checkout-and-lock," only **one person works at a time**
+* In Git, **everyone works in parallel** and then merges changes
+* Conflicts are **rare** and usually easy to fix when they happen
+* Git also keeps a **complete history**, so nothing is lost and you can always go back
+
+&nbsp;
+
+Hackolade Studio leverages Git in order to achieve the same flexibility with data models as developers are allowed to achieve for application code.&nbsp; Using Git gives Hackolade Studio Workgroup Edition its collaboration, versioning, branching, change tracking, peer reviews, and more capabilities.&nbsp; Additionally, these capabilities are achieved without the need to install costly and hard to maintain on-prem servers, and without having your data models locked-in in a vendor-control database.&nbsp; Read more about the ground-braking architecture in [this article](<WhylegacyandSaaSdatamodelingarch.md>).
+
+&nbsp;
+
 ## Remote repository
 
 The term "remote repository" may be intimidating, but it simply means the "central storage", in this case for your data models.&nbsp; It is "remote", in the sense that it is not "local".&nbsp; And it differs from a traditional folder in the sense that it is enabled for tracking changes in text files.&nbsp; As a result, every time someone "saves" a file into a remote repo, an immutable state and history is automatically logged and accumulated.&nbsp; Immutability does not mean that you cannot make additional changes.&nbsp; It simply means that you cannot rewrite history: you may only make additional changes (possibly if necessary, to undo some other change made in the past) in a new version of that file.&nbsp; It is easy to see when a change was made and by whom. &nbsp;
@@ -178,7 +209,15 @@ You can delete a branch (after merging it, or not merging it.)
 
 &nbsp;
 
-**Note:** you should should choose carefully the basis for your new branch, if that basis is any other branch than main/master.&nbsp; This is because a new branch inherits all the history and content of the branch on which it is based. This article [explains Git branches with a LEGO analogy](<https://opensource.com/article/22/4/git-branches> "target=\"\_blank\"").
+**Note:** you should should choose carefully the basis for your new branch, if that basis is any other branch than main/master.&nbsp; This is because a new branch inherits all the history and content of the branch on which it is based. This article [explains Git branches with a LEGO analogy](<https://opensource.com/article/22/4/git-branches> "target=\"\_blank\"").&nbsp;
+
+&nbsp;
+
+Another very [popular article](<https://nvie.com/posts/a-successful-git-branching-model/> "target=\"\_blank\"") depicts something that may look scary, but illustrates the power and flexibility of Git branches. And remember that Hackolade Studio provides user friendly screens to make Git interactions super simple without having to type a single Git command.&nbsp; And it leverages simpler workflows such as the [GitHub workflow](<https://docs.github.com/en/get-started/using-github/github-flow> "target=\"\_blank\""), or equivalent for your Git provider.
+
+&nbsp;
+
+![Workgrroup Git branching](<lib/Workgrroup Git branching.png>)
 
 &nbsp;
 

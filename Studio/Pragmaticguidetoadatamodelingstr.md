@@ -32,17 +32,21 @@ Ultimately, the goal is to build efficient, maintainable, and relevant solutions
 
 ### Conceptual model: aligning on terminology
 
-The conceptual model is key for agreeing on scope and concepts, and establishing a shared business language. By focusing on common terminology, it helps prevent misunderstandings and sets the foundation for clear communication, especially in large or cross-functional teams. Using **Ubiquitous Language** principles, this level aligns stakeholders before diving into technical details. In complex projects, a **Polyglot Model** can assist in this alignment.
+Conceptual modeling is key to agree on scope and concepts, and to establish a shared language of business terms and definitions.&nbsp; By focusing on common terminology, it helps prevent misunderstandings and sets the foundation for clear communication, especially in large or cross-functional teams.&nbsp; Using [Ubiquitous Language](<https://martinfowler.com/bliki/UbiquitousLanguage.html> "target=\"\_blank\"") principles, this level aligns stakeholders before diving into technical details. In complex projects, a Polyglot Model can assist in this alignment.
 
 ### Logical model: a technology-agnostic foundation
 
-The logical model defines a neutral, unified data structure that transcends specific technologies. It serves as a blueprint for creating various physical models. Our **Polyglot** approach to logical modeling ensures that the design remains independent of the technology stack, making it adaptable for diverse environments.
+Logical modeling defines a neutral, unified data structure that transcends specific technologies, to capture the business rules necessary to ensure the integrity of the data.&nbsp; It serves as a blueprint for creating various physical models. Our Polyglot approach to logical modeling ensures that the design remains independent of the technology stack, making it adaptable for diverse environments.
+
+&nbsp;
 
 We recommend the polyglot/logical model particularly in multi-technology ecosystems that include databases (RDBMS, Graph, NoSQL), APIs, Avro, or Big Data solutions. However, if your project relies on a single technology, you can skip the logical layer and design directly in your target platform using Hackolade Studio.
 
 ### Physical model: a technology specific design
 
 The physical model customizes the design for the technical specifics of each platform (e.g., NoSQL, relational databases, Graph databases, APIs, Big Data). This model ensures that the design works within the constraints of the chosen technology and optimizes implementation. Hackolade Studio supports more than 40 physical targets, allowing for tailored models that fit your specific platform.
+
+&nbsp;
 
 ## Flexibility over dogma: choose your path
 

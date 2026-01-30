@@ -4,7 +4,7 @@ For each object in Hackolade Studio, we've defined a set of standard properties 
 
 &nbsp;
 
-Hackolade Studio provides a no-code approach: you can create and maintain custom properties simply by editing JSON configuration files. If desired, you can version those files in a version control system and share them across your organization. We recommend the use of Git as it is a lever for enabling [team collaboration](<Teamcollaboration.md>) using the Workgroup edition of Hackolade Studio.
+Hackolade Studio exposes the different controls of Properties panes to provides a no-code approach: you can create and maintain custom properties, even custom tabs, simply by editing JSON configuration files.&nbsp; If desired, you can version those files in a version control system and share them across your organization. We recommend the use of Git as it is a lever for enabling [team collaboration](<Teamcollaboration.md>) using the Workgroup edition of Hackolade Studio.
 
 &nbsp;
 

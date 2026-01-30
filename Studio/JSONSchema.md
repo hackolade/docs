@@ -66,3 +66,22 @@ When displaying or exporting JSON Schema, the references can used as described o
 
 \- internal: references to external and model definitions are converted into internal definitions
 
+&nbsp;
+
+&nbsp;
+
+## Advanced: excluding unneeded properties
+
+You may be in a situation where you want to generate JSON Schema, but you want that a particular keyword does not get included in the file. &nbsp;
+
+&nbsp;
+
+In the custom properties folder C:\\Users\\%username%\\.hackolade\\options\\\<target\>\\customProperties you may edit the file jsonSchemaProperties.json to fill the section, for example:
+
+> {\
+&nbsp; &nbsp; "unneededFieldProps": \["color","isActivated"\],\
+&nbsp; &nbsp; "removeIfPropsNegative": \[\]\
+}
+
+&nbsp;
+

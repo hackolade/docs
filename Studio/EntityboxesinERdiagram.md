@@ -98,7 +98,27 @@ Several of the controls available in the [hierarchical schema view](<Attributebo
 
 ## Visual indicators
 
-The ERD entity boxes have been enriched with visual indicators.&nbsp; Here is a list of abbreviations:
+The ERD entity boxes have been enriched with visual indicators to facilitate the interpretation of ERDs.
+
+&nbsp;
+
+When you deactivate an object (container, entity, view, attribute), an icon is displayed accordingly:
+
+&nbsp;
+
+![ERD visual indicator deactivated object](<lib/ERD visual indicator deactivated object.png>)
+
+&nbsp;
+
+&nbsp;
+
+Similarly, in a model derived from polyglot, you may have added attributes that don't exist in the parent polyglot model (this is one of the "deviations" that we allow in derived model -- you may alos modify some of an attribute's properties, or you may delete an attribute if not pertinent in the derived model.)&nbsp; Those attributes are preceded with a + sign icon:
+
+![ERD visual indicator added in derived model](<lib/ERD visual indicator added in derived model.png>)
+
+&nbsp;
+
+For indicators appearing after the attribute name, here is a list of abbreviations:
 
 pk: primary key
 
@@ -106,7 +126,7 @@ fk: foreign key
 
 uk: unique key
 
-fm: foreign master
+fm: [foreign master](<Relationshipsanddenormalization.md>)
 
 dk: destination or denormalized key (parent of a foreign key.)&nbsp; Marks keys that are the parent of a foreign key or are denormalized elsewhere in the model.
 
@@ -122,6 +142,8 @@ sk: sort key, where applicable
 
 \+: only in Avro: null allowed
 
+\#: indication of a [pattern field](<Whatsapatternfield.md>)
+
 Ix,y: indexed attribute, with x= index number, y= attribute number in a composite index
 
 &nbsp;
@@ -129,6 +151,8 @@ Ix,y: indexed attribute, with x= index number, y= attribute number in a composit
 Both dk and dm attributes allow access to the Where-Used function in the contextual menu to find all the places in the model where they are denormalized.
 
 &nbsp;
+
+## Arrange entity boxes
 
 You may arrange and align entity boxes in the ERD using the menu option Edit \> Align, or the arrange toolbar buttons:
 
@@ -146,7 +170,13 @@ There are different ways to customize your ERD: with the Options tab in the prop
 
 &nbsp;
 
-You may also change the display of the ERD:
+You may also change the display of the ERD and [ERDVs](<DiagramViews.md>).&nbsp; Each ERD and ERDV persists in the model file its own set of Display Options (except business vs technical name display which is controlled by Naming Conventions for the model target), which may be helpful for data model storytelling. &nbsp;
+
+&nbsp;
+
+Display Options are accessible from 3 different places:
+
+&#49;) from the Display Options button in the toolbar
 
 &nbsp;
 
@@ -154,25 +184,52 @@ You may also change the display of the ERD:
 
 &nbsp;
 
-to toggle the display of:
+&#50;) from the View \> Display Options menu:
 
-\- business names versus technical names
+![ERD display options view menu](<lib/NewItem 27.png>)
 
-\- the handle allowing to drag-and-drop attributes within the entity
+&nbsp;
 
-\- annotations
+&nbsp;
 
-\- materialized/read-only views where applicable
+&#51;) from Tools \> Options \> Display \> ERD(V):
 
-\- foreign master relationships (when denormalization has taken place)
+![Image](<lib/ERD display options tools options.png>)
 
-\- data types
+&nbsp;
 
-\- attributes
+These 3 methods are of course connected to each other, and making a change in one place gets dynamically reflected in the other methods.
 
-\- non-primary key attributes
+&nbsp;
 
-\- non-required attributes
+Some display options are multiple choices, while others simple toggles, and others are mutually exclusive.
+
+&nbsp;
+
+Mutually exclusive display options:
+
+* business names versus technical names: this option affects, non only the ERD and ERDVs, but also the Object Browser (including the OB search) and the schema tree view.&nbsp; Note that this choice, contrary to the other ones below, is specific to each target for which [Naming Conventions](<Namingconventions.md>) have been enabled through through Tools \> Options \> Naming Conventions
+* entity box content with attributes, description, or empty: by default, ERDs list attributes for entities, but it is also possible to replace the attributes by the entity description.&nbsp; Or to just display the box without any content, for a more conceptual view of the ERD.
+
+&nbsp;
+
+Toggles:
+
+* diagram objects: you may toggle the display of deactivated modeling objects (containers, entities, attributes, views, relationships), as well as symbols (annotations and rectangles) and database views if applicable to the target \[default = enabled\]
+* drag-and-drop handles to move attributes within an entity or from one entity to another, or to hide the handle for a more aesthetic and clean look \[default = enabled\]
+* data types: allows to hide data types for attributes, for a more conceptual/logical view of the ERD \[default = enabled\]
+* primary key(s) at top: if you don't like for PKs to be automatically moved to the top of the attribute list for an entity, regardless of where in the list they were originally created, you may toggle this option so the attribute (and the DDL schema output) retains its original position in the list \[default = enabled\]
+* relationship names \[default = disabled\]
+* "[foreign master](<Relationshipsanddenormalization.md>)" relationships (when denormalization has taken place) \[default = enabled\]
+
+&nbsp;
+
+Multiple choices: by default all of the attributes below are displayed.&nbsp; But you may one to only show some while excluding the others.
+
+* primary keys
+* foreign keys
+* unique keys
+* required attributes, also known as Not NULL, or mandatory
 
 &nbsp;
 

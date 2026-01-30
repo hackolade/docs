@@ -1,6 +1,6 @@
 # Suggest denormalization of a SQL schema
 
-Ease migration from SQL with denormalization suggestions.&nbsp; Hackolade Studio helps with the migration from SQL. You can now reverse-engineer a Data Definition Language (DDL) file from Oracle into a Hackolade model. Then you can apply denormalization functions for embedding and referencing data, and truly leverage the power and benefits of nested objects in JSON and MongoDB.
+Ease migration from SQL with denormalization suggestions.&nbsp; Hackolade Studio helps with the migration from SQL.&nbsp; You can now reverse-engineer a Data Definition Language (DDL) file from Oracle into a Hackolade model. Then you can apply denormalization functions for embedding and referencing data, and truly leverage the power and benefits of nested objects in JSON and MongoDB.
 
 &nbsp;
 

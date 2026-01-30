@@ -27,6 +27,32 @@ Business names should be less than eight words. Nouns should be singular and ver
 
 &nbsp;
 
+In terminology, it is typical to define 3 different units:&nbsp;
+
+\- class terms to represent concept classes
+
+\- prime terms to represent basic primitive concepts
+
+\- modifying terms to represent concept modifiers or attributes.
+
+&nbsp;
+
+Other legacy data modeling tools require that you mark a term as class term.  We designed an approach that we think is more flexible...
+
+&nbsp;
+
+In Hackolade Studio, a term defined in a glossary file is assumed to be an approved term.  The determination that the term is a class term, a prime term, or a modifying term does not come from the term itself in the glossary, but from its position in the expression being evaluated, assuming that it is an English expression.
+
+&nbsp;
+
+Take for example the word "customer":
+
+* Customer is the class term in the 1-word expression "Customer"
+* Customer is the prime term in the 2-word expression "Customer Account"
+* Customer is a modifying term in the 3-word expression "Customer Identification File"
+
+&nbsp;
+
 #### Class terms
 
 The class term is the highest level of qualification and the most important word in a business name. The class term is **always the last word of a business name** (or in some rare cases a **phrase** such as "Unit of Measure"). It must be a noun **identifying the general purpose** of the data object.

@@ -62,9 +62,15 @@ More formal processes are well documented, including in the [Data Management Bod
 
 There are three traditional levels of data modeling - conceptual, logical, and physical - serving distinct purposes, each with increasing levels of detail and technical specificity.
 
+&nbsp;
+
 **Conceptual data modeling** is the highest level of abstraction, focused on reaching consensus on vocabulary, and defining the core business entities and their relationships - without considering how the data will be implemented.&nbsp; It’s like the early sketches of a building, meant to align stakeholders on the big picture and ensure a shared understanding of the domain.&nbsp; Or like a globe, as the conceptual model provides a complete, high-level overview of the domain. It shows all major “landmasses” (key business entities) and how they relate, but without fine detail. Its objective is the broad understanding and alignment across stakeholders.
 
+&nbsp;
+
 **Logical data modeling** adds more structure and details, specifying attributes, data types, and relationships in a technology-independent manner. It is similar to a detailed architectural plan that includes room dimensions and functional layouts, serving as a bridge between business understanding and system design.&nbsp; The logical model is also like a detailed travel map: it doesn’t show everything, but it adds structure and granularity such as cities, highways, and regional boundaries. Similarly, the logical model includes attributes, relationships, and rules without being tied to a specific technology, offering a clear, detailed representation for design.
+
+&nbsp;
 
 **Physical data modeling** translates the logical model into a model tailored for a specific database system or data exchange mechanism, incorporating performance considerations such as indexing, partitioning, and storage formats. This is the engineering drawing ready for construction: precise, technical, and implementation-ready.&nbsp; The physical model is also like a city street map, showing exact routes, intersections, and infrastructure. It reflects how the data will actually be stored and accessed in a specific database system, with details like column types, indexes, keys, and performance optimizations.
 
@@ -80,4 +86,12 @@ Together, these models form a layered blueprint that evolves from broad business
 
 
 &nbsp;
+
+&nbsp;
+
+When combined with Domain\_Driven Data Modeling, you will see that Hackolade Studio blurs the lines of the traditional conceptual-logical-physical modeling:
+
+&nbsp;
+
+![Domain-driven data modeling vs traditional conceptual-logical-physical modeling](<lib/DDDM vs traditional conceptual-logical-physic.png>)
 

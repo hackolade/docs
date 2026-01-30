@@ -8,7 +8,7 @@ Data models are, among other things, a communication tool.&nbsp; Collaboration, 
 
 &nbsp;
 
-In order to socialize data models, Hackolade Studio now allows for authors of models to share a model link URL that can be communicated via email, Jira / Confluence, a portal, EA tools, data dictionaries, etc. &nbsp;
+In order to socialize and democratize data models, Hackolade Studio now allows for authors of models to share a model hyperlink that can be communicated via email, Jira / Confluence, a portal, EA tools, data dictionaries, Excel, documents, etc. &nbsp;
 
 &nbsp;
 
@@ -80,11 +80,15 @@ The model must be accessible by the user.&nbsp; It maybe required to [authentica
 
 &nbsp;
 
-If the model exceeds the limit of the Community Edition, then the license status is checked so at least a Read-Only Viewer Edition is present. &nbsp;
+If the model exceeds the limit of the Community Edition, then the license status is checked. Only Viewer, Personal, and Workgroup editions can open model files with more than 50 objects.
 
 &nbsp;
 
 The model referenced in the shareable link opens in the browser tab, provided that the pre-requisites are met.
+
+&nbsp;
+
+![View data model in browser](<lib/View data model in browser.png>)
 
 &nbsp;
 

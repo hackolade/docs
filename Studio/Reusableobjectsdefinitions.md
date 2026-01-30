@@ -16,7 +16,7 @@ Definitions can be maintained at 3 distinct levels: at the entity-level (called 
 
 \- (i) for internal
 
-\- (m) for model
+\- (m) for model -- Note: in Polyglot and most RDBMS targets, "model definitions" are called UDTs or "User-Defined Types"
 
 \- (e) for external
 
@@ -52,7 +52,7 @@ With some RDMBS as well as with Cassandra and Hive for example, Hackolade's mode
 
 ## External definitions
 
-External definitions are Hackolade models (or JSON Schema files) that can be referenced in whole or in part, by other models.&nbsp;
+External definitions are Hackolade models (or JSON Schema files) that can be referenced in whole or in part, by other models -- even across different targets.
 
 &nbsp;
 

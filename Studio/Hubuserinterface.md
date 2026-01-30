@@ -86,21 +86,33 @@ A breadcrumb at the top allows to selectively go back up in the hierarchy.&nbsp;
 
 &nbsp;
 
-![Image](<lib/Hub central pane.png>)
+![Hub central pane](<lib/Hub central pane.png>)
+
+&nbsp;
+
+## Where-Used tab
+
+The where-used grid display s list of downstream models to allow a view on impact analysis.
+
+&nbsp;
+
+![Hub where-used grid tab](<lib/Hub where-used grid tab.png>)
 
 &nbsp;
 
 &nbsp;
 
-&nbsp;
+## Lineage tab
 
-## Lineage
-
-The lineage tab display a graph of the relationships between models, if any.&nbsp; Models can be derived from a polyglot model, and/or have references to external definitions.&nbsp; Given the modular capabilities we advocate with [domain-driven data modeling](<https://hackolade.com/domain-driven-data-modeling.html> "target=\"\_blank\"") and the capability to refer to parts of multiple other models, it may be handy to see how models relate to each other.&nbsp; This information is useful to measure the impact of a change upstream on models downstream. &nbsp;
+The lineage tab display a graph of the relationships between models, if any.&nbsp; While the where-used grid shows downstream models only, the lineage graph shows both upstream and downstream models, if any. &nbsp;
 
 &nbsp;
 
-![Image](<lib/Hub lineage diagram.png>)
+Models can be derived from a polyglot model, and/or have references to external definitions.&nbsp; Given the modular capabilities we advocate with [domain-driven data modeling](<https://hackolade.com/domain-driven-data-modeling.html> "target=\"\_blank\"") and the capability to refer to parts of multiple other models, it may be handy to see how models relate to each other.&nbsp; This information is useful to measure the impact of a change upstream on models downstream. &nbsp;
+
+&nbsp;
+
+![Hub lineage diagram tab](<lib/Hub lineage diagram tab.png>)
 
 &nbsp;
 

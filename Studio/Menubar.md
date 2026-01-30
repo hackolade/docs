@@ -1,16 +1,18 @@
 # Menu bar
 
-![Image](<lib/Menu bar.png>)
+![Menu bar - File menu](<lib/Menu bar.png>)
 
 &nbsp;
 
-The line of action words provide access to most functions of the application.&nbsp; Menus are accessed via mouse click or by pressing Alt+ the underlined letter of the menu.
+The line of action words provide access to most functions of the application.&nbsp; Menus are accessed via mouse click.
 
 &nbsp;
 
 The corresponding menu appears with menu items:
 
-![Menu bar - File menu](<lib/Menu bar - File menu.png>)
+&nbsp;
+
+![Image](<lib/Menu bar - File menu.png>)
 
 &nbsp;
 

@@ -44,7 +44,15 @@ The table properties are based on Hive 2.x metadata structure.
 
 ### Iceberg tables
 
-AWS Glue 3.0 and later supports the Apache [Iceberg framework](<https://aws.amazon.com/blogs/big-data/introducing-aws-glue-crawler-and-create-table-support-for-apache-iceberg-format/> "target=\"\_blank\"") for data lakes. Iceberg provides a high-performance table format that works just like a SQL table.&nbsp; AWS Glue can be used to perform read and write operations on [Iceberg tables](<https://docs.aws.amazon.com/lake-formation/latest/dg/create-databases-tables-s3-catalog.html> "target=\"\_blank\"") in Amazon S3, or work with Iceberg tables using the AWS Glue Data Catalog.
+AWS [announced S3 Tables](<https://aws.amazon.com/blogs/aws/new-amazon-s3-tables-storage-optimized-for-analytics-workloads/> "target=\"\_blank\""), which brings native support for [Apache Iceberg](<https://iceberg.apache.org/>) to S3.&nbsp; AWS Glue 3.0 and later supports the Apache [Iceberg framework](<https://aws.amazon.com/blogs/big-data/introducing-aws-glue-crawler-and-create-table-support-for-apache-iceberg-format/> "target=\"\_blank\"") for data lakes. Iceberg provides a high-performance table format that works just like a SQL table.&nbsp; This isn’t a separate service that sits on top of S3. Rather AWS has added a new type of bucket to the S3 service itself: a [table bucket](<https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-buckets.html> "target=\"\_blank\"").&nbsp; Table buckets come with a host of [new APIs](<https://docs.aws.amazon.com/AmazonS3/latest/API/API\_Operations\_Amazon\_S3\_Tables.html>). It’s the stuff you’d expect for working with Iceberg tables. To name a few: [CreateNamespace](<https://docs.aws.amazon.com/AmazonS3/latest/API/API\_s3TableBuckets\_CreateNamespace.html> "target=\"\_blank\""), [CreateTable](<https://docs.aws.amazon.com/AmazonS3/latest/API/API\_s3TableBuckets\_CreateTable.html> "target=\"\_blank\""), [ListTables](<https://docs.aws.amazon.com/AmazonS3/latest/API/API\_s3TableBuckets\_ListTables.html> "target=\"\_blank\""), [RenameTable](<https://docs.aws.amazon.com/AmazonS3/latest/API/API\_s3TableBuckets\_RenameTable.html> "target=\"\_blank\""), [PutTableMaintenanceConfiguration](<https://docs.aws.amazon.com/AmazonS3/latest/API/API\_s3TableBuckets\_PutTableMaintenanceConfiguration.html> "target=\"\_blank\"").
+
+&nbsp;
+
+AWS Glue can be used to perform read and write operations on [Iceberg tables](<https://docs.aws.amazon.com/lake-formation/latest/dg/create-databases-tables-s3-catalog.html> "target=\"\_blank\"") in Amazon S3, or work with Iceberg tables using the AWS Glue Data Catalog.&nbsp; AWS Glue Data Catalog feature[1](<https://meltware.com/2024/12/04/s3-tables.html#fn:1>) that automatically mirrors the catalogs from the S3 table buckets in your account like this diagram provided from [this article](<https://meltware.com/2024/12/04/s3-tables.html> "target=\"\_blank\""), along with additional valuable insights:
+
+&nbsp;
+
+![Glue AWS S3 to Iceberg Glue Data Catalog map](<lib/Glue AWS S3 to Iceberg Glue Data Catalog map.png>)
 
 &nbsp;
 

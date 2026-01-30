@@ -214,3 +214,57 @@ And without Guided Stewardship on the Collibra instance, it is not possible to p
 
 ![Collibra Guided Stewardship limited lineage](<lib/Collibra Guided Stewardship limited lineage.png>)
 
+&nbsp;
+
+## Custom Asset Types
+
+Collibra comes with [Out-of-the-Box (OOTB) asset types](<https://productresources.collibra.com/docs/collibra/latest/Content/Assets/AssetTypes/ref\_ootb-asset-types.htm> "target=\"\_blank\"").&nbsp; Asset types are fundamental building blocks in Collibra. They act as templates to define the structure and behavior of your assets.&nbsp; When Hackolade Studio publishes data models to Collibra, there is a default mapping between our model objects and Collibra assetTypeIDs. &nbsp;
+
+&nbsp;
+
+It is possible to [create custom asset types](<https://productresources.collibra.com/docs/collibra/latest/Content/Assets/Characteristics/Attributes/AttributeTypes/ta\_create-attribute-type.htm#Createanattributetype> "target=\"\_blank\"") in Collibra.&nbsp; If you have done so, to use other asset types than the OOTB asset types that we map to by default, then since v8.4.4 of Hackolade Studio, it is possible customize the mapping.&nbsp; This mapping is performed in the connection settings box, for each connection.&nbsp; Doing this by connection allows you to maintain separate mapping for different Collibra instances you might be connecting to.
+
+&nbsp;
+
+**Warning:** when using custom mappings in Hackolade Studio, it is essential to remove any previously forward-engineered models from Collibra if changes have been made to the Asset type mapping before proceeding to avoid conflicts and ensure a smooth forward-engineering experience.
+
+&nbsp;
+
+Select the existing connection for which you want to customize the mapping, then click on the button Customize mapping:
+
+![Collibra custom asset type connections](<lib/Collibra custom asset type connections.png>)
+
+&nbsp;
+
+The dialog lists all the OOTB asset types with their default mapping, plus on the right side, the possibility to enter custom asset type IDs in Collibra.&nbsp; Customization may not require that all asset types be custom.&nbsp; You may have zero, one, a few, or all, depending on the level of customization in your Collibra instance.
+
+&nbsp;
+
+All that is required is to paste the ID for the custom asset type then click the button to verify.&nbsp; If the assetTypeID is correct, its name will be retrieved and displayed.
+
+![Collibra custom asset type mapping](<lib/Collibra custom asset type mapping.png>)
+
+&nbsp;
+
+If you paste an assetTypeID that cannot be validated, an error appears, and you will not be allowed to save the mapping:
+
+![Collibra custom asset type wrong mapping](<lib/Collibra custom asset type wrong mapping.png>)
+
+&nbsp;
+
+To find the aseetTypeID of the custom Collibra asset type to be pasted in the above screen, you must go in Collibra to Settings \> Operating Model \> Asset Types.&nbsp; Then for the asset type that you wish to map to from Hackolade Studio, you must copy the Resource ID.&nbsp; If you don't see the Resource ID column, you can easily display it by clicking the Edit Fields button then selecting the Resource ID field.
+
+![Image](<lib/Collibra custom asset type ID.png>)
+
+&nbsp;
+
+It is possible to export the mapping to a JSON file, so the mapping can be shared with and imported by other users, or so that it can be copied from one connection to others.&nbsp; It is also possible to clear all the custom asset type mappings for a given connection.
+
+&nbsp;
+
+Note that you may have to update the hierarchy to reflect the custom asset type names:
+
+![Collibra custom asset type hierarchy](<lib/Collibra custom asset type hierarchy.png>)
+
+&nbsp;
+

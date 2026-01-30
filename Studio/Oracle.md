@@ -105,7 +105,7 @@ With 21c, Oracle Database now supports JSON data natively with relational databa
 
 &nbsp;
 
-With version 23ai, Oracle added a new [*data type vector*](<https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/Data-Types.html#GUID-801FFE49-217D-4012-9C55-66DAE1BA806F> "target=\"\_blank\"") with the possible declaration formats below, all supported in Hackolade Studio:
+With version 26ai, Oracle added a new [*data type vector*](<https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/Data-Types.html#GUID-801FFE49-217D-4012-9C55-66DAE1BA806F> "target=\"\_blank\"") with the possible declaration formats below, all supported in Hackolade Studio:
 
 ![Oracle vector declaration](<lib/Oracle vector declaration.png>)
 
@@ -132,13 +132,13 @@ Views can provide a different representation (such as subsets or supersets) of t
 
 &nbsp;
 
-## JSON-Relational Duality Views in 23ai
+## JSON-Relational Duality Views in 26ai
 
 Duality Views expose data stored in relational tables as JSON documents. The documents are materialized — generated on demand, not stored as such. Duality views are organized both relationally and hierarchically. They combine the advantages of using JSON documents with the advantages of the relational model, while avoiding the limitations of each.&nbsp;
 
 &nbsp;
 
-Hackolade Studio is the first and only tool to facilitate the adoptions of this revolutionary feature released with Oracle 23ai.&nbsp; Many more details are available in [this page](<Oracle23aiDualityViews.md>).
+Hackolade Studio is the first and only tool to facilitate the adoptions of this revolutionary feature released with Oracle 26ai.&nbsp; Many more details are available in [this page](<Oracle23aiand26aiDualityViews.md>).
 
 &nbsp;
 

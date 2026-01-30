@@ -26,6 +26,8 @@ Since v8.3.0, Hackolade Studio allows you to generate ArchiMate-compliant files 
 
 This feature is only available in the editions: Professional, Workgroup, Free Trial, and Community. &nbsp;
 
+&nbsp;
+
 ## ArchiMate application data objects file
 
 Hackolade Studio generates a .archimate file, in XML format.&nbsp; This file format can be opened by tools such as the open-source [Archi](<https://www.archimatetool.com/> "target=\"\_blank\"") tool.
@@ -39,6 +41,12 @@ Hackolade Studio generates a .archimate file, in XML format.&nbsp; This file for
 ## ArchiMate Open Exchange file
 
 The [Open Exchange file format](<https://www.opengroup.org/open-group-archimate-model-exchange-file-format> "target=\"\_blank\"") is tailored for third party tools that are Archimate-aware to exchange data structures, paradigms, concepts, etc...This format is also an XML structure that is quite close to the .archimate internals.&nbsp; It uses UTF-8 encoding (e.g. support special characters).&nbsp; The main difference is that the organization of the objects is separated from the objects declaration themselves.
+
+&nbsp;
+
+&nbsp;The Open Exchange format can be easily imported into Bizzdesign Horizzon, following these [instructions](<BizzdesignEAintegration.md>).
+
+&nbsp;
 
 &nbsp;
 

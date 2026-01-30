@@ -4,11 +4,11 @@
 
 &nbsp;
 
-Hackolade Studio includes the ability to maintain both a ‘business name’ and a ‘technical name’ for objects (containers, entities, and attributes.)&nbsp; To facilitate the maintenance of these 2 names, it is possible to keep them synchronized and transformed based on a set of user-driven parameters, and optionally based on a conversion file maintained outside of the application.&nbsp; Name conversion can go both directions: Business-to-Technical, or Technical-to-Business.&nbsp; Furthermore, when performing reverse-engineering, it is assumed that the database instance contains technical names, to be transformed in business names.
+Hackolade Studio includes the ability to maintain both a ‘business name’ (sometimes called logical name in legacy tools) and a ‘technical name’ (sometimes called physical name in legacy tools) for objects (containers, schemas, entities, tables, views, attributes, columns, fields, relationships,...)&nbsp; To facilitate the maintenance of these 2 names, it is possible to keep them synchronized and transformed based on a set of user-driven parameters, and optionally based on a conversion file maintained outside of the application.&nbsp; Name conversion can go both directions: Business-to-Technical (highly recommended), or Technical-to-Business (not recommended except for some rare edge cases.)&nbsp; Furthermore, when performing reverse-engineering, it is assumed that the database instance (or DDL or JSON Schema...) contains technical names, to be transformed into business names.
 
 &nbsp;
 
-If you do not wish to use this feature, keep disabled the Name Coupling parameter (see below) and simply leave the technical name property blank, so the (business) name property is used by default.
+If you do not wish to use this feature, keep disabled the Name Coupling parameter (see below) and simply leave the technical name property blank, so the (business) name property is used by default in all technical artifacts.
 
 &nbsp;
 
@@ -18,11 +18,11 @@ Starting with version 4.1.2, we have replaced global parameters with separate ta
 
 ## Conversion file
 
-A conversion file is not mandatory to use the Naming Conventions feature. &nbsp; A conversion file is a .csv file listing words that may appear in object names (business name), with a corresponding technical name to use instead in database definition scripts.
+A conversion file -- a.k.a. abbreviations file -- is not mandatory to use the Naming Conventions feature. &nbsp; A conversion file is a .csv file listing words that may appear in object names (business name), with a corresponding technical name to use instead in database definition scripts.
 
 &nbsp;
 
-The conversion file is made of at least 2 columns, with Business Name as a first column, and Technical Name as the second column.&nbsp; Additional columns are ignored by Hackolade.&nbsp; The columns are separated by commas.&nbsp; The first line is the header line, and is ignored in the conversion.&nbsp; The lines are separated by a \<CR\>\<LF\>.&nbsp; There is no limit to the number of lines in the file.&nbsp; The values in the columns are not case-sensitive.&nbsp; A case conversion may be applied in the conversion parameters, cfr below.
+The conversion file is made of at least 2 columns, with Business Name as a first column, and Technical Name as the second column.&nbsp; Additional columns are ignored by Hackolade Studio.&nbsp; The columns are separated by commas.&nbsp; The first line is the header line, and is ignored in the conversion.&nbsp; The lines are separated by a \<CR\>\<LF\>.&nbsp; There is no limit to the number of lines in the file.&nbsp; The values in the columns are not case-sensitive.&nbsp; A case conversion may be applied in the conversion parameters, cfr below.
 
 &nbsp;
 
@@ -54,13 +54,15 @@ Conversion parameters are specific to each target.&nbsp; To modify the behavior 
 
 ![Windows Program Files](<lib/Naming Conventions - parameters.png>)
 
+&nbsp;
+
 **Application target:** select the target for which these parameters apply
 
-**Default name coupling:** 3 options are available from the dropdown box: No, Business-to-Technical, or Technical-to-Business. &nbsp;
+**Enable name coupling:** 3 options are available from the dropdown box: No, Business-to-Technical, or Technical-to-Business. &nbsp;
 
 **Specify** path and file name of the conversion file, or choose to Convert without a file and using the only the rules specified below.&nbsp; If you update the file while Hackolade is open, you may press the refresh button to reload the file.
 
-**Display:** choose to see the Business name or the Technical name in the Object Browser, ER Diagram and hierarchical schema view
+**Display:** choose to see the Business name or the Technical name in the Object Browser, ER Diagram and hierarchical schema view.&nbsp; This toggle is also available in [Display Options](<https://hackolade.com/help/EntityboxesinERdiagram.html#Display%20options>).
 
 &nbsp;
 
@@ -68,7 +70,7 @@ Conversion parameters are specific to each target.&nbsp; To modify the behavior 
 
 **Remove vowels:** when this option is enabled, the vowels in the name are suppressed
 
-**Invalid characters:** the characters declared can optionally be removed or replaced by another character.&nbsp; Example of invalid characters: "\!?.,:;()=+-\*@/\\", and replacing character: "\_"&nbsp;
+**Invalid characters:** the characters declared can optionally be removed or replaced by another character.&nbsp; Example of invalid characters: "\!?.,:;()=+-\*@/\\", and replacing character: "\_" &nbsp; We suggest to not include a blank (" ") in the invalid characters, unless you have none selected for case conversion.&nbsp; If you do have case conversion, then blanks are useful for parsing, and should not be removed with this rule -- they will be removed automatically by the case conversion.
 
 **Case conversion:** choose from the dropdown:
 
@@ -211,11 +213,15 @@ Plus we natively use 2 word separators when parsing the input line: blank (' ') 
 
 &nbsp;
 
-How you set the Invalid Characters behavior is important, as it affects the case conversion behavior.&nbsp; Say, for example that you have camelCase conversion with this Invalid Characters setting:
+How you set the Invalid Characters behavior is important, as it affects the case conversion behavior. &nbsp;
+
+&nbsp;
+
+If, for example that you have this Invalid Characters setting (which we do not recommend)
 
 ![Naming Conv - invalid char - remove](<lib/Naming Conv - invalid char - remove.png>)
 
-where a blank (" ") appears in the list of invalid characters (hardly visible, but present in front of the exclamation mark.)&nbsp;
+where a blank (" ") appears in the list of invalid characters (hardly visible, but present in front of the exclamation mark.) &nbsp; Then you expect conversion to camelCase.
 
 &nbsp;
 
@@ -223,15 +229,15 @@ Going through "Customer Account", first we convert the word with the conversion 
 
 &nbsp;
 
-If however, you do a replace blank by underscore:
+This is why we recommend to not list a blank (" ") as invalid characters, or to a replace blank by underscore:
 
 ![Naming Conv - invalid char - replace](<lib/Naming Conv - invalid char - replace.png>)
 
-the sequence becomes "cust acct" then "cust\_acct", then "custAcct" which is the expected behavior.
+As a result, the sequence becomes "cust acct" then "cust\_acct", then "custAcct" which is the expected result.
 
 &nbsp;
 
-However, it may sometimes be preferable to take the blank (" ") out of the list of invalid characters, and let it be handled by the case conversion.
+Again, it may be preferable to take the blank (" ") out of the list of invalid characters, and let it be handled by the case conversion.
 
 &nbsp;
 

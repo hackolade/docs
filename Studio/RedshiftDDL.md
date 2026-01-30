@@ -12,8 +12,6 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-&nbsp;
-
 A button lets the user apply to a selected instance the script to create schemas, tables and views.
 
 &nbsp;

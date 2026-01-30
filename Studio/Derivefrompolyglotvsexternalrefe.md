@@ -96,3 +96,31 @@ We strongly suggest to experiment with both approaches above to understand the b
 
 &nbsp;
 
+&nbsp;
+
+## If the polyglot model is moved, relative to the derived model (or vice-versa)
+
+When the polyglot model has moved, relative to the target model (or vice-versa), there will be an issue with the relative path when references need to be refreshed.  This issue will be visible when you update references, for example when opening the derived model.  The following message will be displayed:
+
+&nbsp;
+
+![Polyglot reference path not found](<lib/Polyglot reference path not found.png>)
+
+&nbsp;
+
+When that happens, all you need to do is to edit, in the derived model, the path to the parent polyglot model by clicking the 3 dots (...), then choosing the right path and model.
+
+&nbsp;
+
+![Polyglot redefine relative path](<lib/Polyglot redefine relative path.png>)
+
+&nbsp;
+
+Make sure of course to choose the exact same parent polyglot model, as the internal IDs of each object must be the same as prior to the model being moved.
+
+&nbsp;
+
+You may want to test first with a couple of small sample models to validate the behavior.
+
+&nbsp;
+

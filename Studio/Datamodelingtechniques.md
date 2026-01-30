@@ -14,7 +14,23 @@ For these targets, the choice of modeling technique is made at the model level:
 
 &nbsp;
 
-## Dimensional
+&nbsp;
+
+## Relational modeling
+
+Relational data modeling is most effectively carried out using **Entity-Relationship Diagrams (ERDs)** because they provide a conceptual, implementation-independent way to describe the structure of data before it is translated into tables and constraints.&nbsp; ERDs make explicit the core elements of a relational schema: entities with identity, attributes that describe them, and relationships that define how they are connected.&nbsp; By separating semantic understanding from physical design, ERDs allow modelers to reason about correctness, cardinality, and integrity rules without prematurely committing to storage details.&nbsp; This clarity not only improves communication between business and technical stakeholders, but also leads naturally to well-structured, normalized relational schemas that can be implemented consistently across SQL databases.
+
+&nbsp;
+
+By default, Hackolade Studio uses ERDs to represent data structure, using Information Engineering (IE) notation. &nbsp;
+
+&nbsp;
+
+**Note:** IDEF1X notation is not currently supported, but could be, upon request.&nbsp; UML models can be imported, converted to ERD or JSON Schema, but we the tool does not forward-engineer UML.
+
+&nbsp;
+
+## Dimensional modeling
 
 Dimensional modeling is a data modeling technique used in data warehousing and business intelligence (BI) systems. It is specifically designed to support analytical reporting and data analysis. Dimensional modeling organizes data into easily understandable and intuitive structures known as dimensional models, which consist of dimensions and facts.
 
@@ -56,7 +72,7 @@ You may assign a role to each table in your dimensional model:
 
 &nbsp;
 
-## Data Vault 2.0
+## Data Vault 2.0 modeling
 
 Data Vault 2.0 is an advanced data modeling and data warehousing technique that provides a scalable, flexible, and resilient approach to storing and integrating enterprise data. It was developed by Dan Linstedt and is an evolution of the original Data Vault modeling technique.
 
@@ -101,6 +117,48 @@ Additionally, let's explore the concepts of bridge, point in time, and reference
 You may assign a vault component to each table in your vault model:
 
 ![Modeling technique - data vault components](<lib/Modeling technique - data vault components.png>)
+
+&nbsp;
+
+&nbsp;
+
+## Graph modeling
+
+Graph modeling takes a fundamentally different approach by representing data as nodes and edges, each annotated with labels and properties, making relationships first-class citizens of the model rather than secondary constructs derived from joins.&nbsp;
+
+&nbsp;
+
+In Labeled Property Graph databases such as Neo4j or systems based on Apache TinkerPop (via Gremlin), node labels define the types of entities (for example, Person, Order, or Device), while edge labels define the semantics of relationships (PURCHASED, FRIENDS\_WITH, CONNECTED\_TO), with both nodes and edges carrying arbitrary key-value properties. This explicit labeling allows the structure of the domain to be expressed directly in the graph and queried through pattern matching rather than joins.&nbsp;
+
+&nbsp;
+
+In Semantic Knowledge Graph databases such as Ontotext GraphDB or Stardog, the same idea is taken further through formally defined vocabularies and ontologies, where node and edge labels correspond to RDF classes and predicates with well-defined meaning.&nbsp;
+
+&nbsp;
+
+In both cases, graph modeling excels at representing highly connected, evolving domains, where understanding and traversing relationships is more important than enforcing rigid tabular structure.
+
+&nbsp;
+
+Hackolade Studio provides graph diagrams: by default for graph targets, and also in Polyglot models for user-friendly conceptual modeling.
+
+&nbsp;
+
+## Hierarchical modeling
+
+Hierarchical data modeling focuses on representing information as nested JSON document structures, where containment and structure directly reflect how data is stored and accessed, rather than being inferred through joins.&nbsp;
+
+&nbsp;
+
+Hackolade Studio was designed specifically for this paradigm to support document-oriented databases like MongoDB, Couchbase, Elasticsearch, MarkLogic, and Azure Cosmos DB, as well as storage/exchange formats such as Avro, Parquet, Protobuf, Swagger/OpenAPI.&nbsp;
+
+&nbsp;
+
+In hierarchical modeling, the primary concern is the shape of the document: nested objects express ownership and lifecycle dependency, arrays represent one-to-many containment, and optional fields or variant substructures accommodate schema evolution and polymorphism.&nbsp; Unlike relational or graph models, relationships are often implicit in the hierarchy itself, with embedding chosen deliberately to optimize locality, read performance, and alignment with application data structures.&nbsp;
+
+&nbsp;
+
+Hackolade Studio makes these design choices explicit by visually modeling JSON schemas, nested levels, and schema variants, enabling architects to reason about containment versus reference, denormalization, and evolution in systems where the document -- not the table or the edge -- is the fundamental unit of data.
 
 &nbsp;
 

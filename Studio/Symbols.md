@@ -54,6 +54,12 @@ The model object container (schema/database/namespace/keyspace) has an impact on
 
 &nbsp;
 
+![Symbol rectangle example](<lib/Symbol rectangle example.png>)
+
+&nbsp;
+
+&nbsp;
+
 By default, rectangles are created to appear above container boxes and below entity boxes.&nbsp; That way you can create visual groups of entities within a container, or across multiple containers.&nbsp; If you need to, it is possible to slide a rectangle below a container.&nbsp; While the container is somewhat transparent, moving a rectangle behind a container means that the container title bar and the boundaries of the container are visible above the rectangle.
 
 &nbsp;

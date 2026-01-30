@@ -1,6 +1,6 @@
 # Questions & Answers
 
-### How to work with Git submodules?
+## How to work with Git submodules?
 
 Git submodules allow you to keep a Git repository as a subdirectory of another Git repository. This lets you clone another repository into your project while keeping your commits separate.
 
@@ -14,7 +14,7 @@ This [article](<https://www.atlassian.com/git/tutorials/git-subtree> "target=\"\
 
 &nbsp;
 
-### How to deal with non-ASCII symbols in file names?
+## How to deal with non-ASCII symbols in file names?
 
 By default, Git replaces non-ASCII symbols in file names with octal notation. For example, a file named "TrainScheduleф.json" will be treated by Git as "TrainSchedule\\321\\204.json".
 
@@ -126,25 +126,21 @@ You may already have reviewed our resources specific to the Git integration:
 
 On the specific question of the repo organization:
 
-\- you may co-locate models with application code
+* you may co-locate models with application code
 
-\- advantages:&nbsp;
+  * advantages:&nbsp;
 
-&nbsp; &nbsp; - model changes follow the same lifecycle as the application code
+    * model changes follow the same lifecycle as the application code
+    * model changes provide additional context for the application code
 
-\- model changes provide additional context for the application code
+  * disadvantages
 
-\- disadvantages
+    * it is harder to decouple models from application code if, for example the target is shared across different applications
+    * rights management whereby maybe you don't want modelers to have access to the application code
 
-&nbsp; &nbsp; - it is harder to decouple models from application code if, for example the target is shared across different applications
+* you may want to have a separate repo for models
 
-\- rights management whereby maybe you don't want modelers to have access to the application code
-
-&nbsp;
-
-\- you may want to have a separate repo for models
-
-&nbsp; &nbsp; - pros and cons are the mirror of the above
+  * pros and cons are the mirror of the above
 
 &nbsp;
 
@@ -152,15 +148,18 @@ Some customers choose the former, others the latter.&nbsp; There is no rule.
 
 &nbsp;
 
-Also, when choosing a dedicated repo for models, the folder structure differs widely between customers.&nbsp; Some are domain-oriented, some are application-oriented, some are access rights-oriented, etc.
+Also, when choosing a dedicated repo for models, the folder structure differs widely between customers.&nbsp; Some are domain-oriented, some are application-oriented, some are access rights-oriented, etc. &nbsp;
 
 &nbsp;
 
-And when using a dedicated repo, some wonder about whether there should be one repo per domain, or multiple repos.&nbsp; We generally advise to have a single repository.&nbsp; If you're worried about the protection of your models, so their changes follow a process, you have 2 options:
+And when using a dedicated repo, some wonder about whether there should be one repo per domain, or multiple repos.&nbsp; If you're worried about the protection of your models, so their changes follow a process, you have 2 options:
 
-\- you can force in your repo that changes be made through change (pull) requests
+* you can force in your repo that changes be made through change (pull) requests
+* better yet, you may want to force adopt a [fork \& pull strategy](<Workingwithforks.md>), also known as innersourcing.
 
-\- better yet, you may want to force adopt a [fork \& pull strategy](<Workingwithforks.md>), also known as innersourcing.
+&nbsp;
+
+But you may also have good reasons for having multiple repos.&nbsp; For example because each line of business already has its own repo for models.&nbsp; Or because a subsidiary has been acquired.&nbsp; In any case, the possibility of Hackolade Studio to perform [remote references](<Remotereferences.md>) (where to external models, or to Polyglot models) makes it transparent to the users.
 
 &nbsp;
 

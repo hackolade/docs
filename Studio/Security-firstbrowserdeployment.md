@@ -1,6 +1,6 @@
 # Security-first browser deployment
 
-This is feature is particularly handy when combined with the ability to share a model link, as described in [this page](<SharemodellinkURL.md>).
+This feature is particularly handy when combined with the ability to share a model link, as described in [this page](<SharemodellinkURL.md>).
 
 &nbsp;
 
@@ -8,7 +8,7 @@ This is feature is particularly handy when combined with the ability to share a 
 
 &#49;) the browser deployment is fully available for the Community Edition, and the Read-Only Viewer Edition.&nbsp; The Community edition does not require a license key.&nbsp; Other editions do require a license key.&nbsp; Since v7.9.3, it is also possible to use a Personal, Professional, or Workgroup edition license key in the browser.&nbsp; However, users should be conscious that not all features of these editions are enabled in the browser for a variety of security and technical reasons.&nbsp; While we are progressively enabling many of those features, some might be only available in the desktop deployment.
 
-&#50;) our browser deployment currently supports the latest versions of Chrome, Edge, Brave, Firefox browsers and Safari. &nbsp;
+&#50;) our browser deployment currently supports the latest versions of Chrome, Edge, Brave, Firefox browsers and Safari.&nbsp; It also works with the latest AI browsers, generally Chromium based: Perplexity Comet, OpenAI Atlas, etc.
 
 &#51;) some features have a graceful degradation of the user experience due to limitations imposed by the browser.&nbsp; For example Brave, Firefox, and Safari do not support the [File System Access API](<https://wicg.github.io/file-system-access/> "target=\"\_blank\""), and as a result, the action to save a model is implemented as the download of a new copy.&nbsp; For the best user experience, you should use Chrome or Edge.
 
@@ -20,7 +20,7 @@ Obviously, the ability to run Hackolade Studio in the browser requires no instal
 
 &nbsp;
 
-Hackolade Studio has traditionally been available as an offline desktop application for Windows, Mac, and Linux.&nbsp; Starting with v7.0.0, it is now also available as a [cross-browser](<https://en.wikipedia.org/wiki/Cross-browser> "target=\"\_blank\"") [serveless](<https://en.wikipedia.org/wiki/Serverless\_computing> "target=\"\_blank\"") [web app](<https://en.wikipedia.org/wiki/Web\_application> "target=\"\_blank\"") which can open data models from and save them to your local environment, or preferably to your Git repository so you can collaborate on models.&nbsp; All from the same code base, meaning that, as we add [weekly enhancements](<https://hackolade.com/versionInfo/ReadMe.txt> "target=\"\_blank\"") and new features, they are deployed automatically to the offline desktop and the online browser.&nbsp; The code base for the latest version is exactly identical for the browser deployment and all desktop operating systems.
+Hackolade Studio has traditionally been available as an offline desktop application for Windows, Mac, and Linux.&nbsp; Starting with v7.0.0, it is now also available as a [cross-browser](<https://en.wikipedia.org/wiki/Cross-browser> "target=\"\_blank\"") [serveless](<https://en.wikipedia.org/wiki/Serverless\_computing> "target=\"\_blank\"") [single-page web app](<https://en.wikipedia.org/wiki/Web\_application> "target=\"\_blank\"") which can open data models from and save them to your local environment, or preferably to your Git repository so you can collaborate on models.&nbsp; All from the same code base, meaning that, as we add [weekly enhancements](<https://hackolade.com/versionInfo/ReadMe.txt> "target=\"\_blank\"") and new features, they are deployed automatically to the offline desktop and the online browser.&nbsp; The code base for the latest version is exactly identical for the browser deployment and all desktop operating systems.
 
 &nbsp;
 
@@ -28,7 +28,7 @@ This serverless setup gives you full control of the residency for your data mode
 
 &nbsp;
 
-Data isolation is possible because all your data model editing is "sandboxed" in your browser memory.&nbsp; When you save your model, the only possible locations are your own local machine or network, or your own repository.&nbsp; While it is possible that your repository is in the cloud, it is the repository of your choice.&nbsp; We do not ever see you data models or data.&nbsp; It does not even transit through our network or systems.&nbsp; Our approach is similar to [Visual Studio Code for the Web](<https://code.visualstudio.com/docs/setup/vscode-web> "target=\"\_blank\""), and is even more confidential as we don't even collect any anonymous telemetry.
+Data isolation is possible because all your data model editing is "sandboxed" in your browser memory.&nbsp; When you save your model, the only possible locations are your own local machine or network, or your own repository.&nbsp; While it is possible that your repository is in the cloud, it is the repository of your choice.&nbsp; Hackolade never receives, process, or store your data models or data.&nbsp; It does not even transit through our network or systems.&nbsp; Our approach is similar to [Visual Studio Code for the Web](<https://code.visualstudio.com/docs/setup/vscode-web> "target=\"\_blank\""), and is even more confidential as we don't even collect any anonymous telemetry.&nbsp; Or similar to [draw.io](<https://www.drawio.com/blog/data-protection> "target=\"\_blank\"").
 
 &nbsp;
 

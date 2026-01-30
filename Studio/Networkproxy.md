@@ -12,13 +12,15 @@ You may enter this info via the menu Tools \> Options \> Network Proxy.&nbsp; Ac
 
 &nbsp;
 
-Proxy configuration can be achieved in 3 different ways:
+Proxy configuration can be achieved in 4 different ways:
 
 &#49;) using your system or browser config (preferred method, requiring no special changes in Hackolade);
 
 &#50;) using HTTPS\_PROXY environment variables you may have used for your proxy settings
 
-&#51;) manually entering proxy address/port and possible username/password
+&#51;) using a Proxy Configuration (.pac) file accessed via a URL provided by your network administrator
+
+&#52;) manually entering proxy address/port and possible username/password
 
 &nbsp;
 
@@ -32,19 +34,23 @@ The default setting is to use the proxy setting from you system/browser:
 
 &nbsp;
 
-The following option should only be used if you knowingly handle proxy setup through HTTPS\_PROXY environment variables:
+The HTTPS\_PROXY option should only be used if you knowingly handle proxy setup through HTTPS\_PROXY environment variables.
 
-![Proxy settings - HTTPS\_PROXY environment var](<lib/Proxy settings - HTTPS\_PROXY environment var.png>)
+&nbsp;
+
+In some cases, your network administrator may have created an automatic proxy configuration (.pac) file and made it available via a URL address.
+
+![Proxy settings - proxy auto config file](<lib/Proxy settings - proxy auto config file.png>)
 
 &nbsp;
 
 &nbsp;
 
-If that fails, you should enter the hostname or IP address of the proxy server, and the appropriate port number.&nbsp; If the proxy server requires a user name and password, you may include your credentials as well:
+Finally, it is possible to enter the hostname or IP address of the proxy server, and the appropriate port number.&nbsp; If the proxy server requires a user name and password, you may include your credentials as well:
+
+![Proxy settings - manual](<lib/Proxy settings - manual.png>)
 
 &nbsp;
-
-![Proxy settings -- manual](<lib/Proxy settings -- manual.png>)
 
 &nbsp;
 

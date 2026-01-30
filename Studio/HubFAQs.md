@@ -122,7 +122,7 @@ No.&nbsp; An on-premises version of the Hackolade Data Model Hub would defeat th
 
 &nbsp;
 
-The database version required is Oracle 23ai Autonomous JSON, currently only available on Oracle Cloud Infrastructure.&nbsp; OCI is highly secure, and available in a public, hybrid, or private cloud configuration.&nbsp; Oracle 23ai is autonomous and serverless, meaning that it does not require special care or the constant attention of DBAs.
+The database version required is Oracle 26ai Autonomous JSON, currently only available on Oracle Cloud Infrastructure.&nbsp; OCI is highly secure, and available in a public, hybrid, or private cloud configuration.&nbsp; Oracle 26ai is autonomous and serverless, meaning that it does not require special care or the constant attention of DBAs.
 
 &nbsp;
 
@@ -136,7 +136,7 @@ The technical requirements for the Hub are numerous, ambitious, and strict.&nbsp
 
 &nbsp;
 
-No offense to the excellent vendors (which we support in many ways), but only Oracle 23ai Autonomous JSON running on OCI checked all the boxes of our requirements.&nbsp; No other vendor provided all the pieces of the puzzle to achieve our vision and architecture, while satisfying the security-first architecture constraints. &nbsp;
+No offense to the excellent vendors (which we support in many ways), but only Oracle 26ai Autonomous JSON running on OCI checked all the boxes of our requirements.&nbsp; No other vendor provided all the pieces of the puzzle to achieve our vision and architecture, while satisfying the security-first architecture constraints. &nbsp;
 
 &nbsp;
 
@@ -144,7 +144,7 @@ To be transparent, this was not an easy choice, given perceptions in the market.
 
 &nbsp;
 
-We suggest to every customer to evaluate, with an open mind, the benefits of the latest Oracle 23ai Autonomous JSON database on OCI.&nbsp; The experience and pricing are quite different than running older versions on-premises.
+We suggest to every customer to evaluate, with an open mind, the benefits of the latest Oracle 26ai Autonomous JSON database on OCI.&nbsp; The experience and pricing are quite different than running older versions on-premises.
 
 &nbsp;
 
@@ -174,7 +174,7 @@ The functions and APIs on your instance on OCI might need to be updated from tim
 
 ### Is the Hub database able to handle data models for other targets than RDBMS?
 
-All data models are persisted in JSON format for all targets supported by Hackolade Studio: SQL and NoSQL databases, REST and GraphQL APIs, storage and data exchange formats.&nbsp; In the Hub database, data models are stored as raw JSON documents, leveraging the Oracle 23ai capability to natively handle the JSON format.&nbsp; You may see examples in the demo playground at [https://hub.hackolade.com](<https://hub.hackolade.com> "target=\"\_blank\"")
+All data models are persisted in JSON format for all targets supported by Hackolade Studio: SQL and NoSQL databases, REST and GraphQL APIs, storage and data exchange formats.&nbsp; In the Hub database, data models are stored as raw JSON documents, leveraging the Oracle 26ai capability to natively handle the JSON format.&nbsp; You may see examples in the demo playground at [https://hub.hackolade.com](<https://hub.hackolade.com> "target=\"\_blank\"")
 
 &nbsp;
 

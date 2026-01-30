@@ -1,6 +1,6 @@
 # Configure custom properties
 
-Hackolade Studio is shipped with standard properties displayed in the Properties Pane.&nbsp; These properties are specific to each object in a data model.&nbsp; They are specific for each target technology, and can even be different for each data type.
+Hackolade Studio is shipped with out-of-the-box properties displayed in the Properties Pane.&nbsp; These properties are specific to each object in a data model.&nbsp; They are specific for each target technology, and can even be different for each data type.
 
 &nbsp;
 
@@ -296,7 +296,7 @@ If you use multiple targets, you probably want to display the same custom proper
 
 &nbsp;
 
-You may want to share your custom properties with other team members to ensure consistency.&nbsp; We strongly suggest to leverage Git to synchronize and deploy custom properties.
+You may want to share your custom properties with other team members to ensure consistency.&nbsp; We strongly suggest to leverage Git to synchronize and deploy custom properties.&nbsp; Detailed instructions are available in [this page](<https://hackolade.com/help/Userdefinedcustomproperties.html#Share%20customization%20with%20team%20members>).
 
 &nbsp;
 

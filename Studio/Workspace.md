@@ -20,7 +20,7 @@ The bar of icon button let you access the frequently used actions.&nbsp; The ico
 
 4. ### [Object browser pane](<Objectbrowserpane.md>)
 
-The left-hand pane shows a dynamic tree representing the hierarchy of entities maintained in your current model.&nbsp; The entries in the tree are easily searchable and let you directly access their properties.
+The left-hand pane shows 2 stacked panes: the [Diagram Objects pane](<Diagramobjectspane.md>) to facilitate the creation of objects in the ERD pane, and the [Object Browser pane](<Objectbrowserpane.md>) with a dynamic tree representing the hierarchy of entities maintained in your current model.&nbsp; The entries in the tree are easily searchable and let you directly access their properties.
 
 5. ### [Central pane](<Centralpane.md>)
 

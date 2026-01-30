@@ -31,19 +31,24 @@ A branch is meant to be temporary: it should be reviewed, typically by another u
 
 In the repository context, select as the active branch, the branch for which you want to submit a change request, then click on the left menu item "Submit for review" to get the screen below:
 
+&nbsp;
+
 ![Workgroup submit for review](<lib/Workgroup submit for review.png>)
 
+&nbsp;
+
+* select the **target** **branch** into which the changes must be merged.
 * provide a **title**, a short description of the changes made;
 * optionally provide a more detailed **description** of the changes.&nbsp; You can write that description using the [Markdown syntax](<https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax>);&nbsp;
-* select the **target** **branch** into which the changes must be merged.
-
-&nbsp;
+* select one or more **reviewers** and optionally one or more **assignees**.
 
 &nbsp;
 
 ![Workgroup submit for review markdown](<lib/Workgroup submit for review markdown.png>)
 
-Hackolade lists all the commits to be included in the review.&nbsp; You can self-review the changes in these commits before submitting them using the "Review changes..." button. It opens up the [compare dialog](<Compareandmergemodels.md>) and provides a graphical visualization of the changes.
+&nbsp;
+
+Hackolade lists all the commits to be included in the review.&nbsp; You can self-review the changes in these commits before submitting them using the "Review changes..." button. It opens up the [compare dialog](<Compareandmergemodels.md>) and provides a graphical visualization of the changes.&nbsp; If desired, from the side-by-side comparison screen, you may open the model in a separate instance, or [generate a delta model to see the ALTER script](<DeltamodelandALTERscript.md>), if allowed for the target.
 
 &nbsp;
 
@@ -56,6 +61,18 @@ Once your change request is opened, you get the screen below, displaying a link 
 &nbsp;
 
 ![Workgroup submit for review - submitted](<lib/Workgroup submit for review - submitted.png>)
+
+If you want to maintain a clean commit history, you probably want to modify the commit message in a way similar to using Squash and Merge in GitHub.&nbsp; This is possible simply by going to&nbsp; the *General* settings of the repository, it is possible to force GitHub to always use the pull request title as commit message, providing the user with full control over it without requiring additional development on our side.
+
+&nbsp;
+
+![Image](<lib/Workgroup submit for review - squash  merge.png>)
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
 
 &nbsp;
 

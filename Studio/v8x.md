@@ -1,10 +1,560 @@
 # v8.x
 
-New features in v8.4.3 \[19-Sept-2025\]&nbsp;
+New features in v8.9.1 \[30-Jan-2026\]&nbsp;
 
-\- Excel: enhanced handling of numeric properties so that cleared numeric values in Excel are emptied in the model during reverse-engineering
+\- ERD: improved container resize when it contains derived annotations
+
+\- Excel: added attributes and FK relationships creation based on name references when no GUID is present
+
+\- Graph View: added resizing control for edge boxes
+
+\- Mermaid: updated library to latest version 11.12.2
+
+\- PowerDesigner: added support for reverse-engineering of sub-packages
+
+\- PowerDesigner: added validation of PD extended attributes against Studio custom properties configuration
+
+\- PowerDesigner: added warning for unsupported ExtendedComposition tags
+
+\- Collibra: improved relation type recognition during forward-engineering
+
+\- Cosmos DB with SQL API: suppressed partitionKey declaration if not specified in model
+
+\- Cosmos DB with SQL API, Cosmos DB with Gremlin API: added explicit option "/\*" for included paths in index settings
+
+\- Db2: added support for view changes in ALTER script of delta model
+
+\- Db2: added support for table changes, inclusive columns, in ALTER script of delta model
+
+\- Db2: added script with comments on Activated/Inactivated entities (table, view, column) successfully applies to DB2 instance&nbsp;
+
+\- Oracle: added support for SUBPARTITION in Properties Pane, forward- and reverse-engineering
 
 &nbsp;
+
+New features in v8.9.0 \[23-Jan-2026\]&nbsp;
+
+\- Polyglot: introduced flexible modeling for relationships, allowing gradual refinement from conceptual to logical phases.&nbsp; More info at https://hackolade.com/help/ConceptualtoLogicalwithPolyglotr.html
+
+\- Relationships: changed Foreign Master relationship lines from dashed to dotted, so as to leave dashed lines for non-identifying relationships
+
+\- Documentation generation: refactored to dynamically reflect the configuration in the Properties Pane
+
+\- Excel: enabled reverse-engineering in unsaved models when the Excel file does not contain references to other models
+
+\- Collibra: stopped running parallel GET requests to the Collibra API to ease load on customer server
+
+\- Collibra: added retry logic if the fetch request runs into error net::ERR\_INCOMPLETE\_CHUNKED\_ENCODING
+
+\- Avro: ensured appropriate name validation after derivation from Polyglot
+
+\- BigQuery: added support for choice of file granularity when generating DDLs: per model, per schema, or per table
+
+\- BigQuery: added support for defining Unique and Alternate Keys (Natural Keys) as modeling metadata documentation
+
+\- Cosmos DB: improved reverse-engineering to ensure correct conversion of unsupported types within union definitions
+
+\- CosmosDB with SQL API: removed extraneous Binary data type to ensure compliance with native JSON data types
+
+\- CosmosDB with Gremlin API, JanusGraph, Neo4j, Neptune, Tinkerpop: updated for compatibility with new Polyglot references when derive from and convert to Polyglot
+
+\- Snowflake: updated SDK and lodash libraries, plus replaced Axios with proxy fetch library, plus reordered log file
+
+\- Synapse: added resolution of model definition references in DDL forward-engineering through hydration of objects
+
+&nbsp;
+
+New features in v8.8.5 \[16-Jan-2026\]&nbsp;
+
+\- License: enabled offline validation for license keys when using Windows Remote Desktop (RDP)
+
+\- Polyglot: added possibility to derive edge relationships into another Polyglot model
+
+\- Polyglot added alternate key indexes in ERD entity box for referenced and derived entities
+
+\- Collibra: added detection of pagination type for fetching configurations in Collibra
+
+\- Collibra: improved relation type recognition during forward-engineering
+
+\- Avro: added support for unresolved named type when the field references a record derived from Polyglot
+
+\- Db2: enabled ALTER script in delta model
+
+\- Db2: enabled feature to apply DDLs and ALTER scripts to instance
+
+\- Db2: added support for reverse-engineering of constraints when specified separately
+
+\- PostgreSQL: added CREATE VIEW statement in alter script of delta model
+
+\- PostgreSQL: added support for comment on VIEW column in generated DDL
+
+\- PostgreSQL: enhanced forward-engineering to escape special characters in comments using 'E' only when necessary
+
+\- Snowflake: added extra logging and a default port value to the configuration to assist with browser redirection issues
+
+&nbsp;
+
+New features in v8.8.4 \[09-Jan-2026\]&nbsp;
+
+\- ERDVs: ensured that symbols (annotations and rectangles) are preserved during reverse-engineering from Excel
+
+\- Command-Line Interface: added support for converting models to Polyglot data models via polyglotConvert command and related arguments
+
+\- Compare and merge: improved rendering and merging of supertype groups
+
+\- Custom Properties: resolved false alert regarding undeclared custom property "multipleParentType" for array items
+
+\- General: improved handling of default path location in file picker to select a file other than a data model (open and save)
+
+\- Impact Analysis: enhanced rendering of entities in tree view when changed to a subtype
+
+\- Impact Analysis: changed default checkbox state behavior when an entity is changed to a subtype
+
+\- Object Browser: added a delete option in the contextual menu for relationships
+
+\- Polyglot: enhanced handling of supertype groups during updates of Polyglot definitions
+
+\- Polyglot: resolved error when updating Polyglot definitions after changing an entity to a subtype while also modifying existing attributes to references
+
+\- Suggest Denormalization: enhanced flexibility in embedding options by leveraging relationship cardinalities to determine whether to use arrays or sub-documents
+
+\- Collibra: introduced configurable attribute-level lineage mapping, allowing to choose between direct simple relation and the (default) complex mapping specifications
+
+\- Cosmos DB with SQL API, Cosmos DB with MongoDB API: added support for multiple types with complex types to eliminate need for oneOf constructs, plus updated libraries and dependencies
+
+\- Db2: introduced flexibility in script generation for controlling constraints in CREATE scripts (3 choices: "In CREATE statement", "In separate statement" or "Ignore"), controllable from Tools \> Options \> Forward-Engineering parameters, plus from forward-engineering lower tab and via Tools \> Forward-Engineer menu, plus plus updated libraries and dependencies
+
+&nbsp;
+
+New features in v8.8.3 \[02-Jan-2026\]&nbsp;
+
+\- General: refactored default path location in file picker when selecting SSL/SSH certificates
+
+\- Forward-engineering: improved handling of default path location in file picker when selecting target files
+
+\- Reverse-engineering: improved handling of default path location in file picker when selecting data model
+
+\- Avro: improved forward-engineering by generating type as reference for referenced records in union branches
+
+&nbsp;
+
+New features in v8.8.2 \[26-Dec-2025\]&nbsp;
+
+\- General: improved handling of default path location in file picker to select a data model
+
+\- Object Browser: ensured that relationships name color matches those in ERD and Graph Diagram
+
+\- ERD: added name of oneOf choices in entity boxes and object browser
+
+\- ERDVs: ensured that relationships line style from ERD is preserved when creating new ERDV
+
+\- Persistence: added adapter to remove extraneous empty arrays of complex props
+
+\- Avro: added support for unions with named types, with unique names for records, enums, and fixed types to better comply with Avro specs during forward-engineering
+
+\- Avro: improved derivation of Polyglot supertype-subtype into oneOf in Avro, using inheritance names as oneOf choice names
+
+\- Cassandra: added adjustment for handling partitioning keys
+
+\- Delta Lake/Databricks: added adjustment for handling clustering keys
+
+\- ScyllaDB: added adjustment for handling partitioning and clustering partition keys
+
+&nbsp;
+
+New features in v8.8.1 \[19-Dec-2025\]&nbsp;
+
+\- Tech refresh of ElectronJS (v39.2.7), NodeJS (v22.21.1), Chromium (v140.0.7444.235), V8 engine (v14.2.231.21), and related modules
+
+\- Polyglot: introduced automatic generation of associative entities for many-to-many relationships during derive operations into Polyglot and RDMBS targets
+
+\- References: enabled "Replace by Attributes" functionality in the Properties Pane for Internal, Model, and External references
+
+\- Glue, Hive: introduced flexibility in script generation for controlling constraints in CREATE scripts (3 choices: "In CREATE statement", "In separate statement" or "Ignore"), controllable from Tools \> Options \> Forward-Engineering parameters, plus from forward-engineering lower tab and via Tools \> Forward-Engineer menu
+
+\- Hive: added support for Hive 4.x as the default version
+
+\- BigQuery, CockroachDB, Db2, DeltaLake/Databricks, Hive, MariaDB, MySQL, Oracle, PostgreSQL, Redshift, Snowflake, SQLServer, Synapse, Teradata, YugabyteDB-YSQ: introduced automatic generation of associative entities for many-to-many relationships during derive operations into Polyglot and RDMBS targets
+
+&nbsp;
+
+New features in v8.8.0 \[12-Dec-2025\]&nbsp;
+
+\- Desktop application: achieved 30% performance increase when opening the first instance of the application, by migrating bundling
+
+\- Linux: added SHA-256 checksum file in download S3 folder
+
+\- Archimate: added support for forward-engineering of complex custom properties of derived modeling objects
+
+\- Polyglot: added support for relationships custom color in Graph view
+
+\- PowerDesigner: handled missing single primary keys during reverse-engineering of Physical Data Model files (pdm) when structure differs from previously encountered
+
+\- PowerDesigner: added support for different format for cardinality during reverse-engineering of PDM files
+
+\- References: added visible attribute level $ref property with path to a definition
+
+\- References: allowed to create (also change, refresh, and open in a separate instance) a reference at attribute level via the $ref property in Properties Pane
+
+\- Views: enhanced properties handling and rendering of attributes marked as Primary Keys in underlying table
+
+\- XSD: improved handling of duplicated descriptions in Erwin XSD files
+
+\- Oracle: corrected return type of view alter scripts function
+
+\- Oracle: added support for named NOT NULL constraints in ALTER scripts
+
+&nbsp;
+
+New features in v8.7.2 \[05-Dec-2025\]&nbsp;
+
+\- ArchiMate: added support for forward-engineering of scalar custom properties at model and entity level in Open Exchange file format
+
+\- ArchiMate: added support for forward-engineering of complex custom props and relationships in both ArchiMate and Open Exchange file formats
+
+\- Custom properties: added ability to declare them for relationships in modelLevelConfig file
+
+\- Display options: added support for composite unique keys constrains
+
+\- Excel: added support for cross-repository references in forward-engineering and in reverse-engineering, whereby $ref path is exported as defined in the model instead of being converted to absolute path
+
+\- Forward-engineering: adjusted compliance in generated JSON sample data, addressing boolean property types, additional properties, and handling of \`oneOf\` constraints
+
+\- Object Browser: added highlight of selected relationship, for consistency with other objects
+
+\- Reverse-engineering: enhanced performances by optimizing number of parallel workers for JSON data parsing based on available memory and CPU resources
+
+\- Workgroup: added support for sub-groups in GitLab (cloud \& server) across all features: Open From, Generate Shareable Link, Save To, and Remote References
+
+\- Oracle: added support for removal of primary and unique key constraints in ALTER scripts
+
+\- Oracle: added support for removal of comments in ALTER scripts
+
+\- Oracle: added support for updating properties of datetime attributes in ALTER scripts
+
+\- PostgreSQL: ensured that definition names (UDTs) with special characters (including forward slashes) are correctly resolved throughout DDL generation process
+
+&nbsp;
+
+New features in v8.7.1 \[01-Dec-2025\]&nbsp;
+
+\- Documentation: suppressed sidecar windows consuming unnecessary processes and memory
+
+&nbsp;
+
+New features in v8.7.0 \[28-Nov-2025\]&nbsp;
+
+\- Remote references: added possibility for cross-repository references to models (Polyglot or external) in a remote location, across different repositories and repository providers
+
+\- Memory management: reduced memory footprint of application by 300 MB when opening a model
+
+\- Browser: added possibility to create and refresh external and Polyglot references
+
+\- ArchiMate: added support for forward-engineering of scalar custom properties at model and entity level in ArchiMate file format (not yet complex custom props, and not yet Open Exchange file format)
+
+\- Command-Line Interface: enabled --properties argument in genDoc command
+
+\- Documentation: added $ref for entities with external references
+
+\- Documentation: eliminated race condition on old and slow Windows machines
+
+\- ERD: improved performance for models with large number of relationships
+
+\- Properties Pane: added message when number of relationships is greater than 250
+
+\- PowerDesigner: added reverse-engineering of technical names ("code") of foreign key relationships
+
+\- PowerDesigner: added support for reverse-engineering views based on views
+
+\- PowerDesigner: enhanced reverse-engineering of view SELECT statements from Erwin models by cleaning unsupported characters and unnecessary CREATE statements
+
+\- Undo/Redo: improved functionality after model conversion
+
+\- Collibra: adapted forward-engineering to comply with new stricter configuration rules for complex relation types
+
+\- Collibra: added handling of publishing when custom asset types are present
+
+\- MariaDB, MySQL: improved reverse-engineering to handle reserved keywords in comments
+
+&nbsp;
+
+New features in v8.6.1 \[21-Nov-2025\]&nbsp;
+
+\- Compare \& Merge: added support for preservation of layout and colors of graph views, ERD, and ERDVs from right-hand model
+
+\- Compare \& Merge: adjusted color coding of deleted attributes
+
+\- ERDV print diagram: adjusted to occupy entire print area
+
+\- Forward-Engineering: added option to skip creation of root folder named after the model, allowing for direct export of files into selected folder
+
+\- Object Browser: enhanced search to include ERDV names
+
+\- Polyglot: added handling of technical names and naming conventions during conversion, preserving coupling in original model
+
+\- PowerDesigner: enhanced reverse-engineering of views generated from Erwin models
+
+\- PowerDesigner: added handling of enums without labels
+
+\- Command Line Interface: added support for reverse-engineering of PowerDesigner .pdm physical model files
+
+\- Undo/Redo: fixed issue where model objects could be created with duplicate IDs after exceeding action stack limit
+
+\- Collibra: add new checks for relation types used in assignments
+
+\- MongoDB: restored optional relationship inference during reverse-engineering
+
+\- PostgreSQL: adjusted timestamp data type mapping when deriving from Polyglot and converting to Polyglot
+
+&nbsp;
+
+New features in v8.6.0 \[14-Nov-2025\]&nbsp;
+
+\- Polyglot: added support for technical names and naming conventions, including handling during derive operations depending on the naming conventions in target
+
+\- Polyglot: ensured that technical names in target are preserved when updating Polyglot references while naming conventions are inactive
+
+\- Polyglot: ensured all technical names are preserved during convert and merge, plus added validation of the target model and improved overall convert performance
+
+\- Command Line Interface: added argument applyTargetNamingConventions for polyglotDerive command to control whether to apply the target model’s naming conventions when deriving names
+
+\- ERDV: improved performance for basic operations, including faster entity expand, resize, move, and undo actions, along with a delay for relationship line tooltips to reduce blinking during quick mouse movements
+
+\- Naming Conventions: unchecked "remove vowels" option by default for all targets in Desktop and Browser
+
+\- PowerDesigner: improved reverse-engineering of views in existing models for PDM files generated from Erwin
+
+\- PowerDesigner: improved data type mapping to Delta Lake/Databricks and JSON targets, with enhanced warnings and email notifications for unmapped data type
+
+\- Collibra: enriched logs when publishing assignment configs
+
+\- Oracle, SQL Server: prevented changes in target model after conversion when dependent on Polyglot
+
+\- Oracle: improved reverse-engineering from instance to identify new Oracle 26ai version
+
+\- Snowflake: enhanced script generation options for alter script of delta models
+
+\- Synapse: removed extraneous -- used for commenting
+
+&nbsp;
+
+New features in v8.5.5 \[07-Nov-2025\]&nbsp;
+
+\- Tech refresh of ElectronJS (v39.1.0), NodeJS (v22.21.1), Chromium (v140.0.7444.59), V8 (v14.2.231.14) and related modules
+
+\- Compare \& Merge: improved merging of ERDVs with conflicting names
+
+\- ERD \& ERDVs: enhanced performance of Undo actions
+
+\- Polyglot: preserved physical properties in derived models while maintaining dependencies when converting model
+
+\- PowerDesigner: improved reverse-engineering to handle single column references as arrays
+
+\- Collibra: removed articulation rules from pre-defined assignments configuration in forward-engineering to comply with new validation rules at Collibra side
+
+\- Snowflake: fine-tuned several details when applying script generation options
+
+\- Synapse: introduced flexibility in script generation for controlling constraints in CREATE scripts (3 choices: "In CREATE statement", "In separate statement" or "Ignore"), controllable from Tools \> Options \> Forward-Engineering parameters, plus from forward-engineering lower tab and via Tools \> Forward-Engineer menu
+
+\- Teradata: improved handling of canceled reverse-engineering process, plus made host field required entry
+
+\- Teradata: added handling of reverse-engineer aborting action
+
+&nbsp;
+
+New features in v8.5.4 \[31-Oct-2025\]&nbsp;
+
+\- ERD: fixed minor error in entity color picker when color was unchanged
+
+\- Db2: replaced query statement with environment variables during reverse-engineering, plus added query to log file
+
+\- MongoDB: added aws4 library in public package to allow AWS IAM user authentication and credentials file
+
+\- GraphQL: add type for entity during reverse-engineering from instance
+
+\- GraphQL: refactored deviations indicators in Object Browser for higher performance
+
+\- Snowflake: introduced flexibility in script generation for controlling constraints in CREATE scripts (3 choices: "In CREATE statement", "In separate statement" or "Ignore"), controllable from Tools \> Options \> Forward-Engineering parameters, plus from forward-engineering lower tab and via Tools \> Forward-Engineer menu
+
+&nbsp;
+
+New features in v8.5.3 \[24-Oct-2025\]&nbsp;
+
+\- ERDVs: added possibility to duplicate an existing ER Diagram View via contextual menu, toolbar, shortcut, or application menu
+
+\- ERD: added warning for generating documentation and printing diagrams with empty names in modeling objects
+
+\- Workgroup: implemented lazy loading of assignable users for pull requests to handle slow networks with timeouts and enhance performance
+
+\- Workgroup: improved error handling when missing Git client on Windows and encountering the "spawn git ENOENT" error and directing users to relevant documentation
+
+\- Collibra: improved performance of forward-engineering of large models
+
+\- Collibra: added preliminary check with warning if empty names in modeling objects or out-of-canvas-bounds objects prior to publishing
+
+\- YugabyteDB: added support for column-level check constraints
+
+&nbsp;
+
+New features in v8.5.2 \[17-Oct-2025\]&nbsp;
+
+\- Tech refresh of ElectronJS (v38.3.0), NodeJS (v22.20.0), Chromium (v140.0.7339.240), V8 (v14.0.365.10) and related modules
+
+\- Compare \& Merge: improved global performance, particularly noticeable with lineage capture
+
+\- ERD: improved performance for zooming, scrolling, selecting, and drag-and-drop actions when handling a large number of relationships
+
+\- ERD: improved entity addition from ERDV to ensure new entities are positioned in ERD close to existing ones within the same container
+
+\- Excel: added tolerance for primary keys missing their key
+
+\- Reverse-engineering: enhanced performance of selection dialog to support displaying large number of entities
+
+\- Oracle: added version 26ai
+
+\- Oracle: added support for renaming entities and entities in ALTER script
+
+\- Oracle:  improved application of script generation options in ALTER script
+
+\- PostgreSQL: improved application of script generation options in ALTER script
+
+\- SQL Server/AzureSQL: added support for reverse-engineering of Microsoft Fabric
+
+\- SQL Server/AzureSQL: changed auth methods from Azure AD to Entra ID&nbsp;
+
+\- SQL Server/AzureSQL: improved application of script generation options in ALTER script
+
+\- Synapse: added support for reverse-engineering of Microsoft Fabric
+
+\- Synapse: changed auth methods from Azure AD to Entra ID&nbsp;
+
+\- YugabyteDB: introduced flexibility in script generation for controlling constraints in CREATE scripts (3 choices: "In CREATE statement", "In separate statement" or "Ignore"), controllable from Tools \> Options \> Forward-Engineering parameters, plus from forward-engineering lower tab and via Tools \> Forward-Engineer menu
+
+&nbsp;
+
+New features in v8.5.1 \[10-Oct-2025\]&nbsp;
+
+\- ERD Display Options: added new display option to toggle display of deactivated objects
+
+\- ERD Display Options: added keeping toolbar menu open after selection, until mouse is moved out of the fram
+
+\- Object Browser: added option in contextual menu to sort ERDVs alphabetically
+
+\- Compare \& Merge: removed extraneous Relationships tab in lower half of screen, as information is available in more details in upper half
+
+\- Compare \& Merge: enhanced filter "Show only differences" to hide unchanged group properties in lower half of screen
+
+\- Compare \& Merge: added collapsing of unchanged group properties, when filter is set to "Show all properties"
+
+\- Documentation: added tolerance during generation for missing references to external definitions&nbsp;
+
+\- Polyglot: added possibility to define enums in UDTs so that it could be derived in CockroachDB, PostgreSQL, and YugabyteDB physical models
+
+\- Windows installer: enhanced to provide alternative installation folder and avoid that privileges force Inno Setup to install in AppData, plus updated for Windows 10+ and x64 compatibility&nbsp;
+
+\- Workgroup: pass the matching repository root folder when retrieving stashes and tags
+
+\- Oracle: added fallback query to fetch table columns meta information when reverse-engineering without SELECT permission
+
+\- PostgreSQL: added support for column-level check constraints
+
+\- PostgreSQL:  introduced flexibility in script generation for controlling constraints in CREATE scripts (3 choices: "In CREATE statement", "In separate statement" or "Ignore"), controllable from Tools \> Options \> Forward-Engineering parameters, plus from forward-engineering lower tab and via Tools \> Forward-Engineer menu
+
+\- YugabyteDB: removed enum, composite, range and domain data types from the data type list to enforce user-defined types for proper declaration in generated scripts
+
+&nbsp;
+
+New features in v8.5.0 \[03-Oct-2025\]&nbsp;
+
+\- Tech refresh of ElectronJS (v38.2.0), NodeJS (v22.19.0), Chromium (v140.0.7339.133), V8 (v14.0.365.4) and related modules, including fixes for excessive WindowsServer GPU usage and high CPU usage with \<input\> tag on macOS Tahoe 26
+
+\- Security: removed false positives in ReversingLabs evaluation scan of Windows installation package
+
+\- Cloud providers: updated AWS, Azure, and GCP SDKs to latest
+
+\- ERD Display Options: introduced clearer Tools \> Options \> Display parameters, toolbar dropdown toggles, and View menu
+
+\- ERD Display Options: added new display options to show only foreign keys (FK) and unique keys (UK)
+
+\- Faker: changed evaluation of FakerJS expressions to get rid of VM2 library
+
+\- Workgroup: removed custom commit message for squash merges, allowing the git provider to generate commit messages based on repository settings
+
+\- Collibra: added publishing of multi-select custom properties
+
+\- Collibra: added publishing custom properties from custom tab
+
+\- PostgreSQL: added fallback query to fetch table columns meta information without SELECT permission
+
+\- Snowflake: added handling of tables created from SELECT statements during reverse-engineering
+
+\- Synapse: enhanced reverse-engineering to tolerate missing square brackets in partitioning statements
+
+\- Synapse: adapted connection screen to replace AAD (Azure Active Directory) by Azure Entra ID, plus replaced Axios with proxy fetch library
+
+&nbsp;
+
+New features in v8.4.4 \[26-Sept-2025\]&nbsp;
+
+\- Relationships: added possibility to configure in Tools \> Options \> General how business names are assembled when creating FK relationships via drag-and-drop
+
+\- Command-Line Interface: added argument --pkAtTop to commands forwEng, forwEngAPI, forwEngXLSX
+
+\- Diagram Objects pane: consolidated annotations and rectangles under a single symbols entry with sub-menu, plus a help icon lining to the documentation page
+
+\- ERD/ERDV: added a placeholder in entity boxes to indicate, when display options are set hide attributes in favor of description, but description is empty
+
+\- ERD/ERDV/Object Browser: added badge to visually indicate when an entity or attribute is deactivated
+
+\- ERD/ERDV/Object Browser: added badge to visually indicate deviation when adding attributes in entities derived from polyglot
+
+\- ERDV: ensured that layout remains unchanged when adding new entity via membership dialog
+
+\- Excel: added update of container custom properties values during reverse-engineering
+
+\- Excel: enhanced handling of numeric properties so that cleared numeric values in Excel are emptied in the model during reverse-engineering, when the model is derived from polyglot
+
+\- Object Browser: added Symbols (currently: annotations and rectangles) in search results, and in search scope dropdown
+
+\- PowerDesigner: added handling of geopoint attributes during reverse-engineering into Polyglot and other targets supporting that datatype; to allow array of coordinates
+
+\- Collibra: added possibility to configure assetType mapping with custom Collibra IDs
+
+\- Oracle: added reverse-engineering of additional table properties
+
+\- PostgreSQL: added normalization of arrays of objects when deriving from Polyglot
+
+&nbsp;
+
+New features in v8.4.3 \[19-Sept-2025\]&nbsp;
+
+\- Command-Line Interface: added revEng command argument to use index columns in sort criteria for MongoDB reverse-engineering --useIndexInSort=\< true \| false \>
+
+\- Custom props: allowed defaultValue property for non-complex custom properties for all modeling objects in native targets
+
+\- Documentation: improved robustness by ignoring empty custom tabs
+
+\- ERD: created adapter to render visible hidden entities linked to non-existent containers after erroneous user manipulation in Excel
+
+\- Excel: added support for custom properties for view attributes that can have distinct values from their underlying referenced entity attributes
+
+\- PowerDesigner: added reverse-engineering of view technical names
+
+\- PowerDesigner: added mapping of data type timestamptz to "timestamp with time zone" when reverse-engineering into PostgreSQL models
+
+\- Views: enabled the creation of Views on existing View attributes that lack underlying reference, by extracting data type from SELECT statement
+
+\- Avro: resolved schema validation about default: null when resolving reference in model derived from polyglot
+
+\- Avro: used technical name of namespace references in schema generation
+
+\- Avro: avoid infinite spinner due to race condition when clicking on controls before schema has been generated
+
+\- EventBridge: enabled extensions on references
+
+\- Snowflake: improved robustness of forward-engineering with view attributes without underlying references
+
+\- Synapse: enabled the selection of a column as both an index column and a distribution column
 
 &nbsp;
 

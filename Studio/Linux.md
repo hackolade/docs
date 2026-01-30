@@ -1,6 +1,6 @@
 # Linux
 
-Hackolade is a desktop application with a GUI. By default it requires a Desktop environment like Gnome, Mate, Xfce etc... Given the nature of Linux that is often used to run servers (especially on Cloud infrastructures), please note that it is also possible to only run Hackolade in CLI mode even though a better solution might be to leverage our [Docker deployment](<https://github.com/hackolade/docs/blob/0a59fff31d4ba35b7b64d924d5a534e9f96d1d26/Studio/Dockercontainer.md>) for that purpose.
+Hackolade Studio is a desktop application with a GUI. By default it requires a Desktop environment like Gnome, Mate, Xfce etc... Given the nature of Linux that is often used to run servers (especially on Cloud infrastructures), please note that it is also possible to only run Hackolade Studio in CLI mode even though a better solution might be to leverage our [Docker deployment](<https://github.com/hackolade/docs/blob/0a59fff31d4ba35b7b64d924d5a534e9f96d1d26/Studio/Dockercontainer.md>) for that purpose.
 
 &nbsp;
 
@@ -19,7 +19,7 @@ The application can be run from the terminal or from a script by terminal:\
 
 ### Pre-requisites
 
-Hackolade requires some packages to be installed on your system to run properly.
+Hackolade Studio requires some packages to be installed on your system to run properly.
 
 &nbsp;
 
@@ -69,11 +69,17 @@ or
 
 &nbsp;
 
-### Installation
+### Download and Installation
 
-Download the [latest release](<https://s3-eu-west-1.amazonaws.com/hackolade/current/Hackolade-linux-x64.zip> "target=\"\_blank\"")
+Download the [latest release](<https://s3-eu-west-1.amazonaws.com/hackolade/current/Hackolade-linux-x64.zip> "target=\"\_blank\"").&nbsp; Both the zip file and 256-SHA checksum file must be downloaded int he same folder
 
-&nbsp; &nbsp; wget https://s3-eu-west-1.amazonaws.com/hackolade/current/Hackolade-linux-x64.zip
+&nbsp;
+
+> wget https://s3-eu-west-1.amazonaws.com/hackolade/current/Hackolade-linux-x64.zip
+
+> wget https://s3-eu-west-1.amazonaws.com/hackolade/current/Hackolade-linux-x64.SHASUM256.txt.asc
+
+&nbsp;
 
 Then unzip:
 
@@ -94,6 +100,22 @@ Then unzip:
  
 
 The application must be executed by a non-root user.
+
+&nbsp;
+
+To verify the the archive integrity, use the command below:
+
+&nbsp;
+
+> $ sha256sum -c Hackolade-linux-x64.SHASUM256.txt.asc
+
+&nbsp;
+
+You should get the response:
+
+&nbsp;
+
+> Hackolade-linux-x64.zip: OK
 
 &nbsp;
 

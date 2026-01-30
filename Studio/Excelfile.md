@@ -102,3 +102,26 @@ If you click Yes, you should be aware that values are no longer validated agains
 
 &nbsp;
 
+## Working with relationships
+
+When forward-engineering a data model to Excel, relationships are exported in the same way as other modeling objects.&nbsp; This function primarily supports documentation, review, and auditing, but also allows bulk updates when needed.
+
+&nbsp;
+
+While Excel offers flexibility, it does not provide the same structural guidance and safeguards as the Hackolade Studio UI.&nbsp; As a result, certain combinations of changes that are technically possible in Excel may lead to inconsistent relationship definitions.
+
+&nbsp;
+
+For this reason, editing relationships in Excel is supported but not the primary recommended workflow.&nbsp; When users choose to do so, Hackolade Studio applies a limited set of guardrails during the reverse-engineer process to preserve model integrity.
+
+&nbsp;
+
+In particular:
+
+* if the property *Has attributes = true*, the relationship cannot be a Foreign Key or Foreign Master.&nbsp; A relationship that carries attributes is, by definition, an association and cannot be modeled as a FK/FM relationship.
+* if the property *Has attributes = false*, the relationship cannot have relationship attributes defined in the relationship-attributes sheet. In that case, the input is considered inconsistent.
+
+&nbsp;
+
+If these rules are not respected, the inconsistent relationship is ignored during reverse-engineering and a warning is issued. It prevents silent data loss and ensures that your modeling intent remains explicit.
+
