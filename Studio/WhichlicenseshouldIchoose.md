@@ -59,7 +59,7 @@ Many customers choose to have a mix of dedicated and concurrent seats.&nbsp; Ded
 
 &nbsp;
 
-The **pricing model for concurrent licenses** is based on the maximum number of simultaneous users, or the size of the user pool, rather than the total number of potential users. For example, an organization with 200 potential users but only 20 people who need to access the software at the same time would require just 20 seats. The ratio of total users to concurrent seats varies depending on how intensively the software is used within the organization, typically ranging from 10-to-1 down to 4-to-1. Concurrent seats are priced at four times the cost of dedicated seats.
+The **pricing model for concurrent licenses** is based on the maximum number of simultaneous users (the size of the pool of seats licensed), rather than the total number of potential users. For example, an organization with 200 potential users but only 20 people who need to access the software at the same time would require just 20 seats. The ratio of total users to concurrent seats varies depending on how intensively the software is used within the organization, typically ranging from 10-to-1 down to 4-to-1. Concurrent seats are priced at four times the cost of dedicated seats.
 
 &nbsp;
 

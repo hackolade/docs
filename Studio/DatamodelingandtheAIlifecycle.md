@@ -1,6 +1,6 @@
 # Data modeling and the AI lifecycle
 
-Artificial Intelligence is a multiplier.&nbsp; It amplifies what an organization is a already capable of... as well as what it ignores.&nbsp; It scales whatever foundation it’s applied to.&nbsp; If the underlying processes, data quality, and organizational practices are strong, AI can dramatically improve efficiency, insight, and decision-making.&nbsp; But if those foundations are weak -- messy processes, biased or incomplete data, poor communication -- AI won’t fix them.&nbsp; AI requires orchestra conductors and choreographs more than it requires engineers to operate it.
+Artificial Intelligence is a multiplier.&nbsp; It amplifies what an organization is already capable of... as well as what it ignores.&nbsp; It scales whatever foundation it’s applied to.&nbsp; If the underlying processes, data quality, and organizational practices are strong, AI can dramatically improve efficiency, insight, and decision-making.&nbsp; But if those foundations are weak -- messy processes, biased or incomplete data, poor communication -- AI won’t fix them.&nbsp; AI requires orchestra conductors and choreographs more than it requires engineers to operate it.
 
 &nbsp;
 
@@ -80,7 +80,7 @@ Developing an AI solution involves several iterative steps. The process begins w
 
 &nbsp;
 
-Good data modeling gives AI q high-quality foundation of clear concepts, relationships, constraints, and provenance.&nbsp; AI models learn and reason over clean, unambiguous signals instead of brittle, ad-hoc fields.&nbsp; Semantic knowledge graphs, defined using RDFS, OWL and SHACL, make structure machine-interpretable: classes and properties define meaning; axioms enable logical inference; SHACL guards data quality.&nbsp;
+Good data modeling gives AI a high-quality foundation of clear concepts, relationships, constraints, and provenance.&nbsp; AI models learn and reason over clean, unambiguous signals instead of brittle, ad-hoc fields.&nbsp; Semantic knowledge graphs, defined using RDFS, OWL and SHACL, make structure machine-interpretable: classes and properties define meaning; axioms enable logical inference; SHACL guards data quality.&nbsp;
 
 &nbsp;
 

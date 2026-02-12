@@ -86,6 +86,10 @@ Conversion parameters are specific to each target.&nbsp; To modify the behavior 
 
 &nbsp;
 
+**Note:** given that the case conversion rule is applied after the rule to remove or replace invalid characters, as noted above, it is critical to not remove or replace blanks if you want case conversion to function as expected.
+
+&nbsp;
+
 **Technical-to-Business Conversion:** the following options, if enabled will be applied after the file conversion (with or without file.)
 
 **Case conversion:** If enabled, a space is inserted between words detected in the technical name (based on the presence of a separator such as underscore (‘\_’), a dash (‘-‘), a dot (‘.’), a slash (‘/’), or simply an Upper case letter).&nbsp; Choose from the dropdown:

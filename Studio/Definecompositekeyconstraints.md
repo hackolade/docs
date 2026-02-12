@@ -26,7 +26,7 @@ If you want to mark as PK a different attribute, you must first uncheck the prim
 
 &nbsp;
 
-When the target supports composite keys (a.k.a. compound keys), the order of the keys is important, as well as making sure that the DDL output is properly assembled.&nbsp; As a result, the easy method described above for simple PKs cannot be used.&nbsp; Composite keys are declared at the entity level, in the Properties Pane tab "Composite keys":.&nbsp; In general, you may give a name to the composite key constraint.
+In many case, you may want to declare multiple columns to create a composite primary key&nbsp; (a.k.a. compound primary keys). &nbsp; The order of the keys is important, as well as making sure that the DDL output is properly assembled.&nbsp; As a result, the easy method described above for simple PKs cannot be used.&nbsp; Composite primary keys are declared at the entity level (table), in the Properties Pane tab "Composite keys":.&nbsp; In general, you may give a name to the composite key constraint.
 
 &nbsp;
 
@@ -62,7 +62,11 @@ As described in [this page](<RelationshiplinesinERdiagram.md>), simple foreign k
 
 &nbsp;
 
-When it comes to composite foreign keys, it is not possible to define via drag-and-drop.&nbsp; Actually, you may start from a simple FK relationship defined&nbsp; with any of the of the methods above (including drag-and-drop), then enrich it with using the Properties Pane for the relationship by adding the parent and child attributes, using the + sign:
+If you have multiple columns in a primary key, it is likely that you have foreign key relationships that include multiple columns to form a composite FK.
+
+&nbsp;
+
+When it comes to composite foreign key constraints (a.k.a compound foreign key constraints), it is not possible to define via drag-and-drop.&nbsp; Actually, you may start from a simple FK relationship defined&nbsp; with any of the of the methods above (including drag-and-drop), then enrich it with using the Properties Pane for the relationship by adding the parent and child attributes, using the + sign:
 
 ![Relationships - composite foreign keys](<lib/Relationships - composite foreign keys.png>)
 

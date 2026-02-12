@@ -12,7 +12,7 @@ In order to socialize and democratize data models, Hackolade Studio now allows f
 
 &nbsp;
 
-**Important:** sharing a model link URL is a function that is only available in the Workgroup Edition.&nbsp; The reason is that building the model link requires collecting metadata by executing Git commands, which is only supported in the Workgroup edition of the desktop app.&nbsp; This feature is available for GitHub (online and server), Azure DevOps Repos, GitLab Cloud \& Server, and Bitbucket Cloud.
+**Important:** sharing a model link URL is a function that is only available in the Workgroup Edition.&nbsp; The reason is that building the model link requires collecting metadata by executing Git commands, which is only supported in the Workgroup edition of the desktop app.&nbsp; This feature is available for GitHub (online and server), Azure DevOps Repos, GitLab Cloud \& Server, and Bitbucket Cloud \& Data Center.
 
 &nbsp;
 
