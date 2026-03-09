@@ -17,11 +17,7 @@ This includes relational databases, NoSQL databases with the exclusion of graph 
 
 * relationships already defined as Foreign Key / Foreign Master are derived as-is.
 * many-to-many relationships without relationship attributes may result in an associative table for relational targets (configurable, enabled by default).
-* relationships that carry attributes are not directly supported by these targets. They are converted into a Foreign Key-based relationship, without Foreign Key constraint defined.
-
-&nbsp;
-
-**Note:** materializing relationships carrying attributes as associative tables containing these attributes is planned but not supported yet.
+* relationships that carry attributes are automatically materialized as an associative table. The associative structure contains the relationship attributes and two Foreign Key relationships toward the originally linked entities.&nbsp; Such transformation is mandatory for these targets: since Foreign Key-based platforms do not support attributes directly on relationships, generating an [associative entity](<https://en.wikipedia.org/wiki/Associative\_entity> "target=\"\_blank\"") (a.k.a junctions tables, join tables, bridge tables, link tables, intersection tables, mapping tables, crosswalk, or many-to-many resolver) is the only way to preserve the relationship attributes without information loss.
 
 &nbsp;
 
@@ -37,11 +33,11 @@ For graph-only targets, all relationships become edges.
 
 ## Polyglot to Polyglot
 
-When deriving a Polyglot model into another Polyglot model, nothing changes.
+When deriving a Polyglot model into another Polyglot model, relationships carrying attributes are, by default, materialized as associative entities.
 
-&nbsp;
+This reflects the typical modeling progression from a conceptual structure toward a more explicit logical model.&nbsp; A relationship that carries attributes (for example, *Order-Product* with *quantity*) becomes an associative entity with two Foreign Key relationships to the originally linked entities.
 
-All relationships are preserved as-is, including their structure, their properties, and their modeling intent.
+An option during the derive operation allows you to disable this behavior.&nbsp; If the option is unchecked, relationships carrying attributes remain unchanged and are preserved as relationships with attributes in the derived Polyglot model.&nbsp; The option is enabled by default.
 
 &nbsp;
 

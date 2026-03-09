@@ -32,7 +32,22 @@ Choose the target of your choice, the target version if appropriate, then click 
 
 &nbsp;
 
-You are presented with a blank workspace.&nbsp; Refer to the [overview of the user interface](<Workspace.md>) for more details.
+If your target selection dialog has many icons, there is an incremental keyboard search to speed up selection.&nbsp; As soon as the dialog is open, simply start typing the name of the target. Studio will automatically highlight the first tile matching the typed text.
+
+&nbsp;
+
+The search works as follows:
+
+* it matches from the beginning of the target name (e.g., typing "pos" highlights PostgreSQL).
+* if no match is found at the beginning, Studio searches within the name (e.g., typing "gre" highlights Cosmos DB Gremlin API).
+* after a short pause, the search resets, allowing you to type a new query.
+* once a tile is highlighted, you can use the arrow keys to navigate between matching targets.
+
+This feature allows quick keyboard-based navigation without manually scanning the entire list.
+
+&nbsp;
+
+When you've done your selection, you are presented with a blank workspace.&nbsp; Refer to the [overview of the user interface](<Workspace.md>) for more details.
 
 &nbsp;
 

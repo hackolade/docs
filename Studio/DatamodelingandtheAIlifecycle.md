@@ -16,6 +16,10 @@ A strong data model keeps AI grounded, ensuring accurate outputs, real-time reas
 
 &nbsp;
 
+![AI-data modeling bi-directional synergy](<lib/AI-data modeling bi-directional synergy.png>)
+
+&nbsp;
+
 Conversely, AI can contribute to better data modeling by enabling advanced automation and intelligence throughout the modeling lifecycle. The current state of GenAI does not replace the synthesized knowledge of a subject-matter expert.&nbsp; It would take so much effort to create the prompts, that the user might as well specify the details directly in a data model. &nbsp; Nevertheless, we see the significant benefits of intelligent assistance to data modeling, for example to alter about inconsistencies or possible optimization.&nbsp; GenAI can greatly increase the productivity of users, for example by suggesting descriptions and associations with previously defined glossary terms.&nbsp; Or by helping to identify meaning in existing structures that lack proper descriptions. &nbsp;
 
 &nbsp;
@@ -44,6 +48,10 @@ At Hackolade, we could have easily pursued developing our own Natural Language P
 
 &nbsp;
 
+![Intelligent assistance-accelerate the expert](<lib/Intelligent assistance-accelerate the expert.png>)
+
+&nbsp;
+
 Currently on our roadmap, are the following features:
 
 * Available: [reverse-engineer Mermaid ERD code](<GenAI-createdMermaidERdiagram.md>) that could have been produced by GenAI in response to some prompt executed outside of Hackolade
@@ -64,15 +72,13 @@ Note that it is of course foreseen that any direct AI interaction from Hackolade
 
 Most organizations treat data models as static diagrams: valuable but passive, locked away in repositories and accessible only to a limited few.&nbsp; Meanwhile, AI tools struggle to provide reliable answers because they lack grounding in the company’s actual data structures.&nbsp; Query building is laborious, reports leave room for interpretation, compliance checks are manual, and discovery across systems is painfully slow.&nbsp; The next leap in Generative AI lies in enriching LLMs with the semantics of private data -- not just exposing them to documents, but enabling them to understand and leverage the meaning embedded in that data securely.&nbsp; Techniques such as private Retrieval-Augmented Generation (RAG), AI Vector Search, and MCP (Model Context Protocol) servers allow organizations to infuse AI with private, contextual knowledge while maintaining confidentiality.
 
-&nbsp;
-
-![AI turn static data models into strategic insights](<lib/AI turn static data models into strategic ins.png>)
+![Grounding AI - turning static models into insight](<lib/Grounding AI - static models into insight.png>)
 
 &nbsp;
 
 **When the semantics of private data are made machine-understandable, data models become a live API for knowledge across the enterprise.**&nbsp; This semantic layer transforms raw information into an intelligent substrate that grounds AI in an organization’s real-world context.&nbsp; By exposing Hackolade Studio data models as queryable, living knowledge, enterprises can fuel automation, AI, and governance across SQL, NoSQL, graph, APIs, and cloud-native systems -- all from a single source of truth.&nbsp; AI assistants can now generate correct SQL and APIs because they’re anchored in real schemas.&nbsp; Compliance officers can ask direct questions and get instant answers.&nbsp; Analysts can discover data seamlessly across platforms.&nbsp; Architects can assess the impact of schema changes before they happen. In this model, data modeling evolves from documentation into an enterprise-wide intelligence layer -- accelerating work, ensuring compliance, and making the entire data ecosystem safer, smarter, and more agile.
 
-&nbsp;
+![AI turn static data models into strategic insights](<lib/AI turn static data models into strategic ins.png>)
 
 ## Data modeling contributes to better AI
 
@@ -93,6 +99,10 @@ Large language models, meanwhile, are powerful but fuzzy; they excel at language
 &nbsp;
 
 In practice, Knowledge Graphs provide the retrieval index and truth set; LLMs do natural-language interfaces, mapping questions to SPARQL/graph patterns, summarizing results, and drafting schema changes. The result is an intuitive and logical loop: the Knowledge Graph improves precision, consistency, and traceability; the LLM improves accessibility and productivity, together yielding safer, more accurate, and more maintainable AI.
+
+&nbsp;
+
+![Hackolade semantic modeling plugin](<lib/Hackolade semantic modeling plugin.png>)
 
 &nbsp;
 
@@ -131,6 +141,10 @@ All AI-related features of Hackolade will be clearly identified as such, and wil
 &nbsp;
 
 Data security in AI is a critical concern, as the rapid adoption of AI technologies introduces numerous risks to sensitive information. One of the major threats is the **leakage of personal or confidential business data**, where users of AI systems might inadvertently expose private details through their prompts, and AI systems their responses or models. **Model inversion attacks** are another significant risk, where adversaries can reverse-engineer AI outputs to uncover sensitive data used in training, potentially revealing confidential information. **Data poisoning** also poses a threat, where malicious actors intentionally inject misleading or harmful data into the training set, causing AI models to make erroneous decisions or behave unpredictably. Additionally, reliance on **third-party AI services** introduces the risk of opaque data access policies, where the service provider may have unrestricted access to the data being processed, leading to potential breaches or misuse.&nbsp; Furthermore, **adversarial attacks**, where small, imperceptible changes to input data are made to deceive AI models, could compromise the integrity of decision-making processes.&nbsp;
+
+&nbsp;
+
+![Enterprise-grade security and governance](<lib/Enterprise-grade security and governance.png>)
 
 &nbsp;
 

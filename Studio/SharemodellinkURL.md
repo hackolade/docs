@@ -80,7 +80,7 @@ The model must be accessible by the user.&nbsp; It maybe required to [authentica
 
 &nbsp;
 
-If the model exceeds the limit of the Community Edition, then the license status is checked. Only Viewer, Personal, and Workgroup editions can open model files with more than 50 objects.
+If the model exceeds the limit of the Community Edition, then the license status is checked. Only Viewer and Workgroup editions can open model files with more than 50 objects.
 
 &nbsp;
 

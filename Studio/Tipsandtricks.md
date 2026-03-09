@@ -78,6 +78,21 @@ The identifier entered in the this screen will appear in the web page:
 
 ## Workspace
 
+***TIP:*** If your target selection dialog has many icons, there is an incremental keyboard search to speed up selection.&nbsp; As soon as the dialog is open, simply start typing the name of the target. Studio will automatically highlight the first tile matching the typed text.
+
+&nbsp;
+
+The search works as follows:
+
+* &nbsp;
+
+- It matches from the beginning of the target name (e.g., typing "pos" highlights PostgreSQL).
+- If no match is found at the beginning, Studio searches within the name (e.g., typing "gre" highlights Cosmos DB Gremlin API).
+- After a short pause, the search resets, allowing you to type a new query.
+- Once a tile is highlighted, you can use the arrow keys to navigate between matching targets.
+
+This feature allows quick keyboard-based navigation without manually scanning the entire list.
+
 ***TIP:*** you may create extra space on your desktop by sliding the Object Browser or Properties panes with this control ![Image](<lib/Central pane - ellipse.png>) appearing between the panes. You may also toggle the appearance of these panes in the View menu, or by double-clicking on the separation control.
 
 &nbsp;

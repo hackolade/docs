@@ -104,7 +104,7 @@ Instead, Hackolade provides an innovative architecture that combines the advanta
 
 &nbsp;
 
-![Hub Studio Desktop Browser Architecture](<lib/Hub Studio Desktop Browser Architecture.png>)
+![Hub Studio Desktop Browser Architecture](<lib/NewItem 6.png>)
 
 &nbsp;
 

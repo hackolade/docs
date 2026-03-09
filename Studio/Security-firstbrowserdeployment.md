@@ -1,6 +1,6 @@
 # Security-first browser deployment
 
-This feature is particularly handy when combined with the ability to share a model link, as described in [this page](<SharemodellinkURL.md>).
+This feature is particularly handy when combined with the ability to share a model link, as described in [this page](<SharemodellinkURL.md>), and demonstrated in [this video](<https://community.hackolade.com/slides/slide/share-and-socialize-data-models-67?fullscreen=1> "target=\"\_blank\"").&nbsp; It also allows for authors to create and maintain models in the browser. &nbsp;
 
 &nbsp;
 
@@ -12,7 +12,7 @@ This feature is particularly handy when combined with the ability to share a mod
 
 &#51;) some features have a graceful degradation of the user experience due to limitations imposed by the browser.&nbsp; For example Brave, Firefox, and Safari do not support the [File System Access API](<https://wicg.github.io/file-system-access/> "target=\"\_blank\""), and as a result, the action to save a model is implemented as the download of a new copy.&nbsp; For the best user experience, you should use Chrome or Edge.
 
-&#51;) some native features of the application may be restricted due to each browser's own restrictions, or due to W3C security standards.&nbsp; User experience may be degraded as a result, typically for legitimate security reasons.&nbsp; In some cases, the only possible alternative is to use the desktop deployment.&nbsp; We are closely monitoring evolution of standards that would allow us to enable more desktop features in the browser, such as [Isolated Web Apps](<https://github.com/WICG/isolated-web-apps/blob/main/README.md> "target=\"\_blank\"") or [Direct Sockets](<https://github.com/WICG/direct-sockets> "target=\"\_blank\"").&nbsp; If and when such evolutions would be released in standard browser versions, we will make sure to leverage them.
+&#51;) some native features of the application may be restricted due to each browser's own restrictions, or due to W3C security standards.&nbsp; User experience may be degraded as a result, typically for legitimate security reasons.&nbsp; In some cases, the only possible alternatives are either to use the desktop deployment, or to leverage a [Docker instance of the application](<DevOpsCICDarchitecture.md>).&nbsp; We are closely monitoring evolution of standards that would allow us to enable more desktop features in the browser, such as [Isolated Web Apps](<https://github.com/WICG/isolated-web-apps/blob/main/README.md> "target=\"\_blank\"") or [Direct Sockets](<https://github.com/WICG/direct-sockets> "target=\"\_blank\"").&nbsp; If and when such evolutions would be released in standard browser versions, we will make sure to leverage them.
 
 &nbsp;
 

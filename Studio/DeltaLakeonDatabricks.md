@@ -58,6 +58,18 @@ Delta Lake does not enforce multi-table transactions, primary or foreign keys, b
 
 &nbsp;
 
+### Streaming tables
+
+A [streaming table](<https://docs.databricks.com/aws/en/ldp/streaming-tables> "target=\"\_blank\"") is a Delta table with additional support for streaming or incremental data processing. A streaming table can be targeted by one or more flows in a pipeline.
+
+&nbsp;
+
+Streaming tables are a good choice for data ingestion, and for low-latency streaming transformations.
+
+&nbsp;
+
+&nbsp;
+
 ## Data types
 
 Delta Lake supports different data types to be used in table columns. The Hive data types supported by Delta Lake can be broadly classified in Primitive and Complex data types.

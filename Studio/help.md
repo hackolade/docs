@@ -70,6 +70,7 @@
       - [Convert merged changes into the parent polyglot model](<Convertmergedchangesintotheparen.md>)
     - [Recreate broken reference link to a Polyglot model](<RecreatebrokenreferencelinktoaPo.md>)
     - [Pre-populate new entities using snippets](<Pre-populatenewentitiesusingsnip.md>)
+    - [Pre-populate properties with default values](<Pre-populatepropertieswithdefaul.md>)
     - [Best practices for collaboration and change management](<Bestpracticesforcollaborationand.md>)
     - [Oracle 23ai and 26ai Duality Views](<Oracle23aiand26aiDualityViews.md>)
     - [Union types in Avro](<UniontypesinAvro.md>)

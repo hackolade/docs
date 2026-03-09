@@ -1,6 +1,6 @@
 # Model Hub solution architecture
 
-**The Hackolade Model Hub** is a **model-driven metadata collaboration platform** that offers centralized, streamlined access to your Hackolade Studio data models, stored across one or more Git repositories.&nbsp; A model-driven metadata collaboration platform **allows organizations to retake control of their data**.
+The **Hackolade Model Hub** is a **model-driven metadata collaboration platform** that offers centralized, streamlined access to your Hackolade Studio data models, stored across one or more Git repositories.&nbsp; A model-driven metadata collaboration platform **allows organizations to retake control of their data.**
 
 &nbsp;
 
@@ -12,13 +12,13 @@ The Hub provides a map to help users navigate through and make sense of their or
 
 &nbsp;
 
-**What sets our Hub apart is its proactive, model-driven foundation.** &nbsp;
+What sets our Hub apart is its proactive, model-driven foundation. &nbsp;
 
 &nbsp;
 
-## **Traditional data catalogs**
+## Traditional data catalogs
 
-Traditional solutions adopt a **reactive approach**: collecting metadata from data sources after the fact, and attempting to tidy it up using tags, classifications, and redundancy checks, sometimes assisted by machine learning and artificial intelligence. While this strategy may seem appealing, especially when dealing with large datasets built without prior planning (remember "Big Data"?), it ultimately **reinforces a cycle of retroactive cleanup** rather than addressing the root causes of inconsistencies, redundancies, and other quality issues.
+Traditional solutions adopt a **reactive approach**: collecting metadata from data sources after the fact, and attempting to tidy it up using tags, classifications, and redundancy checks, sometimes assisted by machine learning and artificial intelligence.&nbsp; While this strategy may seem appealing, especially when dealing with large datasets built without prior planning (remember "Big Data"?), it ultimately **reinforces a cycle of retroactive cleanup** rather than addressing the root causes of inconsistencies, redundancies, and other quality issues.
 
 &nbsp;
 
@@ -26,7 +26,7 @@ Traditional solutions adopt a **reactive approach**: collecting metadata from d
 
 &nbsp;
 
-Traditional tools begin with data that accumulated without deliberate design. They **harvest** (crawl, discover, extract, infer, or ingest) metadata from diverse sources and then ask users, sometimes aided by AI, to untangle the resulting inconsistencies, inaccuracies, and duplication. Although teams can attempt to correct the catalog, define rules, and set standards, pushing those fixes into production systems is difficult when IT staff sit in other departments or external service lines. In practice, governance, policy-setting, and data cleanup all happen *after* the data is created, leaving everyone in perpetual catch-up mode.
+Traditional tools begin with data that accumulated without deliberate design. They **harvest** (a;k;a; crawl, discover, extract, infer, or ingest) metadata from diverse sources and then ask users, sometimes aided by AI, to untangle the resulting inconsistencies, inaccuracies, and duplication.&nbsp; Although teams can attempt to correct the catalog, define rules, and set standards, pushing those fixes into production systems is difficult when IT staff sit in other departments or external service lines. In practice, governance, policy-setting, and data cleanup all happen *after* the data is created, leaving everyone in perpetual catch-up mode.
 
 &nbsp;
 
@@ -86,10 +86,10 @@ Traditional metadata management solutions and the Model Hub aim for the same goa
 
 Metadata provides structured information about data, and can be categorized into four main types:
 
-* **Business metadata**: Identifiers like names and descriptions, classification and tags that help users locate and understand data assets.
+* **Business metadata**: Definitions, identifiers like names and descriptions, classification and tags that help users locate and understand data assets.
 * **Technical metadata**: Details on data types, formats, and structures that describe how data is organized and stored.
-* **Reference metadata**: Information about data sources, relationships, profiling, and lineage that adds context and traceability.
-* **Administrative metadata**: Operational details such as data ownership, privacy, security, and usage policies.
+* **Operational metadata**: Reference information about data sources, relationships, profiling, and lineage that adds context and traceability.
+* **Governance metadata**: Administrative layer with details such as data ownership, privacy, security, and usage policies.
 
 &nbsp;
 

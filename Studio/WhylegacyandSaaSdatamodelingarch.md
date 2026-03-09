@@ -80,7 +80,7 @@ For collaboration, Hackolade Studio replaces the outdated **checkout-and-lock pa
 
 &nbsp;
 
-Hackolade Studio makes it exceptionally easy to socialize and share data models across teams and stakeholders through its [browser-based deployment option](<Security-firstbrowserdeployment.md>). This approach enables users to access the full modeling environment directly from a web browser, with **no local installation required** and **no dependency on locally stored model files**.&nbsp; Stakeholders across business and technical teams can participate in data modeling activities with minimal friction, accelerating alignment and decision-making.
+Hackolade Studio makes it exceptionally easy to socialize and share data models across teams and stakeholders through its [browser-based deployment option](<Security-firstbrowserdeployment.md>).&nbsp; This approach enables users to access the full modeling environment directly from a web browser, with **no local installation required** and **no dependency on locally stored model files**.&nbsp; Stakeholders across business and technical teams can participate in data modeling activities with minimal friction, accelerating alignment and decision-making.
 
 &nbsp;
 
@@ -140,59 +140,27 @@ The Hackolade Model Hub introduces a modern, lightweight approach to model-drive
 
 &nbsp;
 
+&nbsp;
+
 Here's how it works:
 
-**\- Customer-hosted infrastructure on OCI:** unlike traditional SaaS platforms where your models are stored in vendor-controlled systems, the Model Hub’s database is deployed entirely within the customer’s Oracle Cloud Infrastructure (OCI) account.&nbsp; You run the database, specifically the Oracle Autonomous JSON Database, using a script provided by Hackolade, ensuring that no one outside your organization, including Hackolade, can access your models.&nbsp;
+**\- Customer-hosted infrastructure on preferred cloud provider:** unlike traditional SaaS platforms where your models are stored in vendor-controlled systems, the Model Hub’s database is deployed entirely within the customer’s cloud infrastructure account.&nbsp; You start the database, using a script provided by Hackolade, ensuring that no one outside your organization, including Hackolade, can access your models.&nbsp;
 
-**\- Local residency, external app delivery:** while your data stays securely in your OCI account, the Model Hub’s user interface runs as a static application delivered via a content delivery network such as Azure Front Door or AWS CloudFront to your browser where it runs locally.&nbsp; This setup guarantees you always access the latest application version, without installing or managing enterprise applications.&nbsp;
-
-\- **The benefits of the "Autonomous" JSON database:** customers get the benefits of a world-class database without the traditional burden of operating one.&nbsp; The database automatically handles provisioning, tuning, patching, scaling, and securing, eliminating the need for manual DBA intervention.&nbsp; With automation and usage-based pricing, customers avoid the expense of specialized staff and only pay for what they use.&nbsp; Self-monitoring and self-repair reduce downtime and performance issues, ensuring a stable experience.
+**\- Local residency, external app delivery:** while your data stays securely in your cloud account, the Model Hub’s user interface runs as a static application delivered via a content delivery network such as Azure Front Door or AWS CloudFront to your browser where it runs locally.&nbsp; This setup guarantees you always access the latest application version, without installing or managing enterprise applications.&nbsp;
 
 **\- Database acts as coordination, not a silo:** the database stores your data models, created and maintained in Hackolade Studio, in their open JSON format, preserving transparency and alignment with Metadata-as-Code principles.&nbsp; However, the Hub’s database serves strictly as a lightweight coordination layer, enabling features like search, lineage, and discovery, not as a centralized repository removed from your control.&nbsp;
 
-**\- Zero data exfiltration, maximum compliance:** the design ensures that none of your sensitive data ever leaves your infrastructure. Hackolade collects no telemetry, uses no cookies, and includes no tracking capabilities. This architecture is purpose-built to satisfy stringent data protection standards.&nbsp;
+**\- Zero data ex-filtration, maximum compliance:** the design ensures that none of your sensitive data ever leaves your infrastructure.&nbsp; Hackolade collects no telemetry, uses no cookies, and includes no tracking capabilities. This architecture is purpose-built to satisfy stringent data protection standards.&nbsp;
 
 &nbsp;
 
-### Why This Matters
+### Why this architecture matters
 
 \- You retain **full sovereignty over your model files and intellectual property**, with no risk of vendor lock-in.
 
 \- The Model Hub requires **no proprietary repository setup**, minimizing deployments, upgrades, backups, or maintenance efforts.
 
-\- Autonomous translates into **less effort, lower costs, higher security, and more agility** so customers get the benefits of a world-class database without the traditional burden of operating one.
-
 \- You get the benefits of a collaborative, model-driven metadata platform with search, lineage, governance, and **without ceding control or introducing risk**.
 
 \- Combining **serverless convenience** with **customer-controlled deployment** offers the best of both worlds: agility and security.
-
-&nbsp;
-
-&nbsp;
-
-### Addressing Concerns About Oracle Technology
-
-We recognize that some customers may have reservations about Oracle technologies, given past experiences with cost or complexity. However, the **Oracle Autonomous JSON Database on OCI**, which underpins the Hackolade Model Hub, represents a very different proposition:
-
-**\- Autonomous operations:** unlike legacy Oracle deployments that required significant DBA overhead, the Autonomous JSON Database is fully managed, self-tuning, and self-securing. It requires virtually no manual intervention, making it lightweight and low-maintenance.
-
-\- **Performance:** the [performance of Oracle Autonomous JSON](<https://www.linkedin.com/pulse/why-binary-document-protocols-all-created-equal-rick-houlihan-cbrzc/> "target=\"\_blank\"") is inherently higher than other document databases, resulting in lower cost than any of the alternatives.
-
-**\- Usage-based pricing:** customers only pay for what they consume. This shifts the economics dramatically: the service is cost-competitive with, and often cheaper than, comparable cloud-native document databases from other providers.
-
-**\- Modern developer experience:** the database is designed for JSON-native workloads, aligning perfectly with Hackolade’s Metadata-as-Code and Git-native architecture.
-
-**\- Ecosystem of supporting services:** beyond the database itself, OCI provides a rich portfolio of additional services leveraged by the Model Hub, including API Gateway, REST Data Services (ORDS), Identity and Access Management, serverless Functions, database Multi-Language Engine, serverless Queuing, Key Management Vault, Container Registry, and more.&nbsp; These services allow Hackolade to deliver a secure, scalable, and extensible platform with far less overhead and complexity than building equivalent capabilities from scratch.
-
-**\- Security and sovereignty:** the database runs entirely in the customer’s OCI account, keeping all models under the organization’s exclusive control and ensuring full compliance with data residency, privacy, and governance requirements.
-
-**\- Portability and neutrality:** Hackolade selected OCI not for brand, but because it offers the right mix of security, performance, and cost efficiency to support a serverless Model Hub.&nbsp; Importantly, the customer fully owns and controls the database instance in their OCI account. Neither Hackolade nor Oracle has access to the customer’s data or models.
-
-&nbsp;
-
-**\- No vendor lock-in:** because Hackolade models are stored in human-readable JSON in Git, customers are never locked into the database technology itself. The Hub leverages Oracle for coordination and discoverability, but intellectual property remains portable.
-
-&nbsp;
-
-In short: **customers benefit from the maturity and breadth of OCI’s cloud-native services, without the traditional costs or complexity, and with full sovereignty over their data.**
 

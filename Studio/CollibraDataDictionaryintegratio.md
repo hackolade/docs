@@ -226,7 +226,7 @@ It is possible to [create custom asset types](<https://productresources.collibra
 
 &nbsp;
 
-**Warning:** when using custom mappings in Hackolade Studio, it is essential to remove any previously forward-engineered models from Collibra if changes have been made to the Asset type mapping before proceeding to avoid conflicts and ensure a smooth forward-engineering experience.
+Warning: when using custom mappings in Hackolade Studio, it is essential to remove any previously forward-engineered models from Collibra if changes have been made to the Asset type mapping before proceeding to avoid conflicts and ensure a smooth forward-engineering experience.
 
 &nbsp;
 
@@ -242,7 +242,7 @@ The dialog lists all the OOTB asset types with their default mapping, plus on th
 
 All that is required is to paste the ID for the custom asset type then click the button to verify.&nbsp; If the assetTypeID is correct, its name will be retrieved and displayed.
 
-![Collibra custom asset type mapping](<lib/Collibra custom asset type mapping.png>)
+![Image](<lib/Collibra custom asset type mapping.png>)
 
 &nbsp;
 
@@ -267,4 +267,53 @@ Note that you may have to update the hierarchy to reflect the custom asset type 
 ![Collibra custom asset type hierarchy](<lib/Collibra custom asset type hierarchy.png>)
 
 &nbsp;
+
+&nbsp;
+
+## Attribute-level lineage strategy
+
+When publishing a logical (Polyglot) model and its derived physical model, Hackolade Studio creates lineage between logical attributes and physical columns.
+
+&nbsp;
+
+Two strategies are available:
+
+* Mapping specification–based lineage (default setup): uses Mapping Specification assets and complex relation types in Collibra. This is the default behavior and allows future enrichment with transformation metadata.
+* Direct attribute-to-column lineage: uses standard Collibra relation types (simple relations). This approach simplifies the lineage structure and reduces conceptual complexity in lineage diagrams.
+
+&nbsp;
+
+Changing the lineage strategy does not retroactively modify existing lineage already published in Collibra.
+
+&nbsp;
+
+Attribute-level lineage strategy is defined per connection, allowing different strategies depending on the target Collibra instance.&nbsp; Open the connection settings and click Customize mapping to access the Collibra mapping customization dialog.
+
+&nbsp;
+
+## Custom types scope assignment
+
+When publishing models, Hackolade Studio may create custom asset types, attribute types, and complex relation types in Collibra.
+
+&nbsp;
+
+You can control how these custom types are assigned to a scope in Collibra:
+
+* Automatic assignment to Hackolade scope (default setup): creates (if needed) a dedicated Hackolade Studio scope and automatically assigns the custom types to it. A Collibra administrator must still assign this scope to the appropriate layouts, communities, or domains to make the configuration visible and applicable.
+* Manual scope assignment in Collibra: creates the custom types without assigning them to a predefined scope. Scope configuration must be performed manually in Collibra to ensure that created custom types are visible and applicable where needed.
+
+&nbsp;
+
+Custome types scope assignment is defined per connection, allowing different strategies depending on the target Collibra instance.&nbsp; Open the connection settings and click Customize mapping to access the Collibra mapping customization dialog.
+
+&nbsp;
+
+**Note:**&nbsp; In Collibra, a configuration element can be assigned to only one scope. Changing the scope assignment strategy after custom types have already been created requires manual adjustments in Collibra:
+
+* If you switch from Automatic assignment to Manual scope assignment, you must manually reassign the custom types to the desired scope in Collibra. The Hackolade Studio scope of existing custom types in the Collibra instance will not be removed automatically.
+* If you switch back from Manual scope assignment to Automatic assignment to the dedicated Hackolade Studio scope, any existing scope previously assigned to the custom types must first be removed manually in Collibra. Otherwise, the custom types will end up assigned to multiple scopes, which is not supported in the Collibra.
+
+&nbsp;
+
+Changing the scope assignment strategy does not clean, replace, or remove existing scope assignments.
 
