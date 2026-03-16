@@ -8,8 +8,6 @@ Forward-engineering scripts vary widely between target technologies, as each one
 
 &nbsp;
 
-&nbsp;
-
 ## Script generation parameters
 
 With v8.2.3, we started to introduce parameters to allow you to adjust the DDL script generation according to your preferences.&nbsp; This may be for styling purposes, or more importantly for data loading or performances reasons.&nbsp; Additionally, it may allow you to document data models constraints that you do not want to have enforced by the database engine.

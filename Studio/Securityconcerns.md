@@ -60,6 +60,12 @@ Hackolade Studio is a pioneer in a solution that we call "Bring Your Own Storage
 
 &nbsp;
 
+The result is an innovative architecture with zero data exposure, low complexity, and low Total Cost of Ownership.
+
+&nbsp;
+
+![Serverless architecture and data soverignty](<lib/Serverless architecture and data soverignty.png>)
+
 &nbsp;
 
 Read all the details of our [security-first browser deployment](<Security-firstbrowserdeployment.md>).

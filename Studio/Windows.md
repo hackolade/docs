@@ -68,6 +68,14 @@ A default installation folder is proposed, which may be changed if you wish:
 
 &nbsp;
 
+**IMPORTANT:**&nbsp; if you decide to install in a different folder, make sure to use a sub-folder such as /Hackolade (or /HCK or whatever.)&nbsp; The installer always first starts by erasing the content of that folder prior to un-archiving our software and its dependencies into that sub-folder.&nbsp; If you install the software into a folder that already has content, beware that that content will get erased if you do not install in a specific sub-folder. &nbsp;
+
+&nbsp;
+
+**IMPORTANT:** do NOT store data models with the application, as those models would be erased with an upgrade.
+
+&nbsp;
+
 **Warning:** Do NOT install Hackolade in the AppData directory.  You should select either Program Files as suggested, or C:\\Hackolade or some other place where you have Write rights.&nbsp; AppData is for application *data*, not application *programs*.
 
 &nbsp;

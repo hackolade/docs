@@ -150,21 +150,4 @@ Object descriptions can be found in the Documentation tab:
 
 &nbsp;
 
-## ERD integration
-
-This integration is no longer recommended. Users needs are much better served by using the ability to interact with a Hackolade Studio data model sinply by clicking a [shared model hyperlink](<SharemodellinkURL.md>), also demonstrated in [this video](<https://community.hackolade.com/slides/slide/share-and-socialize-data-models-67?fullscreen=1> "target=\"\_blank\"").
-
-&nbsp;
-
-The non-recommended method was done via custom scripts created under [Viewpoints](<https://help.bizzdesign.com/articles/#\!horizzon-help/view-presentation-types> "target=\"\_blank\"") in BizzDesign.&nbsp; These scripts must be installed by Bizzdesign on your instance of Bizzdesign Enterprise Studio.
-
-&nbsp;
-
-![Image](<lib/Bizzdesign import Hackolade model.png>)
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
+## 
