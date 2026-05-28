@@ -28,7 +28,11 @@ The Hackolade Studio plugin for Oracle includes a thin client to facilitate conn
 
 &nbsp;
 
-You just need to give your connection a meaningful name, enter your host and port (default 1521), and either a Service Name or a SID.&nbsp; Then move to the Authentication tab to enter your credentials.
+You just need to give your connection a meaningful name, choose a connection method (basic, Cloud Wallet, or TNS), and complete the fields shown for that method.&nbsp; Then move to the Authentication tab to enter your credentials.&nbsp; **Thin mode** (the default) does not require a separate Oracle Instant Client install on your machine.
+
+&nbsp;
+
+For **Thick mode**, you must also specify **Client type** (Oracle Home or Instant Client) and **Client location** as described in the ORACLE\_HOME vs Instant Client section below.
 
 &nbsp;
 
@@ -123,7 +127,7 @@ Oracle Wallet provides an simple and easy method to manage database credentials 
 
 &nbsp;
 
-With Oracle Autonomous, you may also generate a wallet using [these instructions](<https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/connect-download-wallet.html#GUID-B06202D2-0597-41AA-9481-3B174F75D4B1> "target=\"\_blank\""). Once you have downloaded the Wallet .zip file, you simply need to specify the file path and name, and the service name
+With Oracle Autonomous, you may also generate a wallet using [these instructions](<https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/connect-download-wallet.html#GUID-B06202D2-0597-41AA-9481-3B174F75D4B1> "target=\"\_blank\""). Once you have downloaded the Wallet .zip file, you simply need to specify the file path and name.&nbsp; In **Thin mode**, you must also enter the **Wallet password** (the password you set when downloading the wallet from OCI — not your database user password).&nbsp; Then use the Authentication tab for your database user name and password.
 
 &nbsp;
 
@@ -141,7 +145,15 @@ You may have a tnsnames.ora file on your machine or on a shared drive.&nbsp; By 
 
 &nbsp;
 
-You must specify the folder location of the tnsnames.ora file as well as the service name to be used.
+You must specify the folder location of the tnsnames.ora file (or select the tnsnames.ora file itself — Hackolade uses its parent folder) as well as the TNS alias to be used, or leave the alias empty to use the first entry in the file.
+
+&nbsp;
+
+For Oracle Autonomous Database, entries on port **1522** typically require mutual TLS (mTLS): the client must present wallet files from your OCI download and the wallet password.&nbsp; Enable **Mutual TLS (mTLS)** on the Connection tab when your folder contains the full wallet.&nbsp; When mTLS is enabled in **Thin mode**, enter the wallet password on the Connection tab; the password on the Authentication tab remains your Oracle database user password.
+
+&nbsp;
+
+With the **TNS** connection method and a `tnsnames.ora` file only (mTLS unchecked, no client wallet in the folder), Hackolade can use simpler one-way TLS, which is often more performant than mTLS because the client does not send a wallet certificate.&nbsp; That mode is possible only if your database administrator has configured the instance accordingly — for example Oracle Cloud access control lists (ACLs) that allow your client IP and policies that do not enforce mTLS for the service you use.&nbsp; If mTLS is still required by the database, leave **Mutual TLS (mTLS)** enabled and provide the full wallet directory and wallet password.&nbsp; Do not assume that a `tnsnames.ora` file alone is sufficient unless your DBA has confirmed that mTLS enforcement is disabled for your access path.
 
 &nbsp;
 
@@ -182,4 +194,3 @@ Oracle instances can be quite large with many user schemas.&nbsp; If you want to
 If you're running Oracle on Amazon RDS , the [instructions to connect](<https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER\_ConnectToOracleInstance.html> "target=\"\_blank\"") to SQL Developer can be followed to connect to Hackolade Studio in a similar way.&nbsp; More details can also be found [here](<AmazonRDSorAurora.md>).
 
 &nbsp;
-
