@@ -262,3 +262,27 @@ or "Internal".&nbsp; This option converts to an internal definition, the referen
 
 &nbsp;
 
+&nbsp;
+
+## Cross-repository references
+
+**How intra-repository references work: always the same branch**\
+When a model references another model in the same repository, Hackolade Studio always resolves that reference within the same branch as the referencing model.&nbsp; This is a deliberate design decision: allowing a reference to point to a different branch within the same repository would create a level of ambiguity that is very difficult to manage in practice.&nbsp; Which branch is being pointed to?&nbsp; What happens when that branch is deleted or diverges?&nbsp; The complexity for the user would quickly become unmanageable.
+
+\
+As a direct consequence of this principle, the way you can pick a referenced model depends on how you opened the referencing model:
+
+* Opened from a local clone -\> the referenced model must be picked from the same local clone (i.e., from the branch you currently have checked out).
+* Opened directly from the remote -\> you can navigate remotely to pick the referenced model, and it will resolve against the same remote branch.
+
+&nbsp;
+
+\
+**Why would allowing forcing a specific branch would cause real problems**\
+Consider a concrete scenario: a data modeler is working on a feature branch.&nbsp; They have modified both a referencing model and the model it references. If Hackolade Studio allowed picking the referenced model from main instead of the current branch, the reference could point to an entity that has been changed on the feature branch but not yet on main; or worse, to an entity that simply does not exist yet on main.&nbsp; The reference would resolve incorrectly, silently, with no clear way for the user to understand why. This is precisely the kind of situation we want to prevent.\
+&nbsp;
+
+If the concern is that a data modeler might create a reference to an outdated version of a model, the right process is to ensure the branch is up to date before creating the reference -- not to bypass the branch mechanism entirely. \
+\
+&nbsp;
+

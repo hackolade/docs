@@ -186,7 +186,7 @@ Display Options are accessible from 3 different places:
 
 &#50;) from the View \> Display Options menu:
 
-![ERD display options view menu](<lib/NewItem 27.png>)
+![ERD display options view menu](<lib/ERD display options menu.png>)
 
 &nbsp;
 
@@ -238,4 +238,174 @@ Multiple choices: by default all of the attributes below are displayed.&nbsp; Bu
 Description of this feature, to create subsets of the main diagram in separate views, has now been moved [here](<DiagramViews.md>).
 
 &nbsp;
+
+&nbsp;
+
+## Display additional attribute information in ERD boxes
+
+In Hackolade Studio, each entity box in the ERD displays a standard set of information per attribute: name, data type, and a few target-specific indicators such as required, primary key, or alternative key markers. Many of these are already controllable through Display Options. For example, you can choose to show or hide data types, or switch between business and technical names.
+
+&nbsp;
+
+![ERD entity box display](<lib/ERD entity box display.png>)
+
+&nbsp;
+
+The instructions below describe how to add your own content to attribute rows, beyond what Hackolade Studio displays by default. This content can be a fixed label, a conditional indicator, or the actual value of any property, whether out-of-the-box or custom.
+
+&nbsp;
+
+You can configure this behavior through a file called style.json, in the same customProperties folder used for custom property definitions.
+
+&nbsp;
+
+### Access the configuration file
+
+The file is located at: .hackolade/options/\[TARGET\]/customProperties/central\_pane/style.json
+
+&nbsp;
+
+The easiest way to open the right folder:
+
+1. Go to Help \> Plugin Manager
+1. Open the Installed tab
+1. Find the target you want to configure
+1. Click Show customization directory
+1. Navigate into the central\_pane subfolder
+
+&nbsp;
+
+After saving any change to style.json, you must restart Hackolade Studio for it to take effect.
+
+&nbsp;
+
+### File structure
+
+&nbsp;
+
+> {\
+&nbsp; "field": {\
+&nbsp;   "erd": \[\]\
+&nbsp; }\
+}
+
+&nbsp;
+
+The erd array contains one entry per piece of additional content you want to display on attribute rows.&nbsp; Each entry defines what to show, where to show it, how wide it is, and optionally under what condition.
+
+&nbsp;
+
+Each entry supports the following properties:
+
+| **Property** | **Required** | **Description** |
+| --- | --- | --- |
+| value | yes | What to display: a fixed string, or a reference to a property value |
+| position.index | recommended | Controls placement within the attribute row |
+| dependency | no | Condition controlling when the content is visible |
+| width | yes | Pixel width reserved for the content in the row |
+
+
+&nbsp;
+
+### position.index
+
+Attribute rows already contain properties indication at low index positions (data type, required marker, key indicators, etc.). The position.index value controls where your custom content is inserted relative to those. We recommend starting at index 10 or above to avoid overlap with built-in indicators.
+
+&nbsp;
+
+### Example 1: Displaying the value of a standard property
+
+The most useful starting point: display the actual value of a property directly in the attribute row. Here, the value of characterSet (an out-of-the-box property of the Teradata plugin used in this example) is shown directly in the ERD box:
+
+&nbsp;
+
+> {\
+&nbsp; "field": {\
+&nbsp;   "erd": \[\
+&nbsp;   &nbsp; {\
+&nbsp;       "value": { "key": "characterSet" },\
+&nbsp;       "position": { "index": 10 },\
+&nbsp;       "width": 60\
+&nbsp;   &nbsp; }\
+&nbsp; &nbsp; \]\
+&nbsp; }\
+}
+
+&nbsp;
+
+For an attribute where characterSet is set to UNICODE, the ERD row will display UNICODE. This works with any built-in Studio property, not just Teradata ones.
+
+![ERD entity box display OOTB prop](<lib/ERD entity box display OOTB prop.png>)​
+
+​
+
+### Example 2: Conditional display based on a boolean property
+
+Sometimes you only want to show something when a condition is met. The dependency block controls this.
+
+&nbsp;
+
+Here, the label UC appears only when the uppercase property is checked:
+
+&nbsp;
+
+> {\
+&nbsp; "field": {\
+&nbsp;   "erd": \[\
+&nbsp;   &nbsp; {\
+&nbsp;       "value": "UC",\
+&nbsp;       "position": { "index": 10 },\
+&nbsp;       "dependency": {\
+&nbsp;         "key": "uppercase",\
+&nbsp;         "value": true\
+&nbsp;     &nbsp; },\
+&nbsp;       "width": 40\
+&nbsp;   &nbsp; }\
+&nbsp; &nbsp; \]\
+&nbsp; }\
+}
+
+&nbsp;
+
+When uppercase is false or not set, nothing is shown. The value here is a fixed label — there is no point displaying the property value itself since it would just read true.
+
+​
+
+![ERD entity box display custom prop](<lib/ERD entity box display custom prop.png>)
+
+​
+
+### Example 3: Conditional display with a custom property, multiple values
+
+This also works with custom properties, and the condition can match against a list of values. Here, an exclamation mark appears when a custom property sensitivityLevel (defined in fieldLevelConfig.json) is set to either Confidential or Restricted:
+
+&nbsp;
+
+> {\
+&nbsp; "field": {\
+&nbsp;   "erd": \[\
+&nbsp;   &nbsp; {\
+&nbsp;       "value": "\!\!",\
+&nbsp;       "position": { "index": 11 },\
+&nbsp;       "dependency": {\
+&nbsp;         "key": "sensitivityLevel",\
+&nbsp;         "value": \["Confidential", "Restricted"\]\
+&nbsp;     &nbsp; },\
+&nbsp;       "width": 40\
+&nbsp;   &nbsp; }\
+&nbsp; &nbsp; \]\
+&nbsp; }\
+}
+
+&nbsp;
+
+The marker is shown when the property matches any of the listed values.
+
+&nbsp;
+
+![ERD entity box display custom prop multi value](<lib/ERD entity box display custom prop multi val.png>)​
+
+&nbsp;
+
+For more complex dependency conditions (AND, OR, NOT combinations), see the dependency section in the [Hackolade plugins README](<https://github.com/hackolade/plugins/blob/master/README.md#26-property-controls> "target=\"\_blank\"") on GitHub.
 

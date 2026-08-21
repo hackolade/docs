@@ -24,6 +24,8 @@ By default, the Collibra configuration is correct, and no action should be requi
 
 then an adjustment is required in the Collibra console, as per the [Collibra documentation](<https://productresources.collibra.com/docs/collibra/latest/Content/Console/Infrastructure/DGCService/SecurityConfiguration/ta\_configure-rest-security.htm> "target=\"\_blank\"").
 
+&nbsp;
+
 ![Collibra REST API security config](<lib/Collibra REST API security config.png>)
 
 &nbsp;
@@ -35,12 +37,6 @@ You may need to ask your administrator to go to https://console-\<your organizat
 &nbsp;
 
 ![Collibra REST API security config console](<lib/Collibra REST API security config console.png>)
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
 
 &nbsp;
 
@@ -144,6 +140,8 @@ Your administrator can then give you the settings that you need to provide to Ha
 
 * **Tenant ID**: your administrator can find it using the instructions from [this page](<https://learn.microsoft.com/en-us/entra/fundamentals/how-to-find-tenant> "target=\"\_blank\"")
 * **Client ID**: your administrator can find it in the *Overview* page of the app registration that was created in Entra ID for Hackolade Studio (it is labeled *Application ID*)
+
+&nbsp;
 
 ### Okta
 

@@ -12,6 +12,14 @@ Most importantly, user-friendly context-aware screens are provided to review cha
 
 &nbsp;
 
+Additionally, we provide 2 levels of interactions:
+
+\- for occasional interactions, a simple and [direct interaction with the central (remote) repository](<Workingdirectlywitharemoterepo.md>), also illustrated in [this video](<https://community.hackolade.com/slides/slide/secure-browser-based-collaboration-68?fullscreen=1> "target=\"\_blank\"")
+
+\- for more advanced use cases, including the ability to use the tool offline, and making changes to multiple model files in the same bundle of a single commit.&nbsp; For this, you may find it preferable to work with a [locally-cloned repository](<Workingwithalocally-clonedrepo.md>).
+
+&nbsp;
+
 &nbsp;&nbsp;
 
 ![Workgroup commit](<lib/Workgroup commit.png>)

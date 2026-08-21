@@ -122,7 +122,14 @@ Go to the other computer where you want to use Hackolade Studio and validate you
 
 ## Offline validation
 
-**Important note:** offline validation will NOT work for subscriptions or perpetual concurrent licenses.&nbsp; This section is only for 14-day trial, and perpetual individual workstation licenses.
+We strongly advise against the offline activation of license seats for individual users.  This feature is there in case of bastion instances of the CLI running in Docker.  When used by individuals, it makes license management nearly impossible because it is nearly impossible to identify which machine uses which seats.  Meaning that it is impossible to leverage 2 very real use cases:
+
+1. Moving a seat from one machine to another, as illustrated in [this article](<https://hackolade.com/help/Transferalicensetoanewcomputer.html>)
+1. And simply for an administrator to know which machine is using the application, as illustrated in [this article](<https://hackolade.com/help/Managingmultiplelicensekeysandse.html>).
+
+&nbsp;
+
+**Important note:** offline validation will NOT work for subscriptions or floating (concurrent) licenses.&nbsp; This section is only for 14-day trial, and individual workstation licenses.
 
 &nbsp;
 
@@ -164,13 +171,13 @@ And the application should get activated.&nbsp; Do not modify anything in the do
 
 &nbsp;
 
-## Concurrent licenses
+## Floating licenses
 
-Concurrent licenses (a.k.a. *floating* licenses) work differently than workstation licenses.&nbsp; With concurrent licenses, Hackolade's cloud-based licensing server tracks the number of simultaneous users for a given concurrent license key.&nbsp; If the number of simultaneous users reaches the maximum number of seats for the license key, anyone who subsequently tries to start the software is denied access. &nbsp;
+Floating licenses (a.k.a. *concurrent* licenses) work differently than workstation licenses.&nbsp; With floating licenses, Hackolade's cloud-based licensing server tracks the number of simultaneous users for a given floating license key.&nbsp; If the number of simultaneous users reaches the maximum number of seats for the license key, anyone who subsequently tries to start the software is denied access. &nbsp;
 
 &nbsp;
 
-The application may be installed on a large number of computers, each with the same validated license key, but a maximum number of users are allowed at the same time, according to the number of seats purchased for that concurrent license key.&nbsp; For example, an organization has acquired a single concurrent license key for 20 seats.&nbsp; The application and validated license key are installed on 250 PCs.&nbsp; At any given time, only a maximum of 20 users will be allowed to use the application.&nbsp; If a 21st user attempts to open the application, access will be denied until a previous user exits the application and frees up a seat.
+The application may be installed on a large number of computers, each with the same validated license key, but a maximum number of users are allowed at the same time, according to the number of seats purchased for that floating license key.&nbsp; For example, an organization has acquired a single floating license key for 20 seats.&nbsp; The application and validated license key are installed on 250 PCs.&nbsp; At any given time, only a maximum of 20 users will be allowed to use the application.&nbsp; If a 21st user attempts to open the application, access will be denied until a previous user exits the application and frees up a seat.
 
 &nbsp;
 
@@ -178,7 +185,7 @@ With ***individual workstation*** licenses, the license key is entered and valid
 
 &nbsp;
 
-For **concurrent** licenses, the licensing server is contacted multiple times: each time the application is started, plus each time the application is exited.&nbsp; Assuming that the license key has been validated once for an application instance, each time the application is started, the licensing server is contacted to verify the availability of a seat.&nbsp; If a seat is available, it gets reserved on the licensing server with the unique UUID of the PC, and access is granted.&nbsp; If no seat is available, access is denied.&nbsp; Any seat granted when opening the application gets released upon exiting the application. &nbsp;
+For **floating** licenses, the licensing server is contacted multiple times: each time the application is started, plus each time the application is exited.&nbsp; Assuming that the license key has been validated once for an application instance, each time the application is started, the licensing server is contacted to verify the availability of a seat.&nbsp; If a seat is available, it gets reserved on the licensing server with the unique UUID of the PC, and access is granted.&nbsp; If no seat is available, access is denied.&nbsp; Any seat granted when opening the application gets released upon exiting the application. &nbsp;
 
 &nbsp;
 
@@ -186,7 +193,7 @@ Offline use of the application is possible but requires to start the application
 
 &nbsp;
 
-**Note:** In particular with concurrent licenses, it is strongly suggested to read and apply [this article](<Managingmultiplelicensekeysandse.md>) so a license administrator can track who's using Hackolade licenses and seats. &nbsp;
+**Note:** In particular with floating licenses, it is strongly suggested to read and apply [this article](<Managingmultiplelicensekeysandse.md>) so a license administrator can track who's using Hackolade licenses and seats. &nbsp;
 
 &nbsp;
 
@@ -370,6 +377,84 @@ If you get this message, it is probably because you did not start the process fr
 ![Image](<lib/Browser - 8 - License key reuse.png>)
 
 &nbsp;
+
+&nbsp;
+
+## Obfuscate license key
+
+Some organization wish to hide the license key from users so users cannot share the license key with others, or take it with them when they leave the organization.&nbsp; It is possible to validate the license key while hiding a significant portion from viewing on screen and in log files.&nbsp; But it requires for IT departments to execute, from a remote location, commands on the machine of a user (or user login on a VM) where the application has been installed (but the license key not yet validated.)
+
+&nbsp;
+
+This capability is available for Hackolade Studio desktop deployments, Studio browser deployments, as well as for deployments combining desktop and browser on the same machine.
+
+&nbsp;
+
+### Obfuscate license key in desktop deployment
+
+Our [Command-Line Interface](<CommandLineInterface-validaterel.md>) is required for this step.&nbsp; Your IT department needs to execute remotely on the user's machine (or user login in the case of a VM) the following command:
+
+&nbsp;
+
+> start /wait hackolade validateKey --key=\<license key\> --identifier=\<computer identifier\> --hideLicense=true
+
+&nbsp;
+
+If the identifier contains spaces, it must be surrounded by double quotes (").
+
+&nbsp;
+
+The license key appears in the License Status screen and relevant log files, but with the last section characters replaced by xxxxxx, thereby rendering useless the attempt to copy and paste the license key on another machine as our license server will reject the activation attempt.
+
+&nbsp;
+
+### Obfuscate license key in browser deployment
+
+Your IT department needs to execute remotely on the user's machine (or user login in the case of a VM) the following browser URL:
+
+&nbsp;
+
+start "" "https://studio.hackolade.com/init?key=\<KEY\>\&uid=\<identifier\>\&hideLicense=true"
+
+&nbsp;
+
+**Note:** The empty "" is important when the URL is quoted, because start treats the first quoted argument as the window title.&nbsp; Possible spaces in the identifier are automatically encoded.
+
+&nbsp;
+
+The license key appears in the License Status screen and relevant log files, but with the last section characters replaced by xxxxxx, thereby rendering useless the attempt to copy and paste the license key on another machine as our license server will reject the activation attempt.
+
+&nbsp;
+
+On Mac, use the open "\<url\>” command.&nbsp; And on Linux, use the xdg-open command.
+
+&nbsp;
+
+### Obfuscate license key in combined desktop and browser deployment
+
+For users requiring both Studio desktop and Studio Browser, you do not want to use more seats than the one for the Studio desktop.
+
+&nbsp;
+
+Users must use the manual process described [above in this page](<https://hackolade.com/help/Softwareregistration.html#Reuse%20in%20the%20Browser%20your%20license%20key%20already%20validated%20in%20the%20Desktop>).
+
+&nbsp;
+
+You might be tempted to reverse-engineer the logic and pass a command like below:
+
+&nbsp;
+
+https://studio.hackolade.com/open-desktop?desktop\_url\_path=get-license\&origin=https%3A%2F%2Fstudio.hackolade.com\&token=\<uuid token\>
+
+&nbsp;
+
+But this will not work unless you are able to click on the browser security dialog:
+
+![Image](<lib/Browser - 3 - License key reuse.png>)
+
+&nbsp;
+
+So it is most likely preferable to just instruct the user to performa the manual sync as described above.
 
 &nbsp;
 

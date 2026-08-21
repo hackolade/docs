@@ -188,7 +188,7 @@ For example with an Nginx reverse proxy served on https://cors-proxy-for-conflue
 &nbsp; &nbsp; &nbsp; &nbsp; }\
 &nbsp; &nbsp; }
 
-> &nbsp;
+&nbsp;
 
 &nbsp;
 
@@ -201,4 +201,3 @@ Please refer to the Confluent Schema Registry [configuration reference](<https:/
 > access.control.allow.origin=https://studio.hackolade.com\
 access.control.allow.methods=\*
 
-> 

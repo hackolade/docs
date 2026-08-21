@@ -78,7 +78,7 @@ The Digital Operational Resilience Act (DORA), officially known as [Regulation (
 
 &nbsp;
 
-As already established with several European customers in the financial sector, Hackolade is not subject to DORA because we sell a product and we do not provide ICT services.&nbsp; Additionally, the product is not mission-critical, and its architecture is such that there is no single point of failure as the client software is distributed to each user's workstation.&nbsp; And as demonstrate above in this page, we do not collect, process, or store any customer data.&nbsp; And we do not have any servers or database. &nbsp;
+As already established with several European customers in the financial sector, Hackolade is not subject to DORA because we sell a product and we do not provide ICT services.&nbsp; Additionally, the product is not mission-critical, and its architecture is such that there is no single point of failure as the client software is distributed to each user's workstation.&nbsp; And as demonstrated above in this page, we do not collect, process, or store any customer data.&nbsp; And we do not have any network, any server or any database. &nbsp;
 
 &nbsp;
 
@@ -249,9 +249,15 @@ We also perform penetration testing for application code tampering.
 
 ## Does Hackolade use other code scanning strategies?
 
-Vulnerability scanners, which find CVEs in dependencies, and static analysis tools, which analyze application code, provide useful alerts and assistance.&nbsp; We feel that we also need to be more pro-active in our protection to detect supply chain attacks in dependencies.&nbsp; To that effect, we strictly practice dependency version pinning to complement additional security measures, and prevent any automatic updates that&nbsp; could introduce vulnerabilities.
+Vulnerability scanners, which find CVEs in dependencies, and static analysis tools, which analyze application code, provide useful alerts and assistance.&nbsp; We feel that we also need to be more pro-active in our protection to detect supply chain attacks in dependencies.&nbsp; To that effect, we strictly practice dependency version pinning to complement additional security measures, and prevent any automatic updates that could introduce vulnerabilities.
 
 &nbsp;
+
+Each developer workstation is equipped with [Socket Firewall](<https://docs.socket.dev/docs/socket-firewall-overview> "target=\"\_blank\"") intelligent proxy to provide real-time protection against software supply chain threats at the point of dependency usage.&nbsp; This tooling continuously monitors package installations and updates, proactively blocking known malicious packages, typo-squatting attempts, and high-risk dependency behaviors before they enter the codebase.&nbsp; By enforcing these controls directly within the development environment, the organization shifts supply chain security “left,” preventing vulnerable or compromised components from being introduced at the source rather than relying solely on downstream detection.
+
+&nbsp;
+
+Each software build is accompanied by the generation of a comprehensive Software Bill of Materials (SBOM), providing full visibility into all included third-party and open-source components.&nbsp; This SBOM is systematically analyzed using [Aqua Security Trivy](<https://www.aquasec.com/products/trivy/> "target=\"\_blank\"") to identify known vulnerabilities across dependencies and the software supply chain. The build pipeline enforces strict security gates: if any vulnerability exceeding defined risk thresholds is detected, the build is blocked from release until the issue is remediated or formally risk-accepted.&nbsp; This approach ensures continuous assurance of component integrity and prevents the introduction of known supply chain risks into distributed software artifacts.
 
 &nbsp;
 

@@ -122,5 +122,17 @@ Where applicable, Hackolade aligns product security practices with recognized fr
 
 &nbsp;
 
+## &#49;4. Independent Customer Operation
+
+Hackolade Studio is designed so that customers retain possession and control of their data models, repositories, generated schemas, documentation, and related artifacts within their own environments.
+
+&nbsp;
+
+The software does not rely on a vendor-hosted repository or vendor-operated runtime platform for continued access to customer assets.
+
+&nbsp;
+
+This architecture reduces operational dependency on supplier-managed infrastructure and avoids introducing a central operational point of failure for customer model assets.
+
 &nbsp;
 

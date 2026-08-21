@@ -64,6 +64,10 @@ As an alternative to generating a personal access token, Azure DevOps Repos can 
 
 &nbsp;
 
+This is how you can integrate with Single Sign-On leveraging Microsoft Entra ID authentication (a.k.a. Active Directory.) &nbsp;
+
+&nbsp;
+
 From the menu Repository \> Manage Repository Connections, create a new connection, select the provider and specify the domain name if necessary, then select the connection method OAuth:
 
 &nbsp;

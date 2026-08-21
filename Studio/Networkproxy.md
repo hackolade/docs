@@ -54,9 +54,75 @@ Finally, it is possible to enter the hostname or IP address of the proxy server,
 
 &nbsp;
 
-If necessary, you may have to whitelist the domains: [https://hackolade.com](<https://hackolade.com> "target=\"\_blank\""), [https://quicklicensemanager.com](<https://quicklicensemanager.com> "target=\"\_blank\"") and [https://qlmdr.com](<https://qlmdr.com> "target=\"\_blank\"") (for our license servers), and [https://github.com](<https://github.com> "target=\"\_blank\"") (for plugin downloads.)
+&nbsp;
+
+## Zscaler proxy troubleshooting
+
+**Important:** the following domains must be whitelisted: [https://hackolade.com](<https://hackolade.com> "target=\"\_blank\""),&nbsp; [https://quicklicensemanager.com](<https://quicklicensemanager.com/> "target=\"\_blank\""), [https://qlmdr.com](<https://qlmdr.com> "target=\"\_blank\""), and [https://github.com/hackolade](<https://github.com/hackolade> "target=\"\_blank\"")
 
 &nbsp;
 
-In particular, in environments with proxies using SSL inspection (Zscaler, BlueCoat, etc.) it is critical that Hackolade be whitelisted to connect properly with SSL/TLS protocols.
+**Warning:** if you have an HTTP proxy server on your network, you may have to manually set in the application the proxy parameters.&nbsp; You will find more information on the [Network Proxy page](<Networkproxy.md>).&nbsp; In particular, in environments with proxies using SSL inspection (Zscaler, BlueCoat, etc.) it is critical that Hackolade Studio be whitelisted to connect properly with SSL/TLS protocols.
+
+&nbsp;
+
+If your organization uses a ZScaler proxy which prevents license key validation, follow the steps below:
+
+&nbsp;
+
+### Step-by-Step Configuration in Zscaler Internet Access (ZIA)
+
+&nbsp;
+
+1. **Log in to Zscaler Admin Portal**
+
+   * URL: **https://admin.zscaler.com** (or your organization's ZIA portal)
+   * Navigate to: **Authentication/SSL Policy** → **SSL Policy**
+
+1. **Create a New SSL Decryption Rule**
+
+   * Click **Add SSL Decryption Rule** (or **Add Rule**)
+
+1. **Configure Rule Settings**
+
+| **Field** | **Value** |
+| --- | --- |
+| **Rule Name** | Skip SSL Decryption - **Hackolade Studio** |
+| **Action** | **Skip Decryption** (or **Bypass SSL Inspection**) |
+| **Users/Groups** | Select applicable users (or **All Users**) |
+| **Locations** | Select applicable locations (or **All Locations**) |
+| **URLs** | Add domains: [https://hackolade.com](<https://hackolade.com> "target=\"\_blank\""),&nbsp; [https://quicklicensemanager.com](<https://quicklicensemanager.com/> "target=\"\_blank\""), [https://qlmdr.com](<https://qlmdr.com> "target=\"\_blank\""), and [https://github.com/hackolade](<https://github.com/hackolade> "target=\"\_blank\"") |
+| **URL Categories** | (Optional) Select **Business and Industry** |
+| **Priority** | Set to **High** (above general decryption rules) |
+
+
+4. **Save and Deploy**
+- &nbsp;
+
+  - Click Save
+  - Deploy the policy to apply changes
+
+&nbsp;
+
+&nbsp;
+
+### Process-Based Bypass (Zscaler Client Connector)
+
+If your organization uses **Zscaler Client Connector (ZCC)** with process-based policies:
+
+1. Navigate to: **Client Connector Policy** → **Application Bypass/Exclusion**
+1. Add your app's executable:
+
+| **Field** | **Value** |
+| --- | --- |
+| **Process Name** | Hackolade.exe (Windows) or Hackolade (macOS/Linux) |
+| **Action** | **Bypass Proxy** or **Exclude from Inspection** |
+| **Path** | Full path to executable (e.g., C:\\Program Files\\Hackolade\\Hackolade.exe) |
+
+
+3. **Save** and **Deploy**
+
+&nbsp;
+
+&nbsp;
 

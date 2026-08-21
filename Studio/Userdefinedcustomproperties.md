@@ -212,7 +212,7 @@ The following controls are possible for user-defined properties:
 
 &nbsp;
 
-More information [here](<https://github.com/hackolade/plugins#26-property-controls> "target=\"\_blank\"").
+More information in [this subpage](<Propertycontrols.md>)..
 
 &nbsp;
 

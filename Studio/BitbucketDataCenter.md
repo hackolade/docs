@@ -70,3 +70,30 @@ In the repository connection manager, select Connect with Username and Password 
 
 ![Workgroup - Bitbucket basic auth](<lib/Workgroup - Bitbucket basic auth.png>)
 
+&nbsp;
+
+## Troubleshooting
+
+Here is a quick summary of the connectivity issue and how to resolve it:
+
+* **The Problem:** Git failed with Could not resolve host. Web browsers handle corporate proxy settings automatically, but the standalone Git client installed on the machine and used by Hackolade Studio does not, causing DNS resolution to fail.
+* **The Solution:** I configured Git to route traffic through the local network proxy ([127.0.0.1:8999](<http://127.0.0.1:8999>)) with environment variable HTTP\_PROXY et HTTPS\_PROXY (as per [Git documentation](<https://git-scm.com/docs/git-config#Documentation/git-config.txt-httpproxy> "target=\"\_blank\"")).
+
+&nbsp;
+
+**Commands to execute in the command prompt:**
+
+git config --global http.proxy [http://127.0.0.1:8999](<http://127.0.0.1:8999>)
+
+git config --global https.proxy [http://127.0.0.1:8999](<http://127.0.0.1:8999>)
+
+git config --global http.sslVerify false
+
+After setting the proxy, connect Hackolade using a **Personal Access Token** (Repository read \& write permissions) and you will be able to successfully clone the repository using its HTTPS .git URL.
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+

@@ -135,7 +135,7 @@ These keywords allow composing a relationship name dynamically based on the actu
 
 > FK\_\<childEntity\>\_\<parentEntity\>
 
-> &nbsp;
+&nbsp;
 
 would generate a name derived from the involved entities at creation time.
 

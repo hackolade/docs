@@ -26,13 +26,17 @@ The integration of data modeling with governance tools and processes enables sol
 
 &nbsp;
 
-**Important note:** the Collibra integration is an add-on feature which requires a specific license key which can be purchased from us [here](<mailto:support@hackolade.com?subject=Collibra%20integration%20license>).
+**Important note**: the Collibra integration is an add-on feature which requires a specific license key which can be purchased from us [here](<mailto:support@hackolade.com?subject=Collibra%20integration%20license>).
 
 &nbsp;
 
 [Collibra](<https://www.collibra.com/> "target=\"\_blank\"") is one of the leaders in the space of data governance and metadata management solutions.&nbsp; Metadata management is a core aspect of an organization’s ability to manage its data and information assets. The term “metadata” describes the various facets of an information asset that can improve its usability throughout its life cycle. Metadata is used as a reference for business-oriented and technical projects, and lays the foundations for describing, inventorying and understanding data for multiple use cases.
 
-Hackolade has partnered with Collibra to provide an officially supported integration with Collibra's Data Dictionary, using its [Core, Import, and output module APIs](<https://developer.collibra.com/rest/#apis> "target=\"\_blank\"").&nbsp; With this integration, users can easily publish into Collibra domains, and keep synchronized, their Hackolade data models for any of the many targets supported by Hackolade.&nbsp; Even the schema definitions of REST APIs documented in Swagger or OpenAPI.
+&nbsp;
+
+Hackolade has partnered with Collibra to provide an officially supported integration with Collibra's Data Dictionary, using its standard [Core, Import, and output module APIs](<https://developer.collibra.com/rest/#apis> "target=\"\_blank\"").&nbsp; With this integration, users can easily publish into Collibra domains, and keep synchronized, their Hackolade data models for any of the many targets supported by Hackolade.&nbsp; Even the schema definitions of REST APIs documented in Swagger or OpenAPI.
+
+&nbsp;
 
 The process automatically:
 
@@ -40,11 +44,21 @@ The process automatically:
 * creates the necessary custom scopes, attributeTypes and assignments to support the granularity of Hackolade features
 * then creates and keeps in sync assets for schemas, tables, views, columns, models, entities, attributes, and foreign key relationships.
 
+&nbsp;
+
 The integration specifically handles complex data types, hierarchical structures, and polymorphism found in modern databases, JSON, Avro, Parquet, Protobuf, etc...&nbsp; Custom properties defined for a plugin are also published as custom attributeTypes in Collibra.
+
+&nbsp;
 
 Hackolade Studio data models for physical targets are published to Physical Data Dictionaries in the form of schemas/tables/columns assets in Collibra, whereas since v7.3.1 of Hackolade Studio, Polyglot models are published to Logical Data Dictionaries in the form of models/entities/attributes assets in Collibra.
 
 With v7.6.1 of Hackolade Studio, we added publishing of lineage relations between logical Polyglot models and their derived physical targets for all their assets (model/schema, entity/table, attribute/column)
+
+&nbsp;
+
+Hackolade Studio models published to Collibra&nbsp; store and exchange Collibra asset identifiers for robust traceability, change tracking, and avoiding duplicates.&nbsp; With the support of glossaries, each model object (model, entity, attribute, schema, table, column) can be bound to one or more glossary terms from one or more glossaries.&nbsp; The binding operation stores the unique Collibra identifier to that the loop is closed when publishing the model back to Collibra. When publishing polyglot/logical models and physical models to the respective layers in Collibra, the publishing mechanism also builds the lineage in Collibra.
+
+&nbsp;
 
 ## Publishing process flow
 

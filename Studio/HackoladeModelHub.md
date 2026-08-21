@@ -24,3 +24,5 @@ Read all about it in the following pages...
 
 &nbsp;
 
+**Nest steps:** if you like what you see and want to take it for spin with your own data, you can download the [Standalone personal trial](<Standalonepersonaltrial.md>).
+

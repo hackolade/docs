@@ -9,10 +9,10 @@ There are different permutations to be aware of: Hackolade Studio is available i
 |  | **Desktop** | **Browser** |  |  | **Desktop** | **Browser** |
 | Community | **Yes** | **Yes** | *No* | n/a | *No* | *No* |
 | Trial | **Yes** | *No* | **Yes** | Dedicated | **Local clone or remote** | n/a |
-| Viewer | **Yes** | **Yes** | **Yes** | Dedicated or Concurrent | **Read-only** | **Read-only** |
+| Viewer | **Yes** | **Yes** | **Yes** | Dedicated or Floating | **Read-only** | **Read-only** |
 | Personal | **Yes** | *Partially\** | **Yes** | Dedicated | *No* | *No* |
-| Professional | **Yes** | *Partially\** | **Yes** | Dedicated or Concurrent | *No* | *No* |
-| Workgroup | **Yes** | *Partially\** | **Yes** | Dedicated or Concurrent | **Local clone or remote** | **Remote repo only** |
+| Professional | **Yes** | *Partially\** | **Yes** | Dedicated or Floating | *No* | *No* |
+| Workgroup | **Yes** | *Partially\** | **Yes** | Dedicated or Floating | **Local clone or remote** | **Remote repo only** |
 
 
 &nbsp;
@@ -21,7 +21,15 @@ There are different permutations to be aware of: Hackolade Studio is available i
 
 &nbsp;
 
-For example we recently enabled reverse-engineering with the browser from a Databricks instance, and will soon add from a BigQuery and also Snowflake instance.&nbsp; But you will never be able with the browser to reverse-engineer from an Oracle on-prem database, at least not without an “agent” (for security reasons as explained [here](<Security-firstbrowserdeployment.md>).)&nbsp; Our agent will remain the desktop.&nbsp; Also, we currently cannot execute, in the browser, some features of the desktop:&nbsp; external references, derive from polyglot, update references, or handle the Git workflow such as submit for review, review change/pull requests.
+For example we recently enabled reverse-engineering with the browser from a Databricks instance and BigQuery.&nbsp; But you will never be able with the browser to reverse-engineer from an Oracle on-prem database, at least not without an “agent” (for security reasons as explained [here](<Security-firstbrowserdeployment.md>).)&nbsp; Our agent will remain the desktop.&nbsp; For Snowflake and other cloud databases that do not allow modifications to the CORS configuration, there are at least 3 possible alternatives:
+
+* Use the Desktop app as an “agent”,&nbsp; when a reverse-engineering action is required, then place the resulting data model in the Git repository, then have the data modelers continue their work in the browser
+* Execute the same action, but more automated via an instance of our Command-Line Interface, possibly running in a “bastion” architecture and behind a customer-developed portal, as described in [this page](<BastioninstanceforHackoladeStudi.md>).&nbsp; &nbsp; The added benefit of this architecture, as implemented at many of our finance industry customers, is that it is not even necessary to provide database access credentials to data modelers, if this matter is a concern for your customer.
+* Deploy a reverse-proxy, as described [here](<https://hackolade.com/help/ConfluentSchemaRegistry.html#Configure%20CORS%20to%20access%20Confluent%20Schema%20Registries%20from%20Hackolade%20Studio%20in%20the%20browser>), but this solution seems too complex to implement and maintain, and one of the previous 2 options is generally judged not only to be sufficient but also more desirable.
+
+&nbsp;
+
+Also, we currently cannot execute, in the browser, some features of the desktop: bundle changes to multiple data models in a single commit (same limitation as github.com versus GitHub Desktop for WIndows), or handle the Git workflow such as submit for review, review change/pull requests, all of which having workarounds using the web pages of the Git provider.
 
 &nbsp;
 
@@ -94,7 +102,7 @@ The&nbsp; above editions are packaged in the same software.&nbsp; The activation
 &nbsp;
 
 &nbsp;**(\*):** License metric is per "per seat", meaning that the number of Authorized Users specified on the Invoice may use the software. A license must be obtained for each device on or from which the Product is used or accessed. When the Product is accessed remotely across using Terminal Server, Remote Desktop, Windows App, virtual machine, Citrix, or an equivalent method, a separate Product license is required to be assigned to each device from which the application is accessed, i.e. not the virtual machine on which the Product is installed. \
-**(\*\*):** concurrent (aka floating) licenses do NOT require a license server on premises.
+**(\*\*):** floating (aka concurrent) licenses do NOT require a license server on premises.
 
 &nbsp;
 
@@ -109,7 +117,7 @@ Each edition is available natively for the following platforms:
 
 ## License model
 
-Most of the paid for licenses are available in 2 models: dedicated or concurrent.&nbsp; The price is quite different because of the added flexibility and value of the concurrent model.&nbsp; Also, you do not need as many concurrent seats for the same number of users. &nbsp;
+Most of the paid for licenses are available in 2 models: dedicated or floating.&nbsp; The price is quite different because of the added flexibility and value of the floating model.&nbsp; Also, you do not need as many floating seats for the same number of users. &nbsp;
 
 &nbsp;
 

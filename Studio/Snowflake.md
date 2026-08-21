@@ -32,7 +32,7 @@ All data in Snowflake is stored in database tables, logically structured as coll
 
 &nbsp;
 
-Hackolade Studio supports the use of dynamic tables in Snowflake, including Iceberg, where you specify the query used to transform the data from one or more base objects or dynamic tables.
+Hackolade Studio supports the use of dynamic tables in Snowflake, including Iceberg, where you specify the query used to transform the data from one or more base objects or dynamic tables.&nbsp; We also support hybrid tables.
 
 &nbsp;
 

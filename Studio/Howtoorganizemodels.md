@@ -372,7 +372,7 @@ A: Prefer Git-based isolation (branches, repos, permissions). Use containers pri
 
 Q: How do we prevent people from “stepping on each other’s toes”? &nbsp;
 
-A: Git enables concurrent edits; conflicts are resolved on merge. Combine this with owners/maintainers, branch protection, and required reviews.
+A: Git enables concurrent (simultaneous) edits; conflicts are resolved on merge. Combine this with owners/maintainers, branch protection, and required reviews.
 
 &nbsp;
 

@@ -145,7 +145,21 @@ You must specify the folder location of the tnsnames.ora file as well as the ser
 
 &nbsp;
 
-![Image](<lib/Oracle connection tnsnames ora.png>)
+&nbsp;
+
+For Oracle Autonomous Database, entries on port **1522** typically require mutual TLS (mTLS): the client must present wallet files from your OCI download and the wallet password.&nbsp; Enable **Mutual TLS (mTLS)** on the Connection tab when your folder contains the full wallet.&nbsp; When mTLS is enabled in **Thin mode**, enter the wallet password on the Connection tab; the password on the Authentication tab remains your Oracle database user password.
+
+&nbsp;
+
+![Oracle connection tnsnames ora](<lib/Oracle connection tnsnames ora.png>)
+
+&nbsp;
+
+With the **TNS** connection method and a *tnsnames.ora* file only (mTLS unchecked, no client wallet in the folder), Hackolade can use simpler one-way TLS, which is often more performant than mTLS because the client does not send a wallet certificate.&nbsp; That mode is possible only if your database administrator has configured the instance accordingly, for example Oracle Cloud access control lists (ACLs) that allow your client IP and policies that do not enforce mTLS for the service you use.&nbsp; If mTLS is still required by the database, leave **Mutual TLS (mTLS)** enabled and provide the full wallet directory and wallet password.&nbsp; Do not assume that a *tnsnames.ora* file alone is sufficient unless your DBA has confirmed that mTLS enforcement is disabled for your access path.
+
+&nbsp;
+
+![Oracle connection tnsnames ora with wallet](<lib/Oracle connection tnsnames ora with wallet.png>)
 
 &nbsp;
 

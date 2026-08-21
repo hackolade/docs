@@ -25,6 +25,8 @@ Hackolade supports the forward-engineering of different types of artifacts:
 * a [JSON or YAML sample document](<JSONDocument.md>);
 * a [JSON Schema or YAML Schema](<JSONSchema.md>), to be saved on the file system (local or network) or to be applied to schema registries;
 * an [Excel file](<Excelfile.md>) to perform bulk updates on a data model and import back into it;
+* a [dbt artifact](<dbtartifacts.md>) for schema models or sources definition
+* an [ArchiMate application data object](<ArchiMateapplicationdataobjects.md>) to be integrated into an Enterprise Architecture (EA) tool
 * a [model-driven API file](<APIModel.md>) in Swagger or OpenAPI specification, generated from the underlying data model;
 * a publication of the data model to data dictionaries, currently [Collibra](<CollibraDataDictionaryintegratio.md>).
 

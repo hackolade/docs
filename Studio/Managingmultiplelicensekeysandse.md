@@ -25,7 +25,7 @@ The identifier entered in the above screen will appear in the web page:
 
 Please read [this article](<Transferalicensetoanewcomputer.md>).
 
-## To release seats of a concurrent license key
+## To release seats of a floating license key
 
 We encourage to communicate to all users the principles of “good citizenship”.&nbsp; If a user keeps the application opened in the background, it holds the seat, making so it that a colleague probably risks being denied access the application.&nbsp; It is also important to gracefully exit the application, i.e. not just close a remote desktop session or reboot a machine with the application still open.&nbsp; The application only communicates with our server to release a seat if and only if one of the following options is used:
 

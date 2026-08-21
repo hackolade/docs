@@ -8,7 +8,7 @@ Many users want to define their own properties, for example to track PII or GDPR
 
 &nbsp;
 
-The principles of user-defined custom properties are defined in [this page](<Userdefinedcustomproperties.md>) and leverage the controls described in the [plugin documentation](<https://github.com/hackolade/plugins#26-property-controls> "target=\"\_blank\"").&nbsp; This how-to guide takes you through a hands-on exercise to create custom properties. &nbsp;
+The user-defined custom properties leverage the controls described in [this page](<Propertycontrols.md>).&nbsp; This how-to guide takes you through a hands-on exercise to create custom properties. &nbsp;
 
 &nbsp;
 

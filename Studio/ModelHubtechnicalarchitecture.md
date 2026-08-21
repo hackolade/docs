@@ -1,6 +1,6 @@
 # Model Hub technical architecture
 
-The Hackolade Model Hub is a new product licensed separately from Hackolade Studio.&nbsp; It includes a security-first database and portal entirely controlled by the customer.&nbsp; Contrary to many SaaS solutions, we do not collect, process, or store any of your information, data, or data models.&nbsp; This serverless architecture gives you full control of the residency for your data models, and is described in the diagram below:
+The Hackolade Model Hub is a&nbsp; product licensed separately from Hackolade Studio.&nbsp; It includes a security-first database and portal entirely controlled by the customer.&nbsp; Contrary to many SaaS solutions, we do not collect, process, or store any of your information, data, or data models.&nbsp; This serverless architecture gives you full control of the residency for your data models, and is described in the diagram below:
 
 &nbsp;
 
@@ -10,7 +10,7 @@ The Hackolade Model Hub is a new product licensed separately from Hackolade Stud
 
 &nbsp;
 
-Hackolade does not host anything: not the database, not the replication agent, and not the portal application.&nbsp; You install the database and replication service on your own cloud account, using a script that we provide. And we publish the application on a [Content Delivery Network](<https://en.wikipedia.org/wiki/Content\_delivery\_network> "Content Delivery Network") like [Azure Front Door](<https://azure.microsoft.com/en-us/products/frontdoor> "Azure Front Door") or [AWS CloudFront](<https://en.wikipedia.org/wiki/Amazon\_CloudFront> "AWS CloudFront"), while you continue to maintain, store, and access your data models inside the network entirely controlled by you.
+Hackolade does not host anything: not the database, not the replication agent, and not the portal application.&nbsp; You install the database and replication service on your own cloud account, using a Docker container that we provide on [DockerHub](<https://hub.docker.com/r/hackolade/model-hub> "target=\"\_blank\""). And we publish the application on a [Content Delivery Network](<https://en.wikipedia.org/wiki/Content\_delivery\_network> "Content Delivery Network") like [Azure Front Door](<https://azure.microsoft.com/en-us/products/frontdoor> "Azure Front Door") or [AWS CloudFront](<https://en.wikipedia.org/wiki/Amazon\_CloudFront> "AWS CloudFront"), while you continue to maintain, store, and access your data models inside the network entirely controlled by you.
 
 &nbsp;
 
@@ -54,31 +54,11 @@ With the browser deployment of Hackolade Model Hub, there is no effort necessary
 
 &nbsp;
 
-The question is sometimes asked whether the browser deployment of the Hackolade Model Hub portal could be run on an internal server in your organization.&nbsp; While it would technically be possible, we do not offer this possibility.&nbsp; The reasons are:&nbsp;
-
-\- it would remove the main benefit of this architecture, i.e. that you would always access the latest version of the application.&nbsp; We'd be back in the situation where you'd be dependent on your IT Department's validation, installation and deployment of each new version of our software;
-
-\- it would require to support a server-based product, which is an entirely different business model.
+We periodically deliver a new version of the Model Hub with new features and feature enhancements.&nbsp; To make installation and upgrades simple, we deliver the Model Hub in a Docker image and make it available on [DockerHub](<https://hub.docker.com/r/hackolade/model-hub> "target=\"\_blank\"").
 
 &nbsp;
 
-## Browser deployment architecture
-
-For those interested in the inner workings, [Azure Front Door](<https://azure.microsoft.com/en-us/blog/introducing-the-new-azure-front-door-reimagined-for-modern-apps-and-content/> "target=\"\_blank\"") and [AWS CloudFront](<https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/HowCloudFrontWorks.html> "target=\"\_blank\"") deliver our static application content to you from the edge location closest to you in terms of latency.&nbsp; Processing takes place in your browser and never leaves your network.&nbsp; No data or telemetry is being collected by Hackolade from the processing of your data models. Your data models are persisted locally and never leave your network. &nbsp;
-
-&nbsp;
-
-&nbsp;
-
-![Browser - Azure FrontDoor CDN network](<lib/Browser - Azure FrontDoor CDN network.png>)
-
-&nbsp;
-
-&nbsp;
-
-WAF and DDoS protections are enabled using the respective capabilities of [Azure Front Door](<https://learn.microsoft.com/en-us/azure/frontdoor/front-door-ddos> "target=\"\_blank\"") and [AWS CloudFront](<https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/distribution-web-awswaf.html> "target=\"\_blank\"").
-
-&nbsp;
+## &nbsp;
 
 &nbsp;
 

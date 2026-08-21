@@ -1,6 +1,6 @@
 # Properties pane
 
-The right-hand pane displays the properties for any entity you select in the object browser or central pane.&nbsp; This is where you maintain the characteristics and constraints of each entity.
+The right-hand pane displays the properties for any entity you select in the object browser or central pane.&nbsp; This is where you maintain the characteristics and constraints of each selected object.
 
 &nbsp;
 

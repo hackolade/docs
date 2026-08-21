@@ -1,5 +1,154 @@
 # Windows
 
+## Windows SmartScreen warning when downloading or installing Hackolade Studio
+
+TDLR; recent releases of Hackolade Studio and Hackolade Model Hub Standalone may trigger a Microsoft SmartScreen warning during download or at the start of the installation. The installers are digitally signed by IntegrIT NV, as they have been for the past ten years, and the warning does not indicate a problem with the file. This section explains why it appears and how to proceed.
+
+&nbsp;
+
+### What you may see
+
+Depending on your browser and Windows configuration, you may encounter either or both of the following:
+
+* In Microsoft Edge, a download notification stating that the file “isn’t commonly downloaded”.
+
+&nbsp;
+
+![Windows Smartscreen Edge notification](<lib/Windows Smartscreen Edge notification.png>)
+
+&nbsp;
+
+with this incomplete download in Windows Explorer
+
+![Windows SmartscreenExplorer incomplete downld](<lib/Windows SmartscreenExplorer incomplete downld.png>)
+
+&nbsp;
+
+* When launching the installer, a blue dialog titled “Windows protected your PC”, mentioning an unrecognized app.
+
+&nbsp;
+
+![Windows Smartscreen protected your PC](<lib/Windows Smartscreen protected your PC.png>)
+
+&nbsp;
+
+### Why this happens
+
+Microsoft Defender SmartScreen is a reputation system, not a malware scanner. It allows an application to run without prompting once Microsoft has observed a sufficient volume of downloads and clean executions associated with the code signing certificate that signed it.
+
+&nbsp;
+
+Previously, this reputation was attached to an organization, and as such, our 10-year history made it so that the SmartScreen would not appear.&nbsp; But recently, Microsoft changed the rules, and instead of attaching the reputation to an organization, it started to attache the reputation to individual certificates.
+
+&nbsp;
+
+Our code signing certificate was renewed in July 2026. The organization, the publisher name and the certifying authority are unchanged, but SmartScreen now associates reputation with the individual certificate rather than with the publisher, so a routine renewal resets the reputation accumulated by the previous certificate. This applies equally to standard and even to our Extended Validation certificates. Reputation rebuilds automatically as the new releases are downloaded and installed, and the warnings then stop appearing.
+
+&nbsp;
+
+The installers themselves are unchanged in nature: signed, timestamped, and distributed from our usual location. We submitted them to Microsoft for review, and the analysis returned no malware detected.
+
+&nbsp;
+
+### How to proceed with the download and installation
+
+In Microsoft Edge: hover over the download entry, open the … (More actions) menu, and select Keep, then confirm with Keep anyway. In Google Chrome, use the arrow next to the download entry and select Keep.
+
+&nbsp;
+
+At installation: in the “Windows protected your PC” dialog, select More info, verify that the publisher shown is IntegrIT NV, then select Run anyway.
+
+![Image](<lib/Windows SmartScreen Run anyway.png>)
+
+&nbsp;
+
+### If the “Keep” option does not respond
+
+On workstations managed by an IT department, a Microsoft Edge policy (PreventSmartScreenPromptOverrideForFiles) may prevent users from keeping a file flagged by SmartScreen. The button remains visible but has no effect, and the download stays in the Downloads folder as an unconfirmed .crdownload file. Two options are available:
+
+&nbsp;
+
+**Option 1:** download outside the browser. The SmartScreen download check is a browser feature; a direct download is not affected. In Windows PowerShell:
+
+&nbsp;
+
+> Invoke-WebRequest -Uri "https://s3-eu-west-1.amazonaws.com/hackolade/current/Hackolade-win64-setup-signed.exe" -OutFile "$env:USERPROFILE\\Downloads\\Hackolade-win64-setup-signed.exe"
+
+&nbsp;
+
+**Option 2:** if you do not have the rights to run PowerShell, then, assuming that your have rights to run the Windows command prompt
+
+&nbsp;
+
+> curl.exe -L -o "%USERPROFILE%\\Downloads\\Hackolade-win64-setup-signed.exe" "https://s3-eu-west-1.amazonaws.com/hackolade/current/Hackolade-win64-setup-signed.exe"
+
+&nbsp;
+
+**Option 3:** if that command does not work because of a proxy server, then run this command, making sure to replace the PROXY and PORT variables by their correct value:
+
+&nbsp;
+
+> curl.exe -L --proxy http://PROXY:PORT -o "%USERPROFILE%\\Downloads\\Hackolade-win64-setup-signed.exe" "https://s3-eu-west-1.amazonaws.com/hackolade/current/Hackolade-win64-setup-signed.exe"
+
+&nbsp;
+
+**Option 4:** ask your administrators to allow our download source. The relevant Microsoft Edge policies are SmartScreenAllowListDomains, adding our download host, or ExemptFileTypeDownloadWarnings scoped to .exe files from that host. Both are more targeted than relaxing the override policy globally.
+
+&nbsp;
+
+### Verifying the download
+
+As some users might understanbly question whether the above explanations are legitimate, two independent verifications are available, and we encourage security teams to use them:
+
+* Checksum: we publish a signed SHA-256 checksum file Hackolade-win64-setup-signed.SHASUM256.txt.asc alongside each installer. Compare it with the value returned by: 
+
+in Powershell
+
+&nbsp;
+
+Get-FileHash .\\Hackolade-win64-setup-signed.exe -Algorithm SHA256
+
+&nbsp;
+
+or at a Windows command prompt by 
+
+&nbsp;
+
+certutil -hashfile Hackolade-win64-setup-signed.exe SHA256\
+&nbsp;
+
+* Digital signature: right-click the installer, select Properties, then the Digital Signatures tab. The signature must include IntegrIT NV as signer, with a valid certificate chain and a timestamp.
+
+&nbsp;
+
+In PowerShell, you can verify the checksum against the SHA-256 value in the file Hackolade-win64-setup-signed.SHASUM256.txt.asc :
+
+&nbsp;
+
+> $exe = ".\\Hackolade-win64-setup-signed.exe"\
+$asc = ".\\Hackolade-win64-setup-signed.SHASUM256.txt.asc"\
+$expected = (\[regex\]'\[A-Fa-f0-9\]{64}').Match((Get-Content $asc -Raw)).Value\
+$actual &nbsp; = (Get-FileHash $exe -Algorithm SHA256).Hash\
+if ($actual -eq $expected) { "MATCH: $actual" } else { "MISMATCH\`n expected: $expected\`n actual: &nbsp; $actual" }
+
+&nbsp;
+
+### Enterprise deployment
+
+Software distributed centrally through Microsoft Intune, Configuration Manager or comparable tools do not go through the browser and are not subject to these prompts. Our installers support unattended installation with the standard switches /VERYSILENT /SUPPRESSMSGBOXES /NORESTART, and the destination folder can be imposed with /DIR="C:\\Hackolade". Administrators may also create a publisher-based allow rule on our code signing certificate, which remains valid across releases. Our support team is happy to assist your packaging team.
+
+&nbsp;
+
+### What we are doing about it
+
+We migrated our code signing to a Microsoft service ([Azure Artifact Signing](<https://learn.microsoft.com/en-us/azure/artifact-signing/overview>))&nbsp; in which signing reputation is associated with a permanent, validated organizational identity rather than with a certificate that must be periodically renewed. Once that migration is complete and reputation has been re-established, these warnings are not expected to recur at future renewals.
+
+&nbsp;
+
+If you encounter any difficulty downloading or installing, please contact [support@hackolade.com](<mailto:support@hackolade.com>) and we will assist you through it
+
+.
+
 ## Standard installation
 
 The application is shipped as a signed .exe file with an installation wizard automatically placing the app in the proper folder and displaying the License Agreement and Release Notes.&nbsp; Windows installation does not require admin rights *(unless the installation is made to a directory requiring admin rights)* and does not write to the Windows Registry.&nbsp; However, in a corporate environment, you should contact your IT department.&nbsp; They can remotely access your computer and install the software for you.&nbsp; You should comply with the IT policy on non-approved software.

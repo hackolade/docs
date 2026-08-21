@@ -14,7 +14,7 @@ The setup assumes that:
 
 \- data models are stored in your Git repository
 
-\- you have an instance of Hackolade Studio ready to run in Docker containers, as documented [here](<https://github.com/hackolade/docker/tree/main/Studio> "target=\"\_blank\""), and allowing you to run in multi-threaded mode.&nbsp; The instance running the Hackolade Studio Command-Line Interface in Docker requires a license key, which must be a Professional (or Workgroup) Concurrent key.
+\- you have an instance of Hackolade Studio ready to run in Docker containers, as documented [here](<https://github.com/hackolade/docker/tree/main/Studio> "target=\"\_blank\""), and allowing you to run in multi-threaded mode.&nbsp; The instance running the Hackolade Studio Command-Line Interface in Docker requires a license key, which must be a Professional (or Workgroup) floating key.
 
 \- you create Git repository provider triggers for your use case (GitHub Actions, Bitbucket pipelines or equivalent.)
 
@@ -30,7 +30,7 @@ The diagram below shows a simple architecture leveraging Hackolade Studio CLI in
 
 &nbsp;
 
-The CLI instance running the Hackolade Studio Command-Line Interface requires its own license seat.&nbsp; If running single-threaded, a dedicated license key is sufficient.&nbsp; If running multi-threaded, then a Docker license key is required, which must be a Professional (or Workgroup) Concurrent key..
+The CLI instance running the Hackolade Studio Command-Line Interface requires its own license seat.&nbsp; If running single-threaded, a dedicated license key is sufficient.&nbsp; If running multi-threaded, then a Docker license key is required, which must be a Professional (or Workgroup) floating key..
 
 &nbsp;
 

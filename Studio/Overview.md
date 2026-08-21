@@ -16,7 +16,11 @@ The Model Hub is a separate product from Hackolade Studio, and complementing it.
 
 &nbsp;
 
-![Model Hub metadata collaboration platform](<lib/Model Hub metadata collaboration platform.png>)
+&nbsp;
+
+![Image](<lib/Model Hub metadata collaboration platform.png>)
+
+&nbsp;
 
 &nbsp;
 
@@ -34,7 +38,9 @@ The Hub greatly extends the capabilities of Hackolade Studio through a data mode
 
 &nbsp;
 
-![Hackolade Enterprise Model Hub overview](<lib/Hackolade Enterprise Model Hub overview.png>)
+&nbsp;
+
+![Image](<lib/Hackolade Enterprise Model Hub overview.png>)
 
 &nbsp;
 
@@ -66,7 +72,7 @@ The Hackolade Enterprise Model Hub enables data professionals to document, inter
 
 The data models feeding the Model Hub may have been created from scratch in Hackolade Studio, migrated form legacy tools, or reverse-engineered from any of the technology targets supported by Hackolade Studio.
 
-![Hub metadata harvesting](<lib/Hub metadata harvesting.png>)
+![Image](<lib/Hub metadata harvesting.png>)
 
 &nbsp;
 
@@ -94,11 +100,11 @@ The data models feeding the Model Hub may have been created from scratch in Hack
 
 \- Attribute-level vertical lineage, where-used, and impact analysis (TBA)
 
+\- Glossary of business terms (TBA)
+
 \- Threaded conversations (TBA)
 
 \- Metadata curation (TBA)
-
-\- Glossary of business terms (TBA)
 
 \- Tags for annotations (TBA)
 
@@ -117,8 +123,6 @@ The data models feeding the Model Hub may have been created from scratch in Hack
 **\- Strengthen data governance:** data modelers and domain experts collaborate to ensure that definitions align with business needs, while maintaining standardization, integrity, and quality
 
 **\- Accelerate decision-making:** enable quick access to reliable data, reducing dependencies on IT, and minimizing delays caused by data quality issues or misalignment.
-
-&nbsp;
 
 &nbsp;
 

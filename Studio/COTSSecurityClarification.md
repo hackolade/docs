@@ -173,12 +173,42 @@ As Hackolade does not process customer production data in operating the product,
 
 &nbsp;
 
-## &#49;6. Shared responsibility summary
+## &#49;6. Operational Resilience and Business Continuity
+
+Hackolade does not operate customer production environments, customer data repositories, customer workloads, or hosted service platforms. Accordingly, traditional SaaS-oriented disaster recovery and service restoration concepts are not applicable to the product.
+
+&nbsp;
+
+Customer-installed versions of Hackolade Studio continue to operate independently within customer-controlled environments. Customer data models, repositories, generated artifacts, documentation, and associated project assets remain under the customer's control and are not hosted by Hackolade.
+
+&nbsp;
+
+Consequently, the continued day-to-day operation of installed software is not dependent on the availability of Hackolade-operated production infrastructure, except for Hackolade's website used to deliver software updates and license enforcement.
+
+&nbsp;
+
+Hackolade nevertheless maintains internal operational continuity procedures appropriate to its role as a software publisher in order to support:
+
+\- software development activities,
+
+\- software release and distribution processes,
+
+\- licensing operations,
+
+\- security vulnerability response and communications.
+
+&nbsp;
+
+Because Hackolade does not host customer environments or customer data, business continuity measures focus on continuity of software publishing and support operations rather than restoration of customer production systems.
+
+&nbsp;
+
+## &#49;7. Shared responsibility summary
 
 In this deployment model, security responsibilities are distributed as follows:
 
 * the customer is responsible for infrastructure security, system hardening, access control operations, network protections, and data governance within their environment.
-* Hackolade is responsible for secure software design, development, testing, maintenance, and vulnerability remediation of the product codebase.
+* Hackolade is responsible for secure software design, development, testing, updates, and vulnerability remediation of the product codebase.
 
 &nbsp;
 

@@ -6,7 +6,7 @@ We understand the request for an admin tool that would allow you to release lice
 
 \- [release a dedicated license seat](<https://hackolade.com/help/Softwareregistration.html#Release%20the%20license%20key%20from%20one%20computer%20to%20move%20to%20another>) if no longer needed on a machine,&nbsp;
 
-\- [gracefully release a concurrent seat](<https://hackolade.com/help/Concurrentlicensekeybehavior.html#Be%20considerate%20of%20others>) so it can be used by a colleague,&nbsp;
+\- [gracefully release a floating seat](<https://hackolade.com/help/Concurrentlicensekeybehavior.html#Be%20considerate%20of%20others> "gracefully release a concurrent seat")[ ](<https://hackolade.com/help/Softwareregistration.html#Release%20the%20license%20key%20from%20one%20computer%20to%20move%20to%20another> "release a dedicated license seat")so it can be used by a colleague,&nbsp;
 
 \- [transfer a license](<Transferalicensetoanewcomputer.md>) from one machine to another,&nbsp;
 

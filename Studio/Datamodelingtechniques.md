@@ -26,7 +26,7 @@ By default, Hackolade Studio uses ERDs to represent data structure, using Inform
 
 &nbsp;
 
-**Note:** IDEF1X notation is not currently supported, but could be, upon request.&nbsp; UML models can be imported, converted to ERD or JSON Schema, but we the tool does not forward-engineer UML.
+**Note:** IDEF1X notation is not currently supported, but could be, upon request.&nbsp; UML models can be imported, converted to ERD or JSON Schema, but the tool does not forward-engineer UML.
 
 &nbsp;
 

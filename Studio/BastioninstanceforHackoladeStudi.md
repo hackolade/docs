@@ -10,7 +10,9 @@ Such setup may be necessary for security reasons, for example because the organi
 
 The diagram below shows a simple architecture leveraging a bastion instance:
 
-![Bastion instance architecture](<lib/Bastion instance architecture.png>)
+![Image](<lib/Bastion instance architecture.png>)
+
+&nbsp;
 
 &nbsp;
 
@@ -18,7 +20,7 @@ In general,organizations don't want want to run the risk of queuing requests in 
 
 &nbsp;
 
-The bastion instance running the Hackolade Studio Command-Line Interface requires its own license seat.&nbsp; If running single-threaded, a dedicated license key is sufficient.&nbsp; If running multi-threaded, then a Docker license key is required, which must be a Professional (or Workgroup) Concurrent key..
+The bastion instance running the Hackolade Studio Command-Line Interface requires its own license seat.&nbsp; If running single-threaded, a dedicated license key is sufficient.&nbsp; If running multi-threaded, then a Docker license key is required, which must be a Professional (or Workgroup) floating key..
 
 &nbsp;
 
@@ -36,9 +38,7 @@ Below is a description of the process steps for the above diagram:
 
 &#52;) the portal takes the data model resulting from the reverse-engineering process, and performs a commit and push of the model to the Git repository
 
-&#53;) after the user is notified of the completion of the process, the user can now leverage Hackolade Studio
-
-&#54;) to access the data model for operations such as enrichment, evolution, artifact generation, model compare \& merge, etc...
+&#53;) after the user is notified of the completion of the process, the user can now leverage Hackolade Studio (browser or desktop) to access the data model for operations such as enrichment, evolution, artifact generation, model compare \& merge, etc...
 
 &nbsp;
 

@@ -22,13 +22,11 @@ All Product Editions.&nbsp; For more info, consult this [helpful resource](<http
 | [AWS-SDK](<https://github.com/aws/aws-sdk-js> "target=\"\_blank\"") | (c) 2014 Amazon Web Services | [Apache](<https://github.com/aws/aws-sdk-js/blob/master/LICENSE.txt> "target=\"\_blank\"") |
 | [Axios](<https://github.com/axios/axios> "target=\"\_blank\"") | (c) 2014-present Matt Zabriskie | [MIT](<https://github.com/axios/axios/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Azure SDK for JavaScript](<https://github.com/Azure/azure-sdk-for-js> "target=\"\_blank\"") | (c) 2018 Microsoft | [MIT](<https://github.com/Azure/azure-sdk-for-js/blob/master/LICENSE> "target=\"\_blank\"") |
-| [Babel](<https://babeljs.io/> "target=\"\_blank\"") | (c) 2014-2016 Sebastian McKenzie | [MIT](<https://github.com/babel/babel/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Base64url](<https://github.com/brianloveswords/base64url> "target=\"\_blank\"") | (c) 2013-2016 Brian J. Brennan | [MIT](<https://github.com/brianloveswords/base64url/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Benchmark.js](<https://github.com/bestiejs/benchmark.js/tree/main> "target=\"\_blank\"") | (c) 2010-2016 Mathias Bynens | [MIT](<https://github.com/bestiejs/benchmark.js/blob/main/LICENSE> "target=\"\_blank\"") |
 | [Big.js](<https://github.com/MikeMcl/big.js> "target=\"\_blank\"") | (c) 2018 Michael Mclaughlin | [MIT](<https://github.com/MikeMcl/big.js/blob/master/LICENCE.md> "target=\"\_blank\"") |
 | [Bin-pack](<https://github.com/bryanburgers/bin-pack> "target=\"\_blank\"") | (c) 2014 Bryan Burgers | [MIT](<https://github.com/bryanburgers/bin-pack/blob/master/LICENSE.md> "target=\"\_blank\"") |
 | [Brace](<https://github.com/thlorenz/brace> "target=\"\_blank\"") | (c) 2013 Thorsten Lorenz | [MIT](<https://github.com/thlorenz/brace/blob/master/LICENSE> "target=\"\_blank\"") |
-| [Brace-expansion](<https://github.com/juliangruber/brace-expansion> "target=\"\_blank\"") | (c) 2013 Julian Gruber | [MIT](<https://github.com/juliangruber/brace-expansion#license> "target=\"\_blank\"") |
 | [BSON](<https://github.com/mongodb/js-bson> "target=\"\_blank\"") | (c) 2015 MongoDB, Inc. | [Apache](<https://github.com/mongodb/js-bson/blob/1.0-branch/LICENSE.md> "target=\"\_blank\"") |
 | [Byline](<https://github.com/jahewson/node-byline> "target=\"\_blank\"") | (c) 2011-2015 John Hewson | [MIT](<https://github.com/jahewson/node-byline/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Cassandra driver](<https://github.com/datastax/nodejs-driver> "target=\"\_blank\"") | (c) 2014-2018 DataStax | [Apache](<https://github.com/datastax/nodejs-driver/blob/master/LICENSE.txt> "target=\"\_blank\"") |
@@ -47,6 +45,7 @@ All Product Editions.&nbsp; For more info, consult this [helpful resource](<http
 | [Desktop Trampoline](<https://github.com/desktop/desktop-trampoline> "target=\"\_blank\"") | (c) GitHub, Inc. | [MIT](<https://github.com/desktop/desktop-trampoline/blob/main/LICENSE> "target=\"\_blank\"") |
 | [DetectIncognito](<https://github.com/Joe12387/detectIncognito> "target=\"\_blank\"") | (c) 2021 - 2024 Joe Rutkowski | [MIT](<https://github.com/Joe12387/detectIncognito/blob/main/LICENSE> "target=\"\_blank\"") |
 | [Diff3](<https://github.com/axosoft/diff3> "target=\"\_blank\"") | (c) 2016, 2022 Axosoft, LLC | [MIT](<https://github.com/Axosoft/diff3/blob/master/diff3.js> "target=\"\_blank\"") |
+| [DnD Kit](<https://github.com/clauderic/dnd-kit> "target=\"\_blank\"") | (c) 2021, Claudéric Demers | [MIT](<https://github.com/clauderic/dnd-kit/blob/master/LICENSE> "target=\"\_blank\"") |
 | [DOMPurify](<https://github.com/cure53/DOMPurify> "target=\"\_blank\"") | (c) 2023 Dr.-Ing. Mario Heiderich, Cure53 | [Apache](<https://github.com/cure53/DOMPurify/blob/main/LICENSE> "target=\"\_blank\"") |
 | [Elasticsearch](<https://github.com/elastic/elasticsearch-js> "target=\"\_blank\"") | (c) 2014 Elasticsearch | [Apache](<https://github.com/elastic/elasticsearch-js/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Electron](<https://electron.atom.io/> "target=\"\_blank\"") | (c) 2016 GitHub Inc. | [MIT](<https://raw.githubusercontent.com/atom/atom/master/LICENSE.md> "target=\"\_blank\"") |
@@ -55,8 +54,8 @@ All Product Editions.&nbsp; For more info, consult this [helpful resource](<http
 | [ExcelJS](<https://github.com/exceljs/exceljs> "target=\"\_blank\"") | (c) 2014-2019 Guyon Roche | [MIT](<https://github.com/exceljs/exceljs/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Exponential-backoff](<https://github.com/coveooss/exponential-backoff> "target=\"\_blank\"") | (c) 2018-2025 Coveo Solutions Inc. | [Apache](<https://github.com/coveooss/exponential-backoff/blob/master/LICENSE> "target=\"\_blank\"") |
 | [FakerJS](<https://github.com/faker-js/faker> "target=\"\_blank\"") | (c) 2022 Faker, 2020 Marak Squires | [MIT](<https://github.com/faker-js/faker/blob/main/LICENSE> "target=\"\_blank\"") |
+| [Fast CSV](<https://github.com/C2FO/fast-csv> "target=\"\_blank\"") | (c) 2011-2026 C2FO | [MIT](<https://github.com/C2FO/fast-csv/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Fast-xml-parser](<https://github.com/NaturalIntelligence/fast-xml-parser> "target=\"\_blank\"") | (c) 2017 Amit Kumar Gupta | [MIT](<https://github.com/NaturalIntelligence/fast-xml-parser/blob/master/LICENSE> "target=\"\_blank\"") |
-| [File-loader](<https://github.com/webpack/file-loader> "target=\"\_blank\"") | (c) 2016 Tobias Koppers | [MIT](<https://opensource.org/licenses/MIT> "target=\"\_blank\"") |
 | [Font-awesome](<https://fortawesome.github.io/Font-Awesome/> "target=\"\_blank\"") | (c) 2016 Dave Gandy | [MIT](<https://fortawesome.github.io/Font-Awesome/license/> "target=\"\_blank\"") |
 | [Form-Data](<https://github.com/form-data/form-data> "target=\"\_blank\"") | (c) 2012 Felix Geisendörfer | [MIT](<https://github.com/form-data/form-data/blob/master/License> "target=\"\_blank\"") |
 | [Fs-extra](<https://github.com/jprichardson/node-fs-extra> "target=\"\_blank\"") | (c) 2011-2016 JP Richardson | [MIT](<https://github.com/jprichardson/node-fs-extra/blob/master/LICENSE> "target=\"\_blank\"") |
@@ -127,15 +126,13 @@ All Product Editions.&nbsp; For more info, consult this [helpful resource](<http
 | [Randexp](<https://github.com/fent/randexp.js> "target=\"\_blank\"") | (c) 2011 fent | [MIT](<https://github.com/fent/randexp.js/blob/master/LICENSE> "target=\"\_blank\"") |
 | [React](<https://facebook.github.io/react/> "target=\"\_blank\"") | (c) 2013-present, Facebook, Inc. | [MIT](<https://github.com/facebook/react/blob/master/LICENSE> "target=\"\_blank\"") |
 | [React-ace](<https://github.com/securingsincity/react-ace> "target=\"\_blank\"") | (c) 2014 James Hrisho | [MIT](<https://github.com/securingsincity/react-ace/blob/master/LICENSE> "target=\"\_blank\"") |
-| [React-autocomplete](<https://github.com/reactjs/react-autocomplete> "target=\"\_blank\"") | (c) 2015 Ryan Florence | [MIT](<https://github.com/reactjs/react-autocomplete/blob/master/LICENSE> "target=\"\_blank\"") |
 | [React-calendar](<https://github.com/wojtekmaj/react-calendar> "target=\"\_blank\"") | (c) 2017–2021 Wojciech Maj | [MIT](<https://github.com/wojtekmaj/react-calendar/blob/main/LICENSE> "target=\"\_blank\"") |
 | [React-color](<https://github.com/casesandberg/react-color> "target=\"\_blank\"") | (c) 2015 Case Sandberg | [MIT](<https://github.com/casesandberg/react-color/blob/master/LICENSE> "target=\"\_blank\"") |
 | [React-draggable](<https://github.com/mzabriskie/react-draggable> "target=\"\_blank\"") | (c) 2014-2016 Matt Zabriskie | [MIT](<https://github.com/mzabriskie/react-draggable/blob/master/LICENSE> "target=\"\_blank\"") |
-| [React-native-listener](<https://github.com/erikras/react-native-listener> "target=\"\_blank\"") | (c) 2015 Erik Rasmussen | [MIT](<https://github.com/erikras/react-native-listener/blob/master/LICENSE> "target=\"\_blank\"") |
+| [React-hook-form](<https://github.com/react-hook-form/react-hook-form> "target=\"\_blank\"") | (c) 2019-present Beier (Bill) Luo | [MIT](<https://github.com/react-hook-form/react-hook-form/blob/master/LICENSE> "target=\"\_blank\"") |
 | [React-resizable](<https://github.com/STRML/react-resizable> "target=\"\_blank\"") | (c) 2014-2016 Samuel Reed | [MIT](<https://github.com/STRML/react-resizable> "target=\"\_blank\"") |
 | [React-scroll-sync](<https://github.com/okonet/react-scroll-sync> "target=\"\_blank\"") | (c) 2016 Andrey Okonetchnikov | [MIT](<https://github.com/okonet/react-scroll-sync/blob/master/LICENSE> "target=\"\_blank\"") |
 | [React-select](<https://github.com/JedWatson/react-select> "target=\"\_blank\"") | (c) 2019 Jed Watson | [MIT](<https://github.com/JedWatson/react-select/blob/master/LICENSE> "target=\"\_blank\"") |
-| [React-virtualized](<https://github.com/bvaughn/react-virtualized> "target=\"\_blank\"") | (c) 2015 Brian Vaughn | [MIT](<https://github.com/bvaughn/react-virtualized/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Redux Toolkit](<https://redux-toolkit.js.org/> "target=\"\_blank\"") | (c) 2018 Mark Erikson | [MIT](<https://github.com/reduxjs/redux-toolkit/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Resolve-mongodb-srv](<https://github.com/mongodb-js/resolve-mongodb-srv> "target=\"\_blank\"") | (c) 2020 MongoDB Inc. | [Apache](<https://github.com/mongodb-js/resolve-mongodb-srv/blob/main/LICENSE> "target=\"\_blank\"") |
 | [Remove-markdown](<https://github.com/zuchka/remove-markdown> "target=\"\_blank\"") | (c) 2015 Stian Grytøyr | [MIT](<https://github.com/zuchka/remove-markdown?tab=MIT-1-ov-file#readme> "target=\"\_blank\"") |
@@ -156,12 +153,13 @@ All Product Editions.&nbsp; For more info, consult this [helpful resource](<http
 | [Stringify-object](<https://github.com/yeoman/stringify-object> "target=\"\_blank\"") | (c) 2015 Yeoman team | [BSD-2-Clause](<https://github.com/yeoman/stringify-object/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Swagger-parser](<https://www.npmjs.com/package/swagger-parser> "target=\"\_blank\"") | (c) 2015 James Messinger | [MIT](<https://github.com/APIDevTools/swagger-parser/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Swagger-UI](<https://github.com/swagger-api/swagger-ui> "target=\"\_blank\"") | (c) 2019 SmartBear Software | [Apache](<https://github.com/swagger-api/swagger-ui/blob/master/LICENSE> "target=\"\_blank\"") |
+| [TanStack Table](<https://github.com/TanStack/table> "target=\"\_blank\"") | (c) 2016 Tanner Linsley | [MIT](<https://github.com/TanStack/table/blob/alpha/LICENSE> "target=\"\_blank\"") |
+| [TanStack Virtual](<https://github.com/TanStack/virtual> "target=\"\_blank\"") | (c) 2021-present Tanner Linsley | [MIT](<https://github.com/TanStack/virtual/blob/main/LICENSE> "target=\"\_blank\"") |
 | [Thrift](<https://thrift.apache.org/> "target=\"\_blank\"") | (c) 2017 Apache Software Foundation | [Apache](<https://www.npmjs.com/package/thrift#license> "target=\"\_blank\"") |
 | [To-title-case](<https://github.com/gouch/to-title-case> "target=\"\_blank\"") | (c) 2008-2018 David Gouch | [MIT](<https://github.com/gouch/to-title-case/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Tunnel-SSH](<https://github.com/agebrock/tunnel-ssh> "target=\"\_blank\"") | (c) 2018 Christoph Hagenbrock&nbsp; | [MIT](<https://github.com/agebrock/tunnel-ssh/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Turndown](<https://github.com/domchristie/turndown> "target=\"\_blank\"") | (c) 2017 Dom Christie | [MIT](<https://github.com/domchristie/turndown/blob/master/LICENSE> "target=\"\_blank\"") |
 | [Twitter Bootstrap](<https://getbootstrap.com/> "target=\"\_blank\"") | (c) 2011-2016 Twitter, Inc. | [MIT](<https://github.com/twbs/bootstrap/blob/master/LICENSE> "target=\"\_blank\"") |
-| [URL-browserify](<https://github.com/linhuibin98/url-browserify> "target=\"\_blank\"") | (c) 2024 Huibin Lin | [MIT](<https://github.com/linhuibin98/url-browserify?tab=MIT-1-ov-file#readme> "target=\"\_blank\"") |
 | [UUID](<https://github.com/uuidjs/uuid> "target=\"\_blank\"") | (c) 2010-2020 Robert Kieffer and other contributors | [MIT](<https://github.com/uuidjs/uuid/blob/main/LICENSE.md> "target=\"\_blank\"") |
 | [Vscode-sqltools](<https://github.com/mtxr/vscode-sqltools> "target=\"\_blank\"") | (c) 2016-present Matheus Teixeira | [MIT](<https://github.com/mtxr/vscode-sqltools/blob/dev/LICENSE.md> "target=\"\_blank\"") |
 | [W3c-blob](<https://github.com/chrisdickinson/w3c-blob> "target=\"\_blank\"") | (c) 2016 Chris Dickinson | [MIT](<https://github.com/chrisdickinson/w3c-blob#license> "target=\"\_blank\"") |

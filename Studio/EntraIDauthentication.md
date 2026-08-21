@@ -1,6 +1,6 @@
 # Entra ID authentication
 
-Microsoft Entra IDauthentication supports the following [authentication methods](<https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-configure?view=azuresql\&tabs=azure-portal> "target=\"\_blank\""):
+Microsoft Entra ID authentication supports the following [authentication methods](<https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-configure?view=azuresql\&tabs=azure-portal> "target=\"\_blank\""):
 
 * Entra ID cloud-only identities
 * Entra ID hybrid identities that support:

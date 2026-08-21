@@ -131,7 +131,9 @@ Example:
 
 > C:\\PROGRA~1\\Hackolade\\hackolade compMod --model1=yesterdaysModel --model2=todaysModel --deltaModel=todaysDeltaModel --ignoreGUIDs=true --ignoreExtraProperties=true --ignoreOrder=true&nbsp;
 
-> &nbsp;
+&nbsp;
+
+&nbsp;
 
 **Note:** If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: *"C:\\Program Files\\Hackolade\\hackolade"* .&nbsp; The workaround, assuming:
 
@@ -218,6 +220,10 @@ Usage:&nbsp; &nbsp; *hackolade forwEng \[--arguments\]*
 | \--resolveApiExternalRefs=\<true \| **false**\> | N | Specify whether to resolve external references in API targets \[default: false\] |
 | \--serialization=\<**BSON** \| JSON\> | N | Specify whether JSON Data must be generated with Plain JSON values or BSON values \[values: "BSON", "JSON"\] \[default: "BSON"\] |
 | \--pkAtTop=\<**true** \| false\> | N | Place Primary Key at the top of the attribute list \[default: true\] |
+| \--generateDataTests=\<true \| **false**\> | N | When outputType=dbt, specify whether to generate dbt data tests from model constraints (primary keys, foreign keys, not null, unique, enum). \[default: false\] |
+| \--severity=\<warn \| error\> | N | When outputType=dbt and generateDataTests=true, specify the severity level applied to all generated data tests. |
+| \--storeFailures=\<true \| **false**\> | N | When outputType=dbt and generateDataTests=true, specify whether dbt should store failing rows in a table for inspection. \[default: false\] |
+| \--limit=\<number\> | N | When outputType=dbt and storeFailures=true, limit the number of failing rows stored. Accepts a positive integer. |
 | \--logLevel=\< 1 \| 2 \| 3 \| **4** \> | N | &#49; = no spinner, no info, no error messages 2 = no spinner, no info 3 = no spinner 4 = full output \[default: 4\] |
 
 
@@ -776,8 +782,8 @@ Usage:&nbsp; &nbsp; *hackolade revEngDiagram \[--arguments\]*
 
 | **Argument** | **Required** | **Purpose** |
 | --- | --- | --- |
-| \--source=\<source\> | Y | Specify the modeling tool providing the source file.&nbsp; Currently only powerdesigner and mermaid are a possible value |
-| \--file=\<*file*\>\* | Y | Specify the directory path and file name where the file to be reverse-engineered is located (file must be a valid file for the source.)&nbsp; Absolute and relative paths are allowed. &nbsp; Supported extensions: .cdm, .ldm, .pdm (conceptual, logical, and physical models from PowerDesigner), .mmd (Mermaid ER diagrams) |
+| \--source=\< powerdesigner \| mermaid \| dbml \> | Y | Specify the modeling tool providing the source file.&nbsp; Currently only powerdesigner, mermaid, and dbml are a possible value |
+| \--file=\<*file*\>\* | Y | Specify the directory path and file name where the file to be reverse-engineered is located (file must be a valid file for the source.)&nbsp; Absolute and relative paths are allowed. &nbsp; Supported extensions: .cdm, .ldm, .pdm (conceptual, logical, and physical models from PowerDesigner), .mmd (Mermaid ER diagrams), .dbml |
 | \--model=\<*file*\>\* | Y | Full path and file name for target Hackolade model into which reverse-engineering process has to be converted.&nbsp; Extension .json is optional.&nbsp; If not specified, the target Hackolade model is located in the same directory than the data model file to be reverse-engineered and receives the same name, with the Hackolade extension .hck.json. |
 | \--target=\<*target*\> | Y | Specify the target for the Hackolade Studio model to create.&nbsp; For a logical model, the target must be polyglot.&nbsp; For a physical model, the target must be one of the Hackolade Studio physical targets. |
 | \--maxErdEntityBoxes=\< true \| **false** \> | N | Specify whether to fully expand all collections before distribution.&nbsp; \[default: false\] |

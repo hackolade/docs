@@ -136,7 +136,7 @@ Go to the other computer where you want to use Hackolade and validate your licen
 
 ## Offline validation
 
-**Important note:** offline validation will NOT work for subscriptions or perpetual concurrent licenses.&nbsp; This section is only for Community, Trial, and perpetual individual workstation licenses.
+**Important note:** offline validation will NOT work for subscriptions floating (concurrent) licenses.&nbsp; This section is only for Community, Trial, and perpetual individual workstation licenses.
 
 &nbsp;
 
@@ -178,13 +178,13 @@ And the application should get activated.&nbsp; Do not modify anything in the do
 
 &nbsp;
 
-## Concurrent licenses
+## Floating licenses
 
-Concurrent licenses (a.k.a. *floating* licenses) work differently than workstation licenses.&nbsp; With concurrent licenses, Hackolade's cloud-based licensing server tracks the number of simultaneous users for a given concurrent license key.&nbsp; If the number of simultaneous users reaches the maximum number of seats for the license key, anyone who subsequently tries to start the software is denied access. &nbsp;
+floating licenses (a.k.a. *concurrent* licenses) work differently than workstation licenses.&nbsp; With floating licenses, Hackolade's cloud-based licensing server tracks the number of simultaneous users for a given floating license key.&nbsp; If the number of simultaneous users reaches the maximum number of seats for the license key, anyone who subsequently tries to start the software is denied access. &nbsp;
 
 &nbsp;
 
-The application may be installed on a large number of computers, each with the same validated license key, but a maximum number of users are allowed at the same time, according to the number of seats purchased for that concurrent license key.&nbsp; For example, an organization has acquired a single concurrent license key for 20 seats.&nbsp; The application and validated license key are installed on 250 PCs.&nbsp; At any given time, only a maximum of 20 users will be allowed to use the application.&nbsp; If a 21st user attempts to open the application, access will be denied until a previous user exits the application and frees up a seat.
+The application may be installed on a large number of computers, each with the same validated license key, but a maximum number of users are allowed at the same time, according to the number of seats purchased for that floating license key.&nbsp; For example, an organization has acquired a single floating license key for 20 seats.&nbsp; The application and validated license key are installed on 250 PCs.&nbsp; At any given time, only a maximum of 20 users will be allowed to use the application.&nbsp; If a 21st user attempts to open the application, access will be denied until a previous user exits the application and frees up a seat.
 
 &nbsp;
 
@@ -192,7 +192,7 @@ With ***individual workstation*** licenses, the license key is entered and valid
 
 &nbsp;
 
-For **concurrent** licenses, the licensing server is contacted multiple times: each time the application is started, plus each time the application is exited.&nbsp; Assuming that the license key has been validated once for an application instance, each time the application is started, the licensing server is contacted to verify the availability of a seat.&nbsp; If a seat is available, it gets reserved on the licensing server with the unique UUID of the PC, and access is granted.&nbsp; If no seat is available, access is denied.&nbsp; Any seat granted when opening the application gets released upon exiting the application. &nbsp;
+For **floating** licenses, the licensing server is contacted multiple times: each time the application is started, plus each time the application is exited.&nbsp; Assuming that the license key has been validated once for an application instance, each time the application is started, the licensing server is contacted to verify the availability of a seat.&nbsp; If a seat is available, it gets reserved on the licensing server with the unique UUID of the PC, and access is granted.&nbsp; If no seat is available, access is denied.&nbsp; Any seat granted when opening the application gets released upon exiting the application. &nbsp;
 
 &nbsp;
 
@@ -200,7 +200,7 @@ Offline use of the application is possible but requires to start the application
 
 &nbsp;
 
-**Note:** In particular with concurrent licenses, it is strongly suggested to read and apply [this article](<Managingmultiplelicensekeysandse.md>) so a license administrator can track who's using Hackolade licenses and seats. &nbsp;
+**Note:** In particular with floating licenses, it is strongly suggested to read and apply [this article](<Managingmultiplelicensekeysandse.md>) so a license administrator can track who's using Hackolade licenses and seats. &nbsp;
 
 &nbsp;
 

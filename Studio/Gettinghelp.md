@@ -79,7 +79,7 @@ Please share precise and complete information in order to speed up troubleshooti
 
 ## When responding to a helpdesk email
 
-In the email sent by our Zendesk helpdesk solution, the communication starts with the line "##- Please type your reply above this line -##".  &nbsp;
+In the email sent by our Zendesk helpdesk solution, the communication starts with the line "##- Please type your reply **above** this line -##".  &nbsp;
 
 It is important to avoid replying with inline comments below that line\!&nbsp; If you type anything below that line, our helpdesk operator will not see your inline comments.
 
@@ -117,10 +117,10 @@ Hackolade provides maintenance and support for its products according to the fol
 
 | **Ticket Priority** | **Maximum Response Time** | **Maximum Resolution Time** | **Definition** |
 | --- | --- | --- | --- |
-| &#49; – Urgent | &#49;5 minutes | &#52; Hours | Critical Business Impact, production line down |
-| &#50; – High | &#49; Hour | &#56; Hours | Major Business Impact, multiple users affected, no workaround available |
-| &#51; – Medium | &#50; Days | &#50; Weeks | Moderate Business Impact, single user affected, workaround available |
-| &#52; – Low | &#56; Days | &#52; Weeks | Low Business Impact |
+| &#49; – Urgent | &#49;5 minutes | &#52; Hours | Critical business impact on organization, production line down |
+| &#50; – High | &#49; Hour | &#56; Hours | Major business impact on organization, large number of users affected, no workaround available |
+| &#51; – Medium | &#50; Days | &#50; Weeks | Moderate business impact on organization, single user affected, workaround available |
+| &#52; – Low | &#56; Days | &#52; Weeks | Low business impact on organization |
 | &#53; – Project |  |  | Timeframe to be decided through coordination between the Project Manager and development, based on resources available, requirements and time estimates. |
 
 

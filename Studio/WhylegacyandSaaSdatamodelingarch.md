@@ -68,7 +68,7 @@ The issues are summarized here:
 
 While SaaS removes the infrastructure burden of on-prem repositories, it does so at the expense of control, portability, and integration flexibility.
 
-&nbsp;
+![SaaS convenience with on-prem control](<lib/SaaS convenience with on-prem control.png>)
 
 ## Hackolade Studio: a modern, serverless, Git-native architecture
 
@@ -120,6 +120,8 @@ This architecture offers decisive advantages:
 
 &nbsp;
 
+![Architecture deployment matrix](<lib/Architecture deployment matrix.png>)
+
 By leveraging the ubiquity of Git and the simplicity of JSON, Hackolade Studio achieves what neither legacy nor SaaS solutions can: **a flexible, future-proof, and governance-friendly platform for data modeling in the modern enterprise, where data models can be easily shared across the organization.**
 
 &nbsp;
@@ -144,7 +146,7 @@ The Hackolade Model Hub introduces a modern, lightweight approach to model-drive
 
 Here's how it works:
 
-**\- Customer-hosted infrastructure on preferred cloud provider:** unlike traditional SaaS platforms where your models are stored in vendor-controlled systems, the Model Hub’s database is deployed entirely within the customer’s cloud infrastructure account.&nbsp; You start the database, using a script provided by Hackolade, ensuring that no one outside your organization, including Hackolade, can access your models.&nbsp;
+**\- Customer-hosted infrastructure on preferred cloud provider:** unlike traditional SaaS platforms where your models are stored in vendor-controlled systems, the Model Hub’s database is deployed entirely within the customer’s cloud infrastructure account (or private, or hybrid cloud.)&nbsp; You start the database, using a script provided by Hackolade, ensuring that no one outside your organization, including Hackolade, can access your models.&nbsp;
 
 **\- Local residency, external app delivery:** while your data stays securely in your cloud account, the Model Hub’s user interface runs as a static application delivered via a content delivery network such as Azure Front Door or AWS CloudFront to your browser where it runs locally.&nbsp; This setup guarantees you always access the latest application version, without installing or managing enterprise applications.&nbsp;
 

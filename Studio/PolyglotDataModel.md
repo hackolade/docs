@@ -1,6 +1,6 @@
 # Polyglot Data Model
 
-Starting with version 5.2.0 of Hackolade Studio, users can now define structures once in a technology-agnostic polyglot data model, complete with denormalization and complex data types, then represent these structures in a variety of physical data models respecting the specific aspects of each target technology.
+Users may define structures once in a technology-agnostic polyglot data model, complete with denormalization and complex data types, then represent these structures in a variety of physical data models respecting the specific aspects of each target technology.
 
 &nbsp;
 
@@ -16,31 +16,65 @@ Exceptions are possible: some objects in a polyglot model can be flagged as poly
 
 &nbsp;
 
-## Push and Pull from the target model
+## Pull and Push from the target model
 
-Many customers having accumulated physical data models in Hackolade prior to the introduction of the new functionality will want to convert their target model into a polyglot model.&nbsp; This is done by opening the physical target model, selecting the menu Tools \> Polyglot \> Convert to Polyglot Model...
-
-![Polyglot - convert to](<lib/Polyglot - convert to.png>)
+Users accustomed to legacy data modeling tools may have the reflex to want to generate a physical model from their logical model.&nbsp; The approach is different in Hackolade Studio where you&nbsp; must first create an empty model (which can be physical model, or another polyglot model), then derive from one or more polyglot models.&nbsp; If you wonder why we pull&nbsp; things this way, it is because a Hackolade model can be composed from parts of multiple models.
 
 &nbsp;
 
-You must choose whether to make your target dependent of the Polyglot model being created.&nbsp; This is the recommended approach as the Polyglot model should now become the master of changes, and the target model should be dependent of the Polyglot model.
+Naturally, if you have a physical model, created for example from a reverse-engineering operation, you can convert it to a polyglot model.
 
 &nbsp;
 
-![Polyglot - make target model dependent](<lib/Polyglot - make target model dependent.png>)
+## Derive from Polyglot Model
+
+The derive operation allows you to create a model from a Polyglot model.&nbsp; The derived model can be a physical model, or another Polyglot model.&nbsp; A derived model depends on objects in the "parent" Polyglot model.&nbsp; Changes to objects in the parent Polyglot generally affect the derived objects in the derived model.
 
 &nbsp;
 
-You may then choose the location where you want to store the polyglot model.&nbsp; You're now ready to maintain and update the polyglot data model.
+### Selection during derivation
+
+During the derive operation, you can choose which objects to include in the derived model.&nbsp; By default, all objects are selected, but you can restrict the scope to derive only a subset of the parent Polyglot model.
 
 &nbsp;
 
-You may also create a polyglot data model from scratch and build it, as you would with physical models.&nbsp; Except that a polyglot data model cannot be forward-engineer to a database instance.
+This selection defines the initial content of the derived model.&nbsp; After derivation, you can still change what you keep in the derived model: you may remove objects originally selected, or select at a later time objects that were not initially selected.
 
 &nbsp;
 
-Once you're ready to create a physical data model for a given target, the process is that a new model must be created for the target of your choice.&nbsp; then, from the target model, you derive your physical model from the polyglot data model by selecting the menu Tools \> Polyglot \> Derive from Polyglot Model:
+### Deviations in derived models
+
+A derived model is not a strict copy of the parent Polyglot model.&nbsp; After derivation, you can still add or remove objects, or modify properties to adapt the derived model to a specific technology or use case.
+
+&nbsp;
+
+These changes are called **deviations** and represent behavior specific to the derived model.&nbsp; A derived model may therefore represent only part of its parent Polyglot model(s) and evolve beyond its initial selection.
+
+&nbsp;
+
+### Polyglot-only property
+
+Any modeling object in the Polyglot model can be marked with the **Polyglot only** property (available in the Properties pane and disabled by default).
+
+![Polyglot only property](<lib/Polyglot only property.png>)
+
+&nbsp;
+
+When enabled, the object is never derived into any derived model, regardless of the selection made during derivation.&nbsp; This is a global rule.&nbsp; This is different from excluding objects during derivation, which only affects the current target model.
+
+&nbsp;
+
+It is important to distinguish these concepts: The **Polyglot only** property defines objects that are never part of any derived model, while selection during derivation and subsequent changes define how a given derived model materializes and evolves relative to the parent Polyglot model.
+
+&nbsp;
+
+### How to derive
+
+You can derive a target model either into a new model or into an existing model.&nbsp; Derivation can also be performed from a Polyglot model into another Polyglot model.
+
+&nbsp;
+
+To start a derivation, use *Tools \> Polyglot \> Derive from Polyglot Model*. Alternatively, in the Properties Pane at the model level, you can view the list of Polyglot models from which the Model is derived and add a new one from there.&nbsp; A target model can be derived from one or more Polyglot models.
 
 &nbsp;
 
@@ -48,29 +82,83 @@ Once you're ready to create a physical data model for a given target, the proces
 
 &nbsp;
 
-You may then choose the polyglot data model file:
-
-![Polyglot - choose file](<lib/Polyglot - choose file.png>)
+You may then choose the Polyglot data model file, either from a local file on your machine or from a remote location (for example within the same repository, another repository, or even a different Git provider).
 
 &nbsp;
 
-You are then presented with a dialog where you can narrow down the selection of entities to reference in the target model.&nbsp; By default, all objects are selected.&nbsp; Using multi-select (ctrl-click or shift+click) , you may change the selection of containers, entities, and definitions to derive in the target model.
-
-&nbsp;
+A dialog lets you narrow down the selection of containers, entities, and definitions to include. By default, all objects are selected.
 
 ![Polyglot - entity selection](<lib/Polyglot - entity selection.png>)
 
+#### Attribute-level selection
+
+Attributes of entities cannot be individually deselected in this dialog. Depending on your use case, several approaches are available:
+
 &nbsp;
 
-Attributes of entities cannot be individually deselected in the above screen. But 2 options are available, depending on the use case:
+&#49;. You can adjust the selection after derivation by removing or re-adding attributes in the target model. This is the most flexible option when the decision depends on a specific target implementation.
 
-&#49;) in the polyglot model, each object, including attributes can be marked as "Polyglot only", meaning that they will not be included in any target models.
+&#50;. In the Polyglot model, each object, including attributes, can be marked as **Polyglot only**, meaning that it will never be included in any derived model.&nbsp; This is appropriate when the attribute is conceptually relevant but should never be materialized physically.
 
-![Polyglot only property](<lib/Polyglot only property.png>)
-
-&#50;) in a target model you can deselect the IsActivated property, which will cause the attribute to be filtered out (or commented if the target syntax allows it) in the forward-engineering script.
+&#51;. In a target model, you can deselect the **IsActivated** property, which keeps the attribute in the model but filters it out (or comments it if the target syntax allows it) in the generated script.
 
 ![Polyglot isActivated property](<lib/Polyglot isActivated property.png>)
+
+&nbsp;
+
+The choice between these options depends on whether the attribute should be excluded globally, excluded only for a specific target, or simply not generated in physical artifacts.
+
+&nbsp;
+
+## Convert a Model to Polyglot
+
+In many cases, you may start from an existing database by reverse-engineering it into a physical model, and then convert that model into a Polyglot model.&nbsp; This is done by opening the physical target model and selecting **Tools \> Polyglot \> Convert to Polyglot Model...**
+
+![Polyglot - convert to](<lib/Polyglot - convert to.png>)
+
+&nbsp;
+
+&nbsp;
+
+You must choose whether to make your target dependent of the Polyglot model being created.&nbsp; This is the recommended approach as the Polyglot model should now become the master of changes, and the target model should be dependent of the Polyglot model.
+
+&nbsp;
+
+You may then choose the location where you want to store the Polyglot model.&nbsp; You're now ready to maintain and update the polyglot data model.
+
+&nbsp;
+
+### Controlling what is converted
+
+By default, all modeling objects are included in the conversion.&nbsp; There is no selection dialog during conversion, unlike when deriving from a Polyglot model.&nbsp; Instead, conversion includes all modeling objects that are not marked with the **Exclude from polyglot convert** property in the Properties Pane.
+
+&nbsp;
+
+This property is disabled by default for all objects, which means they are included in the conversion.&nbsp; Views are the exception: they are excluded by default because they are often more physical than conceptual.&nbsp; If needed, you can still include specific views by disabling this property before running the conversion.
+
+&nbsp;
+
+When the property is enabled on an object, that object is ignored during conversion and is not created in the Polyglot model.
+
+&nbsp;
+
+### Dependency Handling
+
+When an object is excluded from conversion through the **Exclude from polyglot convert** property, all objects that depend on it are also excluded.&nbsp; This ensures that the resulting Polyglot model remains consistent and does not contain incomplete structures.
+
+&nbsp;
+
+For example, if an entity is excluded, any relationship involving that entity is not transferred; if a definition is excluded, references to it are not included; and if a container is excluded, all of its contents are excluded as well.
+
+&nbsp;
+
+### Convert and Merge
+
+When converting a target model to Polyglot, you can choose an existing Polyglot model. In this case, Studio merges the result of the conversion with the selected existing Polyglot model.&nbsp; This approach enables more advanced use cases, such as combining multiple physical models into a single Polyglot model or keeping the Polyglot model up-to-date with production database.
+
+&nbsp;
+
+For more details and examples of these use cases, refer to the [dedicated documentation page](<Modelcompareandmergeusecases.md>)
 
 &nbsp;
 

@@ -1,6 +1,12 @@
 # Working directly with a remote repo
 
-For occasional access, or users simply consulting models in read-only mode, they may access the central storage directly.&nbsp; It is&nbsp; possible to operate in read-write mode to create a new or modify an existing file (and Hackolade Studio supports this mode since v8.1.2), but users lose several benefits, including those related to the distributed nature of Git (advanced features, ability to group changes to multiple files in sets, more flexible collaboration, offline access, multiple backups, etc.)
+Take a look at [this video](<https://community.hackolade.com/slides/slide/secure-browser-based-collaboration-68> "target=\"\_blank\"") illustrating how easy it is to collaborate, using Hackolade Studio. &nbsp; This simple access is available both in the desktop and browser deployments.
+
+&nbsp;
+
+For occasional access, or users simply consulting models in read-only mode, they may access the central storage directly.&nbsp; It is possible to operate in read-write mode to create a new or modify an existing file (and Hackolade Studio supports this mode since v8.1.2), but users may lose some benefits, including those related to the distributed nature of Git (advanced features, ability to group changes to multiple files in sets, more flexible collaboration, offline access, multiple backups, etc.)
+
+&nbsp;
 
 &nbsp;
 

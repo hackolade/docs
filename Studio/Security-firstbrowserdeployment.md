@@ -68,6 +68,10 @@ The main benefits of this setup are that you remain in complete control of your 
 
 &nbsp;
 
+&nbsp;
+
+&nbsp;
+
 ## Security-first, bring-your-own-storage approach
 
 Hackolade Studio is a unique security-first data modeling tool in the sense that we provide the application platform, but your data model only lives in your browser on your local device while you are working on it.&nbsp; Upon saving, your data model is stored at the location of your choice: on your local device, on a shared internal network drive, or in a locally-cloned Git repository. Your data model is never sent to us, even when you save your data model or perform operations with it.
@@ -133,6 +137,12 @@ The question is sometimes asked whether the browser deployment of Hackolade Stud
 \- it would remove the main benefit of this architecture, i.e. that you would always access the latest version of the application.&nbsp; We'd be back in the situation where you'd be dependent on your IT Department's validation, installation and deployment of each new version of our software;
 
 \- it would require to support a server-based product, which is an entirely different business model.
+
+&nbsp;
+
+&nbsp;
+
+![Architecture deployment matrix](<lib/Architecture deployment matrix.png>)
 
 &nbsp;
 

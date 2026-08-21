@@ -4,119 +4,95 @@ Please verify that each requirement below is fulfilled BEFORE you proceed with t
 
 ## Hackolade Studio
 
-The Model Hub is a model-driven metadata management collaboration platform.&nbsp; While you can use Studio without the Hub, the reverse is not possible.&nbsp; You must have Hackolade Studio to create and maintain data models. &nbsp;
+The Model Hub is a model-driven metadata management collaboration platform.&nbsp; While you can use Studio without the Hub, the reverse is not possible.&nbsp; You must have Hackolade Studio to create and maintain data models. Each user must either [validate a license key](<Softwareregistration.md>), or [reuse a key already validated](<https://hackolade.com/help/Softwareregistration.html#Reuse%20in%20the%20Browser%20your%20license%20key%20already%20validated%20in%20the%20Desktop>) in their Studio instance. &nbsp;
 
 &nbsp;
 
 ## Hackolade Model Hub license add-on
 
-You must have purchased a subscription for the Model Hub for your users so they can access the portal.&nbsp; Each user must either [validate a license key](<Softwareregistration.md>), or [reuse a key already validated](<https://hackolade.com/help/Softwareregistration.html#Reuse%20in%20the%20Browser%20your%20license%20key%20already%20validated%20in%20the%20Desktop>) in their Studio instance.&nbsp;
-
-&nbsp;
-
-## Get a Personal Access Token from Hackolade Helpdesk
-
-During the OCI Stack creation process, you will need to connect to our public repository to fetch the Terraform configuration.&nbsp; To facilitate this process, please open a ticket at [support@hackolade.com](<mailto:support@hackolade.com?subject=Please%20provide%20a%20Personal%20Access%20Token%20for%20the%20Model%20Hub%20installation>) and we will provide a PAT for your installation.&nbsp; For GitHub Enterprise Cloud, single sign-on (SSO) must be enabled on the PAT.&nbsp; See [Authenticating with SAML single sign-on (GitHub site)](<https://docs.github.com/en/authentication/authenticating-with-saml-single-sign-on>)
+You must have purchased a subscription for the Model Hub for your users so they can access the portal. &nbsp;
 
 &nbsp;
 
 ## Git repository provider
 
-Your data models must be stored with one of the supported Git repository providers, so your organization must have an account with one of the following: [GitHub](<GitHub.md>) (web or on-prem), [GitLab](<GitLab.md>) (web or on-prem), Bitbucket ([Cloud](<BitbucketCloud.md>) or [Data Center](<AzureDevOpsRepos.md>)), or [Azure DevOps Repos](<AzureDevOpsRepos.md>). &nbsp;
+Your Git repository (or repositories) is (are) the single source-of-truth for your data models.&nbsp; Your data models must be stored with one of the supported Git repository providers, so your organization must have an account with one of the following: [GitHub](<GitHub.md>) (web or on-prem), [GitLab](<GitLab.md>) (web or on-prem), Bitbucket ([Cloud](<BitbucketCloud.md>) or [Data Center](<AzureDevOpsRepos.md>)), or [Azure DevOps Repos](<AzureDevOpsRepos.md>). &nbsp;
 
 &nbsp;
 
-## Account on Oracle Cloud Infrastructure (OCI)
+## Provide domain name and sub-domain to Hackolade Helpdesk
 
-The Model Hub runs on Oracle Cloud Infrastructure (OCI) as described in the [technical architecture page](<ModelHubtechnicalarchitecture.md>).
-
-&nbsp;
-
-If your organization already has an OCI account, you may proceed to the next pages.
+Model Hub and Studio in the browser will be running on your domain.&nbsp; For security purposes we need to configure domain locking and parameters.&nbsp; Send an email to [support@hackolade.com](<mailto:support@hackolade.com?subject=MOdel%20Hub%20domain%20and%20and%20sub-domain>), specifying domain name and subdomain, for example hck.example.com
 
 &nbsp;
 
-If you don't already have an OCI account, you can easily sign up for one.&nbsp; The [Oracle Cloud Free Tier](<https://www.oracle.com/cloud/free/> "target=\"\_blank\"") is sufficient to get started.&nbsp; It includes some free cloud credits, in addition to always free services.&nbsp; As scale, you will want to have a paid account to sustain your performance requirements.
-
-&nbsp;
-
-The process and screens below are indicative, and may change at any time as they are controlled by Oracle -- not Hackolade...
-
-&nbsp;
-
-From the [signup screen](<https://signup.cloud.oracle.com/> "target=\"\_blank\""), create your account information and verify your email.
-
-![OCI Free Tier account info](<lib/OCI Free Tier account info.png>)
-
-&nbsp;
-
-Then enter your password, plus company name, a cloud account name of your choice, and the home region closest to the majority of your users.&nbsp; THis home region cannot be changed after account creation\!
-
-![OCI Free Tier legal info](<lib/OCI Free Tier legal info.png>)
-
-&nbsp;
-
-Then enter your address information
-
-![OCI Free Tier addresss info](<lib/OCI Free Tier addresss info.png>)
+Our Helpdesk will confirm when the proper configuration has taken place, and will also provide the Model Hub license key for the instance.
 
 &nbsp;
 
 &nbsp;
 
-Oracle requires to enter payment/identity verification information to proceed:&nbsp;
+## System requirements
 
-![Image](<lib/OCI Free Tier identity info.png>)
+### Software requirements
 
-&nbsp;
-
-Then review the terms and conditions and Start your Free Trial if OK:
-
-![OCI Free Tier agreement](<lib/OCI Free Tier agreement.png>)
+The Hackolade Model Hub can run on any system that supports Docker. Ideally, it should run on a Linux platform where Docker can run natively.&nbsp; You must be able to run [Docker Engine](<https://docs.docker.com/engine/> "target=\"\_blank\"") and [Docker Compose](<https://docs.docker.com/compose/> "target=\"\_blank\"") (or an equivalent container runtime.)&nbsp;
 
 &nbsp;
 
-It takes a few minutes to set the account up:
+### Hardware requirements
+
+Model Hub runs on two components: a Node.js server that serves the frontend assets and handles API calls, and database migration tools that ensure your database has the correct schema.
 
 &nbsp;
 
-![OCI Free Tier setup wait screen](<lib/OCI Free Tier setup wait screen.png>)
+In terms of CPU, the backend is single-threaded, but it is, in theory, possible to scale it horizontally to use as many CPUs as available. The more CPUs, the more it can handle load pressure and the synchronization of repositories with multiple files. It is possible to start with at least 4 CPUs and scale up when necessary.
 
 &nbsp;
 
-When completed, you should receive an email with further instructions:
+As for memory, Model Hub is as memory-hungry as the models it ingests. (TBD: build a grid that could serve as a reference)
 
 &nbsp;
 
-![OCI Free Tier signup wait screen](<lib/OCI Free Tier signup wait screen.png>)
+For the disk, Model Hub doesn't store much data on the disk, as it uses a database to store most of it. You need enough disk space to store Docker images locally and for Docker to function correctly. You can start with a small server with 50GB of disk space and go up if it needs more.
 
 &nbsp;
 
-&nbsp;
+Finally, Model Hub needs a fast network connection. On top of that, Model Hub has the following network requirements
+
+* Inbound HTTP(S) to the Model Hub (default port 3000, or via your reverse proxy) for users
+* Outbound HTTPS to from the Model Hub to your Git provider (to fetch and sync models)
+* Outbound HTTPS to [hackolade.com,](<https://hackolade.com/> "target=\"\_blank\"") plus [quicklicensemanager.com](<https://quicklicensemanager.com/> "target=\"\_blank\"") and [qlmdr.com](<qlmdr.com> "target=\"\_blank\"") for licensing, and [DockerHub](<https://hub.docker.com/u/hackolade> "target=\"\_blank\"") to pull images.
+* connectivity from the Model Hub to your database host and port
 
 &nbsp;
 
-&nbsp;
+### Database requirements
+
+**Important:** the Model Hub requires a database hosted and managed by the customer, whether deployed on-premises, in a public or private cloud environment, or as part of a hybrid infrastructure. The customer is solely responsible for procuring, licensing, configuring, operating, and maintaining the required database. Any database license fees or related infrastructure costs are excluded from the Model Hub pricing.
 
 &nbsp;
 
-![OCI Free Tier email](<lib/OCI Free Tier email.png>)
+The database can be self-standing (installed on a host) or packaged as a container image.
 
 &nbsp;
 
-When you first log in, you will be asked to set up 2-Factor Authentication:
+The data models maintained in the customer’s Git repository must be replicated to the Model Hub database.
 
 &nbsp;
 
-![OCI 2 factor authentication](<lib/OCI 2 factor authentication.png>)
+Model Hub stores most of its application data in a relational SQL database and currently supports:
+
+* PostgreSQL 18 or later
+* Oracle Database 23ai or 26ai
 
 &nbsp;
 
-Once verified with the Oracle Authenticator App or any other compatible alternative, you get to your OCI Home screen:
+Customers should select the supported database platform that best aligns with their operational, maintenance, and configuration requirements, as well as with any applicable internal standards or organizational policies.
 
 &nbsp;
 
-![OCI Home screen](<lib/OCI Home screen.png>)
+When configuring the database, you will need to create an empty database schema and a user with the following permissions: create, alter, and delete any tables in its schema, as well as read and write permissions on all tables.&nbsp; Further details are provide in the following pages.
 
 &nbsp;
 

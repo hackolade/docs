@@ -110,6 +110,22 @@ Double-click on the Hackolade.app icon to start the application.
 
 &nbsp;
 
+&nbsp;
+
+## Unable to move to trash error
+
+After installation, macOS may display a message that the installer could not be moved to Trash. This is a known macOS 15 behavior and does not affect the installation. Simply delete the .pkg from your Downloads folder manually.
+
+&nbsp;
+
+![Mac install move to trash error](<lib/Mac install move to trash error.png>)
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
 ## Silent installation
 
 **Important license note:** by installing or upgrading, you accept the [license agreement](<Licenseagreement.md>) for the application, even if the silent installation does not prompt you.
