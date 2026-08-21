@@ -138,7 +138,7 @@ The Hackolade Model Hub introduces a modern, lightweight approach to model-drive
 
 &nbsp;
 
-![Hub Studio Desktop Browser Architecture](<lib/Hub Studio Desktop Browser Architecture.png>)
+![Hub Studio Desktop Browser Architecture](<lib/NewItem 38.png>)
 
 &nbsp;
 

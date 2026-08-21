@@ -15,17 +15,13 @@ The Model Hub persists state in its state in the database. Back it up regularly,
 
 &nbsp;
 
-## What to back up
-
-### &#49;. SQL database
-
-&nbsp;
+## Backup your Model Hub database instance
 
 Use your organization’s standard backup process for the database engine you chose at install time:
 
 &nbsp;
 
-* **PostgreSQL 18+**: managed snapshots, continuous backup, or *pg\_dump* / *pg\_basebackup* according to DBA standards
+* **PostgreSQL 17+**: managed snapshots, continuous backup, or *pg\_dump* / *pg\_basebackup* according to DBA standards
 * **Oracle 26ai**&nbsp; RMAN, managed backups, or your platform’s equivalent
 
 &nbsp;
@@ -49,13 +45,11 @@ With only these 2 tables, Model Hub will be able to reconstruct the rest by sync
 
 &nbsp;
 
-&nbsp;
-
 ## When to back up
 
 On a regular schedule that matches your recovery objectives (for example daily database backups)
 
-* Before every Model Hub upgrade (new \`$MODEL\_HUB\_VERSION\`)
+* Before every Model Hub upgrade (new *MODEL\_HUB\_VERSION*)
 * Before and after major changes to Git provider configuration or authentication
 * Before destructive maintenance on the database or host
 
@@ -63,11 +57,9 @@ On a regular schedule that matches your recovery objectives (for example daily d
 
 ## Restore overview
 
-&nbsp;
+&#49;. Restore your Model Hub database to a consistent point in time.
 
-&#49;. Restore the SQL database to a consistent point in time.
-
-&#50;. Start the Model Hub.
+&#50;. Start Model Hub.
 
 &#51;. Confirm:
 

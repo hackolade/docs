@@ -83,7 +83,7 @@ The data models maintained in the customer’s Git repository must be replicated
 
 Model Hub stores most of its application data in a relational SQL database and currently supports:
 
-* PostgreSQL 18 or later
+* PostgreSQL 17 or later
 * Oracle Database 23ai or 26ai
 
 &nbsp;

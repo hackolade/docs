@@ -41,7 +41,7 @@ A Model Hub installation is made of standard components, with a secrets vault:
 
 ### Pull images
 
-Each newx version of Model Hub is published on [DockerHub](<https://hub.docker.com/r/hackolade/model-hub> "target=\"\_blank\"").&nbsp; You may specify the version to pull with
+Each new version of Model Hub is published on [DockerHub](<https://hub.docker.com/r/hackolade/model-hub> "target=\"\_blank\"").&nbsp; You may specify the version to pull with
 
 &nbsp;
 
@@ -50,9 +50,9 @@ docker pull hackolade/model-hub:$MODEL\_HUB\_VERSION
 
 &nbsp;
 
-&nbsp;
+The database can be self-standing (installed on a host) or packaged as a container image.&nbsp; The app server and the database can be on separate machines.
 
-The database can be self-standing (installed on a host) or packaged as a container image.
+&nbsp;
 
 ## Quick start with Docker Compose and self-standing PostgreSQL database
 
@@ -333,31 +333,25 @@ Equivalent probes:
 
 &nbsp;
 
-### &#56;. Stop and upgrade
+### &#56;. Upgrade to new Model Hub version
 
-#### Stop (keep the filestore volume)
-
-&nbsp;
-
-> docker compose down
+Always back up the database before upgrading production systems, as described in [Data backup](<Databackup.md>).&nbsp; At least the tables *git\_repositories* and *kvs*.&nbsp;
 
 &nbsp;
 
-**Warning**: do not use the flag to delete volumes, which would delete filestore data.
+&#49;. Note the new *MODEL\_HUB\_VERSION* from the Hackolade release notes.
+
+&#50;. Pull the matching *model-hub* image with the command
 
 &nbsp;
 
-#### Upgrade
+> docker compose pull
 
 &nbsp;
 
-&#49;. Always back up the database before upgrading production systems, as described in [Data backup](<Databackup.md>)
+&#51;. Update *MODEL\_HUB\_VERSION* in your *.env* file&nbsp;
 
-&#50;. Note the new *MODEL\_HUB\_VERSION* from the Hackolade release notes.
-
-&#51;. Pull the matching model-hub image.
-
-&#52;. Update *MODEL\_HUB\_VERSION* in your *.env* file then run
+&#52;. then run
 
 &nbsp;
 
@@ -366,8 +360,6 @@ Equivalent probes:
 &nbsp;
 
 and the application will restart.
-
-&nbsp;
 
 &nbsp;
 

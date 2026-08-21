@@ -6,11 +6,11 @@ The Hackolade Model Hub is a&nbsp; product licensed separately from Hackolade St
 
 &nbsp;
 
-![Hub Studio Desktop Browser Architecture](<lib/Hub Studio Desktop Browser Architecture.png>)
+![Image](<lib/Hub Studio Desktop Browser Architecture.png>)
 
 &nbsp;
 
-Hackolade does not host anything: not the database, not the replication agent, and not the portal application.&nbsp; You install the database and replication service on your own cloud account, using a Docker container that we provide on [DockerHub](<https://hub.docker.com/r/hackolade/model-hub> "target=\"\_blank\""). And we publish the application on a [Content Delivery Network](<https://en.wikipedia.org/wiki/Content\_delivery\_network> "Content Delivery Network") like [Azure Front Door](<https://azure.microsoft.com/en-us/products/frontdoor> "Azure Front Door") or [AWS CloudFront](<https://en.wikipedia.org/wiki/Amazon\_CloudFront> "AWS CloudFront"), while you continue to maintain, store, and access your data models inside the network entirely controlled by you.
+Hackolade does not host anything: not the database, not the replication agent, and not the portal application.&nbsp; You install the database and replication service on your own cloud account, using a Docker container that we provide on [DockerHub](<https://hub.docker.com/r/hackolade/model-hub> "target=\"\_blank\""). The image contains the app server and utilisites, plus the portal application. All you need is to connect Model Hub to your own instance Oracle 26ai or PostgreSQL 17+ database, while you continue to maintain, store, and access your data models inside the network entirely controlled by you.
 
 &nbsp;
 
@@ -50,16 +50,9 @@ The secure cloud CDN architecture takes a zero-trust approach to protect against
 
 ## Always run the latest and greatest version of Hackolade Model Hub
 
-With the browser deployment of Hackolade Model Hub, there is no effort necessary to always have access to the latest feature enhancements.
+With the browser deployment of Hackolade Model Hub delivered to you via a Docker containe, there is no effort necessary to always have access to the latest feature enhancements.
 
 &nbsp;
 
-We periodically deliver a new version of the Model Hub with new features and feature enhancements.&nbsp; To make installation and upgrades simple, we deliver the Model Hub in a Docker image and make it available on [DockerHub](<https://hub.docker.com/r/hackolade/model-hub> "target=\"\_blank\"").
+We periodically deliver a new version of the Model Hub with new features and feature enhancements&nbsp; To make installation and upgrades simple, we deliver the Model Hub in a Docker image and make it available on [DockerHub](<https://hub.docker.com/r/hackolade/model-hub> "target=\"\_blank\"").
 
-&nbsp;
-
-## &nbsp;
-
-&nbsp;
-
-## 

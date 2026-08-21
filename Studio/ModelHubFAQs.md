@@ -84,7 +84,7 @@ Hackolade complements semantic layers by upstreaming data governance and enablin
 
 ### Is the Hub a SaaS product?
 
-Not in the traditionally understood sense of the term.&nbsp; Software-as-a-Service is a popular solution deployment approach.&nbsp; Users don't need to install anything on their machines to access the service - it all runs in the browser.&nbsp; No need to upgrade either.&nbsp; The application always runs the latest version. &nbsp;
+Definitely not.&nbsp; Software-as-a-Service is a popular solution deployment approach.&nbsp; Users don't need to install anything on their machines to access the service - it all runs in the browser.&nbsp; No need to upgrade either.&nbsp; The application always runs the latest version. &nbsp;
 
 &nbsp;
 
@@ -100,11 +100,11 @@ It seems that there would be no perfect solution - just a choice of the least ba
 
 &nbsp;
 
-Instead, Hackolade provides an innovative architecture that combines the advantages of both on-premises and SaaS solutions.&nbsp; The Data Model Hub always runs the latest version of our software in your browser (so you don't need to install, maintain or upgrade it) but you keep 100% percent control of your data.&nbsp; The only traffic coming out of your network is when users validate the license key.
+Instead, Hackolade delivers the Model Hub in a Docker image which is very easy to deploy.&nbsp; The image contains all the necessary pieces to retrieve data models from your Git repositories, and place them in an Oracle 26 ai or PostgreSQL 17+ database instance that you self-host (on-rem, public cloud, or hybrid.)&nbsp; The Model Hub Docker image can be easily and frequently updated and deployed so that you always run the latest version of our software in your browser.&nbsp; You keep 100% percent control of your data.&nbsp; The only traffic coming out of your network is when users validate the license key.
 
 &nbsp;
 
-![Image](<lib/Hub Studio Desktop Browser Architecture.png>)
+![Hub Studio Desktop Browser Architecture](<lib/Hub Studio Desktop Browser Architecture.png>)
 
 &nbsp;
 
@@ -112,7 +112,7 @@ Hackolade has always developed solutions taking into account a security-first pr
 
 &nbsp;
 
-Your data models never leave your control.&nbsp; They are maintained and saved in your Git repository.&nbsp; If you use the Hub, they are replicated into your Hub database, entirely operated by you, but in a low-maintenance autonomous manner.&nbsp; Consult this [Model Hub architecture page](<ModelHubtechnicalarchitecture.md>) for more details.
+Your data models never leave your control.&nbsp; They are maintained and saved in your Git repository.&nbsp; If you use the Model Hub, they are replicated into your Hub database, entirely operated by you, but in a low-maintenance autonomous manner.&nbsp; Consult this [Model Hub architecture page](<ModelHubtechnicalarchitecture.md>) for more details.
 
 &nbsp;
 
@@ -124,7 +124,7 @@ The technical requirements for the Hub are numerous, ambitious, and strict.&nbsp
 
 &nbsp;
 
-No offense to the excellent vendors (which we support in many ways), but currently we only support PostgreSQL v18 or later, and Oracle 26ai Autonomous JSON
+No offense to the excellent vendors (which we support in many ways), but currently we only support PostgreSQL v17 or later, and Oracle 26ai Autonomous JSON
 
 &nbsp;
 
