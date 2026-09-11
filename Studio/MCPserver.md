@@ -140,6 +140,10 @@ However, if you get these 3 messages, it means that the Model Hub has not been s
 
 ### Copilot in VS Code
 
+Copilot is not a model provider.&nbsp; It is a client product (a coding assistant, or Microsoft's assistant/agent ecosystem) that *consumes* models from those providers.&nbsp; Microsoft 365 Copilot itself can use models from OAzure OpenAI, OpenAI, and others.
+
+&nbsp;
+
 **Warning:** the Copilot chat client is incompatible with our Model Hub standalone trial MCP server.&nbsp; It does however work just fine with the production version of Model Hub.&nbsp; To test with Copilot, you must use it inside VS Code.
 
 &nbsp;

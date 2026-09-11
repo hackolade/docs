@@ -68,7 +68,7 @@ Below is the current list of Hackolade CLI commands.&nbsp; Additional commands m
 | polyglotUpdate | Update polyglot definition |
 | revEng | Reverse-engineer a database instance or script file to fetch or infer the schema of the selected collections/tables |
 | revEngDataDictionary | Reverse-engineer a data dictionary instance to infer the schema of entities |
-| revEngDiagram | Reverse-engineer model from PowerDesign file&nbsp; |
+| revEngDiagram | Reverse-engineer model from PowerDesign, Mermaid, or DBML file&nbsp; |
 | revEngJSON | Reverse-engineer JSON Schema or documents |
 | revEngYAML | Reverse-engineer YAML or YAML Schema files |
 | revEngDDL | Reverse-engineer RDBMS data definition language files with .sql extensions |
@@ -772,7 +772,7 @@ Usage:&nbsp; &nbsp; *hackolade revEngDDL \[--arguments\]*
 
 ## revEngDiagram
 
-The *revEngDiagram* command allows to trigger a reverse-engineering process of a [PowerDesigner file](<PowerDesigner.md>) for logical models (typically .ldm extension) and soon for physical models (typically .pdm extension), or files with [Mermaid ER diagram code](<GenAI-createdMermaidERdiagram.md>).
+The *revEngDiagram* command allows to trigger a reverse-engineering process of a [PowerDesigner file](<PowerDesigner.md>) for conceptual models (typically .cdm extension), logical models (typically .ldm extension) and for physical models (typically .pdm extension), or files with [Mermaid ER diagram code](<GenAI-createdMermaidERdiagram.md>). or with [DBML syntax](<GenAI-createdDBML.md>).
 
 &nbsp;
 

@@ -42,7 +42,8 @@ Keyboard shortcuts:
 | Ctrl+- | Cmd+- | Zoom Out |
 | Ctrl+0 | Cmd+0 | Fit to Pane |
 | Ctrl+B | Cmd+B | Add dbs/Region/Bucket |
-| Ctrl+L | Cmd+L | Add Collection/Table/Document kind |
+| Ctrl+L | Cmd+L | Add Entity/Collection/Table/Document kind |
+| Ctrl+) | Cmd+) | Add Subtype |
 | Ctrl+T | Cmd+T | Add Relationship |
 | Ctrl+W | Cmd+Option+W | Add View |
 | Ctrl+R | Cmd+R | Add Attribute |

@@ -4,7 +4,11 @@ IBM Db2 is a family of relational databases for various platforms, developed by 
 
 &nbsp;
 
-While Db2 is also available for [z/OS](<https://en.wikipedia.org/wiki/Z/OS> "target=\"\_blank\"") (mainframe), Hackolade currently has no intention to support connectivity to a mainframe, as we would have no test platform, except through the reverse-engineering of DDLs.&nbsp; We currently only support integration of Db2 for LUW.
+While Db2 is also available for [z/OS](<https://en.wikipedia.org/wiki/Z/OS> "target=\"\_blank\"") (mainframe).&nbsp; We currently only support integration of Db2 for LUW and Db2 for z/OS (mainframe).
+
+&nbsp;
+
+**Note:** while the plugin for LUW allows direct connection with the database instance (if the user has the rights to do so) for both forward- and reverse-engineering, the integration with z/OS is limited to the exchange of DDL files.
 
 &nbsp;
 
@@ -12,7 +16,7 @@ Db2 on Cloud, formerly named "dashDB for Transactions", [Db2 on Cloud](<https://
 
 &nbsp;
 
-To perform data modeling for IBM Db2 with Hackolade, you must first download the Db2 [plugin](<https://hackolade.com/help/DownloadadditionalDBtargetplugin.html> "target=\"\_blank\"").  
+To perform data modeling for IBM Db2 with Hackolade, you must first download the Db2 [plugin](<https://hackolade.com/help/DownloadadditionalDBtargetplugin.html> "target=\"\_blank\""). for LUW, or the Db2 plugin for z/OS.&nbsp;  
 
 &nbsp;
 

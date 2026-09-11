@@ -145,7 +145,7 @@ A **specialization relationship** *is* essentially the same thing as **inheritan
 
 &nbsp;
 
-In relational data modeling, the logical representation is with the supertype/subtypes construct whereby the **supertype** (or superclass in UML) holds attributes common to all members of the family, and each **subtype** (or subclass in UML) inherits those common attributes and can define its own specific ones.
+In relational data modeling, the logical representation is with the supertype/subtypes construct whereby the **supertype** (or superclass in UML) holds attributes common to all members of the family, and each **subtype** (or subclass in UML) inherits those common attributes and can define its own specific ones.&nbsp; Hackolade fully supports [inheritance strategies](<Inheritancestrategies.md>) in Polyglot models.&nbsp; Alternatively, it is possible to represent the same concepts in an alternative manner...
 
 &nbsp;
 

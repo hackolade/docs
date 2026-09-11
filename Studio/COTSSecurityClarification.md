@@ -73,11 +73,11 @@ Strong integrity controls are in place across all supported platforms. &nbsp;
 
 &nbsp;
 
-On Windows, installers are digitally signed weekly using a DigiCert Extended Validation (EV) Code Signing certificate, which allows the operating system to verify the publisher’s identity and detect tampering.&nbsp; &nbsp;
+On Windows, installers are digitally signed weekly using a [Microsoft Azure Artifact-Signing certificate](<https://learn.microsoft.com/en-us/azure/artifact-signing/> "target=\"\_blank\""), which allows the operating system to verify the publisher’s identity and detect tampering.&nbsp; &nbsp;
 
 &nbsp;
 
-On MacOS, installers for both Intel and Apple Silicon architectures are notarized weekly by Apple, ensuring that Gatekeeper validates the integrity of the application bundle before execution. Any modification to notarized files results in the operating system refusing to launch the application. &nbsp;
+On MacOS, installers for both Intel and Apple Silicon architectures are [notarized weekly by Apple](<https://developer.apple.com/documentation/security/notarizing-macos-software-before-distribution> "target=\"\_blank\""), ensuring that Gatekeeper validates the integrity of the application bundle before execution. Any modification to notarized files results in the operating system refusing to launch the application. &nbsp;
 
 &nbsp;
 

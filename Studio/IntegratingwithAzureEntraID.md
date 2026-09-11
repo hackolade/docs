@@ -23,7 +23,7 @@ Give a name to your app and as a redirect URI select Single-page application (SP
 
 &nbsp;
 
-![Image](<lib/NewItem 10.png>)
+![Hub auth Entra ID register app](<lib/Hub auth Entra ID register app.png>)
 
 &nbsp;
 
@@ -41,11 +41,11 @@ When creating the application, we configured the redirect URI to access the Mode
 * In the Overview page, click on Redirect URIs. At this point, you should see it as *0 web, 1 spa, 0 public client*
 * Click on the Edit button on the line of Single-page application\
 \
-![Image](<lib/NewItem 11.png>)\
+![Hub auth Entra ID config URL 1](<lib/Hub auth Entra ID config URL 1.png>)\
 &nbsp;
 * Add the admin URI, which is the same as the current URL with an */admin* suffix (e.g https://hck.example.com/admin). Then click on Configure\
 \
-![Image](<lib/NewItem 12.png>)
+![Hub auth Entra ID config URL 2](<lib/Hub auth Entra ID config URL 2.png>)
 
 &nbsp;
 
@@ -81,7 +81,7 @@ In order to give users access to the Model Hub portal and its admin interface, y
 
 &nbsp;
 
-![Image](<lib/NewItem 13.png>)
+![Hub auth Entra ID create app role](<lib/Hub auth Entra ID create app role.png>)
 
 &nbsp;
 
@@ -101,7 +101,7 @@ In order to have the v2 access tokens:
 
 &nbsp;
 
-![Image](<lib/NewItem 17.png>)
+![Hub auth Entra ID enable access token](<lib/Hub auth Entra ID enable access token.png>)
 
 &nbsp;
 

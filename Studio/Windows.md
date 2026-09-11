@@ -56,9 +56,17 @@ In Microsoft Edge: hover over the download entry, open the … (More actions)
 
 &nbsp;
 
-At installation: in the “Windows protected your PC” dialog, select More info, verify that the publisher shown is IntegrIT NV, then select Run anyway.
+You may also get this dialog where you should click "Report this app as safe"
 
-![Image](<lib/Windows SmartScreen Run anyway.png>)
+![Image](<lib/Windows SmartScreen Report app as safe.png>)
+
+&nbsp;
+
+Or in the “Windows protected your PC” dialog, select More info, verify that the publisher shown is IntegrIT NV, then select Run anyway.
+
+&nbsp;
+
+![Windows SmartScreen Run it anyway](<lib/Windows SmartScreen Run it anyway.png>)
 
 &nbsp;
 

@@ -121,7 +121,7 @@ Typically in logical models, you would have normalized entities, and you may den
 
 ### Supertypes and subtypes
 
-Also known as superclasses and subclasses.&nbsp; Hackolade Studio will let you create supertypes and subtypes in a Polyglot model, following either the traditional method:
+Also known as superclasses and subclasses.&nbsp; Hackolade Studio will let you create supertypes and subtypes in a Polyglot model, following either the traditional method, further described in [this inheritance strategies section](<Inheritancestrategies.md>):
 
 ![Polyglot - normalized complex and sub-types](<lib/Polyglot - normalized complex and sub-types.png>)
 

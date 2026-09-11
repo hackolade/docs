@@ -29,6 +29,10 @@ For example we recently enabled reverse-engineering with the browser from a Data
 
 &nbsp;
 
+More generally, all operation that exchange with external systems where CORS security and/or multiple file handling are involved, are hard to handle in the browser.&nbsp; This includes publishing to governance platforms such as Collibra or DataHub.&nbsp; Or the generation of the documentation in HTML, Markdown, or PDF.&nbsp; Or the API model generation.&nbsp; All these operations are better handled via the CLI or the Desktop deployment.
+
+&nbsp;
+
 Also, we currently cannot execute, in the browser, some features of the desktop: bundle changes to multiple data models in a single commit (same limitation as github.com versus GitHub Desktop for WIndows), or handle the Git workflow such as submit for review, review change/pull requests, all of which having workarounds using the web pages of the Git provider.
 
 &nbsp;
