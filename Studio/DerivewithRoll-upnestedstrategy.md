@@ -15,7 +15,7 @@ In the example, we work with the group built earlier: we keep the Legal nature g
 
 &nbsp;
 
-![Image](<lib/NewItem 90.png>)
+![Inheritance roll-up nested Party Polyglot model](<lib/Inheritance roll-up nestedParty Polyglotmodel.png>)
 
 &nbsp;
 
@@ -23,7 +23,7 @@ In the Properties Pane of the supertype group of the Polyglot data model, assumi
 
 &nbsp;
 
-![Image](<lib/NewItem 91.png>)
+![Inheritance roll-up nested Party group props](<lib/Inheritance roll-up nested Party group props.png>)
 
 &nbsp;
 
@@ -35,7 +35,7 @@ In the physical data model, the derive operation results in a single collection,
 
 &nbsp;
 
-![Image](<lib/NewItem 92.png>)
+![Inheritance roll-up nested Party single table](<lib/Inheritance roll-up nested Party single table.png>)
 
 &nbsp;
 
@@ -81,7 +81,7 @@ Consider this example: an organization owns trucks.
 
 &nbsp;
 
-![Image](<lib/NewItem 10.png>)
+![Inheritance roll-up nested FK relationships](<lib/Inheritance roll-up nestedFK relationships.png>)
 
 &nbsp;
 
@@ -89,7 +89,7 @@ In this scenario, we establish the relationship between the Organization sub-obj
 
 &nbsp;
 
-![Image](<lib/NewItem 11.png>)
+![Inheritance roll-up nested derived relationships](<lib/Inheritance roll-upnestedderivedrelationships.png>)
 
 &nbsp;
 
@@ -102,7 +102,7 @@ The derive dialog provides the option to Normalize complex data types in separat
 
 &nbsp;
 
-![Image](<lib/NewItem 12.png>)
+![Inheritance roll-up nested derive options](<lib/Inheritance roll-up nested derive options.png>)
 
 &nbsp;
 
@@ -121,7 +121,7 @@ The second step knows nothing about supertypes and subtypes.&nbsp; It extracts e
 
 &nbsp;
 
-![Image](<lib/NewItem 13.png>)
+![Inheritance roll-up nested derive normalized](<lib/Inheritance roll-up nested derive normalized.png>)
 
 &nbsp;
 

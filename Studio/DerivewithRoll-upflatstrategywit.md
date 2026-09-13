@@ -33,7 +33,7 @@ In the example, we work with the group built earlier: we keep the Legal nature g
 
 &nbsp;
 
-![Image](<lib/NewItem 83.png>)
+![Inheritance roll-up flat Party Polyglot model](<lib/Inheritance roll-up flat Party Polyglot model.png>)
 
 &nbsp;
 
@@ -71,7 +71,7 @@ The subtype group Legal nature is disjoint.&nbsp; Enter the name nature as a Dis
 
 &nbsp;
 
-![Image](<lib/NewItem 84.png>)
+![Inheritance roll-up flat Party group props](<lib/Inheritance roll-up flat Party group props.png>)
 
 &nbsp;
 
@@ -83,7 +83,7 @@ In the physical data model, the derive operation results in a single table, Part
 
 &nbsp;
 
-![Image](<lib/NewItem 85.png>)
+![Image](<lib/Inheritance roll-up flat Party single table.png>)
 
 &nbsp;
 
@@ -127,7 +127,7 @@ Consider this example: an organization owns trucks.
 
 &nbsp;
 
-![Image](<lib/NewItem 86.png>)
+![Inheritance roll-up flat FK relationships](<lib/Inheritance roll-up flat FK relationships.png>)
 
 &nbsp;
 
@@ -135,7 +135,7 @@ With the roll-up, the foreign key relationship would no longer connect the Truck
 
 &nbsp;
 
-![Image](<lib/NewItem 87.png>)
+![Inheritance roll-up flat derived FK relationships](<lib/Inheritance roll-up flat derivedrelationships.png>)
 
 &nbsp;
 
@@ -150,7 +150,7 @@ Take another supertype group example: the Party entity again, but along its othe
 
 &nbsp;
 
-![Image](<lib/NewItem 88.png>)
+![Inheritance roll-up flat Polyglot exclusive](<lib/Inheritance roll-up flat Polyglot exclusive.png>)
 
 &nbsp;
 
@@ -162,7 +162,7 @@ You may choose the Merge option for this group to be Flat with discriminator, an
 
 &nbsp;
 
-![Image](<lib/NewItem 89.png>)
+![Inheritance roll-up flat Party exclusivity](<lib/Inheritance roll-up flat Party exclusivity.png>)
 
 &nbsp;
 

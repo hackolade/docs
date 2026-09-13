@@ -8,7 +8,7 @@ The Materialization section of the group, in the Polyglot model, is where you te
 
 &nbsp;
 
-![Image](<lib/NewItem 70.png>)
+![Inheritance materialization strategy](<lib/Inheritance materialization strategy.png>)
 
 &nbsp;
 
@@ -18,7 +18,7 @@ Select a supertype group and open its Materialization section. The Strategy prop
 
 &nbsp;
 
-![Image](<lib/NewItem 71.png>)
+![Inheritance materialization strategies list](<lib/Inheritance materialization strategies list.png>)
 
 &nbsp;
 

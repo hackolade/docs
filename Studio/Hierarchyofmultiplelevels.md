@@ -8,7 +8,7 @@ Let's illustrate with an example. A Person is a Party, and a Person can also be 
 
 &nbsp;
 
-![Image](<lib/NewItem 96.png>)
+![Inheritance multi-level Party Polyglot model](<lib/Inheritance multi-level Party Polyglot model.png>)
 
 &nbsp;
 
@@ -18,7 +18,7 @@ The Person entity is a subtype in the first group and the supertype in the secon
 
 &nbsp;
 
-![Image](<lib/NewItem 97.png>)
+![Inheritance multi-level Party Polyglot props](<lib/Inheritance multi-level Party Polyglot props.png>)
 
 &nbsp;
 
@@ -36,15 +36,15 @@ Each group is derived with its own strategy, level by level. If you set both gro
 
 &nbsp;
 
-![Image](<lib/NewItem 98.png>)
+![Inheritance multi-level derived hierarchy](<lib/Inheritance multi-level derived hierarchy.png>)
 
 &nbsp;
 
-THere is no obligation for cascading groups to be set to identical strategies.&nbsp; Keep the group Legal nature set to a Preserved hierarchy strategy, and set the Person entity role to Roll-up for example, and you get a Person table containing the employee and contractor columns, still linked to the Party table by a foreign key:
+There is no obligation for cascading groups to be set to identical strategies.&nbsp; Keep the group Legal nature set to a Preserved hierarchy strategy, and set the Person entity role to Roll-up for example, and you get a Person table containing the employee and contractor columns, still linked to the Party table by a foreign key:
 
 &nbsp;
 
-![Image](<lib/NewItem 99.png>)
+![Inheritance multi-level derived partial roll-up](<lib/Inheritance multi-level derived part roll-up.png>)
 
 &nbsp;
 
@@ -55,7 +55,7 @@ The rules described with each strategy properties apply to its own level.&nbsp; 
 **Note:** in our example, completeness for the Person role is partial.&nbsp; So the Person table is kept for those instances for when a Person that can be neither an Employee nor a Contractor.&nbsp; You can find more info on the page dedicated to the [roll-down strategy](<DerivewithRoll-downstrategy.md>).\
 &nbsp;
 
-![Image](<lib/NewItem 100.png>)
+![Inheritance multi-level derived partial roll-down](<lib/Inheritance multi-level derived partroll-down.png>)
 
 &nbsp;
 

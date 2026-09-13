@@ -8,7 +8,7 @@ A Party has a legal nature, a Person or an Organization, and it can also have a 
 
 &nbsp;
 
-![Image](<lib/NewItem 101.png>)
+![Inheritance multi-groups Party Polyglot model](<lib/Inheritance multi-groups Party Polyglot model.png>)
 
 &nbsp;
 
@@ -26,7 +26,7 @@ With both groups on Preserved hierarchy, the Party table ends up with four child
 
 &nbsp;
 
-![Image](<lib/NewItem 102.png>)
+![Inheritance multi-groups derive result](<lib/Inheritance multi-groups derive result.png>)
 
 &nbsp;
 
@@ -48,7 +48,7 @@ The merge option set to Nested is particular case. &nbsp; Each group produces it
 
 &nbsp;
 
-![Image](<lib/NewItem 103.png>)
+![Inheritance multi-groups derive roll-up nested](<lib/Inheritance multi-groups derive roll-up neste.png>)
 
 &nbsp;
 
@@ -62,7 +62,7 @@ It is not required for the two axes to be identical, whether in terms of strateg
 
 &nbsp;
 
-![Image](<lib/NewItem 104.png>)
+![Inheritance multi-groups mixed strategies](<lib/Inheritance multi-groups mixed strategies.png>)
 
 &nbsp;
 

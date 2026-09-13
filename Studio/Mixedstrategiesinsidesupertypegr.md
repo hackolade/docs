@@ -14,7 +14,7 @@ Every subtype of a group contains its own Strategy property, set by default to I
 
 &nbsp;
 
-![Image](<lib/NewItem 17.png>)
+![Inheritance mixed strategies in supertype group](<lib/Inheritance mixed strategies in supertype grp.png>)
 
 &nbsp;
 
@@ -28,7 +28,7 @@ Take the Vehicle supertype group.&nbsp; The entity Vehicle is the supertype, wit
 
 &nbsp;
 
-![Image](<lib/NewItem 93.png>)
+![Inheritance mixed strategies Polyglot model](<lib/Inheritance mixed strats Polyglot model.png>)
 
 &nbsp;
 
@@ -42,7 +42,7 @@ So the group default is set to a Preserved hierarchy strategy, while the Truck e
 
 &nbsp;
 
-![Image](<lib/NewItem 94.png>)
+![Inheritance mixed strategies Polyglot props](<lib/Inheritance mixed strats Polyglot props.png>)
 
 &nbsp;
 
@@ -62,7 +62,7 @@ The Truck table behaves as described on the Roll-down strategy page:&nbsp; it co
 
 &nbsp;
 
-![Image](<lib/NewItem 95.png>)
+![Inheritance mixed strategies derive result](<lib/Inheritance mixed strats derive result.png>)
 
 &nbsp;
 

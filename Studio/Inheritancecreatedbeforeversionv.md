@@ -1,22 +1,24 @@
 # Inheritance created before version v8.13.0
 
-Inheritance is not new in Hackolade Studio.&nbsp; Before version v8.13.0, inheritance was modeled as a superclass: a named object holding a parent entity and its child entities, declared in the Relationships tab of the Properties Pane of the model.
+Inheritance is not new in Hackolade Studio.&nbsp; Before version v8.13.0, inheritance was modeled using a superclass.&nbsp; Starting with version v8.13.0, the superclass has evolved into a **supertype group**, with its own properties tab and additional properties that were not previously available.&nbsp; These include a description, **Completeness** (total or partial), **Exclusivity** (disjoint or overlapping), and a **materialization strategy** (preserved hierarchy, roll-up flat, or roll-up disjoint).&nbsp; A supertype can now also participate in several supertype groups, with each group representing a different axis of specialization.
 
 &nbsp;
 
-![Image](<lib/NewItem 105.png>)
+Prior to version v8.13.0, inheritance superclass was a named object made of a parent entity and its child entities, declared in the Relationships tab of the Properties Pane of the model.
 
 &nbsp;
 
-Properties also showed on the entities themselves, through the Parent entity and Child entity properties of their Details tab:
+![Inheritance old superclass parent-child](<lib/Inheritance old superclass parent-child.png>)
 
 &nbsp;
 
-![Image](<lib/NewItem 106.png>)
+Properties showed up in the Pane at the entity level, through the Parent entity and Child entity properties of their Details tab:
 
 &nbsp;
 
-Version v8.13.0 did not replace that object, it extended it.&nbsp; A superclass has become a supertype group, with a tab of its own, and with more properties than a superclass had previously: a description, Completeness, Exclusivity, and a materialization strategy.&nbsp; A supertype can also take part in several groups now, one per axis of specialization.&nbsp; The vocabulary evolved as well: the parent entity is now the supertype, and the child entities are now the subtypes.
+![Inheritance old superclass parent-child props](<lib/Inheritance old superclass parent-child props.png>)
+
+&nbsp;
 
 &nbsp;
 
@@ -34,7 +36,7 @@ Open it in version v8.13.0 and select the group in the Supertype groups tab:
 
 &nbsp;
 
-![Image](<lib/NewItem 107.png>)
+![Inheritance old superclass migration](<lib/Inheritance old superclass migration.png>)
 
 &nbsp;
 
@@ -46,7 +48,7 @@ The Materialization section is new as well, and its Strategy property is set to 
 
 &nbsp;
 
-![Image](<lib/NewItem 108.png>)
+![Inheritance superclass legacy materialization](<lib/Inheritance superclass legacy materialization.png>)
 
 &nbsp;
 
@@ -72,7 +74,7 @@ Select the group, open Materialization, and set the Strategy to a value that sho
 
 &nbsp;
 
-![Image](<lib/NewItem 109.png>)
+![Inheritance superclass materialization choices](<lib/Inheritance superclass materialization choice.png>)
 
 &nbsp;
 

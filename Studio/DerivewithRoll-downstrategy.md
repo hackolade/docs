@@ -16,7 +16,7 @@ In the example, we work with the group built earlier: the Party entity as the su
 
 &nbsp;
 
-![Image](<lib/NewItem 37.png>)
+![Inheritance roll-down Party Polyglot model](<lib/Inheritance roll-down Party Polyglot model.png>)
 
 &nbsp;
 
@@ -24,7 +24,7 @@ In the Properties Pane of the supertype group of the Polyglot data model, assumi
 
 &nbsp;
 
-![Image](<lib/NewItem 75.png>)
+![Inheritance roll-down Party group props](<lib/Inheritance roll-down Party group props.png>)
 
 &nbsp;
 
@@ -38,7 +38,7 @@ In the physical data model, the derive operation results in 2 tables, Person and
 
 &nbsp;
 
-![Image](<lib/NewItem 76.png>)
+![Inheritance roll-down Party derive result](<lib/Inheritance roll-down Party derive result.png>)
 
 &nbsp;
 
@@ -71,7 +71,7 @@ Consider this example: parties have addresses.&nbsp; An Address entity contains 
 
 &nbsp;
 
-![Image](<lib/NewItem 77.png>)
+![Inheritance roll-down FK relationships](<lib/Inheritance roll-down FK relationships.png>)
 
 &nbsp;
 
@@ -79,7 +79,7 @@ Because the Party entity disappears in the derived model, the foreign key relati
 
 &nbsp;
 
-![Image](<lib/NewItem 78.png>)
+![Inheritance roll-down derived FK relationships](<lib/Inheritance roll-down derived FKrelationships.png>)
 
 &nbsp;
 
@@ -109,7 +109,7 @@ Take another supertype group example: the Vehicle entity, with Car, Truck and Mo
 
 &nbsp;
 
-![Image](<lib/NewItem 79.png>)
+![Image](<lib/Inheritance roll-down Polyglot completeness.png>)
 
 &nbsp;
 
@@ -119,7 +119,7 @@ In this example the group is declared partial, because the fleet also contains t
 
 &nbsp;
 
-![Image](<lib/NewItem 80.png>)
+![Inheritance roll-down Polyglot props](<lib/Inheritance roll-down Polyglot props.png>)
 
 &nbsp;
 
@@ -129,7 +129,7 @@ When this model gets derived with the roll-down strategy, the Vehicle table rema
 
 &nbsp;
 
-![Image](<lib/NewItem 81.png>)
+![Inheritance roll-down completeness derived](<lib/Inheritance roll-down completeness derived.png>)
 
 &nbsp;
 
@@ -151,7 +151,7 @@ With the materialization strategy "Preserved hierarchy", a car would occupy two 
 
 &nbsp;
 
-![Image](<lib/NewItem 82.png>)
+![Inheritance roll-down vs preserved hierarchy](<lib/Inheritance roll-down vs preserved hierarchy.png>)
 
 &nbsp;
 

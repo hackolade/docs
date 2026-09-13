@@ -16,7 +16,7 @@ In the example, we work with the group built earlier: the Party entity as the su
 
 &nbsp;
 
-![Image](<lib/NewItem 24.png>)
+![Inheritance Polyglot Party model to be derived](<lib/Inheritance Polyglot Party model to derive.png>)
 
 &nbsp;
 
@@ -24,7 +24,7 @@ In the Properties Pane of the supertype group of the Polyglot data model, assumi
 
 &nbsp;
 
-![Image](<lib/NewItem 25.png>)
+![Inheritance Polyglot Party supertype group](<lib/Inheritance Polyglot Party supertype group.png>)
 
 &nbsp;
 
@@ -38,7 +38,7 @@ In the physical data model, the derive operation results in 3 tables, one per en
 
 &nbsp;
 
-![Image](<lib/NewItem 27.png>)
+![Inheritance Polyglot Party derive result](<lib/Inheritance Polyglot Party derive result.png>)
 
 &nbsp;
 
@@ -64,7 +64,7 @@ These two FK relationships did not exist in your source Polyglot model; the deri
 
 &nbsp;
 
-![Image](<lib/NewItem 29.png>)
+![Inheritance relationship naming parameters](<lib/Inheritance relationship naming parameters.png>)
 
 &nbsp;
 

@@ -8,7 +8,7 @@ When you derive from a Polyglot model with supertype groups, Hackolade Studio di
 
 &nbsp;
 
-![Image](<lib/NewItem 74.png>)
+![Inheritance Polyglot derive dialog hint](<lib/Inheritance Polyglot derive dialog hint.png>)
 
 &nbsp;
 
@@ -22,7 +22,7 @@ Let's take the Vehicle supertype group, with Vehicle as its supertype and Car, T
 
 &nbsp;
 
-![Image](<lib/NewItem 73.png>)
+![Inheritance Polyglot model to be derived](<lib/Inheritance Polyglot model to be derived.png>)
 
 &nbsp;
 
@@ -38,7 +38,7 @@ It is only if you want to choose a subset of the Polyglot model that you should 
 
 &nbsp;
 
-![Image](<lib/NewItem 72.png>)
+![Inheritance Polyglot derive selection dialog](<lib/Inheritance Polyglot derive selection dialog.png>)
 
 &nbsp;
 
@@ -52,7 +52,7 @@ Undesired subtypes in the derived model can be unselected via Ctrl/Cmd + click:
 
 &nbsp;
 
-![Image](<lib/NewItem 4.png>)
+![Inheritance Polyglot derive multi-select](<lib/Inheritance Polyglot derive multi-select.png>)
 
 &nbsp;
 
@@ -60,7 +60,7 @@ The resulting derived model will only contain tables for Vehicle, Motorcycle, an
 
 &nbsp;
 
-![Image](<lib/NewItem 22.png>)
+![Inheritance Polyglot derive result](<lib/Inheritance Polyglot derive result.png>)
 
 \
 **Note:** all subtypes, even if not selected for the derive operation, remain visible in the Object Browser tree.&nbsp; The OB tree lists what was defined in the Polyglot model, i.e. not the selection during the derive operation.\

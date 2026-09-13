@@ -113,7 +113,7 @@ In our example there are two groups:
 
 &nbsp;
 
-![Image](<lib/NewItem 110.png>)
+![Inheritance supertype group properties](<lib/Inheritance supertype group props.png>)
 
 &nbsp;
 
@@ -150,7 +150,7 @@ See more details in the article [Model a supertype group in Polyglot](<Modelasup
 
 &nbsp;
 
-![Image](<lib/NewItem 111.png>)
+![Inheritance supertype add group](<lib/Inheritance supertype add group.png>)
 
 &nbsp;
 
@@ -172,7 +172,7 @@ The strategy is set on the supertype group itself, in the Materialization sectio
 
 &nbsp;
 
-![Image](<lib/NewItem 112.png>)
+![Inheritance supertype materialization strategy](<lib/Inheritance supertype materialization strat.png>)
 
 &nbsp;
 
@@ -188,7 +188,7 @@ The strategy set for a supertype group is applied to all of its subtypes, but ea
 
 &nbsp;
 
-![Image](<lib/NewItem 113.png>)
+![Inheritance supertype materialization mixed strategies](<lib/Inheritance supertype materialization mixed s.png>)
 
 &nbsp;
 
@@ -214,7 +214,7 @@ This is the default strategy for relational targets.&nbsp; It preserves normaliz
 
 &nbsp;
 
-![Image](<lib/NewItem 114.png>)
+![Inheritance preserved hierarchy strategy](<lib/Inheritance preserved hierarchy strategy.png>)
 
 &nbsp;
 
@@ -231,17 +231,80 @@ See more info in the article [Derive with Preserved hierarchy](<DerivewithPreser
 
 ### Roll-up, flat with a discriminator
 
+After the derive operation from a Polyglot model, all subtypes are merged into the supertype, with all columns flattened into a single table, using a discriminator column to identify the subtype. &nbsp; In our example, one Vehicle table contains the axles number, the doors number and the engine displacement side by side, and a column defines which kind of vehicle describes each row. &nbsp; This approach reduces the need for joins, but may introduce sparse or nullable columns.
+
 &nbsp;
+
+![Inheritance roll-up flat strategy](<lib/Inheritance roll-up flat strategy.png>)
+
+&nbsp;
+
+It is selected with Materialization strategy set to Roll-up, with the Merge option set to Flat with discriminator:
+
+* on a disjoint group, a Discriminator name property appears, and the column is generated only when you name it
+* on an overlapping group, one boolean column per subtype is generated instead, named is\_\<subtype name\>
+
+&nbsp;
+
+See more details in the article [Derive with Roll-up flat strategy with discriminator](<DerivewithRoll-upflatstrategywit.md>).
 
 &nbsp;
 
 ### Roll-up, nested (default for NoSQL document databases)
 
+After the derive operation from a Polyglot model, subtypes are embedded as sub-objects within the supertype collection as nested structures.
+
 &nbsp;
+
+The supertype is stored as a single collection, and subtype-specific attributes are represented using a oneOf structure that captures the different subtype variations.&nbsp;
+
+&nbsp;
+
+Here, one Vehicle document contains the common fields, plus one sub object for Truck, Car or Motorcycle.&nbsp; The characteristics of the group define the type and properties of JSON Schema choice:
+
+* exclusivity defines the type of choice: a disjoint group gives a oneOf, an overlapping one gives an anyOf
+* completeness defines whether the subtype objects are required or optional
+
+&nbsp;
+
+![Inheritance roll-up nested strategy](<lib/Inheritance roll-up nested strategy.png>)
+
+&nbsp;
+
+This strategy is selected with Materialization strategy set to Roll-up and Merge option set to Nested.&nbsp; This is the strategy applied for all the non-relational targets by default when the strategy is left empty.
+
+&nbsp;
+
+On a relational target, the Polyglot derive dialog proposes an option to Normalize Complex Data Type in Separate Entities, checked by default.&nbsp; A nested subtype is a complex data type.&nbsp; Leaving the box checked therefore disables the nesting, resulting in each subtype being extracted into an normalized entity of its own.&nbsp; This result may look like the result of using the Preserved hierarchy strategy.&nbsp; But it is not exactly the same, as cardinality generated gets extracted from the complex property rather than from the Preserved hierarchy strategy.&nbsp; Uncheck that option if you want the subtypes to remain nested.
+
+&nbsp;
+
+See more details in the article [Derive with Roll-up nested strategy](<DerivewithRoll-upnestedstrategy.md>).
 
 &nbsp;
 
 ### Roll-down
+
+After the derive operation from a Polyglot model, each subtype becomes a standalone table containing:
+
+* its own columns
+* inherited columns from the supertype
+
+&nbsp;
+
+With the Vehicle type group rolled-down, a truck becomes one row in the Truck table, with the registration number, the brand, the model, and the purchase date with their own columns.&nbsp; There is no join to write, but the common columns are repeated in the Truck, Car, and Motorcycle tables.
+
+&nbsp;
+
+![Inheritance roll-down strategy](<lib/Inheritance roll-down strategy.png>)
+
+&nbsp;
+
+The supertype is removed from the physical model when the group has the Completeness set to total.&nbsp; The supertype is maintained when the group has the Completeness set to partial, because the instances belonging to no subtype still need a table.&nbsp; That table would then contain only those exception instances.&nbsp;
+
+&nbsp;
+
+See more details in the article [Derive with Roll-down strategy](<DerivewithRoll-downstrategy.md>).
 
 &nbsp;
 
@@ -249,10 +312,27 @@ See more info in the article [Derive with Preserved hierarchy](<DerivewithPreser
 
 ## Exclude part of a hierarchy during derive operation
 
+Some derivation scenarios may exclude parts of the hierarchy.&nbsp; A physical model tracking company cars assigned to employees has no use for the Truck, Electric Car, and Combustion Car tables. &nbsp; This is not a strategy: the selection is performed in the derivation dialog, under the section *Polyglot objects to derive*, where the tree lists the entities of the model with the subtypes shown under their supertype. &nbsp; Unselect with ctrl+click the entities that you do not need/&nbsp; Only only the selected elements are derived in the target model. &nbsp; An entity marked with the property *Polyglot only* never gets derived.
+
 &nbsp;
+
+![Inheritance roll-up flat strategy](<lib/Inheritance exclude part of hierarchy.png>)
+
+&nbsp;
+
+See more details in the article [One supertype with multiple groups](<Onesupertypewithmultiplegroups.md>).
 
 &nbsp;
 
 ## Models created before version v8.13.0
 
-## 
+Before version 8.13.0, inheritance was modeled as a superclass, declared in the Relationships tab of the Properties Pane of the model, with Parent entity and Child entity properties on the entities themselves.&nbsp; Version v8.13.0 did not replace that object.&nbsp; It extended it: a superclass is now read as a supertype group, and there is nothing to redo in your models.
+
+&nbsp;
+
+When opened with v8.13.0 or after,&nbsp; the superclass group has empty properties Completeness and Exclusivity, and the Strategy is set to Legacy.&nbsp; The Legacy strategy indicates that the derivation should behave like in earlier versions, so the physical models you already have keep their shape. &nbsp;
+
+&nbsp;
+
+See more details in the article [Inheritance created before version v8.13.0](<Inheritancecreatedbeforeversionv.md>)
+

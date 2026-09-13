@@ -12,7 +12,7 @@ Let's build a deliberately small example: a Party, which is either a Person or a
 
 &nbsp;
 
-![Image](<lib/NewItem 43.png>)
+![Inheritance party supertype group](<lib/Inheritance party supertype group.png>)
 
 &nbsp;
 
@@ -26,7 +26,7 @@ There are 3 steps: create the entity that carries the common part (the supertype
 
 &nbsp;
 
-![Image](<lib/NewItem 44.png>)
+![Inheritance supertype party entity](<lib/Inheritance supertype party entity.png>)
 
 &nbsp;
 
@@ -34,7 +34,7 @@ There are 3 steps: create the entity that carries the common part (the supertype
 
 &nbsp;
 
-![Image](<lib/NewItem 45.png>)
+![Inheritance add supertype group](<lib/Inheritance add supertype group.png>)
 
 &nbsp;
 
@@ -42,7 +42,7 @@ A form appears so you can fill in the details:
 
 &nbsp;
 
-![Image](<lib/NewItem 46.png>)
+![Inheritance supertype group properties](<lib/Inheritance supertype group properties.png>)
 
 &nbsp;
 
@@ -58,7 +58,7 @@ You may fill the form from top to bottom:
 
 &nbsp;
 
-![Image](<lib/NewItem 47.png>)
+![Inheritance supertype legal nature props](<lib/Inheritance supertype legal nature props.png>)
 
 &nbsp;
 
@@ -80,7 +80,7 @@ The Materialization section is the remaining one, and you can leave it closed fo
 
 &nbsp;
 
-![Image](<lib/NewItem 49.png>)
+![Inheritance supertype add subtypes](<lib/Inheritance supertype add subtypes.png>)
 
 &nbsp;
 
@@ -88,7 +88,7 @@ The Materialization section is the remaining one, and you can leave it closed fo
 
 &nbsp;
 
-![Image](<lib/NewItem 48.png>)
+![Inheritance supertype link subtypes](<lib/Inheritance supertype link subtypes.png>)
 
 &nbsp;
 
@@ -98,7 +98,7 @@ In our example, Person and Organization do not exist yet, so we create them with
 
 &nbsp;
 
-![Image](<lib/NewItem 50.png>)
+![Inheritance Legal nature with subtypes props](<lib/Inheritance Legal nature with subtypes props.png>)
 
 &nbsp;
 
@@ -106,7 +106,7 @@ And on the ERD, the group appears between Party and its two subtypes:
 
 &nbsp;
 
-![Image](<lib/NewItem 51.png>)
+![Inheritance Party subtype with supertypes](<lib/Inheritance Party subtype with supertypes.png>)
 
 &nbsp;
 
@@ -132,7 +132,7 @@ A supertype group is drawn as a half-circle, the standard ERD notation for a gen
 
 &nbsp;
 
-![Image](<lib/NewItem 52.png>)
+![Inheritance supertype group ERD representation](<lib/Inheritance supertype group ERDrepresentation.png>)
 
 &nbsp;
 
@@ -146,7 +146,7 @@ For a supertype, you see its subtypes. Select Party, and its Properties Pane car
 
 &nbsp;
 
-![Image](<lib/NewItem 53.png>)
+![Inheritance supertype group entities props](<lib/Inheritance supertype group entities props.png>)
 
 &nbsp;
 
@@ -154,7 +154,7 @@ For a subtype, you see its supertype. Select Organization, and the same property
 
 &nbsp;
 
-![Image](<lib/NewItem 54.png>)
+![Inheritance supertype group subtypes props](<lib/Inheritance supertype group subtypes props.png>)
 
 &nbsp;
 
@@ -162,7 +162,7 @@ The property specifying the related entities ends with an arrow so you can jump 
 
 &nbsp;
 
-![Image](<lib/NewItem 55.png>)
+![Inheritance supertype group link](<lib/Inheritance supertype group link.png>)
 
 &nbsp;
 
@@ -180,7 +180,7 @@ Select Person, and use the Add subtype icon on its Supertype groups property:
 
 &nbsp;
 
-![Image](<lib/NewItem 56.png>)
+![Inheritance supertype group create from existing](<lib/Inheritance supertype group create from exist.png>)
 
 &nbsp;
 
@@ -188,7 +188,7 @@ One click does it all. Hackolade Studio creates an entity named New subtype unde
 
 &nbsp;
 
-![Image](<lib/NewItem 57.png>)
+![Inheritance create sub-subtype](<lib/Inheritance create sub-subtype.png>)
 
 &nbsp;
 
@@ -196,7 +196,7 @@ Rename the subtype to Employee, then complete it with the attributes that belong
 
 &nbsp;
 
-![Image](<lib/NewItem 58.png>)
+![Inheritance create sub-subtype props](<lib/Inheritance create sub-subtype props.png>)
 
 &nbsp;
 
@@ -204,7 +204,7 @@ Go back to the Person entity and do the same again for the Contractor subtype. P
 
 &nbsp;
 
-![Image](<lib/NewItem 59.png>)
+![Image](<lib/Inheritance create sub-subtype entities.png>)
 
 &nbsp;
 
@@ -222,7 +222,7 @@ A supertype group can take as many subtypes as your model needs, and the Propert
 
 &nbsp;
 
-![Image](<lib/NewItem 60.png>)
+![Inheritance subtype from contextual menu](<lib/Inheritance subtype from contextual menu.png>)
 
 &nbsp;
 
@@ -230,7 +230,7 @@ The same command is available in the Diagram Objects panel, to the left of the E
 
 &nbsp;
 
-![Image](<lib/NewItem 61.png>)
+![Inheritance subtype from Diagram Objects pane](<lib/Inheritance subtype from Diagram Objects pane.png>)
 
 &nbsp;
 
@@ -238,7 +238,7 @@ In the toolbar:
 
 &nbsp;
 
-![Image](<lib/NewItem 62.png>)
+![Inheritance subtype from toolbar](<lib/Inheritance subtype from toolbar.png>)
 
 &nbsp;
 
@@ -248,7 +248,7 @@ And also in the Actions menu, or via the keyboard shortcut Ctrl/Cmd + ):
 
 &nbsp;
 
-![Image](<lib/NewItem 63.png>)
+![Inheritance subtype from Actions menu](<lib/Inheritance subtype from Actions menu.png>)
 
 &nbsp;
 
@@ -273,7 +273,7 @@ Generalization often comes to you after the fact, once the specific cases are al
 
 &nbsp;
 
-![Image](<lib/NewItem 64.png>)
+![Inheritance Credit card subtype](<lib/Inheritance Credit card subtype.png>)
 
 &nbsp;
 
@@ -281,7 +281,7 @@ The icon of a half circle with a + sign above in the Supertype groups properties
 
 &nbsp;
 
-![Image](<lib/NewItem 65.png>)
+![Inheritance create supertype from subtype](<lib/Inheritance create supertype from subtype.png>)
 
 &nbsp;
 
@@ -289,7 +289,7 @@ Select Credit card and click the button: a new entity is created **above**, as t
 
 &nbsp;
 
-![Image](<lib/NewItem 66.png>)
+![Inheritance create supertype entity from subtype](<lib/Inheritance create supertype entity from sub.png>)
 
 &nbsp;
 
@@ -297,7 +297,7 @@ Rename that entity to Payment method, and add the shared attributes.
 
 &nbsp;
 
-![Image](<lib/NewItem 67.png>)
+![Inheritance create supertype entity name from subtype](<lib/Inheritance create supertype entity name.png>)
 
 &nbsp;
 
@@ -315,7 +315,7 @@ Every entity has a Subtypes node in the Object Browser, with the number of subty
 
 &nbsp;
 
-![Image](<lib/NewItem 68.png>)
+![Inheritance supertype groups in Object Browser](<lib/Inheritance supertype group in Object Browser.png>)
 
 &nbsp;
 
@@ -323,7 +323,7 @@ The contextual menu of any entity node offers the same Add Subtype command, as i
 
 &nbsp;
 
-![Image](<lib/NewItem 69.png>)
+![Inheritance Object Browser contextual menu](<lib/Inheritance Object Browser contextual menu.png>)
 
 &nbsp;
 

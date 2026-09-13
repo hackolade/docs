@@ -16,7 +16,7 @@ In Hackolade Studio, we represent inheritance with a supertype group where the *
 
 &nbsp;
 
-![Image](<lib/NewItem 38.png>)
+![Inheritance supertype-subtypes](<lib/Inheritance supertype-subtypes.png>)
 
 &nbsp;
 
@@ -29,7 +29,7 @@ This page covers the concept of inheritance and introduces sub-pages that detail
 
 ## Supertype, subtype, and supertype group
 
-A supertype and its subtypes are sometimes called respectively **superclass** and **subclass**, **parent** and **child**, or **generalization** and **specialization**.&nbsp; These pairs of terms describe the same idea, mainly that one entity is the general form of another one.&nbsp; Hackolade Studio uses supertype and subtype in Polyglot data models.
+A supertype and its subtypes are also sometimes referred to as a **superclass** and **subclasses**, a **parent** and **child entities**, or a **generalization** and **specializations**.&nbsp; These different pairs of terms describe essentially the same concept: one entity represents a more general form of one or more specialized entities. Hackolade Studio uses the terms **supertype** and **subtype** in Polyglot Data Models.
 
 &nbsp;
 
@@ -43,7 +43,7 @@ A subtype can itself become the supertype of another group.&nbsp; A *Person is a
 
 &nbsp;
 
-![Image](<lib/NewItem 41.png>)
+![Inheritance multi-levels](<lib/Inheritance multi-levels.png>)
 
 &nbsp;
 
@@ -61,7 +61,7 @@ The same supertype can also be split along several axes at the same time. A Part
 
 &nbsp;
 
-![Image](<lib/NewItem 42.png>)
+![Inheritance multi-groups](<lib/Inheritance multi-groups.png>)
 
 &nbsp;
 
