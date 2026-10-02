@@ -44,9 +44,9 @@ The next pages detail each strategy with a concrete example, to showcase the eff
 
 ## Where to set the strategy
 
-The property belongs to the subtype group, in the Polyglot model. What you set there is the strategy applied to every derivation of that model, whatever the target: your default shape, in other words, for the physical models you generate from it.
+The property belongs to the subtype group, in the Polyglot model. What you set there is the strategy used when you derive, unless you pick a different fallback in the derive dialog.
 
 &nbsp;
 
-In current version, it cannot be overridden at derivation time. If a given physical model needs another shape, you change the property in the Polyglot model and derive again. A future version of Hackolade Studio will let you choose the strategy directly in the derivation, since the same Polyglot model may legitimately deserve different shapes in different physical models.
+See [Derive a Polyglot model with supertype groups](<DeriveaPolyglotmodelwithsupertyp.md>) for Fallback materialization (if not set in Polyglot) and Apply fallback to all supertype groups.
 

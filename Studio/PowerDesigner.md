@@ -28,22 +28,13 @@ Here are some examples, but there are many, many more…
 
 &nbsp;
 
-* PowerDesigner has the concept called "**stereotypes**".&nbsp; A stereotype is a semantic classification mechanism, that is used to tag modeling objects (entities, tables, attributes, columns, etc.) in order to express meaning, role, or methodology-specific intent. It does not define data types or physical properties.\
-\
-In Hackolade Studio, the same semantic classification use case can be covered by our [user-defined custom properties](<Userdefinedcustomproperties.md>)&nbsp; also described in this [how-to guide](<Configurecustomproperties.md>), and [video](<https://community.hackolade.com/slides/slide/user-defined-custom-properties-8> "target=\"\_blank\"").&nbsp;
-
-  * you can define your own custom properties.
-  * these properties can represent classifications, categories, or tags.
-  * they can be applied consistently to any modeling object.
-
-\
-This provides a flexible and explicit way to model stereotype-like semantics.
+* PowerDesigner has the concept called "**stereotypes**". A stereotype is a semantic classification mechanism, that is used to tag modeling objects (entities, tables, attributes, columns, etc.) in order to express meaning, role, or methodology-specific intent. It does not define data types or physical properties.&nbsp; Reverse-engineering copies the General Stereotype into the [custom property](<Userdefinedcustomproperties.md>) whose keyword is stereotype.&nbsp; If you want that value in the Details tab, declare the property as described in this [how-to guide](<Configurecustomproperties.md>), and [video](<https://community.hackolade.com/slides/slide/user-defined-custom-properties-8> "target=\"\_blank\"").
 
 &nbsp;
 
 * In PowerDesigner,"**shortcuts**" maintain synchronization with their target objects, so changes to the original propagate to all shortcuts. They differ from replicas, which create independent copies.&nbsp; In Hackolade Studio, we call those [references](<Reusableobjectsdefinitions.md>) to existing objects (like entities or tables) in the same model, or a different saved data model, allowing reuse without duplication.&nbsp; When migrating PowerDesigner models to Hackolade Studio, the references must be recreated according to instructions detailed in [this page](<Migrateexternalshortcuts.md>).\
 &nbsp;
-* When creating foreign key relationships in PowerDesigner, the convention is that you drag from the attribute PK in the parent entity towards the child entity.&nbsp; The attribute is automatically created in the child entity and the FK relationship is also created.&nbsp; Hackolade Studio also supports this approach, but it is not the default behavior.&nbsp; To change the default to be like PowerDesigner, simply change the parameter "FK relationships drag-n-drop behavior" in Tools \> Options \> General to become "from parent to child".\
+* When **creating foreign key relationships** in PowerDesigner, the convention is that you drag from the attribute PK in the parent entity towards the child entity.&nbsp; The attribute is automatically created in the child entity and the FK relationship is also created.&nbsp; Hackolade Studio also supports this approach, but it is not the default behavior.&nbsp; To change the default to be like PowerDesigner, simply change the parameter "FK relationships drag-n-drop behavior" in Tools \> Options \> General to become "from parent to child".\
 &nbsp;
 * PowerDesigner allows arrows in relational ERDs [pointing to the parent entity](<https://infocenter-archive.sybase.com/help/index.jsp?topic=/com.sybase.stf.powerdesigner.docs\_12.0.0/html/daug/daugp156.htm> "target=\"\_blank\"").&nbsp; Hackolade Studio uses IE (Information Engineering) notation in ER diagrams, wherer cardinality symbols are used on both sides of relationships.&nbsp; In Graph Diagrams of Hackolade Studio, the arrow represents the semantic orientation of the of relationship, typically of the verb of the relationship.&nbsp; In conceptual modeling in Hackolade Studio, the arrow represents the direction of the active verb, and assumes a parent to child direction.\
 &nbsp;
@@ -51,7 +42,7 @@ This provides a flexible and explicit way to model stereotype-like semantics.
 
 &nbsp;
 
-* PowerDesigner allows to open multiple models in the same application instance.&nbsp; The architecture of Hackolade Studio being different, we allow to start **multiple instances of the application**, each with a single model.&nbsp; This is actually quite handy, as it allows to alt-tab to toggle between different models.&nbsp; As indicated in our [Tips and Tricks](<Tipsandtricks.md>), you may start multiple instances of Hackolade Studio on the same machine session, so as to work on multiple models simultaneously.&nbsp; You may also merge 2 Hackolade models, or combine elements from another model with copy/paste from one model in one application instance, to the other model in the second application instance.&nbsp; From within the application, this is easily done with the shortcut Ctrl+Shift+I (on Mac Cmd+Shift+I) or with the menu option File \> Start New Application Instance.&nbsp; Or from the operating system, on Windows, right-click on the Hackolade icon in the toolbar then choose Hackolade...\
+* PowerDesigner allows to open **multiple models** in the same application instance.&nbsp; The architecture of Hackolade Studio being different, we allow to start **multiple instances of the application**, each with a single model.&nbsp; This is actually quite handy, as it allows to alt-tab to toggle between different models.&nbsp; As indicated in our [Tips and Tricks](<Tipsandtricks.md>), you may start multiple instances of Hackolade Studio on the same machine session, so as to work on multiple models simultaneously.&nbsp; You may also merge 2 Hackolade models, or combine elements from another model with copy/paste from one model in one application instance, to the other model in the second application instance.&nbsp; From within the application, this is easily done with the shortcut Ctrl+Shift+I (on Mac Cmd+Shift+I) or with the menu option File \> Start New Application Instance.&nbsp; Or from the operating system, on Windows, right-click on the Hackolade icon in the toolbar then choose Hackolade...\
 &nbsp;
 * The [Generate property](<https://help.sap.com/docs/SAP\_POWERDESIGNER/856348b84a7c479489d5172a630f014d/c7c99e6e6e1b1014999fba096ab22a45.html> "target=\"\_blank\"") in PowerDesigner as a toggle switch on an object's property sheet to control whether or not that specific component is included when you create a new target model or output script.&nbsp; The equivalent in Hackolade Studio is a boolean property called Activated, and is enabled by default when creating an object. When it is disabled, the object is either commented in the generated script (if the target allows it) or removed from it entirely. During migration of PowerDesigner model into Hackolade Studio, if the Generate property is unchecked in the source file, Studio reverse-engineers that object as deactivated.&nbsp;
 
@@ -84,6 +75,7 @@ Given the above, it should be expected that there is some learning curve to our 
 | Abstract data types (Physical only) | User-Defined Types |
 | Annotation | Annotation |
 | Area (Conceptual \& Logical only) | Container |
+| Check / Business rule | Check constraint A native check on a table or column, and a business rule attached to a table or column that holds a server expression, both become a check constraint. A business rule with no server expression does not get imported. |
 | Code | Technical name |
 | Column (Physical only) | Target specific name (Column, Field, Attribute...) |
 | Comment | Description in non-RDBMS target / Comment in RDBMS target |
@@ -111,6 +103,7 @@ Given the above, it should be expected that there is some learning curve to our 
 | Precision | Scale |
 | Relationship | Relationship |
 | Shortcut | Reference |
+| Stereotype | Custom property stereotype |
 | Symbol | Symbol |
 | Table (Physical only) | Target specific name (Table, Collection, Entity...) |
 | User (Physical only) | Target specific name (Database, Schema, Container...) |
@@ -263,7 +256,7 @@ Inside PowerDesigner files, the different objects are mapped to equivalent objec
 
 \- attributes (columns of fields) and their data types (with length, precision, and scale where applicable), business and technical names, comments and descriptions;&nbsp;
 
-\- constraints: required or not null, unique keys, (composite) primary keys, foreign key relationships and their cardinality;
+\- constraints: required or not null, unique keys, (composite) primary keys, foreign key relationships and their cardinality, and check constraints;
 
 \- views.
 
@@ -283,11 +276,19 @@ Some transformations occur, and extraneous information is ignored.&nbsp; We also
 
 \- Indexes, as long as there is a match between the source technology and the Hackolade Studio target model,
 
+\- check constraints, from a native table or column check, and from an attached business rule with a server expression;
+
 \- database views,
 
 \- domains and [Abstract Data Types](<https://help.sap.com/docs/SAP\_POWERDESIGNER/1f914d86319d43b7b2402532666583c0/b3e01e20f33f45699fe21f6e9fec9e21.html> "target=\"\_blank\""),
 
-\- ExtendedAttributes, mapped them to our custom properties.
+\- ExtendedAttributes, mapped them to our custom properties,
+
+\- the General Stereotype value, mapped to the custom property stereotype;
+
+&nbsp;
+
+If the target has no check property on the column, a column check is stored at the table level.&nbsp;
 
 &nbsp;
 

@@ -179,6 +179,50 @@ Once a glossary is assigned, it is visible in the Properties Pane of the model. 
 
 &nbsp;
 
+&nbsp;
+
+### Collibra as the source of glossaries of business terms
+
+When you export your glossaries of business terms from Collibra, then bind Hackolade Studio model objects to those Collibra terms, it is possible for those binding to be included when the model is published to Collibra.&nbsp; Meaning that you can search for a business term and Collibra and find all the assets using that term.&nbsp; For his, you must select the option as described below.
+
+&nbsp;
+
+When the CSV comes from a Collibra export, set **File mapping** to **Collibra**.&nbsp; Hackolade Studio then maps the usual Collibra headers in the column mappings:
+
+&nbsp;
+
+* **Asset Id** to I**dentifier**
+* **Name** to **Term**
+* **Description** or Full Description to **Definition**
+
+&nbsp;
+
+![Business terms - Collibra file mapping](<lib/Business terms - Collibra file mapping.png>)
+
+&nbsp;
+
+File mapping is only a helper to pre-fill the column mapping quickly.&nbsp; You can still map other columns yourself.&nbsp;
+
+&nbsp;
+
+**Note:** the File mapping value cannot be changed later for the current assignment.&nbsp; If the file is not a Collibra export, leave **File mapping** to **Custom** and map the identifier yourself.
+
+&nbsp;
+
+Choosing **Collibra** in the **File mapping** dropdown list only pre-fills the column mapping.&nbsp; Bindings are published only when Publish term bindings to Collibra is checked.
+
+&nbsp;
+
+![Business terms - publish term bindings to Collibra](<lib/Business terms - publish term bindingCollibra.png>)
+
+&nbsp;
+
+This checkbox works with any file mapping. The identifier of each term must be the Collibra asset ID. The terms must already exist in the Collibra instance you publish to.
+
+New assignments and glossaries assigned before this option leave the checkbox off until you turn it on. You can open an assigned glossary from the model Properties Pane and change the checkbox without unassigning the glossary.
+
+&nbsp;
+
 ## Use glossary terms in a data model
 
 After assigning glossaries, you can use glossary terms in 2 ways:

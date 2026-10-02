@@ -60,6 +60,8 @@ Hackolade Studio models published to Collibra&nbsp; store and exchange Collibra 
 
 &nbsp;
 
+&nbsp;
+
 ## Publishing process flow
 
 To publish a Hackolade data model to your Collibra Data Dictionary, you choose Tools \> Forward-Engineering \> Collibra Dictionary. &nbsp;
@@ -330,4 +332,42 @@ Custome types scope assignment is defined per connection, allowing different str
 &nbsp;
 
 Changing the scope assignment strategy does not clean, replace, or remove existing scope assignments.
+
+&nbsp;
+
+&nbsp;
+
+## Publish business terms bindings
+
+When you publish a Hackolade Studio data model to Collibra, it is possible also for to publish the bindings between model objects and business terms originating from the Collibra glossaries.&nbsp; You must follow instructions in [this page](<Glossariesofbusinessterms.md>) first, making sure to enable the option **Publish term bindings** to Collibra. &nbsp;
+
+&nbsp;
+
+Each published container, entity, attribute, view, or relationship that is bound to such a term receives the standard Collibra relation **Business Asset represents Data Asset**.&nbsp; The Business Term must already exist in that Collibra instance.&nbsp; Hackolade Studio does not create or update glossary term assets.
+
+&nbsp;
+
+If you unbind a term and publish the model again, Hackolade Studio removes that relation in Collibra so the dictionary matches the current bindings.
+
+&nbsp;
+
+A model can mix glossaries.&nbsp; Only the glossaries with the checkbox enabled take part in this publication.&nbsp; An internal vocabulary can stay assigned for modeling, without being sent to Collibra.
+
+&nbsp;
+
+After publishing to Collibra, it is possible to search for a business term in Collibra, and find all the assets in Collibra that may have been published from Hackolade Studio models.
+
+&nbsp;
+
+**Important:**&nbsp; the identifier of each published term must be a Collibra asset UUID.&nbsp; If the identifier is not a valid Collibra asset ID, then Hackolade Studio stops the publication and displays the following error:
+
+&nbsp;
+
+.![Collibra - missing business term asset](<lib/Collibra - missing business term asset.png>)
+
+&nbsp;
+
+&nbsp;
+
+The page [Glossaries of business terms](<Glossariesofbusinessterms.md>) describes how to assign the glossary file, how to bind terms to modeling objects, and how to enable the publishing of term bindings to Collibra.
 

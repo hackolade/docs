@@ -104,9 +104,23 @@ On workstations managed by an IT department, a Microsoft Edge policy (PreventSma
 
 &nbsp;
 
+### Enterprise deployment
+
+Software distributed centrally through Microsoft Intune, Configuration Manager or comparable tools do not go through the browser and are not subject to these prompts. Our installers support unattended installation with the standard switches /VERYSILENT /SUPPRESSMSGBOXES /NORESTART, and the destination folder can be imposed with /DIR="C:\\Hackolade". Administrators may also create a publisher-based allow rule on our code signing certificate, which remains valid across releases. Our support team is happy to assist your packaging team.
+
+&nbsp;
+
+### What we are doing about it
+
+We migrated our code signing to a Microsoft service ([Azure Artifact Signing](<https://learn.microsoft.com/en-us/azure/artifact-signing/overview>))&nbsp; in which signing reputation is associated with a permanent, validated organizational identity rather than with a certificate that must be periodically renewed. Once that migration is complete and reputation has been re-established, these warnings are not expected to recur at future renewals.
+
+&nbsp;
+
+If you encounter any difficulty downloading or installing, please contact [support@hackolade.com](<mailto:support@hackolade.com>) and we will assist you through it
+
 ### Verifying the download
 
-As some users might understanbly question whether the above explanations are legitimate, two independent verifications are available, and we encourage security teams to use them:
+As some users might whether the download is legitimate, two independent verifications are available, and we encourage security teams to use them:
 
 * Checksum: we publish a signed SHA-256 checksum file Hackolade-win64-setup-signed.SHASUM256.txt.asc alongside each installer. Compare it with the value returned by: 
 
@@ -141,21 +155,7 @@ if ($actual -eq $expected) { "MATCH: $actual" } else { "MISMATCH\`n expected: $e
 
 &nbsp;
 
-### Enterprise deployment
-
-Software distributed centrally through Microsoft Intune, Configuration Manager or comparable tools do not go through the browser and are not subject to these prompts. Our installers support unattended installation with the standard switches /VERYSILENT /SUPPRESSMSGBOXES /NORESTART, and the destination folder can be imposed with /DIR="C:\\Hackolade". Administrators may also create a publisher-based allow rule on our code signing certificate, which remains valid across releases. Our support team is happy to assist your packaging team.
-
 &nbsp;
-
-### What we are doing about it
-
-We migrated our code signing to a Microsoft service ([Azure Artifact Signing](<https://learn.microsoft.com/en-us/azure/artifact-signing/overview>))&nbsp; in which signing reputation is associated with a permanent, validated organizational identity rather than with a certificate that must be periodically renewed. Once that migration is complete and reputation has been re-established, these warnings are not expected to recur at future renewals.
-
-&nbsp;
-
-If you encounter any difficulty downloading or installing, please contact [support@hackolade.com](<mailto:support@hackolade.com>) and we will assist you through it
-
-.
 
 ## Standard installation
 
