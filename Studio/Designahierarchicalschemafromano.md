@@ -210,7 +210,7 @@ The main patterns are:
    - attribute-level reference: Use when the API needs:
      - to add nested objects (e.g. embedding customer and orderLines into Order),
      - to hide some attributes (e.g. omitting Product Description),
-     - to compose a new view that mixes attributes from different entities (eg. mixing Order line and Product attributes inside one single array item)
+     - to compose a new view that mixes attributes from different entities (e.g.; mixing Order line and Product attributes inside one single array item)
 4. Remember that referenced objects are immutable
    - once you reference an entity or attribute externally, you cannot change its internal structure in the OpenAPI model.
    - to customize the structure, always drop down to referencing individual attributes.

@@ -135,7 +135,7 @@ With the roll-up, the foreign key relationship would no longer connect the Truck
 &nbsp;
 
 > [!NOTE]
-> **A**ny mandatory cardinality (1 or 1..n) on the side of the "other" entity linked to the subtype is relaxed to become optional (0..1 or 0..n). The foreign key relationship connects to the supertype, which may represent a different subtype than the one that originally includes the relationship in the Polyglot model. If the cardinality is already optional (0..1 or 0..n), as in our example, no modification occurs.
+> Any mandatory cardinality (1 or 1..n) on the side of the "other" entity linked to the subtype is relaxed to become optional (0..1 or 0..n). The foreign key relationship connects to the supertype, which may represent a different subtype than the one that originally includes the relationship in the Polyglot model. If the cardinality is already optional (0..1 or 0..n), as in our example, no modification occurs.
 
 &nbsp;
 

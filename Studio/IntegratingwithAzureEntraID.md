@@ -19,7 +19,7 @@ In Azure EntraID, select Manage -> App registrations, then click on + New regist
 
 &nbsp;
 
-Give a name to your app and as a redirect URI select Single-page application (SPA) and the value is the domain name of the Model Hub portal (eg, https://hck.example.com/hub)
+Give a name to your app and as a redirect URI select Single-page application (SPA) and the value is the domain name of the Model Hub portal (e.g.; https://hck.example.com/hub)
 
 &nbsp;
 

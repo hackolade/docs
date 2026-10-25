@@ -180,7 +180,7 @@ When you export your glossaries of business terms from Collibra, then bind Hacko
 
 When the CSV comes from a Collibra export, set **File mapping** to **Collibra**. Hackolade Studio then maps the usual Collibra headers in the column mappings:
 
-- **Asset Id** to I**dentifier**
+- **Asset Id** to **Identifier**
 - **Name** to **Term**
 - **Description** or Full Description to **Definition**
 

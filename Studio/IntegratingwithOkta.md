@@ -26,8 +26,8 @@ In the modal, select OIDC - OpenID Connect and Single-Page Application as the Ap
 Give a name to your app, then add the following options
 
 - For Grant type, make sure the Authorization Code is checked
-- As a Sign-in redirect URIs, put both the domain of the Model Hub portal and the admin portal (eg, https://hck.example.com/hub and https://hck.example.com/admin)
-- As sign-out redirect URIs put the domain name of the Model Hub portal (eg, https://hck.example.com)
+- As a Sign-in redirect URIs, put both the domain of the Model Hub portal and the admin portal (e.g.; https://hck.example.com/hub and https://hck.example.com/admin)
+- As sign-out redirect URIs put the domain name of the Model Hub portal (e.g.; https://hck.example.com)
 - Feel free to give access to the right users in the Assignments section
 
 &nbsp;

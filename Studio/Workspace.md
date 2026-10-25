@@ -4,37 +4,37 @@
 
 &nbsp;
 
-### [1. Title bar](Titlebar.md)
+## [1. Title bar](Titlebar.md)
 
 The top bar lets use control the size of the application window, or exit the application.
 
 &nbsp;
 
-### [2. Menu bar](Menubar.md)
+## [2. Menu bar](Menubar.md)
 
 The line of action words provide access to most functions. The menu items are contextually activated, and other options are dimmed if unavailable.
 
 &nbsp;
 
-### [3. Toolbar](Toolbar.md)
+## [3. Toolbar](Toolbar.md)
 
 The bar of icon button let you access the frequently used actions. The icons are contextually activated so only relevant icons can be accessed. Other icons are grayed if unavailable.
 
 &nbsp;
 
-### [4. Object browser pane](Objectbrowserpane.md)
+## [4. Object browser pane](Objectbrowserpane.md)
 
 The left-hand pane shows 2 stacked panes: the [Diagram Objects pane](Diagramobjectspane.md) to facilitate the creation of objects in the ERD pane, and the [Object Browser pane](Objectbrowserpane.md) with a dynamic tree representing the hierarchy of entities maintained in your current model. The entries in the tree are easily searchable and let you directly access their properties.
 
 &nbsp;
 
-### [5. Central pane](Centralpane.md)
+## [5. Central pane](Centralpane.md)
 
 The central pane is where you realize most of your work. Here, you visualize your data model ERD and entity hierarchical schema view.
 
 &nbsp;
 
-### [6. Properties pane](Propertiespane.md)
+## [6. Properties pane](Propertiespane.md)
 
 The right-hand pane displays the properties for any entity you select in the Object browser or central pane. This is where you maintain the characteristics and constraints of each entity.
 

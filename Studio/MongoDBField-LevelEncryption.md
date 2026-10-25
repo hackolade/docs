@@ -190,7 +190,7 @@ More advanced queries should be run on unencrypted fields.
 
 ## $jsonschema validator syntax
 
-#### [`encrypt` Schema Keyword](<https://docs.mongodb.com/manual/reference/security-client-side-automatic-json-schema/#encrypt-schema-keyword> "target=\"_blank\"")
+### [`encrypt` Schema Keyword](<https://docs.mongodb.com/manual/reference/security-client-side-automatic-json-schema/#encrypt-schema-keyword> "target=\"_blank\"")
 
 The `encrypt` object can contain **only** the following fields:
 
@@ -244,7 +244,7 @@ The `encrypt` object can contain **only** the following fields:
 
 &nbsp;
 
-#### [`encryptMetadata` Schema Keyword](<https://www.mongodb.com/docs/manual/reference/security-client-side-automatic-json-schema/#encryptmetadata-schema-keyword> "target=\"_blank\"")
+### [`encryptMetadata` Schema Keyword](<https://www.mongodb.com/docs/manual/reference/security-client-side-automatic-json-schema/#encryptmetadata-schema-keyword> "target=\"_blank\"")
 
 > [!NOTE]
 > Only at collection level (root object), and optionally for objects inside a collection

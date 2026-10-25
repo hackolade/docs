@@ -74,7 +74,7 @@ In Avro, [union types](<https://avro.apache.org/docs/++version++/specification/#
 
 &nbsp;
 
-As fields are always technically required in Avro, it is necessary to facilitate forward- and backward-compatibility by allowing fields to have a null type in addition to their natural data type. In Hackolade Studio, when you create a new field, it is created with the required property selected. If you want to make a field logically optional, it must still be present physically, but with a default which must be null. To do this in Hackolade Studio, you would set the data type to null, then de-select the required property, and make the default property = null (without quotes):\
+As fields are always technically required in Avro, it is necessary to facilitate forward- and backward-compatibility by allowing fields to have a null type in addition to their natural data type. In Hackolade Studio, when you create a new field, it is created with the required property selected. If you want to make a field logically optional, it must still be present physically, but with a default which must be null. To do this in Hackolade Studio, you would set the data type to null, then deselect the required property, and make the default property = null (without quotes):\
 ![Avro union types](<lib/Avro union types.png>)
 
 &nbsp;

@@ -146,7 +146,7 @@ In the project page, go to Settings > Webhooks > Add new webhook
 Fill in the form and provide:
 
 - **Name:** give it a meaningful name, such as the Hackolade Model Hub environment name.
-- **URL:** enter the /gateway/public/sync endpoint of your Hackolade Model Hub domain (eg: \`https://\<your company>.hackolade.com/gateway/public/sync\`)
+- **URL:** enter the /gateway/public/sync endpoint of your Hackolade Model Hub domain (e.g.: \`https://\<your company>.hackolade.com/gateway/public/sync\`)
 - **Secret token:** Use the webhook secret saved in the previous step
 - **Trigger:** select Push events -> Wildcard pattern, and enter the name of the main branch
 - **SSL verification:** keep checked Enable SSL verification

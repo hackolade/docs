@@ -76,7 +76,7 @@ In the repository connection manager, select Connect with Username and Password 
 Here is a quick summary of the connectivity issue and how to resolve it:
 
 - **The Problem:** Git failed with `Could not resolve host`. Web browsers handle corporate proxy settings automatically, but the standalone Git client installed on the machine and used by Hackolade Studio does not, causing DNS resolution to fail.
-- **The Solution:** I configured Git to route traffic through the local network proxy ([127.0.0.1:8999](http://127.0.0.1:8999)) with environment variable HTTP_PROXY et HTTPS_PROXY (as per [Git documentation](<https://git-scm.com/docs/git-config#Documentation/git-config.txt-httpproxy> "target=\"_blank\"")).
+- **The Solution:** I configured Git to route traffic through the local network proxy ([127.0.0.1:8999](http://127.0.0.1:8999)) with environment variable `HTTP_PROXY` and `HTTPS_PROXY` (as per [Git documentation](https://git-scm.com/docs/git-config#Documentation/git-config.txt-httpproxy)).
 
 &nbsp;
 

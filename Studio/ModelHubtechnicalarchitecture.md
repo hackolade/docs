@@ -45,7 +45,7 @@ The secure cloud CDN architecture takes a zero-trust approach to protect against
 
 ## Always run the latest and greatest version of Hackolade Model Hub
 
-With the browser deployment of Hackolade Model Hub delivered to you via a Docker containe, there is no effort necessary to always have access to the latest feature enhancements.
+With the browser deployment of Hackolade Model Hub delivered to you via a Docker container, there is no effort necessary to always have access to the latest feature enhancements.
 
 &nbsp;
 

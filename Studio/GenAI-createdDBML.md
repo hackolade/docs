@@ -22,7 +22,7 @@ Compared with [Mermaid ER code](<https://www.mermaidchart.com/> "target=\"_blank
 
 &nbsp;
 
-DBML works well for **tables, columns, and relational constraints, but l**ike Mermaid however, it does not define “types” with nested fields or array‑of‑objects structures the way you can in JSON‑schema or a document‑aware modeling language. DBML is not a logical‑type DSL for subobjects or arrays; it delegates that complexity to the database‑level JSON/array types and to external schemas.
+DBML works well for **tables, columns, and relational constraints,** but like with Mermaid however, it does not define “types” with nested fields or array‑of‑objects structures the way you can in JSON‑schema or a document‑aware modeling language. DBML is not a logical‑type DSL for subobjects or arrays; it delegates that complexity to the database‑level JSON/array types and to external schemas.
 
 &nbsp;
 
