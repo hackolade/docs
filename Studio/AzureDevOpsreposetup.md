@@ -205,7 +205,7 @@ Once connected to the Azure DevOps instance, you must add add the repository or 
 
 &nbsp;
 
-Click on the Start button to reach the Add repository screen, then type the name of your oraganization in Azure DevOps:
+Click on the Start button to reach the Add repository screen, then type the name of your organization in Azure DevOps:
 
 &nbsp;
 

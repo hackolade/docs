@@ -142,7 +142,7 @@ The successive steps could include:\
 
 &nbsp;
 
-As a subsequent step, the modeler may want to denormalize products information into the order detail lines by embedding product sub-documents in the child, the deleting the unnecesary fields. This time, as a products master collection is justified as its own entity, it should not be deleted.
+As a subsequent step, the modeler may want to denormalize products information into the order detail lines by embedding product sub-documents in the child, the deleting the unnecessary fields. This time, as a products master collection is justified as its own entity, it should not be deleted.
 
 &nbsp;
 

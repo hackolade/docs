@@ -76,7 +76,7 @@ The model starts as a blank canvas with three entities representing the main bus
 
 &nbsp;
 
-From this initial state, we will progressively define and refine the relationships between these entities, moving from a very conceptual representation toward a more structured and explicit model.\<br>
+From this initial state, we will progressively define and refine the relationships between these entities, moving from a very conceptual representation toward a more structured and explicit model.
 
 &nbsp;
 

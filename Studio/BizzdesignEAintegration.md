@@ -54,7 +54,7 @@ Then click the Upload file(s) button:
 
 ### Create an empty ArchiMate model
 
-In Bizzdesign Horizzon, start the Enterprise Surio Online, and make sure to enable the Expert mode in the top right hand corner of the Enterprise Sudio window.
+In Bizzdesign Horizzon, start the Enterprise Studio Online, and make sure to enable the Expert mode in the top right hand corner of the Enterprise Studio window.
 
 &nbsp;
 
@@ -66,7 +66,7 @@ The create a new package with an empty ArchiMate model by selecting File > New >
 
 &nbsp;
 
-Alternatively, if you want to import the Open Exchange file into an existing package, slect the Model Browser tab at the bottom of the Model Browser, then right-cllick the package and choose New > ArchiMate Model > 4. Empty model\
+Alternatively, if you want to import the Open Exchange file into an existing package, select the Model Browser tab at the bottom of the Model Browser, then right-click the package and choose New > ArchiMate Model > 4. Empty model\
 ![Bizzdesign create ArchiMate model in pkg](<lib/Bizzdesign create ArchiMate model in pkg.png>)
 
 &nbsp;

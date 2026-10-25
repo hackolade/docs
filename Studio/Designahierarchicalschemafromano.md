@@ -121,7 +121,7 @@ Because we are not reusing the Order entity as-is, we cannot reference the whole
 - Locate the model where the references are present.
 - You can multi-select several attributes in the Polyglot Model to create multiple external references in one operation. In our example, we select:
   - 3 Order attributes (identifier, date and status) but not the Customer identifier, because the customer will be represented as a nested object.
-  - the customer entity that we want to resuse as-is (identifier, last name, first name, email), so an entity-level reference is appropriate.
+  - the customer entity that we want to reuse as-is (identifier, last name, first name, email), so an entity-level reference is appropriate.
 
 &nbsp;
 

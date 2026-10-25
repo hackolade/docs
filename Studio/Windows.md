@@ -239,11 +239,11 @@ The installation program also supports silent mode for command-line installation
 
 &nbsp;
 
-<table>
-<colgroup><col style="width:17%"><col style="width:83%"></colgroup>
+<table style="width:100%">
+<colgroup><col style="width:23%"><col style="width:77%"></colgroup>
 <tbody>
 <tr>
-<td><strong>/SILEN</strong>T</td>
+<td><strong>/SILENT</strong></td>
 <td>Runs the installer in silent mode (The progress window is displayed)</td>
 </tr>
 <tr>

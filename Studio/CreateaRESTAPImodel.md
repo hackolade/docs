@@ -334,7 +334,7 @@ By clicking on the lower tab OpenAPI file, we can now see the end result:\
 
 &nbsp;
 
-On the left, we can see the generated JSON (or YAML) syntax for the API we just created with the application. An on-board validator verifies the compliance with the OpenAPI specification. You may select the text, and paste it in your API process or in the [Swagger editor](<https://editor.swagger.io/#/> "target=\"_blank\"") to leverage server and client code generation for example. You may also export the file via Tools > Forward-Engineering > OpenAPI file. Or you can use the [Command-Line Interface](CommandLineInterface.md) forEng command to integrate the generation of this file into a DevOps CI/CD pipeline.
+On the left, we can see the generated JSON (or YAML) syntax for the API we just created with the application. An on-board validator verifies the compliance with the OpenAPI specification. You may select the text, and paste it in your API process or in the [Swagger editor](<https://editor.swagger.io/#/> "target=\"_blank\"") to leverage server and client code generation for example. You may also export the file via Tools > Forward-Engineering > OpenAPI file. Or you can use the [Command-Line Interface](CommandLineInterface.md) forwEng command to integrate the generation of this file into a DevOps CI/CD pipeline.
 
 &nbsp;
 
@@ -350,7 +350,7 @@ There's a raging debate about code-first vs design-first when it comes to API cr
 
 &nbsp;
 
-In particular when multiple teams need to develop in parallel, it becomes indispensable to agree first on a contract for the API. Don't take our word for it: here's [an article ](<https://smartbear.com/blog/embracing-an-api-design-first-approach/> "target=\"_blank\"")by Smartbear, the original creators of Swagger.
+In particular when multiple teams need to develop in parallel, it becomes indispensable to agree first on a contract for the API. Don't take our word for it: here's [an article ](<https://smartbear.com/blog/embracing-an-api-design-first-approach/> "target=\"_blank\"")by SmartBear, the original creators of Swagger.
 
 &nbsp;
 

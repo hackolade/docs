@@ -774,7 +774,7 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/uuidjs/uuid/blob/main/LICENSE.md" target="_blank">MIT</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/mtxr/vscode-sqltools" target="_blank">Vscode-sqltools</a></td>
+<td><a href="https://github.com/mtxr/vscode-sqltools" target="_blank">VScode-sqltools</a></td>
 <td>(c) 2016-present Matheus Teixeira</td>
 <td><a href="https://github.com/mtxr/vscode-sqltools/blob/dev/LICENSE.md" target="_blank">MIT</a></td>
 </tr>

@@ -143,7 +143,7 @@ Action buttons above the Merged model pane allow you to batch check or uncheck b
 
 ## Save the merged model
 
-By clicking the Save button, the user has the possibility to save the merged model with only the selected merge proposals. This merged model can be saved as a new Hackolade data model file name (recommended if you're not using Git for versionning), or be used to write over an existing model on the file system (for example in a Git-enabled environment.) If using the latter method, beware of impacts of writing over an existing file.
+By clicking the Save button, the user has the possibility to save the merged model with only the selected merge proposals. This merged model can be saved as a new Hackolade data model file name (recommended if you're not using Git for versioning), or be used to write over an existing model on the file system (for example in a Git-enabled environment.) If using the latter method, beware of impacts of writing over an existing file.
 
 &nbsp;
 

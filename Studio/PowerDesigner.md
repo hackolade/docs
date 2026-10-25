@@ -263,7 +263,7 @@ To import a PowerDesigner logical model from the GUI application, you must first
 
 &nbsp;
 
-Then go to Tools > Reverse-Engineer > PowerDesigner, and select the PowserDesigner file you wish to import:\
+Then go to Tools > Reverse-Engineer > PowerDesigner, and select the PowerDesigner file you wish to import:\
 ![Reverse-engineer or Import PowerDesigner model](<lib/Reverse-engineer or Import PowerDesigner mode.png>)
 
 &nbsp;
@@ -307,7 +307,7 @@ To import a PowerDesigner logical model from the GUI application, you must first
 
 &nbsp;
 
-Then go to Tools > Reverse-Engineer > PowerDesigner, and select the PowserDesigner file you wish to import:\
+Then go to Tools > Reverse-Engineer > PowerDesigner, and select the PowerDesigner file you wish to import:\
 ![Reverse-engineer or Import PowerDesigner model](<lib/Reverse-engineer or Import PowerDesigner mode.png>)
 
 &nbsp;

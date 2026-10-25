@@ -356,7 +356,7 @@ When a dependency contains a key pointing to a `multipleCheckboxSelect` control 
 
 ### editorDialect
 
-(string) - optional: used in template = codeEditor, editorDialect is one of the possible temptlateOptions and allows for syntax highlighting depending on the language: sql, pgsql, markdown, javascript, yaml.
+(string) - optional: used in template = codeEditor, editorDialect is one of the possible templateOptions and allows for syntax highlighting depending on the language: sql, pgsql, markdown, javascript, yaml.
 
 &nbsp;
 
@@ -368,7 +368,7 @@ When a dependency contains a key pointing to a `multipleCheckboxSelect` control 
 
 ### excludeCurrent
 
-(*boolean*) - optionsl (default = false): in case of selectHashed list, excludes the current object from the list
+(*boolean*) - optional (default = false): in case of selectHashed list, excludes the current object from the list
 
 &nbsp;
 
@@ -474,7 +474,7 @@ When a dependency contains a key pointing to a `multipleCheckboxSelect` control 
 
 ### step
 
-(numeric) - optional (default = 1): for a numeric propeety typically defined between a nimValue and a maxValue, the step increment that the up/down arrows allow.
+(numeric) - optional (default = 1): for a numeric property typically defined between a minValue and a maxValue, the step increment that the up/down arrows allow.
 
 &nbsp;
 

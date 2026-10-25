@@ -93,7 +93,7 @@ The following example illustrates how a many-to-many relationship is handled dur
 &nbsp;
 
 At the conceptual or logical level, the **Student** and **Course** entities are linked by a many-to-many relationship: a student can attend multiple courses, and a course can include multiple students. At this stage, no associative table is required, and the relationship directly expresses the business meaning.\
-Before running thederive operation, you can decide whether associative tables should be created by selecting or clearing the corresponding option in the derive dialog. This option appears in the lower part of the derivation settings and applies to the entire derivation.\
+Before running the derive operation, you can decide whether associative tables should be created by selecting or clearing the corresponding option in the derive dialog. This option appears in the lower part of the derivation settings and applies to the entire derivation.\
 ![Many-to-Many choose to generate associative](<lib/Many-to-Many choose to generate associative.png>)\
 During derivation to a relational target, Hackolade Studio automatically generates an associative table to materialize this relationship, while preserving the cardinalities defined on the original many-to-many relationship. In this example, the associative table contains:
 

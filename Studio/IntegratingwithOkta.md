@@ -15,7 +15,7 @@ In order to perform the operations in this guide, you will need the following:
 
 ## 1. Create an app integration
 
-IIn Okta, select Applications -> Applications, then click on Create App integration
+In Okta, select Applications -> Applications, then click on Create App integration
 
 &nbsp;
 

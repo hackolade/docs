@@ -8,7 +8,7 @@ The Hackolade Model Hub is a product licensed separately from Hackolade Studio. 
 
 &nbsp;
 
-Hackolade does not host anything: not the database, not the replication agent, and not the portal application. You install the database and replication service on your own cloud account, using a Docker container that we provide on [DockerHub](<https://hub.docker.com/r/hackolade/model-hub> "target=\"_blank\""). The image contains the app server and utilisites, plus the portal application. All you need is to connect Model Hub to your own instance Oracle 26ai or PostgreSQL 17+ database, while you continue to maintain, store, and access your data models inside the network entirely controlled by you.
+Hackolade does not host anything: not the database, not the replication agent, and not the portal application. You install the database and replication service on your own cloud account, using a Docker container that we provide on [DockerHub](<https://hub.docker.com/r/hackolade/model-hub> "target=\"_blank\""). The image contains the app server and utilities, plus the portal application. All you need is to connect Model Hub to your own instance Oracle 26ai or PostgreSQL 17+ database, while you continue to maintain, store, and access your data models inside the network entirely controlled by you.
 
 &nbsp;
 

@@ -9,7 +9,7 @@ In the menu Tools > Options you can adjust many of the default parameters shippe
 &nbsp;
 
 ![Tools - Options preferences](<lib/Tools - Options preferences.png>)\
-The sections include paramters for:
+The sections include parameters for:
 
 - General
 - Display

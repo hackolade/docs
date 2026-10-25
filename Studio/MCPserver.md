@@ -124,7 +124,7 @@ After saving your edited config file, make sure that the Hackolade Model Hub is 
 
 &nbsp;
 
-Make sure to close Claude and restart it. On Windows, it often happens that closing the Claude client does not actually stop all processes. You may need to go to the Windows Tast Manager and end the Claude task.
+Make sure to close Claude and restart it. On Windows, it often happens that closing the Claude client does not actually stop all processes. You may need to go to the Windows Task Manager and end the Claude task.
 
 &nbsp;
 
@@ -175,7 +175,7 @@ Click on the button Add to VS Code:
 
 &nbsp;
 
-Clicking the button will stgart VS Code and bring you to this screen where you must click the Install button:
+Clicking the button will start VS Code and bring you to this screen where you must click the Install button:
 
 &nbsp;
 
@@ -232,7 +232,7 @@ You are now ready to have a conversation with your library of models.
 
 &nbsp;
 
-Here are some examples to inspire you. Possibilities are endles...
+Here are some examples to inspire you. Possibilities are endless...
 
 &nbsp;
 

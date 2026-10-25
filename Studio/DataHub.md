@@ -170,7 +170,7 @@ The creation of queries is necessary when we publish views, so that we connect t
 
 ## Roles, privileges, and permissions
 
-DataHub provides the ability to use Roles to manage permissions. To be allowed to publish a data model to DataHUb, you must be able to create DataHub assets. The out-of-the-box Roles represent the most common types of DataHub users. Currently, the supported Roles are Admin, Editor and Reader.
+DataHub provides the ability to use Roles to manage permissions. To be allowed to publish a data model to DataHub, you must be able to create DataHub assets. The out-of-the-box Roles represent the most common types of DataHub users. Currently, the supported Roles are Admin, Editor and Reader.
 
 &nbsp;
 

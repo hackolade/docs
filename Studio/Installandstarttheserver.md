@@ -319,7 +319,7 @@ The Model Hub listens on port *3000* and exposes a */health* endpoint. A success
 
 &nbsp;
 
-Model Hub also exposes a */ready* endpoint. It responds with an HTTP \`200\` when Model Hub is ready to receive requessts.
+Model Hub also exposes a */ready* endpoint. It responds with an HTTP \`200\` when Model Hub is ready to receive requests.
 
 &nbsp;
 

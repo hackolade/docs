@@ -16,7 +16,7 @@ To perform data modeling for TinkerPop with Hackolade, you must first download t
 
 &nbsp;
 
-The data model in the picture below results from the reverse-engineering of the [Gremlin ThaCrew](<http://tinkerpop.apache.org/docs/current/tutorials/the-gremlin-console/#toy-graphs> "target=\"_blank\"") example. Two views of the data model are available:
+The data model in the picture below results from the reverse-engineering of the [Gremlin TheCrew](<http://tinkerpop.apache.org/docs/current/tutorials/the-gremlin-console/#toy-graphs> "target=\"_blank\"") example. Two views of the data model are available:
 
 &nbsp;
 

@@ -103,7 +103,7 @@ The table below summarizes the various resolution strategies for intra-repositor
 <colgroup><col style="width:20%"><col style="width:16%"><col style="width:31%"><col style="width:33%"></colgroup>
 <thead>
 <tr>
-<th>Referencing modem</th>
+<th>Referencing mode</th>
 <th>Reference</th>
 <th>Resolution strategy in desktop app</th>
 <th>Resolution strategy in browser app</th>

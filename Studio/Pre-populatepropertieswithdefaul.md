@@ -25,7 +25,7 @@ This behavior is designed to prevent unintended overwrites and avoid conflicts w
 
 ## Example of defaultData.json
 
-THes list below is comprehensive. Not all options may be relevant in your case. You may select a subset of the example below, and configure for your specific needs.
+The list below is comprehensive. Not all options may be relevant in your case. You may select a subset of the example below, and configure for your specific needs.
 
 &nbsp;
 

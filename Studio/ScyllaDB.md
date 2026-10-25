@@ -8,7 +8,7 @@ ScyllaDB is also a hybrid between a key-value and a column-oriented database. Ro
 
 &nbsp;
 
-To perform data modeling for SycllaDB with Hackolade, you must first download the ScyllaDB [plugin](DownloadadditionalDBtargetplugin.md).
+To perform data modeling for ScyllaDB with Hackolade, you must first download the ScyllaDB [plugin](DownloadadditionalDBtargetplugin.md).
 
 &nbsp;
 

@@ -246,7 +246,7 @@ If you paste an assetTypeID that cannot be validated, an error appears, and you 
 
 &nbsp;
 
-To find the aseetTypeID of the custom Collibra asset type to be pasted in the above screen, you must go in Collibra to Settings > Operating Model > Asset Types. Then for the asset type that you wish to map to from Hackolade Studio, you must copy the Resource ID. If you don't see the Resource ID column, you can easily display it by clicking the Edit Fields button then selecting the Resource ID field.\
+To find the assetTypeID of the custom Collibra asset type to be pasted in the above screen, you must go in Collibra to Settings > Operating Model > Asset Types. Then for the asset type that you wish to map to from Hackolade Studio, you must copy the Resource ID. If you don't see the Resource ID column, you can easily display it by clicking the Edit Fields button then selecting the Resource ID field.\
 ![Collibra custom asset type ID](<lib/Collibra custom asset type ID.png>)
 
 &nbsp;
@@ -294,7 +294,7 @@ You can control how these custom types are assigned to a scope in Collibra:
 
 &nbsp;
 
-Custome types scope assignment is defined per connection, allowing different strategies depending on the target Collibra instance. Open the connection settings and click Customize mapping to access the Collibra mapping customization dialog.
+Customer types scope assignment is defined per connection, allowing different strategies depending on the target Collibra instance. Open the connection settings and click Customize mapping to access the Collibra mapping customization dialog.
 
 &nbsp;
 

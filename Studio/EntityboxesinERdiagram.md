@@ -101,7 +101,7 @@ When you deactivate an object (container, entity, view, attribute), an icon is d
 
 &nbsp;
 
-Similarly, in a model derived from polyglot, you may have added attributes that don't exist in the parent polyglot model (this is one of the "deviations" that we allow in derived model -- you may alos modify some of an attribute's properties, or you may delete an attribute if not pertinent in the derived model.) Those attributes are preceded with a + sign icon:\
+Similarly, in a model derived from polyglot, you may have added attributes that don't exist in the parent polyglot model (this is one of the "deviations" that we allow in derived model -- you may also modify some of an attribute's properties, or you may delete an attribute if not pertinent in the derived model.) Those attributes are preceded with a + sign icon:\
 ![ERD visual indicator added in derived model](<lib/ERD visual indicator added in derived model.png>)
 
 &nbsp;
