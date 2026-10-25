@@ -1,14 +1,14 @@
 # Kerberos
 
-**This feature has been deprecated as of v8.1.5**&nbsp; -- contact support@hackolade.com if needed
+**This feature has been deprecated as of v8.1.5** -- contact support@hackolade.com if needed
 
 &nbsp;
 
-MongoDB Enterprise provides support for Kerberos authentication of MongoDB clients.&nbsp; Kerberos is an industry standard authentication protocol for large client/server systems. Kerberos allows MongoDB and applications to take advantage of existing authentication infrastructure and processes.
+MongoDB Enterprise provides support for Kerberos authentication of MongoDB clients. Kerberos is an industry standard authentication protocol for large client/server systems. Kerberos allows MongoDB and applications to take advantage of existing authentication infrastructure and processes.
 
 &nbsp;
 
-For more info on how to setup Kerberos in MongoDB, please consult this [link](<http://docs.mongodb.com/manual/core/kerberos> "target=\"\_blank\"").
+For more info on how to setup Kerberos in MongoDB, please consult this [link](<http://docs.mongodb.com/manual/core/kerberos> "target=\"_blank\"").
 
 &nbsp;
 
@@ -37,4 +37,3 @@ A Kerberos Service Name is the name by which a client uniquely identifies an ins
 &nbsp;
 
 Typically, the service name for a MongoDB instance is named mongodb. Provide another name here if your MongoDB instance was set up with a different service name.
-

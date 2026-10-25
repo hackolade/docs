@@ -8,15 +8,13 @@ Before designing the logical and technical structure of your data models, it is 
 
 The conceptual model helps to create alignment among stakeholders to:
 
-\- clearly define and agree on the scope of the project
-
-\- identify and formalize key concepts used in the domain
-
-\- establish a common vocabulary, preventing misunderstandings early
+- clearly define and agree on the scope of the project
+- identify and formalize key concepts used in the domain
+- establish a common vocabulary, preventing misunderstandings early
 
 &nbsp;
 
-This phase aligns perfectly with the principles of [**Ubiquitous Language**](<https://martinfowler.com/bliki/UbiquitousLanguage.html> "target=\"\_blank\""), a core concept from Domain-Driven Design (DDD).&nbsp; Ubiquitous Language promotes using the same terminology across all discussions, documents,&nbsp; models, and even database tables and columns, and application code, thereby ensuring consistency from business conversations to technical implementation.
+This phase aligns perfectly with the principles of [**Ubiquitous Language**](<https://martinfowler.com/bliki/UbiquitousLanguage.html> "target=\"_blank\""), a core concept from Domain-Driven Design (DDD). Ubiquitous Language promotes using the same terminology across all discussions, documents, models, and even database tables and columns, and application code, thereby ensuring consistency from business conversations to technical implementation.
 
 &nbsp;
 
@@ -26,9 +24,8 @@ During conceptual modeling, it is essential to ensure that all participants trul
 
 A proven communication technique to support this is the feedback loop, which consists of:
 
-\- rephrasing what you understood in your own words
-
-\- allowing your interlocutor to confirm or correct your interpretation
+- rephrasing what you understood in your own words
+- allowing your interlocutor to confirm or correct your interpretation
 
 &nbsp;
 
@@ -54,15 +51,12 @@ Once the conceptual model is validated, teams can progressively move toward more
 
 &nbsp;
 
-Make sure to read our article [Conceptual to Logical with Polyglot relationships](<ConceptualtoLogicalwithPolyglotr.md>).&nbsp; Polyglot relationships are designed to help you express meaning and structure first, without being constrained too early by implementation details such as foreign key constraints, join tables, or platform-specific rules.&nbsp; We make it easy to discuss concepts with business users, who might not be familiar with the technical aspects of data modeling, so as to focus on facts.
+Make sure to read our article [Conceptual to Logical with Polyglot relationships](ConceptualtoLogicalwithPolyglotr.md). Polyglot relationships are designed to help you express meaning and structure first, without being constrained too early by implementation details such as foreign key constraints, join tables, or platform-specific rules. We make it easy to discuss concepts with business users, who might not be familiar with the technical aspects of data modeling, so as to focus on facts.
 
 &nbsp;
 
-Note that this graph representation of conceptual models has been adopted after observing that business users might find entity relationships diagrams to be somewhat more intimidating than graph views.&nbsp; However, both are possible with Hackolade Studio polyglot models:
+Note that this graph representation of conceptual models has been adopted after observing that business users might find entity relationships diagrams to be somewhat more intimidating than graph views. However, both are possible with Hackolade Studio polyglot models:
 
 &nbsp;
 
 ![Conceptual model polyglot graph view](<lib/Conceptual model polyglot graph view.png>)
-
-&nbsp;
-

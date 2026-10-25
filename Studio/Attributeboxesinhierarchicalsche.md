@@ -1,48 +1,43 @@
 # Attribute boxes in hierarchical schema view
 
-This page explains how to introduce new attributes and control them in a hierarchical schema view.&nbsp; Typically, these attributes are simple fields, but there are other possibilities, as detailed in the [Attributes](<Attributes.md>) page.&nbsp; Most of the controls below are also available from the ERD view and the Object Browser.
+This page explains how to introduce new attributes and control them in a hierarchical schema view. Typically, these attributes are simple fields, but there are other possibilities, as detailed in the [Attributes](Attributes.md) page. Most of the controls below are also available from the ERD view and the Object Browser.
 
 &nbsp;
 
-&#49;. Root
-
-&#50;. Add, Insert or Append &nbsp;
-
-&#51;. Controls
-
-&#52;. Choosing family of attribute, field type, and choice
+1\. Root\
+2\. Add, Insert or Append\
+3\. Controls\
+4\. Choosing family of attribute, field type, and choice
 
 &nbsp;
 
-## &#49;. Root
+## 1. Root
 
-When you create a new collection, you get an empty hierarchical schema view with a fixed root:
-
+When you create a new collection, you get an empty hierarchical schema view with a fixed root:\
 ![Tree view - root](<lib/Tree view - root.png>)
 
 &nbsp;
 
-## &#50;. Add, Insert or Append
+## 2. Add, Insert or Append
 
 In simple terms, the difference between the 3 actions are:
 
-\- Add: introduce a new attribute as a child to the right of the selected attribute&nbsp;
+- Add: introduce a new attribute as a child to the right of the selected attribute
+- Insert: introduce a new attribute before the selected attribute and as a sibling, i.e; at the same level
+- Append: introduce a new attribute at the bottom of the level of the selected attribute
 
-\- Insert: introduce a new attribute before the selected attribute and as a sibling, i.e; at the same level
+&nbsp;
 
-\- Append: introduce a new attribute at the bottom of the level of the selected attribute
+### 2.1 Add Attribute
 
-### &#50;.1 Add Attribute
-
-Not all types of fields are allowed to have attributes.&nbsp; Root is allowed to have only attributes as children, no siblings.&nbsp; Documents are also allowed to have attributes a and arrays are will have array items. &nbsp;
-
+Not all types of fields are allowed to have attributes. Root is allowed to have only attributes as children, no siblings. Documents are also allowed to have attributes a and arrays are will have array items.\
 ![Tree view - root doc or array box](<lib/Tree view - root doc or array box.png>) **plus** ![Contextual menu - Add Attribute selected](<lib/Contextual menu - Add Attribute selected.png>) **equals** ![Tree view - Child added](<lib/Tree view - Child added.png>)
 
 &nbsp;
 
-### &#50;.2 Insert Attribute
+### 2.2 Insert Attribute
 
-Siblings can be inserted before the selected attribute, at the same level. &nbsp; .
+Siblings can be inserted before the selected attribute, at the same level. .
 
 &nbsp;
 
@@ -50,189 +45,266 @@ Siblings can be inserted before the selected attribute, at the same level. &nbsp
 
 &nbsp;
 
-### &#50;.3 Append Attribute
+### 2.3 Append Attribute
 
-Siblings can be appended at the bottom of the same level.
-
+Siblings can be appended at the bottom of the same level.\
 ![Tree view - field inserted](<lib/Tree view - field inserted.png>) **plus** ![Contextual menu - Append selected](<lib/Contextual menu - Append selected.png>) **equals** ![Tree view - field appended](<lib/Tree view - field appended.png>)
 
 &nbsp;
 
+## 3. Controls
+
+When an attribute is selected, the color of the box is changed to turquoise.
+
 &nbsp;
 
-## &#51;. Controls
-
-When an attribute is selected, the color of the box is changed to turquoise. &nbsp;
-
-### &#51;.1 Introduce an attribute
+### 3.1 Introduce an attribute
 
 There are 4 ways to introduce a new attribute
 
-#### &#51;.1.1 Menu
+&nbsp;
 
-Choose the appropriate option in the Actions menu:
+#### 3.1.1 Menu
 
+Choose the appropriate option in the Actions menu:\
 ![Menu - Actions](<lib/Menu - Actions.png>)
 
-#### &#51;.1.2 Shortcuts
+&nbsp;
+
+#### 3.1.2 Shortcuts
 
 Press the keyboard shortcut of your choice:
 
-| **Shortcut** | **Description** |
-| --- | --- |
-| Ctrl+A | Add attribute |
-| Ctrl+I | Insert field |
-| Ctrl+E | Append field |
-| Ctrl+X | Cut |
-| Ctrl+C | Copy |
-| Ctrl+V | Paste |
-| Del | Delete |
-| Ctrl+D | Duplicate |
+&nbsp;
 
+<table style="width:30%">
+<colgroup><col style="width:22%"><col style="width:78%"></colgroup>
+<thead>
+<tr>
+<th>Shortcut</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ctrl+A</td>
+<td>Add attribute</td>
+</tr>
+<tr>
+<td>Ctrl+I</td>
+<td>Insert field</td>
+</tr>
+<tr>
+<td>Ctrl+E</td>
+<td>Append field</td>
+</tr>
+<tr>
+<td>Ctrl+X</td>
+<td>Cut</td>
+</tr>
+<tr>
+<td>Ctrl+C</td>
+<td>Copy</td>
+</tr>
+<tr>
+<td>Ctrl+V</td>
+<td>Paste</td>
+</tr>
+<tr>
+<td>Del</td>
+<td>Delete</td>
+</tr>
+<tr>
+<td>Ctrl+D</td>
+<td>Duplicate</td>
+</tr>
+</tbody>
+</table>
 
-#### &#51;.1.3 Toolbar
+&nbsp;
 
-Choose the appropriate icon in the toolbar:
+#### 3.1.3 Toolbar
 
-![Tree view - icons](<lib/Tree view - icons.png>)
-
+Choose the appropriate icon in the toolbar:\
+![Tree view - icons](<lib/Tree view - icons.png>)\
 with:
 
 &nbsp;
 
-| **Icon** | **Description** |
-| --- | --- |
-| ![Image](<lib/Icons - addChild.jpeg>) | Add attribute |
-| ![Image](<lib/Icons - insertField.jpeg>) | Insert field |
-| ![Image](<lib/Icons - appendField.jpeg>) | Append field |
-| ![Image](<lib/Icons - moveUp.jpeg>) | Move up |
-| ![Image](<lib/Icons - moveDown.jpeg>) | Move down |
-| ![Image](<lib/Icons - toggleDetails.jpeg>) | Toggle details in diagram |
-
+<table style="width:30%">
+<colgroup><col style="width:21%"><col style="width:79%"></colgroup>
+<thead>
+<tr>
+<th>Icon</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="lib/Icons - addChild.jpeg" alt="Icons - addChild"></td>
+<td>Add attribute</td>
+</tr>
+<tr>
+<td><img src="lib/Icons - insertField.jpeg" alt="Icons - insertField"></td>
+<td>Insert field</td>
+</tr>
+<tr>
+<td><img src="lib/Icons - appendField.jpeg" alt="Icons - appendField"></td>
+<td>Append field</td>
+</tr>
+<tr>
+<td><img src="lib/Icons - moveUp.jpeg" alt="Icons - moveUp"></td>
+<td>Move up</td>
+</tr>
+<tr>
+<td><img src="lib/Icons - moveDown.jpeg" alt="Icons - moveDown"></td>
+<td>Move down</td>
+</tr>
+<tr>
+<td><img src="lib/Icons - toggleDetails.jpeg" alt="Icons - toggleDetails"></td>
+<td>Toggle details in diagram</td>
+</tr>
+</tbody>
+</table>
 
 &nbsp;
 
-and also:
-
-![Toolbar - Edit section](<lib/Toolbar - Edit section.png>)
-
+and also:\
+![Toolbar - Edit section](<lib/Toolbar - Edit section.png>)\
 with:
 
 &nbsp;
 
-| **Icon** | **Description** |
-| --- | --- |
-| ![Icons - cut](<lib/Icons - cut.jpeg>) | Cut |
-| ![Icons - copy](<lib/Icons - copy.jpeg>) | Copy |
-| ![Icons - paste](<lib/Icons - paste.jpeg>) | Paste |
-| ![Icons - delete](<lib/Icons - delete.jpeg>) | Del |
-| ![Icons - duplicate](<lib/Icons - duplicate.jpeg>) | Duplicate |
+<table style="width:30%">
+<colgroup><col style="width:21%"><col style="width:79%"></colgroup>
+<thead>
+<tr>
+<th>Icon</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="lib/Icons - cut.jpeg" alt="Icons - cut"></td>
+<td>Cut</td>
+</tr>
+<tr>
+<td><img src="lib/Icons - copy.jpeg" alt="Icons - copy"></td>
+<td>Copy</td>
+</tr>
+<tr>
+<td><img src="lib/Icons - paste.jpeg" alt="Icons - paste"></td>
+<td>Paste</td>
+</tr>
+<tr>
+<td><img src="lib/Icons - delete.jpeg" alt="Icons - delete"></td>
+<td>Del</td>
+</tr>
+<tr>
+<td><img src="lib/Icons - duplicate.jpeg" alt="Icons - duplicate"></td>
+<td>Duplicate</td>
+</tr>
+</tbody>
+</table>
 
+&nbsp;
 
-#### &#51;.1.4 Contextual menu
+#### 3.1.4 Contextual menu
 
-Right-click on an existing item to display a contextual menu:
+Right-click on an existing item to display a contextual menu:\
+![Tree view - contextual menu](<lib/Tree view - contextual menu.png>)\
+Only available options are activated, depending on the item selected when you perform the right-click. To understand the different types of attributes, you may want to read this [page](Attributes.md).
 
-![Tree view - contextual menu](<lib/Tree view - contextual menu.png>)
+&nbsp;
 
-Only available options are activated, depending on the item selected when you perform the right-click.&nbsp; To understand the different types of attributes, you may want to read this [page](<Attributes.md>).
+### 3.2 Move an attribute
 
-### &#51;.2 Move an attribute
+To change the order of the attributes within a level, use the Move Up or Move Down icons in the toolbar. You may also move an attribute with your mouse by selecting the attribute, holding your left mouse button and dragging the box up or down in the same level.
 
-To change the order of the attributes within a level, use the Move Up or Move Down icons in the toolbar.&nbsp; You may also move an attribute with your mouse by selecting the attribute, holding your left mouse button and dragging the box up or down in the same level.
+&nbsp;
 
-### &#51;.3 Delete an attribute
+### 3.3 Delete an attribute
 
-There are several ways to delete an attribute.&nbsp; You must first select it, then:
+There are several ways to delete an attribute. You must first select it, then:
 
-\- choose Delete from the Edit menu
+- choose Delete from the Edit menu
+
+&nbsp;
 
 ![Menu Edit - Delete selected](<lib/Menu Edit - Delete selected.png>)
 
-\-&nbsp; press the Delete key on your keyboard
+- press the Delete key on your keyboard
+- click the button ![Icons - delete](<lib/Icons - delete.jpeg>)in the toolbar
+- right-click the attribute and choose Delete
 
-\- click the button ![Icons - delete](<lib/Icons - delete.jpeg>)in the toolbar
-
-\- right-click the attribute and choose Delete
+&nbsp;
 
 ![Contextual menu - Delete selected](<lib/Contextual menu - Delete selected.png>)
 
 &nbsp;
 
-### &#51;.4 Duplicate an attribute
+### 3.4 Duplicate an attribute
 
-When you choose to duplicate an attribute, all the properties of the selected item will be copied to a new attribute as a sibling at the same level, including the relationship.&nbsp; There are several ways to delete an attribute.&nbsp; You must first select it, then:
+When you choose to duplicate an attribute, all the properties of the selected item will be copied to a new attribute as a sibling at the same level, including the relationship. There are several ways to delete an attribute. You must first select it, then:
 
-\- choose Duplicate from the Edit menu
+- choose Duplicate from the Edit menu
+
+&nbsp;
 
 ![Contextual menu - Duplicate selected1](<lib/Contextual menu - Duplicate selected1.png>)
 
-\- press the shortcut Ctrl+D
+- press the shortcut Ctrl+D
+- click the button ![Icons - duplicate](<lib/Icons - duplicate.jpeg>) in the toolbar
+- right-click the attribute and choose Duplicate
 
-\- click the button ![Image](<lib/Icons - duplicate.jpeg>) in the toolbar
-
-\- right-click the attribute and choose Duplicate
+&nbsp;
 
 ![Contextual menu - Duplicate selected](<lib/Contextual menu - Duplicate selected.png>)
 
 &nbsp;
 
-### &#51;.5 Cut, Copy, and Paste
+### 3.5 Cut, Copy, and Paste
 
-These control have a behavior similar to what is expected in any desktop application.&nbsp; When performing the operation, all the properties of the selected attribute will be copied to a new attribute as a sibling at the same level, including the relationship.&nbsp;
+These control have a behavior similar to what is expected in any desktop application. When performing the operation, all the properties of the selected attribute will be copied to a new attribute as a sibling at the same level, including the relationship.
 
 &nbsp;
 
-### &#51;.6&nbsp; Collapse/Expand
+### 3.6 Collapse/Expand
 
-When an attribute has at least one attribute, its descendance can be collapse or expanded by pressing the - or the + sign to the right of the box:
-
-![Tree view - expanded](<lib/Tree view - expanded.png>)
-
+When an attribute has at least one attribute, its descendance can be collapse or expanded by pressing the - or the + sign to the right of the box:\
+![Tree view - expanded](<lib/Tree view - expanded.png>)\
 ![Tree view - collapsed](<lib/Tree view - collapsed.png>)
 
 &nbsp;
 
-&nbsp;
+### 3.7 Toggle details
 
-### &#51;.7 Toggle details
-
-You may also toggle the appearance of details by pressing the ![Icons - toggle Details](<lib/Icons - toggleDetails.jpeg>) button:
-
+You may also toggle the appearance of details by pressing the ![Icons - toggle Details](<lib/Icons - toggleDetails.jpeg>) button:\
 ![Tree view - no details](<lib/Tree view - no details.png>)
 
 &nbsp;
 
-&nbsp;
+## 4. Choosing family of attribute, field type, and choice
 
-## &#52;. Choosing family of attribute, field type, and choice
-
-### &#52;.1 family of attributes
-
-&nbsp;
+### 4.1 family of attributes
 
 ![Family of Attributes](<lib/Family of Attributes.png>)
 
 &nbsp;
 
-&nbsp;
-
-For an array:
-
+For an array:\
 ![Family of Attributes - Array](<lib/Family of Attributes - Array.png>)
 
 &nbsp;
 
-For [schema composition](<https://json-schema.org/understanding-json-schema/reference/combining> "target=\"\_blank\"") choices:
-
+For [schema composition](<https://json-schema.org/understanding-json-schema/reference/combining> "target=\"_blank\"") choices:\
 ![Family of Attributes - choices](<lib/Family of Attributes - choices.png>)
 
 &nbsp;
 
-### &#52;.2 Field type
+### 4.2 Field type
 
-Field types include standard JSON Schema field types, plus the BSON types not already in JSON Schema.&nbsp; BSON is a binary serialization format used to store documents and make remote procedure calls in MongoDB. The BSON specification is located [here](<http://bsonspec.org> "target=\"\_blank\"").&nbsp; BSON supports the following data types as values in documents.
-
+Field types include standard JSON Schema field types, plus the BSON types not already in JSON Schema. BSON is a binary serialization format used to store documents and make remote procedure calls in MongoDB. The BSON specification is located [here](<http://bsonspec.org> "target=\"_blank\""). BSON supports the following data types as values in documents.\
 ![Tree view - field types](<lib/Tree view - field types.png>)
 
 &nbsp;
@@ -241,12 +313,11 @@ This list varies depending on the database target.
 
 &nbsp;
 
-Often with modern databases, you may specify more than one data type for a given attribute, for example string and null.&nbsp; This is the simplest form of polymorphism.
+Often with modern databases, you may specify more than one data type for a given attribute, for example string and null. This is the simplest form of polymorphism.
 
 &nbsp;
 
-To add another type, simply click on the + sign to the right in the Properties Pane:
-
+To add another type, simply click on the + sign to the right in the Properties Pane:\
 ![Data type - single](<lib/Data type - single.png>)
 
 &nbsp;
@@ -255,13 +326,13 @@ Then you may select the additional data type from the dropdown list, change the 
 
 &nbsp;
 
-![Image](<lib/Data type - multiple.png>)
+![Data type - multiple](<lib/Data type - multiple.png>)
 
 &nbsp;
 
-### *&#52;.3 Choice*
+### 4.3 Choice
 
-For [schema composition](<https://json-schema.org/understanding-json-schema/reference/combining> "target=\"\_blank\"") choices, you may add choices for alternate sub-schemas:
+For [schema composition](<https://json-schema.org/understanding-json-schema/reference/combining> "target=\"_blank\"") choices, you may add choices for alternate sub-schemas:
 
 &nbsp;
 
@@ -269,19 +340,16 @@ For [schema composition](<https://json-schema.org/understanding-json-schema/refe
 
 &nbsp;
 
-&nbsp;
+### 4.4 Reference definition
 
-### &#52;.4 Reference definition
-
-You may add references to re-usable objects as explained [here](<Reusableobjectsdefinitions.md>).
-
+You may add references to re-usable objects as explained [here](Reusableobjectsdefinitions.md).\
 ![Family of Attributes - Ref Def](<lib/Family of Attributes - Ref Def.png>)
 
 &nbsp;
 
-### &#52;.5 DBRef (MongoDB only)
+### 4.5 DBRef (MongoDB only)
 
-Hackolade supports this MongoDB [convention](<https://docs.mongodb.com/manual/reference/database-references/> "target=\"\_blank\"").&nbsp; &nbsp;
+Hackolade supports this MongoDB [convention](<https://docs.mongodb.com/manual/reference/database-references/> "target=\"_blank\"").
 
 &nbsp;
 
@@ -289,7 +357,7 @@ Hackolade supports this MongoDB [convention](<https://docs.mongodb.com/manual/re
 
 &nbsp;
 
-### &#52;.6 Pick from list
+### 4.6 Pick from list
 
 If you want to re-use a previously created attribute (without making it a re-usable reference definition), then you can copy its properties with this option:
 
@@ -299,11 +367,7 @@ If you want to re-use a previously created attribute (without making it a re-usa
 
 &nbsp;
 
-&nbsp;
-
-&nbsp;
-
-There are several ways to create a new field.&nbsp; Depending on which attribute you select, you will want to add the new attribute as an attribute, or as a sibling.
+There are several ways to create a new field. Depending on which attribute you select, you will want to add the new attribute as an attribute, or as a sibling.
 
 &nbsp;
 
@@ -313,13 +377,11 @@ and to Append:
 
 For each of the 3 methods (Add attribute, Insert, and Append), there are 4 ways to do so:
 
-\- from the menu, choose Actions \>&nbsp; then Add attribute, Insert field or Append field
+- from the menu, choose Actions > then Add attribute, Insert field or Append field
+- press the shortcut Ctrl+H (Add attribute), Ctrl+E (Insert field), or Ctrl+D (Append field)
+- from the toolbar, choose the 'add attribute' button ![Icons - addChild](<lib/Icons - addChild.jpeg>)
+- inside the central pane, Schema tab, right-click on the box for which you want to create a child attribute, and choose Add Attribute
 
-\- press the shortcut Ctrl+H (Add attribute), Ctrl+E (Insert field), or Ctrl+D (Append field)&nbsp;
-
-\- from the toolbar, choose the 'add attribute' button ![Image](<lib/Icons - addChild.jpeg>)
-
-\- inside the central pane, Schema tab, right-click on the box for which you want to create a child attribute, and choose Add Attribute
+&nbsp;
 
 ![Contextual menu - attributes](<lib/Contextual menu - attributes.png>)
-

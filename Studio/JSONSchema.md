@@ -1,7 +1,6 @@
 # JSON Schema
 
-To create a JSON Schema file of your entity, choose the menu Tools \> Forward Engineering \> JSON Schema:
-
+To create a JSON Schema file of your entity, choose the menu Tools > Forward Engineering > JSON Schema:\
 ![Forward-Engineering - JSON Schema](<lib/Forward-Engineering - JSON Schema.png>)
 
 &nbsp;
@@ -14,29 +13,26 @@ The JSON Schema for the entity can also be viewed in the left-hand pane of the J
 
 &nbsp;
 
-&nbsp;
-
 ![Forward-Engineering - JSON Preview](<lib/Forward-Engineering - JSON Preview.png>)
-
-&nbsp;
 
 &nbsp;
 
 Several important options are available:
 
+&nbsp;
+
 ## JSON Schema compliance
 
-Hackolade extends JSON Schema for data types as well as non-standard keywords.&nbsp; When displaying or exporting JSON Schema, you may choose the compliance level:
+Hackolade extends JSON Schema for data types as well as non-standard keywords. When displaying or exporting JSON Schema, you may choose the compliance level:
 
-\- standard: only JSON Schema keywords and data types are used -- this output should pass validation with standard validators
-
-\- full: custom keywords are also listed for a full view of the schema, but only standard JSON data types are used -- this output should pass validation as long as additionalProperties are set to true
-
-\- extended: data types are specific to the target of the model, plus internal properties and keywords are also listed. &nbsp;
+- standard: only JSON Schema keywords and data types are used -- this output should pass validation with standard validators
+- full: custom keywords are also listed for a full view of the schema, but only standard JSON data types are used -- this output should pass validation as long as additionalProperties are set to true
+- extended: data types are specific to the target of the model, plus internal properties and keywords are also listed.
 
 &nbsp;
 
-**Important note:** in extended compliance, it is normal that the exported JSON Schema does not pass the test of validators.&nbsp; This is because data types used for a given target may be non-JSON data types.&nbsp; For example ObjectId for MongoDB, or UUID in Cassandra, etc...
+> [!IMPORTANT]
+> In extended compliance, it is normal that the exported JSON Schema does not pass the test of validators. This is because data types used for a given target may be non-JSON data types. For example ObjectId for MongoDB, or UUID in Cassandra, etc...
 
 &nbsp;
 
@@ -44,15 +40,11 @@ Hackolade extends JSON Schema for data types as well as non-standard keywords.&n
 
 JSON Schema output is dynamically adapted to the selected specification:
 
-\- [draft-04](<https://json-schema.org/specification-links.html#draft-4> "target=\"\_blank\"")
-
-\- [draft-06](<https://json-schema.org/specification-links.html#draft-6> "target=\"\_blank\"")
-
-\- [draft-07](<https://json-schema.org/specification-links.html#draft-7> "target=\"\_blank\"")
-
-\- [2019-09](<https://json-schema.org/specification-links.html#2019-09-formerly-known-as-draft-8> "target=\"\_blank\"")
-
-\- [2020-12](<https://json-schema.org/specification-links.html#2020-12> "target=\"\_blank\"")
+- [draft-04](<https://json-schema.org/specification-links.html#draft-4> "target=\"_blank\"")
+- [draft-06](<https://json-schema.org/specification-links.html#draft-6> "target=\"_blank\"")
+- [draft-07](<https://json-schema.org/specification-links.html#draft-7> "target=\"_blank\"")
+- [2019-09](<https://json-schema.org/specification-links.html#2019-09-formerly-known-as-draft-8> "target=\"_blank\"")
+- [2020-12](<https://json-schema.org/specification-links.html#2020-12> "target=\"_blank\"")
 
 &nbsp;
 
@@ -60,28 +52,20 @@ JSON Schema output is dynamically adapted to the selected specification:
 
 When displaying or exporting JSON Schema, the references can used as described or transformed:
 
-\- referenced: definitions are referenced as described in the model, using $ref syntax
-
-\- resolved:: definitions are resolved to list the content of the reference.
-
-\- internal: references to external and model definitions are converted into internal definitions
-
-&nbsp;
+- referenced: definitions are referenced as described in the model, using $ref syntax
+- resolved:: definitions are resolved to list the content of the reference.
+- internal: references to external and model definitions are converted into internal definitions
 
 &nbsp;
 
 ## Advanced: excluding unneeded properties
 
-You may be in a situation where you want to generate JSON Schema, but you want that a particular keyword does not get included in the file. &nbsp;
+You may be in a situation where you want to generate JSON Schema, but you want that a particular keyword does not get included in the file.
 
 &nbsp;
 
-In the custom properties folder C:\\Users\\%username%\\.hackolade\\options\\\<target\>\\customProperties you may edit the file jsonSchemaProperties.json to fill the section, for example:
-
-> {\
-&nbsp; &nbsp; "unneededFieldProps": \["color","isActivated"\],\
-&nbsp; &nbsp; "removeIfPropsNegative": \[\]\
-}
-
-&nbsp;
-
+In the custom properties folder C:\\Users\\%username%\\.hackolade\\options\\\<target>\\customProperties you may edit the file jsonSchemaProperties.json to fill the section, for example:\
+*{*\
+*"unneededFieldProps": \["color","isActivated"\],*\
+*"removeIfPropsNegative": \[\]*\
+*}*

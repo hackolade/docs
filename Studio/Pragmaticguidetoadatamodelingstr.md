@@ -11,36 +11,41 @@ Data modeling is more than an academic exercise; it's a practical approach for b
 Hackolade Studio offers flexibility across the three primary levels of data modeling:
 
 1. Conceptual Model
-1. Logical Model
-1. Physical Model
+2. Logical Model
+3. Physical Model
 
 &nbsp;
 
-Traditionally, the standard approach is to begin with a high-level conceptual model, then proceed to the logical model, and finally to the physical model, each step refining the design progressively. Our tool fully supports this structured, step-by-step approach.
-
+Traditionally, the standard approach is to begin with a high-level conceptual model, then proceed to the logical model, and finally to the physical model, each step refining the design progressively. Our tool fully supports this structured, step-by-step approach.\
 However, we also allow for a more pragmatic, goal-driven mindset:
 
-* Start at any level that best fits your project's context
-* Move through the layers as needed, with no explicit requirement to necessarily complete all three
-* Focus on the value each model layer brings to your specific project
+- Start at any level that best fits your project's context
+- Move through the layers as needed, with no explicit requirement to necessarily complete all three
+- Focus on the value each model layer brings to your specific project
 
 &nbsp;
 
 Ultimately, the goal is to build efficient, maintainable, and relevant solutions for both business and technical users -- not to model for the sake of modeling.
 
+&nbsp;
+
 ## Understanding the three levels: when and why
 
 ### Conceptual model: aligning on terminology
 
-Conceptual modeling is key to agree on scope and concepts, and to establish a shared language of business terms and definitions.&nbsp; By focusing on common terminology, it helps prevent misunderstandings and sets the foundation for clear communication, especially in large or cross-functional teams.&nbsp; Using [Ubiquitous Language](<https://martinfowler.com/bliki/UbiquitousLanguage.html> "target=\"\_blank\"") principles, this level aligns stakeholders before diving into technical details. In complex projects, a Polyglot Model can assist in this alignment.
+Conceptual modeling is key to agree on scope and concepts, and to establish a shared language of business terms and definitions. By focusing on common terminology, it helps prevent misunderstandings and sets the foundation for clear communication, especially in large or cross-functional teams. Using [Ubiquitous Language](<https://martinfowler.com/bliki/UbiquitousLanguage.html> "target=\"_blank\"") principles, this level aligns stakeholders before diving into technical details. In complex projects, a Polyglot Model can assist in this alignment.
+
+&nbsp;
 
 ### Logical model: a technology-agnostic foundation
 
-Logical modeling defines a neutral, unified data structure that transcends specific technologies, to capture the business rules necessary to ensure the integrity of the data.&nbsp; It serves as a blueprint for creating various physical models. Our Polyglot approach to logical modeling ensures that the design remains independent of the technology stack, making it adaptable for diverse environments.
+Logical modeling defines a neutral, unified data structure that transcends specific technologies, to capture the business rules necessary to ensure the integrity of the data. It serves as a blueprint for creating various physical models. Our Polyglot approach to logical modeling ensures that the design remains independent of the technology stack, making it adaptable for diverse environments.
 
 &nbsp;
 
 We recommend the polyglot/logical model particularly in multi-technology ecosystems that include databases (RDBMS, Graph, NoSQL), APIs, Avro, or Big Data solutions. However, if your project relies on a single technology, you can skip the logical layer and design directly in your target platform using Hackolade Studio.
+
+&nbsp;
 
 ### Physical model: a technology specific design
 
@@ -52,9 +57,9 @@ The physical model customizes the design for the technical specifics of each pla
 
 At Hackolade, we prioritize results over rigid methodologies:
 
-* follow the traditional path: Conceptual → Logical → Physical
-* start directly with Logical or Physical models, if that suits your project
-* model only what is essential for your specific context
+- follow the traditional path: Conceptual → Logical → Physical
+- start directly with Logical or Physical models, if that suits your project
+- model only what is essential for your specific context
 
 &nbsp;
 
@@ -64,16 +69,14 @@ Remember that conceptual and logical layers are both handled by our Polyglot dat
 
 The right approach depends on:
 
-* Project size and complexity
-* Number of technologies involved
-* Need for cross-team alignment
-* Time-to-market constraints
+- Project size and complexity
+- Number of technologies involved
+- Need for cross-team alignment
+- Time-to-market constraints
 
 &nbsp;
 
 ### The Ultimate Goal: Delivering Practical Solutions
 
-Data modeling should always serve a clear purpose: delivering tools and systems that are functional, scalable, and valuable. Hackolade Studio gives you the flexibility to tailor your modeling strategy to the specific needs of your project, without the complexity of rigid, academic frameworks.
-
+Data modeling should always serve a clear purpose: delivering tools and systems that are functional, scalable, and valuable. Hackolade Studio gives you the flexibility to tailor your modeling strategy to the specific needs of your project, without the complexity of rigid, academic frameworks.\
 Always model with intention, and avoid modeling just for the sake of it.
-

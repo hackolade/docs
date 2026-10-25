@@ -2,41 +2,41 @@
 
 ## Repository strategies
 
-There are 2 main strategies for dealing with contributions to a Git repository: *shared repository* and *fork \& pull*.
+There are 2 main strategies for dealing with contributions to a Git repository: *shared repository* and *fork & pull*.
 
 &nbsp;
 
 ### Shared repo strategy
 
-With a *shared repository* strategy, contributors are granted push access rights to a single (remote) repository.&nbsp; Branches are created when changes need to be made.&nbsp; Pull requests are useful to initiate peer review and discussions about a set of changes prior to merging them into the main branch. The use of shared repositories is more prevalent with small teams and within organizations working on private projects.
+With a *shared repository* strategy, contributors are granted push access rights to a single (remote) repository. Branches are created when changes need to be made. Pull requests are useful to initiate peer review and discussions about a set of changes prior to merging them into the main branch. The use of shared repositories is more prevalent with small teams and within organizations working on private projects.
 
 &nbsp;
 
-### Fork \& Pull strategy
+### Fork & Pull strategy
 
 The purpose of a fork and pull strategy in Git repositories is to allow contributors to independently work on their own copies (forks) of a project, and then propose changes (pull requests) to the original repository for review and integration.
 
 &nbsp;
 
-With the *fork \& pull* strategy, contributors create their own (remote) copy of the original repository and push changes to that copy, which is referred to as a *fork*.&nbsp; Once a contribution is ready, it can be submitted through a pull request: the contributor basically requests the maintainer(s) of the original repository to pull into that repository the work that has been prepared in a fork.&nbsp; Note that nothing prevents multiple contributors from working together in the same fork prior to submitting their changes to the original repository.
+With the *fork & pull* strategy, contributors create their own (remote) copy of the original repository and push changes to that copy, which is referred to as a *fork*. Once a contribution is ready, it can be submitted through a pull request: the contributor basically requests the maintainer(s) of the original repository to pull into that repository the work that has been prepared in a fork. Note that nothing prevents multiple contributors from working together in the same fork prior to submitting their changes to the original repository.
 
 &nbsp;
 
-The main advantage of the *fork \& pull* strategy is that the contributors do not need to be explicitly granted push access rights to the original repository. That's why that strategy is typically used for large-scale open source projects where most contributors are not known by the maintainers of the repository.
+The main advantage of the *fork & pull* strategy is that the contributors do not need to be explicitly granted push access rights to the original repository. That's why that strategy is typically used for large-scale open source projects where most contributors are not known by the maintainers of the repository.
 
 &nbsp;
 
-Another advantage of the *fork \& pull* strategy is that it prevents the original repository from being polluted with branches that are created and then abandoned but never deleted by their author.
+Another advantage of the *fork & pull* strategy is that it prevents the original repository from being polluted with branches that are created and then abandoned but never deleted by their author.
 
 &nbsp;
 
 ## Adopting Innersource practices
 
-This section is very much inspired by this [Introduction to InnerSource ](<https://resources.github.com/innersource/fundamentals/> "target=\"\_blank\"") with its principles adapted to data modeling.
+This section is very much inspired by this [Introduction to InnerSource ](<https://resources.github.com/innersource/fundamentals/> "target=\"_blank\"")with its principles adapted to data modeling.
 
 &nbsp;
 
-[*Innersource*](<https://en.wikipedia.org/wiki/Inner\_source> "target=\"\_blank\"") (by analogy to *open source*) is a trend that consists of bringing into enterprises the best practices of the open source community, such as the *fork \& pull* strategy. The ambition is to improve the collaboration but without sharing proprietary information publicly. This trend is supported by some Git providers, such as GitHub and its [internal repositories](<https://docs.github.com/en/enterprise-cloud@latest/repositories/creating-and-managing-repositories/about-repositories#about-internal-repositories> "target=\"\_blank\"").
+[*Innersource*](<https://en.wikipedia.org/wiki/Inner_source> "target=\"_blank\"") (by analogy to *open source*) is a trend that consists of bringing into enterprises the best practices of the open source community, such as the *fork & pull* strategy. The ambition is to improve the collaboration but without sharing proprietary information publicly. This trend is supported by some Git providers, such as GitHub and its [internal repositories](<https://docs.github.com/en/enterprise-cloud@latest/repositories/creating-and-managing-repositories/about-repositories#about-internal-repositories> "target=\"_blank\"").
 
 &nbsp;
 
@@ -50,13 +50,12 @@ Innersource does not imply reduced security or privacy. You don’t have to shar
 
 Within an enterprise, “contributors” are data architects and modelers, as well as subject-matter experts across your organization, while “maintainers” are project’s leaders and key decision makers:
 
-\- maintainers: data architects and modelers, project managers, and other key decision makers within your company who are responsible for driving a project’s vision and for managing day-to-day contributions.
-
-\- contributors: subject-matter experts, data modelers and data engineers, and other roles within your company that help drive data modeling forward. Contributors are not necessarily part of the direct project team but help build the data models by contributing evolutions, submitting enrichments and adjustments, and more.
+- maintainers: data architects and modelers, project managers, and other key decision makers within your company who are responsible for driving a project’s vision and for managing day-to-day contributions.
+- contributors: subject-matter experts, data modelers and data engineers, and other roles within your company that help drive data modeling forward. Contributors are not necessarily part of the direct project team but help build the data models by contributing evolutions, submitting enrichments and adjustments, and more.
 
 &nbsp;
 
-Innersource is as much a cultural shift as it is a technological one, and it’s important not to underestimate what a challenge this can pose to some organizations. Like their open source counterparts, innersource projects thrive in places where efforts naturally lean toward discoverability and reuse. It also helps to have small, cross-functional communities of the organization that share similar interests and expertise. This vision is very much in line with the principles of [Domain-Driven Data Modeling](<https://hackolade.com/domain-driven-data-modeling.html>) that we advocate.
+Innersource is as much a cultural shift as it is a technological one, and it’s important not to underestimate what a challenge this can pose to some organizations. Like their open source counterparts, innersource projects thrive in places where efforts naturally lean toward discoverability and reuse. It also helps to have small, cross-functional communities of the organization that share similar interests and expertise. This vision is very much in line with the principles of [Domain-Driven Data Modeling](https://hackolade.com/domain-driven-data-modeling.html) that we advocate.
 
 &nbsp;
 
@@ -68,65 +67,63 @@ Innersource is one approach to modernizing your processes, speeding up developme
 
 &nbsp;
 
-In order, to support InnerSource without compromising integrity and security, it is advised to adopt a Fork \& Pull strategy for your repositories.
+In order, to support InnerSource without compromising integrity and security, it is advised to adopt a Fork & Pull strategy for your repositories.
 
 &nbsp;
 
-![Image](<lib/Innersource fork and pull process.png>)
+![Innersource fork and pull process](<lib/Innersource fork and pull process.png>)
 
 &nbsp;
 
 ## Fork the upstream repo (once)
 
-Please refer to the user documentation of your Git provider to know how to fork a repository. Once you have created a fork, you can [clone it using Hackolade Studio](<Clonearemoterepository.md>), like any other repository.
+Please refer to the user documentation of your Git provider to know how to fork a repository. Once you have created a fork, you can [clone it using Hackolade Studio](Clonearemoterepository.md), like any other repository.
 
-\- [Creating a fork in GitHub](<https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository>)
-
-\- [Creating a fork in GitLab](<https://docs.gitlab.com/ee/user/project/repository/forking\_workflow.html#create-a-fork>)
-
-\- [Creating a fork in Bitbucket](<https://support.atlassian.com/bitbucket-cloud/docs/fork-a-repository/>)
-
-\- [Creating a fork in Azure DevOps](<https://learn.microsoft.com/en-us/azure/devops/repos/git/forks?view=azure-devops\&tabs=visual-studio#create-a-fork>)
+- [Creating a fork in GitHub](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository)
+- [Creating a fork in GitLab](https://docs.gitlab.com/ee/user/project/repository/forking_workflow.html#create-a-fork)
+- [Creating a fork in Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/fork-a-repository/)
+- [Creating a fork in Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/repos/git/forks?view=azure-devops&tabs=visual-studio#create-a-fork)
 
 &nbsp;
 
-**Note:** Hackolade Studio supports the *fork \& pull* strategy for GitHub, GitLab, Bitbucket Cloud and Data Center, and Azure DevOps Repos.&nbsp;
+> [!NOTE]
+> Hackolade Studio supports the *fork & pull* strategy for GitHub, GitLab, Bitbucket Cloud and Data Center, and Azure DevOps Repos.
 
 &nbsp;
 
 ## Clone your fork locally (once)
 
-A local repository is the repo that resides on your computer. In order to be able to work locally, we need to create a local copy of the remote repository.&nbsp; In Hackolade Studio, clone the forked remote repository, using [these instructions](<Clonearemoterepository.md>).
+A local repository is the repo that resides on your computer. In order to be able to work locally, we need to create a local copy of the remote repository. In Hackolade Studio, clone the forked remote repository, using [these instructions](Clonearemoterepository.md).
 
 &nbsp;
 
-Let's assume that you have forked a repository and that you have [cloned your fork](<Clonearemoterepository.md>). Working in a fork is like working in a traditional repository: you can [checkout branches](<Checkoutabranch.md>), [commit your local changes](<Commitlocalchanges.md>) and [push your local commits](<Pushlocalcommits.md>). You can also [pull remote commits](<Pullremotecommits.md>), for example if you are collaborating with other contributors on a same fork.
+Let's assume that you have forked a repository and that you have [cloned your fork](Clonearemoterepository.md). Working in a fork is like working in a traditional repository: you can [checkout branches](Checkoutabranch.md), [commit your local changes](Commitlocalchanges.md) and [push your local commits](Pushlocalcommits.md). You can also [pull remote commits](Pullremotecommits.md), for example if you are collaborating with other contributors on a same fork.
 
 &nbsp;
 
 ## Create and checkout a branch
 
-With this workflow, all new work is done on a branch, so it’s important to remember to create a new branch before you begin working.&nbsp; When you’re ready to start working on something new, create a new branch. **Do not reuse a merged branch.** Each model evolution should get its own branch and be deleted after it’s been merged.
+With this workflow, all new work is done on a branch, so it’s important to remember to create a new branch before you begin working. When you’re ready to start working on something new, create a new branch. **Do not reuse a merged branch.** Each model evolution should get its own branch and be deleted after it’s been merged.
 
 &nbsp;
 
-To create a branch, follow [these instructions](<Checkoutabranch.md>).  Give your new branch a meaningful name.
+To create a branch, follow [these instructions](Checkoutabranch.md). Give your new branch a meaningful name.
 
 &nbsp;
 
 ## Work, commit, and push
 
-**Warning:** work that isn’t committed, even if it is saved, doesn’t belong to a branch until you commit, so it will move with you if you change branches.&nbsp; This should be viewed as an advantage, since you can do your work, then decide to create the appropriate branch for it.&nbsp; You must [commit on a branch](<Commitlocalchanges.md>) for your work to be saved in that branch, and [push](<Pushlocalcommits.md>) to your remote forked repo.
+> [!WARNING]
+> Work that isn’t committed, even if it is saved, doesn’t belong to a branch until you commit, so it will move with you if you change branches. This should be viewed as an advantage, since you can do your work, then decide to create the appropriate branch for it. You must [commit on a branch](Commitlocalchanges.md) for your work to be saved in that branch, and [push](Pushlocalcommits.md) to your remote forked repo.
 
 &nbsp;
 
 ## Submit a Pull Request from a fork
 
-The only difference with non-forked repo is the presence of an additional dropdown list when you [submit your changes for review](<Submitforreview.md>). After you select the target branch, you must choose a target repository:
+The only difference with non-forked repo is the presence of an additional dropdown list when you [submit your changes for review](Submitforreview.md). After you select the target branch, you must choose a target repository:
 
-\- if your changes are ready to be reviewed by the maintainers of the original repository, which is named *upstream*, then you should open a pull request in that repository directly.
-
-\- if you are collaborating with other contributors and your changes are just an intermediary step, then you should open a pull request in the fork itself.
+- if your changes are ready to be reviewed by the maintainers of the original repository, which is named *upstream*, then you should open a pull request in that repository directly.
+- if you are collaborating with other contributors and your changes are just an intermediary step, then you should open a pull request in the fork itself.
 
 &nbsp;
 
@@ -134,15 +131,13 @@ The only difference with non-forked repo is the presence of an additional dropdo
 
 &nbsp;
 
-&nbsp;
-
-**Note** that, if you choose to create a pull request in the upstream repository, then that pull request will not be accessible through the left menu. The left menu only lists the pull requests that belong to the repository that is currently opened in Hackolade Studio, aka the fork in our example.&nbsp; The reason is that your current repo is the one selected, i.e. the one from which you create the PR onto the upstream repo.&nbsp; To view you PR, you would have to select the upstream repo.
+**Note** that, if you choose to create a pull request in the upstream repository, then that pull request will not be accessible through the left menu. The left menu only lists the pull requests that belong to the repository that is currently opened in Hackolade Studio, aka the fork in our example. The reason is that your current repo is the one selected, i.e. the one from which you create the PR onto the upstream repo. To view you PR, you would have to select the upstream repo.
 
 &nbsp;
 
 ## Keep a fork up-to-date
 
-If multiple people contribute to the same upstream repository from different forks (which is typically the case in a *fork \& pull* strategy), then your own fork will at some point become outdated, as it does not contain the contributions that have been merged in the upstream repository after you created it.
+If multiple people contribute to the same upstream repository from different forks (which is typically the case in a *fork & pull* strategy), then your own fork will at some point become outdated, as it does not contain the contributions that have been merged in the upstream repository after you created it.
 
 &nbsp;
 
@@ -150,7 +145,7 @@ This section explains how you can keep your fork up-to-date.
 
 &nbsp;
 
-As soon as you choose to contribute to the upstream repository, Hackolade Studio makes the branches of that repository available in your local clone, which enables a bunch of interesting features.&nbsp; First, every time you pull remote commits, the new commits not only get pulled from your fork, but also from its upstream repository. You can then use the [MERGE action](<Otheractions.md>) to keep your fork up-to-date with the upstream repository.
+As soon as you choose to contribute to the upstream repository, Hackolade Studio makes the branches of that repository available in your local clone, which enables a bunch of interesting features. First, every time you pull remote commits, the new commits not only get pulled from your fork, but also from its upstream repository. You can then use the [MERGE action](Otheractions.md) to keep your fork up-to-date with the upstream repository.
 
 &nbsp;
 
@@ -162,19 +157,17 @@ If the repository opened in Hackolade Studio is a fork of an upstream repository
 
 &nbsp;
 
-So to keep the active branch of your fork up-to-date with the default branch of the upstream repository, you must trigger the PULL action and then click on the button *Merge \& Push* of the MERGE action.
+So to keep the active branch of your fork up-to-date with the default branch of the upstream repository, you must trigger the PULL action and then click on the button *Merge & Push* of the MERGE action.
 
 &nbsp;
 
 ## Compare a fork with its upstream repository
 
-As explained in the previous section, Hackolade Studio makes the branches of the upstream repository available in your local clone of the fork as soon as you choose to contribute to that upstream repository. Those branches are also visible in [the *History* view](<Explorehistory.md>).
+As explained in the previous section, Hackolade Studio makes the branches of the upstream repository available in your local clone of the fork as soon as you choose to contribute to that upstream repository. Those branches are also visible in [the *History* view](Explorehistory.md).
 
 &nbsp;
 
 ![Innersource Fork and Pull - compare a fork with its upstream repo](<lib/Innersource Fork N Pull compare fork with ups.png>)
-
-&nbsp;
 
 &nbsp;
 
@@ -196,7 +189,7 @@ Select the remote *origin* to only see the commits that belong to your fork. Sel
 
 ## Compare a repository with one of its forks
 
-As a maintainer of a repository, you might be interested in tracking progress in a given fork by comparing that fork with the repository that you are in charge of. You might also be interested in comparing forks with each others.&nbsp;
+As a maintainer of a repository, you might be interested in tracking progress in a given fork by comparing that fork with the repository that you are in charge of. You might also be interested in comparing forks with each others.
 
 &nbsp;
 
@@ -204,7 +197,7 @@ As a maintainer of a repository, you might be interested in tracking progress in
 
 &nbsp;
 
-In the history of the upstream repository, you see a dropdown list named *Remote.*&nbsp; When you add a new remote, a list of forks are displayed.&nbsp; Select the fork(s) that you want to compare with/across and click on *Add*. Then close the dialog.
+In the history of the upstream repository, you see a dropdown list named *Remote.* When you add a new remote, a list of forks are displayed. Select the fork(s) that you want to compare with/across and click on *Add*. Then close the dialog.
 
 &nbsp;
 
@@ -212,7 +205,4 @@ In the history of the upstream repository, you see a dropdown list named *Remote
 
 &nbsp;
 
-You now have access to the branches of the selected fork(s): branches are prefixed with the name of their owner. With the *History* view to [compare arbitrary commits](<Explorehistory.md>), you can&nbsp; review the differences between the upstream repository and a fork, or between 2 forks.
-
-&nbsp;
-
+You now have access to the branches of the selected fork(s): branches are prefixed with the name of their owner. With the *History* view to [compare arbitrary commits](Explorehistory.md), you can review the differences between the upstream repository and a fork, or between 2 forks.

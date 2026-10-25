@@ -1,6 +1,6 @@
 # SQL and NoSQL databases, APIs, and storage formats
 
-Hackolade's main added value is in providing the ability to perform the data modeling for JSON-based databases, mainly nested objects (sub-documents and arrays, a.k.a. maps and lists.)&nbsp; Hackolade even has a pending patent on its "Method and Process to graphically model schemas for NoSQL and multimodel databases and REST APIs".
+Hackolade's main added value is in providing the ability to perform the data modeling for JSON-based databases, mainly nested objects (sub-documents and arrays, a.k.a. maps and lists.) Hackolade even has a pending patent on its "Method and Process to graphically model schemas for NoSQL and multimodel databases and REST APIs".
 
 &nbsp;
 
@@ -8,51 +8,372 @@ Whereas most relational database adhere to a SQL standard which ensures a common
 
 &nbsp;
 
-| **Generic terminology** | **SQL** | **MongoDB** | **DynamoDB** | **Couchbase** | **Azure Cosmos DB** | **Elasticsearch** | **Datastax Cassandra** | **Apache HBase** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Container | User schema | Database | Region | Bucket | Collection | Index | Keyspace | Namespace |
-| Entity | Table | Collection | Table | Document kind | Document type | Type | Table | Table |
-| Record | Record | Document | Item | Document | Document | Document | Row | Row |
-| Attribute | Column | Field | Attribute | Field | Field | Field | Column | Column |
-| Primary Key | Primary Key | ObjectID | Hash (\& range) | Document ID | id | id | Partition Key+ Clustering Key&nbsp; | Row Key |
-| Index | Index | Index | Index | Index | Index | Index | Index | Index |
-| Partition | Partition | Shard | Partition | vBucket | Partition | Shard | Partition | Shard |
-| View | View | View | Global Secondary Index | View | n/a | Filtered alias | Materialized View | View |
-| Object | n/a | Sub-document | Map | Object | Object | Object/Nested | Map | n/a |
-| Array | Array | Array | List | Array | Array | Array | List | n/a |
-
+<table style="width:100%">
+<colgroup><col style="width:11%"><col style="width:10%"><col style="width:11%"><col style="width:13%"><col style="width:12%"><col style="width:13%"><col style="width:11%"><col style="width:10%"><col style="width:9%"></colgroup>
+<thead>
+<tr>
+<th>Generic terminology</th>
+<th>SQL</th>
+<th>MongoDB</th>
+<th>DynamoDB</th>
+<th>Couchbase</th>
+<th>Azure Cosmos DB</th>
+<th>Elasticsearch</th>
+<th>Datastax Cassandra</th>
+<th>Apache HBase</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Container</td>
+<td>User schema</td>
+<td>Database</td>
+<td>Region</td>
+<td>Bucket</td>
+<td>Collection</td>
+<td>Index</td>
+<td>Keyspace</td>
+<td>Namespace</td>
+</tr>
+<tr>
+<td>Entity</td>
+<td>Table</td>
+<td>Collection</td>
+<td>Table</td>
+<td>Document kind</td>
+<td>Document type</td>
+<td>Type</td>
+<td>Table</td>
+<td>Table</td>
+</tr>
+<tr>
+<td>Record</td>
+<td>Record</td>
+<td>Document</td>
+<td>Item</td>
+<td>Document</td>
+<td>Document</td>
+<td>Document</td>
+<td>Row</td>
+<td>Row</td>
+</tr>
+<tr>
+<td>Attribute</td>
+<td>Column</td>
+<td>Field</td>
+<td>Attribute</td>
+<td>Field</td>
+<td>Field</td>
+<td>Field</td>
+<td>Column</td>
+<td>Column</td>
+</tr>
+<tr>
+<td>Primary Key</td>
+<td>Primary Key</td>
+<td>ObjectID</td>
+<td>Hash (&amp; range)</td>
+<td>Document ID</td>
+<td>id</td>
+<td>id</td>
+<td>Partition Key+ Clustering Key</td>
+<td>Row Key</td>
+</tr>
+<tr>
+<td>Index</td>
+<td>Index</td>
+<td>Index</td>
+<td>Index</td>
+<td>Index</td>
+<td>Index</td>
+<td>Index</td>
+<td>Index</td>
+<td>Index</td>
+</tr>
+<tr>
+<td>Partition</td>
+<td>Partition</td>
+<td>Shard</td>
+<td>Partition</td>
+<td>vBucket</td>
+<td>Partition</td>
+<td>Shard</td>
+<td>Partition</td>
+<td>Shard</td>
+</tr>
+<tr>
+<td>View</td>
+<td>View</td>
+<td>View</td>
+<td>Global Secondary Index</td>
+<td>View</td>
+<td>n/a</td>
+<td>Filtered alias</td>
+<td>Materialized View</td>
+<td>View</td>
+</tr>
+<tr>
+<td>Object</td>
+<td>n/a</td>
+<td>Sub-document</td>
+<td>Map</td>
+<td>Object</td>
+<td>Object</td>
+<td>Object/Nested</td>
+<td>Map</td>
+<td>n/a</td>
+</tr>
+<tr>
+<td>Array</td>
+<td>Array</td>
+<td>Array</td>
+<td>List</td>
+<td>Array</td>
+<td>Array</td>
+<td>Array</td>
+<td>List</td>
+<td>n/a</td>
+</tr>
+</tbody>
+</table>
 
 &nbsp;
 
-| **Generic terminology** | **Google RealTime Firebase** | **Google Cloud Firestore** | **MarkLogic** | **Apache Hive** | **Apache Avro** | **Couchbase Analytics** | **Google Cloud BigQuery** |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Container | User schema | Database | Database | Database | Namespace | Dataverse | Dataset |
-| Entity | Table | Collection | Collection/Directory | Table | Record | Dataset | Table |
-| Record | Record | Document | Document | Row | n/a | Document | Record |
-| Attribute | Column | Field | Field | Column | Field | Field | Field |
-| Primary Key | Primary Key | ObjectID | URI | Partition Key+ Clustering Key&nbsp; | n/a | Document ID | n/a |
-| Index | Index | Index | Index | Index | n/a | Index | n/a |
-| Partition | Partition | Shard | Forest | Partition | n/a | n/a | Partition |
-| View | View | View | View | View | n/a | n/a | View |
-| Object | n/a | Sub-document | Object | Map | Record/map | Object | Record |
-| Array | Array | Array | Array | List | Array/enum | Array | Array |
-
+<table style="width:100%">
+<colgroup><col style="width:10%"><col style="width:13%"><col style="width:13%"><col style="width:13%"><col style="width:13%"><col style="width:13%"><col style="width:13%"><col style="width:12%"></colgroup>
+<thead>
+<tr>
+<th>Generic terminology</th>
+<th>Google RealTime Firebase</th>
+<th>Google Cloud Firestore</th>
+<th>MarkLogic</th>
+<th>Apache Hive</th>
+<th>Apache Avro</th>
+<th>Couchbase Analytics</th>
+<th>Google Cloud BigQuery</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Container</td>
+<td>User schema</td>
+<td>Database</td>
+<td>Database</td>
+<td>Database</td>
+<td>Namespace</td>
+<td>Dataverse</td>
+<td>Dataset</td>
+</tr>
+<tr>
+<td>Entity</td>
+<td>Table</td>
+<td>Collection</td>
+<td>Collection/Directory</td>
+<td>Table</td>
+<td>Record</td>
+<td>Dataset</td>
+<td>Table</td>
+</tr>
+<tr>
+<td>Record</td>
+<td>Record</td>
+<td>Document</td>
+<td>Document</td>
+<td>Row</td>
+<td>n/a</td>
+<td>Document</td>
+<td>Record</td>
+</tr>
+<tr>
+<td>Attribute</td>
+<td>Column</td>
+<td>Field</td>
+<td>Field</td>
+<td>Column</td>
+<td>Field</td>
+<td>Field</td>
+<td>Field</td>
+</tr>
+<tr>
+<td>Primary Key</td>
+<td>Primary Key</td>
+<td>ObjectID</td>
+<td>URI</td>
+<td>Partition Key+ Clustering Key</td>
+<td>n/a</td>
+<td>Document ID</td>
+<td>n/a</td>
+</tr>
+<tr>
+<td>Index</td>
+<td>Index</td>
+<td>Index</td>
+<td>Index</td>
+<td>Index</td>
+<td>n/a</td>
+<td>Index</td>
+<td>n/a</td>
+</tr>
+<tr>
+<td>Partition</td>
+<td>Partition</td>
+<td>Shard</td>
+<td>Forest</td>
+<td>Partition</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>Partition</td>
+</tr>
+<tr>
+<td>View</td>
+<td>View</td>
+<td>View</td>
+<td>View</td>
+<td>View</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>View</td>
+</tr>
+<tr>
+<td>Object</td>
+<td>n/a</td>
+<td>Sub-document</td>
+<td>Object</td>
+<td>Map</td>
+<td>Record/map</td>
+<td>Object</td>
+<td>Record</td>
+</tr>
+<tr>
+<td>Array</td>
+<td>Array</td>
+<td>Array</td>
+<td>Array</td>
+<td>List</td>
+<td>Array/enum</td>
+<td>Array</td>
+<td>Array</td>
+</tr>
+</tbody>
+</table>
 
 &nbsp;
 
-| **Generic terminology** | **Parquet** | **AWS Glue Data Catalog** | **ScyllaDB** | **RDBMS** |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Container | File | Database | Keyspace | Schema/user |  |  |  |
-| Entity | Message | Table | Table | Table |  |  |  |
-| Record | Row | Row | Row | Row |  |  |  |
-| Attribute | Column | Column | Column | Column |  |  |  |
-| Primary Key | n/a | Partition Key+ Clustering Key&nbsp; | Partition Key+ Clustering Key&nbsp; | Primary Key |  |  |  |
-| Index | n/a | Index | Index | Index |  |  |  |
-| Partition | n/a | Partition | Partition | Partition |  |  |  |
-| View | n/a | View | Materialized view | View |  |  |  |
-| Object | Map | Map | Map | n/a |  |  |  |
-| Array | List | List | List | n/a |  |  |  |
-
+<table style="width:100%">
+<colgroup><col style="width:10%"><col style="width:13%"><col style="width:13%"><col style="width:13%"><col style="width:13%"><col style="width:13%"><col style="width:13%"><col style="width:12%"></colgroup>
+<tbody>
+<tr>
+<td><strong>Generic terminology</strong></td>
+<td><strong>Parquet</strong></td>
+<td><strong>AWS Glue Data Catalog</strong></td>
+<td><strong>ScyllaDB</strong></td>
+<td><strong>RDBMS</strong></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Container</td>
+<td>File</td>
+<td>Database</td>
+<td>Keyspace</td>
+<td>Schema/user</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Entity</td>
+<td>Message</td>
+<td>Table</td>
+<td>Table</td>
+<td>Table</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Record</td>
+<td>Row</td>
+<td>Row</td>
+<td>Row</td>
+<td>Row</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Attribute</td>
+<td>Column</td>
+<td>Column</td>
+<td>Column</td>
+<td>Column</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Primary Key</td>
+<td>n/a</td>
+<td>Partition Key+ Clustering Key</td>
+<td>Partition Key+ Clustering Key</td>
+<td>Primary Key</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Index</td>
+<td>n/a</td>
+<td>Index</td>
+<td>Index</td>
+<td>Index</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Partition</td>
+<td>n/a</td>
+<td>Partition</td>
+<td>Partition</td>
+<td>Partition</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>View</td>
+<td>n/a</td>
+<td>View</td>
+<td>Materialized view</td>
+<td>View</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Object</td>
+<td>Map</td>
+<td>Map</td>
+<td>Map</td>
+<td>n/a</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Array</td>
+<td>List</td>
+<td>List</td>
+<td>List</td>
+<td>n/a</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 &nbsp;
 
@@ -60,13 +381,12 @@ Each target vendor may also support its own functional features and list of attr
 
 &nbsp;
 
-To simplify the user's life, Hackolade adapts to the terminology and feature set of each database platform target for the model.&nbsp; The menu items, contextual menus, toolbar icon tooltips, and documentation all dynamically change depending on the selected target.
+To simplify the user's life, Hackolade adapts to the terminology and feature set of each database platform target for the model. The menu items, contextual menus, toolbar icon tooltips, and documentation all dynamically change depending on the selected target.
 
 &nbsp;
 
-Isn't it ironic that a technology that bears the label of 'schemaless' is also known for the fact that schema design is one of its toughest challenges?&nbsp; Each of the NoSQL vendors dedicates a large part of its documentation to data modeling: [MongoDB](<https://docs.mongodb.com/manual/core/data-modeling-introduction/> "target=\"\_blank\""), [DynamoDB](<http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GuidelinesForTables.html> "target=\"\_blank\""), [Couchbase](<https://developer.couchbase.com/documentation/server/current/data-modeling/intro-data-modeling.html> "target=\"\_blank\""), [Cassandra](<http://docs.datastax.com/en/cql/3.3/cql/ddl/ddlCQLDataModelingTOC.html> "target=\"\_blank\"").
+Isn't it ironic that a technology that bears the label of 'schemaless' is also known for the fact that schema design is one of its toughest challenges? Each of the NoSQL vendors dedicates a large part of its documentation to data modeling: [MongoDB](<https://docs.mongodb.com/manual/core/data-modeling-introduction/> "target=\"_blank\""), [DynamoDB](<http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GuidelinesForTables.html> "target=\"_blank\""), [Couchbase](<https://developer.couchbase.com/documentation/server/current/data-modeling/intro-data-modeling.html> "target=\"_blank\""), [Cassandra](<http://docs.datastax.com/en/cql/3.3/cql/ddl/ddlCQLDataModelingTOC.html> "target=\"_blank\"").
 
 &nbsp;
 
-The following pages analyze the characteristics of each NoSQL database vendor, from the perspective of a data modeler.&nbsp; These pages do not cover the technical architecture as it pertains to infrastructure and performance, which would go well beyond the scope of the Hackolade application.
-
+The following pages analyze the characteristics of each NoSQL database vendor, from the perspective of a data modeler. These pages do not cover the technical architecture as it pertains to infrastructure and performance, which would go well beyond the scope of the Hackolade application.

@@ -1,28 +1,22 @@
 # Overview
 
-The Hackolade Enterprise Model Hub is a model-driven metadata collaboration platform providing a unified and central access to your Hackolade Studio data models stored in one or more Git repositories.&nbsp; It empowers business teams, governance teams, technical teams, and other stakeholders to collaborate efficiently and promote a shared understanding of the context and meaning of data across the organization.&nbsp; The Model Hub allows users to browse, search, drill down, then view and navigate lineage, where-used, impact analysis, descriptions, and details of data assets in your data models for SQL and NoSQL databases, APIs and other data exchanges, storage formats, reports, charts, and dashboards.
+The Hackolade Enterprise Model Hub is a model-driven metadata collaboration platform providing a unified and central access to your Hackolade Studio data models stored in one or more Git repositories. It empowers business teams, governance teams, technical teams, and other stakeholders to collaborate efficiently and promote a shared understanding of the context and meaning of data across the organization. The Model Hub allows users to browse, search, drill down, then view and navigate lineage, where-used, impact analysis, descriptions, and details of data assets in your data models for SQL and NoSQL databases, APIs and other data exchanges, storage formats, reports, charts, and dashboards.
 
 &nbsp;
 
-The Model Hub is composed of a database, a replication mechanism from the Git repositories (where your Hackolade data models are stored), and a browser-based portal access. The Hub provides browsing, search, visualization in grid views, and lineage capabilities across all models replicated from the Git repository. &nbsp;
+The Model Hub is composed of a database, a replication mechanism from the Git repositories (where your Hackolade data models are stored), and a browser-based portal access. The Hub provides browsing, search, visualization in grid views, and lineage capabilities across all models replicated from the Git repository.
 
 &nbsp;
 
-The current capabilities will continue to be regularly enhanced as new features become available. Upcoming features may include graphical visualization of attribute lineage, categorization by domain,&nbsp; definition of one or more glossaries and assignment of terms to attributes, threaded conversations, possibility to assign user-defined tags to any asset, etc... Feel free to provide feedback and suggestions.
+The current capabilities will continue to be regularly enhanced as new features become available. Upcoming features may include graphical visualization of attribute lineage, categorization by domain, definition of one or more glossaries and assignment of terms to attributes, threaded conversations, possibility to assign user-defined tags to any asset, etc... Feel free to provide feedback and suggestions.
 
 &nbsp;
 
-The Model Hub is a separate product from Hackolade Studio, and complementing it.&nbsp; It requires an additional add-on license option.&nbsp; A demo playground of the Model Hub is available at [https://hub.hackolade.com/](<https://hub.hackolade.com/> "target=\"\_blank\"") &nbsp;
+The Model Hub is a separate product from Hackolade Studio, and complementing it. It requires an additional add-on license option. A demo playground of the Model Hub is available at [https://hub.hackolade.com/](<https://hub.hackolade.com/> "target=\"_blank\"")
 
 &nbsp;
 
-&nbsp;
-
-![Image](<lib/Model Hub metadata collaboration platform.png>)
-
-&nbsp;
-
-&nbsp;
+![Model Hub metadata collaboration platform](<lib/Model Hub metadata collaboration platform.png>)
 
 &nbsp;
 
@@ -30,17 +24,15 @@ Data models authored with Hackolade Studio and pushed to the Git repository are 
 
 &nbsp;
 
-The Hub is read-only for portal users.&nbsp; But any modification of data models pushed to the Git repo's main branch is immediately replicated to the Hub database.
+The Hub is read-only for portal users. But any modification of data models pushed to the Git repo's main branch is immediately replicated to the Hub database.
 
 &nbsp;
 
-The Hub greatly extends the capabilities of Hackolade Studio through a data model and metadata collaboration platform to turn data structure into insights, information, and knowledge across the organization.&nbsp; Data professionals achieve improved understanding and compliance through the use of this integrated platform for data models, metadata, and collaboration.
+The Hub greatly extends the capabilities of Hackolade Studio through a data model and metadata collaboration platform to turn data structure into insights, information, and knowledge across the organization. Data professionals achieve improved understanding and compliance through the use of this integrated platform for data models, metadata, and collaboration.
 
 &nbsp;
 
-&nbsp;
-
-![Image](<lib/Hackolade Enterprise Model Hub overview.png>)
+![Hackolade Enterprise Model Hub overview](<lib/Hackolade Enterprise Model Hub overview.png>)
 
 &nbsp;
 
@@ -70,133 +62,114 @@ The Hackolade Enterprise Model Hub enables data professionals to document, inter
 
 &nbsp;
 
-The data models feeding the Model Hub may have been created from scratch in Hackolade Studio, migrated form legacy tools, or reverse-engineered from any of the technology targets supported by Hackolade Studio.
-
-![Image](<lib/Hub metadata harvesting.png>)
-
-&nbsp;
+The data models feeding the Model Hub may have been created from scratch in Hackolade Studio, migrated form legacy tools, or reverse-engineered from any of the technology targets supported by Hackolade Studio.\
+![Hub metadata harvesting](<lib/Hub metadata harvesting.png>)
 
 &nbsp;
 
 ## Key features
 
-**\- Shift-Left and Design-First:** traditional data catalogs and metadata management solutions typically focus on harvesting metadata only after data assets are in production, which limits proactive collaboration and subject-matter experts involvement prior to deployments.&nbsp; In contrast, the Hackolade Model Hub is built around data models and schema designs that can be created from the ground up or evolved throughout the application lifecycle.
-
-**\- Metadata harvesting**: while advocating a design-first approach, we also provide a searchable data assets inventory, leveraging the Hackolade Studio reverse-engineering of 40+ data sources: SQL and NoSQL databases, APIs, storage formats.&nbsp; On-demand and/or schedule-based data discovery is easily done with Hackolade Studio's Command-Line Interface, to simplify the aggregation and collection of metadata across diverse data ecosystems.
-
-**\- Search and filter** across all models in your selected repo(s), whether polyglot models or physical target models, for all objects: containers, entities, and attributes.&nbsp; And see their respective properties.
-
-**\- Browse and drill down** model objects in grid tables: business users may be less comfortable with entity-relationship diagrams, and prefer to explore models in grid views
-
-**\- Single-click access** to selected ERD model: Model Hub Portal users can also open the corresponding model Entity-Relationship Diagram in the Hackolade Studio browser (provided that they have also a Studio license, and have been granted the rights to read the model in the Git repo.)
-
-**\- Model lineage**: Hackolade Studio advocates a modular and [domain-driven data modeling approach](<https://hackolade.com/domain-driven-data-modeling.html>).&nbsp; As a result, you may have a complex chain of models derived from polyglot and/or using external references to a library of definitions.&nbsp; The Model Hub Portal includes a powerful, searchable, graphical view of the model dependencies
-
-**\- Always run the latest version** of the application: no effort to always access the latest feature enhancements, as described in the [Model Hub Architecture](<ModelHubtechnicalarchitecture.md>) page
-
-**\- Serverless architecture:** secure, scalable, and cloud-native, with no need for installation, maintenance, upgrade of an application and web server
-
-**\- Remain in full control and ownership of your data and data models:** complete autonomy over the residency for your data models
-
-\- Attribute-level vertical lineage, where-used, and impact analysis (TBA)
-
-\- Glossary of business terms (TBA)
-
-\- Threaded conversations (TBA)
-
-\- Metadata curation (TBA)
-
-\- Tags for annotations (TBA)
-
-\- Reports (TBD)
+- **Shift-Left and Design-First:** traditional data catalogs and metadata management solutions typically focus on harvesting metadata only after data assets are in production, which limits proactive collaboration and subject-matter experts involvement prior to deployments. In contrast, the Hackolade Model Hub is built around data models and schema designs that can be created from the ground up or evolved throughout the application lifecycle.
+- **Metadata harvesting**: while advocating a design-first approach, we also provide a searchable data assets inventory, leveraging the Hackolade Studio reverse-engineering of 40+ data sources: SQL and NoSQL databases, APIs, storage formats. On-demand and/or schedule-based data discovery is easily done with Hackolade Studio's Command-Line Interface, to simplify the aggregation and collection of metadata across diverse data ecosystems.
+- **Search and filter** across all models in your selected repo(s), whether polyglot models or physical target models, for all objects: containers, entities, and attributes. And see their respective properties.
+- **Browse and drill down** model objects in grid tables: business users may be less comfortable with entity-relationship diagrams, and prefer to explore models in grid views
+- **Single-click access** to selected ERD model: Model Hub Portal users can also open the corresponding model Entity-Relationship Diagram in the Hackolade Studio browser (provided that they have also a Studio license, and have been granted the rights to read the model in the Git repo.)
+- **Model lineage**: Hackolade Studio advocates a modular and [domain-driven data modeling approach](https://hackolade.com/domain-driven-data-modeling.html). As a result, you may have a complex chain of models derived from polyglot and/or using external references to a library of definitions. The Model Hub Portal includes a powerful, searchable, graphical view of the model dependencies
+- **Always run the latest version** of the application: no effort to always access the latest feature enhancements, as described in the [Model Hub Architecture](ModelHubtechnicalarchitecture.md) page
+- **Serverless architecture:** secure, scalable, and cloud-native, with no need for installation, maintenance, upgrade of an application and web server
+- **Remain in full control and ownership of your data and data models:** complete autonomy over the residency for your data models
+- Attribute-level vertical lineage, where-used, and impact analysis (TBA)
+- Glossary of business terms (TBA)
+- Threaded conversations (TBA)
+- Metadata curation (TBA)
+- Tags for annotations (TBA)
+- Reports (TBD)
 
 &nbsp;
 
 ## Key Benefits
 
-**\- Improve metadata collaboration across IT and business teams:** democratize the use of data through visualization and collaboration. Capture and share knowledge.&nbsp; Reduce the time required to identify and address costly data quality challenges.&nbsp; Understand data structure and relationships.&nbsp; Provide feedback and change requests to model authors
-
-**\- Empower self-service business users:** provide convenient access to metadata with powerful and flexible search capabilities, plus a view of the data models, ERDs, and schema artifacts
-
-**\- Gain a deeper understanding of your data:** let business users explore data structures and relationships within the organization at their own pace. They can analyze entities, attributes, and relationships, gaining valuable insights into how different data elements interact
-
-**\- Strengthen data governance:** data modelers and domain experts collaborate to ensure that definitions align with business needs, while maintaining standardization, integrity, and quality
-
-**\- Accelerate decision-making:** enable quick access to reliable data, reducing dependencies on IT, and minimizing delays caused by data quality issues or misalignment.
+- **Improve metadata collaboration across IT and business teams:** democratize the use of data through visualization and collaboration. Capture and share knowledge. Reduce the time required to identify and address costly data quality challenges. Understand data structure and relationships. Provide feedback and change requests to model authors
+- **Empower self-service business users:** provide convenient access to metadata with powerful and flexible search capabilities, plus a view of the data models, ERDs, and schema artifacts
+- **Gain a deeper understanding of your data:** let business users explore data structures and relationships within the organization at their own pace. They can analyze entities, attributes, and relationships, gaining valuable insights into how different data elements interact
+- **Strengthen data governance:** data modelers and domain experts collaborate to ensure that definitions align with business needs, while maintaining standardization, integrity, and quality
+- **Accelerate decision-making:** enable quick access to reliable data, reducing dependencies on IT, and minimizing delays caused by data quality issues or misalignment.
 
 &nbsp;
 
+## Use Cases
+
+### Data Discovery & Business Glossary
+
+- Establish a shared understanding of data between IT and business teams.
+- Quickly locate data across various sources, including databases, object storage, data lakes, warehouses, lakehouses, exchanges, and catalogs.
+- Manage a business glossary alongside technical data to support data governance initiatives.
+
 &nbsp;
 
-## **Use Cases**
+### Target Personas
 
-### **Data Discovery \& Business Glossary**
+- **Business Domain/Subject Matter Experts** – Access data models without requiring technical expertise, ensuring alignment between data insights and business objectives.
+- **Data Stewards** – Oversee data quality, integrity, and compliance by managing and governing data assets.
+- **Data Architects** – Understand data model relationships, maintain reusable definitions, and ensure security, scalability, and business alignment.
+- **Data Modelers** – Identify available data assets to maintain consistency, integrity, and optimal structuring for efficient use and analysis.
+- **Data Analysts** – Examine data to identify trends, generate insights, and support informed decision-making.
+- **Data Scientists** – Work with complex data to extract predictive insights and develop AI/ML models.
+- **Data Engineers/Developers** – Easily locate data models to generate schemas, maintain pipelines, and manage data infrastructure.
 
-* Establish a shared understanding of data between IT and business teams.
-* Quickly locate data across various sources, including databases, object storage, data lakes, warehouses, lakehouses, exchanges, and catalogs.
-* Manage a business glossary alongside technical data to support data governance initiatives.
+&nbsp;
 
-### **Target Personas**
+### Why Organizations Need It
 
-* **Business Domain/Subject Matter Experts** – Access data models without requiring technical expertise, ensuring alignment between data insights and business objectives.
-* **Data Stewards** – Oversee data quality, integrity, and compliance by managing and governing data assets.
-* **Data Architects** – Understand data model relationships, maintain reusable definitions, and ensure security, scalability, and business alignment.
-* **Data Modelers** – Identify available data assets to maintain consistency, integrity, and optimal structuring for efficient use and analysis.
-* **Data Analysts** – Examine data to identify trends, generate insights, and support informed decision-making.
-* **Data Scientists** – Work with complex data to extract predictive insights and develop AI/ML models.
-* **Data Engineers/Developers** – Easily locate data models to generate schemas, maintain pipelines, and manage data infrastructure.
-
-### **Why Organizations Need It**
-
-#### **Enable Seamless Collaboration Between IT \& Business**
+#### Enable Seamless Collaboration Between IT & Business
 
 Organizations face challenges in managing and accessing data, including:
 
-* **Difficulty in finding the right data for analytics**
-
-  * Siloed data sources
-  * Conflicting "single sources of truth"
-  * Lack of a unified view of data assets
-  * Troubleshooting data issues is cumbersome
-  * Metadata and lineage for data lakes are insufficient
-
-* **Lack of a standard data dictionary**
-
-  * Manual schema definitions slow down workflows
-  * No streamlined method to share data models across applications
-  * Limited support for data governance
-
-* **Challenges with data ownership and security**
-
-  * Unclear accountability for data assets
-  * Inconsistent business terminology
-  * Limited collaboration on resolving data inconsistencies
-  * Unchecked proliferation of sensitive data
-
-### **Key Capabilities**
-
-#### **Hackolade Studio Integration for Data Design \& Communication**
-
-* Provides a **read-only** view of golden-source data models, ensuring integrity while allowing users to comment, flag warnings, and endorse assets.
-* Supports **automated publishing** from Git repositories using pre-configured actions.
-
-#### **Secure, Scalable, Cloud-Native Architecture**
-
-* **Built for cloud security** – serverless, scalable, and optimized for enterprise use.
-* **Data remains under user control** – users can bring their own storage, with no SaaS-based data retention.
-* **Role-based access control** – supports LDAP/IAM-based policy enforcement.
-
-#### **Metadata-Driven Virtual Data Catalog**
-
-* **Vendor-neutral** solution compatible with diverse databases and data-in-motion frameworks.
-* **Automatically generated metadata** from existing data models for improved discoverability.
-* **Intuitive search \& browsing** with filters based on technical names, business terms, glossary entries, and tags.
-
-#### **Metadata Curation \& Enrichment**
-
-* Define and maintain **business glossaries** with categorized business terms.
-* Use **tags** to annotate and classify data assets.
-* Establish relationships between assets, business definitions, and metadata.
+- **Difficulty in finding the right data for analytics**
+  - Siloed data sources
+  - Conflicting "single sources of truth"
+  - Lack of a unified view of data assets
+  - Troubleshooting data issues is cumbersome
+  - Metadata and lineage for data lakes are insufficient
+- **Lack of a standard data dictionary**
+  - Manual schema definitions slow down workflows
+  - No streamlined method to share data models across applications
+  - Limited support for data governance
+- **Challenges with data ownership and security**
+  - Unclear accountability for data assets
+  - Inconsistent business terminology
+  - Limited collaboration on resolving data inconsistencies
+  - Unchecked proliferation of sensitive data
 
 &nbsp;
 
+### Key Capabilities
+
+#### Hackolade Studio Integration for Data Design & Communication
+
+- Provides a **read-only** view of golden-source data models, ensuring integrity while allowing users to comment, flag warnings, and endorse assets.
+- Supports **automated publishing** from Git repositories using pre-configured actions.
+
+&nbsp;
+
+#### Secure, Scalable, Cloud-Native Architecture
+
+- **Built for cloud security** – serverless, scalable, and optimized for enterprise use.
+- **Data remains under user control** – users can bring their own storage, with no SaaS-based data retention.
+- **Role-based access control** – supports LDAP/IAM-based policy enforcement.
+
+&nbsp;
+
+#### Metadata-Driven Virtual Data Catalog
+
+- **Vendor-neutral** solution compatible with diverse databases and data-in-motion frameworks.
+- **Automatically generated metadata** from existing data models for improved discoverability.
+- **Intuitive search & browsing** with filters based on technical names, business terms, glossary entries, and tags.
+
+&nbsp;
+
+#### Metadata Curation & Enrichment
+
+- Define and maintain **business glossaries** with categorized business terms.
+- Use **tags** to annotate and classify data assets.
+- Establish relationships between assets, business definitions, and metadata.

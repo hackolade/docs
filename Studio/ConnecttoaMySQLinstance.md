@@ -1,6 +1,6 @@
 # Connect to a MySQL instance
 
-The MySQL instance can be hosted on-premises, or on virtualized machines in a private or public cloud. &nbsp;
+The MySQL instance can be hosted on-premises, or on virtualized machines in a private or public cloud.
 
 &nbsp;
 
@@ -17,6 +17,3 @@ If required, enter your username and password
 &nbsp;
 
 ![MySQL connection settings auth](<lib/MariaDB connection settings auth.png>)
-
-&nbsp;
-

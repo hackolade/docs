@@ -1,10 +1,10 @@
 # Elasticsearch mappings
 
-Elasticsearch mappings are dynamically generated as you create your schema. &nbsp;
+Elasticsearch mappings are dynamically generated as you create your schema.
 
 &nbsp;
 
-The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+The script can also be exported to the file system via the menu Tools > Forward-Engineering, or via the [Command-Line Interface](CommandLineInterface.md).
 
 &nbsp;
 

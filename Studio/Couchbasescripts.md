@@ -1,6 +1,6 @@
 # Couchbase scripts
 
-For those in a technology stack using JavaScript, and are using the [Ottoman ODM](<http://ottomanjs.com/> "target=\"\_blank\""), Hackolade also provides the option to export a JavaScript Ottoman schema file for the collection definition via the menu option Tools \> Forward-Engineering \> Ottoman Schema or Couchbase script
+For those in a technology stack using JavaScript, and are using the [Ottoman ODM](<http://ottomanjs.com/> "target=\"_blank\""), Hackolade also provides the option to export a JavaScript Ottoman schema file for the collection definition via the menu option Tools > Forward-Engineering > Ottoman Schema or Couchbase script
 
 &nbsp;
 
@@ -8,13 +8,12 @@ For those in a technology stack using JavaScript, and are using the [Ottoman ODM
 
 &nbsp;
 
-The same information can also be viewed in the Ottoman Schema tab:
-
+The same information can also be viewed in the Ottoman Schema tab:\
 ![Forward-Engineering - Couchbase Ottoman Schem](<lib/Forward-Engineering - Couchbase Ottoman Schem.png>)
 
 &nbsp;
 
-We provide a sort of "forward-engineering by example", with an automatic JSON data sample generation.&nbsp; The script also includes the creation of indexes, and it can be applied to the database instance, provided that appropriate credentials are granted to the user.&nbsp; If the specified bucket does not exist, we attempt to create it.
+We provide a sort of "forward-engineering by example", with an automatic JSON data sample generation. The script also includes the creation of indexes, and it can be applied to the database instance, provided that appropriate credentials are granted to the user. If the specified bucket does not exist, we attempt to create it.
 
 &nbsp;
 
@@ -24,12 +23,13 @@ We provide a sort of "forward-engineering by example", with an automatic JSON da
 
 The following credentials are required:
 
-\- if the bucket exists, the user should have at least:
-
-* [Query Manage Index](<https://docs.couchbase.com/server/6.0/learn/security/roles.html#query-manage-index> "target=\"\_blank\"") - to insert indexes.
-* [Query Insert](<https://docs.couchbase.com/server/6.0/learn/security/roles.html#query-insert> "target=\"\_blank\"") - to Insert documents.
-
-If a bucket doesn't exist, the user needs either [Full Admin](<https://docs.couchbase.com/server/6.0/learn/security/roles.html#full-admin> "target=\"\_blank\"") or [Cluster Admin](<https://docs.couchbase.com/server/6.0/learn/security/roles.html#cluster-admin> "target=\"\_blank\"")  to be able to create the bucket.
+- if the bucket exists, the user should have at least:
 
 &nbsp;
 
+* [Query Manage Index](<https://docs.couchbase.com/server/6.0/learn/security/roles.html#query-manage-index> "target=\"_blank\"") - to insert indexes.
+* [Query Insert](<https://docs.couchbase.com/server/6.0/learn/security/roles.html#query-insert> "target=\"_blank\"") - to Insert documents.
+
+&nbsp;
+
+If a bucket doesn't exist, the user needs either [Full Admin](<https://docs.couchbase.com/server/6.0/learn/security/roles.html#full-admin> "target=\"_blank\"") or [Cluster Admin](<https://docs.couchbase.com/server/6.0/learn/security/roles.html#cluster-admin> "target=\"_blank\"") to be able to create the bucket.

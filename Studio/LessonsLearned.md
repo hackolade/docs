@@ -1,6 +1,8 @@
 # Lessons Learned
 
-We recognize the importance of incorporating lessons learned from past implementations to ensure a successful deployment of the Hackolade Studio solution in your organization. &nbsp;
+We recognize the importance of incorporating lessons learned from past implementations to ensure a successful deployment of the Hackolade Studio solution in your organization.
+
+&nbsp;
 
 ## Lack of Git repository to store Hackolade Studio data models
 
@@ -47,6 +49,3 @@ From previous migrations, we learned that model libraries and reuse strategies (
 ## Misunderstanding of the data security risk
 
 In past implementations, teams have delayed projects due to misconceptions. Once the local, offline architecture was clearly explained, adoption proceeded smoothly. Early, transparent communication with security and IT stakeholders is now part of all pre-deployment phases.
-
-&nbsp;
-

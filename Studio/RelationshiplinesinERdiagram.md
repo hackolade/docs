@@ -1,16 +1,15 @@
 # Relationship lines in ER diagram
 
-Relationship lines in Entity Relationship diagrams are useful to understand the relationship in the data, and to define Foreign Key constraints used in query joins, and to ensure data consistency. &nbsp;
-
-Note that in NoSQL databases FK relationships are not declared to the database instance and hence not enforced.&nbsp; They are nevertheless useful to understand relationships in the data as well as denormalization when data is repeated in different places.
-
-&nbsp;
-
-Note also that in analytics databases, primary key and foreign key constraints may be absent for performance purposes.&nbsp; If you have reverse-engineered in OLAP store and your model does not show any PK and FK relationship lines, it may still be possible to discover them using our [Infer PKs \& FKs](<InferPrimaryKeysandForeignKeyRel.md>) feature.
+Relationship lines in Entity Relationship diagrams are useful to understand the relationship in the data, and to define Foreign Key constraints used in query joins, and to ensure data consistency.\
+Note that in NoSQL databases FK relationships are not declared to the database instance and hence not enforced. They are nevertheless useful to understand relationships in the data as well as denormalization when data is repeated in different places.
 
 &nbsp;
 
-For conceptual and Logical modeling with Polyglot relationships, make sure to read [this article](<RelationshiplinesinERdiagram.md>).
+Note also that in analytics databases, primary key and foreign key constraints may be absent for performance purposes. If you have reverse-engineered in OLAP store and your model does not show any PK and FK relationship lines, it may still be possible to discover them using our [Infer PKs & FKs](InferPrimaryKeysandForeignKeyRel.md) feature.
+
+&nbsp;
+
+For conceptual and Logical modeling with Polyglot relationships, make sure to read [this article](RelationshiplinesinERdiagram.md).
 
 &nbsp;
 
@@ -18,40 +17,39 @@ For conceptual and Logical modeling with Polyglot relationships, make sure to re
 
 There are several ways to create a new relationship line between the attributes of two entity boxes in the ER diagram of a model:
 
-* with a **drag-and-drop** action in the ERD by selecting a child attribute and dragging while holding the mouse button towards a parent attribute with a compatible attribute type in another entity.&nbsp; If the parent attribute is not yet a PK for its table, the application automatically makes the parent attribute a PK, if there is no conflict (i.e. if another attribute in the same entity is not already the PK.) \
+- with a **drag-and-drop** action in the ERD by selecting a child attribute and dragging while holding the mouse button towards a parent attribute with a compatible attribute type in another entity. If the parent attribute is not yet a PK for its table, the application automatically makes the parent attribute a PK, if there is no conflict (i.e. if another attribute in the same entity is not already the PK.)
+- since v7.0.4, the drag-and-drop behavior can be swapped from its default via Tools > Options > General to become "from parent to child". This is particularly useful in dimensional modeling when you want to take the PK of a parent dimension table and automatically create:
+  - the same attribute in the child fact table with the same data type, if you drop (release the mouse key) when the cursor is in between 2 attributes. Note that you may modify the name of the attribute in the fact table. If you wish to create the relationships without adding an attribute in the child table, then you must drop (release the mouse key) exactly on an existing attribute.
+  - the FK relationship from the child attribute in the fact table to the parent PK attribute in the dimension table.
+- via the **Actions menu**:
+
 &nbsp;
-* since v7.0.4, the drag-and-drop behavior can be swapped from its default via Tools \> Options \> General to become "from parent to child".&nbsp; This is particularly useful in dimensional modeling when you want to take the PK of a parent dimension table and automatically create:
-
-  * the same attribute in the child fact table with the same data type, if you drop (release the mouse key) when the cursor is in between 2 attributes.&nbsp; Note that you may modify the name of the attribute in the fact table.&nbsp; If you wish to create the relationships without adding an attribute in the child table, then you must drop (release the mouse key) exactly on an existing attribute.
-  * the FK relationship from the child attribute in the fact table to the parent PK attribute in the dimension table.
-
-&nbsp;
-
-* via the **Actions menu**:
 
 ![Menu - Add relationship](<lib/Menu - Add relationship.png>)
 
-* by pressing the **shortcut Ctrl+T** and filling the properties in the right Pane
-* with a click of the **toolbar icon** ![Image](<lib/Icons - addRelationship.jpeg>)&nbsp;
-* with a **right-click** anywhere in the central pane to display the **contextual menu**
+- by pressing the **shortcut Ctrl+T** and filling the properties in the right Pane
+- with a click of the **toolbar icon** ![Icons - addRelationship](<lib/Icons - addRelationship.jpeg>)
+- with a **right-click** anywhere in the central pane to display the **contextual menu**
+
+&nbsp;
 
 ![ER Diagram - contextual menu - add relationsh](<lib/ER Diagram - contextual menu - add relationsh.png>)
 
 &nbsp;
 
-and choose 'Add Relationship'. &nbsp;
+and choose 'Add Relationship'.
 
-* from the Properties Pane of a child attribute
+- from the Properties Pane of a child attribute
+
+&nbsp;
 
 ![Properties - Foreign Key relationship](<lib/Properties - Foreign Key relationship.png>)
 
 &nbsp;
 
-&nbsp;
-
 ### Relationship name
 
-Since version v8.4.2,&nbsp; the technical name property can be derived automatically based on [naming conventions](<Namingconventions.md>) rules, just like other model objects.
+Since version v8.4.2, the technical name property can be derived automatically based on [naming conventions](Namingconventions.md) rules, just like other model objects.
 
 &nbsp;
 
@@ -59,25 +57,20 @@ When creating a relationship manually (via the Actions menu, the Ctrl+T shortcut
 
 &nbsp;
 
-When creating a relationship via drag-and-drop, the relationship name is automatically assembled, based on a configuration in Tools \> Options \> General
-
-![FK relationship name configuration](<lib/FK relationship name configuration.png>)
-
-where the possible variable keywords are&nbsp;
-
+When creating a relationship via drag-and-drop, the relationship name is automatically assembled, based on a configuration in Tools > Options > General\
+![FK relationship name configuration](<lib/FK relationship name configuration.png>)\
+where the possible variable keywords are\
 ![FK relationship name configuration keywords](<lib/FK relationship name configuration keywords.png>)
 
 &nbsp;
 
-In the configuration, you may enter constants before, in between, and after the keywords.&nbsp; For example:
-
-> FK \<childEntity\> to \<parentEntity\> \<parentAttribute\>
+In the configuration, you may enter constants before, in between, and after the keywords. For example:\
+*FK \<childEntity> to \<parentEntity> \<parentAttribute>*
 
 &nbsp;
 
-Remember that you may want a different configuration, depending on whether or not naming conventions are enabled.&nbsp; The above example, with naming convention with conversion to snake\_case could result in this example:
-
-> fk\_orders\_customers\_cust\_id
+Remember that you may want a different configuration, depending on whether or not naming conventions are enabled. The above example, with naming convention with conversion to snake_case could result in this example:\
+*fk_orders_customers_cust_id*
 
 &nbsp;
 
@@ -91,67 +84,109 @@ You may edit a relationship name created automatically with drag-and-drop.
 
 ### Relationship lines
 
-Hackolade documents and helps visualize 2 types of relationships: foreign key and foreign master.&nbsp; The foreign key relationship is the unique identifier of the data.&nbsp; The foreign master relationship identifies the master for the duplicated field of the denormalized data.&nbsp;
+Hackolade documents and helps visualize 2 types of relationships: foreign key and foreign master. The foreign key relationship is the unique identifier of the data. The foreign master relationship identifies the master for the duplicated field of the denormalized data.
 
 &nbsp;
 
-Hackolade adopts an IE-like notation (Information Engineering with [crow's foot](<https://en.wikipedia.org/wiki/Entity–relationship\_model#Crow's\_foot\_notation> "target=\"\_blank\"") notation) applied to physical models in order to display multiplicities on each side of the relationship to represent the cardinality:&nbsp;
+Hackolade adopts an IE-like notation (Information Engineering with [crow's foot](<https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model#Crow's_foot_notation> "target=\"_blank\"") notation) applied to physical models in order to display multiplicities on each side of the relationship to represent the cardinality:
 
 &nbsp;
 
-| **Symbol** | **Description** |
-| --- | --- |
-| ![Relationship cardinality - one](<lib/Relationship cardinality - one.png>) | only one |
-| &nbsp;![Relationship cardinality - many](<lib/Relationship cardinality - many.png>) | many |
-| ![Relationship cardinality - zero-to-one](<lib/Relationship cardinality - zero-to-one.png>) | zero or one |
-| ![Relationship cardinality - zero-to-many](<lib/Relationship cardinality - zero-to-many.png>) | zero or more |
-| ![Relationship cardinality - one-to-many](<lib/Relationship cardinality - one-to-many.png>) | one or more |
-
+<table style="width:20%">
+<colgroup><col style="width:29%"><col style="width:71%"></colgroup>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="lib/Relationship cardinality - one.png" alt="Relationship cardinality - one"></td>
+<td>only one</td>
+</tr>
+<tr>
+<td><img src="lib/Relationship cardinality - many.png" alt="Relationship cardinality - many"></td>
+<td>many</td>
+</tr>
+<tr>
+<td><img src="lib/Relationship cardinality - zero-to-one.png" alt="Relationship cardinality - zero-to-one"></td>
+<td>zero or one</td>
+</tr>
+<tr>
+<td><img src="lib/Relationship cardinality - zero-to-many.png" alt="Relationship cardinality - zero-to-many"></td>
+<td>zero or more</td>
+</tr>
+<tr>
+<td><img src="lib/Relationship cardinality - one-to-many.png" alt="Relationship cardinality - one-to-many"></td>
+<td>one or more</td>
+</tr>
+</tbody>
+</table>
 
 &nbsp;
 
 You may have noticed that one side of the relationship has crow's foot cardinality displayed in blue on the parent side, and red on the child side.
 
-| **Symbol** | **Description** |
-| --- | --- |
-| ![Relationship child cardinality - one](<lib/Relationship child cardinality - one.png>) | only one |
-| &nbsp;![Relationship cardinality - many](<lib/Relationship child cardinality - many.png>) | many |
-| ![Relationship child cardinality - zero-to-one](<lib/Relationship child cardinality - zero-to-one.png>) | zero or one |
-| ![Relationship child cardinality - zero-to-many](<lib/Relationship child cardinality - zero-to-many.png>) | zero or more |
-| ![Relationship child cardinality - one-to-many](<lib/Relationship child cardinality - one-to-many.png>) | one or more |
+&nbsp;
 
+<table style="width:20%">
+<colgroup><col style="width:29%"><col style="width:71%"></colgroup>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="lib/Relationship child cardinality - one.png" alt="Relationship child cardinality - one"></td>
+<td>only one</td>
+</tr>
+<tr>
+<td><img src="lib/Relationship child cardinality - many.png" alt="Relationship cardinality - many"></td>
+<td>many</td>
+</tr>
+<tr>
+<td><img src="lib/Relationship child cardinality - zero-to-one.png" alt="Relationship child cardinality - zero-to-one"></td>
+<td>zero or one</td>
+</tr>
+<tr>
+<td><img src="lib/Relationship child cardinality - zero-to-many.png" alt="Relationship child cardinality - zero-to-many"></td>
+<td>zero or more</td>
+</tr>
+<tr>
+<td><img src="lib/Relationship child cardinality - one-to-many.png" alt="Relationship child cardinality - one-to-many"></td>
+<td>one or more</td>
+</tr>
+</tbody>
+</table>
 
 &nbsp;
 
-Typically, a relationship identifies a parent field within a parent collection on one side, and a child field within a child collection.&nbsp; Below is a simplified example... Say we have a master collection of customers, each identified by a unique id.&nbsp; When creating a document for each sales order, the customer name and address are repeated so as to avoid having to perform joins each time an order is accessed. &nbsp;
+Typically, a relationship identifies a parent field within a parent collection on one side, and a child field within a child collection. Below is a simplified example... Say we have a master collection of customers, each identified by a unique id. When creating a document for each sales order, the customer name and address are repeated so as to avoid having to perform joins each time an order is accessed.
 
 &nbsp;
 
-![Relationships and denormalization](<lib/Relationships and denormalization.png>)
-
+![Relationships and denormalization](<lib/Relationships and denormalization.png>)\
 Three relationships can be documented in the model:
 
-* a foreign key relationship for the customerID in the customers collection
-* a foreign master relationship for the customerName
-* a foreign master relationship for the customer address
+- a foreign key relationship for the customerID in the customers collection
+- a foreign master relationship for the customerName
+- a foreign master relationship for the customer address
 
 &nbsp;
 
-Occasionally, it might be needed to model recursive relationships where the parent and child collections are identical.&nbsp; In effect they are siblings:
-
+Occasionally, it might be needed to model recursive relationships where the parent and child collections are identical. In effect they are siblings:\
 ![Relationships - siblings](<lib/Relationships - siblings.png>)
 
 &nbsp;
 
-The ERD entity boxes have been enriched with visual indicators.&nbsp; Here is a list of abbreviations:
-
-**fk:** foreign key
-
-**fm:** foreign master
-
-**dk:** destination or denormalized key (parent of a foreign key.)&nbsp; Marks keys that are the parent of a foreign key or are denormalized elsewhere in the model.
-
-**dm:** destination or denormalized master (parent of a foreign master.)&nbsp; Marks non-key attributes that are the parent of a foreign attribute or are denormalized elsewhere in the model. &nbsp;
+The ERD entity boxes have been enriched with visual indicators. Here is a list of abbreviations:\
+**fk:** foreign key\
+**fm:** foreign master\
+**dk:** destination or denormalized key (parent of a foreign key.) Marks keys that are the parent of a foreign key or are denormalized elsewhere in the model.\
+**dm:** destination or denormalized master (parent of a foreign master.) Marks non-key attributes that are the parent of a foreign attribute or are denormalized elsewhere in the model.
 
 &nbsp;
 
@@ -161,7 +196,7 @@ Both dk and dm attributes allow access to the Where-Used function in the context
 
 ## Composite relationships
 
-In RDBMS plugins, it is possible to represent composite (aka compound) foreign key relationships&nbsp;
+In RDBMS plugins, it is possible to represent composite (aka compound) foreign key relationships
 
 &nbsp;
 
@@ -171,17 +206,17 @@ In RDBMS plugins, it is possible to represent composite (aka compound) foreign k
 
 ## Adjust relationship lines
 
-With large and complex relational models, the automatic positioning of foreign key relationship lines might look insufficiently organized.&nbsp; As a user, you might want to adjust the lines differently.
+With large and complex relational models, the automatic positioning of foreign key relationship lines might look insufficiently organized. As a user, you might want to adjust the lines differently.
 
 &nbsp;
 
 ### Automatic or manual adjustments
 
-You may move entity boxes around by dragging the box title bar, in which case the existing lines follow and auto-adjust.&nbsp; Or you may choose to adjust lines separately, as described below.
+You may move entity boxes around by dragging the box title bar, in which case the existing lines follow and auto-adjust. Or you may choose to adjust lines separately, as described below.
 
 &nbsp;
 
-![Image](<lib/Adjustable\_relationship\_lines\_medium.gif>)
+![Adjustable_relationship_lines_medium](lib/Adjustable_relationship_lines_medium.gif)
 
 &nbsp;
 
@@ -191,25 +226,23 @@ In ERDs (hence excluding here graph diagrams, where edges tend to be curved), th
 
 &nbsp;
 
-An orthogonal line is one where the segments can only be vertical or horizontal. As a result, the angle between the line and the entity boxes can only be 90 degrees. An orthogonal line can be straight if it has a single segment. If multi-segment, the segments can only have a 90-degree angled elbow between them.
-
+An orthogonal line is one where the segments can only be vertical or horizontal. As a result, the angle between the line and the entity boxes can only be 90 degrees. An orthogonal line can be straight if it has a single segment. If multi-segment, the segments can only have a 90-degree angled elbow between them.\
 ![ER lines - orthogonal](<lib/ER lines - orthogonal.png>)
 
 &nbsp;
 
-An oblique line must have a single segment and be straight. The angle between the line and an entity box can be anything, including 90 degrees in some cases.&nbsp; Oblique lines are often used in star schemas, but not only.
-
+An oblique line must have a single segment and be straight. The angle between the line and an entity box can be anything, including 90 degrees in some cases. Oblique lines are often used in star schemas, but not only.\
 ![ER lines - oblique](<lib/ER lines - oblique.png>)
 
 &nbsp;
 
 ### Line anchors and segments
 
-When you select a line, it gets highlighted, and nodes appear at each end, plus in middle segments, if any.&nbsp; Nodes are are used to move the anchors and segments, by click-and-drag.&nbsp; The mouse cursor when clicking indicates the possible direction(s) you may drag the node.
+When you select a line, it gets highlighted, and nodes appear at each end, plus in middle segments, if any. Nodes are are used to move the anchors and segments, by click-and-drag. The mouse cursor when clicking indicates the possible direction(s) you may drag the node.
 
 &nbsp;
 
-Each line has 2 anchors, one on each end and represented by a node, attached to their respective entity box.&nbsp; Middle segments, i.e. segment other than the ones at the end of the line, each have a node in the middle of the segment.
+Each line has 2 anchors, one on each end and represented by a node, attached to their respective entity box. Middle segments, i.e. segment other than the ones at the end of the line, each have a node in the middle of the segment.
 
 &nbsp;
 
@@ -217,8 +250,7 @@ Each line has 2 anchors, one on each end and represented by a node, attached to 
 
 &nbsp;
 
-A line may have one or more segments, depending on the relative positions of the entity boxes and the line anchors.&nbsp; We don't advise this, but it is possible for a line to have as many as 7 segments.
-
+A line may have one or more segments, depending on the relative positions of the entity boxes and the line anchors. We don't advise this, but it is possible for a line to have as many as 7 segments.\
 ![ER lines - max segments](<lib/ER lines - max segments.png>)
 
 &nbsp;
@@ -231,26 +263,23 @@ The number of segments is automatically adapted when you move anchors to a diffe
 
 You may move:
 
-* the whole line, whether orthogonal or oblique,
-* each anchor,
-* or each individual segment of a line.
+- the whole line, whether orthogonal or oblique,
+- each anchor,
+- or each individual segment of a line.
 
 &nbsp;
 
-To move a line, just grab anywhere in the line, and move in any direction.&nbsp; Depending on the direction you drag, segments and anchors are moved, anchors may change box sides,&nbsp; and the number of segments are automatically recalculated.
-
+To move a line, just grab anywhere in the line, and move in any direction. Depending on the direction you drag, segments and anchors are moved, anchors may change box sides, and the number of segments are automatically recalculated.\
 ![ER lines - moving entire line](<lib/ER lines - moving entire line.png>)
 
 &nbsp;
 
-To move a single segment at a time, you may grab the node in the middle of the segment, or the anchor if it connects to an entity box. As you click on the node, the mouse cursor turns into a 2-headed arrow indicating the possible directions that you can drag.
-
+To move a single segment at a time, you may grab the node in the middle of the segment, or the anchor if it connects to an entity box. As you click on the node, the mouse cursor turns into a 2-headed arrow indicating the possible directions that you can drag.\
 ![ER lines - 3 segments movements](<lib/ER lines - 3 segments movements.png>)
 
 &nbsp;
 
-As segments get extended past the anchor of the line, the number of segments may be recalculated, and the anchor moved accordingly.&nbsp; The application will not allow a line to be hidden by any part of an entity box to which it is attached.
-
+As segments get extended past the anchor of the line, the number of segments may be recalculated, and the anchor moved accordingly. The application will not allow a line to be hidden by any part of an entity box to which it is attached.\
 ![ER lines - 4 segments movements](<lib/ER lines - 4 segments movements.png>)
 
 &nbsp;
@@ -259,25 +288,15 @@ Similarly, the number of segments can be reduced by aligning parallel segments, 
 
 &nbsp;
 
-Since an oblique line can only have a single segment, the anchors on each end can only be attached to the one or maximum 2 sides of the entity box that are facing the other anchor. &nbsp;
-
+Since an oblique line can only have a single segment, the anchors on each end can only be attached to the one or maximum 2 sides of the entity box that are facing the other anchor.\
 ![ER lines - oblique movements](<lib/ER lines - oblique movements.png>)
 
 &nbsp;
 
-Each anchor can be moved, but is restricted to the one or maximum 2 sides of the entity box, so as to avoid having the line covered by any part of the entity box.
-
-![Image](<lib/ER lines - oblique movements horizontal.png>)
+Each anchor can be moved, but is restricted to the one or maximum 2 sides of the entity box, so as to avoid having the line covered by any part of the entity box.\
+![ER lines - oblique movements horizontal](<lib/ER lines - oblique movements horizontal.png>)
 
 &nbsp;
 
-At any time, you may switch geometry, which will restore the line to default anchors
-
+At any time, you may switch geometry, which will restore the line to default anchors\
 ![ER lines - style and gemetries](<lib/ER lines - style and gemetries.png>)
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-

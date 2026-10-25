@@ -4,7 +4,7 @@ As you develop the components for your Amazon EventBridge schema, Hackolade dyna
 
 &nbsp;
 
-The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+The script can also be exported to the file system via the menu Tools > Forward-Engineering, or via the [Command-Line Interface](CommandLineInterface.md).
 
 &nbsp;
 

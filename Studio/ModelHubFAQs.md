@@ -1,6 +1,6 @@
 # Model Hub FAQs
 
-The Hackolade Data Model Hub is a model-driven metadata management platform.&nbsp; It is a separate but complementary product of the Studio application.&nbsp; The Frequently Asked Questions below may help you better understand the Hub characteristics and added value.
+The Hackolade Data Model Hub is a model-driven metadata management platform. It is a separate but complementary product of the Studio application. The Frequently Asked Questions below may help you better understand the Hub characteristics and added value.
 
 &nbsp;
 
@@ -34,7 +34,7 @@ Upstream, Hackolade empowers teams to be proactive. Rather than just retroactive
 
 &nbsp;
 
-Downstream, Hackolade serves the needs of technical teams where business-facing platforms fall short. Hackolade Studio produces machine-readable artifacts like DDLs and schema definitions, enabling direct deployment.&nbsp; Something most governance tools simply can’t do.
+Downstream, Hackolade serves the needs of technical teams where business-facing platforms fall short. Hackolade Studio produces machine-readable artifacts like DDLs and schema definitions, enabling direct deployment. Something most governance tools simply can’t do.
 
 &nbsp;
 
@@ -78,21 +78,19 @@ Hackolade complements semantic layers by upstreaming data governance and enablin
 
 &nbsp;
 
-&nbsp;
-
 ## Technical concerns
 
 ### Is the Hub a SaaS product?
 
-Definitely not.&nbsp; Software-as-a-Service is a popular solution deployment approach.&nbsp; Users don't need to install anything on their machines to access the service - it all runs in the browser.&nbsp; No need to upgrade either.&nbsp; The application always runs the latest version. &nbsp;
+Definitely not. Software-as-a-Service is a popular solution deployment approach. Users don't need to install anything on their machines to access the service - it all runs in the browser. No need to upgrade either. The application always runs the latest version.
 
 &nbsp;
 
-This may be seen as a huge improvement over the previous setup of on-premises applications, or applications run in a cloud Infrastructure-as-a-Service setup.&nbsp; SaaS applications shift the responsibility to install, monitor, upgrade, backup, and operate the application from the customer to the provider.
+This may be seen as a huge improvement over the previous setup of on-premises applications, or applications run in a cloud Infrastructure-as-a-Service setup. SaaS applications shift the responsibility to install, monitor, upgrade, backup, and operate the application from the customer to the provider.
 
 &nbsp;
 
-But for most SaaS solutions, this means that the provider stores all the data.&nbsp; The main drawbacks include vendor lock-in due to the data residency, confidentiality, security, and integration complexity.&nbsp; Most SaaS solutions store your data in the provider's database and process it on their servers.&nbsp; While there are standards, certifications, and insurance coverage for SaaS operations, how can customers be 100% sure that their data is in the right hands?&nbsp; That the provider treats it with the same care that you would?
+But for most SaaS solutions, this means that the provider stores all the data. The main drawbacks include vendor lock-in due to the data residency, confidentiality, security, and integration complexity. Most SaaS solutions store your data in the provider's database and process it on their servers. While there are standards, certifications, and insurance coverage for SaaS operations, how can customers be 100% sure that their data is in the right hands? That the provider treats it with the same care that you would?
 
 &nbsp;
 
@@ -100,7 +98,7 @@ It seems that there would be no perfect solution - just a choice of the least ba
 
 &nbsp;
 
-Instead, Hackolade delivers the Model Hub in a Docker image which is very easy to deploy.&nbsp; The image contains all the necessary pieces to retrieve data models from your Git repositories, and place them in an Oracle 26 ai or PostgreSQL 17+ database instance that you self-host (on-rem, public cloud, or hybrid.)&nbsp; The Model Hub Docker image can be easily and frequently updated and deployed so that you always run the latest version of our software in your browser.&nbsp; You keep 100% percent control of your data.&nbsp; The only traffic coming out of your network is when users validate the license key.
+Instead, Hackolade delivers the Model Hub in a Docker image which is very easy to deploy. The image contains all the necessary pieces to retrieve data models from your Git repositories, and place them in an Oracle 26 ai or PostgreSQL 17+ database instance that you self-host (on-rem, public cloud, or hybrid.) The Model Hub Docker image can be easily and frequently updated and deployed so that you always run the latest version of our software in your browser. You keep 100% percent control of your data. The only traffic coming out of your network is when users validate the license key.
 
 &nbsp;
 
@@ -108,19 +106,17 @@ Instead, Hackolade delivers the Model Hub in a Docker image which is very easy t
 
 &nbsp;
 
-Hackolade has always developed solutions taking into account a security-first principle and constraint: no data should ever come out of the customer network.&nbsp; Processing is done strictly client-side in your browser.&nbsp; At Hackolade, we do not operate any database.&nbsp; We don't collect, process, or store any data from any customers.
+Hackolade has always developed solutions taking into account a security-first principle and constraint: no data should ever come out of the customer network. Processing is done strictly client-side in your browser. At Hackolade, we do not operate any database. We don't collect, process, or store any data from any customers.
 
 &nbsp;
 
-Your data models never leave your control.&nbsp; They are maintained and saved in your Git repository.&nbsp; If you use the Model Hub, they are replicated into your Hub database, entirely operated by you, but in a low-maintenance autonomous manner.&nbsp; Consult this [Model Hub architecture page](<ModelHubtechnicalarchitecture.md>) for more details.
+Your data models never leave your control. They are maintained and saved in your Git repository. If you use the Model Hub, they are replicated into your Hub database, entirely operated by you, but in a low-maintenance autonomous manner. Consult this [Model Hub architecture page](ModelHubtechnicalarchitecture.md) for more details.
 
 &nbsp;
 
-&nbsp;
+### Is it possible to run the Hub on other databases than Oracle or PostgreSQL? For example: Couchbase, ElasticSearch, MongoDB, or SQL Server?
 
-### Is it possible to run the Hub on other databases than Oracle or PostgreSQL?&nbsp; For example: Couchbase, ElasticSearch, MongoDB, or SQL Server?
-
-The technical requirements for the Hub are numerous, ambitious, and strict.&nbsp; A thorough evaluation of all the database vendors was conducted prior to development of the Hub. &nbsp;
+The technical requirements for the Hub are numerous, ambitious, and strict. A thorough evaluation of all the database vendors was conducted prior to development of the Hub.
 
 &nbsp;
 
@@ -130,9 +126,7 @@ No offense to the excellent vendors (which we support in many ways), but current
 
 ### Are there concerns of version compatibility between the Studio and the Hub?
 
-No.&nbsp; Hackolade Studio has ensured backward-and forward compatibility since v1.&nbsp; Our persistence of models in JSON files ensures that a user with an older version of the software can open a model saved with a more recent version of the software.&nbsp; And vice-versa.&nbsp; The same is true for the Hub.&nbsp; The models are stored in a document database in their original JSON format.&nbsp; It does not matter with which version each model was saved, it is ingested as-is in the database, and indexed according to its content so it is easily browsable and searchable in the Hub.
-
-&nbsp;
+No. Hackolade Studio has ensured backward-and forward compatibility since v1. Our persistence of models in JSON files ensures that a user with an older version of the software can open a model saved with a more recent version of the software. And vice-versa. The same is true for the Hub. The models are stored in a document database in their original JSON format. It does not matter with which version each model was saved, it is ingested as-is in the database, and indexed according to its content so it is easily browsable and searchable in the Hub.
 
 &nbsp;
 
@@ -140,29 +134,29 @@ No.&nbsp; Hackolade Studio has ensured backward-and forward compatibility since 
 
 ### Is the Hub database able to handle data models for other targets than RDBMS?
 
-All data models are persisted in JSON format for all targets supported by Hackolade Studio: SQL and NoSQL databases, REST and GraphQL APIs, storage and data exchange formats.&nbsp; In the Hub database, data models are stored as raw JSON documents, leveraging the PostgreSQL and Oracle 26ai capability to natively handle the JSON format.&nbsp; You may see examples in the demo playground at [https://hub.hackolade.com](<https://hub.hackolade.com> "target=\"\_blank\"")
+All data models are persisted in JSON format for all targets supported by Hackolade Studio: SQL and NoSQL databases, REST and GraphQL APIs, storage and data exchange formats. In the Hub database, data models are stored as raw JSON documents, leveraging the PostgreSQL and Oracle 26ai capability to natively handle the JSON format. You may see examples in the demo playground at [https://hub.hackolade.com](<https://hub.hackolade.com> "target=\"_blank\"")
 
 &nbsp;
 
 ### Is it possible to view the ERD for a model or part of it?
 
-This is a function where Hackolade Studio excels.&nbsp; On each screen of the Hub, a button (blue, up top) allows to open the model in Studio (browser or desktop, according to the user preference.)&nbsp; Whether the model opens up in Studio in read-only or editable mode depends on the type of license (viewer or workgroup.) Saving changes depends also on the user's rights on the repo.&nbsp; For changes to be committed and pushed to the repo (then be visible in the Hub), it may be required to create a branch and submit a change request.
+This is a function where Hackolade Studio excels. On each screen of the Hub, a button (blue, up top) allows to open the model in Studio (browser or desktop, according to the user preference.) Whether the model opens up in Studio in read-only or editable mode depends on the type of license (viewer or workgroup.) Saving changes depends also on the user's rights on the repo. For changes to be committed and pushed to the repo (then be visible in the Hub), it may be required to create a branch and submit a change request.
 
 &nbsp;
 
 ### Can users make changes to models in the Hub database?
 
-Not directly in the Hub, but easily in the Studio.&nbsp; The philosophy and architecture of the Hub is to be model-driven.&nbsp; The Hub is entirely in read-only mode for users.&nbsp; The "master" for your data models is your Git repository.&nbsp; The Hub database is only a replication of the selected repository or repositories.&nbsp; This also means, from a data integrity point of view, that there is zero risk of conflicting information or of destroying the database.&nbsp; The database can be reconstructed at any time based on your repo(s).
+Not directly in the Hub, but easily in the Studio. The philosophy and architecture of the Hub is to be model-driven. The Hub is entirely in read-only mode for users. The "master" for your data models is your Git repository. The Hub database is only a replication of the selected repository or repositories. This also means, from a data integrity point of view, that there is zero risk of conflicting information or of destroying the database. The database can be reconstructed at any time based on your repo(s).
 
 &nbsp;
 
-If the user wants to change information in the Hub, the change must be executed in the data model using Studio, then committed/pushed to the repository.&nbsp; This also ensures traceability and history of changes.
+If the user wants to change information in the Hub, the change must be executed in the data model using Studio, then committed/pushed to the repository. This also ensures traceability and history of changes.
 
 &nbsp;
 
 ### What if a model changes in the Git repository?
 
-When setting the Hub, the administrator points it to one ore more Git repositories and a single branch, typically main/master but it can also be develop or another one.&nbsp; Any time a model is merged into the main branch, a webhook alerts the Hub to replicate the model in its database.&nbsp; In seconds, the Hub database is updated with the latest version of the data model in that branch.&nbsp; The information is immediately accessible in the Hub.
+When setting the Hub, the administrator points it to one ore more Git repositories and a single branch, typically main/master but it can also be develop or another one. Any time a model is merged into the main branch, a webhook alerts the Hub to replicate the model in its database. In seconds, the Hub database is updated with the latest version of the data model in that branch. The information is immediately accessible in the Hub.
 
 &nbsp;
 
@@ -174,19 +168,19 @@ In the unlikely event that the hub database missed a webhook notification from t
 
 ### Is it possible to view in the Hub an intermediary or in-progress version of a model?
 
-This is done by leveraging a Studio feature: from any branch of commit, you can [share a model link URL](<SharemodellinkURL.md>). Note that this viewing capability is limited to the Studio application.&nbsp; In other words, a model version is not replicated or visible into the Hub until merged in the main/master branch (or the branch selected by the administrator as the source for the Hub.)
+This is done by leveraging a Studio feature: from any branch of commit, you can [share a model link URL](SharemodellinkURL.md). Note that this viewing capability is limited to the Studio application. In other words, a model version is not replicated or visible into the Hub until merged in the main/master branch (or the branch selected by the administrator as the source for the Hub.)
 
 &nbsp;
 
 ### Is it possible to prevent a model and/or folder of models from being replicated into the Hub?
 
-Yes.&nbsp; If no longer needed, you could of course delete the model from the repo.&nbsp; You may also want to retain a model, but not publish it to the Hub.&nbsp; It is super simple to create a .hubignore text file in the root of the root of repo, listing the model(s) and/or folders. &nbsp;
+Yes. If no longer needed, you could of course delete the model from the repo. You may also want to retain a model, but not publish it to the Hub. It is super simple to create a .hubignore text file in the root of the root of repo, listing the model(s) and/or folders.
 
 &nbsp;
 
-### I want to harvest metadata from a new source.&nbsp; Can I do that from the Hub?
+### I want to harvest metadata from a new source. Can I do that from the Hub?
 
-Harvesting metadata from a source is an action called [reverse-engineering](<Reverseengineeranexistinginstanc.md>) in Hackolade Studio.&nbsp; The resulting model must be saved and pushed to the repo before it can be seen in the Hub through the automatic replication. Different terms are used, all more or less describing the same process: harvest, extract, discover, crawl, ingest, infer, reverse-engineer...
+Harvesting metadata from a source is an action called [reverse-engineering](Reverseengineeranexistinginstanc.md) in Hackolade Studio. The resulting model must be saved and pushed to the repo before it can be seen in the Hub through the automatic replication. Different terms are used, all more or less describing the same process: harvest, extract, discover, crawl, ingest, infer, reverse-engineer...
 
 &nbsp;
 
@@ -194,9 +188,9 @@ Harvesting metadata from a source is an action called [reverse-engineering](<Rev
 
 &nbsp;
 
-### I want to regularly harvest metadata from a source.&nbsp; How should I proceed?
+### I want to regularly harvest metadata from a source. How should I proceed?
 
-Again, this is a function of Hackolade Studio.&nbsp; With the [Command-Line Interface](<CommandLineInterface.md>) and [orchestration of CLI commands](<IntegratetheCLIwithDevOpsCICDpip.md>), it is possible to reverse-engineer a source based on a schedule or trigger, then compare-and-merge into a model.&nbsp; When that model is committed and pushed to the repo, the automatic replication is triggered, and the model becomes available for viewing in the Hub.
+Again, this is a function of Hackolade Studio. With the [Command-Line Interface](CommandLineInterface.md) and [orchestration of CLI commands](IntegratetheCLIwithDevOpsCICDpip.md), it is possible to reverse-engineer a source based on a schedule or trigger, then compare-and-merge into a model. When that model is committed and pushed to the repo, the automatic replication is triggered, and the model becomes available for viewing in the Hub.
 
 &nbsp;
 
@@ -208,19 +202,19 @@ These functions are just one click away, by opening the model in Studio, from an
 
 ### Do user-defined properties, configured and used in Studio models, appear in the Hub?
 
-Yes, absolutely.&nbsp; All properties of objects in Hackolade Studio models do appear in the Hub, whether out-of-the-box or custom properties.&nbsp; Out-of-the-box properties include business and technical names.&nbsp; Notifications via badges and/or pop-ups may be part of this feature.
+Yes, absolutely. All properties of objects in Hackolade Studio models do appear in the Hub, whether out-of-the-box or custom properties. Out-of-the-box properties include business and technical names. Notifications via badges and/or pop-ups may be part of this feature.
 
 &nbsp;
 
 ### Can assets in the Hub be tagged with user-defined tags?
 
-This feature is foreseen but has not yet been developed.&nbsp; It is TBA.
+This feature is foreseen but has not yet been developed. It is TBA.
 
 &nbsp;
 
 ### Does the Hub include a glossary?
 
-Yes, a glossary feature exists in Studio.&nbsp; When entities and attributes are bound in a Hackolade Studio data model to terms in one or more glossaries, the information is made visible in the Hub.
+Yes, a glossary feature exists in Studio. When entities and attributes are bound in a Hackolade Studio data model to terms in one or more glossaries, the information is made visible in the Hub.
 
 &nbsp;
 
@@ -240,7 +234,7 @@ This is not currently foreseen.
 
 ### Why is it required to have a license key to access the Hub?
 
-Hackolade Studio and the Data Model Hub are well integrated, each adding much value to users.&nbsp; They are complementary, and there is no functionality overlap.&nbsp; While you can use Studio without the Hub, the reverse is not possible.&nbsp; We made it easy to add a Hub option to the Viewer and Workgroup editions of Studio.&nbsp; For authors, only the Workgroup edition can be supplemented with the Hub option.&nbsp; The option is NOT available for the Community, Trial, Personal, or Professional editions.
+Hackolade Studio and the Data Model Hub are well integrated, each adding much value to users. They are complementary, and there is no functionality overlap. While you can use Studio without the Hub, the reverse is not possible. We made it easy to add a Hub option to the Viewer and Workgroup editions of Studio. For authors, only the Workgroup edition can be supplemented with the Hub option. The option is NOT available for the Community, Trial, Personal, or Professional editions.
 
 &nbsp;
 
@@ -250,19 +244,17 @@ In addition to IP address restrictions (cfr below) and the Identity Provider int
 
 ### Can I share my license key across the Studio and Hub applications?
 
-Provided that you have the appropriate license - Viewer+Hub or Workgroup+Hub - the same license key is automatically used across both products.&nbsp; If you have validated the license key in either Studio Browser or Hub, you are automatically validated for the other.
+Provided that you have the appropriate license - Viewer+Hub or Workgroup+Hub - the same license key is automatically used across both products. If you have validated the license key in either Studio Browser or Hub, you are automatically validated for the other.
 
 &nbsp;
 
-If you have originally validated your license key in the Desktop, a small manipulation is required, due to web browser security.&nbsp; The process is described in detail in [this page](<https://hackolade.com/help/Softwareregistration.html#Reuse%20in%20the%20Browser%20your%20license%20key%20already%20validated%20in%20the%20Desktop> "target=\"\_blank\"").
+If you have originally validated your license key in the Desktop, a small manipulation is required, due to web browser security. The process is described in detail in [this page](<https://hackolade.com/help/Softwareregistration.html#Reuse%20in%20the%20Browser%20your%20license%20key%20already%20validated%20in%20the%20Desktop>).
 
 &nbsp;
 
-### Our license key is floating.&nbsp; Will it also work with the Hub?
+### Our license key is floating. Will it also work with the Hub?
 
-Yes, floating (a.k.a. concurrent) license keys also function with the Hub.&nbsp; Just remember that tabs of either the Studio or the Hub all count for the reservation of a seat.&nbsp; To release your seat so it can be used by someone else in your organization, you must exit all tabs of both the Hub and Studio.&nbsp; The order in which you close the tabs does not matter.&nbsp; Only the last one being closed releases the seat.
-
-&nbsp;
+Yes, floating (a.k.a. concurrent) license keys also function with the Hub. Just remember that tabs of either the Studio or the Hub all count for the reservation of a seat. To release your seat so it can be used by someone else in your organization, you must exit all tabs of both the Hub and Studio. The order in which you close the tabs does not matter. Only the last one being closed releases the seat.
 
 &nbsp;
 
@@ -270,23 +262,23 @@ Yes, floating (a.k.a. concurrent) license keys also function with the Hub.&nbsp;
 
 ### What profiles or roles are possible?
 
-The Hub is read-only for all users, as per the architecture detailed above.&nbsp; To start, it is necessary to distinguish 2 main roles: an administrator role to perform technical instance actions, and a general access role.
+The Hub is read-only for all users, as per the architecture detailed above. To start, it is necessary to distinguish 2 main roles: an administrator role to perform technical instance actions, and a general access role.
 
 &nbsp;
 
-The administrator role allows one or more designated users to be able to carry technical tasks, as described in this page (link TBA).&nbsp; Other users, whether with a Viewer or Workgroup edition license, have general access to the Hub, provided that they have the proper license key and have been given access by an administrator.
+The administrator role allows one or more designated users to be able to carry technical tasks, as described in this page (link TBA). Other users, whether with a Viewer or Workgroup edition license, have general access to the Hub, provided that they have the proper license key and have been given access by an administrator.
 
 &nbsp;
 
 ### Can the Hub integrate with LDAP, Microsoft Entra ID, Okta, or an other Identity Provider?
 
-Model Hub currently integrates with [Microsoft Entra ID](<IntegratingwithAzureEntraID.md>) and [Okta](<IntegratingwithOkta.md>).
+Model Hub currently integrates with [Microsoft Entra ID](IntegratingwithAzureEntraID.md) and [Okta](IntegratingwithOkta.md).
 
 &nbsp;
 
 ### Does the Hub support Multiple Factor Authentication?
 
-Multi-Factor Authentication (2FA or MFA) functionality is in the scope of the Identity Provider.&nbsp; If enabled there for the IdP integrated with the Hub, then indeed the Hub will support MFA.
+Multi-Factor Authentication (2FA or MFA) functionality is in the scope of the Identity Provider. If enabled there for the IdP integrated with the Hub, then indeed the Hub will support MFA.
 
 &nbsp;
 
@@ -299,8 +291,6 @@ Customers can configure this in their proxy setup.
 ### Is it possible to provide further access granularity?
 
 It is foreseen to allow license key-enforced access control.
-
-&nbsp;
 
 &nbsp;
 

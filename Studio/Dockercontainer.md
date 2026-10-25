@@ -4,4 +4,4 @@ The purpose of running Hackolade Studio in a Docker container is for running the
 
 &nbsp;
 
-Full instructions and files can be found on [GitHub](<https://github.com/hackolade/docker/tree/main/Studio> "target=\"\_blank\"").
+Full instructions and files can be found on [GitHub](<https://github.com/hackolade/docker/tree/main/Studio> "target=\"_blank\"").

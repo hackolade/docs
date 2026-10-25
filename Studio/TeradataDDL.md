@@ -4,13 +4,8 @@ As you develop the model for your Teradata instance schemas, tables, columns wit
 
 &nbsp;
 
-The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+The script can also be exported to the file system via the menu Tools > Forward-Engineering, or via the [Command-Line Interface](CommandLineInterface.md).
 
 &nbsp;
 
 ![Teradata - Forward-Engineering](<lib/Teradata - Forward-Engineering.png>)
-
-&nbsp;
-
-&nbsp;
-

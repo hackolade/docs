@@ -1,46 +1,43 @@
 # Connect to a repository hub
 
-A repository hub is a platform hosting repositories remotely and securely. [GitHub](<https://github.com/> "target=\"\_blank\""), [GitLab](<https://gitlab.com/> "target=\"\_blank\""), [Bitbucket](<https://bitbucket.org> "target=\"\_blank\"") and [Azure DevOps Repos](<https://azure.microsoft.com/en-us/services/devops/repos/> "target=\"\_blank\"") are such platforms, just to name a few.
+A repository hub is a platform hosting repositories remotely and securely. [GitHub](<https://github.com/> "target=\"_blank\""), [GitLab](<https://gitlab.com/> "target=\"_blank\""), [Bitbucket](<https://bitbucket.org> "target=\"_blank\"") and [Azure DevOps Repos](<https://azure.microsoft.com/en-us/services/devops/repos/> "target=\"_blank\"") are such platforms, just to name a few.
 
 &nbsp;
 
-Besides securing your remote repositories, these hubs provide additional features on top of the standard feature set of Git.&nbsp; For example, the peer review feature is a very popular extension to Git that is supported by most of the repository hubs. It allows changes made by a user to be reviewed and approved by another user before being merged into a target branch.
+Besides securing your remote repositories, these hubs provide additional features on top of the standard feature set of Git. For example, the peer review feature is a very popular extension to Git that is supported by most of the repository hubs. It allows changes made by a user to be reviewed and approved by another user before being merged into a target branch.
 
 &nbsp;
 
-Hackolade Studio is integrating with most of the popular repository hubs to bring peer review capabilities right into the application. You can [submit for review](<Submitforreview.md>) the changes made in a repository, without leaving Hackolade Studio.&nbsp; You can also list and [review change requests](<Reviewchangerequests.md>) submitted by other contributors.&nbsp; This review process is made easy by the data model visualization features of Hackolade Studio.&nbsp; Instead of presenting a complex text diff screen, Hackolade Studio shows graphically what has been modified in a data model using its [compare view](<Compareandmergemodels.md>).&nbsp; This helps understand changes, and decide whether they are legitimate.
+Hackolade Studio is integrating with most of the popular repository hubs to bring peer review capabilities right into the application. You can [submit for review](Submitforreview.md) the changes made in a repository, without leaving Hackolade Studio. You can also list and [review change requests](Reviewchangerequests.md) submitted by other contributors. This review process is made easy by the data model visualization features of Hackolade Studio. Instead of presenting a complex text diff screen, Hackolade Studio shows graphically what has been modified in a data model using its [compare view](Compareandmergemodels.md). This helps understand changes, and decide whether they are legitimate.
 
 &nbsp;
 
-**Note:** you only need to read the information below if you use the hub workflow features to [submit for review](<Submitforreview.md>) or [review change requests](<Reviewchangerequests.md>).&nbsp; But in order to get access to the peer review features in Hackolade Studio, you need to configure how it connects to your repository hub.&nbsp;
+> [!NOTE]
+> You only need to read the information below if you use the hub workflow features to [submit for review](Submitforreview.md) or [review change requests](Reviewchangerequests.md). But in order to get access to the peer review features in Hackolade Studio, you need to configure how it connects to your repository hub.
 
 &nbsp;
 
 ## Automatic connection configuration
 
-If you already cloned a repository from your repository hub, you can just open your local clone in Hackolade Studio.&nbsp; It automatically tries to connect to your repository hub by reusing your existing Git credentials.&nbsp; So if you see your username displayed in the top right corner of the repository view, it means that Hackolade Studio successfully connected to your repository hub.&nbsp; You can start using the peer review features right away, no additional configuration is needed.
+If you already cloned a repository from your repository hub, you can just open your local clone in Hackolade Studio. It automatically tries to connect to your repository hub by reusing your existing Git credentials. So if you see your username displayed in the top right corner of the repository view, it means that Hackolade Studio successfully connected to your repository hub. You can start using the peer review features right away, no additional configuration is needed.
 
 &nbsp;
 
-![Workgroup - hub connection automatic](<lib/Workgroup - hub connection automatic.png>)
-
-Note that Hackolade Studio only tries to configure the connection automatically if you open a repository cloned over HTTPS.&nbsp; It is not possible to configure the connection automatically for a repository over SSH.&nbsp; In this case, you must configure the connection manually, following the instructions below.
+![Workgroup - hub connection automatic](<lib/Workgroup - hub connection automatic.png>)\
+Note that Hackolade Studio only tries to configure the connection automatically if you open a repository cloned over HTTPS. It is not possible to configure the connection automatically for a repository over SSH. In this case, you must configure the connection manually, following the instructions below.
 
 &nbsp;
 
 ## Manual connection configuration
 
-If Hackolade Studio is not yet connected to your repository hub, a blue link in the top right corner of the repository view invites you to configure the connection:
-
-![Workgroup - hub connection manual](<lib/Workgroup - hub connection manual.png>)
-
-Alternatively, when you access the peer review features in the left menu, a placeholder invites you to connect to the repository hub.
-
+If Hackolade Studio is not yet connected to your repository hub, a blue link in the top right corner of the repository view invites you to configure the connection:\
+![Workgroup - hub connection manual](<lib/Workgroup - hub connection manual.png>)\
+Alternatively, when you access the peer review features in the left menu, a placeholder invites you to connect to the repository hub.\
 ![Workgroup - hub connection placeholder](<lib/Workgroup - hub connection placeholder.png>)
 
 &nbsp;
 
-When you click on the connect link / button, a connection management dialog opens up.&nbsp; You may also open this dialog from the menu bar, by clicking on *Repository* \> *Manage Repository Connections*.
+When you click on the connect link / button, a connection management dialog opens up. You may also open this dialog from the menu bar, by clicking on *Repository* > *Manage Repository Connections*.
 
 &nbsp;
 
@@ -50,20 +47,20 @@ When you click on the connect link / button, a connection management dialog open
 
 To create a new connection, you must:
 
-* select a provider from the list (the hub provider for the active repository, if any, should be selected by default);
-* provide the host domain name for the selected provider. This info is pre-filled and read-only for standard providers running in the cloud (e.g. GitHub). It is blank and editable for providers running on-premises;
-* select how to authenticate. The personal access token method is supported by most providers. See next pages for more details, as each hub provider has a different process to generate tokens;
-* click on "Connect" to save the setup and close the dialog.
+- select a provider from the list (the hub provider for the active repository, if any, should be selected by default);
+- provide the host domain name for the selected provider. This info is pre-filled and read-only for standard providers running in the cloud (e.g. GitHub). It is blank and editable for providers running on-premises;
+- select how to authenticate. The personal access token method is supported by most providers. See next pages for more details, as each hub provider has a different process to generate tokens;
+- click on "Connect" to save the setup and close the dialog.
 
 &nbsp;
 
 ### Personal access tokens
 
-You can connect to most of the repository hubs by using a personal access token.&nbsp; Such a token is like a very complex password that is generated by your repository hub, typically to allow 3rd-party applications such as Hackolade Studio to connect securely.
+You can connect to most of the repository hubs by using a personal access token. Such a token is like a very complex password that is generated by your repository hub, typically to allow 3rd-party applications such as Hackolade Studio to connect securely.
 
 &nbsp;
 
-A personal access token can be revoked.&nbsp; It can have an expiration date, which forces you to update it regularly in order to increase the level of security.&nbsp; It can and should be restricted to a minimum subset of permissions (the so-called *OAuth* *scopes*).
+A personal access token can be revoked. It can have an expiration date, which forces you to update it regularly in order to increase the level of security. It can and should be restricted to a minimum subset of permissions (the so-called *OAuth* *scopes*).
 
 &nbsp;
 
@@ -77,17 +74,17 @@ See pages below for information on how your repository hub generates tokens.
 
 ### OAuth
 
-As an alternative to generating a personal access token, some repository hubs also can grant Hackolade Studio access to your account through [OAuth](<https://oauth.net/> "target=\"\_blank\""). Follow the instructions guiding you through the authentication steps specific to each provider.
+As an alternative to generating a personal access token, some repository hubs also can grant Hackolade Studio access to your account through [OAuth](<https://oauth.net/> "target=\"_blank\""). Follow the instructions guiding you through the authentication steps specific to each provider.
 
 &nbsp;
 
 ## Edit a connection
 
-You may need to edit an existing connection, for example if your personal access token has expired.&nbsp; You must then provide a new token.
+You may need to edit an existing connection, for example if your personal access token has expired. You must then provide a new token.
 
 &nbsp;
 
-Open the connection management dialog from the menu bar by clicking on *Repository* \> *Manage Repository Connections, or* click on the link in the top right corner of the repository view.
+Open the connection management dialog from the menu bar by clicking on *Repository* > *Manage Repository Connections, or* click on the link in the top right corner of the repository view.
 
 &nbsp;
 
@@ -95,21 +92,14 @@ Then select the connection you want to edit, click on the "Edit" button, modify 
 
 &nbsp;
 
-![Image](<lib/Workgroup - manage hub connections - tokens.png>)
-
-&nbsp;
+![Workgroup - manage hub connections - tokens](<lib/Workgroup - manage hub connections - tokens.png>)
 
 &nbsp;
 
 ## Delete a connection
 
-To delete an existing connection, open the connection management dialog from the menu bar by clicking on *Repository* \> *Manage Repository Connections,* or click on the link in the top right corner of the repository view.
+To delete an existing connection, open the connection management dialog from the menu bar by clicking on *Repository* > *Manage Repository Connections,* or click on the link in the top right corner of the repository view.
 
 &nbsp;
 
 Then select the connection you want to delete, and click on the "Disconnect" button.
-
-&nbsp;
-
-&nbsp;
-

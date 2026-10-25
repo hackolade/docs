@@ -4,9 +4,8 @@ In addition to the Azure Cosmos DB web service, Microsoft provides a downloadabl
 
 &nbsp;
 
-Click [here](<Localinstance2.md>) for details on how to connect to a local instance of Cosmos DB with MongoDB API.
+Click [here](Localinstance2.md) for details on how to connect to a local instance of Cosmos DB with MongoDB API.
 
 &nbsp;
 
-Click [here](<Azureinstance1.md>) for details on how to connect to an Azure instance.
-
+Click [here](Azureinstance1.md) for details on how to connect to an Azure instance.

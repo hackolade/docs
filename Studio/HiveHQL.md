@@ -4,9 +4,8 @@ As you develop the model for your Hive tables, columns with their types, and ind
 
 &nbsp;
 
-The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+The script can also be exported to the file system via the menu Tools > Forward-Engineering, or via the [Command-Line Interface](CommandLineInterface.md).
 
 &nbsp;
 
 ![Hive forward-engineering](<lib/Hive forward-engineering.png>)
-

@@ -12,11 +12,10 @@ Unlike nested structures, this modeling style provides full control over the def
 
 ## Repository of examples
 
-The sample models used in the examples below can be found in [this repository](<https://github.com/hackolade/demo-models-read-only/tree/main/Pragmatic%20data%20modeling> "target=\"\_blank\"").&nbsp; They can be opened in the browser with the following links, provided proper license:
+The sample models used in the examples below can be found in [this repository](<https://github.com/hackolade/demo-models-read-only/tree/main/Pragmatic%20data%20modeling> "target=\"_blank\""). They can be opened in the browser with the following links, provided proper license:
 
-\- [1-Polyglot.hck.json](<https://studio.hackolade.com/?g=github\&o=hackolade\&r=demo-models-read-only\&f=Pragmatic%20data%20modeling/1-Polyglot.hck.json\&b=main> "target=\"\_blank\"")
-
-\- [3-Referencing-Oracle.hck.json](<https://studio.hackolade.com/?g=github\&o=hackolade\&r=demo-models-read-only\&f=Pragmatic%20data%20modeling/3-Referencing-Oracle.hck.json\&b=main> "target=\"\_blank\"")
+- [1-Polyglot.hck.json](<https://studio.hackolade.com/?g=github&o=hackolade&r=demo-models-read-only&f=Pragmatic+data+modeling%2F1-Polyglot.hck.json&b=main> "target=\"_blank\"")
+- [3-Referencing-Oracle.hck.json](<https://studio.hackolade.com/?g=github&o=hackolade&r=demo-models-read-only&f=Pragmatic+data+modeling%2F3-Referencing-Oracle.hck.json&b=main> "target=\"_blank\"")
 
 &nbsp;
 
@@ -24,16 +23,15 @@ Note also the naming convention applied to transform business names in the Polyg
 
 &nbsp;
 
-## **Example of customer placing orders**
+## Example of customer placing orders
 
-* A Customer entity exists as a standalone entity.
-* An Order entity also exists separately.
-* The relationship between them is explicitly defined, with clear cardinalities on both sides.
+- A `Customer` entity exists as a standalone entity.
+- An `Order` entity also exists separately.
+- The relationship between them is explicitly defined, with clear cardinalities on both sides.
 
 &nbsp;
 
-This structure naturally fits relational modeling principles, where entities and their relationships are kept independent and precisely controlled.
-
+This structure naturally fits relational modeling principles, where entities and their relationships are kept independent and precisely controlled.\
 ![Pragmatic modeling - Referencing polyglot](<lib/Pragmatic modeling - Referencing polyglot.png>)
 
 &nbsp;
@@ -51,4 +49,3 @@ When the model is normalized in the Polyglot model, you cannot denormalize it du
 &nbsp;
 
 In mixed environments, where document stores or API designs favor embedded structures, using a nested modeling approach at the logical level provides greater flexibility.
-

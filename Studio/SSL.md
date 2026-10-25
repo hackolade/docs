@@ -1,6 +1,6 @@
 # SSL
 
-MongoDB supports SSL certificate authentication for client authentication and internal authentication of the members of replica sets and sharded clusters.&nbsp; x.509 certificate authentication requires a secure TLS/SSL connection.&nbsp; For more info, please consult [https://docs.mongodb.com/manual/tutorial/configure-ssl/](<https://docs.mongodb.com/manual/tutorial/configure-ssl/> "target=\"\_blank\"")
+MongoDB supports SSL certificate authentication for client authentication and internal authentication of the members of replica sets and sharded clusters. x.509 certificate authentication requires a secure TLS/SSL connection. For more info, please consult [https://docs.mongodb.com/manual/tutorial/configure-ssl/](<https://docs.mongodb.com/manual/tutorial/configure-ssl/> "target=\"_blank\"")
 
 &nbsp;
 
@@ -9,6 +9,8 @@ MongoDB supports SSL certificate authentication for client authentication and in
 &nbsp;
 
 Depending on the setup, one or more of the following fields will need to reference the appropriate file:
+
+&nbsp;
 
 ## Certificate Authority
 
@@ -47,4 +49,3 @@ A private key can optionally be encrypted with a password.
 &nbsp;
 
 If your private key is password protected, enter the password here. If not, leave the field blank.
-

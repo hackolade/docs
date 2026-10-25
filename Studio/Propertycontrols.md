@@ -24,29 +24,17 @@ A custom property control is defined using the following syntax, starting with 3
 
 &nbsp;
 
-&#49;. simple text: text
-
-&#50;. text area (pop-up text): details with template = textarea
-
-&#51;. dropdown selection (unique): select
-
-&#52;. dropdown selection (multiple):&nbsp;
-
-&#53;. numeric: numeric
-
-&#54;. checkbox (boolean): checkbox
-
-&#55;. properties group: group
-
-&#56;. properties block: block
-
-&#57;. field list: fieldList
-
-&#49;0. field list with dropdown of attributes: fieldList with template = orderedList
-
-&#49;1. select from a list of entities
-
-&nbsp;
+1\. simple text: text\
+2\. text area (pop-up text): details with template = textarea\
+3\. dropdown selection (unique): select\
+4\. dropdown selection (multiple):\
+5\. numeric: numeric\
+6\. checkbox (boolean): checkbox\
+7\. properties group: group\
+8\. properties block: block\
+9\. field list: fieldList\
+10\. field list with dropdown of attributes: fieldList with template = orderedList\
+11\. select from a list of entities
 
 &nbsp;
 
@@ -72,36 +60,32 @@ Below is the list of optional keywords.
 
 &nbsp;
 
-&nbsp;
-
 ### allowNegative
 
-(*boolean*) - optional (default = true): for numeric controls only.&nbsp; Self explanatory.&nbsp; If false, equivalent to setting minValue to 0.
+(*boolean*) - optional (default = true): for numeric controls only. Self explanatory. If false, equivalent to setting minValue to 0.
 
 &nbsp;
 
 ### attributeList
 
-(*array of values*) - optional) : used in combination with propertyType = fieldList and template = orderedList &nbsp;
+(*array of values*) - optional) : used in combination with propertyType = fieldList and template = orderedList
 
 &nbsp;
 
-&nbsp;
-
-![Image](<lib/Custom prop control attributeList.png>)
+![Custom prop control attributeList](<lib/Custom prop control attributeList.png>)
 
 &nbsp;
 
-> &nbsp; &nbsp; {\
-&nbsp; &nbsp; &nbsp; &nbsp; "propertyName": "Key",\
-&nbsp; &nbsp; &nbsp; &nbsp; "propertyKeyword": "indxKey",\
-&nbsp; &nbsp; &nbsp; &nbsp; "propertyType": "fieldList",\
-&nbsp; &nbsp; &nbsp; &nbsp; "template": "orderedList",\
-&nbsp; &nbsp; &nbsp; &nbsp; "attributeList": \["ascending", "descending"\],\
-&nbsp; &nbsp; &nbsp; &nbsp; "requiredProperty": true\
-&nbsp; &nbsp; }
-
-&nbsp;
+```json
+{
+        "propertyName": "Key",
+        "propertyKeyword": "indxKey",
+        "propertyType": "fieldList",
+        "template": "orderedList",
+        "attributeList": ["ascending", "descending"],
+        "requiredProperty": true
+    }
+```
 
 &nbsp;
 
@@ -117,19 +101,15 @@ Below is the list of optional keywords.
 
 &nbsp;
 
-&nbsp;
-
-### defaultValue&nbsp;
+### defaultValue
 
 (*string/number/boolean*) - optional; default value for property
 
 &nbsp;
 
-&nbsp;
-
 ### dependency
 
-(*object*) - optional: contains an object with a key and arguments determining whether or not to display this property. &nbsp;
+(*object*) - optional: contains an object with a key and arguments determining whether or not to display this property.
 
 &nbsp;
 
@@ -137,44 +117,52 @@ Example of a simple dependency, testing the value of a property:
 
 &nbsp;
 
-> &nbsp; &nbsp; "dependency": {\
-&nbsp;     &nbsp; "key": "type",\
-&nbsp;     &nbsp; "value": "string"\
-&nbsp; &nbsp; }
+```json
+"dependency": {
+        "key": "type",
+    "value": "string"
+}
+```
 
 &nbsp;
 
 Example of a dependency, testing for the presence of a property:
 
-> &nbsp;
+&nbsp;
 
-> &nbsp; &nbsp; "dependency": {\
-&nbsp;     &nbsp; "key": "name",\
-&nbsp;     &nbsp; "exist": false\
-&nbsp; &nbsp; }
+```json
+"dependency": {
+        "key": "name",
+    "exist": false
+}
+```
 
 &nbsp;
 
 Example of a dependency, testing for the properties of the string characteristics of a property:
 
-> &nbsp;
+&nbsp;
 
-> &nbsp; &nbsp; "dependency": {\
-&nbsp;     &nbsp; "key": "name",\
-&nbsp;     &nbsp; "minLength": 5,\
-&nbsp;     &nbsp; "maxLength": 10\
-&nbsp; &nbsp; }
+```json
+"dependency": {
+        "key": "name",
+    "minLength": 5,
+    "maxLength": 10
+}
+```
 
 &nbsp;
 
 Example of a dependency, testing for the properties of the regex pattern value of a property:
 
-> &nbsp;
+&nbsp;
 
-> &nbsp; &nbsp; "dependency": {\
-&nbsp;     &nbsp; "key": "name",\
-&nbsp;     &nbsp; "pattern": "\^(H\|h)ackolade (2.5.8\|3.0.2)$"\
-&nbsp; &nbsp; }
+```json
+"dependency": {
+        "key": "name",
+    "pattern": "^(H|h)ackolade (2.5.8|3.0.2)$"
+}
+```
 
 &nbsp;
 
@@ -182,10 +170,12 @@ Example of a dependency, testing for multiple values of a property (equivalent t
 
 &nbsp;
 
-> &nbsp; &nbsp; "dependency": {\
-&nbsp; &nbsp; &nbsp; &nbsp; "key": "mode",\
-&nbsp; &nbsp; &nbsp; &nbsp; "value": \["char","varchar", "bit", "varbit"\]\
-&nbsp; &nbsp; }
+```json
+"dependency": {
+        "key": "mode",
+    "value": ["char","varchar", "bit", "varbit"]
+}
+```
 
 &nbsp;
 
@@ -193,12 +183,14 @@ Example of a dependency, testing for the properties of the numeric value of a pr
 
 &nbsp;
 
-> &nbsp; &nbsp; "dependency": {\
-&nbsp;     &nbsp; "key": "amount",\
-&nbsp;     &nbsp; "minimum": 10,\
-&nbsp;     &nbsp; "exclusiveMinimum": true,\
-&nbsp;     &nbsp; "maximum": 100\
-&nbsp; &nbsp; }
+```json
+"dependency": {
+        "key": "amount",
+    "minimum": 10,
+    "exclusiveMinimum": true,
+    "maximum": 100
+}
+```
 
 &nbsp;
 
@@ -206,125 +198,127 @@ Example of a dependency combining and and or operators:
 
 &nbsp;
 
-> &nbsp; &nbsp; "dependency": {\
-&nbsp;     &nbsp; "type": "and",\
-&nbsp;     &nbsp; "values": \[\
-&nbsp;         &nbsp; {\
-&nbsp;             &nbsp; "type": "or",\
-&nbsp;             &nbsp; "values": \[\
-&nbsp;                 &nbsp; {\
-&nbsp;                     &nbsp; "level": "parent",\
-&nbsp;                     &nbsp; "key": "name",\
-&nbsp;                     &nbsp; "value": "query"\
-&nbsp;                 &nbsp; },\
-&nbsp;                 &nbsp; { \
-&nbsp;                     &nbsp; "level": "parent",\
-&nbsp;                     &nbsp; "key": "name",\
-&nbsp;                     &nbsp; "value": "formData"\
-&nbsp;                 &nbsp; }\
-&nbsp;             &nbsp; \]\
-&nbsp;         &nbsp; },\
-&nbsp;         &nbsp; {\
-&nbsp;             &nbsp; "level": "parent",\
-&nbsp;             &nbsp; "key": "structureType",\
-&nbsp;             &nbsp; "value": true\
-&nbsp;         &nbsp; }\
-&nbsp;     &nbsp; \]\
-&nbsp; &nbsp; }
+```json
+"dependency": {
+        "type": "and",
+    "values": [
+        {
+            "type": "or",
+            "values": [
+                {
+                    "level": "parent",
+                    "key": "name",
+                    "value": "query"
+                },
+                {
+                    "level": "parent",
+                    "key": "name",
+                    "value": "formData"
+                }
+            ]
+        },
+        {
+            "level": "parent",
+            "key": "structureType",
+            "value": true
+        }
+    ]
+}
+```
 
 &nbsp;
 
-As you can see above, you can use for your dependency a keyword located at a different level.&nbsp; To avoid any risk of confusion if you use the same keyword at different levels, it is recommended to use the dot notation based on the root level.
+As you can see above, you can use for your dependency a keyword located at a different level. To avoid any risk of confusion if you use the same keyword at different levels, it is recommended to use the dot notation based on the root level.
 
 &nbsp;
 
-> &nbsp; &nbsp; &nbsp; &nbsp; {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "propertyName": "Enabled",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "propertyKeyword": "configEnabled",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "propertyType": "checkbox",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "dependency": {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "level": "objectRoot",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "key": "dbtLabs.semanticComponent",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "value": "metric"\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }\
-&nbsp; &nbsp; &nbsp; &nbsp; },
+```json
+{
+            "propertyName": "Enabled",
+    "propertyKeyword": "configEnabled",
+    "propertyType": "checkbox",
+    "dependency": {
+        "level": "objectRoot",
+        "key": "dbtLabs.semanticComponent",
+        "value": "metric"
+    }
+},
+```
 
 &nbsp;
 
-When a dependency contains a key pointing to a multipleCheckboxSelect control (dropdown with multiple select), then the key must be appended with dot+star (".\*") to indicate "any element in the array".
+When a dependency contains a key pointing to a `multipleCheckboxSelect` control (dropdown with multiple select), then the key must be appended with dot+star (".\*") to indicate "any element in the array".
 
 &nbsp;
 
-&nbsp;
-
-> &nbsp; &nbsp; &nbsp; &nbsp; "structure": \[\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "propertyName": "Data Classification",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "propertyKeyword": "dataClassification",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "propertyType": "multipleCheckboxSelect",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "options": \[\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "PII",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "GDPR",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "Confidential",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "Public"\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; \]\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "propertyName": "Shows when PII is included",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "propertyKeyword": "showsWhenPII",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "propertyType": "text",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "dependency": {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "key": "dataClassification.\*",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "value": "PII"\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "propertyName": "Shows when PII or GDPR",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "propertyKeyword": "showsWhenPIIorGDPR",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "propertyType": "text",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "dependency": {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "key": "dataClassification.\*",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "value": \[\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "PII",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "GDPR"\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; \]\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "propertyName": "Shows when Confidential is NOT selected",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "propertyKeyword": "showsWhenNotConfidential",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "propertyType": "text",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "dependency": {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "not",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "values": \[\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "key": "dataClassification.\*",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "value": "Confidential"\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; \]\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "propertyName": "Shows when PII and GDPR",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "propertyKeyword": "showsWhenPIIandGDPR",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "propertyType": "text",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "dependency": {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "and",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "values": \[\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "key": "dataClassification.\*",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "value": "PII"\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "key": "dataClassification.\*",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "value": "GDPR"\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; \]\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }\
-&nbsp; &nbsp; &nbsp; &nbsp; \]&nbsp;
-
-&nbsp;
+```json
+"structure": [
+            {
+                "propertyName": "Data Classification",
+                "propertyKeyword": "dataClassification",
+                "propertyType": "multipleCheckboxSelect",
+                "options": [
+                    "PII",
+                    "GDPR",
+                    "Confidential",
+                    "Public"
+                ]
+            },
+            {
+                "propertyName": "Shows when PII is included",
+                "propertyKeyword": "showsWhenPII",
+                "propertyType": "text",
+                "dependency": {
+                    "key": "dataClassification.*",
+                    "value": "PII"
+                }
+            },
+            {
+                "propertyName": "Shows when PII or GDPR",
+                "propertyKeyword": "showsWhenPIIorGDPR",
+                "propertyType": "text",
+                "dependency": {
+                    "key": "dataClassification.*",
+                    "value": [
+                        "PII",
+                        "GDPR"
+                    ]
+                }
+            },
+            {
+                "propertyName": "Shows when Confidential is NOT selected",
+                "propertyKeyword": "showsWhenNotConfidential",
+                "propertyType": "text",
+                "dependency": {
+                    "type": "not",
+                    "values": [
+                        {
+                            "key": "dataClassification.*",
+                            "value": "Confidential"
+                        }
+                    ]
+                }
+            },
+            {
+                "propertyName": "Shows when PII and GDPR",
+                "propertyKeyword": "showsWhenPIIandGDPR",
+                "propertyType": "text",
+                "dependency": {
+                    "type": "and",
+                    "values": [
+                        {
+                            "key": "dataClassification.*",
+                            "value": "PII"
+                        },
+                        {
+                            "key": "dataClassification.*",
+                            "value": "GDPR"
+                        }
+                    ]
+                }
+            }
+        ]
+```
 
 &nbsp;
 
@@ -334,25 +328,23 @@ When a dependency contains a key pointing to a multipleCheckboxSelect control (d
 
 &nbsp;
 
-&nbsp;
-
 ### disabledOnCondition
 
 (*object*) - optional: disables the property if any of conditions is true for the current entity. Must be an array of condition objects. The condition object can have the following structure:
 
 &nbsp;
 
-> &nbsp; &nbsp; {\
-&nbsp; &nbsp; &nbsp; &nbsp; "propertyName": "Or replace",\
-&nbsp; &nbsp; &nbsp; &nbsp; "propertyKeyword": "orReplace",\
-&nbsp; &nbsp; &nbsp; &nbsp; "propertyType": "checkbox",\
-&nbsp; &nbsp; &nbsp; &nbsp; "disabledOnCondition": {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "key": "ifNotExist",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "value": true\
-&nbsp; &nbsp; &nbsp; &nbsp; }\
-&nbsp; &nbsp; }
-
-&nbsp;
+```json
+{
+        "propertyName": "Or replace",
+        "propertyKeyword": "orReplace",
+        "propertyType": "checkbox",
+        "disabledOnCondition": {
+            "key": "ifNotExist",
+            "value": true
+        }
+    }
+```
 
 &nbsp;
 
@@ -364,13 +356,13 @@ When a dependency contains a key pointing to a multipleCheckboxSelect control (d
 
 ### editorDialect
 
-(string) - optional:&nbsp; used in template = codeEditor, editorDialect is one of the possible temptlateOptions and allows for syntax highlighting depending on the language: sql, pgsql, markdown, javascript, yaml.
+(string) - optional: used in template = codeEditor, editorDialect is one of the possible temptlateOptions and allows for syntax highlighting depending on the language: sql, pgsql, markdown, javascript, yaml.
 
 &nbsp;
 
 ### enableForReference
 
-(*boolean*) - optional: by default, properties of references to a definition (local, model or external) are typically disabled.&nbsp; By setting this to true, the property can be editable in the reference and its value has higher priority than the same property value from the referenced definition.&nbsp; So, when the reference is resolved, the properties values will be taken from the reference (if present) and not from its definition.
+(*boolean*) - optional: by default, properties of references to a definition (local, model or external) are typically disabled. By setting this to true, the property can be editable in the reference and its value has higher priority than the same property value from the referenced definition. So, when the reference is resolved, the properties values will be taken from the reference (if present) and not from its definition.
 
 &nbsp;
 
@@ -400,7 +392,7 @@ When a dependency contains a key pointing to a multipleCheckboxSelect control (d
 
 ### hidden
 
-(*boolean*) - optional (default = false): hides the control from the pane while keeping the value.&nbsp;
+(*boolean*) - optional (default = false): hides the control from the pane while keeping the value.
 
 &nbsp;
 
@@ -440,29 +432,25 @@ When a dependency contains a key pointing to a multipleCheckboxSelect control (d
 
 &nbsp;
 
-> &nbsp; &nbsp; {\
-&nbsp; &nbsp; &nbsp; &nbsp; "propertyName": "Tag name",\
-&nbsp; &nbsp; &nbsp; &nbsp; "propertyKeyword": "tagName",\
-&nbsp; &nbsp; &nbsp; &nbsp; "propertyTooltip": "Specify tag to be referenced at all levels",\
-&nbsp; &nbsp; &nbsp; &nbsp; "propertyType": "selecthashed",\
-&nbsp; &nbsp; &nbsp; &nbsp; "withEmptyOption": true,\
-&nbsp; &nbsp; &nbsp; &nbsp; "propertySource": {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "level": "container",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "source": "tags.\*.name"\
-&nbsp; &nbsp; &nbsp; &nbsp; }\
-&nbsp; &nbsp; }
-
-&nbsp;
-
-&nbsp;
+```json
+{
+        "propertyName": "Tag name",
+        "propertyKeyword": "tagName",
+        "propertyTooltip": "Specify tag to be referenced at all levels",
+        "propertyType": "selecthashed",
+        "withEmptyOption": true,
+        "propertySource": {
+            "level": "container",
+            "source": "tags.*.name"
+        }
+    }
+```
 
 &nbsp;
 
 ### propertyTooltip
 
-(*string*) - optional: only taken into account for propertyTypes: text area,&nbsp; dropdown, properties group, and field list
-
-&nbsp;
+(*string*) - optional: only taken into account for propertyTypes: text area, dropdown, properties group, and field list
 
 &nbsp;
 
@@ -480,7 +468,7 @@ When a dependency contains a key pointing to a multipleCheckboxSelect control (d
 
 ### shouldValidate
 
-(*boolean*) - optional (default = false): defines whether field should be validated or any value is allowed.&nbsp; Validation rules are defined once in validationRegularExpressions.json, and are the same in any matching propertyName in any level. &nbsp;
+(*boolean*) - optional (default = false): defines whether field should be validated or any value is allowed. Validation rules are defined once in validationRegularExpressions.json, and are the same in any matching propertyName in any level.
 
 &nbsp;
 
@@ -490,37 +478,33 @@ When a dependency contains a key pointing to a multipleCheckboxSelect control (d
 
 &nbsp;
 
-> {\
-&nbsp; &nbsp; "propertyName": "Numeric",\
-&nbsp; &nbsp; "propertyKeyword": "numericProp",\
-&nbsp; &nbsp; "propertyType": "numeric",\
-&nbsp; &nbsp; "valueType": "number",\
-&nbsp; &nbsp; "allowNegative": false,\
-&nbsp; &nbsp; "minValue": 0,\
-&nbsp; &nbsp; "maxValue": 1,\
-&nbsp; &nbsp; "step": 0.01,\
-&nbsp; &nbsp; "propertyValidate": true\
+```json
+{
+    "propertyName": "Numeric",
+    "propertyKeyword": "numericProp",
+    "propertyType": "numeric",
+    "valueType": "number",
+    "allowNegative": false,
+    "minValue": 0,
+    "maxValue": 1,
+    "step": 0.01,
+    "propertyValidate": true
 }
+```
 
 &nbsp;
 
-### template&nbsp;
+### template
 
-(string) - optional; template used in the modal window if propertyType is details; possible value is:&nbsp;
+(string) - optional; template used in the modal window if propertyType is details; possible value is:
 
-\- details: textarea, or textAreaJSON (input is validated to be JSON)
-
-\- fieldList: orderedList
-
-\- code editor
-
-\- collectionTree
-
-\- entities
-
-\- boolean
-
-\- definitions
+- details: textarea, or textAreaJSON (input is validated to be JSON)
+- fieldList: orderedList
+- code editor
+- collectionTree
+- entities
+- boolean
+- definitions
 
 &nbsp;
 
@@ -530,17 +514,19 @@ When a dependency contains a key pointing to a multipleCheckboxSelect control (d
 
 &nbsp;
 
-> &nbsp; &nbsp; {\
-&nbsp; &nbsp; &nbsp; &nbsp; "propertyName": "Before CREATE VIEW",\
-&nbsp; &nbsp; &nbsp; &nbsp; "propertyKeyword": "beforeCreateView",\
-&nbsp; &nbsp; &nbsp; &nbsp; "propertyType": "details",\
-&nbsp; &nbsp; &nbsp; &nbsp; "markdown": false,\
-&nbsp; &nbsp; &nbsp; &nbsp; "template": "codeEditor",\
-&nbsp; &nbsp; &nbsp; &nbsp; "templateOptions": {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "editorDialect": "sql",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "customScriptVariables": true\
-&nbsp; &nbsp; &nbsp; &nbsp; }\
-&nbsp; &nbsp; }
+```json
+{
+        "propertyName": "Before CREATE VIEW",
+        "propertyKeyword": "beforeCreateView",
+        "propertyType": "details",
+        "markdown": false,
+        "template": "codeEditor",
+        "templateOptions": {
+            "editorDialect": "sql",
+            "customScriptVariables": true
+        }
+    }
+```
 
 &nbsp;
 
@@ -550,19 +536,19 @@ When a dependency contains a key pointing to a multipleCheckboxSelect control (d
 
 &nbsp;
 
-&nbsp;
-
 ### validation
 
 (*object*) - optional: adds a warning badge in case no value is in the property, with a tooltip message:
 
 &nbsp;
 
-> &nbsp; &nbsp; &nbsp; &nbsp; "requiredProperty": true,\
-&nbsp; &nbsp; &nbsp; &nbsp; "validation": {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "required": true,\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "message": "Required property"\
-&nbsp; &nbsp; &nbsp; &nbsp; }
+```json
+"requiredProperty": true,
+        "validation": {
+            "required": true,
+            "message": "Required property"
+        }
+```
 
 &nbsp;
 
@@ -578,11 +564,11 @@ When a dependency contains a key pointing to a multipleCheckboxSelect control (d
 
 &nbsp;
 
-&nbsp;
-
 ## Input controls
 
 For your properties, you may choose among a number of input controls:
+
+&nbsp;
 
 ### Simple text
 
@@ -598,12 +584,14 @@ One may find useful to add keywords such as propertyTooltip, valueType, inputPla
 
 &nbsp;
 
-> {\
-&nbsp; &nbsp; "propertyName": "Simple text",\
-&nbsp; &nbsp; "propertyKeyword": "simpletextProp",\
-&nbsp; &nbsp; "propertyType": "text",\
-&nbsp; &nbsp; "valueType": "string"\
+```json
+{
+    "propertyName": "Simple text",
+    "propertyKeyword": "simpletextProp",
+    "propertyType": "text",
+    "valueType": "string"
 }
+```
 
 &nbsp;
 
@@ -613,8 +601,7 @@ For longer, more elaborate text, possibly including URL hyperlinks and markdown,
 
 &nbsp;
 
-![Custom props control textarea](<lib/Custom props control textarea.png>)
-
+![Custom props control textarea](<lib/Custom props control textarea.png>)\
 One may find useful to add keywords such as markdown (set to true), or addTimeStampButton
 
 &nbsp;
@@ -623,20 +610,22 @@ One may find useful to add keywords such as markdown (set to true), or addTimeSt
 
 &nbsp;
 
-> {\
-&nbsp; &nbsp; "propertyName": "Text area",\
-&nbsp; &nbsp; "propertyKeyword": "textareaProp",\
-&nbsp; &nbsp; "propertyTooltip": "Popup for multi-line text entry",\
-&nbsp; &nbsp; "propertyType": "details",\
-&nbsp; &nbsp; "template": "textarea",\
-&nbsp; &nbsp; "markdown": false\
+```json
+{
+    "propertyName": "Text area",
+    "propertyKeyword": "textareaProp",
+    "propertyTooltip": "Popup for multi-line text entry",
+    "propertyType": "details",
+    "template": "textarea",
+    "markdown": false
 }
+```
 
 &nbsp;
 
 ### Dropdown list selection (unique)
 
-Display a list of allowed values whereby only a single value is possible.&nbsp; If the choice is optional, make sure to include an empty "" option, generally at the top of the list.&nbsp; You may define a defaultValue.&nbsp; It is also easy to build a dependency on the value selected in another property.
+Display a list of allowed values whereby only a single value is possible. If the choice is optional, make sure to include an empty "" option, generally at the top of the list. You may define a defaultValue. It is also easy to build a dependency on the value selected in another property.
 
 &nbsp;
 
@@ -644,21 +633,21 @@ Display a list of allowed values whereby only a single value is possible.&nbsp; 
 
 &nbsp;
 
-&nbsp;
-
-> {\
-&nbsp; &nbsp; "propertyName": "Dropdown selection",\
-&nbsp; &nbsp; "propertyKeyword": "dropdownProp",\
-&nbsp; &nbsp; "shouldValidate": false,\
-&nbsp; &nbsp; "propertyTooltip": "Select from list of options",\
-&nbsp; &nbsp; "propertyType": "select",\
-&nbsp; &nbsp; "options": \[\
-&nbsp;     &nbsp; "Option 1",\
-&nbsp;     &nbsp; "Option 2",\
-&nbsp;     &nbsp; "Option 3",\
-&nbsp;     &nbsp; "Option 4"\
-&nbsp; &nbsp; \]\
+```json
+{
+    "propertyName": "Dropdown selection",
+    "propertyKeyword": "dropdownProp",
+    "shouldValidate": false,
+    "propertyTooltip": "Select from list of options",
+    "propertyType": "select",
+    "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+    ]
 }
+```
 
 &nbsp;
 
@@ -672,48 +661,52 @@ Display a list of allowed values whereby 0 to multiple values are allowed.
 
 &nbsp;
 
-> {\
-&nbsp; &nbsp; "propertyName": "Dropdown with multiple selection",\
-&nbsp; &nbsp; "propertyKeyword": "dropdownMulti",\
-&nbsp; &nbsp; "propertyTooltip": "Select from list of options",\
-&nbsp; &nbsp; "propertyType": "multipleCheckboxSelect",\
-&nbsp; &nbsp; "options": \[\
-&nbsp;     &nbsp; "Option 1",\
-&nbsp;     &nbsp; "Option 2",\
-&nbsp;     &nbsp; "Option 3",\
-&nbsp;     &nbsp; "Option 4"\
-&nbsp; &nbsp; \]\
+```json
+{
+    "propertyName": "Dropdown with multiple selection",
+    "propertyKeyword": "dropdownMulti",
+    "propertyTooltip": "Select from list of options",
+    "propertyType": "multipleCheckboxSelect",
+    "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3",
+        "Option 4"
+    ]
 }
+```
 
 &nbsp;
 
 ### numeric
 
-Display a box that only allows numeric values.&nbsp; Up and down arrows allow to increase or decrease the value according to a defined step (if different than 1). &nbsp;
+Display a box that only allows numeric values. Up and down arrows allow to increase or decrease the value according to a defined step (if different than 1).
 
 &nbsp;
 
 ![Custom props control numeric](<lib/Custom props control numeric.png>)
 
-> &nbsp;
+&nbsp;
 
-> {\
-&nbsp; &nbsp; "propertyName": "Numeric",\
-&nbsp; &nbsp; "propertyKeyword": "numericProp",\
-&nbsp; &nbsp; "propertyType": "numeric",\
-&nbsp; &nbsp; "valueType": "number",\
-&nbsp; &nbsp; "allowNegative": false,\
-&nbsp; &nbsp; "minValue": 0,\
-&nbsp; &nbsp; "maxValue": 1,\
-&nbsp; &nbsp; "step": 0.01,\
-&nbsp; &nbsp; "propertyValidate": true\
+```json
+{
+    "propertyName": "Numeric",
+    "propertyKeyword": "numericProp",
+    "propertyType": "numeric",
+    "valueType": "number",
+    "allowNegative": false,
+    "minValue": 0,
+    "maxValue": 1,
+    "step": 0.01,
+    "propertyValidate": true
 }
+```
 
-> &nbsp;
+&nbsp;
 
 ### checkbox (boolean)
 
-Displays a checkbox for boolean values true/false. &nbsp;
+Displays a checkbox for boolean values true/false.
 
 &nbsp;
 
@@ -721,19 +714,19 @@ Displays a checkbox for boolean values true/false. &nbsp;
 
 &nbsp;
 
-&nbsp;
-
-> {\
-&nbsp; &nbsp; "propertyName": "Checkbox",\
-&nbsp; &nbsp; "propertyKeyword": "checkboxProp",\
-&nbsp; &nbsp; "propertyType": "checkbox"\
+```json
+{
+    "propertyName": "Checkbox",
+    "propertyKeyword": "checkboxProp",
+    "propertyType": "checkbox"
 }
+```
 
 &nbsp;
 
 ### properties group
 
-Displays a complex structure of one or more properties, whereby multiple groups can be created.&nbsp; To create the group, the user clicks on the + plus sign.&nbsp; The user may delete a previously created group by clicking the X.
+Displays a complex structure of one or more properties, whereby multiple groups can be created. To create the group, the user clicks on the + plus sign. The user may delete a previously created group by clicking the X.
 
 &nbsp;
 
@@ -741,31 +734,29 @@ Displays a complex structure of one or more properties, whereby multiple groups 
 
 &nbsp;
 
-&nbsp;
-
-> {\
-&nbsp; &nbsp; "propertyName": "Group",\
-&nbsp; &nbsp; "propertyType": "group",\
-&nbsp; &nbsp; "propertyKeyword": "grpProp",\
-&nbsp; &nbsp; "propertyTooltip": "",\
-&nbsp; &nbsp; "structure": \[\
-&nbsp;     &nbsp; {\
-&nbsp;         &nbsp; "propertyName": "Simple Grp Text",\
-&nbsp;         &nbsp; "propertyKeyword": "simpleGrpText",\
-&nbsp;         &nbsp; "propertyType": "text"\
-&nbsp;     &nbsp; },\
-&nbsp;     &nbsp; {\
-&nbsp;         &nbsp; "propertyName": "Group Number",\
-&nbsp;         &nbsp; "propertyKeyword": "grpNumber",\
-&nbsp;         &nbsp; "propertyValidate": true,\
-&nbsp;         &nbsp; "propertyType": "numeric",\
-&nbsp;         &nbsp; "valueType": "number",\
-&nbsp;         &nbsp; "allowNegative": false\
-&nbsp;     &nbsp; }\
-&nbsp; &nbsp; \]\
+```json
+{
+    "propertyName": "Group",
+    "propertyType": "group",
+    "propertyKeyword": "grpProp",
+    "propertyTooltip": "",
+    "structure": [
+        {
+            "propertyName": "Simple Grp Text",
+            "propertyKeyword": "simpleGrpText",
+            "propertyType": "text"
+        },
+        {
+            "propertyName": "Group Number",
+            "propertyKeyword": "grpNumber",
+            "propertyValidate": true,
+            "propertyType": "numeric",
+            "valueType": "number",
+            "allowNegative": false
+        }
+    ]
 }
-
-&nbsp;
+```
 
 &nbsp;
 
@@ -779,13 +770,9 @@ A block control is similar to a group control except for the fact that there can
 
 &nbsp;
 
-&nbsp;
-
-&nbsp;
-
 ### field list
 
-This control allows to select items from a dialog of allowed items (for example columns of an entity that can be part of a composite primary key).&nbsp; the items can be ordered, either through the sequence used during selection, or later on with the up/down arrow buttons.
+This control allows to select items from a dialog of allowed items (for example columns of an entity that can be part of a composite primary key). the items can be ordered, either through the sequence used during selection, or later on with the up/down arrow buttons.
 
 &nbsp;
 
@@ -793,14 +780,14 @@ This control allows to select items from a dialog of allowed items (for example 
 
 &nbsp;
 
-&nbsp;
-
-> {\
-&nbsp; &nbsp; "propertyName": "Field List",\
-&nbsp; &nbsp; "propertyKeyword": "keyList",\
-&nbsp; &nbsp; "propertyType": "fieldList",\
-&nbsp; &nbsp; "template": "orderedList"\
+```json
+{
+    "propertyName": "Field List",
+    "propertyKeyword": "keyList",
+    "propertyType": "fieldList",
+    "template": "orderedList"
 }
+```
 
 &nbsp;
 
@@ -814,20 +801,18 @@ Optionally, it may be useful to qualify the items in a field list with different
 
 &nbsp;
 
-&nbsp;
-
-> {\
-&nbsp; &nbsp; "propertyName": "Field List w/ dropdown",\
-&nbsp; &nbsp; "propertyKeyword": "keyListOrder",\
-&nbsp; &nbsp; "propertyType": "fieldList",\
-&nbsp; &nbsp; "template": "orderedList",\
-&nbsp; &nbsp; "types": \[\
-&nbsp;     &nbsp; "ascending",\
-&nbsp;     &nbsp; "descending"\
-&nbsp; &nbsp; \]\
-} 
-
-&nbsp;
+```json
+{
+    "propertyName": "Field List w/ dropdown",
+    "propertyKeyword": "keyListOrder",
+    "propertyType": "fieldList",
+    "template": "orderedList",
+    "types": [
+        "ascending",
+        "descending"
+    ]
+}
+```
 
 &nbsp;
 
@@ -837,19 +822,20 @@ This control allows to list entities of another object level to select from.
 
 &nbsp;
 
-> &nbsp; &nbsp; {\
-&nbsp; &nbsp; &nbsp; &nbsp; "propertyName": "Tag name",\
-&nbsp; &nbsp; &nbsp; &nbsp; "propertyKeyword": "tagName",\
-&nbsp; &nbsp; &nbsp; &nbsp; "propertyTooltip": "",\
-&nbsp; &nbsp; &nbsp; &nbsp; "propertyType": "selecthashed",\
-&nbsp; &nbsp; &nbsp; &nbsp; "withEmptyOption": true,\
-&nbsp; &nbsp; &nbsp; &nbsp; "propertySource": {\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "level": "container",\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "source": "tags.\*.name"\
-&nbsp; &nbsp; &nbsp; &nbsp; }\
-&nbsp; &nbsp; }
+```json
+{
+        "propertyName": "Tag name",
+        "propertyKeyword": "tagName",
+        "propertyTooltip": "",
+        "propertyType": "selecthashed",
+        "withEmptyOption": true,
+        "propertySource": {
+            "level": "container",
+            "source": "tags.*.name"
+        }
+    }
+```
 
 &nbsp;
 
 see keywords withEmptyOption, and propertySource
-

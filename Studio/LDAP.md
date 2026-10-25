@@ -4,7 +4,7 @@ MongoDB Enterprise provides support for proxy authentication of users. This allo
 
 &nbsp;
 
-LDAP support for user authentication requires proper configuration of the saslauthd daemon process as well as the MongoDB server.&nbsp; For more info, consult this [link](<https://docs.mongodb.com/manual/tutorial/configure-ldap-sasl-openldap/> "target=\"\_blank\"").
+LDAP support for user authentication requires proper configuration of the saslauthd daemon process as well as the MongoDB server. For more info, consult this [link](<https://docs.mongodb.com/manual/tutorial/configure-ldap-sasl-openldap/> "target=\"_blank\"").
 
 &nbsp;
 
@@ -21,4 +21,3 @@ Then select LDAP in the authentication dropdown box, before specifying the usern
 &nbsp;
 
 ![MongoDB connection LDAP 2](<lib/MongoDB connection LDAP 2.png>)
-

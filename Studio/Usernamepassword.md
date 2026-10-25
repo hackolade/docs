@@ -16,47 +16,39 @@ For authentication methods other than User/Password authentication (like Kerbero
 
 &nbsp;
 
-### Example
+## Example
 
-Assuming a procedure as described [here](<https://docs.mongodb.com/manual/tutorial/enable-authentication/> "target=\"\_blank\"") but with 'readWrite' rights:
+Assuming a procedure as described [here](<https://docs.mongodb.com/manual/tutorial/enable-authentication/> "target=\"_blank\"") but with 'readWrite' rights:
 
 &nbsp;
 
+```json
 use admin
-
 db.createUser(
-
-&nbsp; {
-
-&nbsp; &nbsp; user: "myUserAdmin",
-
-&nbsp; &nbsp; pwd: "abc123",
-
-&nbsp; &nbsp; roles: \[ { role: "readWrite", db: "admin" } \]
-
-&nbsp; }
-
+   {
+      user: "myUserAdmin",
+      pwd: "abc123",
+      roles: [ 
+         { 
+            role: "readWrite", db: "admin" 
+         } 
+      ]
+   }
 )
+```
 
 &nbsp;
 
-Restart the MongoDB instance with access control:&nbsp;
-
-mongod --auth --port 27017 --dbpath /data/db1
+Restart the MongoDB instance with access control:\
+`mongod --auth --port 27017 --dbpath /data/db1`
 
 &nbsp;
 
-To connect to this instance with Hackolade, the settings could be created as follows:
-
-Connection tab:
-
+To connect to this instance with Hackolade, the settings could be created as follows:\
+Connection tab:\
 ![Reverse-engineering Mongo-username-password connection tab](<lib/Rev-Eng-Mongo-user-pwd connection tab.png>)
 
 &nbsp;
 
-and Authentication tab:
-
+and Authentication tab:\
 ![Reverse-engineering Mongo-username-password authentication tab](<lib/Rev-Eng-Mongo-user-pwd authenticationtab.png>)
-
-&nbsp;
-

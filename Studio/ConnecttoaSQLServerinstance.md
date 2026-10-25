@@ -1,10 +1,10 @@
 # Connect to a SQL Server instance
 
-The SQL Server engine can hosted on-premises, on virtualized machines in a private or public cloud, or as a managed instance with the Azure SQL Database service. &nbsp;
+The SQL Server engine can hosted on-premises, on virtualized machines in a private or public cloud, or as a managed instance with the Azure SQL Database service.
 
 &nbsp;
 
-Several [authentication methods](<https://docs.microsoft.com/en-us/sql/ssms/f1-help/connect-to-server-database-engine> "target=\"\_blank\"") are available.
+Several [authentication methods](<https://docs.microsoft.com/en-us/sql/ssms/f1-help/connect-to-server-database-engine> "target=\"_blank\"") are available.
 
 &nbsp;
 
@@ -16,13 +16,12 @@ In the Hackolade connection settings dialog, give a meaningful name to the conne
 
 &nbsp;
 
-&nbsp;
-
-**Important:** the host IP address and the port must correspond exactly to the values in the SQL Server instance.&nbsp; You may want to check using the SQL Server Configuration Manager (SQL Server Network Configuration -\> Protocols for \<instance name\> -\> TCP/IP -\> \[right click\] properties)
-
-![Image](<lib/SQL Server Configuration Manager.png>)
+> [!IMPORTANT]
+> The host IP address and the port must correspond exactly to the values in the SQL Server instance. You may want to check using the SQL Server Configuration Manager (SQL Server Network Configuration -> Protocols for \<instance name> -> TCP/IP -> \[right click\] properties)
 
 &nbsp;
+
+![SQL Server Configuration Manager](<lib/SQL Server Configuration Manager.png>)
 
 &nbsp;
 
@@ -35,4 +34,3 @@ Or you may choose to provide a connection string which includes: host, port, use
 &nbsp;
 
 ![SQL Server Connection String](<lib/SQL Server Connection String.png>)
-

@@ -5,8 +5,3 @@ In the Authentication tab, select the SQL Server authentication method, then ent
 &nbsp;
 
 ![SQL Server auth](<lib/SQL Server auth.png>)
-
-&nbsp;
-
-&nbsp;
-

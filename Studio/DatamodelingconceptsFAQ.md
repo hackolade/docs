@@ -1,2 +1,1 @@
 # Data modeling concepts FAQ
-

@@ -1,32 +1,32 @@
 # Excel file
 
-The feature to exchange data with Excel provides the ability to export a data model, or parts of it, to Microsoft Excel so properties could be easily edited in a tabular format, to be re-imported back into the application.&nbsp; It facilitates productive bulk actions for the maintenance of properties.&nbsp; It also allows creation of a new model - or additions to an existing model - by team members that might not have access to the application.
+The feature to exchange data with Excel provides the ability to export a data model, or parts of it, to Microsoft Excel so properties could be easily edited in a tabular format, to be re-imported back into the application. It facilitates productive bulk actions for the maintenance of properties. It also allows creation of a new model - or additions to an existing model - by team members that might not have access to the application.
 
 &nbsp;
 
-It includes the following capabilities:&nbsp;
-
-(i) editing containers, entities, and attributes of an existing model;&nbsp;
-
-(ii) selecting which properties of an attribute are exported in the Excel file, and hence which ones are filtered out and not exported; and&nbsp;
-
+It includes the following capabilities:\
+(i) editing containers, entities, and attributes of an existing model;\
+(ii) selecting which properties of an attribute are exported in the Excel file, and hence which ones are filtered out and not exported; and\
 (iii) selecting custom attributes to be added in the various data types of the plugin.
 
 &nbsp;
 
-When doing a roundtrip from Hackolade to Excel and back, it is important to maintain integrity of the model and avoid any corruption.&nbsp; Microsoft Excel does not allow all the controls and validations of the Hackolade applications.&nbsp; Additionally, the application supports a large number of different targets with differing terminology, structure, and characteristics. &nbsp;
+When doing a roundtrip from Hackolade to Excel and back, it is important to maintain integrity of the model and avoid any corruption. Microsoft Excel does not allow all the controls and validations of the Hackolade applications. Additionally, the application supports a large number of different targets with differing terminology, structure, and characteristics.
 
 &nbsp;
 
-**Important note:** let's not misunderstand what is meant with "bulk editing"...&nbsp; the purpose of this function is to facilitate the enrichment of existing models, thanks to the flexibility and power of Excel, including the ability to xlookup, copy/paste information, etc. &nbsp; The purpose is NOT to find a creative way to leverage Excel's lack of integrity rules to circumvent the logic and checks built in the application.&nbsp; We suggest to be extra careful in particular when performing operations that touch the object GUIDs.&nbsp; Copying or changing GUIDs create risks of corrupting the model upon import.
+> [!IMPORTANT]
+> Let's not misunderstand what is meant with "bulk editing"... the purpose of this function is to facilitate the enrichment of existing models, thanks to the flexibility and power of Excel, including the ability to xlookup, copy/paste information, etc. The purpose is NOT to find a creative way to leverage Excel's lack of integrity rules to circumvent the logic and checks built in the application. We suggest to be extra careful in particular when performing operations that touch the object GUIDs. Copying or changing GUIDs create risks of corrupting the model upon import.
 
 &nbsp;
 
-**Important note:** it is critical that the template used to import is of the same target and plugin version issued by the export process.
+> [!IMPORTANT]
+> It is critical that the template used to import is of the same target and plugin version issued by the export process.
 
 &nbsp;
 
-**Important note:** deleting a line in Excel will NOT result in a delete operation in the model when reverse-engineering the Excel back into the Hackolade model. &nbsp;
+> [!IMPORTANT]
+> Deleting a line in Excel will NOT result in a delete operation in the model when reverse-engineering the Excel back into the Hackolade model.
 
 &nbsp;
 
@@ -36,7 +36,7 @@ To import CSV files into Hackolade, it is advised to first export an Excel templ
 
 ## Export model
 
-To start your export for a model, simply go to Tools \> Forward-Engineer \> Excel file...&nbsp; In the Object selection dialog, you may deselect objects that you do not wish to export. &nbsp;
+To start your export for a model, simply go to Tools > Forward-Engineer > Excel file... In the Object selection dialog, you may deselect objects that you do not wish to export.
 
 &nbsp;
 
@@ -44,27 +44,22 @@ To start your export for a model, simply go to Tools \> Forward-Engineer \> Exce
 
 &nbsp;
 
-&nbsp;
-
-With the Options button, you may also access a dialog to select object properties that you do not wish to export:
-
+With the Options button, you may also access a dialog to select object properties that you do not wish to export:\
 ![Tools Options - FE Excel Properties Selection](<lib/Tools Options - FE Excel Properties Selection.png>)
 
 &nbsp;
 
-The properties for each object are listed in the corresponding sections.&nbsp; If you need to filter out a property, simply uncheck the corresponding box.
+The properties for each object are listed in the corresponding sections. If you need to filter out a property, simply uncheck the corresponding box.
 
 &nbsp;
 
-Instructions for the import of an Excel file can be found in [Excel reverse-engineering](<Exceltemplate.md>).
+Instructions for the import of an Excel file can be found in [Excel reverse-engineering](Exceltemplate.md).
 
 &nbsp;
 
 ## Maintain configuration
 
-This configuration can also be maintained in Tools \> Options \> Forward-Engineering, and there's one configuration per target.&nbsp; The configuration itself can be exported to a JSON file so it can be distributed in the organization, and imported on other instances of the application.
-
-&nbsp;
+This configuration can also be maintained in Tools > Options > Forward-Engineering, and there's one configuration per target. The configuration itself can be exported to a JSON file so it can be distributed in the organization, and imported on other instances of the application.
 
 &nbsp;
 
@@ -72,11 +67,12 @@ This configuration can also be maintained in Tools \> Options \> Forward-Enginee
 
 &nbsp;
 
-**Note:** depending on the purpose of your export, you may want to resolve referenced definitions, or not.&nbsp; When the purpose is to do bulk editing, then import the Excel back into your model, then in order to maintain integrity, when a reference to a definition is exported Excel, it must NOT&nbsp; be resolved.&nbsp; In other words, the sub-structure of the object is not exported. &nbsp;
-
-If on the other hand, the purpose is to publish a catalog of the objects in the model, it may be desirable to resolve the references.&nbsp; Choose this option wisely.
+> [!NOTE]
+> Depending on the purpose of your export, you may want to resolve referenced definitions, or not. When the purpose is to do bulk editing, then import the Excel back into your model, then in order to maintain integrity, when a reference to a definition is exported Excel, it must NOT be resolved. In other words, the sub-structure of the object is not exported.
 
 &nbsp;
+
+If on the other hand, the purpose is to publish a catalog of the objects in the model, it may be desirable to resolve the references. Choose this option wisely.
 
 &nbsp;
 
@@ -90,38 +86,33 @@ Microsoft Excel (as well as LibreOffice) encounters memory limitations in the ha
 
 &nbsp;
 
-If you click Yes, you should be aware that values are no longer validated against validation lists, which could lead to undesired inconsistencies.&nbsp; It is suggested instead to:
+If you click Yes, you should be aware that values are no longer validated against validation lists, which could lead to undesired inconsistencies. It is suggested instead to:
 
-\- increase RAM on the workstation,
-
-\- reduce the number of validated properties exported (checkbox or dropdown)
-
-\- reduce the number of entities (and hence attributes) exported
-
-&nbsp;
+- increase RAM on the workstation,
+- reduce the number of validated properties exported (checkbox or dropdown)
+- reduce the number of entities (and hence attributes) exported
 
 &nbsp;
 
 ## Working with relationships
 
-When forward-engineering a data model to Excel, relationships are exported in the same way as other modeling objects.&nbsp; This function primarily supports documentation, review, and auditing, but also allows bulk updates when needed.
+When forward-engineering a data model to Excel, relationships are exported in the same way as other modeling objects. This function primarily supports documentation, review, and auditing, but also allows bulk updates when needed.
 
 &nbsp;
 
-While Excel offers flexibility, it does not provide the same structural guidance and safeguards as the Hackolade Studio UI.&nbsp; As a result, certain combinations of changes that are technically possible in Excel may lead to inconsistent relationship definitions.
+While Excel offers flexibility, it does not provide the same structural guidance and safeguards as the Hackolade Studio UI. As a result, certain combinations of changes that are technically possible in Excel may lead to inconsistent relationship definitions.
 
 &nbsp;
 
-For this reason, editing relationships in Excel is supported but not the primary recommended workflow.&nbsp; When users choose to do so, Hackolade Studio applies a limited set of guardrails during the reverse-engineer process to preserve model integrity.
+For this reason, editing relationships in Excel is supported but not the primary recommended workflow. When users choose to do so, Hackolade Studio applies a limited set of guardrails during the reverse-engineer process to preserve model integrity.
 
 &nbsp;
 
 In particular:
 
-* if the property *Has attributes = true*, the relationship cannot be a Foreign Key or Foreign Master.&nbsp; A relationship that carries attributes is, by definition, an association and cannot be modeled as a FK/FM relationship.
-* if the property *Has attributes = false*, the relationship cannot have relationship attributes defined in the relationship-attributes sheet. In that case, the input is considered inconsistent.
+- if the property *Has attributes = true*, the relationship cannot be a Foreign Key or Foreign Master. A relationship that carries attributes is, by definition, an association and cannot be modeled as a FK/FM relationship.
+- if the property *Has attributes = false*, the relationship cannot have relationship attributes defined in the relationship-attributes sheet. In that case, the input is considered inconsistent.
 
 &nbsp;
 
 If these rules are not respected, the inconsistent relationship is ignored during reverse-engineering and a warning is issued. It prevents silent data loss and ensures that your modeling intent remains explicit.
-

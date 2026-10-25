@@ -1,6 +1,6 @@
 # Connect to a JanusGraph instance
 
-The JanusGraph instance can hosted on-premises, or on virtualized machines in a private or public cloud. &nbsp;
+The JanusGraph instance can hosted on-premises, or on virtualized machines in a private or public cloud.
 
 &nbsp;
 
@@ -17,6 +17,3 @@ If required, enter your username and password
 &nbsp;
 
 ![JanusGraph connection settings auth](<lib/JanusGraph connection settings auth.png>)
-
-&nbsp;
-

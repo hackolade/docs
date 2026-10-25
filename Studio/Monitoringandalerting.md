@@ -12,9 +12,9 @@ The Model Hub process listens on port *3000* and exposes a *GET /health* and *GE
 
 Use this endpoint for:
 
-* Docker / Compose health checks (already defined in the official image)
-* Kubernetes liveness and readiness probes
-* Load balancer health checks
+- Docker / Compose health checks (already defined in the official image)
+- Kubernetes liveness and readiness probes
+- Load balancer health checks
 
 &nbsp;
 
@@ -30,11 +30,9 @@ Also monitor the **database migration** job on install and upgrade. A non-zero e
 
 Collect at least:
 
-&nbsp;
-
-* CPU and memory usage for the *model-hub* container (or pod)
-* Disk usage for the filestore volume (/home/node/.hub)
-* Database CPU, storage, connection count, and free space (on the external PostgreSQL or Oracle instance)
+- CPU and memory usage for the *model-hub* container (or pod)
+- Disk usage for the filestore volume (/home/node/.hub)
+- Database CPU, storage, connection count, and free space (on the external PostgreSQL or Oracle instance)
 
 &nbsp;
 
@@ -44,74 +42,95 @@ Alert when the Model Hub container restarts repeatedly, when memory grows withou
 
 ## Logs
 
-&nbsp;
-
-The Model HUB writes \*\*JSON logs\*\* to the container’s standard output (stdout). Ship them to your central logging platform.
+The Model Hub writes **JSON logs** to the container’s standard output (stdout). Ship them to your central logging platform.
 
 &nbsp;
 
 You will see:
 
-* Access / request logs for HTTP traffic
-* Warning and error logs for unexpected conditions (for example database connectivity problems or Git provider failures)
-
-&nbsp;
+- Access / request logs for HTTP traffic
+- Warning and error logs for unexpected conditions (for example database connectivity problems or Git provider failures)
 
 &nbsp;
 
 Useful alert ideas on log streams:
 
-* Spikes in HTTP \*\*5xx\*\* responses
-* Repeated \*\*401\*\* / \*\*403\*\* after authentication was enabled (often an IdP or redirect URI misconfiguration)
-* Messages indicating database connection or pool errors
-* Messages indicating Git provider or webhook processing failures
-
-&nbsp;
+- Spikes in HTTP \*\*5xx\*\* responses
+- Repeated \*\*401\*\* / \*\*403\*\* after authentication was enabled (often an IdP or redirect URI misconfiguration)
+- Messages indicating database connection or pool errors
+- Messages indicating Git provider or webhook processing failures
 
 &nbsp;
 
 ## Model sync errors
 
-When the Model Hub fails to process a webhook or to sync a model file, it records the failure in the \`sync\_errors\` table in the Model HUB database. Monitor this table in addition to logs.
-
-&nbsp;
+When the Model Hub fails to process a webhook or to sync a model file, it records the failure in the \`sync_errors\` table in the Model Hub database. Monitor this table in addition to logs.
 
 &nbsp;
 
 ### Useful columns
 
-&nbsp;
-
-| **Column** | **Meaning** |
-| --- | --- |
-| *error\_type* | *webhook\_error*&nbsp; failure when the Git provider called the webhook endpoint; model\_sync failure while processing model files |
-| *error\_message* | Human-readable error text for troubleshooting |
-| *created\_at* | When the error was recorded |
-| *git\_request\_id* | Identifier from the Git provider webhook, when available |
-| *git\_provider* | Provider that triggered the sync |
-| *repository\_name* | Repository involved, when available |
-| *branch\_name* | Branch involved, when available |
-| *model\_path* | Model file path involved, when available |
-| *http\_status\_code* | HTTP status related to the failure, when applicable |
-
-
-&nbsp;
+<table style="width:70%">
+<colgroup><col style="width:13%"><col style="width:87%"></colgroup>
+<thead>
+<tr>
+<th>Column</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>error_type</em></td>
+<td><em>webhook_error</em> failure when the Git provider called the webhook endpoint; model_sync failure while processing model files</td>
+</tr>
+<tr>
+<td><em>error_message</em></td>
+<td>Human-readable error text for troubleshooting</td>
+</tr>
+<tr>
+<td><em>created_at</em></td>
+<td>When the error was recorded</td>
+</tr>
+<tr>
+<td><em>git_request_id</em></td>
+<td>Identifier from the Git provider webhook, when available</td>
+</tr>
+<tr>
+<td><em>git_provider</em></td>
+<td>Provider that triggered the sync</td>
+</tr>
+<tr>
+<td><em>repository_name</em></td>
+<td>Repository involved, when available</td>
+</tr>
+<tr>
+<td><em>branch_name</em></td>
+<td>Branch involved, when available</td>
+</tr>
+<tr>
+<td><em>model_path</em></td>
+<td>Model file path involved, when available</td>
+</tr>
+<tr>
+<td><em>http_status_code</em></td>
+<td>HTTP status related to the failure, when applicable</td>
+</tr>
+</tbody>
+</table>
 
 &nbsp;
 
 ### Example queries
 
-#### PostgreSQL (schema hck\_hub)
+#### PostgreSQL (schema hck_hub)
 
-&nbsp;
-
-> SELECT error\_type, error\_message, git\_provider, repository\_name, model\_path, created\_at\
-FROM hck\_hub.sync\_errors\
-WHERE created\_at \> now() - interval '24 hours'\
-ORDER BY created\_at DESC\
+```sql
+SELECT error_type, error_message, git_provider, repository_name, model_path, created_at
+FROM hck_hub.sync_errors
+WHERE created_at > now() - interval '24 hours'
+ORDER BY created_at DESC
 LIMIT 100;
-
-&nbsp;
+```
 
 &nbsp;
 
@@ -119,46 +138,37 @@ Count recent webhook failures:
 
 &nbsp;
 
-> SELECT count(\*) AS webhook\_errors\_last\_24h\
-FROM hck\_hub.sync\_errors\
-WHERE error\_type = 'webhook\_error'\
-&nbsp; AND created\_at \> now() - interval '24 hours';
-
-&nbsp;
+```sql
+SELECT count(*) AS webhook_errors_last_24h
+FROM hck_hub.sync_errors
+WHERE error_type = 'webhook_error'
+  AND created_at > now() - interval '24 hours';
+```
 
 &nbsp;
 
 #### Oracle
 
-&nbsp;
-
-> SELECT error\_type, error\_message, git\_provider, repository\_name, model\_path, created\_at\
-FROM sync\_errors\
-WHERE created\_at \> SYSTIMESTAMP - INTERVAL '1' DAY\
-ORDER BY created\_at DESC\
+```sql
+SELECT error_type, error_message, git_provider, repository_name, model_path, created_at
+FROM sync_errors
+WHERE created_at > SYSTIMESTAMP - INTERVAL '1' DAY
+ORDER BY created_at DESC
 FETCH FIRST 100 ROWS ONLY;
+```
 
 &nbsp;
 
-&nbsp;
-
-Alert when the rate of new *sync\_errors* rows rises suddenly, or when *webhook\_error* rows appear continuously (often a bad webhook URL, secret, or network path from the Git provider to the Model Hub).
-
-&nbsp;
+Alert when the rate of new *sync_errors* rows rises suddenly, or when *webhook_error* rows appear continuously (often a bad webhook URL, secret, or network path from the Git provider to the Model Hub).
 
 &nbsp;
 
 ## Suggested alert checklist
 
-&nbsp;
-
-* */health* failing or Model Hub container/pod not ready
-* Repeated container restarts
-* Elevated HTTP 5xx rate
-* Repeated 401/403 after authentication was enabled
-* Database connectivity errors in logs
-* Growth of rows in *sync\_errors* (especially *webhook\_error* spikes)
-* Filestore / disk usage high on */home/node/.hub*
-
-&nbsp;
-
+- */health* failing or Model Hub container/pod not ready
+- Repeated container restarts
+- Elevated HTTP 5xx rate
+- Repeated 401/403 after authentication was enabled
+- Database connectivity errors in logs
+- Growth of rows in *sync_errors* (especially *webhook_error* spikes)
+- Filestore / disk usage high on */home/node/.hub*

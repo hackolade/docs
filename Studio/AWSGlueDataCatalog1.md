@@ -4,7 +4,7 @@ As you develop the model for your AWS Glue Data Catalog tables, and columns with
 
 &nbsp;
 
-The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+The script can also be exported to the file system via the menu Tools > Forward-Engineering, or via the [Command-Line Interface](CommandLineInterface.md).
 
 &nbsp;
 
@@ -12,6 +12,5 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-or in HiveQL syntax:
-
+or in HiveQL syntax:\
 ![Glue forward-engineering in HiveQL](<lib/Glue forward-engineering in HiveQL.png>)

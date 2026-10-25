@@ -12,11 +12,8 @@ The information can be viewed in the Gremlin tab:
 
 &nbsp;
 
-You may export these scripts to a Gremlin file with the menu option Tools \> Forward-Engineering \> Gremlin script:
+You may export these scripts to a Gremlin file with the menu option Tools > Forward-Engineering > Gremlin script:
 
 &nbsp;
 
 ![Gremlin forward-engineering menu](<lib/Gremlin forward-engineering menu.png>)
-
-&nbsp;
-

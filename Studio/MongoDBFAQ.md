@@ -1,2 +1,1 @@
 # MongoDB FAQ
-

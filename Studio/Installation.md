@@ -1,6 +1,6 @@
 # Installation
 
-The users are kindly reminded of the End-User Licensing Agreement terms:&nbsp;
+The users are kindly reminded of the End-User Licensing Agreement terms:
 
 &nbsp;
 
@@ -8,4 +8,4 @@ The users are kindly reminded of the End-User Licensing Agreement terms:&nbsp;
 
 &nbsp;
 
-More details can be found [here](<Licenseagreement.md>).
+More details can be found [here](Licenseagreement.md).

@@ -4,7 +4,7 @@ Hackolade dynamically generates the DDL script to create datasets, tables, colum
 
 &nbsp;
 
-The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+The script can also be exported to the file system via the menu Tools > Forward-Engineering, or via the [Command-Line Interface](CommandLineInterface.md).
 
 &nbsp;
 
@@ -12,6 +12,4 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-&nbsp;
-
-A button lets the user apply to a selected instance the script to create datasets, tables and views.&nbsp; Scripts can be generated in JSON Schema format as well.
+A button lets the user apply to a selected instance the script to create datasets, tables and views. Scripts can be generated in JSON Schema format as well.

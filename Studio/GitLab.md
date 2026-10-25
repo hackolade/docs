@@ -1,12 +1,12 @@
 # GitLab
 
-The information below applies to repositories hosted on GitLab (cloud on gitlab.com and self-hosted instances.)&nbsp; It explains how to grant Hackolade Studio access to your GitLab account, which is a pre-requisite for using the workflow features [submit for review](<Submitforreview.md>) and [review change requests](<Reviewchangerequests.md>).
+The information below applies to repositories hosted on GitLab (cloud on gitlab.com and self-hosted instances.) It explains how to grant Hackolade Studio access to your GitLab account, which is a pre-requisite for using the workflow features [submit for review](Submitforreview.md) and [review change requests](Reviewchangerequests.md).
 
 &nbsp;
 
 ## Personal Access Tokens
 
-GitLab provides [different types of tokens](<https://about.gitlab.com/blog/the-ultimate-guide-to-token-management-at-gitlab/> "target=\"\_blank\"").&nbsp; One might be tempted to use, for example, a Group access token.&nbsp; As indicated in the [GitLab documentation](<https://docs.gitlab.com/user/group/settings/group\_access\_tokens/#with-the-ui> "target=\"\_blank\""), "Group access tokens are treated as internal users. If an internal user creates a group access token, that token is able to access all projects that have visibility level set to Internal.", which is most likely undesirable here.&nbsp; Plus, group tokens do not provide the traceability required for our use case.&nbsp; To avoid any issues, make sure to create **Personal** Access Tokens only.
+GitLab provides [different types of tokens](<https://about.gitlab.com/blog/the-ultimate-guide-to-token-management-at-gitlab/> "target=\"_blank\""). One might be tempted to use, for example, a Group access token. As indicated in the [GitLab documentation](<https://docs.gitlab.com/user/group/settings/group_access_tokens/#with-the-ui> "target=\"_blank\""), "Group access tokens are treated as internal users. If an internal user creates a group access token, that token is able to access all projects that have visibility level set to Internal.", which is most likely undesirable here. Plus, group tokens do not provide the traceability required for our use case. To avoid any issues, make sure to create **Personal** Access Tokens only.
 
 &nbsp;
 
@@ -26,17 +26,18 @@ Click on the "generate" link located to the right of the input field to navigate
 
 &nbsp;
 
-Then paste the access token in Hackolade Studio and click the "Connect" button.&nbsp; Take a look at the [GitLab documentation](<https://docs.gitlab.com/ee/user/profile/personal\_access\_tokens.html>) for more information.
+Then paste the access token in Hackolade Studio and click the "Connect" button. Take a look at the [GitLab documentation](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html) for more information.
 
 &nbsp;
 
 ## OAuth
 
-**INFO**: *connecting with OAuth is only possible if you use GitLab cloud and is not supported for self-hosted instances.*
+> [!NOTE]
+> *Connecting with OAuth is only possible if you use GitLab cloud and is not supported for self-hosted instances.*
 
 &nbsp;
 
-As an alternative to generating a personal access token, GitLab can also let you grant Hackolade Studio access to your account through [OAuth](<https://oauth.net/>).
+As an alternative to generating a personal access token, GitLab can also let you grant Hackolade Studio access to your account through [OAuth](https://oauth.net/).
 
 &nbsp;
 
@@ -56,13 +57,10 @@ Click on "Authorize", close the browser window/tab and go back to Hackolade Stud
 
 &nbsp;
 
-&nbsp;
-
 ## Troubleshooting
 
-For issues when Git clone or push fails a GitLab repository, please consult this [GitLab article](<https://support.gitlab.com/hc/en-us/articles/16905177770652-Troubleshooting-common-SSL-certificate-verification-errors> "target=\"\_blank\"").
+For issues when Git clone or push fails a GitLab repository, please consult this [GitLab article](<https://support.gitlab.com/hc/en-us/articles/16905177770652-Troubleshooting-common-SSL-certificate-verification-errors> "target=\"_blank\"").
 
 &nbsp;
 
-A possible cause, as provided by the HackoladeGit.log can be "SSL certificate problem: unable to get local issuer certificate".  This is caused by the fact that your organization might be using self-signed certificates (often in the context of dev or test environments -- rarely in prod environments...) and this self-signed certificate is not present in the local certificate storage.  This situation and the solution are well described in this [GitLab link](<https://support.gitlab.com/hc/en-us/articles/16905177770652-Troubleshooting-common-SSL-certificate-verification-errors#ensure-the-certificate-is-trusted-by-gitlab> "target=\"\_blank\"").
-
+A possible cause, as provided by the HackoladeGit.log can be "SSL certificate problem: unable to get local issuer certificate". This is caused by the fact that your organization might be using self-signed certificates (often in the context of dev or test environments -- rarely in prod environments...) and this self-signed certificate is not present in the local certificate storage. This situation and the solution are well described in this [GitLab link](<https://support.gitlab.com/hc/en-us/articles/16905177770652-Troubleshooting-common-SSL-certificate-verification-errors#ensure-the-certificate-is-trusted-by-gitlab> "target=\"_blank\"").

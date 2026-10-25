@@ -1,63 +1,61 @@
 # Connect to a BigQuery instance
 
-To access a Google BigQuery project, Hackolade Studio currently supports access using two methods, [Application Default Credentials](<https://cloud.google.com/docs/authentication/set-up-adc-local-dev-environment>) and [Service account](<https://cloud.google.com/iam/docs/service-account-overview>).
-
-Choosing the most appropriate method depends on the use case.
-
-If you want to connect from your local workstation, then you should favor using **Application Default Credentials** method because it allows for better auditing and access management, as you will be authenticated as a user (e.g. yourself) to Google Cloud Platform.
-
-While if your use case implies running the Hackolade Studio [Command-Line Interface](<CommandLineInterface.md>) on servers (for instance using Docker), then you should favor using the **Service Account** because this method is tailored for **Machine-to-Machine** use cases.
-
-The Hackolade process for reverse-engineering of Google BigQuery datasets includes the execution of SQL statements to discover datasets, tables and views, columns and their data types.&nbsp;
+To access a Google BigQuery project, Hackolade Studio currently supports access using two methods, [Application Default Credentials](https://cloud.google.com/docs/authentication/set-up-adc-local-dev-environment) and [Service account](https://cloud.google.com/iam/docs/service-account-overview).\
+Choosing the most appropriate method depends on the use case.\
+If you want to connect from your local workstation, then you should favor using ***Application Default Credentials*** method because it allows for better auditing and access management, as you will be authenticated as a user (e.g. yourself) to Google Cloud Platform.\
+While if your use case implies running the Hackolade Studio [Command-Line Interface](CommandLineInterface.md) on servers (for instance using Docker), then you should favor using the ***Service Account*** because this method is tailored for ***Machine-to-Machine*** use cases.\
+The Hackolade process for reverse-engineering of Google BigQuery datasets includes the execution of SQL statements to discover datasets, tables and views, columns and their data types.
 
 &nbsp;
 
 ## Application Default Credentials
 
-ADC are created by the [gcloud CLI](<https://cloud.google.com/sdk/gcloud> "target=\"\_blank\"") client on your workstation.
+ADC are created by the [gcloud CLI](<https://cloud.google.com/sdk/gcloud> "target=\"_blank\"") client on your workstation.
+
+&nbsp;
 
 ### Instructions to setup ADC on your local workstation
 
-As stated by [Google Cloud Platform's documentation](<https://cloud.google.com/docs/authentication/set-up-adc-local-dev-environment> "target=\"\_blank\""):
+As stated by [Google Cloud Platform's documentation](<https://cloud.google.com/docs/authentication/set-up-adc-local-dev-environment> "target=\"_blank\""):
 
-1. Install [gcloud](<https://cloud.google.com/sdk/docs/install>) CLI client on your workstation
-1. If not performed by the last step of the installer, go to a terminal prompt and initialize gcloud: *gcloud init*
-1. And finally authenticate yourself to GCP: *gcloud auth application-default login*
+1. Install [gcloud](https://cloud.google.com/sdk/docs/install) CLI client on your workstation
+2. If not performed by the last step of the installer, go to a terminal prompt and initialize gcloud: *`gcloud init`*
+3. And finally authenticate yourself to GCP: *`gcloud auth application-default login`*
 
-Following [GCP instructions](<https://cloud.google.com/docs/authentication/application-default-credentials> "target=\"\_blank\""), you should get redirected to your browser so you can authenticate yourself:
+&nbsp;
 
+Following [GCP instructions](<https://cloud.google.com/docs/authentication/application-default-credentials> "target=\"_blank\""), you should get redirected to your browser so you can authenticate yourself:\
 ![GCP App Default Credentials authentication](<lib/GCP App Default Credentials authentication.png>)
 
 &nbsp;
 
-If successful, you should be getting this confirmation:
-
+If successful, you should be getting this confirmation:\
 ![GCP App Default Credentials confirmation](<lib/GCP App Default Credentials confirmation.png>)
 
 &nbsp;
 
-Gcloud creates an **application\_default\_credentials.json** credentials file in the following location depending on your operating system:
+Gcloud creates an ***application_default_credentials.json*** credentials file in the following location depending on your operating system:
 
-* Windows: *%appdata%\\gcloud\\application\_default\_credentials.json*
+- Windows: *`%appdata%\gcloud\application_default_credentials.json`*
 
-or in *%userprofile%\\Appdata\\Roaming\\gcloud\\legacy\_credentials\\\<your GCP identifier\>\\adc.json*
+&nbsp;
 
-* Mac: *${HOME}/.config/gcloud/application\_default\_credentials.json*
-* Linux: *${HOME}/.config/gcloud/application\_default\_credentials.json*
+or in *`%userprofile%\Appdata\Roaming\gcloud\legacy_credentials\<your GCP identifier>\adc.json`*
 
-Note that on Mac and Linux, this location is in a hidden folder. On Mac to be able to select a hidden folder in a file picker, you might need to use the **CMD + SHIFT + .** keyboard shortcut for MacOS to show them in the picker first. On Linux all folders are displayed.
+- Mac: *`${HOME}/.config/gcloud/application_default_credentials.json`*
+- Linux: *`${HOME}/.config/gcloud/application_default_credentials.json`*
+
+&nbsp;
+
+Note that on Mac and Linux, this location is in a hidden folder. On Mac to be able to select a hidden folder in a file picker, you might need to use the ***CMD + SHIFT + .*** keyboard shortcut for MacOS to show them in the picker first. On Linux all folders are displayed.
 
 &nbsp;
 
 ### Create the Hackolade Studio connection settings
 
-Give a meaningful name to the connection, and provide the mandatory Project ID.
-
-Also reference the path and name of the credentials path and file generated by **gcloud**.
-
+Give a meaningful name to the connection, and provide the mandatory Project ID.\
+Also reference the path and name of the credentials path and file generated by ***gcloud***.\
 ![BigQuery connection settings - default credentials](<lib/BigQuery connection settings - dflt credentia.png>)
-
-&nbsp;
 
 &nbsp;
 
@@ -65,43 +63,46 @@ Also reference the path and name of the credentials path and file generated by 
 
 ### Instructions to create a Service Account key file
 
-Credentials are loaded from a file created in the [Google IAM \& Admin console](<https://console.cloud.google.com/iam-admin/iam> "target=\"\_blank\"") by your administrator.
+Credentials are loaded from a file created in the [Google IAM & Admin console](<https://console.cloud.google.com/iam-admin/iam> "target=\"_blank\"") by your administrator.
 
 &nbsp;
 
-Here are the steps to follow:
+Here are the steps to follow:\
+1\) go to the IAM console, and choose [Service Accounts](<https://console.cloud.google.com/projectselector2/iam-admin/serviceaccounts?supportedpurview=project> "target=\"_blank\"") in the menu\
+2\) select an existing project, and press the button + Create a Service Account\
+3\) provide the service account details, and create\
+4\) grant the following service account access to the project:
 
-&#49;) go to the IAM console, and choose [Service Accounts](<https://console.cloud.google.com/projectselector2/iam-admin/serviceaccounts?supportedpurview=project> "target=\"\_blank\"") in the menu
+&nbsp;
 
-&#50;) select an existing project, and press the button + Create a Service Account
+```text
+- BigQuery Data Viewer: in order to be able to perform reverse-engineering
+```
 
-&#51;) provide the service account details, and create
-
-&#52;) grant the following service account access to the project:
-
-&nbsp; &nbsp; - BigQuery Data Viewer: in order to be able to perform reverse-engineering
+&nbsp;
 
 and
 
-&nbsp; &nbsp; - BigQuery Data Editor: in order to be able to forward-engineer (apply SQL script to instance)
+&nbsp;
 
-&nbsp; &nbsp; - BigQuery Job User: in order to be able to forward-engineer (apply SQL script to instance)
-
-![Image](<lib/BigQuery Service Account role creation.png>)
+```text
+- BigQuery Data Editor: in order to be able to forward-engineer (apply SQL script to instance)
+- BigQuery Job User: in order to be able to forward-engineer (apply SQL script to instance)
+```
 
 &nbsp;
 
-then save the role
+![BigQuery Service Account role creation](<lib/BigQuery Service Account role creation.png>)
 
-&#53;) select the action Manage Keys for the service account:
+&nbsp;
 
+then save the role\
+5\) select the action Manage Keys for the service account:\
 ![BigQuery Service Account key creation](<lib/BigQuery Service Account key creation.png>)
 
 &nbsp;
 
-and create a new key with JSON type.&nbsp; The .json file gets downloaded in the browser.
-
-&nbsp;
+and create a new key with JSON type. The .json file gets downloaded in the browser.
 
 &nbsp;
 
@@ -111,9 +112,5 @@ Give a meaningful name to the connection, optionally provide a specific project 
 
 &nbsp;
 
-The key file must be referenced in the connection settings dialog.
-
-![Image](<lib/BigQuery connection settings - service accoun.png>)
-
-&nbsp;
-
+The key file must be referenced in the connection settings dialog.\
+![BigQuery connection settings - service accoun](<lib/BigQuery connection settings - service accoun.png>)

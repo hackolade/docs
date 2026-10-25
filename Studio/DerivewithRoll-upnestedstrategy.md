@@ -2,8 +2,8 @@
 
 As discussed in the previous page with Hackolade Studio when performing a derive operation with the Roll-up strategy, there are two ways to merge the subtypes into the supertype:
 
-* the traditional way in relational databases with the option Flat with discriminator puts all the attributes at the same level, with a column telling the rows apart -- this method is reviewed in the previous page
-* Nested keeps each subtype as an object inside the supertype, typically useful with NoSQL document databases.
+- the traditional way in relational databases with the option `Flat with discriminator` puts all the attributes at the same level, with a column telling the rows apart -- this method is reviewed in the previous page
+- `Nested` keeps each subtype as an object inside the supertype, typically useful with NoSQL document databases.
 
 &nbsp;
 
@@ -19,13 +19,11 @@ In the example, we work with the group built earlier: we keep the Legal nature g
 
 &nbsp;
 
-In the Properties Pane of the supertype group of the Polyglot data model, assuming you set the Strategy property to Roll-up with the Merge option to Nested, and derive to a physical model.&nbsp; In our example, we derive into a MongoDB model.
+In the Properties Pane of the supertype group of the Polyglot data model, assuming you set the `Strategy` property to `Roll-up` with the `Merge option` to `Nested`, and derive to a physical model. In our example, we derive into a MongoDB model.
 
 &nbsp;
 
 ![Inheritance roll-up nested Party group props](<lib/Inheritance roll-up nested Party group props.png>)
-
-&nbsp;
 
 &nbsp;
 
@@ -41,8 +39,8 @@ In the physical data model, the derive operation results in a single collection,
 
 Two properties of the supertype group drive the JSON Schema choice:
 
-* **exclusivity** determines the type of choice: a disjoint group translates to oneOf choice as exactly one subtype is possible.&nbsp; An overlapping group translates to an anyOf choice, as several subtypes may apply at once
-* **completeness** determines whether it can be left empty: in a total group the subtype objects are required, in a partial group they are optional, so a document may hold only the common attributes
+- **exclusivity** determines the type of choice: a disjoint group translates to `oneOf` choice as exactly one subtype is possible. An overlapping group translates to an `anyOf` choice, as several subtypes may apply at once
+- **completeness** determines whether it can be left empty: in a total group the subtype objects are required, in a partial group they are optional, so a document may hold only the common attributes
 
 &nbsp;
 
@@ -58,13 +56,15 @@ The Party collection keeps its primary key, its unique keys, and its required at
 
 The keys of the subtypes move with their attributes, inside their nested object:
 
-* a primary key of a subtype becomes a unique key in the nested fields.&nbsp; Only one identity remains in the merged entity, the one coming from the supertype.
-* a unique key of a subtype should remain a unique key in the nested fields, except that such constraint of uniqueness in objects exists in JSON Schema -- if necessary, it would have to be built in application code
-* a required attribute of a subtype remains required inside its object
+- a primary key of a subtype becomes a unique key in the nested fields. Only one identity remains in the merged entity, the one coming from the supertype.
+- a unique key of a subtype should remain a unique key in the nested fields, except that such constraint of uniqueness in objects exists in JSON Schema -- if necessary, it would have to be built in application code
+- a required attribute of a subtype remains required inside its object
 
 &nbsp;
 
-**Note:** what a key becomes physically depends also on the target. In targets where keys are not enforced, they are not derived.\
+> [!NOTE]
+> What a key becomes physically depends also on the target. In targets where keys are not enforced, they are not derived.
+
 &nbsp;
 
 ### Relationships that pointed at the subtypes
@@ -93,12 +93,14 @@ In this scenario, we establish the relationship between the Organization sub-obj
 
 &nbsp;
 
-**Note:** Any mandatory cardinality (1 or 1..n) at the side of the "other" entity linked to the subtype is relaxed to make it optional (0..1 or 0..n). The relationship then connects to the supertype, which may represent a different subtype than the one that originally carries the relationship in the Polyglot model. If the cardinality is already optional (0..1 or 0..n), as in our example, no modification occurs.\
+> [!NOTE]
+> Any mandatory cardinality (1 or 1..n) at the side of the "other" entity linked to the subtype is relaxed to make it optional (0..1 or 0..n). The relationship then connects to the supertype, which may represent a different subtype than the one that originally carries the relationship in the Polyglot model. If the cardinality is already optional (0..1 or 0..n), as in our example, no modification occurs.
+
 &nbsp;
 
 ### Nested merge option results in relational targets
 
-The derive dialog provides the option to Normalize complex data types in separate entities, checked by default when deriving into RDBMS-like targets.&nbsp; The option applies to every complex data type of the model, and a nested subtype is one of them.
+The derive dialog provides the option to `Normalize complex data types in separate entities`, checked by default when deriving into RDBMS-like targets. The option applies to every complex data type of the model, and a nested subtype is one of them.
 
 &nbsp;
 
@@ -106,18 +108,18 @@ The derive dialog provides the option to Normalize complex data types in separat
 
 &nbsp;
 
-With such a target, leaving the box checked means that the nesting you asked for gets normalized.&nbsp; You end up with one entity per subtype, which looks like what Preserved hierarchy produces. &nbsp;
+With such a target, leaving the box checked means that the nesting you asked for gets normalized. You end up with one entity per subtype, which looks like what `Preserved hierarchy` produces.
 
 &nbsp;
 
 The result is the outcome of two steps, in this order:
 
-* the roll-up runs first; each subtype becomes a complex property of the supertype
-* the normalization runs next; each complex property is extracted into an entity of its own, linked back to the supertype
+- the roll-up runs first; each subtype becomes a complex property of the supertype
+- the normalization runs next; each complex property is extracted into an entity of its own, linked back to the supertype
 
 &nbsp;
 
-The second step knows nothing about supertypes and subtypes.&nbsp; It extracts each complex object or array, and makes it its own table.&nbsp; The cardinality between the supertype and the extracted entity depends on whether the nested structure is an object or an array.
+The second step knows nothing about supertypes and subtypes. It extracts each complex object or array, and makes it its own table. The cardinality between the supertype and the extracted entity depends on whether the nested structure is an object or an array.
 
 &nbsp;
 
@@ -125,5 +127,4 @@ The second step knows nothing about supertypes and subtypes.&nbsp; It extracts e
 
 &nbsp;
 
-Uncheck the option Normalize complex data types in separate entities if you want the subtypes to stay nested inside the supertype.
-
+Uncheck the option `Normalize complex data types in separate entities` if you want the subtypes to stay nested inside the supertype.

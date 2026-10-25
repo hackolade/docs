@@ -1,10 +1,7 @@
 # SSL
 
-Neo4 supports SSL certificate authentication for client authentication and internal authentication of you instance.&nbsp; For more info, please consult&nbsp;
-
-[https://neo4j.com/docs/operations-manual/current/security/ssl-framework/](<https://neo4j.com/docs/operations-manual/current/security/ssl-framework/>)
-
-&nbsp;
+Neo4 supports SSL certificate authentication for client authentication and internal authentication of you instance. For more info, please consult\
+[https://neo4j.com/docs/operations-manual/current/security/ssl-framework/](https://neo4j.com/docs/operations-manual/current/security/ssl-framework/)
 
 &nbsp;
 
@@ -13,6 +10,8 @@ Neo4 supports SSL certificate authentication for client authentication and inter
 &nbsp;
 
 Depending on the setup, one or more of the following fields will need to reference the appropriate file:
+
+&nbsp;
 
 ## Certificate Authority
 
@@ -51,4 +50,3 @@ A private key can optionally be encrypted with a password.
 &nbsp;
 
 If your private key is password protected, enter the password here. If not, leave the field blank.
-

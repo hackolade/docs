@@ -2,17 +2,12 @@
 
 ## Authentication
 
-&nbsp;
-
-Hackolade also supports the Kerberos authentication mechanism. For more info on how to setup Kerberos in HBase, please consult this [link](<http://hbase.apache.org/0.94/book/security.html#hbase.secure.configuration> "target=\"\_blank\"") and this useful [article](<https://blog.cloudera.com/blog/2012/09/understanding-user-authentication-and-authorization-in-apache-hbase/> "target=\"\_blank\"").
+Hackolade also supports the Kerberos authentication mechanism. For more info on how to setup Kerberos in HBase, please consult this [link](<http://hbase.apache.org/0.94/book/security.html#hbase.secure.configuration> "target=\"_blank\"") and this useful [article](<https://blog.cloudera.com/blog/2012/09/understanding-user-authentication-and-authorization-in-apache-hbase/> "target=\"_blank\"").
 
 &nbsp;
 
-The Kerberos parameters for HBase are maintained in Hackolade as follows:
-
+The Kerberos parameters for HBase are maintained in Hackolade as follows:\
 ![HBase connection Kerberos](<lib/HBase connection Kerberos.png>)
-
-&nbsp;
 
 &nbsp;
 
@@ -32,63 +27,59 @@ A Kerberos Service Name is the name by which a client uniquely identifies an ins
 
 &nbsp;
 
-The **service principal** must be in the form: service@\<hostname\>. (Otherwise, if you only pass the hostname (also called fqdn - fully qualified domain name), it would default to HTTP@fqdn. And it would be resolved to the corresponding principal service/\<hostname\>@REALM by the GSS-API, which is not desirable, cfr this [page](<https://developer.ibm.com/hadoop/2016/05/12/hbase-rest-gateway-security/> "target=\"\_blank\"").)
+The **service principal** must be in the form: service@\<hostname>. (Otherwise, if you only pass the hostname (also called fqdn - fully qualified domain name), it would default to HTTP@fqdn. And it would be resolved to the corresponding principal service/\<hostname>@REALM by the GSS-API, which is not desirable, cfr this [page](<https://developer.ibm.com/hadoop/2016/05/12/hbase-rest-gateway-security/> "target=\"_blank\"").)
 
 &nbsp;
 
 The minimum requirements to be able to connect with the Kerberos protocol are:
 
-* Name of a host must always be the same as a computer host (hostname -f)
-* Add to the "hbase-site.xml" the following parameters:\
-\<property\>
+- Name of a host must always be the same as a computer host (hostname -f)
+- Add to the "hbase-site.xml" the following parameters:\
+  \<property>
 
-   &nbsp; &nbsp; &nbsp; \<name\>hadoop.proxyuser.HTTP.groups\</name\>
+&nbsp;
 
-   &nbsp; &nbsp; &nbsp; \<value\>\*\</value\>
+\<name>hadoop.proxyuser.HTTP.groups\</name>\
+\<value>\*\</value>\
+\</property>\
+\<property>
 
-\</property\>
+&nbsp;
 
-\<property\>
+```xml
+<name>hadoop.proxyuser.HTTP.hosts</name>
+<value>*</value>
+```
 
-&nbsp;   \<name\>hadoop.proxyuser.HTTP.hosts\</name\>
+&nbsp;
 
-&nbsp;   \<value\>\*\</value\>
+\</property>
 
-\</property\>
-
-* All layers of Hadoop must be set up with Kerberos auth
-* Yarn must be set up with SSL certificates
-* Kerberos or Kerberos packages *“krb5-admin-server”* and *“krb5-kdc”* must be installed and run
-* HBase REST service must be running&nbsp; REST should have administrative access. One can provide it by running HBASE command: *grant 'rest\_server', 'RWCA'* \
-[https://hbase.apache.org/book.html#\_client\_side\_configuration\_for\_secure\_operation\_rest\_gateway](<https://hbase.apache.org/book.html#\_client\_side\_configuration\_for\_secure\_operation\_rest\_gateway> "target=\"\_blank\"")
+- All layers of Hadoop must be set up with Kerberos auth
+- Yarn must be set up with SSL certificates
+- Kerberos or Kerberos packages *“krb5-admin-server”* and *“krb5-kdc”* must be installed and run
+- HBase REST service must be running REST should have administrative access. One can provide it by running HBASE command: *grant 'rest_server', 'RWCA'*\
+  [https://hbase.apache.org/book.html#\_client_side_configuration_for_secure_operation_rest_gateway](<https://hbase.apache.org/book.html#_client_side_configuration_for_secure_operation_rest_gateway> "target=\"_blank\"")
 
 &nbsp;
 
 Instructions:
 
 1. Start Kerberos services:
-
    1. service krb5-admin-server start
-   1. service krb5-kdc start
-
-1. Start HBase with Kerberos:
-
+   2. service krb5-kdc start
+2. Start HBase with Kerberos:
    1. Hadoop (dfs.sh, yarn.sh)
-   1. Zookeeper (zkServer.sh)
-   1. HBase (start-hbase.sh)
-   1. HBase Rest (hbase rest start)
-
-1. Obtains and caches an initial ticket-granting ticket for principal:
-
-   1. kinit hbase@EXAMPLE.COM (pass:\<password\>)
-   1. klist - (check if ticket received)
-
-1. Check by curl request:
-
-   1. curl -i --negotiate -u : http://\<host\>:\<port\>/version/cluster
-   1. curl -i --negotiate -u : http://\<host\>:\<port\>/namespaces
+   2. Zookeeper (zkServer.sh)
+   3. HBase (start-hbase.sh)
+   4. HBase Rest (hbase rest start)
+3. Obtains and caches an initial ticket-granting ticket for principal:
+   1. kinit hbase@EXAMPLE.COM (pass:\<password>)
+   2. klist - (check if ticket received)
+4. Check by curl request:
+   1. curl -i --negotiate -u : http://\<host>:\<port>/version/cluster
+   2. curl -i --negotiate -u : http://\<host>:\<port>/namespaces
 
 &nbsp;
 
-For more information with Hortonworks installations, click [here](<https://community.hortonworks.com/articles/91425/howto-start-and-test-hbase-rest-server-in-a-kerber.html> "target=\"\_blank\"").
-
+For more information with Hortonworks installations, click [here](<https://community.hortonworks.com/articles/91425/howto-start-and-test-hbase-rest-server-in-a-kerber.html> "target=\"_blank\"").

@@ -6,15 +6,13 @@ If the property “hive.server2.authentication” in the Hive configuration is s
 
 &nbsp;
 
-\<property\>
-
-\<name\>hive.server2.authentication\</name\>
-
-\<value\>**none**\</value\>
-
-\</property\>
+```xml
+<property>
+  <name>hive.server2.authentication</name>
+  <value>none</value>
+</property>
+```
 
 &nbsp;
 
 ![Hive - Connection settings - Plain SASL](<lib/Hive - Connection settings - Plain SASL.png>)
-

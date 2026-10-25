@@ -14,11 +14,11 @@ Downstream, this foundation enables a shared understanding of the semantics, mea
 
 ## Overview
 
-Using glossaries in Hackolade Studio requires an initial step to assign one or more glossaries to your data model to establish which ones are relevant and authoritative for the model -- this step is only required once per model.&nbsp; The glossary assignment is model-specific, as you might assign different glossaries to different models.
+Using glossaries in Hackolade Studio requires an initial step to assign one or more glossaries to your data model to establish which ones are relevant and authoritative for the model -- this step is only required once per model. The glossary assignment is model-specific, as you might assign different glossaries to different models.
 
 &nbsp;
 
-After that initial step, you may bind model objects to one or more business terms from one or more glossary terms from these assigned glossaries to modeling objects.&nbsp; This step should be done once per model object.
+After that initial step, you may bind model objects to one or more business terms from one or more glossary terms from these assigned glossaries to modeling objects. This step should be done once per model object.
 
 &nbsp;
 
@@ -28,7 +28,7 @@ Before using glossary terms in a data model, you first assign one or several glo
 
 &nbsp;
 
-This assignment defines which glossaries are relevant for the model. As your organization may have multiple glossaries, it is possible that only one or selected glossaries are relevant to a given data model.&nbsp; Once assigned, the glossary terms become available for binding with modeling objects, or for creating new modeling objects based on those terms.
+This assignment defines which glossaries are relevant for the model. As your organization may have multiple glossaries, it is possible that only one or selected glossaries are relevant to a given data model. Once assigned, the glossary terms become available for binding with modeling objects, or for creating new modeling objects based on those terms.
 
 &nbsp;
 
@@ -38,7 +38,7 @@ You can assign multiple glossaries to the same data model. This allows you to wo
 
 ### Glossary file format
 
-A glossary file to be used by Hackolade Studio can be the result of an export from any source.&nbsp; The glossary is an external resource provided as a CSV file. &nbsp;
+A glossary file to be used by Hackolade Studio can be the result of an export from any source. The glossary is an external resource provided as a CSV file.
 
 &nbsp;
 
@@ -46,19 +46,22 @@ A glossary file should contain at least the following columns:
 
 &nbsp;
 
-Term\_ID \| Term \| Description \| Domain
+```text
+Term_ID | Term | Description | Domain
+```
 
 &nbsp;
 
-The column names do not matter (as long as they are unique), nor the order, as a mapping configuration is available for each glossary. &nbsp;
+The column names do not matter (as long as they are unique), nor the order, as a mapping configuration is available for each glossary.
 
 &nbsp;
 
-**Important:**&nbsp; ensure that each glossary term has a unique identifier. This is required for traceability, for maintaining stable references over time, and to close the loop when publishing models back to a metadata management tool from which the glossaries terms originated in the first place.
+> [!IMPORTANT]
+> Ensure that each glossary term has a unique identifier. This is required for traceability, for maintaining stable references over time, and to close the loop when publishing models back to a metadata management tool from which the glossaries terms originated in the first place.
 
 &nbsp;
 
-The glossary file can reside on your local drive, shared network folder, or preferably in a Git repository so it can be shared across users, so it can be automatically versioned, and so changes can be tracked.&nbsp;
+The glossary file can reside on your local drive, shared network folder, or preferably in a Git repository so it can be shared across users, so it can be automatically versioned, and so changes can be tracked.
 
 &nbsp;
 
@@ -70,8 +73,8 @@ In the current version, glossaries are expected to be provided as CSV files. Fut
 
 You can assign glossaries from 2 entry points:
 
-* from the menu \_Actions \> Assign Glossary
-* from the model-level Properties Pane: click the + button to add a glossary to the model.
+- from the menu \_Actions > Assign Glossary
+- from the model-level Properties Pane: click the + button to add a glossary to the model.
 
 &nbsp;
 
@@ -89,16 +92,14 @@ Use the dialog to choose a glossary file from your local machine or network driv
 
 &nbsp;
 
-&nbsp;
-
 Both options are supported, but the choice depends on how your models and glossaries are managed:
 
-* use a **local file** only when you are working on a local clone and the glossary is part of the same repository
-* use a **remote repository** when the glossary is stored in another repository or when you are not working on a local clone
+- use a **local file** only when you are working on a local clone and the glossary is part of the same repository
+- use a **remote repository** when the glossary is stored in another repository or when you are not working on a local clone
 
 &nbsp;
 
-In general, avoid pointing to standalone local files, as they are not reusable by colleagues.&nbsp; Prefer remote sources for shared glossaries, and local files only when they are part of the same cloned repository.
+In general, avoid pointing to standalone local files, as they are not reusable by colleagues. Prefer remote sources for shared glossaries, and local files only when they are part of the same cloned repository.
 
 &nbsp;
 
@@ -110,9 +111,9 @@ This step ensures that Studio correctly interprets the file, understanding which
 
 Three fields are mandatory and must be mapped:
 
-* identifier (must be unique)
-* term
-* description
+- identifier (must be unique)
+- term
+- description
 
 &nbsp;
 
@@ -124,26 +125,22 @@ For each of these, you select the corresponding column from the CSV file. A prev
 
 &nbsp;
 
-&nbsp;
-
 You can also specify whether the CSV file contains headers. If not, the first row is treated as data, and columns are referenced by their position.
 
 &nbsp;
 
 You can also define additional mappings for other columns. For each additional field, you can:
 
-* specify a field name
-* select the corresponding column
-* define the value type (single value or multiple values). For multiple values, you must define a separator (for example \`;\`). This is typically used for fields such as synonyms which can contain a list.
-
-&nbsp;
+- specify a field name
+- select the corresponding column
+- define the value type (single value or multiple values). For multiple values, you must define a separator (for example \`;\`). This is typically used for fields such as synonyms which can contain a list.
 
 &nbsp;
 
 You can also define how the value is displayed in Studio:
 
-* text
-* tag (for example for status fields such as validated or deprecated)
+- text
+- tag (for example for status fields such as validated or deprecated)
 
 &nbsp;
 
@@ -152,8 +149,6 @@ The preview adapts based on your configuration so you can see how values will be
 &nbsp;
 
 ![Business terms glossaries - mapping extended](<lib/Business terms glossaries - mapping extended.png>)
-
-&nbsp;
 
 &nbsp;
 
@@ -177,23 +172,17 @@ Once a glossary is assigned, it is visible in the Properties Pane of the model. 
 
 &nbsp;
 
-&nbsp;
-
-&nbsp;
-
 ### Collibra as the source of glossaries of business terms
 
-When you export your glossaries of business terms from Collibra, then bind Hackolade Studio model objects to those Collibra terms, it is possible for those binding to be included when the model is published to Collibra.&nbsp; Meaning that you can search for a business term and Collibra and find all the assets using that term.&nbsp; For his, you must select the option as described below.
+When you export your glossaries of business terms from Collibra, then bind Hackolade Studio model objects to those Collibra terms, it is possible for those binding to be included when the model is published to Collibra. Meaning that you can search for a business term and Collibra and find all the assets using that term. For his, you must select the option as described below.
 
 &nbsp;
 
-When the CSV comes from a Collibra export, set **File mapping** to **Collibra**.&nbsp; Hackolade Studio then maps the usual Collibra headers in the column mappings:
+When the CSV comes from a Collibra export, set **File mapping** to **Collibra**. Hackolade Studio then maps the usual Collibra headers in the column mappings:
 
-&nbsp;
-
-* **Asset Id** to I**dentifier**
-* **Name** to **Term**
-* **Description** or Full Description to **Definition**
+- **Asset Id** to I**dentifier**
+- **Name** to **Term**
+- **Description** or Full Description to **Definition**
 
 &nbsp;
 
@@ -201,15 +190,16 @@ When the CSV comes from a Collibra export, set **File mapping** to **Collibra**.
 
 &nbsp;
 
-File mapping is only a helper to pre-fill the column mapping quickly.&nbsp; You can still map other columns yourself.&nbsp;
+File mapping is only a helper to pre-fill the column mapping quickly. You can still map other columns yourself.
 
 &nbsp;
 
-**Note:** the File mapping value cannot be changed later for the current assignment.&nbsp; If the file is not a Collibra export, leave **File mapping** to **Custom** and map the identifier yourself.
+> [!NOTE]
+> The File mapping value cannot be changed later for the current assignment. If the file is not a Collibra export, leave **File mapping** to **Custom** and map the identifier yourself.
 
 &nbsp;
 
-Choosing **Collibra** in the **File mapping** dropdown list only pre-fills the column mapping.&nbsp; Bindings are published only when Publish term bindings to Collibra is checked.
+Choosing **Collibra** in the **File mapping** dropdown list only pre-fills the column mapping. Bindings are published only when Publish term bindings to Collibra is checked.
 
 &nbsp;
 
@@ -217,8 +207,7 @@ Choosing **Collibra** in the **File mapping** dropdown list only pre-fills the c
 
 &nbsp;
 
-This checkbox works with any file mapping. The identifier of each term must be the Collibra asset ID. The terms must already exist in the Collibra instance you publish to.
-
+This checkbox works with any file mapping. The identifier of each term must be the Collibra asset ID. The terms must already exist in the Collibra instance you publish to.\
 New assignments and glossaries assigned before this option leave the checkbox off until you turn it on. You can open an assigned glossary from the model Properties Pane and change the checkbox without unassigning the glossary.
 
 &nbsp;
@@ -227,8 +216,8 @@ New assignments and glossaries assigned before this option leave the checkbox of
 
 After assigning glossaries, you can use glossary terms in 2 ways:
 
-* bind an existing modeling object to a glossary term
-* create a new modeling object from a glossary term
+- bind an existing modeling object to a glossary term
+- create a new modeling object from a glossary term
 
 &nbsp;
 
@@ -250,14 +239,12 @@ Click the + button to open the glossary browser.
 
 &nbsp;
 
-&nbsp;
-
 #### Browse and select terms
 
 The glossary browser displays all terms from the glossaries assigned to the model.
 
-* on the left, you can filter by glossary. By default, \_All\_ is selected.
-* in the center, glossary terms are displayed in a configurable grid.
+- on the left, you can filter by glossary. By default, \_All\_ is selected.
+- in the center, glossary terms are displayed in a configurable grid.
 
 &nbsp;
 
@@ -265,26 +252,22 @@ Each time the glossary browser is opened, the glossary sources are accessed to r
 
 &nbsp;
 
-&nbsp;
-
 ![Business terms glossaries - select term](<lib/Business terms glossaries - select term.png>)
-
-&nbsp;
 
 &nbsp;
 
 The grid is customizable:
 
-* reorder columns using drag and drop
-* sort by any column
-* hide or show columns
+- reorder columns using drag and drop
+- sort by any column
+- hide or show columns
 
 &nbsp;
 
 A filter bar allows you to filter terms as you type, dynamically updating the grid.
 
-* by default, search is applied to the \_term\_ field
-* you can extend the search scope to other fields if needed
+- by default, search is applied to the \_term\_ field
+- you can extend the search scope to other fields if needed
 
 &nbsp;
 
@@ -298,8 +281,8 @@ Each column also provides its own filter, accessible from the column header.
 
 The grid is a master-detail view:
 
-* the main grid shows the columns you configured
-* select a row to open a panel on the right displaying all available information for the selected term
+- the main grid shows the columns you configured
+- select a row to open a panel on the right displaying all available information for the selected term
 
 &nbsp;
 
@@ -309,13 +292,11 @@ The grid is a master-detail view:
 
 #### Bind terms
 
-Select one or more terms using checkboxes, then click \_Apply\_ to bind them to the modeling object.\&#x20;
+Select one or more terms using checkboxes, then click \_Apply\_ to bind them to the modeling object.&amp;#x20;
 
 &nbsp;
 
 ![Business terms glossaries - term selected](<lib/Business terms glossaries - term selected.png>)
-
-&nbsp;
 
 &nbsp;
 
@@ -365,15 +346,4 @@ If multiple terms are selected, a single modeling object is created, and the bus
 
 &nbsp;
 
-&nbsp;
-
 ![Business terms glossaries - multi-term list](<lib/Business terms glossaries - multi-term list.png>)
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-

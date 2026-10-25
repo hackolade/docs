@@ -1,26 +1,25 @@
 # Target-specific
 
-Forward-engineering scripts vary widely between target technologies, as each one has developed its own storage model, terminology, syntax, data types, indexing and partitioning, etc.For details, you should consult the applicable page&nbsp;
+Forward-engineering scripts vary widely between target technologies, as each one has developed its own storage model, terminology, syntax, data types, indexing and partitioning, etc.For details, you should consult the applicable page
 
 &nbsp;
 
-**Note:** this capability is only available in the Professional, Workgroup, and Free Trial editions of Hackolade Studio.
+> [!NOTE]
+> This capability is only available in the Professional, Workgroup, and Free Trial editions of Hackolade Studio.
 
 &nbsp;
 
 ## Script generation parameters
 
-With v8.2.3, we started to introduce parameters to allow you to adjust the DDL script generation according to your preferences.&nbsp; This may be for styling purposes, or more importantly for data loading or performances reasons.&nbsp; Additionally, it may allow you to document data models constraints that you do not want to have enforced by the database engine.
+With v8.2.3, we started to introduce parameters to allow you to adjust the DDL script generation according to your preferences. This may be for styling purposes, or more importantly for data loading or performances reasons. Additionally, it may allow you to document data models constraints that you do not want to have enforced by the database engine.
 
 &nbsp;
 
-The configuration is available from Tools \> Options \> Forward-Engineering \> Script Generation:
+The configuration is available from Tools > Options > Forward-Engineering > Script Generation:
 
 &nbsp;
 
 ![Script generation options](<lib/Script generation options.png>)
-
-&nbsp;
 
 &nbsp;
 
@@ -32,29 +31,28 @@ It is also available from a button at the bottom of the DDL script tab, and from
 
 &nbsp;
 
-Script generation parameters are persisted in a JSON file script-generation-options.json stored in the C:\\Users\\Pascal\\.hackolade\\options\\\<target\> folder.
+Script generation parameters are persisted in a JSON file script-generation-options.json stored in the C:\\Users\\Pascal\\.hackolade\\options\\\<target> folder.
 
 &nbsp;
 
 ## Script generation parameters when using the CLI
 
-When running the [Command-Line Interface](<CommandLineInterface.md>) locally, it accesses the same configuration file as persisted by editing your preferences in the GUI application, i.e., the file script-generation-options.json stored in the C:\\Users\\Pascal\\.hackolade\\options\\\<target\> folder.
+When running the [Command-Line Interface](CommandLineInterface.md) locally, it accesses the same configuration file as persisted by editing your preferences in the GUI application, i.e., the file script-generation-options.json stored in the C:\\Users\\Pascal\\.hackolade\\options\\\<target> folder.
 
 &nbsp;
 
-When running the CLI on a server, you must copy the script-generation-options.json file and paste in the appropriate .hackolade\\options\\\<target\> folder of the CLI instance. &nbsp;
+When running the CLI on a server, you must copy the script-generation-options.json file and paste in the appropriate .hackolade\\options\\\<target> folder of the CLI instance.
 
 &nbsp;
 
-If running the [CLI in Docker](<https://github.com/hackolade/docker/blob/main/Studio/README.md> "target=\"\_blank\""), you must paste the script-generation-options.json file in the appropriate location, as described [here](<https://github.com/hackolade/docker/blob/main/Studio/README.md#custom-properties-naming-conventions-excel-export-options> "target=\"\_blank\"").
-
-&nbsp;
+If running the [CLI in Docker](<https://github.com/hackolade/docker/blob/main/Studio/README.md> "target=\"_blank\""), you must paste the script-generation-options.json file in the appropriate location, as described [here](<https://github.com/hackolade/docker/blob/main/Studio/README.md#custom-properties-naming-conventions-excel-export-options> "target=\"_blank\"").
 
 &nbsp;
 
 ## Custom script hooks
 
-**Warning:** hooks execute raw SQL and may impact the stability of the generated script if misused.&nbsp; They bypass the modeling layer, are not visible in the data model, and may introduce inconsistencies (missing constraints, undocumented structures, privilege issues, or execution-order problems).&nbsp; For structural elements such as audit columns or additional tables, it is strongly recommended to model them explicitly in the tool so they are generated consistently, documented, and governed by the standard DDL engine.
+> [!WARNING]
+> Hooks execute raw SQL and may impact the stability of the generated script if misused. They bypass the modeling layer, are not visible in the data model, and may introduce inconsistencies (missing constraints, undocumented structures, privilege issues, or execution-order problems). For structural elements such as audit columns or additional tables, it is strongly recommended to model them explicitly in the tool so they are generated consistently, documented, and governed by the standard DDL engine.
 
 &nbsp;
 
@@ -70,18 +68,18 @@ ALTER comparison scripts of delta models for custom script hooks is supported fo
 
 You can insert custom content at predefined positions in a DDL script:
 
-* Before all statements
-* After all statements
-* Before a specific CREATE SCHEMA statement
-* After a specific CREATE SCHEMA statement
-* Before each CREATE TABLE statement
-* Before a specific CREATE TABLE statement
-* After each CREATE TABLE statement
-* After a specific CREATE TABLE statement
-* Before each CREATE VIEW statement
-* Before a specific CREATE VIEW statement
-* After each CREATE VIEW statement
-* After a specific CREATE VIEW statement
+- Before all statements
+- After all statements
+- Before a specific CREATE SCHEMA statement
+- After a specific CREATE SCHEMA statement
+- Before each CREATE TABLE statement
+- Before a specific CREATE TABLE statement
+- After each CREATE TABLE statement
+- After a specific CREATE TABLE statement
+- Before each CREATE VIEW statement
+- Before a specific CREATE VIEW statement
+- After each CREATE VIEW statement
+- After a specific CREATE VIEW statement
 
 &nbsp;
 
@@ -121,9 +119,8 @@ When hooks are defined at multiple customization levels, they are cumulative.
 
 For the same hook point:
 
-\- Before hooks execute from the highest level to the most specific level.
-
-\- After hooks execute from the most specific level to the highest level.
+- Before hooks execute from the highest level to the most specific level.
+- After hooks execute from the most specific level to the highest level.
 
 &nbsp;
 
@@ -147,8 +144,6 @@ The example screenshot illustrates a complete model where hooks are defined at a
 
 &nbsp;
 
-&nbsp;
-
 ### Using variables
 
 Custom scripts can use predefined variables. These are resolved automatically during script generation. This allows you to write reusable scripts without hardcoding object names.
@@ -157,9 +152,9 @@ Custom scripts can use predefined variables. These are resolved automatically du
 
 Supported variables:
 
-* ${schemaName} – current schema, database, or equivalent container
-* ${tableName} – current table name
-* ${viewName} – current view name
+- ${schemaName} – current schema, database, or equivalent container
+- ${tableName} – current table name
+- ${viewName} – current view name
 
 &nbsp;
 
@@ -171,21 +166,19 @@ The exact variable names can differ depending on the target (for example, schema
 
 &nbsp;
 
-&nbsp;
-
 If a variable is used outside of its applicable scope (for example, ${tableName} at model level), it is not resolved and is replaced with an empty value in the generated script. Any unknown or invalid variable is also ignored and replaced with an empty value.
 
 &nbsp;
 
 #### Example scenarios
 
-&nbsp;
-
 Grant privileges automatically:
 
 &nbsp;
 
-> GRANT SELECT ON ${schemaName}.${tableName} TO analytics\_role;
+```text
+GRANT SELECT ON ${schemaName}.${tableName} TO analytics_role;
+```
 
 &nbsp;
 
@@ -193,7 +186,9 @@ Add logging:
 
 &nbsp;
 
-> CALL log\_object\_creation('${tableName}');
+```sql
+CALL log_object_creation('${tableName}');
+```
 
 &nbsp;
 
@@ -201,7 +196,9 @@ Add comment:
 
 &nbsp;
 
-> COMMENT ON TABLE ${schemaName}.${tableName} IS 'Managed by Hackolade';
+```text
+COMMENT ON TABLE ${schemaName}.${tableName} IS 'Managed by Hackolade';
+```
 
 &nbsp;
 
@@ -220,6 +217,3 @@ The feature affects DDL script generation only. Other exports (JSON, YAML, Archi
 &nbsp;
 
 Delta model alter scripts are not yet supported.
-
-&nbsp;
-

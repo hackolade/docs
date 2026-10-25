@@ -1,6 +1,6 @@
 # Oracle 23ai and 26ai Duality Views
 
-Duality Views expose data stored in relational tables as JSON documents. The documents are materialized -- generated on demand, not stored as such. Duality views are organized both relationally and hierarchically. They combine the advantages of using JSON documents with the advantages of the relational model, while avoiding the limitations of each.&nbsp;
+Duality Views expose data stored in relational tables as JSON documents. The documents are materialized -- generated on demand, not stored as such. Duality views are organized both relationally and hierarchically. They combine the advantages of using JSON documents with the advantages of the relational model, while avoiding the limitations of each.
 
 &nbsp;
 
@@ -10,13 +10,11 @@ Hackolade Studio is the first and only tool to facilitate the adoptions of this 
 
 ## Overview
 
-In this excellent [introductory video](<https://www.youtube.com/watch?v=e8-jBkO1NqY> "target=\"\_blank\""), Oracle explains that there are 2 ways to bake cake.&nbsp; You may start from individual ingredients and follow a recipe (illustrations courtesy of Oracle):
+In this excellent [introductory video](<https://www.youtube.com/watch?v=e8-jBkO1NqY> "target=\"_blank\""), Oracle explains that there are 2 ways to bake cake. You may start from individual ingredients and follow a recipe (illustrations courtesy of Oracle):
 
 &nbsp;
 
 ![Oracle Duality Views - Baking cake ingredients](<lib/ORD - Baking cake ingredients.png>)
-
-&nbsp;
 
 &nbsp;
 
@@ -40,9 +38,7 @@ With Oracle 23ai, Oracle introduces a way to combine both approaches, hence comb
 
 &nbsp;
 
-![Image](<lib/ORD - Power and Simplicty.png>)
-
-&nbsp;
+![ORD - Power and Simplicty](<lib/ORD - Power and Simplicty.png>)
 
 &nbsp;
 
@@ -64,8 +60,8 @@ Oracle call this approach "JSON-Relational Duality Views"
 
 JSON-relational duality views combine the advantages of using JSON documents with the advantages of the relational model, while avoiding the limitations of each:
 
-* A single JSON document can represent an application object directly, capturing the hierarchical relations among its components. A JSON document is standalone: self-contained and self-describing — no outside references, no need to consult an outside schema. There's no decomposition, which means that JSON is schema-flexible: you can easily add and remove fields, and change their type, as required by application changes.
-* The relational model decomposes application objects ("business objects") into normalized tables, which are explicitly related but whose content is otherwise independent. This independence allows for flexible and efficient data combination (joining) that is rigorously correct and reliable.
+- A single JSON document can represent an application object directly, capturing the hierarchical relations among its components. A JSON document is standalone: self-contained and self-describing — no outside references, no need to consult an outside schema. There's no decomposition, which means that JSON is schema-flexible: you can easily add and remove fields, and change their type, as required by application changes.
+- The relational model decomposes application objects ("business objects") into normalized tables, which are explicitly related but whose content is otherwise independent. This independence allows for flexible and efficient data combination (joining) that is rigorously correct and reliable.
 
 &nbsp;
 
@@ -89,11 +85,9 @@ The persistence model presents two aspects for the same data: table and document
 
 &nbsp;
 
-&nbsp;
-
 ## Oracle Duality Views in Hackolade Studio
 
-The Oracle plugin has been adapted, based on this [comprehensive developer's guide](<https://docs.oracle.com/en/database/oracle/oracle-database/23/jsnvu/overview-json-relational-duality-views.html#GUID-CE7227BF-B4AF-4024-A578-ED52795F4525> "target=\"\_blank\""), to natively support the data modeling of duality views, as well as the forward- and reverse-engineering of the DDL scripts.
+The Oracle plugin has been adapted, based on this [comprehensive developer's guide](<https://docs.oracle.com/en/database/oracle/oracle-database/23/jsnvu/overview-json-relational-duality-views.html#GUID-CE7227BF-B4AF-4024-A578-ED52795F4525> "target=\"_blank\""), to natively support the data modeling of duality views, as well as the forward- and reverse-engineering of the DDL scripts.
 
 &nbsp;
 
@@ -101,29 +95,27 @@ While the duality views feature sounds complex, and probably is quite complex un
 
 &nbsp;
 
-Previously in our Oracle plugin, we supported the creation of traditional views (materialized or not.)&nbsp; Views have a set of properties and selected columns. Together they can be forward-engineered in a CREATE VIEW statement of the the DDL script. And they can be reverse-engineered with the SELECT statement parsed to generate the view structure in the model and display the ERD.
+Previously in our Oracle plugin, we supported the creation of traditional views (materialized or not.) Views have a set of properties and selected columns. Together they can be forward-engineered in a CREATE VIEW statement of the the DDL script. And they can be reverse-engineered with the SELECT statement parsed to generate the view structure in the model and display the ERD.
 
 &nbsp;
 
 A duality view is just a special kind of view, also with properties and columns. The only differences are:
 
-* nested objects of a special kind can be contained in the view
-* the syntax of the DDL script introduces some new vocabulary and structure, which impacts forward- and reverse-engineering.
+- nested objects of a special kind can be contained in the view
+- the syntax of the DDL script introduces some new vocabulary and structure, which impacts forward- and reverse-engineering.
 
 &nbsp;
 
-The examples below are based on this [repository](<https://github.com/oracle-samples/oracle-db-examples/blob/main/json-relational-duality/DualityViewTutorial.sql> "target=\"\_blank\"") provided by Oracle.
+The examples below are based on this [repository](<https://github.com/oracle-samples/oracle-db-examples/blob/main/json-relational-duality/DualityViewTutorial.sql> "target=\"_blank\"") provided by Oracle.
 
 &nbsp;
 
-The reverse-engineering of the relational tables in [this sample DDL](<https://github.com/oracle-samples/oracle-db-examples/blob/main/json-relational-duality/DualityViewTutorial.sql> "target=\"\_blank\"") generates this car racing model:
-
+The reverse-engineering of the relational tables in [this sample DDL](<https://github.com/oracle-samples/oracle-db-examples/blob/main/json-relational-duality/DualityViewTutorial.sql> "target=\"_blank\"") generates this car racing model:\
 ![Oracle Duality Views- relational tables ERD](<lib/ORD - relational tables ERD.png>)
 
 &nbsp;
 
-The duality views defined with point-and-click in Hackolade Studio lead to this part of the ERD:
-
+The duality views defined with point-and-click in Hackolade Studio lead to this part of the ERD:\
 ![Oracle Duality Views ERD](<lib/ORD - Duality Views ERD.png>)
 
 &nbsp;
@@ -136,7 +128,7 @@ and the application automatically produces the syntactically correct part of the
 
 &nbsp;
 
-The syntax is based on this Oracle [documentation page](<https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/create-json-relational-duality-view.html#GUID-64B579AD-BF97-4B27-BF22-94C1FB6FD6DF> "target=\"\_blank\"") and its (always excellent) diagrams.
+The syntax is based on this Oracle [documentation page](<https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/create-json-relational-duality-view.html#GUID-64B579AD-BF97-4B27-BF22-94C1FB6FD6DF> "target=\"_blank\"") and its (always excellent) diagrams.
 
 &nbsp;
 
@@ -144,15 +136,14 @@ The syntax is based on this Oracle [documentation page](<https://docs.oracle.com
 
 &nbsp;
 
-&nbsp;
-
-**Important note**: Hackolade Studio currently only supports the SQL syntax for duality views, i.e. not yet the GraphQL syntax to achieve the same result.
+> [!IMPORTANT]
+> Hackolade Studio currently only supports the SQL syntax for duality views, i.e. not yet the GraphQL syntax to achieve the same result.
 
 &nbsp;
 
 ## Create a duality view
 
-As usual with Hackolade Studio, there are several different ways to do things.&nbsp; To create a duality view, you first create a "generic" view, using a keyboard shortcut, the menu bar:
+As usual with Hackolade Studio, there are several different ways to do things. To create a duality view, you first create a "generic" view, using a keyboard shortcut, the menu bar:
 
 &nbsp;
 
@@ -164,11 +155,7 @@ or the contextual menu (via mouse right-click) in either the Object Browser or t
 
 &nbsp;
 
-&nbsp;
-
 ![Oracle duality view creation contextual menu](<lib/ORD - duality view creation contextual menu.png>)
-
-&nbsp;
 
 &nbsp;
 
@@ -180,9 +167,7 @@ Then you tick the checkbox "Duality" to display the related properties:
 
 &nbsp;
 
-&nbsp;
-
-You must choose the root table from the dropdown list of tables in the schema.&nbsp; You may optionally set a root table alias.
+You must choose the root table from the dropdown list of tables in the schema. You may optionally set a root table alias.
 
 &nbsp;
 
@@ -190,17 +175,17 @@ You may also set the Force and Editionable flags.
 
 &nbsp;
 
-You should of course give your duality view a name.&nbsp; If Naming Conventions are enabled, you provide a business name which gets transformed into a technical name according to the set rules.
+You should of course give your duality view a name. If Naming Conventions are enabled, you provide a business name which gets transformed into a technical name according to the set rules.
 
 &nbsp;
 
 ### Table tags clause
 
-A duality view does not, itself, store any data.&nbsp; All of the data that underlies its supported JSON documents (which are generated) is stored in tables underlying the view. For a duality view to be updatable means that you can update some or all of the data in its underlying tables, and so you can update some or all of the fields in its supported documents.
+A duality view does not, itself, store any data. All of the data that underlies its supported JSON documents (which are generated) is stored in tables underlying the view. For a duality view to be updatable means that you can update some or all of the data in its underlying tables, and so you can update some or all of the fields in its supported documents.
 
 &nbsp;
 
-Applications can update JSON documents supported by a duality view, if you define the view as updatable. You can specify which kinds of updating operations (update, insertion, and deletion) are allowed, for which document fields, how/when, and by whom.&nbsp; An application can update a complete document, replacing the existing document. Or it can update only particular fields, in place.&nbsp; There are many possible permutations and rules to fit your use case, with all the details explained in [this document](<https://docs.oracle.com/en/database/oracle/oracle-database/23/jsnvu/updatable-json-relational-duality-views.html#GUID-1D013418-2095-4659-A503-75BD99C3A2CB> "target=\"\_blank\"").
+Applications can update JSON documents supported by a duality view, if you define the view as updatable. You can specify which kinds of updating operations (update, insertion, and deletion) are allowed, for which document fields, how/when, and by whom. An application can update a complete document, replacing the existing document. Or it can update only particular fields, in place. There are many possible permutations and rules to fit your use case, with all the details explained in [this document](<https://docs.oracle.com/en/database/oracle/oracle-database/23/jsnvu/updatable-json-relational-duality-views.html#GUID-1D013418-2095-4659-A503-75BD99C3A2CB> "target=\"_blank\"").
 
 &nbsp;
 
@@ -210,15 +195,12 @@ The update annotations are set using table tags clause constructed by optionally
 
 ### Select columns from root table
 
-The JSON format of duality views allows to include both root-level fields as well as embedded complex objects that are the result of joins with other tables.&nbsp; Let's start with the root table columns.
+The JSON format of duality views allows to include both root-level fields as well as embedded complex objects that are the result of joins with other tables. Let's start with the root table columns.
 
 &nbsp;
 
-From the Object Browser, from the selected view in the ERD pane, or from the hierarchical schema tab, you must right-click to bring the contextual menu and choose the option "Pick from field list":
-
+From the Object Browser, from the selected view in the ERD pane, or from the hierarchical schema tab, you must right-click to bring the contextual menu and choose the option "Pick from field list":\
 ![Oracle duality view pick columns](<lib/ORD - duality view pick columns.png>)
-
-&nbsp;
 
 &nbsp;
 
@@ -230,10 +212,7 @@ This brings a dialog where you can select one or more columns from the selected 
 
 &nbsp;
 
-&nbsp;
-
-For each field, you may set a JSON key alias if it is different than the underlying column name:
-
+For each field, you may set a JSON key alias if it is different than the underlying column name:\
 ![Oracle duality view field properties](<lib/ORD - duality view field properties.png>)
 
 &nbsp;
@@ -242,7 +221,7 @@ And you may also set annotations for (no)check and (no)update for tags clause at
 
 &nbsp;
 
-For documentation purposes, you may check the Key property for the field playing the role of primary key.&nbsp; However, this information does not appear in DDL script.
+For documentation purposes, you may check the Key property for the field playing the role of primary key. However, this information does not appear in DDL script.
 
 &nbsp;
 
@@ -250,15 +229,13 @@ You may modify the order of fields using the up/down arrows in the toolbar or dr
 
 &nbsp;
 
-&nbsp;
-
 ### Add nested object or array subquery
 
-This is the heart of the benefits of duality views.&nbsp; A duality view is a JSON generation view that has a limited structure, expressly designed so that your applications can update the view, and in so doing automatically update the underlying tables.
+This is the heart of the benefits of duality views. A duality view is a JSON generation view that has a limited structure, expressly designed so that your applications can update the view, and in so doing automatically update the underlying tables.
 
 &nbsp;
 
-A duality view and its corresponding top-level JSON object provides a hierarchy of JSON objects and arrays, which are defined in the view definition using nested SQL subqueries. Data gathered from a subquery is joined to data gathered from a parent subquery or the root table by a relationship between a primary or unique key in the parent and a foreign key in the child subquery's WHERE clause.
+A duality view and its corresponding top-level JSON object provides a hierarchy of JSON objects and arrays, which are defined in the view definition using nested SQL subqueries. Data gathered from a subquery is joined to data gathered from a parent subquery or the root table by a relationship between a primary or unique key in the parent and a foreign key in the child subquery's WHERE clause.
 
 &nbsp;
 
@@ -266,7 +243,7 @@ The cardinality of relationships dictates whether you use an object or an array 
 
 &nbsp;
 
-You may create multi-level nesting to represent recursive joins. &nbsp;
+You may create multi-level nesting to represent recursive joins.
 
 &nbsp;
 
@@ -286,9 +263,7 @@ You should provide a name for the subquery and choose the type object or array d
 
 &nbsp;
 
-&nbsp;
-
-You must choose the child table from the dropdown list of tables in the schema.&nbsp; You may optionally set a child table alias.
+You must choose the child table from the dropdown list of tables in the schema. You may optionally set a child table alias.
 
 &nbsp;
 
@@ -302,7 +277,7 @@ You must enter the WHERE clause for the join.
 
 ### Add unnested fields
 
-In some cases, you might prefer to flatten structures instead of the nested subquery.&nbsp; The unnested subquery allows to select columns in the underlying child table and present the fields in the JSON at the same level as the columns of the parent table.&nbsp; This can be done at any level of the tree.
+In some cases, you might prefer to flatten structures instead of the nested subquery. The unnested subquery allows to select columns in the underlying child table and present the fields in the JSON at the same level as the columns of the parent table. This can be done at any level of the tree.
 
 &nbsp;
 
@@ -318,19 +293,14 @@ While the fields are unnested in the JSON document, the unnesting structure rema
 
 &nbsp;
 
-or in the hierarchical schema tab
-
+or in the hierarchical schema tab\
 ![Oracle duality view hierarchical schema tab](<lib/ORD - duality view hierarchical schema tab.png>)
-
-&nbsp;
 
 &nbsp;
 
 ## Forward-engineer DDL script
 
 The application automatically produces the syntactically correct DDL script, with no required knowledge of the necessary syntax:
-
-&nbsp;
 
 &nbsp;
 
@@ -344,15 +314,12 @@ which can be exported to a file, copied/pasted, or applied directly to a databas
 
 ## Reverse-engineer an existing instance or a DDL file
 
-Hackolade Studio can reverse-engineer DDL files including duality views defines in SQL syntax.&nbsp; This is particularly useful if it is not possible to connect the application to the Oracle database instance. &nbsp;
+Hackolade Studio can reverse-engineer DDL files including duality views defines in SQL syntax. This is particularly useful if it is not possible to connect the application to the Oracle database instance.
 
 &nbsp;
 
-The drawback of DDL file-based reverse-engineering however is that, in the event of columns defined with a JSON data type or LOB containing JSON documents, the application will not have a chance to sample JSON in order to infer the schema.&nbsp; Such information never appears in DDLs and only Hackolade Studio is able to infer the schema of JSON in RDBMS.
+The drawback of DDL file-based reverse-engineering however is that, in the event of columns defined with a JSON data type or LOB containing JSON documents, the application will not have a chance to sample JSON in order to infer the schema. Such information never appears in DDLs and only Hackolade Studio is able to infer the schema of JSON in RDBMS.
 
 &nbsp;
 
 The most effective method to get a full picture of the data structure is to connect Hackolade Studio to the database instance and launch the reverse-engineering process, which produces an ERD representation of the instance.
-
-&nbsp;
-

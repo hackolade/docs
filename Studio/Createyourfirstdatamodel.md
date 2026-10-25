@@ -1,59 +1,57 @@
 # Create your first data model
 
-You may also [view this tutorial](<https://youtu.be/i9FJ7zJ1STw> "target=\"\_blank\"") on YouTube.&nbsp; Summary slides can be found [here](<https://www.slideshare.net/PascalDesmarets1/hackolade-tutorial-part-4-create-your-first-data-model> "target=\"\_blank\"").
+You may also [view this tutorial](<https://youtu.be/i9FJ7zJ1STw> "target=\"_blank\"") on YouTube. Summary slides can be found [here](<https://www.slideshare.net/PascalDesmarets1/hackolade-tutorial-part-4-create-your-first-data-model> "target=\"_blank\"").
 
 &nbsp;
 
-After [installation](<Installation.md>) and [software key validation](<Softwareregistration.md>), you are now ready to run Hackolade Studio and create your first data model.&nbsp; By the end of this tutorial, you will master different ways to enter information in Hackolade Studio, as well as different ways to visualize structures you've created.
+After [installation](Installation.md) and [software key validation](Softwareregistration.md), you are now ready to run Hackolade Studio and create your first data model. By the end of this tutorial, you will master different ways to enter information in Hackolade Studio, as well as different ways to visualize structures you've created.
 
 &nbsp;
 
-The application starts with a Welcome Page (there's also a slide show overview of the application functionality, but will skip this here):
-
-![Image](<lib/Welcome page.png>)
-
-&nbsp;
+The application starts with a Welcome Page (there's also a slide show overview of the application functionality, but will skip this here):\
+![Welcome page](<lib/Welcome page.png>)
 
 &nbsp;
 
 ## Choose the target for your data model
 
-If you click "New Model", you are presented with a dialog to choose your target:
-
-![Image](<lib/Target selection.png>)
-
-&nbsp;
-
-The application is shipped standard with some built-in targets: [Polyglot](<PolyglotDataModel.md>), [JSON](<JSONSchema2.md>), [Couchbase](<Couchbase.md>), [DynamoDB](<DynamoDB.md>), and [MongoDB](<MongoDB.md>).&nbsp; If you wish to create a data model for a different target, you first need to [install the corresponding plugin](<DownloadadditionalDBtargetplugin.md>).&nbsp; Some plugins are available for different versions of the target technology. &nbsp;
+If you click "New Model", you are presented with a dialog to choose your target:\
+![Target selection](<lib/Target selection.png>)
 
 &nbsp;
 
-Choose the target of your choice, the target version if appropriate, then click the Create button.&nbsp; For the purpose of this tutorial, we are going to select the JSON Schema specification 2019-09.
+The application is shipped standard with some built-in targets: [Polyglot](PolyglotDataModel.md), [JSON](JSONSchema2.md), [Couchbase](Couchbase.md), [DynamoDB](DynamoDB.md), and [MongoDB](MongoDB.md). If you wish to create a data model for a different target, you first need to [install the corresponding plugin](DownloadadditionalDBtargetplugin.md). Some plugins are available for different versions of the target technology.
 
 &nbsp;
 
-If your target selection dialog has many icons, there is an incremental keyboard search to speed up selection.&nbsp; As soon as the dialog is open, simply start typing the name of the target. Studio will automatically highlight the first tile matching the typed text.
+Choose the target of your choice, the target version if appropriate, then click the Create button. For the purpose of this tutorial, we are going to select the JSON Schema specification 2019-09.
+
+&nbsp;
+
+If your target selection dialog has many icons, there is an incremental keyboard search to speed up selection. As soon as the dialog is open, simply start typing the name of the target. Studio will automatically highlight the first tile matching the typed text.
 
 &nbsp;
 
 The search works as follows:
 
-* it matches from the beginning of the target name (e.g., typing "pos" highlights PostgreSQL).
-* if no match is found at the beginning, Studio searches within the name (e.g., typing "gre" highlights Cosmos DB Gremlin API).
-* after a short pause, the search resets, allowing you to type a new query.
-* once a tile is highlighted, you can use the arrow keys to navigate between matching targets.
+- it matches from the beginning of the target name (e.g., typing "pos" highlights PostgreSQL).
+- if no match is found at the beginning, Studio searches within the name (e.g., typing "gre" highlights Cosmos DB Gremlin API).
+- after a short pause, the search resets, allowing you to type a new query.
+- once a tile is highlighted, you can use the arrow keys to navigate between matching targets.
+
+&nbsp;
 
 This feature allows quick keyboard-based navigation without manually scanning the entire list.
 
 &nbsp;
 
-When you've done your selection, you are presented with a blank workspace.&nbsp; Refer to the [overview of the user interface](<Workspace.md>) for more details.
+When you've done your selection, you are presented with a blank workspace. Refer to the [overview of the user interface](Workspace.md) for more details.
 
 &nbsp;
 
 ## Create your data model
 
-There are 2 main ways to create a data model: you either [build your data model from scratch](<Whatisadatamodel.md>) based on your analysis of requirements, or you can [reverse-engineer](<Reverseengineeranexistinginstanc.md>) from a variety of sources: an existing [instance](<Target-specific1.md>), from [JSON documents](<JSONdocument1.md>) or [JSON Schema](<JSONSchema1.md>), from [SQL DDLs](<SQLDDL.md>), or from [XSDs](<XSDXMLSchemaDefinition.md>).&nbsp; For the purpose of this tutorial, we will start a model from scratch.
+There are 2 main ways to create a data model: you either [build your data model from scratch](Whatisadatamodel.md) based on your analysis of requirements, or you can [reverse-engineer](Reverseengineeranexistinginstanc.md) from a variety of sources: an existing [instance](Target-specific1.md), from [JSON documents](JSONdocument1.md) or [JSON Schema](JSONSchema1.md), from [SQL DDLs](SQLDDL.md), or from [XSDs](XSDXMLSchemaDefinition.md). For the purpose of this tutorial, we will start a model from scratch.
 
 &nbsp;
 
@@ -61,65 +59,53 @@ There are many ways to create a data model in Hackolade Studio: using the menu b
 
 &nbsp;
 
-Let' do a right-click in the middle ERD pane and choose Add document:
-
+Let' do a right-click in the middle ERD pane and choose Add document:\
 ![ERD contextual menu](<lib/ERD contextual menu.png>)
 
 &nbsp;
 
-Then in the Properties pane on the right, let's give a name to this document:
-
-![Image](<lib/Tutorial - entity name property.png>)
-
-&nbsp;
-
-We now have our first entity in the ERD:
-
-![Image](<lib/Tutorial - person entity.png>)
+Then in the Properties pane on the right, let's give a name to this document:\
+![Tutorial - entity name property](<lib/Tutorial - entity name property.png>)
 
 &nbsp;
 
-To add our first attribute, we can use right-click again to get the contextual menu and choose the data type String:
+We now have our first entity in the ERD:\
+![Tutorial - person entity](<lib/Tutorial - person entity.png>)
 
+&nbsp;
+
+To add our first attribute, we can use right-click again to get the contextual menu and choose the data type String:\
 ![ERD - entity contextual menu](<lib/ERD - entity contextual menu.png>)
 
 &nbsp;
 
-We can give it a name:
-
-![Image](<lib/Tutorial - attribute name property.png>)
-
-&nbsp;
-
-So it appears in the ERD:
-
-![Image](<lib/Tutorial - entity with first attribute.png>)
+We can give it a name:\
+![Tutorial - attribute name property](<lib/Tutorial - attribute name property.png>)
 
 &nbsp;
 
-We can add a new field by clicking the Append Field button in the toolbar:
-
-![Image](<lib/Toolbar - append attribute.png>)
+So it appears in the ERD:\
+![Tutorial - entity with first attribute](<lib/Tutorial - entity with first attribute.png>)
 
 &nbsp;
 
-and give it a name:
+We can add a new field by clicking the Append Field button in the toolbar:\
+![Toolbar - append attribute](<lib/Toolbar - append attribute.png>)
 
+&nbsp;
+
+and give it a name:\
 ![Tutorial - entity with 2 attributes](<lib/Tutorial - entity with 2 attributes.png>)
 
 &nbsp;
 
-When adding new field DOB, we can see that a description can be added as well as a format to create a constraint for the field:
-
+When adding new field DOB, we can see that a description can be added as well as a format to create a constraint for the field:\
 ![Tutorial - atttribute string properties](<lib/Tutorial - atttribute string properties.png>)
 
 &nbsp;
 
-When adding another field, we can see also that we can pick a different data type from the list.&nbsp; This list is specific to each technology target.
-
-![Image](<lib/Tutorial - atttribute data types.png>)
-
-&nbsp;
+When adding another field, we can see also that we can pick a different data type from the list. This list is specific to each technology target.\
+![Tutorial - atttribute data types](<lib/Tutorial - atttribute data types.png>)
 
 &nbsp;
 
@@ -127,40 +113,34 @@ You may add additional constraints and descriptive properties, default, enumerat
 
 &nbsp;
 
-You may move the attributes up or down, either using the up and down arrow keys in the toolbar:
-
-![Toolbar field order up-down arrows](<lib/DTD field order arrows.png>)
-
-or by grabbing the handle on the left of the attribute name in the ERD:
-
+You may move the attributes up or down, either using the up and down arrow keys in the toolbar:\
+![Toolbar field order up-down arrows](<lib/DTD field order arrows.png>)\
+or by grabbing the handle on the left of the attribute name in the ERD:\
 ![ERD - attribute drag-and-drop](<lib/ERD - attribute drag-and-drop.png>)
 
 &nbsp;
 
 The Options tab in the Properties Pane lets you:
 
-\- in the ERD for a container, change the color and font style (bold and italic);
-
-\- for an entity, change the color and font style (bold and italic), but also toggle auto-height and auto width as you add attributes;
-
-\- for an attribute, change the color and font style (bold and italic)
+- in the ERD for a container, change the color and font style (bold and italic);
+- for an entity, change the color and font style (bold and italic), but also toggle auto-height and auto width as you add attributes;
+- for an attribute, change the color and font style (bold and italic)
 
 &nbsp;
 
 ## Hierarchical schema view
 
-In addition to the ERD view, it is possible to have a detailed view of each entity in its own tab, which will be particularly handy in the next tutorial:
-
+In addition to the ERD view, it is possible to have a detailed view of each entity in its own tab, which will be particularly handy in the next tutorial:\
 ![Tutorial - hierarchical schema view](<lib/Tutorial - hierarchical schema view.png>)
 
 &nbsp;
 
-We call it the "hierarchical schema view" because it let's you easily create and visualize nested structures.&nbsp; There are many ways to open this view:&nbsp;
+We call it the "hierarchical schema view" because it let's you easily create and visualize nested structures. There are many ways to open this view:
 
-\- double click on the entity title\
-\- click once on the middle-right icon in the entity title\
-\- right-click on the entity title and choose Open in new tab\
-\- right-click on the entity name in the Object Browser on the left, and choose Open in new tab, or double-click on the entity name
+- double click on the entity title\
+  \- click once on the middle-right icon in the entity title
+- right-click on the entity title and choose Open in new tab
+- right-click on the entity name in the Object Browser on the left, and choose Open in new tab, or double-click on the entity name
 
 &nbsp;
 
@@ -168,47 +148,40 @@ We call it the "hierarchical schema view" because it let's you easily create and
 
 &nbsp;
 
-&nbsp;
-
 ### JSON Preview
 
-In this upper tab dedicated to a specific entity, there are several lower tabs.&nbsp; The JSON Preview tab provides 2 side-by-side panes: one for the JSON Schema of the entity, and the other tab is for a sample JSON document of the structure:
-
+In this upper tab dedicated to a specific entity, there are several lower tabs. The JSON Preview tab provides 2 side-by-side panes: one for the JSON Schema of the entity, and the other tab is for a sample JSON document of the structure:\
 ![Central pane - JSON Preview](<lib/Central pane - JSON Preview.png>)
 
 &nbsp;
 
-&nbsp;
-
-Several options are available for the display of the JSON Preview lower tab.&nbsp; You will find all the [details in this page](<Centralpane.md>).
+Several options are available for the display of the JSON Preview lower tab. You will find all the [details in this page](Centralpane.md).
 
 &nbsp;
 
-The sample document generated in the right pane uses dummy values.&nbsp; You may easily make this document more meaningful by entering, for each attribute a sample property (or example, depending on the JSON Schema version), and this value will be used in the JSON Data pane.
+The sample document generated in the right pane uses dummy values. You may easily make this document more meaningful by entering, for each attribute a sample property (or example, depending on the JSON Schema version), and this value will be used in the JSON Data pane.
 
 &nbsp;
 
 ## Saving your work
 
-You obviously don't want to lose the data model you have created.&nbsp; You can simply save your data model to the disk of your local machine.&nbsp; Hackolade data models are persisted in non-proprietary JSON files, typically on the file system in a local folder (possibly of a [cloned Git repository](<Teamcollaboration.md>)) or on a network shared directory.
+You obviously don't want to lose the data model you have created. You can simply save your data model to the disk of your local machine. Hackolade data models are persisted in non-proprietary JSON files, typically on the file system in a local folder (possibly of a [cloned Git repository](Teamcollaboration.md)) or on a network shared directory.
 
 &nbsp;
 
-You can save your data models by pressing the save icon in the toolbar, by pressing Ctrl+S (in Windows, or Cmd+S on Mac.) &nbsp;
+You can save your data models by pressing the save icon in the toolbar, by pressing Ctrl+S (in Windows, or Cmd+S on Mac.)
 
 &nbsp;
 
-Even if you don't save your model, a copy is auto-saved on a regular basis in a temporary folder, just in case your PC crashes.&nbsp; Upon restart of the application, you should be prompted in case an unsaved model is found in that folder.
+Even if you don't save your model, a copy is auto-saved on a regular basis in a temporary folder, just in case your PC crashes. Upon restart of the application, you should be prompted in case an unsaved model is found in that folder.
 
 &nbsp;
 
 You should also be aware of several options at your disposal:
 
-\- you may set your application to Auto-save mode with a time interval of your choice (this is available also as button in the toolbar)
-
-\- you may adjust the template for data model file name.&nbsp; You may combine separators with a a few keywords, for example \<modelName\> - \<dbVendor\> - \<version\>
-
-\- as .json file extensions are used for JSON documents, JSON Schema files, and also hackolade data models, we suggest you identify Hackolade models with a hck.json extension to differentiate them.&nbsp; You may disable this option.
+- you may set your application to Auto-save mode with a time interval of your choice (this is available also as button in the toolbar)
+- you may adjust the template for data model file name. You may combine separators with a a few keywords, for example \<modelName> - \<dbVendor> - \<version>
+- as .json file extensions are used for JSON documents, JSON Schema files, and also hackolade data models, we suggest you identify Hackolade models with a hck.json extension to differentiate them. You may disable this option.
 
 &nbsp;
 
@@ -216,41 +189,35 @@ You should also be aware of several options at your disposal:
 
 &nbsp;
 
-The location by default for data models and other sources and artifacts can also be controlled in the Default Paths tab of the same options dialog:
-
+The location by default for data models and other sources and artifacts can also be controlled in the Default Paths tab of the same options dialog:\
 ![Tools - Options - Default Paths](<lib/Tools - Options - Default Paths.png>)
 
 &nbsp;
 
-&nbsp;
-
-Finally, it may be that you want to send your data model to our helpdesk for troubleshooting, but don't want to reveal its content.&nbsp; You may choose the option to Save as Obfuscated which occults all the object names and text property content.
+Finally, it may be that you want to send your data model to our helpdesk for troubleshooting, but don't want to reveal its content. You may choose the option to Save as Obfuscated which occults all the object names and text property content.
 
 &nbsp;
 
 ## Working simultaneously on several data models
 
-If you need to work on different models at the same time, or you want to copy/paste objects from one model to another (of the same target), you can easily open multiple instances of Hackolade Studio, via File \> Start New Application Instance (or Ctrl+Shift+I)
+If you need to work on different models at the same time, or you want to copy/paste objects from one model to another (of the same target), you can easily open multiple instances of Hackolade Studio, via File > Start New Application Instance (or Ctrl+Shift+I)
 
 &nbsp;
 
-Alternatively on Windows, right-click on the Hackolade icon in the toolbar then choose Hackolade:
-
+Alternatively on Windows, right-click on the Hackolade icon in the toolbar then choose Hackolade:\
 ![Multiple instances](<lib/Multiple instances.png>)
 
 &nbsp;
 
-On Mac/Linux, this is done with the command: open -n /Applications/Hackolade.app/
-
+On Mac/Linux, this is done with the command: open -n /Applications/Hackolade.app/\
 Running multiple instances on the same PC does not require additional license seats.
 
 &nbsp;
 
 ## Other tips
 
-To become a power user of Hackolade Studio, you may want to consult many additional [tips and tricks](<Tipsandtricks.md>).
+To become a power user of Hackolade Studio, you may want to consult many additional [tips and tricks](Tipsandtricks.md).
 
 &nbsp;
 
-In this tutorial, we reviewed different ways to enter information in Hackolade Studio, as well as different ways to visualize the structure you've created.&nbsp; In the next tutorial, we will see how to create more complex structures.
-
+In this tutorial, we reviewed different ways to enter information in Hackolade Studio, as well as different ways to visualize the structure you've created. In the next tutorial, we will see how to create more complex structures.

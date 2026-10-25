@@ -1,2 +1,1 @@
 # Couchbase FAQ
-

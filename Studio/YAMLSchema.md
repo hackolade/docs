@@ -1,14 +1,10 @@
 # YAML Schema
 
-If you wish to include the schema for a YAML Schema file in an existing model, the process is slightly different.&nbsp; With your model already opened, choose Tools \> Reverse-Engineer \> YAML Schema. &nbsp;
+If you wish to include the schema for a YAML Schema file in an existing model, the process is slightly different. With your model already opened, choose Tools > Reverse-Engineer > YAML Schema.
 
 &nbsp;
 
 ![Tools - Reverse-Engineer - YAML Schema](<lib/Tools - Reverse-Engineer - JSON Schema.png>)
-
-&nbsp;
-
-&nbsp;
 
 &nbsp;
 
@@ -24,11 +20,8 @@ If you wish to force the destination of the reverse-engineering operation, you m
 
 &nbsp;
 
-&nbsp;
-
 For RDBMS targets, an additional option appears, that allows automatic normalization of complex data types:
 
 &nbsp;
 
 ![YAML Schema reverse-engineering dialog - normalization](<lib/JSON Schema RE dialog - normalization.png>)
-

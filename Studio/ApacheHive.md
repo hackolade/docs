@@ -1,10 +1,10 @@
 # Hive
 
-Apache Hive is an open source data warehouse system built on top of Hadoop for querying and analyzing large datasets stored in Hadoop files.&nbsp; Hive uses a language called HiveQL (HQL), which is similar to SQL.&nbsp; HiveQL automatically translates SQL-like queries into MapReduce jobs.&nbsp; Apache Hive organizes data into tables. This provides a means for attaching the structure to data stored in HDFS.
+Apache Hive is an open source data warehouse system built on top of Hadoop for querying and analyzing large datasets stored in Hadoop files. Hive uses a language called HiveQL (HQL), which is similar to SQL. HiveQL automatically translates SQL-like queries into MapReduce jobs. Apache Hive organizes data into tables. This provides a means for attaching the structure to data stored in HDFS.
 
 &nbsp;
 
-To perform data modeling for Apache Hive with Hackolade, you must first download the Hive [plugin](<https://hackolade.com/help/DownloadadditionalDBtargetplugin.html> "target=\"\_blank\"").  
+To perform data modeling for Apache Hive with Hackolade, you must first download the Hive [plugin](DownloadadditionalDBtargetplugin.md).
 
 &nbsp;
 
@@ -12,13 +12,11 @@ Hackolade was specially adapted to support the data modeling of Hive, including 
 
 &nbsp;
 
-The data model in the picture below results from the modeling of an application described in Cloudera's [tutorial](<https://www.cloudera.com/content/dam/www/marketing/documents/partners/ungated/cloudera-msazure-hadoop-deployment-guide.pdf> "target=\"\_blank\"").
+The data model in the picture below results from the modeling of an application described in Cloudera's [tutorial](<https://www.cloudera.com/content/dam/www/marketing/documents/partners/ungated/cloudera-msazure-hadoop-deployment-guide.pdf> "target=\"_blank\"").
 
 &nbsp;
 
 ![Hive workspace](<lib/Hive workspace.png>)
-
-&nbsp;
 
 &nbsp;
 
@@ -32,11 +30,9 @@ The table in Hive is logically made up of the data being stored. And the associa
 
 &nbsp;
 
-&nbsp;
-
 ## Partition keys, buckets
 
-Hive organizes tables into partitions for grouping same type of data together based on a column or partition key. Each table in the Hive can have one or more partition keys to identify a particular partition. Using partition we can also make it faster to do queries on slices of the data.&nbsp; Tables or partitions are subdivided into buckets based on the hash function of a column in the table to give extra structure to the data that may be used for more efficient queries.
+Hive organizes tables into partitions for grouping same type of data together based on a column or partition key. Each table in the Hive can have one or more partition keys to identify a particular partition. Using partition we can also make it faster to do queries on slices of the data. Tables or partitions are subdivided into buckets based on the hash function of a column in the table to give extra structure to the data that may be used for more efficient queries.
 
 &nbsp;
 
@@ -56,11 +52,11 @@ Hackolade was specially adapted to support the data types and attributes behavio
 
 ## Views and Materialized Views
 
-A Hive view is a searchable object in a database, which can be defined by a query.&nbsp; Data cannot be stored in a view, as it is a sort of virtual table.&nbsp; By using joins, it is possible to combine data from one or more tables. It may also hold a subset of information.&nbsp; More info can be found [here](<https://cwiki.apache.org/confluence/display/Hive/LanguageManual%20DDL#LanguageManualDDL-Create/Drop/AlterView> "target=\"\_blank\"").
+A Hive view is a searchable object in a database, which can be defined by a query. Data cannot be stored in a view, as it is a sort of virtual table. By using joins, it is possible to combine data from one or more tables. It may also hold a subset of information. More info can be found [here](<https://cwiki.apache.org/confluence/display/Hive/LanguageManual+DDL#LanguageManualDDL-Create/Drop/AlterView> "target=\"_blank\"").
 
 &nbsp;
 
-With version 3, Hive introduced materialized views to accelerate query processing in data warehouses with pre-computation of relevant summaries and automated server-side denormalization.&nbsp; In theory, this removes the need for client-side handling and would ensure consistency between base and view data.&nbsp; See more info [here](<https://cwiki.apache.org/confluence/display/Hive/Materialized%20views> "target=\"\_blank\"").
+With version 3, Hive introduced materialized views to accelerate query processing in data warehouses with pre-computation of relevant summaries and automated server-side denormalization. In theory, this removes the need for client-side handling and would ensure consistency between base and view data. See more info [here](<https://cwiki.apache.org/confluence/display/Hive/Materialized+views> "target=\"_blank\"").
 
 &nbsp;
 
@@ -74,7 +70,7 @@ Hackolade dynamically generates the HQL script to create tables, columns and the
 
 &nbsp;
 
-The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+The script can also be exported to the file system via the menu Tools > Forward-Engineering, or via the [Command-Line Interface](CommandLineInterface.md).
 
 &nbsp;
 
@@ -82,11 +78,14 @@ The script can also be exported to the file system via the menu Tools \> Forward
 
 &nbsp;
 
-**Note:** foreign keys and primary keys were introduced in Hive version 2.1.0.&nbsp; We assume HIve version 2.1.0 or higher in the generation of the HQL script.
+> [!NOTE]
+> Foreign keys and primary keys were introduced in Hive version 2.1.0. We assume HIve version 2.1.0 or higher in the generation of the HQL script.
 
 &nbsp;
 
-As many people store JSON within text columns, Hackolade allows for the schema design of those documents.  That JSON structure is not forward-engineered, but is useful for developers, analysts and designers.
+As many people store JSON within text columns, Hackolade allows for the schema design of those documents. That JSON structure is not forward-engineered, but is useful for developers, analysts and designers.
+
+&nbsp;
 
 ## Reverse-Engineering
 
@@ -94,9 +93,8 @@ The connection is established using a connection string including (IP) address a
 
 &nbsp;
 
-The Hackolade process for reverse-engineering of Hive databases includes the execution of HQL DESCRIBE statements to discover tables, columns and their types, and indexes.  If JSON is detected in text columns, Hackolade performs statistical sampling of records followed by probabilistic inference of the JSON document schema.
+The Hackolade process for reverse-engineering of Hive databases includes the execution of HQL DESCRIBE statements to discover tables, columns and their types, and indexes. If JSON is detected in text columns, Hackolade performs statistical sampling of records followed by probabilistic inference of the JSON document schema.
 
 &nbsp;
 
-For more information on Apache HIve in general, please consult the Apache Hive [website](<https://hive.apache.org/> "target=\"\_blank\"").
-
+For more information on Apache HIve in general, please consult the Apache Hive [website](<https://hive.apache.org/> "target=\"_blank\"").

@@ -1,10 +1,10 @@
 # Convert model into a Polyglot in another repository
 
-When converting a model into a Polyglot model, you can choose to make the original model dependent on the generated Polyglot.&nbsp; This dependency works seamlessly, even when both models live in different repositories (cross-repository [remote references](<Remotereferences.md>).)
+When converting a model into a Polyglot model, you can choose to make the original model dependent on the generated Polyglot. This dependency works seamlessly, even when both models live in different repositories (cross-repository [remote references](Remotereferences.md).)
 
 &nbsp;
 
-However, during the conversion of a model to Polyglot, you cannot select a remote location for the generated Polyglot model.&nbsp; The target Polyglot must be created locally, which means you cannot generate it directly inside another repository.&nbsp; As a matter of fact, you might not even have write credentials in that remote repository, and would need to create a pull request.
+However, during the conversion of a model to Polyglot, you cannot select a remote location for the generated Polyglot model. The target Polyglot must be created locally, which means you cannot generate it directly inside another repository. As a matter of fact, you might not even have write credentials in that remote repository, and would need to create a pull request.
 
 &nbsp;
 
@@ -25,15 +25,22 @@ This operation cannot be performed from the Browser or from a remotely opened mo
 ## Steps
 
 1. in Hackolade Studio Desktop, open from your local clone the model to be converted
-1. initiate the process Convert to Polyglot and choose "Dependent, relative path"
-1. for the Polyglot location, select the local destination on your machine, inside the local clone of the *other* repository.\
-**&nbsp; &nbsp; Warning:** the link will be stored as a relative local path, which is not what we ultimately want. We will fix this later.
+2. initiate the process Convert to Polyglot and choose **Dependent**, leaving the absolute-path option unchecked
+3. in the **Polyglot model** field, click **Browse...** and select the local destination on your machine, inside the local clone of the *other* repository.
+
+&nbsp;
+
+> [!WARNING]
+> The link will be stored as a relative local path, which is not what we ultimately want. We will fix this in an upcoming release.
+
+&nbsp;
+
 1. save the model which is now derived from the generated Polyglot\
-&nbsp; &nbsp; the Polyglot model is created, and a dependency link is established -- but this link is still local
-1. commit and push the generated Polyglot model to the *other* repository, so it becomes available remotely for everyone
-1. go back to the original model (the one that was converted and is now derived)
-1. edit the Polyglot link so that it now references the Polyglot from its remote location\
-&nbsp; &nbsp; this step stores the link as a proper cross-repository reference, which is the expected configuration
+   the Polyglot model is created, and a dependency link is established -- but this link is still local
+2. commit and push the generated Polyglot model to the *other* repository, so it becomes available remotely for everyone
+3. go back to the original model (the one that was converted and is now derived)
+4. edit the Polyglot link so that it now references the Polyglot from its remote location\
+   this step stores the link as a proper cross-repository reference, which is the expected configuration
 
 &nbsp;
 
@@ -45,6 +52,6 @@ If you do not update the Polyglot link, the link will still work only on your ma
 
 &nbsp;
 
-### Convert \& Merge
+### Convert & Merge
 
-Storing the Polyglot directly in the local clone of the other repository allows you to following these steps for a Convert\\\&Merge feature, when the Polyglot already exists and needs to be merged with the newly generated one.
+Storing the Polyglot directly in the local clone of the other repository allows you to following these steps for a Convert\\&Merge feature, when the Polyglot already exists and needs to be merged with the newly generated one.

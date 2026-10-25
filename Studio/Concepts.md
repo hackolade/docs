@@ -4,9 +4,8 @@ Hackolade was inspired and influenced by many software engineering theories and 
 
 &nbsp;
 
-The added-value that Hackolade provides is described in [Schema modeling in a schemaless world](<Schemamodelinginaschemalessworld.md>).
+The added-value that Hackolade provides is described in [Schema modeling in a schemaless world](Schemamodelinginaschemalessworld.md).
 
 &nbsp;
 
-Hackolade loosely applies a couple of established standards detailed below.&nbsp; The idea is to use enough of these methodologies to provide a rigorous structure, but to take some carefully chosen liberties with them, when it helps provide a more intuitive user experience, or a more powerful system.
-
+Hackolade loosely applies a couple of established standards detailed below. The idea is to use enough of these methodologies to provide a rigorous structure, but to take some carefully chosen liberties with them, when it helps provide a more intuitive user experience, or a more powerful system.

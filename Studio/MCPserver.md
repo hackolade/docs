@@ -1,8 +1,6 @@
 # MCP server
 
-&nbsp;
-
-For most AI assistant applications, Instructions for configuring the MCP server are documented in the Hackolade Model Hub application.&nbsp; Users can access these instructions by opening the hamburger menu ☰ , then clicking on *Connect AI assistants with MCP*
+For most AI assistant applications, Instructions for configuring the MCP server are documented in the Hackolade Model Hub application. Users can access these instructions by opening the hamburger menu ☰ , then clicking on *Connect AI assistants with MCP*
 
 &nbsp;
 
@@ -12,7 +10,8 @@ Administrators are still required to perform some configuration when authenticat
 
 ## Authentication configuration
 
-**Note:** for the Standalone version, please ignore this section and go directly to the the AI Assistant integration section below.
+> [!NOTE]
+> For the Standalone version, please ignore this section and go directly to the the AI Assistant integration section below.
 
 &nbsp;
 
@@ -28,29 +27,54 @@ The following is a list of applications with their redirect URL:
 
 &nbsp;
 
-| **Assistant** | **Redirect URL** | **Notes** |
-| --- | --- | --- |
-| Claude Desktop | https://claude.ai/api/mcp/auth\\\_callback |  |
-| Cursor | cursor://anysphere.cursor-mcp/oauth/callback |  |
-| VS Code | http://127.0.0.1 | VSCode starts a server on a random port on the host machine to perform the login. |
-| Copilot Studio | https://\\\<model-hub-domain-name\>/api/v1/mcp | see infos below |
-
+<table style="width:75%">
+<colgroup><col style="width:17%"><col style="width:28%"><col style="width:55%"></colgroup>
+<thead>
+<tr>
+<th>Assistant</th>
+<th>Redirect URL</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Claude Desktop</td>
+<td>https://claude.ai/api/mcp/auth\_callback</td>
+<td></td>
+</tr>
+<tr>
+<td>Cursor</td>
+<td>cursor://anysphere.cursor-mcp/oauth/callback</td>
+<td></td>
+</tr>
+<tr>
+<td>VS Code</td>
+<td>http://127.0.0.1</td>
+<td>VSCode starts a server on a random port on the host machine to perform the login.</td>
+</tr>
+<tr>
+<td>Copilot Studio</td>
+<td>https://\&lt;model-hub-domain-name&gt;/api/v1/mcp</td>
+<td>see infos below</td>
+</tr>
+</tbody>
+</table>
 
 &nbsp;
 
-**Note:** when configuring these redirect URIs in Azure Entra ID, make sure to add them for the **Mobile and desktop applications** platform
-
-&nbsp;
+> [!NOTE]
+> When configuring these redirect URIs in Azure Entra ID, make sure to add them for the **Mobile and desktop applications** platform
 
 &nbsp;
 
 ## AI Assistant integration
 
-Besides the Model Hub functionality described in [this page](<ModelHubuserinterface.md>),Model Hub provides the ability to connect an AI assistant to your library of data model files via an embedded MCP (Model Context Protocol) server.
+Besides the Model Hub functionality described in [this page](ModelHubuserinterface.md),Model Hub provides the ability to connect an AI assistant to your library of data model files via an embedded MCP (Model Context Protocol) server.
 
 &nbsp;
 
-**Note:** each AI assistant chat client uses a different architecture.&nbsp; With the production version of Model Hub, we can easily integrate through APIs.&nbsp; But with the Standalone personal client which runs locally in Electron the integration does not work with all the clients.&nbsp; In particular the test will not work with OpenAI ChatGPT or with Copilot (except is you use Copilot for VS Code, cfr below.)
+> [!NOTE]
+> Each AI assistant chat client uses a different architecture. With the production version of Model Hub, we can easily integrate through APIs. But with the Standalone personal client which runs locally in Electron the integration does not work with all the clients. In particular the test will not work with OpenAI ChatGPT or with Copilot (except is you use Copilot for VS Code, cfr below.)
 
 &nbsp;
 
@@ -62,7 +86,7 @@ To get the instructions tailored to the GenAI chat client of your choice, click 
 
 &nbsp;
 
-Then select the appropriate AI assistant.&nbsp; With Cursor and Copilot for VS Code, you just need to click the button and the configuration will be applied.&nbsp; With Claude, you will need to follow instructions and copy/paste the configuration.
+Then select the appropriate AI assistant. With Cursor and Copilot for VS Code, you just need to click the button and the configuration will be applied. With Claude, you will need to follow instructions and copy/paste the configuration.
 
 &nbsp;
 
@@ -70,11 +94,7 @@ Then select the appropriate AI assistant.&nbsp; With Cursor and Copilot for VS C
 
 &nbsp;
 
-&nbsp;
-
-&nbsp;
-
-Each AI assistant client has a different way of setting up an MCP server.&nbsp; And you might already have some MCP servers defined.
+Each AI assistant client has a different way of setting up an MCP server. And you might already have some MCP servers defined.
 
 &nbsp;
 
@@ -92,7 +112,7 @@ In the Claude chat or code client, go to Settings, then Developer, and click the
 
 &nbsp;
 
-This will open up your OS Explorer/Finder in the correct location.&nbsp; You must edit the file claude\_desktop\_config.json and insert the appropriate lines copied from the Model Hub dialog above.&nbsp; Make sure to not overwrite or corrupt existing configuration.&nbsp; Make sure that the config is proper JSON.
+This will open up your OS Explorer/Finder in the correct location. You must edit the file claude_desktop_config.json and insert the appropriate lines copied from the Model Hub dialog above. Make sure to not overwrite or corrupt existing configuration. Make sure that the config is proper JSON.
 
 &nbsp;
 
@@ -100,13 +120,11 @@ This will open up your OS Explorer/Finder in the correct location.&nbsp; You mus
 
 &nbsp;
 
-&nbsp;
-
-After saving your edited config file, make sure that the Hackolade Model Hub is running so the MCP server is accessible&nbsp;
+After saving your edited config file, make sure that the Hackolade Model Hub is running so the MCP server is accessible
 
 &nbsp;
 
-Make sure to close Claude and restart it.&nbsp; On Windows, it often happens that closing the Claude client does not actually stop all processes.&nbsp; You may need to go to the Windows Tast Manager and end the Claude task.
+Make sure to close Claude and restart it. On Windows, it often happens that closing the Claude client does not actually stop all processes. You may need to go to the Windows Tast Manager and end the Claude task.
 
 &nbsp;
 
@@ -118,7 +136,7 @@ Unfortunately, a bug in Claude give a false error:
 
 &nbsp;
 
-You may ignore it and close the message. &nbsp;
+You may ignore it and close the message.
 
 &nbsp;
 
@@ -126,11 +144,7 @@ You may ignore it and close the message. &nbsp;
 
 &nbsp;
 
-&nbsp;
-
 However, if you get these 3 messages, it means that the Model Hub has not been started and hence the MCP server is not accessible...
-
-&nbsp;
 
 &nbsp;
 
@@ -140,11 +154,12 @@ However, if you get these 3 messages, it means that the Model Hub has not been s
 
 ### Copilot in VS Code
 
-Copilot is not a model provider.&nbsp; It is a client product (a coding assistant, or Microsoft's assistant/agent ecosystem) that *consumes* models from those providers.&nbsp; Microsoft 365 Copilot itself can use models from OAzure OpenAI, OpenAI, and others.
+Copilot is not a model provider. It is a client product (a coding assistant, or Microsoft's assistant/agent ecosystem) that *consumes* models from those providers. Microsoft 365 Copilot itself can use models from OAzure OpenAI, OpenAI, and others.
 
 &nbsp;
 
-**Warning:** the Copilot chat client is incompatible with our Model Hub standalone trial MCP server.&nbsp; It does however work just fine with the production version of Model Hub.&nbsp; To test with Copilot, you must use it inside VS Code.
+> [!WARNING]
+> The Copilot chat client is incompatible with our Model Hub standalone trial MCP server. It does however work just fine with the production version of Model Hub. To test with Copilot, you must use it inside VS Code.
 
 &nbsp;
 
@@ -156,7 +171,7 @@ Click on the button Add to VS Code:
 
 &nbsp;
 
-![Image](<lib/Hub standalone connect to Copilot dialog.png>)
+![Hub standalone connect to Copilot dialog](<lib/Hub standalone connect to Copilot dialog.png>)
 
 &nbsp;
 
@@ -168,7 +183,7 @@ Clicking the button will stgart VS Code and bring you to this screen where you m
 
 &nbsp;
 
-Once the MCP Server connection is installed, you can check that it is running by pressing Ctrl + Shift + P, then Run **MCP: List Servers** and make sure that&nbsp; the Hackolade-Hub server is running
+Once the MCP Server connection is installed, you can check that it is running by pressing Ctrl + Shift + P, then Run **`MCP: List Servers`** and make sure that the Hackolade-Hub server is running
 
 &nbsp;
 
@@ -176,47 +191,34 @@ Once the MCP Server connection is installed, you can check that it is running by
 
 &nbsp;
 
-&nbsp;
-
-If you don't already have a chat pane on the right press Ctrl + Alt + I
-
+If you don't already have a chat pane on the right press Ctrl + Alt + I\
 ![Hub Copilot MCP server chat](<lib/Hub Copilot MCP server chat.png>)
 
 &nbsp;
 
-&nbsp;
-
-The first time you run a chat with the Model Hub MCP server, you will be asked for permission:
-
+The first time you run a chat with the Model Hub MCP server, you will be asked for permission:\
 ![Hub Copilot MCP server permissions](<lib/Hub Copilot MCP server permissions.png>)
-
-&nbsp;
-
-&nbsp;
 
 &nbsp;
 
 ### Microsoft 365 Copilot
 
-To configure the MCP server to Copilot, you need to be able to create agents in [Copilot Studio](<https://copilotstudio.microsoft.com/> "target=\"\_blank\"").
+To configure the MCP server to Copilot, you need to be able to create agents in [Copilot Studio](<https://copilotstudio.microsoft.com/> "target=\"_blank\"").
 
 &nbsp;
 
 Follow these steps to complete the configuration of the MCP server
 
-&nbsp;
-
-* Open on the *Agents* menu, then click on *Create blank agent*
-* Give the agent a name like *Hackolade Model Hub agent*
-* Go to tools, then click on *+ Add a tool*
-* In the modal that opens, select *Add new MCP*
-* Fill the form
-
-  * Server name: *hackolade-model-hub*
-  * Server description: Use the MCP tools provided by the Hackolade model HUB application
-  * Server URL: *https://\\\<model-hub-domain-name\>/api/v1/mcp*
-  * Authentication: Select *OAuth 2.0* then *Dynamic discovery* as a type
-  * Click on *Create*
+- Open on the *Agents* menu, then click on *Create blank agent*
+- Give the agent a name like *Hackolade Model Hub agent*
+- Go to tools, then click on *+ Add a tool*
+- In the modal that opens, select *Add new MCP*
+- Fill the form
+  - Server name: *hackolade-model-hub*
+  - Server description: Use the MCP tools provided by the Hackolade model Hub application
+  - Server URL: *https://\\\<model-hub-domain-name>/api/v1/mcp*
+  - Authentication: Select *OAuth 2.0* then *Dynamic discovery* as a type
+  - Click on *Create*
 
 &nbsp;
 
@@ -224,31 +226,24 @@ The form should look like the following
 
 &nbsp;
 
-&nbsp;
-
 ## Discuss with your Model Hub
 
-You are now ready to have a conversation with your library of models. &nbsp;
+You are now ready to have a conversation with your library of models.
 
 &nbsp;
 
-Here are some examples to inspire you.&nbsp; Possibilities are endles...
+Here are some examples to inspire you. Possibilities are endles...
 
 &nbsp;
 
-> Using the Hackolade Model Hub MCP server, list available models
+```text
+Using the Hackolade Model Hub MCP server, list available models
 
-&nbsp;
+Give me an explanatory overview in words of model xyz
 
-> Give me an explanatory overview in words of model xyz
-
-&nbsp;
-
-> Build a SQL query to list customers and thei contact info
+Build a SQL query to list customers and thei contact info
+```
 
 &nbsp;
 
 etc.
-
-&nbsp;
-

@@ -4,7 +4,7 @@ Hackolade dynamically generates the HiveQL script to create databases, tables, c
 
 &nbsp;
 
-The script can also be exported to the file system via the menu Tools \> Forward-Engineering, or via the [Command-Line Interface](<CommandLineInterface.md>).
+The script can also be exported to the file system via the menu Tools > Forward-Engineering, or via the [Command-Line Interface](CommandLineInterface.md).
 
 &nbsp;
 
@@ -16,9 +16,9 @@ By pressing the button "Apply to instance" the system will automatically creates
 
 &nbsp;
 
-**Note:** As foreign keys and primary keys are not supported in Delta Lake, they can be used in Hackolade for informational purposes, but are not generated in the HQL script.
+> [!NOTE]
+> As foreign keys and primary keys are not supported in Delta Lake, they can be used in Hackolade for informational purposes, but are not generated in the HQL script.
 
 &nbsp;
 
-As many people store JSON within text columns, Hackolade allows for the schema design of those documents.  That JSON structure is not forward-engineered, but is useful for developers, analysts and designers.&nbsp; It is often integrated into a CI/CD pipeline, using the [Command-Line Interface](<CommandLineInterface.md>).
-
+As many people store JSON within text columns, Hackolade allows for the schema design of those documents. That JSON structure is not forward-engineered, but is useful for developers, analysts and designers. It is often integrated into a CI/CD pipeline, using the [Command-Line Interface](CommandLineInterface.md).

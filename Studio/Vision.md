@@ -1,20 +1,20 @@
 # Vision
 
-Hackolade Studio, like other legacy tools in the same segment, uses Entity-Relationship Diagrams to visualize and maintain data models.&nbsp; It also includes graph diagrams to represent concepts and relationships, tree views of hierarchical structures, and grid views.&nbsp; But our next-gen tool takes a modern approach to data modeling as it does not carry the tech debt of legacy tools built decades ago strictly for relational databases.&nbsp; We embrace 21st-century technology, cloud databases, event-driven architecture patterns, data-in-motion, Git repositories, digital transformation, application modernization, ML/AI, Domain-Driven Design, and much more.
+Hackolade Studio, like other legacy tools in the same segment, uses Entity-Relationship Diagrams to visualize and maintain data models. It also includes graph diagrams to represent concepts and relationships, tree views of hierarchical structures, and grid views. But our next-gen tool takes a modern approach to data modeling as it does not carry the tech debt of legacy tools built decades ago strictly for relational databases. We embrace 21st-century technology, cloud databases, event-driven architecture patterns, data-in-motion, Git repositories, digital transformation, application modernization, ML/AI, Domain-Driven Design, and much more.
 
 &nbsp;
 
-Our mission is to help tackle the complexity at the heart of data, and to reconcile Business and IT through a shared understanding of the context and meaning of data.&nbsp; This is achieved through the pillars of our vision: [Polyglot Data Modeling](<https://hackolade.com/polyglot-data-modeling.html>) and [Metadata-as-Code](<https://hackolade.com/metadata-as-code.html>), which are best executed through [Domain-Driven Data Modeling](<https://hackolade.com/domain-driven-data-modeling.html>).
+Our mission is to help tackle the complexity at the heart of data, and to reconcile Business and IT through a shared understanding of the context and meaning of data. This is achieved through the pillars of our vision: [Polyglot Data Modeling](https://hackolade.com/polyglot-data-modeling.html) and [Metadata-as-Code](https://hackolade.com/metadata-as-code.html), which are best executed through [Domain-Driven Data Modeling](https://hackolade.com/domain-driven-data-modeling.html).
 
 &nbsp;
 
 ## tldr;
 
-If you want your organization to be data-driven, many planets need to be aligned.&nbsp; In particular, you must master new and complex technologies.&nbsp; And your IT department and the business must be working hand-in-hand.&nbsp; In particular, there must be full alignment on the interpretation of data.
+If you want your organization to be data-driven, many planets need to be aligned. In particular, you must master new and complex technologies. And your IT department and the business must be working hand-in-hand. In particular, there must be full alignment on the interpretation of data.
 
 &nbsp;
 
-In recent years, Chief Data Officer (CDO) positions have been created in many organizations, and big budgets have been invested in data catalogs, schema registries, as well as solutions for metadata management, data quality and data governance.&nbsp; Are these solutions achieving the objectives?&nbsp; Do all parties share the same interpretation of the data?&nbsp; Is there a truly single source-of-truth for metadata?
+In recent years, Chief Data Officer (CDO) positions have been created in many organizations, and big budgets have been invested in data catalogs, schema registries, as well as solutions for metadata management, data quality and data governance. Are these solutions achieving the objectives? Do all parties share the same interpretation of the data? Is there a truly single source-of-truth for metadata?
 
 &nbsp;
 
@@ -22,15 +22,12 @@ With Hackolade Studio we bring back pragmatic data modeling to facilitate the al
 
 &nbsp;
 
-&nbsp;
-
-***Why is data modeling more important than ever before?*** &nbsp;
-
+***Why is data modeling more important than ever before?***\
 *The risk, if we lose sight of what data actually means, is that we end up with hallucinations (in the case of AI) and bad decisions (in the case of analytics.)*
 
 &nbsp;
 
-For years, big data has been accumulated without thinking first about how it would be used.&nbsp; It has been a code-first and store-first fest which inevitably lead to endless efforts to curate data after the fact.&nbsp; Whereas it has been proven time and time again that a design-first approach leads to much higher quality, productivity, and insight.&nbsp; It is time for business and IT to work hand-in-hand and design together how to store data, agree on its meaning, and make it truly valuable.
+For years, big data has been accumulated without thinking first about how it would be used. It has been a code-first and store-first fest which inevitably lead to endless efforts to curate data after the fact. Whereas it has been proven time and time again that a design-first approach leads to much higher quality, productivity, and insight. It is time for business and IT to work hand-in-hand and design together how to store data, agree on its meaning, and make it truly valuable.
 
 &nbsp;
 
@@ -46,15 +43,15 @@ Additionally, there has been the buzz around the terms NoSQL, schemaless, schema
 
 &nbsp;
 
-*The lack of a data model is still a model -- just a crummy one\!* &nbsp;
+*The lack of a data model is still a model -- just a crummy one!*
 
 &nbsp;
 
-Is it realistic to think that one can actually design an application with no structure, no schema, and no relationships?&nbsp; Isn’t it ironic also that schema design is one of NoSQL’s toughest challenges, triggering countless how-to videos, blogs, and [books](<https://hackolade.com/books.html> "target=\"\_blank\"")?
+Is it realistic to think that one can actually design an application with no structure, no schema, and no relationships? Isn’t it ironic also that schema design is one of NoSQL’s toughest challenges, triggering countless how-to videos, blogs, and [books](<https://hackolade.com/books.html> "target=\"_blank\"")?
 
 &nbsp;
 
-A data model is not just documentation\!&nbsp; One artifact out of a data model is the schema contract used by producers and consumers of data to understand each other when communicating. This can be the forward-engineered of a DDL in relational databases, or an Avro schema used in Kafka pub-sub pipelines, or a REST API specification.&nbsp;
+A data model is not just documentation! One artifact out of a data model is the schema contract used by producers and consumers of data to understand each other when communicating. This can be the forward-engineered of a DDL in relational databases, or an Avro schema used in Kafka pub-sub pipelines, or a REST API specification.
 
 &nbsp;
 
@@ -66,13 +63,8 @@ Not only is data modeling not a bottleneck to application development, it has re
 
 &nbsp;
 
-You may read more details in the following pages, then pursue with the following sections in this online documentation, including [Getting Started](<Gettingstarted.md>), [Tutorials](<Tutorial.md>), [How-To Guides](<How-toguides.md>), and the rest of the user manual.&nbsp;
+You may read more details in the following pages, then pursue with the following sections in this online documentation, including [Getting Started](Gettingstarted.md), [Tutorials](Tutorial.md), [How-To Guides](How-toguides.md), and the rest of the user manual.
 
 &nbsp;
 
 Enjoy our next-gen data modeling tool for 21st Century technology.
-
-&nbsp;
-
-&nbsp;
-

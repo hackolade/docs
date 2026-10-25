@@ -2,11 +2,11 @@
 
 ## Home page
 
-The Hackolade Model Hub home page displays a dashboard.&nbsp; For the repositories configured as sources for the Hub, each tile represents a category of assets in the database with a counter.&nbsp; &nbsp;
+The Hackolade Model Hub home page displays a dashboard. For the repositories configured as sources for the Hub, each tile represents a category of assets in the database with a counter.
 
 &nbsp;
 
-Each tile is clickable so you can start browsing.&nbsp; There is also a Lineage button to display a graph of all your models in the repositories.
+Each tile is clickable so you can start browsing. There is also a Lineage button to display a graph of all your models in the repositories.
 
 &nbsp;
 
@@ -34,7 +34,7 @@ You may select a model and its content by exploring the repositories displayed o
 
 ## Search bar
 
-The Hub **search bar** is an interactive user interface element.&nbsp; It allows you to enter text and search for specific assets or model objects: containers, entities, attributes.&nbsp; When you select a search result, you will be able to consult their detailed properties, structure, lineage, etc. &nbsp;
+The Hub **search bar** is an interactive user interface element. It allows you to enter text and search for specific assets or model objects: containers, entities, attributes. When you select a search result, you will be able to consult their detailed properties, structure, lineage, etc.
 
 &nbsp;
 
@@ -42,23 +42,19 @@ You may access the search at any time by clicking inside the search bar, or by p
 
 &nbsp;
 
-&nbsp;
-
-![Image](<lib/Hub portal search bar.png>)
+![Hub portal search bar](<lib/Hub portal search bar.png>)
 
 &nbsp;
 
-&nbsp;
-
-As you type, the search bar displays suggested results, helping to refine the search query or select a suitable result. A preview of the first results is displayed in a dropdown panel.&nbsp; You may see the details for one of the search results, or you may display the full list of results in the central pane by pressing Enter or by clicking the link "View all results".
+As you type, the search bar displays suggested results, helping to refine the search query or select a suitable result. A preview of the first results is displayed in a dropdown panel. You may see the details for one of the search results, or you may display the full list of results in the central pane by pressing Enter or by clicking the link "View all results".
 
 &nbsp;
 
-If the list is too long, you may want to filter the search results by applying one or more filters on the right hand side of the dropdown panel.&nbsp; There are 3 families of filters: by repository, by model object, or by model target technology. By default, no filter is applied.&nbsp; If you check one or more boxes, the search results are narrowed to match the selected filter.
+If the list is too long, you may want to filter the search results by applying one or more filters on the right hand side of the dropdown panel. There are 3 families of filters: by repository, by model object, or by model target technology. By default, no filter is applied. If you check one or more boxes, the search results are narrowed to match the selected filter.
 
 &nbsp;
 
-Once you select a search result and you view the details, you may want to navigate up or down through the results without having to change the screen you're on.&nbsp; At any time, you may go back to the results list of your last search.
+Once you select a search result and you view the details, you may want to navigate up or down through the results without having to change the screen you're on. At any time, you may go back to the results list of your last search.
 
 &nbsp;
 
@@ -66,17 +62,18 @@ To clear your search input, simply click the X in the search bar.
 
 &nbsp;
 
-**Note:** for an exact search or an expression or phrase, make sure to surround it with double quotes.
+> [!NOTE]
+> For an exact search or an expression or phrase, make sure to surround it with double quotes.
 
 &nbsp;
 
 ## Explorer pane
 
-The explorer pane is on the left side of the workspace.&nbsp; You may adjust its width by dragging it left or right.
+The explorer pane is on the left side of the workspace. You may adjust its width by dragging it left or right.
 
 &nbsp;
 
-The explorer pane is divided into an upper part so you may explore the repository or repositories and their folders, and a lower part so you may explore the selected model.&nbsp; Each part is made of a hierarchical structure with expandable/collapsible nodes.&nbsp; Blue text is clickable and displays the relevant details in the central pane.&nbsp; There is a handle between the upper and lower parts of the pane so you may adjust their size.
+The explorer pane is divided into an upper part so you may explore the repository or repositories and their folders, and a lower part so you may explore the selected model. Each part is made of a hierarchical structure with expandable/collapsible nodes. Blue text is clickable and displays the relevant details in the central pane. There is a handle between the upper and lower parts of the pane so you may adjust their size.
 
 &nbsp;
 
@@ -84,15 +81,13 @@ The explorer pane is divided into an upper part so you may explore the repositor
 
 &nbsp;
 
-&nbsp;
-
 ## Central pane
 
-The central pane is where you can see detailed information for the selected object.&nbsp; There are tabs with a searchable and customizable grid so you can drill down further into the selected object.
+The central pane is where you can see detailed information for the selected object. There are tabs with a searchable and customizable grid so you can drill down further into the selected object.
 
 &nbsp;
 
-A breadcrumb at the top allows to selectively go back up in the hierarchy.&nbsp; At any time, you may open the corresponding model in Hackolade Studio.
+A breadcrumb at the top allows to selectively go back up in the hierarchy. At any time, you may open the corresponding model in Hackolade Studio.
 
 &nbsp;
 
@@ -110,15 +105,13 @@ The where-used grid display s list of downstream models to allow a view on impac
 
 &nbsp;
 
-&nbsp;
-
 ## Lineage tab
 
-The lineage tab display a graph of the relationships between models, if any.&nbsp; While the where-used grid shows downstream models only, the lineage graph shows both upstream and downstream models, if any. &nbsp;
+The lineage tab display a graph of the relationships between models, if any. While the where-used grid shows downstream models only, the lineage graph shows both upstream and downstream models, if any.
 
 &nbsp;
 
-Models can be derived from a polyglot model, and/or have references to external definitions.&nbsp; Given the modular capabilities we advocate with [domain-driven data modeling](<https://hackolade.com/domain-driven-data-modeling.html> "target=\"\_blank\"") and the capability to refer to parts of multiple other models, it may be handy to see how models relate to each other.&nbsp; This information is useful to measure the impact of a change upstream on models downstream. &nbsp;
+Models can be derived from a polyglot model, and/or have references to external definitions. Given the modular capabilities we advocate with [domain-driven data modeling](<https://hackolade.com/domain-driven-data-modeling.html> "target=\"_blank\"") and the capability to refer to parts of multiple other models, it may be handy to see how models relate to each other. This information is useful to measure the impact of a change upstream on models downstream.
 
 &nbsp;
 
@@ -130,29 +123,24 @@ You may search the graph, zoom in or out, select any model in the graph, maximiz
 
 &nbsp;
 
-&nbsp;
-
 ## Properties pane
 
-The properties pane is on the right side of the workspace.&nbsp; You may adjust its width by dragging it left or right.
+The properties pane is on the right side of the workspace. You may adjust its width by dragging it left or right.
 
 &nbsp;
 
-The properties pane is similar to the one you have in Hackolade Studio.&nbsp; It may display additional tabs, if applicable, and their corresponding properties.
+The properties pane is similar to the one you have in Hackolade Studio. It may display additional tabs, if applicable, and their corresponding properties.
 
 &nbsp;
 
-You may toggle the display of empty properties.
-
+You may toggle the display of empty properties.\
 ![Hub properties pane](<lib/Hub properties pane.png>)
-
-&nbsp;
 
 &nbsp;
 
 ## Glossaries and business terms
 
-Glossaries and glossary terms are not first-class objects in data models.&nbsp; Rather models, entities, and attributes are associated (or bound) to one of more business terms from one or more glossaries.&nbsp; And this association gets stored in model files. &nbsp;
+Glossaries and glossary terms are not first-class objects in data models. Rather models, entities, and attributes are associated (or bound) to one of more business terms from one or more glossaries. And this association gets stored in model files.
 
 &nbsp;
 
@@ -160,7 +148,8 @@ The Model Hub compiles glossaries and terms encountered across models in the dat
 
 &nbsp;
 
-**Important**: the list of glossaries and the list of terms within a glossary may be incomplete if compared to their original source.&nbsp; This would be due to the fact that they have not been encountered in the data models in the Model Hub database.&nbsp; For example if a business term in a glossary is not bound to any model object in data models, then the term would simply not appear in Model Hub.&nbsp; Similarly, if a model has not been published to the default branch that is replicated to the Model Hub database.&nbsp; Additionally, for a glossary to appear here, it is necessary that at least one of its terms has been bound to at least one model object in a replicated data model.
+> [!IMPORTANT]
+> The list of glossaries and the list of terms within a glossary may be incomplete if compared to their original source. This would be due to the fact that they have not been encountered in the data models in the Model Hub database. For example if a business term in a glossary is not bound to any model object in data models, then the term would simply not appear in Model Hub. Similarly, if a model has not been published to the default branch that is replicated to the Model Hub database. Additionally, for a glossary to appear here, it is necessary that at least one of its terms has been bound to at least one model object in a replicated data model.
 
 &nbsp;
 
@@ -184,17 +173,12 @@ The details screen for glossary term includes the description and glossary locat
 
 The menu button allows you, at any time to:
 
-\- access the Admin panel
-
-\- display the license status
-
-\- restart the application quick tour
-
-\- access this online documentation page
-
-\- display the About box, including a list of the open-source libraries used in the application
-
-\- access the instructions helping users connect AI asisstants to the Model Hub MCP server
+- access the Admin panel
+- display the license status
+- restart the application quick tour
+- access this online documentation page
+- display the About box, including a list of the open-source libraries used in the application
+- access the instructions helping users connect AI assistants to the Model Hub MCP server
 
 &nbsp;
 
@@ -202,13 +186,9 @@ The menu button allows you, at any time to:
 
 &nbsp;
 
-&nbsp;
-
-&nbsp;
-
 ## Admin panel
 
-The Admin panel is for administrators.&nbsp; It allows to set up and manage the backend license, user authentication, and source repo providers and repositories
+The Admin panel is for administrators. It allows to set up and manage the backend license, user authentication, and source repo providers and repositories
 
 &nbsp;
 
@@ -216,17 +196,16 @@ The Admin panel is for administrators.&nbsp; It allows to set up and manage the 
 
 &nbsp;
 
-Refer to [this page and sub-pages](<Gitrepoconfiguration.md>) for more details on the configuration of repo providers and repositories.
+Refer to [this page and sub-pages](Gitrepoconfiguration.md) for more details on the configuration of repo providers and repositories.
 
 &nbsp;
 
-Each instance of Model Hub requires its own license key. &nbsp;
-
+Each instance of Model Hub requires its own license key.\
 ![Hub instance license status screen](<lib/Hub instance license status screen.png>)
 
 &nbsp;
 
-For more information on how to validate a license key, please read [this page](<Softwareregistration.md>).
+For more information on how to validate a license key, please read [this page](Softwareregistration.md).
 
 &nbsp;
 
@@ -240,13 +219,10 @@ End users also must have a proper license, either Workgroup or Viewer, configure
 
 &nbsp;
 
-&nbsp;
-
-For more information on how to validate a license key, please read [this page](<Softwareregistration.md>).&nbsp; If you already have a license key validated with Hackolade Studio desktop, make sure to read [this section](<https://hackolade.com/help/Softwareregistration.html#Reuse%20in%20the%20Browser%20your%20license%20key%20already%20validated%20in%20the%20Desktop>).
+For more information on how to validate a license key, please read [this page](Softwareregistration.md). If you already have a license key validated with Hackolade Studio desktop, make sure to read [this section](<https://hackolade.com/help/Softwareregistration.html#Reuse%20in%20the%20Browser%20your%20license%20key%20already%20validated%20in%20the%20Desktop>).
 
 &nbsp;
 
 ## MCP server
 
-The Moel Hub includes an MCP server.&nbsp; The details on how to connect from an AI assistant are described in [this page](<MCPserver.md>).
-
+The Model Hub includes an MCP server. The details on how to connect from an AI assistant are described in [this page](MCPserver.md).

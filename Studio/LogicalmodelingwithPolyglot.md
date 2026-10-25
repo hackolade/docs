@@ -6,7 +6,7 @@ Once you've decided to create a logical model, it's important to define your tec
 
 &nbsp;
 
-In Hackolade Studio, the Polyglot Model serves as a shared foundation for multiple physical implementations, ensuring consistency while allowing for technological diversity.&nbsp; As a reminder, a Polyglot model is like a logical model, in the sense that it is technology-independent.&nbsp; And it can be normalized like a traditional logical data model.&nbsp; But it can also be structured to accommodate downstream physical models that require hierarchical structures, denormalization, and polymorphism. &nbsp; So a Polyglot data model is like a logical model, but with the optional capability to be a lot more.
+In Hackolade Studio, the Polyglot Model serves as a shared foundation for multiple physical implementations, ensuring consistency while allowing for technological diversity. As a reminder, a Polyglot model is like a logical model, in the sense that it is technology-independent. And it can be normalized like a traditional logical data model. But it can also be structured to accommodate downstream physical models that require hierarchical structures, denormalization, and polymorphism. So a Polyglot data model is like a logical model, but with the optional capability to be a lot more.
 
 &nbsp;
 
@@ -34,11 +34,11 @@ Where things get more interesting, and more challenging, is when your ecosystem 
 
 Imagine a scenario where you need to design a logical model that serves as the foundation for different physical implementations across your system. For example, you may have:
 
-* Relational databases to manage structured, transactional data
-* An event-driven architecture leveraging Kafka pub/sub with Avro files
-* APIs that expose structured and semi-structured data to external consumers
-* Document-oriented databases supporting specific application features requiring flexibility
-* Big Data platforms to handle large volumes of analytical or semi-structured data
+- Relational databases to manage structured, transactional data
+- An event-driven architecture leveraging Kafka pub/sub with Avro files
+- APIs that expose structured and semi-structured data to external consumers
+- Document-oriented databases supporting specific application features requiring flexibility
+- Big Data platforms to handle large volumes of analytical or semi-structured data
 
 &nbsp;
 
@@ -52,7 +52,7 @@ In these situations, creating a Polyglot Model that remains technology-agnostic 
 
 ### There is no perfect universal model
 
-The reality is that you cannot create a logical model that perfectly fits all technological paradigms without making trade-offs.&nbsp; The objective here is not perfection.&nbsp; It is to find the right level of abstraction that provides value, clarity, and consistency, while still leaving enough flexibility to adapt in each physical model.
+The reality is that you cannot create a logical model that perfectly fits all technological paradigms without making trade-offs. The objective here is not perfection. It is to find the right level of abstraction that provides value, clarity, and consistency, while still leaving enough flexibility to adapt in each physical model.
 
 &nbsp;
 
@@ -62,15 +62,15 @@ This is where the art of data modeling comes into play. Data modeling is not an 
 
 There is no single "correct" way to design a Polyglot Model in heterogeneous environments. What works depends on:
 
-* the specific technologies involved
-* your project priorities (performance, maintainability, simplicity, etc.)
-* the compromises your teams are willing to accept
+- the specific technologies involved
+- your project priorities (performance, maintainability, simplicity, etc.)
+- the compromises your teams are willing to accept
 
 &nbsp;
 
 ### Guidance through real world trade offs
 
-In our experience, it is always beneficial to start with baby steps and progressively increase complexity, rather than trying to "boil the ocean" from the start.&nbsp; It is always better to break down complex problems into smaller manageable ones.
+In our experience, it is always beneficial to start with baby steps and progressively increase complexity, rather than trying to "boil the ocean" from the start. It is always better to break down complex problems into smaller manageable ones.
 
 &nbsp;
 
@@ -78,5 +78,4 @@ In the next section, we present different practical strategies for building a Po
 
 &nbsp;
 
-Each approach comes with its own advantages, limitations, and best-fit scenarios.&nbsp; There is no universal recipe -- only informed choices. Our goal is to provide you with examples and insights, so you can apply your expertise and decide what works best for your organization.
-
+Each approach comes with its own advantages, limitations, and best-fit scenarios. There is no universal recipe -- only informed choices. Our goal is to provide you with examples and insights, so you can apply your expertise and decide what works best for your organization.
