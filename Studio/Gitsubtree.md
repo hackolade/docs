@@ -1,3 +1,8 @@
+---
+description: "Embed one Git repository of data models into another with Git subtrees in Hackolade Studio: set up, pull and push subtrees."
+seoTitle: Git subtree for data models
+image: lib/Workgroup - Git subtree.png
+---
 # Git subtree
 
 A Git subtree is a way to embed a repository into another repository. As a convention, we refer to the repository being embedded as the *child repository*, and to the other repository as the *parent repository*. The parent repository contains a subtree that reflects the content of a child repository at a given commit. You can read more about Git subtrees [here](<https://www.atlassian.com/git/tutorials/git-subtree> "target=\"_blank\"").

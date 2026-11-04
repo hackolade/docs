@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to Databricks Delta Lake, with the table access privileges needed for reverse- and forward-engineering.
+seoTitle: Connect to Delta Lake on Databricks
+image: lib/Delta Lake connection settings.png
+---
 # Connect to a Delta Lake instance
 
 In the premium version of Databricks, it is possible to control [table access](<https://docs.databricks.com/security/access-control/table-acls/index.html#table-access-control> "target=\"_blank\""). If that's the case, the user must be granted the following [data object privileges](<https://docs.databricks.com/security/access-control/table-acls/object-privileges.html#data-object-privileges> "target=\"_blank\""):

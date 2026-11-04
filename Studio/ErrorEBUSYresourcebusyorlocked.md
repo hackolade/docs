@@ -1,3 +1,7 @@
+---
+description: 'Fix the "EBUSY: resource busy or locked" error during Hackolade Studio plugin installation, caused by another process using a file.'
+seoTitle: "Error: EBUSY: resource busy or locked"
+---
 # Error: EBUSY: resource busy or locked
 
 If you get this error during installation of a plugin:

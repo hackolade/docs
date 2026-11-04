@@ -1,3 +1,8 @@
+---
+description: Kerberos authentication to MongoDB Enterprise from Hackolade Studio, deprecated as of v8.1.5.
+seoTitle: MongoDB Kerberos authentication (deprecated)
+image: lib/Kerberos connection settings.png
+---
 # Kerberos
 
 **This feature has been deprecated as of v8.1.5** -- contact support@hackolade.com if needed

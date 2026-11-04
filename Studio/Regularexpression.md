@@ -1,3 +1,7 @@
+---
+description: How Hackolade Studio uses ECMA 262 regular expressions for string patterns, pattern fields and custom property validation.
+seoTitle: Regular expressions in Hackolade Studio
+---
 # Regular expression
 
 Regex is used in different places:

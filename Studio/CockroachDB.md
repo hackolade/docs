@@ -1,3 +1,8 @@
+---
+description: Model CockroachDB databases, tables, columns, indexes and JSONB documents in Hackolade Studio, with reverse- and forward-engineering.
+seoTitle: CockroachDB data modeling with Hackolade Studio
+image: lib/PostgreSQL workspace.png
+---
 # CockroachDB
 
 CockroachDB is a commercial distributed SQL database management system developed by Cockroach Labs. It is built on a transactional and strongly-consistent key-value store. It **scales** horizontally; **survives** disk, machine, rack, and even data center failures with minimal latency disruption and no manual intervention; supports **strongly-consistent** ACID transactions; and provides a familiar **SQL** API for structuring, manipulating, and querying data.

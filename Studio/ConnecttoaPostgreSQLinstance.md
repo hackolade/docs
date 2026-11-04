@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to PostgreSQL, and the privileges a user needs to reverse-engineer objects owned by others.
+seoTitle: Connect to a PostgreSQL instance
+image: lib/PostgreSQL connection settings.png
+---
 # Connect to a PostgreSQL instance
 
 > [!IMPORTANT]

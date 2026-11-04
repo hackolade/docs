@@ -1,3 +1,8 @@
+---
+description: "Model the extended reference pattern in Hackolade Studio: duplicate selected attributes between entities, with foreign master relationships."
+seoTitle: Extended reference pattern with duplication
+image: lib/Pragmatic modeling - derive with normalizatio.png
+---
 # Extended referencing hybrid with selective duplication
 
 In some scenarios, both entities involved in the relationship are considered important enough to exist independently, yet optimizing access patterns justifies duplicating certain attributes between them.\

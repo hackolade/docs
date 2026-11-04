@@ -1,3 +1,8 @@
+---
+description: "Connect Hackolade Studio to Hive with settings matching hive-site.xml: host and port, authentication, transport mode, SSL and keystore."
+seoTitle: Connect to an Apache Hive instance
+image: lib/Hive - Connection settings.png
+---
 # Connect to a Hive instance
 
 Hive can be configured to provide User Authentication, which ensures that only authorized users can communicate with Hive.

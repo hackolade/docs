@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to Google BigQuery with Application Default Credentials or a service account key, and when to use each.
+seoTitle: "Connect to Google BigQuery: ADC or service account"
+image: lib/GCP App Default Credentials authentication.png
+---
 # Connect to a BigQuery instance
 
 To access a Google BigQuery project, Hackolade Studio currently supports access using two methods, [Application Default Credentials](https://cloud.google.com/docs/authentication/set-up-adc-local-dev-environment) and [Service account](https://cloud.google.com/iam/docs/service-account-overview).\

@@ -1,10 +1,19 @@
+---
+description: Hackolade Studio tutorial on adding relationships to an entity-relationship diagram, for relational and non-relational databases alike.
+seoTitle: "Tutorial: add relationships to an ER diagram"
+image: lib/Tutorial relationship properties.png
+---
 # Add relationships
 
 In the previous tutorial, we reviewed how to create other types of JSON Schema attributes: choices, conditionals, and pattern fields. By the end of this tutorial, you will master how to add relationships to your entity-relationship diagram.
 
 &nbsp;
 
-You may also [view this tutorial](<https://youtu.be/69zREhcCYuc> "target=\"_blank\"") on YouTube. Summary slides can be found [here](<https://www.slideshare.net/PascalDesmarets1/hackolade-tutorial-part-7-add-relationshipspdf> "target=\"_blank\"").
+[Hackolade Tutorial - Part 7: Add relationships](<https://youtu.be/69zREhcCYuc> "video")
+
+&nbsp;
+
+Summary slides can be found [here](<https://www.slideshare.net/PascalDesmarets1/hackolade-tutorial-part-7-add-relationshipspdf> "target=\"_blank\"").
 
 &nbsp;
 

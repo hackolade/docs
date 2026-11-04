@@ -1,3 +1,8 @@
+---
+description: Configure each Git repository provider so Hackolade Model Hub can read data models and receive notifications of repository events.
+seoTitle: Git repository configuration for Model Hub
+image: lib/Hackolade Model Hub empty database screen.png
+---
 # Git repo configuration
 
 As per the [Model Hub architecture](ModelHubtechnicalarchitecture.md), the source for the Hub database is one or more Git repositories.

@@ -1,3 +1,7 @@
+---
+description: Responsibilities of Hackolade and of the customer in a Hackolade Studio deployment, with key roles and persona use cases.
+seoTitle: Roles and responsibilities in a deployment
+---
 # Roles and Responsibilities
 
 ## Hackolade Responsibilities

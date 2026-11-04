@@ -1,3 +1,8 @@
+---
+description: Merge Git branches and perform other repository actions from Hackolade Studio.
+seoTitle: Merge Git branches in Hackolade Studio
+image: lib/Workgroup merge branch screen.png
+---
 # Other actions
 
 Other ad-hoc actions allow you to adjust your repository.

@@ -1,3 +1,8 @@
+---
+description: Create reusable attribute and object definitions in Hackolade Studio, at model, external or Polyglot level, and reference them across entities.
+seoTitle: Add reusable definitions to a data model
+image: lib/Referencing reusable definitions.png
+---
 # Add reusable definitions
 
 The purpose of reusable definitions is to increase productivity/convenience and consistency to achieve higher data quality and governance. It is a handy feature of Hackolade Studio to facilitate the work of data modelers: it provides the ability to create and maintain object definitions that can be re-used in multiple places.

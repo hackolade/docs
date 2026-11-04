@@ -1,3 +1,8 @@
+---
+description: Hackolade Studio generates MongoDB createCollection with $jsonSchema validator, createIndex, createView and sharding scripts.
+seoTitle: Generate MongoDB scripts and validators
+image: lib/Forward-Engineering - MongoDB Script.png
+---
 # MongoDB scripts
 
 As you develop the model for your MongoDB collection or views, with field-level constraints and indexes, Hackolade dynamically generates corresponding scripts:

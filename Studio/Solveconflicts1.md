@@ -1,3 +1,8 @@
+---
+description: How conflicts appear and get resolved when you edit a model opened directly from a remote Git repository in Hackolade Studio.
+seoTitle: Solve conflicts with a remote repository
+image: lib/Save To remote repo dialog.png
+---
 # Solve conflicts
 
 When you perform changes in a model opened directly from the remote repository, you are not using the distributed nature of Git repositories. This way of interacting with Git results in an experience that is quite different than if you leverage a [locally-cloned repository](Workingdirectlywitharemoterepo.md). In particular, if other users make changes at the same time to that same model. The reasons is that, by making your changes "online", you have no way to separate 4 usual steps of the Git process: save, commit, pull, and push. And in order to push, you must have pulled all parallel changes, which means that, in case of conflict, you must resolve them before you are able to push your own changes.

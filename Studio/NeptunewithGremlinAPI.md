@@ -1,3 +1,8 @@
+---
+description: Hackolade Studio generates the Gremlin script for vertex and edge labels of your Amazon Neptune model, to export or apply.
+seoTitle: Generate Neptune Gremlin scripts
+image: lib/Neptune-Gremlin script forward-engineering.png
+---
 # Neptune with Gremlin API
 
 As you develop the model for your Neptune-Gremlin graph database, with vertex labels and edge labels, Hackolade dynamically generates the corresponding Gremlin script.

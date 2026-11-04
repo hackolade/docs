@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to an Amazon Redshift cluster or serverless workgroup with AWS access keys and region, for reverse-engineering.
+seoTitle: Connect to Amazon Redshift (cluster or serverless)
+image: lib/Redshift connection settings.png
+---
 # Connect to Amazon Redshift
 
 To access an Amazon Redshift database, you should obtain the proper credentials from your administrator. In particular you'll need to know your Access Key, Secret Access Key, and the Region for the instance.

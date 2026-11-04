@@ -1,3 +1,7 @@
+---
+description: "The Hackolade Studio title bar: window controls, the model name and the application menu behind the logo."
+seoTitle: Title bar of Hackolade Studio
+---
 # Title bar
 
 ![Title bar](<lib/Title bar.png>)

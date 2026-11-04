@@ -1,3 +1,8 @@
+---
+description: Model MongoDB collections, ObjectIDs, nested documents, indexes, views and encryption in Hackolade Studio, with $jsonSchema validators.
+seoTitle: MongoDB data modeling with Hackolade Studio
+image: lib/MongoDB workspace.png
+---
 # MongoDB
 
 MongoDB is a free and open-source cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with schemas. MongoDB is developed by MongoDB Inc.

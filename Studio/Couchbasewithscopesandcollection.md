@@ -1,3 +1,8 @@
+---
+description: Model Couchbase 7 buckets, scopes, collections, documents and keys in Hackolade Studio.
+seoTitle: Couchbase scopes and collections data modeling
+image: lib/Couchbase v7 workspace - scopes - collections.png
+---
 # Couchbase with scopes and collections
 
 Couchbase is a distributed, JSON document database. With their version 7, Couchbase introduced a new storage model with scopes and collections, allowing documents to be categorized and organized. Previously within a bucket, you mostly stored all kinds of different document types within the same physical bucket.

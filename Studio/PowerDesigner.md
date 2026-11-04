@@ -1,3 +1,8 @@
+---
+description: Reverse-engineer SAP PowerDesigner conceptual, logical and physical models (.cdm, .ldm, .pdm) into Hackolade Studio.
+seoTitle: Import SAP PowerDesigner models
+image: lib/PowerDesigner model migration to Hackolade.png
+---
 # PowerDesigner
 
 SAP PowerDesigner has been around for several decades and used to be a quite popular data modeling. Many companies have recognized the large breadth of targets supported by Hackolade Studio and its modernization of the data modeling processes and techniques.

@@ -1,3 +1,8 @@
+---
+description: Model Teradata Vantage databases, tables, keys, constraints, partitioning, indexes and data types in Hackolade Studio.
+seoTitle: Teradata data modeling with Hackolade Studio
+image: lib/PostgreSQL workspace.png
+---
 # Teradata
 
 Teradata Vantage is a suite of big data analytics solutions based on a core relational database. It allows deep analysis and manipulation of semi-structured data format and can be deployed on multiple cloud providers, public or private but also on premises. It offers capabilities to leverage analytics engines such as Apache Spark and Tensorflow.

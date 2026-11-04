@@ -1,3 +1,7 @@
+---
+description: "What to prepare before deploying Hackolade Model Hub: Studio and Hub licenses, a Git repository provider, a domain name and system requirements."
+seoTitle: Hackolade Model Hub prerequisites
+---
 # Model Hub prerequisites
 
 Please verify that each requirement below is fulfilled BEFORE you proceed with the deployment detailed in the following pages.

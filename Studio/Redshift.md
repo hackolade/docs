@@ -1,3 +1,8 @@
+---
+description: Model Amazon Redshift clusters, schemas, tables, keys, distribution styles and data types in Hackolade Studio.
+seoTitle: Amazon Redshift data modeling with Hackolade Studio
+image: lib/Redshift workspace.png
+---
 # Redshift
 
 Amazon Redshift is a data warehouse product as part of Amazon Web Services. It is built on top of technology from massive parallel processing (MPP) to handle large scale data sets and database migrations. Redshift is a columnar database better suited for analytics, and thus a more appropriate platform for a data warehouse. When data is loaded into a Redshift table, Redshift distributes the rows of the table across nodes according to the table's distribution style.

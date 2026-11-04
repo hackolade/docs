@@ -1,3 +1,8 @@
+---
+description: Model inheritance with supertypes, subtypes and supertype groups in Hackolade Studio Polyglot models, and derive them into physical models.
+seoTitle: Inheritance in Polyglot models
+image: lib/Inheritance supertype subtype.png
+---
 # Inheritance in Polyglot models
 
 Polyglot models support inheritance through supertypes and subtypes, allowing you to describe hierarchical structures at the conceptual or logical level. This mechanism lets you define common attributes once in a supertype, and specialize them in subtypes.

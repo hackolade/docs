@@ -1,3 +1,8 @@
+---
+description: Generate PDF, PNG or SVG files of Hackolade Studio ER diagrams and hierarchical schema views, for printing in A3 or Tabloid format.
+seoTitle: Print a data model diagram
+image: lib/File - Print Diagram.png
+---
 # Print a diagram
 
 You may wish to print just the Entity Relationship diagram or hierarchical schema views, possibly on A3 or Tabloid format. Note that the application does not actually interact with your printer. Instead it generates files (PDF, Hi-Res PDF, PNG, or SVG) which can then be opened with the corresponding application of your choice for viewing or actual printing with the print options provided by that application. Or the image can be posted on

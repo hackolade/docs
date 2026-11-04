@@ -1,3 +1,7 @@
+---
+description: "Hackolade Studio user manual: visual data modeling and schema design for SQL and NoSQL databases, APIs and storage formats."
+seoTitle: Hackolade Studio user manual
+---
 # Welcome to Hackolade Studio
 
 Hackolade Studio is an intuitive yet powerful application to perform the visually data modeling and schema design of many SQL and NoSQL databases, APIs, and storage formats.

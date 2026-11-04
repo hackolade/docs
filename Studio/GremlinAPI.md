@@ -1,3 +1,7 @@
+---
+description: Connect Hackolade Studio to Azure Cosmos DB with the Gremlin API, on Azure or on the local Cosmos DB emulator.
+seoTitle: Connect to Cosmos DB Gremlin API
+---
 # Gremlin API
 
 In addition to the Azure Cosmos DB web service, Microsoft provides a downloadable version of Cosmos DB that can be run locally.

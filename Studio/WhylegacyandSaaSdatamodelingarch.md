@@ -1,3 +1,8 @@
+---
+description: Limits of client-server and SaaS-only data modeling tools, and the serverless, Git-native architecture of Hackolade Studio.
+seoTitle: Why legacy and SaaS data modeling tools fall short
+image: lib/SaaS convenience with on-prem control.png
+---
 # Why legacy and SaaS data modeling architectures fall short...
 
 # ... and how Hackolade Studio gets it right

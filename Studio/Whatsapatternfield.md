@@ -1,3 +1,8 @@
+---
+description: A pattern field has a regular expression instead of a fixed name, a JSON Schema feature Hackolade Studio supports.
+seoTitle: What is a pattern field in JSON Schema?
+image: lib/Pattern property contextual menu.png
+---
 # What's a pattern field?
 
 Hackolade, being built on JSON Schema, leverages this little-known but extremely powerful feature of JSON.\

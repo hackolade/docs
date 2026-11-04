@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to Snowflake on AWS, Azure or Google Cloud, with the authentication methods and privileges for reverse-engineering.
+seoTitle: Connect to a Snowflake instance
+image: lib/Snowflake Connection Settings.png
+---
 # Connect to a Snowflake instance
 
 A Snowflake account can be hosted on any of the following cloud platforms: Amazon Web Services, Google Cloud Platform, or Microsoft Azure. Each platform provides one or more [regions](https://docs.snowflake.com/en/user-guide/intro-regions.html) where the account is provisioned.

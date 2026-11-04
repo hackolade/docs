@@ -1,3 +1,8 @@
+---
+description: Create, arrange and display entity boxes in Hackolade Studio ER diagrams, with visual indicators and display options.
+seoTitle: Entity boxes in the ER diagram
+image: lib/ERD display options tools options.png
+---
 # Entity boxes in ER diagram
 
 In Hackolade Studio, we use the generic name of "entity" to designate objects for which data is collected or transmitted. In physical data models, this entity bears a different name depending on the target technology: table in relational and analytics databases, collection in document database (MongoDB, Couchbase, DocumentDB, etc...), node in graph database, record in Avro, message in Parquet and Protobuf, request and response in REST APIs and GraphQL, class in RDF triple stores, etc...

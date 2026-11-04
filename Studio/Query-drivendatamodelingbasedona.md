@@ -1,6 +1,15 @@
+---
+description: "Design NoSQL schemas from access patterns in Hackolade Studio: document size, transaction volume, cardinality and referential integrity."
+seoTitle: "Tutorial: query-driven data modeling"
+image: lib/JSON order normalized structure.png
+---
 # Query-driven data modeling based on access patterns
 
-You may also [view this tutorial](<https://youtu.be/hASX35Hyx28> "target=\"_blank\"") on YouTube. Summary slides can be found [here](<https://www.slideshare.net/PascalDesmarets1/hackolade-tutorial-part-3-querydriven-data-modeling-based-on-access-patterns> "target=\"_blank\"").
+[Hackolade Tutorial - Part 3: Query driven data modeling based on access patterns](<https://youtu.be/hASX35Hyx28> "video")
+
+&nbsp;
+
+Summary slides can be found [here](<https://www.slideshare.net/PascalDesmarets1/hackolade-tutorial-part-3-querydriven-data-modeling-based-on-access-patterns> "target=\"_blank\"").
 
 &nbsp;
 

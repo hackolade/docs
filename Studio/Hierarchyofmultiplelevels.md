@@ -1,3 +1,8 @@
+---
+description: Build an inheritance hierarchy of several levels in Hackolade Studio Polyglot models, where a subtype is the supertype of another group.
+seoTitle: Inheritance hierarchy of multiple levels
+image: lib/Inheritance multi-level Party Polyglot model.png
+---
 # Hierarchy of multiple levels
 
 A supertype group has one supertype and its immediate subtypes. A subtype can itself become the supertype of its own group, which gives a hierarchy of several levels.

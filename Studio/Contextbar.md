@@ -1,3 +1,7 @@
+---
+description: The context bar on the left of Hackolade Studio gives access to the Welcome page, data modeling, repository, Model Hub and other contexts.
+seoTitle: Context bar in Hackolade Studio
+---
 # Context bar
 
 ![Context bar](<lib/Context bar.png>)

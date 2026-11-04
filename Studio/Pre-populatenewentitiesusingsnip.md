@@ -1,10 +1,15 @@
+---
+description: Create snippets in Hackolade Studio to add the same set of attributes to every new entity you create.
+seoTitle: Pre-populate new entities using snippets
+image: lib/Snippet metadata JSON.png
+---
 # Pre-populate new entities using snippets
 
 To avoid the repetitive task of adding the same set of attributes to new entities as you create a model, you may leverage [reusable definitions](Addreusabledefinitions.md). But there's another option to pre-populate new entities with the same structure, through JSON configuration, using the concept of snippets.
 
 &nbsp;
 
-You may also view this [short video](<https://youtu.be/YHTWOlOl2eE> "target=\"_blank\"") on YouTube.
+[How-To: Pre-populate new entities using snippets](<https://youtu.be/YHTWOlOl2eE> "video")
 
 &nbsp;
 

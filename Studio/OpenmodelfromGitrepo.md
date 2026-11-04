@@ -1,3 +1,8 @@
+---
+description: Open a data model directly from GitHub, GitLab, Bitbucket or Azure DevOps in Hackolade Studio, without a local clone.
+seoTitle: Open a model directly from a Git repository
+image: lib/Open From initial screen.png
+---
 # Open model from Git repo
 
 > [!WARNING]

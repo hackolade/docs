@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to Cassandra or DataStax with username and password or LDAP, with SSL and SSH options and troubleshooting.
+seoTitle: Connect to a Cassandra or DataStax instance
+image: lib/Cassandra connection settings.png
+---
 # Connect to a Cassandra instance
 
 Like many database, Cassandra provides user rolenames and passwords for internal authentication. Hackolade currently supports basic authentication (username/password) as well as LDAP.

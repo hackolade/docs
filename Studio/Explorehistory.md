@@ -1,3 +1,8 @@
+---
+description: "Browse the Git history of your data models in Hackolade Studio: search commits, compare them and see who changed what, when and why."
+seoTitle: Explore Git history of data models
+image: lib/Workgroup - History commits list.png
+---
 # Explore history
 
 Storing your organization's Hackolade models (and other related files) into a repository provides major benefits. One of them is that you can easily navigate back in time and understand all the changes made by the team.

@@ -1,3 +1,8 @@
+---
+description: Compare two Hackolade Studio data models side by side, review the differences, and merge them into a new model.
+seoTitle: Compare and merge data models in Hackolade Studio
+image: lib/Compare and merge - compare view.png
+---
 # Compare and merge models
 
 Before using this feature, you may want to read the [versioning concept page](Modelversioning.md) as it is useful to understand the philosophy behind our approach to comparing and merging.

@@ -1,3 +1,8 @@
+---
+description: "Git concepts explained for Hackolade Studio users: remote and local repositories, clone, commit, pull, push and branches, versus checkout-and-lock."
+seoTitle: Git concepts for data modelers
+image: lib/Workgroup Git direct remote repo.png
+---
 # Concepts
 
 Even if you have little or no experience with Git, we made it very easy to use Git from inside Hackolade Studio, without compromise on the power of Git in more advanced situations. You just need to become familiar with the concepts below.

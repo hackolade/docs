@@ -1,3 +1,8 @@
+---
+description: Supertypes, subtypes and supertype groups in Hackolade Studio, with the characteristics that drive how physical models are derived.
+seoTitle: Inheritance strategies in Polyglot data models
+image: lib/Inheritance supertype-subtypes.png
+---
 # Inheritance strategies
 
 > [!NOTE]

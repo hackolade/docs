@@ -1,3 +1,8 @@
+---
+description: Hackolade Studio generates the JanusGraph schema and Gremlin script for vertex labels, edge labels and indexes of your model.
+seoTitle: Generate JanusGraph Gremlin scripts
+image: lib/JanusGraph forward-engineering.png
+---
 # JanusGraph Gremlin
 
 As you develop the model for your JanusGraph database, with vertex labels, edge labels, and indexes, Hackolade dynamically generates the corresponding schema and corresponding Gremlin script.

@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to an Oracle instance on AWS, Azure or elsewhere through an SSH tunnel on port 22.
+seoTitle: Connect to Oracle through an SSH tunnel
+image: lib/RE - MongoDB - SSH connection.png
+---
 # SSH
 
 If your Oracle instance is located in the Cloud at Amazon Web Services for example or Microsoft Azure, your preferred access to your instance will be over SSH through port 22.

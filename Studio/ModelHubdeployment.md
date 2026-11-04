@@ -1,3 +1,7 @@
+---
+description: "The Hackolade Model Hub deployments: the public playground, a standalone personal trial with your own models, and the production installation."
+seoTitle: Hackolade Model Hub deployment options
+---
 # Model Hub deployment
 
 THere are 3 existing deployments of Model Hub:

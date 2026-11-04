@@ -1,3 +1,8 @@
+---
+description: "Organize Hackolade Studio models for teams: monolithic or modular models, containers, domains, collaboration and governance."
+seoTitle: How to organize data models for teams
+image: lib/Monolithic vs smaller domain-driven models.png
+---
 # How to organize models
 
 Now that you have a good technical understanding of the modular capabilities of Hackolade Studio, you may ask yourself how you should organize your models: one giant monolithic model vs a handful of models vs many small models? And if small, how should they be organized: by type of modeling (conceptual, logical, physical), by domain, by line of business, by persona? In one mono-repository or multiple repositories? And what folder structure to use in the repositories?

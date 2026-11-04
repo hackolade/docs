@@ -1,3 +1,8 @@
+---
+description: Model DynamoDB tables, items, attributes, partition and sort keys, and indexes in Hackolade Studio, with reverse- and forward-engineering.
+seoTitle: Amazon DynamoDB data modeling with Hackolade Studio
+image: lib/DynamoDB workspace.png
+---
 # DynamoDB
 
 Amazon Web Services' DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability. It is derived from the ground-breaking 2007 [Dynamo paper](<http://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf> "target=\"_blank\"") which, along with Google’s 2006 [Bigtable paper](<http://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf> "target=\"_blank\""), popularized the concept of NoSQL databases.

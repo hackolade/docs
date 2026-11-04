@@ -1,10 +1,19 @@
+---
+description: "Hackolade Studio tutorial on designing a REST API with Swagger or OpenAPI: components, resources, requests, responses and documentation."
+seoTitle: "Tutorial: create a REST API model with OpenAPI"
+image: lib/Tutorial OpenAPI resources.png
+---
 # Create a REST API model
 
 In the previous tutorial, we reviewed how to create data models for property graph databases. By the end of this tutorial, you will master how to create a model for REST APIs using Swagger or OpenAPI specification.
 
 &nbsp;
 
-You may also [view this tutorial](<https://youtu.be/m2apHbSfMyw> "target=\"_blank\"") on YouTube. Summary slides can be found [here](<https://www.slideshare.net/PascalDesmarets1/hackolade-tutorial-part-12-create-a-rest-api-model> "target=\"_blank\"").
+[Hackolade Tutorial - Part 12: Create a REST API model](<https://youtu.be/m2apHbSfMyw> "video")
+
+&nbsp;
+
+Summary slides can be found [here](<https://www.slideshare.net/PascalDesmarets1/hackolade-tutorial-part-12-create-a-rest-api-model> "target=\"_blank\"").
 
 &nbsp;
 

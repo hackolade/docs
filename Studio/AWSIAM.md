@@ -1,3 +1,8 @@
+---
+description: Set up AWS IAM authentication to connect Hackolade Studio to MongoDB Atlas, without sending or storing a secret key.
+seoTitle: Connect to MongoDB Atlas with AWS IAM authentication
+image: lib/RE - MongoDB - AWS IAM.png
+---
 # AWS IAM
 
 Using Amazon Web Services Identity and Access Management (AWS IAM) reduces the number of authentication mechanisms and number of secrets to manage. The secret key that you use for authentication is not sent over the wire to Atlas and is not persisted by the driver. Hackolade Studio supports this mechanism starting with v8.1.5

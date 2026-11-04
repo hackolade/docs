@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to Oracle with an Instant Client, in thin or thick mode, with basic settings, TNS or an Oracle wallet.
+seoTitle: Connect to an Oracle database instance
+image: lib/Oracle Thin mode client.png
+---
 # Connect to an Oracle instance
 
 To interact with Oracle databases (Cloud and private), when applying forward-engineering DDLs reverse-engineering, a user-provided Oracle client is required. Just like major applications, including [Tableau Desktop](<https://kb.tableau.com/articles/howto/Connecting-to-Oracle-in-Tableau-Desktop-using-Oracle-Wallet> "target=\"_blank\""), we do NOT ship an Oracle Instant Client in our plugin for many reasons, including Oracle's licensing terms. If you don't have an Oracle Client already installed on your machine, its download and installation will be required as part of the process so the connection settings can be pointed at it.

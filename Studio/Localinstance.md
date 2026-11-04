@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to DynamoDB Local, the downloadable version of DynamoDB that runs on your computer.
+seoTitle: Connect to a local DynamoDB instance
+image: lib/Rev-Engineering - DynamoDB connection local.png
+---
 # Local instance
 
 In addition to the Amazon DynamoDB web service, AWS provides a downloadable version of DynamoDB that can be run locally. This edition of DynamoDB lets you write applications without accessing the actual Amazon DynamoDB web service. Instead, the database is self-contained on your computer.

@@ -1,3 +1,8 @@
+---
+description: Contribute to data models with the fork and pull strategy and InnerSource practices, using Hackolade Studio and Git.
+seoTitle: Working with Git forks
+image: lib/Innersource fork and pull process.png
+---
 # Working with forks
 
 ## Repository strategies

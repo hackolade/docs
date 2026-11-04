@@ -1,3 +1,8 @@
+---
+description: Create and document views in Hackolade Studio for MongoDB, Cassandra, Hive, Snowflake, RDBMS and other targets, including joins.
+seoTitle: Read-only views in data models
+image: lib/Views - add lookup.png
+---
 # Read-only views
 
 Hackolade Studio support the creation, documentation, and maintenance of views for a variety of targets that support the concept: MongoDB, Cassandra, Hive, Snowflake, RDBMS, etc.. The support of views varies of course depending on target's capabilities. Some support materialized views, others not. Some support joins across multiple entities, which others limit views to a single one. You should refer to the respective documentation of the target technology concerned, for the specific implementation details. While the rest of this page uses MongoDB as an example, you can transpose most of the concept to other targets.

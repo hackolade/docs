@@ -1,3 +1,7 @@
+---
+description: The Hackolade Studio toolbar gives one-click access to frequent actions, with buttons enabled according to the context.
+seoTitle: Toolbar of Hackolade Studio
+---
 # Toolbar
 
 ![Toolbar](lib/Toolbar.png)

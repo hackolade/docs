@@ -1,3 +1,8 @@
+---
+description: A progressive series of Hackolade Studio tutorials, from a first data model to Polyglot modeling, with eLearning and certification.
+seoTitle: Hackolade Studio tutorials
+image: lib/Miro UI view.png
+---
 # Tutorial
 
 An **eLearning video** version of these tutorials and how-to guides, with certification, is available [here](<https://community.hackolade.com/> "target=\"_blank\"").

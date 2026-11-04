@@ -1,3 +1,7 @@
+---
+description: Export data models from IBM InfoSphere Data Architect to XSD and import them into Hackolade Studio.
+seoTitle: Import IBM InfoSphere data models via XSD
+---
 # From IBM InfoSphere
 
 If you have data models in InfoSphere and want to leverage them in Hackolade Studio, you need to fist export them to XSD, following the instructions below. You should first consult [this page](XSDXMLSchemaDefinition.md) for an overview of the import functionality in Hackolade Studio.

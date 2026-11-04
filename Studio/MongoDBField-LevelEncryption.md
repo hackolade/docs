@@ -1,3 +1,8 @@
+---
+description: "Model MongoDB client-side field-level encryption in Hackolade Studio: enforcement strategies, algorithms and the encrypt keyword."
+seoTitle: MongoDB field-level encryption in data models
+image: lib/MongoDB FLE reverse-engineering without param.png
+---
 # MongoDB Field-Level Encryption
 
 Starting with v4.2, MongoDB provides a field level encryption ("FLE") framework, both server-side and client-side. Applications can encrypt fields in documents *prior* to transmitting data over the wire to the server. Only applications with access to the correct encryption keys can decrypt and read the protected data. Deleting an encryption key renders all data encrypted using that key as permanently unreadable.

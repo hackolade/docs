@@ -1,3 +1,8 @@
+---
+description: Hackolade Studio generates BigQuery DDL for datasets, tables, columns and views, or JSON schema, and applies it to an instance.
+seoTitle: Generate BigQuery DDL from a data model
+image: lib/BigQuery DDL forward-engineering.png
+---
 # BigQuery DDL
 
 Hackolade dynamically generates the DDL script to create datasets, tables, columns and their data types, for the structure created with the application.

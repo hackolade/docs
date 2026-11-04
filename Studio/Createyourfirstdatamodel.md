@@ -1,6 +1,15 @@
+---
+description: "Hackolade Studio tutorial on creating a first data model: target choice, entities, hierarchical schema view, JSON preview and saving."
+seoTitle: "Tutorial: create your first data model"
+image: lib/Welcome page.png
+---
 # Create your first data model
 
-You may also [view this tutorial](<https://youtu.be/i9FJ7zJ1STw> "target=\"_blank\"") on YouTube. Summary slides can be found [here](<https://www.slideshare.net/PascalDesmarets1/hackolade-tutorial-part-4-create-your-first-data-model> "target=\"_blank\"").
+[Hackolade Tutorial - Part 4: Create your first data model](<https://youtu.be/i9FJ7zJ1STw> "video")
+
+&nbsp;
+
+Summary slides can be found [here](<https://www.slideshare.net/PascalDesmarets1/hackolade-tutorial-part-4-create-your-first-data-model> "target=\"_blank\"").
 
 &nbsp;
 

@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to GitHub, GitLab, Bitbucket or Azure DevOps with OAuth or a personal access token, for reviews and pull requests.
+seoTitle: Connect Hackolade Studio to a Git repository hub
+image: lib/Workgroup - hub connection automatic.png
+---
 # Connect to a repository hub
 
 A repository hub is a platform hosting repositories remotely and securely. [GitHub](<https://github.com/> "target=\"_blank\""), [GitLab](<https://gitlab.com/> "target=\"_blank\""), [Bitbucket](<https://bitbucket.org> "target=\"_blank\"") and [Azure DevOps Repos](<https://azure.microsoft.com/en-us/services/devops/repos/> "target=\"_blank\"") are such platforms, just to name a few.

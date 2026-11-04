@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to a Cassandra instance on AWS, Azure or elsewhere through an SSH tunnel on port 22.
+seoTitle: Connect to Cassandra through an SSH tunnel
+image: lib/Cassandra connection settings.png
+---
 # SSH
 
 If your Cassandra instance is located in the Cloud at Amazon Web Services for example or Microsoft Azure, your preferred access to your instance will be over SSH through port 22.

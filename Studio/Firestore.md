@@ -1,3 +1,8 @@
+---
+description: Model Google Cloud Firestore databases, collections, IDs, data types and indexes in Hackolade Studio.
+seoTitle: Google Cloud Firestore data modeling
+image: lib/Firestore workspace.png
+---
 # Firestore
 
 The Google Cloud Firestore is a flexible, scalable database for mobile, web, and server development from Firebase and Google Cloud Platform. Like Firebase, it keeps data in sync across client apps through real-time listeners, and offers offline support for mobile and web, so developers can build responsive apps that work regardless of network latency or Internet connectivity.\

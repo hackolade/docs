@@ -1,3 +1,8 @@
+---
+description: The Hackolade Studio central pane shows the entity-relationship diagram and each entity's hierarchical schema, with nested structures.
+seoTitle: "Central pane: ER diagram and schema views"
+image: lib/Central pane - sketchy ERD.png
+---
 # Central pane
 
 The central pane is where you can visualize your data model and the schema for each individual entity. The central pane adapts to the selected top and bottom tabs:

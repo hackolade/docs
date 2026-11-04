@@ -1,3 +1,8 @@
+---
+description: Model Cassandra keyspaces, tables, partition and clustering keys, UDTs, materialized views and indexes in Hackolade Studio.
+seoTitle: Apache Cassandra data modeling with Hackolade Studio
+image: lib/Cassandra workspace.png
+---
 # Cassandra
 
 Apache Cassandra is designed to handle large amounts of data across many commodity servers, providing high availability through robust support for clusters spanning of multiple data centers and asynchronous masterless replication and low latency operations. It is essentially a hybrid between a key-value and a column-oriented database. Rows are organized into tables. The first component of a primary key is a partition key, and rows clustered by the remaining columns of the key. Other columns may be indexed separately from the primary key.

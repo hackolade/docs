@@ -1,3 +1,8 @@
+---
+description: Compare a physical data model derived from Polyglot with a live database instance in Hackolade Studio, then update the model with the differences.
+seoTitle: Compare a baseline model with a production schema
+image: lib/Compare and merge flow.png
+---
 # Compare a baseline model with schema in prod
 
 A typical use case with Hackolade Studio is where you have a physical data model which, in this use case, is derived from a polyglot model, and you want to compare this physical model with the reality of a database instance. A similar scenario is already introduced from a DevOps point of view in the code-first example in [this article](IntegratetheCLIwithDevOpsCICDpip.md). The purpose could be to validate that the data model is up-to-date with production in terms of having captured all of the structures in the database. It could be also simply to enrich the physical model with physical-only metadata, such as indexes and partitions, etc.

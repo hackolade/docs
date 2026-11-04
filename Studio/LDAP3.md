@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to ScyllaDB with LDAP over SSL, using a Java keystore directly or PEM keys.
+seoTitle: ScyllaDB LDAP authentication with SSL
+image: lib/Cassandra Connection Settings - LDAP JKS.png
+---
 # LDAP
 
 If you require LDAP authentication, it is necessary, in order to connect to nodes via a secure connection, to select the SSL type. There are 2 ways to leverage the Java Keystore (JKS): accessing the JKS directly, or using certificates issued from the keystore.

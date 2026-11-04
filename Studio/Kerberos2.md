@@ -1,3 +1,8 @@
+---
+description: Configure Kerberos authentication parameters for HBase connections in Hackolade Studio, including principals and keytabs.
+seoTitle: HBase Kerberos authentication
+image: lib/HBase connection Kerberos.png
+---
 # Kerberos
 
 ## Authentication

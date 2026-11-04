@@ -1,3 +1,7 @@
+---
+description: Install Hackolade Model Hub as a Docker image with Docker Compose and a PostgreSQL database, then start the server.
+seoTitle: Install and start the Model Hub server
+---
 # Install and start the server
 
 ## Overview

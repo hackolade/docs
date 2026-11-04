@@ -1,3 +1,8 @@
+---
+description: Import JSON Schema from the file system, cloud storage or schema registries into a Hackolade Studio data model.
+seoTitle: Reverse-engineer JSON Schema files
+image: lib/JSON Schema RE dialog.png
+---
 # JSON Schema
 
 ## From the file system

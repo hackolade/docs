@@ -1,3 +1,8 @@
+---
+description: Migrate the advanced physical options of PowerDesigner PDM files that reverse-engineering does not import into Hackolade Studio.
+seoTitle: Migrate PowerDesigner advanced physical options
+image: lib/Migrate advanced physical options.png
+---
 # Migrate advanced physical options
 
 When reverse-engineering a PowerDesigner PDM file, Hackolade Studio imports most of the database structure, including tables, columns, views, and many physical properties. In most situations, this provides a solid base model that can be used directly. Some advanced physical options may not be fully imported. This situation can occur if some settings are not stored directly inside the PDM file, but are defined in PowerDesigner configuration rules or generation options. Examples: not null constraint names, or some partition information. As a result, the PDM alone does not always contain enough information to rebuild the exact physical definition.

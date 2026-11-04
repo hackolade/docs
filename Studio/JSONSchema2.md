@@ -1,3 +1,8 @@
+---
+description: Design JSON Schema visually in Hackolade Studio, from draft-04 to 2020-12, with forward- and reverse-engineering.
+seoTitle: JSON Schema visual editor and data modeling
+image: lib/JSON workspace.png
+---
 # JSON Schema
 
 Hackolade is a visual editor for JSON Schema for non-programmers. It is ideal to perform the upfront schema design of any type of JSON document Since v5 of Hackolade, the latest JSON Schema specifications are supported:

@@ -1,3 +1,7 @@
+---
+description: Add a cookie name-value pair to the HTTP header of Confluent Schema Registry requests, for example to pass SSL inspection proxies.
+seoTitle: Cookie name-value pair for Confluent Schema Registry
+---
 # Cookie name-value pair
 
 In some cases, it is necessary to cookie name-value pair to be inserted in the HTTP header, for example to address BlueCoat SSL inspection re-encrypting with an internal certificate.

@@ -1,3 +1,8 @@
+---
+description: "Hackolade Studio is client-installed COTS software with no server component: no customer data reaches Hackolade, no SaaS, no hosting."
+seoTitle: Hackolade Studio COTS security clarification
+image: lib/Client architecture diagram.png
+---
 # COTS Security Clarification
 
 **Commercial Off-the-Shelf (COTS) deployment model clarification**

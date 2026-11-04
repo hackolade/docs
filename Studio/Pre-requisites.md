@@ -1,3 +1,8 @@
+---
+description: "Prerequisites for the repository features of Hackolade Studio: Workgroup Edition and the Git executable on Windows or Mac."
+seoTitle: Prerequisites for Git in Hackolade Studio
+image: lib/Workgroup invalid git client.png
+---
 # Pre-requisites
 
 There are 2 pre-requisites for using the Workgroup Edition of Hackolade Studio:

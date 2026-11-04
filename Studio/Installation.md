@@ -1,3 +1,7 @@
+---
+description: Install Hackolade Studio on Windows, Mac or Linux, with the license terms that apply to authorized users.
+seoTitle: Install Hackolade Studio
+---
 # Installation
 
 The users are kindly reminded of the End-User Licensing Agreement terms:

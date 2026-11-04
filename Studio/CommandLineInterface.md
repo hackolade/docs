@@ -1,3 +1,8 @@
+---
+description: Hackolade Studio CLI commands for reverse-engineering, forward-engineering, model comparison, documentation and CI/CD pipelines.
+seoTitle: Hackolade Studio Command Line Interface (CLI)
+image: lib/CLI with git.png
+---
 # Command Line Interface
 
 With its Command Line Interface (CLI), Hackolade truly supports an agile development approach leveraging the flexibility of NoSQL dynamic schemas. Some customers use this capability nightly in a batch process to identify attributes and structures that may have appeared in the data since the last run. During a nightly run of the reverse-engineering function, a much larger dataset can be queried as a basis for document sampling, hence making schema inference more precise. Such capability can be useful in a data governance context to properly document the semantics and publish a thorough data dictionary for end users.
@@ -1224,6 +1229,11 @@ Usage: `hackolade polyglotDerive [--arguments]`
 <td>Generate associative entities for many-to-many relationships [default: false]</td>
 </tr>
 <tr>
+<td>--generateForeignKeysForConceptualRelationships=&lt; true | <strong>false</strong> &gt;</td>
+<td>N</td>
+<td>Generate foreign keys for conceptual relationships, i.e. relationships with cardinalities but no foreign key attributes. See <a href="Generateforeignkeysforconceptual.md">Generate foreign keys for conceptual relationships when deriving from Polyglot</a>. [default: false]</td>
+</tr>
+<tr>
 <td>--APItemplate=&lt;file&gt;*</td>
 <td>N</td>
 <td>When deriving to Swagger/OpenAPI target to generate model-driven API, specify full path and file name for the template to be used during deriving from Polyglot. The template can be a Hackolade model, or a Swagger or OpenAPI documentation file in either JSON or YAML.</td>
@@ -1785,17 +1795,17 @@ Usage: `hackolade revEngDiagram [--arguments]`
 <tr>
 <td>--file=&lt;<em>file</em>&gt;*</td>
 <td>Y</td>
-<td>Specify the directory path and file name where the file to be reverse-engineered is located (file must be a valid file for the source.) Absolute and relative paths are allowed. Supported extensions: .cdm, .ldm, .pdm (conceptual, logical, and physical models from PowerDesigner), .mmd (Mermaid ER diagrams), .dbml (DBML syntax files), .xmg (MEGA exchange files)</td>
+<td>Specify the directory path and file name where the file to be reverse-engineered is located (file must be a valid file for the source.) Absolute and relative paths are allowed. Supported extensions: .cdm, .ldm, .pdm (conceptual, logical, and physical models from PowerDesigner), .mmd (Mermaid ER diagrams), .dbml (DBML syntax files), .xmg (MEGA exchange files). For MEGA files, separate several paths with a semicolon, or use the * wildcard to select the matching files of a folder.</td>
 </tr>
 <tr>
 <td>--model=&lt;<em>file</em>&gt;*</td>
 <td>Y</td>
-<td>Full path and file name for target Hackolade model into which reverse-engineering process has to be converted. Extension .json is optional. If not specified, the target Hackolade model is located in the same directory than the data model file to be reverse-engineered and receives the same name, with the Hackolade extension .hck.json.</td>
+<td>Full path and file name for target Hackolade model into which reverse-engineering process has to be converted. Extension .json is optional. If not specified, the target Hackolade model is located in the same directory than the data model file to be reverse-engineered and receives the same name, with the Hackolade extension .hck.json. With several MEGA files, the model gets the name of the first file.</td>
 </tr>
 <tr>
 <td>--target=&lt;<em>target</em>&gt;</td>
 <td>Y</td>
-<td>Specify the target for the Hackolade Studio model to create. For a logical model, the target must be polyglot. For a physical model, the target must be one of the Hackolade Studio physical targets. For a MEGA file, the target must be Polyglot.</td>
+<td>Specify the target for the Hackolade Studio model to create. For a logical model, the target must be polyglot. For a physical model, the target must be one of the Hackolade Studio physical targets. For MEGA files, the target must be Polyglot or Db2-zOS.</td>
 </tr>
 <tr>
 <td>--maxErdEntityBoxes=&lt; true | <strong>false </strong>&gt;</td>
@@ -1816,7 +1826,7 @@ Usage: `hackolade revEngDiagram [--arguments]`
 
 &nbsp;
 
-Example:
+Examples:
 
 &nbsp;
 
@@ -1824,6 +1834,10 @@ Example:
 start /wait hackolade revEngDiagram --source=PowerDesigner --file=MyLogicalDataModel.ldm --target=Polyglot
 
 start /wait hackolade revEngDiagram --source=mega --file=Sales.xmg --target=Polyglot
+
+start /wait hackolade revEngDiagram --source=mega --file="Sales.xmg;DataTypes.xmg" --target=Polyglot
+
+start /wait hackolade revEngDiagram --source=mega --file=Sales.xmg --target=Db2-zOS
 ```
 
 &nbsp;

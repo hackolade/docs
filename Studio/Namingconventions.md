@@ -1,3 +1,8 @@
+---
+description: Maintain business and technical names in Hackolade Studio with automatic case conversion and conversion files during modeling and reverse-engineering.
+seoTitle: "Naming conventions: business and technical names"
+image: lib/Naming Conventions - apply changes dialog.png
+---
 # Naming conventions
 
 > [!NOTE]

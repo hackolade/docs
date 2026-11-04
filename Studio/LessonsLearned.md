@@ -1,3 +1,7 @@
+---
+description: "Lessons from past Hackolade Studio deployments: Git repositories, resistance to change, tool integration and other common issues."
+seoTitle: Lessons learned from Hackolade Studio deployments
+---
 # Lessons Learned
 
 We recognize the importance of incorporating lessons learned from past implementations to ensure a successful deployment of the Hackolade Studio solution in your organization.

@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to Snowflake with native Okta single sign-on, without multi-factor authentication.
+seoTitle: Snowflake native SSO with Okta
+image: lib/Snowflake authentication - Native SSO Okta.png
+---
 # Native SSO (Okta only)
 
 Multi-Factor Auth is not available with this option. If you require MFA, please use the "Identity Provider SSO (via external browser)" option instead.

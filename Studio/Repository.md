@@ -1,3 +1,8 @@
+---
+description: Hackolade Studio Workgroup Edition integrates with Git for collaboration, versioning, branching, conflict resolution and peer reviews.
+seoTitle: Git repository integration in Hackolade Studio
+image: lib/Workgroup commit.png
+---
 # Repository
 
 > [!NOTE]

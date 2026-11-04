@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to an Amazon EventBridge Schema Registry with an access key, secret access key and region.
+seoTitle: Connect to Amazon EventBridge Schema Registry
+image: lib/Glue connection settings.png
+---
 # Connect to EventBridge Schema Registry
 
 To access an EventBridge Schema Registry, you should obtain the proper credentials from your administrator. In particular you'll need to know your Access Key, Secret Access Key, and the Region for the instance.

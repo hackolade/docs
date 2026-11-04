@@ -1,3 +1,7 @@
+---
+description: Download sample Hackolade Studio data models for many targets, and learn modeling techniques from the examples.
+seoTitle: Sample data models for Hackolade Studio
+---
 # Sample models
 
 By looking at existing models, you'll quickly see how to leverage the power of Hackolade, and learn from the examples. We suggest you download these examples and place them into a schema directory such as %userprofile%\\Documents\\Hackolade\\models.

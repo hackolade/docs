@@ -1,3 +1,7 @@
+---
+description: The five object types of Hackolade Studio diagrams, containers, entities, attributes, relationships and views, and how to work with them.
+seoTitle: Manipulating shapes in Hackolade Studio
+---
 # Manipulating shapes
 
 There are 5 types of objects in Hackolade:

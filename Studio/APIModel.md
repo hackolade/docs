@@ -1,3 +1,8 @@
+---
+description: Generate an OpenAPI or Swagger API model from an entity-relationship data model in Hackolade Studio, with CRUD operations for each entity.
+seoTitle: Generate an OpenAPI model from a data model
+image: lib/Model-driven API generation template.png
+---
 # API Model
 
 ## Model-driven API generation

@@ -1,3 +1,8 @@
+---
+description: "Typical deployment schedule for Hackolade Studio in an organization: architecture review, installation, configuration, training and rollout."
+seoTitle: Hackolade Studio deployment schedule
+image: lib/Client architecture diagram.png
+---
 # Deployment schedule
 
 - Architecture & Design: the architecture of the solutions is super simple and described in this diagram:

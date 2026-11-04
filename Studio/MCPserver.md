@@ -1,3 +1,8 @@
+---
+description: Configure the Hackolade Model Hub MCP server so AI assistants such as Claude or Copilot can query your data models.
+seoTitle: Model Hub MCP server for AI assistants
+image: lib/Hub standalone connect to Claude dialog.png
+---
 # MCP server
 
 For most AI assistant applications, Instructions for configuring the MCP server are documented in the Hackolade Model Hub application. Users can access these instructions by opening the hamburger menu ☰ , then clicking on *Connect AI assistants with MCP*

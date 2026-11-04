@@ -1,3 +1,8 @@
+---
+description: "Answers about Git in Hackolade Studio: submodules, non-ASCII file names, the .gitconfig file and orphan background processes."
+seoTitle: "Git in Hackolade Studio: questions and answers"
+image: lib/Workgroup tools options repository.png
+---
 # Questions & Answers
 
 ## How to work with Git submodules?

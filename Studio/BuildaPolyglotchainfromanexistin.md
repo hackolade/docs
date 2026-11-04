@@ -1,3 +1,8 @@
+---
+description: Derive conceptual, logical and physical models in a chain of Polyglot models in Hackolade Studio, starting from a reverse-engineered database.
+seoTitle: Build a Polyglot chain from an existing database
+image: lib/Physical-Conceptual-Logical process.png
+---
 # Build a Polyglot chain from an existing database
 
 The previous scenarios cover a single level of derivation: one Polyglot model, and a physical model derived from it. Hackolade Studio also lets you derive a Polyglot model from another Polyglot model, with no limit on the number of levels. Polyglot models derived from each other form a Polyglot chain, with the physical model at the end.

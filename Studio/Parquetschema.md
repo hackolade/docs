@@ -1,3 +1,8 @@
+---
+description: Model Apache Parquet schemas and data types in Hackolade Studio, with forward- and reverse-engineering and cloud object storage.
+seoTitle: Apache Parquet schema data modeling
+image: lib/Parquet workspace.png
+---
 # Parquet schema
 
 Apache Parquet is a binary file format that stores data in a columnar fashion for compressed, efficient columnar data representation in the Hadoop ecosystem. Parquet files can be stored in any file system, not just HDFS. It is a file format with a name and a **.parquet** extension, which can be stored on AWS S3, Azure Blob Storage, or Google Cloud Storage for analytics processing.

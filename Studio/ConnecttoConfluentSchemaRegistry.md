@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to Confluent Schema Registry on Confluent Cloud or Platform, to reverse-engineer Avro, JSON and Protobuf schemas.
+seoTitle: Connect to Confluent Schema Registry
+image: lib/Confluent Schema Registry connection.png
+---
 # Connect to Confluent Schema Registry
 
 The Confluent Schema Registry is accessible from targets Avro, JSON, and Protobuf, the 3 file formats supports by the registry.

@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to a YugabyteDB instance, and the privileges a user needs to reverse-engineer objects owned by others.
+seoTitle: Connect to YugabyteDB for reverse-engineering
+image: lib/YugabyteDB connection settings.png
+---
 # Connect to YugabyteDB
 
 > [!IMPORTANT]

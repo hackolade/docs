@@ -1,3 +1,8 @@
+---
+description: Get, validate and release a Hackolade Studio license key, from the website or the application, online or offline.
+seoTitle: Hackolade Studio license key registration
+image: lib/License Status - request license key.png
+---
 # Software registration
 
 ***If you're using a an older version of Hackolade Studio (up to v6.11.9), consult*** [this page](OldSoftwareValidationdialog.md) ***for the older screenshots and process.***

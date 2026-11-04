@@ -1,3 +1,7 @@
+---
+description: Configure CORS headers on GitHub Enterprise Server, GitLab self-managed or Bitbucket Data Center so the Hackolade Studio browser app can open models.
+seoTitle: Configure CORS headers for self-hosted Git hubs
+---
 # Configure CORS headers
 
 This page is only relevant for you for self-hosted repository hub: GitHub Server, GitLab Server or Bitbucket Data Center, and to let users open Hackolade data models from that repository hub using the Hackolade browser application: [https://studio.hackolade.com](<https://studio.hackolade.com> "target=\"_blank\""). You may skip it if it is not the case.

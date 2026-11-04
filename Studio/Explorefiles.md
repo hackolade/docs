@@ -1,3 +1,8 @@
+---
+description: List all the Hackolade Studio data models of a local Git repository, across subfolders, and open them from the repository view.
+seoTitle: Explore the files of a Git repository
+image: lib/Workgroup explore files.png
+---
 # Explore files
 
 When you open a local repository and choose Explore repository > Files in the left menu, you get a table listing all the Hackolade data models in the repository across the different subfolders, if any. The "Show only models" button lets you toggle the display of all files in the repository, whether they're data models or not.

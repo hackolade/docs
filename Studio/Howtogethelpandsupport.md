@@ -1,3 +1,7 @@
+---
+description: "Ways to get help with Hackolade Studio: eLearning, online manual, videos and support tickets, with response times and SLA."
+seoTitle: How to get help and support
+---
 # How to get help and support?
 
 The different options currently available are:

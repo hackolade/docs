@@ -1,3 +1,8 @@
+---
+description: "Polymorphism in JSON and NoSQL data: choices, multiple data types and complex types, and how Hackolade Studio models them."
+seoTitle: What is polymorphism in JSON data models?
+image: lib/Polymorphism.png
+---
 # What is polymorphism?
 
 ## Choices

@@ -1,3 +1,8 @@
+---
+description: Publish Hackolade Studio data models to DataHub as containers and datasets, with URNs, queries, roles and permissions explained.
+seoTitle: DataHub integration for Hackolade Studio models
+image: lib/DataHub publish data model.png
+---
 # DataHub
 
 [DataHub](<https://datahub.com/> "target=\"_blank\"") is an open-source, governance **metadata management platform**, originally created at LinkedIn, that provides a comprehensive solution for **data discovery**, **data lineage**, and **data governance**. It helps organizations **catalog** and **organize** their data assets, allowing teams to easily find, understand, and trust the data they are working with. DataHub supports integration with a variety of data sources and provides powerful features like:

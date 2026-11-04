@@ -1,3 +1,8 @@
+---
+description: Open a locally-cloned Git repository in Hackolade Studio from the Repository menu, without cloning it again.
+seoTitle: Open a local Git repository
+image: lib/Workgroup open.png
+---
 # Open a local repository
 
 If you already have a local copy of the remote repository, then you just need to (re-)open it. No need to clone it again.\

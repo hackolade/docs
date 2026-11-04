@@ -1,3 +1,7 @@
+---
+description: The databases, APIs and storage formats Hackolade Studio supports for data modeling, with nested objects and arrays for JSON targets.
+seoTitle: Supported SQL and NoSQL databases, APIs and formats
+---
 # SQL and NoSQL databases, APIs, and storage formats
 
 Hackolade's main added value is in providing the ability to perform the data modeling for JSON-based databases, mainly nested objects (sub-documents and arrays, a.k.a. maps and lists.) Hackolade even has a pending patent on its "Method and Process to graphically model schemas for NoSQL and multimodel databases and REST APIs".

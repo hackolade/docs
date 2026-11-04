@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to Azure Cosmos DB Core API with the URI and access key, plus control plane parameters for more metadata.
+seoTitle: Connect to Azure Cosmos DB for NoSQL (Core API)
+image: lib/Cosmos DB connection settings dialog.png
+---
 # Azure instance
 
 To access a Cosmos DB instance, you should obtain the proper credentials from your administrator. At a minimum, you'll need to know the URI and Access Key.

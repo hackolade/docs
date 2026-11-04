@@ -1,3 +1,8 @@
+---
+description: "Collibra-side requirements and Hackolade Studio connection settings for the Collibra integration: user rights, password, OAuth or Microsoft Entra ID."
+seoTitle: Collibra connection and authentication setup
+image: lib/Collibra connection settings.png
+---
 # Connection and authentication
 
 To properly connect Hackolade Studio to your Collibra instance, there are requirements for setup on the Collibra side, and there are requirements for information to be configured for connection and authentication on the Hackolade Studio client side.

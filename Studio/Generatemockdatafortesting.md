@@ -1,3 +1,8 @@
+---
+description: Assign Faker functions to attributes in Hackolade Studio and generate realistic test data in bulk for development, testing and demos.
+seoTitle: Generate mock data for testing with Faker
+image: lib/Faker function JSON Data preview.png
+---
 # Generate mock data for testing
 
 Hackolade Studio allows you to generate fake but realistic data for your data models. Using fake data can be useful during system development, testing, and demos, mainly because it avoids using real identities, full names, real credit card numbers or Social Security numbers, etc. while using "Lorem ipsum" strings and random numbers is not a realistic enough to be meaningful. Alternatively, one could use cloned production data, except that it generally does not exist for new applications, plus you would still have to mask or substitute sensitive data to avoid disclosing any personally identifiable information.

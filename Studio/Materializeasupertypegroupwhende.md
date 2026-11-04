@@ -1,3 +1,8 @@
+---
+description: Set the materialization strategy of a supertype group in Hackolade Studio, which drives the physical shape of the hierarchy at derivation.
+seoTitle: Materialize a supertype group when deriving
+image: lib/Inheritance materialization strategy.png
+---
 # Materialize a supertype group when deriving from Polyglot
 
 A supertype group describes a hierarchy. A database must physically store that hierarchy in a concrete shape, and several shapes are possible for the same group. The transformation happens during the derive operation from Polyglot. That's when your supertype group stops being a hierarchy and becomes physical tables with columns and constraints that the target understands.

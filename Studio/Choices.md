@@ -1,3 +1,8 @@
+---
+description: Model JSON Schema choices in Hackolade Studio with oneOf, anyOf, allOf and not, to represent polymorphic structures.
+seoTitle: "JSON Schema choices: oneOf, anyOf, allOf, not"
+image: lib/oneOf choice create.png
+---
 # Choices
 
 JSON Schema includes keywords to allow [schema composition](<https://json-schema.org/understanding-json-schema/reference/combining> "target=\"_blank\"") or the combination of schemas and corresponding to the boolean algebra concepts AND, OR, XOR, and NOT.

@@ -1,3 +1,8 @@
+---
+description: Close every running instance of Hackolade Studio before upgrading to avoid the Windows "access denied" error.
+seoTitle: Windows access denied error during upgrade
+image: lib/Installation error - application running.png
+---
 # Windows access denied error during upgrade
 
 You should NOT install a new version of Hackolade while the application is running. All instances of the application must be closed for the upgrade to proceed properly.

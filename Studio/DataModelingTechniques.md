@@ -1,3 +1,7 @@
+---
+description: Relational, dimensional, Data Vault 2.0, graph and hierarchical data modeling techniques, and how Hackolade Studio supports each.
+seoTitle: Data modeling techniques in Hackolade Studio
+---
 # Data modeling techniques
 
 Hackolade Studio provides support for different techniques of data modeling for our different targets. Of course we support relational for RDBMS through Entity-Relationship Diagrams, complex data types for NoSQL and storage formats, graph diagrams for graph databases and conceptual modeling, etc..

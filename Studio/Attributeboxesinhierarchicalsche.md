@@ -1,3 +1,7 @@
+---
+description: "Add, insert, append and control attributes in Hackolade Studio's hierarchical schema view: field types, choices and nested structures."
+seoTitle: Attribute boxes in the hierarchical schema view
+---
 # Attribute boxes in hierarchical schema view
 
 This page explains how to introduce new attributes and control them in a hierarchical schema view. Typically, these attributes are simple fields, but there are other possibilities, as detailed in the [Attributes](Attributes.md) page. Most of the controls below are also available from the ERD view and the Object Browser.

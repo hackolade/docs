@@ -1,3 +1,8 @@
+---
+description: Model Avro schemas for the Azure Event Hubs Schema Registry in Hackolade Studio, with forward- and reverse-engineering.
+seoTitle: Azure Event Hubs Schema Registry modeling
+image: lib/Avro workspace.png
+---
 # Event Hubs Azure Schema Registry
 
 The Azure Schema Registry is a feature of Event Hubs, providing a central system of record for schemas used in event-driven and messaging-centric applications. It provides the flexibility for producer and consumer applications to exchange data without having to manage and share the schema between them, and so they can evolve under different schedules. The Azure Schema Registry also provides a simple governance framework for reusable schemas and defines the relationship between schemas through a grouping construct (schema groups).

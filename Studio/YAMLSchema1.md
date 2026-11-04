@@ -1,3 +1,8 @@
+---
+description: Export YAML Schema files for the entities of a Hackolade Studio model, and preview them in the JSON Preview tab.
+seoTitle: Generate YAML Schema from a data model
+image: lib/Forward-Engineering - YAML Preview.png
+---
 # YAML Schema
 
 To create a YAML Schema file of your entity, choose the menu Tools > Forward Engineering > YAML Schema:

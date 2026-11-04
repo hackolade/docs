@@ -1,3 +1,7 @@
+---
+description: "Security practices for Hackolade Studio and Model Hub: secure development lifecycle, code management, security testing and dependencies."
+seoTitle: Hackolade Studio product security package
+---
 # Product Security Package
 
 **Software Assurance and Secure Development Overview**

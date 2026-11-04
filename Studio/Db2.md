@@ -1,3 +1,8 @@
+---
+description: Model IBM Db2 schemas, tables, keys, constraints, partitioning, indexes and data types in Hackolade Studio.
+seoTitle: IBM Db2 data modeling with Hackolade Studio
+image: lib/Db2 workspace.png
+---
 # Db2
 
 IBM Db2 is a family of relational databases for various platforms, developed by IBM. The brand name was originally styled as DB/2, then DB2 until 2017 and finally changed to its present form: Db2. Db2 is a relational database that delivers advanced data management and analytics capabilities for transactional workloads. This operational database is designed to deliver high performance, actionable insights, data availability and reliability, and it is supported across Linux, Unix and Windows operating systems.

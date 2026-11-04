@@ -1,3 +1,8 @@
+---
+description: The roll-up nested strategy in Hackolade Studio merges subtypes into the supertype as nested objects, for document and hierarchical targets.
+seoTitle: "Inheritance: derive with the roll-up nested strategy"
+image: lib/Inheritance roll-up nestedParty Polyglotmodel.png
+---
 # Derive with Roll-up nested strategy
 
 As discussed in the previous page with Hackolade Studio when performing a derive operation with the Roll-up strategy, there are two ways to merge the subtypes into the supertype:

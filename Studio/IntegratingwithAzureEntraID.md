@@ -1,3 +1,8 @@
+---
+description: "Step-by-step integration of Microsoft Entra ID with Hackolade Model Hub: app registration, redirect URIs, app roles and user access."
+seoTitle: Model Hub sign-in with Microsoft Entra ID
+image: lib/Hub auth Entra ID register app.png
+---
 # Integrating with Azure Entra ID
 
 On this page, you will find a step-by-step guide to integrating Azure Entra ID with the Model Hub portal.

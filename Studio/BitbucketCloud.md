@@ -1,3 +1,8 @@
+---
+description: Grant Hackolade Studio access to Bitbucket Cloud with an API token and scopes, to submit models for review and review change requests.
+seoTitle: Connect Hackolade Studio to Bitbucket Cloud
+image: lib/Bitbucket Cloud connection dialog.png
+---
 # Bitbucket Cloud
 
 The information below applies to repositories hosted on Bitbucket Cloud. It explains how to grant Hackolade Studio access to your Bitbucket account, which is a pre-requisite for using the features "[submit for review](Submitforreview.md)" and "[review change requests](Reviewchangerequests.md)".

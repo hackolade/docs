@@ -1,3 +1,8 @@
+---
+description: Integrate Hackolade Studio with Collibra without the Ultimate package or Federated Operating model, with its limitations and manual setup.
+seoTitle: Collibra integration without the Ultimate package
+image: lib/Collibra Guided Stewardship limited lineage.png
+---
 # Non-Ultimate edition integration
 
 If you do not have the Ultimate package and did not get the Federated Operating model add-on, then starting with v8.3.6, we provide an integration, albeit with some graceful degradation, some limitations, and some required manual configuration.
@@ -44,7 +49,7 @@ Adjust the characteristic position if necessary.
 
 &nbsp;
 
-This [short video](<https://youtu.be/R5hBnpyAeEI> "target=\"_blank\"") illustrates the process.
+[Collibra characteristics assignment for non Ultimate edition](<https://youtu.be/R5hBnpyAeEI> "video")
 
 &nbsp;
 

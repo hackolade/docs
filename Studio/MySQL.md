@@ -1,3 +1,8 @@
+---
+description: Model MySQL databases, storage engines, tables, keys, constraints, indexes, JSON columns and data types in Hackolade Studio.
+seoTitle: MySQL data modeling with Hackolade Studio
+image: lib/MariaDB workspace.png
+---
 # MySQL
 
 MySQL is one of the most widely used relational database management system (RDBMS) on the market. MySQL is free and open-source software under the terms of the GNU General Public License, and is also commercially supported.

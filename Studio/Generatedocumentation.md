@@ -1,3 +1,8 @@
+---
+description: Generate customizable HTML, PDF or Markdown documentation and diagram pictures for your Hackolade Studio data models.
+seoTitle: Generate data model documentation
+image: lib/Documentation - Object selection.png
+---
 # Generate documentation
 
 Model documentation is an important output of data modeling. Models are enriched with descriptions, comments, constraints to be consulted by application stakeholders.

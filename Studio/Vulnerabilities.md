@@ -1,3 +1,7 @@
+---
+description: Security advisories for Hackolade Studio and Model Hub, and how Hackolade acknowledges and handles vulnerability reports.
+seoTitle: Hackolade Studio vulnerabilities and advisories
+---
 # Vulnerabilities
 
 We commit to acknowledging vulnerability reports within 5 business days, and addressing them as soon as we are able to. We publish the results in the form of security advisories in this vulnerability page.
@@ -21,7 +25,7 @@ No publicly available exploit code exists for the CVE-2026-111497 vulnerability.
 
 &nbsp;
 
-Nevertheless, and as a precautionary measure, we will upgrade our Electron version as soon as they publish one with the latest NodeJS security update.
+Nevertheless with Studio v8.13.6, and as a precautionary measure, we upgraded our Electron version to v44.9.3, knowing that [Electron v44.9.1](<https://releases.electronjs.org/release/v44.9.1> "target=\"_blank\"") was the one containing the fix for [https://github.com/electron/electron/security/advisories/GHSA-jr5w-w6x2-84p9](https://github.com/electron/electron/security/advisories/GHSA-jr5w-w6x2-84p9), the mitigation for compromised eMudhra intermediate certificates.
 
 &nbsp;
 

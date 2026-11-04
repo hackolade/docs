@@ -1,3 +1,8 @@
+---
+description: "Model Amazon EventBridge event schemas in Hackolade Studio: structure, data types, event metadata and components, with the schema registry."
+seoTitle: Amazon EventBridge schema data modeling
+image: lib/EventBridge workspace.png
+---
 # EventBridge
 
 Amazon EventBridge is a serverless event bus that makes it easy to connect applications together using data from applications, integrated Software-as-a-Service (SaaS) applications, and AWS services. EventBridge delivers a stream of real-time data from event sources, and routes that data to targets like AWS Lambda. EventBridge makes it easy to build event-driven applications because it takes care of event ingestion and delivery, security, authorization, and error handling for you.

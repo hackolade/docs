@@ -1,3 +1,7 @@
+---
+description: "Relationships still matter in non-relational databases: how Hackolade Studio models denormalization, embedding and references."
+seoTitle: Relationships and denormalization in NoSQL
+---
 # Relationships and denormalization
 
 Even non-relational databases have relationships!

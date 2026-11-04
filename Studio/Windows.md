@@ -1,3 +1,8 @@
+---
+description: "Install Hackolade Studio on Windows: verify the download, standard and silent installation, and corporate deployment."
+seoTitle: Install Hackolade Studio on Windows
+image: lib/Installation error - application running.png
+---
 # Windows
 
 If you encounter any difficulty downloading or installing, please contact [support@hackolade.com](mailto:support@hackolade.com) and we will assist you through it

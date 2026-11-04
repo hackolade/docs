@@ -1,3 +1,8 @@
+---
+description: Set up Kerberos authentication for Hive connections in Hackolade Studio, with GSSAPI on Linux and Mac and SSPI on Windows.
+seoTitle: Hive Kerberos authentication
+image: lib/Hive - Kerberos Authentication settings.png
+---
 # Kerberos
 
 ## Kerberos Authentication

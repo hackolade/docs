@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to MarkLogic with username and password to discover document schemas through sampling and inference.
+seoTitle: Connect to a MarkLogic instance
+image: lib/MarkLogi RE connection settings.png
+---
 # Connect to a MarkLogic instance
 
 Hackolade's reverse-engineering functions allows to discover the schema of documents in collections through a statistical sampling process, followed by a probabilistic inference operation, as described in [this page](Reverseengineeranexistinginstanc.md).

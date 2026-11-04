@@ -1,3 +1,8 @@
+---
+description: Cultural and organizational barriers to data-driven transformation, and how data modeling helps align business and technical teams.
+seoTitle: Challenges in data-driven organization transformation
+image: lib/Vision - Polyglot persistence.png
+---
 # Challenges in data-driven org transformation
 
 According to a 2023 [survey](<https://static1.squarespace.com/static/62adf3ca029a6808a6c5be30/t/63a477e23d7f9162b7771d6b/1671722982363/WAVESTONE+NVP--+Data+%26+Analytics+Executive+Leadership+2023--Survey+Findings.pdf> "target=\"_blank\"") by Wavestone's New Vantage Partners, and relayed by [Harvard Business Review](<https://hbr.org/2023/06/why-chief-data-and-ai-officers-are-set-up-to-fail> "target=\"_blank\""), 80% of data executives and business leaders cite cultural impediments – people, business process, organizational alignment – as the primary barrier to data-driven organizational transformation. That's well above the 20% scored by technical limitations.

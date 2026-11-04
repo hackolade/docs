@@ -1,3 +1,8 @@
+---
+description: Reverse-engineer an Excel file into Hackolade Studio to add or update entities and attributes, including nested objects and arrays.
+seoTitle: Import a data model from an Excel template
+image: lib/Tools - Reverse-Engineer - Excel Template.png
+---
 # Excel template
 
 Reverse-Engineering of an Excel file pre-supposes that you have first performed forward-engineering of your existing model, as described [here](Excelfile.md). If you plan to import a new model, you at least need to export an empty model for the same target.

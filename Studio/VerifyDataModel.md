@@ -1,3 +1,8 @@
+---
+description: Verify the naming and quality of Hackolade Studio data models against a glossary of class and prime terms and attribute rules.
+seoTitle: Verify data model quality with a glossary
+image: lib/Verify Data Model - Default paths.png
+---
 # Verify Data Model
 
 Starting with version 6.10.0, Hackolade Studio includes a tool to verify the consistency and quality of data models according to a glossary of class and prime terms, and to target-specific attribute rules such as precision/scale for numeric, and length for string data types.

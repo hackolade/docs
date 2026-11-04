@@ -1,3 +1,7 @@
+---
+description: Hackolade Model Hub gives business, governance and technical teams central access to Hackolade Studio data models stored in Git repositories.
+seoTitle: "Hackolade Model Hub: central access to data models"
+---
 # Hackolade Model Hub
 
 The Hackolade Enterprise Model Hub is a metadata collaboration platform providing a unified and central access to your Hackolade Studio data models stored in one or more Git repositories. It empowers business teams, governance teams, and other stakeholders to collaborate efficiently and promote a shared understanding of the context and meaning of data across the organization.

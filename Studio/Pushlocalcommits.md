@@ -1,3 +1,8 @@
+---
+description: Push the commits of your local Git repository to the remote repository from Hackolade Studio, so other users get your model changes.
+seoTitle: Push local commits to the remote repository
+image: lib/Workgroup push1.png
+---
 # Push local commits
 
 Once you have [committed the changes](Commitlocalchanges.md) made in your local repository, you need to push your local commits to the remote repository in order to make your changes available to other people. Hackolade Studio makes it easy for you to push commits to a remote repository: you just need to open your own local repository (if not already opened) and navigate to "Push local commits".\

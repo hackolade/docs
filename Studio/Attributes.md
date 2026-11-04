@@ -1,3 +1,8 @@
+---
+description: "The types of attributes in Hackolade Studio models: root, fields, objects, arrays, choices, pattern fields, definitions and references."
+seoTitle: Attribute types in Hackolade Studio data models
+image: lib/JSON Schema choices.png
+---
 # Attributes
 
 The terms 'attribute' and 'field', while containing nuances, are sometimes used interchangeably. An attribute is a generic word to describe the different types described below.

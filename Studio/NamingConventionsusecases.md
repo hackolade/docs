@@ -1,3 +1,8 @@
+---
+description: Apply naming conventions to an existing model, clear technical names, and handle model evolution with business and technical names.
+seoTitle: Naming conventions use cases
+image: lib/Naming Conventions - apply changes dialog.png
+---
 # Naming Conventions use cases
 
 In Hackolade Studio, every modeling object has two name fields: a mandatory Name and an optional Technical Name. This does not represent “business vs technical” by default — it simply means that if only the Name is defined, that value is used everywhere (in diagrams and in generated artifacts). A true separation only exists when a Technical Name is explicitly provided: the Name then plays the role of the business-friendly label, while the Technical Name is used for physical generation and implementation.

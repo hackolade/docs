@@ -1,3 +1,8 @@
+---
+description: Add your own properties to entities and attributes in Hackolade Studio, for PII, GDPR or governance tracking, with custom tabs per target.
+seoTitle: Configure custom properties in Hackolade Studio
+image: lib/Custom props - plugin manager.png
+---
 # Configure custom properties
 
 Hackolade Studio is shipped with out-of-the-box properties displayed in the Properties Pane. These properties are specific to each object in a data model. They are specific for each target technology, and can even be different for each data type.
@@ -12,7 +17,7 @@ The user-defined custom properties leverage the controls described in [this page
 
 &nbsp;
 
-You may also view this [short video](<https://youtu.be/eHGhwp03rXo> "target=\"_blank\"") on YouTube.
+[How-To: User-defined custom properties](<https://youtu.be/eHGhwp03rXo> "video")
 
 &nbsp;
 

@@ -1,3 +1,8 @@
+---
+description: Encrypt the Hackolade Studio connection to PostgreSQL with TLS/SSL certificates, including Let's Encrypt.
+seoTitle: Connect to PostgreSQL with SSL/TLS
+image: lib/PostgreSQL sslmode.png
+---
 # SSL
 
 By default, PostgreSQL transmits data between the server and clients without encrypting it. This is generally acceptable when the server and client run on the same host or in networks where security is guaranteed through other means. However, in cases where the server and client exist on separate networks or they are in a high-risk network, the lack of encryption does introduce security concerns as a malicious actor could potentially eavesdrop on the traffic as it is sent over the network between them.\

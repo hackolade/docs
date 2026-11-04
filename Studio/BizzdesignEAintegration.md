@@ -1,3 +1,8 @@
+---
+description: Export Hackolade Studio data models as ArchiMate data objects in Open Exchange format, then import them into Bizzdesign Enterprise Studio.
+seoTitle: Import data models into Bizzdesign as ArchiMate
+image: lib/ArchiMate export in Open Exchange format.png
+---
 # Bizzdesign EA integration
 
 Bizzdesign is the recognized leader in Enterprise Architecture modeling. It is well known for the co-development of ArchiMate, an open and independent enterprise architecture modeling language to support the description, analysis and visualization of architecture within and across business domains in an unambiguous way.

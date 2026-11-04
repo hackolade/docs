@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to a PostgreSQL instance on AWS, Azure or elsewhere through an SSH tunnel on port 22.
+seoTitle: Connect to PostgreSQL through an SSH tunnel
+image: lib/RE - MongoDB - SSH w Private Key.png
+---
 # SSH
 
 If your PostgreSQL instance is located in the Cloud at Amazon Web Services for example or Microsoft Azure, your preferred access to your instance will be over SSH through port 22.

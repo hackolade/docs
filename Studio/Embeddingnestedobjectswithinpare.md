@@ -1,3 +1,8 @@
+---
+description: Model fully embedded nested objects and arrays in Hackolade Studio Polyglot models, for document databases, APIs and hierarchical targets.
+seoTitle: Embed nested objects within parent entities
+image: lib/Pragmatic - physical derived normalized.png
+---
 # Embedding nested objects within parent entities
 
 ## Fully embedded: nested objects within parent entities

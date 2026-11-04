@@ -1,3 +1,7 @@
+---
+description: "Start using Hackolade Studio: create a model from scratch and forward-engineer, or reverse-engineer an existing instance to document it."
+seoTitle: Hackolade Studio quick start guide
+---
 # Quick start guide
 
 The main use cases for the creation of a new model in Hackolade:

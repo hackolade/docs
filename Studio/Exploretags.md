@@ -1,3 +1,8 @@
+---
+description: Create, list, check out, push and delete Git tags in Hackolade Studio to mark model versions and releases.
+seoTitle: Create and manage Git tags
+image: lib/Workgroup - List repository tags.png
+---
 # Explore tags
 
 A [Git tag](<https://git-scm.com/docs/git-tag> "target=\"_blank\"") is a reference pointing to a specific commit in the Git history. [Tagging](<https://git-scm.com/book/en/v2/Git-Basics-Tagging> "target=\"_blank\"") is used to capture a milestone in the Git history, generally to mark a version release (i.e. v1.0.1). The Git client makes it possible to tag a given commit with an arbitrary name. It is also possible - but not mandatory - to provide a description when tagging a commit.

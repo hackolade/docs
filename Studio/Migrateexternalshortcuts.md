@@ -1,3 +1,8 @@
+---
+description: Identify and migrate PowerDesigner external shortcuts between linked models when reverse-engineering them into Hackolade Studio.
+seoTitle: Migrate PowerDesigner external shortcuts
+image: lib/PowerDesigner external shortcut warning.png
+---
 # Migrate external shortcuts
 
 When migrating models from PowerDesigner to Hackolade Studio, users typically reverse-engineer multiple PowerDesigner files that are logically linked together. In PowerDesigner, these links are implemented using *external shortcuts*, meaning objects in one model reference objects physically defined in another model file. In Hackolade Studio, we call those [references](Reusableobjectsdefinitions.md) to existing objects (like entities or tables) in the same model, or a different saved data model, allowing reuse without duplication.

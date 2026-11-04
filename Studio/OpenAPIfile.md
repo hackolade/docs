@@ -1,3 +1,8 @@
+---
+description: Hackolade Studio generates the OpenAPI documentation file of your API model in JSON or YAML, following the OpenAPI specification.
+seoTitle: Generate an OpenAPI file in JSON or YAML
+image: lib/OpenAPI - Forward-Engineering.png
+---
 # OpenAPI file
 
 As you develop the model for OpenAPI with metadata, requests, responses, components, parameters, schemas, extensions, etc... Hackolade dynamically generates the corresponding OpenAPI documentation file, in JSON or YAML, following strictly the [OpenAPI specification](<https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md> "target=\"_blank\"").

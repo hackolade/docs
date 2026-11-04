@@ -1,3 +1,7 @@
+---
+description: Hackolade Studio infers primary keys and foreign key relationships in models that lack them, with the methodology and its limitations.
+seoTitle: Infer primary keys and foreign key relationships
+---
 # Infer Primary Keys and Foreign Key Relationships
 
 With v6.3.0, a new feature was introduced for RDBMS and related targets. There can be several reasons why you don't originally have Primary Keys and/or Foreign Keys in your model:

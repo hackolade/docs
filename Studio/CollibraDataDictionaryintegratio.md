@@ -1,3 +1,8 @@
+---
+description: Publish Hackolade Studio data models to the Collibra Data Dictionary, which requires Collibra's Federated Operating model.
+seoTitle: Collibra Data Dictionary integration
+image: lib/Collibra create domain.png
+---
 # Collibra Data Dictionary integration
 
 > [!IMPORTANT]
@@ -23,8 +28,7 @@ The integration of data modeling with governance tools and processes enables sol
 
 &nbsp;
 
-> [!NOTE]
-> You may wish to view the [how-to video](<https://youtu.be/6UA1Ys_OlMY> "target=\"_blank\"") on this subject.
+[Collibra Data Dictionary Integration](<https://youtu.be/6UA1Ys_OlMY> "video")
 
 &nbsp;
 

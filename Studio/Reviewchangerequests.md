@@ -1,3 +1,8 @@
+---
+description: Review, comment, approve, update and merge change requests on data models from Hackolade Studio, with a local clone.
+seoTitle: Review change requests (pull requests)
+image: lib/Workgroup change request list.png
+---
 # Review change requests
 
 The peer review feature is a very popular extension to Git, supported by most of the repository hubs. It allows collaboration on changes made by a user so they can be reviewed and approved by another user before being merged into a target branch.

@@ -1,3 +1,8 @@
+---
+description: How Git branch protection on your repository hub affects commits and pushes from Hackolade Studio, and how to work with protected branches.
+seoTitle: Git branch protection with Hackolade Studio
+image: lib/Workgroup - branch protection step 1.png
+---
 # Branch protection
 
 Most of the [repository hubs](Connecttoarepositoryhub.md) provide the ability for repository administrators to protect branches. The most common use case for protecting a branch is to prevent its deletion and to force all contributions to that branch to be peer reviewed before being integrated.

@@ -1,3 +1,8 @@
+---
+description: Hackolade Studio generates Couchbase scripts and JavaScript Ottoman ODM schema files from your Couchbase data model.
+seoTitle: Generate Couchbase N1QL and Ottoman schemas
+image: lib/Forward-Engineering - Couchbase Ottoman Schem.png
+---
 # Couchbase scripts
 
 For those in a technology stack using JavaScript, and are using the [Ottoman ODM](<http://ottomanjs.com/> "target=\"_blank\""), Hackolade also provides the option to export a JavaScript Ottoman schema file for the collection definition via the menu option Tools > Forward-Engineering > Ottoman Schema or Couchbase script

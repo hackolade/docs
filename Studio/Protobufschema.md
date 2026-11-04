@@ -1,3 +1,8 @@
+---
+description: Hackolade Studio generates the Protobuf schema of your model, to export to files or apply to a schema registry.
+seoTitle: Generate Protobuf schemas
+image: lib/Protobuf schema forward-engineering.png
+---
 # Protobuf schema
 
 Hackolade dynamically generates Protobuf schema for the structure created with the application.

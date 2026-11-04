@@ -1,3 +1,8 @@
+---
+description: "The parts of the Hackolade Studio workspace: title bar, menu bar, toolbar, object browser, central pane and properties pane."
+seoTitle: Hackolade Studio workspace
+image: lib/User Interface overview.png
+---
 # Workspace
 
 ![User Interface overview](<lib/User Interface overview.png>)

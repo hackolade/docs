@@ -1,3 +1,8 @@
+---
+description: Adjust Hackolade Studio display, behavior and model object defaults in Tools > Options to suit your preferences.
+seoTitle: Customize the Hackolade Studio user interface
+image: lib/Tools - Options preferences.png
+---
 # UI customization
 
 Many aspects of the User Interface and behavior can be customized for the preferences of each user.

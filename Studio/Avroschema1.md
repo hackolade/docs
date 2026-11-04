@@ -1,3 +1,8 @@
+---
+description: Hackolade Studio generates Avro schemas from your model and applies them to Confluent, Pulsar or Azure Schema Registry.
+seoTitle: Generate Avro schemas and publish to registries
+image: lib/Avro schema forward-engineering.png
+---
 # Avro schema
 
 Hackolade dynamically generates Avro schema for the structure created with the application.

@@ -1,3 +1,8 @@
+---
+description: Hackolade Studio generates MySQL DDL for databases, tables, indexes, constraints, functions and procedures, to export or apply.
+seoTitle: Generate MySQL DDL from a data model
+image: lib/MariaDB DDL Forward-Engineering.png
+---
 # MySQL DDL
 
 As you develop the model for your MySQL databases, tables, columns with their data types, as well as indexes and constraints, functions and procedures, Hackolade dynamically generates the corresponding DDL scripts.

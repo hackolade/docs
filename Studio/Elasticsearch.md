@@ -1,3 +1,8 @@
+---
+description: Model Elasticsearch indices, types, IDs and field data types in Hackolade Studio, with reverse- and forward-engineering.
+seoTitle: Elasticsearch data modeling with Hackolade Studio
+image: lib/Elasticsearch workspace.png
+---
 # Elasticsearch
 
 Elasticsearch is a RESTful search and analytics engine based on Apache Lucene. It provides a distributed, multi-tenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents. Elasticsearch is developed alongside a data-collection and log-parsing engine called Logstash, and an analytics and visualization platform called Kibana. The three products are designed for use as an integrated solution, referred to as the "Elastic Stack" (formerly the "ELK stack").

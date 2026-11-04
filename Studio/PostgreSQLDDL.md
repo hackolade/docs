@@ -1,3 +1,8 @@
+---
+description: Hackolade Studio generates PostgreSQL DDL for databases, tables, indexes, constraints, functions and procedures, to export or apply.
+seoTitle: Generate PostgreSQL DDL from a data model
+image: lib/PostgreSQL DDL forward-engineering.png
+---
 # PostgreSQL DDL
 
 Hackolade dynamically generates the DDL script to create databases, tables, columns and their data types, indexes and constraints for the structure created with the application, as well as functions and procedures.

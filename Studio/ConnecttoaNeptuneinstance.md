@@ -1,3 +1,8 @@
+---
+description: Set up an EC2 instance and SSH tunnel in the VPC so Hackolade Studio can connect to Amazon Neptune for reverse-engineering.
+seoTitle: Connect to Amazon Neptune through an EC2 proxy
+image: lib/Neptune connect 2.png
+---
 # Connect to a Neptune instance
 
 As per this [Amazon page](<https://docs.aws.amazon.com/neptune/latest/userguide/graph-notebooks.html#graph-notebooks-local-with-neptune> "target=\"_blank\""), "The most convenient way for most people, however, is to connect to set up an Amazon EC2 proxy server within the VPC and then use [SSH tunneling](<https://www.ssh.com/ssh/tunneling/> "target=\"_blank\"") (also called port forwarding), to connect to it." And on [this page](<https://docs.aws.amazon.com/neptune/latest/userguide/get-started-access-graph.html> "target=\"_blank\""), "For information about connecting to an EC2 instance using SSH, see [Connect to Your Linux Instance](<https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html> "target=\"_blank\"") in the *Amazon EC2 User Guide for Linux Instances*."

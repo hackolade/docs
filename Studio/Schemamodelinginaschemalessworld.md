@@ -1,3 +1,7 @@
+---
+description: Why schema design still matters for document databases such as MongoDB, DynamoDB and Couchbase, and how Hackolade Studio supports it.
+seoTitle: Schema design in a schemaless world
+---
 # Schema design in a schemaless world
 
 The JSON-based dynamic-schema nature (aka schema-less nature) of document NoSQL databases (MongoDB, DynamoDB, Couchbase, etc...) is a fantastic opportunity for application developers: ability to start storing and accessing data with minimal effort and setup, flexibility, fast and easy evolution.

@@ -1,3 +1,8 @@
+---
+description: Model Neo4j node labels, relationship types, property keys, constraints and indexes in Hackolade Studio's graph diagram.
+seoTitle: Neo4j graph data modeling with Hackolade Studio
+image: lib/Graph Neo4j workspace.png
+---
 # Neo4j
 
 Neo4j is a graph database management system described as an ACID-compliant transactional database with native graph storage and processing. Neo4j is by far the most popular graph database according to [DB-Engines ranking](<https://db-engines.com/en/ranking/graph dbms> "target=\"_blank\""). Cypher is a declarative graph query language that allows for expressive and efficient querying and updating of a property graph.

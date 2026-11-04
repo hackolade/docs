@@ -1,3 +1,8 @@
+---
+description: Answers to frequent questions about Hackolade Model Hub, and how it compares to server-based data modeling repositories and catalogs.
+seoTitle: Hackolade Model Hub FAQ
+image: lib/Hub Studio Desktop Browser Architecture.png
+---
 # Model Hub FAQs
 
 The Hackolade Data Model Hub is a model-driven metadata management platform. It is a separate but complementary product of the Studio application. The Frequently Asked Questions below may help you better understand the Hub characteristics and added value.

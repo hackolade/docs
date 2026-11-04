@@ -1,3 +1,7 @@
+---
+description: "Answers to licensing questions: free trial, purchasing options, plans, license keys, seats and renewals for Hackolade Studio."
+seoTitle: Hackolade Studio licensing FAQ
+---
 # Licensing FAQ
 
 ## Will I be charged when my 14-day free trial is up?

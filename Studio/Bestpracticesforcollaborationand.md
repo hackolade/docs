@@ -1,3 +1,7 @@
+---
+description: "Best practices for teams using Hackolade Studio with Git: repository structure, branching, reviews, releases and model governance."
+seoTitle: Data model collaboration and change management
+---
 # Best practices for collaboration and change management
 
 Hackolade Studio supports strong Git-based workflows, so the best practices are essentially “treat models like code” with a clear branching, review, and release process.\

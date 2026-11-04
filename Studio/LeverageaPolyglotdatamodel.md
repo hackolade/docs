@@ -1,3 +1,8 @@
+---
+description: Hackolade Studio tutorial on creating a Polyglot data model, deriving target models from it, and propagating changes.
+seoTitle: "Tutorial: leverage a Polyglot data model"
+image: lib/Polyglot data modeling concept.png
+---
 # Leverage a Polyglot data model
 
 In the previous tutorial, we reviewed how to create a model for REST APIs using Swagger or OpenAPI specification. By the end of this tutorial, you will master how to perform data modeling for polyglot storage and transmission, using our Polyglot Data Modeling capabilities.

@@ -1,3 +1,8 @@
+---
+description: Grant Hackolade Studio access to Bitbucket Data Center with a personal HTTP access token, to submit models for review and review change requests.
+seoTitle: Connect Hackolade Studio to Bitbucket Data Center
+image: lib/Workgroup - manage hub connections - Bitbucke.png
+---
 # Bitbucket Data Center
 
 > [!NOTE]

@@ -1,3 +1,7 @@
+---
+description: The usual causes of the MongoDB "authentication failed" error when connecting Hackolade Studio to Atlas or an instance, and how to fix each.
+seoTitle: 'MongoDB "authentication failed" error: causes'
+---
 # Authentication Failed Error Message
 
 The "authentication failed" error message is often the result of one of five conditions.

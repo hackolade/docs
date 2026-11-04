@@ -1,3 +1,8 @@
+---
+description: "Hackolade Studio is client-only: no Hackolade server or user directory. Your Git hub and identity provider control access to models."
+seoTitle: Hackolade Studio authentication and authorization
+image: lib/Git auth sequence diagram - step 1 launch Stu.png
+---
 # Authentication and authorization
 
 Hackolade Studio is a client-only application. Whether it runs as a desktop application or in a browser tab from [https://studio.hackolade.com](<https://studio.hackolade.com> "target=\"_blank\""), no Hackolade server is used.

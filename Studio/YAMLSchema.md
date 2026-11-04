@@ -1,3 +1,8 @@
+---
+description: Import a YAML Schema file into a new or existing Hackolade Studio model, as an entity or as definitions.
+seoTitle: Reverse-engineer YAML Schema files
+image: lib/JSON Schema RE dialog.png
+---
 # YAML Schema
 
 If you wish to include the schema for a YAML Schema file in an existing model, the process is slightly different. With your model already opened, choose Tools > Reverse-Engineer > YAML Schema.

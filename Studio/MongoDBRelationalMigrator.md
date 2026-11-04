@@ -1,3 +1,8 @@
+---
+description: Reverse-engineer a .relmig file from MongoDB Relational Migrator into Hackolade Studio to document and refine the target MongoDB model.
+seoTitle: Import MongoDB Relational Migrator files
+image: lib/Relational Migrator - export dialog.png
+---
 # MongoDB Relational Migrator
 
 MongoDB developed a handy tool to accelerate customer migrations from legacy relational systems to MongoDB. The MongoDB Relational Migrator is a sort of ETL that takes a source relational DDL, then through a process of denormalization, generates a target MongoDB schema based on denormalization performed by the user (or suggested by the application), then takes the mapping and applies it to data moved from the RDBMS instance to a MongoDB instance. You may consult additional [commercial information](<https://www.mongodb.com/products/relational-migrator> "target=\"_blank\"") and [documentation](<https://www.mongodb.com/docs/relational-migrator/> "target=\"_blank\"") on the MongoDB website.

@@ -1,3 +1,8 @@
+---
+description: How technical names in Polyglot models interact with naming conventions in derived target models, and which strategy to adopt.
+seoTitle: Naming strategy for technical names in Polyglot
+image: lib/Naming Conventions derived technical names.png
+---
 # Choosing a naming strategy
 
 In general, if a Polyglot model has no technical names, and you have Naming Conventions enabled, special attention is required (on the front of technical names) when deriving a target model from a Polyglot model:

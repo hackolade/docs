@@ -1,3 +1,7 @@
+---
+description: Why and how to use technical names and naming conventions in Hackolade Studio Polyglot models, and how they reach derived models.
+seoTitle: Technical names in Polyglot models
+---
 # Technical names in Polyglot models
 
 For physical data models it has been possible, for a long time with Hackolade Studio, to maintain both business and technical names for each object: schemas, tables, columns. A technical name is not mandatory, but it can be useful if you want to distinguish between a business-friendly label and the actual identifier used in scripts or schema generation. If you choose not to define a technical name, Hackolade Studio uses the same name property for both visual representation and script generation. In that case, the name is considered to serve both purposes -- business and technical.

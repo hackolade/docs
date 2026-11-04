@@ -1,3 +1,8 @@
+---
+description: "Evaluate Hackolade Model Hub with your own data models: download and run the standalone trial, with MCP server integration."
+seoTitle: Hackolade Model Hub standalone personal trial
+image: lib/Hub standalone personal trial key validated.png
+---
 # Standalone personal trial
 
 The [Model Hub Playground](<https://hub.hackolade.com/> "target=\"_blank\"") is ideal for a quick introduction to the platform’s capabilities, but it falls short when it comes to conducting a meaningful evaluation with your own data models.\

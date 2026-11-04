@@ -1,3 +1,7 @@
+---
+description: Use a deployment policy file to disallow Hackolade Studio application updates, plugin updates or plugin installations on users' machines.
+seoTitle: Deployment policy for Hackolade Studio updates
+---
 # Deployment policy
 
 At Hackolade, we want to let customers benefit from newly developed features as soon as they are developed and tested. As we say: "application code only comes to life when it’s deployed to production and used by real users.” or "what’s the point of building a feature if it’s destined to gather dust in a drawer?" ;-) This is why we release a new version of the application every single week of the year.

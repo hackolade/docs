@@ -1,3 +1,8 @@
+---
+description: Create foreign key relationships in Hackolade Studio ER diagrams, name them, and adjust their lines, including composite relationships.
+seoTitle: Relationship lines in the ER diagram
+image: lib/ER lines - orthogonal.png
+---
 # Relationship lines in ER diagram
 
 Relationship lines in Entity Relationship diagrams are useful to understand the relationship in the data, and to define Foreign Key constraints used in query joins, and to ensure data consistency.\

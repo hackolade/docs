@@ -1,3 +1,8 @@
+---
+description: Model Couchbase buckets, document kinds, keys and flexible key designs in Hackolade Studio, with N1QL reverse- and forward-engineering.
+seoTitle: Couchbase data modeling with Hackolade Studio
+image: lib/Couchbase workspace.png
+---
 # Couchbase
 
 Couchbase Server is an open-source, distributed multi-model NoSQL document-oriented database software package that is optimized for interactive applications. It has a long [history and evolution](<http://stackoverflow.com/questions/5578608/difference-between-couchdb-and-couchbase> "target=\"_blank\""). It natively manipulates data in key-value form or in JSON documents. Nevertheless Couchbase may be used to store non-JSON data for various use cases.

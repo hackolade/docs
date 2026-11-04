@@ -1,3 +1,7 @@
+---
+description: Enable authentication of Hackolade Model Hub users with Microsoft Entra ID or Okta, protecting the UI, the Admin panel and the MCP server.
+seoTitle: Model Hub authentication with Entra ID or Okta
+---
 # Authentication
 
 You should enable authentication so users sign in with your organization’s identity provider. The same configuration protects the Model Hub UI, the Admin panel, and the MCP server.

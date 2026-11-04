@@ -1,3 +1,8 @@
+---
+description: Import Avro schemas from .avsc or .avro files, schema registries, AWS S3 or Azure Blob Storage into a Hackolade Studio data model.
+seoTitle: Reverse-engineer Avro files and schemas
+image: lib/Cloud Storage - AWS S3 connection.png
+---
 # Avro file or schema
 
 Hackolade easily imports the schema from .avsc or .avro files, located on your local file system or on a shared directory, to represent the corresponding Entity Relationship Diagram and schema structure. When multiple files are selected, you have the choice to either combine the schemas of the selected files (default), or to create a separate schema in the model for each selected file.

@@ -1,3 +1,8 @@
+---
+description: How Hackolade Studio prompts for Git credentials on private repositories, while your Git client stores them in its credential store.
+seoTitle: Git repository authentication in Hackolade Studio
+image: lib/Git Gredential Manager prompt.png
+---
 # Authentication
 
 A Git repository can be private and secured, which makes it impossible for non-authenticated users to clone it, pull remote commits, and push their local commits. If you need to interact with such a repository, then Hackolade Studio prompts you for your credentials when needed.

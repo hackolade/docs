@@ -1,3 +1,8 @@
+---
+description: Hackolade Studio generates Redshift DDL for schemas, tables, columns and constraints, to export or apply to an instance.
+seoTitle: Generate Amazon Redshift DDL
+image: lib/Redshift DDL forward-engineering.png
+---
 # Redshift DDL
 
 As you develop the model for your Amazon Redshift database schemas, tables, columns with their data types, as well as columns-level constraints, Hackolade dynamically generates the corresponding DDL scripts.

@@ -1,3 +1,8 @@
+---
+description: Open and save Hackolade Studio models directly in a remote Git repository, from the desktop or the browser, without a local clone.
+seoTitle: Working directly with a remote Git repository
+image: lib/Workgroup Git direct remote repo.png
+---
 # Working directly with a remote repo
 
 Take a look at [this video](<https://community.hackolade.com/slides/slide/secure-browser-based-collaboration-68> "target=\"_blank\"") illustrating how easy it is to collaborate, using Hackolade Studio. This simple access is available both in the desktop and browser deployments.

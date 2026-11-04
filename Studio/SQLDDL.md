@@ -1,3 +1,8 @@
+---
+description: Import a DDL file into Hackolade Studio, and get denormalization suggestions to migrate a relational schema to NoSQL.
+seoTitle: Reverse-engineer SQL DDL files
+image: lib/Reverse-Engineering -- DDL select file.png
+---
 # SQL DDL
 
 Migrating from relational databases to NoSQL requires a mind shift, and Hackolade can help in the migration of the schema from a relational model to a model combining embedding and referencing, so you can leverage the power, performance, and flexibility of NoSQL.

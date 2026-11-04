@@ -1,3 +1,7 @@
+---
+description: Hackolade Studio generates dbt model property files with names, descriptions, columns, data types and constraints.
+seoTitle: Generate dbt schema model properties
+---
 # dbt schema models
 
 > [!WARNING]

@@ -1,3 +1,8 @@
+---
+description: "The roll-down (concrete table inheritance) strategy in Hackolade Studio: each subtype table receives the attributes of the supertype."
+seoTitle: "Inheritance: derive with the roll-down strategy"
+image: lib/Inheritance roll-down Party Polyglot model.png
+---
 # Derive with Roll-down strategy
 
 This roll-down inheritance strategy is sometimes known as concrete table inheritance: each concrete subtype is stored in its own table, including both inherited and subtype-specific attributes. Generally, a separate supertype table is no longer required in the physical model (except if the group is partial.) Reading individual subtypes is simple, but common attributes are duplicated and querying across the hierarchy is harder. Roll-down means pushing the supertype attributes down into each subtype table. The supertype table disappears (unless completeness is partial), and each subtype contains both inherited and subtype-specific attributes.

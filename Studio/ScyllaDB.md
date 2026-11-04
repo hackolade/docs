@@ -1,3 +1,8 @@
+---
+description: Model ScyllaDB keyspaces, tables, partition and clustering keys, UDTs and materialized views in Hackolade Studio.
+seoTitle: ScyllaDB data modeling with Hackolade Studio
+image: lib/ScyllaDB workspace.png
+---
 # ScyllaDB
 
 ScyllaDB is an open-source distributed NoSQL column-oriented data store, designed to be compatible with [Apache Cassandra](Cassandra.md). It supports the same CQL query language but is written in C++ instead of Java to increase raw performance and leverage modern multi-code servers self-tuning.

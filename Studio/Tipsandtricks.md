@@ -1,3 +1,8 @@
+---
+description: "Tips for Hackolade Studio users: the origin of the name, end-of-life policy, license transfer, logs and other practical answers."
+seoTitle: Hackolade Studio tips and tricks
+image: lib/License dialog.png
+---
 # Tips and tricks
 
 The following tips and tricks may be useful to quickly become a Hackolade power user!

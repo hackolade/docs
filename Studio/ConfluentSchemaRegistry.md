@@ -1,3 +1,8 @@
+---
+description: "Model Avro, JSON Schema and Protobuf subjects for Confluent Schema Registry in Hackolade Studio: messages, topics, subjects and naming strategies."
+seoTitle: Confluent Schema Registry data modeling
+image: lib/Avro workspace.png
+---
 # Confluent Schema Registry
 
 The [Confluent Schema Registry](<https://docs.confluent.io/platform/current/schema-registry/index.html> "target=\"_blank\"") is a central repository with a RESTful interface for developers to define standard schemas and register applications to enable compatibility. Schema Registry is available as a software component of Confluent Platform or as a managed component of Confluent Cloud. Confluent Schema Validation provides a direct interface between the Kafka broker and Schema Registry to validate and enforce schemas programmatically. Schema Validation can be configured at the Kafka topic level.

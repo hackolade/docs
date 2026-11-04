@@ -1,3 +1,8 @@
+---
+description: Prompt a GenAI tool to produce a Mermaid ER diagram, then reverse-engineer it from files or the clipboard into a Hackolade Studio model.
+seoTitle: Import GenAI-created Mermaid ER diagrams
+image: lib/Mermaid ER e-commerce from ChatGPT.png
+---
 # GenAI-created Mermaid ER diagram
 
 As the first step of our [AI roadmap](DatamodelingandtheAIlifecycle.md), it is now possible, starting with v8.3.2, to import (reverse-engineer) a model in Mermaid ER diagram code. This features allows to instantly generate models, polyglot or physical, then edit and enrich them, plus integrate suggestions from GenAI. By integrating AI-generated diagrams with Hackolade Studio’s intuitive modeling, teams can efficiently develop and refine their data models, enhancing collaboration and accelerating the development cycle.

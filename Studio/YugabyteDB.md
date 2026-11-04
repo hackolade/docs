@@ -1,3 +1,8 @@
+---
+description: Model YugabyteDB tablespaces, databases, schemas, tables, keys, partitioning and indexes in Hackolade Studio.
+seoTitle: YugabyteDB data modeling with Hackolade Studio
+image: lib/PostgreSQL workspace.png
+---
 # YugabyteDB
 
 YugabyteDB is a distributed, hybrid and multi-cloud open source community-driven database. It combines relational database capabilities with the horizontal scalability and resilience of cloud native architectures. YugabyteDB is like PostgreSQL re-imagined for a cloud native world.

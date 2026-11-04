@@ -1,3 +1,8 @@
+---
+description: Infer a schema from JSON documents on the file system, in cloud storage or in schema registries, and import it into Hackolade Studio.
+seoTitle: Reverse-engineer JSON documents
+image: lib/JSON Doc RE dialog.png
+---
 # JSON document
 
 ## From the file system

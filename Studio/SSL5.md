@@ -1,3 +1,8 @@
+---
+description: Encrypt the Hackolade Studio connection to SQL Server with TLS/SSL certificates, with troubleshooting tips.
+seoTitle: Connect to SQL Server with SSL/TLS
+image: lib/MongoDB connection SSL.png
+---
 # SSL
 
 In cases where the server and client exist on separate networks or they are in a high-risk network, the lack of encryption does introduce security concerns as a malicious actor could potentially eavesdrop on the traffic as it is sent over the network between them.\

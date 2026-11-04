@@ -1,3 +1,8 @@
+---
+description: How Hackolade Studio represents JSON Schema as a tree, to define and document the structure of JSON data.
+seoTitle: JSON Schema tree view
+image: lib/Couchbase schema tree view.png
+---
 # JSON Schema Tree view
 
 JSON Schema specifies a JSON-based format to define the structure of JSON data for validation, documentation, and interaction control. A JSON Schema provides a contract for the JSON data required by a given application, and how that data can be modified.

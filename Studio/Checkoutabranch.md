@@ -1,3 +1,8 @@
+---
+description: List, search, check out, create and delete Git branches from Hackolade Studio, with the active branch shown in the top bar.
+seoTitle: Check out a Git branch in Hackolade Studio
+image: lib/Workgroup explore models3.png
+---
 # Checkout a branch
 
 When you open a local repository in Hackolade Studio, you see the name of the active [branch](Concepts1.md) in the top bar. Remember that every change you make and commit affects only that branch.\

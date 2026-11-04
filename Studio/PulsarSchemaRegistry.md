@@ -1,3 +1,8 @@
+---
+description: Model schemas for the Apache Pulsar Schema Registry in Hackolade Studio, with forward- and reverse-engineering.
+seoTitle: Apache Pulsar Schema Registry modeling
+image: lib/Avro workspace.png
+---
 # Pulsar Schema Registry
 
 The [Pulsar Schema Registry](<https://pulsar.apache.org/docs/en/concepts-schema-registry/> "target=\"_blank\"") is a central repository to enable message producers and consumers on Pulsar topics to coordinate on the structure of topics for your message bus. The structure of the data, or its *schema*, may either be specified and uploaded through a [REST interface](http://pulsar.apache.org/admin-rest-api/?version=2.4.2#tag/schemas) or by the message producer itself. Each piece of data that is passed through the system is in turn stamped with the name and version of the schema it represents. With schemas for Avro and JSON, every single piece of data traveling through the system is completely discoverable, enabling to build systems that can easily adapt as the data changes.

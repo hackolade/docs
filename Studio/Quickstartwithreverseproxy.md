@@ -1,3 +1,7 @@
+---
+description: Set up Hackolade Model Hub on a Linux server behind a reverse proxy, with a DNS name and a Let's Encrypt certificate.
+seoTitle: Model Hub quick start with a reverse proxy
+---
 # Quick start with reverse proxy
 
 This guide walks you from an empty Linux server to a working Model Hub environment reachable at *https://\<your-domain-name>* with a valid Let's Encrypt certificate.

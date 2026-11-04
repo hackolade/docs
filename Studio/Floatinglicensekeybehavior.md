@@ -1,3 +1,8 @@
+---
+description: How Hackolade Studio floating license keys are shared among occasional users, including virtual machines and cloud-based license servers.
+seoTitle: Floating license key behavior
+image: lib/Dedicated vs floating license seat 1.png
+---
 # Floating license key behavior
 
 Dedicated license keys are for exclusive use by regular, intensive users of the application. Whereas the floating license key is for shared use, across many occasional users. While the cost a floating key is higher, there is a benefit for customers to be able to spread the cost across multiple users.

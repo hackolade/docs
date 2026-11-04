@@ -1,3 +1,8 @@
+---
+description: How Hackolade Studio handles technical names of Polyglot and derived models during impact analysis and reference refresh.
+seoTitle: Technical names during impact analysis
+image: lib/No technical names in polyglot model.png
+---
 # Handling of technical names during Impact Analysis
 
 The previous page detailed your choices when originally deriving a model from Polyglot. Then both the parent Polyglot and the derived models are likely to continue to evolve over time. This page outlines different cases and how they are handled when refreshing references, how they are handled in the Impact Analysis screen, and the resulting impact in the derived model.

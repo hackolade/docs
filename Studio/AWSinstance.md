@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to a DynamoDB instance on AWS with an access key, secret access key and region, for reverse-engineering.
+seoTitle: Connect to an Amazon DynamoDB instance on AWS
+image: lib/Rev-Engineering - DynamoDB connect AWS2.png
+---
 # AWS instance
 
 To access a DynamoDB instance, you should obtain the proper credentials from your administrator. In particular you'll need to know your Access Key, Secret Access Key, and the Region for the instance.

@@ -1,3 +1,8 @@
+---
+description: Create a supertype group with a supertype and subtypes in a Hackolade Studio Polyglot model, and see it in the ERD and properties pane.
+seoTitle: Model a supertype group in Polyglot
+image: lib/Inheritance party supertype group.png
+---
 # Model a supertype group in Polyglot
 
 The previous page positioned supertype and subtype groups, and explained that a group is one axis of specialization. This page covers how you model a simple supertype group in Hackolade Studio: one supertype, a few subtypes, and the properties that come with the group.

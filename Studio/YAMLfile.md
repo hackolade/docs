@@ -1,3 +1,8 @@
+---
+description: Infer a schema from YAML files on the file system, cloud storage or schema registries into a Hackolade Studio model.
+seoTitle: Reverse-engineer YAML files
+image: lib/JSON Doc RE dialog.png
+---
 # YAML file
 
 ## From the file system

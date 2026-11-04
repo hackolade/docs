@@ -1,3 +1,8 @@
+---
+description: Orchestrate Hackolade Studio Command-Line Interface commands in DevOps CI/CD pipelines, for governance-first and code-first use cases.
+seoTitle: Integrate the Hackolade CLI with CI/CD pipelines
+image: lib/Metadata-as-Code infinity loop.png
+---
 # Integrate the CLI with DevOps CI/CD pipelines
 
 At Hackolade, we're advocates of [Metadata-as-Code](<https://hackolade.com/metadata-as-code.html> "target=\"_blank\"").

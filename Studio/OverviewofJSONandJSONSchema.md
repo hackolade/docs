@@ -1,6 +1,15 @@
+---
+description: Introduction to JSON, JSON in databases, JSON Schema, and how Hackolade Studio represents nested structures in ER diagrams.
+seoTitle: "Tutorial: overview of JSON and JSON Schema"
+image: lib/JSON object syntax.png
+---
 # Overview of JSON and JSON Schema
 
-You may also [view this tutorial](<https://youtu.be/fbvobxYHKGg> "target=\"_blank\"") on YouTube. Summary slides can be found [here](<https://www.slideshare.net/PascalDesmarets1/hackolade-tutorial-part-2-overview-of-json-and-json-schema> "target=\"_blank\"").
+[Hackolade Tutorial - Part 2: Overview of JSON and JSON schema](<https://youtu.be/fbvobxYHKGg> "video")
+
+&nbsp;
+
+Summary slides can be found [here](<https://www.slideshare.net/PascalDesmarets1/hackolade-tutorial-part-2-overview-of-json-and-json-schema> "target=\"_blank\"").
 
 &nbsp;
 

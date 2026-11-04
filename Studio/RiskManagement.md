@@ -1,3 +1,7 @@
+---
+description: "Risk assessment for a Hackolade Studio deployment: risks, impact, probability, mitigation strategies and contingency plans."
+seoTitle: Risk management for Hackolade Studio deployment
+---
 # Risk Management
 
 The table below provides a comprehensive risk assessment, identifying and analyzing potential risks associated with the implementation of Hackolade Studio.

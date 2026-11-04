@@ -1,3 +1,8 @@
+---
+description: Specialize the same supertype along several axes in Hackolade Studio Polyglot models, each group with its own subtypes and strategy.
+seoTitle: One supertype with multiple groups
+image: lib/Inheritance multi-groups mixed strategies.png
+---
 # One supertype with multiple groups
 
 The same supertype can be split along several axes of specialization at once. Each axis is a group of its own, with its own subtypes, its own characteristics, and its own strategy.

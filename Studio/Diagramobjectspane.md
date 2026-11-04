@@ -1,3 +1,8 @@
+---
+description: The Diagram Objects pane of Hackolade Studio lets you drag new entities, views, relationships and other objects onto the ER diagram.
+seoTitle: Diagram objects pane
+image: lib/Diagram Objects pane.png
+---
 # Diagram objects pane
 
 Starting with v7.4.0, a collapsible pane has been added above the Object Browser. The Diagram Objects pane is there to facilitate the creation of objects in the ERD pane:

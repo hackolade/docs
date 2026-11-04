@@ -1,3 +1,8 @@
+---
+description: Model Databricks Delta Lake clusters, databases, tables, streaming tables, data types and views in Hackolade Studio.
+seoTitle: Delta Lake on Databricks data modeling
+image: lib/Delta Lake on Databricks workspace.png
+---
 # Delta Lake on Databricks
 
 Delta Lake is an open-source storage layer that brings reliability to data lakes. It was initially developed by [Databricks](<https://databricks.com/> "target=\"_blank\"") in 2016 and open-sourced to the Linux Foundation in 2019. Delta Lake provides ACID transactions, scalable metadata handling, and unifies streaming and batch data processing. It is a storage layer on top of cloud object stores (Amazon S3, Azure Data Lake Storage, Google Cloud Storage and etc) or distributed filesystems like [HDFS](https://en.wikipedia.org/wiki/Apache_Hadoop), which describes and defines the formats of data object and transaction logs, and a set of access protocols enabling DBMS-like features. It is fully compatible with Apache Spark APIs. Its schema enforcement automatically handles schema variations to prevent insertion of bad records during ingestion. The Databricks Lakehouse platform provides data engineering, SQL analytics, data science and Machine Learning on Azure Databricks, Databricks on AWS and google Cloud.

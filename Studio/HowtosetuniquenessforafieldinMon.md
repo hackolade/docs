@@ -1,3 +1,7 @@
+---
+description: How to enforce uniqueness of a MongoDB field with a unique index, since $jsonSchema validation cannot express it, in Hackolade Studio.
+seoTitle: Set uniqueness for a field in MongoDB
+---
 # How to set uniqueness for a field in MongoDB
 
 MongoDB is a schemaless database. As such, the possibilities for constraints are less than with a relational database. Nevertheless, with the [MongoDB validator](<https://www.mongodb.com/docs/manual/core/schema-validation/> "target=\"_blank\"") it is possible to do validations. They are based on the [$jsonschema operator](<https://www.mongodb.com/docs/manual/core/schema-validation/specify-json-schema/> "target=\"_blank\"") which itself is based on (actually is a subset/superset of) the JSON Schema draft-à4 specification.\

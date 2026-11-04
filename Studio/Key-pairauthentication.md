@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to Snowflake with key-pair authentication, using an RSA key pair of at least 2048 bits.
+seoTitle: Snowflake key-pair authentication
+image: lib/Snowflake connection key-pair auth.png
+---
 # Key-pair authentication
 
 Snowflake supports using key pair authentication for enhanced authentication security as an alternative to basic authentication, such as username and password. This authentication method requires, as a minimum, a 2048-bit RSA key pair. You can generate the Privacy Enhanced Mail (PEM) private-public key pair using OpenSSL.

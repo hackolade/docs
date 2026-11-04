@@ -1,3 +1,8 @@
+---
+description: Repair the reference link between a derived model and its source Polyglot model in Hackolade Studio, so it can be updated again.
+seoTitle: Recreate a broken reference link to a Polyglot
+image: lib/Repair polyglot broken ref link flow.png
+---
 # Recreate broken reference link to a Polyglot model
 
 When working with derived models, it may happen that the reference link to the source Polyglot model is accidentally deleted. As a result, the derived model is disconnected and cannot be updated anymore from the Polyglot model.

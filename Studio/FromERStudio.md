@@ -1,3 +1,8 @@
+---
+description: Export a data model from ER/Studio as XSD and import it into Hackolade Studio, with the main differences between the two tools.
+seoTitle: Import ER/Studio data models via XSD
+image: lib/ER-Studio Wizard - page 1.png
+---
 # From ER/Studio
 
 ## Differences with ER/Studio

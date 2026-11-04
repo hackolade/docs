@@ -1,3 +1,8 @@
+---
+description: Define default values for view, index, constraint and relationship names in Hackolade Studio with a defaultData.json file.
+seoTitle: Pre-populate properties with default values
+image: lib/Tools - Options - General - FK rel name.png
+---
 # Pre-populate properties with default values
 
 Hackolade Studio allows to define default values for specific properties such as view names, index names, or constraint names through a configuration file. This equates to what other tools often accomplish with macros or scripting.

@@ -1,3 +1,8 @@
+---
+description: Why data models are useful despite being imperfect, and the levels of detail of conceptual, logical and physical data models.
+seoTitle: "Data modeling: purpose and levels of detail"
+image: lib/Data modeling 3 levels.png
+---
 # Data modeling
 
 To paraphrase [George Box's aphorism](<https://en.wikipedia.org/wiki/All_models_are_wrong> "target=\"_blank\""), "all data models are wrong, but most are useful." In other words, all data models are inherently **imperfect**, but their **value lies in their utility**, not in their perfection.

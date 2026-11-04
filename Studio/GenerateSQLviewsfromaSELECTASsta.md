@@ -1,3 +1,8 @@
+---
+description: Define a view in Hackolade Studio with a SELECT AS statement in the Properties pane, for RDBMS and SQL-like targets.
+seoTitle: Generate SQL views from a SELECT AS statement
+image: lib/View reverse-engineer from DDL select schema.png
+---
 # Generate SQL views from a SELECT AS statement
 
 When modeling views for RDBMS or a SQL-like target, you can manually select the columns to be included in the view, by following the instructions in [this page](Read-onlyviews.md).

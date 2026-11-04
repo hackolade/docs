@@ -1,3 +1,8 @@
+---
+description: Hackolade Studio generates the HiveQL script for Delta Lake databases, tables, columns and views, and applies it to a Databricks instance.
+seoTitle: Generate Delta Lake scripts for Databricks
+image: lib/Delta Lake forward-engineering.png
+---
 # Delta Lake scripts
 
 Hackolade dynamically generates the HiveQL script to create databases, tables, columns and their data types, as well as views for the structure created with the application.

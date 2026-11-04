@@ -1,3 +1,7 @@
+---
+description: "A practical data modeling strategy with Hackolade Studio: when to use conceptual, logical and physical models, and how to organize them."
+seoTitle: Pragmatic guide to a data modeling strategy
+---
 # Pragmatic guide to a data modeling strategy
 
 # Data Modeling Approaches with Hackolade Studio

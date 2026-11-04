@@ -1,3 +1,8 @@
+---
+description: Connect the Hackolade Studio CLI to Collibra with OAuth client credentials of a service account, for automated publishing.
+seoTitle: Machine-to-machine OAuth to Collibra
+image: lib/Collibra M2M Create CLI connection.png
+---
 # Machine-to-machine connection to Collibra
 
 This page is relevant for machine-to-machine OAuth to a Collibra instance using a service account. It does not apply for Hackolade Studio [client connection to a Collibra instance using an identified user via OAuth](OAuthsetupwithEntraID.md).

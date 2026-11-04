@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to MongoDB Enterprise with LDAP proxy authentication.
+seoTitle: MongoDB LDAP proxy authentication
+image: lib/MongoDB connection LDAP 1.png
+---
 # LDAP
 
 MongoDB Enterprise provides support for proxy authentication of users. This allows administrators to configure a MongoDB cluster to authenticate users by proxying authentication requests to a specified Lightweight Directory Access Protocol (LDAP) service.

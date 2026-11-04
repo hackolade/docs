@@ -1,3 +1,7 @@
+---
+description: Causes of the Cassandra "server timeout during read query at consistency LOCAL_ONE" error during reverse-engineering, and fixes.
+seoTitle: Cassandra timeout at consistency LOCAL_ONE
+---
 # Server timeout during read query at consistency LOCAL_ONE
 
 There are several possible issues.

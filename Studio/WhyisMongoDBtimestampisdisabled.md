@@ -1,3 +1,7 @@
+---
+description: The MongoDB timestamp type is for internal use; Hackolade Studio models dates with the date (ISODate) type instead.
+seoTitle: Why is the MongoDB timestamp type disabled?
+---
 # Why is MongoDB timestamp is disabled?
 
 That's because you really don't want to use timestamp which is a MongoDB-internal data type: [https://docs.mongodb.com/manual/reference/bson-types/#timestamps](<https://docs.mongodb.com/manual/reference/bson-types/#timestamps> "target=\"_blank\"")

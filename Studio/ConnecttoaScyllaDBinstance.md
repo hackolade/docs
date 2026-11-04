@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to ScyllaDB on-premises or in the cloud with username and password or LDAP, for reverse-engineering.
+seoTitle: Connect to a ScyllaDB instance
+image: lib/ScyllaDB connection settings.png
+---
 # Connect to a ScyllaDB instance
 
 Like many database, ScyllaDB provides user rolenames and passwords for internal authentication. Hackolade currently supports basic authentication (username/password) as well as LDAP.

@@ -1,3 +1,8 @@
+---
+description: Model Amazon DocumentDB collections, ObjectIDs, data types, indexes, views and sharding in Hackolade Studio.
+seoTitle: Amazon DocumentDB data modeling
+image: lib/DocumentDB workspace.png
+---
 # DocumentDB
 
 Amazon DocumentDB (with MongoDB compatibility) is a fully managed document database service that supports MongoDB workloads. As a document database, DocumentDB makes it easy to store, query, and index JSON data. Developers can use the same MongoDB application code, drivers, and tools as they do with MongoDB to run, manage, and scale workloads on Amazon DocumentDB.

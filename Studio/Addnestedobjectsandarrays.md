@@ -1,10 +1,19 @@
+---
+description: Hackolade Studio tutorial on modeling complex data structures with nested objects and arrays, in the ERD, the hierarchical schema view and the grid.
+seoTitle: "Tutorial: model nested objects and arrays"
+image: lib/Tutorial - add an object in ERD.png
+---
 # Add nested objects and arrays
 
 In the previous tutorial, we saw how to create a first data model, which was quite basic but allowed us to review different ways to enter information in Hackolade Studio, as well as different ways to visualize structures. By the end of this tutorial, you will master the creation of more complex data structures.
 
 &nbsp;
 
-You may also [view this tutorial](<https://youtu.be/uk-K3aNosJg> "target=\"_blank\"") on YouTube. Summary slides can be found [here](<https://www.slideshare.net/PascalDesmarets1/hackolade-tutorial-part-5-add-nested-objects-and-arrayspdf> "target=\"_blank\"").
+[Hackolade Tutorial - Part 5: Add nested objects and arrays](<https://youtu.be/uk-K3aNosJg> "video")
+
+&nbsp;
+
+Summary slides can be found [here](<https://www.slideshare.net/PascalDesmarets1/hackolade-tutorial-part-5-add-nested-objects-and-arrayspdf> "target=\"_blank\"").
 
 &nbsp;
 

@@ -1,3 +1,7 @@
+---
+description: The Hackolade Studio object browser shows the tree of objects in your model, with search and find and replace.
+seoTitle: Object browser pane
+---
 # Object browser pane
 
 The left-hand pane shows a dynamic tree representing the hierarchy of objects maintained in your current model. The tree is collapsible, but expanded by default. For large models, it can be quite long.
@@ -45,6 +49,10 @@ and the tree will be filtered to display only strings matching the entry:
 &nbsp;
 
 ![Object browser - search and filter results](<lib/Object browser - search and filter results.png>)
+
+&nbsp;
+
+All instance of objects matching the entry are displayed in the tree, including the Diagram Views for the data model.  So if you type the name of an entity, the tree shows this entity together with all the Diagram Views in which it appears. This is the quickest way to find which Diagram Views use a given table.
 
 &nbsp;
 

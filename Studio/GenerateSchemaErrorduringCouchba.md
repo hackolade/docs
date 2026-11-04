@@ -1,3 +1,8 @@
+---
+description: Workaround for the Couchbase "unknown N1QL error" during Hackolade Studio reverse-engineering, usually an out-of-memory condition.
+seoTitle: Generate Schema error in Couchbase reverse-engineering
+image: lib/Couchbase RE pagination parameters.png
+---
 # Generate Schema Error during Couchbase reverse-engineering
 
 If you get this message:\

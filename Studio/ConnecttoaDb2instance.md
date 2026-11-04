@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to IBM Db2 on-premises or in the cloud, and the privileges needed for reverse- and forward-engineering.
+seoTitle: Connect to an IBM Db2 instance
+image: lib/Db2 connection settings.png
+---
 # Connect to a Db2 instance
 
 The IBM Db2 instance can be hosted on-premises, or on virtualized machines in a private or public cloud.

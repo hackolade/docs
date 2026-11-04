@@ -1,3 +1,8 @@
+---
+description: Fix the "spawn UNKNOWN" error in Hackolade Studio, caused by Windows Group Policies that block the Command Prompt or PowerShell.
+seoTitle: "Error message: spawn UNKNOWN"
+image: lib/Spawn error message.png
+---
 # Error message: spawn UNKNOWN
 
 The message "errorMsg": "spawn UNKNOWN" generally occurs because Windows Group Policies are set to prevent access to either the Command Prompt, or PowerShell, or both. Such access is required for the application to execute OS commands such as fetching the processor UUID.

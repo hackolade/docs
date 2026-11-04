@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to Azure Synapse with SQL or Azure AD authentication, with data plane and control plane parameters.
+seoTitle: Connect to Azure Synapse Analytics
+image: lib/Synapse connection settings.png
+---
 # Connect to Synapse
 
 ## Data Plane

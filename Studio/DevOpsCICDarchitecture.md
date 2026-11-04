@@ -1,3 +1,8 @@
+---
+description: Architecture to run the Hackolade Studio Command-Line Interface in DevOps CI/CD pipelines, in support of a metadata-as-code strategy.
+seoTitle: DevOps CI/CD architecture for the Hackolade CLI
+image: lib/CLI governance-first use case.png
+---
 # DevOps CI/CD architecture
 
 In the How-To Guide [Integrate CLI with DevOps CI/CD pipelines](IntegratetheCLIwithDevOpsCICDpip.md), we detail a Governance-first use case to illustrate the power and flexibility of the [Command-Line Interface](CommandLineInterface.md).in the context of our [Metadata-as-Code](<https://hackolade.com/metadata-as-code.html> "target=\"_blank\"") strategy.\

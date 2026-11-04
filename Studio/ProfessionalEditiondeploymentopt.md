@@ -1,3 +1,7 @@
+---
+description: Strategies large organizations use to deploy frequent Hackolade Studio Professional Edition updates to their users.
+seoTitle: Professional Edition deployment options
+---
 # Professional Edition deployment options
 
 Our large customers generally use one out of 3 different strategies to handle our frequent application updates:\

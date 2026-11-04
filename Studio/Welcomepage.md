@@ -1,3 +1,8 @@
+---
+description: The Hackolade Studio Welcome page gives access to recent models, new model creation, common tasks and help materials.
+seoTitle: Hackolade Studio Welcome page
+image: lib/Welcome page.png
+---
 # Welcome page
 
 The Welcome page gives you a quick access to your recent models and workspace, as well as providing a direct link to the creation of a new model, plus a range of help materials.

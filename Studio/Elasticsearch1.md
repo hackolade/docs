@@ -1,3 +1,8 @@
+---
+description: Hackolade Studio generates Elasticsearch mappings from your schema, to export to files or through the Command-Line Interface.
+seoTitle: Generate Elasticsearch mappings
+image: lib/Elasticsearch forward-engineering mappings.png
+---
 # Elasticsearch mappings
 
 Elasticsearch mappings are dynamically generated as you create your schema.

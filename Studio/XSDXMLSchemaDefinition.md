@@ -1,3 +1,8 @@
+---
+description: Import XSD files into Hackolade Studio to bring in models from other data modeling tools such as erwin, ER/Studio or PowerDesigner.
+seoTitle: Reverse-engineer XSD (XML Schema Definition)
+image: lib/Tools - Reverse-Engineer - XSD Schema.png
+---
 # XSD (XML Schema Definition)
 
 > [!IMPORTANT]

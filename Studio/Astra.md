@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to a DataStax Astra database with the secure connect bundle and a token, for Cassandra reverse-engineering.
+seoTitle: Connect to DataStax Astra (Cassandra as a service)
+image: lib/DataStax Astra console - connect.png
+---
 # Astra
 
 DataStax Astra (previously called Apollo) is a cloud-native DataBase-as-a-Service built on the DataStax distribution of Cassandra. DataStax is a cloud data platform with smart data management services to reduce operational complexity of Cassandra clusters. The Astra service is available on AWS, Azure and Google Cloud.

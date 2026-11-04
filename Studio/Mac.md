@@ -1,3 +1,8 @@
+---
+description: Install Hackolade Studio on macOS with the signed .pkg installer, with or without admin rights, and fix common issues.
+seoTitle: Install Hackolade Studio on Mac
+image: lib/Mac Catalina Security Privacy.png
+---
 # Mac
 
 ## Standard installation

@@ -1,3 +1,8 @@
+---
+description: 'Check the connection settings that cause "MongoError: Authentication failed" in Hackolade Studio when Compass connects without issue.'
+seoTitle: "MongoError: Authentication failed"
+image: lib/Compass connection copy 4.png
+---
 # MongoError: Authentication failed
 
 It can be frustrating to initiate a reverse-engineering operation, and get a message like "MongoError: Authentication failed". Particularly, if you have no such issue with MongoDB Compass.

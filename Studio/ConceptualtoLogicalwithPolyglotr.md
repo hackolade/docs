@@ -1,3 +1,8 @@
+---
+description: Model relationships in Hackolade Studio Polyglot models, from conceptual business concepts to logical structures, in the graph and ER diagrams.
+seoTitle: From conceptual to logical with Polyglot relationships
+image: lib/Conceptual model - relationship created.png
+---
 # Conceptual to Logical with Polyglot relationships
 
 Data modeling is not about rigid layers or debating where [conceptual](ConceptualmodelingwithPolyglot.md) ends and [logical](LogicalmodelingwithPolyglot.md) begins. In real projects, what matters is clarity, collaboration, and the ability to move forward with a shared understanding.

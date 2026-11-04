@@ -1,15 +1,25 @@
+---
+description: Hackolade Studio tutorial on JSON Schema choices (oneOf, anyOf, allOf, not), if-then-else conditionals and pattern fields, for polymorphic data.
+seoTitle: "Tutorial: JSON Schema choices, conditionals and patterns"
+image: lib/JSON Schema choices.png
+---
 # Add a choice, conditional, or pattern field
 
 In the previous tutorial, we reviewed how to create more complex structures with objects and arrays. By the end of this tutorial, you will master the creation of other types of JSON Schema attributes: choices, conditionals, and pattern fields.
 
 &nbsp;
 
-You may also [view this tutorial](<https://youtu.be/_tjZGmn7ilg> "target=\"_blank\"") on YouTube. Summary slides can be found [here](<https://www.slideshare.net/PascalDesmarets1/hackolade-tutorial-part-6-add-choice-conditional-pattern-fieldspdf> "target=\"_blank\"").
+[Hackolade Tutorial - Part 6: Add choice, conditional, pattern fields](<https://youtu.be/_tjZGmn7ilg> "video")
+
+&nbsp;
+
+Summary slides can be found [here](<https://www.slideshare.net/PascalDesmarets1/hackolade-tutorial-part-6-add-choice-conditional-pattern-fieldspdf> "target=\"_blank\"").
 
 &nbsp;
 
 > [!NOTE]
-> Some of the features in this tutorial are not available in all target technologies supported by Hackolade, in which case the feature is disabled.
+> Many target technologies do not support choices like JSON Schema does.  Some of the features in this tutorial are therefore not available in all target technologies supported by Hackolade, in which case the feature is disabled.\
+> Choices in relational conceptual and logical models may be represented with a [supertype-subtypes construct](ModelasupertypegroupinPolyglot.md), and implemented in physical models via different [inheritance strategies](Inheritancestrategies.md).
 
 &nbsp;
 

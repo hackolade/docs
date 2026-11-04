@@ -1,3 +1,7 @@
+---
+description: A choice in Hackolade Studio holds alternative subschemas, validated with allOf, anyOf, oneOf or not, for polymorphic data.
+seoTitle: What is a choice in JSON Schema?
+---
 # What is a choice?
 
 Each choice attribute contains an array, with each attribute of the array representing content that will be matched against. The choice of “allOf”, “anyOf”, “oneOf”, or “noneOf” determines how the validation processor will treat the results of the matches:

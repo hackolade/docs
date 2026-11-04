@@ -1,3 +1,8 @@
+---
+description: "Design Oracle JSON-relational duality views in Hackolade Studio: root table, nested objects and arrays, and table tags."
+seoTitle: Oracle 23ai and 26ai JSON-relational duality views
+image: lib/ORD - Baking cake ingredients.png
+---
 # Oracle 23ai and 26ai Duality Views
 
 Duality Views expose data stored in relational tables as JSON documents. The documents are materialized -- generated on demand, not stored as such. Duality views are organized both relationally and hierarchically. They combine the advantages of using JSON documents with the advantages of the relational model, while avoiding the limitations of each.

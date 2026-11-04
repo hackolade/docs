@@ -1,3 +1,8 @@
+---
+description: Model Oracle schemas, tables, keys, constraints, partitioning, indexes, JSON and data types in Hackolade Studio.
+seoTitle: Oracle data modeling with Hackolade Studio
+image: lib/Oracle workspace.png
+---
 # Oracle
 
 Oracle is a multi-model database management system commonly used for running online transaction processing (OLTP), data warehousing (DW) and mixed (OLTP & DW) database workloads. It may be run by several service providers on-prem, on-cloud, or as hybrid cloud installation, as well as on Oracle hardware.

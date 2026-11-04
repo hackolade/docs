@@ -1,3 +1,8 @@
+---
+description: Model HBase namespaces, tables, column families, row keys and data types in Hackolade Studio, with reverse- and forward-engineering.
+seoTitle: Apache HBase data modeling with Hackolade Studio
+image: lib/HBase workspace.png
+---
 # HBase
 
 A Bigtable is a sparse, distributed, persistent multidimensional sorted map. The map is indexed by a row key, column key, and a timestamp; each value in the map is an uninterpreted array of bytes. HBase uses a data model very similar to that of Bigtable. Users store data rows in labeled tables. A data row has a sortable key and an arbitrary number of columns. The table is stored sparsely, so that rows in the same table can have crazily-varying columns, if the user likes. Unlike most map implementations, in HBase/BigTable the key/value pairs are kept in strict alphabetical order.

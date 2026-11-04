@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to MongoDB with a username, password and authentication database.
+seoTitle: MongoDB username and password authentication
+image: lib/Rev-Eng - MongoDB Connection Settings.png
+---
 # Username/password
 
 In MongoDB's authentication model, a username is scoped to a database, called Authentication Database. The user’s privileges are not necessarily limited to this database. The user can have privileges in additional databases.

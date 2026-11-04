@@ -1,3 +1,8 @@
+---
+description: Model JanusGraph vertex labels, edge labels, property keys, data types and graph indexes in Hackolade Studio.
+seoTitle: JanusGraph data modeling with Hackolade Studio
+image: lib/JanusGraph workspace.png
+---
 # JanusGraph
 
 JanusGraph is an open-source, distributed, massively scalable graph database, optimized for storing and querying graphs containing hundreds of billions of vertices and edges distributed across a multi-machine cluster. JanusGraph provides native support for the property graph data models exposed by Apache TinkerPop, as well native support for the graph traversal language Gremlin.

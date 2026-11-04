@@ -1,3 +1,8 @@
+---
+description: "Answers to security questions about Hackolade Studio: COTS client software, not SaaS, compliance, controls and security assessments."
+seoTitle: Hackolade Studio security FAQ
+image: lib/Client architecture diagram.png
+---
 # Security concerns
 
 Security is a key concern for us and is part of our continuous improvement process.

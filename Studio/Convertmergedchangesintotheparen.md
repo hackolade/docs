@@ -1,3 +1,8 @@
+---
+description: Push deviations of a model derived from Polyglot back into its parent Polyglot model with the Convert & Merge operation in Hackolade Studio.
+seoTitle: Convert merged changes into the parent Polyglot
+image: lib/Convert and merge flow.png
+---
 # Convert merged changes into the parent polyglot model
 
 Before we dive into the process, it is important to understand the concept of deviations.

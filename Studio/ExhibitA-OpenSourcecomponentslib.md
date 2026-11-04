@@ -1,3 +1,7 @@
+---
+description: "Exhibit A of the Hackolade Studio license agreement: open source components and libraries, with their copyrights and licenses."
+seoTitle: Hackolade Studio open source components
+---
 # Exhibit A - Open Source components/libraries
 
 All Product Editions. For more info, consult this [helpful resource](<https://choosealicense.com/licenses/> "target=\"_blank\"").

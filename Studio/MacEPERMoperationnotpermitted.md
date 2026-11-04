@@ -1,3 +1,8 @@
+---
+description: 'Grant Hackolade Studio access to your Documents folder on macOS to fix the "EPERM: operation not permitted" error.'
+seoTitle: "Mac EPERM: operation not permitted"
+image: lib/Mac Catalina Security Privacy.png
+---
 # Mac EPERM: operation not permitted
 
 Starting with the release of macOS 10.15 Catalina, Apple has introduced a new security feature that ensures that 3rd-party applications are manually granted access to the user's file. Hackolade stores settings and logs in your Documents folder, and it cannot operate without it. So, if prompted with this dialog, you must click OK.\

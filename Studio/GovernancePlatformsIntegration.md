@@ -1,3 +1,7 @@
+---
+description: Publish Hackolade Studio data models to data governance and catalog platforms such as Collibra, Alation, DataHub and others.
+seoTitle: Integration with data governance platforms
+---
 # Governance Platforms Integration
 
 Data modeling is not an end in itself; it is a strategic instrument that bridges business intent and technical execution. On one side, it produces precise, machine-executable contracts (DDLs, schemas, and specifications) that govern how data is structured, validated, and exchanged across systems. On the other, it translates those same structures into clear, intelligible models that business users and domain experts can review, challenge, and align with their understanding of reality. By unifying these two perspectives, data modeling establishes a shared semantic foundation, ensuring that data is not only technically correct, but also meaningful, contextualized, and consistently interpreted across people, processes, and platforms.\

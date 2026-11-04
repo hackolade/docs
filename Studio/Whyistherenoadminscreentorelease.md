@@ -1,3 +1,7 @@
+---
+description: How to monitor license seat usage and release Hackolade Studio seats without an admin screen.
+seoTitle: Why is there no admin screen to release seats?
+---
 # Why is there no admin screen to release seats?
 
 We understand the request for an admin tool that would allow you to release license seats. To be clear, we do provide convenient and self-service ways to:

@@ -1,3 +1,7 @@
+---
+description: "Step-by-step integration of Okta with Hackolade Model Hub: app integration, groups, authorization server and group assignment."
+seoTitle: Model Hub sign-in with Okta
+---
 # Integrating with Okta
 
 On this page, you will find a step-by-step guide to integrating Okta with the Model Hub portal.

@@ -1,3 +1,8 @@
+---
+description: Hackolade Studio exports JavaScript Mongoose ODM schema files for the collections of your MongoDB model.
+seoTitle: Generate Mongoose schemas for MongoDB
+image: lib/Mongoose - FE selection.png
+---
 # Mongoose Schema
 
 For those in a technology stack using JavaScript, and are using the [Mongoose ODM](<http://mongoosejs.com/> "target=\"_blank\""), Hackolade also provides the option to export a JavaScript Mongoose schema file for the collection definition via the menu option Tools > Forward-Engineering > Mongoose Schema:

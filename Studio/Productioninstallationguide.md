@@ -1,3 +1,7 @@
+---
+description: "Steps to install a production Hackolade Model Hub: prerequisites, server installation, configuration and maintenance."
+seoTitle: Hackolade Model Hub production installation guide
+---
 # Production installation guide
 
 To install the production environment of Model Hub, we documented the steps below. We suggest going through them in detail, in particular the pre-requisites, prior to starting the process.

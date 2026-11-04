@@ -1,3 +1,7 @@
+---
+description: How to configure Couchbase users, roles and bucket passwords so Hackolade Studio can reverse-engineer Couchbase 3.x to 7.x.
+seoTitle: Couchbase reverse-engineering access issues
+---
 # Access issues when doing reverse-engineering of Couchbase
 
 With Couchbase 3.x and 4.x fairly basic security, the Administrator can set a password at the bucket level, but anyone with that password gets full rights on the bucket. With Couchbase 5.x a new role-based access control is introduced. Hackolade supports security of all these versions, but special attention is required for proper configuration:

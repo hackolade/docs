@@ -1,3 +1,8 @@
+---
+description: Hackolade Studio generates Synapse DDL for schemas, tables, indexes and constraints, with the known limitations of the configuration.
+seoTitle: Generate Azure Synapse DDL
+image: lib/Synapse DDL forward-engineering.png
+---
 # Synapse DDL
 
 As you develop the model for your Synapse instance schemas, tables, columns with their data types, as well as indexes and constraints, Hackolade dynamically generates the corresponding DDL scripts.

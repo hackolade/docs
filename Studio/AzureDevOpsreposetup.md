@@ -1,3 +1,8 @@
+---
+description: Configure a Microsoft Entra ID app registration so Hackolade Model Hub can fetch data models from Azure DevOps Repos.
+seoTitle: Model Hub setup for Azure DevOps repositories
+image: lib/Microsoft Entra ID-Manage-App registrations.png
+---
 # Azure DevOps repo setup
 
 This guide details the steps to configure an external application to securely authenticate and interact with Azure DevOps using a Microsoft Entra ID app registration. This flow is intended to be used for service-to-service integrations (aka no user interaction).

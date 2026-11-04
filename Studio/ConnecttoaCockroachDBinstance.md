@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to a CockroachDB instance, and the privileges a user needs to reverse-engineer objects owned by others.
+seoTitle: Connect to CockroachDB for reverse-engineering
+image: lib/PostgreSQL connection settings.png
+---
 # Connect to a CockroachDB instance
 
 > [!IMPORTANT]

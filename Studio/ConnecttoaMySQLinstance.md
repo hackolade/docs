@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to a MySQL instance on-premises or in the cloud, with host, port, database name, credentials, SSL and SSH.
+seoTitle: Connect to a MySQL instance
+image: lib/MySQL connection settings.png
+---
 # Connect to a MySQL instance
 
 The MySQL instance can be hosted on-premises, or on virtualized machines in a private or public cloud.

@@ -1,3 +1,8 @@
+---
+description: How AI helps build better data models, and how well-designed data models bring context, quality and security to AI initiatives.
+seoTitle: Data modeling and the AI lifecycle
+image: lib/AI-data modeling bi-directional synergy.png
+---
 # Data modeling and the AI lifecycle
 
 Artificial Intelligence is a multiplier. It amplifies what an organization is already capable of... as well as what it ignores. It scales whatever foundation it’s applied to. If the underlying processes, data quality, and organizational practices are strong, AI can dramatically improve efficiency, insight, and decision-making. But if those foundations are weak -- messy processes, biased or incomplete data, poor communication -- AI won’t fix them. AI requires orchestra conductors and choreographs more than it requires engineers to operate it.

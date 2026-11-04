@@ -1,3 +1,8 @@
+---
+description: Model Azure Cosmos DB containers, document types, IDs, indexes, stored procedures, triggers and UDFs in Hackolade Studio.
+seoTitle: "Azure Cosmos DB data modeling: SQL and MongoDB APIs"
+image: lib/Cosmos DB workspace.png
+---
 # Cosmos DB SQL & MongoDB APIs
 
 Microsoft Azure Cosmos DB (formerly known as Document DB) is a fully managed, massively scalable NoSQL database service, working with schema-free JSON documents. It is used by Real Madrid, Halo Games, X-Box, OneNote, etc...

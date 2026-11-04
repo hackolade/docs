@@ -1,3 +1,8 @@
+---
+description: Model Avro union types in Hackolade Studio, from simple nullable fields to oneOf choices with named types and naming rules.
+seoTitle: Union types in Avro schemas
+image: lib/Avro oneOf choice with multi variants props.png
+---
 # Union types in Avro
 
 In Avro, [union types](<https://avro.apache.org/docs/++version++/specification/#unions> "target=\"_blank\"") are used to represent alternative data types for a field. They play a key role in [schema evolution and compatibility](<https://docs.confluent.io/platform/current/schema-registry/fundamentals/schema-evolution.html> "target=\"_blank\""), and in modeling logical choices such as *oneOf*.

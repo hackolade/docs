@@ -1,3 +1,8 @@
+---
+description: Assign glossaries of business terms to Hackolade Studio data models, from files or Collibra, and use the terms in entities and attributes.
+seoTitle: Glossaries of business terms in data models
+image: lib/Business terms glossaries - select source.png
+---
 # Glossaries of business terms
 
 A glossary is a curated set of business terms that establishes the official vocabulary used across an organization. It ensures that data models rely on consistent, shared terminology, enabling both business and technical stakeholders to interpret them accurately and uniformly.

@@ -1,3 +1,8 @@
+---
+description: "Move Hackolade Studio to a new computer: application, plugins, custom properties, models, preferences, connections and license key."
+seoTitle: Move Hackolade Studio to another computer
+image: lib/Backup preferences parameters connections.png
+---
 # Moving to another computer
 
 When moving to another machine requires some preparation. This page walks you through several important attention points.

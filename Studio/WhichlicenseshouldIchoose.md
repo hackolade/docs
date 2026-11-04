@@ -1,3 +1,8 @@
+---
+description: "Compare Hackolade Studio license options: authors or viewers, Professional or Workgroup, dedicated or floating, virtual machines."
+seoTitle: Which Hackolade Studio license should I choose?
+image: lib/Dedicated vs floating license seat 1.png
+---
 # Which license should I choose?
 
 At Hackolade, we try to make it easy and convenient to do business with us, and to respond to customer needs. This includes a flexible pricing plan. But so many options may make decisions more difficult.

@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to a Neo4j instance on AWS, Azure or elsewhere through an SSH tunnel on port 22.
+seoTitle: Connect to Neo4j through an SSH tunnel
+image: lib/RE - Neo4j - SSH connection.png
+---
 # SSH
 
 If your Neo4j instance is located in the Cloud at Amazon Web Services for example or Microsoft Azure, your preferred access to your instance will be over SSH through port 22.

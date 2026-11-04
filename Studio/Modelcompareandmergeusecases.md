@@ -1,3 +1,7 @@
+---
+description: Typical compare and merge scenarios in Hackolade Studio, with the expected outcome of each, from Polyglot derivation to production schemas.
+seoTitle: Data model compare and merge use cases
+---
 # Model compare and merge use cases
 
 No matter how convenient we can make our side-by-side compare and merge screens, the process always requires figuring out first what needs to be compared, and the desired outcome.

@@ -1,3 +1,8 @@
+---
+description: Collaborate on Hackolade Studio data models through Git, natively with the Workgroup Edition or with a separate Git client.
+seoTitle: Team collaboration on data models with Git
+image: lib/Git workflow.png
+---
 # Team collaboration
 
 The Workgroup Edition of Hackolade Studio introduced, starting with v6 and with the appropriate license key upgrade, native integration with Git repositories. Previously, an integration with Git was possible, but required either a separate Git desktop application, or the use of the Git command line interface. Our Workgroup Edition makes it easy for users who are not so familiar with Git to leverage the tremendous power of this popular tool.

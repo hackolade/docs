@@ -1,3 +1,8 @@
+---
+description: Export a Hackolade Studio data model to Excel, edit properties in bulk in a tabular format, then import the changes back.
+seoTitle: Export a data model to Excel for bulk editing
+image: lib/Tools Options - FE Excel Export Objet Select.png
+---
 # Excel file
 
 The feature to exchange data with Excel provides the ability to export a data model, or parts of it, to Microsoft Excel so properties could be easily edited in a tabular format, to be re-imported back into the application. It facilitates productive bulk actions for the maintenance of properties. It also allows creation of a new model - or additions to an existing model - by team members that might not have access to the application.

@@ -1,3 +1,8 @@
+---
+description: Create a Hackolade Studio model from an existing OpenAPI specification file in JSON or YAML, including OpenAPI 3.1.
+seoTitle: Reverse-engineer an OpenAPI file
+image: lib/OpenAPI reverse-engineering menu.png
+---
 # OpenAPI file
 
 To create a Hackolade model from an existing OpenAPI specification file is extremely easy: Create a new model with OpenAPI as the target, then choose Tools > Reverse-Engineer > OpenAPI file

@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to MongoDB or Atlas with SCRAM, LDAP, Kerberos, X.509 or AWS IAM authentication, plus SSL and SSH options.
+seoTitle: Connect to MongoDB or MongoDB Atlas
+image: lib/Rev-Eng Connection settings - Direct.png
+---
 # Connect to a MongoDB instance
 
 IMPORTANT NOTE: Reading from a secondary in a replica set:\

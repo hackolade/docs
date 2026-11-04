@@ -1,3 +1,7 @@
+---
+description: Keep entities independent and model explicit foreign key relationships in Hackolade Studio Polyglot models, as in relational design.
+seoTitle: Reference separate entities with foreign keys
+---
 # Referencing separate entities with foreign key relationships
 
 # Fully normalized: separate entities with foreign key relationships

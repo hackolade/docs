@@ -1,3 +1,8 @@
+---
+description: Register an application in Microsoft Entra ID so Hackolade Studio users can connect to Collibra with OAuth.
+seoTitle: Collibra OAuth setup with Microsoft Entra ID
+image: lib/Collibra Entra ID JWT endpoints.png
+---
 # OAuth setup with Entra ID
 
 This page is relevant for Hackolade Studio client connection to a Collibra instance using an identified user. It does not apply to a server or CLI instance of Hackolade Studio establishing a [machine-to-machine connection to Collibra](Machine-to-machineconnectiontoCo.md) using a service account.
@@ -138,7 +143,7 @@ Next properties should be mapped:
 <td>JWT Principal ID Claim Name</td>
 <td>One of the supported values from <code>claims_supported</code> - from well-known endpoint endpoint</td>
 <td>preferred_username</td>
-<td><ul><li>Ensure a Collibra internal user exists</li><li>Username must match this claim value</li></ul></td>
+<td>Collibra uses <code>sub</code> by default. Enter the claim whose value is exactly the Collibra username, for example <code>preferred_username</code> when Collibra usernames are sign-in names. A Collibra user with this exact username must exist. See <a href="https://hackolade.com/help/OAuthsetupwithEntraID.html#5.%20How%20Collibra%20matches%20the%20token%20to%20a%20user">section 5</a> below.</td>
 </tr>
 <tr>
 <td>JWT Maximum Clock Skew</td>
@@ -148,3 +153,51 @@ Next properties should be mapped:
 </tr>
 </tbody>
 </table>
+
+&nbsp;
+
+## 5. How Collibra matches the token to a user
+
+When you connect from Hackolade Studio, Microsoft Entra ID issues an access token for your user, and Hackolade Studio sends this token to Collibra. Collibra reads one value from the token and looks for a Collibra user with exactly this username. If no user matches, Collibra refuses the connection, even when all other JWT properties are correct.
+
+&nbsp;
+
+An access token contains several fields, called claims. Each claim has a name and a value. For example, the decoded token of John Doe contains these claims, among others (Microsoft lists all of them in its [access token claims reference](<https://learn.microsoft.com/en-us/entra/identity-platform/access-token-claims-reference> "target=\"_blank\""), if you want to know what each claim contains):
+
+&nbsp;
+
+```text
+sub: "AAAAAAAAAAAAAAAAAAAAAIkzqFVrSaSaFHy782bbtaQ"
+preferred_username: "john.doe@yourcompany.com"
+aud: "..."
+iss: "..."
+```
+
+&nbsp;
+
+In the `JWT Principal ID Claim Name` property, you set which claim Collibra reads. The default value is `sub`, as described in the [Collibra JWT authentication guide](<https://developer.collibra.com/tutorials/rest-api-json-web-token> "target=\"_blank\""). Entra ID fills `sub` with an identifier generated for your application. The default value works only if your Collibra usernames contain exactly this identifier.
+
+&nbsp;
+
+In this example, the Collibra username of John Doe is his sign-in name, `john.doe@yourcompany.com`. This value is in the `preferred_username` claim, not in `sub`. With `sub`, no user matches. With `preferred_username`, Collibra finds the user:
+
+&nbsp;
+
+![Collibra compares the claim selected in JWT Principal ID Claim Name with the Collibra username: sub does not match, preferred_username matches](<lib/Collibra Entra ID claim matching.png>)
+
+&nbsp;
+
+To check which claim to use for your organization:
+
+1. Retrieve an access token for a test user and decode it, as described for the JWT Audience above.
+2. In Collibra, open this user and note the username.
+3. In the decoded token, find the claim whose value is exactly this username, and enter the name of this claim in `JWT Principal ID Claim Name`. If this claim is `sub`, keep the default value.
+
+&nbsp;
+
+If no claim of the token contains the Collibra username, add the missing claim in Entra ID as an optional claim (`App registrations > your application > Token configuration`), or align the Collibra usernames with a claim that the token already contains.
+
+&nbsp;
+
+> [!NOTE]
+> The value of `preferred_username` can change in Entra ID, for example after a name change. When it changes, update the username in Collibra as well, otherwise Collibra refuses the connection of this user.

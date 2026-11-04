@@ -1,3 +1,8 @@
+---
+description: "Design OpenAPI specifications visually in Hackolade Studio: metadata, components, resources, requests, responses and JSON Schema data types."
+seoTitle: OpenAPI data modeling with Hackolade Studio
+image: lib/OpenAPI Workspace.png
+---
 # OpenAPI
 
 **OpenAPI Specification** or OAS (formerly known as **Swagger Specification**) is an open-source format for describing and documenting APIs. It has become a de-facto standard, language-agnostic interface for designing and describing RESTful APIs which allow both humans and computers to discover and understand the capabilities of the service without access to source code, documentation, or through network traffic inspection. When properly defined via OpenAPI, a consumer can understand and interact with the remote service with a minimal amount of implementation logic. The latest version of OpenAPI is **3.1.0**. OpenAPI definitions can be written in JSON or YAML.

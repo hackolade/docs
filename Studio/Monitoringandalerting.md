@@ -1,3 +1,7 @@
+---
+description: Monitor Hackolade Model Hub with health and readiness endpoints, resource metrics, logs and model sync errors.
+seoTitle: Hackolade Model Hub monitoring and alerting
+---
 # Monitoring and alerting
 
 You can operate the Model Hub like any other production web service: watch process health, resources, logs, and model-sync failures.

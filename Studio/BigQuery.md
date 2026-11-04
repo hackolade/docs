@@ -1,3 +1,8 @@
+---
+description: Model Google BigQuery datasets, tables, nested and repeated fields, views and partitioning in Hackolade Studio.
+seoTitle: Google BigQuery data modeling with Hackolade Studio
+image: lib/BigQuery workspace.png
+---
 # BigQuery
 
 BigQuery is a serverless, highly-scalable, and cost-effective cloud data warehouse with an in-memory BI Engine and machine learning built in. BigQuery uses familiar ANSI-compliant SQL. BigQuery uses managed columnar storage, massively parallel execution, and automatic performance optimizations.

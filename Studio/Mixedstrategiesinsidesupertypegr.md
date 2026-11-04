@@ -1,3 +1,8 @@
+---
+description: Set a different materialization strategy for one subtype of a supertype group in Hackolade Studio, as an exception to the group's strategy.
+seoTitle: Mixed strategies inside a supertype group
+image: lib/Inheritance mixed strats Polyglot model.png
+---
 # Mixed strategies inside supertype group
 
 Setting the strategy at the level of the supertype group is a convenience: you set the value once, and it gets applied to all of its subtypes. They are all treated identically.

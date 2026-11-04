@@ -1,3 +1,8 @@
+---
+description: The Hackolade Studio Properties pane shows the properties and constraints of the selected object, with its controls.
+seoTitle: Properties pane in Hackolade Studio
+image: lib/Properties pane controls - large text dialog.png
+---
 # Properties pane
 
 The right-hand pane displays the properties for any entity you select in the object browser or central pane. This is where you maintain the characteristics and constraints of each selected object.

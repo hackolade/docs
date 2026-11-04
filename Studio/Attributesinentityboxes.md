@@ -1,3 +1,8 @@
+---
+description: Add, edit and reorder attributes directly in the entity boxes of a Hackolade Studio entity-relationship diagram.
+seoTitle: Attributes in ERD entity boxes
+image: lib/Schema tree view - attribute drag-n-drop.png
+---
 # Attributes in entity boxes
 
 In Hackolade Studio, we use the generic name of "attribute" for an individual piece of information whose values identify, describe, or measure instances of an entity objects. In physical data models, this attribute bears a different name depending on the target technology: column in relational and analytics databases, field in document and graph databases and also in Avro and REST APIs, etc...

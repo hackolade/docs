@@ -1,3 +1,8 @@
+---
+description: "Support options for Hackolade Studio: eLearning, online manual with Ask AI, helpdesk tickets, response times and SLA."
+seoTitle: Getting help with Hackolade Studio
+image: lib/Zendesk signin.png
+---
 # Getting help
 
 The different options currently available are:

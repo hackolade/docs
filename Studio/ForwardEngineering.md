@@ -1,3 +1,7 @@
+---
+description: Hackolade Studio forward-engineering generates DDL for RDBMS and schema scripts for NoSQL, APIs and storage formats from your models.
+seoTitle: "Forward-engineering: generate DDL and schemas"
+---
 # Forward-Engineering
 
 The forward-engineering function is used to export models or parts of models. It is also used to generate schema artifacts in the language of each specific physical target: DDLs for RDBMS, and schema scripts for other targets.

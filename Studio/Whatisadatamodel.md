@@ -1,3 +1,8 @@
+---
+description: Introduction to data models, their components, and how to start a data model from scratch with Hackolade Studio.
+seoTitle: "Tutorial: what is a data model?"
+image: lib/Physical data model.png
+---
 # What is a data model?
 
 This is the first in a series of tutorials for Hackolade Studio. The first few tutorials cover basic concepts to provide a complete and progressive picture. If these concepts are known to you, you may skip directly to get [hands-on](Createyourfirstdatamodel.md) with Hackolade Studio.

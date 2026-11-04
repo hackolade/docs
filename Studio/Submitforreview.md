@@ -1,3 +1,8 @@
+---
+description: Submit a change request (pull request) for your data model changes from Hackolade Studio, and follow the requests you submitted.
+seoTitle: Submit data model changes for review
+image: lib/Workgroup submit for review.png
+---
 # Submit for review
 
 The peer review feature is a very popular collaboration extension to Git, supported by most of the repository hubs. It allows changes made by a user to be submitted for review and approval by another user before being merged into a target branch.

@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to a PostgreSQL database running on Amazon RDS or Aurora, for reverse-engineering and applying DDL scripts.
+seoTitle: Connect to PostgreSQL on Amazon RDS or Aurora
+image: lib/RDS - public connectivity and security.png
+---
 # Amazon RDS or Aurora
 
 Amazon RDS (Relational Database Service) offers two options to run the PostgreSQL database engine in the Cloud: the RDS is a managed service that simplifies PostgreSQL database setup and management, offering basic scalability and automated backups. Or Aurora for PostgreSQL, a high-performance, cloud-native version of PostgreSQL built on a distributed storage system, designed to provide better performance and availability with features like faster recovery and automated scaling. RDS is ideal for simpler workloads with moderate scaling needs, while Aurora is suited for high-demand applications requiring faster performance, auto-scaling, and greater fault tolerance.

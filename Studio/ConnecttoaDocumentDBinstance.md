@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to an Amazon DocumentDB cluster inside an Amazon VPC, through an SSH tunnel to an EC2 instance.
+seoTitle: Connect to Amazon DocumentDB
+image: lib/DocumentDB connection tab.png
+---
 # Connect to a DocumentDB instance
 
 DocumentDB clusters are deployed within an Amazon Virtual Private Cloud (Amazon VPC). They can be accessed directly by Amazon EC2 instances or other AWS services that are deployed in the same Amazon VPC. Additionally, Amazon DocumentDB can be accessed by EC2 instances or other AWS services in different VPCs in the same AWS Region or other Regions via VPC peering.

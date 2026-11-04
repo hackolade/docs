@@ -1,3 +1,8 @@
+---
+description: Model PostgreSQL databases, schemas, tables, keys, partitions, indexes, JSONB and pgvector types in Hackolade Studio.
+seoTitle: PostgreSQL data modeling with Hackolade Studio
+image: lib/PostgreSQL workspace.png
+---
 # PostgreSQL
 
 PostgreSQL, also known as Postgres, is a free and open-source relational database management system (RDBMS) emphasizing extensibility and SQL compliance. It has earned a strong reputation for reliability, feature robustness, and performance.

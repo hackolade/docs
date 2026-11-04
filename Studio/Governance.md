@@ -1,3 +1,7 @@
+---
+description: "Operational governance for Hackolade Studio after deployment: ownership, performance monitoring, continuous improvement and metrics."
+seoTitle: Operational governance after Hackolade deployment
+---
 # Governance
 
 Once **Hackolade Studio** is deployed and adopted within an organization, effective **operational governance** is crucial to ensure the system remains optimized, aligned with business objectives, and able to evolve with future needs.

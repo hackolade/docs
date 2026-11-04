@@ -1,3 +1,7 @@
+---
+description: Convert a model into a Polyglot model that lives in another Git repository, with cross-repository remote references between local clones.
+seoTitle: Convert a model into a Polyglot in another repository
+---
 # Convert model into a Polyglot in another repository
 
 When converting a model into a Polyglot model, you can choose to make the original model dependent on the generated Polyglot. This dependency works seamlessly, even when both models live in different repositories (cross-repository [remote references](Remotereferences.md).)

@@ -1,3 +1,8 @@
+---
+description: Create and install a GitHub App so Hackolade Model Hub can fetch data models from your GitHub repositories, with webhooks.
+seoTitle: Model Hub setup for GitHub repositories
+image: lib/Model Hub create GitHub app.png
+---
 # GitHub repo setup
 
 To enable service-to-service communication, GitHub has what it calls [GitHub apps](<https://docs.github.com/en/apps/creating-github-apps/about-creating-github-apps/about-creating-github-apps> "target=\"_blank\""). These apps can be used to access files on repositories using the GitHub API without the need for a service account.

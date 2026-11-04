@@ -1,10 +1,23 @@
+---
+description: Create ER Diagram Views, also called subject areas or sub-models, to focus on subsets of entities in large Hackolade Studio models.
+seoTitle: ER Diagram Views (subject areas) in Hackolade Studio
+image: lib/ERDV editor.png
+---
 # Diagram Views
 
 This feature of Hackolade Studio is often called "subject area" or "sub-model" in legacy data modeling tools.
 
 &nbsp;
 
-With v4.3.2, Hackolade Studio has the possibility to add separate ER Diagram Views (ERDV): a subset of entities selected from the main ER diagram, to help manage large models by focusing on a smaller set of entities, by domain or subject. Entities may appear in multiple Diagram Views. Modifications made inside Diagram Views are immediately reflected in the main diagram and other views where present. And vice-versa.
+With v4.3.2, Hackolade Studio has the possibility to add separate ER Diagram Views (ERDV): a subset of entities selected from the main ER diagram, to help manage large models by focusing on a smaller set of entities, by domain or subject.
+
+&nbsp;
+
+Entities may appear in multiple Diagram Views. Modifications made inside Diagram Views are immediately reflected in the main diagram and other views where present. And vice-versa.
+
+&nbsp;
+
+To find all the Diagram Views that contain a given entity, type the entity name in the search bar at the top of the Object Browser. The filtered tree shows the entity and every Diagram View where it appears. See [Object browser pane](Objectbrowserpane.md).
 
 &nbsp;
 

@@ -1,3 +1,8 @@
+---
+description: Convert a reverse-engineered physical model into a new or existing Polyglot model in Hackolade Studio, with options for names and dependency.
+seoTitle: Convert a physical model to a Polyglot model
+image: lib/Convert to Polyglot dialog.png
+---
 # Convert a physical model to Polyglot
 
 Deriving from a Polyglot model pulls its objects into the open model. Converting works in the opposite direction: it pushes the content of the open model into a Polyglot model. The typical case is a physical model obtained by reverse-engineering an existing database, which becomes the starting point of a Polyglot model, and optionally a model derived from it.

@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to Azure Cosmos DB for MongoDB vCore with the mongodb+srv connection string from the Azure portal.
+seoTitle: Connect to Azure Cosmos DB for MongoDB vCore
+image: lib/Azure CosmosDB vCore - connection string.png
+---
 # Azure Cosmos DB vCore
 
 You may also leverage the MongoDB target to model [Azure Cosmos DB for MongoDB vCore](<https://devblogs.microsoft.com/cosmosdb/mongovcorega/> "target=\"_blank\"").

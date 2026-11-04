@@ -1,3 +1,8 @@
+---
+description: Export Hackolade Studio entities as ArchiMate application data objects in the Open Exchange file format, for enterprise architecture tools.
+seoTitle: Export data models as ArchiMate data objects
+image: lib/Archimate Applicaiton Data Objects.png
+---
 # ArchiMate application data objects
 
 ArchiMate is an open-standard, visual modeling language for enterprise architecture, developed and maintained by [The Open Group’s ArchiMate Forum](<https://www.opengroup.org/archimate-forum/archimate-overview> "target=\"_blank\""). Its mission is to enable architects to **describe**, **analyze**, and **visualize** the relationships across business processes, organizational structures, information flows, IT systems, and infrastructure. This is done using a common, lean notation of around 50 core concepts, deliberately designed to be simpler and more accessible than UML or BPMN.

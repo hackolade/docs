@@ -1,3 +1,8 @@
+---
+description: Grant Hackolade Studio access to GitHub or GitHub Enterprise Server with a personal access token or OAuth, for reviews and pull requests.
+seoTitle: Connect Hackolade Studio to GitHub
+image: lib/Workgroup - manage hub connections - GitHub.png
+---
 # GitHub
 
 The information below applies to repositories on github.com in the cloud as well as GitHub Enterprise Server. It explains how to grant Hackolade Studio access to your GitHub account, which is a pre-requisite for using the features "[submit for review](Submitforreview.md)" and "[review change requests](Reviewchangerequests.md)".

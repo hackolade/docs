@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to Hive with Plain SASL, when hive.server2.authentication is set to none.
+seoTitle: Hive Plain SASL authentication
+image: lib/Hive - Connection settings - Plain SASL.png
+---
 # None (Plain SASL)
 
 ## Plain SASL Authentication

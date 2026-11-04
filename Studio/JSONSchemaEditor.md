@@ -1,3 +1,8 @@
+---
+description: Edit JSON Schema graphically in Hackolade Studio, and convert DDL and XSD files into JSON Schema.
+seoTitle: Graphical JSON Schema editor
+image: lib/JSON Schema workspace.png
+---
 # JSON Schema Editor
 
 Wikipedia definition: **JSON** (**JavaScript Object Notation**, pronounced [/](https://en.wikipedia.org/wiki/Help:IPA/English)ˈdʒeɪsən[/](https://en.wikipedia.org/wiki/Help:IPA/English); also [/](https://en.wikipedia.org/wiki/Help:IPA/English)ˈdʒeɪˌsɒn/) is an [open standard](https://en.wikipedia.org/wiki/Open_standard) [file format](https://en.wikipedia.org/wiki/File_format) and data interchange format that uses human-readable text to store and transmit data objects consisting of attribute–value pairs and arrays (or other serializable values). It is a very common data format, with a diverse range of applications, one example being web applications that communicate with a server. JSON is a language-independent data format. It was derived from JavaScript, but many modern programming languages include code to generate and [parse](https://en.wikipedia.org/wiki/Parsing) JSON-format data. JSON filenames use the extension `.json`.\

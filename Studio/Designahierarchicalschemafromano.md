@@ -1,3 +1,8 @@
+---
+description: Design hierarchical schemas, such as API responses, from a normalized Polyglot model in Hackolade Studio by referencing entities or attributes.
+seoTitle: Design a hierarchical schema from a normalized model
+image: lib/Normalized Polyglot model order management.png
+---
 # Design a hierarchical schema from a normalized Polyglot model
 
 When most of the physical targets are hierarchical, it is advised to denormalize a Polyglot prior to deriving into physical target models. In some cases, it makes more sense to keep the Polyglot model normalized. In yet other cases, you may want to have both normalized and denormalized structures in the Polyglot model.

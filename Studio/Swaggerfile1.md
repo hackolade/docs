@@ -1,3 +1,8 @@
+---
+description: Create a Hackolade Studio model from an existing Swagger specification file in JSON or YAML.
+seoTitle: Reverse-engineer a Swagger file
+image: lib/Swagger reverse-engineering menu.png
+---
 # Swagger file
 
 To create a Hackolade model from an existing Swagger specification file is extremely easy: Create a new model with Swagger as the target, then choose Tools > Reverse-Engineer > Swagger file

@@ -1,3 +1,7 @@
+---
+description: Align a Hackolade Studio model with assets that already exist in Collibra, by reverse-engineering them before publishing.
+seoTitle: Reverse-engineer existing Collibra assets
+---
 # Reverse-engineer existing Collibra assets
 
 A fairly common use case occurs when a Hackolade Studio model must be published to Collibra, while Collibra already contains the necessary assets.

@@ -1,3 +1,8 @@
+---
+description: "Connect Hackolade Studio to MongoDB Atlas: IP access list, database user, connection string and troubleshooting."
+seoTitle: Connect Hackolade Studio to MongoDB Atlas
+image: lib/Atlas connect with Compass.png
+---
 # MongoDB Atlas
 
 To connect Hackolade to MongoDB Atlas, you will need:

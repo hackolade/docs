@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to a SQL Server instance on Amazon RDS or elsewhere through an SSH tunnel on port 22.
+seoTitle: Connect to SQL Server through an SSH tunnel
+image: lib/RE - MongoDB - SSH w Private Key.png
+---
 # SSH
 
 If your SQL Server instance is located in the Cloud at Amazon Web Services RDS for example, your preferred access to your instance will be over SSH through port 22.

@@ -1,3 +1,8 @@
+---
+description: Grant Hackolade Studio access to Azure DevOps Repos with a personal access token or OAuth, to submit models for review and review change requests.
+seoTitle: Connect Hackolade Studio to Azure DevOps Repos
+image: lib/Worgroup - manage connection Azure DevOps.png
+---
 # Azure DevOps Repos
 
 The information below applies to repositories hosted on [Azure Repos](<https://learn.microsoft.com/en-us/azure/devops/repos/get-started/what-is-repos?view=azure-devops> "target=\"_blank\""), part of Azure DevOps Services. It explains how to grant Hackolade Studio access to your Azure DevOps account, which is a pre-requisite for using the features [submit for review](Submitforreview.md) and [review change requests](Reviewchangerequests.md).

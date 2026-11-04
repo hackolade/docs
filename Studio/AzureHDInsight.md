@@ -1,3 +1,8 @@
+---
+description: Configure Azure HDInsight and its HTTP transport path so Hackolade Studio can connect to Hive for reverse-engineering.
+seoTitle: Connect to Hive on Azure HDInsight
+image: lib/Hive - HDInsight authentication.png
+---
 # Azure HDInsight
 
 The Microsoft Azure cloud-based service provides support for Hive in the HDInsight. The HDInsight resource is controlled by the Ambari interface. It is used to adjust the Azure HDInsight configuration.

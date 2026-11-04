@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to Hive with LDAP authentication, in binary or HTTP transport mode.
+seoTitle: Hive LDAP authentication
+image: lib/Hive - LDAP Connection Settings.png
+---
 # LDAP
 
 ## LDAP Authentication

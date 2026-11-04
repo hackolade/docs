@@ -1,3 +1,7 @@
+---
+description: Step-by-step guides for experienced Hackolade Studio users to solve specific data modeling, Polyglot, Git and integration problems.
+seoTitle: Hackolade Studio how-to guides
+---
 # How-to guides
 
 The series of tutorials above take the user through a progressive learning of Hackolade Studio features, as well as some basic principles of JSON, JSON Schema, and data modeling for NoSQL databases.

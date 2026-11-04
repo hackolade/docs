@@ -1,3 +1,7 @@
+---
+description: Use a Hackolade Studio Polyglot model as a technology-independent logical model shared by targets with different paradigms.
+seoTitle: Logical modeling with Polyglot data models
+---
 # Logical modeling with Polyglot
 
 ## Choosing the right approach

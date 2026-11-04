@@ -1,3 +1,8 @@
+---
+description: Export a data model and its subject areas from erwin Data Modeler as XSD, and import them into Hackolade Studio.
+seoTitle: Import erwin data models via XSD
+image: lib/ERwin XSD export parameters - physical.png
+---
 # From erwin
 
 ## Differences with Erwin

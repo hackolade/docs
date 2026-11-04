@@ -1,3 +1,8 @@
+---
+description: Hackolade Studio generates the Gremlin script for vertex and edge labels of a Cosmos DB Gremlin model, to export or apply to an instance.
+seoTitle: Generate Cosmos DB Gremlin scripts
+image: lib/CosmosDB Gremlin script forward-engineering.png
+---
 # Cosmos DB Gremlin script
 
 As you develop the model for your Cosmos DB Gremlin graph database, with vertex labels and edge labels, Hackolade dynamically generates the corresponding Gremlin script.

@@ -1,3 +1,8 @@
+---
+description: Create a shareable URL to a data model in a Git repository with Hackolade Studio Workgroup Edition, and open shared links.
+seoTitle: Share a link to a data model
+image: lib/File Share Data Model Link.png
+---
 # Share model link URL
 
 > [!WARNING]

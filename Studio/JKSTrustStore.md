@@ -1,3 +1,8 @@
+---
+description: Configure a Java keystore and truststore, or PEM keys, to connect Hackolade Studio to Confluent Schema Registry over SSL.
+seoTitle: JKS keystore and truststore for Schema Registry
+image: lib/Confluent Connection Settings - LDAP JKS.png
+---
 # JKS Trust Store
 
 If you require LDAP authentication, it is necessary, in order to connect to the Confluent Schema Registry via a secure connection, to select the SSL type. A keystore contains client certificate and client key. Whereas a truststore contains certificate authority (CA).

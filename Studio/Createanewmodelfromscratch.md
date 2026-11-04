@@ -1,3 +1,8 @@
+---
+description: "Create a Hackolade Studio data model step by step: choose a target, add entities and attributes, fill in properties and generate scripts."
+seoTitle: Create a new data model from scratch
+image: lib/Create collection attributes.png
+---
 # Create a new model from scratch
 
 Dynamically generate forward-engineering scripts and documentation with just a few mouse clicks.

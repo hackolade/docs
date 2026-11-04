@@ -1,3 +1,8 @@
+---
+description: "Design Apache Avro schemas visually in Hackolade Studio: records, unions, complex types, annotations and namespaces, with forward- and reverse-engineering."
+seoTitle: Avro schema data modeling with Hackolade Studio
+image: lib/Avro workspace.png
+---
 # Avro schema
 
 Apache Avro is a language-neutral data serialization system, developed by Doug Cutting, the father of Hadoop. Avro is a preferred tool to serialize data in Hadoop. It is also the best choice as file format for data streaming with Kafka. Avro serializes the data which has a built-in schema. Avro serializes the data into a compact binary format, which can be deserialized by any application. Avro schemas defined in JSON, facilitate implementation in the languages that already have JSON libraries. Avro creates a self-describing file named Avro Data File, in which it stores data along with its schema in the metadata section.

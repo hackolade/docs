@@ -1,3 +1,8 @@
+---
+description: Run Hackolade Studio as a static app in the browser, with your data models kept in your own storage and no software to deploy.
+seoTitle: Security-first browser deployment
+image: lib/Security-first browser deployment.png
+---
 # Security-first browser deployment
 
 ## The best of both worlds: keep your confidential data models private, and avoid software deployment

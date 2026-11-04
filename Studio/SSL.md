@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to MongoDB over TLS/SSL with a certificate authority, client certificate and private key.
+seoTitle: Connect to MongoDB with SSL/TLS and X.509
+image: lib/MongoDB connection SSL.png
+---
 # SSL
 
 MongoDB supports SSL certificate authentication for client authentication and internal authentication of the members of replica sets and sharded clusters. x.509 certificate authentication requires a secure TLS/SSL connection. For more info, please consult [https://docs.mongodb.com/manual/tutorial/configure-ssl/](<https://docs.mongodb.com/manual/tutorial/configure-ssl/> "target=\"_blank\"")

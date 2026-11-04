@@ -1,3 +1,8 @@
+---
+description: Use a Hackolade Studio Polyglot model as the conceptual model that aligns business and technical teams on scope, concepts and terminology.
+seoTitle: Conceptual modeling with Polyglot data models
+image: lib/Conceptual model polyglot graph view.png
+---
 # Conceptual modeling with Polyglot
 
 ## Aligning on scope, concepts, and terminology

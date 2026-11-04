@@ -1,3 +1,8 @@
+---
+description: "Navigate the Hackolade Model Hub: home dashboard, search bar, explorer pane, central pane, where-used and lineage."
+seoTitle: Hackolade Model Hub user interface
+image: lib/Hub home page.png
+---
 # Model Hub user interface
 
 ## Home page

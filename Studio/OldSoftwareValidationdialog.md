@@ -1,3 +1,8 @@
+---
+description: How to get, validate and release a license key in the software validation dialog of earlier Hackolade Studio versions.
+seoTitle: Software validation dialog (previous versions)
+image: lib/Registration -- empty dialog.png
+---
 # Old Software Validation dialog
 
 After downloading Hackolade, you need to obtain and validate an activation key before you can use the application.

@@ -1,3 +1,7 @@
+---
+description: "Overview of the Hackolade Studio user interface: workspace, panes, diagrams and the main features of the application."
+seoTitle: Hackolade Studio user interface overview
+---
 # Overview of user interface
 
 We have taken a minimalist approach to the design of the application to make it both intuitive and powerful. We avoid to bloat the application with seldom used functionality and endless menu options that are hard to understand.

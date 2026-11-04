@@ -1,3 +1,7 @@
+---
+description: System requirements for Hackolade Studio, and the domains to allow in firewalls, proxies and anti-malware software.
+seoTitle: Hackolade Studio system requirements
+---
 # System requirements
 
 > [!IMPORTANT]

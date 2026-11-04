@@ -1,10 +1,19 @@
+---
+description: Hackolade Studio tutorial on importing file-based sources and reverse-engineering database instances into a data model.
+seoTitle: "Tutorial: import or reverse-engineer"
+image: lib/Tutorial - Reverse-engineer from JSON Schema.png
+---
 # Import or reverse-engineer
 
 In the previous tutorial, we reviewed how to add relationships to your entity-relationship diagram. By the end of this tutorial, importing data structures and reverse-engineering of existing instances will have no secrets for you.
 
 &nbsp;
 
-You may also [view this tutorial](<https://youtu.be/bPQ3AODOCYM> "target=\"_blank\"") on YouTube. Summary slides can be found [here](<https://www.slideshare.net/PascalDesmarets1/hackolade-tutorial-part-8-import-or-reverseengineerpdf> "target=\"_blank\"").
+[Hackolade Tutorial - Part 8: Import or reverse-engineer](<https://youtu.be/bPQ3AODOCYM> "video")
+
+&nbsp;
+
+Summary slides can be found [here](<https://www.slideshare.net/PascalDesmarets1/hackolade-tutorial-part-8-import-or-reverseengineerpdf> "target=\"_blank\"").
 
 &nbsp;
 

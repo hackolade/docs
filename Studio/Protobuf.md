@@ -1,3 +1,8 @@
+---
+description: "Model Google Protocol Buffers schemas in Hackolade Studio: messages, field rules and data types, with forward- and reverse-engineering."
+seoTitle: Protobuf schema data modeling
+image: lib/Protobuf workspace.png
+---
 # Protobuf
 
 Protocol Buffers (a.k.a. Protobuf) are Google's language-neutral, platform-neutral, extensible mechanism for serializing structured data. You define how you want your data to be structured once, then you can use special generated source code to easily write and read your structured data to and from a variety of data streams and using a variety of languages.

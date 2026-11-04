@@ -1,3 +1,8 @@
+---
+description: Model MarkLogic databases, collections, directories, URIs and indexes for JSON documents in Hackolade Studio.
+seoTitle: MarkLogic data modeling with Hackolade Studio
+image: lib/MarkLogic workspace.png
+---
 # MarkLogic
 
 MarkLogic is a database designed from the ground up to make massive quantities of heterogeneous data easily accessible through search. MarkLogic is a leading 'multi-model' database, supporting traditional relational tables, XML and JSON documents, and RDF triples, all with ACID transactions capabilities. While Hackolade does not support the XML part, all other models are part of the solution.

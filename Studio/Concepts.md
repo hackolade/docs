@@ -1,3 +1,7 @@
+---
+description: "The standards and concepts Hackolade Studio applies: schema design for NoSQL and SQL, JSON Schema, ERDs, Polyglot data modeling and more."
+seoTitle: Data modeling concepts behind Hackolade Studio
+---
 # Concepts
 
 Hackolade was inspired and influenced by many software engineering theories and practical experiences in different past and current technologies.

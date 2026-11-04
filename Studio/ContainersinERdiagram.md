@@ -1,3 +1,8 @@
+---
+description: "Containers group entities in Hackolade Studio diagrams: schemas, databases, scopes, keyspaces or indexes, depending on the target."
+seoTitle: Containers in the ER diagram
+image: lib/Couchbase multi-bucket model.png
+---
 # Containers in ER diagram
 
 In Hackolade Studio, we use the generic name of "container" to designate a grouping of entities. In physical data models, this container bears a different name depending on the target technology: schema in relational and analytics databases, database in MongoDB, bucket (legacy) and now scope in Couchbase, index in Elasticsearch, namespace in Avro, keyspace in Cassandra, group in JSON, resource in REST APIs, operation in GraphQL, file in Parquet and Protobuf, graph in graph databases and RDF triple stores, etc.

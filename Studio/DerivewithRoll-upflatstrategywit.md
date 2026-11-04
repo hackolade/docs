@@ -1,3 +1,8 @@
+---
+description: "The roll-up flat (single table inheritance) strategy in Hackolade Studio: one table for the hierarchy, with a discriminator column."
+seoTitle: "Inheritance: roll-up flat with discriminator"
+image: lib/Inheritance roll-up flat Party Polyglot model.png
+---
 # Derive with Roll-up flat strategy with discriminator
 
 This roll-up inheritance is sometimes known as single table inheritance: the entire hierarchy is stored in one table, with columns for the supertype and all subtype-specific attributes, usually with a discriminator column identifying the subtype. Simple and efficient, but can produce many nullable columns. Roll-up means collapsing subtype attributes into the supertype table. The subtype tables disappear, and a discriminator is typically used to indicate the subtype.

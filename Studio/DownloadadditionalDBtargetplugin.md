@@ -1,3 +1,8 @@
+---
+description: Install database and format plugins from the Hackolade Studio Plugin Manager, and fix plugin download or permission issues.
+seoTitle: Download additional target plugins
+image: lib/GitHub Plugin Download step 2.png
+---
 # Download additional target plugins
 
 The latest version of each plugin is always available for download from the Plugin Manager? Just go to Help > Plugin Manager

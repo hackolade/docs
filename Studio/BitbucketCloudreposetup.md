@@ -1,3 +1,8 @@
+---
+description: Configure a Bitbucket Cloud access token so Hackolade Model Hub can fetch data models from your repository.
+seoTitle: Model Hub setup for Bitbucket Cloud repositories
+image: lib/Hub Bitbucket Cloud repo settings.png
+---
 # Bitbucket Cloud repo setup
 
 > [!IMPORTANT]

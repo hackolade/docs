@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to Couchbase for reverse-engineering, with authentication, N1QL and schema service requirements, and index import.
+seoTitle: Connect to a Couchbase instance
+image: lib/Couchbase connection settings.png
+---
 # Connect to a Couchbase instance
 
 > [!IMPORTANT]

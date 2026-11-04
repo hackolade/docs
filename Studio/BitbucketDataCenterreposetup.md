@@ -1,3 +1,8 @@
+---
+description: Configure a Bitbucket Data Center access token so Hackolade Model Hub can fetch data models from your repository.
+seoTitle: Model Hub setup for Bitbucket Data Center
+image: lib/Bitbucket Data Center repo settings.png
+---
 # Bitbucket Data Center repo setup
 
 > [!IMPORTANT]

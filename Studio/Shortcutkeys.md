@@ -1,3 +1,7 @@
+---
+description: Keyboard shortcuts of Hackolade Studio on Windows and Mac for files, editing, navigation, impact analysis and lineage.
+seoTitle: Hackolade Studio keyboard shortcuts
+---
 # Shortcut keys
 
 Keyboard shortcuts:

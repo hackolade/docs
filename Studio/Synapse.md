@@ -1,3 +1,8 @@
+---
+description: Model Azure Synapse schemas, tables, constraints, data types and views in Hackolade Studio, for facts, dimensions and staging.
+seoTitle: Azure Synapse Analytics data modeling
+image: lib/Synapse workspace.png
+---
 # Synapse
 
 Azure Synapse Analytics is a limitless analytics service that brings together enterprise data warehousing and Big Data analytics. It uses either serverless or provisioned resources with a unified experience to ingest, prepare, manage, and serve data for immediate BI and machine learning needs.

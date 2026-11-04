@@ -1,3 +1,8 @@
+---
+description: Version Hackolade Studio data models through their lifecycle, validate schemas in production and generate APIs from models.
+seoTitle: Data model versioning and lifecycle
+image: lib/Versioning - model lifecycle.png
+---
 # Model versioning
 
 In the advanced [Compare and Merge Models](Compareandmergemodels.md) feature, the application offers a side-by-side comparison of 2 models, with the ability to resolve and merge differences. This feature can be used in several use cases described below.

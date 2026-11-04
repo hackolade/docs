@@ -1,3 +1,8 @@
+---
+description: Hackolade Studio generates CockroachDB DDL for databases, tables, indexes, constraints, functions and procedures, and applies it.
+seoTitle: Generate CockroachDB DDL from a data model
+image: lib/PostgreSQL DDL forward-engineering.png
+---
 # CockroachDB DDL
 
 Hackolade dynamically generates the DDL script to create databases, tables, columns and their data types, indexes and constraints for the structure created with the application, as well as functions and procedures.

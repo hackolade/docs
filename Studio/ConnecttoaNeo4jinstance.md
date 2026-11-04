@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to Neo4j through the Bolt driver, with authentication and client-side SSL certificates, for reverse-engineering.
+seoTitle: Connect to a Neo4j instance
+image: lib/Neo4j connection settings.png
+---
 # Connect to a Neo4j instance
 
 To perform the reverse-engineering function, Hackolade connects to the Neo4j instance via the Bolt driver for JavaScript, with some additional improvements for client-side SSL certificates.

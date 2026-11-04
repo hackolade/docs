@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to an AWS Glue Data Catalog with an access key, secret access key and region, for reverse-engineering.
+seoTitle: Connect to an AWS Glue Data Catalog
+image: lib/Glue connection settings.png
+---
 # Connect to an AWS Glue Data Catalog
 
 To access a Glue Data Catalog, you should obtain the proper credentials from your administrator. In particular you'll need to know your Access Key, Secret Access Key, and the Region for the instance.

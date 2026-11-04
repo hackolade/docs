@@ -1,3 +1,7 @@
+---
+description: "Install Hackolade Studio on Linux: prerequisites, desktop environment, download, start and troubleshooting, including CLI-only use."
+seoTitle: Install Hackolade Studio on Linux
+---
 # Linux
 
 Hackolade Studio is a desktop application with a GUI. By default it requires a Desktop environment like Gnome, Mate, Xfce etc... Given the nature of Linux that is often used to run servers (especially on Cloud infrastructures), please note that it is also possible to only run Hackolade Studio in CLI mode even though a better solution might be to leverage our [Docker deployment](https://github.com/hackolade/docs/blob/0a59fff31d4ba35b7b64d924d5a534e9f96d1d26/Studio/Dockercontainer.md) for that purpose.

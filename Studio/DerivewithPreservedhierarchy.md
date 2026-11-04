@@ -1,3 +1,8 @@
+---
+description: "The preserved hierarchy (class table inheritance) strategy in Hackolade Studio: one table for the supertype and one for each subtype."
+seoTitle: "Inheritance: derive with preserved hierarchy"
+image: lib/Inheritance Polyglot Party model to derive.png
+---
 # Derive with Preserved hierarchy
 
 This inheritance strategy to preserve hierarchy is sometimes known as class table inheritance. The supertype is stored in one table and each subtype in its own table. A subtype row generally share the same key as its corresponding supertype row, unless the subtype has its own primary key. This strategy closely reflects the logical model and avoids unnecessary nulls. But it requires joins.

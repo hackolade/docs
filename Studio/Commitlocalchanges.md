@@ -1,3 +1,8 @@
+---
+description: Review modified files and commit data model changes to your local Git repository from Hackolade Studio, then push them.
+seoTitle: Commit local changes to Git in Hackolade Studio
+image: lib/Workgroup reposity change badge.png
+---
 # Commit local changes
 
 ## Commit changes

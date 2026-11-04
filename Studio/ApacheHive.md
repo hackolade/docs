@@ -1,3 +1,8 @@
+---
+description: Model Apache Hive databases, tables, partitions and complex data types in Hackolade Studio, then generate HiveQL DDL.
+seoTitle: Apache Hive data modeling with Hackolade Studio
+image: lib/Hive workspace.png
+---
 # Hive
 
 Apache Hive is an open source data warehouse system built on top of Hadoop for querying and analyzing large datasets stored in Hadoop files. Hive uses a language called HiveQL (HQL), which is similar to SQL. HiveQL automatically translates SQL-like queries into MapReduce jobs. Apache Hive organizes data into tables. This provides a means for attaching the structure to data stored in HDFS.

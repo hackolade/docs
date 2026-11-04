@@ -1,3 +1,8 @@
+---
+description: Script generation parameters per target in Hackolade Studio, including CLI options and custom script hooks with variables.
+seoTitle: Target-specific forward-engineering scripts
+image: lib/Script generation options.png
+---
 # Target-specific
 
 Forward-engineering scripts vary widely between target technologies, as each one has developed its own storage model, terminology, syntax, data types, indexing and partitioning, etc.For details, you should consult the applicable page
@@ -176,7 +181,7 @@ Grant privileges automatically:
 
 &nbsp;
 
-```text
+```sql
 GRANT SELECT ON ${schemaName}.${tableName} TO analytics_role;
 ```
 
@@ -196,24 +201,14 @@ Add comment:
 
 &nbsp;
 
-```text
+```sql
 COMMENT ON TABLE ${schemaName}.${tableName} IS 'Managed by Hackolade';
 ```
 
 &nbsp;
 
-### Important notes:
-
-Custom scripts extend generated DDL. They do not replace CREATE statements.
-
-&nbsp;
-
-Injection happens at deterministic points in the final assembled script.
-
-&nbsp;
-
-The feature affects DDL script generation only. Other exports (JSON, YAML, ArchiMate, etc.) are not impacted.
-
-&nbsp;
-
-Delta model alter scripts are not yet supported.
+> [!IMPORTANT]
+> - Custom scripts extend generated DDL. They do not replace CREATE statements.
+> - Injection happens at deterministic points in the final assembled script.
+> - The feature affects DDL script generation only. Other exports (JSON, YAML, ArchiMate, etc.) are not impacted.
+> - Delta model ALTER scripts are not yet supported.

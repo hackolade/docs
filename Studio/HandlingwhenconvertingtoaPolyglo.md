@@ -1,3 +1,8 @@
+---
+description: How Hackolade Studio handles technical names when converting a model to a new or existing Polyglot model, and the dependency options.
+seoTitle: Technical names when converting to Polyglot
+image: lib/Convert to polyglot keep independent-unchecke.png
+---
 # Handling when converting to a Polyglot model
 
 Before looking specifically at technical names, it’s important to understand what *"convert to Polyglot"* means in Hackolade Studio and how it differs from *"derive from Polyglot"*.

@@ -1,3 +1,8 @@
+---
+description: Schema versioning, document polymorphism and schema migration for MongoDB and other document databases in Hackolade Studio.
+seoTitle: Schema versioning and document polymorphism
+image: lib/Polymorphism simple.png
+---
 # Schema versioning
 
 The subjects of schema versioning, document polymorphism, and possibly schema migration, are a vast and sometimes controversial subject...\

@@ -1,3 +1,8 @@
+---
+description: Grant Hackolade Studio access to GitLab.com or self-managed GitLab with a personal access token or OAuth, for merge requests and reviews.
+seoTitle: Connect Hackolade Studio to GitLab
+image: lib/Workgroup GitLab - manager repo connections.png
+---
 # GitLab
 
 The information below applies to repositories hosted on GitLab (cloud on gitlab.com and self-hosted instances.) It explains how to grant Hackolade Studio access to your GitLab account, which is a pre-requisite for using the workflow features [submit for review](Submitforreview.md) and [review change requests](Reviewchangerequests.md).

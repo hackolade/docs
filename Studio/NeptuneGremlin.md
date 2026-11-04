@@ -1,3 +1,8 @@
+---
+description: "Model Amazon Neptune property graphs in Hackolade Studio: vertex labels, edge labels, property keys and data types."
+seoTitle: Amazon Neptune Gremlin data modeling
+image: lib/Neptune-Gremlin workspace.png
+---
 # Neptune Gremlin
 
 Amazon Neptune is a fully managed graph database service engine optimized for storing billions of relationships and querying the graph with milliseconds latency. It supports 2 separate popular graph models: Property Graph and W3C's RDF, and their respective query languages Apache TinkerPop Gremlin and SPARQL.

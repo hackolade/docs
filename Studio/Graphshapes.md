@@ -1,3 +1,8 @@
+---
+description: "Create and control node labels and relationship types in the Hackolade Studio graph diagram: size, color, properties and pinning."
+seoTitle: "Graph shapes: node labels and edge labels"
+image: lib/Graph subclasses.png
+---
 # Graph shapes
 
 With the addition of Neo4j, Hackolade introduced a new Graph Diagram view with circular node labels. Each node label contains 5 control buttons, and each relationship type line has 2 control buttons. Depending on the database, nodes are also known as vertex (vertices), while relationships may also be known as edges.

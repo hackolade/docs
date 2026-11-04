@@ -1,3 +1,7 @@
+---
+description: Fix the "spawn git ENOENT" error in Hackolade Studio Workgroup Edition when Git or the command prompt is unavailable.
+seoTitle: "Error: spawn git ENOENT"
+---
 # Error: spawn git ENOENT
 
 One of the [pre-requisites](Pre-requisites.md) to leverage the full user experience of the Workgroup Edition is to be able to use the Git executable installed on your machine.

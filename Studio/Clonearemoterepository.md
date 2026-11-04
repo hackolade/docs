@@ -1,3 +1,8 @@
+---
+description: Clone a remote Git repository from Hackolade Studio into a local folder, preferably one not synchronized with OneDrive or other cloud storage.
+seoTitle: Clone a remote Git repository in Hackolade Studio
+image: lib/Workgroup clone.png
+---
 # Clone a remote repository
 
 You may skip this section if you already have a local copy of the remote repository.

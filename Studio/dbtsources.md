@@ -1,3 +1,7 @@
+---
+description: Hackolade Studio generates dbt sources.yml files from containers and tables, with database, loader and freshness properties.
+seoTitle: Generate dbt sources files
+---
 # dbt sources
 
 In addition to model properties files, Studio can generate dbt [sources](<https://docs.getdbt.com/docs/build/sources> "target=\"_blank\"") files. Sources are the raw tables in your warehouse that your dbt models build on top of. Declaring them in a sources.yml file lets dbt track freshness, document lineage, and reference source tables using the `{{ source() }}` function.

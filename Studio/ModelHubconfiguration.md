@@ -1,3 +1,7 @@
+---
+description: "Configure Hackolade Model Hub in its Admin panel: license key, authentication, Git repositories, MCP server and other settings."
+seoTitle: Hackolade Model Hub configuration
+---
 # Model Hub configuration
 
 After the server is running, open the Model Hub in a browser. You may be redirected to the license screen in the Admin panel first. You will need to enter the license key provided to you.

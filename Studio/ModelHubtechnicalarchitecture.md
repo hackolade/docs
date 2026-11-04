@@ -1,3 +1,8 @@
+---
+description: "Hackolade Model Hub runs in the customer's environment with its own database: a security-first, bring-your-own-storage architecture."
+seoTitle: Hackolade Model Hub technical architecture
+image: lib/Hub Studio Desktop Browser Architecture.png
+---
 # Model Hub technical architecture
 
 The Hackolade Model Hub is a product licensed separately from Hackolade Studio. It includes a security-first database and portal entirely controlled by the customer. Contrary to many SaaS solutions, we do not collect, process, or store any of your information, data, or data models. This serverless architecture gives you full control of the residency for your data models, and is described in the diagram below:

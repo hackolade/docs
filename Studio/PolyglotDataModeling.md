@@ -1,3 +1,8 @@
+---
+description: "Polyglot data modeling in Hackolade Studio: conceptual and logical modeling with denormalization and complex types, beyond relational."
+seoTitle: Polyglot data modeling concepts
+image: lib/Polyglot persistence - e-commerce.png
+---
 # Polyglot Data Modeling
 
 In traditional data modeling for relational databases using the conceptual, logical, and physical types of models, the purpose for a logical model has been defined as a database-agnostic view of normalized structures and business rules.

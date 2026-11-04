@@ -1,3 +1,8 @@
+---
+description: What happens to technical names when converting a model and merging it into an existing Polyglot model in Hackolade Studio.
+seoTitle: Technical names when merging into a Polyglot
+image: lib/Polyglot with no technical names.png
+---
 # Handling technical names during convert and merge to an existing Polyglot
 
 When converting a model into an existing Polyglot with the merge strategy (and not overwrite), Hackolade Studio merges the converted content into a Polyglot model that may already contain technical names.

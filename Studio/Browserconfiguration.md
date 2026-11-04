@@ -1,3 +1,7 @@
+---
+description: Enable site data in your browser so Hackolade Model Hub preserves your settings between sessions; avoid private or incognito tabs.
+seoTitle: Browser configuration for Hackolade Model Hub
+---
 # Browser configuration
 
 ## Configure your browser to enable site data

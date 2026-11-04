@@ -1,3 +1,8 @@
+---
+description: Reference definitions in other models, in the same Git repository or across repositories, with Hackolade Studio remote references.
+seoTitle: Remote references across Git repositories
+image: lib/Remote refs mono vs multi-repo.png
+---
 # Remote references
 
 Hackolade Studio is built on a very modular architecture which allows to compose a model from pieces of one or more models. These references to external definitions are described in [this page](<https://hackolade.com/help/Reusableobjectsdefinitions.html#External%20definitions>) of the documentation, and in [this how-to guide](<https://hackolade.com/help/Addreusabledefinitions.html#External%20definitions>).

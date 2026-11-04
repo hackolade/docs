@@ -1,3 +1,8 @@
+---
+description: "Derive a physical model from a Polyglot model with supertype groups in Hackolade Studio: fallback materialization and selection of entities."
+seoTitle: Derive a Polyglot model with supertype groups
+image: lib/Inheritance Polyglot derive dialog hint.png
+---
 # Derive a Polyglot model with supertype groups
 
 The previous page showed where to set the materialization strategy of a supertype group, and what each strategy means. This page covers the derive operation itself: the dialog, and how you choose which entities reach the target physical data model.

@@ -1,3 +1,8 @@
+---
+description: "Model Apache TinkerPop graphs in Hackolade Studio: vertex labels, edge labels, property keys, types and indexes."
+seoTitle: Apache TinkerPop graph data modeling
+image: lib/TinkerPop workspace.png
+---
 # TinkerPop
 
 Apache TinkerPop is an open source, vendor-agnostic, graph computing framework for both graph databases (OLTP) and graph analytic system (OLAP.) It is distributed under the Apache2 license. When a data system is TinkerPop-enabled, its users are able to model their domain as a graph and analyze that graph using the Gremlin graph traversal language.

@@ -1,3 +1,8 @@
+---
+description: Compare two Hackolade Studio model files with a basic text diff, or use Compare and merge or the CLI for a full comparison.
+seoTitle: Show model diff
+image: lib/Tools - Model compare - side-by-side.png
+---
 # Show model diff
 
 > [!NOTE]

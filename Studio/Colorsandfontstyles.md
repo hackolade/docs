@@ -1,3 +1,7 @@
+---
+description: Customize colors and font styles of containers, entities and attributes in Hackolade Studio entity-relationship diagrams, one by one or in bulk.
+seoTitle: Colors and font styles in ER diagrams
+---
 # Colors and font styles
 
 Colors and font styles can be customized and applied to different types of objects in an Entity-Relationship Diagram:

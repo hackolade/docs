@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to SQL Server on-premises, in the cloud or on Azure SQL Database, with the available authentication methods.
+seoTitle: Connect to SQL Server or Azure SQL Database
+image: lib/SQL Server Connection settings.png
+---
 # Connect to a SQL Server instance
 
 The SQL Server engine can hosted on-premises, on virtualized machines in a private or public cloud, or as a managed instance with the Azure SQL Database service.

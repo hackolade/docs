@@ -1,3 +1,8 @@
+---
+description: How Hackolade Model Hub supports a shift-left, design-first approach to metadata, compared with traditional data catalogs.
+seoTitle: Hackolade Model Hub solution architecture
+image: lib/Hub - Traditional catalogs.png
+---
 # Model Hub solution architecture
 
 The **Hackolade Model Hub** is a **model-driven metadata collaboration platform** that offers centralized, streamlined access to your Hackolade Studio data models, stored across one or more Git repositories. A model-driven metadata collaboration platform **allows organizations to retake control of their data.**

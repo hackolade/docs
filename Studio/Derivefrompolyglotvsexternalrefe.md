@@ -1,3 +1,8 @@
+---
+description: When to derive from a Polyglot model and when to reference external definitions in Hackolade Studio, and how to combine both approaches.
+seoTitle: Derive from Polyglot vs external references
+image: lib/Polyglot data modeling concept.png
+---
 # Derive from polyglot vs external reference
 
 Hackolade Studio is built on an architecture that allows a modular approach of reusable models and parts of models. This in support of breaking down giant monolithic models which are hard to understand and maintain, into more manageable models, potentially with separate lifecycles. This approach is not only more practical and easy to use, but it makes it easier to support data meshes, data products, and our [Domain-Driven Data Modeling](<https://hackolade.com/domain-driven-data-modeling.html> "target=\"_blank\"").

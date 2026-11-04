@@ -1,3 +1,8 @@
+---
+description: Hackolade Studio generates a sample JSON or YAML document from your model, with sample data you define for each field.
+seoTitle: Generate sample JSON or YAML documents
+image: lib/JSON Document.png
+---
 # JSON Document
 
 Hackolade dynamically generates a sample document In JSON or YAML as you construct the document fields and structure. You may even define the sample data you wish to see appear in that sample document. The sample document can be viewed in the right-hand pane of the JSON Preview tab:\

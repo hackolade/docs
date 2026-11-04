@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to Azure Cosmos DB Gremlin API with the URI and access key, for graph reverse-engineering.
+seoTitle: Connect to Azure Cosmos DB for Apache Gremlin
+image: lib/Cosmos DB connection settings dialog.png
+---
 # Azure instance
 
 To access a Cosmos DB instance, you should obtain the proper credentials from your administrator. At a minimum, you'll need to know the URI and Access Key.

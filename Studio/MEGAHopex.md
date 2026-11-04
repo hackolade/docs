@@ -1,14 +1,24 @@
+---
+description: Reverse-engineer MEGA Hopex logical and physical models from .xmg files into Hackolade Studio Polyglot and Db2 for z/OS models, with bulk import.
+seoTitle: Import MEGA Hopex models
+image: lib/Mega Hopex reverse-engineering progress dialo.png
+---
 # MEGA Hopex
 
 MEGA HOPEX (now integrated or branded under [Bizzdesign Hopex](<https://bizzdesign.com/transformation-suite/hopex> "target=\"_blank\"")) is a leading platform for Enterprise Architecture (EA) and Governance, Risk, and Compliance (GRC). It connects business strategy, IT infrastructure, data governance, and risk management into a unified single source of truth.
 
 &nbsp;
 
-If your organization previously maintained data models in MEGA HOPEX, you can migrate them into a Hackolade Studio [Polyglot model](PolyglotDataModel.md) instead of having to recreate them by hand. From the Polyglot model, you can then derive the physical models of your targets.
+If your organization previously maintained data models in MEGA HOPEX, you can migrate them into a Hackolade Studio [Polyglot model](PolyglotDataModel.md) instead of having to recreate them by hand. From the Polyglot model, you can then derive the physical models of your targets. You can also import the physical layer of the export directly into a Db2 for z/OS model.
 
 &nbsp;
 
 ## MEGA logical models stored in .xmg files
+
+> [!NOTE]
+> Starting with Hackolade Studio v8.13.6
+
+&nbsp;
 
 Hackolade Studio reads the XML exchange files exported from MEGA HOPEX, with the `.xmg` extension, and imports their logical layer.
 
@@ -23,7 +33,7 @@ Inside MEGA files, the different objects are mapped to equivalent objects in a H
 
 &nbsp;
 
-Some transformations occur, and extraneous information is ignored. When the export contains names in several languages, Hackolade Studio imports the English name.
+Some transformations occur, and extraneous information is ignored. When the export contains names in several languages, Hackolade Studio imports the English name. For descriptions and comments, Hackolade Studio uses the default language declared in the .xmg file. When this language is Neutral, or when the file declares none, it uses the text without a language.
 
 &nbsp;
 
@@ -31,7 +41,7 @@ Hackolade Studio converts MEGA data types to the equivalent Polyglot types. When
 
 &nbsp;
 
-To import a MEGA model from the GUI application, first create a Polyglot model. Then go to Tools > Reverse-Engineer > MEGA Files... You may select one or Mega files to import in your open Hackolade Studio data model, including the definition file of your data types when your model uses them:
+To import a MEGA model from the GUI application, first create a Polyglot model. Then go to Tools > Reverse-Engineer > MEGA Files... You may select one or more MEGA files to import in your open Hackolade Studio data model, including the definition file of your data types when your model uses them:
 
 &nbsp;
 
@@ -44,6 +54,36 @@ At the end of the import, the dialog window shows the number of containers, enti
 &nbsp;
 
 ![Mega Hopex reverse-engineering progress dialog](<lib/Mega Hopex reverse-engineering progress dialo.png>)
+
+&nbsp;
+
+## MEGA physical models for Db2 for z/OS
+
+> [!NOTE]
+> Starting with Hackolade Studio v8.13.7, and with v0.2.3 of the Db2 for z/OS plugin
+
+&nbsp;
+
+Hackolade Studio also reads the physical layer of the .xmg exchange files, and imports it into a Db2 for z/OS model. It imports every database of the export whose DBMS is Db2 for z/OS, that is, whose DBMS name starts with "DB2 OS" or "DB2 for z/OS". If the export contains no such database, the import stops with an error message.
+
+&nbsp;
+
+Inside MEGA files, the different objects are mapped to equivalent objects in a Hackolade Studio model, mainly:
+
+- **databases**: mapped to containers, with their names and comments;
+- **tables:** mapped to entities, with their business and technical names and comments;
+- **columns and their data types** (with length, precision and scale where applicable);
+- **business and technical names and comments**;
+- **constraints:** primary keys, unique keys, and foreign keys mapped to relationships with their ON DELETE rule;
+- **indexes**.
+
+&nbsp;
+
+Hackolade Studio converts MEGA data types, or their pivot types, to the equivalent Db2 for z/OS types. When a column has no data type in the export, or a type that cannot be mapped, it gets the default data type, and a warning in the log names the column. A foreign key between tables of different databases is not imported.
+
+&nbsp;
+
+To import a MEGA physical model from the GUI application, first create a Db2 for z/OS model. Then go to Tools > Reverse-Engineer > MEGA Files... and select the files to import, as for logical models.
 
 &nbsp;
 
@@ -62,15 +102,14 @@ When you select this definition file together with the model file, Hackolade Stu
 Currently, the following MEGA concepts are not imported:
 
 - generalizations (supertypes and subtypes);
-- abstract classes and classes used as stereotypes, together with the associations that point to them;
-- the physical layer: databases, tables, columns and indexes.
+- abstract classes and classes used as stereotypes, together with the associations that point to them.
 
 &nbsp;
 
-The reverse-engineer currently works in Polyglot models only. Support for Db2 for z/OS is coming soon. We enable reverse-engineering target by target: if you need one not yet supported, please contact [support@hackolade.com](<mailto:support@hackolade.com,Request for MEGA Hopex import feature>).
+The reverse-engineering works in Polyglot and Db2 for z/OS models. We enable reverse-engineering target by target: if you need one not yet supported, please contact [support@hackolade.com](<mailto:support@hackolade.com,Request for MEGA Hopex import feature>).
 
 &nbsp;
 
 ## Bulk import
 
-Using the [Command-Line Interface](CommandLineInterface.md), you can orchestrate a batch import of MEGA files into Hackolade Studio models, with the command `revEngDiagram`. The command takes one file at a time; support for the definition file of your data types is coming soon.
+Using the [Command-Line Interface](CommandLineInterface.md), you can orchestrate a batch import of MEGA files into Polyglot or Db2 for z/OS models, with the command `revEngDiagram`. In the argument `--file`, separate several files with a semicolon, for example a model file and the definition file of your data types, or use the `*` wildcard to select the matching files of a folder.

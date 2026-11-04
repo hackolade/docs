@@ -1,3 +1,7 @@
+---
+description: Hackolade Studio generates dbt schema model and source YAML files from your data model, with tests and documentation.
+seoTitle: Generate dbt artifacts from data models
+---
 # dbt artifacts
 
 [dbt](<https://www.getdbt.com/> "target=\"_blank\"") is a SQL-first transformation workflow that lets teams quickly and collaboratively deploy analytics code following software engineering best practices like modularity, portability, CI/CD, and documentation. It helps teams work directly within the warehouse to produce trusted datasets for reporting, ML modeling, and operational workflows.

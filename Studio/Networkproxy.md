@@ -1,3 +1,8 @@
+---
+description: Configure Hackolade Studio to work through an HTTP proxy, with domains to allow and Zscaler troubleshooting.
+seoTitle: Network proxy settings for Hackolade Studio
+image: lib/Proxy settings - automatic.png
+---
 # Network proxy
 
 By default, Hackolade Studio accesses the Internet using the proxy settings from the PC's browser, as stored in Windows Internet Options > Connections of the dialog c:\\Windows\\System32\\inetcpl.cpl

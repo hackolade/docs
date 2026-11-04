@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to Teradata, with the access to SYSUDTLIB needed to retrieve DDL for user-defined types and methods.
+seoTitle: Connect to a Teradata instance
+image: lib/Teradata connection settings.png
+---
 # Connect to a Teradata instance
 
 > [!IMPORTANT]

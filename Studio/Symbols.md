@@ -1,3 +1,8 @@
+---
+description: Add annotations and rectangles to Hackolade Studio entity-relationship diagrams to explain and group parts of the model.
+seoTitle: "Symbols in ER diagrams: annotations and rectangles"
+image: lib/Symbol rectangle example.png
+---
 # Symbols
 
 In Entity Relationship Diagrams, it may be useful to add indications to help understand the diagram. Hackolade Studio currently allows 2 types of symbols: annotation and rectangle.

@@ -1,3 +1,7 @@
+---
+description: "The vision behind Hackolade Studio: ER diagrams, graph and tree views, Polyglot data modeling and metadata-as-code."
+seoTitle: Hackolade Studio vision
+---
 # Vision
 
 Hackolade Studio, like other legacy tools in the same segment, uses Entity-Relationship Diagrams to visualize and maintain data models. It also includes graph diagrams to represent concepts and relationships, tree views of hierarchical structures, and grid views. But our next-gen tool takes a modern approach to data modeling as it does not carry the tech debt of legacy tools built decades ago strictly for relational databases. We embrace 21st-century technology, cloud databases, event-driven architecture patterns, data-in-motion, Git repositories, digital transformation, application modernization, ML/AI, Domain-Driven Design, and much more.

@@ -1,3 +1,7 @@
+---
+description: "Entity-relationship diagrams and cardinality in Hackolade Studio: crow's foot notation and how nested structures appear in an ERD."
+seoTitle: ER diagrams and cardinality notation
+---
 # ER diagrams and cardinality
 
 According to [Wikipedia](<https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model> "target=\"_blank\""): "In software engineering, an Entity Relationship model is commonly formed to represent things that a business needs to remember in order to perform business processes. Consequently, the ER model becomes an abstract data model that defines a data or information structure that can be implemented in a database, typically a relational database...

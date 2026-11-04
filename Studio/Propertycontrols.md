@@ -1,3 +1,8 @@
+---
+description: "Syntax of user-defined custom property controls in Hackolade Studio: propertyName, propertyKeyword, propertyType and options."
+seoTitle: Custom property controls syntax
+image: lib/Custom props control textarea pop-up.png
+---
 # Property controls
 
 A custom property control is defined using the following syntax, starting with 3 mandatory keywords:

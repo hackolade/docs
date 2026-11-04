@@ -1,3 +1,8 @@
+---
+description: "Import the structure of a database instance or files into a Hackolade Studio model: connection, selection, sampling and schema inference."
+seoTitle: Reverse-engineering databases and files
+image: lib/Reverse-Engineering Connection Settings.png
+---
 # Reverse-engineering
 
 The reverse-engineering function is used to import information into pre-existing or empty data models. Reverse engineering is a useful feature to facilitate the modeling and documentation of existing instances. After the reverse engineering has been performed, the user can enrich the model created, by filling descriptions, recording constraints that were not obvious from the stored data, documenting relationships, etc…

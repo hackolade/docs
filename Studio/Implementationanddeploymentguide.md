@@ -1,3 +1,7 @@
+---
+description: "A phased guide to deploy Hackolade Studio in an organization: architecture, installation, planning, pilot and gradual rollout."
+seoTitle: Implementation and deployment guide
+---
 # Implementation and deployment guide
 
 A well-defined and comprehensive implementation strategy is critical to the successful deployment of the data modeling solution. This page and the pages below in this section constitute a guide that can serve as an example to kick start and inspire your effort

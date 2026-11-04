@@ -1,3 +1,8 @@
+---
+description: Capture lineage sources at model level and reference them at attribute level in Hackolade Studio, as an audit trail.
+seoTitle: Lineage capture at attribute level
+image: lib/Lineage model source.png
+---
 # Lineage capture
 
 Starting with v4.3.10, Hackolade introduced some basic lineage capture capabilities. To be clear, Hackolade is not a data governance suite with fancy lineage visualization and transformation features. It just adds the possibility to enable audit trail capture, which can in turn be used to feed a specialized lineage tool.

@@ -1,3 +1,8 @@
+---
+description: Model Snowflake schemas, tables, keys, clustering keys, semi-structured data types and views in Hackolade Studio.
+seoTitle: Snowflake data modeling with Hackolade Studio
+image: lib/Snowflake workspace.png
+---
 # Snowflake
 
 Snowflake is a Software-as-a-Service (SaaS) platform enabling a wide variety of workloads and applications on any cloud, including data warehouses, data lakes, data pipelines, and data sharing as well as business intelligence, data science, and data analytics applications. Snowflake’s architecture is a hybrid of traditional shared-disk database architectures and shared-nothing database architectures. It supports the most common standardized version of SQL: ANSI, including DDL statements to manage database objects such as schemas, tables, columns and indexes. The VARIANT data type lets users store semi-structured file formats including JSON, Avro, ORC and Parquet.

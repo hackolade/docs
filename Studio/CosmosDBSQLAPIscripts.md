@@ -1,3 +1,8 @@
+---
+description: Hackolade Studio generates forward-engineering scripts for Cosmos DB SQL API containers and document types, to export or apply.
+seoTitle: Generate Cosmos DB SQL API scripts
+image: lib/Cosmos DB SQL APi script.png
+---
 # Cosmos DB SQL API scripts
 
 As you develop the model for your Cosmos DB SQL API database, with containers and document types, Hackolade dynamically generates the corresponding forward-engineering script.

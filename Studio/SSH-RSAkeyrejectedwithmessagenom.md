@@ -1,3 +1,7 @@
+---
+description: Fix the SSH "no mutual signature algorithm" error with RSA SHA-1 keys when Hackolade Studio connects through an SSH tunnel.
+seoTitle: "SSH-RSA key rejected: no mutual signature algorithm"
+---
 # SSH-RSA key rejected with message "no mutual signature algorithm"
 
 The RSA SHA-1 hash algorithm is being quickly deprecated across operating systems and SSH clients because of various security vulnerabilities, with many of these technologies now outright denying the use of this algorithm.

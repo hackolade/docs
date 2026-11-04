@@ -1,3 +1,7 @@
+---
+description: Reviewing change requests is not yet available when working directly with a remote repository; use a local clone or your Git hub.
+seoTitle: Review change requests from a remote repository
+---
 # Review change requests
 
 ## To be added

@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to the Azure Cosmos DB emulator running locally, with the Core SQL API.
+seoTitle: Connect to the local Cosmos DB emulator (Core API)
+image: lib/Cosmos DB connection settings dialog - local.png
+---
 # Local instance
 
 In addition to the Azure Cosmos DB web service, Microsoft provides a downloadable version of Cosmos DB that can be run locally. This edition of Cosmos DB lets you write applications without accessing the actual Azure Cosmos DB web service. Instead, the database is self-contained on your computer.

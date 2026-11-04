@@ -1,3 +1,7 @@
+---
+description: "First steps with Hackolade Studio: installation without admin rights, license key validation and resources for new and returning users."
+seoTitle: Getting started with Hackolade Studio
+---
 # Getting started
 
 The installation of Hackolade does not require 'admin rights' for the PC. But it does require that you have Write rights for the directory where Hackolade is installed, e.g. C:\\Hackolade Nevertheless, if you encounter a Windows "error 5 access denied", you may want to take a look at this [article](<https://appuals.com/fix-error-5-access-denied-windows-10/> "target=\"_blank\"").

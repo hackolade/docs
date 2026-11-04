@@ -1,3 +1,8 @@
+---
+description: Configure the default folders that Hackolade Studio's file pickers open for models, reverse-engineering files, documentation and other artifacts.
+seoTitle: Default paths and file picker behavior
+image: lib/Tools - Options - Default paths dialog.png
+---
 # Default paths and file picker behavior
 
 Depending on the features you use, Hackolade Studio may prompt you to select a file or a folder using the native file picker of your operating system. This happens in many situations, such as opening a model, performing reverse-engineering from files, generating artifacts, exporting documentation, or selecting auxiliary resources.

@@ -1,3 +1,8 @@
+---
+description: How Hackolade Studio opens models with superclass inheritance created before v8.13.0, and how to upgrade them to supertype groups.
+seoTitle: Inheritance in models created before v8.13.0
+image: lib/Inheritance old superclass parent-child props.png
+---
 # Inheritance created before version v8.13.0
 
 Inheritance is not new in Hackolade Studio. Before version v8.13.0, inheritance was modeled using a superclass. Starting with version v8.13.0, the superclass has evolved into a **supertype group**, with its own properties tab and additional properties that were not previously available. These include a description, **Completeness** (total or partial), **Exclusivity** (disjoint or overlapping), and a **materialization strategy** (preserved hierarchy, roll-up flat, or roll-up disjoint). A supertype can now also participate in several supertype groups, with each group representing a different axis of specialization.

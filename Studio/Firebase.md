@@ -1,3 +1,8 @@
+---
+description: Model Google Firebase Realtime Database nodes, IDs, data types and indexes in Hackolade Studio.
+seoTitle: Firebase Realtime Database data modeling
+image: lib/Firebase workspace.png
+---
 # Firebase
 
 The Google Firebase Realtime Database is a cloud-hosted database. Data is stored in JSON and synchronized in real time to every connected mobile or other client. It lets developers build rich collaborative applications, with data also persisted locally, to give users a responsive experience.

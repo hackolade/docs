@@ -1,3 +1,8 @@
+---
+description: Review, apply, unstash or drop stashed uncommitted changes in Hackolade Studio, and resolve conflicts.
+seoTitle: Explore stashed changes
+image: lib/Workgroup explore stashes.png
+---
 # Explore stashed changes
 
 When you open a local repository and choose Explore repository > Stashes in the left menu, you get a table listing all the uncommitted changes you might have stashed for later reuse.

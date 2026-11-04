@@ -1,3 +1,7 @@
+---
+description: The Hackolade Studio menu bar gives access to most functions, including data model obfuscation before sharing a model.
+seoTitle: Hackolade Studio menu bar
+---
 # Menu bar
 
 ![Menu bar - File menu](<lib/Menu bar.png>)

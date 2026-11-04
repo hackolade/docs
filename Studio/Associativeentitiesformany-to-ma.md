@@ -1,3 +1,8 @@
+---
+description: Generate associative entities for many-to-many relationships when deriving a physical model from a Polyglot model in Hackolade Studio.
+seoTitle: Associative entities for many-to-many relationships
+image: lib/Many-to-Many choose to generate associative.png
+---
 # Associative entities for many-to-many relationships
 
 An **associative entity** or table is the standard relational way to physically represent a **many-to-many** **(N:M) relationship** between two entities.

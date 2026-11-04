@@ -1,3 +1,8 @@
+---
+description: Hackolade Studio generates the Cypher script for node labels, relationship types, constraints and indexes of your Neo4j model.
+seoTitle: Generate Neo4j Cypher scripts
+image: lib/Neo4j forward-engineered Cypher.png
+---
 # Neo4j Cypher
 
 As you develop the model for your Neo4j graph database, with node labels and relationship types with constraints and indexes, Hackolade dynamically generates the corresponding Cypher script.

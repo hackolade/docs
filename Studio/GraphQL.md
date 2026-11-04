@@ -1,3 +1,8 @@
+---
+description: "Model GraphQL APIs in Hackolade Studio: types, queries, mutations, subscriptions and the structure of an SDL."
+seoTitle: GraphQL schema data modeling
+image: lib/GraphQL workspace.png
+---
 # GraphQL
 
 [GraphQL](http://www.graphql.org/) is a query language for APIs and a runtime for fulfilling those queries with existing data.. It is an API standard that provides a more efficient, powerful and flexible alternative to REST. GraphQL was developed and [open-sourced by Facebook](https://legacy.reactjs.org/blog/2015/02/20/introducing-relay-and-graphql.html) in 2015 and is now maintained by a large community of companies and individuals from all over the world.

@@ -1,3 +1,7 @@
+---
+description: How Hackolade Studio translates Polyglot relationships into foreign keys, foreign masters or graph edges when deriving physical models.
+seoTitle: From logical to physical with Polyglot relationships
+---
 # Logical to Physical with Polyglot Relationships
 
 Polyglot relationships are [defined at a conceptual and logical level](ConceptualtoLogicalwithPolyglotr.md), independently of any physical technology. When you derive a physical model from a Polyglot model, each relationship is translated into a construct supported by that target.

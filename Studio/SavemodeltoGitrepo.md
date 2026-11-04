@@ -1,3 +1,8 @@
+---
+description: Save data models directly to a remote Git repository from Hackolade Studio Workgroup Edition, without a local clone.
+seoTitle: Save a model directly to a Git repository
+image: lib/Save to this computer dialog.png
+---
 # Save model to Git repo
 
 > [!WARNING]

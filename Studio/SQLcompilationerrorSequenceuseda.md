@@ -1,3 +1,7 @@
+---
+description: Why some Snowflake tables show no columns after reverse-engineering when a default-value sequence cannot be accessed, and the fix.
+seoTitle: "Snowflake error: sequence used as default not found"
+---
 # SQL compilation error:Sequence used as a default value in table... was not found or could not be accessed
 
 During reverse-engineering of a Snowflake instance, you may be surprised to find that, while the operation worked very well for most tables, one or more tables do not display the expected columns.

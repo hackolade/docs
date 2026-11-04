@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to a JanusGraph instance on-premises or in the cloud, with host, port, graph name and credentials.
+seoTitle: Connect to a JanusGraph instance
+image: lib/JanusGraph connection settings.png
+---
 # Connect to a JanusGraph instance
 
 The JanusGraph instance can hosted on-premises, or on virtualized machines in a private or public cloud.

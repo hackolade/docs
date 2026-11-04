@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to DataStax Enterprise with LDAP over SSL, using a Java keystore, truststore or PEM keys.
+seoTitle: Cassandra LDAP authentication with SSL
+image: lib/Cassandra Connection Settings - LDAP JKS.png
+---
 # LDAP
 
 If you require LDAP authentication, it is necessary, in order to connect to the DSE nodes via a secure connection, to select the SSL type. A keystore contains client certificate and client key. Whereas a truststore contains certificate authority (CA).

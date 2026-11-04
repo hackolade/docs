@@ -1,3 +1,7 @@
+---
+description: Back up and restore the PostgreSQL or Oracle database of Hackolade Model Hub, regularly and before every upgrade.
+seoTitle: Back up the Hackolade Model Hub database
+---
 # Data backup
 
 The Model Hub persists state in its state in the database. Back it up regularly, and always take a backup before upgrading.

@@ -1,3 +1,8 @@
+---
+description: The former XSD method to import PowerDesigner models into Hackolade Studio; reading PowerDesigner files directly is now preferred.
+seoTitle: Import PowerDesigner models via XSD (deprecated)
+image: lib/PowerDesigner XSD to Hackolade dialog.png
+---
 # From PowerDesigner
 
 While there is still the possibility to use the XSD method described below, there is a much more powerful and easy method of directly reading PowerDesigner files. See [this page](PowerDesigner.md) for more details.
@@ -26,7 +31,7 @@ If you already have a physical model, you may skip this step and go to the next 
 
 &nbsp;
 
-You may also view this [short video](<https://youtu.be/22OaNFbw2is> "target=\"_blank\"") on YouTube.
+[PowerDesigner Generate PDM from LSM](<https://youtu.be/22OaNFbw2is> "video")
 
 &nbsp;
 
@@ -57,7 +62,7 @@ If you already have an XML model, you may skip this step and go to the next one.
 
 &nbsp;
 
-You may also view this [short video](<https://youtu.be/UrBBfDWVdxI> "target=\"_blank\"") on YouTube.
+[PowerDesigner Generate XSM from PDM](<https://youtu.be/UrBBfDWVdxI> "video")
 
 &nbsp;
 
@@ -98,7 +103,7 @@ You may have to setup the XML extension appropriately:\
 
 ## Generate an XSD file from a PowerDesigner XML model (XSM)
 
-You may also view this [short video](<https://youtu.be/c9MTSw0tT88> "target=\"_blank\"") on YouTube.
+[PowerDesigner Generate XSD file from XSM](<https://youtu.be/c9MTSw0tT88> "video")
 
 &nbsp;
 

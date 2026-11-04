@@ -1,3 +1,8 @@
+---
+description: Model MariaDB databases, storage engines, tables, keys, constraints, indexes and data types in Hackolade Studio.
+seoTitle: MariaDB data modeling with Hackolade Studio
+image: lib/MariaDB workspace.png
+---
 # MariaDB
 
 MariaDB is a community-developed, commercially supported fork of the MySQL relational database management system, intended to remain free and open-source software. In addition to high compatibility with MySQL, it provides support for multiple different storage engines designed to efficiently manage data files, the data, and the index caches.

@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to Azure Synapse with Microsoft Entra ID authentication, including admin consent.
+seoTitle: Connect to Synapse with Microsoft Entra ID
+image: lib/SQL Server - Entrq ID authentication legqcy.png
+---
 # Entra ID authentication
 
 Microsoft Entra IDauthentication supports the following [authentication methods](<https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-configure?view=azuresql&tabs=azure-portal> "target=\"_blank\""):

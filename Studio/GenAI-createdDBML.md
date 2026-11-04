@@ -1,3 +1,8 @@
+---
+description: Prompt a GenAI tool to produce DBML, then reverse-engineer it from files or the clipboard into a Hackolade Studio Polyglot or physical model.
+seoTitle: Import GenAI-created DBML into Hackolade Studio
+image: lib/Mermaid ER e-commerce from ChatGPT.png
+---
 # GenAI-created DBML
 
 This features allows to instantly generate models, polyglot or physical, then edit and enrich them, plus integrate suggestions from GenAI. By integrating AI-generated diagrams with Hackolade Studio’s intuitive modeling, teams can efficiently develop and refine their data models, enhancing collaboration and accelerating the development cycle.

@@ -1,3 +1,8 @@
+---
+description: Define structures once in a technology-agnostic Polyglot model, then derive physical models for each target technology in Hackolade Studio.
+seoTitle: "Polyglot data model: one model, many targets"
+image: lib/Polyglot - entity selection.png
+---
 # Polyglot Data Model
 
 Users may define structures once in a technology-agnostic polyglot data model, complete with denormalization and complex data types, then represent these structures in a variety of physical data models respecting the specific aspects of each target technology.

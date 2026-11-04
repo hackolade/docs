@@ -1,3 +1,8 @@
+---
+description: Hackolade Studio generates Teradata DDL for schemas, tables, columns, indexes and constraints, to export or apply.
+seoTitle: Generate Teradata DDL
+image: lib/Teradata - Forward-Engineering.png
+---
 # Teradata DDL
 
 As you develop the model for your Teradata instance schemas, tables, columns with their data types, as well as indexes and constraints, Hackolade dynamically generates the corresponding DDL scripts.

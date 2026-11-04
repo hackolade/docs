@@ -1,3 +1,8 @@
+---
+description: Hackolade Studio generates Snowflake DDL for schemas, tables, columns and constraints, to export or apply to an instance.
+seoTitle: Generate Snowflake DDL
+image: lib/Snowflake DDL forward-engineering.png
+---
 # Snowflake DDL
 
 As you develop the model for your Snowflake database schemas, tables, columns with their data types, as well as columns-level constraints, Hackolade dynamically generates the corresponding DDL scripts.

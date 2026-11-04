@@ -1,3 +1,8 @@
+---
+description: "Next-gen data modeling with Hackolade Studio: Polyglot data modeling, metadata-as-code and domain-driven data modeling."
+seoTitle: Hackolade Studio solution overview
+image: lib/Vision - From Challenges to Outcomes.png
+---
 # Solution overview
 
 The [previous page](Challengesindata-drivenorgtransf.md) outlines the challenges encountered as organizations transform to become data-driven. The roadmap for development of Hackolade Studio features are centered around capabilities that address these challenges.\

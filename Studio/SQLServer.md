@@ -1,3 +1,8 @@
+---
+description: Model SQL Server and Azure SQL schemas, tables, keys, constraints, indexes, data types and views in Hackolade Studio.
+seoTitle: SQL Server data modeling with Hackolade Studio
+image: lib/SQL Server workspace.png
+---
 # SQL Server
 
 SQL Server is a relational database management system developed by Microsoft, aimed at different audiences and for workloads ranging from small single-machine applications to large Internet-facing applications with many [concurrent users](https://en.wikipedia.org/wiki/Concurrent_user).. There is also a cloud-based version, Azure SQL database, presented as a platform-as-a-service offering on Microsoft Azure.

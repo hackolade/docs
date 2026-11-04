@@ -1,3 +1,7 @@
+---
+description: Connect Hackolade Studio to Azure Cosmos DB with the MongoDB API, on Azure or on the local Cosmos DB emulator.
+seoTitle: Connect to Cosmos DB with the MongoDB API
+---
 # MongoDB API
 
 In addition to the Azure Cosmos DB web service, Microsoft provides a downloadable version of Cosmos DB that can be run locally.

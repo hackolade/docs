@@ -1,3 +1,8 @@
+---
+description: Pull commits from the remote Git repository into your local clone from Hackolade Studio, with the list of incoming commits.
+seoTitle: Pull remote commits in Hackolade Studio
+image: lib/Workgroup pull remotecommits.png
+---
 # Pull remote commits
 
 Hackolade Studio makes it easy to pull commits from a remote repository: you just need to open your own local repository (if not already opened) and navigate to "Pull remote commits".\

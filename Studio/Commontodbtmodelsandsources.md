@@ -1,3 +1,8 @@
+---
+description: Hackolade Studio generates dbt data tests from model constraints and from free-text entries in the dbt tab, for models and sources.
+seoTitle: dbt data tests for models and sources
+image: lib/dbt tests.png
+---
 # Common to dbt models and sources
 
 ## Data tests

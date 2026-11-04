@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to Azure Cosmos DB with MongoDB API using the connection string from the Azure portal.
+seoTitle: Connect to Azure Cosmos DB for MongoDB
+image: lib/Azure portal - Mongo API connection.png
+---
 # Azure instance
 
 To access a Cosmos DB instance, you should obtain the proper credentials from your administrator. In particular you'll need to know the URI and Access Key.

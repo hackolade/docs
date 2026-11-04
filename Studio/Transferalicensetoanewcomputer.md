@@ -1,3 +1,7 @@
+---
+description: Release your Hackolade Studio license key on the old computer, then validate it on the new one, in that order.
+seoTitle: Transfer a license key to a new computer
+---
 # Transfer a license to a new computer
 
 Our license server in the cloud enforces license key validations. It is pretty simple to move a license to a new computer, but it requires to proceed in the following sequence:\

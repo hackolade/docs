@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to Elasticsearch with basic authentication and SSL, including an authority certificate, for reverse-engineering.
+seoTitle: Connect to an Elasticsearch instance
+image: lib/Elasticsearch - connection settings.png
+---
 # Connect to an Elasticsearch instance
 
 From version 5.0 onward, Shield is part of X-Pack. For more information, see Securing Elasticsearch in the [X-Pack Reference](<https://www.elastic.co/guide/en/x-pack/current/xpack-security.html> "target=\"_blank\""). Hackolade currently supports basic authentication (username/password) and SSL. Other authentication methods, such as LDAP, PKI, and User Directory Authentication are not supported yet.

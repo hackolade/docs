@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to a CockroachDB instance in the cloud through an SSH tunnel on port 22.
+seoTitle: Connect to CockroachDB through an SSH tunnel
+image: lib/RE - MongoDB - SSH w Private Key.png
+---
 # SSH
 
 If your CockroachDB instance is located in the Cloud, your preferred access to your instance will be over SSH through port 22.

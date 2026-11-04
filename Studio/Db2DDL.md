@@ -1,3 +1,8 @@
+---
+description: Hackolade Studio generates Db2 DDL for schemas, tables, indexes, constraints, functions and procedures, to export or apply.
+seoTitle: Generate Db2 DDL from a data model
+image: lib/Db2 DDL forward-engineering.png
+---
 # Db2 DDL
 
 Hackolade dynamically generates the DDL script to create schemas, tables, columns and their data types, indexes and constraints for the structure created with the application, as well as functions and procedures.

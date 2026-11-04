@@ -1,3 +1,8 @@
+---
+description: Import Protobuf v2 and v3 schemas from .proto files, cloud storage or schema registries into Hackolade Studio.
+seoTitle: Reverse-engineer Protobuf files and registries
+image: lib/Cloud Storage - AWS S3 connection.png
+---
 # Protobuf schema file or registry
 
 Hackolade easily imports the schema from .proto files, version 2 and 3, located on your local file system or on a shared directory, to represent the corresponding Entity Relationship Diagram and schema structure. When multiple files are selected, you have the choice to either combine the schemas of the selected files (default), or to create a separate schema in the model for each selected file.

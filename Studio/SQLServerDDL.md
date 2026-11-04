@@ -1,3 +1,8 @@
+---
+description: Hackolade Studio generates SQL Server DDL for schemas, tables, columns, indexes and constraints, to export or apply.
+seoTitle: Generate SQL Server DDL
+image: lib/SQL Server DDL Forward-Engineering.png
+---
 # SQL Server DDL
 
 As you develop the model for your SQL Server database schemas, tables, columns with their data types, as well as indexes and constraints, Hackolade dynamically generates the corresponding DDL scripts.

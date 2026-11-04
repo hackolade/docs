@@ -1,3 +1,8 @@
+---
+description: The Hackolade Studio grid view lists modeling objects as rows and their properties as columns, for review and bulk editing.
+seoTitle: Grid view of data modeling objects
+image: lib/Grid view model level.png
+---
 # Grid View
 
 The grid view, accessible in a lower tab of the central pane, displays data modeling objects in a tabular layout, as an alternative to the existing ER diagram view, graph view, or hierarchical schema view. It displays modeling objects as rows and their properties as columns. You can configure which columns are visible, then sort, filter, and group. You can even edit some properties directly in the grid, or download a grid report in Excel format.

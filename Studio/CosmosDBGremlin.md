@@ -1,3 +1,8 @@
+---
+description: "Model Azure Cosmos DB Gremlin graphs in Hackolade Studio: vertex labels, edge labels, properties, data types and indexes."
+seoTitle: Azure Cosmos DB Gremlin graph data modeling
+image: lib/CosmosDB-Gremlin workspace.png
+---
 # Cosmos DB Gremlin
 
 Microsoft Azure Cosmos DB is a globally distributed, multi-model database service supporting document, key-value, graph, and column-family data models. Azure Cosmos DB provides a graph database service via the Gremlin API on a fully managed database service designed for any scale.

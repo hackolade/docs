@@ -1,3 +1,7 @@
+---
+description: "Training resources for Hackolade Studio users: self-paced and certified eLearning, documentation, videos and support."
+seoTitle: Knowledge transfer and training for Hackolade Studio
+---
 # Knowledge Transfer and Training
 
 Hackolade Studio’s training and support ecosystem offers a **scalable, multi-modal approach** that suits a variety of organizational sizes and technical skill levels. With an emphasis on **self-paced learning**, **certified eLearning**, and **comprehensive documentation**, the platform enables customers to accelerate user readiness, reduce support overhead, and maximize return on investment with minimal disruption.

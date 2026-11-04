@@ -1,3 +1,7 @@
+---
+description: Create composite primary keys and composite foreign key relationships in Hackolade Studio data models.
+seoTitle: Define composite primary and foreign keys
+---
 # Define composite key constraints
 
 This page shows how to create composite primary keys (a.k.a. composite PK, compound primary keys, or complex primary keys), as well as composite foreign keys (a.k.a. composite FK, compound foreign keys or complex foreign keys.)
@@ -10,7 +14,7 @@ Not all technology targets support primary keys. However, it might be useful to 
 
 &nbsp;
 
-You may also view this [short video](<https://www.youtube.com/watch?v=WBYiHEXPTG0> "target=\"_blank\"") on YouTube.
+[How-To: Composite key constraints](<https://youtu.be/WBYiHEXPTG0> "video")
 
 &nbsp;
 

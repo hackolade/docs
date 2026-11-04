@@ -1,3 +1,8 @@
+---
+description: Configure a GitLab service account, access token and webhooks so Hackolade Model Hub can fetch data models from GitLab.
+seoTitle: Model Hub setup for GitLab repositories
+image: lib/Model Hub GitLab create service account.png
+---
 # GitLab repo setup
 
 ## Important GitLab concepts

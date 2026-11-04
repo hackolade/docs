@@ -1,3 +1,8 @@
+---
+description: Hackolade Studio generates the Parquet schema of your model, to export to files or through the Command-Line Interface.
+seoTitle: Generate Parquet schemas
+image: lib/Parquet forward-engineering.png
+---
 # Parquet schema
 
 Hackolade dynamically generates Parquet schema for the structure created with the application.

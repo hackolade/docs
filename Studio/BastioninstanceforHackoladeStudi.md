@@ -1,3 +1,8 @@
+---
+description: Run Hackolade Studio Command-Line Interface commands on a bastion instance, so users never access database instances or credentials.
+seoTitle: Bastion instance for Hackolade Studio CLI
+image: lib/Bastion instance architecture.png
+---
 # Bastion instance for Hackolade Studio
 
 A bastion instance is a special computer that plays the role of a gatekeeper between a device and a user's machine. The bastion instance runs Hackolade Studio [Command-Line Interface](CommandLineInterface.md) commands on behalf of users, most likely an orchestration of multiple commands.

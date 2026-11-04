@@ -1,3 +1,8 @@
+---
+description: Import schemas from .parquet files on your file system, AWS S3, Azure Blob Storage or Google Cloud Storage into Hackolade Studio.
+seoTitle: Reverse-engineer Parquet files
+image: lib/Cloud Storage - AWS S3 connection.png
+---
 # Parquet schema
 
 Hackolade easily imports the schema from .parquet files, located on your local file system or on a shared directory, to represent the corresponding Entity Relationship Diagram and schema structure. When multiple files are selected, you have the choice to either combine the schemas of the selected files (default), or to create a separate schema in the model for each selected file.

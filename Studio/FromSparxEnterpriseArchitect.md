@@ -1,3 +1,8 @@
+---
+description: Export UML models from Sparx Enterprise Architect as XSD and import them into Hackolade Studio, with UML-to-JSON Schema parallels.
+seoTitle: Import Sparx Enterprise Architect models via XSD
+image: lib/UML diagram with different relationships.png
+---
 # From Sparx Enterprise Architect
 
 If you have data models in Sparx Enterprise Architect and want to leverage them in Hackolade Studio, you need to fist export them to XSD, following the instructions below. You should first consult [this page](XSDXMLSchemaDefinition.md) for an overview of the import functionality in Hackolade Studio.

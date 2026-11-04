@@ -1,3 +1,8 @@
+---
+description: Export JSON Schema files for the entities of a Hackolade Studio model, with options for the specification draft and definitions.
+seoTitle: Generate JSON Schema from a data model
+image: lib/Forward-Engineering - JSON Preview.png
+---
 # JSON Schema
 
 To create a JSON Schema file of your entity, choose the menu Tools > Forward Engineering > JSON Schema:\

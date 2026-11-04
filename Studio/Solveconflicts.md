@@ -1,3 +1,8 @@
+---
+description: How Hackolade Studio merges concurrent changes to a data model automatically, and how to resolve the conflicts that need you.
+seoTitle: Solve Git conflicts in data models
+image: lib/Workgroup pull uncommitted changes.png
+---
 # Solve conflicts
 
 When several users make simultaneous edits to their local copy of the same data model, there is a risk that some changes could cause conflicts. The first user to push changes to the remote repository has no problem. However, other user(s) may have to solve such conflicts when pulling commits from the remote repository.

@@ -1,3 +1,7 @@
+---
+description: "Explore a locally-cloned Git repository in Hackolade Studio: files, history, tags and stashed changes."
+seoTitle: Explore a Git repository in Hackolade Studio
+---
 # Explore repository
 
 You may explore your repository in many ways:

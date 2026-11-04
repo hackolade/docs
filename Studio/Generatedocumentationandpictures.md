@@ -1,10 +1,19 @@
+---
+description: Hackolade Studio tutorial on generating model documentation with its parameters and object selection, and printing diagrams.
+seoTitle: "Tutorial: generate documentation and pictures"
+image: lib/Generate documentation - object selection.png
+---
 # Generate documentation and pictures
 
 In the previous tutorial, we reviewed how to export or forward-engineer artifacts from your data model. By the end of this tutorial, you will have learned how to generate documentation and pictures for your data model.
 
 &nbsp;
 
-You may also [view this tutorial](<https://youtu.be/11hK9WH773c> "target=\"_blank\"") on YouTube. Summary slides can be found [here](<https://www.slideshare.net/PascalDesmarets1/hackolade-tutorial-part-10-generate-documentation-and-picturespdf> "target=\"_blank\"").
+[Hackolade Tutorial - Part 10: Generate documentation and pictures](<https://youtu.be/11hK9WH773c> "video")
+
+&nbsp;
+
+Summary slides can be found [here](<https://www.slideshare.net/PascalDesmarets1/hackolade-tutorial-part-10-generate-documentation-and-picturespdf> "target=\"_blank\"").
 
 &nbsp;
 

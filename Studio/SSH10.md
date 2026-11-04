@@ -1,3 +1,8 @@
+---
+description: Connect Hackolade Studio to a Teradata instance in the cloud through an SSH tunnel on port 22.
+seoTitle: Connect to Teradata through an SSH tunnel
+image: lib/RE - MongoDB - SSH w Private Key.png
+---
 # SSH
 
 If your Teradata instance is located in the Cloud at Amazon Web Services RDS for example or Microsoft Azure, your preferred access to your instance will be over SSH through port 22.

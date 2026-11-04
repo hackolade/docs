@@ -1,3 +1,8 @@
+---
+description: Model AWS Glue Data Catalog standard and Iceberg tables, partitions, buckets and complex data types in Hackolade Studio.
+seoTitle: AWS Glue Data Catalog data modeling
+image: lib/Glue workspace.png
+---
 # Glue Data Catalog
 
 AWS Glue is a fully managed extract, transform, and load (ETL). AWS Glue discovers data and stores the associated metadata (e.g. table definition and schema) in the AWS Glue Data Catalog. Once cataloged, data is immediately searchable, queryable, and available for ETL. The AWS Glue Data Catalog is a fully managed, Apache Hive 2.x metadata repository for all data assets, regardless of where they are located. The Data Catalog contains table definitions, job definitions, and other control information to help manage a AWS Glue environment.

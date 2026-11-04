@@ -1,3 +1,7 @@
+---
+description: "Definitions of the terms used in Hackolade Studio and its documentation: collection, database, document, entity, attribute and more."
+seoTitle: Glossary of Hackolade Studio terms
+---
 # Glossary
 
 <table>

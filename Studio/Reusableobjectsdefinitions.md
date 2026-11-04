@@ -1,3 +1,8 @@
+---
+description: Create internal, model and external definitions of attributes and entities in Hackolade Studio, and reuse them across models.
+seoTitle: Reusable object definitions
+image: lib/External entty references path.png
+---
 # Re-usable objects definitions
 
 > [!NOTE]
@@ -97,7 +102,7 @@ next, you're prompted to choose the reference model, either from your file syste
 
 &nbsp;
 
-![Defintions - Choose external dialog](<lib/Defintions - Choose external dialog.png>)
+<img src="lib/Defintions - Choose external dialog.png" alt="Defintions - Choose external dialog" width="540">
 
 &nbsp;
 
@@ -120,7 +125,7 @@ You also might want to have an entity reference an entire entity in another mode
 3\) choose the reference type External:\
 ![External entty references selection](<lib/External entty references selection.png>)\
 4\) choose a relative or absolute path to the model holding the entity definition (we recommend to use a relative path:\
-![External entty references path](<lib/External entty references path.png>)\
+<img src="lib/External entty references path.png" alt="External entty references path" width="546">\
 5\) select the entity of your choice, and clock OK.
 
 &nbsp;
@@ -184,7 +189,7 @@ This will create the internal or model definition, and replace the attribute (an
 ## Where-Used
 
 For internal and model definitions, it may be useful to find all occurrences of definition references within a model. This where-used function (aka impact analysis, aka lineage) is available from the contextual menu (or the Ctrl+F11 shortcut key):\
-![Definition Where-Used contextual menu](<lib/Definition Where-Used contextual menu.png>)
+<img src="lib/Definition Where-Used contextual menu.png" alt="Definition Where-Used contextual menu" width="185">
 
 &nbsp;
 
@@ -192,7 +197,7 @@ Choosing this option displays a dialog displaying all instances of references to
 
 &nbsp;
 
-![Definition where-used dialog](<lib/Definition where-used dialog.png>)\
+<img src="lib/Definition where-used dialog.png" alt="Definition where-used dialog" width="570">\
 You may select an instance and go to the hierarchical schema view of that reference. Lineage is enabled from the Object Browser and definition tab (model and internal.)
 
 &nbsp;
@@ -204,7 +209,7 @@ When displaying the JSON Schema preview or forward-engineering JSON Schema, the 
 
 &nbsp;
 
-![JSON Schema FE Referenced definitions](<lib/JSON Schema FE Referenced definitions.png>)
+<img src="lib/JSON Schema FE Referenced definitions.png" alt="JSON Schema FE Referenced definitions" width="490">
 
 &nbsp;
 
@@ -213,7 +218,7 @@ or "Resolved definitions"\
 
 &nbsp;
 
-![JSON Schema forward-engineering Resolved definitions](<lib/JSON Schema FE Resolved definitions.png>)
+<img src="lib/JSON Schema FE Resolved definitions.png" alt="JSON Schema forward-engineering Resolved definitions" width="492">
 
 &nbsp;
 
@@ -222,7 +227,7 @@ or "Internal". This option converts to an internal definition, the references to
 
 &nbsp;
 
-![JSON Schema forward-engineering Internalized definitions](<lib/JSON Schema FE Internalized definitions.png>)
+<img src="lib/JSON Schema FE Internalized definitions.png" alt="JSON Schema forward-engineering Internalized definitions" width="508">
 
 &nbsp;
 
