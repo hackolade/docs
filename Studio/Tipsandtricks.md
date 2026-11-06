@@ -280,7 +280,7 @@ Note that, if the handle does not show, you may enable its display through the D
 ## Reverse-Engineering
 
 > [!TIP]
-> If you encounter issues during the Reverse-Engineering process, there is a log file HackoladeRE.log located on your drive at C:\\Users\\%userprofile%\\AppData\\Roaming\\HackoladeLogs (Windows), or /home/$\[user\]/Documents/HackoladeLogs (Linux), or Documents\\HackoladeLogs (Mac). If you send this file to [support@hackolade.com](<mailto:support@hackolade.com,Reverse-engineering anomaly>), we'll be have more information to investigate.
+> If you encounter issues during the Reverse-Engineering process, there is a log file HackoladeRE.log located on your drive at C:\\Users\\%userprofile%\\AppData\\Roaming\\HackoladeLogs (Windows), or /home/$\[user\]/Documents/HackoladeLogs (Linux), or Documents\\HackoladeLogs (Mac). If you send this file to [support@hackolade.com](mailto:support@hackolade.com?subject=Reverse-engineering%20anomaly), we'll be have more information to investigate.
 
 &nbsp;
 

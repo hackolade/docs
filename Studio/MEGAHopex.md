@@ -106,7 +106,7 @@ Currently, the following MEGA concepts are not imported:
 
 &nbsp;
 
-The reverse-engineering works in Polyglot and Db2 for z/OS models. We enable reverse-engineering target by target: if you need one not yet supported, please contact [support@hackolade.com](<mailto:support@hackolade.com,Request for MEGA Hopex import feature>).
+The reverse-engineering works in Polyglot and Db2 for z/OS models. We enable reverse-engineering target by target: if you need one not yet supported, please contact [support@hackolade.com](mailto:support@hackolade.com?subject=Request%20for%20MEGA%20Hopex%20import%20feature).
 
 &nbsp;
 

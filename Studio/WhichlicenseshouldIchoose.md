@@ -24,7 +24,7 @@ Both authoring and viewing license keys are available in either dedicated or con
 
 &nbsp;
 
-<table style="width:60%">
+<table style="width:80%">
 <colgroup><col style="width:34%"><col style="width:32%"><col style="width:34%"></colgroup>
 <thead>
 <tr>
@@ -58,7 +58,7 @@ Hackolade Studio licenses are available for two user roles: **authoring** (for c
 
 &nbsp;
 
-### Professional vs Workgroup
+## Professional vs Workgroup
 
 The Workgroup Edition of Hackolade Studio includes all of the features of the Professional edition, plus a native integration with Git repositories for your data models. The Workgroup Edition makes it easy for users who are not so familiar with Git to leverage the tremendous power of this popular tool, to leverage collaboration, versioning, branching, change tracking, peer review, and other related capabilities detailed [here](Repository.md).
 
@@ -118,13 +118,15 @@ No. Licenses are not tied to named users but to devices. You must obtain a separ
 **Can Hackolade Studio be installed on a server accessed via Remote Desktop?**\
 Yes, Remote Desktop access is supported. However, a license seat is required for each unique combination of host machine, user login, and remote client accessing the application.\
 When Hackolade is installed on a virtual machine (VM) and shared among multiple users or accessed through Windows Remote Desktop, licensing is not attached solely to the host machine. Instead, it is tied to the combination of the host, the remote machine, the user login, and other parameters that define the uniqueness of each session.\
-If multiple users access Hackolade on the same machine, whether through Terminal Server, Remote Desktop, Windows App, Citrix, or another VM solution, then each user and PC requires its own license seat. In other words, you need a license for every user/device combination that accesses the installation.\
+If multiple users access Hackolade on the same machine, whether through Terminal Server, Remote Desktop, Windows App, Citrix, or another VM solution, then each user and PC requires its own license seat. In other words, you need a license for every user/device combination that accesses the installation.
+
+&nbsp;
+
 **Example:** Four Hackolade Studio users sharing a single VM require four license seats, the same as if they were running Hackolade Studio on four individual PCs.
 
 &nbsp;
 
-## Notes
-
-**1)** dedicated licenses, floating licenses, and subscriptions are all controlled by our license server in the cloud.\
-**2)** the information above also applies to installations using only the Command-Line Interface in automated mode. A CLI process requires a licensed installation, just as any desktop user. If a CLI process is run from a user's workstation, it uses the same license as the GUI application.\
-3\) the Collibra integration is an add-on feature which requires a specific license key
+> [!NOTE]
+> **1)** dedicated licenses, floating licenses, and subscriptions are all controlled by our license server in the cloud.\
+> **2)** the information above also applies to installations using only the Command-Line Interface in automated mode. A CLI process requires a licensed installation, just as any desktop user. If a CLI process is run from a user's workstation, it uses the same license as the GUI application.\
+> 3\) the Collibra integration is an add-on feature which requires a specific license key

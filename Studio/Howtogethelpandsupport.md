@@ -9,7 +9,7 @@ The different options currently available are:
 - [eLearning platform](https://community.hackolade.com/slides/all) with self-paced tutorials
 - Read the online [manual](<http://hackolade.com/help> "target=\"_blank\"")
 - Watch these short [videos](<http://hackolade.com/videos.html> "target=\"_blank\"")
-- Send an [email](mailto:support@hackolade.com) to open a ticket to [support@hackolade.com](<mailto:support@hackolade.com,Hackolade Studio question>)
+- Send an [email](mailto:support@hackolade.com) to open a ticket to [support@hackolade.com](mailto:support@hackolade.com?subject=Hackolade%20Studio%20question)
 
 &nbsp;
 

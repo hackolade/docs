@@ -25,7 +25,7 @@ Users may nevertheless:
 
 &nbsp;
 
-You or your organization must have purchased the Workgroup Edition, or the Workgroup upgrade option to the Professional Edition. This feature is not available in the Community, Personal, or Professional Editions. If you don't have the Workgroup Edition yet, you may contact us at [sales@hackolade.com](<mailto:sales@hackolade.com,Interested in Workgroup Edition>).
+You or your organization must have purchased the Workgroup Edition, or the Workgroup upgrade option to the Professional Edition. This feature is not available in the Community, Personal, or Professional Editions. If you don't have the Workgroup Edition yet, you may contact us at [sales@hackolade.com](mailto:sales@hackolade.com?subject=Interested%20in%20Workgroup%20Edition).
 
 &nbsp;
 

@@ -7,7 +7,7 @@ image: lib/Workgroup invalid git client.png
 
 There are 2 pre-requisites for using the Workgroup Edition of Hackolade Studio:
 
-- you or your organization must have purchased the Workgroup Edition, or the Workgroup upgrade option to the Professional Edition. This repository feature is not available in the Community, Personal, or Professional Editions. If you don't have the Workgroup Edition yet, you may contact us at [sales@hackolade.com](<mailto:sales@hackolade.com,Interested in Workgroup Edition>).
+- you or your organization must have purchased the Workgroup Edition, or the Workgroup upgrade option to the Professional Edition. This repository feature is not available in the Community, Personal, or Professional Editions. If you don't have the Workgroup Edition yet, you may contact us at [sales@hackolade.com](mailto:sales@hackolade.com?subject=Interested%20in%20Workgroup%20Edition).
 - you must have a Git client installed on your computer, and be allowed to execute Git commands through that client.
 
 &nbsp;

@@ -18,7 +18,7 @@ Below is a possible implementation and deployment roadmap:
 
 ## 🎨 Phase 1: Solution Architecture & Design
 
-<table style="width:70%">
+<table style="width:100%">
 <colgroup><col style="width:24%"><col style="width:76%"></colgroup>
 <thead>
 <tr>
@@ -42,7 +42,7 @@ Below is a possible implementation and deployment roadmap:
 
 ## 🖥️ Phase 2: Installation & Access
 
-<table style="width:70%">
+<table style="width:100%">
 <colgroup><col style="width:25%"><col style="width:75%"></colgroup>
 <thead>
 <tr>
@@ -74,7 +74,7 @@ Below is a possible implementation and deployment roadmap:
 
 ## 🗺️ Phase 3: Planning & Strategy
 
-<table style="width:70%">
+<table style="width:100%">
 <colgroup><col style="width:25%"><col style="width:75%"></colgroup>
 <thead>
 <tr>
@@ -102,7 +102,7 @@ Below is a possible implementation and deployment roadmap:
 
 ## 🧪 Phase 4: Pilot Execution
 
-<table style="width:70%">
+<table style="width:100%">
 <colgroup><col style="width:25%"><col style="width:75%"></colgroup>
 <thead>
 <tr>
@@ -138,7 +138,7 @@ Below is a possible implementation and deployment roadmap:
 
 ## 🏗️ Phase 5: Gradual Rollout
 
-<table style="width:70%">
+<table style="width:100%">
 <colgroup><col style="width:25%"><col style="width:75%"></colgroup>
 <thead>
 <tr>
@@ -170,7 +170,7 @@ Below is a possible implementation and deployment roadmap:
 
 ## 📈 Phase 6: Optimization & Adoption
 
-<table style="width:70%">
+<table style="width:100%">
 <colgroup><col style="width:25%"><col style="width:75%"></colgroup>
 <thead>
 <tr>

@@ -14,7 +14,7 @@ Effective governance requires clear ownership of roles and responsibilities to e
 
 &nbsp;
 
-<table style="width:70%">
+<table style="width:100%">
 <colgroup><col style="width:26%"><col style="width:74%"></colgroup>
 <thead>
 <tr>
@@ -63,7 +63,7 @@ To ensure the **ongoing effectiveness** of Hackolade Studio and align with busin
 
 &nbsp;
 
-<table style="width:70%">
+<table style="width:100%">
 <colgroup><col style="width:29%"><col style="width:71%"></colgroup>
 <thead>
 <tr>
@@ -108,8 +108,8 @@ Hackolade Studio’s effectiveness and its alignment with organizational needs s
 
 &nbsp;
 
-<table style="width:70%">
-<colgroup><col style="width:27%"><col style="width:63%"><col style="width:10%"></colgroup>
+<table style="width:100%">
+<colgroup><col style="width:27%"><col style="width:62%"><col style="width:11%"></colgroup>
 <thead>
 <tr>
 <th>Stage</th>

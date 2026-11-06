@@ -12,7 +12,7 @@ Hackolade Studio offers a **multi-tiered training strategy** to ensure all stake
 
 &nbsp;
 
-<table style="width:70%">
+<table style="width:100%">
 <colgroup><col style="width:24%"><col style="width:51%"><col style="width:25%"></colgroup>
 <thead>
 <tr>
@@ -46,7 +46,7 @@ The **progressive learning path** ensures that beginners can start with foundati
 
 &nbsp;
 
-<table style="width:70%">
+<table style="width:100%">
 <colgroup><col style="width:18%"><col style="width:30%"><col style="width:28%"><col style="width:24%"></colgroup>
 <thead>
 <tr>
@@ -84,7 +84,7 @@ Hackolade provides a **broad suite of training and support resources**, all of w
 
 &nbsp;
 
-<table style="width:70%">
+<table style="width:100%">
 <colgroup><col style="width:26%"><col style="width:50%"><col style="width:24%"></colgroup>
 <thead>
 <tr>

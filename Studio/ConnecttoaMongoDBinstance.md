@@ -45,7 +45,7 @@ These parameters are assembled by Hackolade to create the full connection string
 
 ## Field-Level Encryption (deprecated as of v8.1.5)
 
-contact support@hackolade.com if needed
+contact [support@hackolade.com](mailto:support@hackolade.com?subject=MongoDB%20Field-Level%20Encryption) if needed
 
 &nbsp;
 

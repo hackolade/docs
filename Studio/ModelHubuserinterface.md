@@ -25,7 +25,7 @@ Additional dashboard items will be added over time.
 
 ## Workspace
 
-The Hackolade Enterprise Model Hub portal page is divided in multiple panes which may vary depending on where you are in the application.
+The Hackolade Model Hub portal page is divided in multiple panes which may vary depending on where you are in the application.
 
 &nbsp;
 

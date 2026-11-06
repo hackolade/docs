@@ -33,7 +33,7 @@ The integration of data modeling with governance tools and processes enables sol
 &nbsp;
 
 > [!IMPORTANT]
-> The Collibra integration is an add-on feature which requires a specific license key which can be purchased from us [here](<mailto:support@hackolade.com,Collibra integration license>).
+> The Collibra integration is an add-on feature which requires a specific license key which can be purchased from us [here](mailto:support@hackolade.com?subject=Collibra%20integration%20license).
 
 &nbsp;
 

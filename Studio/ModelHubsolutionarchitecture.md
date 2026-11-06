@@ -75,7 +75,7 @@ We start with application stakeholders and subject-matter experts, i.e.; the peo
 
 ## Retake control of your data
 
-The Hackolade Enterprise Model Hub helps organizations **retake control of their data** (and [reduce your data debt](https://hackolade.com/reduce-your-data-debt.html)) by structuring how it’s designed, documented, governed, and understood. By enabling a design-first, model-driven approach, it improves data quality from the start, reducing cleanup costs, minimizing risk, and accelerating time to value. It turns scattered data into a strategic asset, aligned across both business and technical teams.
+The Hackolade Model Hub helps organizations **retake control of their data** (and [reduce your data debt](https://hackolade.com/reduce-your-data-debt.html)) by structuring how it’s designed, documented, governed, and understood. By enabling a design-first, model-driven approach, it improves data quality from the start, reducing cleanup costs, minimizing risk, and accelerating time to value. It turns scattered data into a strategic asset, aligned across both business and technical teams.
 
 &nbsp;
 

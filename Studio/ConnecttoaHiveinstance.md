@@ -175,12 +175,12 @@ Specify the path and filename to keystore, the access password, and the alias na
 
 &nbsp;
 
-### 4c) Convert the keystore into [PEM keys](mailto:https://en.wikipedia.org/wiki/Privacy-Enhanced_Mail).
+### 4c) Convert the keystore into [PEM keys](<https://en.wikipedia.org/wiki/Privacy-Enhanced_Mail> "target=\"_blank\"").
 
 The following instruction shows how to convert JKS (java key store) certificate to PEM:
 
 1. Install java if you don't have it: [https://www.java.com/en/download/](https://www.java.com/en/download/)
-2. Install openssl: [https://wiki.openssl.org/index.php/Binaries](https://wiki.openssl.org/index.php/Binaries)
+2. Install openssl: [https://wiki.openssl.org/index.php/Binaries](<https://wiki.openssl.org/index.php/Binaries> "target=\"_blank\"")
    1. Linux: `sudo apt-get install openssl`
    2. MacOS: `brew install openssl`
    3. Windows: [https://slproweb.com/products/Win32OpenSSL.html](https://slproweb.com/products/Win32OpenSSL.html)

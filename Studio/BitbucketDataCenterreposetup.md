@@ -129,4 +129,4 @@ To check the status of the webhook, click on the Edit button, then scroll to the
 
 &nbsp;
 
-If a failure has occurred, it appears. Click the Event View details button and send it to [support@hackolade.com](<mailto:support@hackolade.com,Model Hub GitLab webhook failed event>) for troubleshooting.
+If a failure has occurred, it appears. Click the Event View details button and send it to [support@hackolade.com](mailto:support@hackolade.com?subject=Model%20Hub%20Bitbucket%20webhook%20failed%20event) for troubleshooting.

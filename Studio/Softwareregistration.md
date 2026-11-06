@@ -42,7 +42,7 @@ Starting with v7.0.0, the Community Edition no longer requires a license key. Fo
 
 &nbsp;
 
-For obvious reasons, it is not possible to accumulate multiple 14-day free trial keys. Once your key has expired, you may take a subscription for the Edition of your choice, or choose to use the Community Edition for free. If you need more time, you may send an email to support@hackolade.com, explaining the evaluation plans and timeline for your organization.
+For obvious reasons, it is not possible to accumulate multiple 14-day free trial keys. Once your key has expired, you may take a subscription for the Edition of your choice, or choose to use the Community Edition for free. If you need more time, you may send an email to [support@hackolade.com](mailto:support@hackolade.com?subject=Request%20to%20extend%20validity%20of%20trial%20key), explaining the evaluation plans and timeline for your organization.
 
 &nbsp;
 

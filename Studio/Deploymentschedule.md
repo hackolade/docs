@@ -32,7 +32,8 @@ Even when leveraging the browser deployment, the security-first architecture is 
 
 &nbsp;
 
-<table style="width:70%">
+<table style="width:100%">
+<colgroup><col style="width:14%"><col style="width:86%"></colgroup>
 <thead>
 <tr>
 <th>Week</th>

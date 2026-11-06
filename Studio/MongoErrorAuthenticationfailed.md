@@ -37,4 +37,4 @@ When you save, this should parse the string and fill-in all the entries automati
 \
 Then try again to connect to the database, using the newly created connection settings.\
 \
-If it does not work, you should send an email to [support@hackolade.com](<mailto:support@hackolade.com,Cannot connect to MongoDB instance>) with the log file HackoladeRE.log from directory C:\\Users\\%username%\\AppData\\Roaming\\HackoladeLogs (Windows) or folder Users/$USER/Documents/HackoladeLogs (Mac/Linux)
+If it does not work, you should send an email to [support@hackolade.com](mailto:support@hackolade.com?subject=Cannot%20connect%20to%20MongoDB%20instance) with the log file HackoladeRE.log from directory C:\\Users\\%username%\\AppData\\Roaming\\HackoladeLogs (Windows) or folder Users/$USER/Documents/HackoladeLogs (Mac/Linux)

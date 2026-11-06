@@ -28,7 +28,7 @@ Your Git repository (or repositories) is (are) the single source-of-truth for yo
 
 ## Provide domain name and sub-domain to Hackolade Helpdesk
 
-Model Hub and Studio in the browser will be running on your domain. For security purposes we need to configure domain locking and parameters. Send an email to [support@hackolade.com](<mailto:support@hackolade.com,MOdel Hub domain and and sub-domain>), specifying domain name and subdomain, for example hck.example.com
+Model Hub and Studio in the browser will be running on your domain. For security purposes we need to configure domain locking and parameters. Send an email to [support@hackolade.com](mailto:support@hackolade.com?subject=Model%20Hub%20domain%20and%20sub-domain), specifying domain name and subdomain, for example hck.example.com
 
 &nbsp;
 

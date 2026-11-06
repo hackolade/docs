@@ -5,7 +5,7 @@ image: lib/Model Hub metadata collaboration platform.png
 ---
 # Overview
 
-The Hackolade Enterprise Model Hub is a model-driven metadata collaboration platform providing a unified and central access to your Hackolade Studio data models stored in one or more Git repositories. It empowers business teams, governance teams, technical teams, and other stakeholders to collaborate efficiently and promote a shared understanding of the context and meaning of data across the organization. The Model Hub allows users to browse, search, drill down, then view and navigate lineage, where-used, impact analysis, descriptions, and details of data assets in your data models for SQL and NoSQL databases, APIs and other data exchanges, storage formats, reports, charts, and dashboards.
+The Hackolade Model Hub is a model-driven metadata collaboration platform providing a unified and central access to your Hackolade Studio data models stored in one or more Git repositories. It empowers business teams, governance teams, technical teams, and other stakeholders to collaborate efficiently and promote a shared understanding of the context and meaning of data across the organization. The Model Hub allows users to browse, search, drill down, then view and navigate lineage, where-used, impact analysis, descriptions, and details of data assets in your data models for SQL and NoSQL databases, APIs and other data exchanges, storage formats, reports, charts, and dashboards.
 
 &nbsp;
 
@@ -63,7 +63,7 @@ Complex concepts such as master data and transactional data, with multiple entit
 
 &nbsp;
 
-The Hackolade Enterprise Model Hub enables data professionals to document, interpret, and fully control the enterprise data environment. When organizations can interpret and share data accurately, and reuse it efficiently, the quality of business decision-making improves. Understanding the origins, targets, and transformations of enterprise data is a crucial step for achieving reliable data quality across the organization.
+The Hackolade Model Hub enables data professionals to document, interpret, and fully control the enterprise data environment. When organizations can interpret and share data accurately, and reuse it efficiently, the quality of business decision-making improves. Understanding the origins, targets, and transformations of enterprise data is a crucial step for achieving reliable data quality across the organization.
 
 &nbsp;
 

@@ -58,8 +58,8 @@ Below is the current list of Hackolade CLI commands. Additional commands may be 
 
 &nbsp;
 
-<table style="width:90%">
-<colgroup><col style="width:19%"><col style="width:81%"></colgroup>
+<table style="width:100%">
+<colgroup><col style="width:22%"><col style="width:78%"></colgroup>
 <thead>
 <tr>
 <th>Command</th>

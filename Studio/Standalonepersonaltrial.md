@@ -35,7 +35,7 @@ Run the downloaded installer which includes all the necessary components to run 
 
 &nbsp;
 
-Once the application has started, you must enter a valid license key. If you don't have one, you can obtain one from support@hackolade.com
+Once the application has started, you must enter a valid license key. If you don't have one, you can obtain one from [support@hackolade.com](mailto:support@hackolade.com?subject=Request%20for%20Model%20Hub%20Standalone%20trial%20license%20key)
 
 &nbsp;
 

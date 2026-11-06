@@ -30,4 +30,4 @@ For our customers, our approach is beneficial because much cheaper and more conv
 
 &nbsp;
 
-Please leverage the above self-service resources. And if, by accident, a machine crashes, or a user has left the organization without respecting the exit checklist item to release the license seat, you can simply send an email to [support@hackolade.com](<mailto:Please release license seat,support@hackolade.com>) explaining the reason, and our helpdesk will release the seats.
+Please leverage the above self-service resources. And if, by accident, a machine crashes, or a user has left the organization without respecting the exit checklist item to release the license seat, you can simply send an email to [support@hackolade.com](mailto:support@hackolade.com?subject=Please%20release%20license%20seat) explaining the reason, and our helpdesk will release the seats.

@@ -22,8 +22,8 @@ Here's a suggestion for the key roles and responsibilities:
 
 &nbsp;
 
-<table style="width:75%">
-<colgroup><col style="width:22%"><col style="width:35%"><col style="width:15%"><col style="width:28%"></colgroup>
+<table style="width:100%">
+<colgroup><col style="width:22%"><col style="width:35%"><col style="width:17%"><col style="width:26%"></colgroup>
 <thead>
 <tr>
 <th>Role</th>
@@ -181,7 +181,7 @@ Developing user personas can be a useful part of ensuring that the change manage
 
 &nbsp;
 
-<table style="width:70%">
+<table style="width:100%">
 <colgroup><col style="width:23%"><col style="width:31%"><col style="width:46%"></colgroup>
 <thead>
 <tr>

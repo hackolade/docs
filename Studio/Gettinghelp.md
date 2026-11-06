@@ -10,7 +10,7 @@ The different options currently available are:
 - [eLearning platform](https://community.hackolade.com/slides/all) with self-paced tutorials
 - Read the online [manual](<http://hackolade.com/help> "target=\"_blank\"") and use the search box to find a topic. In the search box, you may invoke `Ask AI`, a conversational search feature that turns your natural-language question into a synthesized answer based on the documentation pages. It combines retrieval/search with an LLM, rather than only returning keyword-matched links.
 - Watch these short [videos](<http://hackolade.com/videos.html> "target=\"_blank\"")
-- Send an [email](mailto:support@hackolade.com) to open a support ticket to [support@hackolade.com](<mailto:support@hackolade.com,Hackolade Studio question>)
+- Send an [email](mailto:support@hackolade.com) to open a support ticket to [support@hackolade.com](mailto:support@hackolade.com?subject=Hackolade%20Studio%20question)
 
 &nbsp;
 

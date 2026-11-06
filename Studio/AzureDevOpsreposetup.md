@@ -273,7 +273,7 @@ Then click Next to get to the Action screen, then click the Test button:
 
 &nbsp;
 
-If you do not get a successful 200 response, please provide the full response to the Hackolade helpdesk at [support@hackolade.com](<mailto:support@hackolade.com,Azure DevOps webhook to Model Hub issue>)
+If you do not get a successful 200 response, please provide the full response to the Hackolade helpdesk at [support@hackolade.com](mailto:support@hackolade.com?subject=Azure%20DevOps%20webhook%20to%20Model%20Hub%20issue)
 
 &nbsp;
 
