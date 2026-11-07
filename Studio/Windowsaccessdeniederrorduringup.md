@@ -7,16 +7,10 @@ image: lib/Installation error - application running.png
 
 You should NOT install a new version of Hackolade while the application is running. All instances of the application must be closed for the upgrade to proceed properly.
 
-&nbsp;
-
 If you get this error message:\
 ![Installation error - application running](<lib/Installation error - application running.png>)
 
-&nbsp;
-
 it is an indication that the application is opened. You should close all instances, then choose Try again in the dialog above.
-
-&nbsp;
 
 If the installation still fails, choose the option Cancel installation, then follow these steps:\
 1\) make sure to close all instances of the application\

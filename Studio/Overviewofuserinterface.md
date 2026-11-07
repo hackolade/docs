@@ -6,11 +6,7 @@ seoTitle: Hackolade Studio user interface overview
 
 We have taken a minimalist approach to the design of the application to make it both intuitive and powerful. We avoid to bloat the application with seldom used functionality and endless menu options that are hard to understand.
 
-&nbsp;
-
 As a result, the approach to achieve the tools use cases may be different than other tools, and the terminology might differ as well. It is therefore useful to familiarize yourself with the specifics of this application by reviewing this section. It may also be useful to consult some [tips and tricks](Tipsandtricks.md).
-
-&nbsp;
 
 Take a few minutes to familiarize yourself with the application layout and navigation:
 
@@ -20,8 +16,6 @@ Take a few minutes to familiarize yourself with the application layout and navig
 - [Compare and merge models](Compareandmergemodels.md)
 - [Model documentation](Generatedocumentation.md)
 - [Shortcut keys](Shortcutkeys.md)
-
-&nbsp;
 
 and some advanced features
 

@@ -7,6 +7,4 @@ image: lib/Cassandra authentication.png
 
 If required, enter your username and password:
 
-&nbsp;
-
 ![Cassandra authentication](<lib/Cassandra authentication.png>)

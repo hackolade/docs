@@ -7,14 +7,10 @@ image: lib/Collibra Entra ID JWT endpoints.png
 
 This page is relevant for Hackolade Studio client connection to a Collibra instance using an identified user. It does not apply to a server or CLI instance of Hackolade Studio establishing a [machine-to-machine connection to Collibra](Machine-to-machineconnectiontoCo.md) using a service account.
 
-&nbsp;
-
 ## 1. Register an Application in Microsoft Entra ID
 
 > [!NOTE]
 > We start by the setup **in Azure Entra ID**
-
-&nbsp;
 
 1. Go to **Azure Portal > Microsoft Entra ID > App registrations**
 2. Click **New registration**
@@ -25,11 +21,7 @@ This page is relevant for Hackolade Studio client connection to a Collibra insta
    1. Save **Application (client) ID**
    2. Save **Directory (tenant) ID**
 
-&nbsp;
-
 More detailed instructions in the [official Microsoft documentation](<https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app> "target=\"_blank\"")
-
-&nbsp;
 
 ## 2. Configure API Permissions of the Application
 
@@ -38,65 +30,41 @@ More detailed instructions in the [official Microsoft documentation](<https://le
    1. `User.Read` (required)
    2. `openid profile offline_access` (optional)
 
-&nbsp;
-
 ![Collibra Entra ID API permissions](<lib/Collibra Entra ID API permissions.png>)
 
 1. Click **Grant admin consent**
-
-&nbsp;
 
 ## 3. Retrieve OpenID Configuration from the Overview of the Application
 
 Copy the **Entra well-known endpoint**:
 
-&nbsp;
-
 ```text
 https://login.microsoftonline.com/{tenant-id}/v2.0/.well-known/openid-configuration
 ```
 
-&nbsp;
-
 Or:
-
-&nbsp;
 
 Go to **Overview > Endpoints**\
 Copy and open the link from **the OpenID Connect metadata document**
 
-&nbsp;
-
 ![Collibra Entra ID JWT endpoints](<lib/Collibra Entra ID JWT endpoints.png>)
-
-&nbsp;
 
 From this JSON, extract:
 
 - `jwks_uri` → used in Collibra
 - `issuer` → used in Collibra
 
-&nbsp;
-
 ## 4. Map Values to Collibra Configuration
 
 > [!NOTE]
 > Need to configure Collibra **using Collibra console**
 
-&nbsp;
-
 1\. Open Collibra console: https://console-{company-domain}.collibra.com\
 2\. Select your environment -> **Data Governance Center > Configuration > Security configuration > JWT**
 
-&nbsp;
-
 ![Collibra Entra ID JWT security config](<lib/Collibra Entra ID JWT security config.png>)
 
-&nbsp;
-
 Next properties should be mapped:
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:14%"><col style="width:29%"><col style="width:30%"><col style="width:27%"></colgroup>
@@ -154,17 +122,11 @@ Next properties should be mapped:
 </tbody>
 </table>
 
-&nbsp;
-
 ## 5. How Collibra matches the token to a user
 
 When you connect from Hackolade Studio, Microsoft Entra ID issues an access token for your user, and Hackolade Studio sends this token to Collibra. Collibra reads one value from the token and looks for a Collibra user with exactly this username. If no user matches, Collibra refuses the connection, even when all other JWT properties are correct.
 
-&nbsp;
-
 An access token contains several fields, called claims. Each claim has a name and a value. For example, the decoded token of John Doe contains these claims, among others (Microsoft lists all of them in its [access token claims reference](<https://learn.microsoft.com/en-us/entra/identity-platform/access-token-claims-reference> "target=\"_blank\""), if you want to know what each claim contains):
-
-&nbsp;
 
 ```text
 sub: "AAAAAAAAAAAAAAAAAAAAAIkzqFVrSaSaFHy782bbtaQ"
@@ -173,19 +135,11 @@ aud: "..."
 iss: "..."
 ```
 
-&nbsp;
-
 In the `JWT Principal ID Claim Name` property, you set which claim Collibra reads. The default value is `sub`, as described in the [Collibra JWT authentication guide](<https://developer.collibra.com/tutorials/rest-api-json-web-token> "target=\"_blank\""). Entra ID fills `sub` with an identifier generated for your application. The default value works only if your Collibra usernames contain exactly this identifier.
-
-&nbsp;
 
 In this example, the Collibra username of John Doe is his sign-in name, `john.doe@yourcompany.com`. This value is in the `preferred_username` claim, not in `sub`. With `sub`, no user matches. With `preferred_username`, Collibra finds the user:
 
-&nbsp;
-
 ![Collibra compares the claim selected in JWT Principal ID Claim Name with the Collibra username: sub does not match, preferred_username matches](<lib/Collibra Entra ID claim matching.png>)
-
-&nbsp;
 
 To check which claim to use for your organization:
 
@@ -193,11 +147,7 @@ To check which claim to use for your organization:
 2. In Collibra, open this user and note the username.
 3. In the decoded token, find the claim whose value is exactly this username, and enter the name of this claim in `JWT Principal ID Claim Name`. If this claim is `sub`, keep the default value.
 
-&nbsp;
-
 If no claim of the token contains the Collibra username, add the missing claim in Entra ID as an optional claim (`App registrations > your application > Token configuration`), or align the Collibra usernames with a claim that the token already contains.
-
-&nbsp;
 
 > [!NOTE]
 > The value of `preferred_username` can change in Entra ID, for example after a name change. When it changes, update the username in Collibra as well, otherwise Collibra refuses the connection of this user.

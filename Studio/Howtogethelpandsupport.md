@@ -11,8 +11,6 @@ The different options currently available are:
 - Watch these short [videos](<http://hackolade.com/videos.html> "target=\"_blank\"")
 - Send an [email](mailto:support@hackolade.com) to open a ticket to [support@hackolade.com](mailto:support@hackolade.com?subject=Hackolade%20Studio%20question)
 
-&nbsp;
-
 ## When opening a ticket
 
 It is useful to share precise and detailed information in order to speed up troubleshooting and resolution:
@@ -24,22 +22,14 @@ It is useful to share precise and detailed information in order to speed up trou
 - additional information : provide other details that might help with troubleshooting and a speedy response to your request.
 - log files: information from the application logs can be immensely helpful for our development team to diagnose and resolve the issue, ideally captured immediately after the issue occurred. Log files can be found:
 
-&nbsp;
-
 -- Windows: in the C:\\Users\\%username%\\AppData\\Roaming\\HackoladeLogs directory\
 -- Mac/Linux: in the Users/$USER/Documents/HackoladeLogs folder.
-
-&nbsp;
 
 ## The XY problem
 
 When creating a ticket for support, it may also be helpful to take into consideration the following...
 
-&nbsp;
-
 The [XY problem](<https://en.wikipedia.org/wiki/XY_problem> "target=\"_blank\"") arises when someone attempts to solve problem X, and uses solution Y in an attempt to solve problem X, then also faces challenges with solution Y. Instead of seeking help for problem X, they request support for solution Y, obscuring the root cause and leading to miscommunication, wasted time, and suboptimal solutions.
-
-&nbsp;
 
 The XY problem is further described [here](<https://xyproblem.info/> "target=\"_blank\""): In particular, it describes what to do about it:
 
@@ -47,21 +37,13 @@ The XY problem is further described [here](<https://xyproblem.info/> "target=\"_
 - If someone asks for more information, do provide details.
 - If there are other solutions you've already ruled out, share why you've ruled them out. This gives more information about your requirements.
 
-&nbsp;
-
 The kind of answers you will get to your technical questions depends as much on the way you ask the questions as on the difficulty of developing the answer.
-
-&nbsp;
 
 ## Support response times and Service Level Agreement
 
 Hackolade
 
-&nbsp;
-
 Support response times and Service Level Agreement: Hackolade provides maintenance and support for its products according to the following Maximum Response Times and Maximum Resolution Times. The Maximum Response Time and Maximum Resolution Times identified below are calculated using standard business hours and days:
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:21%"><col style="width:19%"><col style="width:20%"><col style="width:40%"></colgroup>

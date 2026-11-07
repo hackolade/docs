@@ -12,8 +12,6 @@ The "authentication failed" error message is often the result of one of five con
 - Not specifying any or the correct "Authentication Database", (aka authSource), usually "admin"
 - Selecting an incorrect "Authentication" method
 
-&nbsp;
-
 We recommend that you double-check the username and password, make sure the MongoDB user exists, verify the correct authentication database and make sure the authentication mechanism is supported by your MongoDB database.\
 For further troubleshooting:
 

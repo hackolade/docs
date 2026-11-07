@@ -7,11 +7,7 @@ image: lib/Workgroup explore files.png
 
 When you open a local repository and choose Explore repository > Files in the left menu, you get a table listing all the Hackolade data models in the repository across the different subfolders, if any. The "Show only models" button lets you toggle the display of all files in the repository, whether they're data models or not.
 
-&nbsp;
-
 ![Workgroup explore files](<lib/Workgroup explore files.png>)
-
-&nbsp;
 
 Different strategies are available for discovering data models in a repository, among which you can choose by clicking the cogwheel icon to access the options:
 
@@ -22,26 +18,14 @@ Different strategies are available for discovering data models in a repository, 
 - **Scanning the content of the JSON files**.
   - Limitation: although this strategy may give more accurate results, it can be much slower depending on the size of your repository and of the JSON files present, as the application must open each .json file to determine whether it is a Hackolade data model or not.
 
-&nbsp;
-
 You can pick the strategy that best fits your case through the table's filter. The last strategy selected is saved and restored for your next sessions.
-
-&nbsp;
 
 You can open a data model from the table by clicking on the corresponding file name. You can also open it in a new application instance by clicking on the icon to the left.
 
-&nbsp;
-
 To display the history of commits for a file, you may click on the icon on the left.
-
-&nbsp;
 
 You can create a new data model by clicking on the button at the top-right corner of the pane (or by pressing Ctrl+N / Cmd+N.) If you save a newly created data model while having a repository opened, then Hackolade suggests to save it in that repository by default. This behavior takes precedence over the default folder defined in "Tools > Options > Default Paths > Models".
 
-&nbsp;
-
 Any change made outside Hackolade should be automatically reflected in the table (e.g. deleting a data model through the OS.) If you believe that the content of the table does not properly reflect the state of your filesystem, you can click on the refresh icon next to the title.
-
-&nbsp;
 
 Note that, if Git has been instructed to ignore some files (through the [gitignore](<https://git-scm.com/docs/gitignore> "target=\"_blank\"") functionality), they are not listed in the table.

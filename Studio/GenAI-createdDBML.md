@@ -7,55 +7,33 @@ image: lib/Mermaid ER e-commerce from ChatGPT.png
 
 This features allows to instantly generate models, polyglot or physical, then edit and enrich them, plus integrate suggestions from GenAI. By integrating AI-generated diagrams with Hackolade Studio’s intuitive modeling, teams can efficiently develop and refine their data models, enhancing collaboration and accelerating the development cycle.
 
-&nbsp;
-
 ## DBML
 
 [DBML](<https://dbml.dbdiagram.io/home> "target=\"_blank\"") (Database Markup Language) is an open-source DSL (a small, special‑purpose language designed for one particular domain, in this case **database schemas**) designed to define and document database schemas and structures. It is designed to be simple, consistent and highly-readable. Its [playground](<https://dbdiagram.io/d> "target=\"_blank\"") also allows to create simple diagrams, although far from the professional level and capabilities of Hackolade Studio.
 
-&nbsp;
-
 DBML‑style DSLs are especially good for bi-directional exchanges of schemas with Generative AI because they combine compactness, simplicity, and structure -- exactly what an LLM needs to understand and rewrite database layouts reliably. It is text‑only, declarative, and close to “pseudo‑code”. A DBML DSL cleanly separates intent (the schema) from implementation (SQL for a specific DB).
-
-&nbsp;
 
 ChatGPT, Claude, CoPilot, Gemini and other generative AI models find it easier to generate ER diagrams in DBML compared to SQL DDL or traditional modeling standards because DBML uses a simple, human-readable syntax that closely aligns with natural language. Its declarative and visual style allows AI to map conceptual relationships directly into diagram code without needing strict adherence to data types, constraints, or database-specific rules. Unlike DDLs, which requires precision and contextual knowledge of database engines, DBML is more forgiving and doesn’t require runtime validation. This makes it an ideal format for GenAI to produce quickly and accurately from natural prompts.
 
-&nbsp;
-
 Compared with [Mermaid ER code](<https://www.mermaidchart.com/> "target=\"_blank\""), DBML‑style DSLs are better for exchanging schemas with GenAI mainly because they are more “schema‑oriented” and less “diagram‑oriented,” which makes them easier for an AI to parse, reason about, and transform. Mermaid ER syntax is designed to describe graphics and layout: boxes, lines, cardinality labels, and sometimes notes while DBML is purely about tables, columns, types, constraints, and relationships; it does not care how the diagram is rendered. That makes it much closer to the “true” data model an AI needs to understand. DBML can cleanly encode things like pk, not null, indexes, enums, and extensions (e.g., dbdiagram project‑level notes), which are useful for AI‑driven schema evolution and SQL generation.
 
-&nbsp;
-
 DBML works well for **tables, columns, and relational constraints,** but like with Mermaid however, it does not define “types” with nested fields or array‑of‑objects structures the way you can in JSON‑schema or a document‑aware modeling language. DBML is not a logical‑type DSL for subobjects or arrays; it delegates that complexity to the database‑level JSON/array types and to external schemas.
-
-&nbsp;
 
 ## Prompt
 
 You may create prompts using entire business requirements, and fine-tune the prompt until the result suits your needs. For the purpose of this documentation page, here is a super simple prompt example:
 
-&nbsp;
-
 ```text
 Generate a physical ERD in DBML for an e-commerce application running on PostgreSQL, full with tables, columns, data types, relationships.
 ```
 
-&nbsp;
-
 With some LLMs, it might be required to specify:\
 `Provide syntactically correct code so it can be accepted without errors by `[`https://dbml.dbdiagram.io/home`](<https://dbml.dbdiagram.io/home> "target=\"_blank\"")
-
-&nbsp;
 
 > [!NOTE]
 > Results vary greatly depending on the LLM and the prompt.
 
-&nbsp;
-
 Here is a simple example response from Claude Sonnet 4.6 for the above prompt:
-
-&nbsp;
 
 ```javascript
 // =====================================================
@@ -326,11 +304,7 @@ Table wishlist_items {
 }
 ```
 
-&nbsp;
-
 A more complex prompt based on requirements could be:
-
-&nbsp;
 
 ```text
 I am tasked with designing a Human Resources training database system for employees.
@@ -340,13 +314,9 @@ Generate an Entity-Relationship Diagram (ERD) according to the DBML specificatio
 .
 ```
 
-&nbsp;
-
 ## Prompt template
 
 To avoid too much iterative prompting, you may want to combine your requirements with a template such as the one below, replacing the options with your specific instructions.
-
-&nbsp;
 
 ```text
 You are a senior data modeler with 20 years of experience.
@@ -383,63 +353,39 @@ Rules for this diagram:
 Output format: Provide a DBML block that is ready to paste directly into a DBML-compatible renderer.
 ```
 
-&nbsp;
-
 Sometimes the generated DBML code cannot be reverse-engineered because the syntax is not fully valid, which can happen with AI-generated output. If necessary, continue the conversation with the LLM using an iterative prompting approach.
 
 1. Copy the exact parsing error message you received:
 2. Provide this error message and ask the LLM to fix the code based on that error.
 
-&nbsp;
-
 Gen AI will adjust the output to address the parsing issue and progressively improve the code until it meets DBML syntax requirements.
-
-&nbsp;
 
 ## Reverse-engineer in Hackolade Studio
 
 There are 2 ways to import DBML diagram code into Hackolade Studio: by reading DBML files with .dbml extensions, or by reading the clipboard into which you would have copied the DBML code from the GenAI provider's response to your prompt.
 
-&nbsp;
-
 Depending on the target technology of your model, the import process will convert the data types into the closest corresponding type for the target. Naming conventions, if enabled, are applied.
-
-&nbsp;
 
 With either method, the above DBML code will result in this Hackolade Studio diagram:\
 ![Mermaid ER e-commerce from ChatGPT](<lib/Mermaid ER e-commerce from ChatGPT.png>)
-
-&nbsp;
 
 ### From DBML files
 
 Go to Tools > Reverse-Engineer > Diagrams > DBML... and select one or more DBML files with the extension .dbml
 
-&nbsp;
-
 ![Mermaid RE from file](<lib/Mermaid RE from file.png>)
-
-&nbsp;
 
 ### From your Clipboard
 
 Our Open From dialog, which already allows to [open models from](OpenmodelfromGitrepo.md) either your local computer or from any of the Git repo providers you might have configured, is where we have allowed to read your clipboard (the temporary storage in your computer's memory.). When you prompt your GPT and ask to create output in DBML diagram code, you may click the Copy button which populates your clipboard. When you access the Open From dialog and choose the Clipboard tab on the left, we automatically read the latest entry in your clipboard. If you change the content of the clipboard, you can update the content of the dialog by clicking the Refresh button.
 
-&nbsp;
-
 ![Open From Mermaid ER diagram code](<lib/Open From Mermaid ER diagram code.png>)
 
-&nbsp;
-
 When you click on the Open button, the DBML diagram code is parsed and is added to the currently opened model. Depending on the selected target, the data types are mapped according to the closest available data type for that target. If no model is already opened, you are prompted to choose the target.
-
-&nbsp;
 
 ### From remote repository
 
 Similarly, it is possible, if you have a [repository connection](Connecttoarepositoryhub.md) to a repo provider, to select one or more files with DBML diagram code.
-
-&nbsp;
 
 ### With the Command-Line Interface
 

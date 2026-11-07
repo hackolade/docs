@@ -7,23 +7,13 @@ image: lib/Parquet workspace.png
 
 Apache Parquet is a binary file format that stores data in a columnar fashion for compressed, efficient columnar data representation in the Hadoop ecosystem. Parquet files can be stored in any file system, not just HDFS. It is a file format with a name and a **.parquet** extension, which can be stored on AWS S3, Azure Blob Storage, or Google Cloud Storage for analytics processing.
 
-&nbsp;
-
 Parquet file is an hdfs file that must include the metadata for the file. This allows splitting columns into multiple files, as well as having a single metadata file reference multiple parquet files. The metadata includes the schema for the data stored in the file.
-
-&nbsp;
 
 Hackolade is a visual editor for Parquet schema for non-programmers. To perform data modeling for Parquet schema with Hackolade, you must first download the Parquet [plugin](DownloadadditionalDBtargetplugin.md).
 
-&nbsp;
-
 Hackolade was specially adapted to support the [schema design of Parquet](<https://hackolade.com/nosqldb.html#parquet> "target=\"_blank\"") schema. The application closely follows the Parquet terminology.
 
-&nbsp;
-
 ![Parquet workspace](<lib/Parquet workspace.png>)
-
-&nbsp;
 
 ## Parquet Schema
 
@@ -32,8 +22,6 @@ The root of the schema is a group of fields called a message. Each field has thr
 - **required:** exactly one occurrence
 - **optional:** 0 or 1 occurrence
 - **repeated:** 0 or more occurrences
-
-&nbsp;
 
 ## Data Types
 
@@ -49,13 +37,9 @@ The types supported by the file format are intended to be as minimal as possible
 - BYTE_ARRAY: arbitrarily long byte arrays
 - FIXED_LEN_BYTE_ARRAY: Fixed number of 8-bit unsigned bytes
 
-&nbsp;
-
 Notice that there is no primitive string type. Instead, Parquet defines logical types that specify how primitive types should be interpreted, so there is a separation between the serialized representation (the primitive type) and the semantics that are specific to the application (the logical type). Strings are represented as binary primitives with a UTF8 annotation.\
 BYTE_ARRAY corresponds to binary in Parquet. Strings are encoded as variable-length binary with the UTF8 type annotation to indicate how to interpret the raw bytes back into a String. UTF8 is the only encoding supported in the format, but not every binary uses UTF8 because not all binary fields are storing string data.\
 ![Parquet data types](<lib/Parquet data types.png>)
-
-&nbsp;
 
 Logical types are used to extend the types that parquet can be used to store, by specifying how the primitive types should be interpreted. This keeps the set of primitive types to a minimum and reuses parquet’s efficient encodings. For example, strings are stored as byte arrays (binary) with a UTF8 annotation. These annotations define how to further decode and interpret the data. Annotations are stored as a ConvertedType in the file metadata and are documented in [LogicalTypes.md](<https://github.com/apache/parquet-format/blob/2e23a1168f50e83cacbbf970259a947e430ebe3a/LogicalTypes.md> "target=\"_blank\"").
 
@@ -73,33 +57,21 @@ Logical types are used to extend the types that parquet can be used to store, by
 - LIST is used to annotate a **group** type that should be interpreted as lists.
 - MAP is used to annotate a **group** types that should be interpreted as a map from keys to values.
 
-&nbsp;
-
 ## Forward-Engineering
 
 Hackolade dynamically generates Parquet schema for the structure created with the application.
 
-&nbsp;
-
 The script can also be exported to the file system via the menu Tools > Forward-Engineering, or via the [Command-Line Interface](CommandLineInterface.md).
 
-&nbsp;
-
 ![Parquet forward-engineering](<lib/Parquet forward-engineering.png>)
-
-&nbsp;
 
 ## Reverse-Engineering
 
 Hackolade easily imports the schema from .parquet files to represent the corresponding Entity Relationship Diagram and schema structure. You may also import and convert from JSON Schema and documents.
 
-&nbsp;
-
 ## Cloud Object Storage
 
 In the context of large-scale distributed systems like data lakes, data is often stored in object storage solutions like Amazon S3, Azure ADLS, or Google Cloud Storage. Parquet is designed to be a columnar storage format that allows for efficient processing and analysis of large datasets.
-
-&nbsp;
 
 With Hackolade Studio, you can reverse-engineer Parquet files located on:
 

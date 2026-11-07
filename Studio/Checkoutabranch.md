@@ -15,24 +15,16 @@ You can perform many branch-related actions directly from Hackolade Studio:
 - creating and checking out a new branch
 - deleting a branch
 
-&nbsp;
-
 Hackolade Studio makes all these functionalities available through the Branch drop-down in the repository bar.
-
-&nbsp;
 
 ## List your branches
 
 When you open the Branch drop-down, you see the list of all the branches that you have checked out at least once. If you just cloned a repository, then you only see one single branch, the "main" (or "master") branch.\
 ![List your branches](<lib/Workgroup branch list1.png>)
 
-&nbsp;
-
 ## Search for a branch
 
 As you type some text in the Branch drop-down, it is filtered to only list the branches whose name matches your search pattern.
-
-&nbsp;
 
 ## Create and checkout a new branch
 
@@ -46,34 +38,22 @@ To create a new branch and check it out, you just type a name in the Branch drop
 - underscore (`_`)
 - forward slash (`/`)
 
-&nbsp;
-
 To avoid confusion, you should start branch names with a letter.\
 ![Workgroup branch create](<lib/Workgroup branch create.png>)
-
-&nbsp;
 
 ## Checkout a remote branch
 
 Besides your own branches, there are also branches that have been pushed by other users to the remote repository. You can checkout such a remote branch as well: you just need to start typing the name of the desired branch in the Branch drop-down. The drop-down offers the option to checkout any remote branch whose name matches your search pattern.\
 ![Workgroup branch checkout remote](<lib/Workgroup branch checkout remote.png>)
 
-&nbsp;
-
 ## Delete a branch
 
 If you open the Branch drop-down, you can delete any branch, except the active one.\
 ![Workgroup branch list](<lib/Workgroup branch list.png>)
 
-&nbsp;
-
 ![Workgroup confirm branch deletion](<lib/Workgroup confirm branch deletion.png>)
 
-&nbsp;
-
 Note that, by default, the branch is only deleted from your own local repository: if it has been previously pushed to the remote, it remains available in the remote repository after the local deletion, unless you enable the option "Delete remote branch".
-
-&nbsp;
 
 > [!WARNING]
 > When you delete a branch containing commits that haven't been pushed yet, you lose these changes. Although this is sometimes desirable (e.g. when you want to discard your changes), you need to do this carefully! That's why you need to confirm the deletion of the branch by typing its name.

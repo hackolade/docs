@@ -6,13 +6,9 @@ seoTitle: Title bar of Hackolade Studio
 
 ![Title bar](<lib/Title bar.png>)
 
-&nbsp;
-
 Clicking the Hackolade logo on the top left of the application window brings a menu of window controls:\
 ![Title bar - window menu](<lib/Title bar - window menu.png>)\
 You may also double-click the Hackolade logo to close the application. The application will prompt you to save or abandon any unsaved changes, if any.
-
-&nbsp;
 
 On the right, you find 3 icons that control the application window:
 

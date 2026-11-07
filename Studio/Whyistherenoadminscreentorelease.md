@@ -12,22 +12,12 @@ We understand the request for an admin tool that would allow you to release lice
 - [transfer a license](Transferalicensetoanewcomputer.md) from one machine to another,
 - [move your preferences and settings to a new computer](Movingtoanothercomputer.md),
 
-&nbsp;
-
 We do not provide an admin tool that would arbitrarily release seats in addition to the above features. While technically possible, we have disabled this feature because it has been previously abused by customers, even by some large very well known companies.
-
-&nbsp;
 
 The architecture of the Hackolade solution is quite different than other tools. You can read all about it in [this article](WhylegacyandSaaSdatamodelingarch.md).
 
-&nbsp;
-
 Specifically about license keys, we manage them with a modern 3rd-party service in the cloud. There are many advantages with this approach. Among others, we get world-class license management, plus high-availability and low maintenance redundant service.
 
-&nbsp;
-
 For our customers, our approach is beneficial because much cheaper and more convenient than having to install, maintain, monitor, upgrade, backup,... a license server in their data center. Moreover, it avoids for customers to have to endure license audits for overuse or misuse - a process inevitably uncomfortable for both sides, as per the confrontational reputation of some leading software vendors ;-)...
-
-&nbsp;
 
 Please leverage the above self-service resources. And if, by accident, a machine crashes, or a user has left the organization without respecting the exit checklist item to release the license seat, you can simply send an email to [support@hackolade.com](mailto:support@hackolade.com?subject=Please%20release%20license%20seat) explaining the reason, and our helpdesk will release the seats.

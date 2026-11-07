@@ -7,143 +7,81 @@ image: lib/PowerDesigner XSD to Hackolade dialog.png
 
 While there is still the possibility to use the XSD method described below, there is a much more powerful and easy method of directly reading PowerDesigner files. See [this page](PowerDesigner.md) for more details.
 
-&nbsp;
-
 ## Deprecated
 
 If you have data models in PowerDesigner and want to leverage them in Hackolade Studio, you need to first export them to XSD, following the instructions below. Then you should consult [this page](XSDXMLSchemaDefinition.md) for an overview of the import functionality in Hackolade Studio.
-
-&nbsp;
 
 You may refer to the following pages for more information:\
 [https://help.sap.com/viewer/856348b84a7c479489d5172a630f014d/16.7.00/en-US/c7c994ac6e1b1014a7cee7aac852831e.html](<https://help.sap.com/viewer/856348b84a7c479489d5172a630f014d/16.7.00/en-US/c7c994ac6e1b1014a7cee7aac852831e.html> "target=\"_blank\"").\
 [https://help.sap.com/viewer/1c741f9f80fb4ee4b189535407dd0686/16.7.00/en-US/c802dc9b6e1b1014a826b72f71f0bc04.html](<https://help.sap.com/viewer/1c741f9f80fb4ee4b189535407dd0686/16.7.00/en-US/c802dc9b6e1b1014a826b72f71f0bc04.html> "target=\"_blank\"")
 
-&nbsp;
-
 To generate the XML model with configuration so primary keys and foreign key relationships: [https://help.sap.com/viewer/856348b84a7c479489d5172a630f014d/16.7.00/en-US/c81551706e1b1014b477f70e345cba01.html](<https://help.sap.com/viewer/856348b84a7c479489d5172a630f014d/16.7.00/en-US/c81551706e1b1014b477f70e345cba01.html> "target=\"_blank\"")
-
-&nbsp;
 
 ## Generate a PowerDesigner physical model (PDM) from a logical model (LDM)
 
 If you already have a physical model, you may skip this step and go to the next one.
 
-&nbsp;
-
 [PowerDesigner Generate PDM from LSM](<https://youtu.be/22OaNFbw2is> "video")
-
-&nbsp;
 
 In PowerDesigner with your logical data model open, go to Tools > Generate Physical Data Model:
 
-&nbsp;
-
 ![PowerDesigner LSM to PDM menu](<lib/PowerDesigner LSM to PDM menu.png>)
-
-&nbsp;
 
 Then choose the DBMS platform for the physical model\
 ![PowerDesigner LSM to PDM general tab](<lib/PowerDesigner LSM to PDM general tab.png>)
 
-&nbsp;
-
 And make any changes necessary in the Detail tab for model check and or lineage.
 
-&nbsp;
-
 When you click OK, a physical data model gets created in PowerDesigner.
-
-&nbsp;
 
 ## Generate a PowerDesigner XML model (XSM) from a physical model (PDM)
 
 If you already have an XML model, you may skip this step and go to the next one.
 
-&nbsp;
-
 [PowerDesigner Generate XSM from PDM](<https://youtu.be/UrBBfDWVdxI> "video")
-
-&nbsp;
 
 In PowerDesigner with your physical data model open, go to Tools > Generate XML Model:
 
-&nbsp;
-
 ![PowerDesigner PDM to XSM menu](<lib/PowerDesigner PDM to XSM menu.png>)
-
-&nbsp;
 
 Then give your model a name:\
 ![PowerDesigner - Export to XML General](<lib/PowerDesigner - Export to XML General.png>)
 
-&nbsp;
-
 And in the Details tab, select the following options:\
 ![PowerDesigner - Export to XML Details](<lib/PowerDesigner - Export to XML Details.png>)
 
-&nbsp;
-
 \[optional\] Click the **Target Models** tab and specify the target models for any generated shortcuts.
-
-&nbsp;
 
 \[optional\] Click the **Selection** tab and select objects to generate.
 
-&nbsp;
-
 Click **OK** to begin generation.
-
-&nbsp;
 
 You may have to setup the XML extension appropriately:\
 ![PowerDesigner XML extension](<lib/PowerDesigner XML extension.png>)
-
-&nbsp;
 
 ## Generate an XSD file from a PowerDesigner XML model (XSM)
 
 [PowerDesigner Generate XSD file from XSM](<https://youtu.be/c9MTSw0tT88> "video")
 
-&nbsp;
-
 With your XSM model open, go to Language > Generate XML Schema Definition File
 
-&nbsp;
-
 ![PowerDesigner XSM to XSD menu](<lib/PowerDesigner XSM to XSD menu.png>)
-
-&nbsp;
 
 Choose the destination for your output\
 ![PowerDesigner XSM to XSD destination](<lib/PowerDesigner XSM to XSD destination.png>)
 
-&nbsp;
-
 More info about XSM: [https://www.powerdesigner.biz/documentations/powerdesigner-16.6-documentation-en/xml_modeling.pdf](<https://www.powerdesigner.biz/documentations/powerdesigner-16.6-documentation-en/xml_modeling.pdf> "target=\"_blank\"")
-
-&nbsp;
 
 ## Reverse-Engineer XSD file into a Hackolade model
 
 After the successful export of your model to XSD, use the instructions in [this page](XSDXMLSchemaDefinition.md) to import the XSD into a Hackolade Studio model for the target of your choice.
 
-&nbsp;
-
 In Hackolade Studio, go to Tools > Reverse-Engineer > XSD Schema and select previously generated file.
-
-&nbsp;
 
 As PowerDesigner represents some Foreign Key relationships with the embedding of the child table in the parent table, if it advised to select the check box "Normalize complex data types in separate entities". Even if your target model allows complex data types and denormalization, you may want to analyze your access patterns and do the [denormalization](SuggestdenormalizationofaSQLsche.md) manually.
 
-&nbsp;
-
 ![PowerDesigner XSD to Hackolade dialog](<lib/PowerDesigner XSD to Hackolade dialog.png>)
 
-&nbsp;
-
 After import, Hackolade Studio displays the resulting ER diagram.
-
-&nbsp;
 
 If the XSD does not contain primary key and foreign key constraints, this reverse-engineering process cannot import them, but it is still possible to use the functionality to [Infer PKs & FKs](InferPrimaryKeysandForeignKeyRel.md).

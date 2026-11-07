@@ -12,20 +12,12 @@ Google offers two cloud-based, client-accessible database solutions that support
 - Realtime database: is Firebase's original database
 - Cloud Firestore: an improved solution with a more intuitive data model. It features richer, faster queries and scales better than the Realtime Firebase database.
 
-&nbsp;
-
 Given the [differences](<https://firebase.google.com/docs/database/rtdb-vs-firestore> "target=\"_blank\"") between the 2 approaches, data modeling for the RealTime Firebase requires a [separate plugin](Firebase.md).
-
-&nbsp;
 
 To perform data modeling for Firestore with Hackolade, you must first download the Firestore [plugin](DownloadadditionalDBtargetplugin.md). **Note:** the reverse-engineering of documents is not currently available. It is being developed and will be released at a later time.
 
-&nbsp;
-
 Hackolade was specially adapted to support the data modeling of data stored in collections, nested objects, and subcollections.\
 ![Firestore workspace](<lib/Firestore workspace.png>)
-
-&nbsp;
 
 ## Databases
 
@@ -33,17 +25,11 @@ Hackolade was specially adapted to support the data modeling of data stored in c
 
 In Firestore, data is stored in *documents*, which are organized into *collections*. Each *document* contains a set of key-value pairs. Cloud Firestore is optimized for storing large collections of small documents. All documents must be stored in collections. Documents can contain *subcollections* and nested objects, both of which can include primitive fields like strings or complex objects like lists. Collections and documents are created implicitly in Cloud Firestore. Simply assign data to a document within a collection. If either the collection or document does not exist, Cloud Firestore creates it.
 
-&nbsp;
-
 Subcollections are an implementation of [multi-table inheritance](<https://danchak99.wordpress.com/enterprise-rails/chapter-10-multiple-table-inheritance/> "target=\"_blank\"")
-
-&nbsp;
 
 ## IDs
 
 The unique key is based on a timestamp, so list items will automatically be ordered chronologically. The Firebase JavaScript clients provide a push() function that generates a unique ID, or key, for each new child.
-
-&nbsp;
 
 ## Attributes data types
 
@@ -53,13 +39,9 @@ The unique key is based on a timestamp, so list items will automatically be orde
 
 Not applicable, as Firestore does not provide any way to enforce any kind of schema.
 
-&nbsp;
-
 ## Reverse-Engineering
 
 > [!NOTE]
 > The reverse-engineering of documents is not currently available. It is being developed and will be released at a later time.
-
-&nbsp;
 
 For more information on Google cloud Firestore in general, please consult the [website](<https://firebase.google.com/docs/firestore> "target=\"_blank\"").

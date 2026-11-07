@@ -12,29 +12,19 @@ The different options currently available are:
 - Watch these short [videos](<http://hackolade.com/videos.html> "target=\"_blank\"")
 - Send an [email](mailto:support@hackolade.com) to open a support ticket to [support@hackolade.com](mailto:support@hackolade.com?subject=Hackolade%20Studio%20question)
 
-&nbsp;
-
 Alternatively, you can create a notebook in Google's [NotebookLM](<https://notebooklm.google.com/> "target=\"_blank\""), and include these 3 sources:\
 [https://hackolade.com](https://hackolade.com)\
 [https://hackolade.com/help](https://hackolade.com/help)\
 [https://community.hackolade.com/slides/all](https://community.hackolade.com/slides/all)\
 then you may ask any Hackolade-related questions.
 
-&nbsp;
-
 ## When opening a ticket
 
 When contacting the helpdesk, please include as much relevant context as possible in your initial message rather than holding back information until later. Providing details about your goal, environment, recent changes, error messages, and what you have already tried allows us to understand your situation quickly and accurately.
 
-&nbsp;
-
 When key context is missing, we often need to ask several follow-up questions, which slows down the process and can lead to misunderstandings or incomplete solutions. Sharing the full picture upfront helps us diagnose the issue faster, avoid unnecessary back-and-forth, and get you to a solution more efficiently.
 
-&nbsp;
-
 At Hackolade, we release a new version of the software every single week with new enhancements. Prior to opening a ticket, it is best to be running a recent, if not current version of the software.
-
-&nbsp;
 
 Please share precise and complete information in order to speed up troubleshooting and resolution:
 
@@ -47,25 +37,17 @@ Please share precise and complete information in order to speed up troubleshooti
   - Windows: in the C:\\Users\\%username%\\AppData\\Roaming\\HackoladeLogs directory
   - Mac/Linux: in the Users/$USER/Documents/HackoladeLogs folder.
 
-&nbsp;
-
 ## When responding to a helpdesk email
 
 In the email sent by our Zendesk helpdesk solution, the communication starts with the line "##- Please type your reply **above** this line -##".\
 It is important to avoid replying with inline comments below that line! If you type anything below that line, our helpdesk operator will not see your inline comments.\
 This line serves as a separator so that only your new comments are captured in the Zendesk operator screen. To ensure we get your feedback, please type your comments above that line.
 
-&nbsp;
-
 ## The XY problem
 
 When creating a ticket for support, it may also be helpful to take into consideration the following...
 
-&nbsp;
-
 The [XY problem](<https://en.wikipedia.org/wiki/XY_problem> "target=\"_blank\"") arises when someone attempts to solve problem X, and uses solution Y in an attempt to solve problem X, then also faces challenges with solution Y. Instead of seeking help for problem X, they request support for solution Y, obscuring the root cause and leading to miscommunication, wasted time, and suboptimal solutions.
-
-&nbsp;
 
 The XY problem is further described [here](<https://xyproblem.info/> "target=\"_blank\""): In particular, it describes what to do about it:
 
@@ -73,17 +55,11 @@ The XY problem is further described [here](<https://xyproblem.info/> "target=\"_
 - If someone asks for more information, do provide details.
 - If there are other solutions you've already ruled out, share why you've ruled them out. This gives more information about your requirements.
 
-&nbsp;
-
 The kind of answers you will get to your technical questions depends as much on the way you ask the questions as on the difficulty of developing the answer.
-
-&nbsp;
 
 ## Support response times and Service Level Agreement
 
 Hackolade provides maintenance and support for its products according to the following Maximum Response Times and Maximum Resolution Times. The Maximum Response Time and Maximum Resolution Times identified below are calculated using standard business hours and days:
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:18%"><col style="width:15%"><col style="width:15%"><col style="width:52%"></colgroup>
@@ -129,8 +105,6 @@ Hackolade provides maintenance and support for its products according to the fol
 </tbody>
 </table>
 
-&nbsp;
-
 ## Tracking your organization's support requests
 
 For large customers of Hackolade, it might be useful for a person to be able to have a consolidated view of all the tickets of their organization. Hackolade uses the helpdesk solution by [Zendesk.](<https://www.zendesk.com/> "target=\"_blank\"") You would be tracking your org tickets following these [instructions](<https://urldefense.com/v3/__https:/support.zendesk.com/hc/en-us/articles/4408846805530-Submitting-and-tracking-requests-in-the-help-center-Customer-Portal*topic_vgd_mqd_yy__;Iw!!MjXRb4uW6x5k!Go5HRJbg8MJP-igoFe9N2EEP040b9SP7Iz-nVw3hH-GF1l8sptTcmzZlP5JDbq4Jhj8JEMTX9Ejh9b7DZ5Gp5JtAeYrW0Ue2$> "target=\"_blank\""). Please follow the steps below:
@@ -138,24 +112,14 @@ For large customers of Hackolade, it might be useful for a person to be able to 
 - request from our support to create an organization in our Zendesk platform and provide the domain name or names that should be included. Also include the email addresses of each user who should have the rights to view all their org's tickets (as opposed to the default which is that a viewer can only see their own tickets.)
 - each user who needs to view this portal will need to sign up on [https://hackolade.zendesk.com/hc/en-us/signin](<https://hackolade.zendesk.com/hc/en-us/signin> "target=\"_blank\"") then click on the Signup link
 
-&nbsp;
-
 ![Zendesk signin](<lib/Zendesk signin.png>)
-
-&nbsp;
 
 then fill out the form:\
 ![Zendesk signup form](<lib/Zendesk signup form.png>)
 
-&nbsp;
-
 Once signed up, go to [https://hackolade.zendesk.com/hc/en-us/requests](<https://hackolade.zendesk.com/hc/en-us/requests> "target=\"_blank\"") (you may want to bookmark this link...) and identify yourself if necessary. Then click in the box with your name, and choose My activities:\
 ![Zendesk Choose My activities](<lib/Zendesk Choose My activities.png>)
 
-&nbsp;
-
 Depending on the rights you have been given, you should see just your requests and those for which you were Cc'd, or also your organization requests:
-
-&nbsp;
 
 ![Zendesk My activities](<lib/Zendesk My activities.png>)

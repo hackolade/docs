@@ -7,8 +7,6 @@ image: lib/Schema tree view - attribute drag-n-drop.png
 
 In Hackolade Studio, we use the generic name of "attribute" for an individual piece of information whose values identify, describe, or measure instances of an entity objects. In physical data models, this attribute bears a different name depending on the target technology: column in relational and analytics databases, field in document and graph databases and also in Avro and REST APIs, etc...
 
-&nbsp;
-
 ## Create an attribute
 
 In Hackolade Studio, there are many ways to add an attribute to an entity in the central pane canvas:
@@ -20,11 +18,7 @@ In Hackolade Studio, there are many ways to add an attribute to an entity in the
 - Object Browser pane: right-click on entity name and use contextual menu (appended at the bottom of the entity)
 - Central pane: right-click on model name and use contextual menu (appended at the bottom of the entity)
 
-&nbsp;
-
 It is also possible to insert an attribute above the currently selected one. And for complex data types (objects and arrays), it is possible to add "child" attributes. For complex data types, it often found to be more convenient to maintain attributes in the [hierarchical schema view](Attributeboxesinhierarchicalsche.md).
-
-&nbsp;
 
 ## Move an attribute
 

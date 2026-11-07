@@ -6,11 +6,7 @@ seoTitle: Context bar in Hackolade Studio
 
 ![Context bar](<lib/Context bar.png>)
 
-&nbsp;
-
 A context bar on the left of the screen is provided to allow easy access to important screens of the application, called "contexts". Each context can be accessed by clicking the corresponding icon.
-
-&nbsp;
 
 The contexts are:
 

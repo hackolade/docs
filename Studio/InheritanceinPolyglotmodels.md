@@ -7,29 +7,17 @@ image: lib/Inheritance supertype subtype.png
 
 Polyglot models support inheritance through supertypes and subtypes, allowing you to describe hierarchical structures at the conceptual or logical level. This mechanism lets you define common attributes once in a supertype, and specialize them in subtypes.
 
-&nbsp;
-
 Inheritance defined in a Polyglot model does not directly define how data will be stored in the target database. The physical implementation depends on the inheritance strategy used when deriving from the Polyglot model into a physical model.
 
-&nbsp;
-
 This page is an overview. The [Supertype groups series](Inheritancestrategies.md) covers each topic in detail, with a complete example.
-
-&nbsp;
 
 ## Supertypes and subtypes
 
 Inheritance through supertypes and subtypes is a way of structuring a data model so that shared characteristics are defined once at a higher level, while specialized characteristics are defined in more specific entities.
 
-&nbsp;
-
 A **supertype** represents a general concept in the domain. It contains the attributes and relationships that are common across multiple variations of that concept. A **subtype** represents a more specific form of the supertype. Each subtype may automatically inherit attributes, identifiers, and relationships from the supertype, and can also define additional attributes that are unique to that specialization.
 
-&nbsp;
-
 For example, if you model a general concept such as “Vehicle,” you would place attributes like identifier, brand, and model in the supertype. More specific entities such as “Car”, “Train”, or "Bicycle" would be defined as subtypes. These subtypes inherit all common vehicle attributes but add their own specific properties, such as number of doors for cars or payload capacity for trucks.
-
-&nbsp;
 
 Take a general concept such as Vehicle. The attributes shared by every vehicle belong to the supertype:
 
@@ -39,90 +27,54 @@ Take a general concept such as Vehicle. The attributes shared by every vehicle b
 - Model
 - Purchase date
 
-&nbsp;
-
 More specific entities such as Truck, Car, and Motorcycle are defined as subtypes. Each of them inherits all common vehicle attributes, and adds its own:
 
 - Truck adds an axles number, a capacity and the identifier of the organization that owns it
 - Car adds a doors number and a capacity
 - Motorcycle adds an engine displacement
 
-&nbsp;
-
 A key aspect of this structure is how instances are assigned to subtypes. This is often controlled by a **discriminator**, an attribute in the supertype that indicates which subtype an instance belongs to. Depending on the business rules, the **exclusivity** of the specialization can be **disjoint**, where an instance can belong to only one subtype, or **overlapping**, where it can belong to multiple subtypes. Similarly, the **completeness** of the specialization can be **total** (or complete), meaning that every instance of the supertype must belong to a subtype, or **partial**, meaning that some instances may remain only at the supertype level.
-
-&nbsp;
 
 This approach improves clarity and consistency in a data model. It avoids duplication by centralizing shared attributes, while still allowing precise representation of differences. It also makes the model more expressive of business semantics, which is particularly valuable in domain-driven modeling and in contexts where metadata is used to drive downstream artifacts such as schemas, APIs, or semantic layers.
 
-&nbsp;
-
 When implemented in physical databases, this logical structure can be mapped in different ways, such as storing everything in a single table, splitting into multiple related tables, or creating separate tables per subtype, depending on performance, normalization, and system constraints.
-
-&nbsp;
 
 Different data modeling tools and disciplines use a variety of terms to describe what is fundamentally the same concept as supertype/subtype inheritance. In traditional ER modeling, the terms “supertype” and “subtype” are common, while object-oriented and UML contexts more often use “superclass” and “subclass,” or “base class” and “derived class.” More informal language such as “parent” and “child” is also widely used. In semantic and ontology-based modeling, the same idea appears as “class” and “subclass,” typically expressed through relationships like subClassOf, enabling not just structural reuse but logical inference. Some tools and methodologies instead emphasize the relationship itself, referring to “generalization” and “specialization” or simply an “IS-A hierarchy.” Despite these variations in terminology, they all describe the same underlying principle: defining shared characteristics at a higher level and inheriting them into more specialized entities, allowing models to remain both concise and semantically expressive.
 
-&nbsp;
-
 A supertype represents a generalized entity that contains attributes shared by several specialized entities. A subtype is a specialized entity that inherits attributes from its supertype and may define additional attributes.
-
-&nbsp;
 
 Example:
 
 - Vehicle (supertype)
 - Truck, Car, Motorcycle (subtypes)
 
-&nbsp;
-
 Each subtype automatically inherits the attributes defined in the supertype.
-
-&nbsp;
 
 ![Inheritance supertype subtype](<lib/Inheritance supertype subtype.png>)
 
-&nbsp;
-
 Inheritance can span multiple levels. A subtype may itself become a supertype for other subtypes.
-
-&nbsp;
 
 In our example, a Car is either an Electric Car or a Combustion Car:
 
 - Electric Car adds a battery capacity and a range
 - Combustion Car adds a fuel type and a tank capacity
 
-&nbsp;
-
 ![Inheritance supertype subtype multi level](<lib/Inheritance supertype subtype multi level.png>)
-
-&nbsp;
 
 ## Supertype groups
 
 In Hackolade Studio, a supertype and its immediate subtypes form a supertype group. The group is a hierarchical object with characteristics: Completeness (total or partial) and Exclusivity (disjoint or overlapping). Both characteristics are optional, but have a direct effect on the shape of the derived mode. So it is worth declaring them....
-
-&nbsp;
 
 In our example there are two groups:
 
 - Vehicle type, with Vehicle as its supertype, and Truck, Car and Motorcycle as its subtypes
 - Propulsion, with Car as its supertype, and Electric Car and Combustion Car as its subtypes
 
-&nbsp;
-
 ![Inheritance supertype group properties](<lib/Inheritance supertype group props.png>)
-
-&nbsp;
 
 Car is a subtype in the first group, and the supertype of the second group. Each group has its own characteristics and its own strategy.
 
-&nbsp;
-
 The same entity can also be the supertype of several groups at the same time, one per axis of specialization. See more details in the article [One supertype with multiple groups](Onesupertypewithmultiplegroups.md).
-
-&nbsp;
 
 On the ERD, a group is drawn as a half-circle between the supertype and its subtypes, and you may toggle the display of the group name above it:
 
@@ -130,66 +82,38 @@ On the ERD, a group is drawn as a half-circle between the supertype and its subt
 - a bar under the half-circle means that the group has a total completeness, whereas no bar means a partial completeness
 - a dashed cross or a dashed bar means the corresponding property is still empty (and should be chosen...)
 
-&nbsp;
-
 ## Create supertypes and subtypes in Hackolade Studio
 
 To create a subtype under an existing entity (which will act as the supertype), use the action **Add subtype** which is available in the Action menu, in the contextual menu of the entity, and in the Toolbar or the keyboard shortcut Ctrl/Cmd+). This operation creates a new entity already linked as a subtype of the selected supertype. If the entity is not a supertype yet, the supertype group gets created. You can complete it with its name, its completeness, its exclusivity, and its materialization strategy. If the entity is already a supertype, a subtype is added to the existing supertype group.
-
-&nbsp;
 
 You can also work from the Properties Pane:
 
 - on an entity, use the Supertype groups icon to add a subtype below it, or to create a supertype above it
 - at the model level, use the Supertype groups tab, which lists every group and lets you create one from scratch: its name, its description, its completeness, its exclusivity, its materialization strategy, its supertype entity and its subtype entities.
 
-&nbsp;
-
 See more details in the article [Model a supertype group in Polyglot](ModelasupertypegroupinPolyglot.md).
-
-&nbsp;
 
 ![Inheritance supertype add group](<lib/Inheritance supertype add group.png>)
 
-&nbsp;
-
 These actions define the inheritance structure in the Polyglot model. The physical implementation is determined later during derivation.
-
-&nbsp;
 
 ## From inheritance to physical models
 
 Defining inheritance in a Polyglot model describes the structure of your data, not how it is physically stored.
 
-&nbsp;
-
 When deriving from a Polyglot model in to your physical model, this inheritance must be translated into concrete structures such as tables or documents. There is no single standard way to do this. In data modeling, several well-established strategies exist, each with different trade-offs.
-
-&nbsp;
 
 The strategy is set on the supertype group itself, in the Materialization section of its Properties Pane, with the Strategy property. It applies to every derivation of that Polyglot model, whatever the target. Currently this strategy cannot be overwritten at derivation time.
 
-&nbsp;
-
 ![Inheritance supertype materialization strategy](<lib/Inheritance supertype materialization strat.png>)
-
-&nbsp;
 
 The property may remain empty, which is not a strategy. But in the absence of a choice, each target then applies the default of its own family, as described below.
 
-&nbsp;
-
 Each group is derived with its own strategy, level by level. In our example, the Vehicle type and Propulsion are set independently. See more details in the article [Hierarchy of multiple levels](Hierarchyofmultiplelevels.md).
-
-&nbsp;
 
 The strategy set for a supertype group is applied to all of its subtypes, but each subtype can also have its own Strategy property. It is set by default to Inherited from group strategy. If you change it, then that subtype alone stops following the group. This subtlety can be useful when one subtype is treated differently from the others: Truck, for instance, may have to be self-contained because it is maintained in a different system. The derive operation applies the strategy of each supertype-subtype pair independently. See more details in the article [Mixed strategies inside supertype group](Mixedstrategiesinsidesupertypegr.md).
 
-&nbsp;
-
 ![Inheritance supertype materialization mixed strategies](<lib/Inheritance supertype materialization mixed s.png>)
-
-&nbsp;
 
 ## Materialization strategies
 
@@ -201,80 +125,48 @@ After the derive operation from a Polyglot model, each entity in the hierarchy b
 - each subtype becomes its own table
 - subtype tables reference the supertype using a foreign key relationship
 
-&nbsp;
-
 This is the default strategy for relational targets. It preserves normalization and keeps inheritance explicit in the physical model. In our example, a car occupies two rows: one row in the Vehicle table for the common part, and one row in the Car table for the specific part.
 
-&nbsp;
-
 ![Inheritance preserved hierarchy strategy](<lib/Inheritance preserved hierarchy strategy.png>)
-
-&nbsp;
 
 What the subtype does with the supertype identifier depends on what you designed:
 
 - a subtype with no primary key of its own receives the Vehicle identifier as its primary key
 - a subtype that already has a primary key keeps it, and receives the Vehicle identifier as a unique key
 
-&nbsp;
-
 See more info in the article [Derive with Preserved hierarchy](DerivewithPreservedhierarchy.md).
-
-&nbsp;
 
 ### Roll-up, flat with a discriminator
 
 After the derive operation from a Polyglot model, all subtypes are merged into the supertype, with all columns flattened into a single table, using a discriminator column to identify the subtype. In our example, one Vehicle table contains the axles number, the doors number and the engine displacement side by side, and a column defines which kind of vehicle describes each row. This approach reduces the need for joins, but may introduce sparse or nullable columns.
 
-&nbsp;
-
 ![Inheritance roll-up flat strategy](<lib/Inheritance roll-up flat strategy.png>)
-
-&nbsp;
 
 It is selected with Materialization strategy set to Roll-up, with the Merge option set to Flat with discriminator:
 
 - on a disjoint group, a Discriminator name property appears, and the column is generated only when you name it
 - on an overlapping group, one boolean column per subtype is generated instead, named is\_\<subtype name>
 
-&nbsp;
-
 See more details in the article [Derive with Roll-up flat strategy with discriminator](DerivewithRoll-upflatstrategywit.md).
-
-&nbsp;
 
 ### Roll-up, nested (default for NoSQL document databases)
 
 After the derive operation from a Polyglot model, subtypes are embedded as sub-objects within the supertype collection as nested structures.
 
-&nbsp;
-
 The supertype is stored as a single collection, and subtype-specific attributes are represented using a oneOf structure that captures the different subtype variations.
-
-&nbsp;
 
 Here, one Vehicle document contains the common fields, plus one sub object for Truck, Car or Motorcycle. The characteristics of the group define the type and properties of JSON Schema choice:
 
 - exclusivity defines the type of choice: a disjoint group gives a oneOf, an overlapping one gives an anyOf
 - completeness defines whether the subtype objects are required or optional
 
-&nbsp;
-
 ![Inheritance roll-up nested strategy](<lib/Inheritance roll-up nested strategy.png>)
-
-&nbsp;
 
 This strategy is selected with Materialization strategy set to Roll-up and Merge option set to Nested. This is the strategy applied for all the non-relational targets by default when the strategy is left empty.
 
-&nbsp;
-
 On a relational target, the Polyglot derive dialog proposes an option to Normalize Complex Data Type in Separate Entities, checked by default. A nested subtype is a complex data type. Leaving the box checked therefore disables the nesting, resulting in each subtype being extracted into an normalized entity of its own. This result may look like the result of using the Preserved hierarchy strategy. But it is not exactly the same, as cardinality generated gets extracted from the complex property rather than from the Preserved hierarchy strategy. Uncheck that option if you want the subtypes to remain nested.
 
-&nbsp;
-
 See more details in the article [Derive with Roll-up nested strategy](DerivewithRoll-upnestedstrategy.md).
-
-&nbsp;
 
 ### Roll-down
 
@@ -283,46 +175,26 @@ After the derive operation from a Polyglot model, each subtype becomes a standal
 - its own columns
 - inherited columns from the supertype
 
-&nbsp;
-
 With the Vehicle type group rolled-down, a truck becomes one row in the Truck table, with the registration number, the brand, the model, and the purchase date with their own columns. There is no join to write, but the common columns are repeated in the Truck, Car, and Motorcycle tables.
-
-&nbsp;
 
 ![Inheritance roll-down strategy](<lib/Inheritance roll-down strategy.png>)
 
-&nbsp;
-
 The supertype is removed from the physical model when the group has the Completeness set to total. The supertype is maintained when the group has the Completeness set to partial, because the instances belonging to no subtype still need a table. That table would then contain only those exception instances.
 
-&nbsp;
-
 See more details in the article [Derive with Roll-down strategy](DerivewithRoll-downstrategy.md).
-
-&nbsp;
 
 ## Exclude part of a hierarchy during derive operation
 
 Some derivation scenarios may exclude parts of the hierarchy. A physical model tracking company cars assigned to employees has no use for the Truck, Electric Car, and Combustion Car tables. This is not a strategy: the selection is performed in the derivation dialog, under the section *Polyglot objects to derive*, where the tree lists the entities of the model with the subtypes shown under their supertype. Unselect with ctrl+click the entities that you do not need/ Only only the selected elements are derived in the target model. An entity marked with the property *Polyglot only* never gets derived.
 
-&nbsp;
-
 ![Inheritance roll-up flat strategy](<lib/Inheritance exclude part of hierarchy.png>)
 
-&nbsp;
-
 See more details in the article [One supertype with multiple groups](Onesupertypewithmultiplegroups.md).
-
-&nbsp;
 
 ## Models created before version v8.13.0
 
 Before version 8.13.0, inheritance was modeled as a superclass, declared in the Relationships tab of the Properties Pane of the model, with Parent entity and Child entity properties on the entities themselves. Version v8.13.0 did not replace that object. It extended it: a superclass is now read as a supertype group, and there is nothing to redo in your models.
 
-&nbsp;
-
 When opened with v8.13.0 or after, the superclass group has empty properties Completeness and Exclusivity, and the Strategy is set to Legacy. The Legacy strategy indicates that the derivation should behave like in earlier versions, so the physical models you already have keep their shape.
-
-&nbsp;
 
 See more details in the article [Inheritance created before version v8.13.0](Inheritancecreatedbeforeversionv.md)

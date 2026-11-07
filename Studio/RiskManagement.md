@@ -6,8 +6,6 @@ seoTitle: Risk management for Hackolade Studio deployment
 
 The table below provides a comprehensive risk assessment, identifying and analyzing potential risks associated with the implementation of Hackolade Studio.
 
-&nbsp;
-
 <table style="width:100%">
 <colgroup><col style="width:2%"><col style="width:13%"><col style="width:12%"><col style="width:12%"><col style="width:18%"><col style="width:17%"><col style="width:26%"></colgroup>
 <tbody>

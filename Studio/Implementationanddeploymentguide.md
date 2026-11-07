@@ -6,15 +6,9 @@ seoTitle: Implementation and deployment guide
 
 A well-defined and comprehensive implementation strategy is critical to the successful deployment of the data modeling solution. This page and the pages below in this section constitute a guide that can serve as an example to kick start and inspire your effort
 
-&nbsp;
-
 Below is a possible implementation and deployment roadmap:
 
-&nbsp;
-
 **🚀 *Implementation Roadmap***
-
-&nbsp;
 
 ## 🎨 Phase 1: Solution Architecture & Design
 
@@ -37,8 +31,6 @@ Below is a possible implementation and deployment roadmap:
 </tr>
 </tbody>
 </table>
-
-&nbsp;
 
 ## 🖥️ Phase 2: Installation & Access
 
@@ -70,8 +62,6 @@ Below is a possible implementation and deployment roadmap:
 </tbody>
 </table>
 
-&nbsp;
-
 ## 🗺️ Phase 3: Planning & Strategy
 
 <table style="width:100%">
@@ -97,8 +87,6 @@ Below is a possible implementation and deployment roadmap:
 </tr>
 </tbody>
 </table>
-
-&nbsp;
 
 ## 🧪 Phase 4: Pilot Execution
 
@@ -134,8 +122,6 @@ Below is a possible implementation and deployment roadmap:
 </tbody>
 </table>
 
-&nbsp;
-
 ## 🏗️ Phase 5: Gradual Rollout
 
 <table style="width:100%">
@@ -165,8 +151,6 @@ Below is a possible implementation and deployment roadmap:
 </tr>
 </tbody>
 </table>
-
-&nbsp;
 
 ## 📈 Phase 6: Optimization & Adoption
 

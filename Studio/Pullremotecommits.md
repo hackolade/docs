@@ -8,11 +8,7 @@ image: lib/Workgroup pull remotecommits.png
 Hackolade Studio makes it easy to pull commits from a remote repository: you just need to open your own local repository (if not already opened) and navigate to "Pull remote commits".\
 ![Workgroup pull remotecommits](<lib/Workgroup pull remotecommits.png>)
 
-&nbsp;
-
 All remote commits detected by Hackolade Studio are listed with their date, author, and message. You can refresh the page by clicking on the icon next to the title, if you believe that some recent commits are missing. Note that you can also click directly on the Pull button: all the available remote commits are pulled, including the ones that had not been detected yet. There is no need to systematically refresh the list prior to pulling commits.
-
-&nbsp;
 
 Git takes care of merging remote changes into your local repository. Most of the time, this happens "auto-magically"... However, there are 2 noticeable exceptions where a manual intervention may be required:
 

@@ -7,17 +7,11 @@ image: lib/PowerDesigner model migration to Hackolade.png
 
 SAP PowerDesigner has been around for several decades and used to be a quite popular data modeling. Many companies have recognized the large breadth of targets supported by Hackolade Studio and its modernization of the data modeling processes and techniques.
 
-&nbsp;
-
 Hackolade Studio facilitates the migration of PowerDesigner models by letting you read directly PowerDesigner files instead of the more cumbersome previous method which required to first export into an XSD format before importing into Hackolade Studio.
-
-&nbsp;
 
 ## Differences with PowerDesigner
 
 There are many differences between Hackolade Studio and PowerDesigner. We do not use or even have a copy of that software. Hackolade's ambition is certainly not to copy PowerDesigner, ... to the contrary! It should be expected, since Hackolade Studio is a different tool than PowerDesigner, that some things would work differently, that we would name some things differently, that features we have don’t exist in PowerDesigner, and vice versa.
-
-&nbsp;
 
 Here are some examples, but there are many, many more…
 
@@ -38,12 +32,8 @@ Here are some examples, but there are many, many more…
 - The [Generate property](<https://help.sap.com/docs/SAP_POWERDESIGNER/856348b84a7c479489d5172a630f014d/c7c99e6e6e1b1014999fba096ab22a45.html> "target=\"_blank\"") in PowerDesigner as a toggle switch on an object's property sheet to control whether or not that specific component is included when you create a new target model or output script. The equivalent in Hackolade Studio is a boolean property called Activated, and is enabled by default when creating an object. When it is disabled, the object is either commented in the generated script (if the target allows it) or removed from it entirely. During migration of PowerDesigner model into Hackolade Studio, if the Generate property is unchecked in the source file, Studio reverse-engineers that object as deactivated.
 - PowerDesigner has a fairly rigid storage structure in its **central repository** structure. The architecture of our solution is very different from PowerDesigner’s. While PowerDesigner model files in XML format, they are stored in the repository in a structured database. Our files are open in JSON format, and each file represents a single model. Models can be stored in one or more Git repositories, possibly even across multiple repository providers. Models can be organized in a more flexible modular approach, as described [here](<https://hackolade.com/help/PolyglotDataModeling.html#Flexibility>). With our modular architecture, it is possible for a physical model to be derived from 1 or more (subsets of) polyglot models. It is also possible for any model to reference any part of any model, no matter the target on each side.
 
-&nbsp;
-
 Legacy tools have been using the traditional concept of “**logical**” models, which is too constraining for the needs of non-RDBMS targets supported by Hackolade Studio. Hackolade had to invent the principles of [Polyglot Data Modeling](https://hackolade.com/polyglot-data-modeling.html) to support the needs of NoSQL, Avro, Parquet, REST APIs, etc… We name it Polyglot, as opposed to logical, to avoid any semantic confusion or discussion. But our Polyglot models are logical in the sense that they are technology-agnostic, and they can be fully normalized. But they can be much more than strict logical models in the sense that they can optionally support nested objects, polymorphism, and denormalization.\
 Polyglot models can be purely "logical", in the traditional sense. But they can also be more of a "common physical model", including technical names or views that would be common across different physical targets. No dogma with Hackolade: you can be as rigorous in applying data modeling theory as you wish, or less rigorous in order to adhere to the reality of your organization.
-
-&nbsp;
 
 Physical data models can be [derived from](PolyglotDataModel.md) polyglot models. It is also possible to start from a physical data model (either from scratch or created from the reverse-engineering of an instance) and convert it to a polyglot model.\
 Once a target model is linked to one or more polyglot models, any change in the polyglot model can be reviewed through an [Impact Analysis](<https://hackolade.com/help/PolyglotDataModel.html#Impact%20Analysis>) screen to decide whether to include the changes, globally or individually.\
@@ -51,11 +41,7 @@ Polyglot models can be derived from (subsets of) other polyglot model(s), as des
 
 - In PowerDesigner when **creating a physical model** from a logical model, the physical model is "generated" (or "derived") from the logical model in a "**push**" process. In Hackolade Studio, the process is different, partly due to the fact that Hackolade Studio supports so many targets that are different than RDBMS. And also because in Hackolade Studio, it is possible to build an N-to-N graph of data models, where for example a model draws from more than one polyglot model. As a result in Hackolade Studio, the process follows a "**pull**" mechanism: you would first create a physical model for the target of our choice, then "derive" from the selected polyglot model or models.
 
-&nbsp;
-
 Given the above, it should be expected that there is some learning curve to our tool. You will most likely avoid frustration if you don't assume, because you're a veteran user of PowerDesigner, that you can use Hackolade Studio without learning about it. This learning curve can be greatly reduced by investing a little bit of time in reading or searching inside our [online documentation](WelcometoHackoladeStudio.md), going through [tutorials](Tutorial.md) and [how-to guides](How-toguides.md), and by watching some of the videos on our [eLearning platform](<https://community.hackolade.com/slides/all> "target=\"_blank\"").
-
-&nbsp;
 
 ### Respective terminology
 
@@ -223,13 +209,9 @@ Given the above, it should be expected that there is some learning curve to our 
 </tbody>
 </table>
 
-&nbsp;
-
 ## PowerDesigner conceptual models stored in .cdm files
 
 Starting with v8.1.1
-
-&nbsp;
 
 Depending on the language used with PowerDesigner, the file extension could also be .cdb, .mcd, mcb, etc. The extension is not really important as long as the content is a PowerDesigner-generated XML file including
 
@@ -237,19 +219,13 @@ Depending on the language used with PowerDesigner, the file extension could also
 - tags starting with "a:" refer to an attribute/properties of the object "o:"
 - tags starting with "c:" refer to a list of "objects" linked to the object "o:"
 
-&nbsp;
-
 It is natural to reverse-engineer or import a PowerDesigner logical model into a Hackolade Studio [polyglot model](PolyglotDataModel.md), Hackolade Studio's equivalent of traditional conceptual (with graph view) logical models, only more flexible and powerful.
-
-&nbsp;
 
 Inside PowerDesigner files, the different objects are mapped to equivalent objects in a Hackolade Studio models, mainly:
 
 - entities;
 - attributes and their data types (with length, precision, and scale where applicable), business and technical names, comments and descriptions;
 - constraints: required or not null, unique keys, (composite) primary keys, and relationships with their cardinality.
-
-&nbsp;
 
 Some transformations occur, and extraneous information is ignored. We also import:
 
@@ -262,16 +238,10 @@ Some transformations occur, and extraneous information is ignored. We also impor
 - Stereotype, Keywords, and Annotation values, and map them to dedicated custom properties,
 - and DataItems mapped to attributes.
 
-&nbsp;
-
 To import a PowerDesigner logical model from the GUI application, you must first create a Polyglot data model. Ideally the polyglot model should be empty. But it does not have to be if, for example, you are merging 2 or more PowerDesigner files into a single Hackolade Studio model.
-
-&nbsp;
 
 Then go to Tools > Reverse-Engineer > PowerDesigner, and select the PowerDesigner file you wish to import:\
 ![Reverse-engineer or Import PowerDesigner model](<lib/Reverse-engineer or Import PowerDesigner mode.png>)
-
-&nbsp;
 
 ## PowerDesigner logical data models stored in .ldm files
 
@@ -281,11 +251,7 @@ Depending on the language used with PowerDesigner, the file extension could also
 - tags starting with "a:" refer to an attribute/properties of the object "o:"
 - tags starting with "c:" refer to a list of "objects" linked to the object "o:"
 
-&nbsp;
-
 It is natural to reverse-engineer or import a PowerDesigner logical model into a Hackolade Studio [polyglot model](PolyglotDataModel.md), Hackolade Studio's equivalent of traditional logical models, only more flexible and powerful.
-
-&nbsp;
 
 Inside PowerDesigner files, the different objects are mapped to equivalent objects in a Hackolade Studio models, mainly:
 
@@ -293,8 +259,6 @@ Inside PowerDesigner files, the different objects are mapped to equivalent objec
 - attributes and their data types (with length, precision, and scale where applicable), business and technical names, comments and descriptions;
 - constraints: required or not null, unique keys, (composite) primary keys, foreign key relationships and their cardinality;
 - views.
-
-&nbsp;
 
 Some transformations occur, and extraneous information is ignored. We also import:
 
@@ -306,22 +270,14 @@ Some transformations occur, and extraneous information is ignored. We also impor
 - ExtendedAttributes, and map them to our custom properties,
 - and Stereotype, Keywords, and Annotation values, and map them to dedicated custom properties.
 
-&nbsp;
-
 To import a PowerDesigner logical model from the GUI application, you must first create a Polyglot data model. Ideally the polyglot model should be empty. But it does not have to be if, for example, you are merging 2 or more PowerDesigner files into a single Hackolade Studio model.
-
-&nbsp;
 
 Then go to Tools > Reverse-Engineer > PowerDesigner, and select the PowerDesigner file you wish to import:\
 ![Reverse-engineer or Import PowerDesigner model](<lib/Reverse-engineer or Import PowerDesigner mode.png>)
 
-&nbsp;
-
 ## PowerDesigner physical data models stored in .pdm files
 
 Starting with v7.9.10 for import into a polyglot model. Starting from v8.0.0 for import into a target model
-
-&nbsp;
 
 Depending on the language used with PowerDesigner, the file extension could also be .pdb, .mpd, mpb, etc. The extension is not really important as long as the content is a PowerDesigner-generated XML file including
 
@@ -329,11 +285,7 @@ Depending on the language used with PowerDesigner, the file extension could also
 - tags starting with "a:" refer to an attribute/properties of the object "o:"
 - tags starting with "c:" refer to a list of "objects" linked to the object "o:"
 
-&nbsp;
-
 PowerDesigner physical models typically should be imported in into a Hackolade Studio of the corresponding target. However, Hackolade Studio is also able to convert to another target while converting data types, on a best effort basis, provided that the targets are fairly compatible. If the process encounters an unrecognized data type, it is mapped to the default data type, and a list of concerned attributes is made available in the log. If you think that we are not handling those correctly, please report it to [support@hackolade.com](mailto:support@hackolade.com) so we can enhance the standard application, for the benefit of all users.
-
-&nbsp;
 
 Inside PowerDesigner files, the different objects are mapped to equivalent objects in a Hackolade Studio models, mainly:
 
@@ -342,8 +294,6 @@ Inside PowerDesigner files, the different objects are mapped to equivalent objec
 - attributes (columns of fields) and their data types (with length, precision, and scale where applicable), business and technical names, comments and descriptions;
 - constraints: required or not null, unique keys, (composite) primary keys, foreign key relationships and their cardinality, and check constraints;
 - views.
-
-&nbsp;
 
 Some transformations occur, and extraneous information is ignored. We also import:
 
@@ -359,20 +309,12 @@ Some transformations occur, and extraneous information is ignored. We also impor
 - ExtendedAttributes, and map them to our custom properties,
 - Stereotype, Keywords, and Annotation values, and map them to dedicated custom properties.
 
-&nbsp;
-
 If the target has no check property on the column, a column check is stored at the table level.
-
-&nbsp;
 
 To import a PowerDesigner physical model from the GUI application, you must first create a data model for the target of your choice. Ideally the target model should be empty. But it does not have to be if, for example, you are merging 2 or more PowerDesigner files into a single Hackolade Studio model.
 
-&nbsp;
-
 Then go to Tools > Reverse-Engineer > PowerDesigner, and select the PowerDesigner file you wish to import:\
 ![Reverse-engineer or Import PowerDesigner model](<lib/Reverse-engineer or Import PowerDesigner mode.png>)
-
-&nbsp;
 
 ## Display imported stereotypes, keywords, and annotations
 
@@ -382,23 +324,13 @@ Stereotype, Keywords, and Annotation are standard properties of PowerDesigner ob
 - **Keywords** (keyword migratedKeywords): a list with one item per PowerDesigner keyword, from the General tab;
 - **Annotation** (keyword migratedAnnotation): a multi-line text, from the Notes tab.
 
-&nbsp;
-
 Extended attributes come from your own PowerDesigner extensions, so their names and types vary from one organization to the next. Stereotype, Keywords, and Annotation exist in every PowerDesigner model, and we provide their configuration below.
-
-&nbsp;
 
 The values are in the model as soon as the reverse-engineering is done. But the Properties Pane only displays a custom property after you declare it in the configuration of the target. Until you do, Hackolade Studio shows a custom tab with a warning badge, as explained in \[User-defined custom properties\](https://hackolade.com/help/Userdefinedcustomproperties.html).
 
-&nbsp;
-
-Declare the properties for the target of the model you imported into: Polyglot, or the physical target (Oracle, for example) if you imported a .pdm file into a model of that target. Go to Help > Plugin Manager > Installed, choose the target, and click the link Show plugin customization directory. In the browser application, use Tools > Options > Custom Properties instead. Our how-to guide \[Configure custom properties\](https://hackolade.com/help/Configurecustomproperties.html) walks through a complete example, also available as a \[video\](https://community.hackolade.com/slides/slide/user-defined-custom-properties-8).
-
-&nbsp;
+Declare the properties for the target of the model you imported into: Polyglot, or the physical target (Oracle, for example) if you imported a .pdm file into a model of that target. Go to Help > Plugin Manager > Installed, choose the target, and click the link Show plugin customization directory. In the browser application, use Tools > Options > Custom Properties instead. Our how-to guide [Configure custom properties](Configurecustomproperties.md) walks through a complete example, also available as a [video](<https://community.hackolade.com/slides/slide/user-defined-custom-properties-8> "target=\"_blank\"").
 
 In modelLevelConfig.json, containerLevelConfig.json, and viewLevelConfig.json, paste this block inside the structure array of the Details tab, separated by a comma from any property already there:
-
-&nbsp;
 
 ```json
 {
@@ -426,11 +358,7 @@ In modelLevelConfig.json, containerLevelConfig.json, and viewLevelConfig.json, p
 }
 ```
 
-&nbsp;
-
 In entityLevelConfig.json, paste this block at the same place:
-
-&nbsp;
 
 ```json
 {
@@ -460,11 +388,7 @@ In entityLevelConfig.json, paste this block at the same place:
 }
 ```
 
-&nbsp;
-
 In fieldLevelConfig.json, paste the same block as for entities, inside a Details tab whose structure is a plain array. Properties declared this way apply to all data types, next to any Details tab that lists properties per data type:
-
-&nbsp;
 
 ```json
 {
@@ -475,23 +399,13 @@ In fieldLevelConfig.json, paste the same block as for entities, inside a Details
 }
 ```
 
-&nbsp;
-
 Save the files and restart Hackolade Studio, as the configuration is only read at startup. The 3 properties then appear at the bottom of the Details tab in the Properties Pane:
-
-&nbsp;
 
 ![PowerDesigner stereotype-keyword-annotations](<lib/PowerDesigner stereotype-keyword-annotations.png>)
 
-&nbsp;
-
 In the entity and field level block, enableForReference is set to true for Stereotype and Annotation. You can then enter a Stereotype or an Annotation directly on a [reference to a definition](Reusableobjectsdefinitions.md), and Hackolade Studio uses that value instead of the value of the referenced definition.
 
-&nbsp;
-
 Currently, Hackolade Studio does not support enableForReference for a group property such as Keywords. On a reference, Hackolade Studio displays the Keywords of the referenced definition, and you cannot edit them there.
-
-&nbsp;
 
 ## Known limitations
 
@@ -504,13 +418,9 @@ Currently, the following PowerDesigner features are not supported:
 - reports
 - support for BPMN, UML, export of XML, etc...
 
-&nbsp;
-
 ## Migrate PowerDesigner external shortcuts to Hackolade Studio external references
 
 Please refer to these [step-by-step instructions](Migrateexternalshortcuts.md).
-
-&nbsp;
 
 ## Bulk import
 

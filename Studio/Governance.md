@@ -6,13 +6,9 @@ seoTitle: Operational governance after Hackolade deployment
 
 Once **Hackolade Studio** is deployed and adopted within an organization, effective **operational governance** is crucial to ensure the system remains optimized, aligned with business objectives, and able to evolve with future needs.
 
-&nbsp;
-
 ## Ownership & Responsibility
 
 Effective governance requires clear ownership of roles and responsibilities to ensure ongoing success.
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:26%"><col style="width:74%"></colgroup>
@@ -54,14 +50,10 @@ Effective governance requires clear ownership of roles and responsibilities to e
 </tbody>
 </table>
 
-&nbsp;
-
 ## Performance Monitoring & Reporting
 
 To ensure the **ongoing effectiveness** of Hackolade Studio and align with business goals, the performance of the tool and its usage must be continuously monitored and reported. Here’s how performance can be tracked and managed:\
 **Key Metrics to Track:**
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:29%"><col style="width:71%"></colgroup>
@@ -99,14 +91,10 @@ To ensure the **ongoing effectiveness** of Hackolade Studio and align with busin
 </tbody>
 </table>
 
-&nbsp;
-
 ## Continuous Improvement & Roadmap
 
 Hackolade Studio’s effectiveness and its alignment with organizational needs should be continuously evaluated, and improvements should be implemented based on feedback and evolving business requirements.\
 **Improvement Roadmap**
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:27%"><col style="width:62%"><col style="width:11%"></colgroup>
@@ -151,14 +139,10 @@ Hackolade Studio’s effectiveness and its alignment with organizational needs s
 </tbody>
 </table>
 
-&nbsp;
-
 ## Process for Introducing Improvements
 
 - **Feedback Gathering**: The continuous feedback loop from users will provide insights into potential improvements. Regular engagement (via surveys, support tickets, etc.) helps keep the tool aligned with user needs.
 - **Collaboration with Hackolade**: Establish a formal **communication channel** with our support to discuss possible improvements and to stay updated on new releases, bug fixes, or new features.
-
-&nbsp;
 
 ## Metrics for Improvement Success
 

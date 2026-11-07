@@ -13,50 +13,30 @@ Hackolade is a visual editor for JSON Schema for non-programmers. It is ideal to
 - [2019-09](<https://json-schema.org/specification-links.html#2019-09-formerly-known-as-draft-8> "target=\"_blank\"")
 - [2020-12](<https://json-schema.org/specification-links.html#2020-12> "target=\"_blank\"")
 
-&nbsp;
-
 Hackolade was specially adapted to support the data modeling of JSON files.\
 ![JSON workspace](<lib/JSON workspace.png>)
-
-&nbsp;
 
 [JSON](<http://www.json.org/> "target=\"_blank\"") (JavaScript Object Notation) is a lightweight data-interchange format. It is easy for humans to read and write. It is easy for machines to parse and generate. It is based on a subset of the JavaScript Programming Language. JSON is a text format that is completely language independent but uses conventions that are familiar to programmers of the C-family of languages. These properties make JSON an ideal data-interchange language. JSON is built on two structures:
 
 - A collection of name/value pairs. In various languages, this is realized as an object, record, struct, dictionary, hash table, keyed list, or associative array.
 - An ordered list of values. In most languages, this is realized as an array, vector, list, or sequence.
 
-&nbsp;
-
 ![JSON schema tree view](<lib/JSON schema tree view.png>)
-
-&nbsp;
 
 With version 5 of Hackolade, support was introduced for the [conditional application of subschemas](<https://json-schema.org/understanding-json-schema/reference/conditionals.html> "target=\"_blank\""). The `if`, `then` and `else` keywords allow the application of a subschema based on the outcome of another schema:
 
-&nbsp;
-
 ![JSON Schema conditional](<lib/JSON Schema conditional.png>)
 
-&nbsp;
-
 You will find more information about JSON Schema on the [website](<http://json-schema.org/> "target=\"_blank\"").
-
-&nbsp;
 
 ## Forward-engineering
 
 Hackolade dynamically generates JSON Schema for the structure created with the application, and can be pre-viewed with a variety of options, as further described [here](JSONSchema.md). The JSON Schema can also be exported to the file system via the menu Tools > Forward-Engineering, or via the [Command-Line Interface](CommandLineInterface.md).
 
-&nbsp;
-
 ![Forward-Engineering - JSON Preview](<lib/Forward-Engineering - JSON Preview.png>)
-
-&nbsp;
 
 The JSON Schema can also be exported to a Confluent or Pulsar Schema Registry instance:\
 ![JSON Schema - forward-engineering to Confluent](<lib/JSON Schema - forward-engineering to Confluen.png>)
-
-&nbsp;
 
 ## Reverse-Engineering
 

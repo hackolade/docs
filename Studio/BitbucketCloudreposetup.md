@@ -8,25 +8,17 @@ image: lib/Hub Bitbucket Cloud repo settings.png
 > [!IMPORTANT]
 > The APIs used by Bitbucket Data Center and Bitbucket Cloud differ, resulting in a different setup as well. Consult [this page](BitbucketDataCenterreposetup.md) if your repo is in Bitbucket Data Center.
 
-&nbsp;
-
 Several steps must take place first on the Bitbucket Cloud side.
-
-&nbsp;
 
 ## Create a Bitbucket Cloud Access Token
 
 To give the Model Hub access to fetch models from a Bitbucket Cloud repository, it is necessary to configure access using an access token.
-
-&nbsp;
 
 There is three main types of [access tokens for Bitbucket Cloud](<https://support.atlassian.com/bitbucket-cloud/docs/access-tokens/> "target=\"_blank\"") (used for scripting, CI/CD, and API access), scoped to different levels of access:
 
 - [Access tokens for a Repository](<https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/> "target=\"_blank\""): grants access to a single repository with permissions (scopes) set at creation. This is ideal for tasks like managing one repository or providing a CI/CD tool access to a single code source.
 - [Access tokens for a Project (Premium feature)](<https://support.atlassian.com/bitbucket-cloud/docs/create-a-project-access-token/> "target=\"_blank\""): provides access to a single project and all repositories within it. The permissions are defined during token creation, useful for managing or accessing multiple related repositories in one project.
 - [Access tokens for a Workspace (Premium feature)](<https://support.atlassian.com/bitbucket-cloud/docs/create-a-workspace-access-token/> "target=\"_blank\""): offers the broadest access, covering the entire workspace, including all projects and repositories. Permissions are specified at creation and allow for managing the entire workspace or accessing its contents.
-
-&nbsp;
 
 For the Hackolade Model Hub, you need an Access Token for a Repository:
 
@@ -41,25 +33,15 @@ For the Hackolade Model Hub, you need an Access Token for a Repository:
   \
   ![Hub Bitbucket Cloud copy access token](<lib/Hub Bitbucket Cloud copy access token.png>)
 
-&nbsp;
-
 ![Hub Bitbucket Cloud access token created](<lib/Hub Bitbucket Cloud access token created.png>)
-
-&nbsp;
 
 ## Create a Bitbucket Cloud Webhook
 
 [Webhooks in Bitbucket Cloud](<https://support.atlassian.com/bitbucket-cloud/docs/manage-webhooks/> "target=\"_blank\"") provide a way to configure Bitbucket Cloud to make requests to an external service whenever certain events occur in Bitbucket Cloud. They allow automation of workflows by triggering actions in other tools or services immediately after those events happen, without the need for continuous polling.
 
-&nbsp;
-
 This is how the Hackolade Model Hub gets notified of the creation of a new model or change to an existing model in any folder of the default branch for your repository, or repositories.
 
-&nbsp;
-
 You may create one webhook per repo. But then you MUST use the same webhook "Secret token" (not be confused with the access token) for each webhook of each repository.)
-
-&nbsp;
 
 To create a webhook in Bitbucket Cloud so that it notifies the Model Hub when changes are pushed to the repository:
 
@@ -75,58 +57,32 @@ To create a webhook in Bitbucket Cloud so that it notifies the Model Hub when ch
     ![Hub Bitbucket Cloud create webhook](<lib/Hub Bitbucket Cloud create webhook.png>)
 - Save the webhook configuration.
 
-&nbsp;
-
 ![Hub Bitbucket Cloud webhook created](<lib/Hub Bitbucket Cloud webhook created.png>)
 
-&nbsp;
-
 Webhook secret: NgeIPWQn!YnZ9fvR
-
-&nbsp;
 
 ## Create the Model Hub configuration
 
 Once the previous steps are all completed, go to the the Git Providers tab of the admin panel, then click on the button + setup Git Provider, and select Bitbucket Cloud.
 
-&nbsp;
-
 Webhook URL: enter the sync endpoint of your Hackolade Model Hub, and already used above. This typically follows the format: /gateway/public/sync endpoint of your Model Hub domain (e.g., https://\<your organization>.hackolade.com/gateway/public/sync)
-
-&nbsp;
 
 Use the Access token and Webhook secret token saved during the execution of the previous steps to configure the Model Hub.
 
-&nbsp;
-
 ![Model Hub Bitbuclet Cloud add config](<lib/Model Hub Bitbuclet Cloud add config.png>)
-
-&nbsp;
 
 Click on the button to Save configuration. Then in the Add Repository screen, type the name of your organization in your Bitbucket Cloud instance. Then select the repository that you want to replicate to the Model Hub database:
 
-&nbsp;
-
 ![Model Hub Bitbuclet Cloud add repo config](<lib/Model Hub Bitbuclet Cloud add repo config.png>)
-
-&nbsp;
 
 You may edit the configuration at a later time if desired.
 
-&nbsp;
-
 ![Model Hub Bitbuclet Cloud edit config](<lib/Model Hub Bitbuclet Cloud edit config.png>)
-
-&nbsp;
 
 ## Troubleshooting
 
 To check the status of the webhook, click on the Edit button, then scroll to the Recent events section at the bottom of the screen.
 
-&nbsp;
-
 ![Hub Bitbucket Cloud webhook event logs](<lib/Hub Bitbucket Cloud webhook event logs.png>)
-
-&nbsp;
 
 If a failure has occurred, it appears. Click the Event View details button and send it to [support@hackolade.com](mailto:support@hackolade.com?subject=Model%20Hub%20Bitbucket%20webhook%20failed%20event) for troubleshooting.

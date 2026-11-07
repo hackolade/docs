@@ -6,8 +6,6 @@ seoTitle: Model Hub quick start with a reverse proxy
 
 This guide walks you from an empty Linux server to a working Model Hub environment reachable at *https://\<your-domain-name>* with a valid Let's Encrypt certificate.
 
-&nbsp;
-
 For this quick start to work, you need the following:
 
 - A domain name you control
@@ -15,63 +13,39 @@ For this quick start to work, you need the following:
 - Inbound access to TCP 80 and 443 from the internet
 - Outbound access to Let's Encrypt servers
 
-&nbsp;
-
 ## Create a DNS name that points to the Model Hub server
 
 ### Find your server's public IP
 
 On the server, run:
 
-&nbsp;
-
 ```bash
 curl -4 ifconfig.me
 ```
 
-&nbsp;
-
 Or copy the **Public IP** from your cloud provider console (AWS, Azure, GCP, etc.). Write it down, as you will use it in the next step.
-
-&nbsp;
 
 **You are done with this step when:** you know the public IPv4 of the machine that will run Model Hub.
 
-&nbsp;
-
 Let's Encrypt will only issue a certificate if your hostname resolves to this server on the public internet. Do this **before** starting Docker.
-
-&nbsp;
 
 ### Pick a hostname
 
 Choose a subdomain, for example:
 
-&nbsp;
-
 ```text
 * hck.yourcompany.com
 ```
 
-&nbsp;
-
 Use that exact name everywhere below (DNS, Traefik config, browser).
-
-&nbsp;
 
 ### Create an A record at your DNS provider
 
 Log in to wherever your DNS is managed (examples: Cloudflare, GoDaddy, Route 53, Azure DNS, Namecheap, Google Domains).
 
-&nbsp;
-
 Open the DNS settings for your domain (e.g. *yourcompany.com*).
 
-&nbsp;
-
 Add a new record:
-
-&nbsp;
 
 <table style="width:35%">
 <colgroup><col style="width:34%"><col style="width:66%"></colgroup>
@@ -97,45 +71,27 @@ Add a new record:
 </tbody>
 </table>
 
-&nbsp;
-
 Save the record.
-
-&nbsp;
 
 ### Wait and verify DNS
 
 DNS can take a few minutes (sometimes longer). From any machine, check that the name resolves to your server IP:
 
-&nbsp;
-
 ```text
 nslookup hck.yourcompany.com
 ```
 
-&nbsp;
-
 The result must be **the same public IP** you set in the A record.
-
-&nbsp;
 
 **Do not continue until this works:** If DNS is wrong, Let's Encrypt will fail, and you may hit rate limits if you keep retrying.
 
-&nbsp;
-
 **You are done with this step when:** *nslookup* returns your server's public IP for your Model Hub hostname.
-
-&nbsp;
 
 ## Edit your Docker Compose file
 
 Deploy Model Hub like described above but edit the Docker Compose shown on that page with the one below. It provides Model Hub and a PostgreSQL database. On top of that, it deploys a reverse proxy ([traefik](<https://traefik.io/traefik> "target=\"_blank\"")), which automatically generates a certificate with [Let's Encrypt](<https://letsencrypt.org/docs/> "target=\"_blank\"")
 
-&nbsp;
-
 **Note** that model-hub doesn't expose port 3000 with this configuration anymore. Model Hub will instead be served by the reverse proxy Traefik
-
-&nbsp;
 
 ```yaml
 services:
@@ -261,24 +217,16 @@ secrets:
     file: ./secrets/model_hub_encryption_key
 ```
 
-&nbsp;
-
 > [!NOTE]
 > Also make sure that the volume \`letsencrypt\` is configured like shown in the example. This allows you to store the certificate on the server to avoid losing it on restarts.
 
-&nbsp;
-
 Create a \`.env\` in the same folder as the compose file, similar to the one below, and fill it with your information
-
-&nbsp;
 
 ```text
 MODEL_HUB_VERSION=REPLACE_WITH_MODEL_HUB_VERSION
 CERTIFICATE_EMAIL=REPLACE_WITH_YOUR_EMAIL
 HCK_DOMAIN_NAME=REPLACE_WITH_YOUR_DOMAIN
 ```
-
-&nbsp;
 
 where:\
 1\. change the value of *MODEL_HUB_VERSION* with the version you want to deploy from [DockerHub](<https://hub.docker.com/r/hackolade/model-hub> "target=\"_blank\"")\

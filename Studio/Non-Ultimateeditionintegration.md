@@ -7,25 +7,15 @@ image: lib/Collibra Guided Stewardship limited lineage.png
 
 If you do not have the Ultimate package and did not get the Federated Operating model add-on, then starting with v8.3.6, we provide an integration, albeit with some graceful degradation, some limitations, and some required manual configuration.
 
-&nbsp;
-
 The primary limitation is that it is impossible to publish Hackolade Studio polyglot data models to the Logical Layer of Collibra, in support of their [Guided Stewardship operating model](<https://productresources.collibra.com/docs/collibra/latest/Content/Catalog/GuidedStewardship/OperatingModel/to_catalog-om.htm> "target=\"_blank\""), or of course the related lineage relations.
 
-&nbsp;
-
 ![Collibra Guided Stewardship missing](<lib/Collibra Guided Stewardship missing.png>)
-
-&nbsp;
 
 And without Guided Stewardship on the Collibra instance, it is not possible to publish lineage from physical models to polyglot models (since polyglot models cannot be published to Collibra...):\
 ![Collibra Guided Stewardship limited lineage](<lib/Collibra Guided Stewardship limited lineage.png>)
 
-&nbsp;
-
 Publishing physical data models to the Physical Layer of Collibra is possible. The process is identical for Ultimate and non-Ultimate editions of Collibra. Please refer to the main pages above for more details.\
 However, additional configuration is required on the Collibra side if you don't have the Ultimate edition subscription.
-
-&nbsp;
 
 ## Additional Collibra configuration
 
@@ -34,8 +24,6 @@ When publishing a Hackolade Studio physical data model to Collibra, several Hack
 - **Schema, Table, Column, Database View**
 - **Data Model, Data Entity, Data Attribute** - for users who publish Polyglot models and have the *Guided Stewardship* feature enabled, but do not have an Ultimate subscription.
 
-&nbsp;
-
 To add a characteristic to an asset type layout
 
 1. Open **Collibra Settings**.
@@ -43,19 +31,11 @@ To add a characteristic to an asset type layout
 3. Select **Global Assignment → Characteristics**, then click the **Edit Layout** button in the top-right corner.
 4. In the *Edit Layout* page, click **Add a Characteristic**, find the desired characteristic, check **Add directly to the layout**, and click **Add**.
 
-&nbsp;
-
 Adjust the characteristic position if necessary.
-
-&nbsp;
 
 [Collibra characteristics assignment for non Ultimate edition](<https://youtu.be/R5hBnpyAeEI> "video")
 
-&nbsp;
-
 This process must be repeated for each of the following characteristics that you wish to see in Collibra for published Hackolade Studio data models:
-
-&nbsp;
 
 **Schema / Data Model:**
 
@@ -66,8 +46,6 @@ This process must be repeated for each of the following characteristics that you
 - URL
 - Any custom Hackolade container/schema properties that mapped to characteristic with the HCK Custom prefix (My own attribute - in Hackolade -> HCK Custom My own attribute - in Collibra)
 
-&nbsp;
-
 **Table / Data Entity / Database View:**
 
 - Description
@@ -75,8 +53,6 @@ This process must be repeated for each of the following characteristics that you
 - HCK Technical Name
 - HCK Activated
 - Any custom Hackolade entity properties that mapped to characteristic with the HCK Custom prefix (My own attribute - in Hackolade -> HCK Custom My own attribute - in Collibra)
-
-&nbsp;
 
 **Column / Data Attribute:**
 

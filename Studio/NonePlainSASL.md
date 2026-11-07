@@ -9,15 +9,11 @@ image: lib/Hive - Connection settings - Plain SASL.png
 
 If the property “hive.server2.authentication” in the Hive configuration is set as “none”, it means that Hive uses Plain SASL authentication method.
 
-&nbsp;
-
 ```xml
 <property>
   <name>hive.server2.authentication</name>
   <value>none</value>
 </property>
 ```
-
-&nbsp;
 
 ![Hive - Connection settings - Plain SASL](<lib/Hive - Connection settings - Plain SASL.png>)

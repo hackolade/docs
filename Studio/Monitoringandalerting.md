@@ -6,13 +6,9 @@ seoTitle: Hackolade Model Hub monitoring and alerting
 
 You can operate the Model Hub like any other production web service: watch process health, resources, logs, and model-sync failures.
 
-&nbsp;
-
 ## Health checks and readiness
 
 The Model Hub process listens on port *3000* and exposes a *GET /health* and *GET /ready* endpoint. A successful check is an HTTP *200* response.
-
-&nbsp;
 
 Use this endpoint for:
 
@@ -20,15 +16,9 @@ Use this endpoint for:
 - Kubernetes liveness and readiness probes
 - Load balancer health checks
 
-&nbsp;
-
 See Install and start the server for the reference health-check command.
 
-&nbsp;
-
 Also monitor the **database migration** job on install and upgrade. A non-zero exit from *model-hub-\*-database-migration* would mean that the schema was not applied successfully; do not ignore failed migration containers.
-
-&nbsp;
 
 ## Resource metrics
 
@@ -38,24 +28,16 @@ Collect at least:
 - Disk usage for the filestore volume (/home/node/.hub)
 - Database CPU, storage, connection count, and free space (on the external PostgreSQL or Oracle instance)
 
-&nbsp;
-
 Alert when the Model Hub container restarts repeatedly, when memory grows without bound under sync load, or when the filestore volume is close to full.
-
-&nbsp;
 
 ## Logs
 
 The Model Hub writes **JSON logs** to the container’s standard output (stdout). Ship them to your central logging platform.
 
-&nbsp;
-
 You will see:
 
 - Access / request logs for HTTP traffic
 - Warning and error logs for unexpected conditions (for example database connectivity problems or Git provider failures)
-
-&nbsp;
 
 Useful alert ideas on log streams:
 
@@ -64,13 +46,9 @@ Useful alert ideas on log streams:
 - Messages indicating database connection or pool errors
 - Messages indicating Git provider or webhook processing failures
 
-&nbsp;
-
 ## Model sync errors
 
 When the Model Hub fails to process a webhook or to sync a model file, it records the failure in the \`sync_errors\` table in the Model Hub database. Monitor this table in addition to logs.
-
-&nbsp;
 
 ### Useful columns
 
@@ -122,8 +100,6 @@ When the Model Hub fails to process a webhook or to sync a model file, it record
 </tbody>
 </table>
 
-&nbsp;
-
 ### Example queries
 
 #### PostgreSQL (schema hck_hub)
@@ -136,11 +112,7 @@ ORDER BY created_at DESC
 LIMIT 100;
 ```
 
-&nbsp;
-
 Count recent webhook failures:
-
-&nbsp;
 
 ```sql
 SELECT count(*) AS webhook_errors_last_24h
@@ -148,8 +120,6 @@ FROM hck_hub.sync_errors
 WHERE error_type = 'webhook_error'
   AND created_at > now() - interval '24 hours';
 ```
-
-&nbsp;
 
 #### Oracle
 
@@ -161,11 +131,7 @@ ORDER BY created_at DESC
 FETCH FIRST 100 ROWS ONLY;
 ```
 
-&nbsp;
-
 Alert when the rate of new *sync_errors* rows rises suddenly, or when *webhook_error* rows appear continuously (often a bad webhook URL, secret, or network path from the Git provider to the Model Hub).
-
-&nbsp;
 
 ## Suggested alert checklist
 

@@ -4,9 +4,14 @@ seoTitle: Hackolade Studio editions and license models
 ---
 # Editions
 
-There are different permutations to be aware of: Hackolade Studio is available in several different editions, 2 deployments, and 2 license models. All run the exact same code base. The license key, with its parameters in our license server, determines whether a given feature is enabled or not.
+> [!TIP]
+> **TL;DR**
+>
+> **Ultimate** = Workgroup + AI-Assisted Data Modeling
+>
+> **Workgroup** = Professional + Git integration for collaboration, versioning, branching, change tracking, peer reviews,...
 
-&nbsp;
+There are different permutations to be aware of: Hackolade Studio is available in several different editions, 2 deployments, and 2 license models. All run the exact same code base. The license key, with its parameters in our license server, determines whether a given feature is enabled or not.
 
 <table style="width:100%">
 <colgroup><col style="width:12%"><col style="width:9%"><col style="width:10%"><col style="width:10%"><col style="width:11%"><col style="width:12%"><col style="width:12%"><col style="width:13%"><col style="width:11%"></colgroup>
@@ -109,11 +114,7 @@ There are different permutations to be aware of: Hackolade Studio is available i
 </tbody>
 </table>
 
-&nbsp;
-
 \*: since v7.9.3, it is allowed to use of license keys in the browser for all editions except free trial. Warning: not all features of Personal, Pro, and Workgroup Editions are enabled yet in the browser. We will progressively enable additional features in the browser, within the limits allowed by W3C security concerns. **The desktop app remains the flagship with all feature capabilities.**
-
-&nbsp;
 
 For example we recently enabled reverse-engineering with the browser from a Databricks instance and BigQuery. But you will never be able with the browser to reverse-engineer from an Oracle on-prem database, at least not without an “agent” (for security reasons as explained [here](Security-firstbrowserdeployment.md).) Our agent will remain the desktop application. For Snowflake and other cloud databases that do not allow modifications to the CORS configuration, there are at least 3 possible alternatives:
 
@@ -121,37 +122,21 @@ For example we recently enabled reverse-engineering with the browser from a Data
 - Execute the same action, but more automated via an instance of our Command-Line Interface, possibly running in a “bastion” architecture and behind a customer-developed portal, as described in [this page](BastioninstanceforHackoladeStudi.md). The added benefit of this architecture, as implemented at many of our finance industry customers, is that it is not even necessary to provide database access credentials to data modelers, if this matter is a concern for your customer.
 - Deploy a reverse-proxy, as described [here](<https://hackolade.com/help/ConfluentSchemaRegistry.html#Configure%20CORS%20to%20access%20Confluent%20Schema%20Registries%20from%20Hackolade%20Studio%20in%20the%20browser>), but this solution seems too complex to implement and maintain, and one of the previous 2 options is generally judged not only to be sufficient but also more desirable.
 
-&nbsp;
-
 More generally, all operation that exchange with external systems where CORS security and/or multiple file handling are involved, are hard to handle in the browser. This includes publishing to governance platforms such as Collibra or DataHub. Or the generation of the documentation in HTML, Markdown, or PDF. Or the API model generation. All these operations are better handled via the CLI or the Desktop deployment.
-
-&nbsp;
 
 Also, we currently cannot execute, in the browser, some features of the desktop: bundle changes to multiple data models in a single commit (same limitation as github.com versus GitHub Desktop for WIndows), or handle the Git workflow such as submit for review, review change/pull requests, all of which having workarounds using the web pages of the Git provider.
 
-&nbsp;
-
 The license seat can be shared across the desktop and the browser on a single machine, for example is a desktop user wants to verify that a [model link](SharemodellinkURL.md) works as expected in the browser. Again for browser security reasons, it is impossible for the browser to access the license information of the desktop. The process allows such exchange without causing any security risk, and without impeding our revenue protection. This license seat sharing process is described [here](<https://hackolade.com/help/Softwareregistration.html#Reuse%20in%20the%20Browser%20your%20license%20key%20already%20validated%20in%20the%20Desktop>).
-
-&nbsp;
 
 ## Deployment
 
 Hackolade Studio has traditionally been available as an offline desktop application for Windows, Mac, and Linux. Starting with v7.0.0, it is now also available as a security-first [cross-browser](<https://en.wikipedia.org/wiki/Cross-browser> "target=\"_blank\"") [serverless](<https://en.wikipedia.org/wiki/Serverless_computing> "target=\"_blank\"") [web app](<https://en.wikipedia.org/wiki/Web_application> "target=\"_blank\"") which can open data models from and save them to your local environment. All from the same code base, meaning that, as we add [weekly enhancements](<https://hackolade.com/versionInfo/ReadMe.txt> "target=\"_blank\"") and new features, they are deployed automatically to the offline desktop (provided that you upgrade to that latest version...) and the online browser. The latest version is exactly the same for the browser deployment and all desktop operating systems.
 
-&nbsp;
-
 The main benefit of a browser deployment is that users don't need to download an application to their desktop, and are always running the latest version of the application. The Hackolade Studio deployment in the browser has a unique security-first approach in the sense that data models are not stored on our servers. They never leave your network because you store them on your own local file system or Git repository, for enhanced confidentiality, data security, and privacy of your information. Processing is performed locally within your browser tab. There are no cookies, no advertisements, no analytics, no browser fingerprinting, and no tracking beacons
-
-&nbsp;
 
 Our browser deployment supports the latest versions of Chrome, Edge, Brave, Firefox browsers and Safari. For the best user experience, you should use Chrome or Edge, because Brave, Firefox, and Safari do not currently support the [File System Access API](<https://wicg.github.io/file-system-access/> "target=\"_blank\""), resulting in some features having a graceful degradation of the user experience.
 
-&nbsp;
-
 Whether you're using Chrome, Edge, Brave, Firefox, or Safari, enabling site data is a simple yet effective step towards enhancing your user experience with Hackolade Studio Browser.
-
-&nbsp;
 
 It is also better to use your browser in its standard mode, i.e. NOT in a guest, private, or incognito tab. While we don't use cookies, we do leverage some features of what's called "site data" capabilities in your browser. Adjusting your browser settings to enable site data for Hackolade Studio Browser ensures that your settings are preserved, even after reloading the application or starting a new session in a new tab. This includes:
 
@@ -161,16 +146,10 @@ It is also better to use your browser in its standard mode, i.e. NOT in a guest,
 - [Custom properties](Userdefinedcustomproperties.md)
 - [Excel options](Excelfile.md)
 
-&nbsp;
-
 More information can be found in [this page](Security-firstbrowserdeployment.md).
-
-&nbsp;
 
 > [!NOTE]
 > While it is possible to consult a model on a tablet, you should be aware of the fact that the application has not been optimized for touchscreen experience, but well for mouse interactions.
-
-&nbsp;
 
 ## Edition
 
@@ -189,16 +168,10 @@ The different editions are listed below. Access this page to [compare the differ
 - Evaluation Edition: Free 14-day evaluation of all the great features of Hackolade, without any restrictions.
 - Community Edition: The Community Edition of Hackolade Studio is completely FREE. It is an entry-level data modeling software with a subset of the Hackolade Personal and Professional Editions. It is a great way for students and those new to modeling to get started with an industry-leading data modeling tool. The Community edition offers many of the core features of data modeling with a limit of 50 model objects (an object being a table or an attribute.) It includes Entity Relationship diagrams; the hierarchical schema view of JSON collections, and PDF documentation. But it does not include forward and reverse engineering, or HTML documentation.
 
-&nbsp;
-
 The above editions are packaged in the same software. The activation key obtained through the Hackolade store determines feature access within the application.
-
-&nbsp;
 
 **(\*):** License metric is per "per seat", meaning that the number of Authorized Users specified on the Invoice may use the software. A license must be obtained for each device on or from which the Product is used or accessed. When the Product is accessed remotely across using Terminal Server, Remote Desktop, Windows App, virtual machine, Citrix, or an equivalent method, a separate Product license is required to be assigned to each device from which the application is accessed, i.e. not the virtual machine on which the Product is installed.\
 **(\*\*):** floating (aka concurrent) licenses do NOT require a license server on premises.
-
-&nbsp;
 
 Each edition is available natively for the following platforms:
 
@@ -206,12 +179,8 @@ Each edition is available natively for the following platforms:
 - Mac OSX, both Intel processor and Apple Silicon ARM
 - Linux: 64-bit
 
-&nbsp;
-
 ## License model
 
 Most of the paid for licenses are available in 2 models: dedicated or floating. The price is quite different because of the added flexibility and value of the floating model. Also, you do not need as many floating seats for the same number of users.
-
-&nbsp;
 
 All details are described in [this page](WhichlicenseshouldIchoose.md).

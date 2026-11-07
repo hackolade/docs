@@ -6,11 +6,7 @@ seoTitle: Supported SQL and NoSQL databases, APIs and formats
 
 Hackolade's main added value is in providing the ability to perform the data modeling for JSON-based databases, mainly nested objects (sub-documents and arrays, a.k.a. maps and lists.) Hackolade even has a pending patent on its "Method and Process to graphically model schemas for NoSQL and multimodel databases and REST APIs".
 
-&nbsp;
-
 Whereas most relational database adhere to a SQL standard which ensures a common approach (even though some nuances are possible), NoSQL databases have sometimes fundamentally different approaches for storage and architecture, and often use different terminology for similar concepts:
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:11%"><col style="width:10%"><col style="width:11%"><col style="width:13%"><col style="width:12%"><col style="width:13%"><col style="width:11%"><col style="width:10%"><col style="width:9%"></colgroup>
@@ -141,8 +137,6 @@ Whereas most relational database adhere to a SQL standard which ensures a common
 </tbody>
 </table>
 
-&nbsp;
-
 <table style="width:100%">
 <colgroup><col style="width:10%"><col style="width:13%"><col style="width:13%"><col style="width:13%"><col style="width:13%"><col style="width:13%"><col style="width:13%"><col style="width:12%"></colgroup>
 <thead>
@@ -261,8 +255,6 @@ Whereas most relational database adhere to a SQL standard which ensures a common
 </tbody>
 </table>
 
-&nbsp;
-
 <table style="width:100%">
 <colgroup><col style="width:10%"><col style="width:13%"><col style="width:13%"><col style="width:13%"><col style="width:13%"><col style="width:13%"><col style="width:13%"><col style="width:12%"></colgroup>
 <tbody>
@@ -379,18 +371,10 @@ Whereas most relational database adhere to a SQL standard which ensures a common
 </tbody>
 </table>
 
-&nbsp;
-
 Each target vendor may also support its own functional features and list of attribute types.
-
-&nbsp;
 
 To simplify the user's life, Hackolade adapts to the terminology and feature set of each database platform target for the model. The menu items, contextual menus, toolbar icon tooltips, and documentation all dynamically change depending on the selected target.
 
-&nbsp;
-
 Isn't it ironic that a technology that bears the label of 'schemaless' is also known for the fact that schema design is one of its toughest challenges? Each of the NoSQL vendors dedicates a large part of its documentation to data modeling: [MongoDB](<https://docs.mongodb.com/manual/core/data-modeling-introduction/> "target=\"_blank\""), [DynamoDB](<http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GuidelinesForTables.html> "target=\"_blank\""), [Couchbase](<https://developer.couchbase.com/documentation/server/current/data-modeling/intro-data-modeling.html> "target=\"_blank\""), [Cassandra](<http://docs.datastax.com/en/cql/3.3/cql/ddl/ddlCQLDataModelingTOC.html> "target=\"_blank\"").
-
-&nbsp;
 
 The following pages analyze the characteristics of each NoSQL database vendor, from the perspective of a data modeler. These pages do not cover the technical architecture as it pertains to infrastructure and performance, which would go well beyond the scope of the Hackolade application.

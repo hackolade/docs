@@ -6,11 +6,7 @@ seoTitle: Hackolade Studio open source components
 
 All Product Editions. For more info, consult this [helpful resource](<https://choosealicense.com/licenses/> "target=\"_blank\"").
 
-&nbsp;
-
 **Open Source Components:**
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:17%"><col style="width:74%"><col style="width:9%"></colgroup>
@@ -815,11 +811,7 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 </tbody>
 </table>
 
-&nbsp;
-
 **Open Source Media Libraries:**
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:17%"><col style="width:74%"><col style="width:9%"></colgroup>

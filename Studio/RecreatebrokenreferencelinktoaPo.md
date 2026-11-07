@@ -7,15 +7,9 @@ image: lib/Repair polyglot broken ref link flow.png
 
 When working with derived models, it may happen that the reference link to the source Polyglot model is accidentally deleted. As a result, the derived model is disconnected and cannot be updated anymore from the Polyglot model.
 
-&nbsp;
-
 This article explains how to repair a derived physical model that has lost its reference link to a Polyglot model. At a high level, the process consists of creating a new derived physical model from the Polyglot, then using Compare & Merge with the broken model, so that the merged result recovers both the content of the broken model and the valid reference link.
 
-&nbsp;
-
 ![Repair polyglot broken ref link flow](<lib/Repair polyglot broken ref link flow.png>)
-
-&nbsp;
 
 You should follow the steps below:
 
@@ -25,8 +19,6 @@ You should follow the steps below:
    - On the right, place the newly derived physical model that is linked to the Polyglot model (the result of the compare & merge inherit the derivation links from the model on the right).
 3. Select to perform the comparison based on Business names.
 4. Select the objects and properties from the left (the broken model) that you want to keep. For example, if the broken model contains additional attributes in an entity, you can bring them into the merged result.
-
-&nbsp;
 
 The repaired physical model contains the content from the broken model while restoring its reference link to the Polyglot.\
 ![Repair polyglot broken ref link steps](<lib/Repair polyglot broken ref link steps.png>)\

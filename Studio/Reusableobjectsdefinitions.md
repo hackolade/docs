@@ -5,18 +5,11 @@ image: lib/External entty references path.png
 ---
 # Re-usable objects definitions
 
-> [!NOTE]
-> You may wish to view the [how-to video](<https://hackolade.com/videos.html#def> "target=\"_blank\"") on this subject.
-
-&nbsp;
+[Reusable object definitions](<https://youtu.be/TPugvuR7rZI> "video")
 
 To facilitate the work of data modelers, Hackolade has introduced a handy feature: the ability to create once, object definitions that can be re-used in multiple places. A library of definitions standardizes content and insures consistency. This dictionary also simplifies the work of data modelers so maintenance can be performed in one place and be automatically propagated to all places where the definition is referenced.
 
-&nbsp;
-
 A good simple example of a re-usable definition is an address. This type of object may be used in many places inside a model, and in different models too. Even within one single entity, you may have, for example a billing address and a shipping address.
-
-&nbsp;
 
 Definitions can be maintained at 3 distinct levels: at the entity-level (called internal definitions), at the model-level, and external. In the ERD view and hierarchical schema view, the references are are noted:
 
@@ -24,55 +17,33 @@ Definitions can be maintained at 3 distinct levels: at the entity-level (called 
 - (m) for model -- Note: in Polyglot and most RDBMS targets, "model definitions" are called UDTs or "User-Defined Types"
 - (e) for external
 
-&nbsp;
-
 > [!NOTE]
 > Definitions are not carried over to many of the NoSQL databases. They are only used in physical modeling in Hackolade. To make things easy for the data modeler, Object Browser, ERD, entity hierarchical schema views, and documentation all show the referenced attributes as if they had been defined directly in the collection(s).
 
-&nbsp;
-
 It is easy to create a re-usable definition from scratch, then reference it in a collection. Or by selecting an attribute in an existing collection, and converting it to a re-usable definition, so it can be referenced elsewhere.
-
-&nbsp;
 
 ## Internal definitions
 
 Internal definitions have limited use because they can only be reused (or referenced) within the same entity (a collection or table). But internal definitions insure [JSON Schema compatibility](<https://cswr.github.io/JsonSchema/spec/definitions_references/> "target=\"_blank\"").
 
-&nbsp;
-
 ## Model definitions
 
 Model definitions can be referenced in any entity of the same Hackolade model.
 
-&nbsp;
-
 If a definition is created at the model level, it can be referenced in any entity of the same model, whereas it will be limited to its own entity if it is created as an internal definition.
 
-&nbsp;
-
 With some RDMBS as well as with Cassandra and Hive for example, Hackolade's model definitions correspond to the concept of User-Defined Types or UDTs.
-
-&nbsp;
 
 ## External definitions
 
 External definitions are Hackolade models (or JSON Schema files) that can be referenced in whole or in part, by other models -- even across different targets.
 
-&nbsp;
-
 Any entity (collection, table, ...) - or attribute herein - within a Hackolade can be an external definition for, and be referenced by, another Hackolade model. In other words, it does not have to be a definition within that model.
-
-&nbsp;
 
 > [!NOTE]
 > While internal and model definitions above require some preparation before they can be used, there is zero preparation required for references to external definitions. From a given model, you may create a reference to ANY entity or attribute from ANY other model of ANY target.
 
-&nbsp;
-
 In legacy data modeling tools, this feature is sometimes called "domain" or "template". In Hackolade Studio, this feature not only provides a quick way to speed the model design process and make the model easy to maintain, but it also is much more powerful and flexible than with other tools since we accommodate complex data types.
-
-&nbsp;
 
 External models can be used to create a company-wide library of re-usable objects. You may ask yourself whether it is best to have one single model hold all of your company's re-usable definitions, or to have one model per object, or various degrees in-between. There are pros and cons to each approach. We would advise against putting all objects in a single model. One model per domain, or even one model per sub-domain would make more sense from these perspectives:
 
@@ -80,41 +51,25 @@ External models can be used to create a company-wide library of re-usable object
 - ease of navigation (directory names and model names should be descriptive so modelers don't have to scan tons of objects to find the ones that they're interested in)
 - performance (not a huge factor, but smaller models are easier to navigate than bigger ones.)
 
-&nbsp;
-
 Depending on size, you may even use sub-directories to help manage the library of definition models. But do remember that, if you move referenced models around, you will break the path in the referencing models.
-
-&nbsp;
 
 In order for changes to a *referenced* external model to be activated in a *referencing* model, the latter needs to be opened in the application. Alternatively, you may manually refresh a reference in an open referencing model\
 ![Definitions reference refresh](<lib/Definitions reference refresh.png>)
-
-&nbsp;
 
 ### Attributes
 
 If you have defined a separate model with the structure of an address, you may reference it in any other Hackolade model:\
 ![Definitions - contextual menu referencing ext](<lib/Definitions - contextual menu referencing ext.png>)
 
-&nbsp;
-
 next, you're prompted to choose the reference model, either from your file system or a URL:
 
-&nbsp;
-
 <img src="lib/Defintions - Choose external dialog.png" alt="Defintions - Choose external dialog" width="540">
-
-&nbsp;
 
 You then can choose an individual attribute, or an entire structure:\
 ![Definitions external choose](<lib/Definitions external choose.png>)
 
-&nbsp;
-
 > [!NOTE]
 > It is not intended to combine definition levels. In other words, if you have a Hackolade model with attribute structures intended to be re-used in other models, you should define these as simple attributes, not as internal or model definitions.
-
-&nbsp;
 
 ### Entities
 
@@ -128,55 +83,33 @@ You also might want to have an entity reference an entire entity in another mode
 <img src="lib/External entty references path.png" alt="External entty references path" width="546">\
 5\) select the entity of your choice, and clock OK.
 
-&nbsp;
-
 > [!WARNING]
 > Any attributes you may have previously defined are replaced by the attributes of the selected definition. In other words, all previous entities are erased. Be careful how you use this feature.
 
-&nbsp;
-
 External references are produced using the $ref implementation described [here](<https://swagger.io/docs/specification/using-ref/> "target=\"_blank\"") and [RFC 3986](<https://tools.ietf.org/html/rfc3986> "target=\"_blank\"").
-
-&nbsp;
 
 ## Initially create a definition
 
 A definition can be created from scratch, just like any collection, either by selecting the Internal Definitions lower tab at the collection level:
 
-&nbsp;
-
 ![Definitions - Lower collection tabs](<lib/Definitions - Lower collection tabs.png>)
-
-&nbsp;
 
 or by selecting the Model Definitions lower tab at the model ERD level:\
 ![Definitions - Lower model tabs](<lib/Definitions - Lower model tabs.png>)
 
-&nbsp;
-
 In our address example, the definition may look like this:\
 ![Definitions - Address example](<lib/Definitions - Address example.png>)
 
-&nbsp;
-
 Once the definition is created, it can be referenced in a collection, via the contextual menu:
-
-&nbsp;
 
 ![Definitions - Contextual menu](<lib/Definitions - Contextual menu.png>)\
 As a result, a reference is created in the collection. The application displays all the elements of the definition, as if they were in the collection, but only a reference to the definition is actually stored in the collection:
 
-&nbsp;
-
 ![Definitions - billing and shipping references](<lib/Definitions - billing and shipping references.png>)\
 The reference is marked with the middle line in the hierarchical schema box, showing the name of the referenced definition, followed by either (m) for model definitions, or (i) for internal definitions.
 
-&nbsp;
-
 At any point, it is possible, if desired, to replace a reference by the object definition structure:\
 ![Definitions - replace by attributes](<lib/Definitions - replace by attributes.png>)
-
-&nbsp;
 
 ## Convert an existing attribute into a definition
 
@@ -184,52 +117,32 @@ If you want to make an attribute available for use elsewhere in the same collect
 ![Definitions - convert reference to def](<lib/Definitions - convert reference to def.png>)\
 This will create the internal or model definition, and replace the attribute (and its children if any) by a reference to the definition.
 
-&nbsp;
-
 ## Where-Used
 
 For internal and model definitions, it may be useful to find all occurrences of definition references within a model. This where-used function (aka impact analysis, aka lineage) is available from the contextual menu (or the Ctrl+F11 shortcut key):\
 <img src="lib/Definition Where-Used contextual menu.png" alt="Definition Where-Used contextual menu" width="185">
 
-&nbsp;
-
 Choosing this option displays a dialog displaying all instances of references to the selected definition, and the path to those instances.
-
-&nbsp;
 
 <img src="lib/Definition where-used dialog.png" alt="Definition where-used dialog" width="570">\
 You may select an instance and go to the hierarchical schema view of that reference. Lineage is enabled from the Object Browser and definition tab (model and internal.)
-
-&nbsp;
 
 ## Forward-engineering "referenced" vs "resolved" definitions
 
 When displaying the JSON Schema preview or forward-engineering JSON Schema, the user may choose between the standard "Referenced definitions"\
 ![JSON Schema preview Referenced definitions](<lib/JSON Schema preview Referenced definitions.png>)
 
-&nbsp;
-
 <img src="lib/JSON Schema FE Referenced definitions.png" alt="JSON Schema FE Referenced definitions" width="490">
-
-&nbsp;
 
 or "Resolved definitions"\
 ![JSON Schema preview Resolved definitions](<lib/JSON Schema preview Resolved definitions.png>)
 
-&nbsp;
-
 <img src="lib/JSON Schema FE Resolved definitions.png" alt="JSON Schema forward-engineering Resolved definitions" width="492">
-
-&nbsp;
 
 or "Internal". This option converts to an internal definition, the references to model definition and external definitions:\
 ![JSON Schema preview Internalized definitions](<lib/JSON Schema preview Internalized definitions.png>)
 
-&nbsp;
-
 <img src="lib/JSON Schema FE Internalized definitions.png" alt="JSON Schema forward-engineering Internalized definitions" width="508">
-
-&nbsp;
 
 ## Cross-repository references
 
@@ -240,11 +153,7 @@ As a direct consequence of this principle, the way you can pick a referenced mod
 - Opened from a local clone -> the referenced model must be picked from the same local clone (i.e., from the branch you currently have checked out).
 - Opened directly from the remote -> you can navigate remotely to pick the referenced model, and it will resolve against the same remote branch.
 
-&nbsp;
-
 **Why would allowing forcing a specific branch would cause real problems**\
 Consider a concrete scenario: a data modeler is working on a feature branch. They have modified both a referencing model and the model it references. If Hackolade Studio allowed picking the referenced model from main instead of the current branch, the reference could point to an entity that has been changed on the feature branch but not yet on main; or worse, to an entity that simply does not exist yet on main. The reference would resolve incorrectly, silently, with no clear way for the user to understand why. This is precisely the kind of situation we want to prevent.
-
-&nbsp;
 
 If the concern is that a data modeler might create a reference to an outdated version of a model, the right process is to ensure the branch is up to date before creating the reference -- not to bypass the branch mechanism entirely.

@@ -8,11 +8,7 @@ seoTitle: Reference separate entities with foreign keys
 
 In this approach, entities remain fully independent, and relationships are explicitly modeled. This is the most familiar structure for modelers with a background in relational databases.
 
-&nbsp;
-
 Unlike nested structures, this modeling style provides full control over the definition of relationships and cardinalities from both sides.
-
-&nbsp;
 
 ## Repository of examples
 
@@ -21,11 +17,7 @@ The sample models used in the examples below can be found in [this repository](<
 - [1-Polyglot.hck.json](<https://studio.hackolade.com/?g=github&o=hackolade&r=demo-models-read-only&f=Pragmatic+data+modeling%2F1-Polyglot.hck.json&b=main> "target=\"_blank\"")
 - [3-Referencing-Oracle.hck.json](<https://studio.hackolade.com/?g=github&o=hackolade&r=demo-models-read-only&f=Pragmatic+data+modeling%2F3-Referencing-Oracle.hck.json&b=main> "target=\"_blank\"")
 
-&nbsp;
-
 Note also the naming convention applied to transform business names in the Polyglot model with Pascal case and spaces, into technical names int he physical models with lowercase and underscores)
-
-&nbsp;
 
 ## Example of customer placing orders
 
@@ -33,23 +25,13 @@ Note also the naming convention applied to transform business names in the Polyg
 - An `Order` entity also exists separately.
 - The relationship between them is explicitly defined, with clear cardinalities on both sides.
 
-&nbsp;
-
 This structure naturally fits relational modeling principles, where entities and their relationships are kept independent and precisely controlled.\
 ![Pragmatic modeling - Referencing polyglot](<lib/Pragmatic modeling - Referencing polyglot.png>)
 
-&nbsp;
-
 The relational Physical Model after derivation, reflects the same structure, with primary keys and foreign keys in place.
-
-&nbsp;
 
 ![Pragmatic modeling - Referencing physical](<lib/Pragmatic modeling - Referencing physical.png>)
 
-&nbsp;
-
 When the model is normalized in the Polyglot model, you cannot denormalize it during the derivation process. For this reason, this approach is recommended when all target technologies follow similar normalization principles, such as relational databases or other structured systems.
-
-&nbsp;
 
 In mixed environments, where document stores or API designs favor embedded structures, using a nested modeling approach at the logical level provides greater flexibility.

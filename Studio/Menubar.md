@@ -6,23 +6,13 @@ seoTitle: Hackolade Studio menu bar
 
 ![Menu bar - File menu](<lib/Menu bar.png>)
 
-&nbsp;
-
 The line of action words provide access to most functions of the application. Menus are accessed via mouse click.
-
-&nbsp;
 
 The corresponding menu appears with menu items:
 
-&nbsp;
-
 ![Menu bar - File menu](<lib/Menu bar - File menu.png>)
 
-&nbsp;
-
 The menu items are contextually activated, and other options are dimmed if unavailable. Menu items are accessed via mouse click or by pressing Alt+ the underlined letter of the menu item. Menu items are also accessible via the [shortcut keys](Shortcutkeys.md) that are displayed as a reminder.
-
-&nbsp;
 
 ## Do you need to obfuscate your data model before you share it?
 

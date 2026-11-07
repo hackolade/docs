@@ -7,15 +7,9 @@ image: lib/Client architecture diagram.png
 
 - Architecture & Design: the architecture of the solutions is super simple and described in this diagram:
 
-&nbsp;
-
 ![Client architecture diagram](<lib/Client architecture diagram.png>)
 
-&nbsp;
-
 Even when leveraging the browser deployment, the security-first architecture is very simple:
-
-&nbsp;
 
 ![Desktop and Browser architecture](<lib/Desktop and Browser architecture.png>)
 
@@ -26,11 +20,7 @@ Even when leveraging the browser deployment, the security-first architecture is 
 - Knowledge Transfer : Hackolade provides [online user documentation](WelcometoHackoladeStudio.md), [tutorials](Tutorial.md), [how-to guides](How-toguides.md), and an [eLearning platform](<https://community.hackolade.com/slides/all> "target=\"_blank\"") with self-paced progressive video tutorials.
 - Post-Implementation Support : maintenance and support are provided for as long as the subscription is valid.
 
-&nbsp;
-
 **🔍 Deployment Project Plan**
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:14%"><col style="width:86%"></colgroup>
@@ -63,7 +53,5 @@ Even when leveraging the browser deployment, the security-first architecture is 
 </tr>
 </tbody>
 </table>
-
-&nbsp;
 
 ![Deployment project plan](<lib/Deployment project plan.png>)

@@ -7,175 +7,101 @@ image: lib/Oracle Thin mode client.png
 
 To interact with Oracle databases (Cloud and private), when applying forward-engineering DDLs reverse-engineering, a user-provided Oracle client is required. Just like major applications, including [Tableau Desktop](<https://kb.tableau.com/articles/howto/Connecting-to-Oracle-in-Tableau-Desktop-using-Oracle-Wallet> "target=\"_blank\""), we do NOT ship an Oracle Instant Client in our plugin for many reasons, including Oracle's licensing terms. If you don't have an Oracle Client already installed on your machine, its download and installation will be required as part of the process so the connection settings can be pointed at it.
 
-&nbsp;
-
 > [!IMPORTANT]
 > When reverse-engineering an Oracle instance, non-privileged users can see the metadata of only their own objects, so to access others you need to be be granted `SELECT_CATALOG_ROLE`. More information is available [here](<https://docs.oracle.com/cd/B19306_01/appdev.102/b14258/d_metada.htm#i1016867> "target=\"_blank\"") and [here](<https://docs.oracle.com/en/database/oracle/oracle-database/23/arpls/DBMS_METADATA.html#GUID-005EEF26-0254-4996-A43A-C5236ADA8829> "target=\"_blank\"").
 
-&nbsp;
-
 If you encounter an error *ORA-16000: database or pluggable database open for read-only access,* it has been confirmed by Oracle that pluggable and stand-by instances of Oracle are read-only which prevents the operation of the DBMS_METADATA.GET_DDL PL/SQL function which we need to perform reverse-engineering of the instance. Hackolade Studio will not perform the reverse-engineering operation correctly if connected to a pluggable or stand-by instance.
-
-&nbsp;
 
 > [!NOTE]
 > There are many ways to configure connections to Oracle. Plus firewalls, proxies, and whitelist can be make it hard to access. The easiest way to troubleshoot the connection settings in Hackolade is to make sure first that you have access from the same machine with another client tool. Then it becomes easy to transpose the connection settings from that application to Hackolade. Since [SQL Developer](<https://www.oracle.com/tools/downloads/sqldev-downloads.html> "target=\"_blank\"") is an Oracle product, it does not require a separate Oracle Instant Client, so having a working connection from SQL Developer is not alone sufficient proof that Hackolade could connect.
-
-&nbsp;
 
 ## Thin vs Thick mode
 
 The Hackolade Studio plugin for Oracle includes a thin client to facilitate connections to an Oracle instance, whether on-premises or in the cloud.\
 ![Oracle Thin mode client](<lib/Oracle Thin mode client.png>)
 
-&nbsp;
-
 You just need to give your connection a meaningful name, enter your host and port (default 1521), and either a Service Name or a SID. Then move to the Authentication tab to enter your credentials.
 
-&nbsp;
-
 If running on Oracle Cloud Infrastructure, things are even simpler if you fetch a Wallet, as described below.
-
-&nbsp;
 
 ## ORACLE_HOME vs Instant Client
 
 You may already have a full client installed on your machine. ORACLE_HOME is a directory in the file system where the Oracle software is installed. The path to this directory is stored in an environment variable.
 
-&nbsp;
-
 To check if ORACLE_HOME has been set on your machine and available for Hackolade:
-
-&nbsp;
 
 **On Windows:** At a command prompt, type C:\\>echo %ORACLE_HOME%. If this gives you the directory path, then that means ORACLE_HOME is set.\
 If ORACLE_HOME is not set, the output will simply give back %ORACLE_HOME%.
 
-&nbsp;
-
 **On Unix/Linux:** type env grep | ORACLE_HOME\
 If ORACLE_HOME is set, then you may choose this option:![Oracle connection ORACLE_HOME](<lib/Oracle connection ORACLE_HOME.png>)
 
-&nbsp;
-
 If ORACLE_HOME is not set, you probably need to [download](<https://www.oracle.com/database/technologies/instant-client/downloads.html> "target=\"_blank\"") and install an Instant Client. You may have to get your IT department to push this to your machine.
-
-&nbsp;
 
 Oracle Instant client is a basic lightweight client which can be unzipped in a location without any installation, it contains only the communication layer to be able to connect to oracle. When using Instant Client, just unzip it to a location of your choice. Keep a note of the path to this folder, as you will have to specify it in the connection settings to your Oracle instance.
 
-&nbsp;
-
 You may set your ORACLE_HOME environment variable to this location, or simply specify the location in the Hackolade connection settings.
 
-&nbsp;
-
 ![Oracle connection instant client](<lib/Oracle connection instant client.png>)
-
-&nbsp;
 
 ### Oracle Instant Client installation on Mac
 
 On MacOS, a trusted signed package is required. When you download from [Oracle](<https://www.oracle.com/database/technologies/instant-client/macos-intel-x86-downloads.html> "target=\"_blank\""), you must know that the .zip version won't be trusted by MacOS and will cause Hackolade to malfunction. You must download one of the .dmg packages
 
-&nbsp;
-
 ![Oracle Instant Client MacOS](<lib/Oracle Instant Client MacOS.png>)
 
-&nbsp;
-
 Once the package is downloaded, open the \`\<instant-client>.dmg\` and copy **all the files** to a dedicated folder of your choice. For example, \`/Users/\<username>/databases/clients/oracle\`. Keep a note of the path to this folder, as you will have to specify it in the connection settings to your Oracle instance.
-
-&nbsp;
 
 ## Connection method
 
 We support 3 connection methods: basic, with an Oracle Cloud Wallet, or with a tnsnames.ora configuration file.
 
-&nbsp;
-
 ### Basic connection settings
 
 With the basic method, you must specify all the necessary parameters for the clinet to establish the connection. This includes the hostname DNS or IP address, the port number, and either a service name or SID (Oracle system identifier)
 
-&nbsp;
-
 ![Oracle basic connection service name](<lib/Oracle basic connection service name.png>)
-
-&nbsp;
 
 or\
 ![Oracle basic connection SID](<lib/Oracle basic connection SID.png>)
-
-&nbsp;
 
 ### Oracle wallet
 
 Oracle Wallet provides an simple and easy method to manage database credentials across multiple domains. It allows you to update database credentials by updating the Wallet instead of having to change individual datasource definitions. This is accomplished by using a database connection string in the datasource definition that is resolved by an entry in the wallet.
 
-&nbsp;
-
 With Oracle Autonomous, you may also generate a wallet using [these instructions](<https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/connect-download-wallet.html#GUID-B06202D2-0597-41AA-9481-3B174F75D4B1> "target=\"_blank\""). Once you have downloaded the Wallet .zip file, you simply need to specify the file path and name, and the service name
 
-&nbsp;
-
 ![Oracle connection wallet](<lib/Oracle connection wallet.png>)
-
-&nbsp;
 
 ### TNSnames.ora config file
 
 TNS = Transparent Network Substrate. The tnsnames.ora file is a configuration file that contains network service names mapped to connect descriptors for the local naming method, or net service names mapped to listener protocol addresses. A net service name is an alias mapped to a database network address contained in a connect descriptor.
 
-&nbsp;
-
 You may have a tnsnames.ora file on your machine or on a shared drive. By default, tnsnames.ora is located in the $ORACLE_HOME/network/admin directory, but it can also be in the directory specified by the TNS_ADMIN environment variable. On a Windows machine, the system environment variable TNS_ADMIN, if any, generally indicates the location of your tnsnames.ora file. At a command prompt, type C:\\>echo %TNS_ADMIN% to find out.
-
-&nbsp;
 
 You must specify the folder location of the tnsnames.ora file as well as the service name to be used.
 
-&nbsp;
-
 For Oracle Autonomous Database, entries on port **1522** typically require mutual TLS (mTLS): the client must present wallet files from your OCI download and the wallet password. Enable **Mutual TLS (mTLS)** on the Connection tab when your folder contains the full wallet. When mTLS is enabled in **Thin mode**, enter the wallet password on the Connection tab; the password on the Authentication tab remains your Oracle database user password.
-
-&nbsp;
 
 ![Oracle connection tnsnames ora](<lib/Oracle connection tnsnames ora.png>)
 
-&nbsp;
-
 With the **TNS** connection method and a *tnsnames.ora* file only (mTLS unchecked, no client wallet in the folder), Hackolade can use simpler one-way TLS, which is often more performant than mTLS because the client does not send a wallet certificate. That mode is possible only if your database administrator has configured the instance accordingly, for example Oracle Cloud access control lists (ACLs) that allow your client IP and policies that do not enforce mTLS for the service you use. If mTLS is still required by the database, leave **Mutual TLS (mTLS)** enabled and provide the full wallet directory and wallet password. Do not assume that a *tnsnames.ora* file alone is sufficient unless your DBA has confirmed that mTLS enforcement is disabled for your access path.
 
-&nbsp;
-
 ![Oracle connection tnsnames ora with wallet](<lib/Oracle connection tnsnames ora with wallet.png>)
-
-&nbsp;
 
 ### Authentication
 
 Hackolade does not yet support OS-based or Kerberos authentication.
 
-&nbsp;
-
 You must provide the username, password, and optionally a role for your connection.
 
-&nbsp;
-
 ![Oracle connection authentication](<lib/Oracle connection authentication.png>)
-
-&nbsp;
 
 ### Advanced
 
 Oracle instances can be quite large with many user schemas. If you want to limit the scope of the discovery and you know the user schema you wish to access directly, you may enter it in the Advanced tab. You may even create one connection per user schema you access often.
 
-&nbsp;
-
 ![Oracle connection advanced limit scope discov](<lib/Oracle connection advanced limit scope discov.png>)
-
-&nbsp;
 
 ## Connecting to Oracle on Amazon RDS
 

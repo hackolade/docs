@@ -10,8 +10,6 @@ The main use cases for the creation of a new model in Hackolade:
 - you want to create then enrich the documentation of an existing database, and make it evolve. You want to leverage the [reverse-engineering](Reverseengineeranexistinginstanc.md) capabilities built in Hackolade.
 - you want to [migrate](SQLDDL.md) from a relational database to a denormalized NoSQL model.
 
-&nbsp;
-
 Quickly get started by learning how to:
 
 - [Create a new model](Createanewmodelfromscratch.md)

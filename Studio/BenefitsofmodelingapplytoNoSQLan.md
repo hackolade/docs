@@ -19,8 +19,6 @@ seoTitle: Why data modeling matters for NoSQL and Agile
 - **Integrate existing Information Systems:** many businesses find themselves in the position of having data in a variety of systems that do not communicate with each other. By modeling the data in each of these systems, you can see relationships and redundancies, resolve discrepancies, and integrate disparate systems so they can work together.
 - Sources: [http://www.dataversity.net/data-models-many-benefits-10/](<http://www.dataversity.net/data-models-many-benefits-10/> "target=\"_blank\"") and [https://datafloq.com/read/6-benefits-data-modeling-in-the-age-of-big-data/1479](<https://datafloq.com/read/6-benefits-data-modeling-in-the-age-of-big-data/1479> "target=\"_blank\"")
 
-&nbsp;
-
 And more:
 
 - "The key challenge in data modeling is balancing the needs of the application, the performance characteristics of the database engine, and the data retrieval patterns. The key decision in designing data models for MongoDB applications revolves around the structure of documents and how the application represents relationships between data." [https://docs.mongodb.com/v3.2/core/data-modeling-introduction/](<https://docs.mongodb.com/v3.2/core/data-modeling-introduction/> "target=\"_blank\"")
@@ -29,30 +27,18 @@ And more:
 - “There is no longer a question of whether NoSQL data stores are being used – they are at an ever growing rate. There is also not a question of whether the data stored within them still needs to be modeled. A data model of some kind is vital: definitions, elements, transformations, and relationships still need to be understood. There is no way for an organization to gain a 360° view of their entire business at all data, system, application, decision process, transaction, and customer levels without some sort of models or maps to explain them.” [http://whitepapers.dataversity.net/content50274](<http://whitepapers.dataversity.net/content50274> "target=\"_blank\"")
 - "Even when not required, it is often highly desirable to enforce conformance to some schema for some or all of the data being stored, in order to make it more likely that only valid data is stored, and to give guarantees to application code that a certain degree of sanity is present in the data." [Ted Hills, author of "NoSQL and SQL Data Modeling"](<https://books.google.be/books?id=UmzQCwAAQBAJ&pg=PT14&lpg=PT14&dq=%22Even+when+not+required,+it+is+often+highly+desirable+to+enforce+conformance+to+some+schema+for+some+or+all+of+the+data+being+stored,+in+order+to+make+it+more+likely+that+only+valid+data+is+stored,+and+to+give+guarantees+to+application+code+that+a+certain+degree+of+sanity+is+present+in+the+data.%22%22&source=bl&ots=yikPzGeHGg&sig=ACfU3U1_r_JrXmmP9riv3sztlNlUpZhA9Q&hl=en&sa=X&ved=2ahUKEwjz9Jio3ZfoAhXLKewKHeUYDUUQ6AEwAHoECAIQAQ#v=onepage&q=%22Even%20when%20not%20required%2C%20it%20is%20often%20highly%20desirable%20to%20enforce%20conformance%20to%20some%20schema%20for%20some%20or%20all%20of%20the%20data%20being%20stored%2C%20in%20order%20to%20make%20it%20more%20likely%20that%20only%20valid%20data%20is%20stored%2C%20and%20to%20give%20guarantees%20to%20application%20code%20that%20a%20certain%20degree%20of%20sanity%20is%20present%20in%20the%20data.%22%22&f=false> "target=\"_blank\"")
 
-&nbsp;
-
 *
-
-&nbsp;
 
 ## Insights into modeling NoSQL - a Dataversity report
 
 "Programmers and developers who are creating applications that pull data from a specific data store – whether its Key-Value, Wide Column, Document, Graph, Relational, or some hybrid thereof – still have to understand what is going on with the data inside that system. There needs to be some type of “model” or “map” so that the data stream from ingestion through analysis is understood at every step. Without such an understanding, all that exists is Big Data chaos \[...\]\
 Just because NoSQL systems have flexible data types and differing schemas, it doesn’t mean that everyone working with the data – from data modelers to business analysts to data stewards to DBA’s to end users to executives – doesn’t need to understand the data. They do now more than ever \[...\]
 
-&nbsp;
-
 The need to capture, describe, define, and clearly explain the vast store of data elements within an enterprise’s data architecture is vital. That is not going to change. It is only the techniques and methodologies that are changing \[...\]
-
-&nbsp;
 
 As NoSQL spreads from technology startups to large enterprises with demanding data establishments, the requirements of enterprise users must be given due attention. In order to be accepted and successful beyond just working applications, enterprise users need to see their concerns addressed: modeling, governance, documentation, and exemplary tooling \[...\]
 
-&nbsp;
-
 Clearly, there is a need for a new generation of data modelers: modelers who understand the specifics of the data store and are able to provide the level of decision making and documentation that is needed for an enterprise project \[…\]
-
-&nbsp;
 
 One of the most prominent criticisms against implementing any kind of NoSQL solution is the lack of sufficient tools and functionality that enterprises have relied upon for decades. Added to this issue is the complexity of so many different systems and their subsequent modeling challenges. The traditional mold has been unraveled. Trying to find adequate and understandable options without rewriting the entire book on Data Management (and Data Modeling) is a considerable challenge for many organizations."\
 Source: [https://content.dataversity.net/DV2015NoSQLRP_DownloadWP.html](<https://content.dataversity.net/DV2015NoSQLRP_DownloadWP.html> "target=\"_blank\"")

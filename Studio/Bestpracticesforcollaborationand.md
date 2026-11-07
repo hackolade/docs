@@ -12,14 +12,10 @@ Hackolade Studio supports strong Git-based workflows, so the best practices are 
 - You may store all your models in a single repository with a folder structure, or in multiple repositories, depending on the boundary needs of your organization. Or you can optionally co-locate models with application/schema repositories when possible so model changes are traceable alongside code and CI/CD artifacts.
 - Make sure each modeler works against their own local clone, not shared file shares, to leverage Git’s distributed model and avoid file locking.
 
-&nbsp;
-
 **Daily work best practices**
 
 - Before editing any model, you may want to pull from the remote so your workspace is up-to-date and you minimize potential conflicts.
 - Save frequently in Hackolade, then commit small, logical changes with meaningful messages and push often rather than large “big bang” commits.
-
-&nbsp;
 
 **Branching and versioning strategy**
 
@@ -27,11 +23,7 @@ Hackolade Studio supports strong Git-based workflows, so the best practices are 
 - Maintain a protected main (or master) branch for production-quality models that reflect what is deployed in data stores and downstream consumers.
 - Use short-lived feature branches for new modeling work (new entities, refactors) and separate “minor fixes” branches for small corrections; merge via pull requests.
 
-&nbsp;
-
 **Example branching table**
-
-&nbsp;
 
 <table>
 <colgroup><col style="width:23%"><col style="width:21%"><col style="width:56%"></colgroup>
@@ -66,15 +58,11 @@ Hackolade Studio supports strong Git-based workflows, so the best practices are 
 </tbody>
 </table>
 
-&nbsp;
-
 **Change management and governance**
 
 - Use pull requests with mandatory reviewers so model changes are peer-reviewed; reviewers can review model changes is Hackolade’s handy side-by-side comparison dialog, and refer to Git history before approving.
 - Treat the Git history as your audit log: use it to track who changed which entities, when, and why; never rewrite shared history, prefer forward fixes.​
 - Standardize commit message conventions (for example, referencing Jira tickets or change requests) to tie model evolution to business requirements.
-
-&nbsp;
 
 **Conflict resolution and release integration**
 

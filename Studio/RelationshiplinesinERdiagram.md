@@ -8,15 +8,9 @@ image: lib/ER lines - orthogonal.png
 Relationship lines in Entity Relationship diagrams are useful to understand the relationship in the data, and to define Foreign Key constraints used in query joins, and to ensure data consistency.\
 Note that in NoSQL databases FK relationships are not declared to the database instance and hence not enforced. They are nevertheless useful to understand relationships in the data as well as denormalization when data is repeated in different places.
 
-&nbsp;
-
 Note also that in analytics databases, primary key and foreign key constraints may be absent for performance purposes. If you have reverse-engineered in OLAP store and your model does not show any PK and FK relationship lines, it may still be possible to discover them using our [Infer PKs & FKs](InferPrimaryKeysandForeignKeyRel.md) feature.
 
-&nbsp;
-
 For conceptual and Logical modeling with Polyglot relationships, make sure to read [this article](RelationshiplinesinERdiagram.md).
-
-&nbsp;
 
 ## Create a Foreign Key relationship line
 
@@ -28,74 +22,46 @@ There are several ways to create a new relationship line between the attributes 
   - the FK relationship from the child attribute in the fact table to the parent PK attribute in the dimension table.
 - via the **Actions menu**:
 
-&nbsp;
-
 ![Menu - Add relationship](<lib/Menu - Add relationship.png>)
 
 - by pressing the **shortcut Ctrl+T** and filling the properties in the right Pane
 - with a click of the **toolbar icon** ![Icons - addRelationship](<lib/Icons - addRelationship.jpeg>)
 - with a **right-click** anywhere in the central pane to display the **contextual menu**
 
-&nbsp;
-
 ![ER Diagram - contextual menu - add relationsh](<lib/ER Diagram - contextual menu - add relationsh.png>)
-
-&nbsp;
 
 and choose 'Add Relationship'.
 
 - from the Properties Pane of a child attribute
 
-&nbsp;
-
 ![Properties - Foreign Key relationship](<lib/Properties - Foreign Key relationship.png>)
-
-&nbsp;
 
 ### Relationship name
 
 Since version v8.4.2, the technical name property can be derived automatically based on [naming conventions](Namingconventions.md) rules, just like other model objects.
 
-&nbsp;
-
 When creating a relationship manually (via the Actions menu, the Ctrl+T shortcut, the toolbar icon, the contextual menu), you are free to enter any name for the new relationship in the properties pane.
-
-&nbsp;
 
 When creating a relationship via drag-and-drop, the relationship name is automatically assembled, based on a configuration in Tools > Options > General\
 ![FK relationship name configuration](<lib/FK relationship name configuration.png>)\
 where the possible variable keywords are\
 ![FK relationship name configuration keywords](<lib/FK relationship name configuration keywords.png>)
 
-&nbsp;
-
 In the configuration, you may enter constants before, in between, and after the keywords. For example:\
 *FK \<childEntity> to \<parentEntity> \<parentAttribute>*
-
-&nbsp;
 
 Remember that you may want a different configuration, depending on whether or not naming conventions are enabled. The above example, with naming convention with conversion to snake_case could result in this example:\
 *fk_orders_customers_cust_id*
 
-&nbsp;
-
 Note also that when creating a new relationship with a name conflicting with an existing one, the new name will be automatically appended with a number.
 
-&nbsp;
-
 You may edit a relationship name created automatically with drag-and-drop.
-
-&nbsp;
 
 ### Relationship lines
 
 Hackolade documents and helps visualize 2 types of relationships: foreign key and foreign master. The foreign key relationship is the unique identifier of the data. The foreign master relationship identifies the master for the duplicated field of the denormalized data.
 
-&nbsp;
-
 Hackolade adopts an IE-like notation (Information Engineering with [crow's foot](<https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model#Crow's_foot_notation> "target=\"_blank\"") notation) applied to physical models in order to display multiplicities on each side of the relationship to represent the cardinality:
-
-&nbsp;
 
 <table style="width:20%">
 <colgroup><col style="width:29%"><col style="width:71%"></colgroup>
@@ -129,11 +95,7 @@ Hackolade adopts an IE-like notation (Information Engineering with [crow's foot]
 </tbody>
 </table>
 
-&nbsp;
-
 You may have noticed that one side of the relationship has crow's foot cardinality displayed in blue on the parent side, and red on the child side.
-
-&nbsp;
 
 <table style="width:20%">
 <colgroup><col style="width:29%"><col style="width:71%"></colgroup>
@@ -167,11 +129,7 @@ You may have noticed that one side of the relationship has crow's foot cardinali
 </tbody>
 </table>
 
-&nbsp;
-
 Typically, a relationship identifies a parent field within a parent collection on one side, and a child field within a child collection. Below is a simplified example... Say we have a master collection of customers, each identified by a unique id. When creating a document for each sales order, the customer name and address are repeated so as to avoid having to perform joins each time an order is accessed.
-
-&nbsp;
 
 ![Relationships and denormalization](<lib/Relationships and denormalization.png>)\
 Three relationships can be documented in the model:
@@ -180,12 +138,8 @@ Three relationships can be documented in the model:
 - a foreign master relationship for the customerName
 - a foreign master relationship for the customer address
 
-&nbsp;
-
 Occasionally, it might be needed to model recursive relationships where the parent and child collections are identical. In effect they are siblings:\
 ![Relationships - siblings](<lib/Relationships - siblings.png>)
-
-&nbsp;
 
 The ERD entity boxes have been enriched with visual indicators. Here is a list of abbreviations:\
 **fk:** foreign key\
@@ -193,76 +147,46 @@ The ERD entity boxes have been enriched with visual indicators. Here is a list o
 **dk:** destination or denormalized key (parent of a foreign key.) Marks keys that are the parent of a foreign key or are denormalized elsewhere in the model.\
 **dm:** destination or denormalized master (parent of a foreign master.) Marks non-key attributes that are the parent of a foreign attribute or are denormalized elsewhere in the model.
 
-&nbsp;
-
 Both dk and dm attributes allow access to the Where-Used function in the contextual menu to find all the places in the model where they are denormalized.
-
-&nbsp;
 
 ## Composite relationships
 
 In RDBMS plugins, it is possible to represent composite (aka compound) foreign key relationships
 
-&nbsp;
-
 ![Relationships - composite foreign keys](<lib/Relationships - composite foreign keys.png>)
-
-&nbsp;
 
 ## Adjust relationship lines
 
 With large and complex relational models, the automatic positioning of foreign key relationship lines might look insufficiently organized. As a user, you might want to adjust the lines differently.
 
-&nbsp;
-
 ### Automatic or manual adjustments
 
 You may move entity boxes around by dragging the box title bar, in which case the existing lines follow and auto-adjust. Or you may choose to adjust lines separately, as described below.
 
-&nbsp;
-
 ![Adjustable_relationship_lines_medium](lib/Adjustable_relationship_lines_medium.gif)
-
-&nbsp;
 
 ### Line geometries
 
 In ERDs (hence excluding here graph diagrams, where edges tend to be curved), there are 2 geometries: orthogonal or oblique.
 
-&nbsp;
-
 An orthogonal line is one where the segments can only be vertical or horizontal. As a result, the angle between the line and the entity boxes can only be 90 degrees. An orthogonal line can be straight if it has a single segment. If multi-segment, the segments can only have a 90-degree angled elbow between them.\
 ![ER lines - orthogonal](<lib/ER lines - orthogonal.png>)
 
-&nbsp;
-
 An oblique line must have a single segment and be straight. The angle between the line and an entity box can be anything, including 90 degrees in some cases. Oblique lines are often used in star schemas, but not only.\
 ![ER lines - oblique](<lib/ER lines - oblique.png>)
-
-&nbsp;
 
 ### Line anchors and segments
 
 When you select a line, it gets highlighted, and nodes appear at each end, plus in middle segments, if any. Nodes are are used to move the anchors and segments, by click-and-drag. The mouse cursor when clicking indicates the possible direction(s) you may drag the node.
 
-&nbsp;
-
 Each line has 2 anchors, one on each end and represented by a node, attached to their respective entity box. Middle segments, i.e. segment other than the ones at the end of the line, each have a node in the middle of the segment.
 
-&nbsp;
-
 ![ER lines - 3 segments](<lib/ER lines - 3 segments.png>)
-
-&nbsp;
 
 A line may have one or more segments, depending on the relative positions of the entity boxes and the line anchors. We don't advise this, but it is possible for a line to have as many as 7 segments.\
 ![ER lines - max segments](<lib/ER lines - max segments.png>)
 
-&nbsp;
-
 The number of segments is automatically adapted when you move anchors to a different side of its entity box.
-
-&nbsp;
 
 ### Movements
 
@@ -272,36 +196,22 @@ You may move:
 - each anchor,
 - or each individual segment of a line.
 
-&nbsp;
-
 To move a line, just grab anywhere in the line, and move in any direction. Depending on the direction you drag, segments and anchors are moved, anchors may change box sides, and the number of segments are automatically recalculated.\
 ![ER lines - moving entire line](<lib/ER lines - moving entire line.png>)
-
-&nbsp;
 
 To move a single segment at a time, you may grab the node in the middle of the segment, or the anchor if it connects to an entity box. As you click on the node, the mouse cursor turns into a 2-headed arrow indicating the possible directions that you can drag.\
 ![ER lines - 3 segments movements](<lib/ER lines - 3 segments movements.png>)
 
-&nbsp;
-
 As segments get extended past the anchor of the line, the number of segments may be recalculated, and the anchor moved accordingly. The application will not allow a line to be hidden by any part of an entity box to which it is attached.\
 ![ER lines - 4 segments movements](<lib/ER lines - 4 segments movements.png>)
 
-&nbsp;
-
 Similarly, the number of segments can be reduced by aligning parallel segments, or by moving an anchor to a box side closer to the opposite anchor.
-
-&nbsp;
 
 Since an oblique line can only have a single segment, the anchors on each end can only be attached to the one or maximum 2 sides of the entity box that are facing the other anchor.\
 ![ER lines - oblique movements](<lib/ER lines - oblique movements.png>)
 
-&nbsp;
-
 Each anchor can be moved, but is restricted to the one or maximum 2 sides of the entity box, so as to avoid having the line covered by any part of the entity box.\
 ![ER lines - oblique movements horizontal](<lib/ER lines - oblique movements horizontal.png>)
-
-&nbsp;
 
 At any time, you may switch geometry, which will restore the line to default anchors\
 ![ER lines - style and gemetries](<lib/ER lines - style and gemetries.png>)

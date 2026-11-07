@@ -7,30 +7,20 @@ image: lib/Verify Data Model - Default paths.png
 
 Starting with version 6.10.0, Hackolade Studio includes a tool to verify the consistency and quality of data models according to a glossary of class and prime terms, and to target-specific attribute rules such as precision/scale for numeric, and length for string data types.
 
-&nbsp;
-
 The model verification is based on:
 
 - business names and not target-specific when it comes to rules verified against the glossary
 - technical names and target-specific when it comes to properties-related rules of attributes. Given the variety of targets supported by Hackolade Studio, and sometimes big differences in data types between these targets, it is necessary to have one file for each target.
 
-&nbsp;
-
 ## Naming theory
 
 The glossary verifications compare the expression of the business names of model objects with entries in a glossary file.
-
-&nbsp;
 
 ### Business names
 
 A business name is an English expression with specific words to describe a single data object (e.g., data model, database, schema, file, table, collection, attribute, field, data element, etc). Each business name comprises one or more optional modifying terms, prime terms, and one class term. These terms are specific to each organization and generally defined by subject matter experts. They should have an agreed upon definition, and are typically maintained in a Glossary.
 
-&nbsp;
-
 Business names should be less than eight words. Nouns should be singular and verbs in present tense.
-
-&nbsp;
 
 In terminology, it is typical to define 3 different units:
 
@@ -38,15 +28,9 @@ In terminology, it is typical to define 3 different units:
 - prime terms to represent basic primitive concepts
 - modifying terms to represent concept modifiers or attributes.
 
-&nbsp;
-
 Other legacy data modeling tools require that you mark a term as class term. We designed an approach that we think is more flexible...
 
-&nbsp;
-
 In Hackolade Studio, a term defined in a glossary file is assumed to be an approved term. The determination that the term is a class term, a prime term, or a modifying term does not come from the term itself in the glossary, but from its position in the expression being evaluated, assuming that it is an English expression.
-
-&nbsp;
 
 Take for example the word "customer":
 
@@ -54,13 +38,9 @@ Take for example the word "customer":
 - Customer is the prime term in the 2-word expression "Customer Account"
 - Customer is a modifying term in the 3-word expression "Customer Identification File"
 
-&nbsp;
-
 #### Class terms
 
 The class term is the highest level of qualification and the most important word in a business name. The class term is **always the last word of a business name** (or in some rare cases a **phrase** such as "Unit of Measure"). It must be a noun **identifying the general purpose** of the data object.
-
-&nbsp;
 
 Examples:
 
@@ -72,27 +52,17 @@ Examples:
 - persistent: constant
 - general: document, file, text
 
-&nbsp;
-
 #### Prime terms
 
 A prime term can be **a single word** ( or a **phrase** such as 'Unit of Measure'.) It is the most important **modifier of the class term**, and **directly precedes it**.
-
-&nbsp;
 
 #### Modifying terms
 
 Modifying terms are used to add important business information to a business name, and precede the prime term.
 
-&nbsp;
-
 A glossary loses a significant part of its value for a user if every possible combination of words must be declared in the glossary so model verifications could occur. Therefore the glossary verifications of Hackolade Studio span only prime terms and class terms, and ignore modifiers if they are not themselves declared separately as class terms. Typically, a user will define in the glossary the last 2 terms which are most significant in a name, then allow any kind of declination of these 2 words with other modifiers.
 
-&nbsp;
-
 For example, let's say that you defined the Business Name "Currency Code" in the glossary file. The application will allow any combination of terms that is using this term at the end of the expression without requiring for these combinations to be explicitly declared in the glossary file:
-
-&nbsp;
 
 ```text
 Component Invoice Amount Currency Code
@@ -105,17 +75,11 @@ Item Total Original Price Currency Code
 etc...
 ```
 
-&nbsp;
-
 We suggest that you experiment with different combinations in a small glossary file and a small model to first understand the behavior of the application, before embarking on the definition of a large glossary file and applying the verification to large data models.
-
-&nbsp;
 
 ## Glossary verifications
 
 These verifications are generic, i.e. not specific to a target, and are made by checking the business names in the model with the terms in the glossary file. Any exception to an enabled verification rule is logged into a report.
-
-&nbsp;
 
 ### Glossary file
 
@@ -125,19 +89,11 @@ For this step, Hackolade Studio leverage the existing abbreviations .csv file us
 - entities/tables/collections/...
 - and mainly for attributes/fields/columns/...
 
-&nbsp;
-
 While Naming Conventions parameters are target-specific, the glossary/abbreviations file is typically the same for all targets. It is the other parameters such as case conversion which are target-specific.
-
-&nbsp;
 
 The glossary file is made of several columns, with Business Name as a first column, and Technical Name as the second column. Then come Description and Synonyms. Multiple synonyms are separated by a pipe ("|"). Additional columns are ignored by Hackolade. The columns are separated by commas. The first line is the header line, and is ignored in the conversion. The lines are separated by a \<CR>\<LF>. There is no limit to the number of lines in the file. The values in the columns are not case-sensitive.
 
-&nbsp;
-
 **Example:**
-
-&nbsp;
 
 ```text
 Business Name,Technical Name,Description,Synonyms
@@ -148,16 +104,12 @@ customer,cust,,
 feedback,fdbak,,
 ```
 
-&nbsp;
-
 > [!IMPORTANT]
 > - the first line in the glossary file is a header line describing the columns in the file
 > - if a cell contains commas, it must be stored in the CSV file in between double quotes
 > - if your file contains [diacritics](<https://en.wikipedia.org/wiki/Diacritic> "target=\"_blank\"") (accents, ...) you must save your file with [UTF-8](<https://en.wikipedia.org/wiki/UTF-8> "target=\"_blank\"") encoding for the function to work properly. If you edit the file using Excel, you should make sure to save it using this CSV UTF-8 option:
 > - ![Naming Conventions - CSV UTF-8](<lib/Naming Conventions - CSV UTF-8.png>)
 > - multiple synonyms are separated by a pipe ("|")
-
-&nbsp;
 
 ### Glossary verifications
 
@@ -167,19 +119,13 @@ Current glossary-related rules are:
 - **Inconsistent Terms:** while each individual term in the business name matches terms in the glossary, the combination of (prime term + class term) does not exist in the terms glossary. For example, the business name "document category code" has 3 terms: "document", "category", and "code" which all exist individually in the glossary.\
   The application checks that "category code" exists in the glossary, and if it doesn't, then an entry is created in the report. In the business name "Item Total Converted Price Currency Code", the class term is "Code", the prime term is "Currency". So the application checks that "Currency Code" exists in the glossary.
 
-&nbsp;
-
 Remember that a term could be made of several words, e.g. "Universal Unique Identifier". It counts as just one single term. So in the business name "Commodity Product Description Universal Unique Identifier", the class term is "Universal Unique Identifier", and the prime term is "Description". So the application checks that "Description Universal Unique Identifier" exists in the glossary.
 
 - **Synonyms:** check whether the business name contains synonyms of glossary terms: term names must not contain synonyms of glossary terms. For example, a glossary term "supplier" might have as synonyms "provider", and "seller". If either of these terms are found in business names, then an entry is created in the report.
 
-&nbsp;
-
 In other words, if a class term is not in the glossary, it is flagged as **invalid**. Same for a prime term.\
 If, for a prime+class combination, they are both declared individually in the glossary but the combination is not in the glossary, then the combination is flagged as **inconsistent**.\
 And it is only thru their position in an name that terms are labeled "prime" or "class" in the logic. The combination of words in a name could be such that a certain term is a class term in some names, and a prime term in others.
-
-&nbsp;
 
 ## Attribute properties
 
@@ -187,27 +133,17 @@ All the properties verifications are target-specific.\
 Hackolade Studio offers predefined, out-of-the-box rules for standard modeling objects such as Containers, Entities, Views, Attributes, and Relationships. These rules can be individually activated or deactivated based on user needs.\
 In addition, custom verification rules can be defined via configuration files, offering flexibility and control over data quality.
 
-&nbsp;
-
 ### Technical names
 
 Technical names are generated by applying to business names: standard abbreviations, processing of illegal characters, and case conversion. This is an optional feature of Hackolade Studio. It is not required to enable [Naming Conventions](Namingconventions.md) to use the Model Verification feature. In the absence of a technical name, the application always considers that the technical equals the business name, without need to be declared.
 
-&nbsp;
-
 The length of technical names must meet the constraints of the target. Technical names are generated by applying to business names: standard abbreviations, processing of illegal characters, and case conversion. The length of technical names must meet the constraints of the target.
-
-&nbsp;
 
 ### Attribute propRules file
 
 The property rules file is typically stored in the folder:
 
-&nbsp;
-
 *.hackolade/OPTIONS/\<target>*
-
-&nbsp;
 
 It contains several columns:
 
@@ -219,11 +155,7 @@ It contains several columns:
 - Precision: \[number\] total number of digits in a number, not counting the decimal point
 - Scale: \[number\] total number of digits to the right of the decimal point
 
-&nbsp;
-
 **Example:**
-
-&nbsp;
 
 ```text
 Technical Name,Required,Default,DataType,Length,Precision,Scale
@@ -231,8 +163,6 @@ action_cd,true,NO_CHANGE,varchar,10,0,0
 adjustment_desc,,,varchar,100,0,0
 amt,,,decimal,0,18,3
 ```
-
-&nbsp;
 
 ### Out-of-the-box verification rules
 
@@ -254,12 +184,8 @@ The objects Container, Entity, View, Attribute, and the Model itself can be auto
   - **Technical name conflicts with reserved keywords:** independent of glossary. Each target has a list of reserved words per level. An entry in the report is created if an attribute technical name, in full, is a reserved word.
   - **Excessive technical name length:** independent of glossary. Some target have max length of, for example 128 characters. Some customers may have their own more restrictive standards. An entry in the report is created if an attribute technical name is greater than the user-defined length. We store this user-defined length, per target, for future reuse.
 
-&nbsp;
-
 > [!NOTE]
 > Some rules already pro-actively generate warnings in the tool, such as:
-
-&nbsp;
 
 - duplicate table names in the same schema
 - duplicate column name in the same table
@@ -267,40 +193,26 @@ The objects Container, Entity, View, Attribute, and the Model itself can be auto
 - mismatched data types in relationships
 - etc.
 
-&nbsp;
-
 So these rules did not get included in the list above.
-
-&nbsp;
 
 ### User-defined regular expression verification rules
 
 You can define your own verification rules for any string property of any modeling object using regular expressions in a CSV configuration file.\
 This CSV format enables multiple validation rules per property, supporting more complex and nuanced validation scenarios. It ensures data complies with internal standards and naming conventions.
 
-&nbsp;
-
 #### Supported Properties
 
 User-defined verification rules apply to both standard Hackolade properties and custom properties. Currently, only simple scalar properties (at the root level) are supported. Future releases may include complex types, such as block and group properties.
-
-&nbsp;
 
 #### Regular expression regExpRules file
 
 The regular expression rules file is typically located in the following directory:
 
-&nbsp;
-
 ```text
 .hackolade/OPTIONS/<target>
 ```
 
-&nbsp;
-
 The file contains multiple columns that define the rules and their scope.
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:11%"><col style="width:27%"><col style="width:62%"></colgroup>
@@ -345,8 +257,6 @@ The file contains multiple columns that define the rules and their scope.
 </tbody>
 </table>
 
-&nbsp;
-
 #### Example regExpRules file
 
 ```text
@@ -355,19 +265,13 @@ Rule keyword;Rule name;Severity;Object;Property;Regular expression
 2-model-version-not-empty;Model version is specified;Warning;model;version;/^.+$/
 ```
 
-&nbsp;
-
 *`3-table-name-starts-with-T_-prefix;Table technical name starts with T_ prefix;warning;entity;code;/^T_[a-zA-Z0-9`\_-`]+/`*\
 *`4-view-name-starts-with-V_-prefix;View technical name starts with V_ prefix;warning;view;code;/^V_[a-zA-Z0-9`\_-`]+/`*\
 *`5-relationship-name-starts-with-FK_-prefix;Relationship name starts with FK_ prefix;warning;relationship;name;/^FK_[a-zA-Z0-9`\_-`]+/`*
 
-&nbsp;
-
 #### Common regular expression examples
 
 To assist in creating effective regular expressions, here are some common patterns:
-
-&nbsp;
 
 <table>
 <colgroup><col style="width:76%"><col style="width:24%"></colgroup>
@@ -433,66 +337,40 @@ To assist in creating effective regular expressions, here are some common patter
 </tbody>
 </table>
 
-&nbsp;
-
 #### Tips for authoring valid JavaScript regular expressions
 
 For help creating more advanced regular expressions, consider using tools like ChatGPT to generate and refine your patterns. To improve the quality and usability of the generated output, make sure to include format requirements in your prompt.
 
-&nbsp;
-
 For example:\
 "Generate a JavaScript regular expression that starts and ends with slashes (e.g., *`/.../`*), includes appropriate flags if necessary, and is suitable for insertion into a CSV file (i.e., no line breaks, and wrap the regex in double quotes if it contains a comma). The regex should validate that a name starts with *\<insert your rule here, for example a single uppercase letter (`A-Z`)>*, followed by one or more alphanumeric characters (*`a-z`*, *`A-Z`*, or *`0-9`*) and allows dashes and underscores."
 
-&nbsp;
-
 You can also use [regex101.com](<https://regex101.com/> "target=\"_blank\"") to validate your expressions by selecting the JavaScript (ECMAScript) flavor from the menu.
 
-&nbsp;
-
 ⚠️ **Important:** Regular expressions are case-sensitive by default. To ensure matches are not affected by letter casing, use the *`i`* flag as shown above.
-
-&nbsp;
 
 ## Using the tool to Verify Data Models
 
 A couple of default paths have been added to the user parameters in Tools > Options, for the default path of the Glossary file, and for the default path where the reports should be created:\
 ![Verify Data Model - Default paths](<lib/Verify Data Model - Default paths.png>)
 
-&nbsp;
-
 The tool can be found in Tools > Verify Data Model\
 ![Verify Data Model - menu](<lib/Verify Data Model - menu.png>)
-
-&nbsp;
 
 When you invoke the tool, you are first presented with a dialog box:\
 ![Verify Data Model - main dialog](<lib/Verify Data Model - main dialog.png>)
 
-&nbsp;
-
 With this dialog, you may select and deselect rules to be verified for the loaded data model, and you may change the severity. To select a rule or deselect it, you may toggle the checkbox with a click of the mouse. With a click of the mouse on the severity icon, you can change the severity to be listed in the report for each instance of a failed verification.
-
-&nbsp;
 
 After you click the Submit button and select the report name and path for storage, the application executes the selected rules, and displays this dialog at the end of the process:\
 ![Verify Data Model - open in Excel](<lib/Verify Data Model - open in Excel.png>)
-
-&nbsp;
 
 ## Interpreting the exception report
 
 Each failed rule results in an entry in the report. If a single object in the model fails multiple rules, there multiple lines are generated in the report.
 
-&nbsp;
-
 When running the verification for the first time, particularly on large models, the report could be quite long. It is strongly suggested to then focus on the biggest issues first, for example wrong data type, before adding other rules like length, precision, and scale. etc. Be aware that some rules depend on other rules. For example if an attribute has data type varchar instead of numeric, then precision and scale would be wrong as well. So it it is probably preferable to fix all the data type first before running the verification again on precision and scale.
 
-&nbsp;
-
 There are many columns in the CSV report opened in Excel. The first thing to do is to go to the Data menu tab and click on Filter, then to go the View tab > Freeze Panes > Freeze Top Row. We also suggest to hide the technical columns modelGUID, containerGUID, entityGUID, relationshipGUID, and attribGUID. These columns are only useful for automated processing.
-
-&nbsp;
 
 There are different groups of columns in the report:
 
@@ -503,19 +381,11 @@ There are different groups of columns in the report:
 - Glossary entries: these columns contain the values Business Names in the glossary against which the object name was verified, as well as the corresponding Technical Names, for reference. They are: glossTermBusName, glossTermTechName, glossSysnonyms
 - Attribute rules values: these columns contain the values for Required, Default, Data Type, Length, Precision and Scale, that are used for verification of the attribute properties. The columns are: rulesRequired, rulesDefault, rulesDataType, rulesLength, rulesPrecision, rulesScale
 
-&nbsp;
-
 Today Studio produces the results as a CSV file only; there is no alternative view or report setting. The columns that answer "which rule failed, and where" are verifRuleName and verifRuleSeverity, then the business names of the object (containerBusName, entityBusName, attribBusName). The GUID columns are only useful for automated processing and can be hidden.
-
-&nbsp;
 
 A quick way to get the view you describe is to ask an AI assistant to generate a small HTML viewer. You give it one report as example, and you get one HTML file that opens any new report in the presentation you want. We suggest to only use an AI tool approved by your organization, as the report contains names from your model.
 
-&nbsp;
-
 Example of prompt (this is just for inspiration, feel free to adapt to your requirements):
-
-&nbsp;
 
 ```text
 I attach a CSV report generated by the Verify Data Model function of Hackolade Studio. Create a single self-contained HTML file (HTML, CSS and JavaScript in one file, no external library, no network call) that opens any report with the same structure through a file picker, and displays it in a readable way for data modelers:

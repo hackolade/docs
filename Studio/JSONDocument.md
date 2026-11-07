@@ -8,15 +8,9 @@ image: lib/JSON Document.png
 Hackolade dynamically generates a sample document In JSON or YAML as you construct the document fields and structure. You may even define the sample data you wish to see appear in that sample document. The sample document can be viewed in the right-hand pane of the JSON Preview tab:\
 ![JSON Document](<lib/JSON Document.png>)
 
-&nbsp;
-
 To create a JSON Schema file of your entity, choose the menu Tools > Forward Engineering > JSON Document:
 
-&nbsp;
-
 ![Forward-Engineering - JSON Document](<lib/Forward-Engineering - JSON Document.png>)
-
-&nbsp;
 
 In case of a choice (oneOf or anyOf) the following logic is used for the JSON Data document generation:\
 Subschema for generation is choosing by priority:

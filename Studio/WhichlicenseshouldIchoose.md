@@ -7,22 +7,14 @@ image: lib/Dedicated vs floating license seat 1.png
 
 At Hackolade, we try to make it easy and convenient to do business with us, and to respond to customer needs. This includes a flexible pricing plan. But so many options may make decisions more difficult.
 
-&nbsp;
-
 As per the terms of our [License Agreement](Licenseagreement.md), the license metric is per "per seat", and a license must be obtained for each device on or from which the Product is used or accessed. When the Product is accessed remotely across using Terminal Server, Remote Desktop, Windows App, virtual machine, Citrix, or an equivalent method, a separate Product license seat is required to be assigned to each device from which the application is accessed, i.e. not the virtual machine on which the Product is installed.
 
-&nbsp;
-
 A "seat" is an instance of a license key. A license key can be issued for multiple instances, which we call a seat. Here’s a [Wikipedia explanation](<https://en.wikipedia.org/wiki/Per-seat_license> "target=\"_blank\"") as well. We do not use the definition “per user”, because it could be interpreted as a possibility for individual users to use the software on as many machines as they wish, which is not the case. We do not use the definition “per machine” either, because with Virtual Machines, the term could be interpreted as a possibility to install it on a single machine and allow an unlimited number of users to use the software, which is not the case either. Therefore “per seat” seems to be the adequate definition.
-
-&nbsp;
 
 There are two main dimensions to our pricing:\
 **1. Authors vs. Viewers**\
 **2. Dedicated vs. Floating**\
 Both authoring and viewing license keys are available in either dedicated or concurrent types.
-
-&nbsp;
 
 <table style="width:80%">
 <colgroup><col style="width:34%"><col style="width:32%"><col style="width:34%"></colgroup>
@@ -36,8 +28,8 @@ Both authoring and viewing license keys are available in either dedicated or con
 <tbody>
 <tr>
 <td><strong>Authoring</strong></td>
-<td>Workgroup Dedicated</td>
-<td>Workgroup Floating</td>
+<td>Dedicated: <br>Pro, Workgroup, or Ultimate</td>
+<td>Floating:<br>Pro, Workgroup, or Ultimate</td>
 </tr>
 <tr>
 <td><strong>Read-Only</strong></td>
@@ -47,8 +39,6 @@ Both authoring and viewing license keys are available in either dedicated or con
 </tbody>
 </table>
 
-&nbsp;
-
 ## Authors vs Viewers
 
 Hackolade Studio licenses are available for two user roles: **authoring** (for creating and maintaining models) and **viewing** (for read-only access). Both types can be purchased as either **dedicated** or **floating** licenses.
@@ -56,39 +46,32 @@ Hackolade Studio licenses are available for two user roles: **authoring** (for c
 - **Authors**: Typically data modelers, data architects, or data engineers. They use the **Workgroup Edition**, which allows editing and saving data models, provided the user has appropriate write permissions in the storage layer.
 - **Viewers**: Typically subject-matter experts, business users, or any user -- technical or non-technical -- who only needs read-only access. Viewer licenses are priced at one-tenth the cost of Workgroup licenses.
 
-&nbsp;
+## Professional vs Workgroup vs Ultimate
 
-## Professional vs Workgroup
+> [!TIP]
+> **TL;DR**
+>
+> **Ultimate** = Workgroup + AI-Assisted Data Modeling
+>
+> **Workgroup** = Professional + Git integration for collaboration, versioning, branching, change tracking, peer reviews,...
 
-The Workgroup Edition of Hackolade Studio includes all of the features of the Professional edition, plus a native integration with Git repositories for your data models. The Workgroup Edition makes it easy for users who are not so familiar with Git to leverage the tremendous power of this popular tool, to leverage collaboration, versioning, branching, change tracking, peer review, and other related capabilities detailed [here](Repository.md).
+The Ultimate Edition of Hackolade Studio includes all of the features of the Workgroup edition, plus features of [AI-assisted data modeling](AI-assisteddatamodeling.md). Our approach to AI integration is built on customer control, confidentiality, and responsible use. AI capabilities are disabled by default and enabled only at the customer’s choice.
 
-&nbsp;
-
-Because of the added value of Git integration, most new licenses today are for the **Workgroup Edition**, even for individual users
-
-&nbsp;
+The Workgroup Edition of Hackolade Studio includes all of the features of the Professional edition, plus a native [integration with Git repositories](Repository.md) for your data models. The Workgroup Edition makes it easy for users who are not so familiar with Git to leverage the tremendous power of this popular tool, to leverage collaboration, versioning, branching, change tracking, peer review, and other related capabilities.
 
 See [this page](<https://hackolade.com/editions.html> "target=\"_blank\"") for a detailed comparison of editions.
-
-&nbsp;
 
 ## Dedicated vs Floating
 
 **Dedicated licenses** are best suited for regular, intensive users. Each license is tied to a single seat rather than to a named user. A seat is associated with an OS user instance, whether on Windows, Mac, Linux for desktop deployments, or a browser instance for browser deployments. Seats can be reassigned through a [self-service process](Transferalicensetoanewcomputer.md) without providing personal information, which offers flexibility while protecting privacy and supporting regulatory compliance. However, if you use two PCs, you will need either two separate licenses or a license that covers two seats. This arrangement is often referred to as [node-locked](<https://en.wikipedia.org/wiki/Node-locked_licensing> "target=\"_blank\"").
 
-&nbsp;
-
 **Floating licenses:** on the other hand, [floating](<https://en.wikipedia.org/wiki/Floating_licensing> "target=\"_blank\"") licenses are better suited for organizations with many occasional users. The software can be installed on an unlimited number of PCs, but only the licensed number of users can access it at the same time. If the maximum number of simultaneous users is reached, additional users must wait until a seat becomes available. This setup does not require an on-premises server and is sometimes referred to as a concurrent license. View [this video](<https://community.hackolade.com/slides/slide/concurrent-license-key-behavior-66> "target=\"_blank\"") to fully understand the behavior of a floating license key.
 
-&nbsp;
+[Concurrent License Key Behavior](<https://youtu.be/2tbk5PY9C-Y> "video")
 
 Many customers choose to have a mix of dedicated and floating seats. Dedicated to support the needs of intensive users of Hackolade Studio, plus floating to support the needs of occasional users.
 
-&nbsp;
-
 The **pricing model for floating licenses** is based on the maximum number of simultaneous users (the size of the pool of seats licensed), rather than the total number of potential users. For example, an organization with 200 potential users but only 20 people who need to access the software at the same time would require just 20 seats. The ratio of total users to floating seats varies depending on how intensively the software is used within the organization, typically ranging from 10-to-1 down to 4-to-1. Floating seats are priced at four times the cost of dedicated seats.
-
-&nbsp;
 
 ![Dedicated vs floating license seat 1](<lib/Dedicated vs floating license seat 1.png>)\
 In the above example, the floating license was for a single seat, meaning that only one user at a time could use Hackolade Studio. If you purchase a floating license key with 2 seats, now you can have any combination of 2 simultaneous users:\
@@ -97,34 +80,22 @@ While the unit price of a floating license is more expensive than an individual 
 ![License keys tracked in the cloud](<lib/License keys tracked in the cloud.png>)\
 There is no need to install and maintain a server inside your infrastructure. The number of seats being used is tracked by our license server in the cloud.
 
-&nbsp;
-
 You may also want to consult [this page](Floatinglicensekeybehavior.md) with more details on the behavior of floating license keys.
-
-&nbsp;
 
 ## Virtual Machines or Remote Desktop access
 
 **License metric “per seat”: what does it mean?**\
 A license grants the right to use the product as defined by *Authorized Use*. The license metric is “per seat,” which means the number of authorized users specified on your invoice determines how many may use the software. A separate license is required for each device on or from which the product is used or accessed.
 
-&nbsp;
-
 **Can I use the same license key on both my home desktop and my work laptop?**\
 No. Licenses are not tied to named users but to devices. You must obtain a separate license for each device you use to access the product.
-
-&nbsp;
 
 **Can Hackolade Studio be installed on a server accessed via Remote Desktop?**\
 Yes, Remote Desktop access is supported. However, a license seat is required for each unique combination of host machine, user login, and remote client accessing the application.\
 When Hackolade is installed on a virtual machine (VM) and shared among multiple users or accessed through Windows Remote Desktop, licensing is not attached solely to the host machine. Instead, it is tied to the combination of the host, the remote machine, the user login, and other parameters that define the uniqueness of each session.\
 If multiple users access Hackolade on the same machine, whether through Terminal Server, Remote Desktop, Windows App, Citrix, or another VM solution, then each user and PC requires its own license seat. In other words, you need a license for every user/device combination that accesses the installation.
 
-&nbsp;
-
 **Example:** Four Hackolade Studio users sharing a single VM require four license seats, the same as if they were running Hackolade Studio on four individual PCs.
-
-&nbsp;
 
 > [!NOTE]
 > **1)** dedicated licenses, floating licenses, and subscriptions are all controlled by our license server in the cloud.\

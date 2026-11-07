@@ -7,15 +7,9 @@ image: lib/Compass connection copy 4.png
 
 It can be frustrating to initiate a reverse-engineering operation, and get a message like "MongoError: Authentication failed". Particularly, if you have no such issue with MongoDB Compass.
 
-&nbsp;
-
 Some typical issues might be with entries on the Auth tab: are the username and password spelled correctly, with the appropriate upper and lower cases, and is the Auth source correct (in most cases it should be left empty or use the default "admin".)
 
-&nbsp;
-
 But there could be many other details. Compass and Hackolade use the same software libraries to connect to MongoDB instances, whether on-premises or Atlas.
-
-&nbsp;
 
 Just to make sure that the connection string is identical to what you have in Compass, is to copy/paste from Compass into Hackolade. Here are the steps:\
 1\) Open Compass, select the connection, and click on the Edit button:\

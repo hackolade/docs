@@ -9,8 +9,6 @@ Publishing data models into governance platforms is not just useful; it is what 
 When models are pushed into platforms like Collibra, DataHub, Databricks Unity Catalog, Azure Purview, Atlan, or Alation, they stop being static design artifacts and become living, governed assets. The schemas, relationships, and constraints defined in modeling are exposed as searchable, queryable metadata -- linked to datasets, pipelines, ownership, lineage, and usage. This allows business users to discover and understand data in context, while technical users ensure that what is implemented in databases, APIs, or streams remains aligned with the intended design.\
 More importantly, this integration closes the loop between design and reality. Data models define the “contract,” governance platforms operationalize it, and the organization gains continuous alignment between producers and consumers of data. Without this step, models risk becoming shelfware; with it, they become the semantic backbone of data governance, analytics, and increasingly AI to ensure that meaning, not just structure, is consistently understood and trusted across the enterprise.
 
-&nbsp;
-
 To this effect, Hackolade Studio integrates with the following governance platforms:
 
 - [Collibra](CollibraDataDictionaryintegratio.md)

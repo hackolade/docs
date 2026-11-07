@@ -5,32 +5,19 @@ image: lib/Naming Conventions - apply changes dialog.png
 ---
 # Naming conventions
 
-> [!NOTE]
-> You may wish to view the [how-to video](<https://hackolade.com/videos.html#naming> "target=\"_blank\"") on this subject.
-
-&nbsp;
+[Naming conventions](<https://youtu.be/K2iGyjGHkC8> "video")
 
 Hackolade Studio includes the ability to maintain both a ‘business name’ (sometimes called logical name in legacy tools) and a ‘technical name’ (sometimes called physical name in legacy tools) for objects (containers, schemas, entities, tables, views, attributes, columns, fields, relationships,...) To facilitate the maintenance of these 2 names, it is possible to keep them synchronized and transformed based on a set of user-driven parameters, and optionally based on a conversion file maintained outside of the application. Name conversion can go both directions: Business-to-Technical (highly recommended), or Technical-to-Business (not recommended except for some rare edge cases.) Furthermore, when performing reverse-engineering, it is assumed that the database instance (or DDL or JSON Schema...) contains technical names, to be transformed into business names.
 
-&nbsp;
-
 If you do not wish to use this feature, keep disabled the Name Coupling parameter (see below) and simply leave the technical name property blank, so the (business) name property is used by default in all technical artifacts.
 
-&nbsp;
-
 Starting with version 4.1.2, we have replaced global parameters with separate target-specific parameters to allow different behavior depending on target. Also, the parameters are stored in a JSON file in the C:\\Users\\%usernames%\\.hackolade\\options\\\<targetname> directory, so they can be shared with teammates via Git.
-
-&nbsp;
 
 ## Conversion file
 
 A conversion file -- a.k.a. abbreviations file -- is not mandatory to use the Naming Conventions feature. A conversion file is a .csv file listing words that may appear in object names (business name), with a corresponding technical name to use instead in database definition scripts.
 
-&nbsp;
-
 The conversion file is made of at least 2 columns, with Business Name as a first column, and Technical Name as the second column. Additional columns are ignored by Hackolade Studio. The columns are separated by commas. The first line is the header line, and is ignored in the conversion. The lines are separated by a \<CR>\<LF>. There is no limit to the number of lines in the file. The values in the columns are not case-sensitive. A case conversion may be applied in the conversion parameters, cfr below.
-
-&nbsp;
 
 Example:\
 Business Name,Technical Name,Optional Description\
@@ -38,33 +25,21 @@ account,acct,\
 customer,cust,\
 feedback,fdbak,
 
-&nbsp;
-
 > [!IMPORTANT]
 > If your file contains [diacritics](<https://en.wikipedia.org/wiki/Diacritic> "target=\"_blank\"") (accents, ...) you must save your file with [UTF-8](<https://en.wikipedia.org/wiki/UTF-8> "target=\"_blank\"") encoding for the function to work properly. If you edit the file using Excel, you should make sure to save it using this CSV UTF-8 option:
 
-&nbsp;
-
 ![Naming Conventions - CSV UTF-8](<lib/Naming Conventions - CSV UTF-8.png>)
-
-&nbsp;
 
 ## Conversion parameters
 
 Conversion parameters are specific to each target. To modify the behavior of the name sync feature for a target, user options can be set in Tools > Options > Naming Conventions:
 
-&nbsp;
-
 ![Windows Program Files](<lib/Naming Conventions - parameters.png>)
-
-&nbsp;
 
 **Application target:** select the target for which these parameters apply\
 **Enable name coupling:** 3 options are available from the dropdown box: No, Business-to-Technical, or Technical-to-Business.\
 **Specify** path and file name of the conversion file, or choose to Convert without a file and using the only the rules specified below. If you update the file while Hackolade is open, you may press the refresh button to reload the file.\
 **Display:** choose to see the Business name or the Technical name in the Object Browser, ER Diagram and hierarchical schema view. This toggle is also available in [Display Options](<https://hackolade.com/help/EntityboxesinERdiagram.html#Display%20options>).
-
-&nbsp;
 
 **Business-to-Technical Conversion:** the following options, if enabled will be applied after the file conversion (with or without file.)\
 **Remove vowels:** when this option is enabled, the vowels in the name are suppressed\
@@ -81,12 +56,8 @@ Conversion parameters are specific to each target. To modify the behavior of the
 - *dot.case*: all letters are converted to lowercase, plus words are separated with a dot "."
 - *path/case*: all letters are converted to lowercase, plus words are separated with a slash "/"
 
-&nbsp;
-
 > [!NOTE]
 > Given that the case conversion rule is applied after the rule to remove or replace invalid characters, as noted above, it is critical to not remove or replace blanks if you want case conversion to function as expected.
-
-&nbsp;
 
 **Technical-to-Business Conversion:** the following options, if enabled will be applied after the file conversion (with or without file.)\
 **Case conversion:** If enabled, a space is inserted between words detected in the technical name (based on the presence of a separator such as underscore (‘\_’), a dash (‘-‘), a dot (‘.’), a slash (‘/’), or simply an Upper case letter). Choose from the dropdown:
@@ -98,64 +69,38 @@ Conversion parameters are specific to each target. To modify the behavior of the
 - [*Title case*](<https://en.wikipedia.org/wiki/Capitalization#Title_case> "target=\"_blank\""): the first letter of every word is capitalized, except for certain small words, such as articles and short prepositions
 - [*Sentence case*](<https://en.wikipedia.org/wiki/Capitalization#Sentence_case> "target=\"_blank\""): only the first letter of the sentence or phrase is capitalized
 
-&nbsp;
-
 Upon exit of the dialog (via OK or Apply) after making a change in parameters, the user will be prompted to choose whether: to apply the changes to just previously coupled names, to apply the changes to all object names, or to not apply any of the changes performed by canceling the dialog.
 
-&nbsp;
-
 ![Naming Conventions - apply changes dialog](<lib/Naming Conventions - apply changes dialog.png>)
-
-&nbsp;
 
 ## Properties Pane
 
 In the properties pane, the relationship between business name and technical name can have 3 states: OFF (default), convert Business name to Technical name, or convert technical name to business name. This state can be set separately for each individual object. To set Naming Conventions to control the business names and technical names of all objects, select Tools > Options > Naming Conventions, then choose either Business-to-Technical or Technical-to-Business from the dropdown "Enable name coupling".
 
-&nbsp;
-
 Let’s say we have this starting situation:\
 ![Naming Conventions - properties](<lib/Naming Conventions - properties.png>)
 
-&nbsp;
-
 To indicate that coupling is OFF between business and technical name, the 2 = sign icons to the right are un-selected. The user could simply type the technical name of his choice, without any compliance to the glossary file.
-
-&nbsp;
 
 Now, if the user wants to apply naming convention by using the conversion file referenced in the parameters, he would just click on the = sign to the right of the Technical name:\
 ![Naming Conventions - B2T properties](<lib/Naming Conventions - B2T properties.png>)\
 where the = sign icon shown as pressed, and the Business name is converted into the Technical name by using the conversion file and other conversion parameters. While the = sign icon is ON, the Technical name field is locked and cannot be edited.
 
-&nbsp;
-
 If the Technical name = sign icon is pressed again, the entry field is unlocked and the entry can be edited again:\
 ![Naming Conventions - neutral properties](<lib/Naming Conventions - neutral properties.png>)
 
-&nbsp;
-
 If the Business name = sign icon is pressed this time, the Technical name is converted into the Business name by using the conversion file and other conversion parameters. While the = sign icon is ON, the Business name field is locked and cannot be edited.
-
-&nbsp;
 
 ## Behavior during Reverse-Engineering
 
 During Reverse-Engineering, if coupling parameters is set to 'No', then all object names from the source (whether from a DB instance, XSD, DDL, Excel, JSON, etc...) are stored in the Business Name property.
 
-&nbsp;
-
 If coupling is set to either Business-to-Technical, or Technical-to-Business, the result of the Reverse-Engineering is the same. In both cases, the object names from the source are stored in the Technical Name property and converted to Business Name using the conversion parameter. That's intuitively obvious when the coupling parameter is set to Technical-to-Business.
-
-&nbsp;
 
 But you may wonder why the handling is done as such when the coupling parameter is set to Business-to-Technical... The following dialog is presented to the user:\
 ![Naming Conventions - RE warning](<lib/Naming Conventions - RE warning.png>)
 
-&nbsp;
-
 The only safe method we can ensure is one by which the Technical Name come from the source is preserved, no matter the conversion parameters. Say we have a source object called cust_acct and the Technical-to-Business is set in such a way that the Business Name becomes Cust Acct. If the application applies Business-to-Technical conversion that would be set for example to camelCase, the Technical Name would be changed to custAcct, thereby losing the original cust_acct in the source. We prefer to let the user choose the expected outcome to either keep it as is, or to change the parameters and apply these changes to the model.
-
-&nbsp;
 
 ## Clearing all Technical Names
 
@@ -163,15 +108,11 @@ You may wish to disable any coupling between Business and Technical Names and ma
 ![Naming Conventions - apply changes with clear](<lib/Naming Conventions - apply changes with clear.png>)\
 you may choose to check the box "Clear all Technical Names". Be careful of course. You may want to save a version of your model prior to applying this clearing, and test that the behavior matches your expectations.
 
-&nbsp;
-
 ## Advanced considerations
 
 ### Conversion file
 
 Entries in the conversion file can be in any order, and are case insensitive. You may declare individual words as well as expressions where words in an expression may have a different abbreviation than their individual abbreviation, or than in another expression. Example:
-
-&nbsp;
 
 <table>
 <colgroup><col style="width:69%"><col style="width:31%"></colgroup>
@@ -201,8 +142,6 @@ Entries in the conversion file can be in any order, and are case insensitive. Yo
 </tbody>
 </table>
 
-&nbsp;
-
 ### Conversion rules hierarchy
 
 There's a hierarchy in our transformations:
@@ -211,41 +150,25 @@ There's a hierarchy in our transformations:
 - invalid characters
 - case conversion
 
-&nbsp;
-
 Plus we natively use 2 word separators when parsing the input line: blank (' ') and underscore ('\_')
 
-&nbsp;
-
 How you set the Invalid Characters behavior is important, as it affects the case conversion behavior.
-
-&nbsp;
 
 If, for example that you have this Invalid Characters setting (which we do not recommend)\
 ![Naming Conv - invalid char - remove](<lib/Naming Conv - invalid char - remove.png>)\
 where a blank (" ") appears in the list of invalid characters (hardly visible, but present in front of the exclamation mark.) Then you expect conversion to camelCase.
 
-&nbsp;
-
 Going through "Customer Account", first we convert the word with the conversion file to "cust acct", then with the Invalid characters config, we remove the blank and get "custacct", but we've lost the word separator, therefore camelCase does not see the "acct" as a separate mode. The end result is: "custacct".
-
-&nbsp;
 
 This is why we recommend to not list a blank (" ") as invalid characters, or to a replace blank by underscore:\
 ![Naming Conv - invalid char - replace](<lib/Naming Conv - invalid char - replace.png>)\
 As a result, the sequence becomes "cust acct" then "cust_acct", then "custAcct" which is the expected result.
 
-&nbsp;
-
 Again, it may be preferable to take the blank (" ") out of the list of invalid characters, and let it be handled by the case conversion.
-
-&nbsp;
 
 ### Choices when applying configuration changes
 
 To better understand the impacts of choices in this dialog:
-
-&nbsp;
 
 ![Naming Conventions - apply changes with clear](<lib/Naming Conventions - apply changes with clear.png>)\
 Let's look at the user cases. It is possible that, during the course of maintaining a model:
@@ -253,21 +176,13 @@ Let's look at the user cases. It is possible that, during the course of maintain
 - either the model was started with no coupling, then coupling was enabled selectively for some objects;
 - or that a model was started with coupling, then coupling was selectively disabled for some objects.
 
-&nbsp;
-
 As a result, less than 100% of the objects may have coupling enabled. And it may be on purpose, we have no way to tell.
-
-&nbsp;
 
 In such cases, when the choice is being presented as you modify the Naming Conventions parameters, it is important that we apply parameters to objects according to the wish of the user:
 
 - either strictly to the objects for which coupling was previously enabled,
 - or give the opportunity to the user to correct an inconsistency, and enable the entire model with the Naming Conventions parameters
 
-&nbsp;
-
 You may also perform this operation, without changing the parameters, by clicking the button at the bottom of the Naming Conventions parameters.
-
-&nbsp;
 
 Finally, you may also use this button to turn OFF coupling and clear all technical names.

@@ -7,8 +7,6 @@ image: lib/Hub auth Entra ID register app.png
 
 On this page, you will find a step-by-step guide to integrating Azure Entra ID with the Model Hub portal.
 
-&nbsp;
-
 ## Pre-requisites
 
 In order to perform the operations in this guide, you will need the following:
@@ -16,21 +14,13 @@ In order to perform the operations in this guide, you will need the following:
 - access to Entra ID that allows creating and managing an app registration in EntraID
 - be able to assign users to app roles
 
-&nbsp;
-
 ## 1. Create an app registration
 
 In Azure EntraID, select Manage -> App registrations, then click on + New registration
 
-&nbsp;
-
 Give a name to your app and as a redirect URI select Single-page application (SPA) and the value is the domain name of the Model Hub portal (e.g.; https://hck.example.com/hub)
 
-&nbsp;
-
 ![Hub auth Entra ID register app](<lib/Hub auth Entra ID register app.png>)
-
-&nbsp;
 
 ## 2. Configure Redirect URIs
 
@@ -44,8 +34,6 @@ When creating the application, we configured the redirect URI to access the Mode
 - Add the admin URI, which is the same as the current URL with an */admin* suffix (e.g https://hck.example.com/admin). Then click on Configure\
   \
   ![Hub auth Entra ID config URL 2](<lib/Hub auth Entra ID config URL 2.png>)
-
-&nbsp;
 
 ## 3. Create a new app roles
 
@@ -67,17 +55,11 @@ In order to give users access to the Model Hub portal and its admin interface, y
   - Make sure that "Do you want to enable this app role?" is checked
 - Then click on Apply
 
-&nbsp;
-
 ![Hub auth Entra ID create app role](<lib/Hub auth Entra ID create app role.png>)
-
-&nbsp;
 
 ## 4. Enable access token version 2
 
 Even though we are using the v2.0 endpoints, Entra ID is still generating access tokens with the v1 issuer. This makes it hard to validate the issuer in the access token, since it doesn't correspond with the one returned by *https://login.microsoftonline.com/TENANT_ID/v2.0/.well-known/openid-configuration*
-
-&nbsp;
 
 In order to have the v2 access tokens:
 
@@ -85,17 +67,11 @@ In order to have the v2 access tokens:
 - Click on Manage -> Manifest
 - In the text editor, look for *requestedAccessTokenVersion* and make sure it's set to *2*
 
-&nbsp;
-
 ![Hub auth Entra ID enable access token](<lib/Hub auth Entra ID enable access token.png>)
-
-&nbsp;
 
 ## 5. Give users access to the admin UI
 
 In Azure Entra ID, select Enterprise applications, then click on the app you just created
-
-&nbsp;
 
 If you want all users in your organization to access Model Hub, then skip this step. If you want only certain users to access Model Hub:
 
@@ -103,15 +79,11 @@ If you want all users in your organization to access Model Hub, then skip this s
 - Save
 - Then go to Security -> Permissions and click on "Grant admin consent for ...". This operation can only be done by an administrator
 
-&nbsp;
-
 To assign users as administrators:
 
 - Select Manage -> Users and groups, then click on + Add user/group
 - Select the user you want to add and make sure that Model Hub Admin is selected in "Select a role"
 - Click on Assign
-
-&nbsp;
 
 If "Assignment required?" is set to No, then every user in your organization will have access to the Model Hub portal, otherwise, to allow users access to the Model Hub portal:
 
@@ -119,12 +91,8 @@ If "Assignment required?" is set to No, then every user in your organization wil
 - Select the user you want to add and make sure that Model Hub User is selected in "Select a role"
 - Click on Assign
 
-&nbsp;
-
 > [!NOTE]
 > If a user is an admin, there is no need to assign it the role Model Hub User, he will have access to everything
-
-&nbsp;
 
 ## 6. Configure the application in the admin portal
 

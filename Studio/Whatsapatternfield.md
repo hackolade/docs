@@ -18,8 +18,6 @@ In Hackolade, the above example is modeled this way:\
 To add a pattern field to a document structure, right-click and choose add/insert/append > Pattern Field then the field data type:\
 ![Pattern property contextual menu](<lib/Pattern property contextual menu.png>)
 
-&nbsp;
-
 If you mistakenly created a pattern field, you can easily convert it to a "regular" field with this option of the contextual menu.\
 ![Pattern field - convert to regular](<lib/Pattern field - convert to regular.png>)\
 and vice-versa...\

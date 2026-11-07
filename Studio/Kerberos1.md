@@ -10,8 +10,6 @@ image: lib/Hive - Kerberos Authentication settings.png
 > [!IMPORTANT]
 > Our Kerberos support uses a 3rd-party library to provide cross-platform kerberos authentication using GSSAPI on Linux/Mac, and SSPI on Windows. For Linux, Windows, and Mac, there are pre-requisites, respectively,
 
-&nbsp;
-
 for **Linux:**
 
 - `python` v2.7
@@ -19,24 +17,16 @@ for **Linux:**
 - A proper C/C++ compiler toolchain, like [GCC](<https://gcc.gnu.org/> "target=\"_blank\"")
 - Distribution-specific kerberos packages (e.g. `krb5-dev` on Ubuntu)
 
-&nbsp;
-
 for **Mac:**
 
 - `Xcode Command Line Tools`: Can be installed with `xcode-select --install`
 - Distribution-specific kerberos packages (e.g. [`krb5` on Homebrew](<https://formulae.brew.sh/formula/krb5> "target=\"_blank\""))
 
-&nbsp;
-
 If issues are encountered, it is generally a good idea to validate first that the whole environment has been set up correctly by connecting with [Beeline](<https://cwiki.apache.org/confluence/display/Hive/HiveServer2+Clients> "target=\"_blank\""). It may be required to obtain a valid Kerberos ticket before you attempt a connection to HiveServer2. This step can be done by running *kinit* from a terminal (Linux/mac) or a command line (Windows):
-
-&nbsp;
 
 ```text
 [example_user@host ~] $ $BIGINSIGHTS_HOME/jdk/jre/bin/kinit -k -t /home/example_user/example_user.keytab example_user@YOUR-REALM.COM
 ```
-
-&nbsp;
 
 For **Windows:**\
 \* Download MIT Kerberos for Windows 4.1 from [this page](<https://web.mit.edu/kerberos/dist/#kfw-4.1> "target=\"_blank\"").\
@@ -46,20 +36,12 @@ For **Windows:**\
 \* In the Custom Setup customization screen, expand the tree by clicking on Kerberos for Windows. You should see a red cross in front on SDK line. Click on the red cross box icon and select the option '''Will be installed on local hard drive'''.\
 \* Proceed with the installation
 
-&nbsp;
-
 Alternatively you can also install this third party library using the \[Chocolatey package manager\](https://chocolatey.org) and the following command line in a PowerShell window:\
 *choco install mitkerberos --install-arguments="ADDLOCAL=all"*
 
-&nbsp;
-
 Hackolade can connect via Kerberos authentication only through “binary” transport mode and with Quality of Protection (QOP) values: “auth”, "auth-int", or "auth-conf", as per [RFC 1964](<https://tools.ietf.org/html/rfc1964> "target=\"_blank\"") section 4.2.
 
-&nbsp;
-
 The Kerberos configuration in hive-site.xml must include these properties:
-
-&nbsp;
 
 ```xml
 <property>
@@ -81,11 +63,7 @@ The Kerberos configuration in hive-site.xml must include these properties:
 <value>KERBEROS_SERVICE_PRINCIPAL</value>
 ```
 
-&nbsp;
-
 `<description>the format of the service `[`principal`](<https://web.mit.edu/kerberos/krb5-1.5/krb5-1.5.4/doc/krb5-user/What-is-a-Kerberos-Principal_003f.html> "target=\"_blank\"")`  is  `*`service`*`/`*`<fully qualified domain name of instance>`*`@<REALM></description>`
-
-&nbsp;
 
 ```text
 </property>
@@ -94,41 +72,25 @@ The Kerberos configuration in hive-site.xml must include these properties:
 <value>KERBEROS_KEYTAB</value>
 ```
 
-&nbsp;
-
 `<description>`[`keytab`](<https://web.mit.edu/kerberos/krb5-1.5/krb5-1.5.4/doc/krb5-install/The-Keytab-File.html> "target=\"_blank\"")` looks like` *`/etc/hive/conf/hive.keytab`*`</description>`
-
-&nbsp;
 
 ```text
 </property>
 ```
-
-&nbsp;
 
 Where:
 
 - ***KERBEROS_SERVICE_NAME*** is the kerberos service principal of the Hive instance (format. \<service>/\<instance>@REALM)
 - ***KERBEROS_KEYTAB*** - is the keytab file for kerberos principal
 
-&nbsp;
-
 The corresponding settings in Hackolade would be:
 
-&nbsp;
-
 ![Hive - Kerberos Authentication settings](<lib/Hive - Kerberos Authentication settings.png>)
-
-&nbsp;
 
 **User name**: don't forget to to put the username in UPPERCASE, and to reference the REALM. IN Windows, the username might be your Windows login.\
 **Service name**: enter the service name as provided by the administrator.\
 **Kerberos host**: enter the FQDN or "fully qualified domain name"
 
-&nbsp;
-
 The krb5 library uses [MIT Kerberos](<https://web.mit.edu/kerberos/dist/> "target=\"_blank\"") software. To make it work you should setup kerberos client, to do this create [krb5.conf](<https://web.mit.edu/kerberos/krb5-devel/doc/admin/conf_files/krb5_conf.html#sample-krb5-conf-file> "target=\"_blank\"") and create environment variable **KRB5_CONFIG** with path to the krb5.conf. After this, restart the PC. If MIT Kerberos is able to retrieve a ticket, then Hackolade should as well.
-
-&nbsp;
 
 Currently, krb5 library with keytab is used only in HTTP mode to retrieve SPNEGO token.

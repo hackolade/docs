@@ -7,11 +7,7 @@ image: lib/Welcome page.png
 
 The Welcome page gives you a quick access to your recent models and workspace, as well as providing a direct link to the creation of a new model, plus a range of help materials.
 
-&nbsp;
-
 ![Welcome page](<lib/Welcome page.png>)
-
-&nbsp;
 
 By default, the following items are available:
 

@@ -6,8 +6,6 @@ seoTitle: Hackolade Studio keyboard shortcuts
 
 Keyboard shortcuts:
 
-&nbsp;
-
 <table style="width:80%">
 <colgroup><col style="width:27%"><col style="width:27%"><col style="width:46%"></colgroup>
 <tbody>

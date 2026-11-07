@@ -7,30 +7,18 @@ image: lib/Tools - Reverse-Engineer - Excel Template.png
 
 Reverse-Engineering of an Excel file pre-supposes that you have first performed forward-engineering of your existing model, as described [here](Excelfile.md). If you plan to import a new model, you at least need to export an empty model for the same target.
 
-&nbsp;
-
 > [!IMPORTANT]
 > Deleting a line in Excel will NOT result in a delete operation in the model when reverse-engineering the Excel back into the Hackolade model.
-
-&nbsp;
 
 > [!WARNING]
 > - Do not change the titles or order of the columns!
 > - Referential integrity is not enforced by this template. You need to ensure the coherence of the references from one tab to the other!
 
-&nbsp;
-
 To import CSV files into Hackolade, it is advised to go first export an Excel template, then link it to the CSV file, before importing back into Hackolade.
-
-&nbsp;
 
 To import the content of this Excel, use the Hackolade function Tools > Reverse-Engineering > Excel template
 
-&nbsp;
-
 ![Tools - Reverse-Engineer - Excel Template](<lib/Tools - Reverse-Engineer - Excel Template.png>)
-
-&nbsp;
 
 Assuming that the user has not altered the integrity of the exported Excel file (i.e. GUIDs or column names), the following behavior occurs:
 
@@ -41,8 +29,6 @@ Assuming that the user has not altered the integrity of the exported Excel file 
 - Multiple data types are supported as well, as long as the | separator is used and the data types correspond to the acceptable values. This can be a bit tricky though, e.g. {"id":"c973c0a0-7e84-11e9-9a55-eba2b9bb390e","type":"string","enum":\["user","owner","tester"\]} | {"id":"d7cd4e50-7e84-11e9-9a55-eba2b9bb390e","type":"null"} | {"id":"cbd7a140-7e84-11e9-9a55-eba2b9bb390e","type":"numeric","minimum":"","exclusiveMinimum":false,"maximum":"", "exclusiveMaximum":false,"multipleOf":"","unit":""}
 - a new GUID is generated for each new object, or for an object for which the GUID is not recognized.
 
-&nbsp;
-
 So as to not create instability or any kind of model corruption at time of import of the Excel, it is first scanned for the following validations:
 
 - the import is rejected if the target of the Excel file does not match the target of the open or new model;
@@ -52,23 +38,15 @@ So as to not create instability or any kind of model corruption at time of impor
 - an attribute line referencing an entity not present in the entities tab cannot be imported. Similarly, an entity referencing a container not present in the containers tab cannot be imported. And a container referencing a model not present in the model tab cannot be imported;
 - unknown property value: we can only accept valid values as previously exported and visible in the last tab "Lists".
 
-&nbsp;
-
 If validation is successful, the following message is displayed:\
 ![Excel reverse-engineering validation - Success](<lib/Excel RE validation - Success.png>)
-
-&nbsp;
 
 But if things don't validate properly, you may get a message such as this one:\
 ![Excel reverse-engineering validation - error](<lib/Excel RE validation - error.png>)
 
-&nbsp;
-
 ## For advanced users
 
 Most users will use this Excel export/import feature for a productive manner to edit bulk data for a model, but without changing the structure of the model itself. The feature allows much more:
-
-&nbsp;
 
 ### 1) Add a scalar attribute to an existing entity
 
@@ -79,26 +57,18 @@ This is the simplest use case. In the "entity attributes" tab (which could be na
 - the Entity ID represents the GUID of the entity. It is required to add the attribute to the correct entity. Note that if there is an incoherence between the entity name in the Name cell and the Entity ID, it is the latter that is being used during reverse-engineering.
 - make sure to choose the data Type from the dropdown box
 
-&nbsp;
-
 ### 2) Add a complex attribute (object) to an existing entity
 
 To add a nested object, itself made of attributes, you can extent the dot notation in the Name cells. For example to add an address object to a user entity, you would create/insert:
 
 - one line for the object, for example *user.address* with a data type *object* (or document or map, depending on the target)
 
-&nbsp;
-
 ![Excel - object](<lib/Excel - object.png>)
 
 - a line per attribute of the object, for example:
 
-&nbsp;
-
 ![Excel - Object attributes](<lib/Excel - Object attributes.png>)\
 while following the guidelines in 1) above. Nesting can go several levels deep, within the limits of each target.
-
-&nbsp;
 
 ### 3) Add a complex attribute (array) to an existing entity
 
@@ -107,25 +77,15 @@ For arrays, the same dot notation is supported. For example to add an array of f
 - one line for the array, for example *user.friends* with a data type *array* (or list of set, depending on the target)
 - one line for the array item, with the data type of the item Array items don't have names.
 
-&nbsp;
-
 ![Excel - Array](<lib/Excel - Array.png>)
 
-&nbsp;
-
 Note that you can combine objects and arrays, for example *users.addresses.\[0\].address.street*
-
-&nbsp;
 
 ### 4) Add an attribute with multiple data types
 
 If this form of polymorphism is allowed by the target, you may do so from the Excel template. The easiest way to understand how to do it might be to first create a multiple type attribute in Hackolade, then export to Excel. Then you can mimic the syntax. The separator between types is a pipe ("|"). The GUID is repeated:
 
-&nbsp;
-
 {
-
-&nbsp;
 
 ```json
 "id": "c973c0a0-7e84-11e9-9a55-eba2b9bb390e",
@@ -133,42 +93,26 @@ If this form of polymorphism is allowed by the target, you may do so from the Ex
 "enum": ["user", "owner", "tester"]
 ```
 
-&nbsp;
-
 }
-
-&nbsp;
 
 ```text
 |
 ```
 
-&nbsp;
-
 {
-
-&nbsp;
 
 ```json
 "id": "d7cd4e50-7e84-11e9-9a55-eba2b9bb390e",
 "type": "null"
 ```
 
-&nbsp;
-
 }
-
-&nbsp;
 
 ```text
 |
 ```
 
-&nbsp;
-
 {
-
-&nbsp;
 
 ```json
 "id": "cbd7a140-7e84-11e9-9a55-eba2b9bb390e",
@@ -183,11 +127,7 @@ If this form of polymorphism is allowed by the target, you may do so from the Ex
 "unit": ""
 ```
 
-&nbsp;
-
 }
-
-&nbsp;
 
 ### 5) Add a new entity
 
@@ -196,17 +136,11 @@ In the Entities tab (which could be names "Collections", "Tables", etc... depend
 - the GUID of an entity is the unique number used internally by Hackolade. For an existing entity being modified, this MUST NOT change, as it is the key used for matching upon import. For a new entity, the cell should be left blank.
 - the Entity ID represents the GUID of the Container (database/bucket/keyspace/workspace/...) to which this entity belongs. This is required in order to link the entity to the correct container.
 
-&nbsp;
-
 ### 6) Add a definition
 
 Only internal and model definitions can be edited in an Excel having been exported. If you need to make modifications to an external definition, it is required to export that model separately.
 
-&nbsp;
-
 Internal and model definitions are exported in a separate tab, generally called Definitions (for Cassandra it is User-Defined Types, etc...) attributes can be edited or inserted just like any other attribute (cfr points 1 thru 4 above.)
-
-&nbsp;
 
 ### 7) Add a reference to a definition
 
@@ -216,8 +150,6 @@ To create a reference to a definition requires an entry in the $ref cell:
 - internal reference: #/definitions/\<defintionName>
 - external reference: \<drive>:\<path>/\<modelFileName>.json#/\<attributeName>
 
-&nbsp;
-
 ### 8) Add a relationship
 
 Relationships go into their own tab. They have their own GUID as well. If adding a new one, leave the GUID cell blank. Each relationship needs the GUID of:
@@ -226,7 +158,5 @@ Relationships go into their own tab. They have their own GUID as well. If adding
 - parent attribute
 - child entity
 - child attribute
-
-&nbsp;
 
 They also have a relationship type: foreign key, or foreign master.

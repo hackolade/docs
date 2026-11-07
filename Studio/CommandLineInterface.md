@@ -7,33 +7,23 @@ image: lib/CLI with git.png
 
 With its Command Line Interface (CLI), Hackolade truly supports an agile development approach leveraging the flexibility of NoSQL dynamic schemas. Some customers use this capability nightly in a batch process to identify attributes and structures that may have appeared in the data since the last run. During a nightly run of the reverse-engineering function, a much larger dataset can be queried as a basis for document sampling, hence making schema inference more precise. Such capability can be useful in a data governance context to properly document the semantics and publish a thorough data dictionary for end users.
 
-&nbsp;
-
 The CLI can also be used in the context of compliance with privacy laws to make sure that the company does not store data that it is not supposed to store. There are many more examples of how to use this functionality.
-
-&nbsp;
 
 Another common use case we've seen is to use the CLI to compare the models reverse-engineered from different environments (e.g; dev, test, integration, prod) to ensure their synchronization.
 
-&nbsp;
-
 The Hackolade command line can of course be used on a stand alone machine. It can also be easily combined with a [git repository](Teamcollaboration.md) for the storage of versioned models and schema artifacts, as well as with [Docker containers](<https://github.com/hackolade/docker/tree/main/Studio> "target=\"_blank\""). Customers have been using this combination either in a push mode, triggered by saving or committing model changes, or in a pull mode, when invoked by a DevOps CI/CD pipeline or a scheduled job.
 
-&nbsp;
-
 > [!NOTE]
-> The CLI is available in the Professional and Workgroup editions with a dedicated license, as a single-threaded process you run from the command line of your desktop machine. The CLI is not available if you run the Hackolade Studio from the browser. Also, if you want to run the CLI multi-threaded in a Docker container, it must use a [floating license](Floatinglicensekeybehavior.md) seat.
+> The CLI is available in the Professional, Workgroup, and Ultimate editions with a dedicated license, as a single-threaded process you run from the command line of your desktop machine. The CLI is not available if you run the Hackolade Studio from the browser. Also, if you want to run the CLI multi-threaded in a Docker container, it must use a [floating license](Floatinglicensekeybehavior.md) seat.
 
-&nbsp;
+You may want to watch a playlist of [short videos](<https://www.youtube.com/playlist?list=PLuoumc7VQje0qPX3zHa8SUaDWQg2EAT40> "target=\"_blank\"") on YouTube.
 
-You may want to watch a playlist of [short videos](<https://www.youtube.com/playlist?list=PLuoumc7VQje0qPX3zHa8SUaDWQg2EAT40> "target=\"_blank\"") on YouTube.\
+[How-To: CLI reverse-engineering (1 of 5)](<https://youtu.be/AMpTdmxzFoo?t=1> "video")
+
+This slide shows an example use case whereby changes to a model merged into the main branch of your repo can trigger an orchestration of CLI commands to generate artifacts such as DDLs or schemas to be applied to a database instance, or generate documentation to be posted on a portal.  Many more use cases can be imagined.\
 ![CLI Command Line Interface with git](<lib/CLI with git.png>)
 
-&nbsp;
-
 To understand how to set the different CLI arguments, it is often helpful to first run the equivalent function in the GUI application, then to assemble the CLI command piece by piece.
-
-&nbsp;
 
 It is easier to run the CLI from the directory where the Hackolade executable is installed, from a terminal program:
 
@@ -43,20 +33,12 @@ It is easier to run the CLI from the directory where the Hackolade executable is
 - Mac: start Terminal and execute: all commands below should be preceded by `/Applications/Hackolade.app/Contents/MacOS/Hackolade`
 - Linux: terminal emulator or common shell programs: all commands below should be preceded by `./Hackolade`  or `path-to-where-hackolade-was-unzipped/Hackolade`
 
-&nbsp;
-
 To take full advantage of the capability, you may run the CLI from scheduled batch files.
-
-&nbsp;
 
 > [!NOTE]
 > A properly licensed copy of Hackolade is required to run the CLI. The CLI functionality is only available in the following editions of Hackolade Studio: Professional, Workgroup, and 14-Day Free Trial.
 
-&nbsp;
-
 Below is the current list of Hackolade CLI commands. Additional commands may be added at a later date.
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:22%"><col style="width:78%"></colgroup>
@@ -162,28 +144,18 @@ Below is the current list of Hackolade CLI commands. Additional commands may be 
 </tbody>
 </table>
 
-&nbsp;
-
 Usage: *hackolade command \[--arguments\]*
-
-&nbsp;
 
 ## compMod
 
 The *`compMod`* command lets you compare two (2) Hackolade models and derive a delta model file with additions, deletions, and modifications of fields and structures.
-
-&nbsp;
 
 When merging into a targetModel, you should keep in mind that:
 
 - merging is an "all or nothing" proposition
 - handling of modifications is impacted by the order in which model1 and model 2 are assigned, with model2 values being kept in the merged model
 
-&nbsp;
-
 Usage: `hackolade compMod [--arguments]`
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:24%"><col style="width:10%"><col style="width:66%"></colgroup>
@@ -248,51 +220,31 @@ Usage: `hackolade compMod [--arguments]`
 </tbody>
 </table>
 
-&nbsp;
-
 \*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“) Path can be ignored if file is in local directory.
-
-&nbsp;
 
 Note: unless GUID’s are used for the comparison, a change in a field name will result in an addition plus a deletion. Same for a change in an entity name.
 
-&nbsp;
-
 Example:
-
-&nbsp;
 
 ```bat
 C:\PROGRA~1\Hackolade\hackolade compMod --model1=yesterdaysModel --model2=todaysModel --deltaModel=todaysDeltaModel --ignoreGUIDs=true --ignoreExtraProperties=true --ignoreOrder=true
 ```
 
-&nbsp;
-
 > [!NOTE]
 > If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: *"C:\\Program Files\\Hackolade\\hackolade"* . The workaround, assuming:
 
-&nbsp;
-
 ![Windows Program Files](<lib/Windows Program Files.png>)\
 is to to use the 8.3 command *C:\\PROGRA~1\\Hackolade\\hackolade*, as displayed above.
-
-&nbsp;
 
 Structure of resulting delta model file:\
 ![CLI compMod delta model structure](<lib/CLI compMod delta model structure.png>)\
 A delta model file may contain any combination of multiple additions, deletions, and modifications. Deeply nested fields are referenced through their structure. To merge newly added fields, open your baseline model in Hackolade, then either copy/paste from the delta model, or reference the new field via an external reference to the delta model, then convert the reference into attributes.
 
-&nbsp;
-
 ## extRefUpdate
 
 The `extRefUpdate` command lets you update a referrer model for modifications made to the external referenced models.
 
-&nbsp;
-
 Usage: `hackolade extRefUpdate [--arguments]`
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:23%"><col style="width:10%"><col style="width:67%"></colgroup>
@@ -317,31 +269,19 @@ Usage: `hackolade extRefUpdate [--arguments]`
 </tbody>
 </table>
 
-&nbsp;
-
 \*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“) Path can be ignored if file is in local directory.
 
-&nbsp;
-
 Example:
-
-&nbsp;
 
 ```bat
 C:\PROGRA~1\Hackolade\hackolade extRefUpdate --model=referrerModel
 ```
 
-&nbsp;
-
 ## forwEng
 
 Forward engineer structure created with the application to dynamically generate the schema of the selected entities.
 
-&nbsp;
-
 Usage: `hackolade forwEng [--arguments]`
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:25%"><col style="width:10%"><col style="width:65%"></colgroup>
@@ -516,41 +456,25 @@ Usage: `hackolade forwEng [--arguments]`
 </tbody>
 </table>
 
-&nbsp;
-
 \*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“) Path can be ignored if file is in local directory.
 
-&nbsp;
-
 Example:
-
-&nbsp;
 
 ```bat
 C:\PROGRA~1\Hackolade\hackolade forwEng --model=masterdata.json --path=masterdata.cql
 ```
 
-&nbsp;
-
 > [!NOTE]
 > If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: `"C:\Program Files\Hackolade\hackolade"` . The workaround, assuming:
 
-&nbsp;
-
 ![Windows Program Files](<lib/Windows Program Files.png>)\
 is to to use the 8.3 command `C:\PROGRA~1\Hackolade\hackolade`, as displayed above.
-
-&nbsp;
 
 ## forwEngAPI
 
 The `forwEngAPI` command lets you generate a Swagger or OpenAPI model from the merging of a source data model and a user-defined template
 
-&nbsp;
-
 Usage: `hackolade forwEngAPI [--arguments]`
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:23%"><col style="width:10%"><col style="width:67%"></colgroup>
@@ -620,41 +544,25 @@ Usage: `hackolade forwEngAPI [--arguments]`
 </tbody>
 </table>
 
-&nbsp;
-
 \*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“) Path can be ignored if file is in local directory.
 
-&nbsp;
-
 Example:
-
-&nbsp;
 
 ```bat
 C:\PROGRA~1\Hackolade\hackolade forwEngAPI --sourcemodel=masterdata --APItemplate=OAS_generation --targetmodel=masterdataAPI  --APIdocFile=masterdata_OpenAPI
 ```
 
-&nbsp;
-
 > [!NOTE]
 > If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: `"C:\Program Files\Hackolade\hackolade"` . The workaround, assuming:
 
-&nbsp;
-
 ![Windows Program Files](<lib/Windows Program Files.png>)\
 is to to use the 8.3 command `C:\PROGRA~1\Hackolade\hackolade`, as displayed above.
-
-&nbsp;
 
 ## forwEngDataDictionary
 
 The `forwEngDataDictionary` command lets you publish Hackolade data models to a Data Dictionary instance (currently Collibra only.)
 
-&nbsp;
-
 Usage: `hackolade forwEngDataDictionary [--arguments]`
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:24%"><col style="width:10%"><col style="width:66%"></colgroup>
@@ -704,46 +612,28 @@ Usage: `hackolade forwEngDataDictionary [--arguments]`
 </tbody>
 </table>
 
-&nbsp;
-
 \*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“) Path can be ignored if file is in local directory.
 
-&nbsp;
-
 Example:
-
-&nbsp;
 
 ```bat
 C:\PROGRA~1\Hackolade\hackolade forwEngDataDictionary --model=yelp --connectName=Collibra_instance --targetResource=Yelp
 ```
 
-&nbsp;
-
 > [!NOTE]
 > If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: `"C:\Program Files\Hackolade\hackolade"` . The workaround, assuming:
 
-&nbsp;
-
 ![Windows Program Files](<lib/Windows Program Files.png>)\
 is to to use the 8.3 command `C:\PROGRA~1\Hackolade\hackolade`, as displayed above.
-
-&nbsp;
 
 ## forwEngXLSX
 
 The `forw`*`EngXLSX`* command allows to export a data model into an Excel file.
 
-&nbsp;
-
 > [!WARNING]
 > When exporting into an existing Excel file name, the whole file get overwritten.
 
-&nbsp;
-
 Usage: `hackolade forwEngXLSX [--arguments]`
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:34%"><col style="width:10%"><col style="width:56%"></colgroup>
@@ -803,21 +693,13 @@ Usage: `hackolade forwEngXLSX [--arguments]`
 </tbody>
 </table>
 
-&nbsp;
-
 \*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“) Path can be ignored if file is in local directory.
-
-&nbsp;
 
 ## genDoc
 
 The *`genDoc`* command lets you invoke the generation of a documentation file, either in HTML or PDF format, for a specified existing Hackolade model.
 
-&nbsp;
-
 Usage: `hackolade genDoc [--arguments]`
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:22%"><col style="width:10%"><col style="width:68%"></colgroup>
@@ -922,26 +804,16 @@ Usage: `hackolade genDoc [--arguments]`
 </tbody>
 </table>
 
-&nbsp;
-
 \*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“) Path can be ignored if file is in local directory.
 
-&nbsp;
-
 Simple example: using all default options:
-
-&nbsp;
 
 ```bat
 start /wait hackolade genDoc --format=HTML --model=C:\Users\Public\Bitbucket\hackolade\schemas\MongoDB\noaa.json 
 --doc=C:\Users\Public\Documents\Hackolade\Documentation\noaa.html
 ```
 
-&nbsp;
-
 More complex example:
-
-&nbsp;
 
 ```bat
 start /wait C:\PROGRA~1\Hackolade\hackolade genDoc --format=HTML --model=C:\Users\Public\Bitbucket\hackolade\schemas\Couchbase\travel-sample.json 
@@ -949,27 +821,17 @@ start /wait C:\PROGRA~1\Hackolade\hackolade genDoc --format=HTML --model=C:\User
 --attribTree=complex --JSONSchema=false --JSONData=false --properties=notNull --entities="travel-sample: airport, airline, route"
 ```
 
-&nbsp;
-
 > [!NOTE]
 > If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: `"C:\Program Files\Hackolade\hackolade"` . The workaround, assuming:
 
-&nbsp;
-
 ![Windows Program Files](<lib/Windows Program Files.png>)\
 is to to use the 8.3 command `C:\PROGRA~1\Hackolade\hackolade`, as displayed above.
-
-&nbsp;
 
 ## open
 
 It is possible to open Hackolade Studio data model from the command line.
 
-&nbsp;
-
 Usage: `hackolade open [--arguments]`
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:23%"><col style="width:10%"><col style="width:67%"></colgroup>
@@ -999,41 +861,25 @@ Usage: `hackolade open [--arguments]`
 </tbody>
 </table>
 
-&nbsp;
-
 \*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“) Path can be ignored if file is in local directory.
 
-&nbsp;
-
 Example:
-
-&nbsp;
 
 ```bat
 C:\PROGRA~1\Hackolade\hackolade open --model="/data models/yelp-mongodb.hck.json"
 ```
 
-&nbsp;
-
 > [!NOTE]
 > If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: `"C:\Program Files\Hackolade\hackolade"` . The workaround, assuming:
 
-&nbsp;
-
 ![Windows Program Files](<lib/Windows Program Files.png>)\
 is to to use the 8.3 command `C:\PROGRA~1\Hackolade\hackolade`, as displayed above.
-
-&nbsp;
 
 ## obfusc
 
 The <u>obfusc</u> command lets you garble sensitive properties: business name, technical name, description, comments, enumeration. Use if you need to send a model for troubleshooting but don't want to disclose sensitive aspects of the model.
 
-&nbsp;
-
 Usage: `hackolade obfusc [--arguments]`
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:24%"><col style="width:7%"><col style="width:69%"></colgroup>
@@ -1063,41 +909,25 @@ Usage: `hackolade obfusc [--arguments]`
 </tbody>
 </table>
 
-&nbsp;
-
 \*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“) Path can be ignored if file is in local directory.
 
-&nbsp;
-
 Example:
-
-&nbsp;
 
 ```bat
 C:\PROGRA~1\Hackolade\hackolade obfusc --sourcemodel=masterdata --targetmodel=garbeledmasterdata
 ```
 
-&nbsp;
-
 > [!NOTE]
 > If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: `"C:\Program Files\Hackolade\hackolade"` . The workaround, assuming:
 
-&nbsp;
-
 ![Windows Program Files](<lib/Windows Program Files.png>)\
 is to to use the 8.3 command `C:\PROGRA~1\Hackolade\hackolade`, as displayed above.
-
-&nbsp;
 
 ## polyglotConvert
 
 The `polyglotConcert` command lets you convert a model (polyglot or physical target) to a polyglot model.
 
-&nbsp;
-
 Usage: `hackolade polyglotConvert [--arguments]`
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:23%"><col style="width:10%"><col style="width:67%"></colgroup>
@@ -1147,41 +977,25 @@ Usage: `hackolade polyglotConvert [--arguments]`
 </tbody>
 </table>
 
-&nbsp;
-
 \*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“) Path can be ignored if file is in local directory.
 
-&nbsp;
-
 Example:
-
-&nbsp;
 
 ```bat
 C:\PROGRA~1\Hackolade\hackolade polyglotConvert --model=yelp-mongodb.hck.json --polyglotmodel=yelp-polyglot.hck.json --polyglotDependence=dependentRelative --mergeWithExistingPolyglot=true --convertViews=true
 ```
 
-&nbsp;
-
 > [!NOTE]
 > If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: `"C:\Program Files\Hackolade\hackolade"` . The workaround, assuming:
 
-&nbsp;
-
 ![Windows Program Files](<lib/Windows Program Files.png>)\
 is to to use the 8.3 command `C:\PROGRA~1\Hackolade\hackolade`, as displayed above.
-
-&nbsp;
 
 ## polyglotDerive
 
 The `polyglotDerive` command lets you derive a model (polyglot or physical target) from a polyglot model.
 
-&nbsp;
-
 Usage: `hackolade polyglotDerive [--arguments]`
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:23%"><col style="width:10%"><col style="width:67%"></colgroup>
@@ -1261,41 +1075,25 @@ Usage: `hackolade polyglotDerive [--arguments]`
 </tbody>
 </table>
 
-&nbsp;
-
 \*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“) Path can be ignored if file is in local directory.
 
-&nbsp;
-
 Example:
-
-&nbsp;
 
 ```bat
 C:\PROGRA~1\Hackolade\hackolade polyglotDerive --target=mongodb --polyglotmodels=yelp-polyglot.hck.json --targetmodel=yelp-mongodb.hck.json
 ```
 
-&nbsp;
-
 > [!NOTE]
 > If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: `"C:\Program Files\Hackolade\hackolade"` . The workaround, assuming:
 
-&nbsp;
-
 ![Windows Program Files](<lib/Windows Program Files.png>)\
 is to to use the 8.3 command `C:\PROGRA~1\Hackolade\hackolade`, as displayed above.
-
-&nbsp;
 
 ## polyglotUpdate
 
 The `polyglotUpdate` command lets you update a target model for modifications made to the referenced polyglot models
 
-&nbsp;
-
 Usage: `hackolade polyglotUpdate [--arguments]`
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:23%"><col style="width:10%"><col style="width:67%"></colgroup>
@@ -1325,41 +1123,25 @@ Usage: `hackolade polyglotUpdate [--arguments]`
 </tbody>
 </table>
 
-&nbsp;
-
 \*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“) Path can be ignored if file is in local directory.
 
-&nbsp;
-
 Example:
-
-&nbsp;
 
 ```bat
 C:\PROGRA~1\Hackolade\hackolade polyglotUpdate --model=yelp-mongodb.hck.json
 ```
 
-&nbsp;
-
 > [!NOTE]
 > If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: `"C:\Program Files\Hackolade\hackolade"` . The workaround, assuming:
 
-&nbsp;
-
 ![Windows Program Files](<lib/Windows Program Files.png>)\
 is to to use the 8.3 command `C:\PROGRA~1\Hackolade\hackolade`, as displayed above.
-
-&nbsp;
 
 ## revEng
 
 The *`revEng`* command allows to trigger a reverse-engineering process of a database instance, as described in [this page](Reverseengineeranexistinginstanc.md), or script file.
 
-&nbsp;
-
 Usage: `hackolade revEng [--arguments]`
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:23%"><col style="width:10%"><col style="width:67%"></colgroup>
@@ -1514,37 +1296,23 @@ Usage: `hackolade revEng [--arguments]`
 </tbody>
 </table>
 
-&nbsp;
-
 \*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“) Path can be ignored if file is in local directory.
 
-&nbsp;
-
 MongoDB example:
-
-&nbsp;
 
 ```bat
 hackolade revEng --connectName=local --target=MONGODB --samplingMethod=abs --samplingValue=1000 
 --model=C:\Users\Public\Bitbucket\hackolade\schemas\MongoDB\yelp.json --includeEmpty=true --selectedObjects="yelp" --fieldOrder=keep
 ```
 
-&nbsp;
-
 DynamoDB example:
-
-&nbsp;
 
 ```bat
 "C:\Program Files\Hackolade\hackolade" revEng --connectName=local --target=DYNAMODB --samplingMethod=abs --samplingValue=1000 
 --model=C:\Users\Public\Bitbucket\hackolade\schemas\DynamoDB\entertainment.json --includeEmpty=false --selectedObjects="[Movies, Music]" --fieldOrder=alpha
 ```
 
-&nbsp;
-
 Couchbase example:
-
-&nbsp;
 
 ```bat
 "C:\Program Files\Hackolade\hackolade" revEng --connectName=local --target=COUCHBASE --samplingMethod=abs --samplingValue=2500 
@@ -1552,37 +1320,23 @@ Couchbase example:
 --documentKinds="travel-sample: type" --fieldOrder=keep
 ```
 
-&nbsp;
-
 Cosmos DB example:
-
-&nbsp;
 
 ```bat
 start /wait hackolade reveng --target=COSMOSDB-DOC --connectName=azure --model=travel.json --selectedObjects="travel" --documentKinds="travel:type"
 ```
 
-&nbsp;
-
 > [!NOTE]
 > If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: `"C:\Program Files\Hackolade\hackolade"` . The workaround, assuming:
 
-&nbsp;
-
 ![Windows Program Files](<lib/Windows Program Files.png>)\
 is to to use the 8.3 command `C:\PROGRA~1\Hackolade\hackolade`, as displayed above.
-
-&nbsp;
 
 ## revEngDataDictionary
 
 The `revEngDataDictionary` command lets you synchronize a previously published Hackolade data models from a Data Dictionary instance (currently Collibra only.)
 
-&nbsp;
-
 Usage: `hackolade revEngDataDictionary [--arguments]`
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:23%"><col style="width:10%"><col style="width:67%"></colgroup>
@@ -1657,41 +1411,25 @@ Usage: `hackolade revEngDataDictionary [--arguments]`
 </tbody>
 </table>
 
-&nbsp;
-
 \*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“) Path can be ignored if file is in local directory.
 
-&nbsp;
-
 Example:
-
-&nbsp;
 
 ```bat
 C:\PROGRA~1\Hackolade\hackolade revEngDataDictionary --target=MONGODB --connectName=Collibra_instance --dataDictionaryResource=Yelp --model=yelp
 ```
 
-&nbsp;
-
 > [!NOTE]
 > If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: `"C:\Program Files\Hackolade\hackolade"` . The workaround, assuming:
 
-&nbsp;
-
 ![Windows Program Files](<lib/Windows Program Files.png>)\
 is to to use the 8.3 command `C:\PROGRA~1\Hackolade\hackolade`, as displayed above.
-
-&nbsp;
 
 ## revEngDDL
 
 The *`revEngDDL`* command allows to trigger a reverse-engineering process of a Data Definition Language file from a database instance, as described in [this page](SQLDDL.md).
 
-&nbsp;
-
 Usage: `hackolade revEngDDL [--arguments]`
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:33%"><col style="width:8%"><col style="width:59%"></colgroup>
@@ -1761,21 +1499,13 @@ Usage: `hackolade revEngDDL [--arguments]`
 </tbody>
 </table>
 
-&nbsp;
-
 \*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“) Path can be ignored if file is in local directory.
-
-&nbsp;
 
 ## revEngDiagram
 
 The *`revEngDiagram`* command allows to trigger a reverse-engineering process of a model from a file created with another modeling tool: a [PowerDesigner file](PowerDesigner.md) for conceptual, logical or physical model (typically .cdm, .ldm or .pdm extension), a [MEGA](<https://bizzdesign.com/transformation-suite/hopex> "target=\"_blank\"") exchange file (.xmg extension), or files with [Mermaid ER diagram code](GenAI-createdMermaidERdiagram.md).(.mmd extension), or with [DBML syntax](GenAI-createdDBML.md) (.dbml extension).
 
-&nbsp;
-
 Usage: `hackolade revEngDiagram [--arguments]`
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:24%"><col style="width:10%"><col style="width:66%"></colgroup>
@@ -1820,15 +1550,9 @@ Usage: `hackolade revEngDiagram [--arguments]`
 </tbody>
 </table>
 
-&nbsp;
-
 \*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“) Path can be ignored if file is in local directory.
 
-&nbsp;
-
 Examples:
-
-&nbsp;
 
 ```bat
 start /wait hackolade revEngDiagram --source=PowerDesigner --file=MyLogicalDataModel.ldm --target=Polyglot
@@ -1840,17 +1564,11 @@ start /wait hackolade revEngDiagram --source=mega --file="Sales.xmg;DataTypes.xm
 start /wait hackolade revEngDiagram --source=mega --file=Sales.xmg --target=Db2-zOS
 ```
 
-&nbsp;
-
 ## revEngJSON
 
 The *`revEngJSON`* command allows to trigger a reverse-engineering process of a JSON document or JSON Schema file, as described in [this page](JSONdocument1.md).
 
-&nbsp;
-
 Usage: `hackolade revEngJSON [--arguments]`
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:24%"><col style="width:10%"><col style="width:66%"></colgroup>
@@ -1920,21 +1638,13 @@ Usage: `hackolade revEngJSON [--arguments]`
 </tbody>
 </table>
 
-&nbsp;
-
 \*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“) Path can be ignored if file is in local directory.
-
-&nbsp;
 
 ## revEngYAML
 
 The *`revEngYAML`* command allows to trigger a reverse-engineering process of a YAML document file, as described in [this page](JSONdocument1.md).
 
-&nbsp;
-
 Usage: `hackolade revEngJSON [--arguments]`
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:24%"><col style="width:10%"><col style="width:66%"></colgroup>
@@ -2004,26 +1714,16 @@ Usage: `hackolade revEngJSON [--arguments]`
 </tbody>
 </table>
 
-&nbsp;
-
 \*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“) Path can be ignored if file is in local directory.
-
-&nbsp;
 
 ## revEngXLSX
 
 The *`revEngXLSX`* command allows to import an Excel template into a data model.
 
-&nbsp;
-
 > [!WARNING]
 > When importing into an existing model, values will be over written by the values in the Excel file.
 
-&nbsp;
-
 Usage: `hackolade revEngXLSX [--arguments]`
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:27%"><col style="width:10%"><col style="width:63%"></colgroup>
@@ -2053,21 +1753,13 @@ Usage: `hackolade revEngXLSX [--arguments]`
 </tbody>
 </table>
 
-&nbsp;
-
 \*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“) Path can be ignored if file is in local directory.
-
-&nbsp;
 
 ## revEngXSD
 
 The *`revEngXSD`* command allows to trigger a reverse-engineering process of an XMS schema (XSD).
 
-&nbsp;
-
 Usage: `hackolade revEngXSD [--arguments]`
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:27%"><col style="width:10%"><col style="width:63%"></colgroup>
@@ -2127,21 +1819,13 @@ Usage: `hackolade revEngXSD [--arguments]`
 </tbody>
 </table>
 
-&nbsp;
-
 \*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“) Path can be ignored if file is in local directory.
-
-&nbsp;
 
 ## obfusc
 
 The `obfusc` command lets you garble sensitive properties: business name, technical name, description, comments, enumeration. Use if you need to send a model for troubleshooting but don't want to disclose sensitive aspects of the model.
 
-&nbsp;
-
 Usage: `hackolade obfusc [--arguments]`
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:23%"><col style="width:10%"><col style="width:67%"></colgroup>
@@ -2171,61 +1855,37 @@ Usage: `hackolade obfusc [--arguments]`
 </tbody>
 </table>
 
-&nbsp;
-
 \*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“) Path can be ignored if file is in local directory.
 
-&nbsp;
-
 Example:
-
-&nbsp;
 
 ```bat
 C:\PROGRA~1\Hackolade\hackolade obfusc --sourcemodel=masterdata --targetmodel=garbeledmasterdata
 ```
 
-&nbsp;
-
 > [!NOTE]
 > If the path contains spaces, Windows generates an error message when running the CLI from another directory than the one where the Hackolade executable was installed, even if using quotes, e.g.: `"C:\Program Files\Hackolade\hackolade"` . The workaround, assuming:
 
-&nbsp;
-
 ![Windows Program Files](<lib/Windows Program Files.png>)\
 is to to use the 8.3 command `C:\PROGRA~1\Hackolade\hackolade`, as displayed above.
-
-&nbsp;
 
 ## help
 
 The `--`*`help`* argument displays the version number of Hackolade being invoked.
 
-&nbsp;
-
 Usage: `start /wait hackolade --help`
-
-&nbsp;
 
 ## performance
 
 The *`--performance`* argument records timestamps of application startup steps for performance troubleshooting. Log can be found in file HackoladePerformance.log in directory `C:\Users\%username%\AppData\Roaming\HackoladeLogs` (Windows) or folder `Users/$USER/Documents/HackoladeLogs` (Mac/Linux)
 
-&nbsp;
-
 Usage: `start /wait hackolade --performance`
-
-&nbsp;
 
 ## version
 
 The `--`*`version`* argument displays the version number of Hackolade being invoked.
 
-&nbsp;
-
 Usage: `start /wait hackolade --version`
-
-&nbsp;
 
 ## CLI error message
 

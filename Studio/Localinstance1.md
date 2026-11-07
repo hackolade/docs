@@ -7,19 +7,11 @@ image: lib/Cosmos DB connection settings dialog - local.png
 
 In addition to the Azure Cosmos DB web service, Microsoft provides a downloadable version of Cosmos DB that can be run locally. This edition of Cosmos DB lets you write applications without accessing the actual Azure Cosmos DB web service. Instead, the database is self-contained on your computer.
 
-&nbsp;
-
 This local version of Cosmos DB can help you save on provisional throughput, data storage, and data transfer fees. In addition, you do not need to have an Internet connection while your are developing your application.
-
-&nbsp;
 
 Assuming that have downloaded from [https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator](<https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator> "target=\"_blank\""), to perform the reverse-engineering of the local Cosmos DB instance, you need to create a connection setting, filling the fields in this dialog:
 
-&nbsp;
-
 ![Cosmos DB connection settings dialog - local](<lib/Cosmos DB connection settings dialog - local.png>)
-
-&nbsp;
 
 with these parameters:\
 **Name:** local\

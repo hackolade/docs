@@ -14,18 +14,12 @@ You have different options for opening a local repository in Hackolade Studio:
 - open the repository context, select "This computer" as source, and click the "Browse" button;
 - click the "Open local repository" button in the main pane.
 
-&nbsp;
-
 ![Workgroup open recent](<lib/Workgroup open recent.png>)\
 Hackolade Studio remembers previously opened repositories. So you have additional options if you had previously opened that repository:
 
 - choose Repository > Open Recent Repository in the the top menu;
 - open the Repository Context, select "This computer" as source, and open the "Repository" drop-down.
 
-&nbsp;
-
 Note that Hackolade Studio automatically reopens the last repository by default when starting the application. You may disable this behavior in Tools > Options > Repository.
-
-&nbsp;
 
 ![Workgroup tools options repository](<lib/Workgroup tools options repository.png>)

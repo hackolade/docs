@@ -8,42 +8,24 @@ image: lib/Collibra create domain.png
 > [!IMPORTANT]
 > Collibra started to provide its Data Intelligence platform in 3 packages: Standard, Premier, and Ultimate. Our integration with Collibra, was historically developed based on functionality that was previously included by default. Now, a "Federated Operating model" is required but only as part of the "Ultimate" package. The Federated Operating model can be procured for an add-on price, even with the Standard and Premier packages. Please contact your Collibra sales account executive.
 
-&nbsp;
-
 For our standard Collibra integration, we must be able to create [scopes](<https://productresources.collibra.com/docs/collibra/latest/Content/Settings/OperatingModel/Scopes/to_scopes.htm> "target=\"_blank\"") and scope assignments which are required in order to support the advanced integration necessary for graph database, REST APIs, nested hierarchies, and polymorphism.
 
-&nbsp;
-
 If you do not have the Ultimate package and did not get the Federated Operating model add-on, then starting with v8.3.6, we provide an integration, albeit with some graceful degradation, some limitations, and some required manual configuration described [in this page](Non-Ultimateeditionintegration.md).
-
-&nbsp;
 
 ## Ultimate Edition integration
 
 One of the primary challenges severely constraining organizations is to make business sense of technical data structures in applications and databases. This complicates the ability of organizations to identify critical data elements and bring them under governance.
 
-&nbsp;
-
 The integration of data modeling with governance tools and processes enables solving this problem at the source, i.e. where data structures are designed to create schemas and their technical metadata.
 
-&nbsp;
-
 [Collibra Data Dictionary Integration](<https://youtu.be/6UA1Ys_OlMY> "video")
-
-&nbsp;
 
 > [!IMPORTANT]
 > The Collibra integration is an add-on feature which requires a specific license key which can be purchased from us [here](mailto:support@hackolade.com?subject=Collibra%20integration%20license).
 
-&nbsp;
-
 [Collibra](<https://www.collibra.com/> "target=\"_blank\"") is one of the leaders in the space of data governance and metadata management solutions. Metadata management is a core aspect of an organization’s ability to manage its data and information assets. The term “metadata” describes the various facets of an information asset that can improve its usability throughout its life cycle. Metadata is used as a reference for business-oriented and technical projects, and lays the foundations for describing, inventorying and understanding data for multiple use cases.
 
-&nbsp;
-
 Hackolade has partnered with Collibra to provide an officially supported integration with Collibra's Data Dictionary, using its standard [Core, Import, and output module APIs](<https://developer.collibra.com/rest/#apis> "target=\"_blank\""). With this integration, users can easily publish into Collibra domains, and keep synchronized, their Hackolade data models for any of the many targets supported by Hackolade. Even the schema definitions of REST APIs documented in Swagger or OpenAPI.
-
-&nbsp;
 
 The process automatically:
 
@@ -51,20 +33,12 @@ The process automatically:
 - creates the necessary custom scopes, attributeTypes and assignments to support the granularity of Hackolade features
 - then creates and keeps in sync assets for schemas, tables, views, columns, models, entities, attributes, and foreign key relationships.
 
-&nbsp;
-
 The integration specifically handles complex data types, hierarchical structures, and polymorphism found in modern databases, JSON, Avro, Parquet, Protobuf, etc... Custom properties defined for a plugin are also published as custom attributeTypes in Collibra.
-
-&nbsp;
 
 Hackolade Studio data models for physical targets are published to Physical Data Dictionaries in the form of schemas/tables/columns assets in Collibra, whereas since v7.3.1 of Hackolade Studio, Polyglot models are published to Logical Data Dictionaries in the form of models/entities/attributes assets in Collibra.\
 With v7.6.1 of Hackolade Studio, we added publishing of lineage relations between logical Polyglot models and their derived physical targets for all their assets (model/schema, entity/table, attribute/column)
 
-&nbsp;
-
 Hackolade Studio models published to Collibra store and exchange Collibra asset identifiers for robust traceability, change tracking, and avoiding duplicates. With the support of glossaries, each model object (model, entity, attribute, schema, table, column) can be bound to one or more glossary terms from one or more glossaries. The binding operation stores the unique Collibra identifier to that the loop is closed when publishing the model back to Collibra. When publishing polyglot/logical models and physical models to the respective layers in Collibra, the publishing mechanism also builds the lineage in Collibra.
-
-&nbsp;
 
 ## Publishing process flow
 
@@ -72,19 +46,13 @@ To publish a Hackolade data model to your Collibra Data Dictionary, you choose T
 The diagram below describes the integration flow:\
 ![Collibra integration flow](<lib/Collibra integration flow.png>)
 
-&nbsp;
-
 ### Connect to your Collibra instance
 
 See mode details in [this page](Connectionandauthentication.md).
 
-&nbsp;
-
 ### Check for the proper configuration
 
 To ensure successful processing of the Hackolade model information, the system uses the [Core API](<https://developer.collibra.com/rest/rest-core-api/> "target=\"_blank\"") to check that the Collibra setup is OK, and if not, asks the user for permission to create the necessary setup.
-
-&nbsp;
 
 The system will:\
 1\) confirm that the necessary [out-of-the-box assetTypes](<https://productresources.collibra.com/docs/collibra/latest/Content/Assets/AssetTypes/ref_ootb-asset-types.htm> "target=\"_blank\"") exist: model, entity, attribute, schema, table, database view, column, foreign key, mapping specification\
@@ -99,78 +67,52 @@ The system will:\
 - custom characteristics for schema, table, columns, and database views
 - custom relationType "Column contains Column" to allow hierarchical view of nested objects, arrays, and polymorphism
 
-&nbsp;
-
 If the expected configuration cannot be found in Collibra, the user is prompted for confirmation that the setup should be automatically carried out in the Collibra instance.\
 ![Collibra missing config warning](<lib/Collibra missing config warning.png>)
-
-&nbsp;
 
 ### Fetch existing Communities and Domains
 
 If the configuration is correct, the application uses the Core API to retrieve the existing Communities and Domains and display them so the user can select where the Hackolade Data Model should be loaded. If the domain does not exist, it should be created first. It is recommended to create a new domain with type "Physical Data Dictionary" for physical models of Hackolade Studio, and "Logical Data Dictionary" for polyglot models.\
 ![Collibra create domain](<lib/Collibra create domain.png>)
 
-&nbsp;
-
 ### Select the target domain
 
 For performance reasons, we do not display all the communities and domains. Instead you must expand the tree and fetch the domains for the relevant community. Once the domains are displayed in the box below, you can select the one where the Hackolade data model should be published:\
 ![Collibra resource selection](<lib/Collibra resource selection.png>)
-
-&nbsp;
 
 ### Select the data model objects to be loaded
 
 The user then selects the entities to be loaded to the selected Collibra domains:\
 ![Collibra object selection](<lib/Collibra object selection.png>)
 
-&nbsp;
-
 ### Publish data model to Collibra
 
 The application uses the [Import API](<https://developer.collibra.com/rest/rest-import-api/> "target=\"_blank\"") to bulk load the selected objects metadata and Entity-Relationship picture into the selected Collibra domain. The system leverages the [Synchronization API](<https://collibra-developer-portal.s3-eu-west-1.amazonaws.com/docs/import/Default.htm#API/ImportAPIv2/co_synchronization-api.htm> "target=\"_blank\"") to keep data in Collibra up-to-date with model evolutions when invoking the integration repeatedly. The synchronization is based on the internal model UUID.
 
-&nbsp;
-
 > [!IMPORTANT]
 > According the Collibra [documentation](<https://collibra-developer-portal.s3-eu-west-1.amazonaws.com/docs/import/Default.htm#API/ImportAPIv2/to_import-commands.htm#Resource> "target=\"_blank\""), depending on the resource type, the Import API performs one of two operations: `SET/REPLACE` or `MERGE.` For attributes, the operation is `SET/REPLACE`. As a result, "if the resource exists with properties other than the ones defined in the input (i.e.; the Hackolade data model), the resource is replaced with the one provided in the input." Meaning that edits made in Collibra risk disappearing with subsequent publications from Hackolade. With the ability to reverse-engineer from Collibra into Hackolade, 2 approaches are possible:
-
-&nbsp;
 
 1\) reverse-engineer from Collibra into the master Hackolade data model, and let the conflict resolution kick-in, letting the user decide whether to merge the information from Collibra.\
 ![Conflict resolution](<lib/Conflict resolution.png>)\
 Once the information is merged into the hackolade model, the whole model can be published to Collibra again.\
 2\) a user might want to have more control over the granularity of what gets merged and what does not. There is the possibility to reverse-engineer into an empty model, save it, then do a [Model Compare & Merge](Compareandmergemodels.md) with the master Hackolade model, followed by the publishing back to Collibra of the merged model.
 
-&nbsp;
-
 ## View data model in Collibra console
 
 The data model information can immediately be viewed inside Collibra:\
 ![Collibra view data models](<lib/Collibra view data models.png>)
 
-&nbsp;
-
 In order to view nested objects in the above screen, it is suggested to enable multipath hierarchy for the relation types: schema contains table, table contains column, and column contains column:\
 ![Collibra configure hierarchy](<lib/Collibra configure hierarchy.png>)
-
-&nbsp;
 
 You may also display the Full Name field to view the nesting path in dot.notation, as well as the hackolade Data Type:\
 ![Collibra fields config](<lib/Collibra fields config.png>)
 
-&nbsp;
-
 Users will notice that the data types of the specific target technology:\
 ![Collibra data type view](<lib/Collibra data type view.png>)
 
-&nbsp;
-
 The Entity-Relationship Diagram image can also be viewed as a PNG file:\
 ![Collibra view ERD file](<lib/Collibra view ERD file.png>)
-
-&nbsp;
 
 ## Reverse-engineer a Collibra Data Dictionary
 
@@ -179,15 +121,11 @@ With v5.2.1, we introduced the possibility to reverse-engineer a Collibra physic
 - either into an empty model you wish to create,
 - or into an existing model, possibly the one used to originally publish to Collibra. This is particularly handy if maintenance occurs in Collibra for models created in Hackolade Studio. Refer to the important note above in the section "Publish data model to Collibra".
 
-&nbsp;
-
 ## Publish lineage relations
 
 With v7.6.1 of Hackolade Studio, it is now possible to publish lineage relations between logical Polyglot models and their derived physical targets for all their assets (model/schema, entity/table, attribute/column)\
 This feature is in support of the [Guided Stewardship operating model](<https://productresources.collibra.com/docs/collibra/latest/Content/Catalog/GuidedStewardship/OperatingModel/to_catalog-om.htm> "target=\"_blank\"") of Collibra: But it is only possible Guided Stewardship is enabled on your instance as part of the Ultimate licensing tier of Collibra.\
 ![Collibra Guided Stewardship operating model](<lib/Collibra Guided Stewardship operating model.png>)
-
-&nbsp;
 
 This process requires the orchestration of several successive operations:
 
@@ -196,155 +134,91 @@ This process requires the orchestration of several successive operations:
 - open the derived model(s) in Hackolade Studio and make sure to refresh the references to parent Polyglot model(s), which will ensure that the links between objects are persisted in the derived model(s);
 - publish the derived model(s) to Collibra, generally into a Collibra Physical Data Dictionary (unless the derived model is itself a Polyglot model, in which case it would be published to a Logical Data Dictionary.)
 
-&nbsp;
-
 In Collibra, it is then possible to display the lineage relations automatically created by Hackolade Studio during publishing.\
 ![Collibra lineage](<lib/Collibra lineage.png>)
 
-&nbsp;
-
 If your instance of your Collibra Data Intelligence Platform is not of the the Ultimate type of subscription, you may receive messages like this below.
-
-&nbsp;
 
 Without Guided Stewardship on the Collibra instance, it is not possible to publish Hackolade Studio's polyglot models:\
 ![Collibra Guided Stewardship missing](<lib/Collibra Guided Stewardship missing.png>)
 
-&nbsp;
-
 And without Guided Stewardship on the Collibra instance, it is not possible to publish lineage from physical models to polyglot models (since polyglot models cannot be published to Collibra...):\
 ![Collibra Guided Stewardship limited lineage](<lib/Collibra Guided Stewardship limited lineage.png>)
-
-&nbsp;
 
 ## Custom Asset Types
 
 Collibra comes with [Out-of-the-Box (OOTB) asset types](<https://productresources.collibra.com/docs/collibra/latest/Content/Assets/AssetTypes/ref_ootb-asset-types.htm> "target=\"_blank\""). Asset types are fundamental building blocks in Collibra. They act as templates to define the structure and behavior of your assets. When Hackolade Studio publishes data models to Collibra, there is a default mapping between our model objects and Collibra assetTypeIDs.
 
-&nbsp;
-
 It is possible to [create custom asset types](<https://productresources.collibra.com/docs/collibra/latest/Content/Assets/Characteristics/Attributes/AttributeTypes/ta_create-attribute-type.htm#Createanattributetype> "target=\"_blank\"") in Collibra. If you have done so, to use other asset types than the OOTB asset types that we map to by default, then since v8.4.4 of Hackolade Studio, it is possible customize the mapping. This mapping is performed in the connection settings box, for each connection. Doing this by connection allows you to maintain separate mapping for different Collibra instances you might be connecting to.
 
-&nbsp;
-
 Warning: when using custom mappings in Hackolade Studio, it is essential to remove any previously forward-engineered models from Collibra if changes have been made to the Asset type mapping before proceeding to avoid conflicts and ensure a smooth forward-engineering experience.
-
-&nbsp;
 
 Select the existing connection for which you want to customize the mapping, then click on the button Customize mapping:\
 ![Collibra custom asset type connections](<lib/Collibra custom asset type connections.png>)
 
-&nbsp;
-
 The dialog lists all the OOTB asset types with their default mapping, plus on the right side, the possibility to enter custom asset type IDs in Collibra. Customization may not require that all asset types be custom. You may have zero, one, a few, or all, depending on the level of customization in your Collibra instance.
-
-&nbsp;
 
 All that is required is to paste the ID for the custom asset type then click the button to verify. If the assetTypeID is correct, its name will be retrieved and displayed.\
 ![Collibra custom asset type mapping](<lib/Collibra custom asset type mapping.png>)
 
-&nbsp;
-
 If you paste an assetTypeID that cannot be validated, an error appears, and you will not be allowed to save the mapping:\
 ![Collibra custom asset type wrong mapping](<lib/Collibra custom asset type wrong mapping.png>)
-
-&nbsp;
 
 To find the assetTypeID of the custom Collibra asset type to be pasted in the above screen, you must go in Collibra to Settings > Operating Model > Asset Types. Then for the asset type that you wish to map to from Hackolade Studio, you must copy the Resource ID. If you don't see the Resource ID column, you can easily display it by clicking the Edit Fields button then selecting the Resource ID field.\
 ![Collibra custom asset type ID](<lib/Collibra custom asset type ID.png>)
 
-&nbsp;
-
 It is possible to export the mapping to a JSON file, so the mapping can be shared with and imported by other users, or so that it can be copied from one connection to others. It is also possible to clear all the custom asset type mappings for a given connection.
-
-&nbsp;
 
 Note that you may have to update the hierarchy to reflect the custom asset type names:\
 ![Collibra custom asset type hierarchy](<lib/Collibra custom asset type hierarchy.png>)
 
-&nbsp;
-
 ## Attribute-level lineage strategy
 
 When publishing a logical (Polyglot) model and its derived physical model, Hackolade Studio creates lineage between logical attributes and physical columns.
-
-&nbsp;
 
 Two strategies are available:
 
 - Mapping specification–based lineage (default setup): uses Mapping Specification assets and complex relation types in Collibra. This is the default behavior and allows future enrichment with transformation metadata.
 - Direct attribute-to-column lineage: uses standard Collibra relation types (simple relations). This approach simplifies the lineage structure and reduces conceptual complexity in lineage diagrams.
 
-&nbsp;
-
 Changing the lineage strategy does not retroactively modify existing lineage already published in Collibra.
 
-&nbsp;
-
 Attribute-level lineage strategy is defined per connection, allowing different strategies depending on the target Collibra instance. Open the connection settings and click Customize mapping to access the Collibra mapping customization dialog.
-
-&nbsp;
 
 ## Custom types scope assignment
 
 When publishing models, Hackolade Studio may create custom asset types, attribute types, and complex relation types in Collibra.
-
-&nbsp;
 
 You can control how these custom types are assigned to a scope in Collibra:
 
 - Automatic assignment to Hackolade scope (default setup): creates (if needed) a dedicated Hackolade Studio scope and automatically assigns the custom types to it. A Collibra administrator must still assign this scope to the appropriate layouts, communities, or domains to make the configuration visible and applicable.
 - Manual scope assignment in Collibra: creates the custom types without assigning them to a predefined scope. Scope configuration must be performed manually in Collibra to ensure that created custom types are visible and applicable where needed.
 
-&nbsp;
-
 Customer types scope assignment is defined per connection, allowing different strategies depending on the target Collibra instance. Open the connection settings and click Customize mapping to access the Collibra mapping customization dialog.
-
-&nbsp;
 
 > [!NOTE]
 > In Collibra, a configuration element can be assigned to only one scope. Changing the scope assignment strategy after custom types have already been created requires manual adjustments in Collibra:
 
-&nbsp;
-
 - If you switch from Automatic assignment to Manual scope assignment, you must manually reassign the custom types to the desired scope in Collibra. The Hackolade Studio scope of existing custom types in the Collibra instance will not be removed automatically.
 - If you switch back from Manual scope assignment to Automatic assignment to the dedicated Hackolade Studio scope, any existing scope previously assigned to the custom types must first be removed manually in Collibra. Otherwise, the custom types will end up assigned to multiple scopes, which is not supported in the Collibra.
 
-&nbsp;
-
 Changing the scope assignment strategy does not clean, replace, or remove existing scope assignments.
-
-&nbsp;
 
 ## Publish business terms bindings
 
 When you publish a Hackolade Studio data model to Collibra, it is possible also for to publish the bindings between model objects and business terms originating from the Collibra glossaries. You must follow instructions in [this page](Glossariesofbusinessterms.md) first, making sure to enable the option **Publish term bindings** to Collibra.
 
-&nbsp;
-
 Each published container, entity, attribute, view, or relationship that is bound to such a term receives the standard Collibra relation **Business Asset represents Data Asset**. The Business Term must already exist in that Collibra instance. Hackolade Studio does not create or update glossary term assets.
-
-&nbsp;
 
 If you unbind a term and publish the model again, Hackolade Studio removes that relation in Collibra so the dictionary matches the current bindings.
 
-&nbsp;
-
 A model can mix glossaries. Only the glossaries with the checkbox enabled take part in this publication. An internal vocabulary can stay assigned for modeling, without being sent to Collibra.
 
-&nbsp;
-
 After publishing to Collibra, it is possible to search for a business term in Collibra, and find all the assets in Collibra that may have been published from Hackolade Studio models.
-
-&nbsp;
 
 > [!IMPORTANT]
 > The identifier of each published term must be a Collibra asset UUID. If the identifier is not a valid Collibra asset ID, then Hackolade Studio stops the publication and displays the following error:
 
-&nbsp;
-
 .![Collibra - missing business term asset](<lib/Collibra - missing business term asset.png>)
-
-&nbsp;
 
 The page [Glossaries of business terms](Glossariesofbusinessterms.md) describes how to assign the glossary file, how to bind terms to modeling objects, and how to enable the publishing of term bindings to Collibra.

@@ -6,33 +6,21 @@ seoTitle: Configure CORS headers for self-hosted Git hubs
 
 This page is only relevant for you for self-hosted repository hub: GitHub Server, GitLab Server or Bitbucket Data Center, and to let users open Hackolade data models from that repository hub using the Hackolade browser application: [https://studio.hackolade.com](<https://studio.hackolade.com> "target=\"_blank\""). You may skip it if it is not the case.
 
-&nbsp;
-
 ## Problem
 
 By default, a web browser (e.g. Chrome, Edge) does not allow a script loaded from an origin to send HTTP requests to another origin. That security mechanism is known as the [same-origin policy](<https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy> "target=\"_blank\"").
 
-&nbsp;
-
 The same-origin policy of the browser will prevent the Hackolade Studio browser application (which is loaded from [https://studio.hackolade.com](<https://studio.hackolade.com> "target=\"_blank\"")) from querying your self-hosted repository hub (which is hosted at a different origin, if self-hosted.) As a consequence, the application will throw an error when a user tries to connect to your repository hub:
 
-&nbsp;
-
 *The connection failed because \<your self-hosted repository hub> rejected the cross-origin request from https://studio.hackolade.com.*
-
-&nbsp;
 
 ## Solution
 
 To let the Hackolade Studio browser application contact your self-hosted repository hub, you need to enable [cross-origin resource sharing (CORS)](<https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS> "target=\"_blank\""). This comes down to configuring the following HTTP headers for your repository hub.
 
-&nbsp;
-
 [*Access-Control-Allow-Origin*](<https://developer.mozilla.org/fr/docs/Web/HTTP/Headers/Access-Control-Allow-Origin> "target=\"_blank\"")*: https://studio.hackolade.com*\
 [*Access-Control-Allow-Methods*](<https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Methods> "target=\"_blank\"")*: \**\
 [*Access-Control-Allow-Headers*](<https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Headers> "target=\"_blank\"")*: \**
-
-&nbsp;
 
 The location where you need to configure those headers depends on your infrastructure.
 

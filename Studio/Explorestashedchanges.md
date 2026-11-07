@@ -7,30 +7,20 @@ image: lib/Workgroup explore stashes.png
 
 When you open a local repository and choose Explore repository > Stashes in the left menu, you get a table listing all the uncommitted changes you might have stashed for later reuse.
 
-&nbsp;
-
 Each stash can be reviewed, applied back to uncommitted changes, or dropped.\
 ![Workgroup explore stashes](<lib/Workgroup explore stashes.png>)\
 In the example above, the user has already stashed 2 different change sets, with their respective creation date and description. Clicking on a stash in the table opens a bottom pane that provides more details and actions. You can for example review the changes that are contained in the selected stash.
-
-&nbsp;
 
 ## Apply a stash
 
 You can apply the changes in a stash. When doing so, you may chose between deleting the stash after apply (default), or keeping it for later reuse (e.g. on another branch).
 
-&nbsp;
-
 ![Workgroup explore stashes without conflict](<lib/Workgroup explore stashes without conflict.png>)
-
-&nbsp;
 
 ## Unstash
 
 When you don't need a stash anymore, you can drop it.\
 ![Workgroup explore stashes and drop](<lib/Workgroup explore stashes and drop.png>)
-
-&nbsp;
 
 ## Resolve conflicts
 

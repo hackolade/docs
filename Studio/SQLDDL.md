@@ -7,15 +7,9 @@ image: lib/Reverse-Engineering -- DDL select file.png
 
 Migrating from relational databases to NoSQL requires a mind shift, and Hackolade can help in the migration of the schema from a relational model to a model combining embedding and referencing, so you can leverage the power, performance, and flexibility of NoSQL.
 
-&nbsp;
-
 For more information on NoSQL document schema design, you may want to read this 3-part [blog](<http://blog.mongodb.org/post/87200945828/6-rules-of-thumb-for-mongodb-schema-design-part-1> "target=\"_blank\""). Then use Hackolade to facilitate the migration...
 
-&nbsp;
-
 The table below summarizes denormalization strategies and best practices:
-
-&nbsp;
 
 <table>
 <colgroup><col style="width:41%"><col style="width:59%"></colgroup>
@@ -65,8 +59,6 @@ The table below summarizes denormalization strategies and best practices:
 </tbody>
 </table>
 
-&nbsp;
-
 From the blog referenced above, here are some “rules of thumb” to guide you through these innumerable (but not infinite) choices:
 
 1. think in terms of queries, updates, and data representation, rather than in terms of storage. Data access patterns (instead of 3NF) drives you data model
@@ -76,62 +68,36 @@ From the blog referenced above, here are some “rules of thumb” to guide you 
 5. don't be afraid of application-level joins (with proper indexing)
 6. consider the write/read ratio when denormalizing. A field that will mostly be read and only seldom updated is a good candidate for denormalization.
 
-&nbsp;
-
 ## Reverse-engineer a Data Definition Language file (DDL)
 
 Data Definition Language (DDL) is a vocabulary used to define data structures in SQL databases. These statements are used to create, alter, or drop data structures in an SQL database instance.
 
-&nbsp;
-
 If you generate a DDL from Oracle, Microsoft SQL Server, MariaDB, MySQL, PostgreSQL, Snowflake, Hadoop Hive, etc., you can then read it with Hackolade and generate a model of the schema.
-
-&nbsp;
 
 > [!NOTE]
 > To speed up import, it is highly recommended to create a pure DDL, i.e. without any data, rather than a DML (Data Manipulation Language.)
 
-&nbsp;
-
 Choose Tools > Reverse-Engineering > Data Definition Language file:\
 ![Reverse-Engineering -- DDL menu](<lib/Reverse-Engineering -- DDL menu.png>)
 
-&nbsp;
-
 Then choose the source database (as each vendor has it's own implementation of the DDL syntax). The structure of a DDL can be imported either as an entity in the Entity Relationship Diagram, or alternatively as a model definition so it could be re-used in the model:
-
-&nbsp;
 
 ![Reverse-Engineering -- DDL select file](<lib/Reverse-Engineering -- DDL select file.png>)
 
-&nbsp;
-
 and select the file from your file system.
-
-&nbsp;
 
 If you wish to force the destination of the reverse-engineering operation, you may specify the container in which the entities will be inserted.
 
-&nbsp;
-
 Hackolade currently supports the following SQL dialects: Oracle, MariaDB, MySQL, SQL Server, DB2, PostgreSQL, Informix, Redshift, Snowflake, and Teradata.
-
-&nbsp;
 
 When you click OK, Hackolade will read the DDL file and generate the schema model, for example:\
 ![Reverse-engineering -- Northwind Oracle](<lib/Reverse-engineering -- Northwind Oracle.png>)
-
-&nbsp;
 
 ## Suggest denormalization
 
 You should save the resulting model as a base, for example v0. Then it is suggested you save it again as v1 and work with the denormalization function to make v1 evolve towards a denormalized model.
 
-&nbsp;
-
 The user needs to have a fairly good idea of where he wants to go with the schema design, and use Hackolade to facilitate the work. For example, with the Northwind database shown above, in a NoSQL model, one would want to merge the tables 'orders' and 'order details' while embedding some data from the master tables around.
-
-&nbsp;
 
 ![Suggest denormalization -- select tables](<lib/Suggest denormalization -- select tables.png>)\
 The successive steps could include:\
@@ -141,18 +107,10 @@ The successive steps could include:\
 4\. Embed as an array of sub-documents into 'order': order details\
 5\. Delete 'order details'
 
-&nbsp;
-
 ![Reverse-Engineering - denormalization](<lib/Reverse-Engineering - denormalization.png>)
-
-&nbsp;
 
 As a subsequent step, the modeler may want to denormalize products information into the order detail lines by embedding product sub-documents in the child, the deleting the unnecessary fields. This time, as a products master collection is justified as its own entity, it should not be deleted.
 
-&nbsp;
-
 ![Reverse-Engineering - denomalization step 2](<lib/Reverse-Engineering - denomalization step 2.png>)
-
-&nbsp;
 
 But denormalization, depending on how you want to access data to optimize performance, may also include 2-way referencing, or 2-way embedding.

@@ -7,19 +7,11 @@ image: lib/Generate documentation - object selection.png
 
 In the previous tutorial, we reviewed how to export or forward-engineer artifacts from your data model. By the end of this tutorial, you will have learned how to generate documentation and pictures for your data model.
 
-&nbsp;
-
 [Hackolade Tutorial - Part 10: Generate documentation and pictures](<https://youtu.be/11hK9WH773c> "video")
-
-&nbsp;
 
 Summary slides can be found [here](<https://www.slideshare.net/PascalDesmarets1/hackolade-tutorial-part-10-generate-documentation-and-picturespdf> "target=\"_blank\"").
 
-&nbsp;
-
 Arguably, documentation and pictures of diagrams are also artifacts. The difference is that forward-engineered artifacts are generally "consumable" by machines, whereas documentation and pictures are clearly for humans. Admittedly, the nuance is subtle and non-exclusive, and the separation in the menu is historical...
-
-&nbsp;
 
 ## Generate documentation
 
@@ -29,18 +21,12 @@ Documentation for your data models can be generated in 3 formats: HTML, Markdown
 - Markdown documentation is particularly handy if you plan to post it on GitHub or other repository operators. While the main markdown file is unique per documentation generation, a major difference with HTML and PDF, is that pictures are extracted and placed in a subdirectory bearing the same name as the documentation file. Note also, that it is easy to render Markdown documentation, there are many free tools available in different languages, for example [Docsify-This](<https://docsify-this.net/#/> "target=\"_blank\"") or [MKDocs](<https://www.mkdocs.org/> "target=\"_blank\""). See [this example](<https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hackolade/HCK-docs-markdown/e73d25c0fec59e7e2c21ee906f8a6d34071e03e7/Yelp&homepage=Yelp%20Challenge%20dataset%20documentation.md&sidebar=true#/> "target=\"_blank\"").
 - PDF documentation is also a single file, but with less flexibility and navigation capabilities than the HTML file.
 
-&nbsp;
-
 Documentation can quickly grow to a very large size, so it is recommended to use the following controls to adjust it to your needs:
-
-&nbsp;
 
 ### Parameters
 
 Parameters are maintained in Tools > Options > Documentation to select the segments and behavior. .\
 ![Tools - Options - Documentation](<lib/Tools - Options - Documentation.png>)
-
-&nbsp;
 
 ### Selection
 
@@ -48,11 +34,7 @@ Each time you generate documentation for a data model, you will be prompted to s
 ![Generate documentation - object selection](<lib/Generate documentation - object selection.png>)\
 You may deselect groups of objects or individual objects.
 
-&nbsp;
-
 Documentation generation is accessible either from the GUI application, or from the [Command-Line Interface](CommandLineInterface.md), whether directly or running in [Docker containers](<https://github.com/hackolade/docker/tree/main/Studio> "target=\"_blank\"").
-
-&nbsp;
 
 ## Print diagrams
 
@@ -67,10 +49,6 @@ You may want to generate PNG or PDF files for your Entity-Relationship Diagrams 
 - fit to page: the output will be automatically zoomed in or out to fit on a single page of the selected size and layout
 - business or technical names: if naming conventions are enabled
 
-&nbsp;
-
 ![Tutorial - Print diagram](<lib/Tutorial - Print diagram.png>)
-
-&nbsp;
 
 In this tutorial, we reviewed how to generate documentation and pictures for your data model. In the next tutorial, we will cover how to master data models for property graph databases.

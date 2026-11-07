@@ -7,76 +7,44 @@ image: lib/Metadata-as-Code infinity loop.png
 
 At Hackolade, we're advocates of [Metadata-as-Code](<https://hackolade.com/metadata-as-code.html> "target=\"_blank\"").
 
-&nbsp;
-
 This strategy has a business purpose to promote a shared understanding of meaning and context for data structures across business users and technical users, through the synchronization and publication of these data structures to business-facing data catalogs.
-
-&nbsp;
 
 It also has a technical purpose to ensure that the evolution of data models and their schema artifacts follow the same lifecycle as application code, through their co-location in Git repository and branches.\
 ![Metadata-as-Code infinity loop](<lib/Metadata-as-Code infinity loop.png>)
 
-&nbsp;
-
 This strategy gets executed through a combination of our [Workgroup Edition features](Repository.md) and our [Command-Line Interface](CommandLineInterface.md).
-
-&nbsp;
 
 ## Hackolade Studio Workgroup Edition
 
 With the Workgroup Edition, Hackolade Studio integrates natively with the features, commands, and workflow of Git and the Git platforms: GitHub, GitLab, Bitbucket, and Azure DevOps Repos. This allows for collaboration, versioning, branching, change tracking, peer reviews, conflict resolution, etc.
 
-&nbsp;
-
 In the context of Metadata-as-Code, the Workgroup Edition also allows for the co-location of data models and their schema artifacts with the corresponding application code and their respective but coordinated changes in a Git branch. Artifacts also include ALTER scripts, if applicable to the target technology, resulting from model evolutions.![Metadata-as-Code co-locate model schema code](<lib/Metadata-as-Code co-locate model schema code.png>)
-
-&nbsp;
 
 ## Command-Line Interface
 
 The CLI lets you automatically generate schemas and scripts, or reverse-engineer an instance to infer the schema, or to reconcile environments and detect drifts in indexes or schemas. The CLI also lets you automatically publish documentation to a portal or data dictionary when data models evolve.
 
-&nbsp;
-
 With the CLI, you can automate tasks that you would otherwise perform manually in the GUI application. Some Hackolade customers use this capability nightly in a batch process to identify attributes and structures that may have appeared in the data since the last run. During a nightly run of the reverse-engineering function, a much larger dataset can be queried as a basis for document sampling, hence making schema inference more precise. Such capability can be useful in a data governance context to properly document the semantics and publish a thorough data dictionary for end users.
-
-&nbsp;
 
 The CLI can also be used in the context of compliance with privacy laws to make sure that the company does not store data that it is not supposed to store. There are many more examples of how to use this functionality.
 
-&nbsp;
-
 Another common use case we've seen is to use the CLI to compare the models reverse-engineered from different environments (e.g; dev, test, integration, prod) to ensure their synchronization.
-
-&nbsp;
 
 The Hackolade command line can of course be used on a stand alone machine. It can also be easily combined with a [git repository](Teamcollaboration.md) for the storage of versioned models and schema artifacts, as well as with [Docker containers](<https://github.com/hackolade/docker/tree/main/Studio> "target=\"_blank\""). Customers have been using this combination either in a push mode, triggered by saving or committing model changes, or in a pull mode, when invoked by a DevOps CI/CD pipeline or a scheduled job. An example of GitHub Actions workflow running the Hackolade Studio CLI is provided [here](<https://github.com/hackolade/studio-cli-github-actions-examples> "target=\"_blank\"").\
 ![Metadata-as-Code CLI workflow automation](<lib/Metadata-as-Code CLI workflow automation.png>)
 
-&nbsp;
-
 The CLI can also be used for end-to-end synchronization of data structures with business-facing data dictionaries:\
 ![Metadata-as-Code pipeline orchestration](<lib/Metadata-as-Code pipeline orchestration.png>)
-
-&nbsp;
 
 ## CLI Orchestration
 
 The orchestration of the commands and arguments is typically scripted, then triggered by an event or a schedule. But the sequence of steps depends on whether development has the upper hand or governance.
 
-&nbsp;
-
 Organizations operate in different ways. If development has the upper hand, evolutions tend to happen in a code-first manner, and we see what we've called "retroactive data modeling" or "data modeling after-the-fact."
-
-&nbsp;
 
 In other organizations, data modeling happens first, then code changes occur and are implemented in the different environments.
 
-&nbsp;
-
 The Hackolade Studio CLI commands can be assembled in the sequence that best fits your exact use case.
-
-&nbsp;
 
 ## Governance-first use case
 
@@ -88,19 +56,11 @@ In a governance-first approach, a baseline model evolves. When the branch for mo
 4. Commit the ALTER script
 5. Have a DBA review the ALTER script.
 
-&nbsp;
-
 ![CLI governance-first use case](<lib/CLI governance-first use case.png>)
-
-&nbsp;
 
 You may want to read this [architecture article](DevOpsCICDarchitecture.md) to see the details of this diagram:
 
-&nbsp;
-
 ![CLI architecture in Docker containers](<lib/CLI architecture in Docker containers.png>)
-
-&nbsp;
 
 ## Code-first use case
 
@@ -111,17 +71,11 @@ In a code-first approach, the structure in the production instance evolves. Ever
 3. We suggest here a manual step to review the model comparison and identify whether all changes in production are legitimate. Maybe adjustments are necessary to the code, data needs migration, etc… Produce a new merged model if necessary.
 4. Commit the merged model which becomes the new baseline model
 
-&nbsp;
-
 ![CLI development-first use case](<lib/CLI development-first use case.png>)
-
-&nbsp;
 
 ## Developing and fine-tuning the CLI commands
 
 Many other combinations are possible, and the examples above should inspire the approach fitting your specific use case. You may want to watch a playlist of [short videos](<https://www.youtube.com/playlist?list=PLuoumc7VQje0qPX3zHa8SUaDWQg2EAT40> "target=\"_blank\"") on YouTube.
-
-&nbsp;
 
 Creating the orchestration of the CLI commands with the proper arguments can be tricky so we suggest the following tips and best practices:
 

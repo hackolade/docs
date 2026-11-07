@@ -14,6 +14,4 @@ image: lib/Hive Connection settings - NoSASL.png
 </property>
 ```
 
-&nbsp;
-
 ![Hive Connection settings - NoSASL](<lib/Hive Connection settings - NoSASL.png>)

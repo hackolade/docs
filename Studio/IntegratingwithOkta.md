@@ -6,8 +6,6 @@ seoTitle: Model Hub sign-in with Okta
 
 On this page, you will find a step-by-step guide to integrating Okta with the Model Hub portal.
 
-&nbsp;
-
 ## Pre-requisites
 
 In order to perform the operations in this guide, you will need the following:
@@ -15,17 +13,11 @@ In order to perform the operations in this guide, you will need the following:
 - Access to the administration panel on Okta with the ability to create an app integration and authorization server
 - Be able to create groups and assign them to users
 
-&nbsp;
-
 ## 1. Create an app integration
 
 In Okta, select Applications -> Applications, then click on Create App integration
 
-&nbsp;
-
 In the modal, select OIDC - OpenID Connect and Single-Page Application as the Application, then click Next
-
-&nbsp;
 
 Give a name to your app, then add the following options
 
@@ -34,24 +26,16 @@ Give a name to your app, then add the following options
 - As sign-out redirect URIs put the domain name of the Model Hub portal (e.g.; https://hck.example.com)
 - Feel free to give access to the right users in the Assignments section
 
-&nbsp;
-
 ## 2. Create a new groups
 
 In order to give users administrative access to the Model Hub portal, you should create a new group
 
-&nbsp;
-
 In Okta, select Directory -> Groups, then click on Add group
-
-&nbsp;
 
 Fill the form with the following:
 
 - Name: Hub.Admin
 - Description: A group that gives access to the admin UI of the Model Hub portal
-
-&nbsp;
 
 Once the group is created, you can start assigning users to these groups.
 
@@ -59,21 +43,13 @@ Once the group is created, you can start assigning users to these groups.
 - This allows you to configure different token lifespans for different users. Give it a name like "Model Hub default rule".&amp;#x20;
   - You can leave the rest as is and click on "Create rule" when you are done.
 
-&nbsp;
-
 ## 3. Configure the authorization server
 
 To retrieve the groups a user belongs to in the Model Hub, you will need to configure the authorization server to include them in the access token.
 
-&nbsp;
-
 In Okta, select Security -> API, then select the authorization server you want to use (or the default one)
 
-&nbsp;
-
 Go to Claims, then click on Add Claim
-
-&nbsp;
 
 Fill the model with the following information:
 
@@ -83,16 +59,12 @@ Fill the model with the following information:
 - Filter: Select Starts with and fill in "Hub"
 - Include in: Select any scope
 
-&nbsp;
-
 Make sure you have an Access Policy configured by going to the Access Policies tab:
 
 - Click on Add Policy
 - Give it a name like "Model Hub"
 - Description: "Model Hub access policy"
 - Assign to: The following clients then chose the application you created in step 1
-
-&nbsp;
 
 ## 4. Assign the groups to the application
 
@@ -102,8 +74,6 @@ To give access to the people in the groups created above to Model Hub, you need 
 - Click on the Assignments tab
 - Click on the Assign button, then Assign to Groups
 - Make sure to add the groups "Hub.Admin" and "Hub.User"
-
-&nbsp;
 
 ## 5. Configure the application in the admin portal
 

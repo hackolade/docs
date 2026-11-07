@@ -8,8 +8,6 @@ MongoDB is a schemaless database. As such, the possibilities for constraints are
 The JSON Schema specification allows to set [uniqueness in arrays](<https://json-schema.org/understanding-json-schema/reference/array#uniqueItems> "target=\"_blank\"") only, and in Hackolade, we support this via the corresponding property:\
 ![MongoDB uniqueItems in arrays](<lib/MongoDB uniqueItems in arrays.png>)
 
-&nbsp;
-
 But this uniqueness feature is not available for scalar fields in a document.\
 However, you can set in MongoDB a [unique index](<https://www.mongodb.com/docs/v3.0/core/index-unique/#index-type-unique> "target=\"_blank\"") on a field or a set of fields. This is done in Hackolade, at the collection level, in the Indexes tab when you can create your index, which will generate the corresponding script in forward-engineering.\
 ![MongoDB unique index](<lib/MongoDB unique index.png>)

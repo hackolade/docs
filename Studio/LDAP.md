@@ -7,22 +7,12 @@ image: lib/MongoDB connection LDAP 1.png
 
 MongoDB Enterprise provides support for proxy authentication of users. This allows administrators to configure a MongoDB cluster to authenticate users by proxying authentication requests to a specified Lightweight Directory Access Protocol (LDAP) service.
 
-&nbsp;
-
 LDAP support for user authentication requires proper configuration of the saslauthd daemon process as well as the MongoDB server. For more info, consult this [link](<https://docs.mongodb.com/manual/tutorial/configure-ldap-sasl-openldap/> "target=\"_blank\"").
-
-&nbsp;
 
 In Hackolade, the address of the LDAP server and port number need to be specified in the Connection tab:
 
-&nbsp;
-
 ![MongoDB connection LDAP 1](<lib/MongoDB connection LDAP 1.png>)
 
-&nbsp;
-
 Then select LDAP in the authentication dropdown box, before specifying the username and password:
-
-&nbsp;
 
 ![MongoDB connection LDAP 2](<lib/MongoDB connection LDAP 2.png>)

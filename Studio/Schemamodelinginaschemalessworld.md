@@ -6,27 +6,15 @@ seoTitle: Schema design in a schemaless world
 
 The JSON-based dynamic-schema nature (aka schema-less nature) of document NoSQL databases (MongoDB, DynamoDB, Couchbase, etc...) is a fantastic opportunity for application developers: ability to start storing and accessing data with minimal effort and setup, flexibility, fast and easy evolution.
 
-&nbsp;
-
 Some difficulties start appearing with increased complexity of the data and scale. Typically, the **data structure is tacitly described -- in the application code…** And examining the code is not the most productive way to engage in a fruitful dialog between analysts, architects, designers, developers, and DBAs.
-
-&nbsp;
 
 A data model describes the business. **A data model is the blueprint** of the application. Such a map helps evaluate design options beforehand, **think through the implications** of different alternatives, and recognize potential hurdles before committing sizable amounts of development effort. A data model helps plan ahead, in order to minimize later rework. In the end, **the modeling process accelerates development, increases quality of the application, and reduces execution risks.**
 
-&nbsp;
-
 With the convergence of traditional RDBMS (introducing support for JSON documents) and NoSQL (i.e. DBRefs and $lookup for left-outer joins appeared in MongoDB with v3.2), mainstream CIOs may need some convincing that MongoDB can be accepted by enterprise architects and large teams of analysts and designers, as well as operations. A MongoDB schema modeling tool contributes to such acceptance, in addition to being a **best practice**.
-
-&nbsp;
 
 But the traditional methods and tools of the old ‘relational’ world are no longer valid for NoSQL.
 
-&nbsp;
-
 Hackolade was developed to be a **cross-platform** (Windows/Mac/Linux) NodeJS-based desktop Single Page Application (JavaScript/HTML 5/CSS) to help the design and documentation of physical models, leveraging the power of JSON and MongoDB. It is targeted at analysts, solution designers, architects, developers, and database administrators.
-
-&nbsp;
 
 The graphical interface lets the user **visualize and maintain a diagram of the collections** and their logical relationships, plus the **details and constraints of individual attributes and objects within each collection**. The application is **specifically designed around the powerful nature of nested sub-objects and denormalization**. The outputs of the model are:
 
@@ -44,15 +32,9 @@ The graphical interface lets the user **visualize and maintain a diagram of the 
   - etc...
 - sample JSON documents and JSON Schema compliant JSON models.
 
-&nbsp;
-
 A powerful reverse-engineering feature lets the user create the basis for a model, from an existing database, then lets edit and enrich the physical model.
 
-&nbsp;
-
 Particular emphasis has been given to making the application **intuitive and simple to use, yet powerful and rigorous**.
-
-&nbsp;
 
 The business benefits are as follows:
 

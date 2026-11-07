@@ -6,11 +6,7 @@ seoTitle: Knowledge transfer and training for Hackolade Studio
 
 Hackolade Studio’s training and support ecosystem offers a **scalable, multi-modal approach** that suits a variety of organizational sizes and technical skill levels. With an emphasis on **self-paced learning**, **certified eLearning**, and **comprehensive documentation**, the platform enables customers to accelerate user readiness, reduce support overhead, and maximize return on investment with minimal disruption.
 
-&nbsp;
-
 Hackolade Studio offers a **multi-tiered training strategy** to ensure all stakeholders -- from technical administrators to casual end-users -- can quickly and confidently adopt and use the platform. Training is **self-paced by default**, with optional **live or virtual sessions** available to supplement on-boarding, particularly during early adoption phases or key milestones. The training plan includes:
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:24%"><col style="width:51%"><col style="width:25%"></colgroup>
@@ -40,11 +36,7 @@ Hackolade Studio offers a **multi-tiered training strategy** to ensure all stake
 </tbody>
 </table>
 
-&nbsp;
-
 The **progressive learning path** ensures that beginners can start with foundational topics and advance to more complex modeling tasks, supported by **certifications for each tutorial**.
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:18%"><col style="width:30%"><col style="width:28%"><col style="width:24%"></colgroup>
@@ -78,11 +70,7 @@ The **progressive learning path** ensures that beginners can start with foundati
 </tbody>
 </table>
 
-&nbsp;
-
 Hackolade provides a **broad suite of training and support resources**, all of which are freely accessible and scalable for both small and enterprise teams:
-
-&nbsp;
 
 <table style="width:100%">
 <colgroup><col style="width:26%"><col style="width:50%"><col style="width:24%"></colgroup>

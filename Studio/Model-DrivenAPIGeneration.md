@@ -6,6 +6,4 @@ seoTitle: Model-driven API generation
 
 Model-Driven API generation is performed via the Tools > Forward-Engineering > API Model menu option.
 
-&nbsp;
-
 You can find all details [here](APIModel.md).
