@@ -43,9 +43,9 @@ Hackolade also supports Cassandra User-Defined Types via its [re-usable object d
 
 ## Indexes
 
-An index provides a means to access data in DataStax Enterprise using attributes other than the partition key. The benefit of an index is fast, efficient lookup of data that matches a given condition. Built-in indexes are best on a table having many rows that contain the indexed value. The more unique values that exist in a particular column, the more overhead on average is required to query and maintain the index. It is useful to consult this section on [when not to use an index](<https://docs.datastax.com/en/dse/6.7/cql/cql/cql_using/useWhenIndex.html#Whennottouseanindex> "target=\"_blank\"").
+An index provides a means to access data in DataStax Enterprise using attributes other than the partition key. The benefit of an index is fast, efficient lookup of data that matches a given condition. Built-in indexes are best on a table having many rows that contain the indexed value. The more unique values that exist in a particular column, the more overhead on average is required to query and maintain the index. It is useful to consult this section on [when not to use an index](<https://web.archive.org/web/20240416162813/https://docs.datastax.com/en/dse/6.7/cql/cql/cql_using/useWhenIndex.html#Whennottouseanindex> "target=\"_blank\"").
 
-Hackolade supports [Global Secondary Indexes](<https://docs.datastax.com/en/dse/6.7/cql/cql/cql_using/useSecondaryIndex.html> "target=\"_blank\""), as well as [custom indexes](<https://docs.datastax.com/en/dse/6.8/cql/cql/cql_reference/cql_commands/cqlCreateCustomIndex.html> "target=\"_blank\"") and [search indexes](<https://docs.datastax.com/en/dse/6.8/cql/cql/cql_reference/cql_commands/cqlCreateSearchIndex.html> "target=\"_blank\"").
+Hackolade supports [Global Secondary Indexes](<https://web.archive.org/web/20220516060710/https://docs.datastax.com/en/dse/6.7/cql/cql/cql_using/useSecondaryIndex.html> "target=\"_blank\""), as well as [custom indexes](<https://docs.datastax.com/en/dse/6.8/cql/cql/cql_reference/cql_commands/cqlCreateCustomIndex.html> "target=\"_blank\"") and [search indexes](<https://docs.datastax.com/en/dse/6.8/cql/cql/cql_reference/cql_commands/cqlCreateSearchIndex.html> "target=\"_blank\"").
 
 ## Materialized Views
 

@@ -20,7 +20,7 @@ An example for a Kerberos Principal is: primary/instance@REALM.
 
 A Kerberos Service Name is the name by which a client uniquely identifies an instance of a service.Typically, the service name for an instance is named hbase. Provide another name here if your HBase instance was set up with a different service name.
 
-The **service principal** must be in the form: service@\<hostname>. (Otherwise, if you only pass the hostname (also called fqdn - fully qualified domain name), it would default to HTTP@fqdn. And it would be resolved to the corresponding principal service/\<hostname>@REALM by the GSS-API, which is not desirable, cfr this [page](<https://developer.ibm.com/hadoop/2016/05/12/hbase-rest-gateway-security/> "target=\"_blank\"").)
+The **service principal** must be in the form: service@\<hostname>. (Otherwise, if you only pass the hostname (also called fqdn - fully qualified domain name), it would default to HTTP@fqdn. And it would be resolved to the corresponding principal service/\<hostname>@REALM by the GSS-API, which is not desirable, cfr this [page](<https://web.archive.org/web/20160513070631/https://developer.ibm.com/hadoop/2016/05/12/hbase-rest-gateway-security/> "target=\"_blank\"").)
 
 The minimum requirements to be able to connect with the Kerberos protocol are:
 
@@ -63,4 +63,4 @@ Instructions:
    1. curl -i --negotiate -u : http://\<host>:\<port>/version/cluster
    2. curl -i --negotiate -u : http://\<host>:\<port>/namespaces
 
-For more information with Hortonworks installations, click [here](<https://community.hortonworks.com/articles/91425/howto-start-and-test-hbase-rest-server-in-a-kerber.html> "target=\"_blank\"").
+For more information with Hortonworks installations, click [here](<https://community.cloudera.com/community-articles-20/howto-start-and-test-hbase-rest-server-in-a-kerberized-environment-88989> "target=\"_blank\"").

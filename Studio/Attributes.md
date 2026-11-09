@@ -51,7 +51,7 @@ results in the following JSON Schema declaration:\
 
 ## Pattern field
 
-Pattern fields (or [pattern properties](<http://json-schema.org/latest/json-schema-validation.html#rfc.section.6.5.5> "target=\"_blank\"")) function in exactly the same way as standard fields, with only one exception: the name (in the name-value pair) is not a fixed string, but a regex pattern. This can be particularly useful in MongoDB in combination with ‘dot notation’. It is also the basis for storage in Firebase and Firestore.
+Pattern fields (or [pattern properties](<https://json-schema.org/understanding-json-schema/reference/object#patternProperties> "target=\"_blank\"")) function in exactly the same way as standard fields, with only one exception: the name (in the name-value pair) is not a fixed string, but a regex pattern. This can be particularly useful in MongoDB in combination with ‘dot notation’. It is also the basis for storage in Firebase and Firestore.
 
 For example:\
 ![patternExample and ERD](<lib/patternExample and ERD.png>)

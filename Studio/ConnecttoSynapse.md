@@ -26,7 +26,7 @@ please also consult:\
 https://docs.microsoft.com/en-us/azure/synapse-analytics/sql/active-directory-authentication
 
 with MFA:\
-https://docs.microsoft.com/en-us/azure/synapse-analytics/sql/mfa-authentication\
+[https://docs.microsoft.com/en-us/azure/synapse-analytics/sql/mfa-authentication](<https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/mfa-authentication> "target=\"_blank\"")\
 https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-mfa-howitworks
 
 ## Control Plane

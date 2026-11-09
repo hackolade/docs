@@ -170,7 +170,7 @@ The process to git-enable your options folder may vary, depending on your OS and
 
 1\) in Windows Explorer, go to C:\\Users\\%username%\\.hackolade\\options and make sure that the folder is empty.\
 2\) if the folder C:\\Users\\%username%\\.hackolade\\options is not empty, then cut the content and place it in a safe place\
-3\) in GitHub, create a new repository, for example called "hck_custom_props" and copy the Git URL, for example in our case "https://github.com/hackolade/hck_custom_props.git" (finishing in .git)\
+3\) in GitHub, create a new repository, for example called "hck_custom_props" and copy the Git URL, for example in our case "`https://github.com/hackolade/hck_custom_props.git`" (finishing in .git)\
 ![Git-enable custom props - create repo](<lib/Git-enable custom props - create repo.png>)
 
 4\) in Hackolade Studio, go to the repository context (or the menu option "Repository > Open Repository Context, or keyboard shortcut Ctrl + G)\

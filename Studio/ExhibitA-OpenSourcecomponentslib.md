@@ -249,9 +249,9 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/NaturalIntelligence/fast-xml-parser/blob/master/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
-<td><a href="https://fortawesome.github.io/Font-Awesome/" target="_blank">Font-awesome</a></td>
+<td><a href="https://fontawesome.com/" target="_blank">Font-awesome</a></td>
 <td>(c) 2016 Dave Gandy</td>
-<td><a href="https://fortawesome.github.io/Font-Awesome/license/" target="_blank">MIT</a></td>
+<td><a href="https://fontawesome.com/license/free" target="_blank">MIT</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/form-data/form-data" target="_blank">Form-Data</a></td>
@@ -294,9 +294,9 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/graphql/graphql-js/blob/16.x.x/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/apache/tinkerpop/tree/master/gremlin-javascript/src/main/javascript/gremlin-javascript" target="_blank">Gremlin-javascript</a></td>
+<td><a href="https://github.com/apache/tinkerpop/tree/master/gremlin-js/gremlin-javascript" target="_blank">Gremlin-javascript</a></td>
 <td>(c) 2017 Apache TinkerPop team</td>
-<td><a href="https://github.com/apache/tinkerpop/blob/master/gremlin-javascript/src/main/javascript/gremlin-javascript/LICENSE" target="_blank">Apache</a></td>
+<td><a href="https://github.com/apache/tinkerpop/blob/master/gremlin-js/gremlin-javascript/LICENSE" target="_blank">Apache</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/mjackson/history" target="_blank">History</a></td>
@@ -396,7 +396,7 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <tr>
 <td><a href="https://marked.js.org" target="_blank">Marked</a></td>
 <td>(c) 2011-2018 Christopher Jeffrey</td>
-<td><a href="https://github.com/markedjs/marked/blob/master/LICENSE.md" target="_blank">MIT</a></td>
+<td><a href="https://github.com/markedjs/marked/blob/master/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/marklogic/node-client-api" target="_blank">MarkLogic Node JS client api</a></td>
@@ -429,9 +429,9 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/mongodb-js/connection-model/blob/master/LICENSE" target="_blank">Apache</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/mongodb-js/query-parser" target="_blank">MongoDB-query-parser</a></td>
+<td><a href="https://www.npmjs.com/package/mongodb-query-parser" target="_blank">MongoDB-query-parser</a></td>
 <td>(c) 2017 MongoDB Inc.</td>
-<td><a href="https://github.com/mongodb-js/query-parser/blob/master/LICENSE" target="_blank">Apache</a></td>
+<td><a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/mongodb-js/mongodb-schema" target="_blank">MongoDB-schema</a></td>
@@ -471,7 +471,7 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <tr>
 <td><a href="https://github.com/marc136/node-folder-hash" target="_blank">Node-folder-hash</a></td>
 <td>(c) 2015 Marc Walter</td>
-<td><a href="https://github.com/marc136/node-folder-hash/blob/main/LICENSE.txt" target="_blank">MIT</a></td>
+<td><a href="https://github.com/marc136/node-folder-hash/blob/v5/LICENSE.txt" target="_blank">MIT</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/digitalbazaar/forge" target="_blank">Node-forge</a></td>
@@ -481,7 +481,7 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <tr>
 <td><a href="https://github.com/isaacs/node-glob" target="_blank">Node-glob</a></td>
 <td>(c) 2009-2023 Isaac Z. Schlueter and Contributors</td>
-<td><a href="https://github.com/isaacs/node-glob/blob/main/LICENSE" target="_blank">ISC</a></td>
+<td><a href="https://github.com/isaacs/node-glob/blob/main/LICENSE.md" target="_blank">ISC</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/RIAEvangelist/node-ipc" target="_blank">Node-ipc</a></td>
@@ -506,7 +506,7 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <tr>
 <td><a href="https://github.com/oracle/node-oracledb" target="_blank">Node-oracledb</a></td>
 <td>(c) 2015, 2021, Oracle and/or its affiliates</td>
-<td><a href="https://github.com/oracle/node-oracledb/blob/main/LICENSE.md" target="_blank">Apache</a></td>
+<td><a href="https://github.com/oracle/node-oracledb/blob/main/LICENSE.txt" target="_blank">Apache</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/brianc/node-postgres" target="_blank">Node-postgres</a></td>
@@ -589,7 +589,7 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/fent/randexp.js/blob/master/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
-<td><a href="https://facebook.github.io/react/" target="_blank">React</a></td>
+<td><a href="https://react.dev/" target="_blank">React</a></td>
 <td>(c) 2013-present, Facebook, Inc.</td>
 <td><a href="https://github.com/facebook/react/blob/master/LICENSE" target="_blank">MIT</a></td>
 </tr>
@@ -656,7 +656,7 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <tr>
 <td><a href="https://github.com/isaacs/rimraf" target="_blank">Rimraf</a></td>
 <td>(c) Isaac Z. Schlueter and Contributors</td>
-<td><a href="https://github.com/isaacs/rimraf/blob/master/LICENSE" target="_blank">ISC</a></td>
+<td><a href="https://github.com/isaacs/rimraf/blob/main/LICENSE.md" target="_blank">ISC</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/YuzuJS/setImmediate" target="_blank">setImmediate</a></td>
@@ -721,7 +721,7 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <tr>
 <td><a href="https://github.com/yeoman/stringify-object" target="_blank">Stringify-object</a></td>
 <td>(c) 2015 Yeoman team</td>
-<td><a href="https://github.com/yeoman/stringify-object/blob/master/LICENSE" target="_blank">BSD-2-Clause</a></td>
+<td><a href="https://github.com/yeoman/stringify-object/blob/main/license" target="_blank">BSD-2-Clause</a></td>
 </tr>
 <tr>
 <td><a href="https://www.npmjs.com/package/swagger-parser" target="_blank">Swagger-parser</a></td>

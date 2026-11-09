@@ -261,7 +261,7 @@ Equivalent probes:
 ### 7. Verify the installation
 
 1\. *docker compose ps* must show that model-hub running.\
-2\. *curl -f http://localhost:3000/health* must return HTTP 200.\
+2\. *curl -f `http://localhost:3000/health`* must return HTTP 200.\
 3\. Opening *http://\<host>:3000* in a browser loads the Model Hub UI.
 
 ### 8. Upgrade to new Model Hub version

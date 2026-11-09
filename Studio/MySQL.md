@@ -45,7 +45,7 @@ Hackolade supports the most common types of MySQL indexes, but not all of them y
 
 ## Data types
 
-In MySQL, each column, local variable, expression, and parameter has a related [data type](<https://MySQL.com/kb/en/data-types/> "target=\"_blank\""). A data type is an attribute that specifies the type of data that the object can hold: integer data, character data, monetary data, date and time data, binary strings, and so on.
+In MySQL, each column, local variable, expression, and parameter has a related [data type](<https://dev.mysql.com/doc/refman/8.4/en/data-types.html> "target=\"_blank\""). A data type is an attribute that specifies the type of data that the object can hold: integer data, character data, monetary data, date and time data, binary strings, and so on.
 
 Additionally, in LONGTEXT columns, Hackolade supports the data modeling of JSON documents with standard JSON data types: string, number, object, array, boolean, and null.
 
@@ -57,7 +57,7 @@ A view is a virtual table whose contents are defined by a query. Like a table, a
 
 ## Functions and Procedures
 
-A function takes any number of arguments and returns a value from the function body. The function body can be any valid SQL expression as you would use, for example, in any select expression.A Stored Procedure is a routine invoked with a [CALL](<https://MySQL.com/kb/en/call/> "target=\"_blank\"") statement. It may have input parameters, output parameters and parameters that are both input parameters and output parameters.
+A function takes any number of arguments and returns a value from the function body. The function body can be any valid SQL expression as you would use, for example, in any select expression.A Stored Procedure is a routine invoked with a [CALL](<https://dev.mysql.com/doc/refman/8.4/en/call.html> "target=\"_blank\"") statement. It may have input parameters, output parameters and parameters that are both input parameters and output parameters.
 
 ## Forward-Engineering
 

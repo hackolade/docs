@@ -13,7 +13,7 @@ To perform data modeling for Delta Lake on Databricks with Hackolade, you must f
 
 Hackolade was specially adapted to support the data modeling of Delta Lake, including the Databricks storage structure of clusters, databases, tables, views, and indexes. It leverages Hive primitive and complex data types, plus user-defined types. And combines it all with the usual capabilities of forward-engineering of HiveQL scripts, reverse-engineering, documentation generation, model comparison, command-line interface integration with CI/CD pipelines, etc...The application closely follows the Delta Lake terminology.
 
-The data model in the picture below results from the modeling of an application described in this [tutorial](<https://www.cloudera.com/content/dam/www/marketing/documents/partners/ungated/cloudera-msazure-hadoop-deployment-guide.pdf> "target=\"_blank\"").
+The data model in the picture below results from the modeling of an application described in this [tutorial](<https://web.archive.org/web/20231024174057/https://www.cloudera.com/content/dam/www/marketing/documents/partners/ungated/cloudera-msazure-hadoop-deployment-guide.pdf> "target=\"_blank\"").
 
 ![Delta Lake on Databricks workspace](<lib/Delta Lake on Databricks workspace.png>)
 

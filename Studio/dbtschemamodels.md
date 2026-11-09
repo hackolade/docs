@@ -219,7 +219,7 @@ models:
 
 ### config.on_schema_change
 
-[on_schema_change](<https://docs.getdbt.com/reference/resource-configs/on_schema_change> "target=\"_blank\"") defines how dbt handles schema changes in incremental models. Accepted values: `ignore, fail, append_new_columns, sync_all_columns`. Only relevant when materialized is set to incremental.
+[on_schema_change](<https://docs.getdbt.com/docs/build/incremental-models#what-if-the-columns-of-my-incremental-model-change> "target=\"_blank\"") defines how dbt handles schema changes in incremental models. Accepted values: `ignore, fail, append_new_columns, sync_all_columns`. Only relevant when materialized is set to incremental.
 
 ### config.on_configuration_change
 

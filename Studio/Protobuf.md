@@ -21,7 +21,7 @@ Hackolade was specially adapted to support the schema design of Protobuf schema.
 
 ## Protobuf Schema
 
-Protocol buffer style has evolved over time. You may want to read this article about the differences between [Proto2 vs Proto3](<https://www.crankuptheamps.com/blog/posts/2017/10/12/protobuf-battle-of-the-syntaxes/> "target=\"_blank\""). Hackolade supports both.
+Protocol buffer style has evolved over time. You may want to read this article about the differences between [Proto2 vs Proto3](<https://web.archive.org/web/20250805230505/https://www.crankuptheamps.com/blog/posts/2017/10/12/protobuf-battle-of-the-syntaxes/> "target=\"_blank\""). Hackolade supports both.
 
 Protobuf message schemas are defined in a .proto file which can be easily generated from Hackolade.
 

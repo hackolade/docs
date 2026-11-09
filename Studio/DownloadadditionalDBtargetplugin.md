@@ -115,7 +115,7 @@ The process to git-enable your options folder may vary, depending on your OS and
 
 1\) in Windows Explorer, go to C:\\Users\\%username%\\.hackolade and make sure that the folder is empty.\
 2\) if the folder C:\\Users\\%username%\\.hackolade is not empty, then cut the content and place it in a safe place\
-3\) in GitHub, create a new repository, for example called "hck_plugins_and_custom_props" and copy the Git URL, for example in our case "https://github.com/\<yourorg>/hck_plugins_and_custom_props.git" (finishing in .git)\
+3\) in GitHub, create a new repository, for example called "hck_plugins_and_custom_props" and copy the Git URL, for example in our case "`https://github.com/<yourorg>/hck_plugins_and_custom_props.git`" (finishing in .git)\
 4\) in Hackolade Studio, go to the repository context (or the menu option "Repository > Open Repository Context, or keyboard shortcut Ctrl + G)\
 5\) in the top bar, select the Source "URL", then paste the Git URL you had copied in step 3), then click the Clone button\
 6\) in the OS destination folder dialog, select the folder C:\\Users\\%username%\\.hackolade which must be an empty folder\

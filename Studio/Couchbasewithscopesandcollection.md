@@ -101,7 +101,7 @@ Document IDs can be assigned by the software application. A valid document ID mu
 - Conform to UTF-8 encoding
 - Be no longer than 250 bytes
 
-Users are free to choose any ID for their document, so long as they conform to the above restrictions. This feature can be [leveraged](<https://blog.couchbase.com/key-pattern-delimiter-in-couchbase/> "target=\"_blank\"") to define natural keys where possible, so they can be human-readable, deterministic, and semantic.
+Users are free to choose any ID for their document, so long as they conform to the above restrictions. This feature can be [leveraged](<https://web.archive.org/web/20220528175844/https://blog.couchbase.com/key-pattern-delimiter-in-couchbase/> "target=\"_blank\"") to define natural keys where possible, so they can be human-readable, deterministic, and semantic.
 
 If a document is committed without an ID, one will be automatically generated as a UUID by the database. See more details [here](<https://docs.couchbase.com/couchbase-lite/current/swift/document.html#document-structure> "target=\"_blank\"").
 
@@ -161,7 +161,7 @@ For more information on Couchbase in general, please consult the [website](<http
 
 ## Forward-Engineering
 
-For those developing Node.js applications on top of a Couchbase database, you may want to leverage the object document mapper (ODM) [Ottoman](<https://github.com/couchbaselabs/node-ottoman> "target=\"_blank\"") that allows you build what your object model would look like, then auto-generate all the boilerplate logic that goes with it. Hackolade dynamically generates the Ottoman script based on model attributes and constraints. More information on Ottoman [here](<https://blog.couchbase.com/easily-develop-node-js-and-couchbase-apps-with-ottoman/> "target=\"_blank\"") and [here](<https://blog.couchbase.com/firstapp-couchbase-nodejs-ottoman/> "target=\"_blank\"").
+For those developing Node.js applications on top of a Couchbase database, you may want to leverage the object document mapper (ODM) [Ottoman](<https://github.com/couchbaselabs/node-ottoman> "target=\"_blank\"") that allows you build what your object model would look like, then auto-generate all the boilerplate logic that goes with it. Hackolade dynamically generates the Ottoman script based on model attributes and constraints. More information on Ottoman [here](<https://web.archive.org/web/20220629170842/https://blog.couchbase.com/easily-develop-node-js-and-couchbase-apps-with-ottoman/> "target=\"_blank\"") and [here](<https://web.archive.org/web/20220627052954/https://blog.couchbase.com/firstapp-couchbase-nodejs-ottoman/> "target=\"_blank\"").
 
 We provide a sort of "forward-engineering by example", with an automatic JSON data sample generation. The script also includes the creation of indexes, and it can be applied to the database instance, provided that appropriate credentials are granted to the user. If the specified bucket does not exist, we attempt to create it.
 

@@ -29,7 +29,7 @@ Use this Machine-to-machine OAuth for Collibra Data Dictionary to create and tes
 2. Click Add
 3. Fill in in Connection tab:
    1. Name: e.g. My Collibra client credentials connection
-   2. Path: your Collibra base URL (e.g. [https://your-instance.collibra.com](https://your-instance.collibra.com/))
+   2. Path: your Collibra base URL (e.g. `https://your-instance.collibra.com`)
 4. Fill in in Authentication tab:
    1. Authentication: OAuth
    2. Identity provider: Collibra client credentials (Command Line Interface only)

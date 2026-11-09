@@ -13,7 +13,7 @@ The Hackolade connection settings must match the [configuration of the hive-site
 - According to the mode option, either ***BINARY_PORT*** or ***HTTP_PORT*** is set up (by default they are *10000* and *10001* accordingly).
 - The **authentication parameter** must be "none", “*nosasl”, "ldap", or "kerberos"*
 - ***MODE*** is the transport mode for Thrift protocol. It can be “http” or “binary”.
-- **HTTP_PATH** is the option to define a URI to the hive server (e.g. if *HTTP_PATH* is *hive2* the URI of Hive server will be *http://localhost:10001/hive2*).
+- **HTTP_PATH** is the option to define a URI to the hive server (e.g. if *HTTP_PATH* is *hive2* the URI of Hive server will be *`http://localhost:10001/hive2`*).
 
 Besides proper connection, the application requires, for proper reverse-engineering, that the credentials have **sufficient rights to execute these queries:**\
 describe formatted \<table>\

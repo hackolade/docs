@@ -115,4 +115,4 @@ A Snowflake account can be hosted on any of the following cloud platforms: Amazo
 
 The Hackolade process for reverse-engineering of Snowflake databases includes the execution of DDL DESCRIBE statements to discover schemas, tables, columns and their data types. If JSON is detected in VARIANT columns, Hackolade performs statistical sampling of records followed by probabilistic inference of the JSON document schema.
 
-For more information on Snowflake in general, please consult the [website](<https://www.snowflake.com/> "target=\"_blank\""). See also this excellent [hands-on lab guide](<https://s3.amazonaws.com/snowflake-workshop-lab/Snowflake_free_trial_LabGuide_deprecate.pdf> "target=\"_blank\"").
+For more information on Snowflake in general, please consult the [website](<https://www.snowflake.com/> "target=\"_blank\""). See also this excellent [hands-on lab guide](<https://www.snowflake.com/en/developers/guides/getting-started-with-snowflake/> "target=\"_blank\"").

@@ -16,7 +16,7 @@ Hackolade was specially adapted to support the API design of OAS, including all 
 
 [Swagger and OpenAPI design](<https://youtu.be/kOYW21ZBWOc> "video")
 
-The diagram below results from the reverse-engineering of the [Pet Store](<https://mermade.org.uk/examples/openapi.json> "target=\"_blank\"") sample API.\
+The diagram below results from the reverse-engineering of the [Pet Store](<https://petstore3.swagger.io/api/v3/openapi.json> "target=\"_blank\"") sample API.\
 ![OpenAPI Workspace](<lib/OpenAPI Workspace.png>)
 
 Note the toolbar button to toggle the level of details displayed in the ER Diagram view.\

@@ -72,6 +72,6 @@ To delete the entry, click on the X to the right of the text box:\
 What's the purpose of these properties?
 
 - [id](<http://json-schema.org/draft-04/json-schema-core.html#rfc.section.7.2> "target=\"_blank\""): a JSON Schema keyword used to reduce scope. It can be used by those who wish to apply JSON Schema principles, or to link to internal data dictionaries.
-- [additionalProperties](<http://json-schema.org/latest/json-schema-validation.html#rfc.section.6.5.6> "target=\"_blank\""): a JSON Schema keyword. A boolean to control whether additional properties are allowed or not.
+- [additionalProperties](<https://json-schema.org/understanding-json-schema/reference/object#additionalproperties> "target=\"_blank\""): a JSON Schema keyword. A boolean to control whether additional properties are allowed or not.
 - [required](<https://tools.ietf.org/html/draft-fge-json-schema-validation-00#section-5.4.3> "target=\"_blank\""): a JSON Schema keyword. An array identifying the schema elements that must be present. A required attribute in Hackolade appears as a solid box in the hierarchical schema view, whereas not-required attributes appear as a dashed box.
 - technical name: see [Naming Conventions](Namingconventions.md)

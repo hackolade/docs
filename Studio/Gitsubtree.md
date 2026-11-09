@@ -11,7 +11,7 @@ A Git subtree is a way to embed a repository into another repository. As a conve
 
 Following good practices, you first need to declare each child repository as being a remote of the parent repository. You can do so by executing the command below in the parent repository. Note that executing that command has no impact on the content of the parent repository.
 
-*# e.g. git remote add models https://github.com/org/models.git*\
+*# e.g. git remote add models `https://github.com/org/models.git`*\
 *git remote add \<child name> \<child URL>*
 
 Once you have executed that command for every child repository, Hackolade Studio detects that the parent repository has multiple remotes and will provide you with additional actions.

@@ -23,7 +23,7 @@ then an adjustment is required in the Collibra console, as per the [Collibra doc
 
 ![Collibra REST API security config](<lib/Collibra REST API security config.png>)
 
-You may need to ask your administrator to go to https://console-\<your organization>.collibra.com/#/infrastructure > Environments > your instance > Data Governance Center > Configuration tab > 15 Security Configuration > 15.3 REST > 15.3a Limited CSRF and set it to False.
+You may need to ask your administrator to go to `https://console-<your organization>.collibra.com/#/infrastructure` > Environments > your instance > Data Governance Center > Configuration tab > 15 Security Configuration > 15.3 REST > 15.3a Limited CSRF and set it to False.
 
 ![Collibra REST API security config console](<lib/Collibra REST API security config console.png>)
 

@@ -7,7 +7,7 @@ image: lib/Reverse-Engineering -- DDL select file.png
 
 Migrating from relational databases to NoSQL requires a mind shift, and Hackolade can help in the migration of the schema from a relational model to a model combining embedding and referencing, so you can leverage the power, performance, and flexibility of NoSQL.
 
-For more information on NoSQL document schema design, you may want to read this 3-part [blog](<http://blog.mongodb.org/post/87200945828/6-rules-of-thumb-for-mongodb-schema-design-part-1> "target=\"_blank\""). Then use Hackolade to facilitate the migration...
+For more information on NoSQL document schema design, you may want to read this 3-part [blog](<https://www.mongodb.com/company/blog/mongodb/6-rules-of-thumb-for-mongodb-schema-design> "target=\"_blank\""). Then use Hackolade to facilitate the migration...
 
 The table below summarizes denormalization strategies and best practices:
 

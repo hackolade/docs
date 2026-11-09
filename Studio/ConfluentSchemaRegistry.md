@@ -129,7 +129,7 @@ To make it accept transactions from [https://studio.hackolade.com](<https://stud
 
 We give you an example of how to deploy such a reverse proxy and use this endpoint as the host URL to execute forward- or reverse-engineering operations from [https://studio.hackolade.com](<https://studio.hackolade.com> "target=\"_blank\"").
 
-For example with an Nginx reverse proxy served on https://cors-proxy-for-confluent-cloud.mydomain.com, after you picked up the public URL for your Confluent Schema registry (something like https://\<schema registry instance>.confluent.cloud):
+For example with an Nginx reverse proxy served on `https://cors-proxy-for-confluent-cloud.mydomain.com`, after you picked up the public URL for your Confluent Schema registry (something like https://\<schema registry instance>.confluent.cloud):
 
 *server {*\
 *listen 443;*
@@ -153,5 +153,5 @@ For example with an Nginx reverse proxy served on https://cors-proxy-for-conflue
 
 Please refer to the Confluent Schema Registry [configuration reference](<https://docs.confluent.io/platform/current/schema-registry/installation/config.html#access-control-allow-origin> "target=\"_blank\"") to properly configure your custom instance. You need to add (at least) the property "access.control.allow.origin" to your "schema-registry.properties" file. It is often useful too to set "access.control.allow.methods" to "\*".
 
-*access.control.allow.origin=https://studio.hackolade.com*\
+*access.control.allow.origin=`https://studio.hackolade.com`*\
 *access.control.allow.methods=\**

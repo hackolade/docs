@@ -4,7 +4,7 @@ seoTitle: Install Hackolade Studio on Linux
 ---
 # Linux
 
-Hackolade Studio is a desktop application with a GUI. By default it requires a Desktop environment like Gnome, Mate, Xfce etc... Given the nature of Linux that is often used to run servers (especially on Cloud infrastructures), please note that it is also possible to only run Hackolade Studio in CLI mode even though a better solution might be to leverage our [Docker deployment](https://github.com/hackolade/docs/blob/0a59fff31d4ba35b7b64d924d5a534e9f96d1d26/Studio/Dockercontainer.md) for that purpose.
+Hackolade Studio is a desktop application with a GUI. By default it requires a Desktop environment like Gnome, Mate, Xfce etc... Given the nature of Linux that is often used to run servers (especially on Cloud infrastructures), please note that it is also possible to only run Hackolade Studio in CLI mode even though a better solution might be to leverage our [Docker deployment](Dockercontainer.md) for that purpose.
 
 > [!NOTE]
 > You must be aware that the installation of the software is a tacit acceptance of our [Terms and Conditions and End-User License Agreement](<https://hackolade.com/eulas.html> "target=\"_blank\"").
@@ -129,7 +129,7 @@ Encoding=UTF-8\
 Then, mark the desktop file executable by issuing chmod +x myapp.desktop. Double clicking the file should launch the application as expected.
 
 **Run Hackolade over remote connection**\
-In case of remote connection, you need VNC server: [https://wiki.centos.org/HowTos/VNC-Server](https://wiki.centos.org/HowTos/VNC-Server)
+In case of remote connection, you need VNC server: [https://wiki.centos.org/HowTos/VNC-Server](<https://wiki.centos.org/HowTos(2f)VNC(2d)Server.html>)
 
 ## CentOS 7 with no GUI
 

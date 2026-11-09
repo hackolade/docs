@@ -37,4 +37,4 @@ At this stage, your local copy of the protected branch is not par with its remot
 - [Branch permissions in Bitbucket Cloud](<https://support.atlassian.com/bitbucket-cloud/docs/use-branch-permissions/> "target=\"_blank\"")
 - [Branch permissions in Bitbucket Data Center](<https://confluence.atlassian.com/bitbucketserver/using-branch-permissions-776639807.html> "target=\"_blank\"")
 - [Branch policies and settings in Azure DevOps Repos](<https://learn.microsoft.com/en-us/azure/devops/repos/git/branch-policies> "target=\"_blank\"")
-- [Branch protection in GitLab](<https://docs.gitlab.com/ee/user/project/protected_branches.html> "target=\"_blank\"")
+- [Branch protection in GitLab](<https://docs.gitlab.com/user/project/repository/branches/protected/> "target=\"_blank\"")

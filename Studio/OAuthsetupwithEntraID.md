@@ -59,7 +59,7 @@ From this JSON, extract:
 > [!NOTE]
 > Need to configure Collibra **using Collibra console**
 
-1\. Open Collibra console: https://console-{company-domain}.collibra.com\
+1\. Open Collibra console: `https://console-{company-domain}.collibra.com`\
 2\. Select your environment -> **Data Governance Center > Configuration > Security configuration > JWT**
 
 ![Collibra Entra ID JWT security config](<lib/Collibra Entra ID JWT security config.png>)

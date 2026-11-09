@@ -11,7 +11,7 @@ To perform data modeling for Apache Hive with Hackolade, you must first download
 
 Hackolade was specially adapted to support the data modeling of Hive, including Managed and External tables and their metadata, partitioning, primitive and complex datatypes, and the full HQL Create Table syntax. The application closely follows the Hive terminology and storage structure.
 
-The data model in the picture below results from the modeling of an application described in Cloudera's [tutorial](<https://www.cloudera.com/content/dam/www/marketing/documents/partners/ungated/cloudera-msazure-hadoop-deployment-guide.pdf> "target=\"_blank\"").
+The data model in the picture below results from the modeling of an application described in Cloudera's [tutorial](<https://web.archive.org/web/20231024174057/https://www.cloudera.com/content/dam/www/marketing/documents/partners/ungated/cloudera-msazure-hadoop-deployment-guide.pdf> "target=\"_blank\"").
 
 ![Hive workspace](<lib/Hive workspace.png>)
 

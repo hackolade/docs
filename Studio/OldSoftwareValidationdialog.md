@@ -156,6 +156,6 @@ Additional resources:\
 
 #### VMWare
 
-As per this VMWare [article, setup should generally be OK](<https://pubs.vmware.com/workstation-9/index.jsp?topic=%2Fcom.vmware.ws.using.doc%2FGUID-533B2C4F-7BD5-41EB-8392-2B9FE687AE50.html> "target=\"_blank\""): "Each virtual machine has a universal unique identifier (UUID). The UUID is generated when you initially power on the virtual machine... Suspending and resuming a virtual machine does not trigger the process that generates a UUID... If you do not move or copy the virtual machine to another location, the UUID remains constant."
+As per this VMWare [article, setup should generally be OK](<https://web.archive.org/web/20190819180754/https://pubs.vmware.com/workstation-9/index.jsp?topic=%2Fcom.vmware.ws.using.doc%2FGUID-533B2C4F-7BD5-41EB-8392-2B9FE687AE50.html> "target=\"_blank\""): "Each virtual machine has a universal unique identifier (UUID). The UUID is generated when you initially power on the virtual machine... Suspending and resuming a virtual machine does not trigger the process that generates a UUID... If you do not move or copy the virtual machine to another location, the UUID remains constant."
 
 If it is not the case, maybe instructions in [this article](<https://docs.vmware.com/en/VMware-Horizon/2012/virtual-desktops/GUID-E12713D5-3530-422F-B265-B0F3FDD2041E.html> "target=\"_blank\"") will help your IT department configure appropriately

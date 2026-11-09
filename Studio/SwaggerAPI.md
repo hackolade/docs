@@ -16,7 +16,7 @@ Hackolade was specially adapted to support the API design of Swagger, including 
 
 [Swagger and OpenAPI design](<https://youtu.be/kOYW21ZBWOc> "video")
 
-The diagram below results from the reverse-engineering of the [Pet Store](<https://mermade.org.uk/examples/swagger.json> "target=\"_blank\"") sample API.\
+The diagram below results from the reverse-engineering of the [Pet Store](<https://petstore.swagger.io/v2/swagger.json> "target=\"_blank\"") sample API.\
 ![Swagger - Workspace](<lib/Swagger - Workspace.png>)
 
 ## Data Types

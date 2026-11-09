@@ -7,7 +7,7 @@ image: lib/JSON Doc RE dialog.png
 
 ## From the file system
 
-If you wish to include the schema for a [YAML](<https://blog.stackpath.com/yaml/> "target=\"_blank\"") file in an existing model, with your model already opened, choose Tools > Reverse-Engineer > JSON document.
+If you wish to include the schema for a [YAML](<https://web.archive.org/web/20210322193609/https://blog.stackpath.com/yaml/> "target=\"_blank\"") file in an existing model, with your model already opened, choose Tools > Reverse-Engineer > JSON document.
 
 ![Tools - Reverse-Engineer - JSON document](<lib/Tools - Reverse-Engineer - JSON document.png>)
 

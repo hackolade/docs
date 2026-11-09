@@ -15,7 +15,7 @@ Assuming that have downloaded from [https://docs.microsoft.com/en-us/azure/cosmo
 
 with these parameters:\
 **Name:** local\
-**Address:** https://localhost\
+**Address:** `https://localhost`\
 **Port:** 8081\
 **Account Key:** C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==\
 and make sure to check the box **Disable SSL Authentication for local instance**

@@ -18,7 +18,7 @@ In order to perform the operations in this guide, you will need the following:
 
 In Azure EntraID, select Manage -> App registrations, then click on + New registration
 
-Give a name to your app and as a redirect URI select Single-page application (SPA) and the value is the domain name of the Model Hub portal (e.g.; https://hck.example.com/hub)
+Give a name to your app and as a redirect URI select Single-page application (SPA) and the value is the domain name of the Model Hub portal (e.g.; `https://hck.example.com/hub`)
 
 ![Hub auth Entra ID register app](<lib/Hub auth Entra ID register app.png>)
 
@@ -31,7 +31,7 @@ When creating the application, we configured the redirect URI to access the Mode
 - Click on the Edit button on the line of Single-page application\
   \
   ![Hub auth Entra ID config URL 1](<lib/Hub auth Entra ID config URL 1.png>)
-- Add the admin URI, which is the same as the current URL with an */admin* suffix (e.g https://hck.example.com/admin). Then click on Configure\
+- Add the admin URI, which is the same as the current URL with an */admin* suffix (e.g `https://hck.example.com/admin`). Then click on Configure\
   \
   ![Hub auth Entra ID config URL 2](<lib/Hub auth Entra ID config URL 2.png>)
 
