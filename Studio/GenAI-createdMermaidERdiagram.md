@@ -212,7 +212,7 @@ With either method, the above Mermaid code will result in this Hackolade Studio 
 
 Go to Tools > Reverse-Engineer > Mermaid ER Diagrams... and select one or more Mermaid files with the extension .mmd
 
-![Mermaid RE from file](<lib/Mermaid RE from file.png>)
+<img src="lib/Mermaid RE from file.png" alt="Mermaid RE from file" width="448">
 
 ### From your Clipboard
 

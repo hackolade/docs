@@ -346,6 +346,7 @@
     - [YAML Schema](<YAMLSchema.md>)
     - [SQL DDL](<SQLDDL.md>)
     - [Diagrams](<Diagrams.md>)
+      - [Gen-AI created xDBML](<Gen-AIcreatedxDBML.md>)
       - [GenAI-created DBML](<GenAI-createdDBML.md>)
       - [GenAI-created Mermaid ER diagram](<GenAI-createdMermaidERdiagram.md>)
     - [Excel template](<Exceltemplate.md>)

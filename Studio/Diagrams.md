@@ -3,3 +3,9 @@ description: Import diagram code into Hackolade Studio, such as Mermaid ER diagr
 seoTitle: "Reverse-engineer diagrams: Mermaid, DBML and more"
 ---
 # Diagrams
+
+Hackolade Studio allows to reverse-engineers diagrams defined in with a generative AI assistant, such as ChatGPT, Claude, Copilot, Gemini or others, from your business requirements.  You can import the GenAI assistant response from a file or from the clipboard respecting the following specifications:
+
+- [xDBML](Gen-AIcreatedxDBML.md)
+- [DBML](GenAI-createdDBML.md)
+- [Mermaid ER](GenAI-createdMermaidERdiagram.md)

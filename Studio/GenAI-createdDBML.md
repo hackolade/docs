@@ -35,7 +35,7 @@ With some LLMs, it might be required to specify:\
 
 Here is a simple example response from Claude Sonnet 4.6 for the above prompt:
 
-```javascript
+```dbml
 // =====================================================
 // E-Commerce Application - Entity Relationship Diagram
 // =====================================================
@@ -371,9 +371,9 @@ With either method, the above DBML code will result in this Hackolade Studio dia
 
 ### From DBML files
 
-Go to Tools > Reverse-Engineer > Diagrams > DBML... and select one or more DBML files with the extension .dbml
+Go to Tools > Reverse-Engineer > Diagram > DBML... and select one or more DBML files with the extension .dbml
 
-![Mermaid RE from file](<lib/Mermaid RE from file.png>)
+<img src="lib/DBML RE from file.png" alt="DBML reverse-engineering from file" width="487">
 
 ### From your Clipboard
 

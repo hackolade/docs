@@ -13,14 +13,14 @@ image: lib/AI-Assisted Data Modeling panel.png
 Most vendors these days claim to have integrated "AI features".  But not all integrations are equal...  We encourage evaluators to compare offerings side-by-side.
 
 > [!IMPORTANT]
-> Aside from the import of GenAI-created artifacts such as [DBML](GenAI-createdDBML.md) or [Mermaid](GenAI-createdMermaidERdiagram.md), which are available in Pro and Workgroup editions, integrated AI features are available only in the [Ultimate Edition](<https://hackolade.com/help/Editions.html#Edition>).
+> Aside from the import of GenAI-created artifacts such as [xDBML](Gen-AIcreatedxDBML.md), [DBML](GenAI-createdDBML.md) or [Mermaid](GenAI-createdMermaidERdiagram.md), which are available in Pro and Workgroup editions, integrated AI features are available only in the [Ultimate Edition](<https://hackolade.com/help/Editions.html#Edition>).
 
 > [!NOTE]
 > To serve different use cases, [an MCP server is shipped](MCPserver.md) with Model Hub.
 
 ## Philosophy
 
-Our approach to AI integration is built on **customer control, confidentiality, and responsible use**. AI capabilities are disabled by default, and must be explicitly enabled by the user. Customers remain free to select the LLM, model, or provider that best meets their security, regulatory, and operational requirements, including self-hosted or on-premises models where appropriate.
+Our approach to AI integration is built on **customer control, confidentiality, and responsible use**. AI capabilities remain inactive until you configure a connection to the AI provider of your choice, with your own credentials.  The AI features must be specifically invoked. Customers remain free to select the LLM, model, or provider that best meets their security, regulatory, and operational requirements, including self-hosted or on-premises models where appropriate.
 
 This approach helps protect your sensitive metadata, schemas, and data models from unintended exposure, third-party retention, or unauthorized use for model training.
 
@@ -47,3 +47,11 @@ In all cases, **nothing goes through Hackolade infrastructure**.  Your environme
 ![How Hackolade does AI](<lib/AI Hackolade Architecture.png>)
 
 You may connect to local LLMs, AI gateways, or directly to the online provider of your choice.
+
+## Getting started
+
+1. [Configure a connection](ManageAIconnections.md) to your AI provider, with your own API key.
+2. Open a Polyglot model, or create a new one.
+3. Ask your questions and give your instructions in the [AI chat panel](AIchatpanel.md), or right-click a model object and choose [Assist me](<https://hackolade.com/help/AIchatpanel.html#Use%20Assist%20me%20on%20a%20model%20object>) to work on that object only.
+
+Every change made through the AI chat panel can be reviewed in the ERD and the Properties pane, and [undone ](<https://hackolade.com/help/AIchatpanel.html#Undo%20AI%20changes>)like any other change.

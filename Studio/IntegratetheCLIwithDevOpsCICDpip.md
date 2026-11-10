@@ -46,7 +46,9 @@ In other organizations, data modeling happens first, then code changes occur and
 
 The Hackolade Studio CLI commands can be assembled in the sequence that best fits your exact use case.
 
-## Governance-first use case
+The following use cases are useful to detect drift.  Drift detection identifies deviations of a database environment -- be it dev, test, integration, or prod -- from an expected or authoritative definition, generally the latest version of a data model, recently merged into the main branch of your repository.  Often the implication is that the differences will result in an ALTER script to be applied to database instance. The implication can also be that the baseline data model should be updated to reflect the reality of the database instance.
+
+### Governance-first use case
 
 In a governance-first approach, a baseline model evolves. When the branch for model changes is merged, the following steps occur:
 
@@ -62,7 +64,7 @@ You may want to read this [architecture article](DevOpsCICDarchitecture.md) to s
 
 ![CLI architecture in Docker containers](<lib/CLI architecture in Docker containers.png>)
 
-## Code-first use case
+### Code-first use case
 
 In a code-first approach, the structure in the production instance evolves. Every night, a scheduled process goes through the following steps:
 

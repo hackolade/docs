@@ -11,7 +11,7 @@ You can create multiple connections, including several connections to the same A
 
 <img src="lib/AI - Manage connections.png" alt="Add and edit AI provider connections" width="524">
 
-## Creating a new connection
+## Create a new connection
 
 Click **New connection** in the left panel to configure a connection.
 
@@ -25,7 +25,7 @@ Click **New connection** in the left panel to configure a connection.
 - OpenAI (GPT)
 - SpaceXAI (Grok)
 
-Additional providers will be introduced progressively, with priorities determined by customer requests. If your preferred provider is not listed, contact our Helpdesk at [support@hackolade.com](mailto:support@hackolade.com?subject=Support%20for%20additional%20AI%20provider) to submit a request.
+Additional providers will be introduced progressively, with priorities determined by customer requests. The dropdown list already shows some of them, greyed out with the **Soon** label: they cannot be selected yet. If your preferred provider is not listed, click **Contact us!** below the **Provider** field to prepare an email, or contact our Helpdesk at [support@hackolade.com](mailto:support@hackolade.com?subject=Support%20for%20additional%20AI%20provider) to submit a request.
 
 **API Key:** Enter the API key associated with your account at the selected provider. Click **Generate** to access the provider's website and obtain an API key if you do not already have one. API keys are typically obtained separately from consumer AI subscriptions and may require an account with API billing enabled. You may also have to get this API key from your administrator.
 
@@ -39,7 +39,11 @@ Leave the Base URL field empty to use the provider's default endpoint.
 
 Once the required fields have been completed, click **Connect** to establish the connection.
 
-## Managing multiple connections
+Hackolade Studio first tests the connection with the provider. If the test fails, the message returned by the provider is displayed below the fields, for example when the API key is refused, or when a rate limit or the budget of your account is reached. Click the copy icon next to the message to copy it, for example to send it to your administrator.
+
+When you create your first connection, the model recommended for this provider is selected in the [AI chat panel](<https://hackolade.com/help/AIchatpanel.html#Select%20an%20AI%20model>).
+
+## Manage multiple connections
 
 The left panel displays all previously configured AI connections.
 
@@ -49,13 +53,13 @@ Connections can be arranged in your preferred order. Use the **drag handle (☰)
 
 This makes it easy to organize connections according to your preferred providers or most frequently used configurations.
 
-## Editing an existing connection
+## Edit an existing connection
 
-To modify an existing connection, select it from the list in the left panel. Its configuration is displayed in the main area of the dialog.
+To modify an existing connection, select it from the list in the left panel. Its configuration is displayed, read-only, in the main area of the dialog.
 
-You can update the connection settings, such as its name, API key, or custom Base URL, and apply the changes. This allows you to rotate API keys, switch between endpoints, or adjust connection configurations without creating a new connection.
+Click **Edit** to update the connection settings, such as its name, API key, or custom Base URL, then click **Connect** to test and save the changes, or **Cancel** to keep the previous settings. The provider of an existing connection cannot be changed: create a new connection instead. This allows you to rotate API keys, switch between endpoints, or adjust connection configurations without creating a new connection.
 
-## Removing a connection
+## Remove a connection
 
 To remove a connection that is no longer needed, select it from the left panel and click the Disconnect button. Confirm the removal when prompted.
 

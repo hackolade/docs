@@ -6,7 +6,7 @@ image: lib/AI-Assisted Data Modeling panel.png
 # AI chat panel
 
 > [!IMPORTANT]
-> AI features are available only in the [Ultimate Edition](<https://hackolade.com/help/Editions.html#Edition>).
+> AI features are available only in the [Ultimate](<https://hackolade.com/help/Editions.html#Edition>) and in the 14-day free trial editions. They currently work in only the desktop application, and with Polyglot models.
 
 The AI Assistant is a movable and adjustable side panel in Hackolade Studio where you ask an AI model about your data model. You may also direct it to create a new model and modify an existing one.
 
@@ -31,13 +31,13 @@ An active API subscription or appropriate API access is required for the selecte
 
 You must also have a data model open in Hackolade Studio. You can start with an empty model and ask the AI to generate its structure, or work with an existing model to modify and enrich it.
 
-## Opening and positioning the panel
+## Open and position the panel
 
 To open the AI-Assisted Data Modeling panel, select **AI > AI-Assisted Data Modeling Panel** from the main menu, or click the **sparkling icon** <img src="lib/AI sparkling icon.png" alt="AI sparkling icon" width="18"> towards the right side of the toolbar.
 
-The panel can be moved and resized to suit your workspace. It can be displayed alongside the ERD or expanded to provide more space for longer conversations. This flexibility allows you to alternate between conversational instructions and visual inspection of the model.
+The panel opens as a side pane on the left of the window, at full height. It can be moved and resized to suit your workspace. It can be displayed alongside the ERD, or expanded to provide more space for longer conversations: use the **Expand to full screen** and **Collapse to side pane** icons in the header of the panel. This flexibility allows you to alternate between conversational instructions and visual inspection of the model.
 
-## Selecting an AI model
+## Select an AI model
 
 At the bottom of the panel, click the **model selector** to display the available AI models. The list is populated from the providers configured in the **Manage AI Connections** dialog.
 
@@ -45,11 +45,13 @@ At the bottom of the panel, click the **model selector** to display the availabl
 
 You can search for a specific model by name and select the one you prefer. Different models may offer different capabilities, response speeds, reasoning abilities, and pricing.
 
+Only the AI models of the configured providers are listed. For each provider, one model is marked **Recommended**, and older models announced for retirement by their provider are marked **Deprecated**. If the selected model is no longer available, Hackolade Studio switches to another available model and tells you in the conversation.
+
 The model selector also provides access to **Manage AI connections...**, where you can add, edit, or remove [provider configurations](ManageAIconnections.md), including API keys and custom endpoints.
 
 You can switch between available models as needed during your modeling activities.
 
-## Configuring model parameters
+## Configure model parameters
 
 Depending on the selected model, additional parameters may be available to control its behavior.
 
@@ -65,7 +67,7 @@ Click the **Intelligence & speed** indicator next to the model selector to inspe
 
 Not all models support the same options. Unsupported settings are indicated accordingly. Click **Reset** to restore the default settings.
 
-## Interacting with the data model
+## Interact with the data model
 
 Enter your instructions or questions in the text box at the bottom of the panel and submit them to the selected AI model.
 
@@ -85,6 +87,24 @@ The AI interprets your instructions in the context of the current data model and
 
 The conversation maintains context across successive requests, so you can progressively refine the model without repeating the entire specification. For example, after renaming an entity, you can simply ask the AI to adapt the corresponding attribute names.
 
+## Mention a specific model object in your prompt
+
+To easily reference a specific object of your model in your prompt, type `@` in the text box and keep typing to filter the dynamic list, then select the object.  After a mention, type `.` to drill down into the children of the object, for example from an entity to one of its attributes.
+
+<img src="lib/AI mention narrowing list.png" alt="AI mention narrowing list" width="355">
+
+The mentioned object appears as a tag in your prompt, so that the AI knows exactly which container, entity, view or attribute you mean, even when several objects have similar names.
+
+<img src="lib/AI mention object list.png" alt="AI mention object list" width="360">
+
+Use the **@mention display** toggle to show mentions with their name only, or with their full path in the model.
+
+<img src="lib/AI mention specific object.png" alt="AI mention specific object" width="252">
+
+## Stop a response
+
+While the AI works on your request, the **Send** button becomes a **Stop** button. Click it to interrupt the response, for example when you realize your instructions were incomplete. Changes already applied to the model before you clicked **Stop** remain, and can be [undone](<https://hackolade.com/help/AIchatpanel.html#Undo%20AI%20changes>).
+
 ## How are changes applied to the model?
 
 Unlike conventional AI chat interfaces that merely generate text or code, the AI-Assisted Data Modeling panel is integrated directly with Hackolade Studio's data modeling capabilities.
@@ -93,29 +113,37 @@ When you request a modeling change, the AI interprets your instructions and inte
 
 **Changes are applied directly to the data model**, without requiring you to manually transcribe the AI's response, copy generated code, or recreate the structures yourself. The ERD and Properties pane reflect the resulting modifications, allowing you to inspect them immediately.
 
-The AI can also perform multiple related operations within a single request. For example, renaming an entity and updating its associated attribute names can be accomplished through successive conversational instructions, while preserving the relevant relationships.
+The AI can also perform multiple related operations within a single request. For example, you can ask in one prompt to rename an entity and update its associated attribute names, while preserving the relevant relationships.
 
 You can then continue refining the model through additional prompts or make manual adjustments using Hackolade Studio's standard modeling interface. AI-assisted and manual data modeling are complementary and operate on the same model.
 
+The AI chat panel currently works only on Polyglot models, and supports the same objects as the xDBML reverse-engineering: containers, entities, attributes, primary and unique keys, relationships and views. It cannot create or modify an index, an enumeration or a model definition yet, for example. When you ask for a change it cannot perform, the AI tells you so in its response.
+
 The resulting changes become part of the current data model and can be saved through Hackolade Studio's normal model-saving workflow, subject to the Auto save setting.
 
-## Navigating between responses and model objects
+## Undo AI changes
 
-When an AI response references an entity in the data model, its name appears as a **clickable link**.
+All the changes performed by the AI in response to one prompt are recorded as a single step in the undo history. To revert them, click **Edit > Undo**, or press Ctrl+Z (Cmd+Z on macOS) while the focus is on the model, outside the text box of the panel. Use **Edit > Redo** to apply them again.
+
+This lets you try an instruction, inspect the result in the ERD, and go back if it does not suit you.
+
+## Navigate between responses and model objects
+
+When an AI response references an object of the data model, such as a container, an entity or an attribute, its name appears as a **clickable link**.
 
 ![AI response clickable link](<lib/AI response clickable link.png>)
 
-Click the entity name to navigate directly to the corresponding object in Hackolade Studio. This makes it convenient to inspect an entity mentioned in a response, review its properties, or verify modifications performed by the AI.
+Click the name to navigate directly to the corresponding object in Hackolade Studio. This makes it convenient to inspect an object mentioned in a response, review its properties, or verify modifications performed by the AI.
 
 This integration between the conversation and the model provides a direct connection between textual explanations and the graphical representation of the data structures.
 
-## Copying responses
+## Copy responses
 
 AI responses include a **Copy** icon that lets you copy the response text to the clipboard.
 
 This is useful for sharing modeling explanations, documenting design decisions, or reusing generated descriptions in other applications.
 
-## Monitoring conversation length and token consumption
+## Monitor conversation length and token consumption
 
 As a conversation progresses, the AI accumulates context from previous interactions. AI models have a limited context window, measured in tokens, which determines how much information they can process at once.
 
@@ -125,19 +153,23 @@ Click the **Conversation length** indicator near the model selector to inspect c
 
 The indicator shows how much of the selected model's context window is currently occupied, expressed as a percentage and a token count.
 
-You can also inspect token consumption to monitor the resources used by the conversation. Token usage is particularly relevant when working with large data models or lengthy sequences of interactions, as it can affect API costs.
+The indicator also tells whether the conversation is short, long or very long, with advice on what to do. Token usage is particularly relevant when working with large data models or lengthy sequences of interactions: answers can become less precise, and each new message costs more, since the whole context is sent to the AI model again.
 
-## Compacting a conversation
+## Compact a conversation
 
 As the conversation grows, it may approach the context window limit of the selected AI model.
 
-To continue working without losing the essential context, you can **compact the conversation**. Compaction summarizes the previous exchanges, retaining the most relevant information while reducing the number of tokens required to represent the conversation history.
+To continue working without losing the essential context, Hackolade Studio **compacts the conversation** automatically before the limit is reached, so you are never blocked. Compaction summarizes the previous exchanges, retaining the most relevant information while reducing the number of tokens required to represent the conversation history.
+
+You may also compact the conversation yourself, for example when a topic is done: click the **Conversation length** indicator, then **Compact conversation**.
+
+The **Compact at** setting, in the same popup, defines the conversation length at which the automatic compaction occurs. By default, it is half of the context window of the selected model. With a higher value, the conversation is compacted later.
 
 This makes it possible to continue a long data modeling session while limiting context-window usage and associated token consumption.
 
 Because compaction summarizes previous interactions, some details from earlier exchanges may no longer be retained in full.
 
-## Starting a new chat
+## Start a new chat
 
 Click **+ New chat** at the top of the panel to start a fresh conversation.
 
@@ -147,7 +179,22 @@ This can be useful when switching to a different data modeling task, exploring a
 
 Starting a new chat does not imply resetting the current data model. The model remains available for subsequent AI interactions.
 
-## Reviewing AI-generated changes
+## Use Assist me on a model object
+
+You can also work with the AI on one model object at a time, without typing a prompt from scratch. Right-click a container, an entity, a view or an attribute, then choose **Assist me**:
+
+- **Ask anything** opens the AI chat panel with the object already mentioned in the text box, ready for your question;
+- **Write description** asks the AI to write the description of the object.
+
+<img src="lib/AI Assist me contextual menu.png" alt="AI Assist me contextual menu" width="354">
+
+The same command is available in the Properties pane: click **Generate with AI** next to the description of the object.
+
+For a description, the AI does not change the model directly. The panel shows the current description and the proposed one. You may edit the proposal, then click **Apply** to write it to the model. Click **Show prompt** to see the instructions that Hackolade Studio sent to the AI model.
+
+**Assist me** works on one object at a time: it is not shown when several objects are selected.
+
+## Review AI-generated changes
 
 AI-assisted modeling can significantly accelerate the creation and evolution of data models, but AI-generated results should always be reviewed by a qualified data modeler.
 
