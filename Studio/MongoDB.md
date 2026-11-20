@@ -37,7 +37,7 @@ In MongoDB, each document stored in a collection requires a unique \_id field th
 
 MongoDB represents JSON documents in binary-encoded format called BSON behind the scenes. BSON extends the JSON model to provide [additional data types](<https://docs.mongodb.com/manual/reference/bson-types/> "target=\"_blank\""), ordered fields, and to be efficient for encoding and decoding within different languages. The MongoDB BSON implementation is lightweight, fast and highly traversable. Like JSON, MongoDB's BSON implementation supports embedding objects and arrays within other objects and arrays – MongoDB can even 'reach inside' BSON objects to build indexes and match objects against query expressions on both top-level and nested BSON keys.
 
-BSON is a binary serialization format used to store documents and make remote procedure calls in MongoDB. The BSON specification is located [here](<http://bsonspec.org> "target=\"_blank\"").
+BSON is a binary serialization format used to store documents and make remote procedure calls in MongoDB. See the [BSON specification](<http://bsonspec.org> "target=\"_blank\"").
 
 Hackolade was specially built to support the data types and attributes behavior of MongoDB, including the BSON types.\
 ![MongoDB schema tree view](<lib/MongoDB schema tree view.png>)
@@ -71,7 +71,7 @@ MongoDB views are handled through a pipeline projection of the fields of a colle
 
 MongoDB provides a in-use encryption (previously known as the field level encryption ("FLE") framework), both server-side and client-side. Applications can encrypt fields in documents *prior* to transmitting data over the wire to the server.
 
-Hackolade Studio supports MongoDB FLE functionality. See more details [here](MongoDBField-LevelEncryption.md).
+Hackolade Studio supports MongoDB FLE functionality. See [MongoDB Field-Level Encryption](MongoDBField-LevelEncryption.md) for details.
 
 ## Sharding
 
@@ -79,13 +79,22 @@ Sharding is a method for distributing data across multiple machines. MongoDB use
 
 To distribute the documents in a collection, MongoDB partitions the collection using the shard key. The shard key consists of an immutable field or fields that exist in every document in the target collection.
 
-You choose the shard key when sharding a collection. The choice of a shard key cannot be changed after sharding. A sharded collection can have only one shard key.
+You choose the shard key when sharding a collection. A sharded collection can have only one shard key. After sharding, MongoDB lets you [refine the shard key](<https://www.mongodb.com/docs/manual/core/sharding-refine-a-shard-key/> "target=\"_blank\"") by adding suffix fields, or [reshard the collection](<https://www.mongodb.com/docs/manual/core/sharding-reshard-a-collection/> "target=\"_blank\"") with a new shard key.
 
 MongoDB supports 3 sharding strategies for distributing data across sharded clusters: hashed sharding, ranged sharding, and tag-aware (or zoned):
 
 - [hashed sharding](<https://docs.mongodb.com/manual/core/hashed-sharding/> "target=\"_blank\""): it involves computing a hash of the shard key field’s value. Each chunk is then assigned a range based on the hashed shard key values. MongoDB automatically computes the hashes when resolving queries using hashed indexes. Applications do not need to compute hashes.
 - [ranged sharding](<https://docs.mongodb.com/v3.4/core/ranged-sharding/> "target=\"_blank\""): it involves dividing data into ranges based on the shard key values. Each chunk is then assigned a range based on the shard key values.
 - [zone sharding](<https://docs.mongodb.com/manual/tutorial/manage-shard-zone/> "target=\"_blank\"") (previously known as tag-aware): in sharded clusters, you can create zones that represent a group of shards and associate one or more ranges of shard key values to that zone. MongoDB routes reads and writes that fall into a zone range only to those shards inside of the zone.
+
+Hackolade Studio generates the sharding statements of the [MongoDB script](MongoDBscripts.md) only when **Enable sharding** is checked in the properties of the database. You select the shard key of a collection in its **Sharding** tab, among the indexes defined in its **Indexes** tab.
+
+To model a hashed shard key:
+
+1. In the **Indexes** tab of the collection, create an index on the shard key field and set its key type to `hashed`.
+2. In the **Sharding** tab of the collection, select this index in **Key** and check **Hashed**.
+
+In the `sh.shardCollection()` statement, the shard key is made of the fields of the selected index, in the order of its keys, so a compound index gives a compound shard key. When **Hashed** is checked, Hackolade Studio writes `"hashed"` as the value of the field with the `hashed` key type, as MongoDB allows only one hashed field in a shard key.
 
 ## Forward-Engineering
 
@@ -111,4 +120,4 @@ For more information on MongoDB in general, please consult the [website](<http:/
 
 ## Field-Level Encryption
 
-Hackolade supports MongoDB's Field-Level Encryption framework. More details [here](MongoDBField-LevelEncryption.md).
+Hackolade supports MongoDB's Field-Level Encryption framework. See [MongoDB Field-Level Encryption](MongoDBField-LevelEncryption.md) for details.

@@ -6,6 +6,14 @@ seoTitle: Hackolade Studio vulnerabilities and advisories
 
 We commit to acknowledging vulnerability reports within 5 business days, and addressing them as soon as we are able to. We publish the results in the form of security advisories in this vulnerability page.
 
+**\[19-Nov-26\]** [Java4Shell (CVE-2026-114938)](<https://access.redhat.com/security/cve/cve-2026-114938> "target=\"_blank\"")
+
+CVE-2026-114938, dubbed "Java4Shell," is a memory corruption vulnerability in the HotSpot Java Virtual Machine (JVM), the runtime shared by Oracle Java SE, OpenJDK, and many downstream Java distributions.
+
+Although HotSpot is widely deployed, exposure to this vulnerability is narrower than its footprint suggests. Exploitation requires three conditions: an affected Java version, x86-64 hardware that supports AVX-512 VBMI, and an application that decodes attacker-supplied Base64 data. Even when all three are met, the limited size of the memory overwrite makes reliable remote code execution difficult, though not impossible.
+
+We are aware of this vulnerability report. But Hackolade does not use Java. The application is written in JavaScript, Typescript, and ReactJS. This vulnerability does not affect us.
+
 **\[22-Oct-26\]** [NodeJS vulnerability Out-of-Bounds Write in Google Brotli Decoder](<https://nvd.nist.gov/vuln/detail/cve-2026-111497> "target=\"_blank\"")\
 Node.js shipped a security update for a flaw in how it decompresses Brotli data, a bug people are already calling Node2Shell (CVE-2026-111497). If an attacker can get a malicious payload in front of your app, the flaw can crash the process, leak part of its memory, or potentially let them run their own code.
 

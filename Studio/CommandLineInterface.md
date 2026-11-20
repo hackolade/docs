@@ -29,7 +29,7 @@ It is easier to run the CLI from the directory where the Hackolade executable is
 
 - Windows:
   - cmd command line: all commands below should be preceded by `start /wait hackolade`
-  - PowerShell: all commands below should be preceded by `Start-Process -wait hackolade` and the commands and arguments should be wrapped in quotes such as `Start-Process -wait hackolade "forwEng --help"` for more details, please consult [this page](<https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/start-process?view=powershell-7.2#example-7--specifying-arguments-to-the-process> "target=\"_blank\"").
+  - PowerShell: all commands below should be preceded by `Start-Process -wait hackolade` and the commands and arguments should be wrapped in quotes such as `Start-Process -wait hackolade "forwEng --help"` for more details, see [Start-Process example 7: specifying arguments to the process](<https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/start-process?view=powershell-7.2#example-7--specifying-arguments-to-the-process> "target=\"_blank\"").
 - Mac: start Terminal and execute: all commands below should be preceded by `/Applications/Hackolade.app/Contents/MacOS/Hackolade`
 - Linux: terminal emulator or common shell programs: all commands below should be preceded by `./Hackolade`  or `path-to-where-hackolade-was-unzipped/Hackolade`
 
@@ -321,7 +321,7 @@ Usage: `hackolade forwEng [--arguments]`
 <tr>
 <td>--format=&lt; <em>format</em> &gt;</td>
 <td>N</td>
-<td><p>Output target-specific schema format:</p><p>MongoDB: ["shell", "mongoose","js", $jsonchema"]</p><p>Couchbase: ["ottoman", "n1ql"]</p><p>DynamoDB: ["tableScript", "putItemScript"]</p><p>Avro: ["avroSchema","schemaRegistry", "azureSchemaRegistry","confluentSchemaRegistry","pulsarSchemaRegistry"]</p><p>BigQuery: ["sql", "json"]</p><p>CosmosDB-with-Gremlin-API: ["gremlin", "cosmosdb"]</p><p>CosmosDB-with-SQL-API: ["containerSettingsJson", "azureCliPowerShell","azureCliZsh","azureCliBash"]</p><p>JSON Schema: ["azureSchemaRegistry","confluentSchemaRegistry","pulsarSchemaRegistry"]</p><p>Glue: ["awsCLI", "HiveQL"]</p><p>OpenAPI: ["json", "yaml"]</p><p>Oracle: ["quotedIdentifier", "nonquotedIdentifier"]</p><p>Protobuf: ["azureSchemaRegistry","confluentSchemaRegistry","pulsarSchemaRegistry"]</p><p>Snowflake: ["snowSight", "classicUI"]</p><p>Swagger: ["json", "yaml"]</p></td>
+<td><p>Output target-specific schema format:</p><p>MongoDB: ["shell", "mongoose","js", "$jsonschema"]</p><p>Couchbase: ["ottoman", "n1ql"]</p><p>DynamoDB: ["tableScript", "putItemScript"]</p><p>Avro: ["avroSchema","schemaRegistry", "azureSchemaRegistry","confluentSchemaRegistry","pulsarSchemaRegistry"]</p><p>BigQuery: ["sql", "json"]</p><p>CosmosDB-with-Gremlin-API: ["gremlin", "cosmosdb"]</p><p>CosmosDB-with-SQL-API: ["containerSettingsJson", "azureCliPowerShell","azureCliZsh","azureCliBash"]</p><p>JSON Schema: ["azureSchemaRegistry","confluentSchemaRegistry","pulsarSchemaRegistry"]</p><p>Glue: ["awsCLI", "HiveQL"]</p><p>OpenAPI: ["json", "yaml"]</p><p>Oracle: ["quotedIdentifier", "nonquotedIdentifier"]</p><p>Protobuf: ["azureSchemaRegistry","confluentSchemaRegistry","pulsarSchemaRegistry"]</p><p>Snowflake: ["snowSight", "classicUI"]</p><p>Swagger: ["json", "yaml"]</p></td>
 </tr>
 <tr>
 <td>--connectName=&lt;connection&gt;</td>
@@ -1139,7 +1139,7 @@ is to to use the 8.3 command `C:\PROGRA~1\Hackolade\hackolade`, as displayed abo
 
 ## revEng
 
-The *`revEng`* command allows to trigger a reverse-engineering process of a database instance, as described in [this page](Reverseengineeranexistinginstanc.md), or script file.
+The *`revEng`* command allows to trigger a reverse-engineering process of a database instance, as described in [Reverse-engineering](Reverseengineeranexistinginstanc.md), or script file.
 
 Usage: `hackolade revEng [--arguments]`
 
@@ -1427,7 +1427,7 @@ is to to use the 8.3 command `C:\PROGRA~1\Hackolade\hackolade`, as displayed abo
 
 ## revEngDDL
 
-The *`revEngDDL`* command allows to trigger a reverse-engineering process of a Data Definition Language file from a database instance, as described in [this page](SQLDDL.md).
+The *`revEngDDL`* command allows to trigger a reverse-engineering process of a Data Definition Language file from a database instance, as described in [SQL DDL](SQLDDL.md).
 
 Usage: `hackolade revEngDDL [--arguments]`
 
@@ -1566,7 +1566,7 @@ start /wait hackolade revEngDiagram --source=mega --file=Sales.xmg --target=Db2-
 
 ## revEngJSON
 
-The *`revEngJSON`* command allows to trigger a reverse-engineering process of a JSON document or JSON Schema file, as described in [this page](JSONdocument1.md).
+The *`revEngJSON`* command allows to trigger a reverse-engineering process of a JSON document or JSON Schema file, as described in [JSON document](JSONdocument1.md).
 
 Usage: `hackolade revEngJSON [--arguments]`
 
@@ -1642,7 +1642,7 @@ Usage: `hackolade revEngJSON [--arguments]`
 
 ## revEngYAML
 
-The *`revEngYAML`* command allows to trigger a reverse-engineering process of a YAML document file, as described in [this page](JSONdocument1.md).
+The *`revEngYAML`* command allows to trigger a reverse-engineering process of a YAML document file, as described in [JSON document](JSONdocument1.md).
 
 Usage: `hackolade revEngJSON [--arguments]`
 
@@ -1889,4 +1889,4 @@ Usage: `start /wait hackolade --version`
 
 ## CLI error message
 
-You may download an Excel file with CLI error messages [here](<https://hackolade.com/downloads/CLI_Error_Messages_Hackolade.xlsx> "target=\"_blank\"").
+You may download an Excel file with CLI error messages: [CLI_Error_Messages_Hackolade.xlsx](<https://hackolade.com/downloads/CLI_Error_Messages_Hackolade.xlsx> "target=\"_blank\"").

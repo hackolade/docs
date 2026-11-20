@@ -280,6 +280,8 @@ For an MCP client that only runs local servers, bridge to the remote server with
 
 Open or create a Polyglot model before the import. The **xDBML...** menu item appears only when the target of the model is Polyglot.
 
+The import is not supported yet into a model that contains references to definitions (model, internal or external definitions) or objects derived from another Polyglot model. In such a model, an error message says so, and nothing is imported. Import the xDBML into a new Polyglot model instead.
+
 There are 3 ways to import xDBML into Hackolade Studio: by reading a file with the extension `.xdbml`, by reading the clipboard into which you copied the xDBML from the response of the assistant, or by reading a file in a remote repository. In each case, one xDBML document is imported at a time. xDBML cannot be imported with the [Command-Line Interface](CommandLineInterface.md).
 
 The objects of the xDBML document are added to the open model. When the document has a `Project`, its name and its note replace the name and the description of the model. Data types are converted into the closest Polyglot data type. [Naming conventions](Namingconventions.md), if enabled, are applied. When the model already holds a container or an entity of the same name, you are asked to keep both, replace or merge, as described in [Conflict resolution during merge into an existing model](<https://hackolade.com/help/Reverseengineeranexistinginstanc.html#Conflict%20resolution%20during%20merge%20into%20an%20existing%20model>).

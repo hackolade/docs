@@ -1,11 +1,13 @@
 ---
-description: Connect Hackolade Studio to Anthropic, Google, Mistral AI, OpenAI or SpaceXAI with an API key, or to a gateway or self-hosted model with a custom Base URL.
+description: Connect Hackolade Studio to Anthropic, Mistral AI, OpenAI or SpaceXAI with an API key, or to a gateway or self-hosted model with a custom Base URL.
 seoTitle: Manage AI connections in Hackolade Studio
 image: lib/AI - Manage connections.png
 ---
 # Manage AI connections
 
 The **Manage AI Connections** dialog lets you configure and manage connections to AI providers for use with Hackolade Studio. Each connection defines the provider, authentication credentials, and optionally a custom endpoint through which AI requests are sent.
+
+![AI assistant menu](<lib/AI menu.png>)
 
 You can create multiple connections, including several connections to the same AI provider using different API keys or endpoints.
 
@@ -17,10 +19,9 @@ Click **New connection** in the left panel to configure a connection.
 
 **Connection name:** Enter a descriptive name to identify the connection. This name appears in the list of available connections. You can choose any name that helps distinguish between providers, accounts, environments, or configurations.
 
-**Provider:** Select an AI provider from the dropdown list. Currently, Hackolade Studio supports five providers:
+**Provider:** Select an AI provider from the dropdown list. Currently, Hackolade Studio supports four providers:
 
 - Anthropic (Claude)
-- Google (Gemini)
 - Mistral AI
 - OpenAI (GPT)
 - SpaceXAI (Grok)

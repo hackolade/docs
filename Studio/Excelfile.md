@@ -7,6 +7,8 @@ image: lib/Tools Options - FE Excel Export Objet Select.png
 
 The feature to exchange data with Excel provides the ability to export a data model, or parts of it, to Microsoft Excel so properties could be easily edited in a tabular format, to be re-imported back into the application. It facilitates productive bulk actions for the maintenance of properties. It also allows creation of a new model - or additions to an existing model - by team members that might not have access to the application.
 
+[How-To: Export / Import with Excel template](<https://youtu.be/rP6Z-0FNEVQ> "video")
+
 It includes the following capabilities:\
 (i) editing containers, entities, and attributes of an existing model;\
 (ii) selecting which properties of an attribute are exported in the Excel file, and hence which ones are filtered out and not exported; and\

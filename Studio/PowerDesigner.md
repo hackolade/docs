@@ -124,7 +124,7 @@ Given the above, it should be expected that there is some learning curve to our 
 </tr>
 <tr>
 <td>Free symbol (Note, Rectangle, Text, etc.)</td>
-<td>Symbol (annotation or rectangle)</td>
+<td>Annotation (symbol)</td>
 </tr>
 <tr>
 <td>High value</td>
@@ -299,7 +299,7 @@ Some transformations occur, and extraneous information is ignored. We also impor
 
 - ArchitectureAreas, and map them to containers,
 - Inheritance, and map them to our supertypes and subtypes;
-- LogicalDiagrams, and map them to our Diagram Views;
+- PhysicalDiagrams, and map them to our Diagram Views;
 - Shortcuts, and map them to references to their respective entities,
 - Packages, and map them to our Diagram Views,
 - Indexes, as long as there is a match between the source technology and the Hackolade Studio target model,
@@ -315,6 +315,20 @@ To import a PowerDesigner physical model from the GUI application, you must firs
 
 Then go to Tools > Reverse-Engineer > PowerDesigner, and select the PowerDesigner file you wish to import:\
 ![Reverse-engineer or Import PowerDesigner model](<lib/Reverse-engineer or Import PowerDesigner mode.png>)
+
+## Diagram layout
+
+Each PowerDesigner diagram becomes a [Diagram View](DiagramViews.md) in Hackolade Studio, and the Diagram View keeps the layout of the diagram:
+
+- the position and size of each entity box, with the proportions of the PowerDesigner diagram;
+- the position and size of each PowerDesigner free symbol, imported as an annotation;
+- the path of each relationship line, with its line style and thickness.
+
+Hackolade Studio turns off automatic width and height for the imported entity boxes, so they keep their PowerDesigner size. If a box is too small to show all its attributes, you may manually resize it, or [arrange the entity boxes](<https://hackolade.com/help/EntityboxesinERdiagram.html#Arrange%20entity%20boxes>) again.
+
+When an entity appears more than once in the same PowerDesigner diagram (graphical synonyms), the Diagram View shows it once, at the position of its first symbol.
+
+The main ER diagram of Hackolade Studio shows all the entities of the model. PowerDesigner has no equivalent diagram, so there is no layout to import for it: Hackolade Studio applies an orthogonal distribution to its entity boxes and places the annotations next to the containers.
 
 ## Display imported stereotypes, keywords, and annotations
 

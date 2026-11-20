@@ -5,7 +5,7 @@ image: lib/License Status - request license key.png
 ---
 # Software registration
 
-***If you're using a an older version of Hackolade Studio (up to v6.11.9), consult*** [this page](OldSoftwareValidationdialog.md) ***for the older screenshots and process.***
+***If you're using a an older version of Hackolade Studio (v7.0.0 up to v8.13.8), consult*** [this page](OldSoftwareValidationdialog.md) ***for the previous screenshots and process.***
 
 After downloading Hackolade Studio Desktop, you need to obtain and validate an activation key before you can use the application, except for the Community Edition.
 
@@ -25,6 +25,8 @@ You can initiate the process of getting an activation key either from the websit
 ## Get a software license key
 
 Starting with v7.0.0, the Community Edition no longer requires a license key. For the Community Edition, the experience is 100% friction-less: no license key, no sign up, no login. Just download the software and start to use use it. If you want to avoid seeing the License Status screen each time you start the application. Just click on the Continue for Free button in the Community Edition card.
+
+![License validation - multiple trial license keys not accepted](<lib/License validation - multiple trial license keys not accepted.png>)
 
 For obvious reasons, it is not possible to accumulate multiple 14-day free trial keys. Once your key has expired, you may take a subscription for the Edition of your choice, or choose to use the Community Edition for free. If you need more time, you may send an email to [support@hackolade.com](mailto:support@hackolade.com?subject=Request%20to%20extend%20validity%20of%20trial%20key), explaining the evaluation plans and timeline for your organization.
 

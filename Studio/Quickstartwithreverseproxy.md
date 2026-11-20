@@ -13,6 +13,8 @@ For this quick start to work, you need the following:
 - Inbound access to TCP 80 and 443 from the internet
 - Outbound access to Let's Encrypt servers
 
+Let's Encrypt checks your hostname from the internet before it issues the certificate. If your server sits on a private network, for example a cloud instance without a public IP address that users reach through a VPN, this quick start cannot get a certificate. Use your cloud provider's load balancer with a certificate instead, as described in [Model Hub on Amazon EC2](ModelHubonAmazonEC2.md) and [Model Hub on an Azure virtual machine](ModelHubonanAzurevirtualmachine.md).
+
 ## Create a DNS name that points to the Model Hub server
 
 ### Find your server's public IP
@@ -89,7 +91,7 @@ The result must be **the same public IP** you set in the A record.
 
 ## Edit your Docker Compose file
 
-Deploy Model Hub like described above but edit the Docker Compose shown on that page with the one below. It provides Model Hub and a PostgreSQL database. On top of that, it deploys a reverse proxy ([traefik](<https://traefik.io/traefik> "target=\"_blank\"")), which automatically generates a certificate with [Let's Encrypt](<https://letsencrypt.org/docs/> "target=\"_blank\"")
+Prepare the project folder and the two secret files as described in [Install and start the server](<https://hackolade.com/help/Installandstarttheserver.html#2.%20Create%20the%20project%20layout>), then use the Docker Compose file below instead of the one shown on that page. It provides Model Hub and a PostgreSQL database. On top of that, it deploys a reverse proxy ([traefik](<https://traefik.io/traefik> "target=\"_blank\"")), which automatically generates a certificate with [Let's Encrypt](<https://letsencrypt.org/docs/> "target=\"_blank\"")
 
 **Note** that model-hub doesn't expose port 3000 with this configuration anymore. Model Hub will instead be served by the reverse proxy Traefik
 
@@ -113,7 +115,7 @@ services:
       - source: traefik_dynamic
         target: /etc/traefik/dynamic.yml
   postgres:
-    image: hackolade.azurecr.io/postgres/postgres:18.4-alpine
+    image: postgres:18-alpine
     deploy:
       restart_policy:
         condition: always
@@ -146,6 +148,9 @@ services:
       DB_USERNAME: hck_hub
       DB_PASSWORD_FILE: /run/secrets/db_password
       CURRENT_ENCRYPTION_KEY_FILE: /run/secrets/model_hub_encryption_key
+    depends_on:
+      postgres:
+        condition: service_healthy
     secrets:
       - db_password
       - model_hub_encryption_key
@@ -232,3 +237,13 @@ where:\
 1\. change the value of *MODEL_HUB_VERSION* with the version you want to deploy from [DockerHub](<https://hub.docker.com/r/hackolade/model-hub> "target=\"_blank\"")\
 2\. change the value of *REPLACE_WITH_YOUR_EMAIL* with a real email address. This email address will be used to link it to the generated certificate.\
 3\. change the value of *REPLACE_WITH_YOUR_DOMAIN* with the exact DNS name from Step 1.
+
+## Start and verify
+
+From the folder that contains the Docker Compose file, run:
+
+```bash
+docker compose up -d
+```
+
+Traefik requests the certificate on its first start, which can take a minute. From your workstation, open `https://<your-domain-name>`: the Model Hub loads with a valid certificate. If the browser shows a certificate warning, run `docker compose logs traefik` to see why Let's Encrypt refused the request; the usual causes are a DNS record that does not point to the server yet, or port 80 closed to the internet.

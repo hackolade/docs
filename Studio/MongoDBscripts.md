@@ -20,7 +20,7 @@ The information can be viewed in the MongoDB Script tab:\
 You may toggle between Create and Update views:\
 ![MongoDB script toggle](<lib/MongoDB script toggle.png>)
 
-A button lets the user apply to a selected instance the script to create databases, collections with optional $jsonschema validator, indexes, and sharding configuration, and sample data if desired.
+A button lets the user apply to a selected instance the script to create databases, collections with their $jsonSchema validator, indexes, and sharding configuration, and sample data if desired.
 
 For version of MongoDB up to v3.4, the MongoDB script is in [aggregation pipeline syntax](<https://docs.mongodb.com/v3.2/core/document-validation/> "target=\"_blank\""). From v3.6 up, the script is in [$jsonschema syntax](<https://docs.mongodb.com/manual/core/schema-validation/> "target=\"_blank\"").
 
@@ -28,3 +28,7 @@ You may export these scripts to a JavaScript file with the menu option Tools > F
 ![Forward-Engineering - MongoDB Script file](<lib/Forward-Engineering - MongoDB Script file.png>)
 
 The generation of the script can also be triggered with [Command-Line Interface](CommandLineInterface.md).
+
+Hackolade Studio always includes the validator in `db.createCollection()`. The **Validation level** of a collection is `Off` by default: MongoDB stores the validator but does not apply it to inserts and updates. Set **Validation level** to `Moderate` or `Strict` in the collection properties to apply it.
+
+The menu Tools > Forward-Engineering currently generates one file per collection. With the CLI command `forwEng`, `--outputType=script` and `--format=shell` or `--format=js`, the `--level` argument sets how the files are split: `--level=container` generates one file per database, and `--level=entity` one file per collection. For MongoDB, `--level=model` behaves like `--level=container`.

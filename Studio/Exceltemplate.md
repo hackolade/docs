@@ -16,6 +16,8 @@ Reverse-Engineering of an Excel file pre-supposes that you have first performed 
 
 To import CSV files into Hackolade, it is advised to go first export an Excel template, then link it to the CSV file, before importing back into Hackolade.
 
+[How-To: Export / Import with Excel template](<https://youtu.be/rP6Z-0FNEVQ> "video")
+
 To import the content of this Excel, use the Hackolade function Tools > Reverse-Engineering > Excel template
 
 ![Tools - Reverse-Engineer - Excel Template](<lib/Tools - Reverse-Engineer - Excel Template.png>)

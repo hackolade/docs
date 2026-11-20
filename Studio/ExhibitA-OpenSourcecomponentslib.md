@@ -9,7 +9,7 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 **Open Source Components:**
 
 <table style="width:100%">
-<colgroup><col style="width:17%"><col style="width:74%"><col style="width:9%"></colgroup>
+<colgroup><col style="width:24%"><col style="width:63%"><col style="width:13%"></colgroup>
 <thead>
 <tr>
 <th>Library</th>
@@ -467,11 +467,6 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/bitinn/node-fetch" target="_blank">Node-fetch</a></td>
 <td>(c) 2016 David Frank</td>
 <td><a href="https://github.com/bitinn/node-fetch/blob/master/LICENSE.md" target="_blank">MIT</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/marc136/node-folder-hash" target="_blank">Node-folder-hash</a></td>
-<td>(c) 2015 Marc Walter</td>
-<td><a href="https://github.com/marc136/node-folder-hash/blob/v5/LICENSE.txt" target="_blank">MIT</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/digitalbazaar/forge" target="_blank">Node-forge</a></td>

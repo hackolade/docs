@@ -6,12 +6,12 @@ image: lib/AI-Assisted Data Modeling panel.png
 # AI chat panel
 
 > [!IMPORTANT]
-> AI features are available only in the [Ultimate](<https://hackolade.com/help/Editions.html#Edition>) and in the 14-day free trial editions. They currently work in only the desktop application, and with Polyglot models.
+> AI-Assisted Data modeling features are available only in the [Ultimate](<https://hackolade.com/help/Editions.html#Edition>) and in the 14-day free trial editions. They currently work in only the desktop application, and with Polyglot models.
 
-The AI Assistant is a movable and adjustable side panel in Hackolade Studio where you ask an AI model about your data model. You may also direct it to create a new model and modify an existing one.
+The AI Assistant is a movable and adjustable side panel in Hackolade Studio.  You chose your preferred AI model, then you use natural language to describe a requirement or interact with your data model: create, modify, enrich, explain, optimize, get insights, or ask questions.
 
 > [!NOTE]
-> Our [AI integration philosophy](<https://hackolade.com/help/AI-assisteddatamodeling.html#How%20Hackolade%20does%20AI>) is such that Hackolade does not get any of your data model, prompts and responses.
+> Our [AI integration philosophy](<https://hackolade.com/help/AI-assisteddatamodeling.html#Hackolade%20let's%20you%20use%20AI%20on%20your%20own%20terms>) is such that Hackolade does not get any of your data model, prompts and responses.
 
 Go to the menu option `AI > AI-Assisted Data Modeling Panel` or click the sparkling icon in the toolbar.
 
@@ -119,6 +119,8 @@ You can then continue refining the model through additional prompts or make manu
 
 The AI chat panel currently works only on Polyglot models, and supports the same objects as the xDBML reverse-engineering: containers, entities, attributes, primary and unique keys, relationships and views. It cannot create or modify an index, an enumeration or a model definition yet, for example. When you ask for a change it cannot perform, the AI tells you so in its response.
 
+The AI assistant cannot currently change a model yet when the model contains references to definitions (model, internal or external definitions) or objects derived from another Polyglot model. On such a model, the AI assistant tells you that changes are not supported yet, and you can still ask questions about the model.
+
 The resulting changes become part of the current data model and can be saved through Hackolade Studio's normal model-saving workflow, subject to the Auto save setting.
 
 ## Undo AI changes
@@ -203,3 +205,24 @@ Although the AI can interpret requirements, create structures, and modify model 
 The integration with Hackolade Studio allows you to inspect the generated structures directly in the ERD and Properties pane, make manual adjustments when necessary, and continue refining the model through conversational instructions.
 
 **Even the best AI requires a review by a good data modeler.**
+
+## Share your feedback with our Helpdesk
+
+You have an idea for the AI assistant, for example a new command, or you would like our Helpdesk to analyze a specific chat? Once a chat is in progress, the question *Ideas or feedback on the AI assistant?* and the link **Share them with our helpdesk** appear at the bottom of the panel, next to the **Close** button.
+
+<img src="lib/AI share a dump with support link.png" alt="Ideas or feedback on the AI assistant, Share them with our helpdesk link at the bottom of the AI chat panel" width="478">
+
+Click **Share them with our helpdesk** to open the **Share your feedback with our helpdesk** dialog.
+
+![Share your feedback with our helpdesk dialog](<lib/AI share chat with support dialog.png>)
+
+> [!NOTE]
+> The results of the AI assistant vary with the provider, the [model and its settings](<https://hackolade.com/help/AIchatpanel.html#Select%20an%20AI%20model>), and how much detail your prompts give. The AI model runs at your provider, with your own configuration.
+
+1. Under **Save this chat**, click **Save chat**, then choose where to save the file on your computer. Save the chat when you want our Helpdesk to analyze a specific chat. Once the file is saved, its name is displayed, and **Show in folder** opens the folder where it is.
+2. Under **Email our helpdesk**, click **Write email**. Your email application opens a message to our Helpdesk, with a template where you describe your feedback and, for a specific chat, what you asked, what you expected and what you got. If you saved the chat, a reminder is displayed: **attach the saved file to the email** before sending it, as it is not attached automatically.
+
+![Share your feedback with our helpdesk dialog once the chat is saved, with the file name, Show in folder and the reminder to attach the file](<lib/AI share chat with support dialog saved.png>)
+
+> [!IMPORTANT]
+> Your chat includes your prompts, the responses of the AI assistant, and your model, in whole or in part. Our Helpdesk uses it only to analyze your request, and deletes it when the ticket is closed.

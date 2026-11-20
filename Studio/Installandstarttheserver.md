@@ -12,6 +12,8 @@ You can deploy the Model Hub with Docker Compose, Kubernetes, or any orchestrato
 
 This page explains what each component does and how to configure a typical deployment to connect to a database controlled by the customer while external to the Model Hub container.
 
+For a complete example on a cloud provider, from the network to the HTTPS address your users open, follow [Model Hub on Amazon EC2](ModelHubonAmazonEC2.md) or [Model Hub on an Azure virtual machine](ModelHubonanAzurevirtualmachine.md).
+
 ### What gets deployed?
 
 A Model Hub installation is made of standard components, with a secrets vault:
@@ -27,7 +29,7 @@ A Model Hub installation is made of standard components, with a secrets vault:
 <tbody>
 <tr>
 <td>model-hub</td>
-<td>The Model Hub application. Serves the web UI and APIs. Users connect to this process (default port `3000`)</td>
+<td>The Model Hub application. Serves the web UI and APIs on port `3000`, behind your reverse proxy or load balancer.</td>
 </tr>
 <tr>
 <td>Database</td>
@@ -42,6 +44,12 @@ A Model Hub installation is made of standard components, with a secrets vault:
 
 ![Model Hub installation components](<lib/Model Hub installation components.png>)
 
+### How users reach the Model Hub
+
+Your users open the Model Hub in their browser at `https://<your-hostname>`, the hostname you gave the Hackolade Helpdesk as described in [Model Hub prerequisites](ModelHubprerequisites.md). A reverse proxy or a load balancer in front of the Model Hub holds the TLS certificate for that hostname and forwards the requests to port `3000` of the container.
+
+HTTPS is mandatory: the Model Hub uses service workers in the browser, and browsers allow them only on HTTPS pages. If you open `http://<server-ip>:3000` from your workstation, the page loads but the license check fails. Always use the hostname, not an IP address or the load balancer's own name, as the Hackolade Helpdesk configures domain locking for that hostname.
+
 ### Pull images
 
 Each new version of Model Hub is published on [DockerHub](<https://hub.docker.com/r/hackolade/model-hub> "target=\"_blank\""). You may specify the version to pull with
@@ -51,36 +59,100 @@ export MODEL_HUB_VERSION=<target-model-hub-version>
 docker pull hackolade/model-hub:$MODEL_HUB_VERSION
 ```
 
-The database can be self-standing (installed on a host) or packaged as a container image. The app server and the database can be on separate machines.
-
 ## Quick start with Docker Compose and self-standing PostgreSQL database
 
-The example below deploys the Model Hub application against an external PostgreSQL database. For a quick start with PostgreSQL deployed on the same server, check the instructions in the next section below.
+The example below deploys the Model Hub application against an external PostgreSQL database. To run PostgreSQL in a container next to the Model Hub instead, see [Quick start with Docker Compose and PostgreSQL](<https://hackolade.com/help/Installandstarttheserver.html#Quick%20start%20with%20Docker%20Compose%20and%20PostgreSQL>).
 
-### 1. Create the project layout
+### 1. Prepare the database
+
+The Model Hub uses a database that you provide. Prepare it before you start the Model Hub.
+
+#### Database checklist
+
+1\. Create an empty database.\
+2\. Create a dedicated user.\
+3\. Grant that user permission to create, alter, and delete tables in its schema, and to read/write those tables, as described in [Model Hub prerequisites](ModelHubprerequisites.md).\
+4\. Ensure the Model Hub containers can reach the database host and port.
+
+#### PostgreSQL
+
+On PostgreSQL, the Model Hub creates its own `hck_hub` schema in the database, so its user must own the database. Connected to your PostgreSQL server as an administrator, run:
+
+```sql
+CREATE ROLE hck_hub WITH LOGIN PASSWORD '<database-password>';
+GRANT hck_hub TO CURRENT_USER;
+CREATE DATABASE hck_hub OWNER hck_hub;
+```
+
+The `GRANT` line lets an administrator who is not a superuser, such as the administrator of a managed database on AWS or Azure, create a database owned by the `hck_hub` user.
+
+When your database requires encrypted connections, which is the default for managed PostgreSQL services, add `?sslmode=require` to `DB_CONNECTION` at step 3: `pg://<db-host>:5432/<database>?sslmode=require`. The Model Hub then checks the certificate of the database server against the usual public certificate authorities. For a certificate signed by another authority, such as Amazon RDS, see [Model Hub on Amazon EC2](ModelHubonAmazonEC2.md).
+
+#### PostgreSQL on the same server
+
+When PostgreSQL is installed directly on the server that runs Docker, outside a container, the Model Hub container reaches it through the address of the server on the Docker network. Add these lines to the `model-hub` service of your `docker-compose.yml` at step 3:
+
+```yaml
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+```
+
+and use `pg://host.docker.internal:5432/<database>` as `DB_CONNECTION`.
+
+PostgreSQL accepts only local connections by default, so you also have to change its configuration and then restart it:
+
+- In `postgresql.conf`, set `listen_addresses` to include the address of the server on the Docker network, or `'*'` if a firewall protects port `5432`.
+- In `pg_hba.conf`, allow the Docker networks, for example `host hck_hub hck_hub 172.16.0.0/12 scram-sha-256`.
+
+Without these changes, the Model Hub logs `ECONNREFUSED` errors and restarts in a loop.
+
+#### Oracle
+
+In `docker-compose.yml` at step 3, set `DB_TYPE` to `oracledb`, and `DB_CONNECTION` to an Oracle Connect descriptor or Easy Connect string:
+
+```yaml
+model-hub:
+  image: hackolade/model-hub:$MODEL_HUB_VERSION
+  environment:
+    DB_TYPE: oracledb
+    DB_USERNAME: <db-user>
+    DB_PASSWORD_FILE: /run/secrets/db_password
+    DB_CONNECTION: "(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=<db-host>)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=<service-name>)))"
+    CURRENT_ENCRYPTION_KEY_FILE: /run/secrets/model_hub_encryption_key
+  secrets:
+    - db_password
+    - model_hub_encryption_key
+```
+
+### 2. Create the project layout
 
 ```text
 model-hub-deploy/
 ├── .env
 ├── docker-compose.yml
 └── secrets/
-    └── db_password                       # the database password
+    ├── db_password                       # the database password
     └── model_hub_encryption_key          # the encryption key
 ```
 
-Create the password file and do not commit it to source control.
+The encryption key is a 64-character hex string. The Model Hub uses it to encrypt sensitive information in the database, such as your Git provider configuration, and does not start without it. Keep a copy with your database backups: without the key, the Model Hub cannot read the configuration it stored.
 
-The encryption key needs to be a 64-character hex string. This encryption key is used to encrypt sensitive information like your Git Provider configuration in the database
-
-To generate one, you can run the following command:
+Create the two secret files, with the password of the database user of step 1, and do not commit them to source control:
 
 ```bash
-openssl rand -hex 32
+mkdir -p model-hub-deploy/secrets
+cd model-hub-deploy
+printf '%s' '<database-password>' > secrets/db_password
+openssl rand -hex 32 > secrets/model_hub_encryption_key
+chmod 700 secrets
+chmod 644 secrets/*
 ```
 
-### 2. Example of docker-compose.yml
+The `secrets` folder is closed to other users of the server, while the Model Hub container can still read the files.
 
-Update DB_CONNECTION (and, if needed, DB_USERNAME) so they match your database host, port, database name, and user.
+### 3. Create docker-compose.yml
+
+Update `DB_CONNECTION` (and, if needed, `DB_USERNAME`) so they match your database host, port, database name, and user. The host is the database server as seen from inside the container: `localhost` there is the container itself, not your server. For a PostgreSQL installed on the same server outside Docker, see [PostgreSQL on the same server](<https://hackolade.com/help/Installandstarttheserver.html#PostgreSQL%20on%20the%20same%20server>).
 
 ```yaml
 services:
@@ -102,9 +174,6 @@ services:
     secrets:
       - db_password
       - model_hub_encryption_key
-networks:
-  default:
-    name: hub
 secrets:
   db_password:
     file: ./secrets/db_password
@@ -140,27 +209,27 @@ where:
 <td>Path inside the container to a file containing the password.</td>
 </tr>
 <tr>
-<td><pre><code class="language-text">Port 3000</code></pre></td>
-<td>Default HTTP port of the Model Hub process.</td>
+<td>CURRENT_ENCRYPTION_KEY_FILE</td>
+<td>Path inside the container to a file containing the encryption key. Required.</td>
 </tr>
 <tr>
-<td><pre><code class="language-text">CURRENT_ENCRYPTION_KEY_FILE</code></pre></td>
-<td>Path inside the container to a file containing the encryption key</td>
+<td>Port 3000</td>
+<td>Default HTTP port of the Model Hub process. Your reverse proxy or load balancer forwards requests to this port.</td>
 </tr>
 </tbody>
 </table>
 
-### 3. Edit the .env variable
+### 4. Create the .env file
 
-The .env file supplies values to Docker Compose substitution. Change the value of *MODEL_HUB_VERSION* with the version you want to deploy from [DockerHub](<https://hub.docker.com/r/hackolade/model-hub> "target=\"_blank\"").
+The `.env` file gives Docker Compose the Model Hub version to deploy. Set `MODEL_HUB_VERSION` to a version from [DockerHub](<https://hub.docker.com/r/hackolade/model-hub> "target=\"_blank\"").
 
 ```text
-MODEL_HUB_VERSION=REPLACE_WITH_MODEL_HUB_VERSION
+MODEL_HUB_VERSION=<model-hub-version>
 ```
 
-### 4. Start the stack
+### 5. Start the Model Hub
 
-From the directory that contains docker-compose.yml
+From the folder that contains `docker-compose.yml`, run:
 
 ```bash
 docker compose up -d
@@ -171,79 +240,28 @@ What happens:\
 2\. When the container starts, it creates the database structure that it needs to run properly.\
 3\. Once the setup is done, the application is ready to be used.
 
-Check status
+Check its status:
 
 ```bash
 docker compose ps
 docker compose logs -f model-hub
 ```
 
-Open the Model Hub
+Check from the server that the Model Hub answers:
 
-```text
-http://<server-hostname-or-ip>:3000
+```bash
+curl -f http://localhost:3000/ready
 ```
 
-It is mandatory to place a reverse proxy in front of the Model Hub and terminate TLS there because Model Hub uses service workers in the browser, which forces the use of HTTPS.. Consult this page for a [quick start setup](Quickstartwithreverseproxy.md).
-
-### 5. Connect to the database
-
-The Model Hub connects to a self-standing SQL database that you provide. Provision the database first, then point the application at it.
-
-#### Database checklist
-
-1\. Create an empty database (and schema if required by your standards).\
-2\. Create a dedicated user.\
-3\. Grant that user permission to create, alter, and delete tables in its schema, and to read/write those tables — see [Pre-requisites](ModelHubprerequisites.md)\
-4\. Ensure the Model Hub containers can reach the database host and port.
-
-#### PostgreSQL
-
-These environment variables must be configured to connect Model Hub with your PostgreSQL database
-
-```text
-DB_TYPE=pg
-DB_CONNECTION=pg://<db-host>:5432/<database>
-DB_USERNAME=<db-user>
-DB_PASSWORD_FILE=/run/secrets/db_password
-```
-
-#### Oracle
-
-These environment variables must be configured to connect Model Hub to your Oracle database
-
-```text
-DB_TYPE=oracledb
-DB_USERNAME=<db-user>
-DB_PASSWORD_FILE=/run/secrets/db_password
-DB_CONNECTION=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=<db-host>)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=<service-name>)))
-```
-
-DB_CONNECTION is an Oracle Connect descriptor (or Easy Connect string).
-
-Example Compose snippet:
-
-```yaml
-model-hub:
-  image: hackolade/model-hub:$MODEL_HUB_VERSION
-  environment:
-    DB_TYPE: oracledb
-    DB_USERNAME: <db-user>
-    DB_PASSWORD_FILE: /run/secrets/db_password
-    DB_CONNECTION: "(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=<db-host>)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=<service-name>)))"
-    CURRENT_ENCRYPTION_KEY_FILE: /run/secrets/model_hub_encryption_key
-  secrets:
-    - db_password
-    - model_hub_encryption_key
-```
+Users cannot use the Model Hub until a reverse proxy or a load balancer serves it over HTTPS on your hostname, as explained in [How users reach the Model Hub](<https://hackolade.com/help/Installandstarttheserver.html#How%20users%20reach%20the%20Model%20Hub>). For a server reachable from the internet, follow [Quick start with reverse proxy](Quickstartwithreverseproxy.md). On a cloud provider, follow [Model Hub on Amazon EC2](ModelHubonAmazonEC2.md) or [Model Hub on an Azure virtual machine](ModelHubonanAzurevirtualmachine.md).
 
 ### 6. Configure health checks
 
 When you run the official Model Hub image with Docker, a health check is already configured. On other platforms (Kubernetes, for example), configure an equivalent probe.
 
-The Model Hub listens on port *3000* and exposes a */health* endpoint. A successful check is an HTTP \`200\` response from that endpoint.
+The Model Hub listens on port *3000* and exposes a */health* endpoint. A successful check is an HTTP `200` response from that endpoint.
 
-Model Hub also exposes a */ready* endpoint. It responds with an HTTP \`200\` when Model Hub is ready to receive requests.
+Model Hub also exposes a */ready* endpoint. It responds with an HTTP `200` when Model Hub is ready to receive requests.
 
 Reference health check from the Dockerfile:
 
@@ -260,40 +278,34 @@ Equivalent probes:
 
 ### 7. Verify the installation
 
-1\. *docker compose ps* must show that model-hub running.\
-2\. *curl -f `http://localhost:3000/health`* must return HTTP 200.\
-3\. Opening *http://\<host>:3000* in a browser loads the Model Hub UI.
+1\. On the server, `docker compose ps` shows the `model-hub` service running and healthy.\
+2\. On the server, `curl -f http://localhost:3000/ready` returns HTTP `200`.\
+3\. From a workstation, `curl -I https://<your-hostname>/health` returns HTTP `200` (`curl.exe` instead of `curl` in Windows PowerShell). If it fails, check the DNS record, the certificate, and the firewall rules between your users and the reverse proxy or load balancer.\
+4\. From a workstation, opening `https://<your-hostname>` in a browser loads the Model Hub.
 
 ### 8. Upgrade to new Model Hub version
 
 Always back up the database before upgrading production systems, as described in [Data backup](Databackup.md). At least the tables *git_repositories* and *kvs*.
 
-1\. Note the new *MODEL_HUB_VERSION* from the Hackolade release notes.\
-2\. Pull the matching *model-hub* image with the command
+1\. Note the new version from the Hackolade release notes.\
+2\. Update `MODEL_HUB_VERSION` in your `.env` file.\
+3\. Pull the new image and restart the Model Hub:
 
 ```bash
 docker compose pull
-```
-
-3\. Update *MODEL_HUB_VERSION* in your *.env* file\
-4\. then run
-
-```bash
 docker compose up -d
 ```
 
-and the application will restart.
-
 ## Quick start with Docker Compose and PostgreSQL
 
-To start quickly with Model Hub, just install a PostgreSQL container within the same Docker Compose file. The example below is ready to be copied into your own server. It uses the official PostgreSQL Docker image and already configures Model Hub to authenticate with it.
+To start quickly with Model Hub, run PostgreSQL in a container within the same Docker Compose file. The example below is ready to be copied into your own server. It uses the official PostgreSQL Docker image and already configures Model Hub to authenticate with it. Create the two secret files as described in [Create the project layout](<https://hackolade.com/help/Installandstarttheserver.html#2.%20Create%20the%20project%20layout>) first.
 
-**Attention:** you should also pay attention that there is a named volume *model-hub-db-data* for the database.
+**Important:** the database is stored in the named volume `model-hub-db-data`. Keep that volume when you update or recreate the containers, and back it up as described in [Data backup](Databackup.md).
 
 ```yaml
 services:
   postgres:
-    image: postgres/postgres:18.4-alpine
+    image: postgres:18-alpine
     deploy:
       restart_policy:
         condition: always
@@ -327,23 +339,28 @@ services:
       DB_CONNECTION: pg://postgres:5432/hck_hub
       DB_USERNAME: hck_hub
       DB_PASSWORD_FILE: /run/secrets/db_password
-    volumes:
-      - "model-hub-filestore-data:/home/node/.hub:rw"
+      CURRENT_ENCRYPTION_KEY_FILE: /run/secrets/model_hub_encryption_key
+    depends_on:
+      postgres:
+        condition: service_healthy
     secrets:
       - db_password
-networks:
-  default:
-    name: hub
+      - model_hub_encryption_key
 volumes:
   model-hub-db-data: {}
-  model-hub-filestore-data: {}
 secrets:
   db_password:
     file: ./secrets/db_password
+  model_hub_encryption_key:
+    file: ./secrets/model_hub_encryption_key
 ```
+
+In `DB_CONNECTION`, `postgres` is the name of the database service in this file: Docker Compose resolves it to the database container.
 
 With this Docker Compose, the next step is to run it:
 
 ```bash
 docker compose up -d
 ```
+
+Then put a reverse proxy in front of it, as described in [Quick start with reverse proxy](Quickstartwithreverseproxy.md), which uses the same database setup.

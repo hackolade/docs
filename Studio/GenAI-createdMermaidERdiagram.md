@@ -45,7 +45,7 @@ Also suggest additional data that should be included.
 
 Here is a simple example response from ChatGPT for the above prompt:
 
-```text
+```mermaid
 erDiagram
     %% ----------------------------
     %% Users Table
