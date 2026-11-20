@@ -4,7 +4,7 @@ seoTitle: Back up the Hackolade Model Hub database
 ---
 # Data backup
 
-The Model Hub persists state in its state in the database. Back it up regularly, and always take a backup before upgrading.
+The Model Hub keeps its state in the database. Back it up regularly, and always take a backup before upgrading.
 
 <table style="width:85%">
 <colgroup><col style="width:10%"><col style="width:25%"><col style="width:65%"></colgroup>
@@ -25,7 +25,7 @@ The Model Hub persists state in its state in the database. Back it up regularly,
 </table>
 
 > [!NOTE]
-> If you restore the database without the matching filestore (or vice versa), encrypted secrets in the database may become unreadable. Treat the database and filestore as a single backup set.
+> Keep a copy of the encryption key, the file `secrets/model_hub_encryption_key`, with your database backups. The Model Hub encrypts part of its configuration with that key: a database restored without its key cannot be read.
 
 ## Backup your Model Hub database instance
 
@@ -44,7 +44,7 @@ For a quick backup, you can also choose to just back up the tables *git_reposito
 With only these 2 tables, Model Hub will be able to reconstruct the rest by syncing your models from the configured Git providers, which remain the master single-source-of-truth.
 
 > [!NOTE]
-> Prefer a normal full or incremental database backup over exporting individual tables. The Model Hub schema is maintained by the migration image; do not rely on “recreating the schema on restart” as a substitute for a proper backup and restore procedure.
+> Prefer a normal full or incremental database backup over exporting individual tables. The Model Hub updates its database structure itself when it starts; do not rely on “recreating the schema on restart” as a substitute for a proper backup and restore procedure.
 
 ## When to back up
 

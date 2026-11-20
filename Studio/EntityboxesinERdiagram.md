@@ -68,6 +68,8 @@ When you deactivate an object (container, entity, view, attribute), an icon is d
 
 ![ERD visual indicator deactivated object](<lib/ERD visual indicator deactivated object.png>)
 
+When a property of a container, entity, view, attribute or relationship has a value that does not satisfy the rules of the target, an exclamation mark in a circle is displayed next to the name of the object, and the name of an invalid attribute is displayed in red. See [Validation of property values](<https://hackolade.com/help/Propertiespane.html#Validation%20of%20property%20values>).
+
 Similarly, in a model derived from polyglot, you may have added attributes that don't exist in the parent polyglot model (this is one of the "deviations" that we allow in derived model -- you may also modify some of an attribute's properties, or you may delete an attribute if not pertinent in the derived model.) Those attributes are preceded with a + sign icon:\
 ![ERD visual indicator added in derived model](<lib/ERD visual indicator added in derived model.png>)
 
@@ -75,6 +77,7 @@ For indicators appearing after the attribute name, here is a list of abbreviatio
 pk: primary key\
 fk: foreign key\
 uk: unique key\
+AK(x.y): alternate key, with x = alternate key number, y = attribute position in that key, for example AK(1.2) for the second attribute of the first alternate key\
 fm: [foreign master](Relationshipsanddenormalization.md)\
 dk: destination or denormalized key (parent of a foreign key.) Marks keys that are the parent of a foreign key or are denormalized elsewhere in the model.\
 dm: destination or denormalized master (parent of a foreign master.) Marks non-key attributes that are the parent of a foreign attribute or are denormalized elsewhere in the model.\
@@ -84,7 +87,7 @@ sk: sort key, where applicable\
 \*: required attribute\
 +: only in Avro: null allowed\
 #: indication of a [pattern field](Whatsapatternfield.md)\
-Ix,y: indexed attribute, with x= index number, y= attribute number in a composite index
+Ix.y: indexed attribute, with x = index number, y = attribute position in a composite index
 
 Both dk and dm attributes allow access to the Where-Used function in the contextual menu to find all the places in the model where they are denormalized.
 
@@ -138,7 +141,7 @@ Multiple choices: by default all of the attributes below are displayed. But you 
 
 ## Diagram Views
 
-Description of this feature, to create subsets of the main diagram in separate views, has now been moved [here](DiagramViews.md).
+The description of this feature, to create subsets of the main diagram in separate views, is on the [Diagram Views](DiagramViews.md) page.
 
 ## Display additional attribute information in ERD boxes
 

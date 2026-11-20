@@ -38,7 +38,20 @@ For each column, BigQuery allows the following modes: nullable (default), requir
 
 ## Partitioning and clustering
 
-Both partitioning and clustering can improve performance and reduce query cost. You may want to review [this page](<https://cloud.google.com/bigquery/docs/clustered-tables#when_to_use_clustering> "target=\"_blank\"") for circumstances under which to use partitioning, clustering, or a combination of both.
+Both partitioning and clustering can improve performance and reduce query cost. You may want to review the Google guidance on [when to use partitioning, clustering, or a combination of both](<https://cloud.google.com/bigquery/docs/clustered-tables#when_to_use_clustering> "target=\"_blank\"").
+
+## Tags
+
+In Google Cloud, [tags](<https://cloud.google.com/bigquery/docs/tags> "target=\"_blank\"") are key-value pairs that your organization defines in Resource Manager, then attaches to resources to grant or deny access through IAM. They are different from labels, which help you organize and filter resources.
+
+In Hackolade Studio, you attach tags to a dataset, a table or a view in the **Tags** property of its Properties Pane: one row per tag, with its **Key** and its **Value**. Enter the key in its namespaced form, `PROJECT_ID/TAG_KEY` or `ORGANIZATION_ID/TAG_KEY`, for example the `my-project/environment` key with the `production` value.
+
+For a column of a native or external table, you can attach one tag in the **Data governance tag** property. Your security administrator can then use it in BigQuery data policies, for column-level access control and data masking. The property is not available for a STRUCT column or an ARRAY of STRUCT: attach the tag to their nested fields instead.
+
+In the DDL script, Hackolade Studio writes the tags in the `OPTIONS` of the CREATE SCHEMA, CREATE TABLE and CREATE VIEW statements (`tags=[...]`), and the data governance tag in the `OPTIONS` of the column (`data_governance_tags=[...]`). Currently, the ALTER script does not include tag changes.
+
+> [!IMPORTANT]
+> Hackolade Studio does not create tag keys and tag values in Google Cloud. They must exist in Resource Manager before you apply the script to an instance, and the key of a data governance tag must have the `DATA_GOVERNANCE` purpose. Otherwise, BigQuery rejects the statement.
 
 ## Data types
 
@@ -62,8 +75,8 @@ A button lets the user apply to a selected instance the script to create dataset
 
 ## Reverse-Engineering
 
-The connection is established using a connection using Google Cloud IAM credentials key file. More details can be found [here](ConnecttoaBigQueryinstance.md).
+The connection uses a Google Cloud IAM credentials key file, as explained in [Connect to a BigQuery instance](ConnecttoaBigQueryinstance.md).
 
-The Hackolade process for reverse-engineering of Google BigQuery datasets includes the execution of SQL statements to discover datasets, tables and views, columns and their data types. If JSON is detected in text columns, Hackolade performs statistical sampling of records followed by probabilistic inference of the JSON document schema.
+The Hackolade process for reverse-engineering of Google BigQuery datasets includes the execution of SQL statements to discover datasets, tables and views, columns and their data types, as well as the tags of datasets, tables and views, and the data governance tags of columns. If JSON is detected in text columns, Hackolade performs statistical sampling of records followed by probabilistic inference of the JSON document schema.
 
 For more information on Google BigQuery in general, please consult the [website](<https://cloud.google.com/bigquery/docs> "target=\"_blank\"").

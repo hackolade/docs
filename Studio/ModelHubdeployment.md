@@ -4,7 +4,7 @@ seoTitle: Hackolade Model Hub deployment options
 ---
 # Model Hub deployment
 
-THere are 3 existing deployments of Model Hub:
+There are 3 existing deployments of Model Hub:
 
 - our public playground running at [https://hub.hackolade.com](<https://hub.hackolade.com> "target=\"_blank\"")
 - a [Standalone personal trial](Standalonepersonaltrial.md) so you can test drive it with your own data models

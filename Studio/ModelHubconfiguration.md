@@ -8,7 +8,7 @@ After the server is running, open the Model Hub in a browser. You may be redirec
 
 Once that is done, you can configure in the admin panel the following:
 
-[Authentication](Authentication1.md): sign in with your identity provider (recommended before exposing the instance)\
+[Authentication](Authentication1.md): sign in with your identity provider. Configure it first: until then, anyone who reaches your hostname can open the Model Hub and its Admin panel.\
 [Git providers webhooks](Gitrepoconfiguration.md): connect repositories so models sync into the Model Hub\
 [MCP server](MCPserver.md): optional AI-assistant integration (extra IdP redirect URIs when auth is enabled)
 

@@ -16,23 +16,23 @@ Use this endpoint for:
 - Kubernetes liveness and readiness probes
 - Load balancer health checks
 
-See Install and start the server for the reference health-check command.
+The official image already checks `/health` every 30 seconds. For Kubernetes probes, see [Kubernetes and other container platforms](<https://hackolade.com/help/ModelHubonyourownserver.html#Kubernetes%20and%20other%20container%20platforms>).
 
-Also monitor the **database migration** job on install and upgrade. A non-zero exit from *model-hub-\*-database-migration* would mean that the schema was not applied successfully; do not ignore failed migration containers.
+The Model Hub updates its database structure when it starts, on install and upgrade. If the update fails, the Model Hub logs `Failed to start server` with the cause, and stops.
 
 ## Resource metrics
 
 Collect at least:
 
 - CPU and memory usage for the *model-hub* container (or pod)
-- Disk usage for the filestore volume (/home/node/.hub)
+- Disk usage of the server, for Docker images and container logs
 - Database CPU, storage, connection count, and free space (on the external PostgreSQL or Oracle instance)
 
-Alert when the Model Hub container restarts repeatedly, when memory grows without bound under sync load, or when the filestore volume is close to full.
+Alert when the Model Hub container restarts repeatedly, when memory grows without bound under sync load, or when the server disk is close to full.
 
 ## Logs
 
-The Model Hub writes **JSON logs** to the container’s standard output (stdout). Ship them to your central logging platform.
+The Model Hub writes **JSON logs** to the container’s standard output (stdout). Ship them to your central logging platform. To send them to Hackolade support, follow [Collect the logs](<https://hackolade.com/help/ModelHubinstallationtroubleshooting.html#Collect%20the%20logs>).
 
 You will see:
 
@@ -41,19 +41,19 @@ You will see:
 
 Useful alert ideas on log streams:
 
-- Spikes in HTTP \*\*5xx\*\* responses
-- Repeated \*\*401\*\* / \*\*403\*\* after authentication was enabled (often an IdP or redirect URI misconfiguration)
+- Spikes in HTTP **5xx** responses
+- Repeated **401** / **403** after authentication was enabled (often an IdP or redirect URI misconfiguration)
 - Messages indicating database connection or pool errors
 - Messages indicating Git provider or webhook processing failures
 
 ## Model sync errors
 
-When the Model Hub fails to process a webhook or to sync a model file, it records the failure in the \`sync_errors\` table in the Model Hub database. Monitor this table in addition to logs.
+When the Model Hub fails to process a webhook or to sync a model file, it records the failure in the `sync_errors` table in the Model Hub database. Monitor this table in addition to logs.
 
 ### Useful columns
 
-<table style="width:70%">
-<colgroup><col style="width:13%"><col style="width:87%"></colgroup>
+<table style="width:100%">
+<colgroup><col style="width:19%"><col style="width:81%"></colgroup>
 <thead>
 <tr>
 <th>Column</th>

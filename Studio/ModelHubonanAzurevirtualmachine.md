@@ -6,7 +6,10 @@ seoTitle: Deploy Hackolade Model Hub on an Azure virtual machine
 
 This guide shows one way to deploy the Model Hub on Azure: a virtual machine, an Azure Database for PostgreSQL flexible server, and an Application Gateway that serves it over HTTPS. Other setups work too, as long as your users reach the Model Hub over HTTPS on its hostname: see [Adapt this example](<https://hackolade.com/help/ModelHubonanAzurevirtualmachine.html#Adapt%20this%20example>).
 
-Before you start, complete the [Model Hub prerequisites](ModelHubprerequisites.md): the Hackolade Helpdesk must have configured your hostname and sent you the Model Hub license key. The guide uses `hck.example.com` as the hostname; replace it with yours everywhere. For the meaning of each setting of the Model Hub itself, see [Install and start the server](Installandstarttheserver.md).
+Before you start, complete the [Model Hub prerequisites](ModelHubprerequisites.md): the Hackolade Helpdesk must have registered your hostname. This guide is for your infrastructure team, and needs no license key: the license key is entered in the browser after the installation. The guide uses `hck.example.com` as the hostname; replace it with yours everywhere. If a step fails, [Model Hub installation troubleshooting](ModelHubinstallationtroubleshooting.md) lists the checks to run and what to send to Hackolade support. For the meaning of each setting of the Model Hub itself, see [Model Hub on your own server](ModelHubonyourownserver.md).
+
+> [!TIP]
+> To build this deployment with code instead of the Azure console, start from our [Bicep example](<https://github.com/hackolade/model-hub-deployment/tree/main/azure> "target=\"_blank\""). It builds the same deployment, and its comments name the step of this guide that each part follows. Read this guide first: it explains what the code builds and what to adapt.
 
 ## What you deploy
 
@@ -28,8 +31,8 @@ Each part can be swapped for what your organization already uses:
 - **Users on your corporate network**, through a VPN or ExpressRoute: a private frontend IP address instead of a public one (steps 1, 8 and 9).
 - **Connecting to the virtual machine**: Azure Bastion, or SSH through your VPN (step 4).
 - **Operating system**: Ubuntu, or any Linux distribution supported by Docker Engine (step 4).
-- **Database for a trial**: PostgreSQL in a container on the virtual machine, with the Docker Compose file of [Quick start with Docker Compose and PostgreSQL](<https://hackolade.com/help/Installandstarttheserver.html#Quick%20start%20with%20Docker%20Compose%20and%20PostgreSQL>) at step 6; skip steps 3 and 5.
-- **Containers**: AKS or Azure Container Apps instead of a virtual machine, with the settings of [Install and start the server](Installandstarttheserver.md).
+- **Database for a trial**: PostgreSQL in a container on the virtual machine, with the Docker Compose file of [PostgreSQL in a container, for a trial](<https://hackolade.com/help/ModelHubonyourownserver.html#PostgreSQL%20in%20a%20container,%20for%20a%20trial>) at step 6; skip steps 3 and 5.
+- **Containers**: AKS or Azure Container Apps instead of a virtual machine, with the settings of [Model Hub on your own server](<https://hackolade.com/help/ModelHubonyourownserver.html#Kubernetes%20and%20other%20container%20platforms>).
 
 ## 1. Plan the network
 
@@ -41,7 +44,7 @@ Create a resource group and a virtual network with three subnets:
 | `vm-subnet` | The virtual machine | Attach a NAT gateway for outbound internet access |
 | `db-subnet` | The PostgreSQL flexible server | Delegated to `Microsoft.DBforPostgreSQL/flexibleServers` when you create the server |
 
-The NAT gateway gives the Model Hub access to the destinations listed in [Model Hub prerequisites](<https://hackolade.com/help/ModelHubprerequisites.html#5.%20System%20requirements>). If your organization routes outbound traffic through its own firewall instead, allow these destinations there.
+The NAT gateway gives the Model Hub access to the destinations listed in [Model Hub prerequisites](<https://hackolade.com/help/ModelHubprerequisites.html#Network%20requirements>). If your organization routes outbound traffic through its own firewall instead, allow these destinations there.
 
 Choose how your users reach the Application Gateway:
 
@@ -57,6 +60,8 @@ Create a network security group for each of the first two subnets, and associate
 | On `appgw-subnet` | TCP 443 and TCP 80 | The IP ranges of your users, or `Internet` for everyone |
 | On `appgw-subnet` | TCP 65200-65535 | The `GatewayManager` service tag, which Azure requires for Application Gateway |
 | On `vm-subnet` | TCP 3000 | The address range of `appgw-subnet` |
+
+Your Git provider must also reach your hostname over HTTPS, to notify the Model Hub each time models change (webhooks). With github.com, gitlab.com, Bitbucket Cloud or Azure DevOps, this traffic comes from the internet. Until sign-in is configured in the Model Hub, anyone who reaches your hostname can open the Model Hub and its Admin panel. Until then, allow only your own IP ranges.
 
 Keep the default rules, which allow traffic inside the virtual network, so the virtual machine reaches the database. There is no SSH rule from the internet: you connect to the virtual machine with Azure Bastion, at step 4.
 
@@ -165,7 +170,7 @@ secrets:
     file: ./secrets/model_hub_encryption_key
 ```
 
-Start the Model Hub, and follow its logs until they show `Server listening`:
+Start the Model Hub, and follow its logs until they show `Server ready`:
 
 ```bash
 docker compose up -d
@@ -199,6 +204,13 @@ In **Configuration**, add a routing rule:
 - **Listener**: protocol HTTPS, port 443, with your certificate from Key Vault or your PFX file
 - **Backend targets**: your backend pool, with new backend settings: protocol HTTP, port 3000, and **Override with new host name** set to No
 
+Then add a health probe, so that the gateway sends requests only once the Model Hub is ready. Under **Settings > Health probes**, click **Add**, and set:
+
+- **Protocol**: HTTP
+- **Host**: `127.0.0.1`
+- **Path**: `/ready`
+- **Backend settings**: the backend settings of your rule
+
 To send users who type the hostname without `https://` to the secure page, add a listener on HTTP, port 80, and a routing rule that redirects it to the HTTPS listener.
 
 Under **Monitoring > Backend health**, your virtual machine shows as **Healthy** after a few probes.
@@ -226,7 +238,7 @@ nslookup hck.example.com
 curl.exe -I https://hck.example.com/health
 ```
 
-Then open `https://hck.example.com` in your browser: the Model Hub loads. Continue with the [Model Hub configuration](ModelHubconfiguration.md): authentication and Git repositories.
+Then open `https://hck.example.com` in your browser: the Model Hub loads. The installation is done. Whoever holds the license key, usually the person who registered the hostname, then continues with the [Model Hub configuration](ModelHubconfiguration.md): the license key, sign-in and Git repositories. Your users can work in the Model Hub once it is done.
 
 ## When something does not work
 
@@ -241,6 +253,8 @@ Start with the logs of the Model Hub on the virtual machine, `docker compose log
 | The logs show that SSL is required | `DB_CONNECTION` ends with `?sslmode=require`. |
 | The page loads, but the license check fails | You opened the Model Hub with its hostname, not an IP address, and over HTTPS. The virtual machine reaches the licensing servers through the NAT gateway. |
 
+If the problem is not in this table, follow [Model Hub installation troubleshooting](ModelHubinstallationtroubleshooting.md).
+
 ## Keep the Model Hub up to date
 
-To install a new version, follow [Upgrade to new Model Hub version](<https://hackolade.com/help/Installandstarttheserver.html#8.%20Upgrade%20to%20new%20Model%20Hub%20version>) in `/opt/model-hub`. The flexible server backs up the database; keep the encryption key with those backups, as described in [Data backup](Databackup.md).
+To install a new version, follow [Upgrade the Model Hub](UpgradetheModelHub.md) in `/opt/model-hub`. The flexible server backs up the database; keep the encryption key with those backups, as described in [Data backup](Databackup.md).

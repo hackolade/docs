@@ -6,7 +6,10 @@ seoTitle: Deploy Hackolade Model Hub on Amazon EC2
 
 This guide shows one way to deploy the Model Hub on AWS: an EC2 instance, an Amazon RDS for PostgreSQL database, and an Application Load Balancer that serves it over HTTPS. Other setups work too, as long as your users reach the Model Hub over HTTPS on its hostname: see [Adapt this example](<https://hackolade.com/help/ModelHubonAmazonEC2.html#Adapt%20this%20example>).
 
-Before you start, complete the [Model Hub prerequisites](ModelHubprerequisites.md): the Hackolade Helpdesk must have configured your hostname and sent you the Model Hub license key. The guide uses `hck.example.com` as the hostname; replace it with yours everywhere. For the meaning of each setting of the Model Hub itself, see [Install and start the server](Installandstarttheserver.md).
+Before you start, complete the [Model Hub prerequisites](ModelHubprerequisites.md): the Hackolade Helpdesk must have registered your hostname. This guide is for your infrastructure team, and needs no license key: the license key is entered in the browser after the installation. The guide uses `hck.example.com` as the hostname; replace it with yours everywhere. If a step fails, [Model Hub installation troubleshooting](ModelHubinstallationtroubleshooting.md) lists the checks to run and what to send to Hackolade support. For the meaning of each setting of the Model Hub itself, see [Model Hub on your own server](ModelHubonyourownserver.md).
+
+> [!TIP]
+> To build this deployment with code instead of the AWS console, start from our [Terraform example](<https://github.com/hackolade/model-hub-deployment/tree/main/aws> "target=\"_blank\""). It builds the same deployment, and its comments name the step of this guide that each part follows. Read this guide first: it explains what the code builds and what to adapt.
 
 ## What you deploy
 
@@ -28,15 +31,15 @@ Each part can be swapped for what your organization already uses:
 - **Users on your corporate network**, through a VPN or AWS Direct Connect: an internal load balancer instead of an internet-facing one (steps 1, 8 and 9).
 - **Connecting to the instance**: Session Manager, or SSH through your VPN (step 4).
 - **Operating system**: Ubuntu, or any Linux distribution supported by Docker Engine (step 4).
-- **Database for a trial**: PostgreSQL in a container on the instance, with the Docker Compose file of [Quick start with Docker Compose and PostgreSQL](<https://hackolade.com/help/Installandstarttheserver.html#Quick%20start%20with%20Docker%20Compose%20and%20PostgreSQL>) at step 6; skip steps 3 and 5.
-- **Containers**: Amazon ECS or EKS instead of an instance, with the settings of [Install and start the server](Installandstarttheserver.md).
+- **Database for a trial**: PostgreSQL in a container on the instance, with the Docker Compose file of [PostgreSQL in a container, for a trial](<https://hackolade.com/help/ModelHubonyourownserver.html#PostgreSQL%20in%20a%20container,%20for%20a%20trial>) at step 6; skip steps 3 and 5.
+- **Containers**: Amazon ECS or EKS instead of an instance, with the settings of [Model Hub on your own server](<https://hackolade.com/help/ModelHubonyourownserver.html#Kubernetes%20and%20other%20container%20platforms>).
 
 ## 1. Plan the network
 
 Use a VPC with subnets in at least two Availability Zones: both the load balancer and the RDS database require two zones.
 
 - Put the instance and the database in **private subnets**, without public IP addresses.
-- Give the private subnets outbound internet access, through a NAT gateway or your organization's own outbound route. The Model Hub needs it for the destinations listed in [Model Hub prerequisites](<https://hackolade.com/help/ModelHubprerequisites.html#5.%20System%20requirements>).
+- Give the private subnets outbound internet access, through a NAT gateway or your organization's own outbound route. The Model Hub needs it for the destinations listed in [Model Hub prerequisites](<https://hackolade.com/help/ModelHubprerequisites.html#Network%20requirements>).
 - Choose how your users reach the load balancer:
   - **Internet-facing**, in public subnets, when your users connect over the internet.
   - **Internal**, in private subnets, when your users connect through your corporate network. Your workstations must then have a route to the VPC, and resolve the hostname through your corporate DNS or a Route 53 private hosted zone.
@@ -50,6 +53,8 @@ In the EC2 console, under **Network & Security > Security Groups**, create three
 | `hub-alb` | HTTPS, TCP 443, and HTTP, TCP 80 | The IP ranges of your users, or `0.0.0.0/0` for everyone on the internet |
 | `hub-ec2` | Custom TCP, port 3000 | The `hub-alb` security group |
 | `hub-db` | PostgreSQL, TCP 5432 | The `hub-ec2` security group |
+
+Your Git provider must also reach your hostname over HTTPS, to notify the Model Hub each time models change (webhooks). With github.com, gitlab.com, Bitbucket Cloud or Azure DevOps, this traffic comes from the internet. Until sign-in is configured in the Model Hub, anyone who reaches your hostname can open the Model Hub and its Admin panel. Until then, allow only your own IP ranges.
 
 Keep the default outbound rules. The `hub-ec2` security group has no SSH rule: you connect to the instance with AWS Systems Manager Session Manager, at step 4.
 
@@ -166,7 +171,7 @@ secrets:
 
 `?sslmode=require` encrypts the connection to the database, and `NODE_EXTRA_CA_CERTS` lets the Model Hub check the certificate of RDS against the bundle.
 
-Start the Model Hub, and follow its logs until they show `Server listening`:
+Start the Model Hub, and follow its logs until they show `Server ready`:
 
 ```bash
 docker compose up -d
@@ -237,7 +242,7 @@ nslookup hck.example.com
 curl.exe -I https://hck.example.com/health
 ```
 
-Then open `https://hck.example.com` in your browser: the Model Hub loads. Continue with the [Model Hub configuration](ModelHubconfiguration.md): authentication and Git repositories.
+Then open `https://hck.example.com` in your browser: the Model Hub loads. The installation is done. Whoever holds the license key, usually the person who registered the hostname, then continues with the [Model Hub configuration](ModelHubconfiguration.md): the license key, sign-in and Git repositories. Your users can work in the Model Hub once it is done.
 
 ## When something does not work
 
@@ -252,6 +257,8 @@ Start with the logs of the Model Hub on the instance, `docker compose logs model
 | The logs show `self-signed certificate in certificate chain` | The `NODE_EXTRA_CA_CERTS` line and the volume of `rds-ca-bundle.pem` are in `docker-compose.yml`. |
 | The page loads, but the license check fails | You opened the Model Hub with its hostname, not an IP address or the load balancer's DNS name, and over HTTPS. The instance reaches the licensing servers through the NAT gateway. |
 
+If the problem is not in this table, follow [Model Hub installation troubleshooting](ModelHubinstallationtroubleshooting.md).
+
 ## Keep the Model Hub up to date
 
-To install a new version, follow [Upgrade to new Model Hub version](<https://hackolade.com/help/Installandstarttheserver.html#8.%20Upgrade%20to%20new%20Model%20Hub%20version>) in `/opt/model-hub`. RDS automated backups protect the database; keep the encryption key with them, as described in [Data backup](Databackup.md).
+To install a new version, follow [Upgrade the Model Hub](UpgradetheModelHub.md) in `/opt/model-hub`. RDS automated backups protect the database; keep the encryption key with them, as described in [Data backup](Databackup.md).

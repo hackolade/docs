@@ -427,6 +427,16 @@ When a dependency contains a key pointing to a `multipleCheckboxSelect` control 
         }
 ```
 
+The `validation` object can hold other keys to check the value in other ways:
+
+- `required` (*boolean*): the property must have a value.
+- `regex` (*string*): the value must match this regular expression.
+- `minLength` (*number*): the value must have at least this number of characters, without counting the spaces at the start and at the end.
+- `enum` (*array*): the value must be one of the values of the list.
+- `message` (*string*): the text of the tooltip of the warning badge, for all the checks of the property.
+
+When the value does not satisfy a check, the warning badge is displayed next to the label of the property, and the object is marked in the Object Browser and in the diagrams. See [Validation of property values](<https://hackolade.com/help/Propertiespane.html#Validation%20of%20property%20values>).
+
 ### valueType
 
 (*string*) - optional; type (one out of 7 basic types) to define validation rules.

@@ -1,21 +1,21 @@
 ---
-description: Set up Hackolade Model Hub on a Linux server behind a reverse proxy, with a DNS name and a Let's Encrypt certificate.
-seoTitle: Model Hub quick start with a reverse proxy
+description: Set up Hackolade Model Hub on a Linux server open to the internet, with Traefik and a free Let's Encrypt certificate for your hostname.
+seoTitle: Hackolade Model Hub with Traefik and Let's Encrypt
 ---
-# Quick start with reverse proxy
+# Model Hub with Traefik and Let's Encrypt
 
-This guide walks you from an empty Linux server to a working Model Hub environment reachable at *https://\<your-domain-name>* with a valid Let's Encrypt certificate.
+This guide walks you from an empty Linux server to a working Model Hub environment reachable at `https://<your-hostname>` with a valid Let's Encrypt certificate. The Model Hub is then open to the whole internet, protected by its sign-in once you configure it. It is written for your infrastructure team.
 
-For this quick start to work, you need the following:
+For this guide, you need the following:
 
-- A domain name you control
-- A Linux server with a public IPv4 address
+- The hostname registered with the Hackolade Helpdesk, as described in [Model Hub prerequisites](ModelHubprerequisites.md), in a domain that you control
+- A Linux server with a public IPv4 address, and Docker Engine with Docker Compose 2.23.1 or later, installed as described in [Install Docker Engine](<https://docs.docker.com/engine/install/> "target=\"_blank\"")
 - Inbound access to TCP 80 and 443 from the internet
 - Outbound access to Let's Encrypt servers
 
-Let's Encrypt checks your hostname from the internet before it issues the certificate. If your server sits on a private network, for example a cloud instance without a public IP address that users reach through a VPN, this quick start cannot get a certificate. Use your cloud provider's load balancer with a certificate instead, as described in [Model Hub on Amazon EC2](ModelHubonAmazonEC2.md) and [Model Hub on an Azure virtual machine](ModelHubonanAzurevirtualmachine.md).
+Let's Encrypt checks your hostname from the internet before it issues the certificate. If your server sits on a private network, for example a cloud instance without a public IP address that users reach through a VPN, this guide cannot get a certificate. Use your cloud provider's load balancer with a certificate instead, as described in [Model Hub on Amazon EC2](ModelHubonAmazonEC2.md) and [Model Hub on an Azure virtual machine](ModelHubonanAzurevirtualmachine.md).
 
-## Create a DNS name that points to the Model Hub server
+## Point your hostname to the server
 
 ### Find your server's public IP
 
@@ -31,9 +31,9 @@ Or copy the **Public IP** from your cloud provider console (AWS, Azure, GCP, etc
 
 Let's Encrypt will only issue a certificate if your hostname resolves to this server on the public internet. Do this **before** starting Docker.
 
-### Pick a hostname
+### Use your registered hostname
 
-Choose a subdomain, for example:
+Use the hostname that you registered with the Hackolade Helpdesk, for example:
 
 ```text
 * hck.yourcompany.com
@@ -68,7 +68,7 @@ Add a new record:
 </tr>
 <tr>
 <td>Value / Points to / IPv4</td>
-<td>Your server's <strong>public IPv4</strong> from the checklist</td>
+<td>Your server's <strong>public IPv4</strong>, found in the previous step</td>
 </tr>
 </tbody>
 </table>
@@ -89,9 +89,9 @@ The result must be **the same public IP** you set in the A record.
 
 **You are done with this step when:** *nslookup* returns your server's public IP for your Model Hub hostname.
 
-## Edit your Docker Compose file
+## Create the Docker Compose file
 
-Prepare the project folder and the two secret files as described in [Install and start the server](<https://hackolade.com/help/Installandstarttheserver.html#2.%20Create%20the%20project%20layout>), then use the Docker Compose file below instead of the one shown on that page. It provides Model Hub and a PostgreSQL database. On top of that, it deploys a reverse proxy ([traefik](<https://traefik.io/traefik> "target=\"_blank\"")), which automatically generates a certificate with [Let's Encrypt](<https://letsencrypt.org/docs/> "target=\"_blank\"")
+Prepare the project folder and the two secret files as described in [Create the project layout](<https://hackolade.com/help/ModelHubonyourownserver.html#2.%20Create%20the%20project%20layout>), then use the Docker Compose file below instead of the one of that page. It provides Model Hub and a PostgreSQL database in a container, which suits a trial only. For production, use a database that your organization operates and backs up: prepare it as described in [Prepare the database](<https://hackolade.com/help/ModelHubonyourownserver.html#1.%20Prepare%20the%20database>), remove the `postgres` service and the `depends_on` lines below, and set `DB_CONNECTION` and `DB_USERNAME` as in [Create docker-compose.yml](<https://hackolade.com/help/ModelHubonyourownserver.html#3.%20Create%20docker-compose.yml>). On top of that, it deploys a reverse proxy ([traefik](<https://traefik.io/traefik> "target=\"_blank\"")), which automatically generates a certificate with [Let's Encrypt](<https://letsencrypt.org/docs/> "target=\"_blank\"")
 
 **Note** that model-hub doesn't expose port 3000 with this configuration anymore. Model Hub will instead be served by the reverse proxy Traefik
 
@@ -164,8 +164,8 @@ configs:
   traefik_static:
     content: |
       # Traefik static configuration.
-      # Edit REPLACE_WITH_YOUR_EMAIL before starting the stack.
-      # Do NOT redirect HTTP→HTTPS on the web entrypoint — that breaks Let's Encrypt HTTP-01.
+      # CERTIFICATE_EMAIL comes from the .env file.
+      # Do NOT redirect HTTP to HTTPS on the web entrypoint: that breaks the Let's Encrypt HTTP-01 challenge.
 
       entryPoints:
         web:
@@ -185,7 +185,7 @@ configs:
   traefik_dynamic:
     content: |
       # All traffic that reaches Traefik is proxied to Model Hub.
-      # Replace hck.example.com under tls.domains — used only for the Let's Encrypt certificate.
+      # HCK_HOSTNAME comes from the .env file; Let's Encrypt issues the certificate for it.
       # HTTP→HTTPS redirect is a router middleware (ACME challenge on :80 still works).
       http:
         middlewares:
@@ -209,7 +209,7 @@ configs:
             tls:
               certResolver: letsencrypt
               domains:
-                - main: ${HCK_DOMAIN_NAME}
+                - main: ${HCK_HOSTNAME}
         services:
           model-hub:
             loadBalancer:
@@ -223,20 +223,20 @@ secrets:
 ```
 
 > [!NOTE]
-> Also make sure that the volume \`letsencrypt\` is configured like shown in the example. This allows you to store the certificate on the server to avoid losing it on restarts.
+> Also make sure that the volume `letsencrypt` is configured like shown in the example. This allows you to store the certificate on the server to avoid losing it on restarts.
 
-Create a \`.env\` in the same folder as the compose file, similar to the one below, and fill it with your information
+Create a `.env` file in the same folder as the compose file, similar to the one below, and fill it with your information
 
 ```text
 MODEL_HUB_VERSION=REPLACE_WITH_MODEL_HUB_VERSION
 CERTIFICATE_EMAIL=REPLACE_WITH_YOUR_EMAIL
-HCK_DOMAIN_NAME=REPLACE_WITH_YOUR_DOMAIN
+HCK_HOSTNAME=REPLACE_WITH_YOUR_HOSTNAME
 ```
 
 where:\
 1\. change the value of *MODEL_HUB_VERSION* with the version you want to deploy from [DockerHub](<https://hub.docker.com/r/hackolade/model-hub> "target=\"_blank\"")\
 2\. change the value of *REPLACE_WITH_YOUR_EMAIL* with a real email address. This email address will be used to link it to the generated certificate.\
-3\. change the value of *REPLACE_WITH_YOUR_DOMAIN* with the exact DNS name from Step 1.
+3\. change the value of *REPLACE_WITH_YOUR_HOSTNAME* with your registered hostname, as used in the DNS record above.
 
 ## Start and verify
 
@@ -246,4 +246,4 @@ From the folder that contains the Docker Compose file, run:
 docker compose up -d
 ```
 
-Traefik requests the certificate on its first start, which can take a minute. From your workstation, open `https://<your-domain-name>`: the Model Hub loads with a valid certificate. If the browser shows a certificate warning, run `docker compose logs traefik` to see why Let's Encrypt refused the request; the usual causes are a DNS record that does not point to the server yet, or port 80 closed to the internet.
+On the server, check that `docker compose ps` shows the services running and healthy, and that `docker compose logs model-hub` shows `Server ready`. Traefik requests the certificate on its first start, which can take a minute. From the workstation of one of your users, open `https://<your-hostname>`: the Model Hub loads with a valid certificate. If the browser shows a certificate warning, run `docker compose logs traefik` to see why Let's Encrypt refused the request; the usual causes are a DNS record that does not point to the server yet, or port 80 closed to the internet.

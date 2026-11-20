@@ -1,35 +1,54 @@
 ---
-description: "What to prepare before deploying Hackolade Model Hub: Studio and Hub licenses, a Git repository provider, a domain name and system requirements."
+description: "What to prepare before deploying Hackolade Model Hub: your hostname and license key, Studio and Git, the decisions to make, and system requirements."
 seoTitle: Hackolade Model Hub prerequisites
 ---
 # Model Hub prerequisites
 
-Please verify that each requirement below is fulfilled BEFORE you proceed with the deployment detailed in the following pages.
+Check each item below before the installation starts. Steps 1 to 5 are for you, the person who leads the Model Hub project in your organization. Step 6 is for your infrastructure team.
 
-## 1. Hackolade Studio
+## 1. Register your hostname with the Hackolade Helpdesk
+
+Start with this step: the installation cannot be finished without it.
+
+Your **hostname** is the full address that your users will type in their browser to open the Model Hub, for example `hck.example.com`. It is usually a subdomain of your organization's domain. Your users open the Model Hub, and Hackolade Studio in the browser, at that exact hostname, over HTTPS. For security, the Hackolade Helpdesk locks the license to that hostname.
+
+Send an email to [support@hackolade.com](mailto:support@hackolade.com?subject=Model%20Hub%20hostname) with your company name and the exact hostname. Send it early: the Helpdesk needs time to configure the hostname before your go-live date. The Helpdesk confirms when your hostname is configured, and sends you the **Model Hub license key** for it.
+
+Keep the license key yourself. You enter it in the Model Hub in your browser once it is installed, as described in [Model Hub configuration](ModelHubconfiguration.md). Your infrastructure team does not need it. If you change the hostname later, send a new request to the Helpdesk.
+
+Your infrastructure team will then need:
+
+- a **DNS record**, the entry that sends your hostname to the Model Hub, resolvable from your users' workstations
+- a **TLS certificate** for your hostname, the file that lets browsers open it over HTTPS, issued by Let's Encrypt, by your cloud provider, or by your organization's certificate authority
+
+## 2. Hackolade Studio
 
 The Model Hub is a model-driven metadata management collaboration platform. While you can use Studio without the Hub, the reverse is not possible. You must have Hackolade Studio to create and maintain data models. Each user must either [validate a license key](Softwareregistration.md), or [reuse a key already validated](<https://hackolade.com/help/Softwareregistration.html#Reuse%20in%20the%20Browser%20your%20license%20key%20already%20validated%20in%20the%20Desktop>) in their Studio instance.
 
-## 2. Hackolade Model Hub license add-on
+## 3. Hackolade Model Hub license add-on
 
 You must have purchased a subscription for the Model Hub for your users so they can access the portal.
 
-## 3. Git repository provider
+## 4. Git repository provider
 
 Your Git repository (or repositories) is (are) the single source-of-truth for your data models. Your data models must be stored with one of the supported Git repository providers, so your organization must have an account with one of the following: [GitHub](GitHub.md) (web or on-prem), [GitLab](GitLab.md) (web or on-prem), Bitbucket ([Cloud](BitbucketCloud.md) or [Data Center](BitbucketDataCenter.md)), or [Azure DevOps Repos](AzureDevOpsRepos.md).
 
-## 4. Provide domain name and sub-domain to Hackolade Helpdesk
+## 5. Decisions to make before the installation
 
-Model Hub and Studio in the browser will be running on your domain. For security purposes we need to configure domain locking and parameters. Send an email to [support@hackolade.com](mailto:support@hackolade.com?subject=Model%20Hub%20domain%20and%20sub-domain), specifying domain name and subdomain, for example hck.example.com
+Your infrastructure team needs your answers to these questions before it starts:
 
-Our Helpdesk will confirm when the proper configuration has taken place, and will also provide the Model Hub license key for the instance.
+- **Hostname**: the one you registered at step 1.
+- **Who must reach the Model Hub**: anyone on the internet, protected by the Model Hub sign-in once it is configured, or only people on your organization's network, including through your VPN. Your Git provider must reach it too, to notify the Model Hub when models change: with a cloud service such as github.com, that means from the internet.
+- **Where it runs**: on AWS, on Azure, or on your organization's own servers, another cloud or Kubernetes. Your answer picks the installation guide.
+- **Database**: PostgreSQL or Oracle, and which team runs and backs it up. A database in a container next to the Model Hub suits a trial only.
+- **Git provider**: the address of your Git service, for example `github.com` or your own GitLab server, since the Model Hub must be able to reach it.
+- **Sign-in**: Microsoft Entra ID or Okta, configured after the installation, as described in [Authentication](Authentication1.md).
 
-Your users will open the Model Hub at exactly that hostname, over HTTPS. Plan for:
+Then send your infrastructure team these answers, a link to [Install and start the server](Installandstarttheserver.md), and a link to this page for the system requirements below.
 
-- a DNS record that points the hostname to your reverse proxy or load balancer, resolvable from your users' workstations
-- a TLS certificate for the hostname, issued by Let's Encrypt, by your cloud provider, or by your organization's certificate authority
+## 6. System requirements
 
-## 5. System requirements
+This section is for your infrastructure team.
 
 ### Software requirements
 
@@ -37,18 +56,19 @@ The Hackolade Model Hub can run on any system that supports Docker. Ideally, it 
 
 ### Hardware requirements
 
-Model Hub runs on two components: a Node.js server that serves the frontend assets and handles API calls, and database migration tools that ensure your database has the correct schema.
+Start with at least 4 CPUs. More CPUs help the Model Hub serve more users at the same time and synchronize large repositories faster.
 
-In terms of CPU, the backend is single-threaded, but it is, in theory, possible to scale it horizontally to use as many CPUs as available. The more CPUs, the more it can handle load pressure and the synchronization of repositories with multiple files. It is possible to start with at least 4 CPUs and scale up when necessary.
+The Model Hub needs more memory for larger models. Start with 16 GB, and add more if the Model Hub uses most of it with your models.
 
-As for memory, Model Hub is as memory-hungry as the models it ingests. (TBD: build a grid that could serve as a reference)
+The Model Hub stores most of its data in the database, so the server disk mainly holds the Docker images and logs. Start with 50 GB, and add more if needed.
 
-For the disk, Model Hub doesn't store much data on the disk, as it uses a database to store most of it. You need enough disk space to store Docker images locally and for Docker to function correctly. You can start with a small server with 50GB of disk space and go up if it needs more.
+### Network requirements
 
-Finally, Model Hub needs a fast network connection. On top of that, Model Hub has the following network requirements
+The Model Hub needs a fast network connection, and the following access:
 
 - Inbound HTTPS (port 443) from your users' workstations to your reverse proxy or load balancer, and from there to port 3000 of the Model Hub server
 - Outbound HTTPS from the Model Hub to your Git provider (to fetch and sync models)
+- Inbound HTTPS from your Git provider to your hostname, for the notifications it sends when models change (webhooks). With github.com, gitlab.com, Bitbucket Cloud or Azure DevOps, this traffic comes from the internet
 - Outbound HTTPS to [hackolade.com](<https://hackolade.com/> "target=\"_blank\"") and studio.hackolade.com, plus [quicklicensemanager.com](<https://quicklicensemanager.com/> "target=\"_blank\"") and [qlmdr.com](<https://qlmdr.com> "target=\"_blank\"") for licensing, and [DockerHub](<https://hub.docker.com/u/hackolade> "target=\"_blank\"") to pull images
 - Connectivity from the Model Hub to your database host and port
 
@@ -59,15 +79,11 @@ On a cloud provider, these rules translate into security groups or network secur
 > [!IMPORTANT]
 > The Model Hub requires a database hosted and managed by the customer, whether deployed on-premises, in a public or private cloud environment, or as part of a hybrid infrastructure. The customer is solely responsible for procuring, licensing, configuring, operating, and maintaining the required database. Any database license fees or related infrastructure costs are excluded from the Model Hub pricing.
 
-The database can be self-standing (installed on a host) or packaged as a container image.
-
-The data models maintained in the customer’s Git repository must be replicated to the Model Hub database.
-
-Model Hub stores most of its application data in a relational SQL database and currently supports:
+The Model Hub stores its application data in this database, including a copy of the data models of your Git repositories, which it keeps up to date. It currently supports:
 
 - PostgreSQL 17 or later
 - Oracle Database 23ai or 26ai
 
-Customers should select the supported database platform that best aligns with their operational, maintenance, and configuration requirements, as well as with any applicable internal standards or organizational policies.
+Choose the one that best fits your organization's standards and the skills of the team that will operate it. For production, prefer a database that your organization operates and backs up, rather than a database in a container next to the Model Hub.
 
-When configuring the database, you will need to create an empty database and a user with the following permissions: create, alter, and delete any tables in its schema, as well as read and write permissions on all tables. On PostgreSQL, the Model Hub creates its own schema, so its user must own the database. Further details are provided in [Install and start the server](<https://hackolade.com/help/Installandstarttheserver.html#1.%20Prepare%20the%20database>).
+Your infrastructure team creates the database and its user as described in [Prepare the database](<https://hackolade.com/help/ModelHubonyourownserver.html#1.%20Prepare%20the%20database>).

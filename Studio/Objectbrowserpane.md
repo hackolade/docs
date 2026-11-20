@@ -18,6 +18,8 @@ A **single-click** on an object increases the ERD zoom on the selected object, a
 
 A **double-click** on an object opens the hierarchical schema view and zooms in on the selected object.
 
+An exclamation mark in a circle next to an object, with the tooltip "Has error", means that a property of the object has a value that does not satisfy the rules of the target. Select the object to see the invalid property in the Properties pane. See [Validation of property values](<https://hackolade.com/help/Propertiespane.html#Validation%20of%20property%20values>).
+
 A **right-click** displays a contextual menu of actions possible for the selected object.\
 ![Object browser - contextual menu](<lib/Object browser - contextual menu.png>)
 
