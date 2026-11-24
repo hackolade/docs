@@ -58,3 +58,65 @@ You may connect to local LLMs, AI gateways, or directly to the online provider o
 3. Ask your questions and give your instructions in the [AI chat panel](AIchatpanel.md), or right-click a model object and choose [Assist me](<https://hackolade.com/help/AIchatpanel.html#Use%20Assist%20me%20on%20a%20model%20object>) to work on that object only.
 
 Every change made through the AI chat panel can be reviewed in the ERD and the Properties pane, and [undone](<https://hackolade.com/help/AIchatpanel.html#Undo%20AI%20changes>) like any other change.
+
+## Use cases
+
+The examples below show what you can do with the AI chat panel and Assist me. Example prompts are in italics.
+
+### Create and change data models
+
+**From a description.** Starting from an empty Polyglot model, describe your domain in plain language. The AI chat panel creates the entities and relationships at the level of detail you ask for: a conceptual model, or a logical model with attributes, data types, primary and unique keys, and cardinality. You can also ask it to normalize the structure.  The richer your prompt and the more context you provide, the more accurate results will be.  Note that results may vary depending on the provider and AI model you choose.
+
+**Physical model and DDL.** Once the logical model is in place, [derive the physical model](LogicaltoPhysicalwithPolyglotRel.md) for your target and [generate the DDL](Target-specific.md) in its native dialect. The same Polyglot model can be derived into several targets. Soon, it will also be possible to access the AI chat panel from physical model targets.
+
+**Changes in batch.** One prompt applies the same change to many objects, for example *`Add the attribute created_at, of type timestamp, to every entity that has an attribute updated_at`*.
+
+**Renaming.** Ask the AI chat panel to rename containers, entities, attributes, keys, relationships or views. When [naming conventions](Namingconventions.md) are coupled, technical names follow the new business names.
+
+**Attributes and data types.** Ask to add, modify or remove attributes and to change their data types, in one entity or in several at once.
+
+**Structural changes.** Ask for changes that combine several operations, for example splitting an entity in two, or creating an associative entity for a many-to-many relationship.
+
+**Review before you commit.** The AI chat panel applies its changes to the model open in memory and explains them in the chat. Review them in the ER diagram and the Properties pane, and [undo](<https://hackolade.com/help/AIchatpanel.html#Undo%20AI%20changes>) them in one step with Ctrl+Z if needed. The changes reach the data model in your Git repository only after you save and commit them and the pull request is approved. Reviewers see a model-aware comparison of all the changes when they [review the change request](Reviewchangerequests.md).
+
+**Migration scripts.** ALTER scripts need no AI: compare two versions of a model and generate the [delta model and ALTER script](DeltamodelandALTERscript.md).
+
+### Enrich metadata
+
+**Descriptions.** Right-click a container, entity, view or attribute and choose [Assist me](<https://hackolade.com/help/AIchatpanel.html#Use%20Assist%20me%20on%20a%20model%20object>) to get a description written from the content of the model. Edit the proposed text if needed, then apply it. To describe many objects at once, ask in the AI chat panel, for example *`Write a business description for every entity of the container Logistics`*. Descriptions can be written in any language that your AI model supports.
+
+**Batch enrichment.** One request can combine several operations across many objects, for example *Add a description and a sensitivity classification to every attribute of the entity Customer*. All the changes from one request form a single undo step.
+
+**Missing attributes.** Ask the AI chat panel to review an entity against the practice of your domain or industry, for example *`Review the entity Shipment for a pipeline operator and list the attributes that are missing`*. Confirm the attributes you want, and the AI adds them in a single step.
+
+**Relationships that are not declared.** Models reverse-engineered from databases without declared constraints often lack foreign keys. Ask the AI chat panel to identify and create them, or use [Infer PKs & FKs](InferPrimaryKeysandForeignKeyRel.md) in the **Tools** menu, which proposes candidate keys from the names and data types of entities and attributes.
+
+**Sensitive data.** Ask the AI chat panel to identify the attributes likely to hold personal, health or financial data. Record the classification in a [user-defined custom property](Userdefinedcustomproperties.md), for example a sensitivity list with the categories of GDPR or PII. The classification then appears in the [generated documentation](Generatedocumentation.md) and in [Excel exports](Excelfile.md), and is published with the data model to [Collibra and DataHub](GovernancePlatformsIntegration.md).
+
+### Ask questions about your data model
+
+**Summaries and reports.** Ask for an executive summary of the model, a list or a report, for example *`Summarize the structure and main subject areas of this model for an executive audience`*, then copy the answer into your own document. For formatted documentation of the model, use [Generate Documentation](Generatedocumentation.md).
+
+**About the whole model.** Questions can cover all the containers of the open model, for example *`Which entities have no primary key?`*
+
+**About an object.** Leverage the @mention functionality in the chat by typing `@` followed by the name of a table, column or view to reference it in your question. Click an object name in an answer to open the object in the model. To ask about one object only in the ERD or the Object Browser, right-click it and choose [Assist me](<https://hackolade.com/help/AIchatpanel.html#Use%20Assist%20me%20on%20a%20model%20object>).
+
+**For a given audience.** Say who the answer is for, for example a business-level explanation for a data steward, or a technical one for a developer.
+
+**Impact of a change.** Ask which entities and relationships depend on an attribute before you change it, for example *`What is affected if I change the data type of the attribute pipeline_id?`* For impact across data models, use the impact analysis of [Polyglot derivation](Derivefrompolyglotvsexternalrefe.md), the Where-Used dialog of [reusable definitions](Reusableobjectsdefinitions.md), and the [Where-Used tab](<https://hackolade.com/help/ModelHubuserinterface.html#Where-Used%20tab>) of Model Hub.
+
+**Semantic artifacts.** Ask the AI chat panel to generate RDFS, OWL and SHACL in Turtle syntax from the model. The output is limited to what the ER diagram expresses.
+
+**Chat history.** The AI chat panel saves your chat history on disk.
+
+### Apply your standards
+
+**Naming conventions.** Hackolade Studio applies the [naming conventions](Namingconventions.md) of the target to the objects that the AI creates, as to any other object, when coupling is enabled for all objects. You can also state your standards in the prompt.
+
+**Verification.** Run [Verify Data Model](VerifyDataModel.md) on the result to check it against your glossary, your attribute property rules and your regular-expression rules. To correct the violations listed in the report, re-apply the naming conventions, or ask the AI chat panel to rename the objects concerned.
+
+**Architectural style.** Polyglot models, reusable definitions, snippets, custom properties, naming conventions and verification rules, shared through Git, carry your organization's patterns into every model. With the [MCP server](MCPserver.md) of Model Hub, your AI assistant reads your library of data models, and you adjust its instructions, skills and tools so that it follows your patterns.
+
+### Work across data models with Model Hub
+
+The [MCP server](MCPserver.md) of Model Hub connects your AI assistant, such as Microsoft 365 Copilot through Copilot Studio, VS Code Copilot, Claude or Cursor, to the library of data models in Model Hub. Use it to list data models, explain them, answer impact questions across models and repositories, or generate SQL queries from them.

@@ -107,7 +107,7 @@ Below is the current list of Hackolade CLI commands. Additional commands may be 
 </tr>
 <tr>
 <td><code>revEngDiagram</code></td>
-<td>Reverse-engineer model from PowerDesigner, MEGA, Mermaid, or DBML file</td>
+<td>Reverse-engineer model from PowerDesigner, MEGA, Mermaid, DBML, or xDBML file</td>
 </tr>
 <tr>
 <td><code>revEngJSON</code></td>
@@ -304,9 +304,9 @@ Usage: `hackolade forwEng [--arguments]`
 <td>Specify the directory path and file name where the forward-engineered files will be created.</td>
 </tr>
 <tr>
-<td>--outputType=&lt; <strong>jsonschema</strong> | jsondata | yamldata | script | schemaregistry | dbt | archimatemodel | openexchange &gt;</td>
+<td>--outputType=&lt; <strong>jsonschema</strong> | jsondata | yamldata | script | schemaregistry | dbt | archimatemodel | openexchange | xdbml &gt;</td>
 <td>Y</td>
-<td><p>Specify the type of output (JSON Schema, sample JSON data, sample YAML data, script, or schemaregistry, dbt, Archimate model or Archimate OpenExchange) [default: jsonschema]</p><p>This allows output of the script corresponding to the target of the specified model, e.g.: CQL for Cassandra, HQL for Hive, etc...</p><p>It also allows the publication of Avro, ProtoBuf, and JSON schemas to schema registry instances</p></td>
+<td><p>Specify the type of output (JSON Schema, sample JSON data, sample YAML data, script, or schemaregistry, dbt, Archimate model, Archimate OpenExchange, or xDBML) [default: jsonschema]</p><p>This allows output of the script corresponding to the target of the specified model, e.g.: CQL for Cassandra, HQL for Hive, etc...</p><p>It also allows the publication of Avro, ProtoBuf, and JSON schemas to schema registry instances</p><p>With xdbml, the model must currently be a Polyglot model, and --path is the path and file name of the xDBML file. See <a href="xDBML.md">xDBML</a> for the objects exported.</p></td>
 </tr>
 <tr>
 <td>--jsonSchemaCompliance=&lt; <strong>standard</strong> | full | extended &gt;</td>
@@ -462,6 +462,8 @@ Example:
 
 ```bat
 C:\PROGRA~1\Hackolade\hackolade forwEng --model=masterdata.json --path=masterdata.cql
+
+C:\PROGRA~1\Hackolade\hackolade forwEng --model=sales-polyglot.hck.json --outputType=xdbml --path=sales.xdbml
 ```
 
 > [!NOTE]
@@ -1503,7 +1505,7 @@ Usage: `hackolade revEngDDL [--arguments]`
 
 ## revEngDiagram
 
-The *`revEngDiagram`* command allows to trigger a reverse-engineering process of a model from a file created with another modeling tool: a [PowerDesigner file](PowerDesigner.md) for conceptual, logical or physical model (typically .cdm, .ldm or .pdm extension), a [MEGA](<https://bizzdesign.com/transformation-suite/hopex> "target=\"_blank\"") exchange file (.xmg extension), or files with [Mermaid ER diagram code](GenAI-createdMermaidERdiagram.md).(.mmd extension), or with [DBML syntax](GenAI-createdDBML.md) (.dbml extension).
+The *`revEngDiagram`* command allows to trigger a reverse-engineering process of a model from a file created with another modeling tool: a [PowerDesigner file](PowerDesigner.md) for conceptual, logical or physical model (typically .cdm, .ldm or .pdm extension), a [MEGA](<https://bizzdesign.com/transformation-suite/hopex> "target=\"_blank\"") exchange file (.xmg extension), or files with [Mermaid ER diagram code](GenAI-createdMermaidERdiagram.md) (.mmd extension), with [DBML syntax](GenAI-createdDBML.md) (.dbml extension), or with [xDBML syntax](<https://xdbml.org> "target=\"_blank\"") (.xdbml extension).
 
 Usage: `hackolade revEngDiagram [--arguments]`
 
@@ -1518,14 +1520,14 @@ Usage: `hackolade revEngDiagram [--arguments]`
 </thead>
 <tbody>
 <tr>
-<td>--source=&lt; powerdesigner | mermaid | dbml | mega &gt;</td>
+<td>--source=&lt; powerdesigner | mermaid | dbml | xdbml | mega &gt;</td>
 <td>Y</td>
-<td>Specify the modeling tool providing the source file. Currently only powerdesigner, mermaid, dbml, or mega are a possible value</td>
+<td>Specify the modeling tool providing the source file. Currently only powerdesigner, mermaid, dbml, xdbml, or mega are a possible value</td>
 </tr>
 <tr>
 <td>--file=&lt;<em>file</em>&gt;*</td>
 <td>Y</td>
-<td>Specify the directory path and file name where the file to be reverse-engineered is located (file must be a valid file for the source.) Absolute and relative paths are allowed. Supported extensions: .cdm, .ldm, .pdm (conceptual, logical, and physical models from PowerDesigner), .mmd (Mermaid ER diagrams), .dbml (DBML syntax files), .xmg (MEGA exchange files). For MEGA files, separate several paths with a semicolon, or use the * wildcard to select the matching files of a folder.</td>
+<td>Specify the directory path and file name where the file to be reverse-engineered is located (file must be a valid file for the source.) Absolute and relative paths are allowed. Supported extensions: .cdm, .ldm, .pdm (conceptual, logical, and physical models from PowerDesigner), .mmd (Mermaid ER diagrams), .dbml (DBML syntax files), .xdbml (xDBML files), .xmg (MEGA exchange files). For MEGA files, separate several paths with a semicolon, or use the * wildcard to select the matching files of a folder.</td>
 </tr>
 <tr>
 <td>--model=&lt;<em>file</em>&gt;*</td>
@@ -1535,7 +1537,12 @@ Usage: `hackolade revEngDiagram [--arguments]`
 <tr>
 <td>--target=&lt;<em>target</em>&gt;</td>
 <td>Y</td>
-<td>Specify the target for the Hackolade Studio model to create. For a logical model, the target must be polyglot. For a physical model, the target must be one of the Hackolade Studio physical targets. For MEGA files, the target must be Polyglot or Db2-zOS.</td>
+<td>Specify the target for the Hackolade Studio model to create. For a logical model, the target must be polyglot. For a physical model, the target must be one of the Hackolade Studio physical targets. For MEGA files, the target must currently be Polyglot or Db2-zOS. For xDBML files, the target must be Polyglot.</td>
+</tr>
+<tr>
+<td>--conflictResolution=&lt; <strong>keepBoth</strong> | replace | merge | cancel &gt;</td>
+<td>N</td>
+<td>Specify conflict resolution strategy for containers and entities [default: keepBoth]</td>
 </tr>
 <tr>
 <td>--maxErdEntityBoxes=&lt; true | <strong>false </strong>&gt;</td>
@@ -1562,6 +1569,8 @@ start /wait hackolade revEngDiagram --source=mega --file=Sales.xmg --target=Poly
 start /wait hackolade revEngDiagram --source=mega --file="Sales.xmg;DataTypes.xmg" --target=Polyglot
 
 start /wait hackolade revEngDiagram --source=mega --file=Sales.xmg --target=Db2-zOS
+
+start /wait hackolade revEngDiagram --source=xdbml --file=sales.xdbml --model=sales-polyglot.hck.json --target=Polyglot --conflictResolution=merge
 ```
 
 ## revEngJSON

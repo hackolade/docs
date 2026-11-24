@@ -51,8 +51,8 @@ The data models feeding the Model Hub may have been created from scratch in Hack
 - **Always run the latest version** of the application: no effort to always access the latest feature enhancements, as described in the [Model Hub Architecture](ModelHubtechnicalarchitecture.md) page
 - **Serverless architecture:** secure, scalable, and cloud-native, with no need for installation, maintenance, upgrade of an application and web server
 - **Remain in full control and ownership of your data and data models:** complete autonomy over the residency for your data models
-- Attribute-level vertical lineage, where-used, and impact analysis (TBA)
-- Glossary of business terms (TBA)
+- Attribute-level vertical lineage, where-used, and impact analysis
+- Glossary of business terms
 - Threaded conversations (TBA)
 - Metadata curation (TBA)
 - Tags for annotations (TBA)

@@ -6,7 +6,7 @@ seoTitle: Forward-engineer a Polyglot model to xDBML
 
 [xDBML](<https://xdbml.org> "target=\"_blank\"") is an open specification to describe a data model as text. It goes beyond DBML, with nested objects and arrays, conceptual relationships and AI-readiness metadata. Its syntax is described in the [xDBML specification](<https://xdbml.org/spec/current> "target=\"_blank\""), and the topic [Gen-AI created xDBML](Gen-AIcreatedxDBML.md) shows a complete xDBML document.
 
-Hackolade Studio writes xDBML in two situations: when you forward-engineer your model from the menu, and automatically "behind the scenes" when the [AI chat panel](AIchatpanel.md) reads your model to answer your prompt. Both use the same export, so the same objects are supported.
+Hackolade Studio writes xDBML when you forward-engineer your model, from the menu or with the [Command-Line Interface](CommandLineInterface.md), and automatically "behind the scenes" when the [AI chat panel](AIchatpanel.md) reads your model to answer your prompt. All three use the same export, so the same objects are supported.
 
 > [!IMPORTANT]
 > xDBML forward-engineering currently works in Polyglot models only.
@@ -25,11 +25,25 @@ In the xDBML file, the data type of an attribute is its mode when it has one, su
 
 **Relationships** and **Views** export all the relationships or all the views of the model, or none. A relationship is exported only when you export both its parent entity and its child entity. A view that belongs to a container is exported only when you select that container, or some of its entities.
 
-xDBML cannot currently be generated with the [Command-Line Interface](CommandLineInterface.md).
+## Forward-engineer a model to xDBML from the command line
+
+To generate the xDBML file in a script or a CI/CD pipeline, run the `forwEng` command of the [Command-Line Interface](CommandLineInterface.md) with `--outputType=xdbml`. Set `--model` to your Polyglot model, and `--path` to the path and file name of the xDBML file:
+
+```bat
+hackolade forwEng --model=sales-polyglot.hck.json --outputType=xdbml --path=sales.xdbml
+```
+
+Without `--selectedObjects`, Hackolade Studio exports the whole model. To export only some entities, list them by container. In this example, only the Customer and Order entities of the Sales container are exported, with the relationship between them:
+
+```bat
+hackolade forwEng --model=sales-polyglot.hck.json --outputType=xdbml --path=sales.xdbml --selectedObjects="Sales: [Customer,Order]"
+```
+
+As with the menu, a relationship is exported only when you export both its parent entity and its child entity.
 
 ## Supported objects and properties
 
-Hackolade Studio currently supports the forward-engineering of the following objects, from the menu and in the [AI chat panel](AIchatpanel.md):
+Hackolade Studio currently supports the forward-engineering of the following objects, from the menu, from the command line and in the [AI chat panel](AIchatpanel.md):
 
 - the model name and description;
 - containers, with their name, description and color;
