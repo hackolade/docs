@@ -1,3 +1,8 @@
+---
+description: A semantic model defines the business meaning of data. You capture concepts, relationships, hierarchies and business rules in Hackolade Studio Polyglot models.
+seoTitle: Semantic modeling with Polyglot data models
+image: lib/Architectural vision including semantic web capabilities.png
+---
 # Semantic modeling
 
 **“What does this structured data mean, and how should it be queried?”**

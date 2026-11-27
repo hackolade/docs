@@ -1,3 +1,8 @@
+---
+description: An ontology is a formal representation of business knowledge. Hackolade Studio is adding RDFS, OWL and SHACL generation, and visual ontology modeling.
+seoTitle: Ontology modeling with RDF, RDFS, OWL and SHACL
+image: lib/Architectural vision including semantic web capabilities.png
+---
 # Ontology
 
 **“What concepts exist in the business, and how are they allowed to relate?”**

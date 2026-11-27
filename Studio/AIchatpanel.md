@@ -8,10 +8,10 @@ image: lib/AI-Assisted Data Modeling panel.png
 > [!IMPORTANT]
 > AI-Assisted Data modeling features are available only in the [Ultimate](<https://hackolade.com/help/Editions.html#Edition>) and in the 14-day free trial editions. They currently work in only the desktop application, and with Polyglot models.
 
-The AI Assistant is a movable and adjustable side panel in Hackolade Studio.  You chose your preferred AI model, then you use natural language to describe a requirement or interact with your data model: create, modify, enrich, explain, optimize, get insights, or ask questions.
+The AI Assistant is a movable and adjustable side panel in Hackolade Studio.  You choose your preferred AI model, then you use natural language to describe a requirement or interact with your data model: create, modify, enrich, explain, optimize, get insights, or ask questions.
 
 > [!NOTE]
-> Our [AI integration philosophy](<https://hackolade.com/help/AI-assisteddatamodeling.html#Hackolade%20let's%20you%20use%20AI%20on%20your%20own%20terms>) is such that Hackolade does not get any of your data model, prompts and responses.
+> Our [AI integration philosophy](<https://hackolade.com/help/AI-assisteddatamodeling.html#Hackolade%20lets%20you%20use%20AI%20on%20your%20own%20terms>) is such that Hackolade does not get any of your data model, prompts and responses.
 
 Go to the menu option `AI > AI-Assisted Data Modeling Panel` or click the sparkling icon in the toolbar.
 
@@ -87,6 +87,9 @@ The AI interprets your instructions in the context of the current data model and
 
 The conversation maintains context across successive requests, so you can progressively refine the model without repeating the entire specification. For example, after renaming an entity, you can simply ask the AI to adapt the corresponding attribute names.
 
+> [!NOTE]
+> Each conversation belongs to a single data model.   But you may [continue a conversation](<https://hackolade.com/help/AIchathistory.html#Continue%20a%20conversation%20from%20another%20data%20model>) from another data model.  If you want to have conversations across data models, you need the [MCP server](MCPserver.md) of Model Hub.
+
 ## Mention a specific model object in your prompt
 
 To easily reference a specific object of your model in your prompt, type `@` in the text box and keep typing to filter the dynamic list, then select the object.  After a mention, type `.` to drill down into the children of the object, for example from an entity to one of its attributes.
@@ -105,6 +108,10 @@ Use the **@mention display** toggle to show mentions with their name only, or wi
 
 While the AI works on your request, the **Send** button becomes a **Stop** button. Click it to interrupt the response, for example when you realize your instructions were incomplete. Changes already applied to the model before you clicked **Stop** remain, and can be [undone](<https://hackolade.com/help/AIchatpanel.html#Undo%20AI%20changes>).
 
+Closing the panel does not stop the AI assistant process. It keeps working on your request, so changes could still appear in your data model after the panel is closed. To interrupt it for good, open the panel again and click **Stop**.
+
+Changing data model causes a different behavior. If you open or create a data model, or close the current one, while the AI assistant process is still running, Hackolade Studio stops the response. The conversation is kept up to that point, and you can find it in the [list of conversations](AIchathistory.md) of its data model. In the data model you open next, the panel starts with a new chat, because each conversation belongs to one data model.
+
 ## How are changes applied to the model?
 
 Unlike conventional AI chat interfaces that merely generate text or code, the AI-Assisted Data Modeling panel is integrated directly with Hackolade Studio's data modeling capabilities.
@@ -119,7 +126,7 @@ You can then continue refining the model through additional prompts or make manu
 
 The AI chat panel currently works only on Polyglot models, and supports the same objects as the xDBML reverse-engineering: containers, entities, attributes, primary and unique keys, relationships and views. It cannot create or modify an index, an enumeration or a model definition yet, for example. When you ask for a change it cannot perform, the AI tells you so in its response.
 
-The AI assistant cannot currently change a model yet when the model contains references to definitions (model, internal or external definitions) or objects derived from another Polyglot model. On such a model, the AI assistant tells you that changes are not supported yet, and you can still ask questions about the model.
+The AI assistant cannot currently change a model when the model contains references to definitions (model, internal or external definitions) or objects derived from another Polyglot model. On such a model, the AI assistant tells you that changes are not supported yet, and you can still ask questions about the model.
 
 The resulting changes become part of the current data model and can be saved through Hackolade Studio's normal model-saving workflow, subject to the Auto save setting.
 
@@ -173,13 +180,19 @@ Because compaction summarizes previous interactions, some details from earlier e
 
 ## Start a new chat
 
-Click **+ New chat** at the top of the panel to start a fresh conversation.
+Click the **New chat** icon (**+**) at the top left of the panel to start a fresh conversation.
 
-A new chat resets the conversational context, allowing you to begin a separate modeling discussion without carrying over the previous exchange history.
+A new chat resets the conversational context, allowing you to begin a separate modeling discussion without carrying over the previous exchange history. The previous conversation is kept in the [list of your conversations](AIchathistory.md).
 
 This can be useful when switching to a different data modeling task, exploring a new approach, or starting over with a clean conversation.
 
 Starting a new chat does not imply resetting the current data model. The model remains available for subsequent AI interactions.
+
+## Manage your conversations
+
+Hackolade Studio saves each conversation as soon as you send your first message. You can go back to it later, for example the next day, and continue where you stopped. Each conversation belongs to the data model in which you started it.
+
+Click the **Show conversations** icon at the top left of the panel, next to **New chat**, to see the list of your conversations. The [AI chat history](AIchathistory.md) page explains how to open, rename, archive, delete and search your conversations, and how to continue a conversation with another data model.
 
 ## Use Assist me on a model object
 
@@ -208,11 +221,9 @@ The integration with Hackolade Studio allows you to inspect the generated struct
 
 ## Share your feedback with our Helpdesk
 
-You have an idea for the AI assistant, for example a new command, or you would like our Helpdesk to analyze a specific chat? Once a chat is in progress, the question *Ideas or feedback on the AI assistant?* and the link **Share them with our helpdesk** appear at the bottom of the panel, next to the **Close** button.
+You have an idea for the AI assistant, for example a new command, or you would like our Helpdesk to analyze a specific chat? [Show the list of conversations](<https://hackolade.com/help/AIchathistory.html#Show%20or%20hide%20the%20list%20of%20conversations>), click **More actions** (**...**) on the line of the conversation, then **Share with our helpdesk**.
 
-<img src="lib/AI share a dump with support link.png" alt="Ideas or feedback on the AI assistant, Share them with our helpdesk link at the bottom of the AI chat panel" width="478">
-
-Click **Share them with our helpdesk** to open the **Share your feedback with our helpdesk** dialog.
+The **Share your feedback with our helpdesk** dialog opens.
 
 ![Share your feedback with our helpdesk dialog](<lib/AI share chat with support dialog.png>)
 

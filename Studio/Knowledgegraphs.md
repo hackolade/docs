@@ -1,3 +1,8 @@
+---
+description: A knowledge graph connects actual business entities and facts. Hackolade Studio models property graphs, and support for RDF triple stores is in progress.
+seoTitle: Knowledge graph modeling for property graphs and RDF
+image: lib/Architectural vision including semantic web capabilities.png
+---
 # Knowledge graphs
 
 **“What are the actual entities and relationships?”**

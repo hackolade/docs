@@ -29,6 +29,8 @@ This approach helps protect your sensitive metadata, schemas, and data models fr
 
 We also believe that human oversight must be meaningful: AI should support expert judgment, not replace it with superficial approval of algorithmic outputs under pressure.
 
+The background of this approach is described in [Data modeling and the AI lifecycle](DatamodelingandtheAIlifecycle.md).
+
 ## AI on your own terms
 
 When comparing solutions, it is important to understand: where are your prompts, your data models, your schemas, and your metadata actually disclosed?
@@ -41,7 +43,7 @@ With well known legacy tools, the application (whether a client tool via a propr
 
 ![How the competition does AI architecture](<lib/AI competitors architecture.png>)
 
-### Hackolade let's you use AI on your own terms
+### Hackolade lets you use AI on your own terms
 
 The Hackolade solution architecture supports your AI Governance.  By AI Governance, we primarily mean capabilities such as bring-your-own key (BYOK), support for local LLMs, model selection, usage policies, and analytics (consumption and ROI) for AI features in the product.
 
@@ -107,7 +109,7 @@ The examples below show what you can do with the AI chat panel and Assist me. Ex
 
 **Semantic artifacts.** Ask the AI chat panel to generate RDFS, OWL and SHACL in Turtle syntax from the model. The output is limited to what the ER diagram expresses.
 
-**Chat history.** The AI chat panel saves your chat history on disk.
+**Chat history.** Hackolade Studio saves your conversations on your computer, encrypted and never in the data model, so you can [go back to a previous conversation](AIchathistory.md) and continue it.
 
 ### Apply your standards
 

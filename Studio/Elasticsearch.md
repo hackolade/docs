@@ -1,5 +1,5 @@
 ---
-description: Model Elasticsearch indices, types, IDs and field data types in Hackolade Studio, with reverse- and forward-engineering.
+description: Model Elasticsearch indices, types, IDs, field data types and analyzers in Hackolade Studio, with reverse- and forward-engineering.
 seoTitle: Elasticsearch data modeling with Hackolade Studio
 image: lib/Elasticsearch workspace.png
 ---
@@ -7,7 +7,7 @@ image: lib/Elasticsearch workspace.png
 
 Elasticsearch is a RESTful search and analytics engine based on Apache Lucene. It provides a distributed, multi-tenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents. Elasticsearch is developed alongside a data-collection and log-parsing engine called Logstash, and an analytics and visualization platform called Kibana. The three products are designed for use as an integrated solution, referred to as the "Elastic Stack" (formerly the "ELK stack").
 
-To perform data modeling for Elasticsearch with Hackolade, you must first download the Elasticsearch [plugin](DownloadadditionalDBtargetplugin.md). **Important note:** with v7, a new typeless API has been introduced, and the old APIs that accept types have been deprecated (more details [here](<https://www.elastic.co/blog/moving-from-types-to-typeless-apis-in-elasticsearch-7-0> "target=\"_blank\"").) As a result a different plugin is required, depending on whether you're running ES v2;0 thru 6.!, or ES v7.0 and above. Please make sure to use the appropriate plugin.
+To perform data modeling for Elasticsearch with Hackolade, you must first download the Elasticsearch [plugin](DownloadadditionalDBtargetplugin.md). **Important note:** with v7, a new typeless API has been introduced, and the old APIs that accept types have been deprecated (more details in [Moving from types to typeless APIs in Elasticsearch 7.0](<https://www.elastic.co/blog/moving-from-types-to-typeless-apis-in-elasticsearch-7-0> "target=\"_blank\"").) As a result a different plugin is required, depending on whether you're running ES v2;0 thru 6.!, or ES v7.0 and above. Please make sure to use the appropriate plugin.
 
 Hackolade was specially adapted to support the data modeling of Elasticsearch, including the large choice of data types and parent-child relationships. The application closely follows the terminology of the database.
 
@@ -36,11 +36,22 @@ IDs in Elasticsearch can be provided by the application or automatically generat
 
 ## Attributes data types
 
-Elasticsearch supports a number of different datatypes for the fields in a document, including core, complex, geo, and specialized datatypes. Hackolade has been configured to use all the Elasticsearch types, as described [here](<https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping-types.html> "target=\"_blank\"").
+Elasticsearch supports a number of different datatypes for the fields in a document, including core, complex, geo, and specialized datatypes. Hackolade has been configured to use all the Elasticsearch types, as described in [Field data types](<https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping-types.html> "target=\"_blank\"") in the Elasticsearch documentation.
 
 ![Elasticsearch data types](<lib/Elasticsearch data types.png>) ![Elasticsearch geo-point sub-types](<lib/Elasticsearch geo-point sub-types.png>)![Elasticsearch geo-shape subtypes](<lib/Elasticsearch geo-shape subtypes.png>)
 
 ![Elasticsearch linestring structure](<lib/Elasticsearch linestring structure.png>)
+
+## Analyzers
+
+The analyzer dropdown lists the most common built-in analyzers of Elasticsearch. It appears for string fields with the text sub-type, and for completion and token_count fields.
+
+With the Elasticsearch v7 and above plugin, the easiest way to use any other analyzer is to select `custom` in the dropdown, then type the analyzer's name in the analyzer name property. Hackolade Studio writes this name in the `analyzer` parameter of the field mapping. The name can be:
+
+- a built-in analyzer of Elasticsearch that the dropdown does not list. For example, of the [language analyzers](<https://www.elastic.co/docs/reference/text-analysis/analysis-lang-analyzer> "target=\"_blank\""), the dropdown lists only `english` and `french`, but you can type `spanish` or `german`;
+- an analyzer you define in the Analyzers property of the index, for example a language analyzer with your own stop words. Hackolade Studio writes it in the analysis settings of the index.
+
+If your team uses the same built-in analyzer regularly, you can add it to the dropdown, so that nobody has to select `custom` and type its name each time. Redefine the analyzer property in your custom properties, as described in [Change a property of the plugin](<https://hackolade.com/help/Userdefinedcustomproperties.html#Change%20a%20property%20of%20the%20plugin>). It takes a little more work, because you must share the custom properties configuration with everyone on the team, but the analyzer is then available directly in the dropdown. The string, completion and token_count data types each have their own analyzer property: redefine it for each data type where you need the new value.
 
 ## Forward-Engineering
 
@@ -52,7 +63,7 @@ The script can also be exported to the file system via the menu Tools > Forward-
 
 ## Reverse-Engineering
 
-You may define the connection parameters to your instance, typically on port 9200. Take a look at [this page](ConnecttoanElasticsearchinstance.md) for more information.
+You may define the connection parameters to your instance, typically on port 9200. Take a look at [Connect to an Elasticsearch instance](ConnecttoanElasticsearchinstance.md) for more information.
 
 The Hackolade reverse-engineering process of an Elasticsearch instance includes a query for a representative random sample of items, followed by a schema inference based on the sample.
 

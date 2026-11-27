@@ -24,6 +24,11 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/mysticatea/abort-controller/blob/master/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
+<td><a href="https://github.com/ajaxorg/ace-builds" target="_blank">Ace</a></td>
+<td>(c) 2010, Ajax.org B.V.</td>
+<td><a href="https://github.com/ajaxorg/ace-builds/blob/master/LICENSE" target="_blank">BSD-3-Clause</a></td>
+</tr>
+<tr>
 <td><a href="https://github.com/acornjs/acorn" target="_blank">Acorn</a></td>
 <td>(c) 2012-2022 by various contributors</td>
 <td><a href="https://github.com/acornjs/acorn/blob/master/acorn/LICENSE" target="_blank">MIT</a></td>
@@ -49,9 +54,19 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/antlr/antlr4/blob/master/LICENSE.txt" target="_blank">BSD-3-Clause</a></td>
 </tr>
 <tr>
+<td><a href="https://github.com/mike-lischke/antlr4ng" target="_blank">antlr4ng</a></td>
+<td>(c) 2012-2023 The ANTLR Project</td>
+<td><a href="https://github.com/mike-lischke/antlr4ng/blob/master/LICENSE.txt" target="_blank">BSD-3-Clause</a></td>
+</tr>
+<tr>
 <td><a href="https://github.com/apollographql/apollo-client" target="_blank">Apollo-client</a></td>
 <td>(c) 2022 Apollo Graph, Inc. (Formerly Meteor Development Group, Inc.)</td>
 <td><a href="https://github.com/apollographql/apollo-client/blob/main/LICENSE" target="_blank">MIT</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/archiverjs/node-archiver" target="_blank">Archiver</a></td>
+<td>(c) 2012-2014 Chris Talkington, contributors</td>
+<td><a href="https://github.com/archiverjs/node-archiver/blob/master/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/caolan/async" target="_blank">Async</a></td>
@@ -59,19 +74,29 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/caolan/async/blob/master/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
+<td><a href="https://github.com/DirtyHairy/async-mutex" target="_blank">Async-mutex</a></td>
+<td>(c) 2016 Christian Speckner</td>
+<td><a href="https://github.com/DirtyHairy/async-mutex/blob/master/LICENSE" target="_blank">MIT</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/fabiospampinato/atomically" target="_blank">Atomically</a></td>
+<td>(c) 2020-present Fabio Spampinato</td>
+<td><a href="https://github.com/fabiospampinato/atomically/blob/master/license" target="_blank">MIT</a></td>
+</tr>
+<tr>
 <td><a href="https://github.com/mtth/avsc" target="_blank">Avsc</a></td>
 <td>(c) 2015-2017, Matthieu Monsch</td>
 <td><a href="https://github.com/mtth/avsc/blob/master/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/aws/aws-sdk-js" target="_blank">AWS-SDK</a></td>
-<td>(c) 2014 Amazon Web Services</td>
-<td><a href="https://github.com/aws/aws-sdk-js/blob/master/LICENSE.txt" target="_blank">Apache</a></td>
+<td><a href="https://github.com/aws/aws-sdk-js-v3" target="_blank">AWS SDK for JavaScript</a></td>
+<td>(c) 2004 Amazon Web Services</td>
+<td><a href="https://github.com/aws/aws-sdk-js-v3/blob/main/LICENSE" target="_blank">Apache</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/axios/axios" target="_blank">Axios</a></td>
-<td>(c) 2014-present Matt Zabriskie</td>
-<td><a href="https://github.com/axios/axios/blob/master/LICENSE" target="_blank">MIT</a></td>
+<td><a href="https://github.com/mhart/aws4" target="_blank">Aws4</a></td>
+<td>(c) 2013 Michael Hart</td>
+<td><a href="https://github.com/mhart/aws4/blob/master/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/Azure/azure-sdk-for-js" target="_blank">Azure SDK for JavaScript</a></td>
@@ -84,9 +109,9 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/brianloveswords/base64url/blob/master/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/bestiejs/benchmark.js/tree/main" target="_blank">Benchmark.js</a></td>
-<td>(c) 2010-2016 Mathias Bynens</td>
-<td><a href="https://github.com/bestiejs/benchmark.js/blob/main/LICENSE" target="_blank">MIT</a></td>
+<td><a href="https://github.com/m4heshd/better-sqlite3-multiple-ciphers" target="_blank">Better-sqlite3-multiple-ciphers</a></td>
+<td>(c) 2021 Mahesh Bandara Wijerathna, (c) 2017 Joshua Wise</td>
+<td><a href="https://github.com/m4heshd/better-sqlite3-multiple-ciphers/blob/master/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/MikeMcl/big.js" target="_blank">Big.js</a></td>
@@ -99,19 +124,14 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/bryanburgers/bin-pack/blob/master/LICENSE.md" target="_blank">MIT</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/thlorenz/brace" target="_blank">Brace</a></td>
-<td>(c) 2013 Thorsten Lorenz</td>
-<td><a href="https://github.com/thlorenz/brace/blob/master/LICENSE" target="_blank">MIT</a></td>
+<td><a href="https://github.com/juliangruber/brace-expansion" target="_blank">Brace-expansion</a></td>
+<td>(c) 2013 Julian Gruber</td>
+<td><a href="https://github.com/juliangruber/brace-expansion/blob/main/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/mongodb/js-bson" target="_blank">BSON</a></td>
 <td>(c) 2015 MongoDB, Inc.</td>
 <td><a href="https://github.com/mongodb/js-bson/blob/1.0-branch/LICENSE.md" target="_blank">Apache</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/jahewson/node-byline" target="_blank">Byline</a></td>
-<td>(c) 2011-2015 John Hewson</td>
-<td><a href="https://github.com/jahewson/node-byline/blob/master/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/datastax/nodejs-driver" target="_blank">Cassandra driver</a></td>
@@ -134,6 +154,16 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/JedWatson/classnames/blob/master/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
+<td><a href="https://github.com/helloIAmPau/node-spinner" target="_blank">Cli-spinner</a></td>
+<td>(c) 2013 Pasquale Boemio</td>
+<td><a href="https://github.com/helloIAmPau/node-spinner/blob/master/LICENSE" target="_blank">MIT</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/kaelzhang/node-comment-json" target="_blank">Comment-json</a></td>
+<td>(c) 2013 kaelzhang, contributors</td>
+<td><a href="https://github.com/kaelzhang/node-comment-json/blob/master/LICENSE" target="_blank">MIT</a></td>
+</tr>
+<tr>
 <td><a href="https://github.com/supasate/connected-react-router" target="_blank">Connected React Router</a></td>
 <td>(c) 2016-present Supasate Choochaisri</td>
 <td><a href="https://github.com/supasate/connected-react-router/blob/master/LICENSE.md" target="_blank">MIT</a></td>
@@ -149,19 +179,14 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/antlr/grammars-v4/blob/master/cql3/CqlParser.g4" target="_blank">MIT</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/kentcdodds/cross-env" target="_blank">Cross-env</a></td>
-<td>(c) 2015 Kent C. Dodds</td>
-<td><a href="https://github.com/kentcdodds/cross-env/blob/master/LICENSE" target="_blank">MIT</a></td>
+<td><a href="https://github.com/cytoscape/cytoscape.js-klay" target="_blank">Cytoscape-klay</a></td>
+<td>(c) 2016-2020 The Cytoscpe Consortium</td>
+<td><a href="https://github.com/cytoscape/cytoscape.js-klay/blob/master/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/cytoscape/cytoscape.js" target="_blank">Cytoscape.js</a></td>
 <td>(c) 2016-2020 The Cytoscpe Consortium</td>
 <td><a href="https://github.com/cytoscape/cytoscape.js/blob/unstable/LICENSE" target="_blank">MIT</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/cytoscape/cytoscape.js-klay" target="_blank">Cytoscape-klay</a></td>
-<td>(c) 2016-2020 The Cytoscpe Consortium</td>
-<td><a href="https://github.com/cytoscape/cytoscape.js-klay/blob/master/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/d3/d3" target="_blank">D3</a></td>
@@ -177,6 +202,16 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/iamkun/dayjs" target="_blank">DayJS</a></td>
 <td>(c) 2018-present, iamkun</td>
 <td><a href="https://github.com/iamkun/dayjs/blob/dev/LICENSE" target="_blank">MIT</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/holistics/dbml" target="_blank">DBML</a></td>
+<td>(c) Holistics Software</td>
+<td><a href="https://github.com/holistics/dbml/blob/master/LICENSE" target="_blank">Apache</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/debug-js/debug" target="_blank">Debug</a></td>
+<td>(c) 2014-2017 TJ Holowaychuk, (c) 2018-2021 Josh Junon</td>
+<td><a href="https://github.com/debug-js/debug/blob/master/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/desktop/desktop-trampoline" target="_blank">Desktop Trampoline</a></td>
@@ -214,6 +249,11 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://raw.githubusercontent.com/atom/atom/master/LICENSE.md" target="_blank">MIT</a></td>
 </tr>
 <tr>
+<td><a href="https://github.com/jonluca/electron-extension-installer" target="_blank">Electron-extension-installer</a></td>
+<td>(c) 2023-present JonLuca De Caro</td>
+<td><a href="https://github.com/jonluca/electron-extension-installer/blob/main/LICENSE" target="_blank">MIT</a></td>
+</tr>
+<tr>
 <td><a href="https://github.com/arantes555/electron-fetch" target="_blank">Electron-fetch</a></td>
 <td>(c) 2016 Mehdi Kouhen</td>
 <td><a href="https://github.com/arantes555/electron-fetch/blob/master/LICENSE.md" target="_blank">MIT</a></td>
@@ -234,6 +274,11 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/coveooss/exponential-backoff/blob/master/LICENSE" target="_blank">Apache</a></td>
 </tr>
 <tr>
+<td><a href="https://expressjs.com/" target="_blank">Express</a></td>
+<td>(c) 2009-2014 TJ Holowaychuk, (c) 2013-2014 Roman Shtylman, (c) 2014-2015 Douglas Christopher Wilson</td>
+<td><a href="https://github.com/expressjs/express/blob/master/LICENSE" target="_blank">MIT</a></td>
+</tr>
+<tr>
 <td><a href="https://github.com/faker-js/faker" target="_blank">FakerJS</a></td>
 <td>(c) 2022 Faker, 2020 Marak Squires</td>
 <td><a href="https://github.com/faker-js/faker/blob/main/LICENSE" target="_blank">MIT</a></td>
@@ -247,6 +292,11 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/NaturalIntelligence/fast-xml-parser" target="_blank">Fast-xml-parser</a></td>
 <td>(c) 2017 Amit Kumar Gupta</td>
 <td><a href="https://github.com/NaturalIntelligence/fast-xml-parser/blob/master/LICENSE" target="_blank">MIT</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/NaturalIntelligence/fast-xml-validator" target="_blank">Fast-xml-validator</a></td>
+<td>(c) 2026 Amit Kumar Gupta</td>
+<td><a href="https://github.com/NaturalIntelligence/fast-xml-validator/blob/main/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
 <td><a href="https://fontawesome.com/" target="_blank">Font-awesome</a></td>
@@ -269,14 +319,14 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/DonJayamanne/gitHistoryVSCode/blob/master/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/desktop/desktop" target="_blank">GitHub Desktop</a></td>
-<td>(c) GitHub, Inc.</td>
-<td><a href="https://github.com/desktop/desktop/blob/development/LICENSE" target="_blank">MIT</a></td>
-</tr>
-<tr>
 <td><a href="https://github.com/IonicaBizau/git-url-parse" target="_blank">Git-url-parse</a></td>
 <td>(c) 2015-21 Ionică Bizău &lt;bizauionica@gmail.com&gt;</td>
 <td><a href="https://github.com/IonicaBizau/git-url-parse/blob/master/LICENSE" target="_blank">MIT</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/desktop/desktop" target="_blank">GitHub Desktop</a></td>
+<td>(c) GitHub, Inc.</td>
+<td><a href="https://github.com/desktop/desktop/blob/development/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/googleapis/nodejs-bigquery" target="_blank">Google Cloud BigQuery</a></td>
@@ -304,6 +354,11 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/browserstate/history.js/blob/master/LICENSE.md" target="_blank">MIT</a></td>
 </tr>
 <tr>
+<td><a href="https://github.com/jaywcjlove/hotkeys-js" target="_blank">Hotkeys-js</a></td>
+<td>(c) 2015-present, Kenny Wong, (c) 2011-2013 Thomas Fuchs</td>
+<td><a href="https://github.com/jaywcjlove/hotkeys-js/blob/master/LICENSE" target="_blank">MIT</a></td>
+</tr>
+<tr>
 <td><a href="https://github.com/bubkoo/html-to-image" target="_blank">html-to-image</a></td>
 <td>(c) 2017-2023 W.Y.</td>
 <td><a href="https://github.com/bubkoo/html-to-image/blob/master/LICENSE" target="_blank">MIT</a></td>
@@ -314,9 +369,19 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/TooTallNate/node-https-proxy-agent#license" target="_blank">MIT</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/indutny/node-ip" target="_blank">IP</a></td>
-<td>(c) 2012+ Fedor Indutny</td>
-<td><a href="https://github.com/indutny/node-ip/blob/main/README.md#license" target="_blank">MIT</a></td>
+<td><a href="https://github.com/EvanHahn/HumanizeDuration.js" target="_blank">HumanizeDuration.js</a></td>
+<td>Evan Hahn</td>
+<td><a href="https://github.com/EvanHahn/HumanizeDuration.js/blob/main/LICENSE.txt" target="_blank">Unlicense</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/jakearchibald/idb" target="_blank">IDB</a></td>
+<td>(c) 2016, Jake Archibald</td>
+<td><a href="https://github.com/jakearchibald/idb/blob/main/LICENSE" target="_blank">ISC</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/webpod/ip" target="_blank">Ip</a></td>
+<td>(c) 2025 Webpod</td>
+<td><a href="https://github.com/webpod/ip/blob/main/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/bevry/istextorbinary" target="_blank">Is Text or Binary?</a></td>
@@ -344,14 +409,24 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/lenchv/jks-js/blob/master/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
+<td><a href="https://github.com/bvaughn/js-search" target="_blank">JS-search</a></td>
+<td>(c) 2015 Brian Vaughn</td>
+<td><a href="https://github.com/bvaughn/js-search/blob/master/LICENSE.md" target="_blank">MIT</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/nodeca/js-yaml" target="_blank">JS-YAML</a></td>
+<td>(c) 2013-2015 Vitaly Purzin</td>
+<td><a href="https://github.com/nodeca/js-yaml/blob/master/LICENSE" target="_blank">MIT</a></td>
+</tr>
+<tr>
 <td><a href="https://github.com/kpdecker/jsdiff" target="_blank">Jsdiff</a></td>
 <td>(c) 2009-2015, Kevin Decker</td>
 <td><a href="https://github.com/kpdecker/jsdiff/blob/master/LICENSE" target="_blank">BSD-3-Clause</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/zaach/jsonlint" target="_blank">JSON-lint</a></td>
-<td>(c) 2012 Zachary Carter</td>
-<td><a href="https://github.com/zaach/jsonlint" target="_blank">MIT</a></td>
+<td><a href="https://github.com/prantlf/jsonlint" target="_blank">JSON Lint</a></td>
+<td>(c) 2012-2018 Zachary Carter, (c) 2019-2026 Ferdinand Prantl</td>
+<td><a href="https://github.com/prantlf/jsonlint/blob/master/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/epoberezkin/json-source-map" target="_blank">JSON-source-map</a></td>
@@ -369,29 +444,29 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/Stuk/jszip/tree/main?tab=License-1-ov-file" target="_blank">MIT</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/bvaughn/js-search" target="_blank">JS-search</a></td>
-<td>(c) 2015 Brian Vaughn</td>
-<td><a href="https://github.com/bvaughn/js-search/blob/master/LICENSE.md" target="_blank">MIT</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/nodeca/js-yaml" target="_blank">JS-YAML</a></td>
-<td>(c) 2013-2015 Vitaly Purzin</td>
-<td><a href="https://github.com/nodeca/js-yaml/blob/master/LICENSE" target="_blank">MIT</a></td>
-</tr>
-<tr>
 <td><a href="https://github.com/christkv/kerberos" target="_blank">Kerberos</a></td>
 <td>(c) 2013-2016 Christian Amor Kvalheim</td>
 <td><a href="https://github.com/christkv/kerberos/blob/master/LICENSE" target="_blank">Apache</a></td>
 </tr>
 <tr>
+<td><a href="https://github.com/github/node-keytar" target="_blank">Keytar</a></td>
+<td>(c) 2013 GitHub Inc.</td>
+<td><a href="https://github.com/github/node-keytar/blob/main/LICENSE.md" target="_blank">MIT</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/adaltas/node-krb5" target="_blank">Krb5</a></td>
+<td>(c) 2014, SARL Adaltas</td>
+<td><a href="https://github.com/adaltas/node-krb5/blob/master/LICENSE.md" target="_blank">BSD-3-Clause</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/harttle/liquidjs" target="_blank">LiquidJS</a></td>
+<td>(c) 2016 Jun Yang</td>
+<td><a href="https://github.com/harttle/liquidjs/blob/master/LICENSE" target="_blank">MIT</a></td>
+</tr>
+<tr>
 <td><a href="https://lodash.com/" target="_blank">Lodash</a></td>
 <td>(c) 2012-2016 The Dojo Foundation</td>
 <td><a href="https://lodash.com/license" target="_blank">MIT</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/mhzed/machine-uuid" target="_blank">Machine-uuid</a></td>
-<td>(c) 2015 M H Zed</td>
-<td><a href="https://github.com/broofa/node-uuid/blob/master/LICENSE.md" target="_blank">MIT</a></td>
 </tr>
 <tr>
 <td><a href="https://marked.js.org" target="_blank">Marked</a></td>
@@ -404,6 +479,11 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/marklogic/node-client-api/blob/master/LICENSE.txt" target="_blank">Apache</a></td>
 </tr>
 <tr>
+<td><a href="https://github.com/streamich/memfs" target="_blank">Memfs</a></td>
+<td>(c) 2023 Vadim Dalecky and other contributors</td>
+<td><a href="https://github.com/streamich/memfs/blob/master/LICENSE" target="_blank">Apache</a></td>
+</tr>
+<tr>
 <td><a href="https://github.com/alexreardon/memoize-one" target="_blank">Memoize-one</a></td>
 <td>(c) 2019 Alexander Reardon</td>
 <td><a href="https://github.com/alexreardon/memoize-one/blob/master/LICENSE">MIT</a></td>
@@ -412,6 +492,16 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/mermaid-js/mermaid" target="_blank">Mermaid</a></td>
 <td>(c) 2014 - 2022 Knut Sveidqvist</td>
 <td><a href="https://github.com/mermaid-js/mermaid?tab=MIT-1-ov-file#readme" target="_blank">MIT</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/minimistjs/minimist" target="_blank">Minimist</a></td>
+<td>(c) James Halliday</td>
+<td><a href="https://github.com/minimistjs/minimist/blob/main/LICENSE" target="_blank">MIT</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/isaacs/node-mkdirp" target="_blank">Mkdirp</a></td>
+<td>(c) James Halliday and Isaac Z. Schlueter</td>
+<td><a href="https://github.com/isaacs/node-mkdirp/blob/main/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/mongodb/node-mongodb-native" target="_blank">MongoDB Native</a></td>
@@ -424,9 +514,9 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/mongodb-js/collection-sample/blob/master/LICENSE" target="_blank">Apache</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/mongodb-js/connection-model" target="_blank">MongoDB-connection-model</a></td>
-<td>(c) 2015 MongoDB Inc.</td>
-<td><a href="https://github.com/mongodb-js/connection-model/blob/master/LICENSE" target="_blank">Apache</a></td>
+<td><a href="https://github.com/mongodb-js/mongodb-connection-string-url" target="_blank">MongoDB-connection-string-url</a></td>
+<td>(c) MongoDB Inc.</td>
+<td><a href="https://github.com/mongodb-js/mongodb-connection-string-url/blob/main/LICENSE" target="_blank">Apache</a></td>
 </tr>
 <tr>
 <td><a href="https://www.npmjs.com/package/mongodb-query-parser" target="_blank">MongoDB-query-parser</a></td>
@@ -454,14 +544,14 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/mysqljs/mysql/blob/master/License" target="_blank">MIT</a></td>
 </tr>
 <tr>
+<td><a href="https://github.com/sidorares/node-mysql2" target="_blank">MySQL2</a></td>
+<td>(c) 2016 Andrey Sidorov and contributors</td>
+<td><a href="https://github.com/sidorares/node-mysql2/blob/master/License" target="_blank">MIT</a></td>
+</tr>
+<tr>
 <td><a href="https://github.com/neo4j/neo4j-javascript-driver" target="_blank">Neo4j-javascript-driver</a></td>
 <td>(c) 2018 Neo4j</td>
 <td><a href="https://github.com/neo4j/neo4j-javascript-driver/blob/1.7/LICENSE" target="_blank">Apache</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/nickmerwin/node-coveralls" target="_blank">Node-coveralls</a></td>
-<td>(c) 2013 Coveralls, Inc.</td>
-<td><a href="https://github.com/nickmerwin/node-coveralls/blob/master/LICENSE" target="_blank">BSD-2-Clause</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/bitinn/node-fetch" target="_blank">Node-fetch</a></td>
@@ -524,19 +614,24 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/npm/node-semver/blob/master/LICENSE" target="_blank">ISC</a></td>
 </tr>
 <tr>
+<td><a href="https://github.com/broofa/node-uuid" target="_blank">Node-uuid</a></td>
+<td>(c) 2010-2012 Robert Kieffer</td>
+<td><a href="https://github.com/broofa/node-uuid/blob/master/LICENSE.md" target="_blank">MIT</a></td>
+</tr>
+<tr>
 <td><a href="https://github.com/npm/node-which" target="_blank">Node-which</a></td>
 <td>(c) Isaac Z. Schlueter and Contributors</td>
 <td><a href="https://github.com/npm/node-which/blob/main/LICENSE" target="_blank">ISC</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/istanbuljs/nyc" target="_blank">Nyc</a></td>
-<td>(c) 2015, Contributors</td>
-<td><a href="https://github.com/istanbuljs/nyc/blob/master/LICENSE.txt" target="_blank">ISC</a></td>
+<td><a href="https://github.com/OpenRouterTeam/ai-sdk-provider" target="_blank">OpenRouter AI SDK Provider</a></td>
+<td>(c) OpenRouter Inc.</td>
+<td><a href="https://github.com/OpenRouterTeam/ai-sdk-provider/blob/main/LICENSE" target="_blank">Apache</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/couchbaselabs/node-ottoman" target="_blank">Ottoman</a></td>
-<td>(c) 2013 Couchbase Inc.</td>
-<td><a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache</a></td>
+<td><a href="https://github.com/TooTallNate/proxy-agents" target="_blank">Pac-proxy-agent</a></td>
+<td>(c) 2014 Nathan Rajlich</td>
+<td><a href="https://github.com/TooTallNate/proxy-agents/blob/main/packages/pac-proxy-agent/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/mholt/PapaParse" target="_blank">PapaParse</a></td>
@@ -549,9 +644,9 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/parcel-bundler/watcher/blob/master/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/ironSource/parquetjs" target="_blank">Parquetjs</a></td>
-<td>(c) 2017 ironSource Ltd.</td>
-<td><a href="https://github.com/ironSource/parquetjs/blob/master/LICENSE" target="_blank">MIT</a></td>
+<td><a href="https://github.com/ZJONSSON/parquetjs" target="_blank">Parquetjs</a></td>
+<td>(c) 2017 ironSource Ltd</td>
+<td><a href="https://github.com/ZJONSSON/parquetjs/blob/master/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/thlorenz/parse-link-header" target="_blank">Parse-link-header</a></td>
@@ -564,9 +659,24 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/jrop/perplex#license" target="_blank">ISC</a></td>
 </tr>
 <tr>
+<td><a href="https://github.com/blakeembrey/pluralize" target="_blank">Pluralize</a></td>
+<td>(c) 2013 Blake Embrey</td>
+<td><a href="https://github.com/blakeembrey/pluralize/blob/master/LICENSE" target="_blank">MIT</a></td>
+</tr>
+<tr>
 <td><a href="https://github.com/postaljs/postal.js" target="_blank">Postal</a></td>
 <td>(c) 2015 Jim Cowart</td>
 <td><a href="https://github.com/postaljs/postal.js/blob/master/LICENSE" target="_blank">MIT</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/facebook/prop-types" target="_blank">Prop-types</a></td>
+<td>(c) 2013-present, Facebook, Inc.</td>
+<td><a href="https://github.com/facebook/prop-types/blob/main/LICENSE" target="_blank">MIT</a></td>
+</tr>
+<tr>
+<td><a href="https://prosemirror.net/" target="_blank">ProseMirror</a></td>
+<td>(c) 2015-2017 Marijn Haverbeke and others</td>
+<td><a href="https://github.com/ProseMirror/prosemirror-model/blob/master/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/protobufjs/protobuf.js" target="_blank">ProtobufJS</a></td>
@@ -587,6 +697,16 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://react.dev/" target="_blank">React</a></td>
 <td>(c) 2013-present, Facebook, Inc.</td>
 <td><a href="https://github.com/facebook/react/blob/master/LICENSE" target="_blank">MIT</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/reduxjs/react-redux" target="_blank">React Redux</a></td>
+<td>(c) 2015-present Dan Abramov</td>
+<td><a href="https://github.com/reduxjs/react-redux/blob/master/LICENSE.md" target="_blank">MIT</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/remix-run/react-router" target="_blank">React Router</a></td>
+<td>(c) React Training 2015-2019, (c) Remix Software 2020-2022</td>
+<td><a href="https://github.com/remix-run/react-router/blob/main/LICENSE.md" target="_blank">MIT</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/securingsincity/react-ace" target="_blank">React-ace</a></td>
@@ -629,19 +749,34 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/JedWatson/react-select/blob/master/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
+<td><a href="https://github.com/casesandberg/reactcss" target="_blank">ReactCSS</a></td>
+<td>(c) 2015 Case Sandberg</td>
+<td><a href="https://github.com/casesandberg/reactcss/blob/master/LICENSE" target="_blank">MIT</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/nodejs/readable-stream" target="_blank">Readable-stream</a></td>
+<td>(c) Node.js contributors</td>
+<td><a href="https://github.com/nodejs/readable-stream/blob/main/LICENSE" target="_blank">MIT</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/reduxjs/redux" target="_blank">Redux</a></td>
+<td>(c) 2015-present Dan Abramov</td>
+<td><a href="https://github.com/reduxjs/redux/blob/master/LICENSE.md" target="_blank">MIT</a></td>
+</tr>
+<tr>
 <td><a href="https://redux-toolkit.js.org/" target="_blank">Redux Toolkit</a></td>
 <td>(c) 2018 Mark Erikson</td>
 <td><a href="https://github.com/reduxjs/redux-toolkit/blob/master/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/mongodb-js/resolve-mongodb-srv" target="_blank">Resolve-mongodb-srv</a></td>
-<td>(c) 2020 MongoDB Inc.</td>
-<td><a href="https://github.com/mongodb-js/resolve-mongodb-srv/blob/main/LICENSE" target="_blank">Apache</a></td>
-</tr>
-<tr>
 <td><a href="https://github.com/zuchka/remove-markdown" target="_blank">Remove-markdown</a></td>
 <td>(c) 2015 Stian Grytøyr</td>
 <td><a href="https://github.com/zuchka/remove-markdown?tab=MIT-1-ov-file#readme" target="_blank">MIT</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/mongodb-js/resolve-mongodb-srv" target="_blank">Resolve-mongodb-srv</a></td>
+<td>(c) 2020 MongoDB Inc.</td>
+<td><a href="https://github.com/mongodb-js/resolve-mongodb-srv/blob/main/LICENSE" target="_blank">Apache</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/davidmarkclements/rfdc" target="_blank">rfdc</a></td>
@@ -654,6 +789,21 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/isaacs/rimraf/blob/main/LICENSE.md" target="_blank">ISC</a></td>
 </tr>
 <tr>
+<td><a href="https://github.com/ReactiveX/rxjs" target="_blank">RxJS</a></td>
+<td>(c) 2015-2018 Google, Inc., Netflix, Inc., Microsoft Corp. and contributors</td>
+<td><a href="https://github.com/ReactiveX/rxjs/blob/master/LICENSE.txt" target="_blank">Apache</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/reklatsmasters/saslprep" target="_blank">Saslprep</a></td>
+<td>(c) 2014 Dmitry Tsvettsikh</td>
+<td><a href="https://github.com/reklatsmasters/saslprep/blob/master/LICENSE" target="_blank">MIT</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/scroll-into-view/scroll-into-view-if-needed" target="_blank">Scroll-into-view-if-needed</a></td>
+<td>(c) 2023 Cody Olsen</td>
+<td><a href="https://github.com/scroll-into-view/scroll-into-view-if-needed/blob/main/LICENSE" target="_blank">MIT</a></td>
+</tr>
+<tr>
 <td><a href="https://github.com/YuzuJS/setImmediate" target="_blank">setImmediate</a></td>
 <td>(c) 2012 Barnesandnoble.com, llc, Donavon West, and Domenic Denicola</td>
 <td><a href="https://github.com/YuzuJS/setImmediate#MIT-1-ov-file" target="_blank">MIT</a></td>
@@ -662,6 +812,11 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/steveukx/git-js" target="_blank">Simple-Git</a></td>
 <td>(c) 2022 Steve King</td>
 <td><a href="https://github.com/steveukx/git-js/blob/main/LICENSE" target="_blank">MIT</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/smithy-lang/smithy-typescript" target="_blank">Smithy TypeScript</a></td>
+<td>(c) Amazon.com, Inc. or its affiliates</td>
+<td><a href="https://github.com/smithy-lang/smithy-typescript/blob/main/LICENSE" target="_blank">Apache</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/squirrelchat/smol-toml" target="_blank">smol-toml</a></td>
@@ -684,9 +839,9 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/kesla/sort-json" target="_blank">MIT</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/atom/node-spellchecker" target="_blank">Spellchecker</a></td>
-<td>(c) 2016 Atom</td>
-<td><a href="https://github.com/atom/node-spellchecker/blob/master/LICENSE.md" target="_blank">MIT</a></td>
+<td><a href="https://github.com/mcollina/split2" target="_blank">Split 2</a></td>
+<td>(c) 2014-2018, Matteo Collina &lt;hello@matteocollina.com&gt;</td>
+<td><a href="https://github.com/mcollina/split2/blob/master/LICENSE" target="_blank">ISC</a></td>
 </tr>
 <tr>
 <td><a href="https://nathancahill.github.io/split/" target="_blank">Split.js</a></td>
@@ -694,19 +849,14 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/nathancahill/split/blob/master/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/mcollina/split2" target="_blank">Split 2</a></td>
-<td>(c) 2014-2018, Matteo Collina &lt;hello@matteocollina.com&gt;</td>
-<td><a href="https://github.com/mcollina/split2/blob/master/LICENSE" target="_blank">ISC</a></td>
-</tr>
-<tr>
 <td><a href="https://github.com/zeroturnaround/sql-formatter" target="_blank">SQL-formatter</a></td>
 <td><p>(c) 2016-2020 ZeroTurnaround LLC</p><p>(c) 2020-present George Leslie-Waksman and other contributors</p></td>
 <td><a href="https://github.com/zeroturnaround/sql-formatter/blob/master/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
-<td><a href="https://git.coolaj86.com/coolaj86/ssl-root-cas.js" target="_blank">SSL Root CAs</a></td>
-<td>(c) 2014 AJ ONeal</td>
-<td><a href="https://git.coolaj86.com/coolaj86/ssl-root-cas.js/raw/master/LICENSE" target="_blank">Apache</a></td>
+<td><a href="https://github.com/mscdex/ssh2" target="_blank">SSH2</a></td>
+<td>(c) Brian White</td>
+<td><a href="https://github.com/mscdex/ssh2/blob/master/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/mscdex/ssh2-streams" target="_blank">SSH2-Streams</a></td>
@@ -714,9 +864,9 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/mscdex/ssh2-streams/blob/master/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/yeoman/stringify-object" target="_blank">Stringify-object</a></td>
-<td>(c) 2015 Yeoman team</td>
-<td><a href="https://github.com/yeoman/stringify-object/blob/main/license" target="_blank">BSD-2-Clause</a></td>
+<td><a href="https://git.coolaj86.com/coolaj86/ssl-root-cas.js" target="_blank">SSL Root CAs</a></td>
+<td>(c) 2014 AJ ONeal</td>
+<td><a href="https://git.coolaj86.com/coolaj86/ssl-root-cas.js/raw/master/LICENSE" target="_blank">Apache</a></td>
 </tr>
 <tr>
 <td><a href="https://www.npmjs.com/package/swagger-parser" target="_blank">Swagger-parser</a></td>
@@ -744,14 +894,19 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://www.npmjs.com/package/thrift#license" target="_blank">Apache</a></td>
 </tr>
 <tr>
+<td><a href="https://github.com/thumbmarkjs/thumbmarkjs" target="_blank">ThumbmarkJS</a></td>
+<td>(c) 2024 Ilkka Peltola</td>
+<td><a href="https://github.com/thumbmarkjs/thumbmarkjs/blob/main/LICENSE" target="_blank">MIT</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ueberdosis/tiptap" target="_blank">Tiptap</a></td>
+<td>(c) 2025, Tiptap GmbH</td>
+<td><a href="https://github.com/ueberdosis/tiptap/blob/main/LICENSE.md" target="_blank">MIT</a></td>
+</tr>
+<tr>
 <td><a href="https://github.com/gouch/to-title-case" target="_blank">To-title-case</a></td>
 <td>(c) 2008-2018 David Gouch</td>
 <td><a href="https://github.com/gouch/to-title-case/blob/master/LICENSE" target="_blank">MIT</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/agebrock/tunnel-ssh" target="_blank">Tunnel-SSH</a></td>
-<td>(c) 2018 Christoph Hagenbrock</td>
-<td><a href="https://github.com/agebrock/tunnel-ssh/blob/master/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/domchristie/turndown" target="_blank">Turndown</a></td>
@@ -764,19 +919,24 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
+<td><a href="https://github.com/microsoft/TypeScript" target="_blank">TypeScript</a></td>
+<td>(c) Microsoft Corporation</td>
+<td><a href="https://github.com/microsoft/TypeScript/blob/main/LICENSE.txt" target="_blank">Apache</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/sindresorhus/uint8array-extras" target="_blank">Uint8array-extras</a></td>
+<td>(c) Sindre Sorhus</td>
+<td><a href="https://github.com/sindresorhus/uint8array-extras/blob/main/license" target="_blank">MIT</a></td>
+</tr>
+<tr>
 <td><a href="https://github.com/uuidjs/uuid" target="_blank">UUID</a></td>
 <td>(c) 2010-2020 Robert Kieffer and other contributors</td>
 <td><a href="https://github.com/uuidjs/uuid/blob/main/LICENSE.md" target="_blank">MIT</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/mtxr/vscode-sqltools" target="_blank">VScode-sqltools</a></td>
-<td>(c) 2016-present Matheus Teixeira</td>
-<td><a href="https://github.com/mtxr/vscode-sqltools/blob/dev/LICENSE.md" target="_blank">MIT</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/chrisdickinson/w3c-blob" target="_blank">W3c-blob</a></td>
-<td>(c) 2016 Chris Dickinson</td>
-<td><a href="https://github.com/chrisdickinson/w3c-blob#license" target="_blank">MIT</a></td>
+<td><a href="https://github.com/vercel/ai" target="_blank">Vercel AI SDK</a></td>
+<td>(c) 2023 Vercel, Inc.</td>
+<td><a href="https://github.com/vercel/ai/blob/main/LICENSE" target="_blank">Apache</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/fresc81/node-winreg" target="_blank">Winreg</a></td>
@@ -784,14 +944,9 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/fresc81/node-winreg#license" target="_blank">BSD-2-Clause</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/Leonidas-from-XIV/node-xml2js" target="_blank">Xml2JS</a></td>
-<td>(c) 2010-2013 Marek Kubica</td>
-<td><a href="https://github.com/Leonidas-from-XIV/node-xml2js/blob/master/LICENSE" target="_blank">MIT</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/jindw/xmldom" target="_blank">XMLDOM</a></td>
-<td>(c) 2012-2016 jindw</td>
-<td><a href="https://github.com/jindw/xmldom/blob/master/LICENSE" target="_blank">MIT</a></td>
+<td><a href="https://xdbml.org" target="_blank">xDBML</a></td>
+<td>(c) Hackolade</td>
+<td><a href="https://github.com/xdbml/xdbml-spec/blob/main/LICENSE" target="_blank">Apache</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/yaronn/xml-crypto" target="_blank">Xml-Crypto</a></td>
@@ -799,9 +954,34 @@ All Product Editions. For more info, consult this [helpful resource](<https://ch
 <td><a href="https://github.com/yaronn/xml-crypto/blob/master/LICENSE" target="_blank">MIT</a></td>
 </tr>
 <tr>
+<td><a href="https://github.com/nashwaan/xml-js" target="_blank">Xml-js</a></td>
+<td>(c) 2016-2017 Yousuf Almarzooqi</td>
+<td><a href="https://github.com/nashwaan/xml-js/blob/master/LICENSE" target="_blank">MIT</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/Leonidas-from-XIV/node-xml2js" target="_blank">Xml2JS</a></td>
+<td>(c) 2010-2013 Marek Kubica</td>
+<td><a href="https://github.com/Leonidas-from-XIV/node-xml2js/blob/master/LICENSE" target="_blank">MIT</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/xmldom/xmldom" target="_blank">XMLDOM</a></td>
+<td>(c) 2019 - present Christopher J. Brody and other contributors, as listed in: https://github.com/xmldom/xmldom/graphs/contributors</td>
+<td><a href="https://github.com/xmldom/xmldom/blob/master/LICENSE" target="_blank">MIT</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/yaronn/xpath.js" target="_blank">XPath.js</a></td>
+<td>(c) Cameron McCormack, Yaron Naveh</td>
+<td><a href="https://github.com/yaronn/xpath.js" target="_blank">MIT</a></td>
+</tr>
+<tr>
 <td><a href="https://github.com/yargs/yargs" target="_blank">Yargs</a></td>
 <td>(c) 2010 James Halliday</td>
 <td><a href="https://github.com/yargs/yargs/blob/master/LICENSE" target="_blank">MIT</a></td>
+</tr>
+<tr>
+<td><a href="https://zod.dev" target="_blank">Zod</a></td>
+<td>(c) 2025 Colin McDonnell</td>
+<td><a href="https://github.com/colinhacks/zod/blob/main/LICENSE" target="_blank">MIT</a></td>
 </tr>
 </tbody>
 </table>

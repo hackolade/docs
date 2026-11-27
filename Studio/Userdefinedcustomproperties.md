@@ -156,6 +156,40 @@ Here's another view, consolidated:\
 - template: optional, this is needed in the case of propertyType = details, to define a popup multi-line text. Possible value: textarea
 - valueType: optional, this is needed in to specify that a property is numeric only. Possible values: numeric
 
+## Change a property of the plugin
+
+You can also adapt a property that the plugin already shows in the Properties Pane, for example to add a value to a dropdown list. Declare the property in the \<object>LevelConfig.json file of the target, with the same `propertyKeyword` as the plugin's property. Your definition then applies to the plugin's property, at its place in the Properties Pane, instead of adding a second one.
+
+- With the same `propertyType`, only the keys you give change. The other keys of the plugin's property are kept, for example its dependency on another property.
+- With another `propertyType`, your definition replaces the plugin's property entirely.
+- The `options` list is replaced as a whole. To add a value, copy the full list of the plugin and add your value to it.
+
+For example, the [analyzer dropdown](<https://hackolade.com/help/Elasticsearch.html#Analyzers>) of Elasticsearch offers `english` and `french`, but no other language. To add `spanish` to it, add this block to the `fieldLevelConfig.json` file in the `customProperties/properties_pane/field_level` folder of the Elasticsearch v7 and above target (see [Access the target customization directory](<https://hackolade.com/help/Userdefinedcustomproperties.html#Access%20the%20target%20customization%20directory>)):
+
+```json
+[
+  {
+    "lowerTab": "Details",
+    "structure": {
+      "string": [
+        {
+          "propertyName": "analyzer",
+          "propertyKeyword": "analyzer",
+          "propertyType": "select",
+          "options": ["", "standard", "simple", "whitespace", "stop", "keyword", "pattern", "english", "french", "spanish", "fingerprint", "custom"]
+        }
+      ]
+    }
+  }
+]
+```
+
+This example changes the property for the string data type only. At attribute level, you declare a property for [specific data types](<https://hackolade.com/help/Configurecustomproperties.html#Attribute%20details%20tab%20for%20a%20specific%20data%20type>), as here, or once for [all data types](<https://hackolade.com/help/Configurecustomproperties.html#Attribute%20details%20tab%20for%20all%20data%20types>). With all data types, the property is also added to the data types where the plugin does not have it.
+
+Restart Hackolade Studio to see the new value in the dropdown.
+
+The value you select is stored in the model. A user who opens the model without your configuration does not see the added value in the dropdown, but it stays in the model, and the forward-engineering script still contains it when the plugin writes this property. Share the configuration with your team, as described in [Share customization with team members](<https://hackolade.com/help/Userdefinedcustomproperties.html#Share%20customization%20with%20team%20members>).
+
 ## Share customization with team members
 
 It is recommended that you share customization using Git. Store your changes in a Git remote repository, and have your team members clone it locally in C:\\Users\\%username%\\.hackolade\\options (on Mac in Users/$USER/.Hackolade/options) That way, all that teams members need to do is to pull regularly, and they will get your latest changes.

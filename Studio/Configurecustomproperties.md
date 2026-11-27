@@ -9,7 +9,7 @@ Hackolade Studio is shipped with out-of-the-box properties displayed in the Prop
 
 Many users want to define their own properties, for example to track PII or GDPR characteristics, or to tie with metadata management and governance. Some power users create hooks to be leveraged in DevOps CI/CD pipelines or in code generation routines.
 
-The user-defined custom properties leverage the controls described in [this page](Propertycontrols.md). This how-to guide takes you through a hands-on exercise to create custom properties.
+The user-defined custom properties leverage the [property controls](Propertycontrols.md). This how-to guide takes you through a hands-on exercise to create custom properties.
 
 [How-To: User-defined custom properties](<https://youtu.be/eHGhwp03rXo> "video")
 
@@ -80,7 +80,7 @@ You can now save the file. It is necessary to restart the application before you
 
 ![Custom Props entity options dropdown](<lib/Custom Props entity options dropdown.png>)
 
-Feel free to download [here](<https://hackolade.com/schemas/custProps/properties_pane/entity_level/entityLevelConfig.json> "target=\"_blank\"") the file just created, save it the proper directory, then edit it for your own configuration.
+Feel free to download the file just created, [entityLevelConfig.json](<https://hackolade.com/schemas/custProps/properties_pane/entity_level/entityLevelConfig.json> "target=\"_blank\""), save it in the proper directory, then edit it for your own configuration.
 
 ## Attribute details tab for a specific data type
 
@@ -117,13 +117,12 @@ But, these custom properties are currently only available for the string data ty
 
 And the operation can be repeated for other data types.
 
-Feel free to download [here](<https://hackolade.com/schemas/custProps/properties_pane/field_level/fieldLevelConfig.json> "target=\"_blank\"") the file just created, save it the proper directory, then edit it for your own configuration.
+Feel free to download the file just created, [fieldLevelConfig.json](<https://hackolade.com/schemas/custProps/properties_pane/field_level/fieldLevelConfig.json> "target=\"_blank\""), save it in the proper directory, then edit it for your own configuration.
 
 ## Attribute details tab for all data types
 
 Many custom properties apply to all attributes, whatever their data type, for example a GDPR classification or a data owner. In that case, declare the property once, in a Details tab whose structure is an array, instead of an object with one entry per data type.\
-​\
-​\
+​​\
 You can combine both forms in the same fieldLevelConfig.json file: one Details tab for the properties common to all data types, and another Details tab for the properties of specific data types:\
 ​
 
@@ -183,7 +182,7 @@ Note: that we leave alone, the 2 tabs already available, and create a new tab. D
 You can now save the file. It is necessary to restart the application before you can see the results of your changes, as configuration is only read at startup time. Your custom properties will appear at the bottom of the Properties Pane:\
 ![Custom Props tab result](<lib/Custom Props tab result.png>)
 
-Feel free to download [here](<https://hackolade.com/schemas/custProps/properties_pane/model_level/modelLevelConfig.json> "target=\"_blank\"") the file just created, save it the proper directory, then edit it for your own configuration.
+Feel free to download the file just created, [modelLevelConfig.json](<https://hackolade.com/schemas/custProps/properties_pane/model_level/modelLevelConfig.json> "target=\"_blank\""), save it in the proper directory, then edit it for your own configuration.
 
 ## Advanced syntax
 
@@ -220,6 +219,19 @@ To define a custom property that can be edited in the reference or view attribut
 
 If you use multiple targets, you probably want to display the same custom properties. You may copy the <strong><em>C:\\Users\\%username%\\.hackolade\\options\\</em></strong><em>\<target></em><strong><em>\\customProperties\\</em></strong><em>\<level></em><strong><em>\_level\\</em></strong><em>\<level></em><strong><em>LevelConfig.json</em></strong> file to other targets for all levels except for the field level. The field level configuration file must have data types that match the data types of the target. If you choose to copy the file from another target, you must adjust it to reflect the right data types.
 
-You may want to share your custom properties with other team members to ensure consistency. We strongly suggest to leverage Git to synchronize and deploy custom properties. Detailed instructions are available in [this page](<https://hackolade.com/help/Userdefinedcustomproperties.html#Share%20customization%20with%20team%20members>).
+You may want to share your custom properties with other team members to ensure consistency. We strongly suggest to leverage Git to synchronize and deploy custom properties. Detailed instructions are available in [Share customization with team members](<https://hackolade.com/help/Userdefinedcustomproperties.html#Share%20customization%20with%20team%20members>).
 
 If you need to change the location of customer properties, you may do so Tools > Options > Default Paths.
+
+## Custom properties with Polyglot convert and derive
+
+When you [convert a physical model to Polyglot](ConvertaphysicalmodeltoPolyglot.md), or derive a physical model from a [Polyglot model](PolyglotDataModel.md), the values of custom properties are carried over only when the same custom property is defined in both targets, with the same `propertyKeyword` and at the same level:
+
+- When you convert, Hackolade Studio keeps the custom properties of the physical model that are also defined in Polyglot.
+- When you derive, Hackolade Studio keeps the custom properties of the Polyglot model that are also defined in the target of the physical model.
+
+You choose which custom properties are carried over by the way you configure each target: define in Polyglot only the custom properties you want to keep when you convert, and in each physical target only the ones you want to receive when you derive. The same applies when you run these operations from the [Command Line Interface](CommandLineInterface.md).
+
+For attributes, a custom property defined for a specific data type is carried over only when it is also defined for the matching data type in the other target, after the conversion of data types. A custom property defined for all data types has no such constraint.
+
+Derive does not carry over model-level custom properties.

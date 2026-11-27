@@ -1559,6 +1559,8 @@ Usage: `hackolade revEngDiagram [--arguments]`
 
 \*: If path and/or file name contains blanks, the value must be surrounded by double quotes (“) Path can be ignored if file is in local directory.
 
+When the DBMS of a PowerDesigner physical model matches several targets, the command asks you in the terminal which target to use for the data type mapping, as described in [Choose the target for data type mapping](<https://hackolade.com/help/PowerDesigner.html#Choose%20the%20target%20for%20data%20type%20mapping>). It lists the detected targets and the target set with `--target`, each with a number: type the number of a target, or press Enter to cancel the reverse-engineering. No argument answers this question in advance, so the command waits for your answer before it goes on.
+
 Examples:
 
 ```bat

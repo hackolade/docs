@@ -46,6 +46,10 @@ To facilitate the migration of your parameters, Hackolade Studio provides a hand
 
 Then, you just need to move that file to your new machine and go through the restore process also in Tools > Options > General.
 
+## AI conversations
+
+Your conversations in the AI chat panel cannot currently be moved to another computer, and the backup of your options and connection settings does not include them. See [AI chat history](<https://hackolade.com/help/AIchathistory.html#Back%20up%20or%20move%20your%20conversations>).
+
 ## License key
 
 The Hackolade Studio licensing terms for individual/dedicated license keys are "per seat" (aka [node-locked](<https://en.wikipedia.org/wiki/Node-locked_licensing> "target=\"_blank\"")) As a result, your seat for the old computer must first be released before you can validate the license key on your new computer. This process is very simple and self-service. The steps are described in [this page](Transferalicensetoanewcomputer.md).

@@ -1,3 +1,8 @@
+---
+description: A semantic layer gives people, applications and AI agents consistent access to business meaning. You design the semantic metadata behind it in Hackolade Studio.
+seoTitle: Semantic layer for analytics, applications and AI
+image: lib/Semantic layer.png
+---
 # Semantic layer
 
 **"How can consumers consistently access and leverage this meaning and knowledge?"**
@@ -10,10 +15,11 @@ A semantic layer can leverage semantic models, ontologies, and knowledge graphs,
 
 ![Semantic layer](<lib/Semantic layer.png>)
 
-## **Distinguishing the four concepts**
+## **Distinguishing the five concepts**
 
 | Concept | Fundamental question |
 | --- | --- |
+| **Taxonomy** | How are business concepts classified and organized? |
 | **Semantic model** | What does this data mean, and how should it be queried? |
 | **Ontology** | What concepts exist in the business, and how can they relate? |
 | **Knowledge graph** | What are the actual entities, facts, and relationships? |

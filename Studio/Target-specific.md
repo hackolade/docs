@@ -5,14 +5,16 @@ image: lib/Script generation options.png
 ---
 # Target-specific
 
-Forward-engineering scripts vary widely between target technologies, as each one has developed its own storage model, terminology, syntax, data types, indexing and partitioning, etc.For details, you should consult the applicable page
+Forward-engineering scripts vary widely between target technologies, as each one has developed its own storage model, terminology, syntax, data types, indexing and partitioning, etc. For details, consult the page of your target in this section.
 
 > [!NOTE]
 > This capability is only available in the Professional, Workgroup, and Free Trial editions of Hackolade Studio.
 
+To choose between the script generation parameters, the custom script hooks and the other ways to adapt a generated script to your team's environments, see [Customize forward-engineering scripts](Customizeforward-engineering.md).
+
 ## Script generation parameters
 
-With v8.2.3, we started to introduce parameters to allow you to adjust the DDL script generation according to your preferences. This may be for styling purposes, or more importantly for data loading or performances reasons. Additionally, it may allow you to document data models constraints that you do not want to have enforced by the database engine.
+Script generation parameters let you adjust the DDL script generation to your preferences. This may be for styling purposes, or more importantly for data loading or performances reasons. Additionally, it may allow you to document data models constraints that you do not want to have enforced by the database engine.
 
 The configuration is available from Tools > Options > Forward-Engineering > Script Generation:
 
@@ -22,15 +24,15 @@ It is also available from a button at the bottom of the DDL script tab, and from
 
 ![Script generation parameters](<lib/Script generation parameters.png>)
 
-Script generation parameters are persisted in a JSON file script-generation-options.json stored in the C:\\Users\\Pascal\\.hackolade\\options\\\<target> folder.
+Script generation parameters are persisted in a JSON file script-generation-options.json stored in the `C:\Users\%username%\.hackolade\options\<target>` folder on Windows.
 
 ## Script generation parameters when using the CLI
 
-When running the [Command-Line Interface](CommandLineInterface.md) locally, it accesses the same configuration file as persisted by editing your preferences in the GUI application, i.e., the file script-generation-options.json stored in the C:\\Users\\Pascal\\.hackolade\\options\\\<target> folder.
+When running the [Command-Line Interface](CommandLineInterface.md) locally, it accesses the same configuration file as persisted by editing your preferences in the GUI application, i.e., the file script-generation-options.json stored in the `C:\Users\%username%\.hackolade\options\<target>` folder on Windows.
 
 When running the CLI on a server, you must copy the script-generation-options.json file and paste in the appropriate .hackolade\\options\\\<target> folder of the CLI instance.
 
-If running the [CLI in Docker](<https://github.com/hackolade/docker/blob/main/Studio/README.md> "target=\"_blank\""), you must paste the script-generation-options.json file in the appropriate location, as described [here](<https://github.com/hackolade/docker/blob/main/Studio/README.md#custom-properties-naming-conventions-excel-export-options> "target=\"_blank\"").
+If running the [CLI in Docker](<https://github.com/hackolade/docker/blob/main/Studio/README.md> "target=\"_blank\""), you must paste the script-generation-options.json file in the appropriate location, as described in [the README of the Docker image](<https://github.com/hackolade/docker/blob/main/Studio/README.md#custom-properties-naming-conventions-excel-export-options> "target=\"_blank\"").
 
 ## Custom script hooks
 
@@ -39,7 +41,13 @@ If running the [CLI in Docker](<https://github.com/hackolade/docker/blob/main/St
 
 The custom script hooks feature allows you to inject custom content (such as statements or comments) at predefined points in the generated DDL script. Instead of manually editing the generated script after export, you can define custom content that is automatically inserted before or after specific CREATE operations.
 
-ALTER comparison scripts of delta models for custom script hooks is supported for the Oracle target, and not yet for other SQL and SQL-like targets.
+Custom script hooks in the ALTER comparison scripts of delta models are supported for the Oracle target, and not yet for other SQL and SQL-like targets.
+
+> [!TIP]
+> This section describes custom script hooks for SQL and SQL-like targets. Hooks are also available for Couchbase with scopes and collections, which is not a SQL target: its hook points and variables follow buckets, scopes and collections. Read [Custom script hooks for Couchbase](<https://hackolade.com/help/Couchbasescripts.html#Custom%20script%20hooks%20for%20Couchbase%20with%20scopes%20and%20collections>) for the details.
+
+> [!NOTE]
+> Custom script hooks defined in a data model are stored in the data model file, and apply only to that data model. To apply a hook to all the data models of a target, select a file for its hook point in Tools > Options > Forward-Engineering > Script Generation (desktop application only), as described in the [Options dialog](<https://hackolade.com/help/Optionsdialog.html#Script%20Generation%20section>).
 
 ### Hook points
 

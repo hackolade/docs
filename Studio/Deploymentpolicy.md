@@ -12,7 +12,7 @@ But some large customers don't want users to be able to upgrade, and prefer to d
 
 A deployment policy file allows configuration by the customer.
 
-The policy allows to selectively turn off the checks for application and plugin updates. As a result, users would not get prompted to update the application and/or the plugins at startup.
+The policy allows to selectively turn off the checks for application and plugin updates. As a result, users would not get prompted to update the application and/or the plugins at startup. It also allows to turn off the installation of plugins, and the saving of AI conversations.
 
 The deployment policy file name is
 
@@ -33,7 +33,7 @@ We have chosen [TOML](<https://en.wikipedia.org/wiki/TOML> "target=\"_blank\"") 
 
 ### Check whether application updates are disallowed
 
-- By default, the check for application updates on startup is enabled.
+By default, the check for application updates on startup is enabled.
 
 Update checks are disabled if the deployment policy file contains the line:
 
@@ -51,7 +51,7 @@ The default application behavior is altered so that:
 
 ### Check whether plugin updates are disallowed
 
-- By default, the check for plugin updates on startup is enabled.
+By default, the check for plugin updates on startup is enabled.
 
 Update checks are disabled if the deployment policy file contains the line:
 
@@ -61,25 +61,43 @@ canCheckForPluginUpdates = false
 
 The default application behavior is altered so that:
 
-- the check for application updates on startup becomes disabled.
+- the check for plugin updates on startup becomes disabled.
 - the related configuration parameter becomes hidden in *Tools > Options > General*.
 - the related entry becomes hidden in the Help menu
 - users don't get prompted to install plugins (e.g. when opening a model for a target for which the plugin is not installed).
 
 ### Check whether plugin installation is disallowed
 
-- By default, users are allowed to install plugins, provided that they have access to [https://hackolade.com](<https://hackolade.com> "target=\"_blank\"") and [https://github.com/hackolade](<https://github.com/hackolade> "target=\"_blank\"").
+By default, users are allowed to install plugins, provided that they have access to [https://hackolade.com](<https://hackolade.com> "target=\"_blank\"") and [https://github.com/hackolade](<https://github.com/hackolade> "target=\"_blank\"").
 
-Plugin installation are disabled if the deployment policy file contains the line:
+Plugin installation is disabled if the deployment policy file contains the line:
 
 ```text
-canInstallPlugin
+canInstallPlugin = false
 ```
 
 The default application behavior is altered so that:
 
 - the plugin manager is hidden
 - users don't get prompted to install plugins (e.g. when opening a model for a target for which the plugin is not installed).
+
+### Check whether AI conversations are disallowed
+
+By default, Hackolade Studio saves the conversations of the [AI chat panel](AIchatpanel.md) on the user's computer, encrypted, so that users can find them in the [AI chat history](AIchathistory.md).
+
+Saving conversations is disabled if the deployment policy file contains the line:
+
+```text
+canSaveAiConversations = false
+```
+
+The default application behavior is altered so that:
+
+- conversations are never written to disk. They stay in memory while the application runs, and are lost when the user closes it.
+- the list of conversations is hidden in the AI chat panel. The **New chat** icon (**+**) stays, so users can still start a new conversation.
+- the pencil that renames a conversation is hidden.
+
+Conversations saved before the line was added stay on the user's computer: they are hidden, not deleted.
 
 ### Policy file location
 
